@@ -1,0 +1,366 @@
+# Cursor Rules for Reown Appkit Project
+
+## Project Overview
+
+This is a Next.js application that integrates with Reown appkit to enable crypto wallet connectivity and cross-border payment functionality. The project uses TypeScript, Tailwind CSS, and various Web3 libraries.
+
+## Technology Stack
+
+- **Framework**: Next.js 15.4.6 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: Radix UI primitives with custom shadcn/ui components
+- **Web3**: Reown appkit, Wagmi, Viem, Ethers.js
+- **State Management**: TanStack React Query
+- **Wallet Connectivity**: WalletConnect, various wallet connectors
+
+## Code Style & Architecture
+
+### File Structure
+
+- Use the existing `src/` directory structure
+- Components should be placed in `src/components/` or `src/app/components/`
+- UI components go in `src/components/ui/`
+- Utilities and helpers in `src/lib/`
+- Pages and layouts in `src/app/`
+
+### Naming Conventions
+
+- Use PascalCase for React components: `WalletConnect.tsx`
+- Use camelCase for functions and variables: `connectWallet`, `userBalance`
+- Use kebab-case for CSS classes and file names: `wallet-connect.tsx`
+- Use UPPER_SNAKE_CASE for constants: `SUPPORTED_CHAINS`
+
+### TypeScript Guidelines
+
+- Always use TypeScript for new files
+- Define proper interfaces for all props and state
+- Use strict type checking
+- Prefer `interface` over `type` for object shapes
+- Use generic types where appropriate
+
+### Component Structure
+
+```typescript
+interface ComponentProps {
+  // Define props interface
+}
+
+export default function ComponentName({ prop1, prop2 }: ComponentProps) {
+  // Component logic
+  return (
+    // JSX
+  );
+}
+```
+
+## Web3 & Crypto Integration
+
+### Reown Appkit Integration
+
+- Always use `@reown/appkit` for core functionality
+- Use `@reown/appkit-adapter-wagmi` for Wagmi integration
+- Follow Reown appkit patterns for wallet connections
+- Implement proper error handling for wallet operations
+
+### Wallet Connectivity
+
+- Support multiple wallet providers (MetaMask, WalletConnect, etc.)
+- Handle wallet connection states properly
+- Implement proper disconnect functionality
+- Show wallet connection status in UI
+
+### Payment Processing
+
+- Implement secure payment flows
+- Handle multiple cryptocurrencies (ETH, USDT, etc.)
+- Validate payment amounts and addresses
+- Provide clear transaction feedback
+
+### Security Best Practices
+
+- Never store private keys in code
+- Use environment variables for sensitive data
+- Validate all user inputs
+- Implement proper error boundaries
+- Use HTTPS in production
+
+## UI/UX Guidelines
+
+### Design System
+
+- Use the existing color scheme: black, gray-800, yellow-400 (#f9ff38)
+- Follow the established component patterns
+- Use Tailwind CSS utility classes
+- Maintain consistent spacing and typography
+
+### Responsive Design
+
+- Mobile-first approach
+- Use Tailwind responsive prefixes (sm:, md:, lg:)
+- Test on multiple screen sizes
+- Ensure touch-friendly interactions
+
+### Accessibility
+
+- Use semantic HTML elements
+- Include proper ARIA labels
+- Ensure keyboard navigation
+- Maintain color contrast ratios
+- Test with screen readers
+
+## State Management
+
+### React Query Usage
+
+- Use TanStack React Query for server state
+- Implement proper caching strategies
+- Handle loading and error states
+- Use optimistic updates where appropriate
+
+### Local State
+
+- Use React hooks for local state
+- Prefer `useState` for simple state
+- Use `useReducer` for complex state logic
+- Implement proper state cleanup
+
+## API Integration
+
+### Backend Communication
+
+- Use proper HTTP methods (GET, POST, PUT, DELETE)
+- Implement proper error handling
+- Use TypeScript interfaces for API responses
+- Handle loading states appropriately
+
+### Web3 API Calls
+
+- Use Viem for blockchain interactions
+- Implement proper transaction handling
+- Handle gas estimation and fees
+- Provide transaction status updates
+
+## Testing Guidelines
+
+### Unit Testing
+
+- Write tests for utility functions
+- Test component rendering
+- Mock external dependencies
+- Use descriptive test names
+
+### Integration Testing
+
+- Test wallet connection flows
+- Test payment processing
+- Test error scenarios
+- Test responsive behavior
+
+## Performance Optimization
+
+### Code Splitting
+
+- Use dynamic imports for large components
+- Implement proper lazy loading
+- Optimize bundle size
+- Use Next.js built-in optimizations
+
+### Web3 Performance
+
+- Implement proper caching for blockchain data
+- Use efficient query patterns
+- Minimize unnecessary re-renders
+- Optimize transaction batching
+
+## Error Handling
+
+### User-Facing Errors
+
+- Provide clear error messages
+- Implement proper error boundaries
+- Show helpful error states
+- Guide users to solutions
+
+### Developer Errors
+
+- Use proper logging
+- Implement error tracking
+- Provide debugging information
+- Handle edge cases gracefully
+
+## Documentation
+
+### Code Comments
+
+- Comment complex logic
+- Document component props
+- Explain business logic
+- Use JSDoc for functions
+
+### README Updates
+
+- Keep README current
+- Document setup instructions
+- Include API documentation
+- Provide usage examples
+
+## Git Workflow
+
+### Commit Messages
+
+- Use conventional commit format
+- Be descriptive and clear
+- Reference issues when applicable
+- Keep commits atomic
+
+### Branch Naming
+
+- Use feature/ prefix for new features
+- Use fix/ prefix for bug fixes
+- Use refactor/ for code improvements
+- Use docs/ for documentation
+
+## Environment Configuration
+
+### Environment Variables
+
+- Use `.env.local` for local development
+- Use `.env.production` for production
+- Never commit sensitive data
+- Document required environment variables
+
+### Configuration Files
+
+- Keep configuration minimal
+- Use TypeScript for config files
+- Validate configuration at startup
+- Provide sensible defaults
+
+## Deployment
+
+### Build Process
+
+- Ensure clean builds
+- Optimize for production
+- Test build artifacts
+- Validate bundle size
+
+### Production Considerations
+
+- Use proper environment variables
+- Implement monitoring
+- Set up error tracking
+- Configure CDN if needed
+
+## Specific Project Rules
+
+### Lenix Protocol Features
+
+- Implement cross-border payment flows
+- Support multiple fiat currencies
+- Handle bank account integration
+- Provide payment status tracking
+
+### Crypto Wallet Features
+
+- Support multiple wallet types
+- Handle wallet switching
+- Implement balance checking
+- Support transaction history
+
+### UI Components
+
+- Use existing shadcn/ui components
+- Maintain design consistency
+- Follow established patterns
+- Extend components when needed
+
+### Payment Widget
+
+- Keep the existing payment widget design
+- Implement proper form validation
+- Handle multiple payment methods
+- Provide real-time price updates
+
+## Code Quality
+
+### Linting
+
+- Follow ESLint rules
+- Use Prettier for formatting
+- Fix linting errors promptly
+- Maintain consistent code style
+
+### Code Review
+
+- Review all changes
+- Test functionality
+- Check for security issues
+- Ensure accessibility compliance
+
+## Monitoring & Analytics
+
+### User Analytics
+
+- Track wallet connections
+- Monitor payment success rates
+- Analyze user behavior
+- Identify improvement opportunities
+
+### Error Monitoring
+
+- Track application errors
+- Monitor wallet connection issues
+- Alert on critical failures
+- Maintain error logs
+
+## Security Considerations
+
+### Web3 Security
+
+- Validate all blockchain transactions
+- Implement proper signature verification
+- Handle private key security
+- Prevent transaction replay attacks
+
+### Application Security
+
+- Validate all user inputs
+- Implement proper authentication
+- Use secure communication protocols
+- Regular security audits
+
+## Performance Monitoring
+
+### Metrics to Track
+
+- Page load times
+- Wallet connection speed
+- Transaction processing time
+- User interaction responsiveness
+
+### Optimization Targets
+
+- < 3s initial page load
+- < 1s wallet connection
+- < 30s transaction confirmation
+- Smooth 60fps animations
+
+## Future Considerations
+
+### Scalability
+
+- Plan for increased user load
+- Consider microservices architecture
+- Implement proper caching strategies
+- Design for international expansion
+
+### Feature Roadmap
+
+- Additional payment methods
+- Enhanced wallet support
+- Improved user experience
+- Advanced analytics features
+
+Remember to always prioritize user experience, security, and code quality when implementing new features or making changes to the existing codebase.
