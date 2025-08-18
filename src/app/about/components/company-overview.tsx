@@ -148,8 +148,8 @@ export default function CompanyOverview() {
                 decentralized future.
               </p>
               <p className={textStyles.body}>
-                We've built a comprehensive platform that serves users in over
-                200 countries, processing billions in transactions while
+                We&apos;ve built a comprehensive platform that serves users in
+                over 200 countries, processing billions in transactions while
                 maintaining the highest security standards in the industry.
               </p>
             </div>

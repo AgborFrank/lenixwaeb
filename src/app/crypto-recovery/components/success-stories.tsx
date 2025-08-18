@@ -30,10 +30,10 @@ export default function SuccessStories() {
                 $2.3M Bitcoin Recovery
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                "I thought I had lost everything when my hardware wallet was
-                compromised. The Lenix team not only recovered my 45 BTC but
-                also helped me implement better security measures. They're true
-                professionals."
+                &quot;I thought I had lost everything when my hardware wallet
+                was compromised. The Lenix team not only recovered my 45 BTC but
+                also helped me implement better security measures. They&apos;re
+                true professionals.&quot;
               </p>
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1">
@@ -85,8 +85,9 @@ export default function SuccessStories() {
               ))}
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              "Lost 12 ETH to a phishing scam. Lenix recovered 11.5 ETH within 3
-              weeks. Their communication was excellent throughout the process."
+              &quot;Lost 12 ETH to a phishing scam. Lenix recovered 11.5 ETH
+              within 3 weeks. Their communication was excellent throughout the
+              process.&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -110,9 +111,9 @@ export default function SuccessStories() {
               ))}
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              "After losing access to my wallet, I thought recovery was
+              &quot;After losing access to my wallet, I thought recovery was
               impossible. The team at Lenix proved me wrong. Professional,
-              efficient, and caring."
+              efficient, and caring.&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -136,8 +137,9 @@ export default function SuccessStories() {
               ))}
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              "Incredible service! They recovered my stolen USDT and helped me
-              understand what went wrong. Now I'm much more security-conscious."
+              &quot;Incredible service! They recovered my stolen USDT and helped
+              me understand what went wrong. Now I&apos;m much more
+              security-conscious.&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -161,8 +163,9 @@ export default function SuccessStories() {
               ))}
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              "The team worked tirelessly to recover my assets. Their expertise
-              in blockchain forensics is unmatched. Highly recommend!"
+              &quot;The team worked tirelessly to recover my assets. Their
+              expertise in blockchain forensics is unmatched. Highly
+              recommend!&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -186,8 +189,9 @@ export default function SuccessStories() {
               ))}
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              "Fast, professional, and successful. They recovered my lost
-              Bitcoin when I thought all hope was gone. Thank you, Lenix team!"
+              &quot;Fast, professional, and successful. They recovered my lost
+              Bitcoin when I thought all hope was gone. Thank you, Lenix
+              team!&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -211,9 +215,9 @@ export default function SuccessStories() {
               ))}
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              "Outstanding service from start to finish. They kept me informed
-              every step of the way and delivered results beyond my
-              expectations."
+              &quot;Outstanding service from start to finish. They kept me
+              informed every step of the way and delivered results beyond my
+              expectations.&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center">

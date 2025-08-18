@@ -16,8 +16,8 @@ export default function ContactHero() {
             Get in Touch
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Have questions about Lenix? We're here to help. Reach out to our
-            team for support, partnerships, or general inquiries.
+            Have questions about Lenix? We&apos;re here to help. Reach out to
+            our team for support, partnerships, or general inquiries.
           </p>
         </div>
 

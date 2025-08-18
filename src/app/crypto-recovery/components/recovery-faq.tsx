@@ -79,7 +79,8 @@ export default function RecoveryFAQ() {
           </h2>
           <p className="text-gray-300 text-xl max-w-3xl mx-auto">
             Get answers to the most common questions about our crypto recovery
-            services. Can't find what you're looking for? Contact us directly.
+            services. Can&apos;t find what you&apos;re looking for? Contact us
+            directly.
           </p>
         </div>
 

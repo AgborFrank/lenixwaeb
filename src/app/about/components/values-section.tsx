@@ -42,7 +42,7 @@ export default function ValuesSection() {
                 Excellence in Everything We Do
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                We don't settle for good enough. Every feature, every
+                We don&apos;t settle for good enough. Every feature, every
                 interaction, and every service we provide is crafted with
                 attention to detail and a commitment to excellence.
               </p>
@@ -130,7 +130,7 @@ export default function ValuesSection() {
               <p className="text-gray-300 text-lg leading-relaxed">
                 Our community is our greatest asset. We listen to our users,
                 learn from their experiences, and build solutions that address
-                real needs. Together, we're stronger.
+                real needs. Together, we&apos;re stronger.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-gray-300">
@@ -162,7 +162,7 @@ export default function ValuesSection() {
                 Global Impact and Accessibility
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                We're committed to making financial services accessible to
+                We&apos;re committed to making financial services accessible to
                 everyone, everywhere. Our technology breaks down barriers and
                 creates opportunities for people around the world.
               </p>

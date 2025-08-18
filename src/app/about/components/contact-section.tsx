@@ -31,11 +31,12 @@ export default function ContactSection() {
         {/* Section Header */}
         <div className="text-center mb-20">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Let's Start a<span className="text-yellow-400"> Conversation</span>
+            Let&apos;s Start a
+            <span className="text-yellow-400"> Conversation</span>
           </h2>
           <p className="text-gray-300 text-xl max-w-3xl mx-auto">
             Have questions about our services? Want to learn more about our
-            team? We'd love to hear from you and discuss how we can help.
+            team? We&apos;d love to hear from you and discuss how we can help.
           </p>
         </div>
 
@@ -47,9 +48,9 @@ export default function ContactSection() {
                 Get in Touch
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                Whether you're a potential partner, investor, or just curious
-                about what we do, we're here to help. Reach out and let's
-                explore how we can work together.
+                Whether you&apos;re a potential partner, investor, or just
+                curious about what we do, we&apos;re here to help. Reach out and
+                let&apos;s explore how we can work together.
               </p>
             </div>
 
@@ -124,7 +125,7 @@ export default function ContactSection() {
                 Send us a Message
               </h3>
               <p className="text-gray-400">
-                We'll get back to you within 24 hours.
+                We&apos;ll get back to you within 24 hours.
               </p>
             </div>
 

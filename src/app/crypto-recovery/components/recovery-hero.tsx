@@ -40,7 +40,7 @@ export default function RecoveryHero() {
                   their digital assets.
                 </p>
                 <p className="text-yellow-400 font-semibold">
-                  Don't give up hope. Let's get your crypto back.
+                  Don&apos;t give up hope. Let&apos;s get your crypto back.
                 </p>
               </div>
             </div>
@@ -124,7 +124,8 @@ export default function RecoveryHero() {
 
                 <div className="bg-yellow-400/10 border border-yellow-400/20 rounded-xl p-4">
                   <p className="text-yellow-400 text-sm font-medium">
-                    "Recovery in progress. We'll notify you of any updates."
+                    &quot;Recovery in progress. We&apos;ll notify you of any
+                    updates.&quot;
                   </p>
                 </div>
               </div>

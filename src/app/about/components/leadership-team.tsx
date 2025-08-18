@@ -150,9 +150,6 @@ export default function LeadershipTeam() {
           </div>
         </div>
 
-      
-
-
         {/* Join Us CTA */}
         <div className="text-center mt-16">
           <div className="bg rounded-2xl p-8 border border-gray-700 max-w-2xl mx-auto">
@@ -160,7 +157,7 @@ export default function LeadershipTeam() {
               Join Our Team
             </h3>
             <p className="text-gray-300 mb-6">
-              We're always looking for talented individuals who share our
+              We&apos;re always looking for talented individuals who share our
               passion for revolutionizing finance through blockchain technology.
             </p>
             <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-colors flex items-center gap-2 mx-auto">

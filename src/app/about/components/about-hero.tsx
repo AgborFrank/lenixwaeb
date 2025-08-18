@@ -23,8 +23,8 @@ export default function AboutHero() {
 
               <div className="space-y-2 text-gray-300 text-lg max-w-lg">
                 <p>
-                  We're not just another crypto company. We're a team of
-                  innovators, builders, and visionaries creating the
+                  We&apos;re not just another crypto company. We&apos;re a team
+                  of innovators, builders, and visionaries creating the
                   infrastructure that will power the next generation of
                   financial services.
                 </p>

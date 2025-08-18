@@ -133,8 +133,8 @@ export default function CryptoRecovery() {
                 digital assets.
               </p>
               <p className={textStyles.body}>
-                With a success rate of over 85%, we've helped thousands of users
-                recover their crypto investments.
+                With a success rate of over 85%, we&apos;ve helped thousands of
+                users recover their crypto investments.
               </p>
             </div>
 

@@ -23,14 +23,15 @@ export default function OurMission() {
               <Target className="w-8 h-8 text-black" />
             </div>
             <h3 className="text-3xl font-bold text-white mb-6">
-              "To democratize access to financial services through innovative
-              blockchain technology, making crypto practical, secure, and
-              accessible for everyone."
+              &quot;To democratize access to financial services through
+              innovative blockchain technology, making crypto practical, secure,
+              and accessible for everyone.&quot;
             </h3>
             <p className="text-gray-300 text-lg leading-relaxed">
-              This isn't just our mission statement—it's our daily commitment.
-              Every feature we build, every service we offer, and every decision
-              we make is guided by this vision of financial inclusion.
+              This isn&apos;t just our mission statement—it&apos;s our daily
+              commitment. Every feature we build, every service we offer, and
+              every decision we make is guided by this vision of financial
+              inclusion.
             </p>
           </div>
         </div>
@@ -46,7 +47,7 @@ export default function OurMission() {
               Innovation First
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              We constantly push the boundaries of what's possible with
+              We constantly push the boundaries of what&apos;s possible with
               blockchain technology, always looking for new ways to solve
               real-world problems.
             </p>
@@ -62,8 +63,8 @@ export default function OurMission() {
             </h3>
             <p className="text-gray-300 leading-relaxed">
               Every aspect of our platform is built with security in mind. We
-              protect our users' assets with military-grade encryption and best
-              practices.
+              protect our users&apos; assets with military-grade encryption and
+              best practices.
             </p>
           </div>
 
@@ -105,8 +106,8 @@ export default function OurMission() {
             </h3>
             <p className="text-gray-300 leading-relaxed">
               We build trust through transparency. Our users always know what
-              we're doing, why we're doing it, and how their assets are being
-              protected.
+              we&apos;re doing, why we&apos;re doing it, and how their assets
+              are being protected.
             </p>
           </div>
 

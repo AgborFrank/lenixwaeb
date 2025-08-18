@@ -12,7 +12,8 @@ export default function OurStory() {
           </h2>
           <p className="text-gray-300 text-xl max-w-3xl mx-auto">
             From a small team with a big vision to a global platform serving
-            millions. Here's how we've grown and evolved over the years.
+            millions. Here&apos;s how we&apos;ve grown and evolved over the
+            years.
           </p>
         </div>
 
@@ -125,7 +126,7 @@ export default function OurStory() {
                   <p className="text-gray-300 leading-relaxed">
                     Expanded our services to include crypto recovery and
                     lending. Our team grew to 50+ experts, and we served users
-                    in over 100 countries. The crypto winter didn't slow us
+                    in over 100 countries. The crypto winter didn&apos;t slow us
                     down.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2 lg:justify-end">
@@ -183,9 +184,10 @@ export default function OurStory() {
                     </h3>
                   </div>
                   <p className="text-gray-300 leading-relaxed">
-                    Today, we're proud to serve over 50,000 users across 200+
-                    countries. Our platform has processed over $1 billion in
-                    transactions and recovered millions in lost crypto assets.
+                    Today, we&apos;re proud to serve over 50,000 users across
+                    200+ countries. Our platform has processed over $1 billion
+                    in transactions and recovered millions in lost crypto
+                    assets.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">

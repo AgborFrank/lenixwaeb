@@ -10,9 +10,9 @@ export default function ContactCTA() {
               Ready to Get Started?
             </h2>
             <p className="text-gray-300 text-xl max-w-3xl mx-auto">
-              Whether you're a potential partner, investor, or just curious
-              about what we do, we'd love to hear from you. Let's explore how we
-              can work together to revolutionize global finance.
+              Whether you&apos;re a potential partner, investor, or just curious
+              about what we do, we&apos;d love to hear from you. Let&apos;s
+              explore how we can work together to revolutionize global finance.
             </p>
           </div>
 
@@ -85,7 +85,7 @@ export default function ContactCTA() {
                   Send us a Message
                 </h3>
                 <p className="text-gray-400">
-                  We'll get back to you within 24 hours.
+                  We&apos;ll get back to you within 24 hours.
                 </p>
               </div>
 

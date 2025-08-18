@@ -53,9 +53,9 @@ export default function RecoveryStats() {
             <span className="text-yellow-400"> By The Numbers</span>
           </h2>
           <p className="text-gray-300 text-xl max-w-2xl mx-auto">
-            Our track record speaks for itself. We've helped thousands of people
-            recover their lost crypto assets with industry-leading success
-            rates.
+            Our track record speaks for itself. We&apos;ve helped thousands of
+            people recover their lost crypto assets with industry-leading
+            success rates.
           </p>
         </div>
 

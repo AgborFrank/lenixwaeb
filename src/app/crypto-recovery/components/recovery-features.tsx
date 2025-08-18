@@ -44,7 +44,8 @@ export default function RecoveryFeatures() {
               <p className="text-gray-300 text-lg leading-relaxed">
                 Our proprietary blockchain analysis tools can trace transactions
                 across multiple chains, identify patterns, and locate lost
-                assets even when they've been moved through complex networks.
+                assets even when they&apos;ve been moved through complex
+                networks.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-gray-300">

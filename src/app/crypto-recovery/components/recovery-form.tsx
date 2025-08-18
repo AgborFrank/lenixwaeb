@@ -43,9 +43,9 @@ export default function RecoveryForm() {
                 <span className="text-yellow-400"> Recovery Journey?</span>
               </h2>
               <p className="text-gray-300 text-xl leading-relaxed">
-                Don't let lost crypto assets stay lost forever. Our team of
+                Don&apos;t let lost crypto assets stay lost forever. Our team of
                 experts is ready to help you recover what's yours. Fill out the
-                form and we'll get back to you within 24 hours.
+                form and we&apos;ll get back to you within 24 hours.
               </p>
             </div>
 
@@ -73,7 +73,9 @@ export default function RecoveryForm() {
                   <h3 className="text-white font-semibold text-lg">
                     24-Hour Response
                   </h3>
-                  <p className="text-gray-400">We'll get back to you quickly</p>
+                  <p className="text-gray-400">
+                    We&apos;ll get back to you quickly
+                  </p>
                 </div>
               </div>
 
@@ -125,7 +127,8 @@ export default function RecoveryForm() {
                 Start Your Recovery
               </h3>
               <p className="text-gray-400">
-                Tell us about your situation and we'll help you get started.
+                Tell us about your situation and we&apos;ll help you get
+                started.
               </p>
             </div>
 

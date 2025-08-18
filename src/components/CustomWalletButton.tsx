@@ -1,7 +1,6 @@
 "use client";
 
 import { useAccount, useBalance, useChainId } from "wagmi";
-import { Button } from "@/components/ui/button";
 import { mainnet, polygon, bsc } from "@reown/appkit/networks";
 import { formatBalance } from "@/lib/utils";
 

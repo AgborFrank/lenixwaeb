@@ -25,7 +25,8 @@ export default function Competition() {
               <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
                 Enter Lenix Protocol $250,000 Giveaway! Ten winners will each
                 claim $25,000 in LNX. Boost your odds by sharing and completing
-                all tasks for bonus entries. Don't miss this chance - join now!
+                all tasks for bonus entries. Don&apos;t miss this chance - join
+                now!
               </p>
             </div>
 

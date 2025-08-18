@@ -103,7 +103,8 @@ export default function ContactForm() {
         </div>
         <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
         <p className="text-gray-300 mb-6">
-          Thank you for reaching out. We'll get back to you within 24 hours.
+          Thank you for reaching out. We&apos;ll get back to you within 24
+          hours.
         </p>
         <button
           onClick={() => setIsSubmitted(false)}

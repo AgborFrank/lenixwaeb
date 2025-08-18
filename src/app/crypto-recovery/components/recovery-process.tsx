@@ -12,7 +12,7 @@ export default function RecoveryProcess() {
           </h2>
           <p className="text-gray-300 text-xl max-w-3xl mx-auto">
             Our proven 4-step process has helped thousands recover their lost
-            crypto assets. We're with you every step of the way.
+            crypto assets. We&apos;re with you every step of the way.
           </p>
         </div>
 
