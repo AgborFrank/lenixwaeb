@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "$250K Giveaway – Lenix Protocol",
   description:
-    "Enter the Lenix Protocol $250,000 Giveaway. Ten winners receive $25,000 in RTX. Learn how to enter, prizes, rules, and FAQs.",
+    "Enter the Lenix Protocol $250,000 Giveaway. Ten winners receive $25,000 in LNX. Learn how to enter, prizes, rules, and FAQs.",
 };
 
 export default function Giveaway() {
@@ -19,20 +19,21 @@ export default function Giveaway() {
     <>
       <Header />
       {/* Hero */}
-      <section className="py-20 px-4 bg-black relative overflow-hidden" style={{backgroundImage: "url('/assets/img/competition.png')", backgroundSize: "cover", backgroundPosition: "center"}}>
-        <div
-          className="max-w-screen-xl mx-auto relative z-20"
-          
-        >
-          <div className=" z-20">
+      <section
+        className="py-20 px-4 bg-black relative overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/img/competition.png')" }}
+      >
+        <div className="max-w-screen-xl mx-auto relative z-20">
+          <div className="z-20">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div className="space-y-6">
                 <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight tracking-tight z-20">
-                Enter Our Competition for a Chance to
-                  <span className="text-yellow-400"> Win $250,000 </span>Giveaway
+                  Enter Our Competition for a Chance to
+                  <span className="text-yellow-400"> Win $250,000 </span>
+                  Giveaway
                 </h1>
                 <p className="text-gray-300 text-lg leading-relaxed max-w-xl z-20">
-                  Ten winners each receive $25,000 worth of RTX. Complete tasks,
+                  Ten winners each receive $25,000 worth of LNX. Complete tasks,
                   share, and boost your entries. Transparent rules, fair
                   selection, and on-chain distribution.
                 </p>
@@ -71,12 +72,12 @@ export default function Giveaway() {
       </div>
 
       {/* Prizes */}
-      <section className="py-16 px-4 bg-black">
+      <section className="py-24 px-4 bg-black">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">Prizes</h2>
-          <p className="text-gray-700 mt-3 max-w-2xl">
-            A total of $250,000 in RTX will be distributed to 10 winners. Each
-            winner gets $25,000 worth of RTX.
+          <h2 className="text-3xl md:text-5xl font-bold text-white">Prizes</h2>
+          <p className="text-gray-300 mt-3 max-w-2xl">
+            A total of $250,000 in LNX will be distributed to 10 winners. Each
+            winner gets $25,000 worth of LNX.
           </p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => (
@@ -86,7 +87,7 @@ export default function Giveaway() {
               >
                 <p className="text-gray-500">Winner {n}</p>
                 <p className="text-2xl font-semibold text-black mt-2">
-                  $25,000 RTX
+                  $25,000 LNX
                 </p>
               </div>
             ))}
@@ -97,7 +98,7 @@ export default function Giveaway() {
       {/* How to Enter */}
       <section id="enter" className="py-16 px-4 bg-black">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">
+          <h2 className="text-3xl md:text-5xl font-bold text-white">
             How to Enter
           </h2>
           <p className="text-gray-300 mt-3 max-w-2xl">
@@ -167,7 +168,7 @@ export default function Giveaway() {
               reserve the right to re-verify winners.
             </li>
             <li>
-              Prizes are distributed in RTX on-chain to the connected wallet
+              Prizes are distributed in LNX on-chain to the connected wallet
               address only.
             </li>
             <li>
@@ -215,7 +216,7 @@ export default function Giveaway() {
                   How are prizes paid?
                 </AccordionTrigger>
                 <AccordionContent className="text-gray-300">
-                  Prizes are distributed in RTX on-chain directly to the
+                  Prizes are distributed in LNX on-chain directly to the
                   connected wallet address. Ensure you maintain access to it.
                 </AccordionContent>
               </AccordionItem>

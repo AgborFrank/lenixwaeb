@@ -12,7 +12,7 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full bg-black ">
+    <header className="w-full bg-black sticky top-0 z-50">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -53,6 +53,9 @@ export default function Header() {
               className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer"
             >
               <span>Crypto Recovery</span>
+            </Link>
+            <Link href="/contact" className="text-white hover:text-gray-300">
+              Contact
             </Link>
             <a href="#" className="text-white hover:text-gray-300">
               Airdrop
@@ -121,6 +124,13 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 <span>Crypto Recovery</span>
+              </Link>
+              <Link
+                href="/contact"
+                className="block px-3 py-2 text-white hover:text-gray-300"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Contact
               </Link>
               <a
                 href="#"

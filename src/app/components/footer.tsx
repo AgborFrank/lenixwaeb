@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, ExternalLink } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -10,10 +11,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
           {/* Left Column - Logo and Description */}
           <div className="lg:col-span-1">
-            <h2 className="text-3xl font-bold mb-6">LenixProtocol</h2>
+            <h2 className="text-3xl font-thin mb-6">Lenix <span className="text-yellow-400">Protocol</span></h2>
             <p className="text-gray-300 mb-8 leading-relaxed">
-              Nexchain is an L1 blockchain protocol that leverages artificial intelligence (AI) to optimize scalability,
-              security, and interoperability.
+                Lenix Protocol is an L1 blockchain protocol for crypto to bank payments, crypto asset recovery that also leverages artificial intelligence (AI) to optimize scalability,
+                security, and interoperability.
             </p>
 
             {/* Social Icons */}
@@ -163,17 +164,17 @@ export default function Footer() {
 
             {/* Join Presale Button */}
             <div className="mt-8">
-              <Button className="bg-white hover:bg-gray-100 text-black px-6 py-2 rounded-full flex items-center space-x-2">
-                <span>Join Presale</span>
+              <Link href="/crypto-recovery"  className="bg-yellow-400 hover:bg-yellow-300 text-black px-6 py-3 rounded-full flex items-center space-x-2 w-fit">
+                <span>Recover Assets</span>
                 <ArrowRight className="h-4 w-4" />
-              </Button>
+              </Link>
             </div>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-12 pt-8">
-          <p className="text-gray-400 text-sm">© 2025 Nexchain, All Rights Reserved</p>
+          <p className="text-gray-400 text-sm">© 2025 Lenix Protocol, All Rights Reserved</p>
         </div>
       </div>
     </footer>

@@ -2,7 +2,7 @@ import { Check } from "lucide-react";
 
 export default function Merchant() {
   return (
-    <section className="bg-black py-20 px-6">
+    <section className="bg-accept bg-black py-20 px-6" >
       <div className="max-w-screen-xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Interface mockup */}

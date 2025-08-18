@@ -4,7 +4,7 @@ import { X, Send, FileText, Star } from "lucide-react";
 
 export default function HomeHero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-black" >
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
       {/* Grid pattern background */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 hero-grid-pattern" />
@@ -104,7 +104,7 @@ export default function HomeHero() {
 
               {/* Price Info */}
               <div className="flex justify-between items-center mb-6 text-sm">
-                <span className="text-white">1 $RTX = $0.0944</span>
+                <span className="text-white">1 $LNX = $0.0944</span>
                 <span className="text-green-400">Next Price: $0.0969</span>
               </div>
 
@@ -129,7 +129,7 @@ export default function HomeHero() {
                 <div className="flex justify-between items-center">
                   <span className="text-gray-300 text-sm">ETH you pay</span>
                   <span className="text-yellow-400 text-sm">
-                    $RTX you receive
+                    $LNX you receive
                   </span>
                 </div>
                 <div className="grid grid-cols-2 gap-4">

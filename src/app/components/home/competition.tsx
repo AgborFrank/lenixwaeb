@@ -24,14 +24,14 @@ export default function Competition() {
 
               <p className="text-gray-300 text-lg leading-relaxed max-w-lg">
                 Enter Lenix Protocol $250,000 Giveaway! Ten winners will each
-                claim $25,000 in RTX. Boost your odds by sharing and completing
+                claim $25,000 in LNX. Boost your odds by sharing and completing
                 all tasks for bonus entries. Don't miss this chance - join now!
               </p>
             </div>
 
             <Link
               href="/giveaway"
-              className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center gap-2 group"
+              className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center gap-2 group w-fit"
             >
               Enter Competition Now!
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

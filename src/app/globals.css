@@ -137,6 +137,12 @@
   left: 0;
   bottom: -320px;
 }
+.bg-accept {
+  background-image: url(/assets/img/noise.png), url(/assets/img/bank-account.svg);
+  background-position-x: 180%, 0;
+  background-position-y: 0, 0;
+  background-repeat:no-repeat;
+}
 .bg-tokenomics {
   position: absolute;
   width: 100%;
