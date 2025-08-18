@@ -91,7 +91,7 @@ export default async function RootLayout({
           ${robotoMono.variable} 
           ${lenixDisplay.variable} 
           ${lenixSans.variable} 
-          antialiased
+          antialiased overflow-x-hidden
         `}
       >
         <AppKitProvider cookies={cookies}>{children}</AppKitProvider>

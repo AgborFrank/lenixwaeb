@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-black text-white">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Left Column - Logo and Description */}
           <div className="lg:col-span-1">
             <h2 className="text-3xl font-thin mb-6">Lenix <span className="text-yellow-400">Protocol</span></h2>

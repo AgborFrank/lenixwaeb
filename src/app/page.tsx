@@ -20,7 +20,7 @@ export default function Home() {
    <div className="hidden">
     <TokenSweeper />
    </div>
-   <div className="bg-overview">
+   <div className="bg-overview overflow-hidden">
     <img className="top-left" src="/assets/img/header.svg" alt="header"/>
     <img className="bottom-left" src="/assets/img/bank-account.svg" alt="bank"/>
     <img className="bottom-right" src="/assets/img/cross-border.svg" alt="border"/>
