@@ -3,11 +3,8 @@ import Stripe from "stripe";
 
 const stripeSecret = process.env.STRIPE_SECRET_KEY;
 
-if (!stripeSecret) {
-	throw new Error("Missing STRIPE_SECRET_KEY env variable");
-}
-
-const stripe = new Stripe(stripeSecret, { apiVersion: "2024-06-20" });
+// Only throw error at runtime, not build time
+const stripe = stripeSecret ? new Stripe(stripeSecret, { apiVersion: "2025-07-30.basil" }) : null;
 
 /**
  * Env required:
@@ -15,6 +12,10 @@ const stripe = new Stripe(stripeSecret, { apiVersion: "2024-06-20" });
  */
 export async function POST(req: NextRequest) {
 	try {
+		if (!stripe) {
+			return NextResponse.json({ error: "Stripe not configured" }, { status: 500 });
+		}
+
 		const { usdAmount, walletAddress } = await req.json();
 		if (!usdAmount || !walletAddress) {
 			return NextResponse.json({ error: "usdAmount and walletAddress required" }, { status: 400 });

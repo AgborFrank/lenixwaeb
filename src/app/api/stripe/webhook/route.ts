@@ -5,20 +5,14 @@ import { ERC20_ABI } from "@/lib/abis/ERC20";
 
 export const runtime = "nodejs";
 
-const stripeSecret = process.env.STRIPE_SECRET_KEY;
-const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
-const rpcUrl = process.env.RPC_URL;
-const treasuryKey = process.env.SELLER_PRIVATE_KEY;
+const stripeSecret = process.env.STRIPE_SECRET_KEY || "";
+const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET || "";
+const rpcUrl = process.env.RPC_URL || "";
+const treasuryKey = process.env.SELLER_PRIVATE_KEY || "";
 const tokenAddress = (process.env.LNX_TOKEN_ADDRESS || process.env.NEXT_PUBLIC_LNX_TOKEN_ADDRESS) as `0x${string}` | undefined;
 
-if (!stripeSecret) {
-	throw new Error("Missing STRIPE_SECRET_KEY env variable");
-}
-if (!webhookSecret) {
-	throw new Error("Missing STRIPE_WEBHOOK_SECRET env variable");
-}
-
-const stripe = new Stripe(stripeSecret, { apiVersion: "2024-06-20" });
+// Only throw errors at runtime, not build time
+const stripe = stripeSecret ? new Stripe(stripeSecret, { apiVersion: "2025-07-30.basil" }) : null;
 
 async function transferTokensToBuyer({ walletAddress, usdAmount, priceUsd }: { walletAddress: string; usdAmount: number; priceUsd: number; }) {
 	if (!rpcUrl || !treasuryKey || !tokenAddress) {
@@ -45,6 +39,10 @@ async function transferTokensToBuyer({ walletAddress, usdAmount, priceUsd }: { w
 }
 
 export async function POST(req: NextRequest) {
+	if (!stripe) {
+		return NextResponse.json({ error: "Stripe not configured" }, { status: 500 });
+	}
+
 	const sig = req.headers.get("stripe-signature");
 	if (!sig) {
 		return NextResponse.json({ error: "Missing signature" }, { status: 400 });
@@ -77,7 +75,7 @@ export async function POST(req: NextRequest) {
 		try {
 			const delivery = await transferTokensToBuyer({ walletAddress, usdAmount: amountUsd, priceUsd });
 			// Mark as delivered to ensure idempotency
-			await stripe.paymentIntents.update(pi.id, {
+			await stripe!.paymentIntents.update(pi.id, {
 				metadata: {
 					...(pi.metadata || {}),
 					delivered: "true",
