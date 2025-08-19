@@ -6,8 +6,9 @@ export default function TokenDetails() {
   const handleCopyAddress = () => {
     navigator.clipboard.writeText("0x319177997dbf0C0a7DFE0...");
   };
-
+ const tokenAddress = process.env.NEXT_PUBLIC_LNX_TOKEN_ADDRESS;
   return (
+    
     <section className="bg-black bg-accept py-16 px-4">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-transparent to-yellow-500/10"></div>
@@ -91,8 +92,8 @@ export default function TokenDetails() {
           {/* Table Data */}
           <div className="grid grid-cols-2 md:grid-cols-6 gap-4 p-6">
             <div className="flex items-center gap-2">
-              <span className="text-yellow-400 font-mono text-sm">
-                0x319177997dbf0C0a7DFE0...
+              <span className="text-yellow-400 font-mono text-sm line-clamp-1 max-w-[260px] text-ellipsis">
+                {tokenAddress}
               </span>
               <button
                 onClick={handleCopyAddress}
@@ -102,10 +103,10 @@ export default function TokenDetails() {
                 <Copy size={16} />
               </button>
             </div>
-            <div className="text-white">Lenix Protocol</div>
+            <div className="text-white">Lenix</div>
             <div className="text-white">LNX</div>
             <div className="text-white">1,500,000,000</div>
-            <div className="text-white">Ethereum</div>
+            <div className="text-white">Polygon</div>
             <div className="text-white">18</div>
           </div>
         </div>

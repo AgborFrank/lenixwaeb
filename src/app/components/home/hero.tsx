@@ -1,8 +1,228 @@
 "use client";
 
-import { X, Send, FileText, Star } from "lucide-react";
+import { X, Send, FileText, Star, CreditCard } from "lucide-react";
+import { useState } from "react";
+import {
+  useAccount,
+  useReadContract,
+  useWriteContract,
+  useChainId,
+} from "wagmi";
+import { parseEther, parseUnits, formatUnits } from "viem";
+import { LNX_SALE_ABI } from "@/lib/abis/LNXSale";
+import { LNX_SALE_ADDRESS, USDT_ADDRESS_BY_CHAIN } from "@/config";
+import { ERC20_ABI } from "@/lib/abis/ERC20";
+import dynamic from "next/dynamic";
+
+const StripeCardForm = dynamic(() => import("@/components/StripeCardForm"), {
+  ssr: false,
+});
 
 export default function HomeHero() {
+  const { address, isConnected } = useAccount();
+  const chainId = useChainId();
+  const { writeContract, isPending } = useWriteContract();
+
+  const [ethAmount, setEthAmount] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState<"ETH" | "USDT" | "CARD">(
+    "ETH"
+  );
+
+  const usdtAddress = USDT_ADDRESS_BY_CHAIN[chainId];
+  const ZERO_ADDRESS =
+    "0x0000000000000000000000000000000000000000" as `0x${string}`;
+  const ONE_ETHER = BigInt("1000000000000000000");
+
+  // Quotes for current input
+  const { data: quotedTokensOut } = useReadContract({
+    abi: LNX_SALE_ABI,
+    address: LNX_SALE_ADDRESS,
+    functionName: "quoteTokensForETH",
+    args: [ethAmount ? parseEther(ethAmount) : BigInt(0)],
+    query: { enabled: !!ethAmount && paymentMethod === "ETH" },
+  });
+
+  const { data: quotedTokensOutErc20 } = useReadContract({
+    abi: LNX_SALE_ABI,
+    address: LNX_SALE_ADDRESS,
+    functionName: "quoteTokensForERC20",
+    args: [
+      usdtAddress ?? ZERO_ADDRESS,
+      ethAmount ? parseUnits(ethAmount, 6) : BigInt(0),
+    ],
+    query: {
+      enabled: !!ethAmount && paymentMethod === "USDT" && !!usdtAddress,
+    },
+  });
+
+  // Live sale data
+  const { data: totalTokensSold } = useReadContract({
+    abi: LNX_SALE_ABI,
+    address: LNX_SALE_ADDRESS,
+    functionName: "totalTokensSold",
+  });
+
+  const { data: priceEthPerTokenWei } = useReadContract({
+    abi: LNX_SALE_ABI,
+    address: LNX_SALE_ADDRESS,
+    functionName: "priceEthPerTokenWei",
+  });
+
+  const { data: isUsdtAccepted } = useReadContract({
+    abi: LNX_SALE_ABI,
+    address: LNX_SALE_ADDRESS,
+    functionName: "isAcceptedErc20",
+    args: [usdtAddress ?? ZERO_ADDRESS],
+    query: { enabled: !!usdtAddress },
+  });
+
+  const { data: priceUsdtPerTokenUnits } = useReadContract({
+    abi: LNX_SALE_ABI,
+    address: LNX_SALE_ADDRESS,
+    functionName: "priceErc20PerToken",
+    args: [usdtAddress ?? ZERO_ADDRESS],
+    query: { enabled: !!usdtAddress },
+  });
+
+  const { data: usdtDecimals } = useReadContract({
+    abi: ERC20_ABI,
+    address: usdtAddress ?? ZERO_ADDRESS,
+    functionName: "decimals",
+    query: { enabled: !!usdtAddress },
+  });
+
+  // Derived displays
+  const ethPriceDisplay = priceEthPerTokenWei
+    ? formatUnits(priceEthPerTokenWei as bigint, 18)
+    : "-";
+
+  const usdtDec =
+    typeof usdtDecimals === "number"
+      ? usdtDecimals
+      : (usdtDecimals as unknown as bigint | undefined) !== undefined
+      ? Number(usdtDecimals as unknown as bigint)
+      : 6;
+
+  const hasUsdtPricing = Boolean(
+    isUsdtAccepted && priceUsdtPerTokenUnits && usdtAddress
+  );
+
+  const lnxUsdPrice = hasUsdtPricing
+    ? formatUnits(priceUsdtPerTokenUnits as bigint, usdtDec)
+    : undefined;
+
+  const tokenPriceUsd = lnxUsdPrice ?? "0.095";
+
+  const cardUsdAmount = ethAmount ? Number(ethAmount) : 0; // ethAmount field doubles as USD when CARD selected
+  const usdToCharge = paymentMethod === "CARD" ? cardUsdAmount : 0;
+
+  const tokensOutDisplayEth = quotedTokensOut
+    ? formatUnits(quotedTokensOut as bigint, 18)
+    : "";
+
+  const tokensOutDisplay: string =
+    paymentMethod === "ETH"
+      ? tokensOutDisplayEth
+      : paymentMethod === "USDT"
+      ? quotedTokensOutErc20
+        ? formatUnits(quotedTokensOutErc20 as bigint, 18)
+        : ""
+      : ethAmount && tokenPriceUsd
+      ? String((Number(ethAmount) / Number(tokenPriceUsd)).toFixed(4))
+      : "";
+
+  const tokensSoldDisplay = totalTokensSold
+    ? formatUnits(totalTokensSold as bigint, 18)
+    : "0";
+
+  const priceLineLeft =
+    paymentMethod === "ETH"
+      ? `1 LNX = ${ethPriceDisplay} ETH`
+      : `1 LNX = $${tokenPriceUsd}`;
+
+  const priceLineRight =
+    paymentMethod === "ETH"
+      ? tokenPriceUsd
+        ? `USD price: $${tokenPriceUsd}`
+        : ""
+      : ethPriceDisplay
+      ? `ETH price: ${ethPriceDisplay} ETH`
+      : "";
+
+  // Approximate USD raised using USDT price * tokens sold (works even if paid in ETH)
+  let usdRaisedDisplay = "-";
+  if (hasUsdtPricing && totalTokensSold) {
+    const priceUnits = priceUsdtPerTokenUnits as bigint; // USDT units per 1e18 LNX
+    const sold = totalTokensSold as bigint; // in 1e18
+    const usdtUnits = (sold * priceUnits) / ONE_ETHER; // / 1e18
+    usdRaisedDisplay = formatUnits(usdtUnits, usdtDec);
+  }
+
+  const payLabel =
+    paymentMethod === "ETH"
+      ? "ETH you pay"
+      : paymentMethod === "USDT"
+      ? "USDT you pay"
+      : "USD you pay";
+
+  const canPay =
+    paymentMethod === "ETH"
+      ? !!ethAmount
+      : paymentMethod === "USDT"
+      ? !!ethAmount && !!usdtAddress && hasUsdtPricing
+      : false;
+
+  async function handlePay() {
+    if (!isConnected || !address) return;
+    if (!ethAmount) return;
+
+    if (paymentMethod === "ETH") {
+      const value = parseEther(ethAmount);
+      const minOut = quotedTokensOut
+        ? ((quotedTokensOut as bigint) * BigInt(99)) / BigInt(100)
+        : BigInt(0); // 1% slippage
+      try {
+        await writeContract({
+          abi: LNX_SALE_ABI,
+          address: LNX_SALE_ADDRESS,
+          functionName: "buyWithETH",
+          args: [address, minOut],
+          value,
+        });
+      } catch (e) {
+        console.error(e);
+      }
+      return;
+    }
+
+    if (paymentMethod === "USDT") {
+      if (!usdtAddress) return;
+      const amountIn = parseUnits(ethAmount, usdtDec);
+      const minOut = quotedTokensOutErc20
+        ? ((quotedTokensOutErc20 as bigint) * BigInt(99)) / BigInt(100)
+        : BigInt(0);
+      try {
+        await writeContract({
+          abi: ERC20_ABI,
+          address: usdtAddress,
+          functionName: "approve",
+          args: [LNX_SALE_ADDRESS, amountIn],
+        });
+        await writeContract({
+          abi: LNX_SALE_ABI,
+          address: LNX_SALE_ADDRESS,
+          functionName: "buyWithERC20",
+          args: [usdtAddress, amountIn, address, minOut],
+        });
+      } catch (e) {
+        console.error(e);
+      }
+      return;
+    }
+
+    // CARD: not enabled yet
+  }
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
       {/* Grid pattern background */}
@@ -83,7 +303,9 @@ export default function HomeHero() {
                     style={{ width: "71%" }}
                   />
                 </div>
-                <p className="text-yellow-400 text-sm font-semibold">$1,424k</p>
+                <p className="text-yellow-400 text-sm font-semibold">
+                  {hasUsdtPricing ? `$${usdRaisedDisplay}` : "—"}
+                </p>
               </div>
 
               {/* Stats */}
@@ -91,35 +313,64 @@ export default function HomeHero() {
                 <div className="flex justify-between">
                   <span className="text-gray-300">USD RAISED SO FAR :</span>
                   <span className="text-white font-semibold">
-                    $20,082,383.56
+                    {hasUsdtPricing ? `$${usdRaisedDisplay}` : "—"}
                   </span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-300">Tokens Sold :</span>
                   <span className="text-white font-semibold">
-                    606,708,741.52
+                    {tokensSoldDisplay}
                   </span>
                 </div>
               </div>
 
               {/* Price Info */}
               <div className="flex justify-between items-center mb-6 text-sm">
-                <span className="text-white">1 $LNX = $0.0944</span>
-                <span className="text-green-400">Next Price: $0.0969</span>
+                <span className="text-white">{priceLineLeft}</span>
+                <span className="text-green-400">{priceLineRight}</span>
               </div>
 
               {/* Payment Methods */}
               <div className="grid grid-cols-3 gap-2 mb-6">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1">
-                  <div className="w-4 h-4 bg-blue-400 rounded-full" />
+                <button
+                  onClick={() => setPaymentMethod("ETH")}
+                  className={`${
+                    paymentMethod === "ETH"
+                      ? "bg-blue-600 hover:bg-blue-700"
+                      : "bg-gray-700 hover:bg-gray-600"
+                  } text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1`}
+                >
+                  <img
+                    src="/assets/img/eth.svg"
+                    alt="eth"
+                    className="w-6 h-6"
+                  />
                   ETH
                 </button>
-                <button className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1">
-                  <div className="w-4 h-4 bg-green-400 rounded-full" />
+                <button
+                  onClick={() => setPaymentMethod("USDT")}
+                  className={`${
+                    paymentMethod === "USDT"
+                      ? "bg-blue-600 hover:bg-blue-700"
+                      : "bg-gray-700 hover:bg-gray-600"
+                  } text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1`}
+                >
+                  <img
+                    src="/assets/img/usdt.svg"
+                    alt="usdt"
+                    className="w-6 h-6"
+                  />
                   USDT
                 </button>
-                <button className="bg-gray-700 hover:bg-gray-600 text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1">
-                  <div className="w-4 h-4 bg-blue-300 rounded-sm" />
+                <button
+                  onClick={() => setPaymentMethod("CARD")}
+                  className={`${
+                    paymentMethod === "CARD"
+                      ? "bg-blue-600 hover:bg-blue-700"
+                      : "bg-gray-700 hover:bg-gray-600"
+                  } text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1`}
+                >
+                  <CreditCard className="w-6 h-6" />
                   CARD
                 </button>
               </div>
@@ -127,7 +378,7 @@ export default function HomeHero() {
               {/* Input Fields */}
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between items-center">
-                  <span className="text-gray-300 text-sm">ETH you pay</span>
+                  <span className="text-gray-300 text-sm">{payLabel}</span>
                   <span className="text-yellow-400 text-sm">
                     $LNX you receive
                   </span>
@@ -139,6 +390,11 @@ export default function HomeHero() {
                       type="text"
                       placeholder="0"
                       className="bg-transparent text-white outline-none flex-1"
+                      value={ethAmount}
+                      onChange={(e) => {
+                        const v = e.target.value.replace(/[^0-9.]/g, "");
+                        setEthAmount(v);
+                      }}
                     />
                   </div>
                   <div className="bg-gray-700 rounded-lg p-3 flex items-center">
@@ -147,15 +403,53 @@ export default function HomeHero() {
                       type="text"
                       placeholder="0"
                       className="bg-transparent text-white outline-none flex-1"
+                      value={tokensOutDisplay}
+                      readOnly
                     />
                   </div>
                 </div>
+                {paymentMethod === "CARD" &&
+                  isConnected &&
+                  address &&
+                  usdToCharge > 0 && (
+                    <div className="pt-2">
+                      <StripeCardForm
+                        amountUsd={usdToCharge}
+                        walletAddress={address}
+                      />
+                    </div>
+                  )}
               </div>
 
-              {/* Connect Button */}
-              <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded-lg transition-colors mb-4">
-                Connect wallet & Pay
-              </button>
+              {/* Connect/Pay Button */}
+              {isConnected ? (
+                <>
+                  <button
+                    onClick={handlePay}
+                    disabled={isPending || !canPay || paymentMethod === "CARD"}
+                    className="w-full bg-yellow-400 hover:bg-yellow-500 disabled:opacity-60 disabled:cursor-not-allowed text-black font-semibold py-3 rounded-lg transition-colors mb-2"
+                  >
+                    {isPending
+                      ? "Processing..."
+                      : paymentMethod === "ETH"
+                      ? "Pay with ETH"
+                      : paymentMethod === "USDT"
+                      ? "Pay with USDT"
+                      : "Enter Card Details Below"}
+                  </button>
+                  {paymentMethod === "CARD" && (
+                    <p className="text-center text-xs text-gray-400 mb-4">
+                      Powered by Stripe. Amount charged in USD.
+                    </p>
+                  )}
+                </>
+              ) : (
+                <div className="mb-4 w-full">
+                  <div className="w-full">
+                    <appkit-button />
+                  </div>
+                </div>
+              )}
 
               {/* Giveaway */}
               <div className="bg-gray-700 rounded-lg p-3 text-center">

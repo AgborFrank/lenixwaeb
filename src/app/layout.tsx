@@ -82,7 +82,7 @@ export default async function RootLayout({
   const headersList = await headers();
   const cookies = headersList.get("cookie");
   return (
-    <html lang="en">
+    <html lang="en" >
       <body
         className={`
           ${onest.variable} 

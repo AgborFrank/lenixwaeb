@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,11 +18,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0 z-20">
-            <h1 className="text-2xl font-bold text-white">Lenix</h1>
+            <Image src="/assets/img/logo.png" alt="logo" width={130} height={100} />
           </div>
 
           {/* Desktop Navigation Menu */}
-          <nav className="hidden md:flex items-center space-x-8 z-20">
+          <nav className="hidden md:flex items-center space-x-8 z-20 text-[14px]">
             <Link
               href="/giveaway"
               className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer"
@@ -41,9 +42,7 @@ export default function Header() {
               <span>Solutions</span>
               <ChevronDown className="h-4 w-4" />
             </Link>
-            <a href="#" className="text-white hover:text-gray-300">
-              Blog
-            </a>
+          
             <div className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer">
               <span>Learn</span>
               <ChevronDown className="h-4 w-4" />

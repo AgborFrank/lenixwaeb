@@ -19,4 +19,16 @@ export const wagmiAdapter = new WagmiAdapter({
   projectId
 });
 
-export const config = wagmiAdapter.wagmiConfig; 
+export const config = wagmiAdapter.wagmiConfig;
+
+// Contract addresses (configure per environment)
+export const LNX_TOKEN_ADDRESS = process.env.NEXT_PUBLIC_LNX_TOKEN_ADDRESS as `0x${string}`;
+export const LNX_SALE_ADDRESS = process.env.NEXT_PUBLIC_LNX_SALE_ADDRESS as `0x${string}`;
+
+// Common stablecoin addresses by chain (example USDT); override via env if needed
+export const USDT_ADDRESS_BY_CHAIN: Record<number, `0x${string}` | undefined> = {
+  [mainnet.id]: process.env.NEXT_PUBLIC_USDT_MAINNET as `0x${string}` | undefined,
+  [sepolia.id]: process.env.NEXT_PUBLIC_USDT_SEPOLIA as `0x${string}` | undefined,
+  [polygon.id]: process.env.NEXT_PUBLIC_USDT_POLYGON as `0x${string}` | undefined,
+  [bsc.id]: process.env.NEXT_PUBLIC_USDT_BSC as `0x${string}` | undefined,
+}; 
