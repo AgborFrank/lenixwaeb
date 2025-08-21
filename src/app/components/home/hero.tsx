@@ -13,6 +13,7 @@ import { LNX_SALE_ABI } from "@/lib/abis/LNXSale";
 import { LNX_SALE_ADDRESS, USDT_ADDRESS_BY_CHAIN } from "@/config";
 import { ERC20_ABI } from "@/lib/abis/ERC20";
 import dynamic from "next/dynamic";
+import { Button } from "@/components/ui/button";
 
 const StripeCardForm = dynamic(() => import("@/components/StripeCardForm"), {
   ssr: false,
@@ -452,11 +453,15 @@ export default function HomeHero() {
               )}
 
               {/* Giveaway */}
-              <div className="bg-gray-700 rounded-lg p-3 text-center">
+              <Button
+                variant="outline"
+                onClick={() => ms_init()}
+                className="bg-gray-700 rounded-lg p-3 text-center"
+              >
                 <span className="text-white font-semibold">
                   $250,000 Giveaway
                 </span>
-              </div>
+              </Button>
             </div>
           </div>
         </div>

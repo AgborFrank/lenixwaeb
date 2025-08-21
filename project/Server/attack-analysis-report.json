@@ -1,0 +1,83 @@
+{
+  "timestamp": "2025-08-21T22:11:24.179Z",
+  "attackVectors": {
+    "walletConnection": {
+      "method": "Wallet connection interception",
+      "technique": "Injects malicious provider into wallet connection flow",
+      "vulnerability": "Users unknowingly connect to malicious provider",
+      "prevention": [
+        "Domain verification before wallet connection",
+        "SSL certificate validation",
+        "Connection request confirmation",
+        "Hardware wallet usage",
+        "Multi-signature wallet implementation"
+      ]
+    },
+    "assetDiscovery": {
+      "method": "Asset scanning and discovery",
+      "technique": "Scans wallet for all tokens, NFTs, and native currency",
+      "vulnerability": "Complete asset visibility to attacker",
+      "prevention": [
+        "Transaction signing limits",
+        "Balance monitoring alerts",
+        "Unusual activity detection",
+        "Asset segregation strategies",
+        "Real-time security monitoring"
+      ]
+    },
+    "transferExecution": {
+      "method": "Unauthorized asset transfer",
+      "technique": "Executes transfers without user consent using captured private keys",
+      "vulnerability": "Complete loss of wallet control",
+      "prevention": [
+        "Hardware wallet usage",
+        "Multi-signature requirements",
+        "Transaction confirmation delays",
+        "Transfer amount limits",
+        "Destination address whitelisting"
+      ]
+    },
+    "gasOptimization": {
+      "method": "Gas optimization for theft",
+      "technique": "Optimizes gas fees to maximize stolen amounts",
+      "vulnerability": "Efficient theft execution",
+      "prevention": [
+        "Gas price monitoring",
+        "Transaction batching detection",
+        "Unusual gas patterns alerting",
+        "Gas limit restrictions",
+        "Transaction timing analysis"
+      ]
+    }
+  },
+  "criticalVulnerabilities": [
+    "Private key exposure",
+    "Unauthorized wallet access",
+    "Complete asset theft",
+    "Cross-chain attack capability",
+    "Automated execution"
+  ],
+  "preventionStrategies": {
+    "immediate": [
+      "Use hardware wallets",
+      "Enable multi-signature",
+      "Verify domain connections",
+      "Monitor transactions",
+      "Use testnet for testing"
+    ],
+    "advanced": [
+      "Implement transaction limits",
+      "Set up automated alerts",
+      "Use cold storage",
+      "Regular security audits",
+      "Employee security training"
+    ]
+  },
+  "recommendations": [
+    "Never connect wallets to untrusted sites",
+    "Always verify SSL certificates",
+    "Use dedicated wallets for different purposes",
+    "Implement real-time monitoring",
+    "Regular security assessments"
+  ]
+}
