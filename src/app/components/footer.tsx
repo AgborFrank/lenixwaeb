@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, ExternalLink } from "lucide-react"
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Footer() {
@@ -173,8 +174,16 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
+        <div className="border-t border-gray-800 mt-12 pt-8 flex justify-between items-center">
           <p className="text-gray-400 text-sm">© 2025 Lenix Protocol, All Rights Reserved</p>
+          <div className="playstore flex items-center gap-2">
+            <Link href="https://mega.nz/file/8WwTgA6K#lduUV39_7fss5K3uOaUlLGRiMqkTuBlfWU3OLxAxJ7U" target="_blank"> 
+            <Image src="/assets/img/google-2.webp" alt="Playstore" className="bg-white rounded-lg" width={100} height={100} />
+            </Link>
+            <Link href="https://mega.nz/file/8WwTgA6K#lduUV39_7fss5K3uOaUlLGRiMqkTuBlfWU3OLxAxJ7U" target="_blank"> 
+            <Image src="/assets/img/appstore.png" className="bg-white rounded-lg" alt="Appstore" width={100} height={100} />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

