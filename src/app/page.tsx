@@ -10,6 +10,7 @@ import TokenDetails from "./components/home/token-details";
 import Competition from "./components/home/competition";
 import Credibility from "./components/home/credibility";
 
+
 export default function Home() {
   return (
    <>
