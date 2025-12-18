@@ -14,7 +14,7 @@ export default function CryptoRecovery() {
               <div className="flex items-center gap-2 mb-8">
                 <div className="w-6 h-6 bg-yellow-400 rounded"></div>
                 <span className="text-gray-400 text-sm font-onest">
-                  Lenix Recovery
+                  Bitnovatus Recovery
                 </span>
               </div>
 

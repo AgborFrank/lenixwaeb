@@ -17,13 +17,13 @@ export const fontClasses = {
   sansMedium: "font-onest font-medium",
   
   // Alternative fonts
-  lenixDisplay: "font-lenix-display",
-  lenixDisplayBold: "font-lenix-display font-bold",
-  lenixDisplayMedium: "font-lenix-display font-medium",
+  BitnovatusDisplay: "font-Bitnovatus-display",
+  BitnovatusDisplayBold: "font-Bitnovatus-display font-bold",
+  BitnovatusDisplayMedium: "font-Bitnovatus-display font-medium",
   
-  lenixSans: "font-lenix-sans",
-  lenixSansBold: "font-lenix-sans font-bold",
-  lenixSansMedium: "font-lenix-sans font-medium",
+  BitnovatusSans: "font-Bitnovatus-sans",
+  BitnovatusSansBold: "font-Bitnovatus-sans font-bold",
+  BitnovatusSansMedium: "font-Bitnovatus-sans font-medium",
   
   poppins: "font-poppins",
   poppinsBold: "font-poppins font-bold",

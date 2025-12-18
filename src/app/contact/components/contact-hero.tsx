@@ -16,7 +16,7 @@ export default function ContactHero() {
             Get in Touch
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Have questions about Lenix? We&apos;re here to help. Reach out to
+            Have questions about Bitnovatus? We&apos;re here to help. Reach out to
             our team for support, partnerships, or general inquiries.
           </p>
         </div>
@@ -28,7 +28,7 @@ export default function ContactHero() {
               <Mail className="w-6 h-6 text-black" />
             </div>
             <h3 className="text-white font-semibold mb-2">Email Us</h3>
-            <p className="text-gray-300 text-sm">support@lenix.com</p>
+            <p className="text-gray-300 text-sm">support@Bitnovatus.com</p>
           </div>
 
           <div className="flex flex-col items-center p-6 bg-gray-800/50 rounded-lg border border-gray-700">

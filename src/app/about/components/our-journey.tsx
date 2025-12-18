@@ -42,7 +42,7 @@ export default function OurJourney() {
                   </div>
                   <p className="text-gray-300 text-sm leading-relaxed">
                     Founded by blockchain enthusiasts and financial experts,
-                    Lenix Protocol was born from a simple idea: make crypto
+                    Bitnovatus was born from a simple idea: make crypto
                     accessible to everyone, not just tech-savvy users.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">

@@ -12,10 +12,10 @@ export default function Comparison() {
               </span>
             </h2>
             <p className="text-md text-gray-600 leading-relaxed font-onest">
-              <span className="font-semibold text-gray-900">LenixPay</span>{" "}
+              <span className="font-semibold text-gray-900">BitnovatusPay</span>{" "}
               operates just like your favorite banking apps, but we allow you to
               send crypto while ensuring your recipients receive fiat. When you
-              need an easy solution for crypto payments, LenixPay is your go-to
+              need an easy solution for crypto payments, BitnovatusPay is your go-to
               protocol.
             </p>
           </div>
@@ -42,12 +42,12 @@ export default function Comparison() {
               </div>
             </div>
 
-            {/* LenixPay Card - Highlighted */}
+            {/* BitnovatusPay Card - Highlighted */}
             <div className="bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-2xl p-6 text-black flex items-center justify-between border-4 border-yellow-500 shadow-lg transform scale-105">
               <div className="flex items-center space-x-4">
                 <div className="text-2xl font-bold flex items-center">
                   <span className="mr-2">⚡</span>
-                  LenixPay
+                  BitnovatusPay
                 </div>
               </div>
               <div className="text-right">

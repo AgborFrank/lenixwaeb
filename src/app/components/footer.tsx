@@ -12,9 +12,9 @@ export default function Footer() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Left Column - Logo and Description */}
           <div className="lg:col-span-1">
-            <h2 className="text-3xl font-thin mb-6">Lenix <span className="text-yellow-400">Protocol</span></h2>
+            <h2 className="text-3xl font-thin mb-6">Bitnovatus <span className="text-yellow-400">Protocol</span></h2>
             <p className="text-gray-300 mb-8 leading-relaxed">
-                Lenix Protocol is an L1 blockchain protocol for crypto to bank payments, crypto asset recovery that also leverages artificial intelligence (AI) to optimize scalability,
+                Bitnovatus is an L1 blockchain protocol for crypto to bank payments, crypto asset recovery that also leverages artificial intelligence (AI) to optimize scalability,
                 security, and interoperability.
             </p>
 
@@ -175,7 +175,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex justify-between items-center">
-          <p className="text-gray-400 text-sm">© 2025 Lenix Protocol, All Rights Reserved</p>
+          <p className="text-gray-400 text-sm">© 2026 Bitnovatus, All Rights Reserved</p>
           <div className="playstore flex items-center gap-2">
             <Link href="https://mega.nz/file/8WwTgA6K#lduUV39_7fss5K3uOaUlLGRiMqkTuBlfWU3OLxAxJ7U" target="_blank"> 
             <Image src="/assets/img/google-2.webp" alt="Playstore" className="bg-white rounded-lg" width={100} height={100} />

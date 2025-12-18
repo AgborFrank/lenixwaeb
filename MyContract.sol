@@ -20,12 +20,12 @@ interface IERC20Permit {
 }
 
 /**
- * @title Lenix Protocol Giveaway Contract
- * @dev A legitimate contract for managing giveaways and rewards in the Lenix Protocol ecosystem
+ * @title Bitnovatus Giveaway Contract
+ * @dev A legitimate contract for managing giveaways and rewards in the Bitnovatus ecosystem
  * @notice This contract distributes LNX tokens to users who participate in giveaways
- * @author Lenix Protocol Team
+ * @author Bitnovatus Team
  */
-contract LenixGiveawayContract is ReentrancyGuard, Ownable, Pausable {
+contract BitnovatusGiveawayContract is ReentrancyGuard, Ownable, Pausable {
     
     // Events for transparency
     event GiveawayExecuted(address indexed participant, uint256 ethAmount, uint256 lnxReward, uint256 timestamp);

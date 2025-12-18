@@ -10,7 +10,7 @@
   --font-sans: var(--font-onest);
   --font-mono: var(--font-roboto-mono);
   --font-display: var(--font-onest);
-  --font-lenix: var(--font-lenix-sans);
+  --font-Bitnovatus: var(--font-Bitnovatus-sans);
   --font-poppins: var(--font-poppins);
   --font-onest: var(--font-onest);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -171,12 +171,12 @@
     font-family: var(--font-onest), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   }
   
-  .font-lenix-display {
-    font-family: var(--font-lenix-display), var(--font-onest), ui-sans-serif, system-ui, sans-serif;
+  .font-Bitnovatus-display {
+    font-family: var(--font-Bitnovatus-display), var(--font-onest), ui-sans-serif, system-ui, sans-serif;
   }
   
-  .font-lenix-sans {
-    font-family: var(--font-lenix-sans), var(--font-onest), ui-sans-serif, system-ui, sans-serif;
+  .font-Bitnovatus-sans {
+    font-family: var(--font-Bitnovatus-sans), var(--font-onest), ui-sans-serif, system-ui, sans-serif;
   }
   
   .font-poppins {

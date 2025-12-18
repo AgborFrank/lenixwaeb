@@ -8,7 +8,7 @@ export default function Credibility() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-black mb-4">
-            Lenix Protocol in{" "}
+            Bitnovatus in{" "}
             <span className="bg-yellow-400 px-2 py-1 rounded-full">detail</span>
           </h2>
           <p className="text-xl text-gray-600 mb-2">
@@ -33,7 +33,7 @@ export default function Credibility() {
               height={100}
             />
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Lenix Protocol has been fully audited by CertiK, the world&apos;s
+              Bitnovatus has been fully audited by CertiK, the world&apos;s
               leading blockchain security firm.
             </p>
             <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded-lg transition-colors duration-200 flex items-center space-x-2 mx-auto">

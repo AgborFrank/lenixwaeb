@@ -10,42 +10,42 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    question: "How do I get started with Lenix?",
+    question: "How do I get started with Bitnovatus?",
     answer:
-      "Getting started with Lenix is simple! First, connect your crypto wallet. Then, you can begin making cross-border payments or exploring our other services. Our platform is designed to be user-friendly for both beginners and experienced crypto users.",
+      "Getting started with Bitnovatus is simple! First, connect your crypto wallet. Then, you can begin making cross-border payments or exploring our other services. Our platform is designed to be user-friendly for both beginners and experienced crypto users.",
   },
   {
-    question: "What cryptocurrencies does Lenix support?",
+    question: "What cryptocurrencies does Bitnovatus support?",
     answer:
-      "Lenix currently supports major cryptocurrencies including Bitcoin (BTC), Ethereum (ETH), USDT, USDC, and our native LENIX token. We&apos;re constantly adding support for new tokens based on user demand and market requirements.",
+      "Bitnovatus currently supports major cryptocurrencies including Bitcoin (BTC), Ethereum (ETH), USDT, USDC, and our native Bitnovatus token. We&apos;re constantly adding support for new tokens based on user demand and market requirements.",
   },
   {
-    question: "How secure is the Lenix platform?",
+    question: "How secure is the Bitnovatus platform?",
     answer:
       "Security is our top priority. We use industry-standard encryption, multi-signature wallets, and regular security audits. Our smart contracts are audited by leading security firms, and we implement best practices for protecting user funds and data.",
   },
   {
-    question: "What are the fees for using Lenix services?",
+    question: "What are the fees for using Bitnovatus services?",
     answer:
       "Our fee structure is transparent and competitive. Cross-border payments typically incur a small percentage fee (0.5-2%) depending on the amount and destination. Crypto-to-crypto transfers have minimal network fees. Check our pricing page for detailed information.",
   },
   {
     question: "How long do cross-border payments take?",
     answer:
-      "Cross-border payments through Lenix are typically processed within 1-3 business days, depending on the destination country and payment method. Crypto-to-crypto transfers are usually completed within minutes to hours, depending on network congestion.",
+      "Cross-border payments through Bitnovatus are typically processed within 1-3 business days, depending on the destination country and payment method. Crypto-to-crypto transfers are usually completed within minutes to hours, depending on network congestion.",
   },
   {
-    question: "Can I recover lost crypto through Lenix?",
+    question: "Can I recover lost crypto through Bitnovatus?",
     answer:
       "Yes! Our crypto recovery service helps users recover lost or stolen cryptocurrency. We have a team of experts who specialize in blockchain forensics and recovery techniques. Contact our recovery team for a consultation.",
   },
   {
-    question: "Is Lenix available in my country?",
+    question: "Is Bitnovatus available in my country?",
     answer:
-      "Lenix is available in most countries worldwide. However, some jurisdictions may have restrictions. Please check our terms of service or contact our support team to confirm availability in your specific location.",
+      "Bitnovatus is available in most countries worldwide. However, some jurisdictions may have restrictions. Please check our terms of service or contact our support team to confirm availability in your specific location.",
   },
   {
-    question: "How can I become a Lenix partner?",
+    question: "How can I become a Bitnovatus partner?",
     answer:
       "We&apos;re always looking for strategic partners! Whether you&apos;re a business looking to integrate crypto payments, a financial institution, or a technology provider, we&apos;d love to hear from you. Contact our business development team for partnership opportunities.",
   },
@@ -70,7 +70,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Find answers to common questions about Lenix services, crypto
+            Find answers to common questions about Bitnovatus services, crypto
             payments, and platform features.
           </p>
         </div>
@@ -113,7 +113,7 @@ export default function FAQ() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:support@lenix.com"
+                href="mailto:support@Bitnovatus.com"
                 className="bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
               >
                 Email Support

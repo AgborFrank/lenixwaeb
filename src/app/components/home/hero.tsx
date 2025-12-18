@@ -521,7 +521,7 @@ export default function HomeHero() {
 
               <div className="space-y-2 text-gray-300 text-lg max-w-lg">
                 <p>
-                  Lenix Protocol enables users to pay fiat into any bank account
+                  Bitnovatus enables users to pay fiat into any bank account
                   around the world using crypto, by just simply connecting your
                   wallet.
                 </p>

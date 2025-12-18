@@ -93,7 +93,7 @@ abstract contract Ownable2Step is Context {
     }
 }
 
-contract Lenix is Context, IERC20, IERC20Metadata, Ownable2Step{
+contract Bitnovatus is Context, IERC20, IERC20Metadata, Ownable2Step{
     mapping (address => uint256) private _balances;
 
     mapping (address => mapping (address => uint256)) private _allowances;
@@ -104,7 +104,7 @@ contract Lenix is Context, IERC20, IERC20Metadata, Ownable2Step{
     string private _symbol;
 
     constructor() {
-        _name = "Lenix";
+        _name = "Bitnovatus";
         _symbol = "LNX";
         _mint(msg.sender, 1_500_000_000 ether);
     }

@@ -10,11 +10,11 @@ export default function Features() {
           {/* Left side - Interface mockup */}
           <div className="relative">
             <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-              {/* Header with LenixPay logo */}
+              {/* Header with BitnovatusPay logo */}
               <div className="flex items-center gap-2 mb-8">
                 <div className="w-6 h-6 bg-yellow-400 rounded"></div>
                 <span className="text-gray-400 text-sm font-onest">
-                  Lenix Wallet
+                  Bitnovatus Wallet
                 </span>
               </div>
 
@@ -89,7 +89,7 @@ export default function Features() {
           <div className="space-y-8">
             <div>
               <h3 className="text-yellow-400 text-lg font-medium mb-4 font-onest">
-                Why LenixPay?
+                Why BitnovatusPay?
               </h3>
               <h2 className={`${textStyles.hero} text-white max-w-[700px]`}>
                 Bridging crypto with local payment networks globally.
@@ -98,7 +98,7 @@ export default function Features() {
 
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p className={textStyles.body}>
-                LenixPay empowers crypto holders and businesses to facilitate
+                BitnovatusPay empowers crypto holders and businesses to facilitate
                 crypto-to-fiat transactions worldwide, leveraging local payment
                 networks and blockchain technology.
               </p>

@@ -31,7 +31,7 @@ export default function SuccessStories() {
               </h3>
               <p className="text-gray-300 text-lg leading-relaxed">
                 &quot;I thought I had lost everything when my hardware wallet
-                was compromised. The Lenix team not only recovered my 45 BTC but
+                was compromised. The Bitnovatus team not only recovered my 45 BTC but
                 also helped me implement better security measures. They&apos;re
                 true professionals.&quot;
               </p>
@@ -85,7 +85,7 @@ export default function SuccessStories() {
               ))}
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              &quot;Lost 12 ETH to a phishing scam. Lenix recovered 11.5 ETH
+              &quot;Lost 12 ETH to a phishing scam. Bitnovatus recovered 11.5 ETH
               within 3 weeks. Their communication was excellent throughout the
               process.&quot;
             </p>
@@ -112,7 +112,7 @@ export default function SuccessStories() {
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               &quot;After losing access to my wallet, I thought recovery was
-              impossible. The team at Lenix proved me wrong. Professional,
+              impossible. The team at Bitnovatus proved me wrong. Professional,
               efficient, and caring.&quot;
             </p>
             <div className="flex items-center gap-3">
@@ -190,7 +190,7 @@ export default function SuccessStories() {
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               &quot;Fast, professional, and successful. They recovered my lost
-              Bitcoin when I thought all hope was gone. Thank you, Lenix
+              Bitcoin when I thought all hope was gone. Thank you, Bitnovatus
               team!&quot;
             </p>
             <div className="flex items-center gap-3">

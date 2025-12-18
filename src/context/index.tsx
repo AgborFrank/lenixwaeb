@@ -16,9 +16,9 @@ if (!projectId) {
 }
 
 const metadata = {
-  name: "Lenix Protocol",
+  name: "Bitnovatus",
   description: "Cross-border payments powered by blockchain technology",
-  url: "https://lenix.example",
+  url: "https://Bitnovatus.example",
   icons: ["https://avatars.githubusercontent.com/u/179229932"],
 };
 
@@ -28,7 +28,8 @@ createAppKit({
   networks: [mainnet, sepolia, polygon, bsc],
   metadata,
   features: {
-    analytics: true,
+    // Disable analytics in development to avoid allowlist errors
+    analytics: process.env.NODE_ENV === "production",
   },
   themeMode: appkitTheme.themeMode,
 

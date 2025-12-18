@@ -1,6 +1,6 @@
 # Reown AppKit Theme Customization
 
-This document outlines the comprehensive theme customization system for the Lenix Protocol's Reown AppKit integration.
+This document outlines the comprehensive theme customization system for the Bitnovatus's Reown AppKit integration.
 
 ## Overview
 

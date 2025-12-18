@@ -9,11 +9,11 @@ export default function CompanyOverview() {
           {/* Left side - Company Interface mockup */}
           <div className="relative">
             <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-              {/* Header with Lenix logo */}
+              {/* Header with Bitnovatus logo */}
               <div className="flex items-center gap-2 mb-8">
                 <div className="w-6 h-6 bg-yellow-400 rounded"></div>
                 <span className="text-gray-400 text-sm font-onest">
-                  Lenix Protocol
+                  Bitnovatus
                 </span>
               </div>
 
@@ -132,7 +132,7 @@ export default function CompanyOverview() {
           <div className="space-y-8">
             <div>
               <h3 className="text-yellow-400 text-lg font-medium mb-4 font-onest">
-                About Lenix Protocol
+                About Bitnovatus
               </h3>
               <h2 className={`${textStyles.hero} text-white `}>
                 Revolutionizing global finance through innovative blockchain
@@ -142,7 +142,7 @@ export default function CompanyOverview() {
 
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p className={textStyles.body}>
-                Founded in 2023, Lenix Protocol is growing from a small startup
+                Founded in 2023, Bitnovatus is growing from a small startup
                 to a global leader in crypto-to-fiat payment solutions. Our
                 mission is to bridge the gap between traditional banking and the
                 decentralized future.

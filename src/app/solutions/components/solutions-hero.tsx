@@ -21,7 +21,7 @@ export default function SolutionsHero() {
             </h1>
             <p className="text-gray-300 text-xl max-w-3xl mx-auto leading-relaxed">
               From recovery to security, lending to cross-border payments -
-              Lenix Protocol provides comprehensive solutions for the modern
+              Bitnovatus provides comprehensive solutions for the modern
               crypto ecosystem.
             </p>
           </div>

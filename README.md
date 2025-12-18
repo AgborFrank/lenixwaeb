@@ -1,4 +1,4 @@
-# Lenix Protocol
+# Bitnovatus
 
 A Next.js application that integrates with Reown appkit to enable crypto wallet connectivity and cross-border payment functionality.
 

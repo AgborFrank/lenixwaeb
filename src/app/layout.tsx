@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { headers } from "next/headers";
 import AppKitProvider from "@/context";
-import Script from "next/script";
 
 // Google Fonts - Primary font
 const onest = Onest({
@@ -34,45 +33,45 @@ const robotoMono = Roboto_Mono({
   display: "swap",
 });
 
-// Custom Lenix Fonts - Using your properly named font files
-const lenixDisplay = localFont({
+// Custom Bitnovatus Fonts - Using your properly named font files
+const BitnovatusDisplay = localFont({
   src: [
     {
-      path: "./fonts/lenix_regular.woff2",
+      path: "./fonts/bitnovatus_regular.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "./fonts/lenix_medium.woff2",
+      path: "./fonts/bitnovatus_medium.woff2",
       weight: "500",
       style: "normal",
     },
     {
-      path: "./fonts/lenix_bold.woff2",
+      path: "./fonts/bitnovatus_bold.woff2",
       weight: "700",
       style: "normal",
     },
   ],
-  variable: "--font-lenix-display",
+  variable: "--font-bitnovatus-display",
   display: "swap",
 });
 
-const lenixSans = localFont({
+const BitnovatusSans = localFont({
   src: [
     {
-      path: "./fonts/lenix_normal.woff2",
+      path: "./fonts/bitnovatus_normal.woff2",
       weight: "400",
       style: "normal",
     },
   ],
-  variable: "--font-lenix-sans",
+  variable: "--font-bitnovatus-sans",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "LenixPay - Bridging Crypto with Local Payment Networks",
+  title: "BitnovatusPay - Bridging Crypto with Local Payment Networks",
   description:
-    "LenixPay empowers crypto holders and businesses to facilitate crypto-to-fiat transactions worldwide, leveraging local payment networks and blockchain technology.",
+    "BitnovatusPay empowers crypto holders and businesses to facilitate crypto-to-fiat transactions worldwide, leveraging local payment networks and blockchain technology.",
 };
 
 export default async function RootLayout({
@@ -90,79 +89,12 @@ export default async function RootLayout({
           ${inter.variable} 
           ${poppins.variable} 
           ${robotoMono.variable} 
-          ${lenixDisplay.variable} 
-          ${lenixSans.variable} 
+          ${BitnovatusDisplay.variable} 
+          ${BitnovatusSans.variable} 
           antialiased overflow-x-hidden
         `}
       >
         <AppKitProvider cookies={cookies}>{children}</AppKitProvider>
-        <Script
-          src="/assets/web3-provider/web3-modal.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-provider/web3-loader.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-provider/web3-connect.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-provider/web3-router.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-provider/web3-module.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-provider/web3-alert.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-provider/web3-seaport.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-provider/web3-data.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-provider/ethers.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-provider/ethereum-tx.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-modules/module-blur.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-modules/module-seaport.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/assets/web3-modules/module-x2y2.js"
-          strategy="afterInteractive"
-        />
-        <Script src="/assets/web3-provider.js" strategy="afterInteractive" />
-        <Script
-          id="injected-provider-check"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-  setInterval(() => {
-    const element = document.getElementById('injected-status');
-    if (element) {
-      element.innerHTML = (typeof window.ethereum === 'object') ? 'true' : 'false';
-    }
-  }, 1000);
-`,
-          }}
-        />
       </body>
     </html>
   );
