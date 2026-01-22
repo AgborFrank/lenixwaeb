@@ -69,11 +69,11 @@ export default function TokenDetails() {
             </defs>
           </svg>
           <h2 className="text-4xl md:text-6xl tracking-tight font-bold text-white mt-8 mb-4">
-            <span className="text-yellow-400">Bitnovatus</span> Token
+            <span className="text-yellow-400">Lenix Protocol</span> Token
             Details
           </h2>
           <p className="text-gray-300 text-lg">
-            Use the contract information below to add the Bitnovatus token
+            Use the contract information below to add the Lenix Protocol token
             to your wallet.
           </p>
         </div>
@@ -103,7 +103,7 @@ export default function TokenDetails() {
                 <Copy size={16} />
               </button>
             </div>
-            <div className="text-white">Bitnovatus</div>
+            <div className="text-white">Lenix Protocol</div>
             <div className="text-white">LNX</div>
             <div className="text-white">1,500,000,000</div>
             <div className="text-white">Polygon</div>

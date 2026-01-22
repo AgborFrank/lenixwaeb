@@ -57,7 +57,7 @@ export default function AboutHero() {
               {/* Header */}
               <div className="text-center mb-6">
                 <h3 className="text-white text-xl font-bold mb-1">
-                  Bitnovatus
+                  Lenix Protocol
                 </h3>
                 <p className="text-yellow-400 text-lg font-semibold">
                   Company Overview

@@ -14,7 +14,7 @@ export default function CrossBorderPayments() {
               <div className="flex items-center gap-2 mb-8">
                 <div className="w-6 h-6 bg-yellow-400 rounded"></div>
                 <span className="text-gray-400 text-sm font-onest">
-                  BitnovatusPay
+                  Lenix ProtocolPay
                 </span>
               </div>
 
@@ -124,7 +124,7 @@ export default function CrossBorderPayments() {
 
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p className={textStyles.body}>
-                BitnovatusPay enables seamless cross-border payments by converting
+                Lenix ProtocolPay enables seamless cross-border payments by converting
                 crypto to fiat and delivering directly to any bank account
                 worldwide.
               </p>

@@ -69,9 +69,9 @@ const BitnovatusSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "BitnovatusPay - Bridging Crypto with Local Payment Networks",
+  title: "Lenix Finance - Bridging Crypto with Local Payment Networks",
   description:
-    "BitnovatusPay empowers crypto holders and businesses to facilitate crypto-to-fiat transactions worldwide, leveraging local payment networks and blockchain technology.",
+    "Lenix Finance empowers crypto holders and businesses to facilitate crypto-to-fiat transactions worldwide, leveraging local payment networks and blockchain technology.",
 };
 
 export default async function RootLayout({

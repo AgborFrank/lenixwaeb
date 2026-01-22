@@ -94,7 +94,7 @@ export default function Merchant() {
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
                 <p>
                   Looking to offer crypto payments to your customers and settle
-                  transactions in fiat via Bitnovatus Pay API
+                  transactions in fiat via Lenix Protocol Pay API
                 </p>
               </div>
 
@@ -112,7 +112,7 @@ export default function Merchant() {
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
                 <p>
-                  You can set up a merchant account using the Bitnovatus
+                  You can set up a merchant account using the Lenix Protocol
                   platform or through our API, and receive payments directly to
                   your wallet with zero fees.
                 </p>

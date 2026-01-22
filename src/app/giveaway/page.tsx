@@ -9,9 +9,9 @@ import {
 } from "@/components/ui/accordion";
 
 export const metadata: Metadata = {
-  title: "$250K Giveaway – Bitnovatus",
+  title: "$250K Giveaway – Lenix Protocol",
   description:
-    "Enter the Bitnovatus $250,000 Giveaway. Ten winners receive $25,000 in LNX. Learn how to enter, prizes, rules, and FAQs.",
+    "Enter the Lenix Protocol $250,000 Giveaway. Ten winners receive $25,000 in LNX. Learn how to enter, prizes, rules, and FAQs.",
 };
 
 export default function Giveaway() {

@@ -46,18 +46,18 @@ export default function ContactInfo() {
               <h3 className="text-white font-semibold mb-1">Email Address</h3>
               <p className="text-gray-300 text-sm">
                 <a
-                  href="mailto:hello@Bitnovatus.com"
+                  href="mailto:hello@Lenix Protocol.com"
                   className="hover:text-yellow-400 transition-colors"
                 >
-                  hello@Bitnovatus.com
+                  hello@Lenix Protocol.com
                 </a>
               </p>
               <p className="text-gray-300 text-sm">
                 <a
-                  href="mailto:support@Bitnovatus.com"
+                  href="mailto:support@Lenix Protocol.com"
                   className="hover:text-yellow-400 transition-colors"
                 >
-                  support@Bitnovatus.com
+                  support@Lenix Protocol.com
                 </a>
               </p>
             </div>
@@ -104,10 +104,10 @@ export default function ContactInfo() {
               <h3 className="text-white font-semibold mb-1">Website</h3>
               <p className="text-gray-300 text-sm">
                 <a
-                  href="https://Bitnovatus.com"
+                  href="https://Lenix Protocol.com"
                   className="hover:text-yellow-400 transition-colors"
                 >
-                  https://Bitnovatus.com
+                  https://Lenix Protocol.com
                 </a>
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function ContactInfo() {
 
         <div className="grid grid-cols-2 gap-4">
           <a
-            href="https://twitter.com/Bitnovatus"
+            href="https://twitter.com/Lenix Protocol"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-3 p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
@@ -151,7 +151,7 @@ export default function ContactInfo() {
           </a>
 
           <a
-            href="https://linkedin.com/company/Bitnovatus"
+            href="https://linkedin.com/company/Lenix Protocol"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-3 p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
@@ -161,7 +161,7 @@ export default function ContactInfo() {
           </a>
 
           <a
-            href="https://github.com/Bitnovatus"
+            href="https://github.com/Lenix Protocol"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-3 p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"
@@ -171,7 +171,7 @@ export default function ContactInfo() {
           </a>
 
           <a
-            href="https://t.me/Bitnovatus"
+            href="https://t.me/Lenix Protocol"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center space-x-3 p-4 bg-gray-700 rounded-lg hover:bg-gray-600 transition-colors"

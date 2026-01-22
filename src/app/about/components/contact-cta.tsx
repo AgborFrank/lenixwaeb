@@ -38,8 +38,8 @@ export default function ContactCTA() {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold">Email Us</h4>
-                    <p className="text-gray-400">hello@Bitnovatusprotocol.com</p>
-                    <p className="text-gray-400">support@Bitnovatusprotocol.com</p>
+                    <p className="text-gray-400">hello@Lenix Protocolprotocol.com</p>
+                    <p className="text-gray-400">support@Lenix Protocolprotocol.com</p>
                   </div>
                 </div>
 

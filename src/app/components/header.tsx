@@ -17,10 +17,11 @@ export default function Header() {
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex-shrink-0 z-20">
-            <Image src="/assets/img/logo.png" alt="logo" width={130} height={100} />
+          <Link href="/">
+          <div className="shrink-0 z-20">
+            <Image src="/assets/img/logo.png" alt="logo" width={150} height={40} className="h-10 w-auto" />
           </div>
-
+          </Link>
           {/* Desktop Navigation Menu */}
           <nav className="hidden md:flex items-center space-x-8 z-20 text-[14px]">
             <Link

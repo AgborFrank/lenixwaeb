@@ -16,9 +16,9 @@ if (!projectId) {
 }
 
 const metadata = {
-  name: "Bitnovatus",
+  name: "Lenix Protocol",
   description: "Cross-border payments powered by blockchain technology",
-  url: "https://Bitnovatus.example",
+  url: "https://Lenix Protocol.example",
   icons: ["https://avatars.githubusercontent.com/u/179229932"],
 };
 
