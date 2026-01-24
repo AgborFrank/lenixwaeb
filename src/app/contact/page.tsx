@@ -64,7 +64,7 @@ export default function ContactPage() {
         </svg>
       </div>
       <section className=" bg-black">
-        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="grid lg:grid-cols-2 gap-12">
             <ContactForm />
             <div className="div ">

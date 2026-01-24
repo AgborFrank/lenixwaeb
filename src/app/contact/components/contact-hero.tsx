@@ -28,7 +28,7 @@ export default function ContactHero() {
               <Mail className="w-6 h-6 text-black" />
             </div>
             <h3 className="text-white font-semibold mb-2">Email Us</h3>
-            <p className="text-gray-300 text-sm">support@Lenix Protocol.com</p>
+            <p className="text-gray-300 text-sm">contact@lenixprotocol.com</p>
           </div>
 
           <div className="flex flex-col items-center p-6 bg-gray-800/50 rounded-lg border border-gray-700">
@@ -44,7 +44,7 @@ export default function ContactHero() {
               <Phone className="w-6 h-6 text-black" />
             </div>
             <h3 className="text-white font-semibold mb-2">Call Us</h3>
-            <p className="text-gray-300 text-sm">+1 (555) 123-4567</p>
+            <p className="text-gray-300 text-sm">+447887052128</p>
           </div>
         </div>
       </div>

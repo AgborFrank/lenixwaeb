@@ -9,11 +9,11 @@ export default function TokenDetails() {
  const tokenAddress = process.env.NEXT_PUBLIC_LNX_TOKEN_ADDRESS;
   return (
     
-    <section className="bg-black bg-accept py-16 px-4">
+    <section className="relative bg-black bg-accept py-16 px-4 overflow-x-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 via-transparent to-yellow-500/10"></div>
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-yellow-500/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-400/15 rounded-full blur-3xl"></div>
+      <div className="absolute top-10 left-10 md:left-1/4 w-48 h-48 md:w-96 md:h-96 bg-yellow-500/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-10 right-10 md:right-1/4 w-48 h-48 md:w-96 md:h-96 bg-yellow-400/15 rounded-full blur-3xl"></div>
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center mb-12">
           <svg
@@ -111,14 +111,14 @@ export default function TokenDetails() {
           </div>
         </div>
       </div>
-      <div className="bg-tokenomics">
+      <div className="bg-tokenomics pointer-events-none">
         <img
-          className="absolute -bottom-1/3 -left-1/3"
+          className="absolute bottom-0 left-0 opacity-30 hidden md:block"
           src="/assets/img/noise.png"
           alt="noise"
         />
         <img
-          className="absolute -bottom-40 -right-1/3"
+          className="absolute bottom-0 right-0 opacity-30 hidden md:block"
           src="/assets/img/noise.png"
           alt="noise"
         />

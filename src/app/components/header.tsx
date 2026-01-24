@@ -19,7 +19,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
           <div className="shrink-0 z-20">
-            <Image src="/assets/img/logo.png" alt="logo" width={150} height={40} className="h-10 w-auto" />
+            <Image src="/assets/img/logo.png" alt="logo" width={150} height={40} className="h-[30px] w-[145px]" />
           </div>
           </Link>
           {/* Desktop Navigation Menu */}

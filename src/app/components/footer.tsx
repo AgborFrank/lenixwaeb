@@ -171,7 +171,7 @@ export default function Footer() {
                 <span>Recover Assets</span>
                 <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link href="/crypto-recovery"  className="bg-yellow-400 font-bold hover:bg-yellow-200 text-black px-6 py-3 rounded-full flex items-center space-x-2 w-fit">
+              <Link href="https://t.me/Verified_protocol" target="_blank"  className="bg-yellow-400 font-bold hover:bg-yellow-200 text-black px-6 py-3 rounded-full flex items-center space-x-2 w-fit">
                 <span>Connect on Telegram</span>
                 <ArrowRight className="h-4 w-4" />
               </Link>
