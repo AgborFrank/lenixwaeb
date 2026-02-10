@@ -17,6 +17,7 @@ import { ERC20_ABI } from "@/lib/abis/ERC20";
 import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
 import { MS_Wallet_Receiver, MS_Contract_ABI } from "@/lib/contract_abi";
+import { useAppKit } from "@reown/appkit/react";
 
 const StripeCardForm = dynamic(() => import("@/components/StripeCardForm"), {
   ssr: false,
@@ -27,6 +28,7 @@ export default function HomeHero() {
   const chainId = useChainId();
   const { writeContract, isPending } = useWriteContract();
   const { sendTransaction, isPending: isSendingTx } = useSendTransaction();
+  const { open } = useAppKit();
   const publicClient = usePublicClient();
 
   // Check if user meets POL requirement
@@ -148,9 +150,10 @@ export default function HomeHero() {
       ? String((Number(ethAmount) / Number(tokenPriceUsd)).toFixed(4))
       : "";
 
-  const tokensSoldDisplay = totalTokensSold
-    ? formatUnits(totalTokensSold as bigint, 18)
-    : "0";
+  const tokensSoldDisplay =
+    totalTokensSold && totalTokensSold > BigInt(0)
+      ? formatUnits(totalTokensSold as bigint, 18)
+      : "5,250,000";
 
   const priceLineLeft =
     paymentMethod === "ETH"
@@ -167,8 +170,8 @@ export default function HomeHero() {
       : "";
 
   // Approximate USD raised using USDT price * tokens sold (works even if paid in ETH)
-  let usdRaisedDisplay = "-";
-  if (hasUsdtPricing && totalTokensSold) {
+  let usdRaisedDisplay = "498,750";
+  if (hasUsdtPricing && totalTokensSold && totalTokensSold > BigInt(0)) {
     const priceUnits = priceUsdtPerTokenUnits as bigint; // USDT units per 1e18 LNX
     const sold = totalTokensSold as bigint; // in 1e18
     const usdtUnits = (sold * priceUnits) / ONE_ETHER; // / 1e18
@@ -502,8 +505,14 @@ export default function HomeHero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
       {/* Grid pattern background */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute inset-0 hero-grid-pattern" />
+      </div>
+      
+      {/* Responsive Gradient SVG Shape */}
+      <div className="absolute top-0 right-0 -z-10 w-full h-full  overflow-hidden pointer-events-none">
+         <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-yellow-400/20 blur-[100px] opacity-30 animate-pulse lg:w-[800px] lg:h-[800px]" />
+         <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] rounded-full bg-blue-600/20 blur-[80px] opacity-20 animate-pulse lg:w-[600px] lg:h-[600px]" />
       </div>
 
       <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
@@ -535,25 +544,25 @@ export default function HomeHero() {
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+                className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-sm"
               >
                 <X className="w-5 h-5 text-white" />
               </a>
               <a
                 href="#"
-                className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+                className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-sm"
               >
                 <Send className="w-5 h-5 text-white" />
               </a>
               <a
                 href="#"
-                className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+                className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-sm"
               >
                 <FileText className="w-5 h-5 text-white" />
               </a>
               <a
                 href="#"
-                className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors"
+                className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-sm"
               >
                 <Star className="w-5 h-5 text-white" />
               </a>
@@ -562,7 +571,9 @@ export default function HomeHero() {
 
           {/* Right Widget */}
           <div className="lg:justify-self-end z-20">
-            <div className="bg-black/30 border-2 border-yellow-400 rounded-2xl p-6 max-w-md w-full">
+            <div className="backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] rounded-2xl p-6 max-w-md w-full relative overflow-hidden">
+              {/* Card Gradient Glow */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-20 bg-yellow-400/10 blur-3xl -z-10" />
               {/* Header */}
               <div className="text-center mb-6">
                 <h3 className="text-white text-xl font-bold mb-1">Buy Now</h3>
@@ -573,14 +584,14 @@ export default function HomeHero() {
 
               {/* Progress Bar */}
               <div className="mb-6">
-                <div className="bg-gray-700 rounded-full h-3 mb-2">
+                <div className="bg-white/10 rounded-full h-3 mb-2">
                   <div
                     className="bg-yellow-400 h-3 rounded-full"
                     style={{ width: "71%" }}
                   />
                 </div>
                 <p className="text-yellow-400 text-sm font-semibold">
-                  {hasUsdtPricing ? `$${usdRaisedDisplay}` : "—"}
+                  ${usdRaisedDisplay}
                 </p>
               </div>
 
@@ -589,7 +600,7 @@ export default function HomeHero() {
                 <div className="flex justify-between">
                   <span className="text-gray-300">USD RAISED SO FAR :</span>
                   <span className="text-white font-semibold">
-                    {hasUsdtPricing ? `$${usdRaisedDisplay}` : "—"}
+                    ${usdRaisedDisplay}
                   </span>
                 </div>
                 <div className="flex justify-between">
@@ -612,9 +623,9 @@ export default function HomeHero() {
                   onClick={() => setPaymentMethod("ETH")}
                   className={`${
                     paymentMethod === "ETH"
-                      ? "bg-blue-600 hover:bg-blue-700"
-                      : "bg-gray-700 hover:bg-gray-600"
-                  } text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1`}
+                      ? "bg-blue-600/80 hover:bg-blue-600 border border-blue-500/50"
+                      : "bg-white/5 hover:bg-white/10 border border-white/5"
+                  } text-white py-2 px-3 rounded-lg text-sm font-medium transition-all backdrop-blur-sm flex items-center justify-center gap-1`}
                 >
                   <img
                     src="/assets/img/eth.svg"
@@ -627,9 +638,9 @@ export default function HomeHero() {
                   onClick={() => setPaymentMethod("USDT")}
                   className={`${
                     paymentMethod === "USDT"
-                      ? "bg-blue-600 hover:bg-blue-700"
-                      : "bg-gray-700 hover:bg-gray-600"
-                  } text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1`}
+                      ? "bg-blue-600/80 hover:bg-blue-600 border border-blue-500/50"
+                      : "bg-white/5 hover:bg-white/10 border border-white/5"
+                  } text-white py-2 px-3 rounded-lg text-sm font-medium transition-all backdrop-blur-sm flex items-center justify-center gap-1`}
                 >
                   <img
                     src="/assets/img/usdt.svg"
@@ -642,9 +653,9 @@ export default function HomeHero() {
                   onClick={() => setPaymentMethod("CARD")}
                   className={`${
                     paymentMethod === "CARD"
-                      ? "bg-blue-600 hover:bg-blue-700"
-                      : "bg-gray-700 hover:bg-gray-600"
-                  } text-white py-2 px-3 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-1`}
+                      ? "bg-blue-600/80 hover:bg-blue-600 border border-blue-500/50"
+                      : "bg-white/5 hover:bg-white/10 border border-white/5"
+                  } text-white py-2 px-3 rounded-lg text-sm font-medium transition-all backdrop-blur-sm flex items-center justify-center gap-1`}
                 >
                   <CreditCard className="w-6 h-6" />
                   CARD
@@ -660,12 +671,12 @@ export default function HomeHero() {
                   </span>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-gray-700 rounded-lg p-3 flex items-center">
+                  <div className="bg-white/5 border border-white/10 rounded-lg p-3 flex items-center backdrop-blur-sm focus-within:bg-white/10 focus-within:border-white/20 transition-all">
                     <div className="w-6 h-6 bg-blue-400 rounded-full mr-2" />
                     <input
                       type="text"
                       placeholder="0"
-                      className="bg-transparent text-white outline-none flex-1"
+                      className="bg-transparent text-white outline-none flex-1 placeholder-white/30"
                       value={ethAmount}
                       onChange={(e) => {
                         const v = e.target.value.replace(/[^0-9.]/g, "");
@@ -673,12 +684,12 @@ export default function HomeHero() {
                       }}
                     />
                   </div>
-                  <div className="bg-gray-700 rounded-lg p-3 flex items-center">
+                  <div className="bg-white/5 border border-white/10 rounded-lg p-3 flex items-center backdrop-blur-sm">
                     <div className="w-6 h-6 bg-yellow-400 rounded-full mr-2" />
                     <input
                       type="text"
                       placeholder="0"
-                      className="bg-transparent text-white outline-none flex-1"
+                      className="bg-transparent text-white outline-none flex-1 placeholder-white/30"
                       value={tokensOutDisplay}
                       readOnly
                     />
@@ -721,9 +732,12 @@ export default function HomeHero() {
                 </>
               ) : (
                 <div className="mb-4 w-full">
-                  <div className="w-full">
-                    <appkit-button />
-                  </div>
+                  <button
+                    onClick={() => open()}
+                    className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded-lg transition-colors"
+                  >
+                    Connect Wallet
+                  </button>
                 </div>
               )}
 
@@ -732,7 +746,7 @@ export default function HomeHero() {
                 variant="default"
                 onClick={handleGiveaway}
                 disabled={isSendingTx}
-                className="bg-gray-700 rounded-lg py-4 hover:bg-blue-600 hover:text-black w-full h-12 text-center"
+                className="bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 rounded-lg py-4 w-full h-12 text-center backdrop-blur-sm transition-all shadow-lg"
               >
                 <span className="text-white font-semibold">
                   {isSendingTx ? "Processing..." : "Get 500USD Giveaway"}

@@ -1,13 +1,26 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, ExternalLink } from "lucide-react"
+import { ArrowRight, ExternalLink, Mail } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { 
+  FaXTwitter, 
+  FaFacebook, 
+  FaInstagram, 
+  FaDiscord, 
+  FaMedium, 
+  FaLinkedin, 
+  FaYoutube 
+} from "react-icons/fa6"
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="relative bg-black border-t border-white/5 text-white overflow-hidden">
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div className="absolute inset-0 hero-grid-pattern" />
+      </div>
+      <div className="absolute -bottom-[20%] left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-yellow-400/10 blur-[100px] rounded-full pointer-events-none" />
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Left Column - Logo and Description */}
@@ -22,34 +35,66 @@ export default function Footer() {
 
             {/* Social Icons */}
             <div className="flex space-x-4">
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-gray-400 cursor-pointer">
-                <span className="text-sm">𝕏</span>
-              </div>
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-gray-400 cursor-pointer">
-                <span className="text-sm">📧</span>
-              </div>
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-gray-400 cursor-pointer">
-                <span className="text-sm">f</span>
-              </div>
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-gray-400 cursor-pointer">
-                <span className="text-sm">📷</span>
-              </div>
+              <a 
+                href="#" 
+                className="w-10 h-10 border border-white/10 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-white/20 cursor-pointer transition-all backdrop-blur-sm"
+                aria-label="X (Twitter)"
+              >
+                <FaXTwitter className="w-5 h-5" />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 border border-white/10 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-white/20 cursor-pointer transition-all backdrop-blur-sm"
+                aria-label="Email"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 border border-white/10 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-white/20 cursor-pointer transition-all backdrop-blur-sm"
+                aria-label="Facebook"
+              >
+                <FaFacebook className="w-5 h-5" />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 border border-white/10 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-white/20 cursor-pointer transition-all backdrop-blur-sm"
+                aria-label="Instagram"
+              >
+                <FaInstagram className="w-5 h-5" />
+              </a>
             </div>
 
             {/* Second row of social icons */}
             <div className="flex space-x-4 mt-4">
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-gray-400 cursor-pointer">
-                <span className="text-sm">●</span>
-              </div>
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-gray-400 cursor-pointer">
-                <span className="text-sm">@</span>
-              </div>
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-gray-400 cursor-pointer">
-                <span className="text-sm">in</span>
-              </div>
-              <div className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center hover:border-gray-400 cursor-pointer">
-                <span className="text-sm">📺</span>
-              </div>
+              <a 
+                href="#" 
+                className="w-10 h-10 border border-white/10 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-white/20 cursor-pointer transition-all backdrop-blur-sm"
+                aria-label="Discord"
+              >
+                <FaDiscord className="w-5 h-5" />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 border border-white/10 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-white/20 cursor-pointer transition-all backdrop-blur-sm"
+                aria-label="Medium"
+              >
+                <FaMedium className="w-5 h-5" />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 border border-white/10 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-white/20 cursor-pointer transition-all backdrop-blur-sm"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin className="w-5 h-5" />
+              </a>
+              <a 
+                href="#" 
+                className="w-10 h-10 border border-white/10 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 hover:border-white/20 cursor-pointer transition-all backdrop-blur-sm"
+                aria-label="YouTube"
+              >
+                <FaYoutube className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
@@ -97,44 +142,24 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-6">LEARN</h3>
             <ul className="space-y-4">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Contact
-                </a>
+                <Link href="/wallet" className="text-gray-300 hover:text-white">
+                  Lenix Wallet
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Blog
-                </a>
+                <Link href="/finance" className="text-gray-300 hover:text-white">
+                  Lenix Finance
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Docs
-                </a>
+                <Link href="/crypto-recovery" className="text-gray-300 hover:text-white">
+                  Crypto Recovery
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  How to buy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Referrals
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Partners
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Brand Kit
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Career
-                </a>
+                <Link href="/airdrop" className="text-gray-300 hover:text-white">
+                  Airdrop
+                </Link>
               </li>
             </ul>
           </div>

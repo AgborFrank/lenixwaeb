@@ -1,19 +1,41 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, Menu, X } from "lucide-react";
-import { useState } from "react";
+import { ChevronDown, Menu, X, Wallet, Landmark, ShieldCheck } from "lucide-react";
+import { useState, useRef } from "react";
 import Image from "next/image";
+import { useAppKit, useAppKitAccount } from "@reown/appkit/react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Header() {
+  const { open } = useAppKit();
+  const { isConnected } = useAppKitAccount();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setIsSolutionsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setIsSolutionsOpen(false);
+    }, 300);
+  };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <header className="w-full bg-black sticky top-0 z-50">
+    <header className="w-full bg-black/50 backdrop-blur-xl border-b border-white/5 sticky top-0 z-50">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -36,13 +58,64 @@ export default function Header() {
             >
               <span>About</span>
             </Link>
-            <Link
-              href="/solutions"
-              className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer"
-            >
-              <span>Solutions</span>
-              <ChevronDown className="h-4 w-4" />
-            </Link>
+            <DropdownMenu open={isSolutionsOpen} onOpenChange={setIsSolutionsOpen}>
+              <div className="h-full flex items-center" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                <DropdownMenuTrigger 
+                  className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer outline-none group data-[state=open]:text-yellow-400 py-4"
+                >
+                  <span>Solutions</span>
+                  <ChevronDown className="h-4 w-4 transition duration-200 group-data-[state=open]:rotate-180" />
+                </DropdownMenuTrigger>
+              </div>
+              <DropdownMenuContent 
+                className="w-80 bg-black/80 backdrop-blur-2xl border border-white/10 p-2 rounded-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] z-50"
+                sideOffset={0}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <DropdownMenuItem className="focus:bg-white/5 cursor-pointer rounded-lg p-0">
+                  <Link href="/wallet" className="flex items-start gap-4 p-3 w-full">
+                    <div className="p-2 bg-yellow-400/10 rounded-lg shrink-0">
+                      <Wallet className="h-5 w-5 text-yellow-400" />
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <span className="text-sm font-medium text-white leading-none">Lenix Wallet</span>
+                      <p className="text-xs text-gray-400 line-clamp-2 leading-snug">
+                        Secure multi-chain wallet for your digital assets.
+                      </p>
+                    </div>
+                  </Link>
+                </DropdownMenuItem>
+                
+                <DropdownMenuItem className="focus:bg-white/5 cursor-pointer rounded-lg p-0 mt-1">
+                  <Link href="/finance" className="flex items-start gap-4 p-3 w-full">
+                    <div className="p-2 bg-yellow-400/10 rounded-lg shrink-0">
+                      <Landmark className="h-5 w-5 text-yellow-400" />
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <span className="text-sm font-medium text-white leading-none">Lenix Finance</span>
+                      <p className="text-xs text-gray-400 line-clamp-2 leading-snug">
+                        Decentralized finance solutions for everyone.
+                      </p>
+                    </div>
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem className="focus:bg-white/5 cursor-pointer rounded-lg p-0 mt-1">
+                  <Link href="/crypto-recovery" className="flex items-start gap-4 p-3 w-full">
+                    <div className="p-2 bg-yellow-400/10 rounded-lg shrink-0">
+                      <ShieldCheck className="h-5 w-5 text-yellow-400" />
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <span className="text-sm font-medium text-white leading-none">Crypto Recovery</span>
+                      <p className="text-xs text-gray-400 line-clamp-2 leading-snug">
+                        Recover lost assets with expert assistance.
+                      </p>
+                    </div>
+                  </Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           
             <div className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer">
               <span>Learn</span>
@@ -57,19 +130,38 @@ export default function Header() {
             <Link href="/contact" className="text-white hover:text-gray-300">
               Contact
             </Link>
-            <a href="#" className="text-white hover:text-gray-300">
+            <Link href="/airdrop" className="text-white hover:text-gray-300">
               Airdrop
-            </a>
+            </Link>
           </nav>
+
 
           {/* Desktop Connect Wallet Button */}
           <div className="hidden md:flex flex-shrink-0 z-20">
-            <appkit-button />
+            {isConnected ? (
+               <appkit-button />
+            ) : (
+              <button 
+                onClick={() => open()}
+                className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2.5 px-6 rounded-full transition-all shadow-[0_0_15px_rgba(250,204,21,0.3)] hover:shadow-[0_0_25px_rgba(250,204,21,0.5)] text-sm"
+              >
+                Connect Wallet - Claim 50USDT
+              </button>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-4 z-20">
-            <appkit-button size="sm" />
+            {isConnected ? (
+              <appkit-button size="sm" />
+            ) : (
+               <button 
+                onClick={() => open()}
+                className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded-full transition-all shadow-[0_0_10px_rgba(250,204,21,0.3)] text-xs whitespace-nowrap"
+              >
+                Claim 50USDT Gift
+              </button>
+            )}
             <button
               onClick={toggleMobileMenu}
               className="text-white hover:text-gray-300 p-2"
@@ -86,7 +178,7 @@ export default function Header() {
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-black border-t border-gray-800">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-black/90 backdrop-blur-xl border-t border-white/10">
               <Link
                 href="/giveaway"
                 className="block px-3 py-2 text-white hover:text-gray-300 cursor-pointer"
@@ -101,13 +193,33 @@ export default function Header() {
               >
                 <span>About</span>
               </Link>
-              <Link
-                href="/solutions"
-                className="block px-3 py-2 text-white hover:text-gray-300 cursor-pointer"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <span>Solutions</span>
-              </Link>
+              <div className="space-y-1">
+                <div className="px-3 py-2 text-white font-medium text-sm text-yellow-400">Solutions</div>
+                <Link
+                  href="/wallet"
+                  className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Wallet className="h-4 w-4 text-yellow-400" />
+                  <span>Lenix Wallet</span>
+                </Link>
+                <Link
+                  href="/finance"
+                  className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Landmark className="h-4 w-4 text-yellow-400" />
+                  <span>Lenix Finance</span>
+                </Link>
+                <Link
+                  href="/crypto-recovery"
+                  className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <ShieldCheck className="h-4 w-4 text-yellow-400" />
+                  <span>Crypto Recovery</span>
+                </Link>
+              </div>
               <a
                 href="#"
                 className="block px-3 py-2 text-white hover:text-gray-300"
@@ -132,13 +244,13 @@ export default function Header() {
               >
                 Contact
               </Link>
-              <a
-                href="#"
+              <Link
+                href="/airdrop"
                 className="block px-3 py-2 text-white hover:text-gray-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Airdrop
-              </a>
+              </Link>
             </div>
           </div>
         )}

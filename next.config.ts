@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Expose WalletConnect / Reown project ID (same env name as drain)
+  env: {
+    NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID:
+      process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID,
+    NEXT_PUBLIC_PROJECT_ID: process.env.NEXT_PUBLIC_PROJECT_ID,
+  },
   // Exclude problematic packages from server components bundling
   // This prevents test files from being imported
   serverExternalPackages: ['pino', 'pino-pretty', 'thread-stream'],

@@ -1,218 +1,75 @@
-import { Search, Shield, Zap, CheckCircle, ArrowRight } from "lucide-react";
+"use client";
+
+import { Search, Shield, Zap, CheckCircle, ArrowRight, FileText, Lock } from "lucide-react";
+
+const steps = [
+    {
+        icon: Search,
+        title: "Initial Assessment",
+        description: "We analyze the blockchain trail, assess the loss type, and determine the recoverability of your assets.",
+        tags: ["Trace Analysis", "Risk Score"]
+    },
+    {
+        icon: Shield,
+        title: "Strategy Formulation",
+        description: "Our team develops a tailored recovery plan, leveraging legal frameworks and forensic evidence.",
+        tags: ["Legal Strategy", "Forensics"]
+    },
+    {
+        icon: Zap,
+        title: "Active Recovery",
+        description: "We execute the strategy, engaging with exchanges, authorities, and entities to freeze and retrieve funds.",
+        tags: ["Negotiation", "Asset Seizure"]
+    },
+    {
+        icon: CheckCircle,
+        title: "Asset Return",
+        description: "Recovered funds are securely transferred back to your verified wallet with potential future protection guides.",
+        tags: ["Secure Transfer", "Closure"]
+    }
+];
 
 export default function RecoveryProcess() {
   return (
-    <section className="bg-black py-24 px-4">
-      <div className="max-w-screen-xl mx-auto">
-        {/* Section Header */}
+    <section className="bg-black py-24 px-4 relative border-t border-white/5">
+      <div className="max-w-screen-xl mx-auto relative z-10">
         <div className="text-center mb-20">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Your Road to
-            <span className="text-yellow-400"> Recovery</span>
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+            The Recovery <span className="text-yellow-400">Process</span>
           </h2>
-          <p className="text-gray-300 text-xl max-w-3xl mx-auto">
-            Our proven 4-step process has helped thousands recover their lost
-            crypto assets. We&apos;re with you every step of the way.
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Our proven 4-step methodology maximizes the chances of a successful reclamation.
           </p>
         </div>
 
-        {/* Process Timeline */}
         <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gray-700 h-full hidden lg:block"></div>
+            {/* Connecting Line (Desktop) */}
+            <div className="hidden lg:block absolute top-[60px] left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-transparent via-yellow-400/30 to-transparent -z-10" />
 
-          <div className="space-y-16">
-            {/* Step 1 */}
-            <div className="relative flex flex-col lg:flex-row items-center gap-8">
-              <div className="lg:w-1/2 lg:pr-12 lg:text-right">
-                <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-                  <div className="flex items-center gap-4 mb-4 lg:justify-end">
-                    <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-                      <Search className="w-6 h-6 text-black" />
+            <div className="grid lg:grid-cols-4 gap-8">
+                {steps.map((step, i) => (
+                    <div key={i} className="relative flex flex-col items-center text-center group">
+                        <div className="w-32 h-32 rounded-full bg-black border border-white/10 flex items-center justify-center mb-8 relative z-10 group-hover:border-yellow-400/50 transition-colors duration-500 shadow-[0_0_30px_rgba(0,0,0,0.5)]">
+                             <div className="absolute inset-2 rounded-full bg-white/5 backdrop-blur-sm" />
+                             <step.icon className="w-10 h-10 text-yellow-400 relative z-20" />
+                             <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-yellow-400 text-black font-bold flex items-center justify-center border-4 border-black z-30">
+                                 {i + 1}
+                             </div>
+                        </div>
+                        
+                        <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
+                        <p className="text-gray-400 text-sm leading-relaxed mb-4 min-h-[80px]">{step.description}</p>
+                        
+                        <div className="flex flex-wrap justify-center gap-2">
+                            {step.tags.map((tag, j) => (
+                                <span key={j} className="text-[10px] uppercase tracking-wider font-bold text-gray-500 bg-white/5 px-2 py-1 rounded border border-white/5">
+                                    {tag}
+                                </span>
+                            ))}
+                        </div>
                     </div>
-                    <h3 className="text-2xl font-bold text-white">
-                      Initial Assessment
-                    </h3>
-                  </div>
-                  <p className="text-gray-300 leading-relaxed">
-                    We begin with a comprehensive analysis of your situation.
-                    Our experts evaluate the type of loss, blockchain traces,
-                    and recovery possibilities. This critical first step
-                    determines our approach and success probability.
-                  </p>
-                  <div className="mt-6 flex flex-wrap gap-2 lg:justify-end">
-                    <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
-                      Blockchain Analysis
-                    </span>
-                    <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
-                      Risk Assessment
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Timeline Dot */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-black hidden lg:flex items-center justify-center">
-                <span className="text-black font-bold text-sm">1</span>
-              </div>
-
-              <div className="lg:w-1/2 lg:pl-12">
-                {/* Image placeholder */}
-                <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 h-64 flex items-center justify-center">
-                  <div className="text-center">
-                    <Search className="w-16 h-16 text-gray-600 mx-auto mb-4" />
-                    <p className="text-gray-400">
-                      Recovery Assessment Interface
-                    </p>
-                  </div>
-                </div>
-              </div>
+                ))}
             </div>
-
-            {/* Step 2 */}
-            <div className="relative flex flex-col lg:flex-row items-center gap-8">
-              <div className="lg:w-1/2 lg:pr-12 order-2 lg:order-1">
-                {/* Image placeholder */}
-                <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 h-64 flex items-center justify-center">
-                  <div className="text-center">
-                    <Shield className="w-16 h-16 text-gray-600 mx-auto mb-4" />
-                    <p className="text-gray-400">Security Protocol Setup</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Timeline Dot */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-black hidden lg:flex items-center justify-center">
-                <span className="text-black font-bold text-sm">2</span>
-              </div>
-
-              <div className="lg:w-1/2 lg:pl-12 order-1 lg:order-2">
-                <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-                      <Shield className="w-6 h-6 text-black" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-white">
-                      Security Protocol
-                    </h3>
-                  </div>
-                  <p className="text-gray-300 leading-relaxed">
-                    We establish secure communication channels and implement
-                    advanced security measures. Your case is assigned to a
-                    dedicated recovery specialist with access to cutting-edge
-                    forensic tools.
-                  </p>
-                  <div className="mt-6 flex flex-wrap gap-2">
-                    <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
-                      Encrypted Channels
-                    </span>
-                    <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
-                      Dedicated Specialist
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="relative flex flex-col lg:flex-row items-center gap-8">
-              <div className="lg:w-1/2 lg:pr-12 lg:text-right">
-                <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-                  <div className="flex items-center gap-4 mb-4 lg:justify-end">
-                    <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-                      <Zap className="w-6 h-6 text-black" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-white">
-                      Active Recovery
-                    </h3>
-                  </div>
-                  <p className="text-gray-300 leading-relaxed">
-                    Our team works around the clock using advanced blockchain
-                    forensics, legal channels, and recovery techniques. We
-                    track, trace, and negotiate to recover your assets while
-                    keeping you updated.
-                  </p>
-                  <div className="mt-6 flex flex-wrap gap-2 lg:justify-end">
-                    <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
-                      24/7 Monitoring
-                    </span>
-                    <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
-                      Legal Support
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Timeline Dot */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-black hidden lg:flex items-center justify-center">
-                <span className="text-black font-bold text-sm">3</span>
-              </div>
-
-              <div className="lg:w-1/2 lg:pl-12">
-                {/* Image placeholder */}
-                <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 h-64 flex items-center justify-center">
-                  <div className="text-center">
-                    <Zap className="w-16 h-16 text-gray-600 mx-auto mb-4" />
-                    <p className="text-gray-400">
-                      Recovery Operations Dashboard
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Step 4 */}
-            <div className="relative flex flex-col lg:flex-row items-center gap-8">
-              <div className="lg:w-1/2 lg:pr-12 order-2 lg:order-1">
-                {/* Image placeholder */}
-                <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 h-64 flex items-center justify-center">
-                  <div className="text-center">
-                    <CheckCircle className="w-16 h-16 text-gray-600 mx-auto mb-4" />
-                    <p className="text-gray-400">Asset Recovery Complete</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Timeline Dot */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full border-4 border-black hidden lg:flex items-center justify-center">
-                <span className="text-black font-bold text-sm">4</span>
-              </div>
-
-              <div className="lg:w-1/2 lg:pl-12 order-1 lg:order-2">
-                <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
-                      <CheckCircle className="w-6 h-6 text-black" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-white">
-                      Asset Return
-                    </h3>
-                  </div>
-                  <p className="text-gray-300 leading-relaxed">
-                    Once recovered, your assets are securely transferred back to
-                    your wallet. We provide detailed documentation and ongoing
-                    security recommendations to prevent future losses.
-                  </p>
-                  <div className="mt-6 flex flex-wrap gap-2">
-                    <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
-                      Secure Transfer
-                    </span>
-                    <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
-                      Documentation
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-20">
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded-lg transition-colors flex items-center gap-2 mx-auto text-lg">
-            Start Your Recovery Journey
-            <ArrowRight className="w-5 h-5" />
-          </button>
         </div>
       </div>
     </section>

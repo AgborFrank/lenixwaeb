@@ -10,22 +10,16 @@ import RecoveryFAQ from "./components/recovery-faq";
 
 export default function CryptoRecovery() {
   return (
-    <>
+    <main className="bg-black min-h-screen">
       <Header />
       <RecoveryHero />
-      <div className="bg-overview">
-    <img className="top-left" src="/assets/img/header.svg" alt="header"/>
-    <img className="bottom-left" src="/assets/img/bank-account.svg" alt="bank"/>
-    <img className="bottom-right" src="/assets/img/cross-border.svg" alt="border"/>
-   </div>
       <RecoveryProcess />
       <RecoveryStats />
       <RecoveryFeatures />
       <SuccessStories />
-      <RecoveryForm />
-      
       <RecoveryFAQ />
+      <RecoveryForm />
       <Footer />
-    </>
+    </main>
   );
 }
