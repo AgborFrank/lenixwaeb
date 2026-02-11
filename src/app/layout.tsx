@@ -4,6 +4,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { headers } from "next/headers";
 import AppKitProvider from "@/context";
+import { Toaster } from "sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 // Google Fonts - Primary font
 const onest = Onest({
@@ -94,7 +96,10 @@ export default async function RootLayout({
           antialiased overflow-x-hidden
         `}
       >
-        <AppKitProvider cookies={cookies}>{children}</AppKitProvider>
+        <TooltipProvider>
+          <AppKitProvider cookies={cookies}>{children}</AppKitProvider>
+        </TooltipProvider>
+        <Toaster />
       </body>
     </html>
   );

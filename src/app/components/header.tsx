@@ -1,23 +1,52 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, Menu, X, Wallet, Landmark, ShieldCheck } from "lucide-react";
-import { useState, useRef } from "react";
+import { ChevronDown, Menu, X, Wallet, Landmark, ShieldCheck, User as UserIcon, LogOut } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { useAppKit, useAppKitAccount } from "@reown/appkit/react";
+import { createClient } from "@/utils/supabase/client";
+import { User } from "@supabase/supabase-js";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const { open } = useAppKit();
   const { isConnected } = useAppKitAccount();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const router = useRouter();
+  const supabase = createClient();
+
+  useEffect(() => {
+    const getUser = async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      setUser(user);
+    };
+    getUser();
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(session?.user ?? null);
+    });
+
+    return () => subscription.unsubscribe();
+  }, [supabase]);
+
+  const handleSignOut = async () => {
+    await supabase.auth.signOut();
+    router.refresh();
+  };
 
   const handleMouseEnter = () => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
@@ -136,8 +165,28 @@ export default function Header() {
           </nav>
 
 
-          {/* Desktop Connect Wallet Button */}
-          <div className="hidden md:flex flex-shrink-0 z-20">
+          {/* Desktop Connect Wallet & Auth */}
+          <div className="hidden md:flex items-center gap-4 flex-shrink-0 z-20">
+            {user ? (
+              <div className="flex items-center gap-4">
+                 <span className="text-sm text-gray-300 truncate max-w-[100px]">{user.email}</span>
+                 <button 
+                  onClick={handleSignOut}
+                  className="text-gray-400 hover:text-white transition-colors"
+                  title="Sign Out"
+                 >
+                   <LogOut className="w-5 h-5" />
+                 </button>
+              </div>
+            ) : (
+              <Link 
+                href="/login"
+                className="text-sm font-medium text-white hover:text-yellow-400 transition-colors"
+              >
+                Log In
+              </Link>
+            )}
+
             {isConnected ? (
                <appkit-button />
             ) : (
@@ -251,6 +300,33 @@ export default function Header() {
               >
                 Airdrop
               </Link>
+
+              <div className="border-t border-white/10 mt-2 pt-2">
+                 {user ? (
+                    <>
+                      <div className="px-3 py-2 text-sm text-gray-400">{user.email}</div>
+                      <button 
+                        onClick={() => {
+                          handleSignOut();
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className="flex items-center gap-3 px-3 py-2 text-red-400 hover:bg-white/5 rounded-lg w-full text-left"
+                      >
+                        <LogOut className="h-4 w-4" />
+                        <span>Sign Out</span>
+                      </button>
+                    </>
+                 ) : (
+                    <Link
+                      href="/login"
+                      className="flex items-center gap-3 px-3 py-2 text-yellow-400 hover:bg-white/5 rounded-lg"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <UserIcon className="h-4 w-4" />
+                      <span>Log In / Sign Up</span>
+                    </Link>
+                 )}
+              </div>
             </div>
           </div>
         )}

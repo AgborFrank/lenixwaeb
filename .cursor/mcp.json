@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+      "Lenixer": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@supabase/mcp-server-supabase@latest",
+          "--project-ref=ebwvhneiinvjxlitxxkh"
+        ],
+        "env": {
+          "SUPABASE_ACCESS_TOKEN": "sbp_cd029858dfd4d47e2158b4b1d6a09884dd3e4c31"
+        }
+      }
+    }
+  }
+  

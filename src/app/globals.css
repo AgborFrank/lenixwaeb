@@ -119,6 +119,18 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+/* Hide scrollbar on account layout sidebar (native + Radix) */
+.account-sidebar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.account-sidebar::-webkit-scrollbar {
+  display: none;
+}
+.account-sidebar [data-slot="scroll-area-scrollbar"] {
+  display: none !important;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

@@ -136,7 +136,7 @@ export default function AppKitProvider({
 }) {
   const initialState = cookieToInitialState(
     wagmiAdapter.wagmiConfig as Config,
-    cookies
+    cookies ? decodeURIComponent(cookies) : cookies
   );
 
   return (
