@@ -2,14 +2,57 @@
 
 import { PieChart } from "lucide-react";
 
-export function AllocationChart() {
-  // Mock data for the chart
-  const data = [
-    { name: "BTC", value: 45, color: "text-orange-500", bg: "bg-orange-500" },
-    { name: "ETH", value: 30, color: "text-blue-500", bg: "bg-blue-500" },
-    { name: "USDT", value: 15, color: "text-emerald-500", bg: "bg-emerald-500" },
-    { name: "SOL", value: 10, color: "text-purple-500", bg: "bg-purple-500" },
-  ];
+interface AllocationChartProps {
+    tokens: any[];
+}
+
+export function AllocationChart({ tokens }: AllocationChartProps) {
+  // Process tokens to get allocation data
+  // Sort by USD value descending
+  const sortedTokens = [...tokens].sort((a, b) => (b.quote || 0) - (a.quote || 0));
+  const totalValue = sortedTokens.reduce((acc, t) => acc + (t.quote || 0), 0);
+
+  // Take top 3 and group the rest as "Others"
+  // If totalValue is 0, avoid division by zero
+  const chartData = totalValue > 0 ? [
+      ...sortedTokens.slice(0, 3).map((t, i) => ({
+          name: t.contract_ticker_symbol,
+          value: Math.round(((t.quote || 0) / totalValue) * 100),
+          color: i === 0 ? "text-orange-500" : i === 1 ? "text-blue-500" : "text-emerald-500",
+          bg: i === 0 ? "bg-orange-500" : i === 1 ? "bg-blue-500" : "bg-emerald-500",
+      })),
+      {
+          name: "Others",
+          value: Math.round((sortedTokens.slice(3).reduce((acc, t) => acc + (t.quote || 0), 0) / totalValue) * 100),
+          color: "text-purple-500",
+          bg: "bg-purple-500"
+      }
+  ].filter(item => item.value > 0) : []; // Remove 0% items
+
+  // If no data, show empty state
+  if (chartData.length === 0) {
+      return (
+        <div className="rounded-3xl bg-zinc-900/50 p-6 border border-white/5 h-full flex flex-col items-center justify-center text-center space-y-4">
+             <div className="p-4 rounded-full bg-zinc-800/50">
+                <PieChart className="h-8 w-8 text-zinc-500" />
+             </div>
+             <div>
+                <p className="text-white font-medium">No Assets</p>
+                <p className="text-sm text-zinc-500">Deposit crypto to see allocation</p>
+             </div>
+        </div>
+      );
+  }
+
+  // Calculate cumulative offsets for the chart
+  let cumulativePercent = 0;
+  const pieSegments = chartData.map(item => {
+      const startOffset = cumulativePercent; // Starting point (0-100)
+      cumulativePercent += item.value;
+      return { ...item, startOffset };
+  });
+
+  const topAsset = chartData[0];
 
   return (
     <div className="rounded-3xl bg-zinc-900/50 p-6 border border-white/5 h-full">
@@ -25,44 +68,30 @@ export function AllocationChart() {
             {/* Background Circle */}
             <circle cx="50" cy="50" r="40" fill="transparent" stroke="#27272a" strokeWidth="12" />
             
-            {/* Segments - Simplified for demo (approximate strokes) */}
-            {/* BTC - 45% */}
-            <circle cx="50" cy="50" r="40" fill="transparent" stroke="currentColor" strokeWidth="12" 
-               className="text-orange-500" 
-               strokeDasharray={`${45 * 2.51} 251`} 
-            />
-            
-            {/* ETH - 30% (starts at 45%) */}
-            <circle cx="50" cy="50" r="40" fill="transparent" stroke="currentColor" strokeWidth="12" 
-               className="text-blue-500" 
-               strokeDasharray={`${30 * 2.51} 251`} 
-               strokeDashoffset={`${-(45 * 2.51)}`}
-            />
-
-            {/* USDT - 15% (starts at 75%) */}
-            <circle cx="50" cy="50" r="40" fill="transparent" stroke="currentColor" strokeWidth="12" 
-               className="text-emerald-500" 
-               strokeDasharray={`${15 * 2.51} 251`} 
-               strokeDashoffset={`${-(75 * 2.51)}`}
-            />
-
-            {/* SOL - 10% (starts at 90%) */}
-            <circle cx="50" cy="50" r="40" fill="transparent" stroke="currentColor" strokeWidth="12" 
-               className="text-purple-500" 
-               strokeDasharray={`${10 * 2.51} 251`} 
-               strokeDashoffset={`${-(90 * 2.51)}`}
-            />
+            {/* Segments */}
+            {pieSegments.map((segment, idx) => (
+                <circle 
+                   key={segment.name}
+                   cx="50" cy="50" r="40" 
+                   fill="transparent" 
+                   stroke="currentColor" 
+                   strokeWidth="12" 
+                   className={segment.color}
+                   strokeDasharray={`${segment.value * 2.51} 251`} 
+                   strokeDashoffset={`${-(segment.startOffset * 2.51)}`}
+                />
+            ))}
           </svg>
            {/* Center Text */}
            <div className="absolute inset-0 flex flex-col items-center justify-center">
               <span className="text-xs text-zinc-500">Top Asset</span>
-              <span className="text-xl font-bold text-white">BTC</span>
+              <span className="text-xl font-bold text-white">{topAsset.name}</span>
            </div>
         </div>
 
         {/* Legend */}
         <div className="flex-1 grid grid-cols-2 gap-4">
-           {data.map((item) => (
+           {chartData.map((item) => (
               <div key={item.name} className="flex items-center gap-3">
                  <div className={`h-3 w-3 rounded-full ${item.bg}`} />
                  <div>

@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 export default function Merchant() {
   return (
@@ -84,45 +85,35 @@ export default function Merchant() {
           {/* Right side - Content */}
           <div className="text-white">
             <h2 className="text-5xl font-bold mb-8 leading-tight font-onest">
-              Easily accept <span className="text-yellow-400">crypto</span>
-              <br />
-              <span className="text-yellow-400">payments.</span>
+              For businesses: accept crypto, <span className="text-yellow-400">protect</span> in vault, recover if needed.
             </h2>
 
             <div className="space-y-6 text-gray-300 text-sm leading-relaxed">
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
                 <p>
-                  Looking to offer crypto payments to your customers and settle
-                  transactions in fiat via Lenix Protocol Pay API
+                  Accept crypto and settle in fiat. Straightforward checkout and API for merchants.
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
                 <p>
-                  Our Checkout feature helps you build straightforward crypto
-                  payment experiences for your customers, allowing them to
-                  purchase products and services with the same security and
-                  user-friendliness as traditional fiat transactions on
-                  blockchain infrastructure.
+                  Hold proceeds in our secure vault with multi-sig and custody—audited infrastructure.
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
                 <p>
-                  You can set up a merchant account using the Lenix Protocol
-                  platform or through our API, and receive payments directly to
-                  your wallet with zero fees.
+                  If funds are lost or stolen, our team can help trace and reclaim through recovery and legal channels.
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
                 <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
                 <p>
-                  Cash out your crypto in any way you prefer, including over 30
-                  fiat currencies and 50+ cryptocurrency pairs.
+                  <Link href="/solutions" className="text-yellow-400 hover:underline">Explore solutions</Link> or <Link href="/crypto-recovery" className="text-yellow-400 hover:underline">start a recovery case</Link>.
                 </p>
               </div>
             </div>

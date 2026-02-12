@@ -1,6 +1,9 @@
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
 import { AccountLayout } from "./_components/account-layout";
+import { WalletProvider } from "./_providers/wallet-provider";
+import { SettingsProvider } from "./_providers/settings-provider";
+import { getSettings } from "./settings/actions";
 
 export default async function AccountLayoutWrapper({
   children,
@@ -24,17 +27,23 @@ export default async function AccountLayoutWrapper({
     redirect("/onboarding");
   }
 
+  const { data: settings } = await getSettings();
+
   return (
     <div className="min-h-screen relative overflow-hidden">
-      {/* Same background as onboarding/details */}
       <div
         className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url(/assets/img/background6.png)" }}
       />
       <div className="fixed inset-0 z-[1] bg-black/50" />
-      {/* Layout with sidebar + header (glass effect inside AccountLayout) */}
       <div className="relative z-10">
-        <AccountLayout userEmail={user.email ?? ""}>{children}</AccountLayout>
+        <SettingsProvider initialSettings={settings ?? null}>
+          <WalletProvider>
+            <AccountLayout userEmail={user.email ?? ""}>
+              {children}
+            </AccountLayout>
+          </WalletProvider>
+        </SettingsProvider>
       </div>
     </div>
   );

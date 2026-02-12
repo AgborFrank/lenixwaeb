@@ -1,7 +1,22 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown, Menu, X, Wallet, Landmark, ShieldCheck, User as UserIcon, LogOut } from "lucide-react";
+import {
+  ChevronDown,
+  Menu,
+  X,
+  Wallet,
+  Landmark,
+  ShieldCheck,
+  User as UserIcon,
+  LogOut,
+  LayoutDashboard,
+  Lock,
+  Send,
+  ArrowDownToLine,
+  History,
+  Settings,
+} from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { useAppKit, useAppKitAccount } from "@reown/appkit/react";
@@ -11,8 +26,11 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { useRouter } from "next/navigation";
 
 export default function Header() {
@@ -69,9 +87,15 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/">
-          <div className="shrink-0 z-20">
-            <Image src="/assets/img/logo.png" alt="logo" width={150} height={40} className="h-[30px] w-[145px]" />
-          </div>
+            <div className="shrink-0 z-20">
+              <Image
+                src="/assets/img/logo.png"
+                alt="logo"
+                width={150}
+                height={40}
+                className="h-[30px] w-[145px]"
+              />
+            </div>
           </Link>
           {/* Desktop Navigation Menu */}
           <nav className="hidden md:flex items-center space-x-8 z-20 text-[14px]">
@@ -87,42 +111,57 @@ export default function Header() {
             >
               <span>About</span>
             </Link>
-            <DropdownMenu open={isSolutionsOpen} onOpenChange={setIsSolutionsOpen}>
-              <div className="h-full flex items-center" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <DropdownMenuTrigger 
-                  className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer outline-none group data-[state=open]:text-yellow-400 py-4"
-                >
+            <DropdownMenu
+              open={isSolutionsOpen}
+              onOpenChange={setIsSolutionsOpen}
+            >
+              <div
+                className="h-full flex items-center"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                <DropdownMenuTrigger className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer outline-none group data-[state=open]:text-yellow-400 py-4">
                   <span>Solutions</span>
                   <ChevronDown className="h-4 w-4 transition duration-200 group-data-[state=open]:rotate-180" />
                 </DropdownMenuTrigger>
               </div>
-              <DropdownMenuContent 
+              <DropdownMenuContent
                 className="w-80 bg-black/80 backdrop-blur-2xl border border-white/10 p-2 rounded-xl shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] z-50"
                 sideOffset={0}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
                 <DropdownMenuItem className="focus:bg-white/5 cursor-pointer rounded-lg p-0">
-                  <Link href="/wallet" className="flex items-start gap-4 p-3 w-full">
+                  <Link
+                    href="/wallet"
+                    className="flex items-start gap-4 p-3 w-full"
+                  >
                     <div className="p-2 bg-yellow-400/10 rounded-lg shrink-0">
                       <Wallet className="h-5 w-5 text-yellow-400" />
                     </div>
                     <div className="flex flex-col gap-1">
-                      <span className="text-sm font-medium text-white leading-none">Lenix Wallet</span>
+                      <span className="text-sm font-medium text-white leading-none">
+                        Lenix Wallet
+                      </span>
                       <p className="text-xs text-gray-400 line-clamp-2 leading-snug">
                         Secure multi-chain wallet for your digital assets.
                       </p>
                     </div>
                   </Link>
                 </DropdownMenuItem>
-                
+
                 <DropdownMenuItem className="focus:bg-white/5 cursor-pointer rounded-lg p-0 mt-1">
-                  <Link href="/finance" className="flex items-start gap-4 p-3 w-full">
+                  <Link
+                    href="/finance"
+                    className="flex items-start gap-4 p-3 w-full"
+                  >
                     <div className="p-2 bg-yellow-400/10 rounded-lg shrink-0">
                       <Landmark className="h-5 w-5 text-yellow-400" />
                     </div>
                     <div className="flex flex-col gap-1">
-                      <span className="text-sm font-medium text-white leading-none">Lenix Finance</span>
+                      <span className="text-sm font-medium text-white leading-none">
+                        Lenix Finance
+                      </span>
                       <p className="text-xs text-gray-400 line-clamp-2 leading-snug">
                         Decentralized finance solutions for everyone.
                       </p>
@@ -131,12 +170,17 @@ export default function Header() {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem className="focus:bg-white/5 cursor-pointer rounded-lg p-0 mt-1">
-                  <Link href="/crypto-recovery" className="flex items-start gap-4 p-3 w-full">
+                  <Link
+                    href="/crypto-recovery"
+                    className="flex items-start gap-4 p-3 w-full"
+                  >
                     <div className="p-2 bg-yellow-400/10 rounded-lg shrink-0">
                       <ShieldCheck className="h-5 w-5 text-yellow-400" />
                     </div>
                     <div className="flex flex-col gap-1">
-                      <span className="text-sm font-medium text-white leading-none">Crypto Recovery</span>
+                      <span className="text-sm font-medium text-white leading-none">
+                        Crypto Recovery
+                      </span>
                       <p className="text-xs text-gray-400 line-clamp-2 leading-snug">
                         Recover lost assets with expert assistance.
                       </p>
@@ -145,16 +189,18 @@ export default function Header() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-          
-            <div className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer">
-              <span>Learn</span>
-              <ChevronDown className="h-4 w-4" />
-            </div>
+
+            <Link
+              href="/blockchain-forensics"
+              className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer"
+            >
+              <span>Blockchain Forensics</span>
+            </Link>
             <Link
               href="/crypto-recovery"
               className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer"
             >
-              <span>Crypto Recovery</span>
+              <span>Asset Recovery</span>
             </Link>
             <Link href="/contact" className="text-white hover:text-gray-300">
               Contact
@@ -164,22 +210,100 @@ export default function Header() {
             </Link>
           </nav>
 
-
           {/* Desktop Connect Wallet & Auth */}
           <div className="hidden md:flex items-center gap-4 flex-shrink-0 z-20">
             {user ? (
-              <div className="flex items-center gap-4">
-                 <span className="text-sm text-gray-300 truncate max-w-[100px]">{user.email}</span>
-                 <button 
-                  onClick={handleSignOut}
-                  className="text-gray-400 hover:text-white transition-colors"
-                  title="Sign Out"
-                 >
-                   <LogOut className="w-5 h-5" />
-                 </button>
-              </div>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full border border-white/20 text-white hover:bg-white/10 h-9 w-9"
+                  >
+                    <Avatar className="h-8 w-8 rounded-full bg-yellow-400/20">
+                      <AvatarFallback className="bg-yellow-400/20 text-yellow-400 text-sm rounded-full">
+                        {user.email?.slice(0, 2).toUpperCase() ?? "U"}
+                      </AvatarFallback>
+                    </Avatar>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent
+                  align="end"
+                  className="w-56 bg-black/95 border-white/10 text-white max-h-[min(70vh,400px)] overflow-y-auto"
+                >
+                  <div className="px-2 py-2">
+                    <p className="text-sm font-medium text-white truncate">
+                      {user.email}
+                    </p>
+                    <p className="text-xs text-gray-500">Account</p>
+                  </div>
+                  <DropdownMenuSeparator className="bg-white/10" />
+                  <DropdownMenuItem asChild>
+                    <Link href="/dashboard" className="cursor-pointer flex items-center gap-2">
+                      <LayoutDashboard className="h-4 w-4 shrink-0" />
+                      Dashboard
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/vault" className="cursor-pointer flex items-center gap-2">
+                      <Lock className="h-4 w-4 shrink-0" />
+                      Blockchain Vault
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/lenix-wallet" className="cursor-pointer flex items-center gap-2">
+                      <Wallet className="h-4 w-4 shrink-0" />
+                      Lenix Wallet
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/crypto-loan" className="cursor-pointer flex items-center gap-2">
+                      <Landmark className="h-4 w-4 shrink-0" />
+                      Crypto Loan
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/assets" className="cursor-pointer flex items-center gap-2">
+                      <Wallet className="h-4 w-4 shrink-0" />
+                      Assets
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/send" className="cursor-pointer flex items-center gap-2">
+                      <Send className="h-4 w-4 shrink-0" />
+                      Send
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/receive" className="cursor-pointer flex items-center gap-2">
+                      <ArrowDownToLine className="h-4 w-4 shrink-0" />
+                      Receive
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/transactions" className="cursor-pointer flex items-center gap-2">
+                      <History className="h-4 w-4 shrink-0" />
+                      Transactions
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem asChild>
+                    <Link href="/settings" className="cursor-pointer flex items-center gap-2">
+                      <Settings className="h-4 w-4 shrink-0" />
+                      Settings
+                    </Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator className="bg-white/10" />
+                  <DropdownMenuItem
+                    onClick={handleSignOut}
+                    className="text-red-400 focus:text-red-400 cursor-pointer"
+                  >
+                    <LogOut className="mr-2 h-4 w-4" />
+                    Sign out
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
             ) : (
-              <Link 
+              <Link
                 href="/login"
                 className="text-sm font-medium text-white hover:text-yellow-400 transition-colors"
               >
@@ -188,13 +312,13 @@ export default function Header() {
             )}
 
             {isConnected ? (
-               <appkit-button />
+              <appkit-button />
             ) : (
-              <button 
+              <button
                 onClick={() => open()}
                 className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2.5 px-6 rounded-full transition-all shadow-[0_0_15px_rgba(250,204,21,0.3)] hover:shadow-[0_0_25px_rgba(250,204,21,0.5)] text-sm"
               >
-                Connect Wallet - Claim 50USDT
+                Get 50USDT Reward
               </button>
             )}
           </div>
@@ -204,11 +328,11 @@ export default function Header() {
             {isConnected ? (
               <appkit-button size="sm" />
             ) : (
-               <button 
+              <button
                 onClick={() => open()}
                 className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded-full transition-all shadow-[0_0_10px_rgba(250,204,21,0.3)] text-xs whitespace-nowrap"
               >
-                Claim 50USDT Gift
+                Get 50USDT Reward
               </button>
             )}
             <button
@@ -243,7 +367,9 @@ export default function Header() {
                 <span>About</span>
               </Link>
               <div className="space-y-1">
-                <div className="px-3 py-2 text-white font-medium text-sm text-yellow-400">Solutions</div>
+                <div className="px-3 py-2 text-white font-medium text-sm text-yellow-400">
+                  Solutions
+                </div>
                 <Link
                   href="/wallet"
                   className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2"
@@ -276,9 +402,13 @@ export default function Header() {
               >
                 Blog
               </a>
-              <div className="block px-3 py-2 text-white hover:text-gray-300 cursor-pointer">
-                <span>Learn</span>
-              </div>
+              <Link
+                href="/blockchain-forensics"
+                className="block px-3 py-2 text-white hover:text-gray-300 cursor-pointer"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <span>Blockchain Forensics</span>
+              </Link>
               <Link
                 href="/crypto-recovery"
                 className="block px-3 py-2 text-white hover:text-gray-300 cursor-pointer"
@@ -304,7 +434,58 @@ export default function Header() {
               <div className="border-t border-white/10 mt-2 pt-2">
                  {user ? (
                     <>
-                      <div className="px-3 py-2 text-sm text-gray-400">{user.email}</div>
+                      <div className="flex items-center gap-3 px-3 py-2">
+                        <Avatar className="h-10 w-10 rounded-full border border-white/20 bg-yellow-400/20 shrink-0">
+                          <AvatarFallback className="bg-yellow-400/20 text-yellow-400 text-sm rounded-full">
+                            {user.email?.slice(0, 2).toUpperCase() ?? "U"}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-sm font-medium text-white truncate">
+                            {user.email}
+                          </p>
+                          <p className="text-xs text-gray-500">Account</p>
+                        </div>
+                      </div>
+                      <div className="px-3 py-1 text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Account
+                      </div>
+                      <Link href="/dashboard" className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <LayoutDashboard className="h-4 w-4 text-yellow-400 shrink-0" />
+                        Dashboard
+                      </Link>
+                      <Link href="/vault" className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Lock className="h-4 w-4 text-yellow-400 shrink-0" />
+                        Blockchain Vault
+                      </Link>
+                      <Link href="/lenix-wallet" className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Wallet className="h-4 w-4 text-yellow-400 shrink-0" />
+                        Lenix Wallet
+                      </Link>
+                      <Link href="/crypto-loan" className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Landmark className="h-4 w-4 text-yellow-400 shrink-0" />
+                        Crypto Loan
+                      </Link>
+                      <Link href="/assets" className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Wallet className="h-4 w-4 text-yellow-400 shrink-0" />
+                        Assets
+                      </Link>
+                      <Link href="/send" className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Send className="h-4 w-4 text-yellow-400 shrink-0" />
+                        Send
+                      </Link>
+                      <Link href="/receive" className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <ArrowDownToLine className="h-4 w-4 text-yellow-400 shrink-0" />
+                        Receive
+                      </Link>
+                      <Link href="/transactions" className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <History className="h-4 w-4 text-yellow-400 shrink-0" />
+                        Transactions
+                      </Link>
+                      <Link href="/settings" className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2" onClick={() => setIsMobileMenuOpen(false)}>
+                        <Settings className="h-4 w-4 text-yellow-400 shrink-0" />
+                        Settings
+                      </Link>
                       <button 
                         onClick={() => {
                           handleSignOut();
@@ -317,15 +498,15 @@ export default function Header() {
                       </button>
                     </>
                  ) : (
-                    <Link
-                      href="/login"
-                      className="flex items-center gap-3 px-3 py-2 text-yellow-400 hover:bg-white/5 rounded-lg"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      <UserIcon className="h-4 w-4" />
-                      <span>Log In / Sign Up</span>
-                    </Link>
-                 )}
+                  <Link
+                    href="/login"
+                    className="flex items-center gap-3 px-3 py-2 text-yellow-400 hover:bg-white/5 rounded-lg"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    <UserIcon className="h-4 w-4" />
+                    <span>Log In / Sign Up</span>
+                  </Link>
+                )}
               </div>
             </div>
           </div>

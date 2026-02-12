@@ -1,68 +1,78 @@
-"use client";
-
-import { Landmark, HelpingHand, Info } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { LoanOverview } from "./_components/loan-overview";
-import { BorrowForm } from "./_components/borrow-form";
+import { createClient } from "@/utils/supabase/server";
+import { getUserLoans } from "./actions";
+import { LoanHero } from "./_components/loan-hero";
 import { ActiveLoans } from "./_components/active-loans";
-import { CollateralAssets } from "./_components/collateral-assets";
+import { MarketRates } from "./_components/market-rates";
+import { LoanApplication } from "./_components/loan-application";
+import { Button } from "@/components/ui/button";
 
-export default function CryptoLoanPage() {
-  return (
-    <div className="max-w-7xl mx-auto space-y-6 pb-20">
-      
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-           <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-              <Landmark className="h-6 w-6 text-yellow-400" />
-              Crypto Loan
-           </h1>
-           <p className="text-zinc-400 text-sm">Borrow transparently against your crypto assets.</p>
+export default async function CryptoLoanPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ mode?: string }>;
+}) {
+  const supabase = await createClient();
+  const loans = (await getUserLoans()) || [];
+  const params = await searchParams;
+  const isApplyMode = params.mode === "apply";
+
+  // Fetch loan types for both MarketRates and Application
+  const { data } = await supabase
+       .from("loan_types")
+       .select("*")
+       .order("id", { ascending: true });
+  const loanTypes = data || [];
+
+  // Calculate stats
+  // @ts-ignore
+  const totalBorrowed = loans.reduce((acc, loan) => acc + Number(loan.borrow_amount), 0);
+  const activeLoansCount = loans.filter(l => l.status === 'Active').length;
+
+  // If in Apply Mode, show Wizard (Full Screen or Overlay)
+  if (isApplyMode) {
+     return (
+        <div className="min-h-screen bg-black/40 backdrop-blur-xl p-4 sm:p-8 animate-in fade-in duration-300">
+           <div className="max-w-4xl mx-auto">
+              <div className="mb-6">
+                 <Button variant="ghost" asChild className="text-zinc-400 hover:text-white">
+                    <a href="/crypto-loan">&larr; Back to Dashboard</a>
+                 </Button>
+              </div>
+              {/* @ts-ignore */}
+              <LoanApplication loanTypes={loanTypes} />
+           </div>
         </div>
-        <Button variant="outline" className="border-zinc-700 bg-zinc-900/50 text-zinc-300 hover:bg-zinc-800 hover:text-white">
-           <HelpingHand className="mr-2 h-4 w-4" />
-           How it Works
-        </Button>
-      </div>
+     );
+  }
 
-      {/* Main Loan Stats */}
-      <LoanOverview />
+  return (
+    <div className="min-h-screen pb-20">
+       <LoanHero totalBorrowed={totalBorrowed} activeLoansCount={activeLoansCount} />
+       
+       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+             {/* Main Content: Active Loans */}
+             <div className="lg:col-span-2 space-y-6">
+                <ActiveLoans loans={loans} />
+             </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-         {/* Main Content (Calculator & Loans) */}
-         <div className="lg:col-span-2 space-y-6">
-            <div className="block lg:hidden">
-               <BorrowForm />
-            </div>
-            <ActiveLoans />
-
-            {/* Information Section */}
-            <div className="p-6 rounded-2xl bg-yellow-500/5 border border-yellow-500/10">
-               <div className="flex items-start gap-4">
-                  <div className="p-2 rounded-lg bg-yellow-500/10 text-yellow-400 mt-1">
-                     <Info className="h-5 w-5" />
-                  </div>
-                  <div>
-                     <h4 className="font-semibold text-white mb-1">About Lenix Loans</h4>
-                     <p className="text-sm text-zinc-400 leading-relaxed">
-                        Lenix offers over-collateralized loans. This means you must deposit more crypto than you borrow. 
-                        If the value of your collateral drops significantly, your assets may be liquidated to cover the loan. 
-                        Current Liquidation Threshold is 85% LTV.
-                     </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         {/* Sidebar (Calculator & Assets) */}
-         <div className="space-y-6">
-            <div className="hidden lg:block h-fit">
-               <BorrowForm />
-            </div>
-            <CollateralAssets />
-         </div>
-      </div>
+             {/* Sidebar: Market Rates & Info */}
+             <div className="space-y-6">
+                <MarketRates loanTypes={loanTypes} />
+                
+                {/* Helper Card */}
+                <div className="bg-gradient-to-br from-yellow-400/10 to-transparent border border-yellow-400/20 rounded-2xl p-6">
+                   <h3 className="text-white font-bold mb-2">Need more collateral?</h3>
+                   <p className="text-sm text-zinc-400 mb-4">
+                      Deposit more assets to your vault to increase your borrowing limit and improve health factor.
+                   </p>
+                   <Button variant="outline" className="w-full border-yellow-400/20 text-yellow-400 hover:bg-yellow-400/10 hover:text-yellow-300">
+                      Go to Vault
+                   </Button>
+                </div>
+             </div>
+          </div>
+       </div>
     </div>
   );
 }

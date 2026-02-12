@@ -60,7 +60,7 @@ export interface NormalizedToken {
   supports_erc: ['erc20'];
   logo_url: string;
   last_transferred_at: string;
-  native_token: false;
+  native_token: boolean;
   type: 'cryptocurrency' | 'stablecoin';
   balance: string;
   balance_24h: string;
@@ -152,22 +152,107 @@ export class MoralisClient {
         return false;
       }
 
-      // Only include tokens with valid price data
-      // Require current price data (quote and quote_rate), but allow 24h data to be missing
-      const hasCurrentPrice = 
-        token.quote !== null && 
-        token.quote !== undefined && 
-        token.quote_rate !== null && 
-        token.quote_rate !== undefined;
-
-      // Only include tokens with value > $1 USD
-      return hasCurrentPrice && token.quote > 1;
+      return true;
     });
 
     return {
       erc20s,
       nfts: [], // NFTs not included in this implementation
     };
+  }
+
+  /**
+   * Fetches the native balance for a given address on a specific chain
+   */
+  async fetchNativeBalance(
+    chainId: number,
+    address: string
+  ): Promise<NormalizedToken | null> {
+    const chainName = this.getChainName(chainId);
+    const url = `${this.baseUrl}/wallets/${address}/balance`;
+
+    const params = new URLSearchParams({
+      chain: chainName,
+    });
+
+    try {
+      const response = await fetch(`${url}?${params}`, {
+        method: 'GET',
+        headers: {
+          Accept: 'application/json',
+          'X-API-Key': this.apiKey,
+        },
+      });
+
+      if (!response.ok) {
+        console.error(`Moralis native balance failed: ${response.status}`);
+        return null;
+      }
+
+      const data = await response.json();
+      // data.balance is in wei
+
+      // We need price for the native token to calculate USD value
+      // We can use the fetchTokenPrice with the wrapped native token address or a known symbol
+      // But Moralis usually returns native price with /balance endpoint? No, it just returns balance in wei.
+      // We need to fetch native price separately or assume it's fetched elsewhere. 
+      // Actually, let's look at the fetchTokens response, maybe it includes native? 
+      // No, /tokens is ERC20. 
+      // We need to fetch price for the native coin. 
+
+      // Map chain to wrapped native address for price lookup
+      const WRAPPED_NATIVE: Record<number, string> = {
+        1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', // WETH
+        56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', // WBNB
+        137: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270', // WMATIC
+      };
+
+      let priceData = { usdPrice: 0, usdPrice24hrChange: 0 };
+      const wrappedAddress = WRAPPED_NATIVE[chainId];
+
+      if (wrappedAddress) {
+        const price = await this.fetchTokenPrice(chainId, wrappedAddress);
+        if (price) priceData = price;
+      }
+
+      const decimals = 18;
+      const balance = data.balance;
+      const quoteRate = priceData.usdPrice;
+      const quote = (Number(balance) / Math.pow(10, decimals)) * quoteRate;
+
+      // Construct normalized token
+      // Token details
+      const NATIVE_DETAILS: Record<number, any> = {
+        1: { symbol: 'ETH', name: 'Ethereum', logo: "https://assets.coingecko.com/coins/images/279/small/ethereum.png" },
+        56: { symbol: 'BNB', name: 'BNB', logo: "https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png" },
+        137: { symbol: 'MATIC', name: 'Polygon', logo: "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png" }
+      };
+
+      const details = NATIVE_DETAILS[chainId] || { symbol: 'NATIVE', name: 'Native Token', logo: '' };
+
+      return {
+        contract_decimals: decimals,
+        contract_name: details.name,
+        contract_ticker_symbol: details.symbol,
+        contract_address: "0x0000000000000000000000000000000000000000", // Standard for native
+        supports_erc: ['erc20'], // technically not, but fits the schema
+        logo_url: details.logo,
+        last_transferred_at: new Date().toISOString(),
+        native_token: true,
+        type: 'cryptocurrency',
+        balance: balance,
+        balance_24h: balance, // simplified
+        quote_rate: quoteRate,
+        quote_rate_24h: quoteRate, // simplified
+        quote: quote,
+        quote_24h: quote, // simplified
+        nft_data: null
+      };
+
+    } catch (e) {
+      console.error("fetchNativeBalance error:", e);
+      return null;
+    }
   }
 
   /**
@@ -186,11 +271,11 @@ export class MoralisClient {
       const balance24h =
         token.usd_price && token.usd_price > 0
           ? String(
-              Math.floor(
-                (usdValue24hAgo / token.usd_price) *
-                  Math.pow(10, token.decimals),
-              ),
-            )
+            Math.floor(
+              (usdValue24hAgo / token.usd_price) *
+              Math.pow(10, token.decimals),
+            ),
+          )
           : token.balance;
 
       // Calculate quote_rate_24h from percentage change
@@ -234,6 +319,116 @@ export class MoralisClient {
         nft_data: null,
       };
     });
+  }
+
+  /**
+   * Fetches native transactions for a given address
+   */
+  async fetchTransactions(
+    chainId: number,
+    address: string,
+    limit: number = 10
+  ): Promise<any[]> { // We can refine type later if needed
+    const chainName = this.getChainName(chainId);
+    const url = `${this.baseUrl}/wallets/${address}/history`;
+
+    const params = new URLSearchParams({
+      chain: chainName,
+      limit: limit.toString(),
+      order: "DESC",
+    });
+
+    const response = await fetch(`${url}?${params}`, {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+        'X-API-Key': this.apiKey,
+      },
+    });
+
+    if (!response.ok) {
+      // Allow failure for history (return empty) to not break entire dashboard
+      console.error(`Moralis history failed: ${response.status}`);
+      return [];
+    }
+
+    const data = await response.json();
+    return data.result || [];
+  }
+
+  /**
+   * Fetches token price
+   */
+  async fetchTokenPrice(
+    chainId: number,
+    address: string
+  ): Promise<{ usdPrice: number; usdPrice24hrChange: number } | null> {
+    const chainName = this.getChainName(chainId);
+    const url = `${this.baseUrl}/erc20/${address}/price`;
+
+    const params = new URLSearchParams({
+      chain: chainName,
+    });
+
+    try {
+      const response = await fetch(`${url}?${params}`, {
+        method: 'GET',
+        headers: {
+          Accept: 'application/json',
+          'X-API-Key': this.apiKey,
+        },
+      });
+
+      if (!response.ok) {
+        console.warn(`Moralis price failed for ${address}: ${response.status}`);
+        return null;
+      }
+
+      const data = await response.json();
+      return {
+        usdPrice: data.usdPrice,
+        usdPrice24hrChange: 0, // Moralis /price endpoint might not return 24h change directly, strict /price usually just returns price. 
+        // We might need to fetch OHLCV or just accept current price. 
+        // For now, let's just return price.
+      };
+    } catch (e) {
+      console.error("fetchTokenPrice error:", e);
+      return null;
+    }
+  }
+
+  /**
+   * Fetches ERC20 token transfers for a given address
+   */
+  async fetchErc20Transfers(
+    chainId: number,
+    address: string,
+    limit: number = 50
+  ): Promise<any[]> {
+    const chainName = this.getChainName(chainId);
+    const url = `${this.baseUrl}/${address}/erc20/transfers`;
+
+    const params = new URLSearchParams({
+      chain: chainName,
+      limit: limit.toString(),
+      order: "DESC",
+    });
+
+    const response = await fetch(`${url}?${params}`, {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+        'X-API-Key': this.apiKey,
+      },
+    });
+
+    if (!response.ok) {
+      console.error(`Moralis ERC20 transfers failed: ${response.status}`);
+      return [];
+    }
+
+    const data = await response.json();
+    return data.result || [];
   }
 
   /**

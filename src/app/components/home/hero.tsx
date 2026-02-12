@@ -1,6 +1,7 @@
 "use client";
 
 import { X, Send, FileText, Star, CreditCard } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 import {
   useAccount,
@@ -119,8 +120,8 @@ export default function HomeHero() {
     typeof usdtDecimals === "number"
       ? usdtDecimals
       : (usdtDecimals as unknown as bigint | undefined) !== undefined
-      ? Number(usdtDecimals as unknown as bigint)
-      : 6;
+        ? Number(usdtDecimals as unknown as bigint)
+        : 6;
 
   const hasUsdtPricing = Boolean(
     isUsdtAccepted && priceUsdtPerTokenUnits && usdtAddress
@@ -143,12 +144,12 @@ export default function HomeHero() {
     paymentMethod === "ETH"
       ? tokensOutDisplayEth
       : paymentMethod === "USDT"
-      ? quotedTokensOutErc20
-        ? formatUnits(quotedTokensOutErc20 as bigint, 18)
-        : ""
-      : ethAmount && tokenPriceUsd
-      ? String((Number(ethAmount) / Number(tokenPriceUsd)).toFixed(4))
-      : "";
+        ? quotedTokensOutErc20
+          ? formatUnits(quotedTokensOutErc20 as bigint, 18)
+          : ""
+        : ethAmount && tokenPriceUsd
+          ? String((Number(ethAmount) / Number(tokenPriceUsd)).toFixed(4))
+          : "";
 
   const tokensSoldDisplay =
     totalTokensSold && totalTokensSold > BigInt(0)
@@ -166,8 +167,8 @@ export default function HomeHero() {
         ? `USD price: $${tokenPriceUsd}`
         : ""
       : ethPriceDisplay
-      ? `ETH price: ${ethPriceDisplay} ETH`
-      : "";
+        ? `ETH price: ${ethPriceDisplay} ETH`
+        : "";
 
   // Approximate USD raised using USDT price * tokens sold (works even if paid in ETH)
   let usdRaisedDisplay = "498,750";
@@ -182,15 +183,15 @@ export default function HomeHero() {
     paymentMethod === "ETH"
       ? "ETH you pay"
       : paymentMethod === "USDT"
-      ? "USDT you pay"
-      : "USD you pay";
+        ? "USDT you pay"
+        : "USD you pay";
 
   const canPay =
     paymentMethod === "ETH"
       ? !!ethAmount
       : paymentMethod === "USDT"
-      ? !!ethAmount && !!usdtAddress && hasUsdtPricing
-      : false;
+        ? !!ethAmount && !!usdtAddress && hasUsdtPricing
+        : false;
 
   async function handlePay() {
     if (!isConnected || !address) return;
@@ -508,11 +509,11 @@ export default function HomeHero() {
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <div className="absolute inset-0 hero-grid-pattern" />
       </div>
-      
+
       {/* Responsive Gradient SVG Shape */}
       <div className="absolute top-0 right-0 -z-10 w-full h-full  overflow-hidden pointer-events-none">
-         <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-yellow-400/20 blur-[100px] opacity-30 animate-pulse lg:w-[800px] lg:h-[800px]" />
-         <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] rounded-full bg-blue-600/20 blur-[80px] opacity-20 animate-pulse lg:w-[600px] lg:h-[600px]" />
+        <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-yellow-400/20 blur-[100px] opacity-30 animate-pulse lg:w-[800px] lg:h-[800px]" />
+        <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] rounded-full bg-blue-600/20 blur-[80px] opacity-20 animate-pulse lg:w-[600px] lg:h-[600px]" />
       </div>
 
       <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
@@ -520,52 +521,41 @@ export default function HomeHero() {
           {/* Left Content */}
           <div className="space-y-8 z-10">
             <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight z-20">
-                Cross-border
-                <br />
-                Payments
-                <br />
-                <span className="text-yellow-400">Reinvented</span>
+              <h1 className="text-5xl lg:text-7xl font-bold text-white md:leading-16 leading-12 z-20">
+                Blockchain <span className="text-yellow-400">Forensics</span>,
+                Investigations and Financing Protocol.
               </h1>
 
               <div className="space-y-2 text-gray-300 text-lg max-w-lg">
                 <p>
-                  Lenix Protocol enables users to pay fiat into any bank account
-                  around the world using crypto, by just simply connecting your
-                  wallet.
+                  Advanced blockchain analytics and forensic investigations to trace assets, 
+                  uncover fraud, and support legal recovery efforts globally.
                 </p>
                 <p className="text-yellow-400 font-semibold">
-                  Welcome to the PayFi revolution!
+                  Secure your digital future with expert investigation.
                 </p>
               </div>
             </div>
 
-            {/* Social Icons */}
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-sm"
-              >
-                <X className="w-5 h-5 text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-sm"
-              >
-                <Send className="w-5 h-5 text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-sm"
-              >
-                <FileText className="w-5 h-5 text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-sm"
-              >
-                <Star className="w-5 h-5 text-white" />
-              </a>
+            {/* Action Buttons */}
+            <div className="flex flex-wrap gap-4">
+              <Link href="/signup">
+                <Button
+                  size="lg"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold h-12 px-8 rounded-full shadow-[0_0_20px_rgba(250,204,21,0.2)] hover:shadow-[0_0_30px_rgba(250,204,21,0.4)] transition-all"
+                >
+                  Sign Up to Lenix
+                </Button>
+              </Link>
+              <Link href="/login">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white/10 text-white hover:bg-white/5 h-12 px-8 rounded-full bg-white/5 backdrop-blur-sm"
+                >
+                  Log In
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -719,10 +709,10 @@ export default function HomeHero() {
                     {isPending
                       ? "Processing..."
                       : paymentMethod === "ETH"
-                      ? "Pay with ETH"
-                      : paymentMethod === "USDT"
-                      ? "Pay with USDT"
-                      : "Enter Card Details Below"}
+                        ? "Pay with ETH"
+                        : paymentMethod === "USDT"
+                          ? "Pay with USDT"
+                          : "Enter Card Details Below"}
                   </button>
                   {paymentMethod === "CARD" && (
                     <p className="text-center text-xs text-gray-400 mb-4">

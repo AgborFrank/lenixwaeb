@@ -1,11 +1,23 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Settings, User, Shield, Sliders, ChevronRight, LogOut } from "lucide-react";
+import { User, Shield, Sliders, ChevronRight, LogOut } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { getSettingsAndUser } from "./actions";
+
+function initials(name: string | null, email: string | undefined): string {
+  if (name?.trim()) {
+    const parts = name.trim().split(/\s+/);
+    if (parts.length >= 2) return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+    return name.slice(0, 2).toUpperCase();
+  }
+  if (email) return email.slice(0, 2).toUpperCase();
+  return "?";
+}
 
 export default function SettingsLayout({
   children,
@@ -13,6 +25,19 @@ export default function SettingsLayout({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
+  const [displayName, setDisplayName] = useState<string | null>(null);
+  const [email, setEmail] = useState<string>("");
+  const [avatarUrl, setAvatarUrl] = useState<string | null>(null);
+
+  useEffect(() => {
+    getSettingsAndUser().then(({ user, settings }) => {
+      if (user) setEmail(user.email ?? "");
+      if (settings) {
+        setDisplayName(settings.display_name);
+        setAvatarUrl(settings.avatar_url);
+      }
+    });
+  }, []);
 
   const navItems = [
     {
@@ -57,12 +82,16 @@ export default function SettingsLayout({
           <div className="flex items-center justify-between p-4 rounded-xl bg-zinc-900 border border-white/5">
             <div className="flex items-center gap-3">
               <Avatar className="h-10 w-10 border border-zinc-700">
-                <AvatarImage src="https://github.com/shadcn.png" />
-                <AvatarFallback className="bg-yellow-500 text-black font-bold">JD</AvatarFallback>
+                <AvatarImage src={avatarUrl ?? undefined} />
+                <AvatarFallback className="bg-yellow-500 text-black font-bold">
+                  {initials(displayName, email)}
+                </AvatarFallback>
               </Avatar>
-              <div className="text-left">
-                <p className="text-sm font-bold text-white leading-none">John Doe</p>
-                <p className="text-xs text-zinc-500 mt-1">john.doe@example.com</p>
+              <div className="text-left min-w-0">
+                <p className="text-sm font-bold text-white leading-none truncate">
+                  {displayName || email || "Account"}
+                </p>
+                <p className="text-xs text-zinc-500 mt-1 truncate">{email || "—"}</p>
               </div>
             </div>
           </div>

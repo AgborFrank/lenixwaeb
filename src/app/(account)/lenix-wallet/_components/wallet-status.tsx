@@ -45,47 +45,6 @@ export function WalletStatus() {
            </div>
         </div>
       </div>
-
-      <div className="p-6 rounded-2xl bg-zinc-900/30 border border-white/5 backdrop-blur-sm">
-         <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-3">
-               <Activity className="h-5 w-5 text-yellow-400" />
-               <h3 className="text-lg font-semibold text-white">Recent Activity</h3>
-            </div>
-            <Button variant="link" className="text-xs text-zinc-500 hover:text-white p-0">View All</Button>
-         </div>
-         
-         <div className="space-y-4 relative">
-            {/* Timeline line */}
-            <div className="absolute left-[7px] top-2 bottom-2 w-[1px] bg-zinc-800" />
-            
-            <ActivityItem 
-               title="Received USDT" 
-               time="Today, 10:45 AM" 
-               amount="+500.00" 
-               status="Completed"
-               icon={ArrowDownLeft}
-               iconColor="text-emerald-400 bg-emerald-400/10"
-            />
-             <ActivityItem 
-               title="Sent ETH" 
-               time="Yesterday, 4:20 PM" 
-               amount="-0.45"
-               status="Completed"
-               icon={ArrowUpRight}
-               iconColor="text-zinc-400 bg-zinc-400/10"
-            />
-             <ActivityItem 
-               title="Swapped MATIC" 
-               time="Feb 10, 2026" 
-               desc="to USDT"
-               amount="450 MATIC"
-               status="Pending"
-               icon={RefreshCcw}
-               iconColor="text-yellow-400 bg-yellow-400/10"
-            />
-         </div>
-      </div>
     </div>
   );
 }

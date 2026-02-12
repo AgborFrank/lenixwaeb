@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboard,
@@ -36,6 +37,7 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { createClient } from "@/utils/supabase/client";
 import { useRouter } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { MobileTabs } from "./mobile-tabs";
 
 const TELEGRAM_URL = "https://t.me/Verified_protocol";
 
@@ -137,7 +139,14 @@ export function AccountLayout({
       <aside className="hidden lg:fixed lg:inset-y-0 lg:left-0 lg:z-30 lg:flex lg:w-64 lg:flex-col">
         <div className="account-sidebar flex grow flex-col gap-y-5 overflow-y-auto overflow-x-hidden rounded-r-2xl border-r border-white/10 bg-white/5 backdrop-blur-xl px-4 pb-4 pt-6">
           <Link href="/dashboard" className="flex items-center gap-2 px-4">
-            <span className="text-lg font-bold text-white">Account</span>
+            <Image 
+               src="/assets/img/logo.png" 
+               alt="Lenix Protocol" 
+               width={120} 
+               height={40} 
+               className="h-8 w-auto object-contain"
+               priority
+            />
           </Link>
           <ScrollArea className="flex-1 [&>[data-slot=scroll-area-scrollbar]]:hidden">
             <SidebarContent />
@@ -257,7 +266,14 @@ export function AccountLayout({
         </header>
 
         {/* Page content */}
-        <main className="flex-1 p-4 sm:p-6 lg:p-8">{children}</main>
+        <main className={cn(
+           "flex-1 pb-20 lg:pb-0", // Add bottom padding for mobile tabs
+           pathname === "/crypto-loan" ? "p-0" : "p-4 sm:p-6 lg:p-8"
+        )}>
+          {children}
+        </main>
+        
+        <MobileTabs />
       </div>
     </div>
   );

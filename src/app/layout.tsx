@@ -6,6 +6,7 @@ import { headers } from "next/headers";
 import AppKitProvider from "@/context";
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { ThemeProvider } from "./(account)/_providers/theme-provider";
 
 // Google Fonts - Primary font
 const onest = Onest({
@@ -84,7 +85,7 @@ export default async function RootLayout({
   const headersList = await headers();
   const cookies = headersList.get("cookie");
   return (
-    <html lang="en">
+    <html lang="en" className="dark" suppressHydrationWarning>
       <body
         className={`
           ${onest.variable} 
@@ -97,7 +98,9 @@ export default async function RootLayout({
         `}
       >
         <TooltipProvider>
-          <AppKitProvider cookies={cookies}>{children}</AppKitProvider>
+          <ThemeProvider>
+            <AppKitProvider cookies={cookies}>{children}</AppKitProvider>
+          </ThemeProvider>
         </TooltipProvider>
         <Toaster />
       </body>

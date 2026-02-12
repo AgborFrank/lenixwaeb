@@ -82,7 +82,7 @@ export function ConnectWalletDrawer() {
       <DrawerTrigger asChild>
         <Button 
           size="lg" 
-          className="bg-yellow-400 text-black hover:bg-yellow-500 font-bold px-8 py-6 text-lg rounded-xl shadow-lg shadow-yellow-400/20 transition-all hover:scale-105 active:scale-95"
+          className="bg-yellow-400 text-black hover:bg-yellow-500 font-bold px-8 py-3  rounded-xl shadow-lg shadow-yellow-400/20 transition-all hover:scale-105 active:scale-95"
         >
           <Wallet className="mr-2 h-5 w-5" />
           Connect Wallet

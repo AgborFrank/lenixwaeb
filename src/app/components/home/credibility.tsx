@@ -15,9 +15,9 @@ export default function Credibility() {
             Audited by CertiK. Built with Confidence.
           </p>
           <p className="text-lg text-gray-600">
-            Get in-depth knowledge of our ecosystem by reading our{" "}
+            Our audits cover the full stack. Read the{" "}
             <span className="font-semibold text-black">Whitepaper</span> and
-            security audit.
+            CertiK report for the details.
           </p>
         </div>
 

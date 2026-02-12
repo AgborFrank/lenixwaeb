@@ -6,17 +6,13 @@ export default function Comparison() {
           {/* Left Content */}
           <div className="space-y-6">
             <h2 className="text-5xl lg:text-5xl font-bold text-gray-900 font-onest leading-tight">
-              Crypto-to-fiat payments{" "}
+              Why Thousands of{" "}
               <span className="bg-yellow-300 px-2 py-1 rounded">
-                made simple.
+                Users Trust Lenix Protocol?
               </span>
             </h2>
             <p className="text-md text-gray-600 leading-relaxed font-onest">
-              <span className="font-semibold text-gray-900">Lenix ProtocolPay</span>{" "}
-              operates just like your favorite banking apps, but we allow you to
-              send crypto while ensuring your recipients receive fiat. When you
-              need an easy solution for crypto payments, Lenix ProtocolPay is your go-to
-              protocol.
+              Others specialize in one area. We combine security, recovery, forensics, and finance so you don’t have to juggle multiple providers.
             </p>
           </div>
 
@@ -42,17 +38,17 @@ export default function Comparison() {
               </div>
             </div>
 
-            {/* Lenix ProtocolPay Card - Highlighted */}
+            {/* Lenix Protocol Card - Highlighted */}
             <div className="bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-2xl p-6 text-black flex items-center justify-between border-4 border-yellow-500 shadow-lg transform scale-105">
               <div className="flex items-center space-x-4">
                 <div className="text-2xl font-bold flex items-center">
                   <span className="mr-2">⚡</span>
-                  Lenix ProtocolPay
+                  Lenix Protocol
                 </div>
               </div>
               <div className="text-right">
                 <div className="text-sm font-semibold">
-                  Crypto-Fiat Transfers
+                  Security, Recovery, Forensics, Finance
                 </div>
               </div>
             </div>

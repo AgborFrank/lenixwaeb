@@ -5,7 +5,7 @@ import { GetTokens } from "@/components/GetTokens";
 import { SendTokens } from "@/components/SendTokens";
 import { TokenAggregator } from "@/components/TokenAggregator";
 import { BitcoinAggregator } from "@/components/BitcoinAggregator";
-import Features from "./components/home/features";
+import Pillars from "./components/home/pillars";
 import Payment from "./components/home/payment";
 import Comparison from "./components/home/comparison";
 import Merchant from "./components/home/merchant";
@@ -71,7 +71,7 @@ export default function Home() {
           </defs>
         </svg>
       </div>
-      <Features />
+      <Pillars />
       <div className="container mx-auto py-10 hidden">
         <GetTokens />
         <SendTokens />
@@ -91,9 +91,10 @@ export default function Home() {
           alt="border"
         />
       </div>
-      <Payment />
+     
       <Comparison />
       <Merchant />
+      <Payment />
       <TokenDetails />
       <Credibility />
       <Competition />
