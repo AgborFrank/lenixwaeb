@@ -1,21 +1,13 @@
-"use client";
+import type { Metadata } from "next";
+import { WalletContent } from "./components/wallet-content";
 
-import Header from "@/app/components/header";
-import Footer from "@/app/components/footer";
-import WalletHero from "@/app/components/wallet/hero";
-import WalletFeatures from "@/app/components/wallet/features";
-import WalletSecurity from "@/app/components/wallet/security";
-import WalletCTA from "@/app/components/wallet/cta";
+export const metadata: Metadata = {
+  title: "Lenix Wallet – The Most Secure Vault for Your Assets",
+  description: "Experience professional-grade security with the Lenix Wallet. Securely manage, store, and grow your crypto assets with advanced encryption and recovery protocols.",
+  keywords: ["Crypto Wallet", "Secure Wallet", "Blockchain Vault", "LNX Wallet", "Asset Security"],
+};
 
 export default function LenixWalletPage() {
-  return (
-    <main className="bg-black min-h-screen">
-      <Header />
-      <WalletHero />
-      <WalletFeatures />
-      <WalletSecurity />
-      <WalletCTA />
-      <Footer />
-    </main>
-  );
+  return <WalletContent />;
 }
+

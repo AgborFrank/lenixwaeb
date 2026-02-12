@@ -62,8 +62,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Email Us</h4>
-                  <p className="text-gray-400">hello@Lenix Protocolprotocol.com</p>
-                  <p className="text-gray-400">support@Lenix Protocolprotocol.com</p>
+                  <p className="text-gray-400">contact@lenixprotocol.com</p>
+                  <p className="text-gray-400">loan@lenixprotocol.com</p>
                 </div>
               </div>
 

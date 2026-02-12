@@ -72,9 +72,42 @@ const BitnovatusSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Lenix Finance - Bridging Crypto with Local Payment Networks",
+  title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
   description:
-    "Lenix Finance empowers crypto holders and businesses to facilitate crypto-to-fiat transactions worldwide, leveraging local payment networks and blockchain technology.",
+    "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics. We trace assets, identify scammers, and provide court-ready evidence.",
+  keywords: [
+    "Crypto Recovery",
+    "Blockchain Forensics",
+    "Stolen Bitcoin Recovery",
+    "Asset Tracing",
+    "Security Protocol",
+    "Find Crypto Scammer",
+    "Wallet Password Recovery",
+  ],
+  openGraph: {
+    title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
+    description:
+      "Professional cryptocurrency investigation and asset recovery services. Trace stolen funds and secure your digital future.",
+    url: "https://lenixprotocol.com",
+    siteName: "Lenix Protocol",
+    images: [
+      {
+        url: "/assets/img/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Lenix Protocol - Blockchain Forensics & Recovery",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
+    description:
+      "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics.",
+    images: ["/assets/img/og-image.png"],
+  },
 };
 
 export default async function RootLayout({

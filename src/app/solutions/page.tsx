@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import SolutionsHero from "./components/solutions-hero";
@@ -5,6 +6,11 @@ import CryptoRecovery from "./components/crypto-recovery";
 import CrossBorderPayments from "./components/cross-border-payments";
 import CryptoLending from "./components/crypto-lending";
 import CryptoSecurity from "./components/crypto-security";
+
+export const metadata: Metadata = {
+  title: "Blockchain Security & Recovery Solutions | Lenix Protocol",
+  description: "Explore Lenix Protocol's suites of solutions ranging from asset recovery and blockchain forensics to secure payments and lending infrastructure.",
+};
 
 export default function Solutions() {
   return (

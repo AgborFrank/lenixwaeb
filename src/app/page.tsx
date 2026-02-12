@@ -17,6 +17,38 @@ export default function Home() {
   return (
     <>
       <Header />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Lenix Protocol",
+            "url": "https://lenixprotocol.com",
+            "logo": "https://lenixprotocol.com/assets/img/logo.png",
+            "service": [
+              {
+                "@type": "Service",
+                "name": "Crypto Asset Recovery",
+                "description": "Professional recovery of lost or stolen cryptocurrency using advanced blockchain forensics.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Lenix Protocol"
+                }
+              },
+              {
+                "@type": "Service",
+                "name": "Blockchain Forensics",
+                "description": "Expert blockchain investigation and asset tracing for legal and recovery purposes.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "Lenix Protocol"
+                }
+              }
+            ]
+          })
+        }}
+      />
       <HomeHero />
       <div className="hidden w-full py-10 md:flex bg-black">
         <svg

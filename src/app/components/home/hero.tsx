@@ -523,7 +523,7 @@ export default function HomeHero() {
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-7xl font-bold text-white md:leading-16 leading-12 z-20">
                 Blockchain <span className="text-yellow-400">Forensics</span>,
-                Investigations and Financing Protocol.
+                Crypto Recovery and Security Protocol.
               </h1>
 
               <div className="space-y-2 text-gray-300 text-lg max-w-lg">

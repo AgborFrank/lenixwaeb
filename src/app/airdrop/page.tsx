@@ -1,21 +1,13 @@
-"use client";
+import type { Metadata } from "next";
+import { AirdropContent } from "./components/airdrop-content";
 
-import Header from "@/app/components/header";
-import Footer from "@/app/components/footer";
-import AirdropHero from "@/app/components/airdrop/hero";
-import AirdropOngoing from "@/app/components/airdrop/ongoing";
-import AirdropUpcoming from "@/app/components/airdrop/upcoming";
-import FinanceCTA from "@/app/components/finance/cta"; // Reuse Telegram CTA
+export const metadata: Metadata = {
+  title: "LNX Token Airdrop & Rewards | Lenix Protocol",
+  description: "Participate in the Lenix Protocol airdrop and earn LNX tokens. Secure your spot in the future of blockchain forensics and asset recovery.",
+  keywords: ["Crypto Airdrop", "LNX Token", "Free Crypto", "Lenix Rewards", "Blockchain Security Rewards"],
+};
 
 export default function AirdropPage() {
-  return (
-    <main className="bg-black min-h-screen">
-      <Header />
-      <AirdropHero />
-      <AirdropOngoing />
-      <AirdropUpcoming />
-      <FinanceCTA />
-      <Footer />
-    </main>
-  );
+  return <AirdropContent />;
 }
+

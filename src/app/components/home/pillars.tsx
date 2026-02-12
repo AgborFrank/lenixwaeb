@@ -14,14 +14,14 @@ const PILLARS = [
   },
   {
     title: "Asset Recovery",
-    description: "Specialized protocols and legal pathways to reclaim lost or stolen crypto.",
+    description: "Specialized protocols and legal pathways to reclaim lost or stolen crypto with certified forensic analysis.",
     icon: Search,
     href: "/crypto-recovery",
     cta: "Start recovery",
   },
   {
     title: "Blockchain Forensics",
-    description: "Expert analysis to trace fraud, hacks, and unauthorized transfers.",
+    description: "Expert investigation to trace fraud, hacks, and provide court-admissible evidence for legal recovery.",
     icon: FileSearch,
     href: "/crypto-recovery",
     cta: "Learn more",
