@@ -12,6 +12,7 @@ import Merchant from "./components/home/merchant";
 import TokenDetails from "./components/home/token-details";
 import Competition from "./components/home/competition";
 import Credibility from "./components/home/credibility";
+import Partners from "@/components/partners";
 
 export default function Home() {
   return (
@@ -103,6 +104,7 @@ export default function Home() {
           </defs>
         </svg>
       </div>
+      <Partners />
       <Pillars />
       <div className="container mx-auto py-10 hidden">
         <GetTokens />

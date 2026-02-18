@@ -7,6 +7,7 @@ import AppKitProvider from "@/context";
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "./(account)/_providers/theme-provider";
+import FloatingTelegramButton from "@/components/floating-telegram-button";
 
 // Google Fonts - Primary font
 const onest = Onest({
@@ -136,6 +137,7 @@ export default async function RootLayout({
           </ThemeProvider>
         </TooltipProvider>
         <Toaster />
+        <FloatingTelegramButton />
       </body>
     </html>
   );

@@ -16,6 +16,8 @@ import {
   ArrowDownToLine,
   History,
   Settings,
+  FileSearch,
+  Scale,
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
@@ -183,6 +185,44 @@ export default function Header() {
                       </span>
                       <p className="text-xs text-gray-400 line-clamp-2 leading-snug">
                         Recover lost assets with expert assistance.
+                      </p>
+                    </div>
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem className="focus:bg-white/5 cursor-pointer rounded-lg p-0 mt-1">
+                  <Link
+                    href="/compliance-investigations"
+                    className="flex items-start gap-4 p-3 w-full"
+                  >
+                    <div className="p-2 bg-yellow-400/10 rounded-lg shrink-0">
+                      <FileSearch className="h-5 w-5 text-yellow-400" />
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <span className="text-sm font-medium text-white leading-none">
+                        Compliance Investigations
+                      </span>
+                      <p className="text-xs text-gray-400 line-clamp-2 leading-snug">
+                        Conduct investigations across blockchains with single-click analysis.
+                      </p>
+                    </div>
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem className="focus:bg-white/5 cursor-pointer rounded-lg p-0 mt-1">
+                  <Link
+                    href="/law-enforcement"
+                    className="flex items-start gap-4 p-3 w-full"
+                  >
+                    <div className="p-2 bg-yellow-400/10 rounded-lg shrink-0">
+                      <Scale className="h-5 w-5 text-yellow-400" />
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <span className="text-sm font-medium text-white leading-none">
+                        Law Enforcement
+                      </span>
+                      <p className="text-xs text-gray-400 line-clamp-2 leading-snug">
+                        Blockchain intelligence and investigation tools for law enforcement.
                       </p>
                     </div>
                   </Link>
@@ -393,6 +433,22 @@ export default function Header() {
                 >
                   <ShieldCheck className="h-4 w-4 text-yellow-400" />
                   <span>Crypto Recovery</span>
+                </Link>
+                <Link
+                  href="/compliance-investigations"
+                  className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <FileSearch className="h-4 w-4 text-yellow-400" />
+                  <span>Compliance Investigations</span>
+                </Link>
+                <Link
+                  href="/law-enforcement"
+                  className="flex items-center gap-3 px-3 py-2 text-gray-300 hover:text-white hover:bg-white/5 rounded-lg mx-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Scale className="h-4 w-4 text-yellow-400" />
+                  <span>Law Enforcement</span>
                 </Link>
               </div>
               <a
