@@ -58,7 +58,7 @@ export function ReceiveSuccessModal({ isOpen, onClose, data }: ReceiveSuccessMod
               <Check className="h-8 w-8 text-black font-bold" strokeWidth={3} />
            </div>
            
-           <DialogTitle className="text-2xl font-bold text-center mb-1">Payment Received</DialogTitle>
+           <DialogTitle className="text-2xl font-bold text-center mb-1">Asset Received</DialogTitle>
            <DialogDescription className="text-zinc-400 text-center">
               You have successfully received assets.
            </DialogDescription>

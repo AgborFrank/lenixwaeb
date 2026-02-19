@@ -2,10 +2,8 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { Send, Copy } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, formatCurrency } from "@/lib/utils";
 import { toast } from "sonner";
-import { useSettings } from "@/app/(account)/_providers/settings-provider";
 
 interface TokenListProps {
   tokens: any[];

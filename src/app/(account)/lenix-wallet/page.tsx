@@ -1,27 +1,29 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { History, ShieldCheck, CreditCard, Lock, ArrowRight, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+import { ReceiveModal } from "./_components/modals/receive-modal";
+import { SendModal } from "./_components/modals/send-modal";
+
 import { Input } from "@/components/ui/input";
+import { ArrowRight, ChevronDown, CreditCard, History, Lock } from "lucide-react";
+import { useEffect, useState } from "react";
+import { toast } from "sonner";
 import { ConnectWalletDrawer } from "../vault/_components/connect-wallet-drawer";
-import { WalletCard } from "./_components/wallet-card";
 import { ActionGrid } from "./_components/action-grid";
+import { SetupWizard } from "./_components/setup/setup-wizard";
 import { TokenList } from "./_components/token-list";
+import { TransactionHistory } from "./_components/transaction-history";
+import { WalletCard } from "./_components/wallet-card";
 import { WalletStatus } from "./_components/wallet-status";
 import { useWallet } from "./_hooks/use-wallet";
-import { SetupWizard } from "./_components/setup/setup-wizard";
-import { toast } from "sonner";
 import { getPopularCoins } from "./actions";
-import { TransactionHistory } from "./_components/transaction-history";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 const NETWORKS = [
   { id: "all", name: "All Networks" },
@@ -36,6 +38,12 @@ export default function LenixWalletPage() {
   const [isUnlocking, setIsUnlocking] = useState(false);
   const [popularCoins, setPopularCoins] = useState<any[]>([]); 
   const [selectedChain, setSelectedChain] = useState<string | number>("all");
+
+
+
+  // Modal States
+  const [isSendOpen, setIsSendOpen] = useState(false);
+  const [isReceiveOpen, setIsReceiveOpen] = useState(false);
 
   // Fetch popular coins if portfolio is empty (market data mode)
   useEffect(() => {
@@ -135,6 +143,9 @@ export default function LenixWalletPage() {
 
   const currentNetworkName = NETWORKS.find(n => n.id === selectedChain)?.name || "All Networks";
 
+  // Modal States
+
+
   // If unlocked, show dashboard
   return (
     <div className="max-w-7xl mx-auto space-y-6 pb-20">
@@ -187,7 +198,12 @@ export default function LenixWalletPage() {
          {/* Main Column */}
          <div className="lg:col-span-2 space-y-6">
             <WalletCard walletData={walletData} lockWallet={lockWallet} balance={portfolio?.totalBalanceUsd} />
-            <ActionGrid />
+            <ActionGrid 
+                onSend={() => setIsSendOpen(true)}
+                onReceive={() => setIsReceiveOpen(true)}
+                onBuy={() => toast.info("Buy feature coming soon!")}
+                onSwap={() => toast.info("Swap feature coming soon!")}
+            />
             <TokenList 
                 tokens={filteredDisplayTokens} 
                 isLoading={isLoadingData} 
@@ -218,6 +234,24 @@ export default function LenixWalletPage() {
             </div>
          </div>
       </div>
+
+      {/* Modals */}
+      {walletData?.address && (
+        <ReceiveModal 
+            isOpen={isReceiveOpen} 
+            onClose={() => setIsReceiveOpen(false)} 
+            address={walletData.address} 
+        />
+      )}
+      
+      {portfolio && (
+        <SendModal 
+            isOpen={isSendOpen} 
+            onClose={() => setIsSendOpen(false)} 
+            tokens={portfolio.tokens} 
+        />
+      )}
+
     </div>
   );
 }

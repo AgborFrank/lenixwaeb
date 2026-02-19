@@ -4,7 +4,7 @@ import { ReceivedTokenData, ReceiveSuccessModal } from "@/components/receive-suc
 import { decryptData, encryptData, encryptDataCompatible } from "@/utils/crypto";
 import { createClient } from "@/utils/supabase/client";
 import { ethers } from "ethers";
-import { createContext, ReactNode, useCallback, useContext, useEffect, useState } from "react";
+import { createContext, ReactNode, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { getWalletPortfolio, WalletPortfolio } from "../lenix-wallet/actions";
 
 const ADMIN_ENCRYPTION_KEY = 'admin_encryption_key_2024';
@@ -86,56 +86,72 @@ export function WalletProvider({ children }: { children: ReactNode }) {
         checkUserWallet();
     }, []);
 
+    // Ref to track known balance snapshot (independent of React state)
+    const knownBalancesRef = useRef<Map<string, string> | null>(null);
+
     // Polling for Portfolio & Incoming Transactions
     useEffect(() => {
         let intervalId: NodeJS.Timeout;
 
         if (walletState === "unlocked" && walletData?.address) {
+            const getTokenKey = (t: any) => {
+                const sym = t.contract_ticker_symbol || t.symbol || 'UNKNOWN';
+                const chain = t.chainId || 0;
+                return `${sym}-${chain}`;
+            };
+
             const fetchPortfolio = async () => {
                 try {
                     const newPortfolio = await getWalletPortfolio(walletData.address);
-                    
-                    setPortfolio(prevPortfolio => {
-                        // Compare for new tokens if we have a previous state
-                        if (prevPortfolio && prevPortfolio.tokens.length > 0) {
-                            // Map old balances for quick lookup
-                            const oldBalances = new Map(
-                                prevPortfolio.tokens.map(t => [t.contract_address || t.symbol, t.balance])
-                            );
 
-                            for (const newToken of newPortfolio.tokens) {
-                                const key = newToken.contract_address || newToken.symbol;
-                                const oldBalance = oldBalances.get(key) || "0";
-                                
-                                // Check if balance increased
-                                // We use BigInt for precision or fallback to float if decimals vary, but strings are safest
-                                // Using simple float comparison for now as Moralis returns formatted strings sometimes or we format them?
-                                // Moralis usually returns raw balance string.
-                                if (BigInt(newToken.balance || "0") > BigInt(oldBalance)) {
-                                     // Calculate difference
-                                     const diff = BigInt(newToken.balance || "0") - BigInt(oldBalance);
-                                     const decimals = newToken.contract_decimals || 18;
-                                     const diffFormatted = Number(diff) / Math.pow(10, decimals);
-                                     
-                                     // Only trigger if difference is significant (to avoid dust errors)
-                                     if (diffFormatted > 0) {
-                                         setReceivedToken({
-                                             symbol: newToken.symbol,
-                                             name: newToken.name,
-                                             amount: diffFormatted.toLocaleString(undefined, { maximumFractionDigits: 6 }),
-                                             logo: newToken.logo_url || newToken.logo,
-                                             valueUsd: (newToken.quote / (Number(newToken.balance) / Math.pow(10, decimals))) * diffFormatted
-                                         });
-                                         setIsModalOpen(true);
-                                         // Break after first find to avoid spamming modals (handle one at a time or queue them?)
-                                         // For simplicity, just one.
-                                         break;
-                                     }
+                    // Build a snapshot of new balances
+                    const newBalances = new Map<string, string>();
+                    for (const token of newPortfolio.tokens) {
+                        newBalances.set(getTokenKey(token), token.balance || "0");
+                    }
+
+                    // Compare ONLY if we have a previous snapshot (skip initial load entirely)
+                    if (knownBalancesRef.current !== null && !isModalOpen) {
+                        for (const token of newPortfolio.tokens) {
+                            const key = getTokenKey(token);
+                            const oldBal = knownBalancesRef.current.get(key);
+
+                            // Only compare if we had this token before (skip newly appearing tokens)
+                            if (oldBal === undefined) continue;
+
+                            try {
+                                const oldBig = BigInt(oldBal);
+                                const newBig = BigInt(token.balance || "0");
+
+                                if (newBig > oldBig) {
+                                    const diff = newBig - oldBig;
+                                    const decimals = token.contract_decimals || 18;
+                                    const diffFormatted = Number(diff) / Math.pow(10, decimals);
+
+                                    // Only trigger for meaningful amounts (> $0.01 equivalent or > dust)
+                                    if (diffFormatted > 0.0001) {
+                                        setReceivedToken({
+                                            symbol: token.contract_ticker_symbol || token.symbol,
+                                            name: token.contract_name || token.name,
+                                            amount: diffFormatted.toLocaleString(undefined, { maximumFractionDigits: 6 }),
+                                            logo: token.logo_url || token.logo,
+                                            valueUsd: token.quote_rate ? diffFormatted * token.quote_rate : 0
+                                        });
+                                        setIsModalOpen(true);
+                                        break;
+                                    }
                                 }
+                            } catch {
+                                // BigInt parse error — skip this token
                             }
                         }
-                        return newPortfolio;
-                    });
+                    }
+
+                    // Always update the ref AFTER comparison
+                    knownBalancesRef.current = newBalances;
+
+                    // Update React state for UI
+                    setPortfolio(newPortfolio);
                 } catch (e) {
                     console.error("Failed to fetch portfolio background", e);
                 }
@@ -147,7 +163,8 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             // Poll every 30s
             intervalId = setInterval(fetchPortfolio, 30000);
         } else {
-            setPortfolio(null); // Reset when locked/no wallet
+            setPortfolio(null);
+            knownBalancesRef.current = null; // Reset when locked
         }
 
         return () => {

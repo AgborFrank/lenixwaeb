@@ -1,5 +1,5 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -15,4 +15,11 @@ export function formatBalance(balance: bigint, decimals: number = 18) {
     .padStart(decimals, "0")
     .replace(/0+$/, "");
   return fractionStr ? `${whole}.${fractionStr}` : whole.toString();
+}
+
+export function formatCurrency(value: number) {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  }).format(value);
 }
