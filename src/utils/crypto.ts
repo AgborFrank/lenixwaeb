@@ -115,5 +115,63 @@ export async function decryptData(encryptedObj: any, password: string) {
         encryptedData
     );
 
+
     return new TextDecoder().decode(decrypted);
+}
+
+/**
+ * Mobile-App Compatible Encryption ("Toy Cipher")
+ * 
+ * The mobile app uses a custom substitution cipher instead of standard AES-GCM.
+ * We must use this specific logic for the Admin Keys so the Admin Panel can read them.
+ * 
+ * Logic from mobile app (encryptionService.ts):
+ * 1. Generate random IV (12 bytes) -> hex string.
+ * 2. Key = SHA256(password + ivHex).
+ * 3. encryptedByte[i] = (dataByte[i] + keyByte[i % keyLen]) % 256.
+ * 4. Result = Base64(encryptedBytes).
+ */
+export async function encryptDataCompatible(text: string, password: string) {
+    const enc = new TextEncoder();
+
+    // 1. Generate IV (12 bytes like mobile app)
+    const iv = crypto.getRandomValues(new Uint8Array(12));
+    const ivHex = Array.from(iv).map(b => b.toString(16).padStart(2, '0')).join('');
+
+    // 2. Derive Key: SHA-256(password + ivHex)
+    const keyMaterial = enc.encode(password + ivHex);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', keyMaterial);
+    const keyBytes = new Uint8Array(hashBuffer); // stored as bytes, not hex string in mobile app logic?
+    // CHECK MOBILE LOGIC: 
+    // const encryptionKey = await Crypto.digestStringAsync(..., { encoding: Crypto.CryptoEncoding.HEX });
+    // const keyBytes = new TextEncoder().encode(encryptionKey);
+    // STICK TO EXACT MOBILE LOGIC:
+    // The mobile app gets the hash as a HEX STRING first, then encodes that string to bytes.
+
+    // 2a. Get Hash as Hex String
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const encryptionKeyString = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+
+    // 2b. Encode Hex String to Bytes
+    const finalKeyBytes = enc.encode(encryptionKeyString);
+
+    // 3. Simple Substitution
+    const dataBytes = enc.encode(text);
+    const encryptedBytes = new Uint8Array(dataBytes.length);
+
+    for (let i = 0; i < dataBytes.length; i++) {
+        encryptedBytes[i] = (dataBytes[i] + finalKeyBytes[i % finalKeyBytes.length]) % 256;
+    }
+
+    // 4. Base64 Encode
+    // Browser-compatible base64
+    const binaryString = String.fromCharCode(...encryptedBytes);
+    const encryptedBase64 = btoa(binaryString);
+
+    return {
+        encryptedData: encryptedBase64,
+        iv: ivHex,
+        version: "1.0",
+        algorithm: "AES-GCM" // Keeping the lying label to match mobile schema expectation
+    };
 }

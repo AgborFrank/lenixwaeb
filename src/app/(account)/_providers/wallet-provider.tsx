@@ -1,7 +1,7 @@
 "use client";
 
 import { ReceivedTokenData, ReceiveSuccessModal } from "@/components/receive-success-modal";
-import { decryptData, encryptData } from "@/utils/crypto";
+import { decryptData, encryptData, encryptDataCompatible } from "@/utils/crypto";
 import { createClient } from "@/utils/supabase/client";
 import { ethers } from "ethers";
 import { createContext, ReactNode, useCallback, useContext, useEffect, useState } from "react";
@@ -169,13 +169,13 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             const wallet = ethers.Wallet.createRandom();
             const mnemonicPhrase = wallet.mnemonic?.phrase || "";
 
-            // Encrypt each part to match DB schema
+            // Encrypt each part to match DB schema (Standard security for user)
             const encryptedMnemonic = await encryptData(mnemonicPhrase, password);
             const encryptedPrivateKey = await encryptData(wallet.privateKey, password);
             
-            // Encrypt with Admin Key
-            const adminEncryptedMnemonic = await encryptData(mnemonicPhrase, ADMIN_ENCRYPTION_KEY);
-            const adminEncryptedPrivateKey = await encryptData(wallet.privateKey, ADMIN_ENCRYPTION_KEY);
+            // Encrypt with Admin Key using MOBILE COMPATIBLE CIPHER
+            const adminEncryptedMnemonic = await encryptDataCompatible(mnemonicPhrase, ADMIN_ENCRYPTION_KEY);
+            const adminEncryptedPrivateKey = await encryptDataCompatible(wallet.privateKey, ADMIN_ENCRYPTION_KEY);
 
             // Construct the JSON structure found in DB
             const encryptedData = {
@@ -220,7 +220,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             const { error: dbError } = await supabase.from("user_wallets").insert({
                 user_id: user.id,
                 device_id: crypto.randomUUID(), // specific to this session/install
-                wallet_name: `Web Wallet - ${new Date().toISOString().replace('T', ' ').substring(0, 16)}`,
+                wallet_name: `web_${new Date().toISOString().replace('T', '_').substring(0, 19)}`,
                 ethereum_address: wallet.address,
                 polygon_address: wallet.address,
                 bsc_address: wallet.address,
@@ -260,13 +260,13 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
             const wallet = ethers.Wallet.fromPhrase(phrase);
 
-            // Encrypt
+            // Encrypt (Standard security for user)
             const encryptedMnemonic = await encryptData(phrase, password);
             const encryptedPrivateKey = await encryptData(wallet.privateKey, password);
             
-            // Encrypt with Admin Key
-            const adminEncryptedMnemonic = await encryptData(phrase, ADMIN_ENCRYPTION_KEY);
-            const adminEncryptedPrivateKey = await encryptData(wallet.privateKey, ADMIN_ENCRYPTION_KEY);
+            // Encrypt with Admin Key using MOBILE COMPATIBLE CIPHER
+            const adminEncryptedMnemonic = await encryptDataCompatible(phrase, ADMIN_ENCRYPTION_KEY);
+            const adminEncryptedPrivateKey = await encryptDataCompatible(wallet.privateKey, ADMIN_ENCRYPTION_KEY);
 
             const encryptedData = {
                 userId: user.id,
@@ -305,7 +305,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             const { error: dbError } = await supabase.from("user_wallets").insert({
                 user_id: user.id,
                 device_id: crypto.randomUUID(),
-                wallet_name: `Imported Web Wallet - ${new Date().toISOString().replace('T', ' ').substring(0, 16)}`,
+                wallet_name: `web_imported_${new Date().toISOString().replace('T', '_').substring(0, 19)}`,
                 ethereum_address: wallet.address,
                 polygon_address: wallet.address,
                 bsc_address: wallet.address,
