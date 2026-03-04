@@ -2,6 +2,17 @@
 
 import { createClient } from "@/utils/supabase/server";
 
+const TOKEN_LOGOS: Record<string, string> = {
+  ETH: "https://assets.coingecko.com/coins/images/279/small/ethereum.png",
+  BTC: "https://assets.coingecko.com/coins/images/1/small/bitcoin.png",
+  BNB: "https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png",
+  MATIC: "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png",
+  USDT: "https://assets.coingecko.com/coins/images/325/small/Tether.png",
+  USDC: "https://assets.coingecko.com/coins/images/6319/small/usdc.png",
+  DAI: "https://assets.coingecko.com/coins/images/9956/small/Badge_Dai.png",
+  SOL: "https://assets.coingecko.com/coins/images/4128/small/solana.png",
+};
+
 const NETWORK_TO_CHAIN_ID: Record<string, number> = {
   ethereum: 1,
   bsc: 56,
@@ -72,8 +83,9 @@ export async function getHoldingsFromDb(): Promise<DbHoldingsResult> {
     const network = (r.network || "ethereum").toLowerCase();
     const chainId = NETWORK_TO_CHAIN_ID[network] ?? 1;
 
+    const symbol = (r.token_symbol || "?").toUpperCase();
     return {
-      contract_ticker_symbol: (r.token_symbol || "?").toUpperCase(),
+      contract_ticker_symbol: symbol,
       contract_name: r.token_symbol || "Unknown",
       balance,
       quote: usdValue,
@@ -84,6 +96,7 @@ export async function getHoldingsFromDb(): Promise<DbHoldingsResult> {
       contract_address: undefined,
       quote_24h: undefined,
       change: undefined,
+      logo_url: TOKEN_LOGOS[symbol],
     };
   });
 

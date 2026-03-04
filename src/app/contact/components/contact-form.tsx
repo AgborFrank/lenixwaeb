@@ -2,10 +2,13 @@
 
 import { useState } from "react";
 import { Send, CheckCircle } from "lucide-react";
+import { toast } from "sonner";
 
 interface FormData {
   name: string;
   email: string;
+  phone: string;
+  whatsappOrTelegram: string;
   subject: string;
   message: string;
   inquiryType: string;
@@ -15,6 +18,8 @@ export default function ContactForm() {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
+    phone: "",
+    whatsappOrTelegram: "",
     subject: "",
     message: "",
     inquiryType: "general",
@@ -74,22 +79,41 @@ export default function ContactForm() {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || undefined,
+          whatsappOrTelegram: formData.whatsappOrTelegram || undefined,
+          subject: formData.subject,
+          message: formData.message,
+          inquiryType: formData.inquiryType,
+        }),
+      });
 
-      // Here you would typically send the data to your backend
-      console.log("Form submitted:", formData);
+      const data = await res.json().catch(() => ({}));
 
+      if (!res.ok) {
+        toast.error(data.error || "Failed to send message");
+        return;
+      }
+
+      toast.success("Message sent successfully");
       setIsSubmitted(true);
       setFormData({
         name: "",
         email: "",
+        phone: "",
+        whatsappOrTelegram: "",
         subject: "",
         message: "",
         inquiryType: "general",
       });
     } catch (error) {
       console.error("Error submitting form:", error);
+      toast.error("Failed to send message");
     } finally {
       setIsSubmitting(false);
     }
@@ -166,6 +190,40 @@ export default function ContactForm() {
           </div>
         </div>
 
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <label htmlFor="phone" className="block text-white font-medium mb-2">
+              Phone Number
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              placeholder="+1 234 567 8900"
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="whatsappOrTelegram"
+              className="block text-white font-medium mb-2"
+            >
+              WhatsApp or Telegram
+            </label>
+            <input
+              type="text"
+              id="whatsappOrTelegram"
+              name="whatsappOrTelegram"
+              value={formData.whatsappOrTelegram}
+              onChange={handleChange}
+              className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              placeholder="@username or +1234567890"
+            />
+          </div>
+        </div>
+
         <div>
           <label
             htmlFor="inquiryType"
@@ -181,6 +239,8 @@ export default function ContactForm() {
             className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
           >
             <option value="general">General Inquiry</option>
+            <option value="recovery">Recovery Services</option>
+            <option value="crypto_loan">Crypto Loan Services</option>
             <option value="support">Technical Support</option>
             <option value="partnership">Partnership</option>
             <option value="business">Business Development</option>

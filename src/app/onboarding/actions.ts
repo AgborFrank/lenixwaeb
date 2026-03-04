@@ -2,6 +2,7 @@
 
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
+import { revalidatePath } from "next/cache";
 
 const RECOVERY_FIELDS = [
   "name",
@@ -152,87 +153,3 @@ export async function submitLoanStep1(formData: FormData) {
     redirect("/onboarding/details/loan-payout");
 }
 
-/** Loan step 2: save payout method and details to web_loan_payouts, then complete onboarding */
-export async function submitLoanPayout(formData: FormData) {
-    const supabase = await createClient();
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) redirect("/login");
-
-    const { data: onboarding } = await supabase
-        .from("web_onboarding")
-        .select("service_type")
-        .eq("user_id", user.id)
-        .single();
-    if (!onboarding || onboarding.service_type !== "loan") redirect("/onboarding");
-
-    const payoutMethod = formData.get("payout_method") as string;
-    if (!payoutMethod || !["crypto", "wire_transfer", "bank"].includes(payoutMethod)) {
-        redirect("/onboarding/details/loan-payout?error=Invalid payout method");
-    }
-
-    const payoutDetails: Record<string, unknown> = { payout_method: payoutMethod };
-    if (payoutMethod === "crypto") {
-        const wallet_address = formData.get("wallet_address");
-        const network = formData.get("network");
-        const memo = formData.get("memo");
-        if (!wallet_address || !network) redirect("/onboarding/details/loan-payout?error=Wallet address and network required");
-        payoutDetails.wallet_address = String(wallet_address).trim();
-        payoutDetails.network = String(network).trim();
-        if (memo) payoutDetails.memo = String(memo).trim();
-    } else if (payoutMethod === "wire_transfer") {
-        const bank_name = formData.get("bank_name");
-        const swift_bic = formData.get("swift_bic");
-        const account_number = formData.get("account_number");
-        const account_name = formData.get("account_name");
-        if (!bank_name || !swift_bic || !account_number || !account_name)
-            redirect("/onboarding/details/loan-payout?error=All wire transfer fields required");
-        payoutDetails.bank_name = String(bank_name).trim();
-        payoutDetails.swift_bic = String(swift_bic).trim();
-        payoutDetails.account_number = String(account_number).trim();
-        payoutDetails.account_name = String(account_name).trim();
-        const reference = formData.get("reference");
-        if (reference) payoutDetails.reference = String(reference).trim();
-    } else if (payoutMethod === "bank") {
-        const bank_name = formData.get("bank_name");
-        const account_number = formData.get("account_number");
-        const routing_iban = formData.get("routing_iban");
-        const account_holder = formData.get("account_holder");
-        if (!bank_name || !account_number || !routing_iban || !account_holder)
-            redirect("/onboarding/details/loan-payout?error=All bank fields required");
-        payoutDetails.bank_name = String(bank_name).trim();
-        payoutDetails.account_number = String(account_number).trim();
-        payoutDetails.routing_iban = String(routing_iban).trim();
-        payoutDetails.account_holder = String(account_holder).trim();
-    }
-
-    const { error: upsertError } = await supabase
-        .from("web_loan_payouts")
-        .upsert(
-            {
-                user_id: user.id,
-                payout_method: payoutMethod,
-                payout_details: payoutDetails,
-                updated_at: new Date().toISOString(),
-            },
-            { onConflict: "user_id" }
-        );
-
-    if (upsertError) {
-        console.error("Loan payout save error:", upsertError);
-        redirect("/onboarding/details/loan-payout?error=Could not save payout details");
-    }
-
-    const { error: updateError } = await supabase
-        .from("web_onboarding")
-        .update({
-            step_completed: 2,
-            updated_at: new Date().toISOString(),
-        })
-        .eq("user_id", user.id);
-
-    if (updateError) {
-        console.error("Onboarding complete error:", updateError);
-        redirect("/onboarding/details/loan-payout?error=Could not complete");
-    }
-    redirect("/dashboard");
-}

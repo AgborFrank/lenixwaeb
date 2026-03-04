@@ -13,6 +13,11 @@ export default async function CryptoLoanPage({
 }) {
   const supabase = await createClient();
   const loans = (await getUserLoans()) || [];
+  const { data: { user } } = await supabase.auth.getUser();
+  const { data: payoutRow } = user
+    ? await supabase.from("web_loan_payouts").select("payout_method, payout_details").eq("user_id", user.id).single()
+    : { data: null };
+  const userPayout = payoutRow ? { method: payoutRow.payout_method, details: payoutRow.payout_details as Record<string, string> | null } : null;
   const params = await searchParams;
   const isApplyMode = params.mode === "apply";
 
@@ -53,7 +58,7 @@ export default async function CryptoLoanPage({
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
              {/* Main Content: Active Loans */}
              <div className="lg:col-span-2 space-y-6">
-                <ActiveLoans loans={loans} />
+                <ActiveLoans loans={loans} userPayout={userPayout} />
              </div>
 
              {/* Sidebar: Market Rates & Info */}

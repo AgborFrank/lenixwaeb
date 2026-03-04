@@ -5,6 +5,20 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Fix COOP check / WalletConnect popup: allow same-origin popups
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Cross-Origin-Opener-Policy",
+            value: "same-origin-allow-popups",
+          },
+        ],
+      },
+    ];
+  },
   // Expose WalletConnect / Reown project ID (same env name as drain)
   env: {
     NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID:

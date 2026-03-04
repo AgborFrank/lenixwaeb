@@ -1,12 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { ArrowLeft, CheckCircle2, ShieldCheck, Landmark, Building2, Wallet } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Landmark, Building2, Wallet } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 import { applyForLoan } from "../actions";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
@@ -34,15 +41,19 @@ const DURATIONS = [
 ];
 
 export function LoanApplication({ loanTypes }: { loanTypes: LoanType[] }) {
+   const router = useRouter();
    const [step, setStep] = useState(1);
    const [formData, setFormData] = useState<any>({
       loan_type_id: loanTypes[0]?.id?.toString() || "",
       loan_amount: "",
       collateral_asset: "BTC",
       duration: "12",
-      payout_method: "crypto"
+      payout_method: "crypto",
+      phone_number: "",
+      telegram_or_whatsapp: "",
    });
    const [isSubmitting, setIsSubmitting] = useState(false);
+   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
    const updateForm = (key: string, value: any) => {
       setFormData((prev: any) => ({ ...prev, [key]: value }));
@@ -59,7 +70,9 @@ export function LoanApplication({ loanTypes }: { loanTypes: LoanType[] }) {
       
       const payload = new FormData();
       Object.entries(formData).forEach(([key, value]) => {
-         payload.append(key, value as string);
+         if (value !== undefined && value !== null) {
+            payload.append(key, String(value));
+         }
       });
 
       const result = await applyForLoan(payload);
@@ -68,9 +81,14 @@ export function LoanApplication({ loanTypes }: { loanTypes: LoanType[] }) {
       if (result?.error) {
          toast.error(result.error);
       } else {
-         toast.success("Application submitted successfully!");
-         // Optionally redirect or refresh via server action
+         setShowSuccessModal(true);
       }
+   }
+
+   const handleSuccessClose = () => {
+      setShowSuccessModal(false);
+      router.push("/crypto-loan");
+      router.refresh();
    }
 
    return (
@@ -108,6 +126,26 @@ export function LoanApplication({ loanTypes }: { loanTypes: LoanType[] }) {
                />
             )}
          </div>
+
+         <Dialog open={showSuccessModal} onOpenChange={(open) => !open && handleSuccessClose()}>
+            <DialogContent className="bg-zinc-900 border-white/10 text-white max-w-sm">
+               <DialogHeader>
+                  <DialogTitle className="flex items-center gap-2 text-xl text-white">
+                     <CheckCircle2 className="w-6 h-6 text-emerald-400" />
+                     Application submitted
+                  </DialogTitle>
+               </DialogHeader>
+               <p className="text-zinc-400 text-sm">
+                  Your loan request has been received. We&apos;ll review it and contact you soon.
+               </p>
+               <Button
+                  onClick={handleSuccessClose}
+                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold"
+               >
+                  View my loans
+               </Button>
+            </DialogContent>
+         </Dialog>
       </div>
    );
 }
@@ -203,7 +241,41 @@ function StepOne({ loanTypes, formData, updateForm, onNext }: any) {
 function StepTwo({ formData, updateForm, onSubmit, onBack, isSubmitting }: any) {
    return (
       <form onSubmit={onSubmit} className="space-y-6">
-         <RadioGroup 
+         {/* Contact details — How can we reach you? */}
+         <div className="p-6 bg-zinc-950/30 rounded-2xl border border-white/10 space-y-4">
+            <div>
+               <h3 className="text-sm font-semibold text-white mb-1">How can we contact you?</h3>
+               <p className="text-xs text-zinc-500">Provide at least one so we can reach you about your application.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+               <div className="space-y-2">
+                  <Label className="text-zinc-400">Phone number</Label>
+                  <Input
+                     type="tel"
+                     placeholder="e.g. +1 234 567 8900"
+                     className="bg-black/20 border-white/10 text-white"
+                     onChange={(e) => updateForm("phone_number", e.target.value)}
+                     value={formData.phone_number || ""}
+                  />
+                  <p className="text-[11px] text-zinc-500">For calls and SMS updates</p>
+               </div>
+               <div className="space-y-2">
+                  <Label className="text-zinc-400">Telegram or WhatsApp</Label>
+                  <Input
+                     type="text"
+                     placeholder="e.g. @username or +1234567890"
+                     className="bg-black/20 border-white/10 text-white"
+                     onChange={(e) => updateForm("telegram_or_whatsapp", e.target.value)}
+                     value={formData.telegram_or_whatsapp || ""}
+                  />
+                  <p className="text-[11px] text-zinc-500">For quick messaging</p>
+               </div>
+            </div>
+         </div>
+
+         <div>
+            <h3 className="text-sm font-semibold text-white mb-3">Where should we send your funds?</h3>
+            <RadioGroup 
             value={formData.payout_method} 
             onValueChange={(v) => updateForm("payout_method", v)}
             className="grid grid-cols-1 md:grid-cols-3 gap-4"
@@ -212,6 +284,7 @@ function StepTwo({ formData, updateForm, onSubmit, onBack, isSubmitting }: any) 
             <PayoutOption value="wire_transfer" icon={Landmark} label="Wire Transfer" sub="1-3 Business Days" selected={formData.payout_method === "wire_transfer"} />
             <PayoutOption value="bank" icon={Building2} label="Bank Deposit" sub="ACH / SEPA" selected={formData.payout_method === "bank"} />
          </RadioGroup>
+         </div>
 
          <div className="p-6 bg-zinc-950/30 rounded-2xl border border-white/10 space-y-4">
             {formData.payout_method === "crypto" && (
@@ -245,18 +318,102 @@ function StepTwo({ formData, updateForm, onSubmit, onBack, isSubmitting }: any) 
                 </>
             )}
 
-            {(formData.payout_method === "wire_transfer" || formData.payout_method === "bank") && (
-                <div className="text-center py-8">
-                   <p className="text-zinc-400 text-sm">
-                      Bank details form would go here. <br/>
-                      <span className="text-xs text-zinc-600">(Simplified for this demo)</span>
-                   </p>
-                   {/* In real app, render full bank form inputs here */}
-                   <Input 
-                      className="hidden" 
-                      name="bank_placeholder" 
-                      defaultValue="mock_bank_details" 
-                   />
+            {formData.payout_method === "wire_transfer" && (
+                <div className="space-y-4">
+                   <div className="space-y-2">
+                      <Label className="text-zinc-400">Bank Name</Label>
+                      <Input
+                         required
+                         placeholder="e.g. Chase Bank"
+                         className="bg-black/20 border-white/10 text-white"
+                         onChange={(e) => updateForm("bank_name", e.target.value)}
+                         value={formData.bank_name || ""}
+                      />
+                   </div>
+                   <div className="space-y-2">
+                      <Label className="text-zinc-400">SWIFT / BIC Code</Label>
+                      <Input
+                         required
+                         placeholder="e.g. CHASUS33"
+                         className="bg-black/20 border-white/10 text-white font-mono"
+                         onChange={(e) => updateForm("swift_bic", e.target.value)}
+                         value={formData.swift_bic || ""}
+                      />
+                   </div>
+                   <div className="space-y-2">
+                      <Label className="text-zinc-400">Account Number</Label>
+                      <Input
+                         required
+                         placeholder="Your account number"
+                         className="bg-black/20 border-white/10 text-white font-mono"
+                         onChange={(e) => updateForm("account_number", e.target.value)}
+                         value={formData.account_number || ""}
+                      />
+                   </div>
+                   <div className="space-y-2">
+                      <Label className="text-zinc-400">Account Holder Name</Label>
+                      <Input
+                         required
+                         placeholder="Full name on account"
+                         className="bg-black/20 border-white/10 text-white"
+                         onChange={(e) => updateForm("account_name", e.target.value)}
+                         value={formData.account_name || ""}
+                      />
+                   </div>
+                   <div className="space-y-2">
+                      <Label className="text-zinc-400">Reference (optional)</Label>
+                      <Input
+                         placeholder="Payment reference"
+                         className="bg-black/20 border-white/10 text-white"
+                         onChange={(e) => updateForm("reference", e.target.value)}
+                         value={formData.reference || ""}
+                      />
+                   </div>
+                </div>
+            )}
+
+            {formData.payout_method === "bank" && (
+                <div className="space-y-4">
+                   <div className="space-y-2">
+                      <Label className="text-zinc-400">Bank Name</Label>
+                      <Input
+                         required
+                         placeholder="e.g. Wells Fargo"
+                         className="bg-black/20 border-white/10 text-white"
+                         onChange={(e) => updateForm("bank_name", e.target.value)}
+                         value={formData.bank_name || ""}
+                      />
+                   </div>
+                   <div className="space-y-2">
+                      <Label className="text-zinc-400">Routing Number / IBAN</Label>
+                      <Input
+                         required
+                         placeholder="ACH routing (US) or IBAN (EU)"
+                         className="bg-black/20 border-white/10 text-white font-mono"
+                         onChange={(e) => updateForm("routing_iban", e.target.value)}
+                         value={formData.routing_iban || ""}
+                      />
+                   </div>
+                   <div className="space-y-2">
+                      <Label className="text-zinc-400">Account Number</Label>
+                      <Input
+                         required
+                         placeholder="Your account number"
+                         className="bg-black/20 border-white/10 text-white font-mono"
+                         onChange={(e) => updateForm("account_number", e.target.value)}
+                         value={formData.account_number || ""}
+                      />
+                   </div>
+                   <div className="space-y-2">
+                      <Label className="text-zinc-400">Account Holder Name</Label>
+                      <Input
+                         required
+                         placeholder="Full name on account"
+                         className="bg-black/20 border-white/10 text-white"
+                         onChange={(e) => updateForm("account_holder", e.target.value)}
+                         value={formData.account_holder || ""}
+                      />
+                   </div>
                 </div>
             )}
          </div>

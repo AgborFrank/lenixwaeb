@@ -16,6 +16,7 @@ import {
   Settings,
   Lock,
   Landmark,
+  ShieldCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -48,6 +49,7 @@ const navSections = [
       { href: "/dashboard", label: "Home", icon: LayoutDashboard },
       { href: "/vault", label: "Blockchain Vault", icon: Lock },
       { href: "/lenix-wallet", label: "Lenix Wallet", icon: Wallet },
+      { href: "/recovery-services", label: "Recovery Services", icon: ShieldCheck },
       { href: "/crypto-loan", label: "Crypto Loan", icon: Landmark },
     ],
   },
@@ -220,6 +222,11 @@ export function AccountLayout({
                 <DropdownMenuItem asChild>
                   <Link href="/lenix-wallet" className="cursor-pointer">
                     Lenix Wallet
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/recovery-services" className="cursor-pointer">
+                    Recovery Services
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>

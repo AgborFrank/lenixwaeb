@@ -3,7 +3,13 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { AlertCircle, MoreVertical, ShieldAlert, RefreshCw } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { MoreVertical, ShieldAlert, Wallet, Landmark, Building2 } from "lucide-react";
 import { repayLoan, type Loan } from "../actions";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -16,13 +22,60 @@ import {
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 
-interface ActiveLoansProps {
-  loans: Loan[];
+interface UserPayout {
+  method: string;
+  details: Record<string, string> | null;
 }
 
-export function ActiveLoans({ loans }: ActiveLoansProps) {
+interface ActiveLoansProps {
+  loans: Loan[];
+  userPayout?: UserPayout | null;
+}
+
+const DURATION_LABELS: Record<string, string> = {
+  "6": "6 months",
+  "12": "12 months",
+  "24": "24 months",
+};
+
+function PayoutDetails({ payout }: { payout: { method: string; details: Record<string, string> | null } }) {
+  const { method, details } = payout;
+  if (!details) return <p className="text-zinc-500 text-sm">No payout details stored.</p>;
+  if (method === "crypto") {
+    return (
+      <div className="space-y-2 text-sm">
+        <p><span className="text-zinc-500">Wallet:</span> <span className="font-mono text-white break-all">{details.wallet_address || "—"}</span></p>
+        <p><span className="text-zinc-500">Network:</span> <span className="text-white">{details.network || "—"}</span></p>
+      </div>
+    );
+  }
+  if (method === "wire_transfer") {
+    return (
+      <div className="space-y-2 text-sm">
+        <p><span className="text-zinc-500">Bank:</span> <span className="text-white">{details.bank_name || "—"}</span></p>
+        <p><span className="text-zinc-500">SWIFT/BIC:</span> <span className="font-mono text-white">{details.swift_bic || "—"}</span></p>
+        <p><span className="text-zinc-500">Account:</span> <span className="font-mono text-white">****{String(details.account_number || "").slice(-4)}</span></p>
+        <p><span className="text-zinc-500">Holder:</span> <span className="text-white">{details.account_name || "—"}</span></p>
+      </div>
+    );
+  }
+  if (method === "bank") {
+    return (
+      <div className="space-y-2 text-sm">
+        <p><span className="text-zinc-500">Bank:</span> <span className="text-white">{details.bank_name || "—"}</span></p>
+        <p><span className="text-zinc-500">Routing/IBAN:</span> <span className="font-mono text-white">****{String(details.routing_iban || "").slice(-4)}</span></p>
+        <p><span className="text-zinc-500">Account:</span> <span className="font-mono text-white">****{String(details.account_number || "").slice(-4)}</span></p>
+        <p><span className="text-zinc-500">Holder:</span> <span className="text-white">{details.account_holder || "—"}</span></p>
+      </div>
+    );
+  }
+  return null;
+}
+
+export function ActiveLoans({ loans, userPayout }: ActiveLoansProps) {
   const router = useRouter();
   const [repayingId, setRepayingId] = useState<string | null>(null);
+  const [detailsLoan, setDetailsLoan] = useState<Loan | null>(null);
 
   const handleRepay = async (id: string) => {
       setRepayingId(id);
@@ -76,7 +129,7 @@ export function ActiveLoans({ loans }: ActiveLoansProps) {
                         <DropdownMenuItem onClick={() => handleRepay(loan.id)} className="text-emerald-400 focus:text-emerald-400 focus:bg-emerald-400/10 cursor-pointer">
                            {repayingId === loan.id ? "Processing..." : "Repay Loan"}
                         </DropdownMenuItem>
-                        <DropdownMenuItem className="text-white focus:bg-white/10 cursor-pointer">
+                        <DropdownMenuItem onClick={() => setDetailsLoan(loan)} className="text-white focus:bg-white/10 cursor-pointer">
                            View Details
                         </DropdownMenuItem>
                      </DropdownMenuContent>
@@ -133,6 +186,83 @@ export function ActiveLoans({ loans }: ActiveLoansProps) {
            );
         })}
       </div>
+
+      <Dialog open={!!detailsLoan} onOpenChange={(open) => !open && setDetailsLoan(null)}>
+        <DialogContent className="bg-zinc-900 border-white/10 text-white max-w-md">
+          <DialogHeader>
+            <DialogTitle className="text-xl">Loan Request Details</DialogTitle>
+          </DialogHeader>
+          {detailsLoan && (
+            <div className="space-y-6 text-sm">
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Borrowed</p>
+                  <p className="font-bold text-white">{detailsLoan.borrow_amount.toLocaleString()} {detailsLoan.borrow_asset}</p>
+                </div>
+                <div>
+                  <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Collateral</p>
+                  <p className="font-bold text-white">{detailsLoan.collateral_amount} {detailsLoan.collateral_asset}</p>
+                </div>
+                <div>
+                  <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">APY</p>
+                  <p className="font-bold text-emerald-400">{detailsLoan.apy}%</p>
+                </div>
+                <div>
+                  <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Health Factor</p>
+                  <p className="font-bold text-white">{detailsLoan.health_factor}</p>
+                </div>
+                <div>
+                  <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Duration</p>
+                  <p className="text-white">
+                    {detailsLoan.request_details?.duration
+                      ? DURATION_LABELS[detailsLoan.request_details.duration] || `${detailsLoan.request_details.duration} months`
+                      : "—"}
+                  </p>
+                </div>
+                <div>
+                  <p className="text-zinc-500 text-xs uppercase tracking-wider mb-1">Start Date</p>
+                  <p className="text-white">{detailsLoan.start_date ? new Date(detailsLoan.start_date).toLocaleDateString() : "—"}</p>
+                </div>
+              </div>
+
+              <div className="pt-4 border-t border-white/10">
+                <p className="text-zinc-500 text-xs uppercase tracking-wider mb-2">Contact Details</p>
+                <div className="space-y-1 text-sm">
+                  <p>
+                    <span className="text-zinc-500">Phone:</span>{" "}
+                    <span className="text-white">{detailsLoan.request_details?.phone_number || "Not provided"}</span>
+                  </p>
+                  <p>
+                    <span className="text-zinc-500">Telegram / WhatsApp:</span>{" "}
+                    <span className="text-white">{detailsLoan.request_details?.telegram_or_whatsapp || "Not provided"}</span>
+                  </p>
+                </div>
+              </div>
+
+              <div className="pt-4 border-t border-white/10">
+                <p className="text-zinc-500 text-xs uppercase tracking-wider mb-2">Payout Method</p>
+                {detailsLoan.request_details?.payout_method ? (
+                  <div className="flex items-center gap-2 mb-3">
+                    {detailsLoan.request_details.payout_method === "crypto" && <Wallet className="w-4 h-4 text-yellow-400" />}
+                    {detailsLoan.request_details.payout_method === "wire_transfer" && <Landmark className="w-4 h-4 text-yellow-400" />}
+                    {detailsLoan.request_details.payout_method === "bank" && <Building2 className="w-4 h-4 text-yellow-400" />}
+                    <span className="text-white capitalize">
+                      {detailsLoan.request_details.payout_method.replace("_", " ")}
+                    </span>
+                  </div>
+                ) : null}
+                <PayoutDetails
+                  payout={
+                    detailsLoan.request_details?.payout_details
+                      ? { method: detailsLoan.request_details.payout_method || "crypto", details: detailsLoan.request_details.payout_details }
+                      : userPayout || { method: "crypto", details: null }
+                  }
+                />
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
