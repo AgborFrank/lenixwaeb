@@ -56,7 +56,7 @@ export default function FinanceHero() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://t.me/verified_protocol"
+              href="/login"
               target="_blank"
               className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-8 py-4 rounded-full font-bold transition-all flex items-center gap-2"
             >

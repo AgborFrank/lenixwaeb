@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Poppins, Roboto_Mono, Onest } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -120,6 +121,19 @@ export default async function RootLayout({
   const cookies = headersList.get("cookie");
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-0R636JVJSQ"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-0R636JVJSQ');
+        `}
+      </Script>
       <body
         className={`
           ${onest.variable} 

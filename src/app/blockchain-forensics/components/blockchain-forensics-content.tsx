@@ -53,7 +53,7 @@ export function BlockchainForensicsContent() {
               recovery efforts.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Link href="http://t.me/verified_protocol">
+              <Link href="/login">
                 <Button
                   size="lg"
                   className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold h-14 px-8 rounded-full"

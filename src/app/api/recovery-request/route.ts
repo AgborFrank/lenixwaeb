@@ -39,6 +39,7 @@ function buildEmailHtml(body: Record<string, string | undefined>): string {
           <tr><td style="padding: 12px 0; border-bottom: 1px solid #333; font-weight: 600; color: #a3a3a3;">Amount stolen</td><td style="padding: 12px 0; border-bottom: 1px solid #333; color: #fff;">${escapeHtml(body.amount_stolen ?? "")}</td></tr>
           <tr><td style="padding: 12px 0; border-bottom: 1px solid #333; font-weight: 600; color: #a3a3a3;">Blockchain</td><td style="padding: 12px 0; border-bottom: 1px solid #333; color: #fff;">${escapeHtml(body.blockchain ?? "")}</td></tr>
           <tr><td style="padding: 12px 0; border-bottom: 1px solid #333; font-weight: 600; color: #a3a3a3;">Currency</td><td style="padding: 12px 0; border-bottom: 1px solid #333; color: #fff;">${escapeHtml(body.currency ?? "")}</td></tr>
+          <tr><td style="padding: 12px 0; border-bottom: 1px solid #333; font-weight: 600; color: #a3a3a3;">Email</td><td style="padding: 12px 0; border-bottom: 1px solid #333; color: #fff;">${escapeHtml(body.email ?? body.user_email ?? "")}</td></tr>
           <tr><td style="padding: 12px 0; border-bottom: 1px solid #333; font-weight: 600; color: #a3a3a3;">Phone</td><td style="padding: 12px 0; border-bottom: 1px solid #333; color: #fff;">${escapeHtml(body.phone_number ?? "")} (${escapeHtml(body.country_phone_code ?? "")})</td></tr>
           <tr><td style="padding: 12px 0; vertical-align: top; font-weight: 600; color: #a3a3a3;">Incident Summary</td><td style="padding: 12px 0; color: #fff; white-space: pre-wrap;">${escapeHtml(body.incident_summary ?? "")}</td></tr>
           ${body.evidence_url ? `<tr><td style="padding: 12px 0; font-weight: 600; color: #a3a3a3;">Evidence</td><td style="padding: 12px 0;"><a href="${escapeHtml(body.evidence_url ?? "")}" style="color: #F9FF38;">${escapeHtml(body.evidence ?? "")}</a></td></tr>` : ""}
@@ -59,10 +60,6 @@ export async function POST(request: Request) {
       data: { user },
     } = await supabase.auth.getUser();
 
-    if (!user) {
-      return NextResponse.json({ error: "Please log in" }, { status: 401 });
-    }
-
     if (!process.env.RESEND_API_KEY) {
       return NextResponse.json(
         { error: "Email service is not configured" },
@@ -74,6 +71,7 @@ export async function POST(request: Request) {
     const body: Record<string, string | undefined> = {};
     const keys = [
       "name",
+      "email",
       "transaction_hash",
       "amount_stolen",
       "incident_summary",
@@ -94,14 +92,26 @@ export async function POST(request: Request) {
       );
     }
 
+    // For logged-in users, use their email. For public form, require email.
+    if (user) {
+      body.user_email = user.email ?? undefined;
+    } else if (!body.email) {
+      return NextResponse.json(
+        { error: "Email is required when not logged in" },
+        { status: 400 }
+      );
+    }
+
     const evidenceFile = formData.get("evidence") as File | null;
     if (evidenceFile instanceof File && evidenceFile.size > 0) {
       body.evidence = evidenceFile.name;
       try {
-        const path = `${user.id}/${Date.now()}-${evidenceFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
+        const storagePath = user
+          ? `${user.id}/${Date.now()}-${evidenceFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`
+          : `anonymous/${Date.now()}-${evidenceFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
         const { data: uploadData, error: uploadError } = await supabase.storage
           .from("onboarding-evidence")
-          .upload(path, evidenceFile, { upsert: false });
+          .upload(storagePath, evidenceFile, { upsert: false });
         if (!uploadError && uploadData?.path) {
           const { data: urlData } = supabase.storage
             .from("onboarding-evidence")
@@ -115,9 +125,11 @@ export async function POST(request: Request) {
 
     const html = buildEmailHtml(body);
 
+    const replyTo = body.email ?? body.user_email;
     const { error } = await resend.emails.send({
       from: FROM_EMAIL,
       to: [TO_EMAIL],
+      ...(replyTo && { replyTo: [replyTo] }),
       subject: `[Recovery Request] ${body.name} - ${body.blockchain || "N/A"}`,
       html,
     });

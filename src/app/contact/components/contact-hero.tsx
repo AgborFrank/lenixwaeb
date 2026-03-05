@@ -4,7 +4,7 @@ import { Mail, MessageCircle, Phone } from "lucide-react";
 
 export default function ContactHero() {
   return (
-    <section className="relative bg-gradient-to-br from-black via-black to-gray-900 py-20">
+    <section className="relative bg-linear-to-br from-black via-black to-gray-900 py-20">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[url('/assets/img/noise.png')] bg-repeat opacity-20"></div>
@@ -28,7 +28,8 @@ export default function ContactHero() {
               <Mail className="w-6 h-6 text-black" />
             </div>
             <h3 className="text-white font-semibold mb-2">Email Us</h3>
-            <p className="text-gray-300 text-sm">contact@lenixprotocol.com</p>
+            <p className="text-gray-300 text-sm">recovery@lenixprotocol.com</p>
+            <p className="text-gray-300 text-sm">loan@lenixprotocol.com</p>
           </div>
 
           <div className="flex flex-col items-center p-6 bg-gray-800/50 rounded-lg border border-gray-700">

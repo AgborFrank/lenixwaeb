@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "$250K Giveaway – Lenix Protocol",
@@ -232,12 +233,12 @@ export default function Giveaway() {
             </Accordion>
           </div>
           <div className="mt-8 flex justify-center">
-            <a
-              href="#enter"
+            <Link
+              href="/login"
               className="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-lg transition-all duration-300"
             >
               Enter Now
-            </a>
+            </Link>
           </div>
           <p className="text-gray-400 text-sm mt-6 text-center max-w-2xl mx-auto">
             Not financial advice. Participation is subject to local laws and
