@@ -1,0 +1,263 @@
+{
+    "Header": {
+        "nav": {
+            "giveaway": "25万赠品",
+            "about": "关于",
+            "solutions": "解决方案",
+            "blockchain_forensics": "区块链取证",
+            "asset_recovery": "资产追回",
+            "crypto_recovery": "加密追回",
+            "contact": "联系",
+            "airdrop": "空投"
+        },
+        "solutions": {
+            "wallet": {
+                "title": "Lenix 钱包",
+                "desc": "安全的多链钱包。"
+            },
+            "finance": {
+                "title": "Lenix 金融",
+                "desc": "面向所有人的 DeFi 解决方案。"
+            },
+            "recovery": {
+                "title": "加密追回",
+                "desc": "专业帮助追回丢失资产。"
+            },
+            "compliance": {
+                "title": "合规调查",
+                "desc": "一键跨链调查分析。"
+            },
+            "enforcement": {
+                "title": "执法机构",
+                "desc": "为机构提供的区块链情报工具。"
+            }
+        },
+        "user_menu": {
+            "account": "账户",
+            "dashboard": "控制台",
+            "vault": "金库",
+            "lenix_wallet": "Lenix 钱包",
+            "loan": "加密贷款",
+            "assets": "资产",
+            "send": "发送",
+            "receive": "接收",
+            "transactions": "记录",
+            "settings": "设置",
+            "sign_out": "退出"
+        },
+        "buttons": {
+            "log_in": "登录",
+            "log_in_sign_up": "登录 / 注册",
+            "get_reward": "领取 50 USDT"
+        }
+    },
+    "Footer": {
+        "company_desc": "L1 区块链协议，用于加密银行支付和资产追回，借助 AI 提升安全性与可扩展性。",
+        "headings": {
+            "about": "关于",
+            "solutions": "解决方案",
+            "resources": "资源",
+            "legal": "法律"
+        },
+        "links": {
+            "about_us": "关于我们",
+            "ecosystem": "生态系统",
+            "tokenomics": "代币经济",
+            "whitepaper": "白皮书",
+            "litepaper": "简版白皮书",
+            "roadmap": "路线图",
+            "threat_intelligence": "威胁情报",
+            "defi_compliance": "DeFi 合规",
+            "blog": "博客",
+            "documentation": "文档",
+            "api_docs": "API",
+            "support": "支持",
+            "terms": "条款",
+            "cookie": "Cookie",
+            "privacy": "隐私",
+            "disclaimer": "免责声明"
+        },
+        "buttons": {
+            "recover_assets": "追回资产"
+        },
+        "certification_desc": "ISO27001 认证企业。按国际标准安全管理数据与资产。",
+        "copyright": "© 2026 Lenix Protocol，保留所有权利。"
+    },
+    "languagePicker": {
+        "title": "选择语言",
+        "description": "请选择您的首选语言"
+    },
+    "languages": {
+        "en": "English",
+        "fr": "Français",
+        "es": "Español",
+        "de": "Deutsch",
+        "ar": "العربية",
+        "pt": "Português",
+        "zh": "中文",
+        "it": "Italiano",
+        "vi": "Tiếng Việt",
+        "tl": "Filipino",
+        "tr": "Türkçe",
+        "hi": "हिन्दी",
+        "id": "Bahasa Indonesia"
+    },
+    "Home": {
+        "Hero": {
+            "title1": "区块链",
+            "title2": "取证",
+            "title3": "、\n加密恢复与安全协议。",
+            "subtitle1": "先进的区块链分析和取证调查，用于追踪资产、发现欺诈并支持全球法律恢复工作。",
+            "subtitle2": "通过专家调查保障您的数字未来。",
+            "btn_signup": "注册 Lenix",
+            "btn_login": "登录",
+            "widget_title": "立即购买",
+            "widget_subtitle": "价格上涨前",
+            "usd_raised": "目前募集的美元：",
+            "tokens_sold": "已售代币：",
+            "price_usd": "美元价格：${price}",
+            "price_eth": "ETH 价格：{price} ETH",
+            "pay_eth": "您支付的 ETH",
+            "pay_usdt": "您支付的 USDT",
+            "pay_usd": "您支付的美元",
+            "receive_lnx": "您收到的 $LNX",
+            "btn_processing": "处理中...",
+            "btn_pay_eth": "使用 ETH 支付",
+            "btn_pay_usdt": "使用 USDT 支付",
+            "btn_pay_card": "在下面输入卡详细信息",
+            "card_info": "由 Stripe 提供支持。以美元计费。",
+            "btn_connect": "连接钱包",
+            "btn_giveaway": "获取 500 美元奖励",
+            "giveaway_info": "领取 500 美元 LNX 代币奖励"
+        },
+        "Pillars": {
+            "title1": "安全、恢复、取证和金融",
+            "title2": "一站式服务",
+            "subtitle": "选择您需要的服务——每个支柱都链接到专门的解决方案。",
+            "cards": {
+                "security": {
+                    "title": "区块链安全",
+                    "desc": "经过审计的基础设施和安全的保险库技术，保护您的资产。",
+                    "cta": "探索安全"
+                },
+                "recovery": {
+                    "title": "资产恢复",
+                    "desc": "专门的协议和法律途径，通过经过验证的取证分析追回丢失或被盗的加密货币。",
+                    "cta": "开始恢复"
+                },
+                "forensics": {
+                    "title": "区块链取证",
+                    "desc": "专家调查，追踪欺诈、黑客攻击，并为法律恢复提供法庭认可的证据。",
+                    "cta": "了解更多"
+                },
+                "finance": {
+                    "title": "金融服务协议",
+                    "desc": "为现代加密生态系统提供支付、借贷、钱包和保险库服务。",
+                    "cta": "查看解决方案"
+                }
+            }
+        },
+        "Comparison": {
+            "title1": "为什么成千上万的",
+            "title2": "用户信任 Lenix Protocol？",
+            "subtitle": "其他公司只专注于一个领域。我们将安全、恢复、取证和金融结合在一起，让您无需在多个服务商之间周旋。",
+            "card1": "法币到法币支付",
+            "card2": "法币到法币转账",
+            "card3": "安全、恢复、取证、金融",
+            "card4": "加密货币到加密货币转账"
+        },
+        "Merchant": {
+            "widget_alert": "来自 B Shaw 的发票支付警报",
+            "widget_req": "付款请求",
+            "widget_verified": "已验证的付款链接",
+            "widget_receipt": "交易收据将发送至",
+            "widget_wallet": "钱包地址",
+            "widget_order": "订单",
+            "widget_gas": "汽油费",
+            "btn_complete": "完成付款",
+            "btn_manual": "手动付款",
+            "title1": "对于企业：接受加密货币，",
+            "title2": "保护",
+            "title3": "在保险库中，必要时进行恢复。",
+            "point1": "接受加密货币并用法币结算。为商户提供简单快捷的结账和 API。",
+            "point2": "将收益保存在我们具有多重签名和托管功能的安全保险库中——经过审计的基础设施。",
+            "point3": "如果资金丢失或被盗，我们的团队可以帮助通过恢复和法律渠道进行追踪和追回。",
+            "point4_1": "探索解决方案",
+            "point4_2": " 或 ",
+            "point4_3": "开始恢复案例",
+            "point4_4": "。"
+        },
+        "Payment": {
+            "badge": "我们提供的服务",
+            "title": "用于支付、保险库、恢复和借贷的协议",
+            "subtitle": "为您移动、持有和恢复价值提供一站式技术栈。",
+            "cards": {
+                "fiat": {
+                    "title": "加密货币到法币",
+                    "desc": "发送加密货币并通过本地支付网络用法币结算——支持跨境和日常使用。"
+                },
+                "vault": {
+                    "title": "保险库和托管",
+                    "desc": "多重签名和安全托管，确保您的资产得到保护。"
+                },
+                "recovery": {
+                    "title": "恢复和取证",
+                    "desc": "当出现问题时，我们帮助追踪和追回资金。"
+                },
+                "lending": {
+                    "title": "借贷",
+                    "desc": "以抵押品借款，并在需要时获取流动性。"
+                }
+            },
+            "cta": "探索所有解决方案"
+        },
+        "TokenDetails": {
+            "title1": "Lenix Protocol",
+            "title2": " 代币详情",
+            "subtitle": "使用下面的合约信息将 Lenix Protocol 代币添加到您的钱包。",
+            "headers": {
+                "contract": "合约地址",
+                "name": "代币名称",
+                "symbol": "代币符号",
+                "supply": "代币供应量",
+                "network": "网络",
+                "decimals": "小数位"
+            },
+            "values": {
+                "name": "Lenix Protocol",
+                "network": "Polygon"
+            }
+        },
+        "Credibility": {
+            "title1": "详解 ",
+            "title2": "Lenix Protocol",
+            "subtitle1": "由 CertiK 审计。建立在信心之上。",
+            "subtitle2_1": "我们的审计涵盖全栈。阅读 ",
+            "subtitle2_2": "白皮书",
+            "subtitle2_3": " 和 CertiK 报告了解详细信息。",
+            "col1_text": "Lenix Protocol 已由全球领先的区块链安全公司 CertiK 全面审计。",
+            "col1_btn": "查看 CertiK 审计",
+            "col2_text": "阅读完整报告并浏览我们的白皮书，深入了解我们的技术和代币经济学。",
+            "col2_btn": "白皮书"
+        },
+        "Competition": {
+            "title1": "参加我们的竞赛，赢取",
+            "title2": "25 万美元",
+            "subtitle": "参加 Lenix Protocol 250,000 美元大奖活动！十名获胜者将各获得 25,000 美元的 LNX 代币。通过分享和完成所有任务获得奖励条目，从而提高您的获胜几率。不要错过这个机会 - 立即加入！",
+            "btn": "立即参加竞赛！"
+        },
+        "Features": {
+            "wallet": "Lenix Protocol 钱包",
+            "recipient": "输入收款人",
+            "bank_details": "银行账户详情",
+            "iban": "IBAN",
+            "btn_connect": "连接钱包并支付",
+            "btn_manual": "手动支付",
+            "title_small": "为什么选择 Lenix ProtocolPay？",
+            "title_big": "全球范围内连接加密货币与本地支付网络。",
+            "desc1": "Lenix ProtocolPay 使加密货币持有者和企业能够在全球范围内促进加密货币到法定货币的交易，利用本地支付网络和区块链技术。",
+            "desc2": "终于，享受到加密货币的速度和法定货币支付的日常便利。",
+            "btn_whitepaper": "白皮书"
+        }
+    }
+}

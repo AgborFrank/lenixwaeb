@@ -1,0 +1,263 @@
+{
+    "Header": {
+        "nav": {
+            "giveaway": "Sorteio de 250K",
+            "about": "Sobre",
+            "solutions": "Soluções",
+            "blockchain_forensics": "Forense",
+            "asset_recovery": "Recuperação de Ativos",
+            "crypto_recovery": "Recuperação Cripto",
+            "contact": "Contato",
+            "airdrop": "Airdrop"
+        },
+        "solutions": {
+            "wallet": {
+                "title": "Carteira Lenix",
+                "desc": "Carteira multi-chain segura."
+            },
+            "finance": {
+                "title": "Lenix Finance",
+                "desc": "Soluções DeFi para todos."
+            },
+            "recovery": {
+                "title": "Recuperação Cripto",
+                "desc": "Ajuda especializada para ativos perdidos."
+            },
+            "compliance": {
+                "title": "Conformidade",
+                "desc": "Investigações cross-chain com 1 clique."
+            },
+            "enforcement": {
+                "title": "Segurança Pública",
+                "desc": "Ferramentas de inteligência para agências."
+            }
+        },
+        "user_menu": {
+            "account": "Conta",
+            "dashboard": "Painel",
+            "vault": "Cofre",
+            "lenix_wallet": "Carteira Lenix",
+            "loan": "Empréstimo Cripto",
+            "assets": "Ativos",
+            "send": "Enviar",
+            "receive": "Receber",
+            "transactions": "Histórico",
+            "settings": "Configurações",
+            "sign_out": "Sair"
+        },
+        "buttons": {
+            "log_in": "Entrar",
+            "log_in_sign_up": "Entrar / Cadastrar",
+            "get_reward": "Ganhe 50 USDT"
+        }
+    },
+    "Footer": {
+        "company_desc": "Protocolo L1 para pagamentos cripto-banco e recuperação de ativos. Usa IA para escalabilidade e segurança.",
+        "headings": {
+            "about": "SOBRE",
+            "solutions": "SOLUÇÕES",
+            "resources": "RECURSOS",
+            "legal": "JURÍDICO"
+        },
+        "links": {
+            "about_us": "Sobre Nós",
+            "ecosystem": "Ecossistema",
+            "tokenomics": "Tokenomics",
+            "whitepaper": "Whitepaper",
+            "litepaper": "Litepaper",
+            "roadmap": "Roteiro",
+            "threat_intelligence": "Inteligência de Ameaças",
+            "defi_compliance": "Conformidade DeFi",
+            "blog": "Blog",
+            "documentation": "Docs",
+            "api_docs": "API",
+            "support": "Suporte",
+            "terms": "Termos",
+            "cookie": "Cookies",
+            "privacy": "Privacidade",
+            "disclaimer": "Aviso Legal"
+        },
+        "buttons": {
+            "recover_assets": "Recuperar Ativos"
+        },
+        "certification_desc": "Certificado ISO27001. Gerenciamos dados com segurança nos padrões internacionais.",
+        "copyright": "© 2026 Lenix Protocol, Todos os direitos reservados."
+    },
+    "languagePicker": {
+        "title": "Selecionar idioma",
+        "description": "Escolha seu idioma preferido"
+    },
+    "languages": {
+        "en": "English",
+        "fr": "Français",
+        "es": "Español",
+        "de": "Deutsch",
+        "ar": "العربية",
+        "pt": "Português",
+        "zh": "中文",
+        "it": "Italiano",
+        "vi": "Tiếng Việt",
+        "tl": "Filipino",
+        "tr": "Türkçe",
+        "hi": "हिन्दी",
+        "id": "Bahasa Indonesia"
+    },
+    "Home": {
+        "Hero": {
+            "title1": "Forense de ",
+            "title2": "Blockchain",
+            "title3": ",\nProtocolo de Segurança e Recuperação de Cripto.",
+            "subtitle1": "Análise avançada de blockchain e investigações forenses para rastrear ativos, descobrir fraudes e apoiar esforços de recuperação legal globalmente.",
+            "subtitle2": "Proteja seu futuro digital com investigação especializada.",
+            "btn_signup": "Inscreva-se na Lenix",
+            "btn_login": "Entrar",
+            "widget_title": "Comprar Agora",
+            "widget_subtitle": "Antes que o Preço Suba",
+            "usd_raised": "USD ARRECADADOS ATÉ AGORA:",
+            "tokens_sold": "Tokens Vendidos:",
+            "price_usd": "Preço USD: ${price}",
+            "price_eth": "Preço ETH: {price} ETH",
+            "pay_eth": "ETH que você paga",
+            "pay_usdt": "USDT que você paga",
+            "pay_usd": "USD que você paga",
+            "receive_lnx": "$LNX que você recebe",
+            "btn_processing": "Processando...",
+            "btn_pay_eth": "Pagar com ETH",
+            "btn_pay_usdt": "Pagar com USDT",
+            "btn_pay_card": "Insira os detalhes do cartão abaixo",
+            "card_info": "Desenvolvido por Stripe. Valor cobrado em USD.",
+            "btn_connect": "Conectar Carteira",
+            "btn_giveaway": "Obter Brinde de 500 USD",
+            "giveaway_info": "Receba 500 USD em tokens LNX de brinde"
+        },
+        "Pillars": {
+            "title1": "Segurança, recuperação, forense e finanças ",
+            "title2": "em um só lugar",
+            "subtitle": "Escolha o que você precisa – cada pilar leva a soluções dedicadas.",
+            "cards": {
+                "security": {
+                    "title": "Segurança Blockchain",
+                    "desc": "Infraestrutura auditada e tecnologia de cofre seguro para proteger seus ativos.",
+                    "cta": "Explorar segurança"
+                },
+                "recovery": {
+                    "title": "Recuperação de Ativos",
+                    "desc": "Protocolos especializados e caminhos legais para recuperar cripto perdidas ou roubadas com análise forense certificada.",
+                    "cta": "Iniciar recuperação"
+                },
+                "forensics": {
+                    "title": "Forense de Blockchain",
+                    "desc": "Investigação especializada para rastrear fraudes, hacks e fornecer evidências admissíveis em tribunal para recuperação legal.",
+                    "cta": "Saiba mais"
+                },
+                "finance": {
+                    "title": "Protocolo de Serviços Financeiros",
+                    "desc": "Pagamentos, empréstimos, carteira e cofre para o ecossistema cripto moderno.",
+                    "cta": "Ver soluções"
+                }
+            }
+        },
+        "Comparison": {
+            "title1": "Por que milhares de ",
+            "title2": "usuários confiam no Protocolo Lenix?",
+            "subtitle": "Outros se especializam em uma área. Combinamos segurança, recuperação, forense e finanças para que você não precise lidar com vários provedores.",
+            "card1": "Pagamentos Fiat-Fiat",
+            "card2": "Transferências Fiat-Fiat",
+            "card3": "Segurança, Recuperação, Forense, Finanças",
+            "card4": "Transferências Cripto-Cripto"
+        },
+        "Merchant": {
+            "widget_alert": "Alerta de Pagamento de Fatura de B Shaw",
+            "widget_req": "SOLICITAÇÃO DE PAGAMENTO",
+            "widget_verified": "LINK DE PAGAMENTO VERIFICADO",
+            "widget_receipt": "RECIBO DA TRANSAÇÃO SERÁ ENVIADO PARA ",
+            "widget_wallet": "Endereço da carteira",
+            "widget_order": "PEDIDO",
+            "widget_gas": "TAXA DE GÁS",
+            "btn_complete": "Concluir pagamento",
+            "btn_manual": "Pagar manualmente",
+            "title1": "Para empresas: aceite cripto, ",
+            "title2": "proteja",
+            "title3": " no cofre, recupere se necessário.",
+            "point1": "Aceite cripto e liquide em fiat. Checkout simples e API para comerciantes.",
+            "point2": "Mantenha os rendimentos em nosso cofre seguro com multi-sig e custódia – infraestrutura auditada.",
+            "point3": "Se os fundos forem perdos ou roubados, nossa equipe pode ajudar a rastrear e recuperar através de canais legais e de recuperação.",
+            "point4_1": "Explorar soluções",
+            "point4_2": " ou ",
+            "point4_3": "iniciar um caso de recuperação",
+            "point4_4": "."
+        },
+        "Payment": {
+            "badge": "O que oferecemos",
+            "title": "O Protocolo para Pagamentos, Cofre, Recuperação e Empréstimos",
+            "subtitle": "Um único stack para como você move, mantém e recupera valor.",
+            "cards": {
+                "fiat": {
+                    "title": "Cripto-para-fiat",
+                    "desc": "Envie cripto e liquide em fiat através de redes de pagamento locais – transfronteiriças e diárias."
+                },
+                "vault": {
+                    "title": "Cofre e custódia",
+                    "desc": "Multi-sig e custódia segura para que seus ativos permaneçam protegidos."
+                },
+                "recovery": {
+                    "title": "Recuperação e forense",
+                    "desc": "Quando as coisas dão errado, ajudamos a rastrear e recuperar fundos."
+                },
+                "lending": {
+                    "title": "Empréstimos",
+                    "desc": "Peça emprestado contra colateral e acesse liquidez quando precisar."
+                }
+            },
+            "cta": "Explorar todas as soluções"
+        },
+        "TokenDetails": {
+            "title1": "Detalhes do Token ",
+            "title2": "Lenix Protocol",
+            "subtitle": "Use as informações do contrato abaixo para adicionar o token Lenix Protocol à sua carteira.",
+            "headers": {
+                "contract": "Endereço do Contrato",
+                "name": "Nome do Token",
+                "symbol": "Símbolo do Token",
+                "supply": "Fornecimento de Tokens",
+                "network": "Rede",
+                "decimals": "Decimais"
+            },
+            "values": {
+                "name": "Lenix Protocol",
+                "network": "Polygon"
+            }
+        },
+        "Credibility": {
+            "title1": "Lenix Protocol em ",
+            "title2": "detalhes",
+            "subtitle1": "Auditado pela CertiK. Construído com confiança.",
+            "subtitle2_1": "Nossas auditorias cobrem todo o stack. Leia o ",
+            "subtitle2_2": "Whitepaper",
+            "subtitle2_3": " e o relatório da CertiK para mais detalhes.",
+            "col1_text": "O Lenix Protocol foi totalmente auditado pela CertiK, a empresa de segurança blockchain líder mundial.",
+            "col1_btn": "Ver Auditoria CertiK",
+            "col2_text": "Leia o relatório completo e explore nosso whitepaper para obter uma visão mais profunda de nossa tecnologia e tokenomics.",
+            "col2_btn": "Whitepaper"
+        },
+        "Competition": {
+            "title1": "Participe do Nosso Concurso para Ter a Chance de Ganhar ",
+            "title2": "250K USD",
+            "subtitle": "Participe do sorteio de 250.000 USD do Lenix Protocol! Dez vencedores receberão 25.000 USD cada em LNX. Aumente suas chances compartilhando e completando todas as tarefas para entradas bônus. Não perca esta chance - participe agora!",
+            "btn": "Participe do Concurso Agora!"
+        },
+        "Features": {
+            "wallet": "Carteira Lenix Protocol",
+            "recipient": "Inserir Destinatário",
+            "bank_details": "Detalhes da Conta Bancária",
+            "iban": "IBAN",
+            "btn_connect": "Conectar Carteira e Pagar",
+            "btn_manual": "Pagar Manualmente",
+            "title_small": "Por que Lenix ProtocolPay?",
+            "title_big": "Conectando cripto com redes de pagamento locais globalmente.",
+            "desc1": "O Lenix ProtocolPay capacita detentores de cripto e empresas a facilitar transações de cripto para fiat em todo o mundo, aproveitando redes de pagamento locais e tecnologia blockchain.",
+            "desc2": "Finalmente, aproveite a velocidade da cripto com a conveniência diária dos pagamentos em fiat.",
+            "btn_whitepaper": "Whitepaper"
+        }
+    }
+}

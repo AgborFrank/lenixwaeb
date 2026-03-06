@@ -1,0 +1,263 @@
+{
+  "Header": {
+    "nav": {
+      "giveaway": "Sorteo 250K",
+      "about": "Nosotros",
+      "solutions": "Soluciones",
+      "blockchain_forensics": "Forense",
+      "asset_recovery": "Recuperación de Activos",
+      "crypto_recovery": "Recuperación Cripto",
+      "contact": "Contacto",
+      "airdrop": "Airdrop"
+    },
+    "solutions": {
+      "wallet": {
+        "title": "Billetera Lenix",
+        "desc": "Billetera multicanal segura."
+      },
+      "finance": {
+        "title": "Lenix Finance",
+        "desc": "Soluciones DeFi para todos."
+      },
+      "recovery": {
+        "title": "Recuperación Cripto",
+        "desc": "Ayuda experta para activos perdidos."
+      },
+      "compliance": {
+        "title": "Cumplimiento",
+        "desc": "Investigaciones cruzadas en 1 clic."
+      },
+      "enforcement": {
+        "title": "Seguridad Pública",
+        "desc": "Herramientas de inteligencia para agencias."
+      }
+    },
+    "user_menu": {
+      "account": "Cuenta",
+      "dashboard": "Panel",
+      "vault": "Bóveda",
+      "lenix_wallet": "Billetera Lenix",
+      "loan": "Préstamo Cripto",
+      "assets": "Activos",
+      "send": "Enviar",
+      "receive": "Recibir",
+      "transactions": "Historial",
+      "settings": "Ajustes",
+      "sign_out": "Cerrar sesión"
+    },
+    "buttons": {
+      "log_in": "Entrar",
+      "log_in_sign_up": "Entrar / Registro",
+      "get_reward": "Obtener 50 USDT"
+    }
+  },
+  "Footer": {
+    "company_desc": "Protocolo L1 para pagos cripto-banco y recuperación. Usa IA para mejorar la escalabilidad y seguridad.",
+    "headings": {
+      "about": "NOSOTROS",
+      "solutions": "SOLUCIONES",
+      "resources": "RECURSOS",
+      "legal": "LEGAL"
+    },
+    "links": {
+      "about_us": "Acerca de",
+      "ecosystem": "Ecosistema",
+      "tokenomics": "Tokenomics",
+      "whitepaper": "Whitepaper",
+      "litepaper": "Litepaper",
+      "roadmap": "Hoja de ruta",
+      "threat_intelligence": "Inteligencia de Amenazas",
+      "defi_compliance": "Cumplimiento DeFi",
+      "blog": "Blog",
+      "documentation": "Docs",
+      "api_docs": "API",
+      "support": "Soporte",
+      "terms": "Términos",
+      "cookie": "Cookies",
+      "privacy": "Privacidad",
+      "disclaimer": "Descargo"
+    },
+    "buttons": {
+      "recover_assets": "Recuperar Activos"
+    },
+    "certification_desc": "Certificado ISO27001. Gestionamos tus datos de forma segura bajo estándares internacionales.",
+    "copyright": "© 2026 Lenix Protocol. Todos los derechos reservados."
+  },
+  "languagePicker": {
+    "title": "Seleccionar idioma",
+    "description": "Elige tu idioma preferido"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "中文",
+    "it": "Italiano",
+    "vi": "Tiếng Việt",
+    "tl": "Filipino",
+    "tr": "Türkçe",
+    "hi": "हिन्दी",
+    "id": "Bahasa Indonesia"
+  },
+  "Home": {
+    "Hero": {
+      "title1": "Criptoanálisis de ",
+      "title2": "Blockchain",
+      "title3": ",\nProtocolo de seguridad y recuperación de criptomonedas.",
+      "subtitle1": "Análisis avanzado de blockchain e investigaciones forenses para rastrear activos, descubrir fraudes y apoyar los esfuerzos de recuperación legal a nivel mundial.",
+      "subtitle2": "Asegure su futuro digital con una investigación experta.",
+      "btn_signup": "Registrarse en Lenix",
+      "btn_login": "Iniciar sesión",
+      "widget_title": "Comprar ahora",
+      "widget_subtitle": "Antes de que suba el precio",
+      "usd_raised": "USD RECAUDADOS HASTA LA FECHA:",
+      "tokens_sold": "Tokens vendidos:",
+      "price_usd": "Precio USD: ${price}",
+      "price_eth": "Precio ETH: {price} ETH",
+      "pay_eth": "ETH que pagas",
+      "pay_usdt": "USDT que pagas",
+      "pay_usd": "USD que pagas",
+      "receive_lnx": "$LNX que recibes",
+      "btn_processing": "Procesando...",
+      "btn_pay_eth": "Pagar con ETH",
+      "btn_pay_usdt": "Pagar con USDT",
+      "btn_pay_card": "Ingrese los detalles de la tarjeta a continuación",
+      "card_info": "Desarrollado por Stripe. Cantidad cobrada en USD.",
+      "btn_connect": "Conectar billetera",
+      "btn_giveaway": "Obtener regalo de 500 USD",
+      "giveaway_info": "Reciba 500 USD en tokens LNX de regalo"
+    },
+    "Pillars": {
+      "title1": "Seguridad, recuperación, forense y finanzas ",
+      "title2": "en un solo lugar",
+      "subtitle": "Elija lo que necesita: cada pilar enlaza con soluciones dedicadas.",
+      "cards": {
+        "security": {
+          "title": "Seguridad Blockchain",
+          "desc": "Infraestructura auditada y tecnología de bóveda segura para proteger sus activos.",
+          "cta": "Explorar seguridad"
+        },
+        "recovery": {
+          "title": "Recuperación de activos",
+          "desc": "Protocolos especializados y vías legales para reclamar criptomonedas perdidas o robadas con análisis forense certificado.",
+          "cta": "Iniciar recuperación"
+        },
+        "forensics": {
+          "title": "Forense de Blockchain",
+          "desc": "Investigación experta para rastrear fraudes, hackeos y proporcionar evidencia admisible en tribunales para la recuperación legal.",
+          "cta": "Saber más"
+        },
+        "finance": {
+          "title": "Protocolo de servicios financieros",
+          "desc": "Pagos, préstamos, billetera y bóveda para el ecosistema criptográfico moderno.",
+          "cta": "Ver soluciones"
+        }
+      }
+    },
+    "Comparison": {
+      "title1": "¿Por qué miles de ",
+      "title2": "usuarios confían en el Protocolo Lenix?",
+      "subtitle": "Otros se especializan en un solo área. Combinamos seguridad, recuperación, forense y finanzas para que no tenga que lidiar con múltiples proveedores.",
+      "card1": "Pagos Fiat-Fiat",
+      "card2": "Transferencias Fiat-Fiat",
+      "card3": "Seguridad, Recuperación, Forense, Finanzas",
+      "card4": "Transferencias Cripto-Cripto"
+    },
+    "Merchant": {
+      "widget_alert": "Alerta de pago de factura de B Shaw",
+      "widget_req": "SOLICITUD DE PAIEMENT",
+      "widget_verified": "ENLACE DE PAGO VERIFICADO",
+      "widget_receipt": "EL RECIBO DE LA TRANSACCIÓN SE ENVIARÁ A ",
+      "widget_wallet": "Dirección de la billetera",
+      "widget_order": "PEDIDO",
+      "widget_gas": "TARIFA DE GAS",
+      "btn_complete": "Completar pago",
+      "btn_manual": "Pagar manualmente",
+      "title1": "Para empresas: acepte cripto, ",
+      "title2": "proteja",
+      "title3": " en la bóveda, recupere si es necesario.",
+      "point1": "Acepte cripto y liquide en fiat. Pago sencillo y API para comerciantes.",
+      "point2": "Mantenga los ingresos en nuestra bóveda segura con multi-sig y custodia — infraestructura auditada.",
+      "point3": "Si los fondos se pierden o se roban, nuestro equipo puede ayudar a rastrear y reclamar a través de canales legales y de recuperación.",
+      "point4_1": "Explorar soluciones",
+      "point4_2": " o ",
+      "point4_3": "iniciar un caso de recuperación",
+      "point4_4": "."
+    },
+    "Payment": {
+      "badge": "Lo que ofrecemos",
+      "title": "El protocolo para pagos, bóveda, recuperación y préstamos",
+      "subtitle": "Una sola solución para la forma en que mueve, mantiene y recupera valor.",
+      "cards": {
+        "fiat": {
+          "title": "Cripto a fiat",
+          "desc": "Envíe cripto y liquide en fiat a través de redes de pago locales — transfronterizas y cotidianas."
+        },
+        "vault": {
+          "title": "Bóveda y custodia",
+          "desc": "Multi-sig y custodia segura para que sus activos permanezcan protegidos."
+        },
+        "recovery": {
+          "title": "Recuperación y forense",
+          "desc": "Cuando las cosas salen mal, ayudamos a rastrear y reclamar fondos."
+        },
+        "lending": {
+          "title": "Préstamos",
+          "desc": "Pida prestado contra colateral y acceda a liquidez cuando la necesite."
+        }
+      },
+      "cta": "Explorar todas las soluciones"
+    },
+    "TokenDetails": {
+      "title1": "Detalles del token de ",
+      "title2": "Lenix Protocol",
+      "subtitle": "Utilice la información del contrato a continuación para agregar el token de Lenix Protocol a su billetera.",
+      "headers": {
+        "contract": "Dirección del contrato",
+        "name": "Nombre del token",
+        "symbol": "Símbolo del token",
+        "supply": "Suministro de tokens",
+        "network": "Red",
+        "decimals": "Decimales"
+      },
+      "values": {
+        "name": "Lenix Protocol",
+        "network": "Polygon"
+      }
+    },
+    "Credibility": {
+      "title1": "Lenix Protocol en ",
+      "title2": "detalle",
+      "subtitle1": "Auditado por CertiK. Construido con confianza.",
+      "subtitle2_1": "Nuestras auditorías cubren toda la solución. Lea el ",
+      "subtitle2_2": "Libro blanco",
+      "subtitle2_3": " y el informe de CertiK para obtener los detalles.",
+      "col1_text": "Lenix Protocol ha sido completamente auditado por CertiK, la firma de seguridad blockchain líder en el mundo.",
+      "col1_btn": "Ver auditoría de CertiK",
+      "col2_text": "Lea el informe completo y explore nuestro libro blanco para profundizar en nuestra tecnología y tokenomics.",
+      "col2_btn": "Libro blanco"
+    },
+    "Competition": {
+      "title1": "Participe en nuestro concurso para tener la oportunidad de ganar ",
+      "title2": "250K $",
+      "subtitle": "¡Participe en el regalo de $250,000 de Lenix Protocol! Diez ganadores recibiront cada uno $25,000 en LNX. Aumente sus posibilidades compartiendo y completando todas las tareas para obtener participaciones de bonificación. ¡No pierda esta oportunidad - únase ahora!",
+      "btn": "¡Participe en el concurso ahora!"
+    },
+    "Features": {
+      "wallet": "Billetera Lenix Protocol",
+      "recipient": "Ingresar destinatario",
+      "bank_details": "Detalles de la cuenta bancaria",
+      "iban": "IBAN",
+      "btn_connect": "Conectar billetera y pagar",
+      "btn_manual": "Pagar manualmente",
+      "title_small": "¿Por qué Lenix ProtocolPay?",
+      "title_big": "Conectando las criptomonedas con las redes de pago locales a nivel mundial.",
+      "desc1": "Lenix ProtocolPay permite a los poseedores de criptomonedas y a las empresas facilitar transacciones de cripto a fiat en todo el mundo, aprovechando las redes de pago locales y la tecnología blockchain.",
+      "desc2": "Por fin, disfruta de la velocidad de las criptomonedas con la comodidad diaria de los pagos en moneda fiduciaria.",
+      "btn_whitepaper": "Libro Blanco"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "Header": {
+    "nav": {
+      "giveaway": "250K Giveaway",
+      "about": "About",
+      "solutions": "Solutions",
+      "blockchain_forensics": "Forensics",
+      "asset_recovery": "Asset Recovery",
+      "crypto_recovery": "Crypto Recovery",
+      "contact": "Contact",
+      "airdrop": "Airdrop"
+    },
+    "solutions": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Secure multi-chain wallet."
+      },
+      "finance": {
+        "title": "Lenix Finance",
+        "desc": "DeFi solutions for everyone."
+      },
+      "recovery": {
+        "title": "Crypto Recovery",
+        "desc": "Expert help for lost assets."
+      },
+      "compliance": {
+        "title": "Compliance",
+        "desc": "1-click cross-chain investigations."
+      },
+      "enforcement": {
+        "title": "Law Enforcement",
+        "desc": "Intelligence tools for agencies."
+      }
+    },
+    "user_menu": {
+      "account": "Account",
+      "dashboard": "Dashboard",
+      "vault": "Vault",
+      "lenix_wallet": "Lenix Wallet",
+      "loan": "Crypto Loan",
+      "assets": "Assets",
+      "send": "Send",
+      "receive": "Receive",
+      "transactions": "History",
+      "settings": "Settings",
+      "sign_out": "Sign Out"
+    },
+    "buttons": {
+      "log_in": "Log In",
+      "log_in_sign_up": "Log In / Sign Up",
+      "get_reward": "Get 50USDT"
+    }
+  },
+  "Footer": {
+    "company_desc": "L1 protocol for crypto-bank payments & asset recovery. Uses AI to boost scalability and security.",
+    "headings": {
+      "about": "ABOUT",
+      "solutions": "SOLUTIONS",
+      "resources": "RESOURCES",
+      "legal": "LEGAL"
+    },
+    "links": {
+      "about_us": "About Us",
+      "ecosystem": "Ecosystem",
+      "tokenomics": "Tokenomics",
+      "whitepaper": "Whitepaper",
+      "litepaper": "Litepaper",
+      "roadmap": "Roadmap",
+      "threat_intelligence": "Threat Intel",
+      "defi_compliance": "DeFi Compliance",
+      "blog": "Blog",
+      "documentation": "Docs",
+      "api_docs": "API",
+      "support": "Support",
+      "terms": "Terms",
+      "cookie": "Cookies",
+      "privacy": "Privacy",
+      "disclaimer": "Disclaimer"
+    },
+    "buttons": {
+      "recover_assets": "Recover Assets"
+    },
+    "certification_desc": "Lenix Protocol is ISO27001 certified. This demonstrates how, as a business, we securely manage information assets and data to an internationally recognised standard. Additionally, it shows our robust approach for managing assets such as client data and employee details, intellectual property, financial information and third-party data.",
+    "copyright": "© 2026 Lenix Protocol, All Rights Reserved."
+  },
+  "languagePicker": {
+    "title": "Select Region & Language",
+    "description": "Choose your preferred language"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "中文",
+    "it": "Italiano",
+    "vi": "Tiếng Việt",
+    "tl": "Filipino",
+    "tr": "Türkçe",
+    "hi": "हिन्दी",
+    "id": "Bahasa Indonesia"
+  },
+  "Home": {
+    "Hero": {
+      "title1": "Blockchain ",
+      "title2": "Forensics",
+      "title3": ",\nCrypto Recovery and Security Protocol.",
+      "subtitle1": "Advanced blockchain analytics and forensic investigations to trace assets, uncover fraud, and support legal recovery efforts globally.",
+      "subtitle2": "Secure your digital future with expert investigation.",
+      "btn_signup": "Sign Up to Lenix",
+      "btn_login": "Log In",
+      "widget_title": "Buy Now",
+      "widget_subtitle": "Before Price Rises",
+      "usd_raised": "USD RAISED SO FAR :",
+      "tokens_sold": "Tokens Sold :",
+      "price_usd": "USD price: ${price}",
+      "price_eth": "ETH price: {price} ETH",
+      "pay_eth": "ETH you pay",
+      "pay_usdt": "USDT you pay",
+      "pay_usd": "USD you pay",
+      "receive_lnx": "$LNX you receive",
+      "btn_processing": "Processing...",
+      "btn_pay_eth": "Pay with ETH",
+      "btn_pay_usdt": "Pay with USDT",
+      "btn_pay_card": "Enter Card Details Below",
+      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "btn_connect": "Connect Wallet",
+      "btn_giveaway": "Get 500USD Giveaway",
+      "giveaway_info": "Receive 500USD LNX tokens for giveaway"
+    },
+    "Pillars": {
+      "title1": "Security, recovery, forensics, and finance ",
+      "title2": "in one place",
+      "subtitle": "Choose what you need—each pillar links to dedicated solutions.",
+      "cards": {
+        "security": {
+          "title": "Blockchain Security",
+          "desc": "Audited infrastructure and secure vault technology to protect your assets.",
+          "cta": "Explore security"
+        },
+        "recovery": {
+          "title": "Asset Recovery",
+          "desc": "Specialized protocols and legal pathways to reclaim lost or stolen crypto with certified forensic analysis.",
+          "cta": "Start recovery"
+        },
+        "forensics": {
+          "title": "Blockchain Forensics",
+          "desc": "Expert investigation to trace fraud, hacks, and provide court-admissible evidence for legal recovery.",
+          "cta": "Learn more"
+        },
+        "finance": {
+          "title": "Financial Service Protocol",
+          "desc": "Payments, lending, wallet, and vault for the modern crypto ecosystem.",
+          "cta": "View solutions"
+        }
+      }
+    },
+    "Comparison": {
+      "title1": "Why Thousands of ",
+      "title2": "Users Trust Lenix Protocol?",
+      "subtitle": "Others specialize in one area. We combine security, recovery, forensics, and finance so you don’t have to juggle multiple providers.",
+      "card1": "Fiat- Fiat payments",
+      "card2": "Fiat- Fiat Transfers",
+      "card3": "Security, Recovery, Forensics, Finance",
+      "card4": "Crypto-Crypto Transfers"
+    },
+    "Merchant": {
+      "widget_alert": "Invoice Payment Alert From B Shaw",
+      "widget_req": "PAYMENT REQUEST",
+      "widget_verified": "VERIFIED PAYMENT LINK",
+      "widget_receipt": "TRANSACTION RECEIPT WILL BE SENT TO ",
+      "widget_wallet": "Wallet address",
+      "widget_order": "ORDER",
+      "widget_gas": "GAS FEE",
+      "btn_complete": "Complete payment",
+      "btn_manual": "Pay Manually",
+      "title1": "For businesses: accept crypto, ",
+      "title2": "protect",
+      "title3": " in vault, recover if needed.",
+      "point1": "Accept crypto and settle in fiat. Straightforward checkout and API for merchants.",
+      "point2": "Hold proceeds in our secure vault with multi-sig and custody—audited infrastructure.",
+      "point3": "If funds are lost or stolen, our team can help trace and reclaim through recovery and legal channels.",
+      "point4_1": "Explore solutions",
+      "point4_2": " or ",
+      "point4_3": "start a recovery case",
+      "point4_4": "."
+    },
+    "Payment": {
+      "badge": "What we offer",
+      "title": "The Protocol for Payments, vault, recovery, and lending",
+      "subtitle": "One stack for how you move, hold, and recover value.",
+      "cards": {
+        "fiat": {
+          "title": "Crypto-to-fiat",
+          "desc": "Send crypto and settle in fiat via local payment networks—cross-border and everyday."
+        },
+        "vault": {
+          "title": "Vault and custody",
+          "desc": "Multi-sig and secure custody so your assets stay protected."
+        },
+        "recovery": {
+          "title": "Recovery and forensics",
+          "desc": "When things go wrong, we help trace and reclaim funds."
+        },
+        "lending": {
+          "title": "Lending",
+          "desc": "Borrow against collateral and access liquidity when you need it."
+        }
+      },
+      "cta": "Explore all solutions"
+    },
+    "TokenDetails": {
+      "title1": "Lenix Protocol",
+      "title2": " Token Details",
+      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "headers": {
+        "contract": "Contract Address",
+        "name": "Token Name",
+        "symbol": "Token Symbol",
+        "supply": "Token Supply",
+        "network": "Network",
+        "decimals": "Decimals"
+      },
+      "values": {
+        "name": "Lenix Protocol",
+        "network": "Polygon"
+      }
+    },
+    "Credibility": {
+      "title1": "Lenix Protocol in ",
+      "title2": "detail",
+      "subtitle1": "Audited by CertiK. Built with Confidence.",
+      "subtitle2_1": "Our audits cover the full stack. Read the ",
+      "subtitle2_2": "Whitepaper",
+      "subtitle2_3": " and CertiK report for the details.",
+      "col1_text": "Lenix Protocol has been fully audited by CertiK, the world's leading blockchain security firm.",
+      "col1_btn": "View CertiK Audit",
+      "col2_text": "Read the full report and explore our whitepaper for deeper insight into our tech and tokenomics.",
+      "col2_btn": "Whitepaper"
+    },
+    "Competition": {
+      "title1": "Enter Our Competition for a Chance to Win ",
+      "title2": "$250K",
+      "subtitle": "Enter Lenix Protocol $250,000 Giveaway! Ten winners will each claim $25,000 in LNX. Boost your odds by sharing and completing all tasks for bonus entries. Don't miss this chance - join now!",
+      "btn": "Enter Competition Now!"
+    },
+    "Features": {
+      "wallet": "Lenix Protocol Wallet",
+      "recipient": "Enter Recipient",
+      "bank_details": "Bank Account Details",
+      "iban": "IBAN",
+      "btn_connect": "Connect wallet & Pay",
+      "btn_manual": "Pay Manually",
+      "title_small": "Why Lenix ProtocolPay?",
+      "title_big": "Bridging crypto with local payment networks globally.",
+      "desc1": "Lenix ProtocolPay empowers crypto holders and businesses to facilitate crypto-to-fiat transactions worldwide, leveraging local payment networks and blockchain technology.",
+      "desc2": "At last, enjoy the speed of crypto with the everyday convenience of fiat payments.",
+      "btn_whitepaper": "Whitepaper"
+    }
+  }
+}

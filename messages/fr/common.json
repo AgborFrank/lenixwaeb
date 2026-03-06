@@ -1,0 +1,263 @@
+{
+  "Header": {
+    "nav": {
+      "giveaway": "Cadeau 250K",
+      "about": "À propos",
+      "solutions": "Solutions",
+      "blockchain_forensics": "Forensique",
+      "asset_recovery": "Récupération d'Actifs",
+      "crypto_recovery": "Récupération Crypto",
+      "contact": "Contact",
+      "airdrop": "Airdrop"
+    },
+    "solutions": {
+      "wallet": {
+        "title": "Portefeuille Lenix",
+        "desc": "Portefeuille multi-chaînes sécurisé."
+      },
+      "finance": {
+        "title": "Lenix Finance",
+        "desc": "Solutions DeFi pour tous."
+      },
+      "recovery": {
+        "title": "Récupération Crypto",
+        "desc": "Aide experte pour actifs perdus."
+      },
+      "compliance": {
+        "title": "Conformité",
+        "desc": "Enquêtes cross-chain en 1 clic."
+      },
+      "enforcement": {
+        "title": "Forces de l'Ordre",
+        "desc": "Outils d'enquête pour agences."
+      }
+    },
+    "user_menu": {
+      "account": "Compte",
+      "dashboard": "Tableau de bord",
+      "vault": "Coffre-fort",
+      "lenix_wallet": "Portefeuille Lenix",
+      "loan": "Prêt Crypto",
+      "assets": "Actifs",
+      "send": "Envoyer",
+      "receive": "Recevoir",
+      "transactions": "Historique",
+      "settings": "Paramètres",
+      "sign_out": "Déconnexion"
+    },
+    "buttons": {
+      "log_in": "Connexion",
+      "log_in_sign_up": "Connexion / Inscription",
+      "get_reward": "Obtenir 50 USDT"
+    }
+  },
+  "Footer": {
+    "company_desc": "Protocole L1 pour paiements crypto-banque & récupération d'actifs. Utilise l'IA pour l'évolutivité et la sécurité.",
+    "headings": {
+      "about": "À PROPOS",
+      "solutions": "SOLUTIONS",
+      "resources": "RESSOURCES",
+      "legal": "LÉGAL"
+    },
+    "links": {
+      "about_us": "Qui sommes-nous",
+      "ecosystem": "Écosystème",
+      "tokenomics": "Tokenomique",
+      "whitepaper": "Livre blanc",
+      "litepaper": "Livre allégé",
+      "roadmap": "Feuille de route",
+      "threat_intelligence": "Rens. sur les menaces",
+      "defi_compliance": "Conformité DeFi",
+      "blog": "Blog",
+      "documentation": "Docs",
+      "api_docs": "API",
+      "support": "Support",
+      "terms": "Conditions",
+      "cookie": "Cookies",
+      "privacy": "Confidentialité",
+      "disclaimer": "Avertissement"
+    },
+    "buttons": {
+      "recover_assets": "Récupérer des Actifs"
+    },
+    "certification_desc": "Certifié ISO27001. Nous gérons vos données selon les normes internationales.",
+    "copyright": "© 2026 Lenix Protocol, Tous droits réservés."
+  },
+  "languagePicker": {
+    "title": "Sélectionner la langue",
+    "description": "Choisissez votre langue préférée"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "中文",
+    "it": "Italiano",
+    "vi": "Tiếng Việt",
+    "tl": "Filipino",
+    "tr": "Türkçe",
+    "hi": "हिन्दी",
+    "id": "Bahasa Indonesia"
+  },
+  "Home": {
+    "Hero": {
+      "title1": "Criminologie ",
+      "title2": "Blockchain",
+      "title3": ",\nProtocole de récupération et de sécurité crypto.",
+      "subtitle1": "Analyses blockchain avancées et enquêtes médico-légales pour retracer les actifs, découvrir les fraudes et soutenir les efforts de récupération légale à l'échelle mondiale.",
+      "subtitle2": "Sécurisez votre avenir numérique grâce à une enquête d'experts.",
+      "btn_signup": "S'inscrire à Lenix",
+      "btn_login": "Se connecter",
+      "widget_title": "Acheter maintenant",
+      "widget_subtitle": "Avant la hausse des prix",
+      "usd_raised": "USD RÉCOLTÉS À CE JOUR :",
+      "tokens_sold": "Jetons vendus :",
+      "price_usd": "Prix USD: ${price}",
+      "price_eth": "Prix ETH: {price} ETH",
+      "pay_eth": "ETH que vous payez",
+      "pay_usdt": "USDT que vous payez",
+      "pay_usd": "USD que vous payez",
+      "receive_lnx": "$LNX que vous recevez",
+      "btn_processing": "Traitement...",
+      "btn_pay_eth": "Payer avec ETH",
+      "btn_pay_usdt": "Payer avec USDT",
+      "btn_pay_card": "Entrez les détails de la carte ci-dessous",
+      "card_info": "Propulsé par Stripe. Montant facturé en USD.",
+      "btn_connect": "Connecter le portefeuille",
+      "btn_giveaway": "Obtenir un cadeau de 500 USD",
+      "giveaway_info": "Recevez 500 USD de jetons LNX en cadeau"
+    },
+    "Pillars": {
+      "title1": "Sécurité, récupération, criminalistique et finance ",
+      "title2": "en un seul endroit",
+      "subtitle": "Choisissez ce dont vous avez besoin - chaque pilier renvoie à des solutions dédiées.",
+      "cards": {
+        "security": {
+          "title": "Sécurité Blockchain",
+          "desc": "Infrastructure auditée et technologie de coffre-fort sécurisé pour protéger vos actifs.",
+          "cta": "Explorer la sécurité"
+        },
+        "recovery": {
+          "title": "Récupération d'actifs",
+          "desc": "Protocoles spécialisés et voies juridiques pour réclamer des cryptos perdues ou volées avec une analyse médico-légale certifiée.",
+          "cta": "Démarrer la récupération"
+        },
+        "forensics": {
+          "title": "Criminologie Blockchain",
+          "desc": "Enquête d'experts pour retracer les fraudes, les piratages et fournir des preuves recevables en justice pour la récupération légale.",
+          "cta": "En savoir plus"
+        },
+        "finance": {
+          "title": "Protocole de service financier",
+          "desc": "Paiements, prêts, portefeuille et coffre-fort pour l'écosystème crypto moderne.",
+          "cta": "Voir les solutions"
+        }
+      }
+    },
+    "Comparison": {
+      "title1": "Pourquoi des milliers d' ",
+      "title2": "utilisateurs font confiance au protocole Lenix ?",
+      "subtitle": "D'autres se spécialisent dans un seul domaine. Nous combinons sécurité, récupération, criminalistique et finance pour que vous n'ayez pas à jongler avec plusieurs fournisseurs.",
+      "card1": "Paiements Fiat-Fiat",
+      "card2": "Transferts Fiat-Fiat",
+      "card3": "Sécurité, Récupération, Criminologie, Finance",
+      "card4": "Transferts Crypto-Crypto"
+    },
+    "Merchant": {
+      "widget_alert": "Alerte de paiement de facture de B Shaw",
+      "widget_req": "DEMANDE DE PAIEMENT",
+      "widget_verified": "LIEN DE PAIEMENT VÉRIFIÉ",
+      "widget_receipt": "LE REÇU DE LA TRANSACTION SERA ENVOYÉ À ",
+      "widget_wallet": "Adresse du portefeuille",
+      "widget_order": "COMMANDE",
+      "widget_gas": "FRAIS DE GAZ",
+      "btn_complete": "Compléter le paiement",
+      "btn_manual": "Payer manuellement",
+      "title1": "Pour les entreprises : acceptez les cryptos, ",
+      "title2": "protégez",
+      "title3": " dans le coffre-fort, récupérez si nécessaire.",
+      "point1": "Acceptez les cryptos et réglez en fiat. Paiement simple et API pour les marchands.",
+      "point2": "Conservez les revenus dans notre coffre-fort sécurisé avec multi-sig et garde — infrastructure auditée.",
+      "point3": "Si les fonds sont perdus ou volés, notre équipe peut aider à les retracer et à les réclamer via des canaux de récupération et juridiques.",
+      "point4_1": "Explorer les solutions",
+      "point4_2": " ou ",
+      "point4_3": "commencer un dossier de récupération",
+      "point4_4": "."
+    },
+    "Payment": {
+      "badge": "Ce que nous offrons",
+      "title": "Le protocole pour les paiements, le coffre-fort, la récupération et le prêt",
+      "subtitle": "Une seule pile pour la façon dont vous déplacez, détenez et récupérez de la valeur.",
+      "cards": {
+        "fiat": {
+          "title": "Crypto-vers-fiat",
+          "desc": "Envoyez des cryptos et réglez en fiat via les réseaux de paiement locaux — transfrontaliers et quotidiens."
+        },
+        "vault": {
+          "title": "Coffre-fort et garde",
+          "desc": "Multi-sig et garde sécurisée pour que vos actifs restent protégés."
+        },
+        "recovery": {
+          "title": "Récupération et criminalistique",
+          "desc": "Quand les choses tournent mal, nous aidons à retracer et à réclamer les fonds."
+        },
+        "lending": {
+          "title": "Prêt",
+          "desc": "Empruntez sur garantie et accédez à des liquidités quand vous en avez besoin."
+        }
+      },
+      "cta": "Explorer toutes les solutions"
+    },
+    "TokenDetails": {
+      "title1": "Détails du jeton ",
+      "title2": "Lenix Protocol",
+      "subtitle": "Utilisez les informations du contrat ci-dessous pour ajouter le jeton Lenix Protocol à votre portefeuille.",
+      "headers": {
+        "contract": "Adresse du contrat",
+        "name": "Nom du jeton",
+        "symbol": "Symbole du jeton",
+        "supply": "Offre de jetons",
+        "network": "Réseau",
+        "decimals": "Décimales"
+      },
+      "values": {
+        "name": "Lenix Protocol",
+        "network": "Polygon"
+      }
+    },
+    "Credibility": {
+      "title1": "Lenix Protocol en ",
+      "title2": "détail",
+      "subtitle1": "Audité par CertiK. Construit avec confiance.",
+      "subtitle2_1": "Nos audits couvrent toute la pile. Lisez le ",
+      "subtitle2_2": "Livre blanc",
+      "subtitle2_3": " et le rapport CertiK pour les détails.",
+      "col1_text": "Lenix Protocol a été entièrement audité par CertiK, la principale société de sécurité blockchain au monde.",
+      "col1_btn": "Voir l'audit CertiK",
+      "col2_text": "Lisez le rapport complet et explorez notre livre blanc pour un aperçu plus approfondi de notre technologie et de notre économie de jetons.",
+      "col2_btn": "Livre blanc"
+    },
+    "Competition": {
+      "title1": "Participez à notre concours pour courir la chance de gagner ",
+      "title2": "250K $",
+      "subtitle": "Participez au cadeau de 250 000 $ de Lenix Protocol ! Dix gagnants recevront chacun 25 000 $ en LNX. Boostez vos chances en partageant et en accomplissant toutes les tâches pour des entrées bonus. Ne manquez pas cette chance - inscrivez-vous maintenant !",
+      "btn": "Participez au concours maintenant !"
+    },
+    "Features": {
+      "wallet": "Portefeuille Lenix Protocol",
+      "recipient": "Entrer le destinataire",
+      "bank_details": "Détails du compte bancaire",
+      "iban": "IBAN",
+      "btn_connect": "Connecter le portefeuille et payer",
+      "btn_manual": "Payer manuellement",
+      "title_small": "Pourquoi Lenix ProtocolPay ?",
+      "title_big": "Relier la crypto aux réseaux de paiement locaux dans le monde entier.",
+      "desc1": "Lenix ProtocolPay permet aux détenteurs de crypto et aux entreprises de faciliter les transactions crypto-fiat dans le monde entier, en tirant parti des réseaux de paiement locaux et de la technologie blockchain.",
+      "desc2": "Enfin, profitez de la rapidité de la crypto avec la commodité quotidienne des paiements en monnaie fiduciaire.",
+      "btn_whitepaper": "Livre blanc"
+    }
+  }
+}
