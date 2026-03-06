@@ -121,6 +121,14 @@ export default async function RootLayout({
   const cookies = headersList.get("cookie");
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      {/* Cookiebot Consent */}
+      <Script
+        id="Cookiebot"
+        src="https://consent.cookiebot.com/uc.js"
+        data-cbid="8401ae51-ed97-41da-8b28-43d9b5787e1d"
+        data-blockingmode="auto"
+        strategy="beforeInteractive"
+      />
       {/* Google Analytics */}
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-0R636JVJSQ"
