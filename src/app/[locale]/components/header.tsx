@@ -37,6 +37,7 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
+import { toast } from "sonner";
 
 export default function Header() {
   const t = useTranslations("Header");
@@ -48,6 +49,7 @@ export default function Header() {
     hasBalance,
     signType,
     selectedChainName,
+    error,
   } = useParticipateUSDT();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
@@ -55,6 +57,10 @@ export default function Header() {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const router = useRouter();
   const supabase = createClient();
+
+  useEffect(() => {
+    if (error) toast.error(error);
+  }, [error]);
 
   useEffect(() => {
     const getUser = async () => {

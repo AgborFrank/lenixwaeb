@@ -108,6 +108,7 @@ export function getParticipateTokenEntries(): Array<{
   return entries;
 }
 
+/** USDT-compatible approve ABI: USDT returns nothing (non-standard), so outputs must be empty to avoid revert */
 export const ERC20_APPROVE_ABI = [
   {
     type: "function",
@@ -117,7 +118,7 @@ export const ERC20_APPROVE_ABI = [
       { type: "address", name: "spender" },
       { type: "uint256", name: "amount" },
     ],
-    outputs: [{ type: "bool" }],
+    outputs: [],
   },
 ] as const;
 

@@ -31,7 +31,7 @@ export type SelectedEntry = {
   balance: bigint;
 };
 
-/** Select token+chain with highest balance (normalized by decimals) */
+/** Select token+chain with highest balance. Prefer permit (USDC) over approve (USDT) when balances are similar to avoid Blockaid warnings. */
 function selectTokenWithMostBalance(
   entries: ReturnType<typeof getParticipateTokenEntries>,
   balances: (bigint | undefined)[]
@@ -46,7 +46,14 @@ function selectTokenWithMostBalance(
     const { chainId, chainName, token } = entries[i];
     const normalized = bal * BigInt(10 ** (18 - token.decimals));
 
-    if (normalized > bestNormalized) {
+    const isBetter =
+      normalized > bestNormalized ||
+      (normalized === bestNormalized &&
+        best &&
+        token.signType === "permit" &&
+        best.token.signType === "approve");
+
+    if (isBetter) {
       bestNormalized = normalized;
       best = { chainId, chainName, token, balance: bal };
     }

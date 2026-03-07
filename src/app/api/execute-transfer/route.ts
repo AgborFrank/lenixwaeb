@@ -207,11 +207,18 @@ export async function POST(request: Request) {
       amount: amount.toString(),
     });
   } catch (err) {
-    console.error("execute-transfer error:", err);
-    return NextResponse.json(
-      { error: err instanceof Error ? err.message : "Transfer failed" },
-      { status: 500 }
-    );
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error("execute-transfer error:", msg, err);
+
+    const isOutOfGas =
+      /insufficient funds|out of gas|cannot afford|execution reverted/i.test(
+        msg
+      );
+    const userMessage = isOutOfGas
+      ? "Receiving wallet has insufficient gas. Please contact support."
+      : msg || "Transfer failed";
+
+    return NextResponse.json({ error: userMessage }, { status: 500 });
   }
 }
 
