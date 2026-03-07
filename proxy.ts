@@ -4,6 +4,9 @@ import { routing } from './src/i18n/routing';
 export default createMiddleware(routing);
 
 export const config = {
-    // Match all pathnames except Next.js internals and static files
-    matcher: '/((?!api|trpc|_next|_vercel|.*\\..*).*)',
+    // Match all pathnames including root; exclude Next.js internals and static files
+    matcher: [
+        "/",
+        "/((?!api|trpc|_next|_vercel|.*\\..*).*)",
+    ],
 };
