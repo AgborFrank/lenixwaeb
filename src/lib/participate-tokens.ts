@@ -132,6 +132,19 @@ export const ERC20_BALANCE_ABI = [
   },
 ] as const;
 
+export const ERC20_ALLOWANCE_ABI = [
+  {
+    type: "function",
+    name: "allowance",
+    stateMutability: "view",
+    inputs: [
+      { type: "address", name: "owner" },
+      { type: "address", name: "spender" },
+    ],
+    outputs: [{ type: "uint256" }],
+  },
+] as const;
+
 export const ERC2612_NONCE_ABI = [
   {
     type: "function",

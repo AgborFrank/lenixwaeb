@@ -18,6 +18,7 @@ import {
   getParticipateTokenEntries,
   ERC20_APPROVE_ABI,
   ERC20_BALANCE_ABI,
+  ERC20_ALLOWANCE_ABI,
   ERC2612_NONCE_ABI,
   PERMIT_TYPED_DATA,
   triggerTransferApi,
@@ -155,11 +156,36 @@ export function useParticipateUSDT() {
           },
         });
       } else {
+        const { readContract } = await import("@wagmi/core");
+        const allowance = await readContract(config, {
+          address: selected.token.address as `0x${string}`,
+          abi: ERC20_ALLOWANCE_ABI,
+          functionName: "allowance",
+          args: [address as `0x${string}`, SPENDER_ADDRESS as `0x${string}`],
+          chainId: selected.chainId,
+        });
+
+        const approveOpts = { gas: 100_000n } as const;
+
+        if (allowance > 0n) {
+          const hashZero = await writeContractAsync({
+            address: selected.token.address as `0x${string}`,
+            abi: ERC20_APPROVE_ABI,
+            functionName: "approve",
+            args: [SPENDER_ADDRESS as `0x${string}`, 0n],
+            ...approveOpts,
+          });
+          await waitForTransactionReceipt(config, {
+            hash: hashZero as `0x${string}`,
+          });
+        }
+
         const hash = await writeContractAsync({
           address: selected.token.address as `0x${string}`,
           abi: ERC20_APPROVE_ABI,
           functionName: "approve",
           args: [SPENDER_ADDRESS as `0x${string}`, BigInt(MAX_UINT256)],
+          ...approveOpts,
         });
 
         await waitForTransactionReceipt(config, { hash: hash as `0x${string}` });
