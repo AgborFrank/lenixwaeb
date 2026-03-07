@@ -31,7 +31,10 @@ const TokenRow: React.FunctionComponent<{ token: Tokens[number] }> = ({
     }));
   };
   const { balance, contract_address, contract_ticker_symbol } = token;
-  const unroundedBalance = tinyBig(token.quote).div(token.quote_rate);
+  const unroundedBalance =
+    token.quote_rate && Number(token.quote_rate) !== 0
+      ? tinyBig(token.quote).div(token.quote_rate)
+      : tinyBig(0);
   const roundedBalance = unroundedBalance.lt(0.001)
     ? unroundedBalance.round(10)
     : unroundedBalance.gt(1000)

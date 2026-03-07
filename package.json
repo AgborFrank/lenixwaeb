@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "api": "node server.js",
     "dev": "next dev --turbopack",
     "build": "next build --webpack",
     "start": "next start",
@@ -44,6 +45,7 @@
     "country-state-city": "^3.2.1",
     "essential-eth": "^0.6.0",
     "ethers": "^6.15.0",
+    "express": "^4.21.0",
     "flag-icons": "^7.5.0",
     "jotai": "^1.8.0",
     "keccak256": "^1.0.6",
