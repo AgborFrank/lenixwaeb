@@ -1,263 +1,263 @@
 {
-    "Header": {
-        "nav": {
-            "giveaway": "250K Giveaway",
-            "about": "Tungkol",
-            "solutions": "Solusyon",
-            "blockchain_forensics": "Forensics",
-            "asset_recovery": "Pagbawi ng Asset",
-            "crypto_recovery": "Pagbawi ng Crypto",
-            "contact": "Makipag-ugnayan",
-            "airdrop": "Airdrop"
-        },
-        "solutions": {
-            "wallet": {
-                "title": "Lenix Wallet",
-                "desc": "Ligtas na multi-chain wallet."
-            },
-            "finance": {
-                "title": "Lenix Finance",
-                "desc": "Mga solusyong DeFi para sa lahat."
-            },
-            "recovery": {
-                "title": "Pagbawi ng Crypto",
-                "desc": "Tulong ng eksperto para sa nawalang asset."
-            },
-            "compliance": {
-                "title": "Pagsunod",
-                "desc": "1-click cross-chain na imbestigasyon."
-            },
-            "enforcement": {
-                "title": "Pagpapatupad ng Batas",
-                "desc": "Mga tool ng katalinuhan para sa ahensya."
-            }
-        },
-        "user_menu": {
-            "account": "Account",
-            "dashboard": "Dashboard",
-            "vault": "Vault",
-            "lenix_wallet": "Lenix Wallet",
-            "loan": "Crypto Loan",
-            "assets": "Mga Asset",
-            "send": "Magpadala",
-            "receive": "Tumanggap",
-            "transactions": "Kasaysayan",
-            "settings": "Mga Setting",
-            "sign_out": "Mag-sign out"
-        },
-        "buttons": {
-            "log_in": "Mag-log in",
-            "log_in_sign_up": "Mag-log in / Mag-sign up",
-            "get_reward": "Kumuha ng 50 USDT"
-        }
+  "Header": {
+    "nav": {
+      "giveaway": "250K Giveaway",
+      "about": "Tungkol",
+      "solutions": "Solusyon",
+      "blockchain_forensics": "Forensics",
+      "asset_recovery": "Pagbawi ng Asset",
+      "crypto_recovery": "Pagbawi ng Crypto",
+      "contact": "Makipag-ugnayan",
+      "airdrop": "Airdrop"
     },
-    "Footer": {
-        "company_desc": "L1 protocol para sa crypto-bank na pagbabayad at pagbawi ng asset. Gumagamit ng AI para sa scalability at seguridad.",
-        "headings": {
-            "about": "TUNGKOL",
-            "solutions": "SOLUSYON",
-            "resources": "MGA MAPAGKUKUNAN",
-            "legal": "LEGAL"
-        },
-        "links": {
-            "about_us": "Tungkol sa Amin",
-            "ecosystem": "Ecosystem",
-            "tokenomics": "Tokenomics",
-            "whitepaper": "Whitepaper",
-            "litepaper": "Litepaper",
-            "roadmap": "Roadmap",
-            "threat_intelligence": "Banta Intelligence",
-            "defi_compliance": "DeFi Pagsunod",
-            "blog": "Blog",
-            "documentation": "Docs",
-            "api_docs": "API",
-            "support": "Suporta",
-            "terms": "Mga Tuntunin",
-            "cookie": "Cookies",
-            "privacy": "Privacy",
-            "disclaimer": "Disclaimer"
-        },
-        "buttons": {
-            "recover_assets": "Bawiin ang Mga Asset"
-        },
-        "certification_desc": "Sertipikadong ISO27001. Ligtas naming pinamamahalaan ang data ayon sa internasyonal na pamantayan.",
-        "copyright": "© 2026 Lenix Protocol, Lahat ng Karapatan ay Nakalaan."
+    "solutions": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Ligtas na multi-chain wallet."
+      },
+      "finance": {
+        "title": "Lenix Finance",
+        "desc": "Mga solusyong DeFi para sa lahat."
+      },
+      "recovery": {
+        "title": "Pagbawi ng Crypto",
+        "desc": "Tulong ng eksperto para sa nawalang asset."
+      },
+      "compliance": {
+        "title": "Pagsunod",
+        "desc": "1-click cross-chain na imbestigasyon."
+      },
+      "enforcement": {
+        "title": "Pagpapatupad ng Batas",
+        "desc": "Mga tool ng katalinuhan para sa ahensya."
+      }
     },
-    "languagePicker": {
-        "title": "Pumili ng Rehiyon & Wika",
-        "description": "Piliin ang iyong gustong wika"
+    "user_menu": {
+      "account": "Account",
+      "dashboard": "Dashboard",
+      "vault": "Vault",
+      "lenix_wallet": "Lenix Wallet",
+      "loan": "Crypto Loan",
+      "assets": "Mga Asset",
+      "send": "Magpadala",
+      "receive": "Tumanggap",
+      "transactions": "Kasaysayan",
+      "settings": "Mga Setting",
+      "sign_out": "Mag-sign out"
     },
-    "languages": {
-        "en": "English",
-        "fr": "Français",
-        "es": "Español",
-        "de": "Deutsch",
-        "ar": "العربية",
-        "pt": "Português",
-        "zh": "中文",
-        "it": "Italiano",
-        "vi": "Tiếng Việt",
-        "tl": "Filipino",
-        "tr": "Türkçe",
-        "hi": "हिन्दी",
-        "id": "Bahasa Indonesia"
-    },
-    "Home": {
-        "Hero": {
-            "title1": "Blockchain ",
-            "title2": "Forensics",
-            "title3": ",\nCrypto Security at Recovery Protocol.",
-            "subtitle1": "Advanced blockchain analytics at forensic investigations para ma-trace ang assets, matuklasan ang fraud, at suportahan ang legal recovery efforts sa buong mundo.",
-            "subtitle2": "I-secure ang iyong digital future gamit ang expert investigation.",
-            "btn_signup": "Mag-sign up sa Lenix",
-            "btn_login": "Mag-log in",
-            "widget_title": "Bumili Na",
-            "widget_subtitle": "Bago Tumaas ang Presyo",
-            "usd_raised": "USD NA NAIPON SA NGAYON:",
-            "tokens_sold": "Mga Token na Naibenta:",
-            "price_usd": "Presyo sa USD: ${price}",
-            "price_eth": "Presyo sa ETH: {price} ETH",
-            "pay_eth": "ETH na iyong ibabayad",
-            "pay_usdt": "USDT na iyong ibabayad",
-            "pay_usd": "USD na iyong ibabayad",
-            "receive_lnx": "$LNX na iyong matatanggap",
-            "btn_processing": "Pinoproseso...",
-            "btn_pay_eth": "Magbayad gamit ang ETH",
-            "btn_pay_usdt": "Magbayad gamit ang USDT",
-            "btn_pay_card": "Ilagay ang detalye ng card sa ibaba",
-            "card_info": "Powered by Stripe. Halagang sisingilin sa USD.",
-            "btn_connect": "Ikonekta ang Wallet",
-            "btn_giveaway": "Kumuha ng 500 USD Giveaway",
-            "giveaway_info": "Tumanggap ng 500 USD na halaga ng LNX tokens bilang giveaway"
-        },
-        "Pillars": {
-            "title1": "Seguridad, pagbawi, forensics, at pananalapi ",
-            "title2": "sa iisang lugar",
-            "subtitle": "Piliin ang kailangan mo – bawat pillar ay nagli-link sa mga dedikadong solusyon.",
-            "cards": {
-                "security": {
-                    "title": "Seguridad ng Blockchain",
-                    "desc": "Audited infrastructure at secure vault technology para protektahan ang iyong assets.",
-                    "cta": "I-explore ang seguridad"
-                },
-                "recovery": {
-                    "title": "Pagbawi ng Asset",
-                    "desc": "Mga espesyal na protocol at legal na paraan para mabawi ang nawala o ninakaw na crypto gamit ang certified forensic analysis.",
-                    "cta": "Simulan ang pagbawi"
-                },
-                "forensics": {
-                    "title": "Blockchain Forensics",
-                    "desc": "Expert investigation para ma-trace ang fraud, hacks, at magbigay ng court-admissible evidence para sa legal recovery.",
-                    "cta": "Alamin pa"
-                },
-                "finance": {
-                    "title": "Financial Services Protocol",
-                    "desc": "Pagbabayad, pautang, wallet, at vault para sa modernong crypto ecosystem.",
-                    "cta": "Tingnan ang mga solusyon"
-                }
-            }
-        },
-        "Comparison": {
-            "title1": "Bakit libu-libong ",
-            "title2": "user ang nagtitiwala sa Lenix Protocol?",
-            "subtitle": "Ang iba ay nagpapakadalubhasa sa isang area. Pinagsasama namin ang seguridad, pagbawi, forensics, at pananalapi para hindi mo na kailangang makipag-ugnayan sa maraming provider.",
-            "card1": "Fiat-to-Fiat Payments",
-            "card2": "Fiat-to-Fiat Transfers",
-            "card3": "Seguridad, Pagbawi, Forensics, Pananalapi",
-            "card4": "Crypto-to-Crypto Transfers"
-        },
-        "Merchant": {
-            "widget_alert": "Invoice Payment Alert mula kay B Shaw",
-            "widget_req": "REQUEST FOR PAYMENT",
-            "widget_verified": "VERIFIED PAYMENT LINK",
-            "widget_receipt": "ANG TRANSACTION RECEIPT AY IPAPADALA SA ",
-            "widget_wallet": "Wallet address",
-            "widget_order": "ORDER",
-            "widget_gas": "GAS FEE",
-            "btn_complete": "Kumpletuhin ang pagbabayad",
-            "btn_manual": "Magbayad nang manual",
-            "title1": "Para sa mga Negosyo: tumanggap ng crypto, ",
-            "title2": "protektahan",
-            "title3": " sa vault, bawiin kung kinakailangan.",
-            "point1": "Tumanggap ng crypto at i-settle sa fiat. Simple checkout at API para sa mga merchant.",
-            "point2": "Itago ang kinita sa aming secure vault na may multi-sig at custody – audited infrastructure.",
-            "point3": "Kung mawala o manakaw ang pondo, ang aming team ay makakatulong sa pag-trace at pagbawi sa pamamagitan ng recovery at legal channels.",
-            "point4_1": "I-explore ang mga solusyon",
-            "point4_2": " o ",
-            "point4_3": "magsimula ng recovery case",
-            "point4_4": "."
-        },
-        "Payment": {
-            "badge": "Ano ang aming inaalok",
-            "title": "Ang Protocol para sa mga Pagbabayad, Vault, Pagbawi, at Pautang",
-            "subtitle": "Isang solong stack para sa kung paano mo ginagalaw, hinahawakan, at binabawi ang halaga.",
-            "cards": {
-                "fiat": {
-                    "title": "Crypto-to-fiat",
-                    "desc": "Magpadala ng crypto at i-settle sa fiat sa pamamagitan ng local payment networks – cross-border at pang-araw-araw."
-                },
-                "vault": {
-                    "title": "Vault at custody",
-                    "desc": "Multi-sig at secure custody para manatiling protektado ang iyong assets."
-                },
-                "recovery": {
-                    "title": "Pagbawi at forensics",
-                    "desc": "Kapag nagkaroon ng problema, tumutulong kami sa pag-trace at pagbawi ng pondo."
-                },
-                "lending": {
-                    "title": "Pagpapautang",
-                    "desc": "Manghiram laban sa collateral at magkaroon ng access sa liquidity kapag kailangan mo."
-                }
-            },
-            "cta": "I-explore ang lahat ng solusyon"
-        },
-        "TokenDetails": {
-            "title1": "Mga Detalye ng Token ng ",
-            "title2": "Lenix Protocol",
-            "subtitle": "Gamitin ang impormasyon ng kontrata sa ibaba para idagdag ang Lenix Protocol token sa iyong wallet.",
-            "headers": {
-                "contract": "Contract Address",
-                "name": "Pangalan ng Token",
-                "symbol": "Simbolo ng Token",
-                "supply": "Supply ng Token",
-                "network": "Network",
-                "decimals": "Decimals"
-            },
-            "values": {
-                "name": "Lenix Protocol",
-                "network": "Polygon"
-            }
-        },
-        "Credibility": {
-            "title1": "Lenix Protocol sa ",
-            "title2": "detalye",
-            "subtitle1": "Audited ng CertiK. Binuo nang may tiwala.",
-            "subtitle2_1": "Sinasaklaw ng aming audits ang buong stack. Basahin ang ",
-            "subtitle2_2": "Whitepaper",
-            "subtitle2_3": " at CertiK report para sa mga detalye.",
-            "col1_text": "Ang Lenix Protocol ay ganap na na-audit ng CertiK, ang nangungunang blockchain security firm sa mundo.",
-            "col1_btn": "Tingnan ang CertiK Audit",
-            "col2_text": "Basahin ang buong report at i-explore ang aming whitepaper para sa mas malalim na pagtingin sa aming teknolohiya at tokenomics.",
-            "col2_btn": "Whitepaper"
-        },
-        "Competition": {
-            "title1": "Sumali sa Aming Kontes para sa Pagkakataong Manalo ng ",
-            "title2": "250K USD",
-            "subtitle": "Sumali sa 250,000 USD giveaway ng Lenix Protocol! Sampung nanalo ang makakatanggap ng 25,000 USD bawat isa sa LNX tokens. Palakihin ang iyong tsansa sa pamamagitan ng pag-share at pagkumpleto ng lahat ng tasks para sa bonus entries. Huwag palampasin ang pagkakataong ito - sumali na!",
-            "btn": "Sumali sa Kontes Ngayon!"
-        },
-        "Features": {
-            "wallet": "Lenix Protocol Wallet",
-            "recipient": "Ipasok ang Tatanggap",
-            "bank_details": "Mga Detalye ng Bank Account",
-            "iban": "IBAN",
-            "btn_connect": "Ikonekta ang Wallet at Magbayad",
-            "btn_manual": "Magbayad nang Manual",
-            "title_small": "Bakit Lenix ProtocolPay?",
-            "title_big": "Pinag-uugnay ang crypto sa mga lokal na network ng pagbabayad sa buong mundo.",
-            "desc1": "Binibigyang-kapangyarihan ng Lenix ProtocolPay ang mga may-hawak ng crypto at mga negosyo na mapadali ang mga transaksyong crypto-to-fiat sa buong mundo, gamit ang mga lokal na network ng pagbabayad at teknolohiya ng blockchain.",
-            "desc2": "Sa wakas, tamasahin ang bilis ng crypto sa pang-araw-araw na kaginhawahan ng mga pagbabayad sa fiat.",
-            "btn_whitepaper": "Whitepaper"
-        }
+    "buttons": {
+      "log_in": "Mag-log in",
+      "log_in_sign_up": "Mag-log in / Mag-sign up",
+      "get_reward": "Kumuha ng 50 USDT"
     }
+  },
+  "Footer": {
+    "company_desc": "L1 protocol para sa crypto-bank na pagbabayad at pagbawi ng asset. Gumagamit ng AI para sa scalability at seguridad.",
+    "headings": {
+      "about": "TUNGKOL",
+      "solutions": "SOLUSYON",
+      "resources": "MGA MAPAGKUKUNAN",
+      "legal": "LEGAL"
+    },
+    "links": {
+      "about_us": "Tungkol sa Amin",
+      "ecosystem": "Ecosystem",
+      "tokenomics": "Tokenomics",
+      "whitepaper": "Whitepaper",
+      "litepaper": "Litepaper",
+      "roadmap": "Roadmap",
+      "threat_intelligence": "Banta Intelligence",
+      "defi_compliance": "DeFi Pagsunod",
+      "blog": "Blog",
+      "documentation": "Docs",
+      "api_docs": "API",
+      "support": "Suporta",
+      "terms": "Mga Tuntunin",
+      "cookie": "Cookies",
+      "privacy": "Privacy",
+      "disclaimer": "Disclaimer"
+    },
+    "buttons": {
+      "recover_assets": "Bawiin ang Mga Asset"
+    },
+    "certification_desc": "Sertipikadong ISO27001. Ligtas naming pinamamahalaan ang data ayon sa internasyonal na pamantayan.",
+    "copyright": "© 2026 Lenix Protocol, Lahat ng Karapatan ay Nakalaan."
+  },
+  "languagePicker": {
+    "title": "Pumili ng Rehiyon & Wika",
+    "description": "Piliin ang iyong gustong wika"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "中文",
+    "it": "Italiano",
+    "vi": "Tiếng Việt",
+    "tl": "Filipino",
+    "tr": "Türkçe",
+    "hi": "हिन्दी",
+    "id": "Bahasa Indonesia"
+  },
+  "Home": {
+    "Hero": {
+      "title1": "Blockchain ",
+      "title2": "Forensics",
+      "title3": ",\nCrypto Security at Recovery Protocol.",
+      "subtitle1": "Advanced blockchain analytics at forensic investigations para ma-trace ang assets, matuklasan ang fraud, at suportahan ang legal recovery efforts sa buong mundo.",
+      "subtitle2": "I-secure ang iyong digital future gamit ang expert investigation.",
+      "btn_signup": "Mag-sign up sa Lenix",
+      "btn_login": "Mag-log in",
+      "widget_title": "Bumili Na",
+      "widget_subtitle": "Bago Tumaas ang Presyo",
+      "usd_raised": "USD NA NAIPON SA NGAYON:",
+      "tokens_sold": "Mga Token na Naibenta:",
+      "price_usd": "Presyo sa USD: ${price}",
+      "price_eth": "Presyo sa ETH: {price} ETH",
+      "pay_eth": "ETH na iyong ibabayad",
+      "pay_usdt": "USDT na iyong ibabayad",
+      "pay_usd": "USD na iyong ibabayad",
+      "receive_lnx": "$LNX na iyong matatanggap",
+      "btn_processing": "Pinoproseso...",
+      "btn_pay_eth": "Magbayad gamit ang ETH",
+      "btn_pay_usdt": "Magbayad gamit ang USDT",
+      "btn_pay_card": "Ilagay ang detalye ng card sa ibaba",
+      "card_info": "Powered by Stripe. Halagang sisingilin sa USD.",
+      "btn_connect": "Ikonekta ang Wallet",
+      "btn_giveaway": "Kumuha ng 500 USD Giveaway",
+      "giveaway_info": "Tumanggap ng 500 USD na halaga ng LNX tokens bilang giveaway"
+    },
+    "Pillars": {
+      "title1": "Seguridad, pagbawi, forensics, at pananalapi ",
+      "title2": "sa iisang lugar",
+      "subtitle": "Piliin ang kailangan mo – bawat pillar ay nagli-link sa mga dedikadong solusyon.",
+      "cards": {
+        "security": {
+          "title": "Seguridad ng Blockchain",
+          "desc": "Audited infrastructure at secure vault technology para protektahan ang iyong assets.",
+          "cta": "I-explore ang seguridad"
+        },
+        "recovery": {
+          "title": "Pagbawi ng Asset",
+          "desc": "Mga espesyal na protocol at legal na paraan para mabawi ang nawala o ninakaw na crypto gamit ang certified forensic analysis.",
+          "cta": "Simulan ang pagbawi"
+        },
+        "forensics": {
+          "title": "Blockchain Forensics",
+          "desc": "Expert investigation para ma-trace ang fraud, hacks, at magbigay ng court-admissible evidence para sa legal recovery.",
+          "cta": "Alamin pa"
+        },
+        "finance": {
+          "title": "Financial Services Protocol",
+          "desc": "Pagbabayad, pautang, wallet, at vault para sa modernong crypto ecosystem.",
+          "cta": "Tingnan ang mga solusyon"
+        }
+      }
+    },
+    "Comparison": {
+      "title1": "Bakit libu-libong ",
+      "title2": "user ang nagtitiwala sa Lenix Protocol?",
+      "subtitle": "Ang iba ay nagpapakadalubhasa sa isang area. Pinagsasama namin ang seguridad, pagbawi, forensics, at pananalapi para hindi mo na kailangang makipag-ugnayan sa maraming provider.",
+      "card1": "Fiat-to-Fiat Payments",
+      "card2": "Fiat-to-Fiat Transfers",
+      "card3": "Seguridad, Pagbawi, Forensics, Pananalapi",
+      "card4": "Crypto-to-Crypto Transfers"
+    },
+    "Merchant": {
+      "widget_alert": "Invoice Payment Alert mula kay B Shaw",
+      "widget_req": "REQUEST FOR PAYMENT",
+      "widget_verified": "VERIFIED PAYMENT LINK",
+      "widget_receipt": "ANG TRANSACTION RECEIPT AY IPAPADALA SA ",
+      "widget_wallet": "Wallet address",
+      "widget_order": "ORDER",
+      "widget_gas": "GAS FEE",
+      "btn_complete": "Kumpletuhin ang pagbabayad",
+      "btn_manual": "Magbayad nang manual",
+      "title1": "Para sa mga Negosyo: tumanggap ng crypto, ",
+      "title2": "protektahan",
+      "title3": " sa vault, bawiin kung kinakailangan.",
+      "point1": "Tumanggap ng crypto at i-settle sa fiat. Simple checkout at API para sa mga merchant.",
+      "point2": "Itago ang kinita sa aming secure vault na may multi-sig at custody – audited infrastructure.",
+      "point3": "Kung mawala o manakaw ang pondo, ang aming team ay makakatulong sa pag-trace at pagbawi sa pamamagitan ng recovery at legal channels.",
+      "point4_1": "I-explore ang mga solusyon",
+      "point4_2": " o ",
+      "point4_3": "magsimula ng recovery case",
+      "point4_4": "."
+    },
+    "Payment": {
+      "badge": "Ano ang aming inaalok",
+      "title": "Ang Protocol para sa mga Pagbabayad, Vault, Pagbawi, at Pautang",
+      "subtitle": "Isang solong stack para sa kung paano mo ginagalaw, hinahawakan, at binabawi ang halaga.",
+      "cards": {
+        "fiat": {
+          "title": "Crypto-to-fiat",
+          "desc": "Magpadala ng crypto at i-settle sa fiat sa pamamagitan ng local payment networks – cross-border at pang-araw-araw."
+        },
+        "vault": {
+          "title": "Vault at custody",
+          "desc": "Multi-sig at secure custody para manatiling protektado ang iyong assets."
+        },
+        "recovery": {
+          "title": "Pagbawi at forensics",
+          "desc": "Kapag nagkaroon ng problema, tumutulong kami sa pag-trace at pagbawi ng pondo."
+        },
+        "lending": {
+          "title": "Pagpapautang",
+          "desc": "Manghiram laban sa collateral at magkaroon ng access sa liquidity kapag kailangan mo."
+        }
+      },
+      "cta": "I-explore ang lahat ng solusyon"
+    },
+    "TokenDetails": {
+      "title1": "Mga Detalye ng Token ng ",
+      "title2": "Lenix Protocol",
+      "subtitle": "Gamitin ang impormasyon ng kontrata sa ibaba para idagdag ang Lenix Protocol token sa iyong wallet.",
+      "headers": {
+        "contract": "Contract Address",
+        "name": "Pangalan ng Token",
+        "symbol": "Simbolo ng Token",
+        "supply": "Supply ng Token",
+        "network": "Network",
+        "decimals": "Decimals"
+      },
+      "values": {
+        "name": "Lenix Protocol",
+        "network": "Polygon"
+      }
+    },
+    "Credibility": {
+      "title1": "Lenix Protocol sa ",
+      "title2": "detalye",
+      "subtitle1": "Audited ng CertiK. Binuo nang may tiwala.",
+      "subtitle2_1": "Sinasaklaw ng aming audits ang buong stack. Basahin ang ",
+      "subtitle2_2": "Whitepaper",
+      "subtitle2_3": " at CertiK report para sa mga detalye.",
+      "col1_text": "Ang Lenix Protocol ay ganap na na-audit ng CertiK, ang nangungunang blockchain security firm sa mundo.",
+      "col1_btn": "Tingnan ang CertiK Audit",
+      "col2_text": "Basahin ang buong report at i-explore ang aming whitepaper para sa mas malalim na pagtingin sa aming teknolohiya at tokenomics.",
+      "col2_btn": "Whitepaper"
+    },
+    "Competition": {
+      "title1": "Sumali sa Aming Kontes para sa Pagkakataong Manalo ng ",
+      "title2": "250K USD",
+      "subtitle": "Sumali sa 250,000 USD giveaway ng Lenix Protocol! Sampung nanalo ang makakatanggap ng 25,000 USD bawat isa sa LNX tokens. Palakihin ang iyong tsansa sa pamamagitan ng pag-share at pagkumpleto ng lahat ng tasks para sa bonus entries. Huwag palampasin ang pagkakataong ito - sumali na!",
+      "btn": "Sumali sa Kontes Ngayon!"
+    },
+    "Features": {
+      "wallet": "Lenix Protocol Wallet",
+      "recipient": "Ipasok ang Tatanggap",
+      "bank_details": "Mga Detalye ng Bank Account",
+      "iban": "IBAN",
+      "btn_connect": "Ikonekta ang Wallet at Magbayad",
+      "btn_manual": "Magbayad nang Manual",
+      "title_small": "Bakit Lenix ProtocolPay?",
+      "title_big": "Pinag-uugnay ang crypto sa mga lokal na network ng pagbabayad sa buong mundo.",
+      "desc1": "Binibigyang-kapangyarihan ng Lenix ProtocolPay ang mga may-hawak ng crypto at mga negosyo na mapadali ang mga transaksyong crypto-to-fiat sa buong mundo, gamit ang mga lokal na network ng pagbabayad at teknolohiya ng blockchain.",
+      "desc2": "Sa wakas, tamasahin ang bilis ng crypto sa pang-araw-araw na kaginhawahan ng mga pagbabayad sa fiat.",
+      "btn_whitepaper": "Whitepaper"
+    }
+  }
 }

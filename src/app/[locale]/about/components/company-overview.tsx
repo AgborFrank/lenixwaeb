@@ -1,193 +1,130 @@
-import { ArrowRight, Shield, Globe, Users, Zap } from "lucide-react";
-import { textStyles } from "@/lib/fonts";
+"use client";
+
+import { Shield, Zap, CheckCircle2, ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
 
 export default function CompanyOverview() {
+  const t = useTranslations("About.Overview");
+  const [activeTab, setActiveTab] = useState<"forensics" | "finance">("forensics");
+
   return (
-    <section className="bg-black py-20 px-4">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-40 items-center">
-          {/* Left side - Company Interface mockup */}
-          <div className="relative">
-            <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700">
-              {/* Header with Lenix Protocol logo */}
-              <div className="flex items-center gap-2 mb-8">
-                <div className="w-6 h-6 bg-yellow-400 rounded"></div>
-                <span className="text-gray-400 text-sm font-onest">
-                  Lenix Protocol
-                </span>
-              </div>
+    <section className="bg-black">
+      {/* Header */}
+      <div className="container mx-auto px-4 py-16 text-center">
+        <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          {t("title")}
+        </h2>
+        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+          {t("badge")}
+        </p>
+      </div>
 
-              {/* Title */}
-              <div className="mb-8">
-                <h3 className="text-gray-400 text-sm mb-2 font-onest">
-                  Company Dashboard
-                </h3>
-                <h2 className="text-yellow-400 text-2xl font-bold font-onest">
-                  Global Operations
-                </h2>
-              </div>
+      {/* Tab switcher */}
+      <div className="max-w-7xl mx-auto px-4">
+        <div className="flex border-b border-gray-800">
+          <button
+            type="button"
+            onClick={() => setActiveTab("forensics")}
+            className={`flex-1 md:flex-none px-8 py-4 font-semibold transition-colors ${
+              activeTab === "forensics"
+                ? "text-yellow-400 border-b-2 border-yellow-400 -mb-px"
+                : "text-gray-500 hover:text-gray-300"
+            }`}
+          >
+            <span className="flex items-center justify-center gap-2">
+            
+              {t("forensics.title")}
+            </span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveTab("finance")}
+            className={`flex-1 md:flex-none px-8 py-4 font-semibold transition-colors ${
+              activeTab === "finance"
+                ? "text-yellow-400 border-b-2 border-yellow-400 -mb-px"
+                : "text-gray-500 hover:text-gray-300"
+            }`}
+          >
+            <span className="flex items-center justify-center gap-2">
+              
+              {t("finance.title")}
+            </span>
+          </button>
+        </div>
+      </div>
 
-              {/* Global Stats */}
-              <div className="mb-6">
-                <div className="bg-gray-700 rounded-lg p-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-white font-medium font-onest">
-                      Active Users
-                    </span>
-                    <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                      <span className="text-green-400 text-sm font-onest">
-                        Live
-                      </span>
-                    </div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-300 text-sm font-onest">
-                        North America
-                      </span>
-                      <span className="text-white font-semibold font-onest">
-                        15,234
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-300 text-sm font-onest">
-                        Europe
-                      </span>
-                      <span className="text-white font-semibold font-onest">
-                        18,567
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-300 text-sm font-onest">
-                        Asia Pacific
-                      </span>
-                      <span className="text-white font-semibold font-onest">
-                        12,891
-                      </span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-300 text-sm font-onest">
-                        Other Regions
-                      </span>
-                      <span className="text-white font-semibold font-onest">
-                        3,308
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Performance Metrics */}
-              <div className="mb-8">
-                <div className="bg-gray-700 rounded-lg p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-gray-400 text-sm font-onest">
-                      Platform Uptime
-                    </span>
-                    <span className="text-yellow-400 text-sm font-onest">
-                      99.9%
-                    </span>
-                  </div>
-                  <div className="bg-gray-600 rounded-full h-3 mb-4">
-                    <div
-                      className="bg-yellow-400 h-3 rounded-full transition-all duration-500"
-                      style={{ width: "99.9%" }}
-                    />
-                  </div>
-                  <div className="grid grid-cols-2 gap-4 text-sm">
-                    <div className="text-center">
-                      <div className="text-yellow-400 font-bold font-onest">
-                        $1.2B
-                      </div>
-                      <div className="text-gray-400 font-onest">
-                        Total Volume
-                      </div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-green-400 font-bold font-onest">
-                        2.1M
-                      </div>
-                      <div className="text-gray-400 font-onest">
-                        Transactions
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="space-y-3">
-                <button className="w-full bg-yellow-400 text-black font-semibold py-4 rounded-lg hover:bg-yellow-300 transition-colors font-onest">
-                  View Live Dashboard
-                </button>
-                <button className="w-full bg-transparent border border-gray-600 text-white font-semibold py-4 rounded-lg hover:bg-gray-700 transition-colors font-onest">
-                  Download Report
-                </button>
-              </div>
-            </div>
+      {/* Content - Full width split */}
+      <div className="max-w-7xl mx-auto px-4 py-12 md:py-20">
+        <div className="grid md:grid-cols-2 gap-0 md:gap-16 items-center">
+          {/* Image - shows for active tab */}
+          <div className="relative aspect-video md:aspect-[4/5] rounded-2xl overflow-hidden mb-8 md:mb-0">
+            <Image
+              src="/assets/img/investigate.webp"
+              alt=""
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+            <div className="absolute inset-0 bg-black/40 md:bg-transparent md:bg-gradient-to-r md:from-black/80 md:via-black/40 md:to-transparent" />
           </div>
 
-          {/* Right side - Content */}
+          {/* Content panel */}
           <div className="space-y-8">
-            <div>
-              <h3 className="text-yellow-400 text-lg font-medium mb-4 font-onest">
-                About Lenix Protocol
-              </h3>
-              <h2 className={`${textStyles.hero} text-white `}>
-                Revolutionizing global finance through innovative blockchain
-                technology.
-              </h2>
-            </div>
+            {activeTab === "forensics" && (
+              <div>
+                <p className="text-yellow-400 font-semibold text-2xl md:text-6xl tracking-tighter mb-2">
+                  {t("forensics.subtitle")}
+                </p>
+                <p className="text-white text-lg leading-relaxed mb-8">
+                  {t("forensics.description")}
+                </p>
+                <ul className="space-y-4">
+                  {[
+                    t("forensics.points.recovery"),
+                    t("forensics.points.threat"),
+                    t("forensics.points.audits"),
+                  ].map((point) => (
+                    <li key={point} className="flex gap-4 text-gray-300">
+                      <CheckCircle2 className="w-6 h-6 shrink-0 text-yellow-400 mt-0.5" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
-            <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
-              <p className={textStyles.body}>
-                Founded in 2023, Lenix Protocol is growing from a small startup
-                to a global leader in crypto-to-fiat payment solutions. Our
-                mission is to bridge the gap between traditional banking and the
-                decentralized future.
-              </p>
-              <p className={textStyles.body}>
-                We&apos;ve built a comprehensive platform that serves users in
-                over 200 countries, processing billions in transactions while
-                maintaining the highest security standards in the industry.
-              </p>
-            </div>
-
-            {/* Key Features */}
-            <div className="space-y-4 grid grid-cols-2 gap-4">
-              <div className="flex items-center gap-3">
-                <Shield className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300 font-onest">
-                  Military-grade security protocols
-                </span>
+            {activeTab === "finance" && (
+              <div>
+                <p className="text-yellow-400 font-semibold text-2xl md:text-6xl tracking-tighter mb-2">
+                  {t("finance.subtitle")}
+                </p>
+                <p className="text-white text-lg leading-relaxed mb-8">
+                  {t("finance.description")}
+                </p>
+                <ul className="space-y-4 mb-10">
+                  {[
+                    t("finance.points.approval"),
+                    t("finance.points.credit"),
+                    t("finance.points.vaults"),
+                  ].map((point) => (
+                    <li key={point} className="flex gap-4 text-gray-300">
+                      <CheckCircle2 className="w-6 h-6 shrink-0 text-yellow-400 mt-0.5" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href="/crypto-loan"
+                  className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg transition-colors"
+                >
+                  {t("finance.cta")}
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
               </div>
-              <div className="flex items-center gap-3">
-                <Globe className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300 font-onest">
-                  Global regulatory compliance
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Users className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300 font-onest">
-                  24/7 customer support
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Zap className="w-5 h-5 text-yellow-400" />
-                <span className="text-gray-300 font-onest">
-                  Instant transaction processing
-                </span>
-              </div>
-            </div>
-
-            <button
-              className={`${textStyles.button} bg-yellow-400 w-fit text-black px-8 py-4 rounded-lg hover:bg-yellow-300 transition-colors flex items-center gap-2`}
-            >
-              Explore Our Solutions
-              <ArrowRight className="w-5 h-5" />
-            </button>
+            )}
           </div>
         </div>
       </div>

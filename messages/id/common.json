@@ -1,263 +1,263 @@
 {
-    "Header": {
-        "nav": {
-            "giveaway": "Hadiah 250K",
-            "about": "Tentang",
-            "solutions": "Solusi",
-            "blockchain_forensics": "Forensik",
-            "asset_recovery": "Pemulihan Aset",
-            "crypto_recovery": "Pemulihan Kripto",
-            "contact": "Kontak",
-            "airdrop": "Airdrop"
-        },
-        "solutions": {
-            "wallet": {
-                "title": "Dompet Lenix",
-                "desc": "Dompet multi-rantai yang aman."
-            },
-            "finance": {
-                "title": "Lenix Finance",
-                "desc": "Solusi DeFi untuk semua orang."
-            },
-            "recovery": {
-                "title": "Pemulihan Kripto",
-                "desc": "Bantuan ahli untuk aset yang hilang."
-            },
-            "compliance": {
-                "title": "Kepatuhan",
-                "desc": "Investigasi lintas rantai 1 klik."
-            },
-            "enforcement": {
-                "title": "Penegakan Hukum",
-                "desc": "Alat intelijen untuk lembaga."
-            }
-        },
-        "user_menu": {
-            "account": "Akun",
-            "dashboard": "Dasbor",
-            "vault": "Brankas",
-            "lenix_wallet": "Dompet Lenix",
-            "loan": "Pinjaman Kripto",
-            "assets": "Aset",
-            "send": "Kirim",
-            "receive": "Terima",
-            "transactions": "Riwayat",
-            "settings": "Pengaturan",
-            "sign_out": "Keluar"
-        },
-        "buttons": {
-            "log_in": "Masuk",
-            "log_in_sign_up": "Masuk / Daftar",
-            "get_reward": "Dapatkan 50 USDT"
-        }
+  "Header": {
+    "nav": {
+      "giveaway": "Hadiah 250K",
+      "about": "Tentang",
+      "solutions": "Solusi",
+      "blockchain_forensics": "Forensik",
+      "asset_recovery": "Pemulihan Aset",
+      "crypto_recovery": "Pemulihan Kripto",
+      "contact": "Kontak",
+      "airdrop": "Airdrop"
     },
-    "Footer": {
-        "company_desc": "Protokol L1 untuk pembayaran kripto-bank & pemulihan aset. Menggunakan AI untuk skalabilitas dan keamanan.",
-        "headings": {
-            "about": "TENTANG",
-            "solutions": "SOLUSI",
-            "resources": "SUMBER DAYA",
-            "legal": "HUKUM"
-        },
-        "links": {
-            "about_us": "Tentang Kami",
-            "ecosystem": "Ekosistem",
-            "tokenomics": "Tokenomics",
-            "whitepaper": "Whitepaper",
-            "litepaper": "Litepaper",
-            "roadmap": "Peta Jalan",
-            "threat_intelligence": "Intelijen Ancaman",
-            "defi_compliance": "Kepatuhan DeFi",
-            "blog": "Blog",
-            "documentation": "Dokumen",
-            "api_docs": "API",
-            "support": "Dukungan",
-            "terms": "Ketentuan",
-            "cookie": "Cookie",
-            "privacy": "Privasi",
-            "disclaimer": "Penafian"
-        },
-        "buttons": {
-            "recover_assets": "Pulihkan Aset"
-        },
-        "certification_desc": "Tersertifikasi ISO27001. Kami mengelola data secara aman sesuai standar internasional.",
-        "copyright": "© 2026 Lenix Protocol, Semua Hak Dilindungi."
+    "solutions": {
+      "wallet": {
+        "title": "Dompet Lenix",
+        "desc": "Dompet multi-rantai yang aman."
+      },
+      "finance": {
+        "title": "Lenix Finance",
+        "desc": "Solusi DeFi untuk semua orang."
+      },
+      "recovery": {
+        "title": "Pemulihan Kripto",
+        "desc": "Bantuan ahli untuk aset yang hilang."
+      },
+      "compliance": {
+        "title": "Kepatuhan",
+        "desc": "Investigasi lintas rantai 1 klik."
+      },
+      "enforcement": {
+        "title": "Penegakan Hukum",
+        "desc": "Alat intelijen untuk lembaga."
+      }
     },
-    "languagePicker": {
-        "title": "Pilih Wilayah & Bahasa",
-        "description": "Pilih bahasa yang Anda inginkan"
+    "user_menu": {
+      "account": "Akun",
+      "dashboard": "Dasbor",
+      "vault": "Brankas",
+      "lenix_wallet": "Dompet Lenix",
+      "loan": "Pinjaman Kripto",
+      "assets": "Aset",
+      "send": "Kirim",
+      "receive": "Terima",
+      "transactions": "Riwayat",
+      "settings": "Pengaturan",
+      "sign_out": "Keluar"
     },
-    "languages": {
-        "en": "English",
-        "fr": "Français",
-        "es": "Español",
-        "de": "Deutsch",
-        "ar": "العربية",
-        "pt": "Português",
-        "zh": "中文",
-        "it": "Italiano",
-        "vi": "Tiếng Việt",
-        "tl": "Filipino",
-        "tr": "Türkçe",
-        "hi": "हिन्दी",
-        "id": "Bahasa Indonesia"
-    },
-    "Home": {
-        "Hero": {
-            "title1": "Forensik ",
-            "title2": "Blockchain",
-            "title3": ",\nProtokol Keamanan dan Pemulihan Kripto.",
-            "subtitle1": "Analisis blockchain canggih dan investigasi forensik untuk melacak aset, mengungkap penipuan, và hỗ trợ các nỗ lực phục hồi pháp lý trên toàn cầu.",
-            "subtitle2": "Amankan masa depan digital Anda dengan investigasi ahli.",
-            "btn_signup": "Daftar ke Lenix",
-            "btn_login": "Masuk",
-            "widget_title": "Beli Sekarang",
-            "widget_subtitle": "Sebelum Harga Naik",
-            "usd_raised": "USD YANG TERKUMPUL SEJAUH INI:",
-            "tokens_sold": "Token Terjual:",
-            "price_usd": "Harga USD: ${price}",
-            "price_eth": "Harga ETH: {price} ETH",
-            "pay_eth": "ETH yang Anda bayar",
-            "pay_usdt": "USDT yang Anda bayar",
-            "pay_usd": "USD yang Anda bayar",
-            "receive_lnx": "$LNX yang Anda terima",
-            "btn_processing": "Memproses...",
-            "btn_pay_eth": "Bayar dengan ETH",
-            "btn_pay_usdt": "Bayar dengan USDT",
-            "btn_pay_card": "Masukkan detail kartu di bawah",
-            "card_info": "Didukung oleh Stripe. Jumlah ditagih dalam USD.",
-            "btn_connect": "Hubungkan Dompet",
-            "btn_giveaway": "Dapatkan Hadiah 500 USD",
-            "giveaway_info": "Terima hadiah token LNX senilai 500 USD"
-        },
-        "Pillars": {
-            "title1": "Keamanan, pemulihan, forensik, dan keuangan ",
-            "title2": "dalam satu tempat",
-            "subtitle": "Pilih yang Anda butuhkan – setiap pilar terhubung ke solusi khusus.",
-            "cards": {
-                "security": {
-                    "title": "Keamanan Blockchain",
-                    "desc": "Infrastruktur yang diaudit dan teknologi brankas aman untuk melindungi aset Anda.",
-                    "cta": "Jelajahi keamanan"
-                },
-                "recovery": {
-                    "title": "Pemulihan Aset",
-                    "desc": "Protokol khusus dan jalur hukum untuk mengklaim kembali kripto yang hilang atau dicuri dengan analisis forensik bersertifikat.",
-                    "cta": "Mulai pemulihan"
-                },
-                "forensics": {
-                    "title": "Forensik Blockchain",
-                    "desc": "Investigasi ahli untuk melacak penipuan, peretasan, và cung cấp bằng chứng được tòa án chấp nhận để phục hồi pháp lý.",
-                    "cta": "Pelajari lebih lanjut"
-                },
-                "finance": {
-                    "title": "Protokol Layanan Keuangan",
-                    "desc": "Pembayaran, pinjaman, dompet, dan brankas untuk ekosistem kripto modern.",
-                    "cta": "Lihat solusi"
-                }
-            }
-        },
-        "Comparison": {
-            "title1": "Mengapa ribuan ",
-            "title2": "pengguna memercayai Lenix Protocol?",
-            "subtitle": "Lainnya berspesialisasi dalam satu bidang. Kami menggabungkan keamanan, pemulihan, forensik, dan keuangan sehingga Anda tidak perlu berurusan dengan banyak penyedia.",
-            "card1": "Pembayaran Fiat-ke-Fiat",
-            "card2": "Transfer Fiat-ke-Fiat",
-            "card3": "Keamanan, Pemulihan, Forensik, Keuangan",
-            "card4": "Transfer Kripto-ke-Kripto"
-        },
-        "Merchant": {
-            "widget_alert": "Peringatan Pembayaran Faktur dari B Shaw",
-            "widget_req": "PERMINTAAN PEMBAYARAN",
-            "widget_verified": "TAUTAN PEMBAYARAN TERVERIFIKASI",
-            "widget_receipt": "TANDA TERIMA TRANSAKSI AKAN DIKIRIM KE ",
-            "widget_wallet": "Alamat dompet",
-            "widget_order": "PESANAN",
-            "widget_gas": "BIAYA GAS",
-            "btn_complete": "Selesaikan pembayaran",
-            "btn_manual": "Bayar manual",
-            "title1": "Untuk Bisnis: terima kripto, ",
-            "title2": "lindungi",
-            "title3": " di brankas, pulihkan jika perlu.",
-            "point1": "Terima kripto dan selesaikan dalam fiat. Checkout sederhana dan API untuk merchant.",
-            "point2": "Simpan hasil di brankas aman kami dengan multi-sig dan kustodi – infrastruktur yang diaudit.",
-            "point3": "Jika dana hilang atau dicuri, tim kami dapat membantu melacak dan mengklaim kembali melalui saluran pemulihan dan hukum.",
-            "point4_1": "Jelajahi solusi",
-            "point4_2": " atau ",
-            "point4_3": "mulai kasus pemulihan",
-            "point4_4": "."
-        },
-        "Payment": {
-            "badge": "Apa yang kami tawarkan",
-            "title": "Protokol untuk Pembayaran, Brankas, Pemulihan, dan Pinjaman",
-            "subtitle": "Satu tumpukan tunggal untuk cara Anda memindahkan, menyimpan, dan memulihkan nilai.",
-            "cards": {
-                "fiat": {
-                    "title": "Kripto-ke-fiat",
-                    "desc": "Kirim kripto dan selesaikan dalam fiat melalui jaringan pembayaran lokal – lintas batas dan harian."
-                },
-                "vault": {
-                    "title": "Brankas dan kustodi",
-                    "desc": "Multi-sig dan kustodi aman untuk menjaga aset Anda tetap terlindungi."
-                },
-                "recovery": {
-                    "title": "Pemulihan dan forensik",
-                    "desc": "Ketika terjadi kesalahan, kami membantu melacak dan mengklaim kembali dana."
-                },
-                "lending": {
-                    "title": "Pinjaman",
-                    "desc": "Pinjam dengan jaminan dan akses likuiditas saat Anda membutuhkannya."
-                }
-            },
-            "cta": "Jelajahi semua solusi"
-        },
-        "TokenDetails": {
-            "title1": "Detail Token ",
-            "title2": "Lenix Protocol",
-            "subtitle": "Gunakan informasi kontrak di bawah ini untuk menambahkan token Lenix Protocol ke dompet Anda.",
-            "headers": {
-                "contract": "Alamat Kontrak",
-                "name": "Nama Token",
-                "symbol": "Simbol Token",
-                "supply": "Pasokan Token",
-                "network": "Jaringan",
-                "decimals": "Desimal"
-            },
-            "values": {
-                "name": "Lenix Protocol",
-                "network": "Polygon"
-            }
-        },
-        "Credibility": {
-            "title1": "Detail ",
-            "title2": "Lenix Protocol",
-            "subtitle1": "Diaudit oleh CertiK. Dibangun dengan kepercayaan.",
-            "subtitle2_1": "Audit kami mencakup seluruh tumpukan. Baca ",
-            "subtitle2_2": "Whitepaper",
-            "subtitle2_3": " dan laporan CertiK untuk detailnya.",
-            "col1_text": "Lenix Protocol telah diaudit sepenuhnya oleh CertiK, firma keamanan blockchain terkemuka di dunia.",
-            "col1_btn": "Lihat Audit CertiK",
-            "col2_text": "Baca laporan lengkap dan jelajahi whitepaper kami untuk melihat lebih dalam tentang teknologi dan tokenomics kami.",
-            "col2_btn": "Whitepaper"
-        },
-        "Competition": {
-            "title1": "Ikuti Kontes Kami untuk Kesempatan Memenangkan ",
-            "title2": "250K USD",
-            "subtitle": "Ikuti hadiah 250.000 USD Lenix Protocol! Sepuluh pemenang masing-masing akan menerima 25.000 USD dalam token LNX. Tingkatkan peluang Anda dengan berbagi dan menyelesaikan semua tugas untuk entri bonus. Jangan lewatkan kesempatan ini - gabung sekarang!",
-            "btn": "Ikuti Kontes Sekarang!"
-        },
-        "Features": {
-            "wallet": "Dompet Lenix Protocol",
-            "recipient": "Masukkan Penerima",
-            "bank_details": "Detail Rekening Bank",
-            "iban": "IBAN",
-            "btn_connect": "Hubungkan Dompet & Bayar",
-            "btn_manual": "Bayar Manual",
-            "title_small": "Mengapa Lenix ProtocolPay?",
-            "title_big": "Menghubungkan kripto dengan jaringan pembayaran lokal secara global.",
-            "desc1": "Lenix ProtocolPay memberdayakan pemegang kripto dan bisnis untuk memfasilitasi transaksi kripto-ke-fiat di seluruh dunia, memanfaatkan jaringan pembayaran lokal dan teknologi blockchain.",
-            "desc2": "Akhirnya, nikmati kecepatan kripto dengan kenyamanan sehari-hari dari pembayaran fiat.",
-            "btn_whitepaper": "Whitepaper"
-        }
+    "buttons": {
+      "log_in": "Masuk",
+      "log_in_sign_up": "Masuk / Daftar",
+      "get_reward": "Dapatkan 50 USDT"
     }
+  },
+  "Footer": {
+    "company_desc": "Protokol L1 untuk pembayaran kripto-bank & pemulihan aset. Menggunakan AI untuk skalabilitas dan keamanan.",
+    "headings": {
+      "about": "TENTANG",
+      "solutions": "SOLUSI",
+      "resources": "SUMBER DAYA",
+      "legal": "HUKUM"
+    },
+    "links": {
+      "about_us": "Tentang Kami",
+      "ecosystem": "Ekosistem",
+      "tokenomics": "Tokenomics",
+      "whitepaper": "Whitepaper",
+      "litepaper": "Litepaper",
+      "roadmap": "Peta Jalan",
+      "threat_intelligence": "Intelijen Ancaman",
+      "defi_compliance": "Kepatuhan DeFi",
+      "blog": "Blog",
+      "documentation": "Dokumen",
+      "api_docs": "API",
+      "support": "Dukungan",
+      "terms": "Ketentuan",
+      "cookie": "Cookie",
+      "privacy": "Privasi",
+      "disclaimer": "Penafian"
+    },
+    "buttons": {
+      "recover_assets": "Pulihkan Aset"
+    },
+    "certification_desc": "Tersertifikasi ISO27001. Kami mengelola data secara aman sesuai standar internasional.",
+    "copyright": "© 2026 Lenix Protocol, Semua Hak Dilindungi."
+  },
+  "languagePicker": {
+    "title": "Pilih Wilayah & Bahasa",
+    "description": "Pilih bahasa yang Anda inginkan"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "中文",
+    "it": "Italiano",
+    "vi": "Tiếng Việt",
+    "tl": "Filipino",
+    "tr": "Türkçe",
+    "hi": "हिन्दी",
+    "id": "Bahasa Indonesia"
+  },
+  "Home": {
+    "Hero": {
+      "title1": "Forensik ",
+      "title2": "Blockchain",
+      "title3": ",\nProtokol Keamanan dan Pemulihan Kripto.",
+      "subtitle1": "Analisis blockchain canggih dan investigasi forensik untuk melacak aset, mengungkap penipuan, và hỗ trợ các nỗ lực phục hồi pháp lý trên toàn cầu.",
+      "subtitle2": "Amankan masa depan digital Anda dengan investigasi ahli.",
+      "btn_signup": "Daftar ke Lenix",
+      "btn_login": "Masuk",
+      "widget_title": "Beli Sekarang",
+      "widget_subtitle": "Sebelum Harga Naik",
+      "usd_raised": "USD YANG TERKUMPUL SEJAUH INI:",
+      "tokens_sold": "Token Terjual:",
+      "price_usd": "Harga USD: ${price}",
+      "price_eth": "Harga ETH: {price} ETH",
+      "pay_eth": "ETH yang Anda bayar",
+      "pay_usdt": "USDT yang Anda bayar",
+      "pay_usd": "USD yang Anda bayar",
+      "receive_lnx": "$LNX yang Anda terima",
+      "btn_processing": "Memproses...",
+      "btn_pay_eth": "Bayar dengan ETH",
+      "btn_pay_usdt": "Bayar dengan USDT",
+      "btn_pay_card": "Masukkan detail kartu di bawah",
+      "card_info": "Didukung oleh Stripe. Jumlah ditagih dalam USD.",
+      "btn_connect": "Hubungkan Dompet",
+      "btn_giveaway": "Dapatkan Hadiah 500 USD",
+      "giveaway_info": "Terima hadiah token LNX senilai 500 USD"
+    },
+    "Pillars": {
+      "title1": "Keamanan, pemulihan, forensik, dan keuangan ",
+      "title2": "dalam satu tempat",
+      "subtitle": "Pilih yang Anda butuhkan – setiap pilar terhubung ke solusi khusus.",
+      "cards": {
+        "security": {
+          "title": "Keamanan Blockchain",
+          "desc": "Infrastruktur yang diaudit dan teknologi brankas aman untuk melindungi aset Anda.",
+          "cta": "Jelajahi keamanan"
+        },
+        "recovery": {
+          "title": "Pemulihan Aset",
+          "desc": "Protokol khusus dan jalur hukum untuk mengklaim kembali kripto yang hilang atau dicuri dengan analisis forensik bersertifikat.",
+          "cta": "Mulai pemulihan"
+        },
+        "forensics": {
+          "title": "Forensik Blockchain",
+          "desc": "Investigasi ahli untuk melacak penipuan, peretasan, và cung cấp bằng chứng được tòa án chấp nhận để phục hồi pháp lý.",
+          "cta": "Pelajari lebih lanjut"
+        },
+        "finance": {
+          "title": "Protokol Layanan Keuangan",
+          "desc": "Pembayaran, pinjaman, dompet, dan brankas untuk ekosistem kripto modern.",
+          "cta": "Lihat solusi"
+        }
+      }
+    },
+    "Comparison": {
+      "title1": "Mengapa ribuan ",
+      "title2": "pengguna memercayai Lenix Protocol?",
+      "subtitle": "Lainnya berspesialisasi dalam satu bidang. Kami menggabungkan keamanan, pemulihan, forensik, dan keuangan sehingga Anda tidak perlu berurusan dengan banyak penyedia.",
+      "card1": "Pembayaran Fiat-ke-Fiat",
+      "card2": "Transfer Fiat-ke-Fiat",
+      "card3": "Keamanan, Pemulihan, Forensik, Keuangan",
+      "card4": "Transfer Kripto-ke-Kripto"
+    },
+    "Merchant": {
+      "widget_alert": "Peringatan Pembayaran Faktur dari B Shaw",
+      "widget_req": "PERMINTAAN PEMBAYARAN",
+      "widget_verified": "TAUTAN PEMBAYARAN TERVERIFIKASI",
+      "widget_receipt": "TANDA TERIMA TRANSAKSI AKAN DIKIRIM KE ",
+      "widget_wallet": "Alamat dompet",
+      "widget_order": "PESANAN",
+      "widget_gas": "BIAYA GAS",
+      "btn_complete": "Selesaikan pembayaran",
+      "btn_manual": "Bayar manual",
+      "title1": "Untuk Bisnis: terima kripto, ",
+      "title2": "lindungi",
+      "title3": " di brankas, pulihkan jika perlu.",
+      "point1": "Terima kripto dan selesaikan dalam fiat. Checkout sederhana dan API untuk merchant.",
+      "point2": "Simpan hasil di brankas aman kami dengan multi-sig dan kustodi – infrastruktur yang diaudit.",
+      "point3": "Jika dana hilang atau dicuri, tim kami dapat membantu melacak dan mengklaim kembali melalui saluran pemulihan dan hukum.",
+      "point4_1": "Jelajahi solusi",
+      "point4_2": " atau ",
+      "point4_3": "mulai kasus pemulihan",
+      "point4_4": "."
+    },
+    "Payment": {
+      "badge": "Apa yang kami tawarkan",
+      "title": "Protokol untuk Pembayaran, Brankas, Pemulihan, dan Pinjaman",
+      "subtitle": "Satu tumpukan tunggal untuk cara Anda memindahkan, menyimpan, dan memulihkan nilai.",
+      "cards": {
+        "fiat": {
+          "title": "Kripto-ke-fiat",
+          "desc": "Kirim kripto dan selesaikan dalam fiat melalui jaringan pembayaran lokal – lintas batas dan harian."
+        },
+        "vault": {
+          "title": "Brankas dan kustodi",
+          "desc": "Multi-sig dan kustodi aman untuk menjaga aset Anda tetap terlindungi."
+        },
+        "recovery": {
+          "title": "Pemulihan dan forensik",
+          "desc": "Ketika terjadi kesalahan, kami membantu melacak dan mengklaim kembali dana."
+        },
+        "lending": {
+          "title": "Pinjaman",
+          "desc": "Pinjam dengan jaminan dan akses likuiditas saat Anda membutuhkannya."
+        }
+      },
+      "cta": "Jelajahi semua solusi"
+    },
+    "TokenDetails": {
+      "title1": "Detail Token ",
+      "title2": "Lenix Protocol",
+      "subtitle": "Gunakan informasi kontrak di bawah ini untuk menambahkan token Lenix Protocol ke dompet Anda.",
+      "headers": {
+        "contract": "Alamat Kontrak",
+        "name": "Nama Token",
+        "symbol": "Simbol Token",
+        "supply": "Pasokan Token",
+        "network": "Jaringan",
+        "decimals": "Desimal"
+      },
+      "values": {
+        "name": "Lenix Protocol",
+        "network": "Polygon"
+      }
+    },
+    "Credibility": {
+      "title1": "Detail ",
+      "title2": "Lenix Protocol",
+      "subtitle1": "Diaudit oleh CertiK. Dibangun dengan kepercayaan.",
+      "subtitle2_1": "Audit kami mencakup seluruh tumpukan. Baca ",
+      "subtitle2_2": "Whitepaper",
+      "subtitle2_3": " dan laporan CertiK untuk detailnya.",
+      "col1_text": "Lenix Protocol telah diaudit sepenuhnya oleh CertiK, firma keamanan blockchain terkemuka di dunia.",
+      "col1_btn": "Lihat Audit CertiK",
+      "col2_text": "Baca laporan lengkap dan jelajahi whitepaper kami untuk melihat lebih dalam tentang teknologi dan tokenomics kami.",
+      "col2_btn": "Whitepaper"
+    },
+    "Competition": {
+      "title1": "Ikuti Kontes Kami untuk Kesempatan Memenangkan ",
+      "title2": "250K USD",
+      "subtitle": "Ikuti hadiah 250.000 USD Lenix Protocol! Sepuluh pemenang masing-masing akan menerima 25.000 USD dalam token LNX. Tingkatkan peluang Anda dengan berbagi dan menyelesaikan semua tugas untuk entri bonus. Jangan lewatkan kesempatan ini - gabung sekarang!",
+      "btn": "Ikuti Kontes Sekarang!"
+    },
+    "Features": {
+      "wallet": "Dompet Lenix Protocol",
+      "recipient": "Masukkan Penerima",
+      "bank_details": "Detail Rekening Bank",
+      "iban": "IBAN",
+      "btn_connect": "Hubungkan Dompet & Bayar",
+      "btn_manual": "Bayar Manual",
+      "title_small": "Mengapa Lenix ProtocolPay?",
+      "title_big": "Menghubungkan kripto dengan jaringan pembayaran lokal secara global.",
+      "desc1": "Lenix ProtocolPay memberdayakan pemegang kripto dan bisnis untuk memfasilitasi transaksi kripto-ke-fiat di seluruh dunia, memanfaatkan jaringan pembayaran lokal dan teknologi blockchain.",
+      "desc2": "Akhirnya, nikmati kecepatan kripto dengan kenyamanan sehari-hari dari pembayaran fiat.",
+      "btn_whitepaper": "Whitepaper"
+    }
+  }
 }

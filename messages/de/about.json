@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "Wegweisend in",
+    "span1": "Blockchain-Forensik",
+    "span2": "& Krypto-Krediten",
+    "description": "Wir bieten institutionelles Tracking für gestohlene digitale Vermögenswerte, robuste AML-Compliance und ermöglichen sofortige Liquidität durch sichere, überbesicherte Krypto-Kredite ohne Bonitätsprüfung.",
+    "sub_description": "Sicherung der digitalen Zukunft. Stärkung der globalen Liquidität.",
+    "stats": {
+      "assets_traced": "Verfolgte Vermögenswerte",
+      "assets_count": "850M$+",
+      "credit_checks": "Bonitätsprüfungen",
+      "credit_count": "0",
+      "jurisdictions": "Gerichtsbarkeiten",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "Forensische Exzellenz & Finanzielle Stärkung",
+    "title": "Verlorene Vermögenswerte aufspüren. Sofortige Liquidität freisetzen.",
+    "forensics": {
+      "title": "Forensische Exzellenz",
+      "subtitle": "Unwiederbringliche Vermögenswerte präzise aufspüren.",
+      "description": "Unsere proprietären Blockchain-Forensik-Algorithmen sind branchenführend bei der Identifizierung und Verfolgung illegaler Krypto-Bewegungen. Wir arbeiten mit globalen Strafverfolgungsbehörden zusammen, um gestohlene Vermögenswerte aufzuspüren und eine strenge AML-Compliance sicherzustellen.",
+      "points": {
+        "recovery": "Rückgewinnung gestohlener Krypto-Assets",
+        "threat": "Proaktive Bedrohungsaufklärung",
+        "audits": "Gerichtsverwertbare Blockchain-Audits"
+      }
+    },
+    "finance": {
+      "title": "Finanzielle Stärkung",
+      "subtitle": "Sofortige Liquidität, ohne Ihre Kryptos zu verkaufen.",
+      "description": "Erhalten Sie Zugang zu schnellen, sicheren und überbesicherten Krypto-Krediten ohne Bonitätsprüfung. Unsere dezentralen Verwahrungsmodelle garantieren, dass Ihre Vermögenswerte geschützt bleiben, während Sie das Kapital freisetzen, das Sie zur Skalierung benötigen.",
+      "points": {
+        "approval": "Sofortige Kreditgenehmigung & Auszahlung",
+        "credit": "Keine Bonitätsprüfung erforderlich",
+        "vaults": "Getrennte Sicherheitsgewölbe"
+      },
+      "cta": "Kredit Beantragen"
+    }
+  },
+  "Stats": {
+    "title1": "Unser Einfluss",
+    "title2": " In Zahlen",
+    "subtitle": "Echte Kennzahlen, die unser Engagement für den Aufbau der Zukunft der globalen Finanzen und den Dienst an unserer weltweiten Gemeinschaft unterstreichen.",
+    "cards": {
+      "cases": {
+        "title": "Gelöste Fälle",
+        "subtitle": "Globale Forensik",
+        "desc": "Erfolgreiche Ermittlungen"
+      },
+      "jurisdictions": {
+        "title": "Gerichtsbarkeiten",
+        "subtitle": "Globale Reichweite",
+        "desc": "Internationale Strafverfolgungspartner"
+      },
+      "assets": {
+        "title": "Verfolgte Vermögenswerte",
+        "subtitle": "Überwachter Gesamtwert",
+        "desc": "Bei der Verfolgung illegaler Vermögenswerte"
+      },
+      "loans": {
+        "title": "Vergebene Kredite",
+        "subtitle": "Bereitgestellte Liquidität",
+        "desc": "Überbesicherte Kredite"
+      },
+      "uptime": {
+        "title": "Plattform-Verfügbarkeit",
+        "subtitle": "Zuverlässigkeitsgarantie",
+        "desc": "Konsistente Verfügbarkeit"
+      },
+      "team": {
+        "title": "Expertenteam",
+        "subtitle": "Globale Fachleute",
+        "desc": "Branchenexperten"
+      }
+    },
+    "footer": {
+      "support": "Verfügbarer Support",
+      "experience": "Jahre kombinierte Erfahrung",
+      "compliant": "Regulatorisch Konform",
+      "offices": "Globale Büros"
+    }
+  },
+  "Journey": {
+    "title1": "Unser Weg zur",
+    "title2": " Branchenführerschaft",
+    "subtitle": "Vom Elite-Team für Sicherheitsforschung zur globalen Plattform, die digitale Vermögenswerte sichert und Liquidität für Millionen freisetzt. So haben wir uns entwickelt.",
+    "step1": {
+      "title": "2021 - Der Anfang",
+      "desc": "Lenix Protocol wurde von Cybersicherheitsveteranen und Elite-Forensikern gegründet und entstand aus einer einfachen Mission: die Integrität der Blockchain schützen und gestohlene digitale Vermögenswerte aufspüren.",
+      "tag1": "Agentur Gegründet",
+      "tag2": "Erster Tracking-Algo",
+      "photo": "Foto des Gründungsteams"
+    },
+    "step2": {
+      "title": "2022 - Erster Launch",
+      "desc": "Einführung unseres ersten Krypto-Kreditprotokolls, das es Benutzern ermöglicht, sofort und sicher Fiatgelder gegen ihre Kryptobestände zu leihen, ohne ihre Vermögenswerte zu verkaufen oder sich Bonitätsprüfungen unterziehen zu müssen.",
+      "tag1": "Start des Kreditprotokolls",
+      "tag2": "Null Bonitätsprüfungen",
+      "photo": "Erster Produkt-Launch"
+    },
+    "step3": {
+      "title": "2023 - Globale Allianzen",
+      "desc": "Wir haben unsere forensischen Dienste erheblich erweitert und mit internationalen Arbeitsgruppen zusammengearbeitet, um über 150 Mio. USD an gestohlenen Vermögenswerten wiederzuerlangen.",
+      "tag1": "Interpol-Partnerschaft",
+      "tag2": "$150M+ Zurückgewonnen",
+      "photo": "Globale Expansion"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - Branchenführer",
+      "desc": "Heute sind wir die anerkannte globale Autorität in der Blockchain-Forensik und der führende Anbieter von sofortiger Krypto-Liquidität, mit über 850 Millionen US-Dollar aufgespurten Geldern und abgewickelten Krediten in Milliardenhöhe.",
+      "tag1": "$850M+ Verfolgt",
+      "tag2": "Führender Kreditgeber",
+      "photo": "Branchenanerkennung"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "Lernen Sie Unser",
+    "title2": " Führungsteam Kennen",
+    "subtitle": "Unser Führungsteam vereint jahrzehntelange Erfahrung in den Bereichen Blockchain, Finanzen und Technologie, um Innovation und Wachstum voranzutreiben.",
+    "join": {
+      "title": "Treten Sie Unserem Team Bei",
+      "description": "Wir sind immer auf der Suche nach talentierten Personen, die unsere Leidenschaft teilen, die Finanzwelt durch Blockchain-Technologie zu revolutionieren.",
+      "cta": "Offene Stellen Ansehen"
+    },
+    "members": {
+      "sarah": {
+        "role": "Hauptgeschäftsführer (CEO)",
+        "bio": "Ehemalige VP bei Coinbase mit über 15 Jahren Erfahrung in Fintech. Leitete die Entwicklung mehrerer erfolgreicher Krypto-Plattformen und wurde in Forbes vorgestellt."
+      },
+      "michael": {
+        "role": "Technischer Leiter (CTO)",
+        "bio": "Blockchain-Architekt mit Erfahrung bei der Ethereum Foundation. Experte für Smart Contracts, DeFi-Protokolle und skalierbare Blockchain-Lösungen."
+      },
+      "lisa": {
+        "role": "Leiterin Compliance (CCO)",
+        "bio": "Ehemalige SEC-Anwältin mit tiefgreifender Expertise in Krypto-Regulierungen. Stellt sicher, dass unsere Plattform globale Compliance-Standards erfüllt."
+      },
+      "david": {
+        "role": "Operativer Leiter (COO)",
+        "bio": "Spezialisiert auf die Skalierung globaler Abläufe für Web3-Unternehmen. Verwaltete zuvor das Unternehmenswachstum bei hochrangigen Börsen und Finanzinstituten."
+      },
+      "allen": {
+        "role": "Leiter für Sicherheit & Forensik",
+        "bio": "Über ein Jahrzehnt Erfahrung in Cybersicherheit und Blockchain-Forensik. Leitet unsere Bemühungen bei der Verfolgung gestohlener Krypto-Assets und der Sicherung der Plattform."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Bereit Anzufangen?",
+    "subtitle": "Egal, ob Sie ein potenzieller Partner, Investor sind oder einfach nur neugierig auf unsere Arbeit, wir würden uns freuen, von Ihnen zu hören. Lassen Sie uns erkunden, wie wir zusammenarbeiten können.",
+    "get_in_touch": "Kontakt Aufnehmen",
+    "desc": "Unser Team hilft Ihnen gerne dabei, unsere Plattform zu verstehen, Partnerschaftsmöglichkeiten zu erkunden oder Ihre Fragen zu beantworten.",
+    "methods": {
+      "email": "Schreiben Sie Uns",
+      "call": "Rufen Sie Uns An",
+      "visit": "Besuchen Sie Uns"
+    },
+    "actions": {
+      "demo": "Demo Planen",
+      "whitepaper": "Whitepaper Herunterladen"
+    },
+    "form": {
+      "title": "Senden Sie Uns Eine Nachricht",
+      "subtitle": "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "first_name": "Vorname *",
+      "email": "E-Mail-Adresse *",
+      "subject": "Betreff *",
+      "message": "Nachricht *",
+      "placeholder_name": "Geben Sie Ihren Vornamen ein",
+      "placeholder_email": "Geben Sie Ihre E-Mail ein",
+      "placeholder_subject": "Worum geht es?",
+      "placeholder_message": "Erzählen Sie uns mehr über Ihre Anfrage...",
+      "submit": "Nachricht Senden",
+      "privacy": "Durch das Absenden dieses Formulars stimmen Sie unserer Datenschutzrichtlinie und unseren Nutzungsbedingungen zu."
+    },
+    "footer": {
+      "support": "Verfügbarer Support",
+      "response": "Durchschnittliche Antwortzeit",
+      "confidential": "Vertraulich"
+    }
+  }
+}

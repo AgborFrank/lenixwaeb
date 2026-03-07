@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "开拓",
+    "span1": "区块链取证",
+    "span2": "& 加密借贷",
+    "description": "我们为被盗数字资产提供机构级溯源、强大的 AML 合规支持，并通过安全的超额抵押加密贷款释放即时流动性，无需信用审查。",
+    "sub_description": "保障数字未来。提升全球流动性。",
+    "stats": {
+      "assets_traced": "追踪资产",
+      "assets_count": "$850M+",
+      "credit_checks": "信用审查",
+      "credit_count": "0",
+      "jurisdictions": "覆盖司法管辖区",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "出色的取证技术 & 金融赋权",
+    "title": "追踪丢失资产。释放即时流动性。",
+    "forensics": {
+      "title": "出色的取证技术",
+      "subtitle": "精准追踪无法追回的资产。",
+      "description": "我们专有的区块链取证算法在识别和追踪非法加密货币流动方面处于行业领先地位。我们与全球执法部门合作，追踪被盗资产并确保严格的 AML 合规性。",
+      "points": {
+        "recovery": "被盗加密资产追回",
+        "threat": "主动威胁情报",
+        "audits": "具有法律效力的区块链审计"
+      }
+    },
+    "finance": {
+      "title": "金融赋权",
+      "subtitle": "无需出售加密资产即可获得即时流动性。",
+      "description": "零信用审查门槛，快速获取安全、超额抵押的加密贷款。我们的去中心化托管模式能够保证资产安全，满足您的资金和扩张需求。",
+      "points": {
+        "approval": "即时贷款审批及放款",
+        "credit": "无信用分要求",
+        "vaults": "隔离的抵押金库"
+      },
+      "cta": "申请贷款"
+    }
+  },
+  "Stats": {
+    "title1": "我们的影响力",
+    "title2": " （数据总览）",
+    "subtitle": "真实的数据展示了我们致力于建设全球金融未来，并为全球社区服务的承诺。",
+    "cards": {
+      "cases": {
+        "title": "解决案件",
+        "subtitle": "全球取证",
+        "desc": "成功调查案例"
+      },
+      "jurisdictions": {
+        "title": "司法管辖区",
+        "subtitle": "全球覆盖",
+        "desc": "国际执法合作伙伴"
+      },
+      "assets": {
+        "title": "追踪资产",
+        "subtitle": "监控总价值",
+        "desc": "非法资产追踪"
+      },
+      "loans": {
+        "title": "贷款发放",
+        "subtitle": "提供流动性",
+        "desc": "超额抵押贷款"
+      },
+      "uptime": {
+        "title": "平台在线率",
+        "subtitle": "可靠性保障",
+        "desc": "持续高可用"
+      },
+      "team": {
+        "title": "专家团队",
+        "subtitle": "全球专业人员",
+        "desc": "行业专家集结"
+      }
+    },
+    "footer": {
+      "support": "可用支持",
+      "experience": "合并经验总年限",
+      "compliant": "遵守法规",
+      "offices": "全球办事处"
+    }
+  },
+  "Journey": {
+    "title1": "我们的",
+    "title2": " 行业领导者之路",
+    "subtitle": "从一个精英安全研究团队到保护数字资产并为数百万人释放流动性的全球平台。这就是我们的演变历程。",
+    "step1": {
+      "title": "2021 - 旅程开启",
+      "desc": "Lenix Protocol 由网络安全资深专家和精英法医调查员创立。我们的使命很简单：捍卫区块链生态系统的完整性，追踪被盗的数字资产。",
+      "tag1": "机构成立",
+      "tag2": "首个追踪算法",
+      "photo": "创始团队合影"
+    },
+    "step2": {
+      "title": "2022 - 首次产品发布",
+      "desc": "推出了我们首个加密贷款协议，允许用户安全地以加密货币抵押并瞬间借入法币，无需出售其加密资产，也没有信用审查。",
+      "tag1": "借贷协议发布",
+      "tag2": "零信用审查",
+      "photo": "首次产品发布现场"
+    },
+    "step3": {
+      "title": "2023 - 建立全球联盟",
+      "desc": "大力扩展我们的取证服务，与国际调查组合作，追回超过 1.5 亿美元的被盗资产，巩固了我们在行业内的领导地位。",
+      "tag1": "国际刑警组织合作",
+      "tag2": "追回超 1.5 亿美元",
+      "photo": "全球扩展"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - 行业领导者",
+      "desc": "如今，我们是公认的区块链取证全球权威以及即时加密流动性的领先提供商。追踪了超 8.5 亿美元并处理了数十亿规模的安全贷款。",
+      "tag1": "追踪超 8.5 亿美元",
+      "tag2": "领先借贷提供商",
+      "photo": "荣获行业认可"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "认识我们的",
+    "title2": " 领导团队",
+    "subtitle": "我们的执行团队汇集了数十年在区块链、金融和技术领域的经验，推动创新和业务增长。",
+    "join": {
+      "title": "加入我们的团队",
+      "description": "我们一直寻找同样富有激情的杰出人才，共同用区块链技术改革金融业。",
+      "cta": "查看公开职位"
+    },
+    "members": {
+      "sarah": {
+        "role": "首席执行官 (CEO)",
+        "bio": "曾任 Coinbase 副总裁，在金融科技领域有逾 15 年经验。领导开发了多个成功的加密货币平台，曾被《福布斯》报道。"
+      },
+      "michael": {
+        "role": "首席技术官 (CTO)",
+        "bio": "以太坊基金会背景的区块链架构师。专长于智能合约、DeFi 协议和可扩展的区块链解决方案。"
+      },
+      "lisa": {
+        "role": "首席合规官 (CCO)",
+        "bio": "前美国证券交易委员会 (SEC) 律师，对加密货币的合规法规有深入理解，确保我们的平台符合全球合规标准。"
+      },
+      "david": {
+        "role": "首席运营官 (COO)",
+        "bio": "全面负责将 Web3 公司在全球范围内的运营扩展化。曾在全球顶级交易所及金融机构负责业务增长。"
+      },
+      "allen": {
+        "role": "安全与取证主管",
+        "bio": "十余年的网络安全和区块链网络取证经验。带领团队进行追踪加密足迹以及平台防护的工作。"
+      }
+    }
+  },
+  "Contact": {
+    "title": "准备好开始了吗？",
+    "subtitle": "无论您是寻找合作伙伴、投资者还是对我们所做的事情抱有好奇心，我们都想听听您的想法。让我们共同探索如何改革全球金融。",
+    "get_in_touch": "与我们取得联系",
+    "desc": "我们的团队将帮助您更好地了解 Lenix 平台、探索合作机会，并解答您的各类疑问。",
+    "methods": {
+      "email": "给我们发送邮件",
+      "call": "致电我们",
+      "visit": "拜访我们"
+    },
+    "actions": {
+      "demo": "安排演示",
+      "whitepaper": "下载白皮书"
+    },
+    "form": {
+      "title": "给我们留言",
+      "subtitle": "我们将在 24 小时内给您回复。",
+      "first_name": "名字 *",
+      "email": "电子邮箱 *",
+      "subject": "主题 *",
+      "message": "内容 *",
+      "placeholder_name": "请输入您的名字",
+      "placeholder_email": "请输入您的电子邮箱",
+      "placeholder_subject": "您想咨询些什么？",
+      "placeholder_message": "请告诉我们更多关于您的咨询细节...",
+      "submit": "发送消息",
+      "privacy": "提交此表单即表示您同意我们的隐私政策和服务条款。"
+    },
+    "footer": {
+      "support": "可用支持",
+      "response": "平均响应时间",
+      "confidential": "绝对保密"
+    }
+  }
+}

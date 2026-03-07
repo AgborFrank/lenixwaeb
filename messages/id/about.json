@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "Pelopor di Bidang",
+    "span1": "Forensik Blockchain",
+    "span2": "& Pinjaman Kripto",
+    "description": "Kami menyediakan pelacakan tingkat institusi untuk aset digital yang dicuri, kepatuhan AML yang kuat, dan membuka likuiditas instan melalui pinjaman kripto berbonggol berlebih yang aman, tanpa pemeriksaan kredit sama sekali.",
+    "sub_description": "Mengamankan masa depan digital. Memberdayakan likuiditas global.",
+    "stats": {
+      "assets_traced": "Aset Terlacak",
+      "assets_count": "$850 Juta+",
+      "credit_checks": "Pengecekan Kredit",
+      "credit_count": "0",
+      "jurisdictions": "Yurisdiksi",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "Keunggulan Forensik & Pemberdayaan Finansial",
+    "title": "Melacak aset yang hilang. Membangun likuiditas nyata secara instan.",
+    "forensics": {
+      "title": "Keunggulan Forensik",
+      "subtitle": "Menganalisa dan melacak aset yang sulit dipulihkan secara tepat.",
+      "description": "Algoritma forensik blockchain khusus kami memimpin industri dalam mengidentifikasi dan melacak pergerakan aset kripto ilegal. Kami bermitra dengan aparat penegak hukum yang tersebar secara global untuk melacak aset curian tersebut serta untuk memastikan kepatuhan yang ketat terkait AML.",
+      "points": {
+        "recovery": "Pemulihan Aset Kripto Curian",
+        "threat": "Intelijen Ancaman Proaktif",
+        "audits": "Audit Blockchain dan Pengadilan"
+      }
+    },
+    "finance": {
+      "title": "Pemberdayaan Finansial",
+      "subtitle": "Likuiditas instan dengan jaminan tapi tanpa menjual kriptomu.",
+      "description": "Dapatkan pinjaman dana kripto lebih cepat, aman, dan tanpa syarat kelancaran bayar melalui pengecekan skor kredit. Model penyimpanan terdesentralisasi kami menjamin aset Anda tetap terlindungi selama Anda membuka modal yang Anda perlukan untuk berinvestasi.",
+      "points": {
+        "approval": "Persetujuan dan Cair Modal Cepat",
+        "credit": "Nol Persyaratan untuk Skor Kredit",
+        "vaults": "Pemisahan Dompet Vault Terpisah"
+      },
+      "cta": "Ajukan Pinjaman Segera"
+    }
+  },
+  "Stats": {
+    "title1": "Dampak Kami",
+    "title2": " Dalam Angka",
+    "subtitle": "Metrik nyata yang memperkuat komitmen kami dalam membangun kebebasan finansial di masa depan dan melayani komunitas kami di seluruh dunia.",
+    "cards": {
+      "cases": {
+        "title": "Kasus Terselesaikan",
+        "subtitle": "Forensik Global Blockchain",
+        "desc": "Investigasi Berhasil"
+      },
+      "jurisdictions": {
+        "title": "Yurisdiksi Hukum",
+        "subtitle": "Mencapai Jangkauan Global",
+        "desc": "Mitra penegak hukum internasional"
+      },
+      "assets": {
+        "title": "Aset Terlacak",
+        "subtitle": "Total Nilai Dipantau",
+        "desc": "Dalam Pelacakan Aset Ilegal"
+      },
+      "loans": {
+        "title": "Modal Pinjaman",
+        "subtitle": "Likuiditas Disediakan",
+        "desc": "Aman karena Sistem Agunan Berlebih"
+      },
+      "uptime": {
+        "title": "Waktu Operasional Platform (Uptime)",
+        "subtitle": "Jaminan Keandalan!",
+        "desc": "Ketersediaan Konsisten"
+      },
+      "team": {
+        "title": "Kolaborasi Tim Ahli",
+        "subtitle": "Tim Global Profesional",
+        "desc": "Pakar Industri"
+      }
+    },
+    "footer": {
+      "support": "Dukungan Pelanggan Tersedia",
+      "experience": "Tahun Pengalaman Gabungan",
+      "compliant": "Kepatuhan Regulasi",
+      "offices": "Kantor Global"
+    }
+  },
+  "Journey": {
+    "title1": "Perjalanan Kita Ke Arah",
+    "title2": " Kepemimpinan Industri",
+    "subtitle": "Dari tim elit peneliti keamanan hingga platform global yang mengamankan aset digital dan membuka likuiditas. Inilah bagaimana kami berevolusi.",
+    "step1": {
+      "title": "2021 - Langkah Awal",
+      "desc": "Didirikan oleh veteran keamanan siber dan ahli forensik elit, Lenix Protocol lahir dari misi sederhana: melindungi integritas blockchain dan melacak aset digital yang dicuri.",
+      "tag1": "Agensi Didirikan",
+      "tag2": "Algoritma Pelacakan Pertama",
+      "photo": "Foto Tim Pendiri"
+    },
+    "step2": {
+      "title": "2022 - Peluncuran Produk Pertama",
+      "desc": "Kami meluncurkan protokol Crypto Lending utama kami, yang memungkinkan pengguna meminjam fiat secara instan tanpa menjual aset mereka, dan tanpa adanya pemeriksaan skor kredit.",
+      "tag1": "Peluncuran Publik Protokol Pinjaman",
+      "tag2": "Nol Pemeriksaan Kredit",
+      "photo": "Peluncuran Resmi Produk Pertama"
+    },
+    "step3": {
+      "title": "2023 - Aliansi Global",
+      "desc": "Kami memperluas layanan forensik kami secara besar-besaran, bermitra dengan gugus tugas internasional untuk memulihkan lebih dari $150 juta aset yang dicuri.",
+      "tag1": "Kemitraan Interpol",
+      "tag2": "Memulihkan Dana > $150 Juta",
+      "photo": "Ekspansi Secara Global"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - Menjadi Pemimpin Industri",
+      "desc": "Hari ini, kami adalah otoritas global yang diakui dalam forensik blockchain dan penyedia likuiditas kripto instan terkemuka, melacak rekor hingga lebih dari $850 juta.",
+      "tag1": "Mencapai Angka $850 Juta",
+      "tag2": "Pemberi Pinjaman Terkemuka",
+      "photo": "Penghargaan Industri Dikenal Luas"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "Temui Tim",
+    "title2": " Kepemimpinan Eksekutif Kami",
+    "subtitle": "Tim eksekutif kami membawa puluhan tahun keahlian di bidang blockchain, keuangan, dan teknologi untuk mendorong inovasi dan pertumbuhan.",
+    "join": {
+      "title": "Bergabung Bersama Kami",
+      "description": "Kami selalu menyambut individu berbakat yang memiliki hasrat yang sama dalam merevolusi keuangan melalui teknologi blockchain.",
+      "cta": "Lihat Peluang Karir Terbuka"
+    },
+    "members": {
+      "sarah": {
+        "role": "Chief Executive Officer (CEO)",
+        "bio": "Mantan VP di Coinbase dengan pengalaman lebih dari 15 tahun di sektor fintech. Memimpin pengembangan beberapa platform mata uang kripto yang sukses yang diulas dalam publikasi peringkat bergengsi."
+      },
+      "michael": {
+        "role": "Chief Technology Officer (CTO)",
+        "bio": "Arsitek Blockchain dengan pengalaman di Ethereum Foundation. Pakar dalam smart contracts, DeFi protokol, dan solusi berbasis blockchain."
+      },
+      "lisa": {
+        "role": "Chief Compliance Officer (CCO)",
+        "bio": "Mantan Pengacara SEC dengan pengalaman luas dalam peraturan kripto global. Berfokus dalam memastikan kepatuhan yang konsisten dan akurat terhadap undang-undang."
+      },
+      "david": {
+        "role": "Chief Operations Officer (COO)",
+        "bio": "Seorang ahli operasional korporat besar di bidang Web3 yang berpengalaman di institusi pelopor yang unggul."
+      },
+      "allen": {
+        "role": "Pemimpin Keamanan & Forensik",
+        "bio": "Ahli Keamanan dengan pengalaman dekade ganda dalam merespons keamanan siber untuk melindungi perusahaan kelas dunia dengan metode mutakhir."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Sudah Siap Memulai?",
+    "subtitle": "Apakah Anda mitra potensial, investor, atau sekadar ingin tahu tentang apa yang kami lakukan, kami sangat senang mendengarnya. Mari jelajahi bagaimana kita dapat merevolusi keuangan global berasama.",
+    "get_in_touch": "Hubungi Kami Segera",
+    "desc": "Tim kami siap membantu Anda memahami platform kami, menelusuri penawaran kemitraan, atau menjawab pertanyaan apa pun.",
+    "methods": {
+      "email": "Kirimkan Kami Surel",
+      "call": "Telepon Kami",
+      "visit": "Kunjungi Kantor Global Kami"
+    },
+    "actions": {
+      "demo": "Jadwalkan Presentasi Demo",
+      "whitepaper": "Unduh Whitepaper Kami"
+    },
+    "form": {
+      "title": "Tinggalkan Pesan",
+      "subtitle": "Kami akan menghubungi Anda kembali dalam waktu maksimal 24 Jam.",
+      "first_name": "Nama Depan *",
+      "email": "Alamat Surel *",
+      "subject": "Perihal *",
+      "message": "Isi Pesan *",
+      "placeholder_name": "Masukkan nama depan Anda",
+      "placeholder_email": "Masukkan surel Anda yang aktif",
+      "placeholder_subject": "Tentang apakah pertanyaan ini?",
+      "placeholder_message": "Ceritakan pada kami tentang pertanyaan Anda...",
+      "submit": "Kirimkan Pesan Sekarang",
+      "privacy": "Dengan mengeklik 'Kirimkan Pesan', Anda setuju untuk terikat oleh Kebijakan Privasi dari Lenix Protocol."
+    },
+    "footer": {
+      "support": "Layanan Pelanggan Tersedia",
+      "response": "Rata-Rata Waktu Respon",
+      "confidential": "Rahasia Perusahaan Terjaga 100%"
+    }
+  }
+}

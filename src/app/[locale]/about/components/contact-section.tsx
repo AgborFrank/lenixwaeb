@@ -62,7 +62,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Email Us</h4>
-                  <p className="text-gray-400">contact@lenixprotocol.com</p>
+                  <p className="text-gray-400">recovery@lenixprotocol.com</p>
                   <p className="text-gray-400">loan@lenixprotocol.com</p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Call Us</h4>
-                  <p className="text-gray-400">+1 (555) 123-4567</p>
+                  <p className="text-gray-400">+447887052128</p>
                   <p className="text-gray-400">Mon-Fri, 9AM-6PM EST</p>
                 </div>
               </div>

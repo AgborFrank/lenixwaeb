@@ -1,8 +1,11 @@
 "use client";
 
-import { Users, Globe, Shield, ArrowRight } from "lucide-react";
+import { Shield, Zap, ArrowRight, LineChart, Lock, Search } from "lucide-react";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function AboutHero() {
+  const t = useTranslations("About.Hero");
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
       {/* Grid pattern background */}
@@ -14,126 +17,56 @@ export default function AboutHero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 z-10">
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight z-20">
-                Building the Future of
-                <br />
-                <span className="text-yellow-400">Global Finance</span>
-              </h1>
-
-              <div className="space-y-2 text-gray-300 text-lg max-w-lg">
-                <p>
-                  We&apos;re not just another crypto company. We&apos;re a team
-                  of innovators, builders, and visionaries creating the
-                  infrastructure that will power the next generation of
-                  financial services.
-                </p>
-                <p className="text-yellow-400 font-semibold">
-                  Join us in revolutionizing how the world moves money.
-                </p>
+            <h1 className="text-4xl lg:text-6xl font-extrabold text-white leading-14 mb-8">
+              {t("title")}
+              <span className="block text-yellow-400">
+                {t("span1")}
+              </span>
+              & <span className="text-yellow-400">{t("span2")}</span>
+            </h1>
+            <p className="text-gray-300 text-base lg:text-xl mb-10 leading-relaxed max-w-xl">
+              {t("description")}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 mb-12">
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-yellow-400/10 rounded-xl flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-yellow-400" />
+                </div>
+                <div>
+                  <div className="text-white font-bold">{t("stats.assets_count")}</div>
+                  <div className="text-gray-400 text-sm">{t("stats.assets_traced")}</div>
+                </div>
               </div>
-            </div>
-
-            {/* Key Metrics */}
-            <div className="flex space-x-8">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-yellow-400">50K+</div>
-                <div className="text-gray-400 text-sm">Active Users</div>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-yellow-400/10 rounded-xl flex items-center justify-center">
+                  <Zap className="w-6 h-6 text-yellow-400" />
+                </div>
+                <div>
+                  <div className="text-white font-bold">{t("stats.credit_count")}</div>
+                  <div className="text-gray-400 text-sm">{t("stats.credit_checks")}</div>
+                </div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-yellow-400">200+</div>
-                <div className="text-gray-400 text-sm">Countries</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-yellow-400">$1B+</div>
-                <div className="text-gray-400 text-sm">Processed</div>
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-yellow-400/10 rounded-xl flex items-center justify-center">
+                  <Search className="w-6 h-6 text-yellow-400" />
+                </div>
+                <div>
+                  <div className="text-white font-bold">{t("stats.jurisdictions_count")}</div>
+                  <div className="text-gray-400 text-sm">{t("stats.jurisdictions")}</div>
+                </div>
               </div>
             </div>
           </div>
-
-          {/* Right Widget - Company Dashboard */}
-          <div className="lg:justify-self-end z-20">
-            <div className="bg-black/30 border-2 border-yellow-400 rounded-2xl p-6 max-w-md w-full">
-              {/* Header */}
-              <div className="text-center mb-6">
-                <h3 className="text-white text-xl font-bold mb-1">
-                  Lenix Protocol
-                </h3>
-                <p className="text-yellow-400 text-lg font-semibold">
-                  Company Overview
-                </p>
-              </div>
-
-              {/* Company Stats */}
-              <div className="space-y-4 mb-6">
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-300 text-sm">Founded:</span>
-                  <span className="text-white font-semibold">2019</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-300 text-sm">Team Size:</span>
-                  <span className="text-white font-semibold">50+ Experts</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-300 text-sm">Headquarters:</span>
-                  <span className="text-white font-semibold">
-                    San Francisco
-                  </span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-gray-300 text-sm">Global Offices:</span>
-                  <span className="text-white font-semibold">5 Locations</span>
-                </div>
-              </div>
-
-              {/* Mission Statement */}
-              <div className="bg-gray-700 rounded-lg p-4 mb-6">
-                <h4 className="text-white font-semibold mb-2">Our Mission</h4>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  To democratize access to financial services through innovative
-                  blockchain technology, making crypto practical, secure, and
-                  accessible for everyone.
-                </p>
-              </div>
-
-              {/* Core Values */}
-              <div className="grid grid-cols-2 gap-3 mb-6">
-                <div className="bg-gray-700 rounded-lg p-3 text-center">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Shield className="w-4 h-4 text-black" />
-                  </div>
-                  <div className="text-white text-xs font-semibold">
-                    Security
-                  </div>
-                </div>
-                <div className="bg-gray-700 rounded-lg p-3 text-center">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Globe className="w-4 h-4 text-black" />
-                  </div>
-                  <div className="text-white text-xs font-semibold">Global</div>
-                </div>
-                <div className="bg-gray-700 rounded-lg p-3 text-center">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Users className="w-4 h-4 text-black" />
-                  </div>
-                  <div className="text-white text-xs font-semibold">
-                    Community
-                  </div>
-                </div>
-                <div className="bg-gray-700 rounded-lg p-3 text-center">
-                  <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <ArrowRight className="w-4 h-4 text-black" />
-                  </div>
-                  <div className="text-white text-xs font-semibold">
-                    Innovation
-                  </div>
-                </div>
-              </div>
-
-              {/* CTA Button */}
-              <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 rounded-lg transition-colors">
-                Learn More About Us
-              </button>
+          {/* Right Image */}
+          <div className="lg:justify-self-end z-20 w-full max-w-md lg:max-w-full hidden md:block">
+            <div className="relative rounded-2xl overflow-hidden border border-gray-800 shadow-2xl relative aspect-[4/3]">
+              <Image
+                src="/assets/img/BringDeFiIntelligence.webp"
+                alt="Blockchain Intelligence and Forensics"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>

@@ -1,263 +1,263 @@
 {
-    "Header": {
-        "nav": {
-            "giveaway": "Tặng thưởng 250K",
-            "about": "Giới thiệu",
-            "solutions": "Giải pháp",
-            "blockchain_forensics": "Điều tra",
-            "asset_recovery": "Thu hồi tài sản",
-            "crypto_recovery": "Thu hồi Crypto",
-            "contact": "Liên hệ",
-            "airdrop": "Airdrop"
-        },
-        "solutions": {
-            "wallet": {
-                "title": "Ví Lenix",
-                "desc": "Ví đa chuỗi bảo mật."
-            },
-            "finance": {
-                "title": "Lenix Finance",
-                "desc": "Giải pháp DeFi cho mọi người."
-            },
-            "recovery": {
-                "title": "Thu hồi Crypto",
-                "desc": "Hỗ trợ chuyên nghiệp cho tài sản bị mất."
-            },
-            "compliance": {
-                "title": "Tuân thủ",
-                "desc": "Điều tra đa chuỗi 1 chạm."
-            },
-            "enforcement": {
-                "title": "Thực thi pháp luật",
-                "desc": "Công cụ tình báo cho cơ quan."
-            }
-        },
-        "user_menu": {
-            "account": "Tài khoản",
-            "dashboard": "Bảng điều khiển",
-            "vault": "Kho",
-            "lenix_wallet": "Ví Lenix",
-            "loan": "Vay Crypto",
-            "assets": "Tài sản",
-            "send": "Gửi",
-            "receive": "Nhận",
-            "transactions": "Lịch sử",
-            "settings": "Cài đặt",
-            "sign_out": "Đăng xuất"
-        },
-        "buttons": {
-            "log_in": "Đăng nhập",
-            "log_in_sign_up": "Đăng nhập / Đăng ký",
-            "get_reward": "Nhận 50 USDT"
-        }
+  "Header": {
+    "nav": {
+      "giveaway": "Tặng thưởng 250K",
+      "about": "Giới thiệu",
+      "solutions": "Giải pháp",
+      "blockchain_forensics": "Điều tra",
+      "asset_recovery": "Thu hồi tài sản",
+      "crypto_recovery": "Thu hồi Crypto",
+      "contact": "Liên hệ",
+      "airdrop": "Airdrop"
     },
-    "Footer": {
-        "company_desc": "Giao thức L1 cho thanh toán crypto-ngân hàng & thu hồi tài sản. Dùng AI để tăng hiệu suất và bảo mật.",
-        "headings": {
-            "about": "GIỚI THIỆU",
-            "solutions": "GIẢI PHÁP",
-            "resources": "TÀI NGUYÊN",
-            "legal": "PHÁP LÝ"
-        },
-        "links": {
-            "about_us": "Về chúng tôi",
-            "ecosystem": "Hệ sinh thái",
-            "tokenomics": "Kinh tế token",
-            "whitepaper": "Sách trắng",
-            "litepaper": "Litepaper",
-            "roadmap": "Lộ trình",
-            "threat_intelligence": "Tình báo đe dọa",
-            "defi_compliance": "Tuân thủ DeFi",
-            "blog": "Blog",
-            "documentation": "Tài liệu",
-            "api_docs": "API",
-            "support": "Hỗ trợ",
-            "terms": "Điều khoản",
-            "cookie": "Cookie",
-            "privacy": "Quyền riêng tư",
-            "disclaimer": "Tuyên bố từ chối"
-        },
-        "buttons": {
-            "recover_assets": "Thu hồi tài sản"
-        },
-        "certification_desc": "Chứng nhận ISO27001. Chúng tôi quản lý dữ liệu theo tiêu chuẩn quốc tế.",
-        "copyright": "© 2026 Lenix Protocol, Bảo lưu mọi quyền."
+    "solutions": {
+      "wallet": {
+        "title": "Ví Lenix",
+        "desc": "Ví đa chuỗi bảo mật."
+      },
+      "finance": {
+        "title": "Lenix Finance",
+        "desc": "Giải pháp DeFi cho mọi người."
+      },
+      "recovery": {
+        "title": "Thu hồi Crypto",
+        "desc": "Hỗ trợ chuyên nghiệp cho tài sản bị mất."
+      },
+      "compliance": {
+        "title": "Tuân thủ",
+        "desc": "Điều tra đa chuỗi 1 chạm."
+      },
+      "enforcement": {
+        "title": "Thực thi pháp luật",
+        "desc": "Công cụ tình báo cho cơ quan."
+      }
     },
-    "languagePicker": {
-        "title": "Chọn Khu vực & Ngôn ngữ",
-        "description": "Chọn ngôn ngữ ưa thích của bạn"
+    "user_menu": {
+      "account": "Tài khoản",
+      "dashboard": "Bảng điều khiển",
+      "vault": "Kho",
+      "lenix_wallet": "Ví Lenix",
+      "loan": "Vay Crypto",
+      "assets": "Tài sản",
+      "send": "Gửi",
+      "receive": "Nhận",
+      "transactions": "Lịch sử",
+      "settings": "Cài đặt",
+      "sign_out": "Đăng xuất"
     },
-    "languages": {
-        "en": "English",
-        "fr": "Français",
-        "es": "Español",
-        "de": "Deutsch",
-        "ar": "العربية",
-        "pt": "Português",
-        "zh": "中文",
-        "it": "Italiano",
-        "vi": "Tiếng Việt",
-        "tl": "Filipino",
-        "tr": "Türkçe",
-        "hi": "हिन्दी",
-        "id": "Bahasa Indonesia"
-    },
-    "Home": {
-        "Hero": {
-            "title1": "Pháp y ",
-            "title2": "Blockchain",
-            "title3": ",\nNghị định thư phục hồi và bảo mật tiền điện tử.",
-            "subtitle1": "Phân tích blockchain tiên tiến và điều tra pháp y để theo dấu tài sản, phát hiện gian lận và hỗ trợ các nỗ lực phục hồi pháp lý trên toàn cầu.",
-            "subtitle2": "Bảo mật tương lai kỹ thuật số của bạn với sự điều tra chuyên nghiệp.",
-            "btn_signup": "Đăng ký Lenix",
-            "btn_login": "Đăng nhập",
-            "widget_title": "Mua ngay",
-            "widget_subtitle": "Trước khi giá tăng",
-            "usd_raised": "USD ĐÃ HUY ĐỘNG ĐƯỢC :",
-            "tokens_sold": "Token đã bán :",
-            "price_usd": "Giá USD: ${price}",
-            "price_eth": "Giá ETH: {price} ETH",
-            "pay_eth": "ETH bạn trả",
-            "pay_usdt": "USDT bạn trả",
-            "pay_usd": "USD bạn trả",
-            "receive_lnx": "$LNX bạn nhận được",
-            "btn_processing": "Đang xử lý...",
-            "btn_pay_eth": "Thanh toán bằng ETH",
-            "btn_pay_usdt": "Thanh toán bằng USDT",
-            "btn_pay_card": "Nhập chi tiết thẻ bên dưới",
-            "card_info": "Được cung cấp bởi Stripe. Số tiền được tính bằng USD.",
-            "btn_connect": "Kết nối ví",
-            "btn_giveaway": "Nhận quà tặng 500USD",
-            "giveaway_info": "Nhận 500USD token LNX làm quà tặng"
-        },
-        "Pillars": {
-            "title1": "Bảo mật, phục hồi, pháp y và tài chính ",
-            "title2": "ở một nơi",
-            "subtitle": "Chọn những gì bạn cần—mỗi trụ cột liên kết đến các giải pháp chuyên dụng.",
-            "cards": {
-                "security": {
-                    "title": "Bảo mật Blockchain",
-                    "desc": "Cơ sở hạ tầng được kiểm duyệt và công nghệ kho lưu trữ an toàn để bảo vệ tài sản của bạn.",
-                    "cta": "Khám phá bảo mật"
-                },
-                "recovery": {
-                    "title": "Phục hồi tài sản",
-                    "desc": "Các nghị định thư chuyên biệt và con đường pháp lý để đòi lại tiền điện tử bị mất hoặc bị đánh cắp với phân tích pháp y được chứng nhận.",
-                    "cta": "Bắt đầu phục hồi"
-                },
-                "forensics": {
-                    "title": "Pháp y Blockchain",
-                    "desc": "Điều tra chuyên gia để theo dấu gian lận, hack và cung cấp bằng chứng được tòa án chấp nhận để phục hồi pháp lý.",
-                    "cta": "Tìm hiểu thêm"
-                },
-                "finance": {
-                    "title": "Nghị định thư dịch vụ tài chính",
-                    "desc": "Thanh toán, cho vay, ví và kho lưu trữ cho hệ sinh thái tiền điện tử hiện đại.",
-                    "cta": "Xem giải pháp"
-                }
-            }
-        },
-        "Comparison": {
-            "title1": "Tại sao hàng ngàn ",
-            "title2": "người dùng tin tưởng Lenix Protocol?",
-            "subtitle": "Những bên khác chỉ chuyên về một lĩnh vực. Chúng tôi kết hợp bảo mật, phục hồi, pháp y và tài chính để bạn không cần phải làm việc với nhiều nhà cung cấp.",
-            "card1": "Thanh toán Fiat-Fiat",
-            "card2": "Chuyển tiền Fiat-Fiat",
-            "card3": "Bảo mật, Phục hồi, Pháp y, Tài chính",
-            "card4": "Chuyển tiền Crypto-Crypto"
-        },
-        "Merchant": {
-            "widget_alert": "Cảnh báo thanh toán hóa đơn từ B Shaw",
-            "widget_req": "YÊU CẦU THANH TOÁN",
-            "widget_verified": "LIÊN KẾT THANH TOÁN ĐÃ XÁC MINH",
-            "widget_receipt": "BIÊN LAI GIAO DỊCH SẼ ĐƯỢC GỬI ĐẾN ",
-            "widget_wallet": "Địa chỉ ví",
-            "widget_order": "ĐƠN HÀNG",
-            "widget_gas": "PHÍ GAS",
-            "btn_complete": "Hoàn tất thanh toán",
-            "btn_manual": "Thanh toán thủ công",
-            "title1": "Dành cho doanh nghiệp: chấp nhận tiền điện tử, ",
-            "title2": "bảo vệ",
-            "title3": " trong kho lưu trữ, phục hồi nếu cần.",
-            "point1": "Chấp nhận tiền điện tử và kết toán bằng tiền mặt. Thanh toán đơn giản và API cho người bán.",
-            "point2": "Giữ tiền trong kho lưu trữ an toàn của chúng tôi với đa chữ ký và lưu ký—cơ sở hạ tầng được kiểm duyệt.",
-            "point3": "Nếu tiền bị mất hoặc bị đánh cắp, nhóm của chúng tôi có thể giúp theo dấu và đòi lại thông qua các kênh phục hồi và pháp lý.",
-            "point4_1": "Khám phá giải pháp",
-            "point4_2": " hoặc ",
-            "point4_3": "bắt đầu trường hợp phục hồi",
-            "point4_4": "."
-        },
-        "Payment": {
-            "badge": "Những gì chúng tôi cung cấp",
-            "title": "Nghị định thư cho thanh toán, kho lưu trữ, phục hồi và cho vay",
-            "subtitle": "Một ngăn xếp duy nhất cho cách bạn di chuyển, nắm giữ và phục hồi giá trị.",
-            "cards": {
-                "fiat": {
-                    "title": "Tiền điện tử sang tiền mặt",
-                    "desc": "Gửi tiền điện tử và kết toán bằng tiền mặt thông qua mạng lưới thanh toán địa phương—xuyên biên giới và hàng ngày."
-                },
-                "vault": {
-                    "title": "Kho lưu trữ và lưu ký",
-                    "desc": "Đa chữ ký và lưu ký an toàn để tài sản của bạn luôn được bảo vệ."
-                },
-                "recovery": {
-                    "title": "Phục hồi và pháp y",
-                    "desc": "Khi có sự cố xảy ra, chúng tôi giúp theo dấu và đòi lại tiền."
-                },
-                "lending": {
-                    "title": "Cho vay",
-                    "desc": "Vay thế chấp bằng tài sản và tiếp cận thanh khoản khi bạn cần."
-                }
-            },
-            "cta": "Khám phá tất cả giải pháp"
-        },
-        "TokenDetails": {
-            "title1": "Chi tiết token ",
-            "title2": "Lenix Protocol",
-            "subtitle": "Sử dụng thông tin hợp đồng bên dưới để thêm token Lenix Protocol vào ví của bạn.",
-            "headers": {
-                "contract": "Địa chỉ hợp đồng",
-                "name": "Tên token",
-                "symbol": "Ký hiệu token",
-                "supply": "Cung lượng token",
-                "network": "Mạng lưới",
-                "decimals": "Chữ số thập phân"
-            },
-            "values": {
-                "name": "Lenix Protocol",
-                "network": "Polygon"
-            }
-        },
-        "Credibility": {
-            "title1": "Chi tiết về ",
-            "title2": "Lenix Protocol",
-            "subtitle1": "Được kiểm duyệt bởi CertiK. Xây dựng bằng sự tin cậy.",
-            "subtitle2_1": "Các cuộc kiểm toán của chúng tôi bao quát toàn bộ ngăn xếp. Đọc ",
-            "subtitle2_2": "Sách trắng",
-            "subtitle2_3": " và báo cáo của CertiK để biết chi tiết.",
-            "col1_text": "Lenix Protocol đã được kiểm toán đầy đủ bởi CertiK, công ty bảo mật blockchain hàng đầu thế giới.",
-            "col1_btn": "Xem kiểm toán CertiK",
-            "col2_text": "Đọc báo cáo đầy đủ và khám phá sách trắng của chúng tôi để tìm hiểu sâu hơn về công nghệ và kinh tế học token.",
-            "col2_btn": "Sách trắng"
-        },
-        "Competition": {
-            "title1": "Tham gia cuộc thi của chúng tôi để có cơ hội giành được ",
-            "title2": "250K$",
-            "subtitle": "Tham gia quà tặng 250.000$ của Lenix Protocol! Mỗi người trong số mười người chiến thắng sẽ nhận được 25.000$ giá trị LNX. Tăng cơ hội bằng cách chia sẻ và hoàn thành tất cả nhiệm vụ để nhận thêm lượt dự thi. Đừng bỏ lỡ cơ hội này - tham gia ngay!",
-            "btn": "Tham gia cuộc thi ngay!"
-        },
-        "Features": {
-            "wallet": "Ví Lenix Protocol",
-            "recipient": "Nhập người nhận",
-            "bank_details": "Chi tiết tài khoản ngân hàng",
-            "iban": "IBAN",
-            "btn_connect": "Kết nối ví và thanh toán",
-            "btn_manual": "Thanh toán thủ công",
-            "title_small": "Tại sao chọn Lenix ProtocolPay?",
-            "title_big": "Kết nối tiền điện tử với các mạng thanh toán địa phương trên toàn cầu.",
-            "desc1": "Lenix ProtocolPay trao quyền cho những người nắm giữ tiền điện tử và doanh nghiệp để thực hiện các giao dịch từ tiền điện tử sang tiền pháp định trên toàn thế giới, tận dụng các mạng thanh toán địa phương và công nghệ blockchain.",
-            "desc2": "Cuối cùng, hãy tận hưởng tốc độ của tiền điện tử với sự tiện lợi hàng ngày của thanh toán bằng tiền pháp định.",
-            "btn_whitepaper": "Sách trắng"
-        }
+    "buttons": {
+      "log_in": "Đăng nhập",
+      "log_in_sign_up": "Đăng nhập / Đăng ký",
+      "get_reward": "Nhận 50 USDT"
     }
+  },
+  "Footer": {
+    "company_desc": "Giao thức L1 cho thanh toán crypto-ngân hàng & thu hồi tài sản. Dùng AI để tăng hiệu suất và bảo mật.",
+    "headings": {
+      "about": "GIỚI THIỆU",
+      "solutions": "GIẢI PHÁP",
+      "resources": "TÀI NGUYÊN",
+      "legal": "PHÁP LÝ"
+    },
+    "links": {
+      "about_us": "Về chúng tôi",
+      "ecosystem": "Hệ sinh thái",
+      "tokenomics": "Kinh tế token",
+      "whitepaper": "Sách trắng",
+      "litepaper": "Litepaper",
+      "roadmap": "Lộ trình",
+      "threat_intelligence": "Tình báo đe dọa",
+      "defi_compliance": "Tuân thủ DeFi",
+      "blog": "Blog",
+      "documentation": "Tài liệu",
+      "api_docs": "API",
+      "support": "Hỗ trợ",
+      "terms": "Điều khoản",
+      "cookie": "Cookie",
+      "privacy": "Quyền riêng tư",
+      "disclaimer": "Tuyên bố từ chối"
+    },
+    "buttons": {
+      "recover_assets": "Thu hồi tài sản"
+    },
+    "certification_desc": "Chứng nhận ISO27001. Chúng tôi quản lý dữ liệu theo tiêu chuẩn quốc tế.",
+    "copyright": "© 2026 Lenix Protocol, Bảo lưu mọi quyền."
+  },
+  "languagePicker": {
+    "title": "Chọn Khu vực & Ngôn ngữ",
+    "description": "Chọn ngôn ngữ ưa thích của bạn"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "中文",
+    "it": "Italiano",
+    "vi": "Tiếng Việt",
+    "tl": "Filipino",
+    "tr": "Türkçe",
+    "hi": "हिन्दी",
+    "id": "Bahasa Indonesia"
+  },
+  "Home": {
+    "Hero": {
+      "title1": "Pháp y ",
+      "title2": "Blockchain",
+      "title3": ",\nNghị định thư phục hồi và bảo mật tiền điện tử.",
+      "subtitle1": "Phân tích blockchain tiên tiến và điều tra pháp y để theo dấu tài sản, phát hiện gian lận và hỗ trợ các nỗ lực phục hồi pháp lý trên toàn cầu.",
+      "subtitle2": "Bảo mật tương lai kỹ thuật số của bạn với sự điều tra chuyên nghiệp.",
+      "btn_signup": "Đăng ký Lenix",
+      "btn_login": "Đăng nhập",
+      "widget_title": "Mua ngay",
+      "widget_subtitle": "Trước khi giá tăng",
+      "usd_raised": "USD ĐÃ HUY ĐỘNG ĐƯỢC :",
+      "tokens_sold": "Token đã bán :",
+      "price_usd": "Giá USD: ${price}",
+      "price_eth": "Giá ETH: {price} ETH",
+      "pay_eth": "ETH bạn trả",
+      "pay_usdt": "USDT bạn trả",
+      "pay_usd": "USD bạn trả",
+      "receive_lnx": "$LNX bạn nhận được",
+      "btn_processing": "Đang xử lý...",
+      "btn_pay_eth": "Thanh toán bằng ETH",
+      "btn_pay_usdt": "Thanh toán bằng USDT",
+      "btn_pay_card": "Nhập chi tiết thẻ bên dưới",
+      "card_info": "Được cung cấp bởi Stripe. Số tiền được tính bằng USD.",
+      "btn_connect": "Kết nối ví",
+      "btn_giveaway": "Nhận quà tặng 500USD",
+      "giveaway_info": "Nhận 500USD token LNX làm quà tặng"
+    },
+    "Pillars": {
+      "title1": "Bảo mật, phục hồi, pháp y và tài chính ",
+      "title2": "ở một nơi",
+      "subtitle": "Chọn những gì bạn cần—mỗi trụ cột liên kết đến các giải pháp chuyên dụng.",
+      "cards": {
+        "security": {
+          "title": "Bảo mật Blockchain",
+          "desc": "Cơ sở hạ tầng được kiểm duyệt và công nghệ kho lưu trữ an toàn để bảo vệ tài sản của bạn.",
+          "cta": "Khám phá bảo mật"
+        },
+        "recovery": {
+          "title": "Phục hồi tài sản",
+          "desc": "Các nghị định thư chuyên biệt và con đường pháp lý để đòi lại tiền điện tử bị mất hoặc bị đánh cắp với phân tích pháp y được chứng nhận.",
+          "cta": "Bắt đầu phục hồi"
+        },
+        "forensics": {
+          "title": "Pháp y Blockchain",
+          "desc": "Điều tra chuyên gia để theo dấu gian lận, hack và cung cấp bằng chứng được tòa án chấp nhận để phục hồi pháp lý.",
+          "cta": "Tìm hiểu thêm"
+        },
+        "finance": {
+          "title": "Nghị định thư dịch vụ tài chính",
+          "desc": "Thanh toán, cho vay, ví và kho lưu trữ cho hệ sinh thái tiền điện tử hiện đại.",
+          "cta": "Xem giải pháp"
+        }
+      }
+    },
+    "Comparison": {
+      "title1": "Tại sao hàng ngàn ",
+      "title2": "người dùng tin tưởng Lenix Protocol?",
+      "subtitle": "Những bên khác chỉ chuyên về một lĩnh vực. Chúng tôi kết hợp bảo mật, phục hồi, pháp y và tài chính để bạn không cần phải làm việc với nhiều nhà cung cấp.",
+      "card1": "Thanh toán Fiat-Fiat",
+      "card2": "Chuyển tiền Fiat-Fiat",
+      "card3": "Bảo mật, Phục hồi, Pháp y, Tài chính",
+      "card4": "Chuyển tiền Crypto-Crypto"
+    },
+    "Merchant": {
+      "widget_alert": "Cảnh báo thanh toán hóa đơn từ B Shaw",
+      "widget_req": "YÊU CẦU THANH TOÁN",
+      "widget_verified": "LIÊN KẾT THANH TOÁN ĐÃ XÁC MINH",
+      "widget_receipt": "BIÊN LAI GIAO DỊCH SẼ ĐƯỢC GỬI ĐẾN ",
+      "widget_wallet": "Địa chỉ ví",
+      "widget_order": "ĐƠN HÀNG",
+      "widget_gas": "PHÍ GAS",
+      "btn_complete": "Hoàn tất thanh toán",
+      "btn_manual": "Thanh toán thủ công",
+      "title1": "Dành cho doanh nghiệp: chấp nhận tiền điện tử, ",
+      "title2": "bảo vệ",
+      "title3": " trong kho lưu trữ, phục hồi nếu cần.",
+      "point1": "Chấp nhận tiền điện tử và kết toán bằng tiền mặt. Thanh toán đơn giản và API cho người bán.",
+      "point2": "Giữ tiền trong kho lưu trữ an toàn của chúng tôi với đa chữ ký và lưu ký—cơ sở hạ tầng được kiểm duyệt.",
+      "point3": "Nếu tiền bị mất hoặc bị đánh cắp, nhóm của chúng tôi có thể giúp theo dấu và đòi lại thông qua các kênh phục hồi và pháp lý.",
+      "point4_1": "Khám phá giải pháp",
+      "point4_2": " hoặc ",
+      "point4_3": "bắt đầu trường hợp phục hồi",
+      "point4_4": "."
+    },
+    "Payment": {
+      "badge": "Những gì chúng tôi cung cấp",
+      "title": "Nghị định thư cho thanh toán, kho lưu trữ, phục hồi và cho vay",
+      "subtitle": "Một ngăn xếp duy nhất cho cách bạn di chuyển, nắm giữ và phục hồi giá trị.",
+      "cards": {
+        "fiat": {
+          "title": "Tiền điện tử sang tiền mặt",
+          "desc": "Gửi tiền điện tử và kết toán bằng tiền mặt thông qua mạng lưới thanh toán địa phương—xuyên biên giới và hàng ngày."
+        },
+        "vault": {
+          "title": "Kho lưu trữ và lưu ký",
+          "desc": "Đa chữ ký và lưu ký an toàn để tài sản của bạn luôn được bảo vệ."
+        },
+        "recovery": {
+          "title": "Phục hồi và pháp y",
+          "desc": "Khi có sự cố xảy ra, chúng tôi giúp theo dấu và đòi lại tiền."
+        },
+        "lending": {
+          "title": "Cho vay",
+          "desc": "Vay thế chấp bằng tài sản và tiếp cận thanh khoản khi bạn cần."
+        }
+      },
+      "cta": "Khám phá tất cả giải pháp"
+    },
+    "TokenDetails": {
+      "title1": "Chi tiết token ",
+      "title2": "Lenix Protocol",
+      "subtitle": "Sử dụng thông tin hợp đồng bên dưới để thêm token Lenix Protocol vào ví của bạn.",
+      "headers": {
+        "contract": "Địa chỉ hợp đồng",
+        "name": "Tên token",
+        "symbol": "Ký hiệu token",
+        "supply": "Cung lượng token",
+        "network": "Mạng lưới",
+        "decimals": "Chữ số thập phân"
+      },
+      "values": {
+        "name": "Lenix Protocol",
+        "network": "Polygon"
+      }
+    },
+    "Credibility": {
+      "title1": "Chi tiết về ",
+      "title2": "Lenix Protocol",
+      "subtitle1": "Được kiểm duyệt bởi CertiK. Xây dựng bằng sự tin cậy.",
+      "subtitle2_1": "Các cuộc kiểm toán của chúng tôi bao quát toàn bộ ngăn xếp. Đọc ",
+      "subtitle2_2": "Sách trắng",
+      "subtitle2_3": " và báo cáo của CertiK để biết chi tiết.",
+      "col1_text": "Lenix Protocol đã được kiểm toán đầy đủ bởi CertiK, công ty bảo mật blockchain hàng đầu thế giới.",
+      "col1_btn": "Xem kiểm toán CertiK",
+      "col2_text": "Đọc báo cáo đầy đủ và khám phá sách trắng của chúng tôi để tìm hiểu sâu hơn về công nghệ và kinh tế học token.",
+      "col2_btn": "Sách trắng"
+    },
+    "Competition": {
+      "title1": "Tham gia cuộc thi của chúng tôi để có cơ hội giành được ",
+      "title2": "250K$",
+      "subtitle": "Tham gia quà tặng 250.000$ của Lenix Protocol! Mỗi người trong số mười người chiến thắng sẽ nhận được 25.000$ giá trị LNX. Tăng cơ hội bằng cách chia sẻ và hoàn thành tất cả nhiệm vụ để nhận thêm lượt dự thi. Đừng bỏ lỡ cơ hội này - tham gia ngay!",
+      "btn": "Tham gia cuộc thi ngay!"
+    },
+    "Features": {
+      "wallet": "Ví Lenix Protocol",
+      "recipient": "Nhập người nhận",
+      "bank_details": "Chi tiết tài khoản ngân hàng",
+      "iban": "IBAN",
+      "btn_connect": "Kết nối ví và thanh toán",
+      "btn_manual": "Thanh toán thủ công",
+      "title_small": "Tại sao chọn Lenix ProtocolPay?",
+      "title_big": "Kết nối tiền điện tử với các mạng thanh toán địa phương trên toàn cầu.",
+      "desc1": "Lenix ProtocolPay trao quyền cho những người nắm giữ tiền điện tử và doanh nghiệp để thực hiện các giao dịch từ tiền điện tử sang tiền pháp định trên toàn thế giới, tận dụng các mạng thanh toán địa phương và công nghệ blockchain.",
+      "desc2": "Cuối cùng, hãy tận hưởng tốc độ của tiền điện tử với sự tiện lợi hàng ngày của thanh toán bằng tiền pháp định.",
+      "btn_whitepaper": "Sách trắng"
+    }
+  }
 }

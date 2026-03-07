@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "Pioneering",
+    "span1": "Blockchain Forensics",
+    "span2": "Crypto Lending",
+    "description": "We provide institutional-grade tracing for stolen digital assets, robust AML compliance, and unlock instant liquidity through secure, over-collateralized crypto loans without credit checks.",
+    "sub_description": "Securing the digital future. Empowering global liquidity.",
+    "stats": {
+      "assets_traced": "Assets Traced",
+      "assets_count": "$850M+",
+      "credit_checks": "Credit Checks",
+      "credit_count": "0",
+      "jurisdictions": "Jurisdictions",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "Forensic Excellence & Financial Empowerment",
+    "title": "Tracing unrecoverable assets. Unlocking instant liquidity.",
+    "forensics": {
+      "title": "Forensic Excellence",
+      "subtitle": "Tracing unrecoverable assets with precision.",
+      "description": "Our proprietary blockchain forensic algorithms lead the industry in identifying and tracking illicit crypto movements. We partner with global law enforcement to trace stolen assets and ensure rigorous AML compliance.",
+      "points": {
+        "recovery": "Stolen Crypto Asset Recovery",
+        "threat": "Proactive Threat Intelligence",
+        "audits": "Court-Admissible Blockchain Audits"
+      }
+    },
+    "finance": {
+      "title": "Financial Empowerment",
+      "subtitle": "Instant liquidity without selling your crypto.",
+      "description": "Access fast, secure, over-collateralized crypto loans with zero credit checks. Our decentralized custody models guarantee your assets remain protected while you unlock the capital you need to scale your investments or manage expenses.",
+      "points": {
+        "approval": "Instant Loan Approval & Disbursement",
+        "credit": "Zero Credit Score Requirements",
+        "vaults": "Segregated Collateral Vaults"
+      },
+      "cta": "Apply for a Loan"
+    }
+  },
+  "Stats": {
+    "title1": "Our Impact",
+    "title2": " By The Numbers",
+    "subtitle": "Real metrics that demonstrate our commitment to building the future of global finance and serving our community worldwide.",
+    "cards": {
+      "cases": {
+        "title": "Cases Solved",
+        "subtitle": "Global forensics",
+        "desc": "Successful investigations"
+      },
+      "jurisdictions": {
+        "title": "Jurisdictions",
+        "subtitle": "Global reach",
+        "desc": "International law enforcement partners"
+      },
+      "assets": {
+        "title": "Assets Traced",
+        "subtitle": "Total value monitored",
+        "desc": "In illicit asset tracing"
+      },
+      "loans": {
+        "title": "Loans Originated",
+        "subtitle": "Liquidity provided",
+        "desc": "Over-collateralized loans"
+      },
+      "uptime": {
+        "title": "Platform Uptime",
+        "subtitle": "Reliability guarantee",
+        "desc": "Consistent availability"
+      },
+      "team": {
+        "title": "Expert Team",
+        "subtitle": "Global professionals",
+        "desc": "Industry experts"
+      }
+    },
+    "footer": {
+      "support": "Support Available",
+      "experience": "Years Combined Experience",
+      "compliant": "Regulatory Compliant",
+      "offices": "Global Offices"
+    }
+  },
+  "Journey": {
+    "title1": "Our Journey to",
+    "title2": " Industry Leadership",
+    "subtitle": "From an elite team of security researchers to a global platform securing digital assets and unlocking liquidity for millions. Here's how we've evolved.",
+    "step1": {
+      "title": "2021 - The Beginning",
+      "desc": "Founded by cybersecurity veterans and elite forensic investigators, Lenix Protocol was born from a simple mission: protect the integrity of the blockchain and trace stolen digital assets.",
+      "tag1": "Agency Founded",
+      "tag2": "First Tracing Algo",
+      "photo": "Founding Team Photo"
+    },
+    "step2": {
+      "title": "2022 - First Launch",
+      "desc": "Launched our premier Crypto Lending protocol, allowing users to borrow fiat instantly against their crypto holdings securely, without selling their assets or facing credit checks.",
+      "tag1": "Lending Protocol Launch",
+      "tag2": "Zero Credit Checks",
+      "photo": "First Product Launch"
+    },
+    "step3": {
+      "title": "2023 - Global Alliances",
+      "desc": "Expanded our forensic services significantly, partnering with international task forces to recover over $150M in stolen assets and reinforcing our industry stronghold.",
+      "tag1": "Interpol Partnership",
+      "tag2": "$150M+ Recovered",
+      "photo": "Global Expansion"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - Industry Leader",
+      "desc": "Today, we're the recognized global authority in blockchain forensics and the leading provider of instant crypto liquidity, having traced over $850M and processed billions in secure loans.",
+      "tag1": "$850M+ Traced",
+      "tag2": "Leading Lender",
+      "photo": "Industry Recognition"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "Meet Our",
+    "title2": " Leadership Team",
+    "subtitle": "Our executive team brings together decades of experience in blockchain, finance, and technology to drive innovation and growth.",
+    "join": {
+      "title": "Join Our Team",
+      "description": "We're always looking for talented individuals who share our passion for revolutionizing finance through blockchain technology.",
+      "cta": "View Open Positions"
+    },
+    "members": {
+      "sarah": {
+        "role": "Chief Executive Officer",
+        "bio": "Former VP at Coinbase with 15+ years in fintech. Led the development of multiple successful crypto platforms and has been featured in Forbes."
+      },
+      "michael": {
+        "role": "Chief Technology Officer",
+        "bio": "Blockchain architect with experience at Ethereum Foundation. Expert in smart contracts, DeFi protocols, and scalable blockchain solutions."
+      },
+      "lisa": {
+        "role": "Chief Compliance Officer",
+        "bio": "Former SEC attorney with deep expertise in crypto regulations. Ensures our platform meets global compliance standards."
+      },
+      "david": {
+        "role": "Chief Operations Officer",
+        "bio": "Specializes in scaling global operations for Web3 companies. Previously managed enterprise growth at top-tier exchanges and financial institutions."
+      },
+      "allen": {
+        "role": "Head of Security & Forensics",
+        "bio": "Over a decade of experience in cybersecurity and blockchain forensics. Leads our efforts in tracing stolen crypto assets and securing the platform."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Whether you're a potential partner, investor, or just curious about what we do, we'd love to hear from you. Let's explore how we can work together to revolutionize global finance.",
+    "get_in_touch": "Get in Touch",
+    "desc": "Our team is here to help you understand our platform, explore partnership opportunities, or answer any questions you might have.",
+    "methods": {
+      "email": "Email Us",
+      "call": "Call Us",
+      "visit": "Visit Us"
+    },
+    "actions": {
+      "demo": "Schedule a Demo",
+      "whitepaper": "Download Whitepaper"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "subtitle": "We'll get back to you within 24 hours.",
+      "first_name": "First Name *",
+      "email": "Email Address *",
+      "subject": "Subject *",
+      "message": "Message *",
+      "placeholder_name": "Enter your first name",
+      "placeholder_email": "Enter your email",
+      "placeholder_subject": "What's this about?",
+      "placeholder_message": "Tell us more about your inquiry...",
+      "submit": "Send Message",
+      "privacy": "By submitting this form, you agree to our privacy policy and terms of service."
+    },
+    "footer": {
+      "support": "Support Available",
+      "response": "Average Response Time",
+      "confidential": "Confidential"
+    }
+  }
+}

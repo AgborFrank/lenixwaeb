@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "Pionniers de la",
+    "span1": "Juricomptabilité Blockchain",
+    "span2": "& des Prêts Crypto",
+    "description": "Nous fournissons un suivi de qualité institutionnelle pour les actifs numériques volés, une conformité LBC stricte, et débloquons des liquidités instantanées via des prêts cryptos sécurisés et surdimensionnés, sans vérification de crédit.",
+    "sub_description": "Sécuriser l'avenir numérique. Renforcer les liquidités mondiales.",
+    "stats": {
+      "assets_traced": "Actifs Retracés",
+      "assets_count": "850M$+",
+      "credit_checks": "Vérifications de Crédit",
+      "credit_count": "0",
+      "jurisdictions": "Juridictions",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "Excellence en Juricomptabilité & Autonomie Financière",
+    "title": "Retracer les actifs disparus. Débloquer la liquidité instantanée.",
+    "forensics": {
+      "title": "Excellence en Juricomptabilité",
+      "subtitle": "Retracer les actifs irrécupérables avec précision.",
+      "description": "Nos algorithmes propriétaires de juricomptabilité blockchain sont à la pointe de l'industrie pour l'identification et le suivi des flux cryptos illicites. Nous collaborons avec les forces de l'ordre du monde entier pour retrouver les actifs volés et assurer une conformité LBC rigoureuse.",
+      "points": {
+        "recovery": "Récupération d'Actifs Cryptos Volés",
+        "threat": "Renseignement Proactif sur les Menaces",
+        "audits": "Audits Blockchain Admissibles en Justice"
+      }
+    },
+    "finance": {
+      "title": "Autonomie Financière",
+      "subtitle": "Des liquidités instantanées sans vendre vos cryptos.",
+      "description": "Accédez à des prêts cryptos rapides, sécurisés et surdimensionnés, sans aucune vérification de solvabilité. Nos modèles de garde décentralisée garantissent la protection de vos actifs pendant que vous débloquez le capital nécessaire pour investir ou gérer vos dépenses.",
+      "points": {
+        "approval": "Approbation & Versement Instantanés",
+        "credit": "Aucun Pointage de Crédit Requis",
+        "vaults": "Coffres de Garantie Ségrégués"
+      },
+      "cta": "Demander un Prêt"
+    }
+  },
+  "Stats": {
+    "title1": "Notre Impact",
+    "title2": " En Chiffres",
+    "subtitle": "De vraies métriques démontrant notre engagement à construire l'avenir de la finance mondiale et à servir notre communauté.",
+    "cards": {
+      "cases": {
+        "title": "Affaires Résolues",
+        "subtitle": "Juricomptabilité mondiale",
+        "desc": "Enquêtes réussies"
+      },
+      "jurisdictions": {
+        "title": "Juridictions",
+        "subtitle": "Portée mondiale",
+        "desc": "Partenaires policiers internationaux"
+      },
+      "assets": {
+        "title": "Actifs Retracés",
+        "subtitle": "Valeur totale surveillée",
+        "desc": "Traçage d'actifs illicites"
+      },
+      "loans": {
+        "title": "Prêts Accordés",
+        "subtitle": "Liquidité fournie",
+        "desc": "Prêts surdimensionnés"
+      },
+      "uptime": {
+        "title": "Disponibilité",
+        "subtitle": "Garantie de fiabilité",
+        "desc": "Disponibilité constante"
+      },
+      "team": {
+        "title": "Équipe d'Experts",
+        "subtitle": "Professionnels mondiaux",
+        "desc": "Experts de l'industrie"
+      }
+    },
+    "footer": {
+      "support": "Assistance Disponible",
+      "experience": "Années d'Expérience Cumulée",
+      "compliant": "Conforme à la Réglementation",
+      "offices": "Bureaux Mondiaux"
+    }
+  },
+  "Journey": {
+    "title1": "Notre Parcours vers",
+    "title2": " le Sommet de l'Industrie",
+    "subtitle": "D'une équipe d'élite en cybersécurité à une plateforme mondiale sécurisant les actifs numériques et débloquant des liquidités pour des millions. Voici notre évolution.",
+    "step1": {
+      "title": "2021 - Les Débuts",
+      "desc": "Fondée par des vétérans de la cybersécurité et des enquêteurs légistes d'élite, Lenix Protocol est née d'une mission simple : protéger l'intégrité de la blockchain et retrouver les actifs numériques volés.",
+      "tag1": "Fondation de l'Agence",
+      "tag2": "Premier Algo de Traçage",
+      "photo": "Photo de l'Équipe Fondatrice"
+    },
+    "step2": {
+      "title": "2022 - Premier Lancement",
+      "desc": "Lancement de notre premier protocole de prêt crypto, permettant d'emprunter des fiats instantanément et en toute sécurité en garantissant leurs avoirs cryptos, sans les vendre ni subir de vérification de crédit.",
+      "tag1": "Lancement du Protocole de Prêt",
+      "tag2": "Zéro Vérification de Crédit",
+      "photo": "Lancement du Premier Produit"
+    },
+    "step3": {
+      "title": "2023 - Alliances Mondiales",
+      "desc": "Expansion significative de nos services de juricomptabilité, en partenariat avec des forces internationales pour récupérer plus de 150 M$ d'actifs volés, renforçant ainsi notre position dans l'industrie.",
+      "tag1": "Partenariat avec Interpol",
+      "tag2": "Plus de 150M$ Récupérés",
+      "photo": "Expansion Mondiale"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - Leader de l'Industrie",
+      "desc": "Aujourd'hui, nous sommes l'autorité mondiale reconnue en juricomptabilité blockchain et le leader de la liquidité crypto instantanée, avec plus de 850 M$ retracés et des milliards de prêts sécurisés.",
+      "tag1": "Plus de 850M$ Retracés",
+      "tag2": "Prêteur de Premier Plan",
+      "photo": "Reconnaissance de l'Industrie"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "Rencontrez Notre",
+    "title2": " Équipe Dirigeante",
+    "subtitle": "Notre direction rassemble des décennies d'expérience en blockchain, finance et technologie pour stimuler l'innovation et la croissance.",
+    "join": {
+      "title": "Rejoignez Notre Équipe",
+      "description": "Nous sommes toujours à la recherche de personnes talentueuses qui partagent notre passion pour révolutionner la finance via la technologie blockchain.",
+      "cta": "Voir les Postes Ouverts"
+    },
+    "members": {
+      "sarah": {
+        "role": "Directrice Générale (CEO)",
+        "bio": "Ancienne VP chez Coinbase avec plus de 15 ans en fintech. A dirigé le développement de plateformes cryptos à succès et a figuré dans Forbes."
+      },
+      "michael": {
+        "role": "Directeur Technique (CTO)",
+        "bio": "Architecte blockchain avec une expérience à la Fondation Ethereum. Expert en smart contracts, DeFi et solutions blockchain évolutives."
+      },
+      "lisa": {
+        "role": "Directrice de la Conformité",
+        "bio": "Ancienne avocate de la SEC, experte en réglementations cryptos. Garantit que notre plateforme répond aux normes de conformité mondiales."
+      },
+      "david": {
+        "role": "Directeur des Opérations (COO)",
+        "bio": "Spécialiste de la mise à l'échelle des opérations pour le Web3. A géré la croissance au sein des plus grandes bourses et institutions financières."
+      },
+      "allen": {
+        "role": "Chef de la Sécurité et des Enquêtes",
+        "bio": "Plus d'une décennie d'expérience en cybersécurité et juricomptabilité blockchain. Dirige la récupération des actifs et la sécurité de la plateforme."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Prêt à Commencer ?",
+    "subtitle": "Que vous soyez un partenaire potentiel, un investisseur ou simplement curieux de nos activités, nous serions ravis d'échanger. Explorons comment révolutionner ensemble la finance mondiale.",
+    "get_in_touch": "Contactez-Nous",
+    "desc": "Notre équipe est là pour vous aider à comprendre notre plateforme, explorer des partenariats ou répondre à toutes vos questions.",
+    "methods": {
+      "email": "Nous Envoyer un E-mail",
+      "call": "Nous Appeler",
+      "visit": "Nous Visiter"
+    },
+    "actions": {
+      "demo": "Planifier une Démo",
+      "whitepaper": "Télécharger le Livre Blanc"
+    },
+    "form": {
+      "title": "Envoyez-nous un Message",
+      "subtitle": "Nous vous répondrons dans les 24 heures.",
+      "first_name": "Prénom *",
+      "email": "Adresse E-mail *",
+      "subject": "Sujet *",
+      "message": "Message *",
+      "placeholder_name": "Entrez votre prénom",
+      "placeholder_email": "Entrez votre e-mail",
+      "placeholder_subject": "De quoi s'agit-il ?",
+      "placeholder_message": "Dites-nous en plus sur votre demande...",
+      "submit": "Envoyer le Message",
+      "privacy": "En soumettant ce formulaire, vous acceptez notre politique de confidentialité et nos conditions d'utilisation."
+    },
+    "footer": {
+      "support": "Assistance Disponible",
+      "response": "Temps de Réponse Moyen",
+      "confidential": "Confidentiel"
+    }
+  }
+}

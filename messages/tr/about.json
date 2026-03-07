@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "Öncüsü",
+    "span1": "Blockchain Adli Bilişimi",
+    "span2": "& Kripto Kredileri",
+    "description": "Çalınan dijital varlıklar için kurumsal düzeyde izleme, güçlü AML uyumluluğu sağlıyor ve kredi kontrolü olmaksızın güvenli, aşırı teminatlandırılmış kripto kredileri aracılığıyla anında likidite kilidini açıyoruz.",
+    "sub_description": "Dijital geleceği güvence altına alıyoruz. Küresel likiditeyi güçlendiriyoruz.",
+    "stats": {
+      "assets_traced": "İzlenen Varlıklar",
+      "assets_count": "$850M+",
+      "credit_checks": "Kredi Kontrolleri",
+      "credit_count": "0",
+      "jurisdictions": "Hukuki Yetki Alanları",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "Adli Bilişim Mükemmelliği & Finansal Güçlendirme",
+    "title": "Kayıp varlıkların izini sürme. Anında likidite kilidini açma.",
+    "forensics": {
+      "title": "Adli Bilişim Mükemmelliği",
+      "subtitle": "Kurtarılamayan varlıkları hassasiyetle izleme.",
+      "description": "Tescilli blockchain adli bilişim algoritmalarımız, yasadışı kripto hareketlerini belirleme ve izleme konusunda sektöre öncülük etmektedir. Çalınan varlıkların izini sürmek ve sıkı AML uyumluluğunu sağlamak için küresel kolluk kuvvetleriyle ortaklık yapıyoruz.",
+      "points": {
+        "recovery": "Çalınan Kripto Varlık Kurtarımı",
+        "threat": "Proaktif Tehdit İstihbaratı",
+        "audits": "Mahkemede Kabul Edilebilir Blockchain Denetimleri"
+      }
+    },
+    "finance": {
+      "title": "Finansal Güçlendirme",
+      "subtitle": "Kripto varlıklarınızı satmadan anında likidite.",
+      "description": "Kredi puanı kontrolleri olmadan hızlı, güvenli, aşırı teminatlandırılmış kripto kredilerine erişin. Merkezi olmayan saklama modellerimiz, yatırım yapmak veya genişlemek için ihtiyaç duyduğunuz sermayenin kilidini açarken varlıklarınızın korunmasını garanti eder.",
+      "points": {
+        "approval": "Anında Kredi Onayı ve Ödemesi",
+        "credit": "Sıfır Kredi Puanı Şartı",
+        "vaults": "Ayrılmış Teminat Kasaları"
+      },
+      "cta": "Kredi Başvurusu Yapın"
+    }
+  },
+  "Stats": {
+    "title1": "Etkimiz",
+    "title2": " Rakamlarla",
+    "subtitle": "Küresel finansın geleceğini inşa etme ve dünya çapında topluluğumuza hizmet etme taahhüdümüzü gösteren gerçek metrikler.",
+    "cards": {
+      "cases": {
+        "title": "Çözülen Vakalar",
+        "subtitle": "Küresel adli bilişim",
+        "desc": "Başarılı soruşturmalar"
+      },
+      "jurisdictions": {
+        "title": "Yetki Alanları",
+        "subtitle": "Küresel erişim",
+        "desc": "Uluslararası kolluk ortakları"
+      },
+      "assets": {
+        "title": "İzlenen Varlıklar",
+        "subtitle": "İzlenen toplam değer",
+        "desc": "Yasadışı varlık takibinde"
+      },
+      "loans": {
+        "title": "Verilen Krediler",
+        "subtitle": "Sağlanan likidite",
+        "desc": "Aşırı teminatlı krediler"
+      },
+      "uptime": {
+        "title": "Platform Kesintisiz Süresi",
+        "subtitle": "Güvenilirlik garantisi",
+        "desc": "Sürekli erişilebilirlik"
+      },
+      "team": {
+        "title": "Uzman Kadro",
+        "subtitle": "Küresel profesyoneller",
+        "desc": "Sektör uzmanları"
+      }
+    },
+    "footer": {
+      "support": "Mevcut Destek",
+      "experience": "Yılların Birikimli Tecrübesi",
+      "compliant": "Mevzuata Uygunluk",
+      "offices": "Küresel Ofisler"
+    }
+  },
+  "Journey": {
+    "title1": "Sektör Liderliğine",
+    "title2": " Uzanan Yolculuğumuz",
+    "subtitle": "Seçkin bir güvenlik araştırmacıları ekibinden dijital varlıkları güvence altına alan ve milyonlar için likidite kilidini açan küresel bir platforma. İşte böyle evrimleştik.",
+    "step1": {
+      "title": "2021 - Başlangıç",
+      "desc": "Siber güvenlik gazileri ve seçkin adli araştırmacılar tarafından kurulan Lenix Protocol, basit bir misyondan doğdu: blockchain bütünlüğünü korumak ve çalınan dijital varlıkları izlemek.",
+      "tag1": "Ajans Kuruldu",
+      "tag2": "İlk İzleme Algoritması",
+      "photo": "Kurucu Ekip Fotoğrafı"
+    },
+    "step2": {
+      "title": "2022 - İlk Lansman",
+      "desc": "Kullanıcıların varlıklarını satmadan veya kredi kontrolleriyle karşılaşmadan kripto varlıklarıyla güvenle anında itibari para ödünç almalarını sağlayan ilk Kripto Kredi protokolümüzü piyasaya sürdük.",
+      "tag1": "Kredi Protokolü Lansmanı",
+      "tag2": "Sıfır Kredi Kontrolü",
+      "photo": "İlk Ürün Lansmanı"
+    },
+    "step3": {
+      "title": "2023 - Küresel İttifaklar",
+      "desc": "Çalınan varlıklardan 150 milyon doların üzerinde geri kazanmak ve sektördeki sağlam yerimizi güçlendirmek için uluslararası görev güçleriyle ortaklık kurarak adli hizmetlerimizi önemli ölçüde genişlettik.",
+      "tag1": "Interpol Ortaklığı",
+      "tag2": "$150M+ Kurtarıldı",
+      "photo": "Küresel Genişleme"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - Sektör Lideri",
+      "desc": "Bugün, blockchain adli bilişiminde tanınmış küresel otorite ve anında kripto likiditesinin lider sağlayıcısıyız, 850 milyon dolardan fazla işlem izledik ve milyarlarca güvenli kredi işledik.",
+      "tag1": "$850M+ İzlenen",
+      "tag2": "Lider Kredi Veren",
+      "photo": "Sektörel Tanınırlık"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "Liderlik Ekibimizle",
+    "title2": " Tanışın",
+    "subtitle": "Yönetici ekibimiz, yenilik ve büyümeyi teşvik etmek için blockchain, finans ve teknolojide onlarca yıllık deneyimi bir araya getiriyor.",
+    "join": {
+      "title": "Ekibimize Katılın",
+      "description": "Her zaman blockchain teknolojisi aracılığıyla finansı devrimcileştirme tutkumuzu paylaşan yetenekli bireyler arıyoruz.",
+      "cta": "Açık Pozisyonları İncele"
+    },
+    "members": {
+      "sarah": {
+        "role": "İcra Kurulu Başkanı (CEO)",
+        "bio": "Fintech alanında 15 yıldan fazla deneyime sahip Eski Coinbase Başkan Yardımcısı. Birden fazla başarılı kripto platformunun geliştirilmesine öncülük etti ve Forbes'ta yer aldı."
+      },
+      "michael": {
+        "role": "Teknolojiden Sorumlu Başkan (CTO)",
+        "bio": "Ethereum Vakfı'nda deneyime sahip Blockchain mimarı. Akıllı sözleşmeler, DeFi protokolleri ve ölçeklenebilir blockchain çözümleri konusunda uzman."
+      },
+      "lisa": {
+        "role": "Uyumdan Sorumlu Başkan",
+        "bio": "Kripto düzenlemeleri alanında derin uzmanlığa sahip eski SEC avukatı. Platformumuzun küresel uyumluluk standartlarını karşılamasını sağlar."
+      },
+      "david": {
+        "role": "Operasyonlardan Sorumlu Başkan (COO)",
+        "bio": "Web3 şirketleri için küresel operasyonları ölçeklendirmede uzmanlaşmıştır. Daha önce en üst düzey borsalarda ve finans kurumlarında şirket büyümesini yönetmiştir."
+      },
+      "allen": {
+        "role": "Güvenlik ve Adli Bilişim Başkanı",
+        "bio": "Siber güvenlik ve blockchain adli bilişiminde on yılı aşkın deneyim. Çalınan kripto varlıkları izleme ve platformu güvence altına alma çabalarımıza öncülük etmektedir."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Başlamaya Hazır Mısınız?",
+    "subtitle": "Potansiyel bir ortak, yatırımcı veya sadece ne yaptığımızı merak eden biri olun, sizden haber almaktan memnuniyet duyarız. Küresel finansı nasıl devrimcileştirebileceğimizi keşfedelim.",
+    "get_in_touch": "İletişime Geçin",
+    "desc": "Ekibimiz platformumuzu anlamanıza, ortaklık fırsatlarını keşfetmenize veya olabilecek sorularınızı yanıtlamanıza yardımcı olmak için buradalar.",
+    "methods": {
+      "email": "Bize E-posta Gönderin",
+      "call": "Bizi Arayın",
+      "visit": "Bizi Ziyaret Edin"
+    },
+    "actions": {
+      "demo": "Demo Planlayın",
+      "whitepaper": "Whitepaper İndir"
+    },
+    "form": {
+      "title": "Bize Mesaj Gönderin",
+      "subtitle": "Size 24 saat içinde geri dönüş yapacağız.",
+      "first_name": "Ad *",
+      "email": "E-posta Adresi *",
+      "subject": "Konu *",
+      "message": "Mesaj *",
+      "placeholder_name": "İlk adınızı girin",
+      "placeholder_email": "E-postanızı girin",
+      "placeholder_subject": "Bu ne hakkında?",
+      "placeholder_message": "Bize talebiniz hakkında daha fazla bilgi verin...",
+      "submit": "Mesaj Gönder",
+      "privacy": "Bu formu göndererek, gizlilik politikamızı ve hizmet şartlarımızı kabul etmiş olursunuz."
+    },
+    "footer": {
+      "support": "Mevcut Destek",
+      "response": "Ortalama Yanıt Süresi",
+      "confidential": "Gizli"
+    }
+  }
+}

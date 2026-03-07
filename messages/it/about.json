@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "Pionieri in",
+    "span1": "Informatica Forense Blockchain",
+    "span2": "& Prestiti Crypto",
+    "description": "Forniamo tracciamento di livello istituzionale per asset digitali rubati, solida conformità AML e sblocchiamo liquidità istantanea tramite prestiti crypto sicuri e sovracollateralizzati senza controlli del credito.",
+    "sub_description": "Proteggere il futuro digitale. Potenziare la liquidità globale.",
+    "stats": {
+      "assets_traced": "Asset Tracciati",
+      "assets_count": "$850M+",
+      "credit_checks": "Controlli del Credito",
+      "credit_count": "0",
+      "jurisdictions": "Giurisdizioni",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "Eccellenza Forense ed Empowerment Finanziario",
+    "title": "Tracciare gli asset persi. Sbloccare la liquidità istantanea.",
+    "forensics": {
+      "title": "Eccellenza Forense",
+      "subtitle": "Tracciare gli asset irrecuperabili con precisione.",
+      "description": "I nostri algoritmi proprietari di informatica forense blockchain guidano il settore nell'identificazione e nel monitoraggio dei movimenti illeciti di criptovalute. Collaboriamo con le forze dell'ordine globali per rintracciare gli asset rubati e garantire una rigorosa conformità AML.",
+      "points": {
+        "recovery": "Recupero di Asset Crypto Rubati",
+        "threat": "Intelligence Proattiva sulle Minacce",
+        "audits": "Audit Blockchain Ammissibili in Tribunale"
+      }
+    },
+    "finance": {
+      "title": "Empowerment Finanziario",
+      "subtitle": "Liquidità istantanea senza vendere le tue crypto.",
+      "description": "Accedi a prestiti crypto rapidi, sicuri e sovracollateralizzati senza alcun controllo del punteggio di credito. I nostri modelli di custodia decentralizzata garantiscono che i tuoi asset rimangano protetti mentre sblocchi il capitale di cui hai bisogno.",
+      "points": {
+        "approval": "Approvazione ed Erogazione del Prestito Istantanee",
+        "credit": "Nessun Requisito di Punteggio di Credito",
+        "vaults": "Caveau di Garanzia Segregati"
+      },
+      "cta": "Richiedi un Prestito"
+    }
+  },
+  "Stats": {
+    "title1": "Il Nostro Impatto",
+    "title2": " In Numeri",
+    "subtitle": "Metriche reali che dimostrano il nostro impegno nella costruzione del futuro della finanza globale e nel servire la nostra comunità in tutto il mondo.",
+    "cards": {
+      "cases": {
+        "title": "Casi Risolti",
+        "subtitle": "Informatica forense globale",
+        "desc": "Indagini di successo"
+      },
+      "jurisdictions": {
+        "title": "Giurisdizioni",
+        "subtitle": "Portata globale",
+        "desc": "Partner internazionali delle forze dell'ordine"
+      },
+      "assets": {
+        "title": "Asset Tracciati",
+        "subtitle": "Valore totale monitorato",
+        "desc": "Nel tracciamento degli asset illeciti"
+      },
+      "loans": {
+        "title": "Prestiti Erogati",
+        "subtitle": "Liquidità fornita",
+        "desc": "Prestiti sovracollateralizzati"
+      },
+      "uptime": {
+        "title": "Uptime della Piattaforma",
+        "subtitle": "Garanzia di affidabilità",
+        "desc": "Disponibilità costante"
+      },
+      "team": {
+        "title": "Team di Esperti",
+        "subtitle": "Professionisti globali",
+        "desc": "Esperti del settore"
+      }
+    },
+    "footer": {
+      "support": "Supporto Disponibile",
+      "experience": "Anni di Esperienza Combinata",
+      "compliant": "Conformità Normativa",
+      "offices": "Uffici Globali"
+    }
+  },
+  "Journey": {
+    "title1": "Il Nostro Percorso verso",
+    "title2": " la Leadership di Settore",
+    "subtitle": "Da un team d'élite di ricercatori sulla sicurezza a una piattaforma globale che protegge gli asset digitali e sblocca la liquidità per milioni di persone. Ecco come ci siamo evoluti.",
+    "step1": {
+      "title": "2021 - L'Inizio",
+      "desc": "Fondata da veterani della sicurezza informatica e da investigatori forensi d'élite, Lenix Protocol è nata con una semplice missione: proteggere l'integrità della blockchain e tracciare gli asset digitali rubati.",
+      "tag1": "Agenzia Fondata",
+      "tag2": "Primo Algoritmo di Tracciamento",
+      "photo": "Foto del Team Fondatore"
+    },
+    "step2": {
+      "title": "2022 - Primo Lancio",
+      "desc": "Lancio del nostro primo protocollo di Prestito Crypto, consentendo agli utenti di prendere in prestito fiat istantaneamente e in modo sicuro garantendo con le loro disponibilità crypto, senza vendere e senza controlli del credito.",
+      "tag1": "Lancio del Protocollo di Prestito",
+      "tag2": "Zero Controlli del Credito",
+      "photo": "Lancio del Primo Prodotto"
+    },
+    "step3": {
+      "title": "2023 - Alleanze Globali",
+      "desc": "Abbiamo ampliato significativamente i nostri servizi forensi, collaborando con task force internazionali per recuperare oltre 150 milioni di dollari in asset rubati e rafforzando la nostra posizione nel settore.",
+      "tag1": "Partnership con Interpol",
+      "tag2": "$150M+ Recuperati",
+      "photo": "Espansione Globale"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - Leader di Settore",
+      "desc": "Oggi siamo l'autorità globale riconosciuta nell'informatica forense blockchain e il principale fornitore di liquidità crypto istantanea, avendo tracciato oltre 850 milioni di dollari e processato miliardi in prestiti sicuri.",
+      "tag1": "$850M+ Tracciati",
+      "tag2": "Prestatore Principale",
+      "photo": "Riconoscimento del Settore"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "Incontra il Nostro",
+    "title2": " Team Dirigenziale",
+    "subtitle": "Il nostro team esecutivo riunisce decenni di esperienza in blockchain, finanza e tecnologia per guidare l'innovazione e la crescita.",
+    "join": {
+      "title": "Unisciti al Nostro Team",
+      "description": "Siamo sempre alla ricerca di persone di talento che condividano la nostra passione per rivoluzionare la finanza attraverso la tecnologia blockchain.",
+      "cta": "Visualizza Posizioni Aperte"
+    },
+    "members": {
+      "sarah": {
+        "role": "Amministratore Delegato (CEO)",
+        "bio": "Ex VP di Coinbase con oltre 15 anni di esperienza nel fintech. Ha guidato lo sviluppo di molteplici piattaforme crypto di successo ed è stata citata in Forbes."
+      },
+      "michael": {
+        "role": "Direttore Tecnico (CTO)",
+        "bio": "Architetto blockchain con esperienza presso la Ethereum Foundation. Esperto in smart contract, protocolli DeFi e soluzioni blockchain scalabili."
+      },
+      "lisa": {
+        "role": "Responsabile della Conformità (CCO)",
+        "bio": "Ex avvocato della SEC con profonda competenza nelle normative sulle criptovalute. Garantisce che la nostra piattaforma soddisfi gli standard di conformità globali."
+      },
+      "david": {
+        "role": "Direttore Operativo (COO)",
+        "bio": "Specializzato nella scalabilità delle operazioni globali per le aziende Web3. In precedenza ha gestito la crescita aziendale presso exchange e istituzioni finanziarie di alto livello."
+      },
+      "allen": {
+        "role": "Responsabile della Sicurezza e dell'Informatica Forense",
+        "bio": "Oltre un decennio di esperienza nella sicurezza informatica e nell'informatica forense blockchain. Guida i nostri sforzi per rintracciare gli asset crypto rubati e mettere in sicurezza la piattaforma."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Pronto per Iniziare?",
+    "subtitle": "Che tu sia un potenziale partner, un investitore o semplicemente curioso di ciò che facciamo, ci farebbe piacere sentirti. Scopriamo insieme come possiamo rivoluzionare la finanza globale.",
+    "get_in_touch": "Contattaci",
+    "desc": "Il nostro team è qui per aiutarti a capire la nostra piattaforma, esplorare opportunità di partnership o rispondere a qualsiasi domanda tu possa avere.",
+    "methods": {
+      "email": "Inviaci un'Email",
+      "call": "Chiamaci",
+      "visit": "Vienici a Trovare"
+    },
+    "actions": {
+      "demo": "Prenota una Demo",
+      "whitepaper": "Scarica il Whitepaper"
+    },
+    "form": {
+      "title": "Inviaci un Messaggio",
+      "subtitle": "Ti risponderemo entro 24 ore.",
+      "first_name": "Nome *",
+      "email": "Indirizzo Email *",
+      "subject": "Oggetto *",
+      "message": "Messaggio *",
+      "placeholder_name": "Inserisci il tuo nome",
+      "placeholder_email": "Inserisci la tua email",
+      "placeholder_subject": "Di cosa si tratta?",
+      "placeholder_message": "Raccontaci di più sulla tua richiesta...",
+      "submit": "Invia Messaggio",
+      "privacy": "Inviando questo modulo, accetti la nostra politica sulla privacy e i termini di servizio."
+    },
+    "footer": {
+      "support": "Supporto Disponibile",
+      "response": "Tempo di Risposta",
+      "confidential": "Confidenziale al 100%"
+    }
+  }
+}

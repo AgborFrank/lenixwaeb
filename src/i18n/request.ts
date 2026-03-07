@@ -8,15 +8,17 @@ export default getRequestConfig(async ({ requestLocale }) => {
         ? requested
         : routing.defaultLocale;
 
-    // Load all namespaces for this locale
-    const [common] = await Promise.all([
+    // Load multiple namespaces for this locale
+    const [common, about] = await Promise.all([
         import(`../../messages/${locale}/common.json`),
+        import(`../../messages/${locale}/about.json`).catch(() => ({ default: {} })),
     ]);
 
     return {
         locale,
         messages: {
             ...common.default,
+            ...(Object.keys(about.default).length > 0 ? { About: about.default } : {}),
         },
     };
 });

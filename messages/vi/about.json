@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "Tiên phong trong",
+    "span1": "Điều tra pháp y Blockchain",
+    "span2": "& Cho vay tiền điện tử",
+    "description": "Chúng tôi cung cấp dịch vụ theo dõi cấp độ tổ chức cho các tài sản kỹ thuật số bị đánh cắp, tuân thủ AML nghiêm ngặt và giải phóng thanh khoản tức thì thông qua các khoản vay tiền điện tử được thế chấp vượt mức an toàn, không cần kiểm tra tín dụng.",
+    "sub_description": "Bảo vệ tương lai kỹ thuật số. Tăng cường thanh khoản toàn cầu.",
+    "stats": {
+      "assets_traced": "Tài sản Được Theo Dõi",
+      "assets_count": "$850 Triệu+",
+      "credit_checks": "Kiểm tra Tín dụng",
+      "credit_count": "0",
+      "jurisdictions": "Khu vực Pháp lý",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "Sự Xuất sắc về Khám nghiệm & Trao quyền Tài chính",
+    "title": "Theo dõi tài sản bị mất. Giải phóng thanh khoản tức thì.",
+    "forensics": {
+      "title": "Sự Xuất sắc về Điều tra",
+      "subtitle": "Theo dõi chính xác các tài sản khó có thể thu hồi.",
+      "description": "Các thuật toán khôi phục blockchain độc quyền của chúng tôi dẫn đầu ngành trong việc xác định và theo dõi các luồng tiền điện tử bất chính. Chúng tôi hợp tác với các cơ quan thực thi pháp luật toàn cầu để truy nguồn các tài sản bị đánh cắp và đảm bảo tuân thủ AML nghiêm ngặt.",
+      "points": {
+        "recovery": "Thu hồi Tài sản Tiền điện tử Bị đánh cắp",
+        "threat": "Tình báo Mối đe dọa Chủ động",
+        "audits": "Kiểm toán Blockchain Có giá trị Pháp lý"
+      }
+    },
+    "finance": {
+      "title": "Trao quyền Tài chính",
+      "subtitle": "Thanh khoản tức thì mà không cần bán tiền điện tử của bạn.",
+      "description": "Tiếp cận các khoản vay tiền điện tử nhanh chóng, an toàn, được thế chấp vượt mức mà không cần kiểm tra điểm tín dụng. Mô hình lưu ký phi tập trung của chúng tôi đảm bảo tài sản của bạn vẫn được bảo vệ trong khi bạn mở khóa vốn để mở rộng hoạt động đầu tư hay kiểm soát chi tiêu.",
+      "points": {
+        "approval": "Phê duyệt và Giải ngân Khoản vay Tức thì",
+        "credit": "Không Cần Điểm Tín dụng",
+        "vaults": "Kho Lưu trữ Tài sản Đảm bảo Riêng biệt"
+      },
+      "cta": "Đăng ký Khoản vay"
+    }
+  },
+  "Stats": {
+    "title1": "Tác Động",
+    "title2": " Bằng Những Con Số",
+    "subtitle": "Các số liệu thực tế thể hiện cam kết của chúng tôi trong việc xây dựng tương lai của nền tài chính toàn cầu và phục vụ cộng đồng của chúng tôi trên toàn thế giới.",
+    "cards": {
+      "cases": {
+        "title": "Vụ án Đã Giải quyết",
+        "subtitle": "Điều tra pháp y toàn cầu",
+        "desc": "Các cuộc điều tra thành công"
+      },
+      "jurisdictions": {
+        "title": "Khu vực Pháp lý",
+        "subtitle": "Phạm vi toàn cầu",
+        "desc": "Đối tác thực thi pháp luật quốc tế"
+      },
+      "assets": {
+        "title": "Tài sản Được Theo dõi",
+        "subtitle": "Tổng giá trị được giám sát",
+        "desc": "Trong việc theo dõi tài sản bất hợp pháp"
+      },
+      "loans": {
+        "title": "Khoản vay Đã Phát hành",
+        "subtitle": "Thanh khoản được cung cấp",
+        "desc": "Các khoản vay được thế chấp vượt mức"
+      },
+      "uptime": {
+        "title": "Thời gian Hoạt động của Nền tảng",
+        "subtitle": "Đảm bảo độ tin cậy",
+        "desc": "Tính khả dụng liên tục"
+      },
+      "team": {
+        "title": "Đội ngũ Chuyên gia",
+        "subtitle": "Các chuyên gia toàn cầu",
+        "desc": "Chuyên gia trong ngành"
+      }
+    },
+    "footer": {
+      "support": "Hỗ trợ Luôn Sẵn sàng",
+      "experience": "Năm Kinh nghiệm Kết hợp",
+      "compliant": "Tuân thủ Quy định",
+      "offices": "Văn phòng Toàn cầu"
+    }
+  },
+  "Journey": {
+    "title1": "Hành trình Hướng tới",
+    "title2": " Sự Dẫn đầu Ngành",
+    "subtitle": "Từ một đội ngũ tinh hoa gồm các nhà nghiên cứu bảo mật đến một nền tảng toàn cầu bảo vệ tài sản kỹ thuật số và mở khóa thanh khoản cho hàng triệu người. Đây là cách chúng tôi đã phát triển.",
+    "step1": {
+      "title": "2021 - Sự Khởi đầu",
+      "desc": "Được thành lập bởi các chuyên gia an ninh mạng kỳ cựu và các điều tra viên pháp y ưu tú, Lenix Protocol ra đời từ một sứ mệnh đơn giản: bảo vệ tính toàn vẹn của blockchain và theo dõi các tài sản kỹ thuật số bị hưu hại.",
+      "tag1": "Thành lập Cơ quan",
+      "tag2": "Thuật toán Theo dõi Đầu tiên",
+      "photo": "Bức ảnh Đội ngũ Sáng lập"
+    },
+    "step2": {
+      "title": "2022 - Lần ra mắt Đầu tiên",
+      "desc": "Ra mắt giao thức Cho vay Tiền điện tử hàng đầu của chúng tôi, cho phép người dùng vay tiền pháp định ngay lập tức một cách an toàn dựa trên lượng tiền điện tử ho đang nắm giữ mà không cần phải bán tài sản hoặc đối mặt với các cuộc kiểm tra tín dụng.",
+      "tag1": "Ra mắt Giao thức Cho Vay",
+      "tag2": "Không Kiểm tra Tín dụng",
+      "photo": "Ra mắt Sản phẩm Đầu tiên"
+    },
+    "step3": {
+      "title": "2023 - Liên minh Toàn cầu",
+      "desc": "Mở rộng đáng kể các dịch vụ điều tra pháp y của chúng tôi, hợp tác với các lực lượng đặc nhiệm quốc tế để thu hồi hơn 150 triệu đô la tài sản bị đánh cắp và củng cố pháo đài vững chắc của chúng tôi trong ngành.",
+      "tag1": "Đối tác của Interpol",
+      "tag2": "Đã thu hồi hơn $150 Triệu",
+      "photo": "Mở rộng Toàn cầu"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - Khẳng Định Vị Thế",
+      "desc": "Ngày nay, chúng tôi là cơ quan có thẩm quyền toàn cầu được công nhận về điều tra pháp y blockchain và nhà cung cấp hàng đầu về thanh khoản tiền điện tử tức thì, đã theo dõi hơn 850 triệu đô la và xử lý hàng tỷ đô la trong các khoản vay an toàn.",
+      "tag1": "Đã theo dõi hơn $850 Triệu",
+      "tag2": "Nhà cung cấp Khoản vay Hàng đầu",
+      "photo": "Sự Công nhận của Ngành"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "Gặp gỡ",
+    "title2": " Đội ngũ Lãnh đạo Của chúng tôi",
+    "subtitle": "Đội ngũ điều hành của chúng tôi tập hợp hàng chục năm kinh nghiệm trong các lĩnh vực blockchain, tài chính và công nghệ để thúc đẩy đổi mới và tăng trưởng.",
+    "join": {
+      "title": "Tham gia Đội ngũ",
+      "description": "Chúng tôi luôn tìm kiếm những cá nhân tài năng chia sẻ niềm đam mê của chúng tôi đối với việc cách mạng hóa ngành tài chính thông qua công nghệ blockchain.",
+      "cta": "Xem Các Vị trí Đang Tuyển dụng"
+    },
+    "members": {
+      "sarah": {
+        "role": "Giám đốc Điều hành (CEO)",
+        "bio": "Cựu VP tại Coinbase với hơn 15 năm kinh nghiệm trong lĩnh vực fintech. Đã dẫn dắt sự phát triển của nhiều nền tảng tiền điện tử thành công và đã xuất hiện trên tạp chí Forbes."
+      },
+      "michael": {
+        "role": "Giám đốc Công nghệ (CTO)",
+        "bio": "Kiến trúc sư blockchain với kinh nghiệm tại Ethereum Foundation. Chuyên gia về hợp đồng thông minh, giao thức DeFi và các giải pháp blockchain có thể mở rộng."
+      },
+      "lisa": {
+        "role": "Giám đốc Pháp chế và Tuân thủ (CCO)",
+        "bio": "Cựu luật sư của SEC với kiến thức chuyên môn sâu rộng về các quy định tiền điện tử. Đảm bảo nền tảng của chúng tôi đáp ứng các tiêu chuẩn tuân thủ toàn cầu."
+      },
+      "david": {
+        "role": "Giám đốc Vận hành (COO)",
+        "bio": "Chuyên gia trong việc mở rộng quy mô hoạt động toàn cầu cho các công ty Web3. Trước đây đã quản lý sự tăng trưởng của doanh nghiệp tại các sàn giao dịch và tổ chức tài chính hàng đầu."
+      },
+      "allen": {
+        "role": "Trưởng bộ phận An ninh & Pháp y",
+        "bio": "Hơn một thập kỷ kinh nghiệm trong lĩnh vực an ninh mạng và điều tra pháp y blockchain. Lãnh đạo nỗ lực của chúng tôi trong việc theo dõi tài sản tiền điện tử bị đánh cắp và bảo mật nền tảng."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Sẵn sàng Bắt đầu?",
+    "subtitle": "Dù bạn là đối tác tiềm năng, một nhà đầu tư hay chỉ đơn giản là tò mò về những gì chúng tôi làm, chúng tôi đều rất hân hạnh được lắng nghe ý kiến của bạn.",
+    "get_in_touch": "Giữ liên lạc",
+    "desc": "Đội ngũ của chúng tôi tại đây để giúp bạn hiểu hơn về hệ sinh thái, nền tảng hoặc có bất cứ câu hỏi gì về liên minh làm đối tác cùng chúng tôi.",
+    "methods": {
+      "email": "Gửi E-mail",
+      "call": "Gọi",
+      "visit": "Đến Văn Phòng"
+    },
+    "actions": {
+      "demo": "Lên lịch Demo",
+      "whitepaper": "Tải Sách Trắng"
+    },
+    "form": {
+      "title": "Gửi tin nhắn",
+      "subtitle": "Chúng tôi sẽ sớm phản hồi bạn trong vào 24 giờ tiếp theo.",
+      "first_name": "Tên *",
+      "email": "Email *",
+      "subject": "Tiêu đề *",
+      "message": "Nội Dung *",
+      "placeholder_name": "Điền Tên của bạn",
+      "placeholder_email": "Điền Email của bạn",
+      "placeholder_subject": "Chủ đề bạn muốn thảo luận?",
+      "placeholder_message": "Tell us more about your inquiry...",
+      "submit": "Gửi Nội Dung",
+      "privacy": "Bằng cách gửi biểu mẫu này, bạn đồng ý với chính sách quyền riêng tư và điều khoản dịch vụ của chúng tôi."
+    },
+    "footer": {
+      "support": "Hỗ trợ Sẵn sàng",
+      "response": "Thời Gian Trả Lời Trung Bình",
+      "confidential": "Tính Bảo Mật Cao Tuyệt Đối"
+    }
+  }
+}

@@ -9,8 +9,8 @@ import OurJourney from "./components/our-journey";
 import ContactCTA from "./components/contact-cta";
 
 export const metadata: Metadata = {
-  title: "About Lenix Protocol | Leaders in Blockchain Security & Recovery",
-  description: "Learn about Lenix Protocol's mission to secure the digital future through professional forensics, advanced security protocols, and expert asset recovery.",
+  title: "Blockchain Forensics & Crypto Loan Experts | Lenix Protocol",
+  description: "Lenix Protocol provides institutional-grade blockchain forensics, stolen crypto asset recovery, AML compliance, and instant liquidity through secure crypto-backed loans without credit checks.",
 };
 
 export default function About() {

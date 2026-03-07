@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "Nangunguna sa",
+    "span1": "Blockchain Forensics",
+    "span2": "& Crypto Lending",
+    "description": "Nagbibigay kami ng institutional-grade na pagsubaybay para sa mga ninakaw na digital asset, matibay na pagsunod sa AML, at nag-uunlock ng agarang liquidity sa pamamagitan ng ligtas, over-collateralized na crypto loans nang walang credit check.",
+    "sub_description": "Sinisiguro ang digital na kinabukasan. Pinapalakas ang pandaigdigang liquidity.",
+    "stats": {
+      "assets_traced": "Nasubaybayang Asset",
+      "assets_count": "$850M+",
+      "credit_checks": "Credit Checks",
+      "credit_count": "0",
+      "jurisdictions": "Ahensya",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "Kahusayan sa Forensics at Pinansyal na Paglakas",
+    "title": "Sinisiyasat ang mga nawawalang asset. Ina-unlock ang agarang liquidity.",
+    "forensics": {
+      "title": "Kahusayan sa Forensics",
+      "subtitle": "Tumpak na sinusubaybayan ang mga pondo.",
+      "description": "Nangunguna ang aming proprietary blockchain forensic algorithms sa industriya sa pagtukoy at pagsubaybay sa mga ilegal na paggalaw ng crypto. Nakikipagtulungan kami sa mga pandaigdigang ahensya upang subaybayan ang mga ninakaw na asset at tiyakin ang mahigpit na pagsunod sa AML.",
+      "points": {
+        "recovery": "Pagbawi sa mga Ninakaw na Crypto",
+        "threat": "Proactive Threat Intelligence",
+        "audits": "Tinatanngap ng Korte na Blockchain Audits"
+      }
+    },
+    "finance": {
+      "title": "Pinansyal na Paglakas",
+      "subtitle": "Agarang liquidity nang hindi ibinebenta ang iyong crypto.",
+      "description": "Mag-access ng mabilis, at secure na crypto loans na hindi nangangailangan ng credit score. Tinitiyak ng aming modelo na ang iyong mga asset ay mananatiling protektado habang ginagamit mo ang pondo na kailangan mo.",
+      "points": {
+        "approval": "Agarang Pag-apruba at Pagbibigay ng Loan",
+        "credit": "Walang Pangangailangan as Credit Score",
+        "vaults": "Nakahiwalay na Collateral Vaults"
+      },
+      "cta": "Mag-apply para sa Loan"
+    }
+  },
+  "Stats": {
+    "title1": "Ang Aming Epekto",
+    "title2": " sa mga Numero",
+    "subtitle": "Mga totoong sukatan na nagpapakita ng aming pangako sa pandaigdigang pananalapi.",
+    "cards": {
+      "cases": {
+        "title": "Mga Nalutas na Kaso",
+        "subtitle": "Pandaigdigang Forensics",
+        "desc": "Matagumpay na mga pagsisiyasat"
+      },
+      "jurisdictions": {
+        "title": "Ahensya",
+        "subtitle": "Global Na Pag-abot",
+        "desc": "Mga kasosyo sa pagpapatupad ng batas"
+      },
+      "assets": {
+        "title": "Assets na Nasubaybayan",
+        "subtitle": "Kabuuang halaga",
+        "desc": "Sa illicit asset tracing"
+      },
+      "loans": {
+        "title": "Mga Pautang",
+        "subtitle": "Liquidity na ibinigay",
+        "desc": "Mga over-collateralized loans"
+      },
+      "uptime": {
+        "title": "Platform Uptime",
+        "subtitle": "Garantiyang Reliability",
+        "desc": "100% availabilty"
+      },
+      "team": {
+        "title": "Mga Eksperto",
+        "subtitle": "Mga propesyonal",
+        "desc": "Mga Eksperto sa Industriya"
+      }
+    },
+    "footer": {
+      "support": "Available na Suporta",
+      "experience": "Lahat ng Pinagsamang Taon",
+      "compliant": "Pagsunod sa mga Regulasyon",
+      "offices": "Mga Pandaigdigang Opisina"
+    }
+  },
+  "Journey": {
+    "title1": "Ang Aming Daan Tungo sa",
+    "title2": " Pangingialam sa Industriya",
+    "subtitle": "Mula sa isang piling pangkat ng mga security researcher hanggang sa pandaigdigang platform.",
+    "step1": {
+      "title": "2021 - Ang Simula",
+      "desc": "Itinatag ng mga eksperto sa cybersecurity at mga nagungunang forensic investigator, ang Lenix Protocol ay nagsimula sa isang simpleng misyon: protektahan ang blockchain at subaybayan ang mga ninakaw na digital asset.",
+      "tag1": "Itinatag na Ahensya",
+      "tag2": "Unang Tracking Algo",
+      "photo": "Koponang Tagapagtatag"
+    },
+    "step2": {
+      "title": "2022 - Unang Paglunsad",
+      "desc": "Inilunsad ang aming pangunahing protocol ng Crypto Lending, na nagpapahintulot sa mga gumagamit na direktang humiram nang ligtas, nang walang credit check.",
+      "tag1": "Inilunsad ang Protocol",
+      "tag2": "Walang Credit Checks",
+      "photo": "Unang Produkto"
+    },
+    "step3": {
+      "title": "2023 - Pandaigdigang Alyansa",
+      "desc": "Pinapalawak ang aming mga serbisyong forensics s pamamagitan ng pakikipagtulungan sa mga kapulisan upang mabawi nang mahigit $150M. ",
+      "tag1": "Partnership sa Interpol",
+      "tag2": "$150M+ Narekober",
+      "photo": "Global Expansion"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - Industry Leader",
+      "desc": "Ngayon, kami na ang kinikilang pangkalahatang awtoridad para sa blockchain forensics at isang platform nang lider upang mapadali agpaghiram.",
+      "tag1": "$850M+ Natracked",
+      "tag2": "Nangungunang Lender",
+      "photo": "Pamununo sa Industriya"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "Kilalanin ang",
+    "title2": " Aming Mamumuno",
+    "subtitle": "May malawak na karanasan sa iba't ibang aspeto gaya ng blockchain, pinansya at teknolohiya.",
+    "join": {
+      "title": "Sumali sa Aming Koponan",
+      "description": "Naghahanap kami ng mga pinuno upang matulungan kaming makabuo mula sa isang natatanging pangarap at pagbabago ng blockchain.",
+      "cta": "Tingnan ang Listahan ng Trabaho"
+    },
+    "members": {
+      "sarah": {
+        "role": "Chief Executive Officer (CEO)",
+        "bio": "Dating VP ng Coinbase na may higit 15 na taon na karanasan sa fintech. Pinamunuan ang pagbuo ng iba't ibang tagumpay na platform."
+      },
+      "michael": {
+        "role": "Chief Technology Officer (CTO)",
+        "bio": "Blockchain expert at isang dating miyembro ng Ethereum Foundation. Eksperto sa mga smart contract."
+      },
+      "lisa": {
+        "role": "Chief Compliance Officer (CCO)",
+        "bio": "Dating SEC attorney na may malawak na karanasan sa pag-audit ng mga platform. Tinitiyak na sinusunod namin ang lahat ng mga patakaran."
+      },
+      "david": {
+        "role": "Chief Operations Officer (COO)",
+        "bio": "Eksperto sa pandaigdigang aktibidad ng Web3. Pinamunuhan ang pag-unlad ng platform bago pumasok sa Lenix."
+      },
+      "allen": {
+        "role": "Direktor Para Sa Forensics at Seguridad",
+        "bio": "May higit 10 taon sa cybersecurity. Namumuno para maibuo ang magkatulong nating team para sa seguridad."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Handang Magsimula?",
+    "subtitle": "Kung nais mo man na maging partner, investor o nais lamang matutunan ang platform namin, nandito kami paras a inyo.",
+    "get_in_touch": "Kontakin Kami",
+    "desc": "Narito ang aming koponan para tulungan kayo.",
+    "methods": {
+      "email": "Mag-Email",
+      "call": "Tumawag",
+      "visit": "Bumisita sa Opisina"
+    },
+    "actions": {
+      "demo": "Mag-schedule ng Demo",
+      "whitepaper": "I-download ang Whitepaper"
+    },
+    "form": {
+      "title": "Magpadala ng Mensahe",
+      "subtitle": "Sasagutin namin kayo sa loob ng 24 oras.",
+      "first_name": "Pangalan *",
+      "email": "Email Address *",
+      "subject": "Paksa *",
+      "message": "Mensahe *",
+      "placeholder_name": "Ilagay ang pangalan",
+      "placeholder_email": "Ilagay ang email",
+      "placeholder_subject": "Tungkol saan ito?",
+      "placeholder_message": "Sabihin sa amin ang higit pa...",
+      "submit": "Ipadala ang Mensahe",
+      "privacy": "Pumapayag ako na sinasang-ayunan ko ang inyong privacy policy."
+    },
+    "footer": {
+      "support": "Available na Suporta",
+      "response": "Average Response Time",
+      "confidential": "Confidential"
+    }
+  }
+}

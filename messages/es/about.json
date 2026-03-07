@@ -1,0 +1,205 @@
+{
+  "Hero": {
+    "title": "Pioneros en",
+    "span1": "Análisis Forense Blockchain",
+    "span2": "& Préstamos Cripto",
+    "description": "Ofrecemos rastreo de nivel institucional para activos digitales robados, un sólido cumplimiento ALD, y desbloqueamos liquidez instantánea a través de préstamos cripto seguros y sobrecolateralizados sin verificación de crédito.",
+    "sub_description": "Asegurando el futuro digital. Potenciando la liquidez global.",
+    "stats": {
+      "assets_traced": "Activos Rastreados",
+      "assets_count": "$850M+",
+      "credit_checks": "Chequeos de Crédito",
+      "credit_count": "0",
+      "jurisdictions": "Jurisdicciones",
+      "jurisdictions_count": "200+"
+    }
+  },
+  "Overview": {
+    "badge": "Excelencia Forense & Empoderamiento Financiero",
+    "title": "Rastreando activos perdidos. Liberando liquidez instantánea.",
+    "forensics": {
+      "title": "Excelencia Forense",
+      "subtitle": "Rastreando activos irrecuperables con precisión.",
+      "description": "Nuestros algoritmos forenses de blockchain lideran la industria en la identificación y seguimiento de movimientos de cripto ilícito. Nos asociamos con fuerzas de la ley globales para rastrear activos robados y garantizar un estricto cumplimiento ALD.",
+      "points": {
+        "recovery": "Recuperación de Criptoactivos Robados",
+        "threat": "Inteligencia de Amenazas Proactiva",
+        "audits": "Auditorías Blockchain Admisibles en Corte"
+      }
+    },
+    "finance": {
+      "title": "Empoderamiento Financiero",
+      "subtitle": "Liquidez instantánea sin vender sus criptomonedas.",
+      "description": "Acceda a préstamos cripto rápidos, seguros y sobrecolateralizados sin verificación de historial crediticio. Nuestros modelos de custodia descentralizada garantizan que sus activos permanezcan protegidos mientras desbloquea el capital necesario.",
+      "points": {
+        "approval": "Aprobación y Desembolso Instantáneos",
+        "credit": "Sin Requisitos de Puntuación de Crédito",
+        "vaults": "Bóvedas de Colateral Segregadas"
+      },
+      "cta": "Solicitar un Préstamo"
+    }
+  },
+  "Stats": {
+    "title1": "Nuestro Impacto",
+    "title2": " En Cifras",
+    "subtitle": "Métricas reales que demuestran nuestro compromiso con la construcción del futuro de las finanzas globales y el servicio a nuestra comunidad en todo el mundo.",
+    "cards": {
+      "cases": {
+        "title": "Casos Resueltos",
+        "subtitle": "Forense global",
+        "desc": "Investigaciones exitosas"
+      },
+      "jurisdictions": {
+        "title": "Jurisdicciones",
+        "subtitle": "Alcance global",
+        "desc": "Socios policiales internacionales"
+      },
+      "assets": {
+        "title": "Activos Rastreados",
+        "subtitle": "Valor total monitoreado",
+        "desc": "En rastreo de activos ilícitos"
+      },
+      "loans": {
+        "title": "Préstamos Originados",
+        "subtitle": "Liquidez provista",
+        "desc": "Préstamos sobrecolateralizados"
+      },
+      "uptime": {
+        "title": "Disponibilidad",
+        "subtitle": "Garantía de fiabilidad",
+        "desc": "Disponibilidad constante"
+      },
+      "team": {
+        "title": "Equipo de Expertos",
+        "subtitle": "Profesionales globales",
+        "desc": "Expertos de la industria"
+      }
+    },
+    "footer": {
+      "support": "Soporte Disponible",
+      "experience": "Años de Experiencia Combinada",
+      "compliant": "Cumplimiento Regulatorio",
+      "offices": "Oficinas Globales"
+    }
+  },
+  "Journey": {
+    "title1": "Nuestro Camino hacia",
+    "title2": " el Liderazgo",
+    "subtitle": "De un equipo de élite en ciberseguridad a una plataforma global que asegura activos digitales y desbloquea liquidez para millones. Así es como hemos evolucionado.",
+    "step1": {
+      "title": "2021 - El Comienzo",
+      "desc": "Fundada por veteranos de la ciberseguridad y élite forense, Lenix Protocol nació con una misión simple: proteger la integridad de la blockchain y rastrear activos robados.",
+      "tag1": "Agencia Fundada",
+      "tag2": "Primer Algo de Rastreo",
+      "photo": "Foto del Equipo Fundador"
+    },
+    "step2": {
+      "title": "2022 - Primer Lanzamiento",
+      "desc": "Lanzamos nuestro principal protocolo de Préstamos Cripto, permitiendo a los usuarios pedir fiat de forma instantánea respaldado por sus criptos, sin vender y sin verificación de crédito.",
+      "tag1": "Lanzamiento de Préstamos",
+      "tag2": "Cero Verificación de Crédito",
+      "photo": "Lanzamiento del Primer Producto"
+    },
+    "step3": {
+      "title": "2023 - Alianzas Globales",
+      "desc": "Ampliamos significativamente nuestros servicios forenses, colaborando con fuerzas internacionales para recuperar más de $150M en activos robados, reforzando nuestra posición.",
+      "tag1": "Alianza con Interpol",
+      "tag2": "$150M+ Recuperados",
+      "photo": "Expansión Global"
+    },
+    "step4": {
+      "title": "2024 - Protocol Upgrades",
+      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
+      "tag1": "V2 Launched",
+      "tag2": "Enhanced Security",
+      "photo": "Protocol V2"
+    },
+    "step7": {
+      "title": "2027 - Líder de la Industria",
+      "desc": "Hoy, somos la autoridad global reconocida en análisis forense blockchain y el principal proveedor de liquidez cripto, habiendo rastreado más de $850M y procesado miles de millones.",
+      "tag1": "$850M+ Rastreados",
+      "tag2": "Prestamista Principal",
+      "photo": "Reconocimiento de la Industria"
+    },
+    "step5": {
+      "title": "2025 - Institutional Adoption",
+      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
+      "tag1": "Institutions Onboarded",
+      "tag2": "TradFi Partnerships",
+      "photo": "Wall Street Integration"
+    },
+    "step6": {
+      "title": "2026 - AI Forensic Engine",
+      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
+      "tag1": "AI Integration",
+      "tag2": "Predictive Forensics",
+      "photo": "AI Engine Launch"
+    }
+  },
+  "Leadership": {
+    "title1": "Conozca a Nuestro",
+    "title2": " Equipo Directivo",
+    "subtitle": "Nuestro equipo ejecutivo reúne décadas de experiencia en blockchain, finanzas y tecnología para impulsar la innovación y el crecimiento.",
+    "join": {
+      "title": "Únase a Nuestro Equipo",
+      "description": "Siempre buscamos personas con talento que compartan nuestra pasión por revolucionar las finanzas mediante la tecnología blockchain.",
+      "cta": "Ver Puestos Abiertos"
+    },
+    "members": {
+      "sarah": {
+        "role": "Directora Ejecutiva (CEO)",
+        "bio": "Ex VP en Coinbase con más de 15 años en fintech. Lideró el desarrollo de múltiples plataformas cripto exitosas y ha aparecido en Forbes."
+      },
+      "michael": {
+        "role": "Director de Tecnología (CTO)",
+        "bio": "Arquitecto blockchain con experiencia en la Ethereum Foundation. Experto en contratos inteligentes, protocolos DeFi y soluciones escalables."
+      },
+      "lisa": {
+        "role": "Directora de Cumplimiento",
+        "bio": "Ex abogada de la SEC con profunda experiencia en regulaciones cripto. Garantiza que nuestra plataforma cumpla con los estándares globales."
+      },
+      "david": {
+        "role": "Director de Operaciones (COO)",
+        "bio": "Especialista en escalar operaciones para empresas Web3. Previamente gestionó el crecimiento de grandes exchanges e instituciones financieras."
+      },
+      "allen": {
+        "role": "Jefe de Seguridad y Análisis Forense",
+        "bio": "Más de una década de experiencia en ciberseguridad y forense blockchain. Dirige nuestros esfuerzos para rastrear activos y asegurar la red."
+      }
+    }
+  },
+  "Contact": {
+    "title": "¿Listo para Empezar?",
+    "subtitle": "Ya sea que sea un socio potencial, inversor o simplemente curioso acerca de lo que hacemos, nos encantaría saber de usted. Exploremos cómo revolucionar las finanzas.",
+    "get_in_touch": "Póngase en Contacto",
+    "desc": "Nuestro equipo está aquí para ayudarle a entender nuestra plataforma, explorar oportunidades de asociación o responder cualquier pregunta que pueda tener.",
+    "methods": {
+      "email": "Envíenos un Correo",
+      "call": "Llámenos",
+      "visit": "Visítenos"
+    },
+    "actions": {
+      "demo": "Programar una Demo",
+      "whitepaper": "Descargar Whitepaper"
+    },
+    "form": {
+      "title": "Envíenos un Mensaje",
+      "subtitle": "Nos pondremos en contacto con usted en un plazo de 24 horas.",
+      "first_name": "Nombre *",
+      "email": "Correo Electrónico *",
+      "subject": "Asunto *",
+      "message": "Mensaje *",
+      "placeholder_name": "Ingrese su nombre",
+      "placeholder_email": "Ingrese su correo",
+      "placeholder_subject": "¿De qué se trata?",
+      "placeholder_message": "Cuéntenos más sobre su consulta...",
+      "submit": "Enviar Mensaje",
+      "privacy": "Al enviar este formulario, usted acepta nuestra política de privacidad y los términos de servicio."
+    },
+    "footer": {
+      "support": "Soporte Disponible",
+      "response": "Tiempo de Respuesta",
+      "confidential": "Confidencial"
+    }
+  }
+}

@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from "react";
 import { TrendingUp, Users, Globe, Shield, Award, Zap } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function CompanyStats() {
+  const t = useTranslations("About.Stats");
   const [counts, setCounts] = useState({
     users: 0,
     countries: 0,
@@ -54,160 +56,165 @@ export default function CompanyStats() {
       <div className="max-w-screen-xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Our Impact
-            <span className="text-yellow-400"> By The Numbers</span>
+            {t("title1")}
+            <span className="text-yellow-400">{t("title2")}</span>
           </h2>
           <p className="text-gray-300 text-xl max-w-3xl mx-auto">
-            Real metrics that demonstrate our commitment to building the future
-            of global finance and serving our community worldwide.
+            {t("subtitle")}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Active Users */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Users className="w-6 h-6 text-black" />
               </div>
               <div>
                 <h3 className="text-white text-lg font-semibold">
-                  Active Users
+                  {t("cards.cases.title")}
                 </h3>
-                <p className="text-gray-400 text-sm">Global community</p>
+                <p className="text-gray-400 text-sm">{t("cards.cases.subtitle")}</p>
               </div>
             </div>
             <div className="space-y-2">
               <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
                 {counts.users.toLocaleString()}+
               </div>
-              <p className="text-gray-300 text-sm">Happy customers worldwide</p>
+              <p className="text-gray-300 text-sm">{t("cards.cases.desc")}</p>
             </div>
           </div>
 
           {/* Countries Served */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Globe className="w-6 h-6 text-black" />
               </div>
               <div>
                 <h3 className="text-white text-lg font-semibold">
-                  Countries Served
+                  {t("cards.jurisdictions.title")}
                 </h3>
-                <p className="text-gray-400 text-sm">Global reach</p>
+                <p className="text-gray-400 text-sm">{t("cards.jurisdictions.subtitle")}</p>
               </div>
             </div>
             <div className="space-y-2">
               <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
                 {counts.countries}+
               </div>
-              <p className="text-gray-300 text-sm">International presence</p>
+              <p className="text-gray-300 text-sm">{t("cards.jurisdictions.desc")}</p>
             </div>
           </div>
 
           {/* Transaction Volume */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                 <TrendingUp className="w-6 h-6 text-black" />
               </div>
               <div>
                 <h3 className="text-white text-lg font-semibold">
-                  Transaction Volume
+                  {t("cards.assets.title")}
                 </h3>
-                <p className="text-gray-400 text-sm">Total processed</p>
+                <p className="text-gray-400 text-sm">{t("cards.assets.subtitle")}</p>
               </div>
             </div>
             <div className="space-y-2">
               <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
                 ${counts.volume}M+
               </div>
-              <p className="text-gray-300 text-sm">In transaction volume</p>
+              <p className="text-gray-300 text-sm">{t("cards.assets.desc")}</p>
             </div>
           </div>
 
           {/* Total Transactions */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Zap className="w-6 h-6 text-black" />
               </div>
               <div>
                 <h3 className="text-white text-lg font-semibold">
-                  Total Transactions
+                  {t("cards.loans.title")}
                 </h3>
-                <p className="text-gray-400 text-sm">Successful operations</p>
+                <p className="text-gray-400 text-sm">{t("cards.loans.subtitle")}</p>
               </div>
             </div>
             <div className="space-y-2">
               <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
                 {counts.transactions.toLocaleString()}+
               </div>
-              <p className="text-gray-300 text-sm">Processed securely</p>
+              <p className="text-gray-300 text-sm">{t("cards.loans.desc")}</p>
             </div>
           </div>
 
           {/* Platform Uptime */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Shield className="w-6 h-6 text-black" />
               </div>
               <div>
                 <h3 className="text-white text-lg font-semibold">
-                  Platform Uptime
+                  {t("cards.uptime.title")}
                 </h3>
-                <p className="text-gray-400 text-sm">Reliability guarantee</p>
+                <p className="text-gray-400 text-sm">{t("cards.uptime.subtitle")}</p>
               </div>
             </div>
             <div className="space-y-2">
               <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
                 {counts.uptime}%
               </div>
-              <p className="text-gray-300 text-sm">Consistent availability</p>
+              <p className="text-gray-300 text-sm">
+                {t("cards.uptime.desc")}
+              </p>
             </div>
           </div>
 
           {/* Team Size */}
-          <div className="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
+          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
                 <Award className="w-6 h-6 text-black" />
               </div>
               <div>
                 <h3 className="text-white text-lg font-semibold">
-                  Expert Team
+                  {t("cards.team.title")}
                 </h3>
-                <p className="text-gray-400 text-sm">Global professionals</p>
+                <p className="text-gray-400 text-sm">{t("cards.team.subtitle")}</p>
               </div>
             </div>
             <div className="space-y-2">
               <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
                 {counts.team}+
               </div>
-              <p className="text-gray-300 text-sm">Industry experts</p>
+              <p className="text-gray-300 text-sm">{t("cards.team.desc")}</p>
             </div>
           </div>
         </div>
 
         {/* Additional Stats */}
-        <div className="mt-16 grid md:grid-cols-4 gap-8">
+        <div className="mt-20 flex flex-wrap justify-center gap-8 lg:gap-16 pt-12 border-t border-black">
           <div className="text-center">
-            <div className="text-2xl font-bold text-white mb-2">24/7</div>
-            <div className="text-gray-400">Support Available</div>
+            <div className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-bold no-wrap">
+              {t("footer.support")}
+            </div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-white mb-2">15+</div>
-            <div className="text-gray-400">Years Combined Experience</div>
+            <div className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-bold no-wrap">
+              {t("footer.experience")}
+            </div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-white mb-2">100%</div>
-            <div className="text-gray-400">Regulatory Compliant</div>
+            <div className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-bold no-wrap">
+              {t("footer.compliant")}
+            </div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-white mb-2">5</div>
-            <div className="text-gray-400">Global Offices</div>
+            <div className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-bold no-wrap">
+              {t("footer.offices")}
+            </div>
           </div>
         </div>
       </div>

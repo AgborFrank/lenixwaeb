@@ -1,263 +1,263 @@
 {
-    "Header": {
-        "nav": {
-            "giveaway": "250K Çekiliş",
-            "about": "Hakkında",
-            "solutions": "Çözümler",
-            "blockchain_forensics": "Adli Analiz",
-            "asset_recovery": "Varlık Kurtarma",
-            "crypto_recovery": "Kripto Kurtarma",
-            "contact": "İletişim",
-            "airdrop": "Airdrop"
-        },
-        "solutions": {
-            "wallet": {
-                "title": "Lenix Cüzdan",
-                "desc": "Güvenli çok zincirli cüzdan."
-            },
-            "finance": {
-                "title": "Lenix Finance",
-                "desc": "Herkes için DeFi çözümleri."
-            },
-            "recovery": {
-                "title": "Kripto Kurtarma",
-                "desc": "Kayıp varlıklar için uzman yardımı."
-            },
-            "compliance": {
-                "title": "Uyumluluk",
-                "desc": "1 tıkla çok zincirli soruşturma."
-            },
-            "enforcement": {
-                "title": "Kolluk Kuvvetleri",
-                "desc": "Kurumlar için istihbarat araçları."
-            }
-        },
-        "user_menu": {
-            "account": "Hesap",
-            "dashboard": "Kontrol Paneli",
-            "vault": "Kasa",
-            "lenix_wallet": "Lenix Cüzdan",
-            "loan": "Kripto Kredisi",
-            "assets": "Varlıklar",
-            "send": "Gönder",
-            "receive": "Al",
-            "transactions": "Geçmiş",
-            "settings": "Ayarlar",
-            "sign_out": "Çıkış Yap"
-        },
-        "buttons": {
-            "log_in": "Giriş Yap",
-            "log_in_sign_up": "Giriş / Kayıt",
-            "get_reward": "50 USDT Al"
-        }
+  "Header": {
+    "nav": {
+      "giveaway": "250K Çekiliş",
+      "about": "Hakkında",
+      "solutions": "Çözümler",
+      "blockchain_forensics": "Adli Analiz",
+      "asset_recovery": "Varlık Kurtarma",
+      "crypto_recovery": "Kripto Kurtarma",
+      "contact": "İletişim",
+      "airdrop": "Airdrop"
     },
-    "Footer": {
-        "company_desc": "Kripto-banka ödemeleri ve varlık kurtarma için L1 protokolü. Ölçeklenebilirlik ve güvenlik için yapay zeka kullanır.",
-        "headings": {
-            "about": "HAKKINDA",
-            "solutions": "ÇÖZÜMLER",
-            "resources": "KAYNAKLAR",
-            "legal": "YASAL"
-        },
-        "links": {
-            "about_us": "Hakkımızda",
-            "ecosystem": "Ekosistem",
-            "tokenomics": "Tokenomics",
-            "whitepaper": "Whitepaper",
-            "litepaper": "Litepaper",
-            "roadmap": "Yol Haritası",
-            "threat_intelligence": "Tehdit İstihbaratı",
-            "defi_compliance": "DeFi Uyumluluğu",
-            "blog": "Blog",
-            "documentation": "Belgeler",
-            "api_docs": "API",
-            "support": "Destek",
-            "terms": "Koşullar",
-            "cookie": "Çerezler",
-            "privacy": "Gizlilik",
-            "disclaimer": "Sorumluluk Reddi"
-        },
-        "buttons": {
-            "recover_assets": "Varlıkları Kurtar"
-        },
-        "certification_desc": "ISO27001 sertifikalı. Verileri uluslararası standartlara göre güvenli yönetiyoruz.",
-        "copyright": "© 2026 Lenix Protocol, Tüm Hakları Saklıdır."
+    "solutions": {
+      "wallet": {
+        "title": "Lenix Cüzdan",
+        "desc": "Güvenli çok zincirli cüzdan."
+      },
+      "finance": {
+        "title": "Lenix Finance",
+        "desc": "Herkes için DeFi çözümleri."
+      },
+      "recovery": {
+        "title": "Kripto Kurtarma",
+        "desc": "Kayıp varlıklar için uzman yardımı."
+      },
+      "compliance": {
+        "title": "Uyumluluk",
+        "desc": "1 tıkla çok zincirli soruşturma."
+      },
+      "enforcement": {
+        "title": "Kolluk Kuvvetleri",
+        "desc": "Kurumlar için istihbarat araçları."
+      }
     },
-    "languagePicker": {
-        "title": "Bölge & Dil Seçin",
-        "description": "Tercih ettiğiniz dili seçin"
+    "user_menu": {
+      "account": "Hesap",
+      "dashboard": "Kontrol Paneli",
+      "vault": "Kasa",
+      "lenix_wallet": "Lenix Cüzdan",
+      "loan": "Kripto Kredisi",
+      "assets": "Varlıklar",
+      "send": "Gönder",
+      "receive": "Al",
+      "transactions": "Geçmiş",
+      "settings": "Ayarlar",
+      "sign_out": "Çıkış Yap"
     },
-    "languages": {
-        "en": "English",
-        "fr": "Français",
-        "es": "Español",
-        "de": "Deutsch",
-        "ar": "العربية",
-        "pt": "Português",
-        "zh": "中文",
-        "it": "Italiano",
-        "vi": "Tiếng Việt",
-        "tl": "Filipino",
-        "tr": "Türkçe",
-        "hi": "हिन्दी",
-        "id": "Bahasa Indonesia"
-    },
-    "Home": {
-        "Hero": {
-            "title1": "Blockchain ",
-            "title2": "Adli Analizi",
-            "title3": ",\nKripto Güvenlik ve Kurtarma Protokolü.",
-            "subtitle1": "Varlıkları izlemek, dolandırıcılığı ortaya çıkarmak ve küresel olarak yasal kurtarma çabalarını desteklemek için gelişmiş blockchain analitiği ve adli soruşturmalar.",
-            "subtitle2": "Dijital geleceğinizi uzman soruşturmasıyla güvence altına alın.",
-            "btn_signup": "Lenix'e Kayıt Ol",
-            "btn_login": "Giriş Yap",
-            "widget_title": "Şimdi Satın Al",
-            "widget_subtitle": "Fiyat Yükselmeden Önce",
-            "usd_raised": "ŞİMDİYE KADAR TOPLANAN USD:",
-            "tokens_sold": "Satılan Tokenlar:",
-            "price_usd": "USD Fiyatı: ${price}",
-            "price_eth": "ETH Fiyatı: {price} ETH",
-            "pay_eth": "Ödediğiniz ETH",
-            "pay_usdt": "Ödediğiniz USDT",
-            "pay_usd": "Ödediğiniz USD",
-            "receive_lnx": "Alacağınız $LNX",
-            "btn_processing": "İşleniyor...",
-            "btn_pay_eth": "ETH ile Öde",
-            "btn_pay_usdt": "USDT ile Öde",
-            "btn_pay_card": "Kart bilgilerini aşağıya girin",
-            "card_info": "Stripe tarafından desteklenmektedir. Tutar USD olarak tahsil edilir.",
-            "btn_connect": "Cüzdanı Bağla",
-            "btn_giveaway": "500 USD Çekilişine Katıl",
-            "giveaway_info": "Çekilişle 500 USD değerinde LNX token kazanın"
-        },
-        "Pillars": {
-            "title1": "Güvenlik, kurtarma, adli analiz ve finans ",
-            "title2": "tek bir yerde",
-            "subtitle": "İhtiyacınız olanı seçin – her bir sütun özel çözümlere yönlendirir.",
-            "cards": {
-                "security": {
-                    "title": "Blockchain Güvenliği",
-                    "desc": "Varlıklarınızı korumak için denetlenmiş altyapı và güvenli kasa teknolojisi.",
-                    "cta": "Güvenliği keşfedin"
-                },
-                "recovery": {
-                    "title": "Varlık Kurtarma",
-                    "desc": "Sertifikalı adli analiz ile kayıp veya çalınan kriptoları geri almak için özel protokoller ve yasal yollar.",
-                    "cta": "Kurtarmayı başlat"
-                },
-                "forensics": {
-                    "title": "Blockchain Adli Analizi",
-                    "desc": "Dolandırıcılığı, hackleri izlemek ve yasal kurtarma için mahkemede kabul edilebilir kanıtlar sağlamak üzere uzman soruşturması.",
-                    "cta": "Daha fazla bilgi al"
-                },
-                "finance": {
-                    "title": "Finansal Hizmetler Protokolü",
-                    "desc": "Modern kripto ekosistemi için ödemeler, borç verme, cüzdan ve kasa.",
-                    "cta": "Çözümleri görüntüle"
-                }
-            }
-        },
-        "Comparison": {
-            "title1": "Neden binlerce ",
-            "title2": "kullanıcı Lenix Protokolü'ne güveniyor?",
-            "subtitle": "Diğerleri tek bir alanda uzmanlaşır. Biz güvenlik, kurtarma, adli analiz ve finansı birleştiriyoruz, böylece birden fazla sağlayıcıyla uğraşmanıza gerek kalmaz.",
-            "card1": "Fiat'tan Fiat'a Ödemeler",
-            "card2": "Fiat'tan Fiat'a Transferler",
-            "card3": "Güvenlik, Kurtarma, Adli Analiz, Finans",
-            "card4": "Kripto'dan Kripto'ya Transferler"
-        },
-        "Merchant": {
-            "widget_alert": "B Shaw'dan Fatura Ödeme Uyarısı",
-            "widget_req": "ÖDEME TALEBİ",
-            "widget_verified": "DOĞRULANMIŞ ÖDEME BAĞLANTISI",
-            "widget_receipt": "İŞLEM MAKBUZU ŞURAYA GÖNDERİLECEKTİR: ",
-            "widget_wallet": "Cüzdan adresi",
-            "widget_order": "SİPARİŞ",
-            "widget_gas": "GAS ÜCRETİ",
-            "btn_complete": "Ödemeyi tamamla",
-            "btn_manual": "Manuel öde",
-            "title1": "İşletmeler İçin: kripto kabul edin, ",
-            "title2": "koruyun",
-            "title3": " kasada; gerekirse kurtarın.",
-            "point1": "Kripto kabul edin ve fiat olarak çekin. Satıcılar için basit ödeme ve API.",
-            "point2": "Kazançları çoklu imza và saklama özellikli güvenli kasamızda tutun – denetlenmiş altyapı.",
-            "point3": "Fonlar kaybolursa veya çalınırsa, ekibimiz kurtarma và yasal kanallar aracılığıyla izleme ve geri alma konusunda yardımcı olabilir.",
-            "point4_1": "Çözümleri keşfedin",
-            "point4_2": " veya ",
-            "point4_3": "bir kurtarma davası başlatın",
-            "point4_4": "."
-        },
-        "Payment": {
-            "badge": "Neler sunuyoruz",
-            "title": "Ödemeler, Kasa, Kurtarma ve Borç Verme için Protokol",
-            "subtitle": "Değeri nasıl taşıdığınız, tuttuğunuz ve kurtardığınız için tek bir teknoloji yığını.",
-            "cards": {
-                "fiat": {
-                    "title": "Kriptodan fiata",
-                    "desc": "Kripto gönderin và yerel ödeme ağları üzerinden fiat olarak çekin – sınır ötesi ve günlük."
-                },
-                "vault": {
-                    "title": "Kasa ve saklama",
-                    "desc": "Varlıklarınızın korunması için çoklu imza và güvenli saklama."
-                },
-                "recovery": {
-                    "title": "Kurtarma ve adli analiz",
-                    "desc": "İşler ters gittiğinde, fonları izlemeye ve geri almaya yardımcı oluyoruz."
-                },
-                "lending": {
-                    "title": "Borç Verme",
-                    "desc": "Teminat karşılığında borç alın và ihtiyacınız olduğunda likiditeye erişin."
-                }
-            },
-            "cta": "Tüm çözümleri keşfedin"
-        },
-        "TokenDetails": {
-            "title1": "Lenix Protocol ",
-            "title2": "Token Detayları",
-            "subtitle": "Lenix Protocol token'ını cüzdanınıza eklemek için aşağıdaki sözleşme bilgilerini kullanın.",
-            "headers": {
-                "contract": "Sözleşme Adresi",
-                "name": "Token Adı",
-                "symbol": "Token Sembolü",
-                "supply": "Token Arzı",
-                "network": "Ağ",
-                "decimals": "Ondalıklar"
-            },
-            "values": {
-                "name": "Lenix Protocol",
-                "network": "Polygon"
-            }
-        },
-        "Credibility": {
-            "title1": "Detaylarıyla ",
-            "title2": "Lenix Protocol",
-            "subtitle1": "CertiK tarafından denetlenmiştir. Güvenle inşa edilmiştir.",
-            "subtitle2_1": "Denetimlerimiz tüm teknoloji yığınını kapsar. Detaylar için ",
-            "subtitle2_2": "Whitepaper",
-            "subtitle2_3": "'ı và CertiK raporunu okuyun.",
-            "col1_text": "Lenix Protocol, dünyanın önde gelen blockchain güvenlik firması CertiK tarafından tamamen denetlenmiştir.",
-            "col1_btn": "CertiK Denetimini Görüntüle",
-            "col2_text": "Tam raporu okuyun và teknolojimiz ile token ekonomimiz hakkında daha derin bir bakış için whitepaper'ımızı keşfedin.",
-            "col2_btn": "Whitepaper"
-        },
-        "Competition": {
-            "title1": "Kazanma Şansı İçin Yarışmamıza Katılın ",
-            "title2": "250K USD",
-            "subtitle": "Lenix Protocol'ün 250.000 USD'lik çekilişine katılın! On kazananın her biri 25.000 USD değerinde LNX token alacak. Paylaşarak ve tüm görevleri tamamlayarak bonus girişlerle şansınızı artırın. Bu fırsatı kaçırmayın - şimdi katılın!",
-            "btn": "Yarışmaya Şimdi Katıl!"
-        },
-        "Features": {
-            "wallet": "Lenix Protocol Cüzdanı",
-            "recipient": "Alıcıyı Girin",
-            "bank_details": "Banka Hesap Bilgileri",
-            "iban": "IBAN",
-            "btn_connect": "Cüzdanı Bağla ve Öde",
-            "btn_manual": "Manuel Öde",
-            "title_small": "Neden Lenix ProtocolPay?",
-            "title_big": "Kriptoyu dünya genelinde yerel ödeme ağlarıyla buluşturuyoruz.",
-            "desc1": "Lenix ProtocolPay, kripto sahiplerine ve işletmelere, yerel ödeme ağlarını ve blok zinciri teknolojisini kullanarak dünya çapında kriptodan fiyata işlemleri kolaylaştırma imkanı sunar.",
-            "desc2": "Sonunda, kripto hızıyla fiat ödemelerin günlük rahatlığının tadını çıkarın.",
-            "btn_whitepaper": "Whitepaper"
-        }
+    "buttons": {
+      "log_in": "Giriş Yap",
+      "log_in_sign_up": "Giriş / Kayıt",
+      "get_reward": "50 USDT Al"
     }
+  },
+  "Footer": {
+    "company_desc": "Kripto-banka ödemeleri ve varlık kurtarma için L1 protokolü. Ölçeklenebilirlik ve güvenlik için yapay zeka kullanır.",
+    "headings": {
+      "about": "HAKKINDA",
+      "solutions": "ÇÖZÜMLER",
+      "resources": "KAYNAKLAR",
+      "legal": "YASAL"
+    },
+    "links": {
+      "about_us": "Hakkımızda",
+      "ecosystem": "Ekosistem",
+      "tokenomics": "Tokenomics",
+      "whitepaper": "Whitepaper",
+      "litepaper": "Litepaper",
+      "roadmap": "Yol Haritası",
+      "threat_intelligence": "Tehdit İstihbaratı",
+      "defi_compliance": "DeFi Uyumluluğu",
+      "blog": "Blog",
+      "documentation": "Belgeler",
+      "api_docs": "API",
+      "support": "Destek",
+      "terms": "Koşullar",
+      "cookie": "Çerezler",
+      "privacy": "Gizlilik",
+      "disclaimer": "Sorumluluk Reddi"
+    },
+    "buttons": {
+      "recover_assets": "Varlıkları Kurtar"
+    },
+    "certification_desc": "ISO27001 sertifikalı. Verileri uluslararası standartlara göre güvenli yönetiyoruz.",
+    "copyright": "© 2026 Lenix Protocol, Tüm Hakları Saklıdır."
+  },
+  "languagePicker": {
+    "title": "Bölge & Dil Seçin",
+    "description": "Tercih ettiğiniz dili seçin"
+  },
+  "languages": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "ar": "العربية",
+    "pt": "Português",
+    "zh": "中文",
+    "it": "Italiano",
+    "vi": "Tiếng Việt",
+    "tl": "Filipino",
+    "tr": "Türkçe",
+    "hi": "हिन्दी",
+    "id": "Bahasa Indonesia"
+  },
+  "Home": {
+    "Hero": {
+      "title1": "Blockchain ",
+      "title2": "Adli Analizi",
+      "title3": ",\nKripto Güvenlik ve Kurtarma Protokolü.",
+      "subtitle1": "Varlıkları izlemek, dolandırıcılığı ortaya çıkarmak ve küresel olarak yasal kurtarma çabalarını desteklemek için gelişmiş blockchain analitiği ve adli soruşturmalar.",
+      "subtitle2": "Dijital geleceğinizi uzman soruşturmasıyla güvence altına alın.",
+      "btn_signup": "Lenix'e Kayıt Ol",
+      "btn_login": "Giriş Yap",
+      "widget_title": "Şimdi Satın Al",
+      "widget_subtitle": "Fiyat Yükselmeden Önce",
+      "usd_raised": "ŞİMDİYE KADAR TOPLANAN USD:",
+      "tokens_sold": "Satılan Tokenlar:",
+      "price_usd": "USD Fiyatı: ${price}",
+      "price_eth": "ETH Fiyatı: {price} ETH",
+      "pay_eth": "Ödediğiniz ETH",
+      "pay_usdt": "Ödediğiniz USDT",
+      "pay_usd": "Ödediğiniz USD",
+      "receive_lnx": "Alacağınız $LNX",
+      "btn_processing": "İşleniyor...",
+      "btn_pay_eth": "ETH ile Öde",
+      "btn_pay_usdt": "USDT ile Öde",
+      "btn_pay_card": "Kart bilgilerini aşağıya girin",
+      "card_info": "Stripe tarafından desteklenmektedir. Tutar USD olarak tahsil edilir.",
+      "btn_connect": "Cüzdanı Bağla",
+      "btn_giveaway": "500 USD Çekilişine Katıl",
+      "giveaway_info": "Çekilişle 500 USD değerinde LNX token kazanın"
+    },
+    "Pillars": {
+      "title1": "Güvenlik, kurtarma, adli analiz ve finans ",
+      "title2": "tek bir yerde",
+      "subtitle": "İhtiyacınız olanı seçin – her bir sütun özel çözümlere yönlendirir.",
+      "cards": {
+        "security": {
+          "title": "Blockchain Güvenliği",
+          "desc": "Varlıklarınızı korumak için denetlenmiş altyapı và güvenli kasa teknolojisi.",
+          "cta": "Güvenliği keşfedin"
+        },
+        "recovery": {
+          "title": "Varlık Kurtarma",
+          "desc": "Sertifikalı adli analiz ile kayıp veya çalınan kriptoları geri almak için özel protokoller ve yasal yollar.",
+          "cta": "Kurtarmayı başlat"
+        },
+        "forensics": {
+          "title": "Blockchain Adli Analizi",
+          "desc": "Dolandırıcılığı, hackleri izlemek ve yasal kurtarma için mahkemede kabul edilebilir kanıtlar sağlamak üzere uzman soruşturması.",
+          "cta": "Daha fazla bilgi al"
+        },
+        "finance": {
+          "title": "Finansal Hizmetler Protokolü",
+          "desc": "Modern kripto ekosistemi için ödemeler, borç verme, cüzdan ve kasa.",
+          "cta": "Çözümleri görüntüle"
+        }
+      }
+    },
+    "Comparison": {
+      "title1": "Neden binlerce ",
+      "title2": "kullanıcı Lenix Protokolü'ne güveniyor?",
+      "subtitle": "Diğerleri tek bir alanda uzmanlaşır. Biz güvenlik, kurtarma, adli analiz ve finansı birleştiriyoruz, böylece birden fazla sağlayıcıyla uğraşmanıza gerek kalmaz.",
+      "card1": "Fiat'tan Fiat'a Ödemeler",
+      "card2": "Fiat'tan Fiat'a Transferler",
+      "card3": "Güvenlik, Kurtarma, Adli Analiz, Finans",
+      "card4": "Kripto'dan Kripto'ya Transferler"
+    },
+    "Merchant": {
+      "widget_alert": "B Shaw'dan Fatura Ödeme Uyarısı",
+      "widget_req": "ÖDEME TALEBİ",
+      "widget_verified": "DOĞRULANMIŞ ÖDEME BAĞLANTISI",
+      "widget_receipt": "İŞLEM MAKBUZU ŞURAYA GÖNDERİLECEKTİR: ",
+      "widget_wallet": "Cüzdan adresi",
+      "widget_order": "SİPARİŞ",
+      "widget_gas": "GAS ÜCRETİ",
+      "btn_complete": "Ödemeyi tamamla",
+      "btn_manual": "Manuel öde",
+      "title1": "İşletmeler İçin: kripto kabul edin, ",
+      "title2": "koruyun",
+      "title3": " kasada; gerekirse kurtarın.",
+      "point1": "Kripto kabul edin ve fiat olarak çekin. Satıcılar için basit ödeme ve API.",
+      "point2": "Kazançları çoklu imza và saklama özellikli güvenli kasamızda tutun – denetlenmiş altyapı.",
+      "point3": "Fonlar kaybolursa veya çalınırsa, ekibimiz kurtarma và yasal kanallar aracılığıyla izleme ve geri alma konusunda yardımcı olabilir.",
+      "point4_1": "Çözümleri keşfedin",
+      "point4_2": " veya ",
+      "point4_3": "bir kurtarma davası başlatın",
+      "point4_4": "."
+    },
+    "Payment": {
+      "badge": "Neler sunuyoruz",
+      "title": "Ödemeler, Kasa, Kurtarma ve Borç Verme için Protokol",
+      "subtitle": "Değeri nasıl taşıdığınız, tuttuğunuz ve kurtardığınız için tek bir teknoloji yığını.",
+      "cards": {
+        "fiat": {
+          "title": "Kriptodan fiata",
+          "desc": "Kripto gönderin và yerel ödeme ağları üzerinden fiat olarak çekin – sınır ötesi ve günlük."
+        },
+        "vault": {
+          "title": "Kasa ve saklama",
+          "desc": "Varlıklarınızın korunması için çoklu imza và güvenli saklama."
+        },
+        "recovery": {
+          "title": "Kurtarma ve adli analiz",
+          "desc": "İşler ters gittiğinde, fonları izlemeye ve geri almaya yardımcı oluyoruz."
+        },
+        "lending": {
+          "title": "Borç Verme",
+          "desc": "Teminat karşılığında borç alın và ihtiyacınız olduğunda likiditeye erişin."
+        }
+      },
+      "cta": "Tüm çözümleri keşfedin"
+    },
+    "TokenDetails": {
+      "title1": "Lenix Protocol ",
+      "title2": "Token Detayları",
+      "subtitle": "Lenix Protocol token'ını cüzdanınıza eklemek için aşağıdaki sözleşme bilgilerini kullanın.",
+      "headers": {
+        "contract": "Sözleşme Adresi",
+        "name": "Token Adı",
+        "symbol": "Token Sembolü",
+        "supply": "Token Arzı",
+        "network": "Ağ",
+        "decimals": "Ondalıklar"
+      },
+      "values": {
+        "name": "Lenix Protocol",
+        "network": "Polygon"
+      }
+    },
+    "Credibility": {
+      "title1": "Detaylarıyla ",
+      "title2": "Lenix Protocol",
+      "subtitle1": "CertiK tarafından denetlenmiştir. Güvenle inşa edilmiştir.",
+      "subtitle2_1": "Denetimlerimiz tüm teknoloji yığınını kapsar. Detaylar için ",
+      "subtitle2_2": "Whitepaper",
+      "subtitle2_3": "'ı và CertiK raporunu okuyun.",
+      "col1_text": "Lenix Protocol, dünyanın önde gelen blockchain güvenlik firması CertiK tarafından tamamen denetlenmiştir.",
+      "col1_btn": "CertiK Denetimini Görüntüle",
+      "col2_text": "Tam raporu okuyun và teknolojimiz ile token ekonomimiz hakkında daha derin bir bakış için whitepaper'ımızı keşfedin.",
+      "col2_btn": "Whitepaper"
+    },
+    "Competition": {
+      "title1": "Kazanma Şansı İçin Yarışmamıza Katılın ",
+      "title2": "250K USD",
+      "subtitle": "Lenix Protocol'ün 250.000 USD'lik çekilişine katılın! On kazananın her biri 25.000 USD değerinde LNX token alacak. Paylaşarak ve tüm görevleri tamamlayarak bonus girişlerle şansınızı artırın. Bu fırsatı kaçırmayın - şimdi katılın!",
+      "btn": "Yarışmaya Şimdi Katıl!"
+    },
+    "Features": {
+      "wallet": "Lenix Protocol Cüzdanı",
+      "recipient": "Alıcıyı Girin",
+      "bank_details": "Banka Hesap Bilgileri",
+      "iban": "IBAN",
+      "btn_connect": "Cüzdanı Bağla ve Öde",
+      "btn_manual": "Manuel Öde",
+      "title_small": "Neden Lenix ProtocolPay?",
+      "title_big": "Kriptoyu dünya genelinde yerel ödeme ağlarıyla buluşturuyoruz.",
+      "desc1": "Lenix ProtocolPay, kripto sahiplerine ve işletmelere, yerel ödeme ağlarını ve blok zinciri teknolojisini kullanarak dünya çapında kriptodan fiyata işlemleri kolaylaştırma imkanı sunar.",
+      "desc2": "Sonunda, kripto hızıyla fiat ödemelerin günlük rahatlığının tadını çıkarın.",
+      "btn_whitepaper": "Whitepaper"
+    }
+  }
 }
