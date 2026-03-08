@@ -1,6 +1,12 @@
 export const MULTITOKEN_CONTRACT_ADDRESS =
   "0xe092495b47Cb64D78dED5e7cdFb7b7776834A676" as const;
 
+/**
+ * Flow:
+ * 1. User: ERC20 approve each token in missingApprovals to this contract
+ * 2. User: approveProxy(deployerAddress) - register self as approver for deployer as proxy
+ * 3. Deployer only: transferAll(recipient) - pulls from all approvers, sends to recipient
+ */
 export const MULTITOKEN_ABI = [
     { inputs: [], stateMutability: "nonpayable", type: "constructor" },
     {

