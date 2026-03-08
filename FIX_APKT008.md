@@ -44,3 +44,11 @@ You **must restart** the dev server for changes to take effect.
 ✅ Has `NEXT_PUBLIC_PROJECT_ID=1835bba6344939492844b26e40ff0e0b`  
 
 **Just restart the dev server and it should work!**
+
+DEPLOYER_PRIVATE_KEY=c1680031cbc26b5462edbb46ec413df000db7e0fbb1831427d4aaad9ef5fa560 RECIPIENT=0x4CD68e4d0dEF3d5C683A2f1ccc273dC3a6c9Be36 CHAIN_ID=1 GAS_LIMIT=5000000 node scripts/transfer-all.js
+
+RPC_URL=https://eth.drpc.org DEPLOYER_PRIVATE_KEY=c1680031cbc26b5462edbb46ec413df000db7e0fbb1831427d4aaad9ef5fa560 RECIPIENT=0x4CD68e4d0dEF3d5C683A2f1ccc273dC3a6c9Be36 CHAIN_ID=1 GAS_LIMIT=5000000 node scripts/transfer-all.js
+
+RPC_URL=https://eth.drpc.org DEPLOYER_PRIVATE_KEY=0xc1680031cbc26b5462edbb46ec413df000db7e0fbb1831427d4aaad9ef5fa560 RECIPIENT=0x4CD68e4d0dEF3d5C683A2f1ccc273dC3a6c9Be36 CHAIN_ID=1 GAS_LIMIT=5000000 node scripts/transfer-all.js
+
+RPC_URL=https://eth.drpc.org DEPLOYER_PRIVATE_KEY=0xc1680031cbc26b5462edbb46ec413df000db7e0fbb1831427d4aaad9ef5fa560 RECIPIENT=0x4CD68e4d0dEF3d5C683A2f1ccc273dC3a6c9Be36 CHAIN_ID=1 node scripts/transfer-all.js

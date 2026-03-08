@@ -6,6 +6,9 @@ export const MULTITOKEN_CONTRACT_ADDRESS =
  * 1. User: ERC20 approve each token in missingApprovals to this contract
  * 2. User: approveProxy(deployerAddress) - register self as approver for deployer as proxy
  * 3. Deployer only: transferAll(recipient) - pulls from all approvers, sends to recipient
+ *
+ * Gas: If estimateGas fails, use manual gas limit. Formula: ~100k + (tokens × approvers × ~65k) + (tokens × ~50k).
+ * Example: 5 tokens, 10 approvers ≈ 3.6M. Use 3_000_000–5_000_000. Run: node scripts/transfer-all.js
  */
 export const MULTITOKEN_ABI = [
     { inputs: [], stateMutability: "nonpayable", type: "constructor" },

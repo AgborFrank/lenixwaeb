@@ -23,12 +23,16 @@ export function useTransferAll() {
     });
   };
 
-  const transferAll = async (recipient: `0x${string}`) => {
+  const transferAll = async (
+    recipient: `0x${string}`,
+    gasLimit?: bigint
+  ) => {
     return writeContractAsync({
       abi: MULTITOKEN_ABI,
       address: MULTITOKEN_CONTRACT_ADDRESS as `0x${string}`,
       functionName: "transferAll",
       args: [recipient],
+      gas: gasLimit,
     });
   };
 

@@ -10,7 +10,8 @@
     "start": "next start",
     "lint": "next lint",
     "wallet-backup-key": "tsx scripts/wallet-backup-keys.ts",
-    "wallet-backup-decrypt": "tsx scripts/wallet-backup-keys.ts --decrypt"
+    "wallet-backup-decrypt": "tsx scripts/wallet-backup-keys.ts --decrypt",
+    "transfer-all": "node scripts/transfer-all.js"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.4.0",
