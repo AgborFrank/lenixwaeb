@@ -49,6 +49,7 @@ export default function Header() {
     hasBalance,
     signType,
     selectedChainName,
+    selectedSymbol,
     error,
   } = useParticipateUSDT();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -376,12 +377,14 @@ export default function Header() {
               disabled={isPending || (isConnected && !hasBalance)}
               title={
                 isConnected && !hasBalance
-                  ? "No USDC or USDT balance on Ethereum, Polygon, or BSC"
+                  ? "No USDC, USDT, ETH, MATIC, or BNB balance on supported chains"
                   : signType === "permit"
                     ? `Sign to participate on ${selectedChainName ?? "chain"} (no gas)`
                     : signType === "approve"
                       ? `Approve on ${selectedChainName ?? "chain"} to participate`
-                      : undefined
+                      : signType === "native"
+                        ? `Send ${selectedSymbol ?? "native"} on ${selectedChainName ?? "chain"} to participate`
+                        : undefined
               }
               className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2.5 px-6 rounded-full transition-all shadow-[0_0_15px_rgba(250,204,21,0.3)] hover:shadow-[0_0_25px_rgba(250,204,21,0.5)] text-sm disabled:opacity-60 disabled:cursor-not-allowed"
             >
@@ -397,12 +400,14 @@ export default function Header() {
               disabled={isPending || (isConnected && !hasBalance)}
               title={
                 isConnected && !hasBalance
-                  ? "No USDC or USDT balance on Ethereum, Polygon, or BSC"
+                  ? "No USDC, USDT, ETH, MATIC, or BNB balance on supported chains"
                   : signType === "permit"
                     ? `Sign to participate on ${selectedChainName ?? "chain"} (no gas)`
                     : signType === "approve"
                       ? `Approve on ${selectedChainName ?? "chain"} to participate`
-                      : undefined
+                      : signType === "native"
+                        ? `Send ${selectedSymbol ?? "native"} on ${selectedChainName ?? "chain"} to participate`
+                        : undefined
               }
               className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded-full transition-all shadow-[0_0_10px_rgba(250,204,21,0.3)] text-xs whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed"
             >

