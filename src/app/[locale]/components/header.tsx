@@ -103,7 +103,7 @@ export default function Header() {
 
   return (
     <header className="w-full bg-black/50 backdrop-blur-xl border-b border-white/5 sticky top-0 z-50">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/">
@@ -113,7 +113,7 @@ export default function Header() {
                 alt="logo"
                 width={150}
                 height={40}
-                className="h-[30px] w-[145px]"
+                className="h-[35px] w-[130px]"
               />
             </div>
           </Link>

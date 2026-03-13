@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Wallet, ChevronRight, RefreshCw, ArrowUpRight, ArrowDownLeft, Repeat, Landmark, Globe, ArrowRightLeft, Clock, Settings } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WalletHero() {
   return (
@@ -44,9 +45,9 @@ export default function WalletHero() {
               Unlock crypto loans and recover lost assets with our proprietary protocol.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-8 py-6 rounded-full font-bold">
+              <Link href="https://shorturl.at/FVVpk" target="_blank" className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-8 py-3 rounded-full font-bold">
                 Download App
-              </Button>
+              </Link>
               <Button variant="outline" className="border-white/20 text-white hover:bg-white/10 text-lg px-8 py-6 rounded-full">
                 Learn More
               </Button>

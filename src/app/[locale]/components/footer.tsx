@@ -277,10 +277,10 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-6 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-gray-400 text-sm">{t("Footer.copyright")}</p>
           <div className="playstore flex items-center gap-2">
-            <Link href="https://transfer.it/t/K0t00K432LYI" target="_blank"> 
+            <Link href="https://shorturl.at/FVVpk" target="_blank"> 
               <Image src="/assets/img/google-2.webp" alt="Playstore" className="bg-white rounded-lg" width={100} height={100} />
             </Link>
-            <Link href="https://transfer.it/t/K0t00K432LYI" target="_blank"> 
+            <Link href="https://shorturl.at/FVVpk" target="_blank"> 
               <Image src="/assets/img/appstore.png" className="bg-white rounded-lg" alt="Appstore" width={100} height={100} />
             </Link>
           </div>

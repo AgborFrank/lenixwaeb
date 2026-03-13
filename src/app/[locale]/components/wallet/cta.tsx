@@ -12,7 +12,7 @@ export default function WalletCTA() {
               Join thousands of users who trust Lenix Wallet for their asset management, loans, and recovery needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/download" className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-10 py-3 rounded-full font-bold shadow-[0_0_20px_rgba(249,255,56,0.3)] hover:shadow-[0_0_30px_rgba(249,255,56,0.5)] transition-shadow">
+              <Link href="https://shorturl.at/FVVpk" target="_blank" className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-10 py-3 rounded-full font-bold shadow-[0_0_20px_rgba(249,255,56,0.3)] hover:shadow-[0_0_30px_rgba(249,255,56,0.5)] transition-shadow">
                 Download Wallet
               </Link>
           </div>
