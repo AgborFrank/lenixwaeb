@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "Krypto-Asset-Identifikationsdienste",
+    "title1": "Aufdeckung verborgener Kryptowährungen und Identifizierung digitaler Assets",
+    "subtitle1": "Die Lokalisierung und Überprüfung digitaler Bestände ist zu einem entscheidenden Bestandteil moderner Ermittlungen geworden.",
+    "desc1": "Angesichts der zunehmenden Nutzung von Kryptowährungen sowohl bei legitimen als auch bei illegalen Finanzaktivitäten ist die Lokalisierung und Überprüfung digitaler Bestände unerlässlich. Lenix Protocol bietet Experten-Dienste zur Krypto-Asset-Identifikation, um Anwälten, Ermittlern und Finanzexperten dabei zu helfen, digitales Vermögen aufzuspüren, zu dokumentieren und zu validieren – selbst wenn es absichtlich verborgen wurde.",
+    "desc2": "Unser Team nutzt modernste Blockchain-Tools und forensische Methoden, um ein umfassendes Kryptowährungs-Tracing durchzuführen, einschließlich der Lokalisierung von Wallets, der Analyse der Transaktionshistorie und der Identifizierung potenzieller Börsen.",
+    "btn_consultation": "Fordern Sie noch heute eine Beratung an"
+  },
+  "Coverage": {
+    "title": "Was Unsere Identifikationsdienste Abdecken",
+    "desc": "Unsere Ermittlungen sind darauf zugeschnitten, zivil-, straf- und aufsichtsrechtliche Angelegenheiten zu unterstützen, darunter:",
+    "card1_title": "Scheidungen und familienrechtliche Streitigkeit",
+    "card1_desc": "In Bezug auf verborgene Krypto-Assets.",
+    "card2_title": "Betrug, Diebstahl und Unterschlagung",
+    "card2_desc": "Fälle mit digitalen Währungskomponenten.",
+    "card3_title": "Interne Ermittlungen in Unternehmen",
+    "card3_desc": "In Bezug auf veruntreute Gelder.",
+    "card4_title": "Nachlassplanung und Erbrechtsangelegenheiten",
+    "card4_desc": "Mit unbekannten oder nicht deklarierten Vermögenswerten.",
+    "card5_title": "Insolvenz oder Zwangsvollstreckung",
+    "card5_desc": "Die eine Identifizierung von Vermögenswerten erfordern.",
+    "footer": "Lenix Protocol arbeitet sowohl mit Kläger- als auch mit Beklagtenvertretern zusammen und fungiert als neutraler Gutachter bei der Vermögensaufteilung und -bewertung."
+  },
+  "Methods": {
+    "title": "Methoden für das Kryptowährungs-Tracing",
+    "card1_title": "Blockchain-Wallet-Identifizierung",
+    "card1_desc": "Und Verknüpfungsanalyse.",
+    "card2_title": "Transaktionsüberwachung",
+    "card2_desc": "Über öffentliche und private Blockchains hinweg.",
+    "card3_title": "NFT-Eigentumsverifizierung",
+    "card3_desc": "Und Verfolgung von Übertragungen.",
+    "card4_title": "Identifizierung von Börsenkonten",
+    "card4_desc": "Und Transaktions-Off-Ramps.",
+    "card5_title": "Querverweis-Metadaten",
+    "card5_desc": "Und Gerätebeweise für die Wallet-Attribuierung.",
+    "footer": "Unsere Arbeit zur Identifizierung digitaler Assets wird mit forensisch einwandfreien Techniken durchgeführt, die die Integrität der Beweise für die Verwendung vor Gericht bewahren."
+  },
+  "WhyChooseUs": {
+    "title": "Warum Lenix Protocol wählen?",
+    "desc": "Bei Lenix Protocol helfen unsere Dienste zur Krypto-Asset-Identifikation dabei, das volle Ausmaß des finanziellen Bildes einer Person in einer digitalen Welt offenzulegen. Wir helfen Kunden, die digitalen Assets zu finden, die andere zu verbergen hofften.",
+    "point1_title": "Nachgewiesene Expertise",
+    "point1_desc": "Im Kryptowährungs-Tracing und in der Blockchain-Forensik.",
+    "point2_title": "Erfahrung in der Identifizierung verborgener Assets",
+    "point2_desc": "Über verschiedene Rechtsgebiete hinweg.",
+    "point3_title": "Gerichtlich qualifizierte Sachverständigengutachten",
+    "point3_desc": "In staatlichen, bundesstaatlichen und internationalen Gerichtsbarkeiten.",
+    "point4_title": "Klare, vertretbare Berichte",
+    "point4_desc": "Maßgeschneidert für Rechtsstreitigkeiten oder Compliance."
+  },
+  "CTA": {
+    "title": "Kontaktieren Sie uns",
+    "title_highlight": "heute",
+    "desc_part1": "Rufen Sie uns heute an unter",
+    "desc_part2": "um Ihren Bedarf an Krypto-Asset-Identifikation zu besprechen und zu erfahren, wie das Lenix Protocol Ihren Fall unterstützen kann.",
+    "email_label": "E-Mail an unser Team",
+    "phone_label": "Rufen Sie unser Büro an"
+  }
+}

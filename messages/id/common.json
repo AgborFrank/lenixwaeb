@@ -75,7 +75,9 @@
       "terms": "Ketentuan",
       "cookie": "Cookie",
       "privacy": "Privasi",
-      "disclaimer": "Penafian"
+      "disclaimer": "Penafian",
+      "wallet_decryption": "Dekripsi Dompet",
+      "crypto_asset_identification": "Identifikasi Aset Kripto"
     },
     "buttons": {
       "recover_assets": "Pulihkan Aset"

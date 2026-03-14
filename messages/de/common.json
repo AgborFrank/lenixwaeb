@@ -75,7 +75,9 @@
       "terms": "AGB",
       "cookie": "Cookies",
       "privacy": "Datenschutz",
-      "disclaimer": "Haftungsausschluss"
+      "disclaimer": "Haftungsausschluss",
+      "wallet_decryption": "Wallet-Entschlüsselung",
+      "crypto_asset_identification": "Krypto-Asset-Identifikation"
     },
     "buttons": {
       "recover_assets": "Assets zurückholen"

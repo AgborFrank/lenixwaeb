@@ -75,7 +75,9 @@
       "terms": "Điều khoản",
       "cookie": "Cookie",
       "privacy": "Quyền riêng tư",
-      "disclaimer": "Tuyên bố từ chối"
+      "disclaimer": "Tuyên bố từ chối",
+      "wallet_decryption": "Giải mã Ví",
+      "crypto_asset_identification": "Nhận dạng Tài sản Crypto"
     },
     "buttons": {
       "recover_assets": "Thu hồi tài sản"

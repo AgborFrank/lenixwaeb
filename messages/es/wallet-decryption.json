@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "badge": "Servicios de Desencriptación de Billeteras Cripto",
+    "title1": "Servicios de Desbloqueo de Billeteras de Criptomonedas",
+    "subtitle1": "Servicios de Desencriptación de Billeteras de Monedas Digitales",
+    "desc1": "En el mundo de las criptomonedas en rápida evolución, asegurar el acceso a sus activos es primordial. Los Servicios de Desencriptación de Billeteras Cripto de Lenix Protocol brindan un apoyo crucial a individuos y organizaciones que han perdido acceso a sus billeteras.",
+    "desc2": "Ya sea por contraseñas olvidadas, claves de acceso perdidas o archivos de billetera corruptos, nuestro equipo de expertos se especializa en recuperar y desencriptar su moneda digital de manera segura.",
+    "btn_consultation": "Solicitar una Consulta Hoy"
+  },
+  "Approach": {
+    "title": "Nuestro Enfoque para la Desencriptación de Billeteras",
+    "card1_title": "Consulta Inicial y Evaluación de Riesgos",
+    "card1_desc": "Comprender los detalles de su situación para proporcionar una estrategia de recuperación a medida.",
+    "card2_title": "Técnicas Avanzadas de Desencriptación",
+    "card2_desc": "Uso de tecnología de punta y metodologías exclusivas para intentar recuperar contraseñas y claves de encriptación.",
+    "card3_title": "Manejo Interno Nativo",
+    "card3_desc": "Garantizando la integridad y seguridad de sus datos durante todo el proceso de desencriptación."
+  },
+  "WhyChooseUs": {
+    "title": "¿Por Qué Elegir Lenix Protocol para la Recuperación de Billeteras Cripto?",
+    "desc": "El equipo de expertos de Lenix Protocol es su solución ideal para los Servicios de Desencriptación de Billeteras Cripto. Aportamos una metodología especializada y un historial comprobado a cada compromiso de recuperación.",
+    "point1_title": "Experiencia en Seguridad de Criptomonedas",
+    "point1_desc": "Profundo conocimiento de la tecnología blockchain y las arquitecturas de billeteras.",
+    "point2_title": "Servicio Confidencial y Ético",
+    "point2_desc": "Todas las operaciones se realizan con el máximo respeto por la privacidad y la legalidad por individuos que han tenido autorizaciones de seguridad de nivel Secreto y expertos académicos.",
+    "point3_title": "Tasa de Éxito",
+    "point3_desc": "Historial comprobado en la recuperación de acceso a billeteras encriptadas para clientes de todo el mundo."
+  },
+  "CTA": {
+    "title": "Contáctenos",
+    "title_highlight": "hoy",
+    "desc_part1": "Contáctenos hoy al",
+    "desc_part2": "para obtener más información sobre cómo Lenix Protocol puede ayudar con la Desencriptación de Billeteras Cripto.",
+    "email_label": "Envíe un correo a nuestro equipo",
+    "phone_label": "Llame a nuestra oficina"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "Layanan Identifikasi Aset Kripto",
+    "title1": "Mengungkap Cryptocurrency Tersembunyi dan Identifikasi Aset Digital",
+    "subtitle1": "Menemukan dan memverifikasi kepemilikan digital telah menjadi bagian penting dari investigasi modern.",
+    "desc1": "Dengan meningkatnya penggunaan cryptocurrency, menemukan dan memverifikasi kepemilikan digital sangatlah penting. Lenix Protocol menyediakan layanan ahli untuk membantu pengacara melacak kekayaan digital.",
+    "desc2": "Tim kami menggunakan alat blockchain mutakhir dan metodologi forensik untuk melakukan pelacakan komprehensif.",
+    "btn_consultation": "Minta Konsultasi Hari Ini"
+  },
+  "Coverage": {
+    "title": "Cakupan Layanan Identifikasi Kami",
+    "desc": "Investigasi kami disesuaikan untuk mendukung masalah perdata, pidana, dan peraturan yang melibatkan:",
+    "card1_title": "Perceraian dan perselisihan hukum keluarga",
+    "card1_desc": "Melibatkan aset kripto yang tersembunyi.",
+    "card2_title": "Penipuan, pencurian, dan penggelapan",
+    "card2_desc": "Kasus dengan komponen mata uang digital.",
+    "card3_title": "Investigasi internal perusahaan",
+    "card3_desc": "Melibatkan dana yang disalahgunakan.",
+    "card4_title": "Perencanaan warisan dan masalah wasiat",
+    "card4_desc": "Dengan aset yang tidak diketahui atau tidak dideklarasikan.",
+    "card5_title": "Kebangkrutan atau eksekusi putusan",
+    "card5_desc": "Memerlukan identifikasi aset.",
+    "footer": "Lenix Protocol bekerja sama dengan pengacara penggugat dan tergugat, serta bertindak sebagai ahli netral."
+  },
+  "Methods": {
+    "title": "Metode Pelacakan Cryptocurrency",
+    "card1_title": "Identifikasi dompet blockchain",
+    "card1_desc": "Dan analisis keterkaitan.",
+    "card2_title": "Pemantauan transaksi",
+    "card2_desc": "Di blockchain publik dan pribadi.",
+    "card3_title": "Verifikasi kepemilikan NFT",
+    "card3_desc": "Dan pelacakan transfer.",
+    "card4_title": "Identifikasi akun bursa",
+    "card4_desc": "Dan gerbang keluar transaksi.",
+    "card5_title": "Referensi silang metadata",
+    "card5_desc": "Dan bukti perangkat untuk atribusi dompet.",
+    "footer": "Pekerjaan kami dilakukan dengan teknik forensik yang menjaga integritas bukti."
+  },
+  "WhyChooseUs": {
+    "title": "Mengapa Memilih Lenix Protocol?",
+    "desc": "Kami membantu klien menemukan aset digital yang ingin disembunyikan orang lain.",
+    "point1_title": "Keahlian terbukti",
+    "point1_desc": "Dalam pelacakan cryptocurrency dan forensik blockchain.",
+    "point2_title": "Pengalaman identifikasi aset tersembunyi",
+    "point2_desc": "Di berbagai bidang praktik hukum.",
+    "point3_title": "Kesaksian ahli yang memenuhi syarat pengadilan",
+    "point3_desc": "Dalam yurisdiksi negara bagian, federal, dan internasional.",
+    "point4_title": "Laporan yang jelas dan dapat dipertanggungjawabkan",
+    "point4_desc": "Disesuaikan untuk litigasi atau kepatuhan."
+  },
+  "CTA": {
+    "title": "Hubungi kami",
+    "title_highlight": "hari ini",
+    "desc_part1": "Hubungi kami hari ini di",
+    "desc_part2": "untuk mendiskusikan kebutuhan identifikasi aset kripto Anda.",
+    "email_label": "Email Tim Kami",
+    "phone_label": "Hubungi Kantor Kami"
+  }
+}

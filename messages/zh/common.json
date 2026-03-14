@@ -75,7 +75,9 @@
       "terms": "条款",
       "cookie": "Cookie",
       "privacy": "隐私",
-      "disclaimer": "免责声明"
+      "disclaimer": "免责声明",
+      "wallet_decryption": "钱包解密",
+      "crypto_asset_identification": "加密资产识别"
     },
     "buttons": {
       "recover_assets": "追回资产"

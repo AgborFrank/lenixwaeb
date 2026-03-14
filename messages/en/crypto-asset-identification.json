@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "Crypto Asset Identification Services",
+    "title1": "Uncovering Hidden Cryptocurrency and Digital Asset Identification",
+    "subtitle1": "Locating and verifying digital holdings has become a critical part of modern investigations.",
+    "desc1": "With the increasing use of cryptocurrency in both legitimate and illicit financial activity, locating and verifying digital holdings has become a critical part of modern investigations. Lenix Protocol provides expert Crypto Asset Identification services to help attorneys, investigators, and financial professionals trace, document, and validate digital wealth—even when it’s been deliberately concealed.",
+    "desc2": "Our team uses cutting-edge blockchain tools and forensic methodologies to perform comprehensive cryptocurrency tracing, including locating wallets, analyzing transaction history, and identifying potential exchanges or off-ramps used to move funds. Whether you’re involved in litigation, asset recovery, or compliance enforcement, Lenix Protocol delivers reliable, court-admissible results.",
+    "btn_consultation": "Request a Consultation Today"
+  },
+  "Coverage": {
+    "title": "What Our Crypto Asset Identification Services Cover",
+    "desc": "Our investigations are tailored to support civil, criminal, and regulatory matters involving:",
+    "card1_title": "Divorce and family law disputes",
+    "card1_desc": "Involving hidden crypto assets.",
+    "card2_title": "Fraud, theft, and embezzlement",
+    "card2_desc": "Cases with digital currency components.",
+    "card3_title": "Corporate internal investigations",
+    "card3_desc": "Involving misappropriated funds.",
+    "card4_title": "Estate planning and probate matters",
+    "card4_desc": "With unknown or undeclared assets.",
+    "card5_title": "Bankruptcy or judgment enforcement",
+    "card5_desc": "Requiring asset identification.",
+    "footer": "Lenix Protocol works with both plaintiffs and defense counsel, as well as serving as a neutral expert in asset division and valuation."
+  },
+  "Methods": {
+    "title": "Methods for Cryptocurrency Tracing",
+    "card1_title": "Blockchain wallet identification",
+    "card1_desc": "And linkage analysis.",
+    "card2_title": "Transaction monitoring",
+    "card2_desc": "Across public and private blockchains.",
+    "card3_title": "NFT ownership verification",
+    "card3_desc": "And transfer tracking.",
+    "card4_title": "Identification of exchange accounts",
+    "card4_desc": "And transaction off-ramps.",
+    "card5_title": "Cross-referencing metadata",
+    "card5_desc": "And device evidence for wallet attribution.",
+    "footer": "Our digital asset identification work is conducted using forensically sound techniques that preserve the integrity of the evidence for use in court or regulatory settings."
+  },
+  "WhyChooseUs": {
+    "title": "Why Choose Lenix Protocol for Asset Identification?",
+    "desc": "At Lenix Protocol, our Crypto Asset Identification services help expose the full scope of a subject’s financial picture in a digital-first world. From tracing lost or stolen coins to identifying undeclared crypto wallets, we help clients find the digital assets others hoped to hide.",
+    "point1_title": "Proven expertise",
+    "point1_desc": "In cryptocurrency tracing and blockchain forensics.",
+    "point2_title": "Experience in hidden asset identification",
+    "point2_desc": "Across legal practice areas.",
+    "point3_title": "Court-qualified expert testimony",
+    "point3_desc": "In state, federal, and international jurisdictions.",
+    "point4_title": "Clear, defensible reports",
+    "point4_desc": "Tailored for litigation or compliance."
+  },
+  "CTA": {
+    "title": "Contact us",
+    "title_highlight": "today",
+    "desc_part1": "Call us today at",
+    "desc_part2": "to discuss your crypto asset identification needs and discover how Lenix Protocol can support your case.",
+    "email_label": "Email Our Team",
+    "phone_label": "Call Our Office"
+  }
+}

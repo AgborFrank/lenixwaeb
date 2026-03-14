@@ -75,7 +75,9 @@
       "terms": "الشروط",
       "cookie": "ملفات تعريف الارتباط",
       "privacy": "الخصوصية",
-      "disclaimer": "إخلاء المسؤولية"
+      "disclaimer": "إخلاء المسؤولية",
+      "wallet_decryption": "فك تشفير المحفظة",
+      "crypto_asset_identification": "تحديد الأصول المشفرة"
     },
     "buttons": {
       "recover_assets": "استرجاع الأصول"

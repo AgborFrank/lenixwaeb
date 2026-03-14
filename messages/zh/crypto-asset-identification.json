@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "加密资产识别服务",
+    "title1": "揭露隐藏的加密货币与数字资产识别",
+    "subtitle1": "定位和验证数字持有资产已成为现代调查的关键部分。",
+    "desc1": "随着加密货币在合法和非法金融活动中的使用日益增加，定位和验证数字持有资产变得至关重要。Lenix Protocol 提供专业的加密资产识别服务，帮助律师和调查人员追踪、记录和验证数字财富。",
+    "desc2": "我们的团队使用尖端的区块链工具和取证方法来执行全面的加密货币追踪。",
+    "btn_consultation": "立即申请咨询"
+  },
+  "Coverage": {
+    "title": "我们的识别服务涵盖范围",
+    "desc": "我们的调查专为支持涉及以下方面的民事、刑事和监管事项而定制：",
+    "card1_title": "离婚和家庭法纠纷",
+    "card1_desc": "涉及隐藏的加密资产。",
+    "card2_title": "欺诈、盗窃和贪污",
+    "card2_desc": "包含数字货币成分的案件。",
+    "card3_title": "企业内部调查",
+    "card3_desc": "涉及挪用资金。",
+    "card4_title": "遗产规划和遗嘱认证事宜",
+    "card4_desc": "涉及未知或未申报的资产。",
+    "card5_title": "破产或判决执行",
+    "card5_desc": "需要资产识别。",
+    "footer": "Lenix Protocol 与原告和被告律师合作，并在资产分割和估值中担任中立专家。"
+  },
+  "Methods": {
+    "title": "加密货币追踪方法",
+    "card1_title": "区块链钱包识别",
+    "card1_desc": "及关联分析。",
+    "card2_title": "交易监控",
+    "card2_desc": "跨公共和私有区块链。",
+    "card3_title": "NFT 所有权验证",
+    "card3_desc": "及转移跟踪。",
+    "card4_title": "交易所账户识别",
+    "card4_desc": "及交易下线出口。",
+    "card5_title": "元数据交叉引用",
+    "card5_desc": "及用于钱包归属的设备证据。",
+    "footer": "我们的数字资产识别工作是使用法庭认可的取证技术进行的。"
+  },
+  "WhyChooseUs": {
+    "title": "为什么选择 Lenix Protocol？",
+    "desc": "在 Lenix Protocol，我们帮助客户在数字优先的世界中揭示主体的完整财务状况。我们帮助客户找到他人希望隐藏的数字资产。",
+    "point1_title": "久经考验的专业知识",
+    "point1_desc": "在加密货币追踪和区块链取证方面。",
+    "point2_title": "隐藏资产识别经验",
+    "point2_desc": "跨法律实务领域。",
+    "point3_title": "法庭认可的专家证词",
+    "point3_desc": "在州、联邦和国际司法管辖区。",
+    "point4_title": "清晰、可辩护的报告",
+    "point4_desc": "针对诉讼或合规性定制。"
+  },
+  "CTA": {
+    "title": "今天",
+    "title_highlight": "联系我们",
+    "desc_part1": "请于今日致电",
+    "desc_part2": "与我们讨论您的加密资产识别需求。",
+    "email_label": "给我们的团队发送电子邮件",
+    "phone_label": "致电我们的办公室"
+  }
+}

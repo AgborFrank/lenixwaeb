@@ -506,7 +506,7 @@ export default function HomeHero() {
         <div className="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] rounded-full bg-blue-600/20 blur-[80px] opacity-20 animate-pulse lg:w-[600px] lg:h-[600px]" />
       </div>
 
-      <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8 z-10">

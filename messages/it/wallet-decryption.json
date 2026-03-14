@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "badge": "Servizi di Decrittografia di Portafogli Crypto",
+    "title1": "Servizi di Sblocco di Portafogli di Criptovalute",
+    "subtitle1": "Servizi di Decrittografia di Portafogli di Valute Digitali",
+    "desc1": "Nel mondo in rapida evoluzione delle criptovalute, garantire l'accesso ai propri asset è fondamentale. I Servizi di Decrittografia di Portafogli Crypto di Lenix Protocol forniscono un supporto cruciale per individui e organizzazioni che hanno perso l'accesso ai loro portafogli di criptovalute.",
+    "desc2": "Sia per password dimenticate, chiavi di accesso perse o file di portafoglio corrotti, il nostro team di esperti forensi è specializzato nel recupero e nella decrittografia in modo sicuro della vostra valuta digitale.",
+    "btn_consultation": "Richiedi una Consulenza Oggi"
+  },
+  "Approach": {
+    "title": "Il Nostro Approccio alla Decrittografia",
+    "card1_title": "Consulenza Iniziale e Valutazione del Rischio",
+    "card1_desc": "Comprendere le specifiche della vostra situazione per fornire una strategia di recupero su misura.",
+    "card2_title": "Tecniche di Decrittografia Avanzate",
+    "card2_desc": "Utilizzo di tecnologie all'avanguardia e metodologie proprietarie per tentare il recupero di password e chiavi crittografiche.",
+    "card3_title": "Gestione Interna Nativa",
+    "card3_desc": "Garantire l'integrità e la sicurezza dei vostri dati durante l'intero processo di decrittografia."
+  },
+  "WhyChooseUs": {
+    "title": "Perché Scegliere Lenix Protocol per il Recupero del Portafoglio Crypto?",
+    "desc": "Il team di esperti di Lenix Protocol è la soluzione ideale per i Servizi di Decrittografia del Portafoglio Crypto. Portiamo una metodologia specializzata e un track record comprovato ad ogni impegno di recupero.",
+    "point1_title": "Esperienza nella Sicurezza delle Criptovalute",
+    "point1_desc": "Profonda comprensione della tecnologia blockchain e delle architetture dei portafogli.",
+    "point2_title": "Servizio Confidenziale ed Etico",
+    "point2_desc": "Tutte le operazioni sono eseguite con il massimo rispetto per la privacy e la legalità da esperti accademici e individui che hanno avuto nulla osta di sicurezza di livello Segreto e superiore.",
+    "point3_title": "Tasso di Successo",
+    "point3_desc": "Comprovata esperienza nel recupero dell'accesso a portafogli crittografati per clienti in tutto il mondo."
+  },
+  "CTA": {
+    "title": "Contattaci",
+    "title_highlight": "oggi",
+    "desc_part1": "Contattaci oggi al",
+    "desc_part2": "per saperne di più su come Lenix Protocol può assistervi con la Decrittografia del Portafoglio Crypto.",
+    "email_label": "Email al nostro Team",
+    "phone_label": "Chiama il nostro Ufficio"
+  }
+}

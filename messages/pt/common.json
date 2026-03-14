@@ -75,7 +75,9 @@
       "terms": "Termos",
       "cookie": "Cookies",
       "privacy": "Privacidade",
-      "disclaimer": "Aviso Legal"
+      "disclaimer": "Aviso Legal",
+      "wallet_decryption": "Descriptografia de Carteiras",
+      "crypto_asset_identification": "Identificação de Ativos Cripto"
     },
     "buttons": {
       "recover_assets": "Recuperar Ativos"

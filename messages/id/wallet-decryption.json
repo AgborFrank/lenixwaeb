@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "badge": "Layanan Dekripsi Dompet Kripto",
+    "title1": "Layanan Pembukaan Kunci Dompet Cryptocurrency",
+    "subtitle1": "Layanan Dekripsi Dompet Mata Uang Digital",
+    "desc1": "Dalam dunia cryptocurrency yang berkembang pesat, mengamankan akses ke aset Anda sangat penting. Layanan Dekripsi Dompet Kripto Lenix Protocol memberikan dukungan penting bagi individu dan organisasi yang kehilangan akses ke dompet mereka.",
+    "desc2": "Baik karena lupa kata sandi, kehilangan kunci akses, atau file dompet yang rusak, tim ahli forensik kami menspesialisasikan diri dalam memulihkan dan mendekripsi mata uang digital Anda secara aman.",
+    "btn_consultation": "Minta Konsultasi Hari Ini"
+  },
+  "Approach": {
+    "title": "Pendekatan Kami untuk Dekripsi Dompet",
+    "card1_title": "Konsultasi Awal dan Penilaian Risiko",
+    "card1_desc": "Memahami spesifikasi situasi Anda untuk memberikan strategi pemulihan yang disesuaikan.",
+    "card2_title": "Teknik Dekripsi Tingkat Lanjut",
+    "card2_desc": "Memanfaatkan teknologi mutakhir dan metodologi eksklusif untuk mencoba pemulihan kata sandi dan kunci enkripsi.",
+    "card3_title": "Penanganan In-House",
+    "card3_desc": "Memastikan integritas dan keamanan data Anda di sepanjang proses dekripsi."
+  },
+  "WhyChooseUs": {
+    "title": "Mengapa Memilih Lenix Protocol untuk Pemulihan Dompet Kripto?",
+    "desc": "Tim ahli Lenix Protocol adalah solusi utama Anda untuk Layanan Dekripsi Dompet Kripto. Kami membawa metodologi khusus dan rekam jejak yang terbukti pada setiap pemulihan.",
+    "point1_title": "Keahlian dalam Keamanan Cryptocurrency",
+    "point1_desc": "Pemahaman mendalam tentang teknologi blockchain dan arsitektur dompet.",
+    "point2_title": "Layanan Rahasia dan Etis",
+    "point2_desc": "Semua operasi dilakukan dengan penghargaan tertinggi untuk privasi dan legalitas.",
+    "point3_title": "Tingkat Keberhasilan",
+    "point3_desc": "Rekam jejak terbukti dalam memulihkan akses ke dompet terenkripsi untuk klien di seluruh dunia."
+  },
+  "CTA": {
+    "title": "Hubungi kami",
+    "title_highlight": "hari ini",
+    "desc_part1": "Hubungi kami hari ini di",
+    "desc_part2": "untuk mempelajari cara Lenix Protocol membantu Dekripsi Dompet Kripto.",
+    "email_label": "Kirim Email ke Tim Kami",
+    "phone_label": "Hubungi Kantor Kami"
+  }
+}

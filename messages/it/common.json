@@ -75,7 +75,9 @@
       "terms": "Termini",
       "cookie": "Cookie",
       "privacy": "Privacy",
-      "disclaimer": "Esclusione di responsabilità"
+      "disclaimer": "Esclusione di responsabilità",
+      "wallet_decryption": "Decrittografia dei Portafogli",
+      "crypto_asset_identification": "Identificazione degli Asset Crypto"
     },
     "buttons": {
       "recover_assets": "Recupera Asset"

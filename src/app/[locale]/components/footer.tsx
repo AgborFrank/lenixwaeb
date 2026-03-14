@@ -131,15 +131,19 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white flex items-center">
-                  {t("Footer.links.litepaper")}
-                  <ExternalLink className="h-3 w-3 ml-1" />
-                </a>
-              </li>
-              <li>
                 <a href="#" className="text-gray-300 hover:text-white">
                   {t("Footer.links.roadmap")}
                 </a>
+              </li>
+              <li>
+                <Link href="/wallet-decryption" className="text-gray-300 hover:text-white">
+                  {t("Footer.links.wallet_decryption")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/crypto-asset-identification" className="text-gray-300 hover:text-white line-clamp-1">
+                  {t("Footer.links.crypto_asset_identification")}
+                </Link>
               </li>
             </ul>
           </div>

@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "badge": "Kripto Cüzdan Şifre Çözme Hizmetleri",
+    "title1": "Kripto Para Cüzdanı Kilit Açma Hizmetleri",
+    "subtitle1": "Dijital Para Cüzdanı Şifre Çözme Hizmetleri",
+    "desc1": "Hızla gelişen kripto para dünyasında, varlıklarınıza erişimi güvence altına almak çok önemlidir. Lenix Protocol'ün Kripto Cüzdan Şifre Çözme Hizmetleri, kripto cüzdanlarına erişimini kaybeden bireyler için kritik destek sağlar.",
+    "desc2": "İster unutulan şifreler, kaybedilen erişim anahtarları, ister bozuk cüzdan dosyaları nedeniyle olsun, uzman ekibimiz dijital paranızı güvenli bir şekilde kurtarma konusunda uzmanlaşmıştır.",
+    "btn_consultation": "Bugün Danışmanlık İsteyin"
+  },
+  "Approach": {
+    "title": "Cüzdan Şifre Çözme Yaklaşımımız",
+    "card1_title": "İlk Danışmanlık ve Risk Değerlendirmesi",
+    "card1_desc": "Özel bir kurtarma stratejisi sunmak için durumunuzun özelliklerini anlamak.",
+    "card2_title": "Gelişmiş Şifre Çözme Teknikleri",
+    "card2_desc": "Şifrelerin ve şifreleme anahtarlarının kurtarılmasını denemek için ileri teknolojileri kullanmak.",
+    "card3_title": "Yerli Kurum İçi İşlem",
+    "card3_desc": "Şifre Çözme süreci boyunca verilerinizin bütünlüğünü ve güvenliğini sağlamak."
+  },
+  "WhyChooseUs": {
+    "title": "Kripto Cüzdan Kurtarma için Neden Lenix Protocol'ü Seçmelisiniz?",
+    "desc": "Lenix Protocol uzman ekibi, şifre çözme hizmetleri için güvenilir çözümünüzdür.",
+    "point1_title": "Kripto Para Güvenliğinde Uzmanlık",
+    "point1_desc": "Akıllı sözleşmeler ve cüzdan mimarileri hakkında derin anlayış.",
+    "point2_title": "Gizli ve Etik Hizmet",
+    "point2_desc": "Tüm işlemler en yüksek gizlilik ve yasallıkla uzmanlar tarafından gerçekleştirilir.",
+    "point3_title": "Başarı Oranı",
+    "point3_desc": "Dünya çapındaki müşteriler için şifreli erişimi kurtarmada kanıtlanmış başarı."
+  },
+  "CTA": {
+    "title": "Bize",
+    "title_highlight": "bugün ulaşın",
+    "desc_part1": "Kripto Şifre Çözme hakkında daha fazla bilgi için bize",
+    "desc_part2": "numarasından bugün ulaşın.",
+    "email_label": "Ekibimize E-posta Gönderin",
+    "phone_label": "Ofisimizi Arayın"
+  }
+}

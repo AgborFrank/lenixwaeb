@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "Services d'Identification des Actifs Crypto",
+    "title1": "Découverte de Cryptomonnaies Cachées et Identification d'Actifs Numériques",
+    "subtitle1": "La localisation et la vérification des avoirs numériques sont devenues une partie cruciale des enquêtes modernes.",
+    "desc1": "Avec l'utilisation croissante des cryptomonnaies dans les activités financières tant légitimes qu'illicites, localiser et vérifier les avoirs numériques est devenu essentiel. Lenix Protocol fournit des services experts d'identification des actifs crypto pour aider les avocats, les enquêteurs et les professionnels de la finance à tracer, documenter et valider la richesse numérique, même lorsqu'elle a été délibérément dissimulée.",
+    "desc2": "Notre équipe utilise des outils blockchain de pointe et des méthodologies forensiques pour effectuer un traçage complet des cryptomonnaies, y compris la localisation de portefeuilles, l'analyse de l'historique des transactions et l'identification des bourses potentielles ou des rampes de sortie utilisées pour déplacer des fonds.",
+    "btn_consultation": "Demander une Consultation Aujourd'hui"
+  },
+  "Coverage": {
+    "title": "Ce que Couvrent nos Services d'Identification",
+    "desc": "Nos enquêtes sont adaptées pour soutenir les affaires civiles, pénales et réglementaires impliquant :",
+    "card1_title": "Divorce et litiges en droit de la famille",
+    "card1_desc": "Impliquant des actifs crypto cachés.",
+    "card2_title": "Fraude, vol et détournement de fonds",
+    "card2_desc": "Cas avec des composantes de monnaie numérique.",
+    "card3_title": "Enquêtes internes en entreprise",
+    "card3_desc": "Impliquant des fonds détournés.",
+    "card4_title": "Planification successorale et successions",
+    "card4_desc": "Avec des actifs inconnus ou non déclarés.",
+    "card5_title": "Faillite ou exécution de jugement",
+    "card5_desc": "Nécessitant une identification des actifs.",
+    "footer": "Lenix Protocol travaille avec les conseils des demandeurs et des défendeurs, et sert d'expert neutre dans le partage et l'évaluation des actifs."
+  },
+  "Methods": {
+    "title": "Méthodes de Traçage de Cryptomonnaies",
+    "card1_title": "Identification de portefeuilles blockchain",
+    "card1_desc": "Et analyse de liaison.",
+    "card2_title": "Surveillance des transactions",
+    "card2_desc": "Sur les blockchains publiques et privées.",
+    "card3_title": "Vérification de la propriété de NFT",
+    "card3_desc": "Et suivi des transferts.",
+    "card4_title": "Identification des comptes de bourses",
+    "card4_desc": "Et des rampes de sortie de transactions.",
+    "card5_title": "Recoupement des métadonnées",
+    "card5_desc": "Et preuves de dispositifs pour l'attribution des portefeuilles.",
+    "footer": "Notre travail d'identification des actifs numériques est mené selon des techniques forensiques saines qui préservent l'intégrité des preuves pour une utilisation en justice."
+  },
+  "WhyChooseUs": {
+    "title": "Pourquoi Choisir Lenix Protocol ?",
+    "desc": "Chez Lenix Protocol, nos services d'identification aident à exposer toute l'étendue de la situation financière d'un sujet dans un monde numérique. Du traçage de pièces perdues ou volées à l'identification de portefeuilles non déclarés, nous aidons les clients à trouver ce que d'autres espéraient cacher.",
+    "point1_title": "Expertise prouvée",
+    "point1_desc": "En traçage de cryptomonnaies et forensique blockchain.",
+    "point2_title": "Expérience en actifs cachés",
+    "point2_desc": "À travers divers domaines juridiques.",
+    "point3_title": "Témoignage d'expert qualifié",
+    "point3_desc": "Dans les juridictions étatiques, fédérales et internationales.",
+    "point4_title": "Rapports clairs et défendables",
+    "point4_desc": "Adaptés pour le litige ou la conformité."
+  },
+  "CTA": {
+    "title": "Contactez-nous",
+    "title_highlight": "aujourd'hui",
+    "desc_part1": "Appelez-nous aujourd'hui au",
+    "desc_part2": "pour discuter de vos besoins d'identification d'actifs crypto et découvrir comment Lenix Protocol peut soutenir votre dossier.",
+    "email_label": "Envoyer un e-mail à l'équipe",
+    "phone_label": "Appeler notre bureau"
+  }
+}

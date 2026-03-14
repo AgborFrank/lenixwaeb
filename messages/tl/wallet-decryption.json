@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "badge": "Mga Serbisyo sa Pag-Decrypt ng Crypto Wallet",
+    "title1": "Serbisyo sa Pag-Unlock ng Cryptocurrency Wallet",
+    "subtitle1": "Serbisyo sa Pag-Decrypt ng Digital Currency Wallet",
+    "desc1": "Sa mabilis na umuunlad na mundo ng cryptocurrency, ang pag-secure ng access sa iyong mga asset ay mahalaga. Ang mga Serbisyo sa Pag-Decrypt ng Crypto Wallet ng Lenix Protocol ay nagbibigay ng mahalagang suporta para sa mga indibidwal at organisasyon na nawalan ng access sa kanilang mga wallet.",
+    "desc2": "Dahil sa nakalimutang mga password, nawalang mga access key, o sirang mga wallet file, dalubhasa ang aming koponan sa ligtas na pagbawi at pag-decrypt sa iyong digital currency.",
+    "btn_consultation": "Humiling ng Konsultasyon Ngayon"
+  },
+  "Approach": {
+    "title": "Ang Aming Diskarte sa Pag-Decrypt ng Wallet",
+    "card1_title": "Paunang Konsultasyon at Pagtataya ng Panganib",
+    "card1_desc": "Pag-unawa sa mga detalye ng iyong sitwasyon upang makapagbigay ng pinasadyang diskarte sa pagbawi.",
+    "card2_title": "Advanced na mga Teknik sa Pag-Decrypt",
+    "card2_desc": "Paggamit sa nangungunang teknolohiya at mga pamamaraan upang subukang bawiin ang mga password at encryption keys.",
+    "card3_title": "In-house na Pangangasiwa",
+    "card3_desc": "Pagtiyak sa integridad at seguridad ng iyong data sa buong proseso ng pag-decrypt."
+  },
+  "WhyChooseUs": {
+    "title": "Bakit Piliin ang Lenix Protocol para sa Pagbawi ng Crypto Wallet?",
+    "desc": "Ang pangkat ng dalubhasa ng Lenix Protocol ang iyong pinakamahusay na solusyon. Nagdadala kami ng espesyal na pamamaraan at napatunayang track record sa bawat pagbawi.",
+    "point1_title": "Kadali sa Seguridad ng Cryptocurrency",
+    "point1_desc": "Malalim na pag-unawa sa teknolohiya ng blockchain at mga arkitektura ng wallet.",
+    "point2_title": "Kumpidensyal at Etikal na Serbisyo",
+    "point2_desc": "Ang lahat ng operasyon ay isinasagawa nang may matinding paggalang sa pagiging pribado at batas.",
+    "point3_title": "Rate ng Tagumpay",
+    "point3_desc": "May napatunayang track record sa pagbawi ng access para sa mga kliyente sa buong mundo."
+  },
+  "CTA": {
+    "title": "Makipag-ugnayan sa amin",
+    "title_highlight": "ngayon",
+    "desc_part1": "Makipag-ugnayan sa amin ngayon sa",
+    "desc_part2": "upang malaman pa kung paano makakatulong ang Lenix Protocol.",
+    "email_label": "Email Our Team",
+    "phone_label": "Call Our Office"
+  }
+}

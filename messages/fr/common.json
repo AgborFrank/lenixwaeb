@@ -75,7 +75,9 @@
       "terms": "Conditions",
       "cookie": "Cookies",
       "privacy": "Confidentialité",
-      "disclaimer": "Avertissement"
+      "disclaimer": "Avertissement",
+      "wallet_decryption": "Décryptage de Portefeuille",
+      "crypto_asset_identification": "Identification des Actifs Crypto"
     },
     "buttons": {
       "recover_assets": "Récupérer des Actifs"

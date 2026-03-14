@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "Servicios de Identificación de Activos Cripto",
+    "title1": "Descubrimiento de Criptomonedas Ocultas e Identificación de Activos Digitales",
+    "subtitle1": "Localizar y verificar tenencias digitales se ha convertido en una parte crítica de las investigaciones modernas.",
+    "desc1": "Con el uso creciente de criptomonedas en actividades financieras tanto legítimas como ilícitas, localizar y verificar tenencias digitales es fundamental. Lenix Protocol ofrece servicios expertos de identificación de activos cripto para ayudar a abogados, investigadores y profesionales financieros a rastrear, documentar y validar la riqueza digital, incluso cuando ha sido ocultada deliberadamente.",
+    "desc2": "Nuestro equipo utiliza herramientas blockchain de vanguardia y metodologías forenses para realizar un seguimiento integral de criptomonedas, incluyendo la localización de billeteras, el análisis del historial de transacciones e identificación de posibles intercambios utilizados para mover fondos.",
+    "btn_consultation": "Solicitar una Consulta Hoy"
+  },
+  "Coverage": {
+    "title": "Lo que Cubren Nuestros Servicios de Identificación",
+    "desc": "Nuestras investigaciones están diseñadas para apoyar asuntos civiles, penales y regulatorios que involucran:",
+    "card1_title": "Divorcios y disputas de derecho familiar",
+    "card1_desc": "Que involucran activos cripto ocultos.",
+    "card2_title": "Fraude, robo y malversación",
+    "card2_desc": "Casos con componentes de moneda digital.",
+    "card3_title": "Investigaciones corporativas internas",
+    "card3_desc": "Que involucran fondos malversados.",
+    "card4_title": "Planificación patrimonial y sucesiones",
+    "card4_desc": "Con activos desconocidos o no declarados.",
+    "card5_title": "Quiebras o ejecución de sentencias",
+    "card5_desc": "Que requieren identificación de activos.",
+    "footer": "Lenix Protocol trabaja con abogados de demandantes y demandados, y sirve como experto neutral en la división y valoración de activos."
+  },
+  "Methods": {
+    "title": "Métodos para el Rastreo de Criptomonedas",
+    "card1_title": "Identificación de billeteras blockchain",
+    "card1_desc": "Y análisis de vinculación.",
+    "card2_title": "Monitoreo de transacciones",
+    "card2_desc": "En blockchains públicas y privadas.",
+    "card3_title": "Verificación de propiedad de NFT",
+    "card3_desc": "Y seguimiento de transferencias.",
+    "card4_title": "Identificación de cuentas en exchanges",
+    "card4_desc": "Y rampas de salida de transacciones.",
+    "card5_title": "Cruce de metadatos",
+    "card5_desc": "Y evidencia de dispositivos para la atribución de billeteras.",
+    "footer": "Nuestro trabajo de identificación de activos digitales se realiza mediante técnicas forenses que preservan la integridad de las pruebas para su uso en tribunales."
+  },
+  "WhyChooseUs": {
+    "title": "¿Por Qué Elegir Lenix Protocol ?",
+    "desc": "En Lenix Protocol, nuestros servicios de identificación ayudan a exponer el panorama financiero completo de un sujeto en un mundo digital. Desde el rastreo de monedas perdidas o robadas hasta la identificación de billeteras no declaradas, ayudamos a los clientes a encontrar lo que otros esperaban esconder.",
+    "point1_title": "Experiencia probada",
+    "point1_desc": "En rastreo de criptomonedas y forense de blockchain.",
+    "point2_title": "Experiencia en identificación de activos ocultos",
+    "point2_desc": "En diversas áreas de práctica legal.",
+    "point3_title": "Testimonio de experto calificado",
+    "point3_desc": "En jurisdicciones estatales, federales e internacionales.",
+    "point4_title": "Informes claros y defendibles",
+    "point4_desc": "Diseñados para litigios o cumplimiento."
+  },
+  "CTA": {
+    "title": "Contáctenos",
+    "title_highlight": "hoy",
+    "desc_part1": "Llámenos hoy al",
+    "desc_part2": "para discutir sus necesidades de identificación de activos cripto y descubrir cómo Lenix Protocol puede apoyar su caso.",
+    "email_label": "Correo Electrónico del Equipo",
+    "phone_label": "Llamar a Nuestra Oficina"
+  }
+}

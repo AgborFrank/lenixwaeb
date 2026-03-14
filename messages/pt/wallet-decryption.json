@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "badge": "Serviços de Descriptografia de Carteira Cripto",
+    "title1": "Serviços de Desbloqueio de Carteira de Criptomoedas",
+    "subtitle1": "Serviços de Descriptografia de Carteira de Moeda Digital",
+    "desc1": "No mundo das criptomoedas em rápida evolução, garantir o acesso aos seus ativos é fundamental. Os Serviços de Descriptografia de Carteira Cripto do Lenix Protocol fornecem suporte crucial para indivíduos e organizações que perderam acesso às suas carteiras de criptomoedas.",
+    "desc2": "Seja por senhas esquecidas, chaves de acesso perdidas ou arquivos de carteira corrompidos, nossa equipe de especialistas forenses é especializada em recuperar e descriptografar sua moeda digital de forma segura.",
+    "btn_consultation": "Solicite uma Consulta Hoje"
+  },
+  "Approach": {
+    "title": "Nossa Abordagem para Descriptografia de Carteira",
+    "card1_title": "Consulta Inicial e Avaliação de Risco",
+    "card1_desc": "Compreender as especificidades de sua situação para fornecer uma estratégia de recuperação personalizada.",
+    "card2_title": "Técnicas Avançadas de Descriptografia",
+    "card2_desc": "Utilizando tecnologia de ponta e metodologias proprietárias para tentar a recuperação de senhas e chaves de criptografia.",
+    "card3_title": "Manuseio Interno Nativo",
+    "card3_desc": "Garantir a integridade e segurança de seus dados em todo o processo de descriptografia."
+  },
+  "WhyChooseUs": {
+    "title": "Por que Escolher o Lenix Protocol para Recuperação de Carteira Cripto?",
+    "desc": "A equipe de especialistas do Lenix Protocol é sua solução ideal para Serviços de Descriptografia de Carteira Cripto. Trazemos metodologia especializada e um histórico comprovado para cada compromisso de recuperação.",
+    "point1_title": "Especialização em Segurança de Criptomoedas",
+    "point1_desc": "Profunda compreensão da tecnologia blockchain e arquiteturas de carteira.",
+    "point2_title": "Serviço Confidencial e Ético",
+    "point2_desc": "Todas as operações são realizadas com o maior respeito pela privacidade e legalidade por especialistas acadêmicos e indivíduos que mantiveram credenciais de segurança Secret e acima.",
+    "point3_title": "Taxa de Sucesso",
+    "point3_desc": "Histórico comprovado de recuperação de acesso a carteiras criptografadas para clientes em todo o mundo."
+  },
+  "CTA": {
+    "title": "Contate-nos",
+    "title_highlight": "hoje",
+    "desc_part1": "Contate-nos hoje no",
+    "desc_part2": "para saber mais sobre como o Lenix Protocol pode ajudar na Descriptografia de Carteira Cripto.",
+    "email_label": "Envie um e-mail",
+    "phone_label": "Ligue para nosso Escritório"
+  }
+}

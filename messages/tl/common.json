@@ -75,7 +75,9 @@
       "terms": "Mga Tuntunin",
       "cookie": "Cookies",
       "privacy": "Privacy",
-      "disclaimer": "Disclaimer"
+      "disclaimer": "Disclaimer",
+      "wallet_decryption": "Pag-decrypt ng Wallet",
+      "crypto_asset_identification": "Pagkakakilanlan ng Crypto Asset"
     },
     "buttons": {
       "recover_assets": "Bawiin ang Mga Asset"

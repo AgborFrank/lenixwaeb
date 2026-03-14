@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "badge": "Krypto-Wallet Entschlüsselungsdienste",
+    "title1": "Dienste zur Entsperrung von Kryptowährungs-Wallets",
+    "subtitle1": "Dienste zur Entschlüsselung von Wallets für digitale Währungen",
+    "desc1": "In der sich schnell entwickelnden Welt der Kryptowährungen ist die Sicherung des Zugangs zu Ihren Vermögenswerten von größter Bedeutung. Die Krypto-Wallet Entschlüsselungsdienste des Lenix Protocol bieten entscheidende Unterstützung für Einzelpersonen und Organisationen, die den Zugang zu ihren Kryptowährungs-Wallets verloren haben.",
+    "desc2": "Ob aufgrund vergessener Passwörter, verlorener Zugangsschlüssel oder beschädigter Wallet-Dateien – unser Team von forensischen Experten ist darauf spezialisiert, Ihre digitale Währung sicher und geschützt wiederherzustellen und zu entschlüsseln.",
+    "btn_consultation": "Fordern Sie noch heute eine Beratung an"
+  },
+  "Approach": {
+    "title": "Unser Ansatz zur Wallet-Entschlüsselung",
+    "card1_title": "Erste Beratung und Risikobewertung",
+    "card1_desc": "Die Besonderheiten Ihrer Situation verstehen, um eine maßgeschneiderte Wiederherstellungsstrategie anzubieten.",
+    "card2_title": "Fortschrittliche Entschlüsselungstechniken",
+    "card2_desc": "Einsatz modernster Technologie und proprietärer Methoden, um die Wiederherstellung von Passwörtern und Verschlüsselungscodes zu versuchen.",
+    "card3_title": "Native interne Abwicklung",
+    "card3_desc": "Sicherstellung der Integrität und Sicherheit Ihrer Daten während des gesamten Entschlüsselungsprozesses."
+  },
+  "WhyChooseUs": {
+    "title": "Warum das Lenix Protocol für die Krypto-Wallet-Wiederherstellung wählen?",
+    "desc": "Das Expertenteam des Lenix Protocol ist Ihre Anlaufstelle für Krypto-Wallet Entschlüsselungsdienste. Wir bringen spezialisierte Methoden und eine nachweisliche Erfolgsbilanz in jedes Wiederherstellungsprojekt ein.",
+    "point1_title": "Expertise in Kryptowährungssicherheit",
+    "point1_desc": "Tiefes Verständnis der Blockchain-Technologie und Wallet-Architekturen.",
+    "point2_title": "Vertraulicher und ethischer Service",
+    "point2_desc": "Alle Operationen werden mit höchstem Respekt vor Privatsphäre und Legalität von Personen, die über Secret- oder höhere Sicherheitsüberprüfungen verfügt haben, sowie von wissenschaftlichen Experten durchgeführt.",
+    "point3_title": "Erfolgsquote",
+    "point3_desc": "Nachgewiesene Erfolgsbilanz bei der Wiederherstellung des Zugriffs auf verschlüsselte Wallets für Kunden weltweit."
+  },
+  "CTA": {
+    "title": "Kontaktieren Sie uns",
+    "title_highlight": "heute",
+    "desc_part1": "Kontaktieren Sie uns noch heute unter",
+    "desc_part2": "um mehr darüber zu erfahren, wie das Lenix Protocol bei der Krypto-Wallet-Entschlüsselung helfen kann.",
+    "email_label": "Senden Sie eine E-Mail an unser Team",
+    "phone_label": "Rufen Sie unser Büro an"
+  }
+}

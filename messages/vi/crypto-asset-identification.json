@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "Dịch vụ Nhận dạng Tài sản Crypto",
+    "title1": "Khám phá Tiền điện tử bị ẩn và Nhận dạng Tài sản Kỹ thuật số",
+    "subtitle1": "Việc định vị và xác minh tài sản kỹ thuật số đã trở thành một phần quan trọng của các cuộc điều tra hiện đại.",
+    "desc1": "Với việc sử dụng tiền điện tử ngày càng tăng trong cả hoạt động tài chính hợp pháp và bất hợp pháp, việc định vị tài sản kỹ thuật số là điều cần thiết. Lenix Protocol cung cấp dịch vụ chuyên gia để giúp các luật sư điều tra và xác thực sự giàu có kỹ thuật số.",
+    "desc2": "Đội ngũ của chúng tôi sử dụng các công cụ blockchain tiên tiến và phương pháp pháp y để thực hiện truy vết toàn diện.",
+    "btn_consultation": "Yêu cầu Tư vấn ngay hôm nay"
+  },
+  "Coverage": {
+    "title": "Dịch vụ Nhận dạng của Chúng tôi Bao gồm",
+    "desc": "Các cuộc điều tra của chúng tôi được điều chỉnh để hỗ trợ các vấn đề dân sự, hình sự và quy định liên quan đến:",
+    "card1_title": "Ly hôn và tranh chấp luật gia đình",
+    "card1_desc": "Liên quan đến tài sản crypto bị ẩn.",
+    "card2_title": "Gian lận, trộm cắp và tham ô",
+    "card2_desc": "Các vụ án có thành phần tiền kỹ thuật số.",
+    "card3_title": "Điều tra nội bộ doanh nghiệp",
+    "card3_desc": "Liên quan đến các khoản tiền bị chiếm dụng.",
+    "card4_title": "Lập kế hoạch di sản và thừa kế",
+    "card4_desc": "Với tài sản chưa biết hoặc chưa khai báo.",
+    "card5_title": "Phá sản hoặc thi hành án",
+    "card5_desc": "Yêu cầu nhận dạng tài sản.",
+    "footer": "Lenix Protocol làm việc với các luật sư của cả nguyên đơn và bị đơn, đóng vai trò là chuyên gia trung lập."
+  },
+  "Methods": {
+    "title": "Các Phương pháp Truy vết Tiền điện tử",
+    "card1_title": "Nhận dạng ví blockchain",
+    "card1_desc": "Và phân tích liên kết.",
+    "card2_title": "Giám sát giao dịch",
+    "card2_desc": "Trên các blockchain công khai và riêng tư.",
+    "card3_title": "Xác minh quyền sở hữu NFT",
+    "card3_desc": "Và theo dõi chuyển khoản.",
+    "card4_title": "Nhận dạng tài khoản sàn giao dịch",
+    "card4_desc": "Và các cổng quy đổi giao dịch.",
+    "card5_title": "Tham chiếu chéo siêu dữ liệu",
+    "card5_desc": "Và bằng chứng thiết bị để xác định chủ sở hữu ví.",
+    "footer": "Công việc nhận dạng tài sản kỹ thuật số được thực hiện bằng các kỹ thuật pháp y lành mạnh."
+  },
+  "WhyChooseUs": {
+    "title": "Tại sao chọn Lenix Protocol?",
+    "desc": "Tại Lenix Protocol, chúng tôi giúp khách hàng tìm thấy những tài sản kỹ thuật số mà người khác hy vọng che giấu.",
+    "point1_title": "Chuyên môn đã được chứng minh",
+    "point1_desc": "Trong việc truy vết tiền điện tử và pháp y blockchain.",
+    "point2_title": "Kinh nghiệm nhận dạng tài sản ẩn",
+    "point2_desc": "Trong nhiều lĩnh vực thực hành pháp lý.",
+    "point3_title": "Lời khai chuyên gia đủ điều kiện trước tòa",
+    "point3_desc": "Tại các khu vực pháp lý tiểu bang, liên bang và quốc tế.",
+    "point4_title": "Báo cáo rõ ràng, có thể bảo vệ",
+    "point4_desc": "Được thiết kế cho kiện tụng hoặc tuân thủ."
+  },
+  "CTA": {
+    "title": "Liên hệ ngay",
+    "title_highlight": "hôm nay",
+    "desc_part1": "Gọi cho chúng tôi ngay hôm nay tại",
+    "desc_part2": "để thảo luận về nhu cầu nhận dạng tài sản crypto của bạn.",
+    "email_label": "Email cho Đội ngũ Chúng tôi",
+    "phone_label": "Gọi đến Văn phòng"
+  }
+}

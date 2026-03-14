@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "Kripto Varlık Tanımlama Hizmetleri",
+    "title1": "Gizli Kripto Paraların Ortaya Çıkarılması ve Dijital Varlık Tanımlama",
+    "subtitle1": "Dijital varlıkların yerini tespit etmek ve doğrulamak modern soruşturmaların kritik bir parçası haline gelmiştir.",
+    "desc1": "Kripto paraların hem yasal hem de yasa dışı faaliyetlerde artan kullanımıyla, dijital varlıkları doğrulamak temel hale gelmiştir. Lenix Protocol, dijital serveti izlemek için uzman hizmetler sunar.",
+    "desc2": "Ekibimiz kapsamlı kripto para takibi gerçekleştirmek için en son blockchain araçlarını kullanır.",
+    "btn_consultation": "Bugün Danışmanlık İsteyin"
+  },
+  "Coverage": {
+    "title": "Tanımlama Hizmetlerimizin Kapsamı",
+    "desc": "Soruşturmalarımız aşağıdakileri içeren hukuki, cezai ve düzenleyici konuları desteklemek üzere tasarlanmıştır:",
+    "card1_title": "Boşanma ve aile hukuku uyuşmazlıkları",
+    "card1_desc": "Gizli kripto varlıkları içeren davalar.",
+    "card2_title": "Dolandırıcılık, hırsızlık ve zimmet",
+    "card2_desc": "Dijital para bileşenli vakalar.",
+    "card3_title": "Kurumsal iç soruşturmalar",
+    "card3_desc": "Kötüye kullanılan fonları içeren durumlar.",
+    "card4_title": "Miras planlaması ve vasiyet işleri",
+    "card4_desc": "Bilinmeyen veya beyan edilmemiş varlıklarla.",
+    "card5_title": "İflas veya icra takibi",
+    "card5_desc": "Varlık tanımlaması gerektiren durumlar.",
+    "footer": "Lenix Protocol, hem davacı hem de davalı vekiliyle çalışır ve tarafsız bir uzman olarak hizmet verir."
+  },
+  "Methods": {
+    "title": "Kripto Para Takip Yöntemleri",
+    "card1_title": "Blockchain cüzdan tanımlama",
+    "card1_desc": "Ve bağlantı analizi.",
+    "card2_title": "İşlem izleme",
+    "card2_desc": "Genel ve özel blockchainler üzerinde.",
+    "card3_title": "NFT sahiplik doğrulaması",
+    "card3_desc": "Ve transfer takibi.",
+    "card4_title": "Borsa hesabı tanımlama",
+    "card4_desc": "Ve işlem çıkış noktaları.",
+    "card5_title": "Meta veri çapraz sorgulama",
+    "card5_desc": "Ve cüzdan ilişkilendirmesi için cihaz kanıtları.",
+    "footer": "Dijital varlık tanımlama çalışmamız, mahkemede kullanılabilir adli tekniklerle yürütülür."
+  },
+  "WhyChooseUs": {
+    "title": "Neden Lenix Protocol'ü Seçmelisiniz?",
+    "desc": "Başkalarının saklamayı umduğu dijital varlıkları bulmanıza yardımcı oluyoruz.",
+    "point1_title": "Kanıtlanmış uzmanlık",
+    "point1_desc": "Kripto para takibi ve blockchain adli bilişiminde.",
+    "point2_title": "Gizli varlık tanımlama deneyimi",
+    "point2_desc": "Hukuki uygulama alanlarında.",
+    "point3_title": "Mahkemece kabul edilen uzman tanıklığı",
+    "point3_desc": "Eyalet, federal ve uluslararası yargı alanlarında.",
+    "point4_title": "Net, savunulabilir raporlar",
+    "point4_desc": "Dava veya uyumluluk için özel hazırlanmış."
+  },
+  "CTA": {
+    "title": "Bize",
+    "title_highlight": "bugün ulaşın",
+    "desc_part1": "Kripto varlık tanımlama ihtiyaçlarınızı görüşmek için bize bugün",
+    "desc_part2": "numarasından ulaşın.",
+    "email_label": "Ekibimize E-posta Gönderin",
+    "phone_label": "Ofisimizi Arayın"
+  }
+}

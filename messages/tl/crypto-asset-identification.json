@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "Mga Serbisyo sa Pagkilala ng Crypto Asset",
+    "title1": "Paglalantad ng Nakatagong Cryptocurrency at Pagkilala sa Digital Asset",
+    "subtitle1": "Ang paghahanap at pagpapatunay sa mga digital holdings ay naging kritikal na bahagi ng mga modernong imbestigasyon.",
+    "desc1": "Sa pagtaas ng paggamit ng cryptocurrency sa parehong legal at ilegal na aktibidad, mahalaga ang pagtukoy sa mga digital assets. Ang Lenix Protocol ay nagbibigay ng mga ekspertong serbisyo upang matulungan ang mga abogado na matunton ang digital wealth.",
+    "desc2": "Gumagamit ang aming koponan ng mga makabagong blockchain tools at forensic methodologies para sa komprehensibong pag-trace.",
+    "btn_consultation": "Humiling ng Konsultasyon Ngayon"
+  },
+  "Coverage": {
+    "title": "Saklaw ng Aming Mga Serbisyo sa Pagkilala",
+    "desc": "Ang aming mga imbestigasyon ay pinasadya upang suportahan ang mga sibil, kriminal, at regulatoryong usapin sa:",
+    "card1_title": "Diborsyo at mga alitan sa batas ng pamilya",
+    "card1_desc": "Na may kinalaman sa nakatagong crypto assets.",
+    "card2_title": "Fraud, pagnanakaw, at embezzlement",
+    "card2_desc": "Mga kaso na may mga bahagi ng digital currency.",
+    "card3_title": "Mga internal na imbestigasyon sa korporasyon",
+    "card3_desc": "Na may kinalaman sa mga maling paggamit ng pondo.",
+    "card4_title": "Estate planning at mga usapin sa probate",
+    "card4_desc": "Na may mga hindi alam o hindi idineklarang asset.",
+    "card5_title": "Pagkalugi o pagpapatupad ng hatol",
+    "card5_desc": "Na nangangailangan ng pagkilala sa asset.",
+    "footer": "Ang Lenix Protocol ay nakikipagtulungan sa mga abogado ng magkabilang panig at nagsisilbing neutral na eksperto."
+  },
+  "Methods": {
+    "title": "Mga Paraan para sa Pag-trace ng Cryptocurrency",
+    "card1_title": "Pagtukoy sa blockchain wallet",
+    "card1_desc": "At pagsusuri sa link.",
+    "card2_title": "Pagsubaybay sa transaksyon",
+    "card2_desc": "Sa mga pampubliko at pribadong blockchain.",
+    "card3_title": "Pagpapatunay ng pagmamay-ari ng NFT",
+    "card3_desc": "At pag-trace sa paglilipat.",
+    "card4_title": "Pagkilala sa mga exchange accounts",
+    "card4_desc": "At mga transaction off-ramps.",
+    "card5_title": "Cross-referencing ng metadata",
+    "card5_desc": "At ebidensya mula sa device para sa wallet attribution.",
+    "footer": "Ang aming trabaho ay isinasagawa gamit ang mga forensically sound na tekniko."
+  },
+  "WhyChooseUs": {
+    "title": "Bakit Piliin ang Lenix Protocol?",
+    "desc": "Tinutulungan namin ang aming mga kliyente na mahanap ang mga digital assets na nais itago ng iba.",
+    "point1_title": "Napatunayang kadalubhasaan",
+    "point1_desc": "Sa cryptocurrency tracing at blockchain forensics.",
+    "point2_title": "Karanasan sa pagtukoy ng nakatagong asset",
+    "point2_desc": "Sa iba't ibang legal practice areas.",
+    "point3_title": "Testigo ng eksperto na kwalipikado sa korte",
+    "point3_desc": "Sa lokal at internasyonal na hurisdiksyon.",
+    "point4_title": "Malinaw at mapoprotektahang mga ulat",
+    "point4_desc": "Pinasadya para sa litigasyon o compliance."
+  },
+  "CTA": {
+    "title": "Makipag-ugnayan sa amin",
+    "title_highlight": "ngayon",
+    "desc_part1": "Tawagan kami ngayon sa",
+    "desc_part2": "upang pag-usapan ang iyong pangangailangan sa crypto asset identification.",
+    "email_label": "Email sa Koponan",
+    "phone_label": "Tumawag sa Opisina"
+  }
+}

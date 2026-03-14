@@ -75,7 +75,9 @@
       "terms": "शर्तें",
       "cookie": "कुकीज़",
       "privacy": "गोपनीयता",
-      "disclaimer": "अस्वीकरण"
+      "disclaimer": "अस्वीकरण",
+      "wallet_decryption": "वॉलेट डिक्रिप्शन",
+      "crypto_asset_identification": "क्रिप्टो एसेट आइडेंटिफिकेशन"
     },
     "buttons": {
       "recover_assets": "संपत्ति पुनर्प्राप्त करें"

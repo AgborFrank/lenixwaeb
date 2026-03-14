@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "badge": "Services de Décryptage de Portefeuille Crypto",
+    "title1": "Services de Déverrouillage de Portefeuille de Crypto-monnaie",
+    "subtitle1": "Services de Décryptage de Portefeuille de Monnaie Numérique",
+    "desc1": "Dans le monde de la crypto-monnaie en évolution rapide, sécuriser l'accès à vos actifs est primordial. Les Services de Décryptage de Portefeuille Crypto de Lenix Protocol fournissent un soutien crucial aux individus et organisations ayant perdu l'accès à leurs portefeuilles.",
+    "desc2": "Que ce soit à cause de mots de passe oubliés, de clés d'accès perdues ou de fichiers de portefeuille corrompus, notre équipe d'experts spécialisés récupère et décrypte votre monnaie numérique en toute sécurité.",
+    "btn_consultation": "Demander une consultation aujourd'hui"
+  },
+  "Approach": {
+    "title": "Notre Approche du Décryptage de Portefeuille",
+    "card1_title": "Consultation Initiale et Évaluation des Risques",
+    "card1_desc": "Comprendre les spécificités de votre situation pour fournir une stratégie de récupération sur mesure.",
+    "card2_title": "Techniques Avancées de Décryptage",
+    "card2_desc": "Utiliser une technologie de pointe et des méthodologies exclusives pour tenter de récupérer mots de passe et clés de cryptage.",
+    "card3_title": "Traitement Interne Natif",
+    "card3_desc": "Assurer l'intégrité et la sécurité de vos données tout au long du processus de décryptage."
+  },
+  "WhyChooseUs": {
+    "title": "Pourquoi Choisir Lenix Protocol pour la Récupération de Portefeuille Crypto ?",
+    "desc": "L'équipe d'experts de Lenix Protocol est votre solution de choix pour les Services de Décryptage de Portefeuille Crypto. Nous apportons une méthodologie spécialisée et une expérience éprouvée à chaque engagement de récupération.",
+    "point1_title": "Expertise en Sécurité des Crypto-monnaies",
+    "point1_desc": "Compréhension approfondie de la technologie blockchain et des architectures de portefeuille.",
+    "point2_title": "Service Confidentiel et Éthique",
+    "point2_desc": "Toutes les opérations sont réalisées dans le plus grand respect de la vie privée et de la légalité par des individus ayant détenu des habilitations de sécurité de niveau Secret et des experts académiques.",
+    "point3_title": "Taux de Réussite",
+    "point3_desc": "Historique prouvé dans la récupération de l'accès aux portefeuilles chiffrés pour les clients du monde entier."
+  },
+  "CTA": {
+    "title": "Contactez-nous",
+    "title_highlight": "aujourd'hui",
+    "desc_part1": "Contactez-nous aujourd'hui au",
+    "desc_part2": "pour en savoir plus sur la manière dont Lenix Protocol peut vous aider avec le Décryptage de Portefeuille Crypto.",
+    "email_label": "Envoyer un email à notre équipe",
+    "phone_label": "Appeler notre bureau"
+  }
+}

@@ -9,9 +9,11 @@ export default getRequestConfig(async ({ requestLocale }) => {
         : routing.defaultLocale;
 
     // Load multiple namespaces for this locale
-    const [common, about] = await Promise.all([
+    const [common, about, walletDecryption, cryptoAssetId] = await Promise.all([
         import(`../../messages/${locale}/common.json`),
         import(`../../messages/${locale}/about.json`).catch(() => ({ default: {} })),
+        import(`../../messages/${locale}/wallet-decryption.json`).catch(() => ({ default: {} })),
+        import(`../../messages/${locale}/crypto-asset-identification.json`).catch(() => ({ default: {} })),
     ]);
 
     return {
@@ -19,6 +21,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
         messages: {
             ...common.default,
             ...(Object.keys(about.default).length > 0 ? { About: about.default } : {}),
+            ...(Object.keys(walletDecryption.default).length > 0 ? { WalletDecryption: walletDecryption.default } : {}),
+            ...(Object.keys(cryptoAssetId.default).length > 0 ? { CryptoAssetId: cryptoAssetId.default } : {}),
         },
     };
 });

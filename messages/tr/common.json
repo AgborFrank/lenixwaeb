@@ -75,7 +75,9 @@
       "terms": "Koşullar",
       "cookie": "Çerezler",
       "privacy": "Gizlilik",
-      "disclaimer": "Sorumluluk Reddi"
+      "disclaimer": "Sorumluluk Reddi",
+      "wallet_decryption": "Cüzdan Şifre Çözme",
+      "crypto_asset_identification": "Kripto Varlık Tanımlama"
     },
     "buttons": {
       "recover_assets": "Varlıkları Kurtar"

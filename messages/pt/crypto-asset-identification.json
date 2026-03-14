@@ -1,0 +1,59 @@
+{
+  "Hero": {
+    "badge": "Serviços de Identificação de Ativos Cripto",
+    "title1": "Descoberta de Criptomoedas Ocultas e Identificação de Ativos Digitais",
+    "subtitle1": "Localizar e verificar participações digitais tornou-se uma parte crítica das investigações modernas.",
+    "desc1": "Com o uso crescente de criptomoedas em atividades financeiras legítimas e ilícitas, localizar e verificar participações digitais é fundamental. O Lenix Protocol fornece serviços especializados de Identificação de Ativos Cripto para ajudar advogados e investigadores a rastrear e validar a riqueza digital.",
+    "desc2": "Nossa equipe utiliza ferramentas de blockchain de ponta e metodologias forenses para realizar rastreamento abrangente de criptomoedas.",
+    "btn_consultation": "Solicite uma Consulta Hoje"
+  },
+  "Coverage": {
+    "title": "O Que os Nossos Serviços de Identificação Cobrem",
+    "desc": "Nossas investigações são adaptadas para apoiar assuntos civis, criminais e regulatórios envolvendo:",
+    "card1_title": "Divórcio e disputas de direito de família",
+    "card1_desc": "Envolvendo ativos cripto ocultos.",
+    "card2_title": "Fraude, roubo e peculato",
+    "card2_desc": "Casos com componentes de moeda digital.",
+    "card3_title": "Investigações corporativas internas",
+    "card3_desc": "Envolvendo fundos malversados.",
+    "card4_title": "Planejamento sucessório e inventários",
+    "card4_desc": "Com ativos desconhecidos ou não declarados.",
+    "card5_title": "Falência ou execução de sentenças",
+    "card5_desc": "Exigindo identificação de ativos.",
+    "footer": "O Lenix Protocol trabalha com advogados de requerentes e réus, servindo como perito neutro na divisão e avaliação de ativos."
+  },
+  "Methods": {
+    "title": "Métodos para Rastreamento de Criptomoedas",
+    "card1_title": "Identificação de carteiras blockchain",
+    "card1_desc": "E análise de vinculação.",
+    "card2_title": "Monitoramento de transações",
+    "card2_desc": "Em blockchains públicas e privadas.",
+    "card3_title": "Verificação de propriedade de NFT",
+    "card3_desc": "E rastreamento de transferências.",
+    "card4_title": "Identificação de contas em exchanges",
+    "card4_desc": "E rampas de saída de transações.",
+    "card5_title": "Cruzamento de metadados",
+    "card5_desc": "E evidências de dispositivos para atribuição de carteira.",
+    "footer": "Nosso trabalho de identificação de ativos digitais é conduzido usando técnicas forenses que preservam a integridade das provas."
+  },
+  "WhyChooseUs": {
+    "title": "Por Que Escolher o Lenix Protocol?",
+    "desc": "No Lenix Protocol, nossos serviços ajudam a expor o quadro financeiro completo de um sujeito em um mundo digital. Ajudamos os clientes a encontrar os ativos digitais que outros esperavam esconder.",
+    "point1_title": "Experiência comprovada",
+    "point1_desc": "Em rastreamento de criptomoedas e forense de blockchain.",
+    "point2_title": "Experiência na identificação de ativos ocultos",
+    "point2_desc": "Em diversas áreas jurídicas.",
+    "point3_title": "Depoimento de perito qualificado",
+    "point3_desc": "Em jurisdições estaduais, federais e internacionais.",
+    "point4_title": "Relatórios claros e defensáveis",
+    "point4_desc": "Personalizados para litígios ou conformidade."
+  },
+  "CTA": {
+    "title": "Contate-nos",
+    "title_highlight": "hoje",
+    "desc_part1": "Ligue para nós hoje em",
+    "desc_part2": "para discutir suas necessidades de identificação de ativos cripto e descobrir como o Lenix Protocol pode apoiar seu caso.",
+    "email_label": "E-mail da Equipe",
+    "phone_label": "Ligue para Nosso Escritório"
+  }
+}

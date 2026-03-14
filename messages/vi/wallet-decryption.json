@@ -1,0 +1,37 @@
+{
+  "Hero": {
+    "badge": "Dịch vụ Giải mã Ví Crypto",
+    "title1": "Dịch vụ Mở khóa Ví Tiền điện tử",
+    "subtitle1": "Dịch vụ Giải mã Ví Tiền kỹ thuật số",
+    "desc1": "Trong thế giới tiền điện tử phát triển nhanh chóng, việc bảo đảm quyến truy cập tài sản của bạn là tối quan trọng. Dịch vụ Giải mã Ví Crypto của Lenix Protocol cung cấp sự hỗ trợ cần thiết cho các cá nhân và tổ chức đã mất quyền truy cập vào ví của họ.",
+    "desc2": "Dù do quên mật khẩu, mất khóa truy cập hay tệp ví bị hỏng, đội ngũ chuyên gia của chúng tôi chuyên phục hồi và giải mã tiền kỹ thuật số của bạn một cách an toàn và bảo mật.",
+    "btn_consultation": "Yêu cầu Tư vấn ngay hôm nay"
+  },
+  "Approach": {
+    "title": "Cách tiếp cận Giải mã Ví của Chùng tôi",
+    "card1_title": "Tư vấn ban đầu và Đánh giá Rủi ro",
+    "card1_desc": "Hiểu thông tin chi tiết về tình hình của bạn để cung cấp chiến lược khôi phục phù hợp.",
+    "card2_title": "Kỹ thuật Giải mã Nâng cao",
+    "card2_desc": "Sử dụng công nghệ tiên tiến và phương pháp độc quyền để cố gắng khôi phục mật khẩu và khóa mã hóa.",
+    "card3_title": "Xử lý Nội bộ Bản địa",
+    "card3_desc": "Đảm bảo tính toán vẹn và an ninh của dữ liệu trong suốt quá trình giải mã."
+  },
+  "WhyChooseUs": {
+    "title": "Tại sao chọn Lenix Protocol đẻ Khôi phục Ví Crypto?",
+    "desc": "Đội ngũ chuyên gia Lenix Protocol là giải pháp số một của bạn đối với Dịch vụ Giải mã Ví Crypto. Chùng tôi mang đền phương pháp luận chuyên ngành và thành tích đã được chứng minh cho mọi cam kết khôi phục.",
+    "point1_title": "Chuyên môn về An ninh Tiền điện tử",
+    "point1_desc": "Sự hiểu biết sâu sắc về công nghệ blockchain và kiến trúc của ví.",
+    "point2_title": "Dịch vụ Bảo mật và Đạo đức",
+    "point2_desc": "Mọi hoạt động được thực hiện với sự tôn trọng quyền riêng tư và pháp lý ở mức cao nhất.",
+    "point3_title": "Tỷ lệ Thành công",
+    "point3_desc": "Thành tích đáng nể trong việc khôi phục quyền truy cập vào ví đã được mã hóa cho khách hàng toàn cầu."
+  },
+  "CTA": {
+    "title": "Liên hệ ngay",
+    "title_highlight": "hôm nay",
+    "desc_part1": "Liên hệ với chúng tôi ngay hôm nay tại",
+    "desc_part2": "để tìm hiểu thêm về cách Lenix Protocol có thể hỗ trợ Giải mã Ví Crypto.",
+    "email_label": "Email cho Đội ngũ Chùng tôi",
+    "phone_label": "Gọi đến Văn phòng Chùng tôi"
+  }
+}

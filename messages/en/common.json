@@ -75,7 +75,9 @@
       "terms": "Terms",
       "cookie": "Cookies",
       "privacy": "Privacy",
-      "disclaimer": "Disclaimer"
+      "disclaimer": "Disclaimer",
+      "wallet_decryption": "Wallet Decryption",
+      "crypto_asset_identification": "Crypto Asset Identification"
     },
     "buttons": {
       "recover_assets": "Recover Assets"
