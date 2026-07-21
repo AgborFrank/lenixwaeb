@@ -68,9 +68,9 @@ export default function CaseWorkflow() {
             className="mb-8"
           />
 
-          <div className={`${home.card} relative aspect-[21/9] sm:aspect-[2.5/1] mb-6`}>
+          <div className={`${home.card} relative w-full md:h-[250px] h-[150px] mb-6`}>
             <Image
-              src="/assets/img/DetectFinancialCrime.webp"
+              src="/assets/vectors/btc-banner.jpg"
               alt={caseT("image_alt")}
               fill
               className={home.mediaImage}
@@ -78,7 +78,7 @@ export default function CaseWorkflow() {
             />
           </div>
 
-          <div className="grid md:grid-cols-3 gap-5 mb-4">
+          <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-3 mb-4">
             {CASE_BLOCKS.map((id) => (
               <article key={id} className={`${home.card} ${home.cardBody}`}>
                 <h3 className="text-sm font-semibold text-white mb-2">{caseT(`${id}.label`)}</h3>

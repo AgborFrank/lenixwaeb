@@ -9,7 +9,7 @@
       "crypto_recovery": "Pagbawi ng Crypto",
       "contact": "Makipag-ugnayan",
       "airdrop": "Airdrop",
-      "banking_finance": "Banking & Finance"
+      "banking_finance": "Banking at Pinansya"
     },
     "solutions": {
       "wallet": {
@@ -33,8 +33,8 @@
         "desc": "Mga tool ng katalinuhan para sa ahensya."
       },
       "banking_finance": {
-        "title": "Banking & Finance",
-        "desc": "Transfers, liquidation, lending, and custody."
+        "title": "Banking at Pinansya",
+        "desc": "Mga transfer, liquidation, loan, at custody."
       }
     },
     "user_menu": {
@@ -115,40 +115,40 @@
     "Hero": {
       "slides": {
         "recovery": {
-          "title1": "Blockchain forensics and recovery ",
-          "title2": "for stolen digital assets",
+          "title1": "Blockchain forensics at pagbawi ",
+          "title2": "ng ninakaw na digital assets",
           "title3": ".",
-          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
-          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
-          "btn_primary": "Start a recovery case",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Sinubaybayan ng Lenix ang mga pondo sa iba't ibang chain at naghahanda ng evidence packages para sa exchanges, regulators, at counsel.",
+          "subtitle2": "Hindi kami nangangako ng pagbawi. Sinasabi namin sa iyo kung ano ang ipinapakita ng chain at anong mga landas ang maaaring umiral bago ka mag-commit.",
+          "btn_primary": "Simulan ang recovery case",
+          "btn_secondary": "Makipag-ugnayan sa team"
         },
         "forensics": {
           "title1": "Investigation-grade ",
           "title2": "blockchain forensics",
           "title3": ".",
-          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
-          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
-          "btn_primary": "View forensics",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "I-map ang wallet flows, suriin ang exposure, at gumawa ng documented findings para sa compliance teams at legal review.",
+          "subtitle2": "Ginawa para sa case work — hindi generic dashboards na may sobrang attribution claims.",
+          "btn_primary": "Tingnan ang forensics",
+          "btn_secondary": "Makipag-ugnayan sa team"
         },
         "banking": {
-          "title1": "Cross-Border Financial Services, ",
-          "title2": "Payment and Remittance",
+          "title1": "Cross-border financial services, ",
+          "title2": "payment at remittance",
           "title3": ".",
-          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
-          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
-          "btn_primary": "Create account",
-          "btn_secondary": "Banking & finance"
+          "subtitle1": "Magpadala ng pondo sa ibang bansa, i-cash out ang crypto sa fiat, umutang gamit ang collateral, at itago ang assets sa Lenix custody.",
+          "subtitle2": "Direktang nakikipagtrabaho ka sa Lenix — kita ang rates, fees, at delivery status bago ka mag-confirm.",
+          "btn_primary": "Gumawa ng account",
+          "btn_secondary": "Banking at pinansya"
         },
         "settlement": {
           "title1": "Crypto-to-fiat settlement ",
-          "title2": "your treasury can audit",
+          "title2": "na maaaring i-audit ng treasury mo",
           "title3": ".",
-          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
-          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
-          "btn_primary": "Open banking services",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "I-convert ang crypto sa fiat sa mga suportadong corridor na may quoted rates, fees, at handoff tracking hanggang bank delivery.",
+          "subtitle2": "Nakikita ng finance at ops ang status sa bawat hakbang — hindi isang pending flag na walang context.",
+          "btn_primary": "Buksan ang banking services",
+          "btn_secondary": "Makipag-ugnayan sa team"
         }
       },
       "btn_login": "Mag-log in"
@@ -396,6 +396,13 @@
       "subtitle": "Ibahagi kung ano ang nangyari at ang on-chain details na mayroon ka. Sumasagot kami nang tapat kung may tracing at recovery paths.",
       "btn_primary": "Simulan case",
       "btn_secondary": "Makipag-ugnayan"
+    },
+    "MarketTicker": {
+      "label": "Live market",
+      "disclaimer": "Nag-a-update ang mga spot price bawat minuto. Pinagmulan: CoinGecko.",
+      "updated": "Na-update {time}",
+      "error": "Hindi ma-load ang datos ng merkado.",
+      "loading": "Kinukuha ang mga live market..."
     }
   },
   "Security": {

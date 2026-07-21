@@ -9,7 +9,7 @@
       "crypto_recovery": "Thu hồi Crypto",
       "contact": "Liên hệ",
       "airdrop": "Airdrop",
-      "banking_finance": "Banking & Finance"
+      "banking_finance": "Ngân hàng & Tài chính"
     },
     "solutions": {
       "wallet": {
@@ -33,8 +33,8 @@
         "desc": "Công cụ tình báo cho cơ quan."
       },
       "banking_finance": {
-        "title": "Banking & Finance",
-        "desc": "Transfers, liquidation, lending, and custody."
+        "title": "Ngân hàng & Tài chính",
+        "desc": "Chuyển tiền, thanh lý, cho vay và lưu ký."
       }
     },
     "user_menu": {
@@ -115,40 +115,40 @@
     "Hero": {
       "slides": {
         "recovery": {
-          "title1": "Blockchain forensics and recovery ",
-          "title2": "for stolen digital assets",
+          "title1": "Phân tích pháp lý blockchain và thu hồi ",
+          "title2": "tài sản kỹ thuật số bị đánh cắp",
           "title3": ".",
-          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
-          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
-          "btn_primary": "Start a recovery case",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Lenix truy vết quỹ qua các chuỗi và chuẩn bị gói bằng chứng cho sàn giao dịch, cơ quan quản lý và cố vấn pháp lý.",
+          "subtitle2": "Chúng tôi không hứa thu hồi. Chúng tôi cho bạn biết chuỗi hiển thị gì và những hướng nào có thể tồn tại trước khi cam kết.",
+          "btn_primary": "Bắt đầu vụ thu hồi",
+          "btn_secondary": "Liên hệ nhóm"
         },
         "forensics": {
-          "title1": "Investigation-grade ",
-          "title2": "blockchain forensics",
+          "title1": "Phân tích pháp lý blockchain ",
+          "title2": "cấp độ điều tra",
           "title3": ".",
-          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
-          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
-          "btn_primary": "View forensics",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Lập bản đồ dòng chảy ví, đánh giá phơi nhiễm và tạo kết quả tài liệu cho nhóm tuân thủ và rà soát pháp lý.",
+          "subtitle2": "Xây dựng cho công việc vụ án — không phải bảng điều khiển chung với các tuyên bố quy kết thái quá.",
+          "btn_primary": "Xem phân tích",
+          "btn_secondary": "Liên hệ nhóm"
         },
         "banking": {
-          "title1": "Cross-Border Financial Services, ",
-          "title2": "Payment and Remittance",
+          "title1": "Dịch vụ tài chính xuyên biên giới, ",
+          "title2": "thanh toán và chuyển tiền",
           "title3": ".",
-          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
-          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
-          "btn_primary": "Create account",
-          "btn_secondary": "Banking & finance"
+          "subtitle1": "Gửi tiền xuyên biên giới, đổi crypto sang fiat, vay thế chấp và giữ tài sản trong ký gửi Lenix.",
+          "subtitle2": "Bạn làm việc trực tiếp với Lenix — phí, tỷ giá và trạng thái giao hàng hiển thị trước khi xác nhận.",
+          "btn_primary": "Tạo tài khoản",
+          "btn_secondary": "Ngân hàng & Tài chính"
         },
         "settlement": {
-          "title1": "Crypto-to-fiat settlement ",
-          "title2": "your treasury can audit",
+          "title1": "Thanh toán crypto-fiat ",
+          "title2": "bộ phận tài chính của bạn có thể kiểm toán",
           "title3": ".",
-          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
-          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
-          "btn_primary": "Open banking services",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Chuyển đổi crypto sang fiat trên các hành lang được hỗ trợ với tỷ giá, phí và theo dõi giao dịch qua ngân hàng.",
+          "subtitle2": "Tài chính và vận hành thấy trạng thái ở mỗi bước — không chỉ một cờ chờ xử lý không có ngữ cảnh.",
+          "btn_primary": "Mở dịch vụ ngân hàng",
+          "btn_secondary": "Liên hệ nhóm"
         }
       },
       "btn_login": "Đăng nhập"
@@ -396,6 +396,13 @@
       "subtitle": "Chia sẻ diễn biến và chi tiết on-chain bạn có. Chúng tôi phản hồi với đánh giá trung thực về lộ trình truy vết và thu hồi.",
       "btn_primary": "Mở vụ việc",
       "btn_secondary": "Liên hệ"
+    },
+    "MarketTicker": {
+      "label": "Thị trường trực tiếp",
+      "disclaimer": "Giá spot cập nhật mỗi phút. Nguồn: CoinGecko.",
+      "updated": "Cập nhật lúc {time}",
+      "error": "Không thể tải dữ liệu thị trường.",
+      "loading": "Đang tải thị trường trực tiếp..."
     }
   },
   "Security": {

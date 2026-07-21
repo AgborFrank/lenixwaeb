@@ -183,6 +183,13 @@
       "title2": "token sale",
       "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
     },
+    "MarketTicker": {
+      "label": "Market ticker",
+      "disclaimer": "Spot prices refresh every minute. Source: CoinGecko.",
+      "updated": "Updated {time}",
+      "error": "Unable to load market data.",
+      "loading": "Fetching live markets..."
+    },
     "Pillars": {
       "title1": "One protocol, ",
       "title2": "four workflows",

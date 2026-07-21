@@ -9,7 +9,7 @@
       "crypto_recovery": "Kripto Kurtarma",
       "contact": "İletişim",
       "airdrop": "Airdrop",
-      "banking_finance": "Banking & Finance"
+      "banking_finance": "Bankacılık & Finans"
     },
     "solutions": {
       "wallet": {
@@ -33,8 +33,8 @@
         "desc": "Kurumlar için istihbarat araçları."
       },
       "banking_finance": {
-        "title": "Banking & Finance",
-        "desc": "Transfers, liquidation, lending, and custody."
+        "title": "Bankacılık & Finans",
+        "desc": "Transferler, tasfiye, kredi ve saklama."
       }
     },
     "user_menu": {
@@ -115,40 +115,40 @@
     "Hero": {
       "slides": {
         "recovery": {
-          "title1": "Blockchain forensics and recovery ",
-          "title2": "for stolen digital assets",
+          "title1": "Blockchain forensics ve kurtarma ",
+          "title2": "çalınan dijital varlıklar için",
           "title3": ".",
-          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
-          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
-          "btn_primary": "Start a recovery case",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Lenix zincirler arası fonları izler ve borsalar, düzenleyiciler ve danışmanlar için delil paketleri hazırlar.",
+          "subtitle2": "Kurtarma vaat etmiyoruz. Size zincirin ne gösterdiğini ve taahhüt etmeden önce olası yolları söylüyoruz.",
+          "btn_primary": "Kurtarma vakası başlat",
+          "btn_secondary": "Ekibimizle iletişime geçin"
         },
         "forensics": {
-          "title1": "Investigation-grade ",
+          "title1": "Araştırma düzeyinde ",
           "title2": "blockchain forensics",
           "title3": ".",
-          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
-          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
-          "btn_primary": "View forensics",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Cüzdan akışlarını haritalayın, maruziyeti tarayın ve uyum ekipleri ile hukuki inceleme için belgelenmiş bulgular üretin.",
+          "subtitle2": "Vaka çalışması için geliştirildi — abartılı atıf iddiaları olan genel paneller değil.",
+          "btn_primary": "Forensics görüntüle",
+          "btn_secondary": "Ekibimizle iletişime geçin"
         },
         "banking": {
-          "title1": "Cross-Border Financial Services, ",
-          "title2": "Payment and Remittance",
+          "title1": "Sınır ötesi finansal hizmetler, ",
+          "title2": "ödeme ve havale",
           "title3": ".",
-          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
-          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
-          "btn_primary": "Create account",
-          "btn_secondary": "Banking & finance"
+          "subtitle1": "Sınır ötesi para gönderin, kriptoyu fiat'a çevirin, teminat karşılığı borç alın ve varlıkları Lenix saklamasında tutun.",
+          "subtitle2": "Doğrudan Lenix ile çalışırsınız — oranlar, ücretler ve teslimat durumu onaylamadan önce görünür.",
+          "btn_primary": "Hesap oluştur",
+          "btn_secondary": "Bankacılık & finans"
         },
         "settlement": {
-          "title1": "Crypto-to-fiat settlement ",
-          "title2": "your treasury can audit",
+          "title1": "Kriptodan fiat'a settlement ",
+          "title2": "hazinenizin denetleyebileceği",
           "title3": ".",
-          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
-          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
-          "btn_primary": "Open banking services",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Desteklenen koridorlarda kriptoyu fiat'a, belirtilen oranlar, ücretler ve banka teslimatına kadar takiple dönüştürün.",
+          "subtitle2": "Finans ve operasyonlar her adımda durumu görür — bağlamsız tek bir bekleyen bayrak değil.",
+          "btn_primary": "Bankacılık hizmetlerini aç",
+          "btn_secondary": "Ekibimizle iletişime geçin"
         }
       },
       "btn_login": "Giriş"
@@ -396,6 +396,13 @@
       "subtitle": "Ne olduğunu ve sahip olduğunuz on-chain ayrıntıları paylaşın. İzleme ve kurtarma yollarının olup olmadığı konusunda dürüst bir değerlendirme yaparız.",
       "btn_primary": "Vaka aç",
       "btn_secondary": "Ekiple iletişim"
+    },
+    "MarketTicker": {
+      "label": "Canlı piyasa",
+      "disclaimer": "Anlık fiyatlar her dakika yenilenir. Kaynak: CoinGecko.",
+      "updated": "Güncellendi {time}",
+      "error": "Piyasa verileri yüklenemedi.",
+      "loading": "Canlı piyasalar getiriliyor..."
     }
   },
   "Security": {

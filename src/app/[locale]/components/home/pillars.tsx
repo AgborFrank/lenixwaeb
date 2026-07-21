@@ -13,7 +13,7 @@ export default function Pillars() {
     { id: "security", href: "/solutions", image: "/assets/img/MonitorRisk.webp" },
     { id: "recovery", href: "/crypto-recovery", image: "/assets/img/trade-routes.jpg" },
     { id: "forensics", href: "/blockchain-forensics", image: "/assets/img/investigate.webp" },
-    { id: "finance", href: "/solutions", image: "/assets/img/BringDeFiIntelligence.webp" },
+    { id: "finance", href: "/solutions", image: "/assets/vectors/pay.jpg" },
   ] as const;
 
   return (

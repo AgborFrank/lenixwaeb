@@ -9,7 +9,7 @@
       "crypto_recovery": "استرجاع العملات",
       "contact": "تواصل",
       "airdrop": "أيردروب",
-      "banking_finance": "Banking & Finance"
+      "banking_finance": "البنوك والمالية"
     },
     "solutions": {
       "wallet": {
@@ -33,8 +33,8 @@
         "desc": "أدوات استخبارات للوكالات."
       },
       "banking_finance": {
-        "title": "Banking & Finance",
-        "desc": "Transfers, liquidation, lending, and custody."
+        "title": "البنوك والمالية",
+        "desc": "تحويلات، تصفية، قروض وحفظ."
       }
     },
     "user_menu": {
@@ -115,40 +115,40 @@
     "Hero": {
       "slides": {
         "recovery": {
-          "title1": "Blockchain forensics and recovery ",
-          "title2": "for stolen digital assets",
+          "title1": "التحقيق الجنائي على البلوكشين واسترداد ",
+          "title2": "الأصول الرقمية المسروقة",
           "title3": ".",
-          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
-          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
-          "btn_primary": "Start a recovery case",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "تتبع Lenix للأموال عبر الشبكات وتحضير حزم أدلة للمنصات والجهات التنظيمية والمستشارين القانونيين.",
+          "subtitle2": "لا نعد بالاسترداد. نخبرك بما تظهره السلسلة والمسارات المحتملة قبل الالتزام.",
+          "btn_primary": "بدء قضية استرداد",
+          "btn_secondary": "تواصل مع فريقنا"
         },
         "forensics": {
-          "title1": "Investigation-grade ",
-          "title2": "blockchain forensics",
+          "title1": "التحقيق الجنائي على البلوكشين ",
+          "title2": "بمستوى التحقيقات",
           "title3": ".",
-          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
-          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
-          "btn_primary": "View forensics",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "ارسم تدفقات المحافظ، افحص التعرض، وقدم نتائج موثقة لفرق الامتثال والمراجعة القانونية.",
+          "subtitle2": "مبني لعمل القضايا — وليس لوحات معلومات عامة بادعاءات مبالغ فيها.",
+          "btn_primary": "عرض التحقيق الجنائي",
+          "btn_secondary": "تواصل مع فريقنا"
         },
         "banking": {
-          "title1": "Cross-Border Financial Services, ",
-          "title2": "Payment and Remittance",
+          "title1": "خدمات مالية عبر الحدود، ",
+          "title2": "الدفع والتحويلات",
           "title3": ".",
-          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
-          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
-          "btn_primary": "Create account",
-          "btn_secondary": "Banking & finance"
+          "subtitle1": "أرسل الأموال عبر الحدود، حول العملات الرقمية إلى نقد، اقترض ضمن ضمان، واحتفظ بالأصول في حفظ Lenix.",
+          "subtitle2": "تعمل مع Lenix مباشرة — الأسعار والرسوم وحالة التسليم مرئية قبل التأكيد.",
+          "btn_primary": "إنشاء حساب",
+          "btn_secondary": "البنوك والمالية"
         },
         "settlement": {
-          "title1": "Crypto-to-fiat settlement ",
-          "title2": "your treasury can audit",
+          "title1": "تسوية العملات الرقمية إلى نقد ",
+          "title2": "يمكن لخزانة شركتك تدقيقها",
           "title3": ".",
-          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
-          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
-          "btn_primary": "Open banking services",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "حوّل العملات الرقمية إلى نقد في الممرات المدعومة بأسعار ورسوم وتتبع للتسليم البنكي.",
+          "subtitle2": "يرى الماليات والعمليات الحالة في كل خطوة — وليس مجرد علامة معلقة بدون سياق.",
+          "btn_primary": "فتح الخدمات المصرفية",
+          "btn_secondary": "تواصل مع فريقنا"
         }
       },
       "btn_login": "دخول"
@@ -396,6 +396,13 @@
       "subtitle": "شارك ما حدث والتفاصيل on-chain لديك. نرد بتقييم صادق لمسارات التتبع والاسترداد.",
       "btn_primary": "فتح قضية",
       "btn_secondary": "تواصل معنا"
+    },
+    "MarketTicker": {
+      "label": "السوق المباشر",
+      "disclaimer": "يتم تحديث الأسعار الفورية كل دقيقة. المصدر: CoinGecko.",
+      "updated": "تم التحديث {time}",
+      "error": "تعذّر تحميل بيانات السوق.",
+      "loading": "جارٍ جلب الأسواق المباشرة..."
     }
   },
   "Security": {

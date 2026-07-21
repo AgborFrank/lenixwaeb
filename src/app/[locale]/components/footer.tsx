@@ -76,7 +76,7 @@ export default function Footer() {
                 alt="Lenix Protocol"
                 width={140}
                 height={36}
-                className="h-9 w-auto"
+                className="md:h-9 h-6 w-auto"
               />
             </Link>
             <p className="text-sm text-neutral-400 leading-relaxed mb-6 max-w-xs">
@@ -212,13 +212,13 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex flex-col sm:flex-row sm:items-center gap-4 max-w-2xl">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 max-w-2xl mx-start">
             <Image
               src="/assets/img/certy.webp"
               alt="ISO 27001"
-              width={72}
-              height={72}
-              className="h-14 w-auto shrink-0"
+              width={172}
+              height={172}
+              className="md:h-14 h-8 w-auto shrink-0 object-contain grayscale invert-100 mx-start"
             />
             <p className="text-xs text-neutral-500 leading-relaxed">{t("Footer.certification_desc")}</p>
           </div>
@@ -228,7 +228,7 @@ export default function Footer() {
               <Image
                 src="/assets/img/google-2.webp"
                 alt="Google Play"
-                className="h-10 w-auto rounded-md"
+                className="md:h-10 h-6 w-auto  bg-gray-300 md:rounded-xl rounded-md"
                 width={120}
                 height={40}
               />
@@ -237,7 +237,7 @@ export default function Footer() {
               <Image
                 src="/assets/img/appstore.png"
                 alt="App Store"
-                className="h-10 w-auto rounded-md"
+                className="md:h-10 h-6 w-auto  bg-gray-300 md:rounded-xl rounded-md"
                 width={120}
                 height={40}
               />

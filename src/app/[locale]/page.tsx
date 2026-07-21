@@ -7,6 +7,7 @@ import TrustSignals from "./components/home/trust-signals";
 import Merchant from "./components/home/merchant";
 import Credibility from "./components/home/credibility";
 import HomeCta from "./components/home/home-cta";
+import { MarketTicker } from "./components/home/market-ticker";
 import Partners from "@/components/partners";
 
 export default function Home() {
@@ -54,7 +55,9 @@ export default function Home() {
       <TrustSignals />
       <Merchant />
       <Credibility />
+      
       <HomeCta />
+      <MarketTicker />
       <Footer />
     </>
   );

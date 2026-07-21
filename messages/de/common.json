@@ -9,7 +9,7 @@
       "crypto_recovery": "Krypto-Rückgewinnung",
       "contact": "Kontakt",
       "airdrop": "Airdrop",
-      "banking_finance": "Banking & Finance"
+      "banking_finance": "Banking & Finanzen"
     },
     "solutions": {
       "wallet": {
@@ -33,8 +33,8 @@
         "desc": "Ermittlungstools für Behörden."
       },
       "banking_finance": {
-        "title": "Banking & Finance",
-        "desc": "Transfers, liquidation, lending, and custody."
+        "title": "Banking & Finanzen",
+        "desc": "Überweisungen, Liquidation, Kredite und Verwahrung."
       }
     },
     "user_menu": {
@@ -115,40 +115,40 @@
     "Hero": {
       "slides": {
         "recovery": {
-          "title1": "Blockchain forensics and recovery ",
-          "title2": "for stolen digital assets",
+          "title1": "Blockchain-Forensik und Recovery ",
+          "title2": "für gestohlene digitale Assets",
           "title3": ".",
-          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
-          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
-          "btn_primary": "Start a recovery case",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Lenix verfolgt Gelder über Chains hinweg und bereitet Beweispakete für Exchanges, Regulatoren und Anwälte vor.",
+          "subtitle2": "Wir versprechen keine Wiederherstellung. Wir sagen Ihnen, was die Chain zeigt und welche Wege möglich sein könnten, bevor Sie sich binden.",
+          "btn_primary": "Recovery-Fall starten",
+          "btn_secondary": "Team kontaktieren"
         },
         "forensics": {
-          "title1": "Investigation-grade ",
-          "title2": "blockchain forensics",
+          "title1": "Ermittlungsrelevante ",
+          "title2": "Blockchain-Forensik",
           "title3": ".",
-          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
-          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
-          "btn_primary": "View forensics",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Mappen Sie Wallet-Flüsse, prüfen Sie Expositionen und erstellen Sie dokumentierte Ergebnisse für Compliance-Teams und rechtliche Prüfung.",
+          "subtitle2": "Für Fallarbeit konzipiert — keine generischen Dashboards mit überzogenen Zuordnungsbehauptungen.",
+          "btn_primary": "Forensik ansehen",
+          "btn_secondary": "Team kontaktieren"
         },
         "banking": {
-          "title1": "Cross-Border Financial Services, ",
-          "title2": "Payment and Remittance",
+          "title1": "Grenzüberschreitende Finanzdienstleistungen, ",
+          "title2": "Zahlung und Remittance",
           "title3": ".",
-          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
-          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
-          "btn_primary": "Create account",
-          "btn_secondary": "Banking & finance"
+          "subtitle1": "Senden Sie Gelder grenzüberschreitend, tauschen Sie Krypto in Fiat, leihen gegen Sicherheiten und halten Assets in Lenix-Custody.",
+          "subtitle2": "Sie arbeiten direkt mit Lenix — Kurse, Gebühren und Lieferstatus sind vor Bestätigung sichtbar.",
+          "btn_primary": "Konto erstellen",
+          "btn_secondary": "Banking & Finanzen"
         },
         "settlement": {
-          "title1": "Crypto-to-fiat settlement ",
-          "title2": "your treasury can audit",
+          "title1": "Krypto-zu-Fiat-Settlement ",
+          "title2": "das Ihre Treasury prüfen kann",
           "title3": ".",
-          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
-          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
-          "btn_primary": "Open banking services",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Wandeln Sie Krypto in Fiat auf unterstützten Corridors mit Kursen, Gebühren und Tracking bis zur Bankauszahlung um.",
+          "subtitle2": "Finance und Ops sehen den Status in jedem Schritt — nicht nur ein einzelner Pending-Status ohne Kontext.",
+          "btn_primary": "Banking-Services öffnen",
+          "btn_secondary": "Team kontaktieren"
         }
       },
       "btn_login": "Anmelden"
@@ -396,6 +396,13 @@
       "subtitle": "Teilen Sie, was passiert ist, und die On-Chain-Details, die Sie haben. Wir antworten mit einer ehrlichen Einschätzung, ob Tracing- und Recovery-Wege existieren.",
       "btn_primary": "Fall melden",
       "btn_secondary": "Team kontaktieren"
+    },
+    "MarketTicker": {
+      "label": "Live-Markt",
+      "disclaimer": "Spotpreise aktualisieren sich jede Minute. Quelle: CoinGecko.",
+      "updated": "Aktualisiert {time}",
+      "error": "Marktdaten konnten nicht geladen werden.",
+      "loading": "Live-Märkte werden geladen..."
     }
   },
   "Security": {

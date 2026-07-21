@@ -55,7 +55,7 @@ export default function HomeHero() {
           <source src="/assets/bg.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-neutral-950/70" />
-        <div className="absolute inset-0 bg-linear-to-b from-neutral-950/90 via-neutral-950/50 to-neutral-950" />
+        <div className="absolute inset-0 bg-linear-to-b md:from-neutral-950/90 from-neutral-950/20 via-neutral-950/50 to-neutral-950" />
       </div>
 
       <div
@@ -92,10 +92,10 @@ export default function HomeHero() {
                     </h1>
 
                     <div className="space-y-4 max-w-2xl">
-                      <p className="text-lg text-neutral-300 leading-relaxed">
+                      <p className="md:text-lg text-base text-neutral-300 md:leading-relaxed leading-tighter">
                         {t(`slides.${key}.subtitle1`)}
                       </p>
-                      <p className="text-base text-neutral-400 leading-relaxed">
+                      <p className="md:text-base text-sm text-neutral-400 leading-relaxed">
                         {t(`slides.${key}.subtitle2`)}
                       </p>
                     </div>
@@ -103,12 +103,12 @@ export default function HomeHero() {
 
                   <div className="flex flex-wrap gap-3">
                     <Link href={links.primary}>
-                      <Button className={`${home.btnPrimary} h-11 shadow-none`}>
+                      <Button className={`${home.btnPrimary} md:h-11 h-9 shadow-none`}>
                         {t(`slides.${key}.btn_primary`)}
                       </Button>
                     </Link>
                     <Link href={links.secondary}>
-                      <Button className={`${home.btnSecondary} h-11 shadow-none`}>
+                      <Button className={`${home.btnSecondary} md:h-11 h-9 shadow-none`}>
                         {t(`slides.${key}.btn_secondary`)}
                       </Button>
                     </Link>

@@ -113,7 +113,7 @@ export default function Header() {
                 alt="logo"
                 width={150}
                 height={40}
-                className="h-[35px] w-[130px]"
+                className="md:h-[35px] md:w-[130px] w-auto h-6"
               />
             </div>
           </Link>
@@ -396,7 +396,7 @@ export default function Header() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4 z-20">
+          <div className="md:hidden flex items-center space-x-2 z-20">
             {isConnected && <appkit-button size="sm" />}
             <button
               onClick={() => (isConnected ? participate() : open())}
@@ -416,6 +416,7 @@ export default function Header() {
             >
               {isPending ? "..." : t("buttons.get_reward")}
             </button>
+            <LanguagePicker isDark menuSide="bottom" />
             <button
               onClick={toggleMobileMenu}
               className="text-white hover:text-gray-300 p-2"

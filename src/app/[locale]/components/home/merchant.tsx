@@ -14,7 +14,7 @@ export default function Merchant() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className={`${home.card} relative aspect-[4/3] lg:aspect-auto lg:min-h-[420px]`}>
             <Image
-              src="/assets/img/BringDeFiIntelligence.webp"
+              src="/assets/vectors/pay.svg"
               alt={t("image_alt")}
               fill
               className={home.mediaImage}

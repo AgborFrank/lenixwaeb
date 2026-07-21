@@ -9,7 +9,7 @@
       "crypto_recovery": "क्रिप्टो पुनर्प्राप्ति",
       "contact": "संपर्क",
       "airdrop": "एयरड्रॉप",
-      "banking_finance": "Banking & Finance"
+      "banking_finance": "बैंकिंग और वित्त"
     },
     "solutions": {
       "wallet": {
@@ -33,8 +33,8 @@
         "desc": "एजेंसियों के लिए खुफिया उपकरण।"
       },
       "banking_finance": {
-        "title": "Banking & Finance",
-        "desc": "Transfers, liquidation, lending, and custody."
+        "title": "बैंकिंग और वित्त",
+        "desc": "ट्रांसफर, लिक्विडेशन, लोन और कस्टडी।"
       }
     },
     "user_menu": {
@@ -115,40 +115,40 @@
     "Hero": {
       "slides": {
         "recovery": {
-          "title1": "Blockchain forensics and recovery ",
-          "title2": "for stolen digital assets",
-          "title3": ".",
-          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
-          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
-          "btn_primary": "Start a recovery case",
-          "btn_secondary": "Contact our team"
+          "title1": "ब्लॉकचेन फोरेंसिक्स और रिकवरी ",
+          "title2": "चोरी हुए डिजिटल एसेट्स के लिए",
+          "title3": "।",
+          "subtitle1": "Lenix चेनों में फंड का पता लगाता है और एक्सचेंजों, नियामकों और काउंसल के लिए सबूत पैकेज तैयार करता है।",
+          "subtitle2": "हम रिकवरी का वादा नहीं करते। हम आपको बताते हैं कि चेन क्या दिखाती है और प्रतिबद्धता से पहले कौन से रास्ते संभव हैं।",
+          "btn_primary": "रिकवरी केस शुरू करें",
+          "btn_secondary": "हमारी टीम से संपर्क करें"
         },
         "forensics": {
-          "title1": "Investigation-grade ",
-          "title2": "blockchain forensics",
-          "title3": ".",
-          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
-          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
-          "btn_primary": "View forensics",
-          "btn_secondary": "Contact our team"
+          "title1": "जांच-योग्य ",
+          "title2": "ब्लॉकचेन फोरेंसिक्स",
+          "title3": "।",
+          "subtitle1": "वॉलेट फ्लो मैप करें, एक्सपोजर स्क्रीन करें और कम्प्लायंस टीमों और कानूनी समीक्षा के लिए दस्तावेज़ित निष्कर्ष तैयार करें।",
+          "subtitle2": "केस कार्य के लिए बनाया गया — अतिरंजित एट्रिब्यूशन दावों वाले सामान्य डैशबोर्ड नहीं।",
+          "btn_primary": "फोरेंसिक्स देखें",
+          "btn_secondary": "हमारी टीम से संपर्क करें"
         },
         "banking": {
-          "title1": "Cross-Border Financial Services, ",
-          "title2": "Payment and Remittance",
-          "title3": ".",
-          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
-          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
-          "btn_primary": "Create account",
-          "btn_secondary": "Banking & finance"
+          "title1": "क्रॉस-बॉर्डर वित्तीय सेवाएं, ",
+          "title2": "भुगतान और रेमिटेंस",
+          "title3": "।",
+          "subtitle1": "सीमाओं पार धन भेजें, क्रिप्टो को फिएट में कैश आउट करें, गारंटी के खिलाफ उधार लें और Lenix कस्टडी में संपत्तियां रखें।",
+          "subtitle2": "आप सीधे Lenix के साथ काम करते हैं — दरें, शुल्क और डिलीवरी स्थिति पुष्टि से पहले दिखती है।",
+          "btn_primary": "खाता बनाएं",
+          "btn_secondary": "बैंकिंग और वित्त"
         },
         "settlement": {
-          "title1": "Crypto-to-fiat settlement ",
-          "title2": "your treasury can audit",
-          "title3": ".",
-          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
-          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
-          "btn_primary": "Open banking services",
-          "btn_secondary": "Contact our team"
+          "title1": "क्रिप्टो-टू-फिएट सेटलमेंट ",
+          "title2": "जो आपका ट्रेजरी ऑडिट कर सके",
+          "title3": "।",
+          "subtitle1": "समर्थित गलियारों पर उद्धृत दरों, शुल्क और बैंक डिलीवरी तक हैंडऑफ ट्रैकिंग के साथ क्रिप्टो को फिएट में बदलें।",
+          "subtitle2": "वित्त और संचालन हर चरण पर स्थिति देखते हैं — कोई संदर्भ रहित एकल लंबित ध्वज नहीं।",
+          "btn_primary": "बैंकिंग सेवाएं खोलें",
+          "btn_secondary": "हमारी टीम से संपर्क करें"
         }
       },
       "btn_login": "लॉग इन"
@@ -396,6 +396,13 @@
       "subtitle": "बताएँ क्या हुआ और आपके पास जो on-chain विवरण हैं। हम ईमानदारी से बताते हैं कि ट्रेसिंग और रिकवरी के रास्ते हैं या नहीं।",
       "btn_primary": "केस शुरू",
       "btn_secondary": "टीम से संपर्क"
+    },
+    "MarketTicker": {
+      "label": "लाइव बाजार",
+      "disclaimer": "स्पॉट कीमतें हर मिनट अपडेट होती हैं। स्रोत: CoinGecko।",
+      "updated": "अद्यतन {time}",
+      "error": "बाज़ार डेटा लोड नहीं हो सका।",
+      "loading": "लाइव बाजार प्राप्त किए जा रहे हैं..."
     }
   },
   "Security": {

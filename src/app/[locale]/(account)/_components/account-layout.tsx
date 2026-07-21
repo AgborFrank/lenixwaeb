@@ -181,7 +181,7 @@ export function AccountLayout({
             </Link>
             <LanguagePicker isDark menuSide="bottom" />
           </div>
-          <ScrollArea className="flex-1 [&>[data-slot=scroll-area-scrollbar]]:hidden">
+          <ScrollArea className="flex-1 *:data-[slot=scroll-area-scrollbar]:hidden">
             <SidebarContent />
           </ScrollArea>
         </div>

@@ -9,7 +9,7 @@
       "crypto_recovery": "加密追回",
       "contact": "联系",
       "airdrop": "空投",
-      "banking_finance": "Banking & Finance"
+      "banking_finance": "银行与金融"
     },
     "solutions": {
       "wallet": {
@@ -33,8 +33,8 @@
         "desc": "为机构提供的区块链情报工具。"
       },
       "banking_finance": {
-        "title": "Banking & Finance",
-        "desc": "Transfers, liquidation, lending, and custody."
+        "title": "银行与金融",
+        "desc": "转账、清算、借贷与托管。"
       }
     },
     "user_menu": {
@@ -115,40 +115,40 @@
     "Hero": {
       "slides": {
         "recovery": {
-          "title1": "Blockchain forensics and recovery ",
-          "title2": "for stolen digital assets",
-          "title3": ".",
-          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
-          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
-          "btn_primary": "Start a recovery case",
-          "btn_secondary": "Contact our team"
+          "title1": "区块链取证与追回 ",
+          "title2": "被盗数字资产",
+          "title3": "。",
+          "subtitle1": "Lenix 跨链追踪资金，为交易所、监管机构和法律顾问准备证据包。",
+          "subtitle2": "我们不承诺追回。在确认前，我们会告诉您链上显示的情况以及可能存在的路径。",
+          "btn_primary": "开启追回案件",
+          "btn_secondary": "联系团队"
         },
         "forensics": {
-          "title1": "Investigation-grade ",
-          "title2": "blockchain forensics",
-          "title3": ".",
-          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
-          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
-          "btn_primary": "View forensics",
-          "btn_secondary": "Contact our team"
+          "title1": "调查级 ",
+          "title2": "区块链取证",
+          "title3": "。",
+          "subtitle1": "绘制钱包流向、筛查风险敞口，并生成合规团队与法律审查所需的文档化调查结果。",
+          "subtitle2": "为案件工作而设计——不是夸大归因的通用仪表板。",
+          "btn_primary": "查看见证",
+          "btn_secondary": "联系团队"
         },
         "banking": {
-          "title1": "Cross-Border Financial Services, ",
-          "title2": "Payment and Remittance",
-          "title3": ".",
-          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
-          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
-          "btn_primary": "Create account",
-          "btn_secondary": "Banking & finance"
+          "title1": "跨境金融服务，",
+          "title2": "支付与汇款",
+          "title3": "。",
+          "subtitle1": "跨境汇款、将加密兑换为法币、抵押借贷，并将资产托管于 Lenix。",
+          "subtitle2": "您直接与 Lenix 合作——费率、手续费与交付状态在确认前一目了然。",
+          "btn_primary": "创建账户",
+          "btn_secondary": "银行与金融"
         },
         "settlement": {
-          "title1": "Crypto-to-fiat settlement ",
-          "title2": "your treasury can audit",
-          "title3": ".",
-          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
-          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
-          "btn_primary": "Open banking services",
-          "btn_secondary": "Contact our team"
+          "title1": "加密到法币结算，",
+          "title2": "您的财务部门可以审计",
+          "title3": "。",
+          "subtitle1": "在支持的通道上将加密兑换为法币，提供报价、手续费与银行交付全程追踪。",
+          "subtitle2": "财务与运营在每个步骤都能查看状态，而不是只有一个没有上下文的待处理标记。",
+          "btn_primary": "开通银行服务",
+          "btn_secondary": "联系团队"
         }
       },
       "btn_login": "登录"
@@ -396,6 +396,13 @@
       "subtitle": "说明事件经过及您掌握的链上细节。我们将如实评估是否存在追踪与追回路径。",
       "btn_primary": "提交案件",
       "btn_secondary": "联系团队"
+    },
+    "MarketTicker": {
+      "label": "实时市场",
+      "disclaimer": "现货价格每分钟更新。来源：CoinGecko。",
+      "updated": "更新于 {time}",
+      "error": "无法加载市场数据。",
+      "loading": "正在获取实时市场..."
     }
   },
   "Security": {

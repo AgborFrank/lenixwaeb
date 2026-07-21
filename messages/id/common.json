@@ -9,7 +9,7 @@
       "crypto_recovery": "Pemulihan Kripto",
       "contact": "Kontak",
       "airdrop": "Airdrop",
-      "banking_finance": "Banking & Finance"
+      "banking_finance": "Perbankan & Keuangan"
     },
     "solutions": {
       "wallet": {
@@ -33,8 +33,8 @@
         "desc": "Alat intelijen untuk lembaga."
       },
       "banking_finance": {
-        "title": "Banking & Finance",
-        "desc": "Transfers, liquidation, lending, and custody."
+        "title": "Perbankan & Keuangan",
+        "desc": "Transfer, likuidasi, pinjaman, dan kustodi."
       }
     },
     "user_menu": {
@@ -115,40 +115,40 @@
     "Hero": {
       "slides": {
         "recovery": {
-          "title1": "Blockchain forensics and recovery ",
-          "title2": "for stolen digital assets",
+          "title1": "Forensik blockchain dan pemulihan ",
+          "title2": "aset digital yang dicuri",
           "title3": ".",
-          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
-          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
-          "btn_primary": "Start a recovery case",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Lenix melacak dana lintas chain dan menyiapkan paket bukti untuk exchange, regulator, dan penasihat hukum.",
+          "subtitle2": "Kami tidak menjanjikan pemulihan. Kami memberi tahu Anda apa yang ditunjukkan rantai dan jalur apa yang mungkin ada sebelum Anda berkomitmen.",
+          "btn_primary": "Mulai kasus pemulihan",
+          "btn_secondary": "Hubungi tim kami"
         },
         "forensics": {
-          "title1": "Investigation-grade ",
-          "title2": "blockchain forensics",
+          "title1": "Forensik blockchain ",
+          "title2": "tingkat investigasi",
           "title3": ".",
-          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
-          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
-          "btn_primary": "View forensics",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Peta aliran wallet, periksa eksposur, dan hasilkan temuan terdokumentasi untuk tim kepatuhan dan tinjauan hukum.",
+          "subtitle2": "Dibangun untuk pekerjaan kasus — bukan dashboard generik dengan klaim atribusi yang berlebihan.",
+          "btn_primary": "Lihat forensik",
+          "btn_secondary": "Hubungi tim kami"
         },
         "banking": {
-          "title1": "Cross-Border Financial Services, ",
-          "title2": "Payment and Remittance",
+          "title1": "Layanan keuangan lintas batas, ",
+          "title2": "pembayaran dan remitansi",
           "title3": ".",
-          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
-          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
-          "btn_primary": "Create account",
-          "btn_secondary": "Banking & finance"
+          "subtitle1": "Kirim dana lintas batas, uangkan crypto ke fiat, pinjam dengan jaminan, dan simpan aset dalam kustodi Lenix.",
+          "subtitle2": "Anda bekerja langsung dengan Lenix — tarif, biaya, dan status pengiriman terlihat sebelum konfirmasi.",
+          "btn_primary": "Buat akun",
+          "btn_secondary": "Perbankan & keuangan"
         },
         "settlement": {
-          "title1": "Crypto-to-fiat settlement ",
-          "title2": "your treasury can audit",
+          "title1": "Penyelesaian crypto-ke-fiat ",
+          "title2": "yang dapat diaudit oleh treasury Anda",
           "title3": ".",
-          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
-          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
-          "btn_primary": "Open banking services",
-          "btn_secondary": "Contact our team"
+          "subtitle1": "Ubah crypto ke fiat di koridor yang didukung dengan tarif, biaya, dan pelacakan penyerahan melalui bank.",
+          "subtitle2": "Keuangan dan operasi melihat status di setiap langkah — bukan satu tanda tertunda tanpa konteks.",
+          "btn_primary": "Buka layanan perbankan",
+          "btn_secondary": "Hubungi tim kami"
         }
       },
       "btn_login": "Masuk"
@@ -396,6 +396,13 @@
       "subtitle": "Bagikan apa yang terjadi dan detail on-chain yang Anda miliki. Kami merespons dengan penilaian jujur apakah jalur pelacakan dan pemulihan ada.",
       "btn_primary": "Buka kasus",
       "btn_secondary": "Hubungi tim"
+    },
+    "MarketTicker": {
+      "label": "Pasar langsung",
+      "disclaimer": "Harga spot diperbarui setiap menit. Sumber: CoinGecko.",
+      "updated": "Diperbarui {time}",
+      "error": "Tidak dapat memuat data pasar.",
+      "loading": "Mengambil pasar langsung..."
     }
   },
   "Security": {
