@@ -1,9 +1,12 @@
 "use client";
 
 import { ArrowDownToLine } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { ReceiveAddressCard } from "./_components/receive-address-card";
 
 export default function ReceivePage() {
+  const t = useTranslations("AccountLenixWallet.receive_page");
+
   return (
     <div className="max-w-7xl mx-auto pb-20 space-y-8">
       
@@ -13,10 +16,10 @@ export default function ReceivePage() {
           <div className="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
              <ArrowDownToLine className="h-6 w-6" />
           </div>
-          Receive Assets
+          {t("title")}
         </h1>
         <p className="text-zinc-400 text-sm mt-1 ml-1">
-          Get your unique address to receive payments.
+          {t("subtitle")}
         </p>
       </div>
 
@@ -27,8 +30,7 @@ export default function ReceivePage() {
 
       <div className="text-center max-w-md mx-auto">
          <p className="text-xs text-zinc-500">
-            For security, please verify the network matches exactly before depositing. 
-            Sent assets cannot be recovered if the wrong network is used.
+            {t("security_notice")}
          </p>
       </div>
     </div>

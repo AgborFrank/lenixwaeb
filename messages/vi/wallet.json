@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Lenix Wallet | Ví crypto đa chuỗi",
+    "description": "Ví non-custodial đa chuỗi để gửi, nhận, hoán đổi và vay thế chấp — lưu trữ cục bộ mã hóa và lối recovery Lenix khi cần.",
+    "keywords": "Ví crypto, Ví đa chuỗi, Ví non-custodial, Lenix Wallet, Vay crypto"
+  },
+  "Hero": {
+    "eyebrow_prefix": "Ví ",
+    "eyebrow_highlight": "đa chuỗi",
+    "eyebrow_suffix": " trên Lenix",
+    "title_prefix": "Gửi, giữ và vay — với ",
+    "title_highlight1": "recovery",
+    "title_mid": " khi bạn cần, từ một ",
+    "title_highlight2": "app",
+    "subtitle": "Ví non-custodial cho crypto hàng ngày — mã hóa trên thiết bị, đa chuỗi mặc định và kết nối lending cùng recovery Lenix khi cần hơn một giao dịch gửi thông thường.",
+    "btn_download": "Tải app",
+    "btn_learn": "Xem tính năng",
+    "mock": {
+      "account": "Tài khoản 1",
+      "total_balance": "Tổng số dư",
+      "change_24h": "+2,4% (24h)",
+      "send": "Gửi",
+      "receive": "Nhận",
+      "swap": "Hoán đổi",
+      "loan": "Vay",
+      "tab_assets": "Tài sản",
+      "tab_history": "Lịch sử"
+    }
+  },
+  "Features": {
+    "eyebrow": "TÍNH NĂNG",
+    "title": "Hơn cả lưu trữ",
+    "cards": {
+      "encryption": {
+        "title": "Mã hóa trên thiết bị",
+        "desc": "Khóa được bảo vệ bằng mật khẩu ví và lưu cục bộ — Lenix không giữ seed phrase hay khóa ký của bạn."
+      },
+      "loans": {
+        "title": "Vay thế chấp",
+        "desc": "Vay stablecoin bằng tài sản được hỗ trợ mà không bán vị thế — điều khoản và tỷ lệ thế chấp hiển thị trước khi xác nhận.",
+        "link": "View lending"
+      },
+      "recovery": {
+        "title": "Lối recovery",
+        "desc": "Nếu tài sản bị mất hoặc đánh cắp, mở hồ sơ recovery từ hệ sinh thái Lenix — truy vết và phối hợp sàn khi luồng ví thông thường không đủ.",
+        "link": "Start recovery"
+      },
+      "multichain": {
+        "title": "Multi-chain balances",
+        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+      },
+      "transfers": {
+        "title": "Send, receive, swap",
+        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+      },
+      "access": {
+        "title": "Web and mobile",
+        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+      }
+    },
+    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "groups": {
+      "wallet": {
+        "title": "In the wallet"
+      },
+      "platform": {
+        "title": "Through Lenix"
+      }
+    }
+  },
+  "Security": {
+    "title": "Bảo mật tích hợp sẵn",
+    "points": {
+      "keys": {
+        "title": "Bạn giữ khóa",
+        "desc": "Non-custodial theo thiết kế. Tiền chỉ di chuyển khi bạn ký — Lenix không thể đóng băng hay chuyển hướng số dư ví."
+      },
+      "storage": {
+        "title": "Lưu trữ cục bộ mã hóa",
+        "desc": "Dữ liệu ví được mã hóa trên thiết bị. Mở khóa bằng mật khẩu; sao lưu cụm từ recovery ngoại tuyến."
+      },
+      "access": {
+        "title": "Mở khóa cấp thiết bị",
+        "desc": "Đặt mật khẩu khi thiết lập và dùng sinh trắc học thiết bị nếu hỗ trợ — một lớp bảo vệ trước khi khóa được dùng để ký."
+      }
+    },
+    "mock_back": {
+      "title": "HỆ THỐNG AN TOÀN",
+      "network_label": "Mạng",
+      "network_status": "Đã kết nối",
+      "firewall_label": "Tường lửa",
+      "firewall_status": "Hoạt động"
+    },
+    "mock_front": {
+      "title": "KHO BẢO MẬT",
+      "subtitle": "THIẾT BỊ ĐÃ XÁC MINH",
+      "encryption_title": "Mã hóa",
+      "encryption_desc": "Khóa cục bộ đã mã hóa",
+      "network_title": "Trạng thái mạng",
+      "network_desc": "Sẵn sàng đa chuỗi"
+    }
+  },
+  "Cta": {
+    "title": "Tải Lenix Wallet",
+    "subtitle": "Tạo hoặc nhập ví trong vài phút. Cùng một app để gửi, nhận, hoán đổi và vay — với recovery Lenix sẵn sàng khi bạn cần.",
+    "btn_download": "Tải app",
+    "btn_web": "Open web wallet"
+  },
+  "Networks": {
+    "eyebrow": "Supported networks",
+    "title": "Live on three EVM chains today",
+    "description": "Native balances, ERC-20 tokens, and transaction history — filtered by network in the wallet.",
+    "chains": {
+      "ethereum": "Ethereum",
+      "bnb": "BNB Chain",
+      "polygon": "Polygon"
+    }
+  },
+  "GettingStarted": {
+    "eyebrow": "Getting started",
+    "title": "Up and running in three steps",
+    "step_label": "Step {number}",
+    "steps": {
+      "create": {
+        "title": "Create or import",
+        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+      },
+      "secure": {
+        "title": "Set password and backup",
+        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+      },
+      "use": {
+        "title": "Send, swap, or borrow",
+        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+      }
+    }
+  },
+  "Ecosystem": {
+    "eyebrow": "Lenix ecosystem",
+    "title": "Wallet connects to the rest of the platform",
+    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "cards": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Create, unlock, send, and receive.",
+        "cta": "Open wallet"
+      },
+      "loan": {
+        "title": "Crypto loan",
+        "desc": "Borrow against vaulted collateral.",
+        "cta": "View lending"
+      },
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Trace stolen or misdirected funds.",
+        "cta": "Start recovery"
+      },
+      "security": {
+        "title": "Security",
+        "desc": "Audits and operational controls.",
+        "cta": "Read security"
+      }
+    }
+  },
+  "Trust": {
+    "text": "Smart contract and operational security documentation is published on our Security page.",
+    "link": "View security"
+  }
+}

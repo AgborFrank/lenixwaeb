@@ -10,7 +10,8 @@ import ContactCTA from "./components/contact-cta";
 
 export const metadata: Metadata = {
   title: "Blockchain Forensics & Crypto Loan Experts | Lenix Protocol",
-  description: "Lenix Protocol provides institutional-grade blockchain forensics, stolen crypto asset recovery, AML compliance, and instant liquidity through secure crypto-backed loans without credit checks.",
+  description:
+    "Lenix Protocol provides institutional-grade blockchain forensics, stolen crypto asset recovery, AML compliance, and instant liquidity through secure crypto-backed loans without credit checks.",
 };
 
 export default function About() {
@@ -18,11 +19,6 @@ export default function About() {
     <>
       <Header />
       <AboutHero />
-      <div className="bg-overview">
-    <img className="top-left" src="/assets/img/header.svg" alt="header"/>
-    <img className="bottom-left" src="/assets/img/bank-account.svg" alt="bank"/>
-    <img className="bottom-right" src="/assets/img/cross-border.svg" alt="border"/>
-   </div>
       <CompanyOverview />
       <CompanyStats />
       <OurJourney />

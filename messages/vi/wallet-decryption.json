@@ -1,37 +1,116 @@
 {
+  "meta": {
+    "title": "Khôi phục quyền truy cập ví | Lenix Protocol",
+    "description": "Khôi phục quyền truy cập ví phần mềm và phần cứng khi mất mật khẩu hoặc file bị hỏng. Khả thi được đánh giá trước. Bạn giữ quyền kiểm soát tài sản."
+  },
   "Hero": {
-    "badge": "Dịch vụ Giải mã Ví Crypto",
-    "title1": "Dịch vụ Mở khóa Ví Tiền điện tử",
-    "subtitle1": "Dịch vụ Giải mã Ví Tiền kỹ thuật số",
-    "desc1": "Trong thế giới tiền điện tử phát triển nhanh chóng, việc bảo đảm quyến truy cập tài sản của bạn là tối quan trọng. Dịch vụ Giải mã Ví Crypto của Lenix Protocol cung cấp sự hỗ trợ cần thiết cho các cá nhân và tổ chức đã mất quyền truy cập vào ví của họ.",
-    "desc2": "Dù do quên mật khẩu, mất khóa truy cập hay tệp ví bị hỏng, đội ngũ chuyên gia của chúng tôi chuyên phục hồi và giải mã tiền kỹ thuật số của bạn một cách an toàn và bảo mật.",
-    "btn_consultation": "Yêu cầu Tư vấn ngay hôm nay"
+    "eyebrow": "Khôi phục quyền truy cập ví",
+    "title1": "Lấy lại quyền truy cập ví ",
+    "title2": "thuộc về bạn",
+    "subtitle": "Quên mật khẩu, file ví hỏng và bản sao lưu không đầy đủ — không phải đặt lại đăng nhập sàn hay ví của người khác. Chúng tôi đánh giá khả năng khôi phục trước khi bắt đầu công việc trả phí.",
+    "btn_primary": "Yêu cầu đánh giá",
+    "btn_secondary": "Liên hệ đội ngũ"
   },
-  "Approach": {
-    "title": "Cách tiếp cận Giải mã Ví của Chùng tôi",
-    "card1_title": "Tư vấn ban đầu và Đánh giá Rủi ro",
-    "card1_desc": "Hiểu thông tin chi tiết về tình hình của bạn để cung cấp chiến lược khôi phục phù hợp.",
-    "card2_title": "Kỹ thuật Giải mã Nâng cao",
-    "card2_desc": "Sử dụng công nghệ tiên tiến và phương pháp độc quyền để cố gắng khôi phục mật khẩu và khóa mã hóa.",
-    "card3_title": "Xử lý Nội bộ Bản địa",
-    "card3_desc": "Đảm bảo tính toán vẹn và an ninh của dữ liệu trong suốt quá trình giải mã."
+  "Audiences": {
+    "eyebrow": "Dành cho ai",
+    "title": "Tình huống thường gặp chúng tôi xem xét",
+    "description": "Hầu hết khách hàng vẫn còn file ví, thiết bị hoặc mảnh sao lưu. Họ mất mật khẩu, đường PIN hoặc seed đọc được — không mất quyền sở hữu tài sản.",
+    "cards": {
+      "password": {
+        "title": "Quên mật khẩu ví",
+        "desc": "Ví phần mềm như keystore MetaMask, Electrum hoặc Bitcoin Core khi file còn nhưng mất mật khẩu mã hóa."
+      },
+      "file": {
+        "title": "File hỏng hoặc không đầy đủ",
+        "desc": "File wallet.dat hỏng, bản sao lưu chưa hoàn chỉnh hoặc metadata từ thiết bị cũ có thể vẫn chứa vật liệu khóa."
+      },
+      "estate": {
+        "title": "Di sản và vấn đề pháp lý",
+        "desc": "Người thi hành, ủy thác hoặc luật sư cần đường truy cập có tài liệu cho ví của người nắm giữ đã mất hoặc mất năng lực — với ủy quyền hợp lệ."
+      },
+      "treasury": {
+        "title": "Khóa ví vận hành",
+        "desc": "Đội mất thông tin đăng nhập ví kho quỹ hoặc vận hành và cần quy trình khôi phục có kiểm soát với xử lý phù hợp kiểm toán."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Tại sao chọn Lenix Protocol đẻ Khôi phục Ví Crypto?",
-    "desc": "Đội ngũ chuyên gia Lenix Protocol là giải pháp số một của bạn đối với Dịch vụ Giải mã Ví Crypto. Chùng tôi mang đền phương pháp luận chuyên ngành và thành tích đã được chứng minh cho mọi cam kết khôi phục.",
-    "point1_title": "Chuyên môn về An ninh Tiền điện tử",
-    "point1_desc": "Sự hiểu biết sâu sắc về công nghệ blockchain và kiến trúc của ví.",
-    "point2_title": "Dịch vụ Bảo mật và Đạo đức",
-    "point2_desc": "Mọi hoạt động được thực hiện với sự tôn trọng quyền riêng tư và pháp lý ở mức cao nhất.",
-    "point3_title": "Tỷ lệ Thành công",
-    "point3_desc": "Thành tích đáng nể trong việc khôi phục quyền truy cập vào ví đã được mã hóa cho khách hàng toàn cầu."
+  "Boundaries": {
+    "eyebrow": "Phạm vi và giới hạn",
+    "title1": "Chúng tôi làm gì — ",
+    "title2": "và từ chối gì",
+    "subtitle": "Khôi phục ví là loại lừa đảo phổ biến. Lenix chỉ nhận hồ sơ có quyền sở hữu rõ ràng, ủy quyền có tài liệu và đường kỹ thuật đáng thử.",
+    "items": {
+      "ownership": {
+        "title": "Yêu cầu chứng minh quyền sở hữu",
+        "desc": "Chúng tôi làm việc với ví bạn sở hữu hoặc được phép khôi phục hợp pháp — không phải địa chỉ bên thứ ba hay thông tin đăng nhập không có sự đồng ý."
+      },
+      "assessment": {
+        "title": "Khả thi trước phí",
+        "desc": "Chúng tôi xem xét loại ví, trạng thái sao lưu và gợi ý mật khẩu trước khi xác định công việc giải mã trả phí. Từ chối sớm các hồ sơ không có hy vọng."
+      },
+      "no_custody": {
+        "title": "Bạn tự chuyển tài sản",
+        "desc": "Khi truy cập được khôi phục, bạn tự chuyển tiền. Lenix không giữ hộ tiền mã hóa đã khôi phục."
+      },
+      "no_scam": {
+        "title": "Không dùng trò truy cập từ xa",
+        "desc": "Chúng tôi không yêu cầu chia sẻ màn hình, nạp xác minh hay phí mở khóa trước — mẫu của các trang khôi phục lừa đảo."
+      },
+      "decline": {
+        "title": "Hồ sơ thường bị từ chối",
+        "desc": "Chỉ có địa chỉ công khai, file ví mua online, hoặc ví phần cứng mất PIN không có sao lưu thường không thể khôi phục."
+      },
+      "confidential": {
+        "title": "Xử lý có kiểm soát",
+        "desc": "Vật liệu ví được xử lý theo chuỗi lưu giữ xác định với kiểm soát truy cập — không qua kênh không chính thức."
+      }
+    }
   },
-  "CTA": {
-    "title": "Liên hệ ngay",
-    "title_highlight": "hôm nay",
-    "desc_part1": "Liên hệ với chúng tôi ngay hôm nay tại",
-    "desc_part2": "để tìm hiểu thêm về cách Lenix Protocol có thể hỗ trợ Giải mã Ví Crypto.",
-    "email_label": "Email cho Đội ngũ Chùng tôi",
-    "phone_label": "Gọi đến Văn phòng Chùng tôi"
+  "Process": {
+    "eyebrow": "Cách hoạt động",
+    "title": "Từ đánh giá đến truy cập",
+    "description": "Lộ trình có cấu trúc cho người nắm giữ và đại diện được ủy quyền — không hứa brute-force mở rộng.",
+    "step_label": "Bước {number}",
+    "steps": {
+      "submit": {
+        "title": "Gửi chi tiết hồ sơ",
+        "desc": "Loại ví, vật liệu sao lưu còn lại và gợi ý hoặc mẫu mật khẩu bạn nhớ. Đánh giá khả thi ban đầu là một phần của intake."
+      },
+      "scope": {
+        "title": "Phạm vi và khả thi",
+        "desc": "Chúng tôi nói rõ liệu giải mã có đáng thử, công sức dự kiến và phí — trước khi bạn cam kết công việc trả phí."
+      },
+      "recover": {
+        "title": "Khôi phục có kiểm soát",
+        "desc": "Nếu được thuê, giải mã chạy trong môi trường kiểm soát. Bạn lấy lại quyền truy cập và chuyển tài sản theo nhịp của mình."
+      }
+    },
+    "btn_primary": "Bắt đầu đánh giá",
+    "btn_secondary": "Nói chuyện với đội"
+  },
+  "Support": {
+    "eyebrow": "Phạm vi kỹ thuật",
+    "title": "Loại ví thường gặp",
+    "description": "Phạm vi phụ thuộc định dạng file, mức đầy đủ sao lưu và độ mạnh mã hóa. Xác nhận của bạn khi intake.",
+    "columns": {
+      "software": {
+        "title": "Ví phần mềm",
+        "desc": "Bitcoin Core, Electrum, keystore JSON MetaMask, sao lưu Exodus và file ví mã hóa cục bộ tương tự."
+      },
+      "hardware": {
+        "title": "Thiết bị phần cứng",
+        "desc": "Một số trường hợp thiết bị Ledger hoặc Trezor hỏng khi dữ liệu chip hoặc sao lưu vẫn có thể cho đường khôi phục — không phải mất PIN không có sao lưu."
+      },
+      "formats": {
+        "title": "Legacy và tùy chỉnh",
+        "desc": "Biến thể wallet.dat cũ, khóa mã hóa BIP38 và xuất vault doanh nghiệp — đánh giá từng trường hợp."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Có file ví nhưng mất quyền truy cập?",
+    "subtitle": "Mô tả loại ví và vật liệu sao lưu bạn còn. Chúng tôi sẽ cho biết có đường khôi phục hay không trước bất kỳ cam kết trả phí nào.",
+    "btn_primary": "Yêu cầu đánh giá",
+    "btn_secondary": "Liên hệ đội ngũ"
   }
 }

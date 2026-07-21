@@ -1,59 +1,135 @@
 {
-  "Hero": {
-    "badge": "Krypto-Asset-Identifikationsdienste",
-    "title1": "Aufdeckung verborgener Kryptowährungen und Identifizierung digitaler Assets",
-    "subtitle1": "Die Lokalisierung und Überprüfung digitaler Bestände ist zu einem entscheidenden Bestandteil moderner Ermittlungen geworden.",
-    "desc1": "Angesichts der zunehmenden Nutzung von Kryptowährungen sowohl bei legitimen als auch bei illegalen Finanzaktivitäten ist die Lokalisierung und Überprüfung digitaler Bestände unerlässlich. Lenix Protocol bietet Experten-Dienste zur Krypto-Asset-Identifikation, um Anwälten, Ermittlern und Finanzexperten dabei zu helfen, digitales Vermögen aufzuspüren, zu dokumentieren und zu validieren – selbst wenn es absichtlich verborgen wurde.",
-    "desc2": "Unser Team nutzt modernste Blockchain-Tools und forensische Methoden, um ein umfassendes Kryptowährungs-Tracing durchzuführen, einschließlich der Lokalisierung von Wallets, der Analyse der Transaktionshistorie und der Identifizierung potenzieller Börsen.",
-    "btn_consultation": "Fordern Sie noch heute eine Beratung an"
+  "meta": {
+    "title": "Krypto-Asset-Identifikation | Lenix Protocol",
+    "description": "Kryptowährungsbestände für Rechtsstreitigkeiten, Nachlass und Vollstreckung lokalisieren, nachverfolgen und dokumentieren. Forensische Methodik mit klarem Umfang und definierten Ergebnissen."
   },
-  "Coverage": {
-    "title": "Was Unsere Identifikationsdienste Abdecken",
-    "desc": "Unsere Ermittlungen sind darauf zugeschnitten, zivil-, straf- und aufsichtsrechtliche Angelegenheiten zu unterstützen, darunter:",
-    "card1_title": "Scheidungen und familienrechtliche Streitigkeit",
-    "card1_desc": "In Bezug auf verborgene Krypto-Assets.",
-    "card2_title": "Betrug, Diebstahl und Unterschlagung",
-    "card2_desc": "Fälle mit digitalen Währungskomponenten.",
-    "card3_title": "Interne Ermittlungen in Unternehmen",
-    "card3_desc": "In Bezug auf veruntreute Gelder.",
-    "card4_title": "Nachlassplanung und Erbrechtsangelegenheiten",
-    "card4_desc": "Mit unbekannten oder nicht deklarierten Vermögenswerten.",
-    "card5_title": "Insolvenz oder Zwangsvollstreckung",
-    "card5_desc": "Die eine Identifizierung von Vermögenswerten erfordern.",
-    "footer": "Lenix Protocol arbeitet sowohl mit Kläger- als auch mit Beklagtenvertretern zusammen und fungiert als neutraler Gutachter bei der Vermögensaufteilung und -bewertung."
+  "Hero": {
+    "eyebrow": "Krypto-Asset-Identifikation",
+    "title1": "Digitale Bestände dokumentieren, ",
+    "title2": "die andere nicht offengelegt haben",
+    "subtitle": "Für Anwälte, Ermittler und Finanzexperten, die Kryptowährungen in Rechtsstreitigkeiten, Nachlassangelegenheiten und Vollstreckungsverfahren lokalisieren, nachverfolgen und verifizieren müssen — mit Methodik, die einer Prüfung standhält.",
+    "btn_primary": "Fallprüfung starten",
+    "btn_secondary": "Team kontaktieren"
+  },
+  "Audiences": {
+    "eyebrow": "Für wen das gilt",
+    "title": "Typische Mandate, die wir begleiten",
+    "description": "Identifikationsarbeit wird auf autorisierte rechtliche, regulatorische oder interne Untersuchungen begrenzt — nicht auf offene Recherchen zu unbeteiligten Dritten.",
+    "cards": {
+      "family": {
+        "title": "Familienrecht und Scheidung",
+        "desc": "Vermögensaufteilung, wenn eine Partei nicht deklarierte Wallets, Börsenkonten oder On-Chain-Bestände hat, die in Finanzoffenlegungen fehlen."
+      },
+      "fraud": {
+        "title": "Betrug und Unterschlagung",
+        "desc": "Zivil- oder Strafverfahren mit veruntreuten digitalen Mitteln — Nachverfolgung von bekannten Quell-Wallets oder kompromittierten Konten."
+      },
+      "estate": {
+        "title": "Nachlass und Probate",
+        "desc": "Testamentsvollstrecker oder Anwälte, die Kryptowährung eines Verstorbenen lokalisieren, die nicht dokumentiert wurde — ausgehend von Geräten, Unterlagen oder Teilanhaltspunkten."
+      },
+      "enforcement": {
+        "title": "Insolvenz und Vollstreckung",
+        "desc": "Gläubiger, Treuhänder oder Aufsichtsbehörden, die pfändbare Krypto-Assets und Börsenberührungspunkte eines Schuldners oder Betroffenen identifizieren."
+      }
+    }
   },
   "Methods": {
-    "title": "Methoden für das Kryptowährungs-Tracing",
-    "card1_title": "Blockchain-Wallet-Identifizierung",
-    "card1_desc": "Und Verknüpfungsanalyse.",
-    "card2_title": "Transaktionsüberwachung",
-    "card2_desc": "Über öffentliche und private Blockchains hinweg.",
-    "card3_title": "NFT-Eigentumsverifizierung",
-    "card3_desc": "Und Verfolgung von Übertragungen.",
-    "card4_title": "Identifizierung von Börsenkonten",
-    "card4_desc": "Und Transaktions-Off-Ramps.",
-    "card5_title": "Querverweis-Metadaten",
-    "card5_desc": "Und Gerätebeweise für die Wallet-Attribuierung.",
-    "footer": "Unsere Arbeit zur Identifizierung digitaler Assets wird mit forensisch einwandfreien Techniken durchgeführt, die die Integrität der Beweise für die Verwendung vor Gericht bewahren."
+    "eyebrow": "Was wir nachverfolgen",
+    "title": "Umfang der Identifikation und Analyse",
+    "description": "Die Arbeit verbindet On-Chain-Analyse mit belastbaren Belegen aus dem Mandat — nicht isolierte Blockchain-Abfragen.",
+    "columns": {
+      "linkage": {
+        "title": "Wallet-Identifikation",
+        "desc": "Blockchain-Adressen mit Betroffenen verknüpfen anhand von Transaktionsmustern, Clustering und Abgleich mit Geräte-, Finanz- oder Zeugenaussagen."
+      },
+      "flows": {
+        "title": "Transaktionsfluss-Analyse",
+        "desc": "Geldflüsse über Chains und Layer verfolgen — einschließlich sichtbarer Mixer-Nutzung, Bridge-Transfers und dokumentierungswürdiger Konsolidierungspunkte."
+      },
+      "attribution": {
+        "title": "Börsen- und NFT-Zuordnung",
+        "desc": "Wahrscheinliche verwahrte Einzahlungen, Off-Ramps und NFT-Bestände identifizieren, wenn On-Chain-Daten und Anhaltspunkte aus dem Mandat das erlauben."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Warum Lenix Protocol wählen?",
-    "desc": "Bei Lenix Protocol helfen unsere Dienste zur Krypto-Asset-Identifikation dabei, das volle Ausmaß des finanziellen Bildes einer Person in einer digitalen Welt offenzulegen. Wir helfen Kunden, die digitalen Assets zu finden, die andere zu verbergen hofften.",
-    "point1_title": "Nachgewiesene Expertise",
-    "point1_desc": "Im Kryptowährungs-Tracing und in der Blockchain-Forensik.",
-    "point2_title": "Erfahrung in der Identifizierung verborgener Assets",
-    "point2_desc": "Über verschiedene Rechtsgebiete hinweg.",
-    "point3_title": "Gerichtlich qualifizierte Sachverständigengutachten",
-    "point3_desc": "In staatlichen, bundesstaatlichen und internationalen Gerichtsbarkeiten.",
-    "point4_title": "Klare, vertretbare Berichte",
-    "point4_desc": "Maßgeschneidert für Rechtsstreitigkeiten oder Compliance."
+  "Boundaries": {
+    "eyebrow": "Umfang und Grenzen",
+    "title1": "Was Identifikation zeigen kann — ",
+    "title2": "und was nicht",
+    "subtitle": "Öffentliche Blockchain-Daten haben Grenzen. Lenix begrenzt jedes Mandat auf rechtmäßigen Zugang, verfügbare Anhaltspunkte und das, was in einem Bericht belegbar ist.",
+    "items": {
+      "legal_basis": {
+        "title": "Nur autorisierte Mandate",
+        "desc": "Wir übernehmen Fälle mit rechtlicher, regulatorischer oder interner Ermittlungsgrundlage — keine spekulative Nachverfolgung unbeteiligter Personen oder Adressen."
+      },
+      "chain_limits": {
+        "title": "On-Chain ist nicht das Gesamtbild",
+        "desc": "Börsensalden in Verwahrungskonten oder nicht deklarierte Cold Storage erfordern ggf. gesonderte rechtliche Schritte jenseits der öffentlichen Ledger-Analyse."
+      },
+      "evidence": {
+        "title": "Forensische Integrität",
+        "desc": "Methoden und Datenhandhabung werden für Anwaltsprüfung, regulatorische Verfahren oder Gericht dokumentiert — mit erhaltener Chain of Custody."
+      },
+      "neutral": {
+        "title": "Neutrale Rolle möglich",
+        "desc": "Lenix kann Klägervertretung, Verteidigung oder die Rolle eines unabhängigen Sachverständigen bei Vermögensaufteilung und Bewertungsstreitigkeiten übernehmen."
+      },
+      "no_guarantee": {
+        "title": "Keine Vollständigkeitsgarantie",
+        "desc": "Identifikation ist begrenzt durch vorliegende Anhaltspunkte, Chain-Sichtbarkeit und rechtmäßigen Zugang. Wir benennen, was aus verfügbaren Daten ermittelbar ist — und was nicht."
+      },
+      "disclosure": {
+        "title": "Kontrollierte Offenlegung",
+        "desc": "Ergebnisse werden nur an im Mandat autorisierte Parteien weitergegeben — nicht verbreitet oder außerhalb des definierten Mandatsumfangs genutzt."
+      }
+    }
   },
-  "CTA": {
-    "title": "Kontaktieren Sie uns",
-    "title_highlight": "heute",
-    "desc_part1": "Rufen Sie uns heute an unter",
-    "desc_part2": "um Ihren Bedarf an Krypto-Asset-Identifikation zu besprechen und zu erfahren, wie das Lenix Protocol Ihren Fall unterstützen kann.",
-    "email_label": "E-Mail an unser Team",
-    "phone_label": "Rufen Sie unser Büro an"
+  "Process": {
+    "eyebrow": "So läuft es ab",
+    "title": "Von der Aufnahme zu dokumentierten Ergebnissen",
+    "description": "Ein strukturierter Ablauf für Anwälte und Ermittler — der Umfang wird vor Beginn der Analyse festgelegt.",
+    "step_label": "Schritt {number}",
+    "steps": {
+      "intake": {
+        "title": "Mandatsumfang definieren",
+        "desc": "Fallart, Parteien, bekannte Wallet-Adressen, Geräte- oder Finanzunterlagen und die Fragen, die die Identifikation beantworten soll."
+      },
+      "trace": {
+        "title": "Nachverfolgen und analysieren",
+        "desc": "Wallet-Verknüpfung, Flussmapping und Analyse von Börsenberührungspunkten mit On-Chain-Daten im Abgleich mit Mandatsbelegen."
+      },
+      "report": {
+        "title": "Ergebnisse liefern",
+        "desc": "Schriftliche Analyse mit Zeitachsen und Methodikteil — geeignet für Prozessstrategie, Compliance oder weiteres rechtliches Vorgehen."
+      }
+    },
+    "btn_primary": "Fallprüfung starten",
+    "btn_secondary": "Team ansprechen"
+  },
+  "Deliverables": {
+    "eyebrow": "Was Sie erhalten",
+    "title": "Ergebnisse für Recht und Compliance",
+    "description": "Liefergegenstände werden dem Mandat angepasst — keine generischen Blockchain-Screenshots.",
+    "items": {
+      "timeline": {
+        "title": "Transaktionschronologie",
+        "desc": "Datierter Ablauf relevanter Bewegungen mit Wallet-Verknüpfungskarten, die zeigen, wie identifizierte Adressen mit dem Mandat zusammenhängen."
+      },
+      "report": {
+        "title": "Schriftliche Analyse",
+        "desc": "Methodik, Befunde und Grenzen für die Anwaltsprüfung dokumentiert — mit klarer Trennung von Tatsache und Schlussfolgerung."
+      },
+      "testimony": {
+        "title": "Sachverständigenunterstützung",
+        "desc": "Sachverständigenaussage oder ergänzende Analyse, wenn Rechtsordnung, Mandatsbedingungen und Fallbedarf es erfordern."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Nicht offengelegte Krypto in einem Mandat lokalisieren?",
+    "subtitle": "Teilen Sie Fallkontext und vorhandene Anhaltspunkte. Wir skizzieren, welche Identifikationsarbeit realistisch ist, bevor ein begrenztes Mandat beginnt.",
+    "btn_primary": "Fallprüfung starten",
+    "btn_secondary": "Team kontaktieren"
   }
 }

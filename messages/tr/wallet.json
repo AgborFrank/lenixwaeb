@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Lenix Wallet | Çok zincirli kripto cüzdan",
+    "description": "Gönderme, alma, takas ve teminatlı kredi için non-custodial çok zincirli cüzdan — şifreli yerel depolama ve gerektiğinde Lenix recovery yolu.",
+    "keywords": "Kripto cüzdan, Çok zincirli cüzdan, Non-custodial cüzdan, Lenix Wallet, Kripto krediler"
+  },
+  "Hero": {
+    "eyebrow_prefix": "Lenix'te ",
+    "eyebrow_highlight": "çok zincirli",
+    "eyebrow_suffix": " cüzdan",
+    "title_prefix": "Gönder, tut ve borç al — gerektiğinde ",
+    "title_highlight1": "recovery",
+    "title_mid": " ile, tek bir ",
+    "title_highlight2": "uygulamada",
+    "subtitle": "Günlük kripto için non-custodial cüzdan — cihazınızda şifreli, varsayılan olarak çok zincirli ve standart gönderimin yetmediği durumlarda Lenix lending ve recovery'ye bağlı.",
+    "btn_download": "Uygulamayı indir",
+    "btn_learn": "Özellikleri gör",
+    "mock": {
+      "account": "Hesap 1",
+      "total_balance": "Toplam bakiye",
+      "change_24h": "+%2,4 (24s)",
+      "send": "Gönder",
+      "receive": "Al",
+      "swap": "Takas",
+      "loan": "Kredi",
+      "tab_assets": "Varlıklar",
+      "tab_history": "Geçmiş"
+    }
+  },
+  "Features": {
+    "eyebrow": "ÖZELLİKLER",
+    "title": "Depolamadan fazlası",
+    "cards": {
+      "encryption": {
+        "title": "Cihazda şifreli",
+        "desc": "Anahtarlar cüzdan parolasıyla korunur ve yerelde saklanır — Lenix seed phrase veya imza anahtarlarınızı tutmaz."
+      },
+      "loans": {
+        "title": "Teminatlı krediler",
+        "desc": "Pozisyonunuzu satmadan desteklenen varlıklara karşı stablecoin borç alın — onaylamadan önce koşullar ve teminat oranları gösterilir.",
+        "link": "View lending"
+      },
+      "recovery": {
+        "title": "Recovery yolu",
+        "desc": "Varlıklar kaybolursa veya çalınırsa Lenix ekosisteminden recovery dosyası açın — standart cüzdan akışı yetmediğinde izleme ve borsa koordinasyonu.",
+        "link": "Start recovery"
+      },
+      "multichain": {
+        "title": "Multi-chain balances",
+        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+      },
+      "transfers": {
+        "title": "Send, receive, swap",
+        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+      },
+      "access": {
+        "title": "Web and mobile",
+        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+      }
+    },
+    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "groups": {
+      "wallet": {
+        "title": "In the wallet"
+      },
+      "platform": {
+        "title": "Through Lenix"
+      }
+    }
+  },
+  "Security": {
+    "title": "Güvenlik entegre, sonradan eklenmiş değil",
+    "points": {
+      "keys": {
+        "title": "Anahtarlar sizde",
+        "desc": "Tasarım gereği non-custodial. Fonlar yalnızca imzaladığınızda hareket eder — Lenix cüzdan bakiyenizi donduramaz veya yönlendiremez."
+      },
+      "storage": {
+        "title": "Şifreli yerel depolama",
+        "desc": "Cüzdan verileri cihazınızda şifrelenir. Parolanızla açın; recovery ifadesini çevrimdışı yedekleyin."
+      },
+      "access": {
+        "title": "Cihaz düzeyinde kilidi açma",
+        "desc": "Kurulumda parola ekleyin ve desteklenen yerlerde cihaz biyometrisini kullanın — imza için anahtarlar kullanılmadan önce ek engel."
+      }
+    },
+    "mock_back": {
+      "title": "SİSTEM GÜVENLİ",
+      "network_label": "Ağ",
+      "network_status": "Bağlı",
+      "firewall_label": "Güvenlik duvarı",
+      "firewall_status": "Aktif"
+    },
+    "mock_front": {
+      "title": "GÜVENLİ KASA",
+      "subtitle": "CİHAZ DOĞRULANDI",
+      "encryption_title": "Şifreleme",
+      "encryption_desc": "Yerel anahtarlar şifreli",
+      "network_title": "Ağ durumu",
+      "network_desc": "Çok zincirli hazır"
+    }
+  },
+  "Cta": {
+    "title": "Lenix Wallet'ı indir",
+    "subtitle": "Dakikalar içinde cüzdan oluşturun veya içe aktarın. Gönder, al, takas ve kredi için aynı uygulama — gerektiğinde Lenix recovery mevcut.",
+    "btn_download": "Uygulamayı indir",
+    "btn_web": "Open web wallet"
+  },
+  "Networks": {
+    "eyebrow": "Supported networks",
+    "title": "Live on three EVM chains today",
+    "description": "Native balances, ERC-20 tokens, and transaction history — filtered by network in the wallet.",
+    "chains": {
+      "ethereum": "Ethereum",
+      "bnb": "BNB Chain",
+      "polygon": "Polygon"
+    }
+  },
+  "GettingStarted": {
+    "eyebrow": "Getting started",
+    "title": "Up and running in three steps",
+    "step_label": "Step {number}",
+    "steps": {
+      "create": {
+        "title": "Create or import",
+        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+      },
+      "secure": {
+        "title": "Set password and backup",
+        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+      },
+      "use": {
+        "title": "Send, swap, or borrow",
+        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+      }
+    }
+  },
+  "Ecosystem": {
+    "eyebrow": "Lenix ecosystem",
+    "title": "Wallet connects to the rest of the platform",
+    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "cards": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Create, unlock, send, and receive.",
+        "cta": "Open wallet"
+      },
+      "loan": {
+        "title": "Crypto loan",
+        "desc": "Borrow against vaulted collateral.",
+        "cta": "View lending"
+      },
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Trace stolen or misdirected funds.",
+        "cta": "Start recovery"
+      },
+      "security": {
+        "title": "Security",
+        "desc": "Audits and operational controls.",
+        "cta": "Read security"
+      }
+    }
+  },
+  "Trust": {
+    "text": "Smart contract and operational security documentation is published on our Security page.",
+    "link": "View security"
+  }
+}

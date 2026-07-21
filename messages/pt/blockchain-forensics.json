@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Blockchain Forensics & On-Chain Investigation | Lenix Protocol",
+    "description": "Trace stolen and misdirected crypto, map wallet flows, and produce forensic reports for counsel, compliance teams, and law enforcement. Honest scope before engagement."
+  },
+  "Hero": {
+    "badge": "Blockchain forensics",
+    "title1": "On-chain investigation ",
+    "title2": "with evidence you can use",
+    "subtitle": "Lenix maps transaction flows across chains and prepares documented findings for recovery decisions, legal review, and compliance — without promising outcomes the ledger cannot support.",
+    "btn_primary": "Start a case",
+    "btn_secondary": "How it works"
+  },
+  "Capabilities": {
+    "title": "What forensic work covers",
+    "description": "Investigations combine on-chain analysis with matter context — not automated blockchain lookups alone.",
+    "cards": {
+      "tracing": {
+        "title": "Transaction tracing",
+        "desc": "Follow fund movement from known source wallets through bridges, mixers, and consolidation points to identify where value likely landed."
+      },
+      "reports": {
+        "title": "Reports and litigation support",
+        "desc": "Written analysis with timelines, methodology, and limitations — formatted for counsel, regulators, or exchange escalation when appropriate."
+      },
+      "compliance": {
+        "title": "Compliance and due diligence",
+        "desc": "Screen wallets and flows for AML risk, sanctions exposure, and counterparty diligence before treasury moves or settlement."
+      }
+    }
+  },
+  "UseCases": {
+    "title": "When teams engage forensics",
+    "description": "Common matters where documented on-chain analysis helps decide next steps — recovery, legal process, or internal review.",
+    "items": {
+      "theft": {
+        "title": "Theft and unauthorized transfers",
+        "desc": "Wallet compromises, exchange account takeovers, or unauthorized outbound transfers where you need a trace before contacting platforms."
+      },
+      "scams": {
+        "title": "Scams and social engineering",
+        "desc": "Investment fraud, impersonation, and phishing cases where victims need to show fund paths to counsel or reporting channels."
+      },
+      "ransom": {
+        "title": "Extortion payments",
+        "desc": "Ransomware or blackmail payments where law enforcement or insurers require documented flow analysis from payment wallets."
+      },
+      "insolvency": {
+        "title": "Disputes and insolvency",
+        "desc": "Bankruptcy, creditor enforcement, or internal investigations where attachable crypto or treasury movements must be verified."
+      }
+    },
+    "panel": {
+      "title": "Confidential handling",
+      "description": "Case materials are shared only with parties authorized under the engagement — not used outside the defined scope.",
+      "items": {
+        "nda": "NDA available on request",
+        "encrypted": "Encrypted intake and file transfer",
+        "privacy": "Privacy-aligned data handling"
+      }
+    }
+  },
+  "Process": {
+    "title": "Investigation process",
+    "steps": {
+      "intake": {
+        "title": "Intake and scoping",
+        "desc": "Known addresses, transaction hashes, timelines, and what questions the matter needs answered — before analysis hours are committed."
+      },
+      "extract": {
+        "title": "Data extraction",
+        "desc": "Pull relevant on-chain data across supported networks, including internal transfers, contract interactions, and exchange touchpoints where visible."
+      },
+      "analyze": {
+        "title": "Analysis and clustering",
+        "desc": "Map flows, cluster related addresses, and separate verified movements from inference — with limits stated explicitly."
+      },
+      "deliver": {
+        "title": "Report and next steps",
+        "desc": "Deliver findings with recommended paths: exchange escalation, legal process, recovery coordination, or closure when trails are exhausted."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Need a forensic read on a case?",
+    "description": "Share what happened and the on-chain details you already have. We respond with an honest assessment of what tracing can show before scoped engagement.",
+    "btn_primary": "Contact forensics team",
+    "btn_secondary": "Crypto recovery"
+  }
+}

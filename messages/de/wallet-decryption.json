@@ -1,37 +1,116 @@
 {
+  "meta": {
+    "title": "Wallet-Zugang wiederherstellen | Lenix Protocol",
+    "description": "Zugang zu Software- und Hardware-Wallets wiederherstellen, wenn Passwörter verloren sind oder Dateien beschädigt wurden. Machbarkeit wird zuerst geprüft. Sie behalten die Kontrolle über Ihre Assets."
+  },
   "Hero": {
-    "badge": "Krypto-Wallet Entschlüsselungsdienste",
-    "title1": "Dienste zur Entsperrung von Kryptowährungs-Wallets",
-    "subtitle1": "Dienste zur Entschlüsselung von Wallets für digitale Währungen",
-    "desc1": "In der sich schnell entwickelnden Welt der Kryptowährungen ist die Sicherung des Zugangs zu Ihren Vermögenswerten von größter Bedeutung. Die Krypto-Wallet Entschlüsselungsdienste des Lenix Protocol bieten entscheidende Unterstützung für Einzelpersonen und Organisationen, die den Zugang zu ihren Kryptowährungs-Wallets verloren haben.",
-    "desc2": "Ob aufgrund vergessener Passwörter, verlorener Zugangsschlüssel oder beschädigter Wallet-Dateien – unser Team von forensischen Experten ist darauf spezialisiert, Ihre digitale Währung sicher und geschützt wiederherzustellen und zu entschlüsseln.",
-    "btn_consultation": "Fordern Sie noch heute eine Beratung an"
+    "eyebrow": "Wallet-Zugang wiederherstellen",
+    "title1": "Wieder Zugang zu Wallets, ",
+    "title2": "die Ihnen gehören",
+    "subtitle": "Vergessene Passwörter, beschädigte Wallet-Dateien und unvollständige Backups — nicht Exchange-Login-Resets oder Wallets Dritter. Wir prüfen, ob eine Wiederherstellung realistisch ist, bevor kostenpflichtige Arbeit beginnt.",
+    "btn_primary": "Bewertung anfragen",
+    "btn_secondary": "Team kontaktieren"
   },
-  "Approach": {
-    "title": "Unser Ansatz zur Wallet-Entschlüsselung",
-    "card1_title": "Erste Beratung und Risikobewertung",
-    "card1_desc": "Die Besonderheiten Ihrer Situation verstehen, um eine maßgeschneiderte Wiederherstellungsstrategie anzubieten.",
-    "card2_title": "Fortschrittliche Entschlüsselungstechniken",
-    "card2_desc": "Einsatz modernster Technologie und proprietärer Methoden, um die Wiederherstellung von Passwörtern und Verschlüsselungscodes zu versuchen.",
-    "card3_title": "Native interne Abwicklung",
-    "card3_desc": "Sicherstellung der Integrität und Sicherheit Ihrer Daten während des gesamten Entschlüsselungsprozesses."
+  "Audiences": {
+    "eyebrow": "Für wen das gilt",
+    "title": "Typische Fälle, die wir prüfen",
+    "description": "Die meisten Mandanten haben noch eine Wallet-Datei, ein Gerät oder ein Backup-Fragment. Sie haben das Passwort, den PIN-Pfad oder die lesbare Seed verloren — nicht das Eigentum an den Assets.",
+    "cards": {
+      "password": {
+        "title": "Vergessenes Wallet-Passwort",
+        "desc": "Software-Wallets wie MetaMask-Keystores, Electrum oder Bitcoin Core, bei denen die Datei vorhanden ist, das Verschlüsselungspasswort aber fehlt."
+      },
+      "file": {
+        "title": "Beschädigte oder unvollständige Dateien",
+        "desc": "Beschädigte wallet.dat-Dateien, unvollständige Backups oder Metadaten von einem alten Gerät, die möglicherweise noch Schlüsselmaterial enthalten."
+      },
+      "estate": {
+        "title": "Nachlass und rechtliche Angelegenheiten",
+        "desc": "Testamentsvollstrecker, Treuhänder oder Anwälte, die dokumentierte Zugangswege für die Wallet eines verstorbenen oder handlungsunfähigen Inhabers benötigen — mit ordnungsgemäßer Autorisierung."
+      },
+      "treasury": {
+        "title": "Betrieblicher Wallet-Ausschluss",
+        "desc": "Teams, die Zugangsdaten zu einer Treasury- oder Operations-Wallet verloren haben und einen kontrollierten Wiederherstellungsprozess mit prüffreundlicher Handhabung benötigen."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Warum das Lenix Protocol für die Krypto-Wallet-Wiederherstellung wählen?",
-    "desc": "Das Expertenteam des Lenix Protocol ist Ihre Anlaufstelle für Krypto-Wallet Entschlüsselungsdienste. Wir bringen spezialisierte Methoden und eine nachweisliche Erfolgsbilanz in jedes Wiederherstellungsprojekt ein.",
-    "point1_title": "Expertise in Kryptowährungssicherheit",
-    "point1_desc": "Tiefes Verständnis der Blockchain-Technologie und Wallet-Architekturen.",
-    "point2_title": "Vertraulicher und ethischer Service",
-    "point2_desc": "Alle Operationen werden mit höchstem Respekt vor Privatsphäre und Legalität von Personen, die über Secret- oder höhere Sicherheitsüberprüfungen verfügt haben, sowie von wissenschaftlichen Experten durchgeführt.",
-    "point3_title": "Erfolgsquote",
-    "point3_desc": "Nachgewiesene Erfolgsbilanz bei der Wiederherstellung des Zugriffs auf verschlüsselte Wallets für Kunden weltweit."
+  "Boundaries": {
+    "eyebrow": "Umfang und Grenzen",
+    "title1": "Was wir tun — ",
+    "title2": "und was wir ablehnen",
+    "subtitle": "Wallet-Wiederherstellung ist eine häufige Betrugskategorie. Lenix übernimmt nur Fälle mit klarem Eigentum, dokumentierter Autorisierung und einem technischen Ansatz, der einen Versuch rechtfertigt.",
+    "items": {
+      "ownership": {
+        "title": "Nachweisbares Eigentum erforderlich",
+        "desc": "Wir arbeiten an Wallets, die Ihnen gehören oder die Sie rechtlich wiederherstellen dürfen — nicht an Adressen Dritter oder Zugangsdaten ohne Einwilligung."
+      },
+      "assessment": {
+        "title": "Machbarkeit vor Gebühren",
+        "desc": "Wir prüfen Wallet-Typ, Backup-Stand und Passwort-Hinweise, bevor kostenpflichtige Entschlüsselung geplant wird. Aussichtslose Fälle lehnen wir früh ab."
+      },
+      "no_custody": {
+        "title": "Sie bewegen die Assets",
+        "desc": "Wenn der Zugang wiederhergestellt ist, übertragen Sie die Mittel selbst. Lenix übernimmt keine Verwahrung wiederhergestellter Kryptowährung."
+      },
+      "no_scam": {
+        "title": "Keine Remote-Zugriffstricks",
+        "desc": "Wir verlangen kein Screen-Sharing, keine Verifizierungs-Einzahlungen und keine Vorauszahlungen zum Freischalten — Muster betrügerischer Recovery-Seiten."
+      },
+      "decline": {
+        "title": "Fälle, die wir meist ablehnen",
+        "desc": "Nur öffentliche Adresse, online gekaufte Wallet-Dateien oder Hardware-Wallets mit verlorener PIN und ohne Backup sind in der Regel nicht wiederherstellbar."
+      },
+      "confidential": {
+        "title": "Kontrollierte Handhabung",
+        "desc": "Wallet-Material wird in einer definierten Chain of Custody mit Zugriffskontrollen verarbeitet — nicht über informelle Kanäle."
+      }
+    }
   },
-  "CTA": {
-    "title": "Kontaktieren Sie uns",
-    "title_highlight": "heute",
-    "desc_part1": "Kontaktieren Sie uns noch heute unter",
-    "desc_part2": "um mehr darüber zu erfahren, wie das Lenix Protocol bei der Krypto-Wallet-Entschlüsselung helfen kann.",
-    "email_label": "Senden Sie eine E-Mail an unser Team",
-    "phone_label": "Rufen Sie unser Büro an"
+  "Process": {
+    "eyebrow": "So läuft es ab",
+    "title": "Von der Bewertung zum Zugang",
+    "description": "Ein strukturierter Ablauf für Inhaber und bevollmächtigte Vertreter — keine offenen Brute-Force-Versprechen.",
+    "step_label": "Schritt {number}",
+    "steps": {
+      "submit": {
+        "title": "Falldetails einreichen",
+        "desc": "Wallet-Typ, vorhandenes Backup-Material und Passwort-Hinweise oder Muster, an die Sie sich erinnern. Die erste Machbarkeitsprüfung gehört zur Aufnahme."
+      },
+      "scope": {
+        "title": "Umfang und Machbarkeit",
+        "desc": "Wir sagen Ihnen offen, ob eine Entschlüsselung sinnvoll ist, mit welchem Aufwand und welchen Gebühren — bevor Sie kostenpflichtige Arbeit beauftragen."
+      },
+      "recover": {
+        "title": "Kontrollierte Wiederherstellung",
+        "desc": "Bei Beauftragung läuft die Entschlüsselung in einer kontrollierten Umgebung. Sie erhalten wieder Zugang und bewegen Assets in Ihrem eigenen Tempo."
+      }
+    },
+    "btn_primary": "Bewertung starten",
+    "btn_secondary": "Mit Team sprechen"
+  },
+  "Support": {
+    "eyebrow": "Technische Abdeckung",
+    "title": "Wallet-Typen, die wir häufig sehen",
+    "description": "Die Abdeckung hängt von Dateiformat, Backup-Vollständigkeit und Verschlüsselungsstärke ab. Bestätigen Sie Ihren Fall bei der Aufnahme.",
+    "columns": {
+      "software": {
+        "title": "Software-Wallets",
+        "desc": "Bitcoin Core, Electrum, MetaMask JSON-Keystores, Exodus-Backups und ähnliche lokal verschlüsselte Wallet-Dateien."
+      },
+      "hardware": {
+        "title": "Hardware-Geräte",
+        "desc": "Ausgewählte Fälle mit beschädigten Ledger- oder Trezor-Geräten, bei denen Chip-Daten oder Backups noch einen Wiederherstellungsweg ergeben — nicht verlorene PIN ohne jegliches Backup."
+      },
+      "formats": {
+        "title": "Legacy und Sonderfälle",
+        "desc": "Ältere wallet.dat-Varianten, BIP38-verschlüsselte Keys und Enterprise-Vault-Exporte — einzeln bewertet."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Wallet-Datei vorhanden, Zugang verloren?",
+    "subtitle": "Beschreiben Sie den Wallet-Typ und welches Backup-Material Sie noch haben. Wir sagen Ihnen, ob ein Wiederherstellungsweg existiert, bevor ein kostenpflichtiges Mandat beginnt.",
+    "btn_primary": "Bewertung anfragen",
+    "btn_secondary": "Team kontaktieren"
   }
 }

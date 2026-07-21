@@ -1,24 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { useRouter } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { ArrowLeft, CheckCircle2, Landmark, Building2, Wallet } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { applyForLoan } from "../actions";
 import { toast } from "sonner";
 import { cn } from "@/lib/utils";
 
-// Define locally to match DB schema
 type LoanType = {
   id: number;
   name: string;
@@ -34,415 +29,427 @@ const CARD_GRADIENTS = [
   "from-emerald-500/15 via-teal-500/10 to-green-500/15 border-emerald-400/20",
 ];
 
-const DURATIONS = [
-  { value: "6", label: "6 months" },
-  { value: "12", label: "12 months" },
-  { value: "24", label: "24 months" },
-];
+const DURATION_KEYS = ["6", "12", "24"] as const;
 
 export function LoanApplication({ loanTypes }: { loanTypes: LoanType[] }) {
-   const router = useRouter();
-   const [step, setStep] = useState(1);
-   const [formData, setFormData] = useState<any>({
-      loan_type_id: loanTypes[0]?.id?.toString() || "",
-      loan_amount: "",
-      collateral_asset: "BTC",
-      duration: "12",
-      payout_method: "crypto",
-      phone_number: "",
-      telegram_or_whatsapp: "",
-   });
-   const [isSubmitting, setIsSubmitting] = useState(false);
-   const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const t = useTranslations("AccountCryptoLoan.application");
+  const router = useRouter();
+  const [step, setStep] = useState(1);
+  const [formData, setFormData] = useState<any>({
+    loan_type_id: loanTypes[0]?.id?.toString() || "",
+    loan_amount: "",
+    collateral_asset: "BTC",
+    duration: "12",
+    payout_method: "crypto",
+    phone_number: "",
+    telegram_or_whatsapp: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
-   const updateForm = (key: string, value: any) => {
-      setFormData((prev: any) => ({ ...prev, [key]: value }));
-   };
+  const updateForm = (key: string, value: any) => {
+    setFormData((prev: any) => ({ ...prev, [key]: value }));
+  };
 
-   const handleNext = (e: React.FormEvent) => {
-      e.preventDefault();
-      setStep(prev => prev + 1);
-   };
+  const handleNext = (e: React.FormEvent) => {
+    e.preventDefault();
+    setStep((prev) => prev + 1);
+  };
 
-   const handleSubmit = async (e: React.FormEvent) => {
-      e.preventDefault();
-      setIsSubmitting(true);
-      
-      const payload = new FormData();
-      Object.entries(formData).forEach(([key, value]) => {
-         if (value !== undefined && value !== null) {
-            payload.append(key, String(value));
-         }
-      });
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-      const result = await applyForLoan(payload);
-      setIsSubmitting(false);
-
-      if (result?.error) {
-         toast.error(result.error);
-      } else {
-         setShowSuccessModal(true);
+    const payload = new FormData();
+    Object.entries(formData).forEach(([key, value]) => {
+      if (value !== undefined && value !== null) {
+        payload.append(key, String(value));
       }
-   }
+    });
 
-   const handleSuccessClose = () => {
-      setShowSuccessModal(false);
-      router.push("/crypto-loan");
-      router.refresh();
-   }
+    const result = await applyForLoan(payload);
+    setIsSubmitting(false);
 
-   return (
-      <div className="max-w-2xl mx-auto py-10">
-         {/* Stepper Status */}
-         <div className="text-center mb-10">
-            <span className="inline-block py-1 px-3 rounded-full bg-white/10 text-white text-xs mb-4 border border-white/10 uppercase tracking-widest">
-               Step {step} of 2 — {step === 1 ? "Loan Details" : "Payout Preferences"}
-            </span>
-            <h1 className="text-3xl font-bold text-white mb-2">
-               {step === 1 ? "Request Crypto Loan" : "Receiving Funds"}
-            </h1>
-            <p className="text-zinc-400">
-               {step === 1 
-                  ? "Customize your loan terms to fit your needs." 
-                  : "Choose where you want us to send your loan details."}
-            </p>
-         </div>
+    if (result?.error) {
+      toast.error(result.error);
+    } else {
+      setShowSuccessModal(true);
+    }
+  };
 
-         <div className="rounded-3xl border border-white/20 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
-            {step === 1 ? (
-               <StepOne 
-                  loanTypes={loanTypes} 
-                  formData={formData} 
-                  updateForm={updateForm} 
-                  onNext={handleNext} 
-               />
-            ) : (
-               <StepTwo 
-                  formData={formData} 
-                  updateForm={updateForm} 
-                  onSubmit={handleSubmit}
-                  onBack={() => setStep(1)}
-                  isSubmitting={isSubmitting}
-               />
-            )}
-         </div>
+  const handleSuccessClose = () => {
+    setShowSuccessModal(false);
+    router.push("/crypto-loan");
+    router.refresh();
+  };
 
-         <Dialog open={showSuccessModal} onOpenChange={(open) => !open && handleSuccessClose()}>
-            <DialogContent className="bg-zinc-900 border-white/10 text-white max-w-sm">
-               <DialogHeader>
-                  <DialogTitle className="flex items-center gap-2 text-xl text-white">
-                     <CheckCircle2 className="w-6 h-6 text-emerald-400" />
-                     Application submitted
-                  </DialogTitle>
-               </DialogHeader>
-               <p className="text-zinc-400 text-sm">
-                  Your loan request has been received. We&apos;ll review it and contact you soon.
-               </p>
-               <Button
-                  onClick={handleSuccessClose}
-                  className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold"
-               >
-                  View my loans
-               </Button>
-            </DialogContent>
-         </Dialog>
+  const phase = step === 1 ? t("phase_details") : t("phase_payout");
+
+  return (
+    <div className="mx-auto max-w-2xl py-10">
+      <div className="mb-10 text-center">
+        <span className="mb-4 inline-block rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs uppercase tracking-widest text-white">
+          {t("step_label", { step, phase })}
+        </span>
+        <h1 className="mb-2 text-3xl font-bold text-white">
+          {step === 1 ? t("title_details") : t("title_payout")}
+        </h1>
+        <p className="text-zinc-400">{step === 1 ? t("subtitle_details") : t("subtitle_payout")}</p>
       </div>
-   );
+
+      <div className="rounded-3xl border border-white/20 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
+        {step === 1 ? (
+          <StepOne loanTypes={loanTypes} formData={formData} updateForm={updateForm} onNext={handleNext} />
+        ) : (
+          <StepTwo
+            formData={formData}
+            updateForm={updateForm}
+            onSubmit={handleSubmit}
+            onBack={() => setStep(1)}
+            isSubmitting={isSubmitting}
+          />
+        )}
+      </div>
+
+      <Dialog open={showSuccessModal} onOpenChange={(open) => !open && handleSuccessClose()}>
+        <DialogContent className="max-w-sm border-white/10 bg-zinc-900 text-white">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2 text-xl text-white">
+              <CheckCircle2 className="h-6 w-6 text-emerald-400" />
+              {t("success_title")}
+            </DialogTitle>
+          </DialogHeader>
+          <p className="text-sm text-zinc-400">{t("success_description")}</p>
+          <Button onClick={handleSuccessClose} className="w-full bg-yellow-400 font-bold text-black hover:bg-yellow-500">
+            {t("view_loans")}
+          </Button>
+        </DialogContent>
+      </Dialog>
+    </div>
+  );
 }
 
 function StepOne({ loanTypes, formData, updateForm, onNext }: any) {
-   return (
-      <form onSubmit={onNext} className="space-y-6">
-         {/* Loan Type Selection */}
-         <div className="space-y-3">
-            <Label className="text-zinc-300">Select Loan Type</Label>
-            <RadioGroup 
-               value={formData.loan_type_id} 
-               onValueChange={(v) => updateForm("loan_type_id", v)}
-               className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+  const t = useTranslations("AccountCryptoLoan.application");
+  const tDuration = useTranslations("AccountCryptoLoan.duration");
+  const tCollateral = useTranslations("AccountCryptoLoan.collateral_assets");
+
+  return (
+    <form onSubmit={onNext} className="space-y-6">
+      <div className="space-y-3">
+        <Label className="text-zinc-300">{t("select_loan_type")}</Label>
+        <RadioGroup
+          value={formData.loan_type_id}
+          onValueChange={(v) => updateForm("loan_type_id", v)}
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+        >
+          {loanTypes.map((type: LoanType, i: number) => (
+            <label
+              key={type.id}
+              className={cn(
+                "relative flex cursor-pointer flex-col rounded-2xl border bg-gradient-to-br p-5 transition-all hover:scale-[1.02] hover:shadow-lg",
+                CARD_GRADIENTS[i % CARD_GRADIENTS.length],
+                formData.loan_type_id === type.id.toString() ? "ring-2 ring-yellow-400/50" : "border-white/10",
+              )}
             >
-               {loanTypes.map((type: LoanType, i: number) => (
-                  <label 
-                     key={type.id}
-                     className={cn(
-                        "relative flex flex-col rounded-2xl border bg-gradient-to-br p-5 cursor-pointer transition-all hover:scale-[1.02] hover:shadow-lg", 
-                        CARD_GRADIENTS[i % CARD_GRADIENTS.length],
-                        formData.loan_type_id === type.id.toString() ? "ring-2 ring-yellow-400/50" : "border-white/10"
-                     )}
-                  >
-                     <RadioGroupItem value={type.id.toString()} className="absolute top-4 right-4 border-white/30 text-yellow-400" />
-                     <span className="text-lg font-bold text-white pr-8">{type.name}</span>
-                     <p className="text-sm text-white/80 mt-1">
-                        {type.interest_rate}% APR · Up to {type.ltv}% LTV
-                     </p>
-                  </label>
-               ))}
-            </RadioGroup>
-         </div>
+              <RadioGroupItem value={type.id.toString()} className="absolute right-4 top-4 border-white/30 text-yellow-400" />
+              <span className="pr-8 text-lg font-bold text-white">{type.name}</span>
+              <p className="mt-1 text-sm text-white/80">
+                {t("loan_type_summary", { rate: type.interest_rate, ltv: type.ltv })}
+              </p>
+            </label>
+          ))}
+        </RadioGroup>
+      </div>
 
-         {/* Amounts */}
-         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-               <Label className="text-zinc-300">Borrow Amount (USD)</Label>
-               <Input 
-                  type="number" 
-                  value={formData.loan_amount}
-                  onChange={(e) => updateForm("loan_amount", e.target.value)}
-                  placeholder="e.g. 5000"
-                  className="bg-zinc-950/50 border-white/10 text-white h-12"
-                  required
-               />
-            </div>
-            <div className="space-y-2">
-               <Label className="text-zinc-300">Collateral Asset</Label>
-               <Select 
-                  value={formData.collateral_asset} 
-                  onValueChange={(v) => updateForm("collateral_asset", v)}
-               >
-                  <SelectTrigger className="bg-zinc-950/50 border-white/10 text-white h-12">
-                     <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent className="bg-zinc-900 border-zinc-800">
-                     <SelectItem value="BTC">Bitcoin (BTC)</SelectItem>
-                     <SelectItem value="ETH">Ethereum (ETH)</SelectItem>
-                     <SelectItem value="SOL">Solana (SOL)</SelectItem>
-                  </SelectContent>
-               </Select>
-            </div>
-         </div>
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="space-y-2">
+          <Label className="text-zinc-300">{t("borrow_amount")}</Label>
+          <Input
+            type="number"
+            value={formData.loan_amount}
+            onChange={(e) => updateForm("loan_amount", e.target.value)}
+            placeholder={t("borrow_amount_placeholder")}
+            className="h-12 border-white/10 bg-zinc-950/50 text-white"
+            required
+          />
+        </div>
+        <div className="space-y-2">
+          <Label className="text-zinc-300">{t("collateral_asset")}</Label>
+          <Select value={formData.collateral_asset} onValueChange={(v) => updateForm("collateral_asset", v)}>
+            <SelectTrigger className="h-12 border-white/10 bg-zinc-950/50 text-white">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent className="border-zinc-800 bg-zinc-900">
+              <SelectItem value="BTC">{tCollateral("BTC")} (BTC)</SelectItem>
+              <SelectItem value="ETH">{tCollateral("ETH")} (ETH)</SelectItem>
+              <SelectItem value="SOL">{tCollateral("SOL")} (SOL)</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+      </div>
 
-         {/* Duration */}
-         <div className="space-y-3">
-            <Label className="text-zinc-300">Duration</Label>
-            <RadioGroup 
-               value={formData.duration} 
-               onValueChange={(v) => updateForm("duration", v)}
-               className="grid grid-cols-3 gap-3"
+      <div className="space-y-3">
+        <Label className="text-zinc-300">{t("duration")}</Label>
+        <RadioGroup
+          value={formData.duration}
+          onValueChange={(v) => updateForm("duration", v)}
+          className="grid grid-cols-3 gap-3"
+        >
+          {DURATION_KEYS.map((key) => (
+            <label
+              key={key}
+              className={cn(
+                "flex cursor-pointer items-center justify-center rounded-xl border border-white/10 px-4 py-3 hover:bg-white/5",
+                formData.duration === key
+                  ? "border-yellow-400/50 bg-yellow-400/20 text-yellow-400"
+                  : "bg-white/5 text-zinc-400",
+              )}
             >
-               {DURATIONS.map(d => (
-                  <label key={d.value} className={cn(
-                     "flex items-center justify-center py-3 px-4 rounded-xl border border-white/10 cursor-pointer hover:bg-white/5",
-                     formData.duration === d.value ? "bg-yellow-400/20 border-yellow-400/50 text-yellow-400" : "bg-white/5 text-zinc-400"
-                  )}>
-                     <RadioGroupItem value={d.value} className="sr-only" />
-                     <span className="font-medium text-sm">{d.label}</span>
-                  </label>
-               ))}
-            </RadioGroup>
-         </div>
+              <RadioGroupItem value={key} className="sr-only" />
+              <span className="text-sm font-medium">{tDuration(key)}</span>
+            </label>
+          ))}
+        </RadioGroup>
+      </div>
 
-         <Button type="submit" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold h-12 text-lg">
-            Continue to Payout
-         </Button>
-      </form>
-   )
+      <Button type="submit" className="h-12 w-full bg-yellow-400 text-lg font-bold text-black hover:bg-yellow-500">
+        {t("continue_payout")}
+      </Button>
+    </form>
+  );
 }
 
 function StepTwo({ formData, updateForm, onSubmit, onBack, isSubmitting }: any) {
-   return (
-      <form onSubmit={onSubmit} className="space-y-6">
-         {/* Contact details — How can we reach you? */}
-         <div className="p-6 bg-zinc-950/30 rounded-2xl border border-white/10 space-y-4">
-            <div>
-               <h3 className="text-sm font-semibold text-white mb-1">How can we contact you?</h3>
-               <p className="text-xs text-zinc-500">Provide at least one so we can reach you about your application.</p>
+  const t = useTranslations("AccountCryptoLoan.application");
+
+  return (
+    <form onSubmit={onSubmit} className="space-y-6">
+      <div className="space-y-4 rounded-2xl border border-white/10 bg-zinc-950/30 p-6">
+        <div>
+          <h3 className="mb-1 text-sm font-semibold text-white">{t("contact_title")}</h3>
+          <p className="text-xs text-zinc-500">{t("contact_subtitle")}</p>
+        </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="space-y-2">
+            <Label className="text-zinc-400">{t("phone_number")}</Label>
+            <Input
+              type="tel"
+              placeholder={t("phone_placeholder")}
+              className="border-white/10 bg-black/20 text-white"
+              onChange={(e) => updateForm("phone_number", e.target.value)}
+              value={formData.phone_number || ""}
+            />
+            <p className="text-[11px] text-zinc-500">{t("phone_hint")}</p>
+          </div>
+          <div className="space-y-2">
+            <Label className="text-zinc-400">{t("telegram_whatsapp")}</Label>
+            <Input
+              type="text"
+              placeholder={t("telegram_placeholder")}
+              className="border-white/10 bg-black/20 text-white"
+              onChange={(e) => updateForm("telegram_or_whatsapp", e.target.value)}
+              value={formData.telegram_or_whatsapp || ""}
+            />
+            <p className="text-[11px] text-zinc-500">{t("telegram_hint")}</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 className="mb-3 text-sm font-semibold text-white">{t("funds_title")}</h3>
+        <RadioGroup
+          value={formData.payout_method}
+          onValueChange={(v) => updateForm("payout_method", v)}
+          className="grid grid-cols-1 gap-4 md:grid-cols-3"
+        >
+          <PayoutOption
+            value="crypto"
+            icon={Wallet}
+            label={t("payout_crypto")}
+            sub={t("payout_crypto_sub")}
+            selected={formData.payout_method === "crypto"}
+          />
+          <PayoutOption
+            value="wire_transfer"
+            icon={Landmark}
+            label={t("payout_wire")}
+            sub={t("payout_wire_sub")}
+            selected={formData.payout_method === "wire_transfer"}
+          />
+          <PayoutOption
+            value="bank"
+            icon={Building2}
+            label={t("payout_bank")}
+            sub={t("payout_bank_sub")}
+            selected={formData.payout_method === "bank"}
+          />
+        </RadioGroup>
+      </div>
+
+      <div className="space-y-4 rounded-2xl border border-white/10 bg-zinc-950/30 p-6">
+        {formData.payout_method === "crypto" && (
+          <>
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("wallet_address")}</Label>
+              <Input
+                required
+                placeholder={t("wallet_placeholder")}
+                className="border-white/10 bg-black/20 font-mono text-white"
+                onChange={(e) => updateForm("wallet_address", e.target.value)}
+                value={formData.wallet_address || ""}
+              />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-               <div className="space-y-2">
-                  <Label className="text-zinc-400">Phone number</Label>
-                  <Input
-                     type="tel"
-                     placeholder="e.g. +1 234 567 8900"
-                     className="bg-black/20 border-white/10 text-white"
-                     onChange={(e) => updateForm("phone_number", e.target.value)}
-                     value={formData.phone_number || ""}
-                  />
-                  <p className="text-[11px] text-zinc-500">For calls and SMS updates</p>
-               </div>
-               <div className="space-y-2">
-                  <Label className="text-zinc-400">Telegram or WhatsApp</Label>
-                  <Input
-                     type="text"
-                     placeholder="e.g. @username or +1234567890"
-                     className="bg-black/20 border-white/10 text-white"
-                     onChange={(e) => updateForm("telegram_or_whatsapp", e.target.value)}
-                     value={formData.telegram_or_whatsapp || ""}
-                  />
-                  <p className="text-[11px] text-zinc-500">For quick messaging</p>
-               </div>
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("network")}</Label>
+              <Select value={formData.network || ""} onValueChange={(v) => updateForm("network", v)}>
+                <SelectTrigger className="border-white/10 bg-black/20 text-white">
+                  <SelectValue placeholder={t("select_network")} />
+                </SelectTrigger>
+                <SelectContent className="border-zinc-800 bg-zinc-900">
+                  <SelectItem value="ERC20">{t("network_erc20")}</SelectItem>
+                  <SelectItem value="TRC20">{t("network_trc20")}</SelectItem>
+                  <SelectItem value="BSC">{t("network_bsc")}</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
-         </div>
+          </>
+        )}
 
-         <div>
-            <h3 className="text-sm font-semibold text-white mb-3">Where should we send your funds?</h3>
-            <RadioGroup 
-            value={formData.payout_method} 
-            onValueChange={(v) => updateForm("payout_method", v)}
-            className="grid grid-cols-1 md:grid-cols-3 gap-4"
-         >
-            <PayoutOption value="crypto" icon={Wallet} label="Crypto Wallet" sub="Instant Transfer" selected={formData.payout_method === "crypto"} />
-            <PayoutOption value="wire_transfer" icon={Landmark} label="Wire Transfer" sub="1-3 Business Days" selected={formData.payout_method === "wire_transfer"} />
-            <PayoutOption value="bank" icon={Building2} label="Bank Deposit" sub="ACH / SEPA" selected={formData.payout_method === "bank"} />
-         </RadioGroup>
-         </div>
+        {formData.payout_method === "wire_transfer" && (
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("bank_name")}</Label>
+              <Input
+                required
+                placeholder={t("bank_name_placeholder")}
+                className="border-white/10 bg-black/20 text-white"
+                onChange={(e) => updateForm("bank_name", e.target.value)}
+                value={formData.bank_name || ""}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("swift_bic")}</Label>
+              <Input
+                required
+                placeholder={t("swift_placeholder")}
+                className="border-white/10 bg-black/20 font-mono text-white"
+                onChange={(e) => updateForm("swift_bic", e.target.value)}
+                value={formData.swift_bic || ""}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("account_number")}</Label>
+              <Input
+                required
+                placeholder={t("account_number_placeholder")}
+                className="border-white/10 bg-black/20 font-mono text-white"
+                onChange={(e) => updateForm("account_number", e.target.value)}
+                value={formData.account_number || ""}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("account_holder")}</Label>
+              <Input
+                required
+                placeholder={t("account_holder_placeholder")}
+                className="border-white/10 bg-black/20 text-white"
+                onChange={(e) => updateForm("account_name", e.target.value)}
+                value={formData.account_name || ""}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("reference_optional")}</Label>
+              <Input
+                placeholder={t("reference_placeholder")}
+                className="border-white/10 bg-black/20 text-white"
+                onChange={(e) => updateForm("reference", e.target.value)}
+                value={formData.reference || ""}
+              />
+            </div>
+          </div>
+        )}
 
-         <div className="p-6 bg-zinc-950/30 rounded-2xl border border-white/10 space-y-4">
-            {formData.payout_method === "crypto" && (
-                <>
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">Wallet Address</Label>
-                      <Input 
-                         required
-                         placeholder="0x..." 
-                         className="bg-black/20 border-white/10 text-white font-mono"
-                         onChange={(e) => updateForm("wallet_address", e.target.value)}
-                         value={formData.wallet_address || ""}
-                      />
-                   </div>
-                   <div className="space-y-2">
-                     <Label className="text-zinc-400">Network</Label>
-                     <Select 
-                        value={formData.network || ""} 
-                        onValueChange={(v) => updateForm("network", v)}
-                     >
-                        <SelectTrigger className="bg-black/20 border-white/10 text-white">
-                           <SelectValue placeholder="Select Network" />
-                        </SelectTrigger>
-                        <SelectContent className="bg-zinc-900 border-zinc-800">
-                           <SelectItem value="ERC20">Ethereum (ERC20)</SelectItem>
-                           <SelectItem value="TRC20">Tron (TRC20)</SelectItem>
-                           <SelectItem value="BSC">Binance Smart Chain (BEP20)</SelectItem>
-                        </SelectContent>
-                     </Select>
-                   </div>
-                </>
-            )}
+        {formData.payout_method === "bank" && (
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("bank_name")}</Label>
+              <Input
+                required
+                placeholder={t("bank_name_alt_placeholder")}
+                className="border-white/10 bg-black/20 text-white"
+                onChange={(e) => updateForm("bank_name", e.target.value)}
+                value={formData.bank_name || ""}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("routing_iban")}</Label>
+              <Input
+                required
+                placeholder={t("routing_iban_placeholder")}
+                className="border-white/10 bg-black/20 font-mono text-white"
+                onChange={(e) => updateForm("routing_iban", e.target.value)}
+                value={formData.routing_iban || ""}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("account_number")}</Label>
+              <Input
+                required
+                placeholder={t("account_number_placeholder")}
+                className="border-white/10 bg-black/20 font-mono text-white"
+                onChange={(e) => updateForm("account_number", e.target.value)}
+                value={formData.account_number || ""}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label className="text-zinc-400">{t("account_holder")}</Label>
+              <Input
+                required
+                placeholder={t("account_holder_placeholder")}
+                className="border-white/10 bg-black/20 text-white"
+                onChange={(e) => updateForm("account_holder", e.target.value)}
+                value={formData.account_holder || ""}
+              />
+            </div>
+          </div>
+        )}
+      </div>
 
-            {formData.payout_method === "wire_transfer" && (
-                <div className="space-y-4">
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">Bank Name</Label>
-                      <Input
-                         required
-                         placeholder="e.g. Chase Bank"
-                         className="bg-black/20 border-white/10 text-white"
-                         onChange={(e) => updateForm("bank_name", e.target.value)}
-                         value={formData.bank_name || ""}
-                      />
-                   </div>
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">SWIFT / BIC Code</Label>
-                      <Input
-                         required
-                         placeholder="e.g. CHASUS33"
-                         className="bg-black/20 border-white/10 text-white font-mono"
-                         onChange={(e) => updateForm("swift_bic", e.target.value)}
-                         value={formData.swift_bic || ""}
-                      />
-                   </div>
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">Account Number</Label>
-                      <Input
-                         required
-                         placeholder="Your account number"
-                         className="bg-black/20 border-white/10 text-white font-mono"
-                         onChange={(e) => updateForm("account_number", e.target.value)}
-                         value={formData.account_number || ""}
-                      />
-                   </div>
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">Account Holder Name</Label>
-                      <Input
-                         required
-                         placeholder="Full name on account"
-                         className="bg-black/20 border-white/10 text-white"
-                         onChange={(e) => updateForm("account_name", e.target.value)}
-                         value={formData.account_name || ""}
-                      />
-                   </div>
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">Reference (optional)</Label>
-                      <Input
-                         placeholder="Payment reference"
-                         className="bg-black/20 border-white/10 text-white"
-                         onChange={(e) => updateForm("reference", e.target.value)}
-                         value={formData.reference || ""}
-                      />
-                   </div>
-                </div>
-            )}
-
-            {formData.payout_method === "bank" && (
-                <div className="space-y-4">
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">Bank Name</Label>
-                      <Input
-                         required
-                         placeholder="e.g. Wells Fargo"
-                         className="bg-black/20 border-white/10 text-white"
-                         onChange={(e) => updateForm("bank_name", e.target.value)}
-                         value={formData.bank_name || ""}
-                      />
-                   </div>
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">Routing Number / IBAN</Label>
-                      <Input
-                         required
-                         placeholder="ACH routing (US) or IBAN (EU)"
-                         className="bg-black/20 border-white/10 text-white font-mono"
-                         onChange={(e) => updateForm("routing_iban", e.target.value)}
-                         value={formData.routing_iban || ""}
-                      />
-                   </div>
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">Account Number</Label>
-                      <Input
-                         required
-                         placeholder="Your account number"
-                         className="bg-black/20 border-white/10 text-white font-mono"
-                         onChange={(e) => updateForm("account_number", e.target.value)}
-                         value={formData.account_number || ""}
-                      />
-                   </div>
-                   <div className="space-y-2">
-                      <Label className="text-zinc-400">Account Holder Name</Label>
-                      <Input
-                         required
-                         placeholder="Full name on account"
-                         className="bg-black/20 border-white/10 text-white"
-                         onChange={(e) => updateForm("account_holder", e.target.value)}
-                         value={formData.account_holder || ""}
-                      />
-                   </div>
-                </div>
-            )}
-         </div>
-
-         <div className="flex gap-4">
-            <Button type="button" variant="outline" onClick={onBack} className="flex-1 h-12 border-zinc-700 bg-transparent text-white hover:bg-zinc-800">
-               <ArrowLeft className="w-4 h-4 mr-2" /> Back
-            </Button>
-            <Button type="submit" disabled={isSubmitting} className="flex-[2] bg-yellow-400 hover:bg-yellow-500 text-black font-bold h-12 text-lg">
-               {isSubmitting ? "Submitting..." : "Submit Application"}
-            </Button>
-         </div>
-      </form>
-   )
+      <div className="flex gap-4">
+        <Button
+          type="button"
+          variant="outline"
+          onClick={onBack}
+          className="h-12 flex-1 border-zinc-700 bg-transparent text-white hover:bg-zinc-800"
+        >
+          <ArrowLeft className="mr-2 h-4 w-4" /> {t("back")}
+        </Button>
+        <Button
+          type="submit"
+          disabled={isSubmitting}
+          className="h-12 flex-[2] bg-yellow-400 text-lg font-bold text-black hover:bg-yellow-500"
+        >
+          {isSubmitting ? t("submitting") : t("submit")}
+        </Button>
+      </div>
+    </form>
+  );
 }
 
 function PayoutOption({ value, icon: Icon, label, sub, selected }: any) {
-   return (
-      <label className={cn(
-         "relative flex flex-col items-center justify-center p-4 rounded-xl border cursor-pointer transition-all hover:bg-white/5",
-         selected ? "bg-yellow-400/10 border-yellow-400 text-yellow-400" : "border-white/10 text-zinc-400 bg-white/5"
-      )}>
-         <RadioGroupItem value={value} className="sr-only" />
-         <Icon className={cn("w-6 h-6 mb-2", selected ? "text-yellow-400" : "text-zinc-500")} />
-         <span className="font-bold text-sm text-center">{label}</span>
-         <span className="text-[10px] opacity-70">{sub}</span>
-         {selected && (
-            <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-yellow-400" />
-         )}
-      </label>
-   )
+  return (
+    <label
+      className={cn(
+        "relative flex cursor-pointer flex-col items-center justify-center rounded-xl border p-4 transition-all hover:bg-white/5",
+        selected ? "border-yellow-400 bg-yellow-400/10 text-yellow-400" : "border-white/10 bg-white/5 text-zinc-400",
+      )}
+    >
+      <RadioGroupItem value={value} className="sr-only" />
+      <Icon className={cn("mb-2 h-6 w-6", selected ? "text-yellow-400" : "text-zinc-500")} />
+      <span className="text-center text-sm font-bold">{label}</span>
+      <span className="text-[10px] opacity-70">{sub}</span>
+      {selected && <div className="absolute right-2 top-2 h-2 w-2 rounded-full bg-yellow-400" />}
+    </label>
+  );
 }

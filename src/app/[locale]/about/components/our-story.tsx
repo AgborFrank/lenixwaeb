@@ -96,7 +96,7 @@ export default function OurStory() {
                   </div>
                   <p className="text-gray-300 leading-relaxed">
                     Launched our first cross-border payment solution, helping
-                    users send money globally using crypto. The response was
+                    users Send Funds globally using crypto. The response was
                     overwhelming, and we knew we were onto something special.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2">

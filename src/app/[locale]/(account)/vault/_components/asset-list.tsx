@@ -3,8 +3,10 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Copy } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { cn, formatCurrency } from "@/lib/utils";
+import Image from "next/image";
 
 interface AssetListProps {
   tokens: any[];
@@ -12,10 +14,19 @@ interface AssetListProps {
 }
 
 export function AssetList({ tokens, isLoading }: AssetListProps) {
+  const t = useTranslations("AccountVault.assets");
+
   const copyAddress = (address: string) => {
     if (!address) return;
     navigator.clipboard.writeText(address);
-    toast.success("Address copied");
+    toast.success(t("address_copied"));
+  };
+
+  const chainLabel = (chainId: number) => {
+    if (chainId === 1) return t("chains.ethereum");
+    if (chainId === 56) return t("chains.bsc");
+    if (chainId === 137) return t("chains.polygon");
+    return t("chains.evm");
   };
 
   if (isLoading) {
@@ -35,16 +46,23 @@ export function AssetList({ tokens, isLoading }: AssetListProps) {
     return (
       <div className="space-y-4">
         <div className="flex items-center justify-between px-2">
-          <h3 className="text-lg font-semibold text-white">Vault Assets</h3>
+          <h3 className="text-lg font-semibold text-white">{t("title")}</h3>
           <Badge
             variant="outline"
             className="border-zinc-800 bg-zinc-900/50 text-zinc-400 backdrop-blur"
           >
-            0 Assets
+            {t("count_zero")}
           </Badge>
         </div>
-        <div className="p-8 text-center rounded-xl bg-zinc-900/40 border border-white/5">
-          <p className="text-zinc-400">No assets found. Connect or import a wallet to get started.</p>
+        <div className="flex flex-col items-center gap-4 p-8 text-center rounded-xl bg-zinc-900/40 border border-white/5">
+          <Image
+            src="/assets/vectors/coin.svg"
+            alt=""
+            width={100}
+            height={120}
+            className="mx-auto opacity-80"
+          />
+          <p className="text-zinc-400">{t("empty")}</p>
         </div>
       </div>
     );
@@ -53,12 +71,12 @@ export function AssetList({ tokens, isLoading }: AssetListProps) {
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between px-2">
-        <h3 className="text-lg font-semibold text-white">Vault Assets</h3>
+        <h3 className="text-lg font-semibold text-white">{t("title")}</h3>
         <Badge
           variant="outline"
           className="border-zinc-800 bg-zinc-900/50 text-zinc-400 backdrop-blur"
         >
-          {tokens.length} Assets
+          {t("count", { count: tokens.length })}
         </Badge>
       </div>
 
@@ -72,8 +90,6 @@ export function AssetList({ tokens, isLoading }: AssetListProps) {
               ((token.quote_rate - token.quote_rate_24h) / token.quote_rate_24h) * 100;
           }
           const isPositive = changePercent >= 0;
-          const chainLabel =
-            token.chainId === 1 ? "Ethereum" : token.chainId === 56 ? "BSC" : token.chainId === 137 ? "Polygon" : "EVM";
           const address = token.contract_address;
 
           return (
@@ -81,7 +97,7 @@ export function AssetList({ tokens, isLoading }: AssetListProps) {
               key={`${token.contract_address || token.contract_ticker_symbol}-${idx}`}
               className="group relative flex items-center justify-between p-4 rounded-xl bg-zinc-900/40 border border-white/5 hover:bg-zinc-800/60 hover:border-white/10 transition-all cursor-pointer overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+              <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
               <div className="flex items-center gap-4 z-10">
                 <Avatar className="h-10 w-10 border border-white/10 bg-zinc-900">
@@ -99,13 +115,14 @@ export function AssetList({ tokens, isLoading }: AssetListProps) {
                     </Badge>
                   </div>
                   <div className="flex items-center gap-2 mt-0.5">
-                    <span className="text-xs text-zinc-500 font-medium">{chainLabel}</span>
+                    <span className="text-xs text-zinc-500 font-medium">{chainLabel(token.chainId)}</span>
                     {address && (
                       <>
                         <span className="text-xs text-zinc-500 font-mono truncate max-w-[80px]">
                           {address.length > 10 ? `${address.slice(0, 6)}...${address.slice(-4)}` : address}
                         </span>
                         <button
+                          type="button"
                           onClick={(e) => {
                             e.stopPropagation();
                             copyAddress(address);

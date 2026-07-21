@@ -1,37 +1,116 @@
 {
+  "meta": {
+    "title": "Pemulihan Akses Wallet | Lenix Protocol",
+    "description": "Pulihkan akses ke wallet perangkat lunak dan keras saat kata sandi hilang atau file rusak. Kelayakan dinilai terlebih dahulu. Anda tetap mengontrol aset Anda."
+  },
   "Hero": {
-    "badge": "Layanan Dekripsi Dompet Kripto",
-    "title1": "Layanan Pembukaan Kunci Dompet Cryptocurrency",
-    "subtitle1": "Layanan Dekripsi Dompet Mata Uang Digital",
-    "desc1": "Dalam dunia cryptocurrency yang berkembang pesat, mengamankan akses ke aset Anda sangat penting. Layanan Dekripsi Dompet Kripto Lenix Protocol memberikan dukungan penting bagi individu dan organisasi yang kehilangan akses ke dompet mereka.",
-    "desc2": "Baik karena lupa kata sandi, kehilangan kunci akses, atau file dompet yang rusak, tim ahli forensik kami menspesialisasikan diri dalam memulihkan dan mendekripsi mata uang digital Anda secara aman.",
-    "btn_consultation": "Minta Konsultasi Hari Ini"
+    "eyebrow": "Pemulihan akses wallet",
+    "title1": "Dapatkan kembali akses ke wallet ",
+    "title2": "yang sudah Anda miliki",
+    "subtitle": "Kata sandi terlupa, file wallet rusak, dan cadangan sebagian — bukan reset login exchange atau wallet milik orang lain. Kami menilai apakah pemulihan realistis sebelum pekerjaan berbayar dimulai.",
+    "btn_primary": "Minta penilaian",
+    "btn_secondary": "Hubungi tim"
   },
-  "Approach": {
-    "title": "Pendekatan Kami untuk Dekripsi Dompet",
-    "card1_title": "Konsultasi Awal dan Penilaian Risiko",
-    "card1_desc": "Memahami spesifikasi situasi Anda untuk memberikan strategi pemulihan yang disesuaikan.",
-    "card2_title": "Teknik Dekripsi Tingkat Lanjut",
-    "card2_desc": "Memanfaatkan teknologi mutakhir dan metodologi eksklusif untuk mencoba pemulihan kata sandi dan kunci enkripsi.",
-    "card3_title": "Penanganan In-House",
-    "card3_desc": "Memastikan integritas dan keamanan data Anda di sepanjang proses dekripsi."
+  "Audiences": {
+    "eyebrow": "Untuk siapa",
+    "title": "Situasi umum yang kami tinjau",
+    "description": "Kebanyakan klien masih memiliki file wallet, perangkat, atau fragmen cadangan. Mereka kehilangan kata sandi, jalur PIN, atau seed yang terbaca — bukan kepemilikan asetnya.",
+    "cards": {
+      "password": {
+        "title": "Kata sandi wallet terlupa",
+        "desc": "Wallet perangkat lunak seperti keystore MetaMask, Electrum, atau Bitcoin Core di mana filenya ada tetapi kata sandi enkripsi hilang."
+      },
+      "file": {
+        "title": "File rusak atau sebagian",
+        "desc": "File wallet.dat rusak, cadangan tidak lengkap, atau metadata dari perangkat lama yang mungkin masih menyimpan materi kunci."
+      },
+      "estate": {
+        "title": "Warisan dan urusan hukum",
+        "desc": "Pelaksana wasiat, trustee, atau penasihat yang membutuhkan jalur akses terdokumentasi untuk wallet pemegang yang meninggal atau tidak mampu — dengan otorisasi yang tepat."
+      },
+      "treasury": {
+        "title": "Kunci operasional wallet",
+        "desc": "Tim yang kehilangan kredensial wallet treasury atau operasi dan membutuhkan proses pemulihan terkendali dengan penanganan yang ramah audit."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Mengapa Memilih Lenix Protocol untuk Pemulihan Dompet Kripto?",
-    "desc": "Tim ahli Lenix Protocol adalah solusi utama Anda untuk Layanan Dekripsi Dompet Kripto. Kami membawa metodologi khusus dan rekam jejak yang terbukti pada setiap pemulihan.",
-    "point1_title": "Keahlian dalam Keamanan Cryptocurrency",
-    "point1_desc": "Pemahaman mendalam tentang teknologi blockchain dan arsitektur dompet.",
-    "point2_title": "Layanan Rahasia dan Etis",
-    "point2_desc": "Semua operasi dilakukan dengan penghargaan tertinggi untuk privasi dan legalitas.",
-    "point3_title": "Tingkat Keberhasilan",
-    "point3_desc": "Rekam jejak terbukti dalam memulihkan akses ke dompet terenkripsi untuk klien di seluruh dunia."
+  "Boundaries": {
+    "eyebrow": "Ruang lingkup dan batas",
+    "title1": "Yang kami lakukan — ",
+    "title2": "dan yang kami tolak",
+    "subtitle": "Pemulihan wallet adalah kategori penipuan yang umum. Lenix hanya menerima kasus dengan kepemilikan jelas, otorisasi terdokumentasi, dan jalur teknis yang layak dicoba.",
+    "items": {
+      "ownership": {
+        "title": "Kepemilikan yang dapat dibuktikan diperlukan",
+        "desc": "Kami bekerja pada wallet yang Anda miliki atau diizinkan secara hukum untuk dipulihkan — bukan alamat pihak ketiga atau kredensial tanpa persetujuan."
+      },
+      "assessment": {
+        "title": "Kelayakan sebelum biaya",
+        "desc": "Kami meninjau jenis wallet, status cadangan, dan petunjuk kata sandi sebelum menentukan pekerjaan dekripsi berbayar. Kasus tanpa harapan ditolak lebih awal."
+      },
+      "no_custody": {
+        "title": "Anda yang memindahkan aset",
+        "desc": "Saat akses dipulihkan, Anda mentransfer dana sendiri. Lenix tidak mengambil kustodi kripto yang dipulihkan."
+      },
+      "no_scam": {
+        "title": "Tanpa trik akses jarak jauh",
+        "desc": "Kami tidak meminta berbagi layar, deposit verifikasi, atau biaya buka kunci di muka — pola situs pemulihan palsu."
+      },
+      "decline": {
+        "title": "Kasus yang biasanya kami tolak",
+        "desc": "Hanya alamat publik, file wallet dibeli online, atau wallet hardware dengan PIN hilang tanpa cadangan biasanya tidak dapat dipulihkan."
+      },
+      "confidential": {
+        "title": "Penanganan terkendali",
+        "desc": "Materi wallet diproses dalam rantai penahanan yang terdefinisi dengan kontrol akses — bukan melalui saluran informal."
+      }
+    }
   },
-  "CTA": {
-    "title": "Hubungi kami",
-    "title_highlight": "hari ini",
-    "desc_part1": "Hubungi kami hari ini di",
-    "desc_part2": "untuk mempelajari cara Lenix Protocol membantu Dekripsi Dompet Kripto.",
-    "email_label": "Kirim Email ke Tim Kami",
-    "phone_label": "Hubungi Kantor Kami"
+  "Process": {
+    "eyebrow": "Cara kerjanya",
+    "title": "Dari penilaian ke akses",
+    "description": "Jalur terstruktur untuk pemegang dan perwakilan berwenang — bukan janji brute-force tanpa batas.",
+    "step_label": "Langkah {number}",
+    "steps": {
+      "submit": {
+        "title": "Kirim detail kasus",
+        "desc": "Jenis wallet, materi cadangan yang ada, dan petunjuk atau pola kata sandi yang Anda ingat. Tinjauan kelayakan awal adalah bagian dari intake."
+      },
+      "scope": {
+        "title": "Ruangan lingkup dan kelayakan",
+        "desc": "Kami memberitahu dengan jelas apakah dekripsi layak dicoba, perkiraan usaha, dan biaya — sebelum Anda berkomitmen pada pekerjaan berbayar."
+      },
+      "recover": {
+        "title": "Pemulihan terkendali",
+        "desc": "Jika dipercayakan, dekripsi berjalan di lingkungan terkendali. Anda mendapat kembali akses dan memindahkan aset sesuai jadwal Anda."
+      }
+    },
+    "btn_primary": "Mulai penilaian",
+    "btn_secondary": "Bicara dengan tim"
+  },
+  "Support": {
+    "eyebrow": "Cakupan teknis",
+    "title": "Jenis wallet yang sering kami lihat",
+    "description": "Cakupan bergantung pada format file, kelengkapan cadangan, dan kekuatan enkripsi. Konfirmasi milik Anda saat intake.",
+    "columns": {
+      "software": {
+        "title": "Wallet perangkat lunak",
+        "desc": "Bitcoin Core, Electrum, keystore JSON MetaMask, cadangan Exodus, dan file wallet terenkripsi lokal serupa."
+      },
+      "hardware": {
+        "title": "Perangkat keras",
+        "desc": "Kasus terpilih dengan perangkat Ledger atau Trezor rusak di mana data chip atau cadangan masih mungkin memberi jalur — bukan PIN hilang tanpa cadangan sama sekali."
+      },
+      "formats": {
+        "title": "Legacy dan kustom",
+        "desc": "Varian wallet.dat lama, kunci terenkripsi BIP38, dan ekspor vault enterprise — dinilai per kasus."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Punya file wallet tapi kehilangan akses?",
+    "subtitle": "Jelaskan jenis wallet dan materi cadangan yang masih Anda miliki. Kami akan memberitahu apakah ada jalur pemulihan sebelum engagement berbayar.",
+    "btn_primary": "Minta penilaian",
+    "btn_secondary": "Hubungi tim"
   }
 }

@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Lösungen",
+    "title1": "Recovery, Abwicklung, Kredit ",
+    "title2": "und Sicherheitsinfrastruktur",
+    "title3": ".",
+    "subtitle1": "Lenix verfolgt gestohlene oder falsch geroutete Krypto, wickelt über unterstützte Korridore in Fiat ab, vergibt Kredite gegen Tresor-Sicherheiten und überwacht Wallets für Teams, die Kundenvermögen halten.",
+    "subtitle2": "Jeder Workflow hat eigene Aufnahme und Deliverables. Bei Recovery bewerten wir die Spur vor kostenpflichtigem Engagement — wir versprechen keine Ergebnisse."
+  },
+  "Overview": {
+    "eyebrow": "Einstieg",
+    "title": "Problem dem Workflow zuordnen",
+    "description": "Die meisten Besucher wissen bereits, ob sie Tracing, Auszahlung, Liquidität oder operative Kontrollen brauchen. Überfliegen Sie die Kurzbeschreibungen und öffnen Sie den passenden Abschnitt.",
+    "learn_more": "Details",
+    "cards": {
+      "recovery": {
+        "title": "Asset Recovery",
+        "desc": "Gelder gestohlen, betrogen oder an die falsche Adresse gesendet. Sie brauchen eine Spur und dokumentierte Beweise, bevor Sie die nächsten Schritte wählen."
+      },
+      "payments": {
+        "title": "Grenzüberschreitende Zahlungen",
+        "desc": "Treasury oder Finance muss Krypto in Fiat umwandeln — mit Kursen, Gebühren und Lieferstatus für Prüfer nachvollziehbar."
+      },
+      "lending": {
+        "title": "Krypto-Kredit",
+        "desc": "Sie halten zulässige Sicherheiten und brauchen Liquidität, ohne die Position zu verkaufen."
+      },
+      "security": {
+        "title": "Plattformsicherheit",
+        "desc": "Ihr Team verwahrt Kundenvermögen und braucht Monitoring, Zugriffsregeln und einen dokumentierten Eskalationspfad."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Asset Recovery",
+    "title": "Zuerst verfolgen. Nur engagieren, wenn ein Weg existiert.",
+    "description": "Senden Sie Wallet-Adressen, Transaktions-Hashes und eine kurze Timeline. Wir verfolgen, wohin Wert floss, bereiten Ergebnisse für Börsen und Anwälte auf und sagen klar, ob Recovery realistisch ist — vor jedem kostenpflichtigen Engagement. Wir versprechen keine Recovery.",
+    "points": {
+      "chains": "Tracing auf wichtigen EVM-Netzwerken, Bitcoin und Stablecoins, die in Diebstahlfällen häufig vorkommen",
+      "evidence": "Dokumentation für Exchange-Compliance-Desks, Anwälte und Strafverfolgung",
+      "terms": "Umfang und Honorare erst nach kostenloser Recoverability-Prüfung festgelegt"
+    },
+    "cta": "Fall melden"
+  },
+  "Payments": {
+    "eyebrow": "Grenzüberschreitende Zahlungen",
+    "title": "Abwicklung, die Ihre Treasury prüfen kann",
+    "description": "Krypto in Fiat umwandeln, wo lokale Bankrails langsam, teuer oder intransparent sind. Kurs, Gebühr und Status sind von Wallet-Initiierung bis Begünstigtenauszahlung sichtbar — Finance und Ops raten nicht.",
+    "cta": "Zahlungen",
+    "capabilities": {
+      "corridors": {
+        "title": "Aktive Korridore",
+        "desc": "Auszahlung auf Bankkonten in Märkten, die wir heute unterstützen. Kontaktieren Sie uns, wenn Ihr Korridor nicht gelistet ist."
+      },
+      "visibility": {
+        "title": "Übergabe-Tracking",
+        "desc": "Status in jedem Schritt des Flows — kein einzelnes Pending-Flag ohne Kontext."
+      },
+      "compliance": {
+        "title": "Sanktions- und AML-Prüfung",
+        "desc": "Ein- und ausgehende Flows werden vor Freigabe der Mittel geprüft."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Krypto-Kredit",
+    "title": "Liquidität, während Sicherheiten im Tresor bleiben",
+    "description": "Genehmigte Sicherheiten hinterlegen und Stablecoins oder Fiat abrufen. LTV, Rückzahlungsbedingungen und Liquidationsschwellen werden vor Auszahlung angezeigt — keine versteckten Trigger nach der Unterschrift.",
+    "points": {
+      "credit": "Zulässige Sicherheitstypen erfordern keine traditionelle Bonitätsprüfung",
+      "ltv": "LTV und Rückzahlungspläne im Voraus vereinbart",
+      "custody": "Sicherheiten während der Laufzeit in segregierten Tresoren"
+    },
+    "cta": "Kredit beantragen"
+  },
+  "Security": {
+    "eyebrow": "Plattformsicherheit",
+    "title": "Kontrollen für Teams mit Kundenverwahrung",
+    "description": "Wallet-Monitoring, berechtigter Zugriff und Incident-Eskalation für Organisationen, die verdächtige Aktivität nicht als Neben-Ticket behandeln können. Für Ops-Teams gebaut, nicht für Folien-Sicherheit.",
+    "cta": "Sicherheit",
+    "pillars": {
+      "monitoring": {
+        "title": "Aktivitätsmonitoring",
+        "desc": "Alerts bei ungewöhnlichen Abflüssen, neuen Gegenparteien und Transfers außerhalb der Policy."
+      },
+      "access": {
+        "title": "Zugriff und Audit-Trail",
+        "desc": "Rollenbasierte Berechtigungen mit Protokoll, wer was wann genehmigt hat."
+      },
+      "incident": {
+        "title": "Incident Response",
+        "desc": "Dokumentierte Eskalationsschritte, die Ihr Team ausführen kann, wenn Aktivität menschliche Prüfung braucht."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Unsicher, welcher Workflow passt?",
+    "description": "Beschreiben Sie die Situation — verlorene Gelder, Auszahlung, Kredit oder Ops-Anliegen — und wir leiten Sie zur richtigen Aufnahme.",
+    "btn_primary": "Team kontaktieren",
+    "btn_secondary": "Fall melden"
+  }
+}

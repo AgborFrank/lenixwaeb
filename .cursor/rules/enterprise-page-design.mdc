@@ -1,0 +1,44 @@
+---
+description: Enterprise page UI and copy standard — research-first workflow, home/glass tokens, humanizer voice. Required for all marketing/product page changes.
+globs: src/app/[locale]/**/*.tsx,messages/en/**/*.json,docs/enterprise-page-design-guide.md
+alwaysApply: true
+---
+
+# Enterprise page design (mandatory)
+
+Full guide: `docs/enterprise-page-design-guide.md`
+
+Lenix is an **enterprise production platform**, not an MVP or startup landing page. All marketing/product page UI and copy changes must follow this rule.
+
+## Before writing code or copy
+
+1. **Define page purpose** — primary user, primary action, what must not be promised
+2. **Research** — web search for target users, their problems, and how similar enterprise products address them; do not rely on generic AI assumptions
+3. **Map problems → Lenix** — one specific platform response per problem; omit or bound claims we cannot support
+4. **Read existing page** — components + `messages/en/*.json` for that route
+5. **Voice reference** — `messages/en/common.json` → `Home.Hero`, `Home.Pillars`, `Home.Merchant`
+
+## Visual system
+
+- **Default:** `home` from `@/lib/home-styles` + `HomeSectionHeader`
+- **Forensic/recovery flows only:** `glass` from `@/lib/recovery-styles` — do not mix systems on one page without reason
+- **Reuse homepage patterns** — text hero, pillars grid, merchant split (max 2/page), 3-col workflow, wide banner, centered CTA
+- **Never:** fake UI mocks, grid/glow heroes, pulsing orbs, decorative SVG dividers, identical 2-col sections repeated 4×, yellow headline splits, `rounded-full` glow CTAs, icon-circle feature grids
+
+## Content (humanizer required)
+
+- Read and apply `~/.agents/skills/humanizer/SKILL.md` on all new/edited user-facing copy
+- **Operator voice:** specific, verb-led, honest about limits (see Home.Hero — no recovery guarantees)
+- **Not startup pitch:** ban empty hype — “institutional-grade”, “seamless”, “leverage”, “revolutionary”, unverified SLAs/stats
+- **Not robot template:** no UX placeholder copy (“select a capability to review delivery model”)
+- Put copy in `messages/en/<page>.json`; register in `src/i18n/request.ts`
+- CTAs: consistent — “Start a recovery case”, “Contact us”, “Learn more”
+
+## Pre-ship
+
+- Section layout variety on pages with 3+ sections
+- Real `/assets/img/` images + alt text
+- `npm run build` passes
+- Pre-ship checklist in full guide §7
+
+When unsure, match the **homepage** — not a crypto SaaS template.

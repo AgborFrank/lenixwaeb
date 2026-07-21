@@ -1,37 +1,116 @@
 {
+  "meta": {
+    "title": "Récupération d'accès aux wallets | Lenix Protocol",
+    "description": "Retrouver l'accès aux wallets logiciels et matériels lorsque les mots de passe sont perdus ou les fichiers endommagés. Faisabilité évaluée en premier. Vous gardez le contrôle de vos actifs."
+  },
   "Hero": {
-    "badge": "Services de Décryptage de Portefeuille Crypto",
-    "title1": "Services de Déverrouillage de Portefeuille de Crypto-monnaie",
-    "subtitle1": "Services de Décryptage de Portefeuille de Monnaie Numérique",
-    "desc1": "Dans le monde de la crypto-monnaie en évolution rapide, sécuriser l'accès à vos actifs est primordial. Les Services de Décryptage de Portefeuille Crypto de Lenix Protocol fournissent un soutien crucial aux individus et organisations ayant perdu l'accès à leurs portefeuilles.",
-    "desc2": "Que ce soit à cause de mots de passe oubliés, de clés d'accès perdues ou de fichiers de portefeuille corrompus, notre équipe d'experts spécialisés récupère et décrypte votre monnaie numérique en toute sécurité.",
-    "btn_consultation": "Demander une consultation aujourd'hui"
+    "eyebrow": "Récupération d'accès aux wallets",
+    "title1": "Retrouver l'accès aux wallets ",
+    "title2": "que vous possédez déjà",
+    "subtitle": "Mots de passe oubliés, fichiers wallet corrompus et sauvegardes partielles — pas les réinitialisations de connexion exchange ni les wallets appartenant à autrui. Nous évaluons si une récupération est réaliste avant tout travail payant.",
+    "btn_primary": "Demander une évaluation",
+    "btn_secondary": "Contacter l'équipe"
   },
-  "Approach": {
-    "title": "Notre Approche du Décryptage de Portefeuille",
-    "card1_title": "Consultation Initiale et Évaluation des Risques",
-    "card1_desc": "Comprendre les spécificités de votre situation pour fournir une stratégie de récupération sur mesure.",
-    "card2_title": "Techniques Avancées de Décryptage",
-    "card2_desc": "Utiliser une technologie de pointe et des méthodologies exclusives pour tenter de récupérer mots de passe et clés de cryptage.",
-    "card3_title": "Traitement Interne Natif",
-    "card3_desc": "Assurer l'intégrité et la sécurité de vos données tout au long du processus de décryptage."
+  "Audiences": {
+    "eyebrow": "Pour qui",
+    "title": "Situations courantes que nous examinons",
+    "description": "La plupart des clients ont encore un fichier wallet, un appareil ou un fragment de sauvegarde. Ils ont perdu le mot de passe, le chemin PIN ou la seed lisible — pas la propriété sous-jacente.",
+    "cards": {
+      "password": {
+        "title": "Mot de passe wallet oublié",
+        "desc": "Wallets logiciels tels que keystores MetaMask, Electrum ou Bitcoin Core où le fichier existe mais le mot de passe de chiffrement est perdu."
+      },
+      "file": {
+        "title": "Fichiers endommagés ou partiels",
+        "desc": "Fichiers wallet.dat corrompus, sauvegardes incomplètes ou métadonnées récupérées d'un ancien appareil pouvant encore contenir le matériel de clé."
+      },
+      "estate": {
+        "title": "Succession et questions juridiques",
+        "desc": "Exécuteurs testamentaires, fiduciaires ou conseils qui ont besoin de voies d'accès documentées pour le wallet d'un titulaire décédé ou incapacité — avec autorisation appropriée."
+      },
+      "treasury": {
+        "title": "Verrouillage opérationnel de wallet",
+        "desc": "Équipes ayant perdu les identifiants d'un wallet trésorerie ou opérations et ayant besoin d'un processus de récupération contrôlé avec traitement compatible audit."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Pourquoi Choisir Lenix Protocol pour la Récupération de Portefeuille Crypto ?",
-    "desc": "L'équipe d'experts de Lenix Protocol est votre solution de choix pour les Services de Décryptage de Portefeuille Crypto. Nous apportons une méthodologie spécialisée et une expérience éprouvée à chaque engagement de récupération.",
-    "point1_title": "Expertise en Sécurité des Crypto-monnaies",
-    "point1_desc": "Compréhension approfondie de la technologie blockchain et des architectures de portefeuille.",
-    "point2_title": "Service Confidentiel et Éthique",
-    "point2_desc": "Toutes les opérations sont réalisées dans le plus grand respect de la vie privée et de la légalité par des individus ayant détenu des habilitations de sécurité de niveau Secret et des experts académiques.",
-    "point3_title": "Taux de Réussite",
-    "point3_desc": "Historique prouvé dans la récupération de l'accès aux portefeuilles chiffrés pour les clients du monde entier."
+  "Boundaries": {
+    "eyebrow": "Périmètre et limites",
+    "title1": "Ce que nous faisons — ",
+    "title2": "et ce que nous refusons",
+    "subtitle": "La récupération de wallet est une catégorie de fraude courante. Lenix n'accepte que les dossiers avec propriété claire, autorisation documentée et une voie technique qui vaut la peine d'être tentée.",
+    "items": {
+      "ownership": {
+        "title": "Propriété vérifiable requise",
+        "desc": "Nous travaillons sur les wallets que vous possédez ou que vous êtes légalement autorisé à récupérer — pas les adresses tierces ou identifiants obtenus sans consentement."
+      },
+      "assessment": {
+        "title": "Faisabilité avant frais",
+        "desc": "Nous examinons le type de wallet, l'état des sauvegardes et les indices de mot de passe avant de cadrer un travail de déchiffrement payant. Les dossiers sans issue sont refusés tôt."
+      },
+      "no_custody": {
+        "title": "Vous déplacez les actifs",
+        "desc": "Une fois l'accès rétabli, vous transférez les fonds vous-même. Lenix ne prend pas en garde la cryptomonnaie récupérée."
+      },
+      "no_scam": {
+        "title": "Pas de pièges d'accès à distance",
+        "desc": "Nous ne demandons pas de partage d'écran, de dépôts de vérification ni de frais de déblocage anticipés — schémas utilisés par les sites de récupération frauduleux."
+      },
+      "decline": {
+        "title": "Dossiers que nous refusons généralement",
+        "desc": "Adresse publique seule, fichiers wallet achetés en ligne, ou wallets matériels avec PIN perdu et sans sauvegarde ne sont généralement pas récupérables."
+      },
+      "confidential": {
+        "title": "Traitement contrôlé",
+        "desc": "Les matériaux wallet sont traités dans une chaîne de custody définie avec contrôles d'accès — pas transmis par des canaux informels."
+      }
+    }
   },
-  "CTA": {
-    "title": "Contactez-nous",
-    "title_highlight": "aujourd'hui",
-    "desc_part1": "Contactez-nous aujourd'hui au",
-    "desc_part2": "pour en savoir plus sur la manière dont Lenix Protocol peut vous aider avec le Décryptage de Portefeuille Crypto.",
-    "email_label": "Envoyer un email à notre équipe",
-    "phone_label": "Appeler notre bureau"
+  "Process": {
+    "eyebrow": "Comment ça marche",
+    "title": "De l'évaluation à l'accès",
+    "description": "Un parcours structuré pour les titulaires et représentants autorisés — pas de promesses ouvertes de force brute.",
+    "step_label": "Étape {number}",
+    "steps": {
+      "submit": {
+        "title": "Soumettre les détails du dossier",
+        "desc": "Type de wallet, matériel de sauvegarde disponible et indices ou schémas de mot de passe mémorisés. L'examen initial de faisabilité fait partie de l'admission."
+      },
+      "scope": {
+        "title": "Périmètre et faisabilité",
+        "desc": "Nous vous disons clairement si le déchiffrement vaut la peine, l'effort attendu et les frais — avant que vous ne vous engagiez sur un travail payant."
+      },
+      "recover": {
+        "title": "Récupération contrôlée",
+        "desc": "Si mandaté, le déchiffrement s'exécute dans un environnement contrôlé. Vous retrouvez l'accès et déplacez les actifs à votre rythme."
+      }
+    },
+    "btn_primary": "Commencer l'évaluation",
+    "btn_secondary": "Parler à l'équipe"
+  },
+  "Support": {
+    "eyebrow": "Couverture technique",
+    "title": "Types de wallets que nous voyons souvent",
+    "description": "La couverture dépend du format de fichier, de l'exhaustivité des sauvegardes et de la force du chiffrement. Confirmez le vôtre lors de l'admission.",
+    "columns": {
+      "software": {
+        "title": "Wallets logiciels",
+        "desc": "Bitcoin Core, Electrum, keystores JSON MetaMask, sauvegardes Exodus et fichiers wallet chiffrés localement similaires."
+      },
+      "hardware": {
+        "title": "Appareils matériels",
+        "desc": "Cas sélectionnés impliquant des appareils Ledger ou Trezor endommagés où les données de puce ou sauvegardes peuvent encore offrir une voie — pas PIN perdu sans aucune sauvegarde."
+      },
+      "formats": {
+        "title": "Legacy et sur mesure",
+        "desc": "Anciennes variantes wallet.dat, clés chiffrées BIP38 et exports de coffre entreprise — évalués individuellement."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Vous avez un fichier wallet mais plus d'accès ?",
+    "subtitle": "Décrivez le type de wallet et le matériel de sauvegarde restant. Nous vous dirons si une voie de récupération existe avant tout engagement payant.",
+    "btn_primary": "Demander une évaluation",
+    "btn_secondary": "Contacter l'équipe"
   }
 }

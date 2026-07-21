@@ -1,31 +1,25 @@
 "use client";
 
-import { TrendingUp, Users, DollarSign, Shield } from "lucide-react";
+import { glass } from "@/lib/recovery-styles";
+
+const stats = [
+  { value: "$850M+", label: "Assets traced and monitored" },
+  { value: "15k+", label: "Cases reviewed" },
+  { value: "40+", label: "Jurisdictions covered" },
+  { value: "24/7", label: "Incident intake" },
+];
 
 export default function RecoveryStats() {
   return (
-    <section className="py-20 px-4 bg-yellow-400 text-black relative overflow-hidden">
-        {/* Abstract Pattern Overlay */}
-        <div className="absolute inset-0 opacity-10" style={{backgroundImage: 'radial-gradient(circle, #000 1px, transparent 1px)', backgroundSize: '20px 20px'}}></div>
-        
-      <div className="max-w-screen-xl mx-auto relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-                <div className="text-4xl md:text-6xl font-black mb-2 tracking-tighter">$850M+</div>
-                <div className="text-sm md:text-base font-bold uppercase tracking-widest opacity-80">Value Recovered</div>
-            </div>
-            <div className="text-center">
-                 <div className="text-4xl md:text-6xl font-black mb-2 tracking-tighter">94%</div>
-                 <div className="text-sm md:text-base font-bold uppercase tracking-widest opacity-80">Success Rate</div>
-            </div>
-            <div className="text-center">
-                 <div className="text-4xl md:text-6xl font-black mb-2 tracking-tighter">15k+</div>
-                 <div className="text-sm md:text-base font-bold uppercase tracking-widest opacity-80">Cases Resolved</div>
-            </div>
-             <div className="text-center">
-                 <div className="text-4xl md:text-6xl font-black mb-2 tracking-tighter">24/7</div>
-                 <div className="text-sm md:text-base font-bold uppercase tracking-widest opacity-80">Support Team</div>
-            </div>
+    <section className={`${glass.section} bg-black`}>
+      <div className={glass.container}>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          {stats.map(({ value, label }) => (
+            <article key={label} className={`${glass.panel} rounded-xl p-6 text-center`}>
+              <p className="text-2xl sm:text-3xl font-semibold text-white mb-2">{value}</p>
+              <p className="text-xs sm:text-sm text-neutral-500 leading-snug">{label}</p>
+            </article>
+          ))}
         </div>
       </div>
     </section>

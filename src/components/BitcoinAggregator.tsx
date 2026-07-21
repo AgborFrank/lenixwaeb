@@ -80,14 +80,12 @@ export const BitcoinAggregator = () => {
     setAvailableProviders(providers);
   }, []);
 
-  // Fetch Bitcoin balance
+  // Fetch Bitcoin balance via our API (uses Alchemy under the hood)
   const fetchBalance = useCallback(
     async (address: string): Promise<BitcoinBalance | null> => {
       try {
-        // Use a Bitcoin API to fetch balance
-        // Options: Blockstream API, BlockCypher, or your own backend
         const response = await fetch(
-          `https://blockstream.info/api/address/${address}`
+          `/api/btc/balance?address=${encodeURIComponent(address)}`
         );
 
         if (!response.ok) {
@@ -95,15 +93,11 @@ export const BitcoinAggregator = () => {
         }
 
         const data = await response.json();
-        const confirmed = data.chain_stats?.funded_txo_sum || 0;
-        const unconfirmed = data.mempool_stats?.funded_txo_sum || 0;
-        const spent = data.chain_stats?.spent_txo_sum || 0;
-        const unconfirmedSpent = data.mempool_stats?.spent_txo_sum || 0;
 
         return {
-          confirmed: confirmed - spent,
-          unconfirmed: unconfirmed - unconfirmedSpent,
-          total: confirmed + unconfirmed - spent - unconfirmedSpent,
+          confirmed: data.confirmed || 0,
+          unconfirmed: data.unconfirmed || 0,
+          total: data.total || 0,
         };
       } catch (error: any) {
         console.error("Error fetching Bitcoin balance:", error);

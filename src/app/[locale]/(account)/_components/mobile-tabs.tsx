@@ -1,25 +1,26 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { LayoutDashboard, Lock, Wallet, Landmark, Settings } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Building2, LayoutDashboard, Wallet, Landmark, Settings } from "lucide-react";
+import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 const items = [
-  { href: "/dashboard", label: "Home", icon: LayoutDashboard },
-  { href: "/vault", label: "Vault", icon: Lock },
-  { href: "/lenix-wallet", label: "Wallet", icon: Wallet },
-  { href: "/crypto-loan", label: "Loan", icon: Landmark },
-  { href: "/settings", label: "Settings", icon: Settings },
+  { href: "/dashboard", labelKey: "home" as const, icon: LayoutDashboard },
+  { href: "/banking", labelKey: "banking" as const, icon: Building2 },
+  { href: "/lenix-wallet", labelKey: "wallet" as const, icon: Wallet },
+  { href: "/crypto-loan", labelKey: "loan" as const, icon: Landmark },
+  { href: "/settings", labelKey: "settings" as const, icon: Settings },
 ];
 
 export function MobileTabs() {
+  const t = useTranslations("AccountMobileTabs");
   const pathname = usePathname();
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden block">
        {/* Gradient Border Top */}
-       <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+       <div className="h-px w-full bg-linear-to-r from-transparent via-white/20 to-transparent" />
        
        <div className="bg-black/80 backdrop-blur-xl pb-safe pt-2 px-2">
           <nav className="flex items-center justify-around h-16">
@@ -35,7 +36,7 @@ export function MobileTabs() {
                       )}
                    >
                       <item.icon className={cn("w-6 h-6", isActive && "fill-yellow-400/20")} strokeWidth={isActive ? 2.5 : 2} />
-                      <span className="text-[10px] font-medium">{item.label}</span>
+                      <span className="text-[10px] font-medium">{t(item.labelKey)}</span>
                    </Link>
                 )
              })}

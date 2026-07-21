@@ -1,10 +1,8 @@
 "use client";
 
-import { ArrowRightLeft, Shield, RefreshCcw, Landmark } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-
-
+import Image from "next/image";
 
 export default function Payment() {
   const t = useTranslations("Home.Payment");
@@ -12,21 +10,22 @@ export default function Payment() {
   const OFFERS = [
     {
       id: "fiat",
-      icon: ArrowRightLeft,
+      image: "/assets/img/global-payment-editable-illustration-design_203633-11686.avif",
     },
     {
       id: "vault",
-      icon: Shield,
+      image: "/assets/img/scale.webp",
     },
     {
       id: "recovery",
-      icon: RefreshCcw,
+      image: "/assets/img/enhance.webp",
     },
     {
       id: "lending",
-      icon: Landmark,
+      image: "/assets/img/tokenomic.png",
     },
-  ];
+  ] as const;
+
   return (
     <section className="bg-black py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -43,23 +42,29 @@ export default function Payment() {
         </header>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-4 mt-8">
-          {OFFERS.map(({ id, icon: Icon }) => (
+          {OFFERS.map(({ id, image }) => (
             <article
               key={id}
-              className="group relative p-6 lg:p-7 rounded-2xl bg-white/5 border border-white/10 hover:border-yellow-400/25 hover:bg-white/10 transition-all duration-200"
+              className="group relative flex flex-col overflow-hidden rounded-2xl bg-white/5 border border-white/10 hover:border-yellow-400/25 hover:bg-white/10 transition-all duration-200"
             >
-              <div
-                className="w-12 h-12 rounded-xl bg-yellow-400/10 flex items-center justify-center mb-5 group-hover:bg-yellow-400/15 transition-colors"
-                aria-hidden
-              >
-                <Icon className="w-6 h-6 text-yellow-400" />
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
+                <Image
+                  src={image}
+                  alt={t(`cards.${id}.title`)}
+                  fill
+                  className="object-cover opacity-65 group-hover:opacity-80 group-hover:scale-105 transition-all duration-500"
+                  sizes="(max-width: 640px) 100vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
               </div>
-              <h3 className="text-white font-semibold text-lg font-onest mb-2">
-                {t(`cards.${id}.title`)}
-              </h3>
-              <p className="text-gray-400 text-sm leading-relaxed">
-                {t(`cards.${id}.desc`)}
-              </p>
+              <div className="p-6 lg:p-7 flex flex-col flex-1">
+                <h3 className="text-white font-semibold text-lg font-onest mb-2">
+                  {t(`cards.${id}.title`)}
+                </h3>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  {t(`cards.${id}.desc`)}
+                </p>
+              </div>
             </article>
           ))}
         </div>

@@ -1,9 +1,33 @@
 "use client"
 
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { ArrowDown } from "lucide-react"
 
+// Signed-in account pages (wallet, banking, settings, etc.) have their own in-app
+// support channels, so the marketing-site Telegram widget shouldn't follow users in there.
+const ACCOUNT_ROUTE_PREFIXES = [
+  "/dashboard",
+  "/lenix-wallet",
+  "/banking",
+  "/assets",
+  "/send",
+  "/receive",
+  "/transactions",
+  "/settings",
+  "/vault",
+  "/crypto-loan",
+  "/recovery-services",
+]
+
 export default function FloatingTelegramButton() {
+  const pathname = usePathname()
+  const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}(-[A-Z]{2})?/, "") || "/"
+
+  if (ACCOUNT_ROUTE_PREFIXES.some((prefix) => pathWithoutLocale.startsWith(prefix))) {
+    return null
+  }
+
   return (
     <Link
       href="https://t.me/Verified_protocol"

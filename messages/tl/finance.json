@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Lenix Finance | Collateral Lending & Liquidity",
+    "description": "Borrow against approved crypto collateral or supply liquidity on Lenix Finance. LTV, rates, and liquidation thresholds shown before you commit.",
+    "keywords": "Crypto Lending, Collateral Loans, DeFi Liquidity, Lenix Finance, Crypto-to-Fiat"
+  },
+  "Hero": {
+    "badge": "Lenix Finance",
+    "title1": "Liquidity while ",
+    "title2": "collateral stays in vault",
+    "subtitle": "Borrow stablecoins or fiat against approved assets, or supply liquidity to the protocol — with LTV, rates, and health factors visible before you sign.",
+    "btn_primary": "Apply for loan",
+    "btn_secondary": "View markets",
+    "mock": {
+      "brand": "Lenix Finance",
+      "nav_dashboard": "Dashboard",
+      "nav_markets": "Markets",
+      "nav_staking": "Staking",
+      "nav_governance": "Governance",
+      "network": "Ethereum Mainnet",
+      "net_worth": "NET WORTH",
+      "net_apy": "NET APY",
+      "health_factor": "HEALTH FACTOR",
+      "liquidation_note": "Liquidation at < 1.00",
+      "tab_supplied": "Supplied",
+      "tab_borrowed": "Borrowed",
+      "col_asset": "ASSET",
+      "col_balance": "BALANCE",
+      "col_apy": "APY",
+      "col_collateral": "COLLATERAL",
+      "enabled": "Enabled",
+      "quick_actions": "Quick Actions",
+      "supply_asset": "Supply Asset",
+      "wallet_balance": "Wallet Balance:",
+      "supply_apy": "Supply APY",
+      "collateral_factor": "Collateral Factor",
+      "supply_btn": "Supply USDC"
+    }
+  },
+  "Steps": {
+    "title": "How it works",
+    "description": "From wallet connection to funded loan or supplied liquidity — three steps with clear terms upfront.",
+    "steps": {
+      "wallet": {
+        "title": "Connect your wallet",
+        "description": "Use Lenix Wallet or connect an supported wallet to access lending and supply flows."
+      },
+      "apply": {
+        "title": "Review terms",
+        "description": "Choose collateral, see LTV, repayment schedule, and liquidation thresholds before submitting."
+      },
+      "draw": {
+        "title": "Draw or supply",
+        "description": "Receive a loan disbursement or supply assets to earn from borrower interest — withdraw when liquidity allows."
+      }
+    }
+  },
+  "Markets": {
+    "title": "Market overview",
+    "description": "Indicative rates and liquidity across supported assets. Confirm live values in the app before transacting.",
+    "view_all": "View all markets",
+    "columns": {
+      "asset": "Asset",
+      "liquidity": "Total liquidity",
+      "supply_apy": "Supply APY",
+      "borrow_apy": "Borrow APY",
+      "actions": "Actions"
+    },
+    "supply": "Supply",
+    "borrow": "Borrow",
+    "assets": {
+      "wbtc": {
+        "name": "Bitcoin",
+        "symbol": "WBTC"
+      },
+      "eth": {
+        "name": "Ethereum",
+        "symbol": "ETH"
+      },
+      "lnx": {
+        "name": "Lenix",
+        "symbol": "LNX"
+      },
+      "usdc": {
+        "name": "USDC",
+        "symbol": "USDC"
+      },
+      "usdt": {
+        "name": "Tether",
+        "symbol": "USDT"
+      }
+    }
+  },
+  "Features": {
+    "cards": {
+      "collateral": {
+        "title": "Collateralized borrowing",
+        "desc": "Draw stablecoins or fiat against approved vault collateral — without selling the underlying asset. Credit checks are not required for eligible collateral types."
+      },
+      "ltv": {
+        "title": "LTV shown upfront",
+        "desc": "Loan-to-value, repayment schedule, and liquidation thresholds are displayed before disbursement — not adjusted silently after you sign."
+      },
+      "liquidity": {
+        "title": "Supply and earn",
+        "desc": "Provide liquidity to the protocol and earn from borrower interest. Withdraw when pool liquidity is available — no fixed lock-up term."
+      }
+    }
+  },
+  "Calculator": {
+    "title": "Estimate your returns",
+    "description": "Model supply-side yield at current indicative APYs. Actual returns depend on utilization, rates, and how long assets remain supplied.",
+    "stats": {
+      "max_apy_label": "Indicative max APY",
+      "max_apy_value": "Up to 18.5%",
+      "payout_label": "Accrual",
+      "payout_value": "Continuous"
+    },
+    "form": {
+      "amount_label": "Deposit amount",
+      "duration_label": "Duration",
+      "months": "{count} months",
+      "month_min": "1 month",
+      "month_max": "3 years",
+      "earnings_label": "Estimated earnings",
+      "total_label": "Total balance",
+      "disclaimer": "Illustrative only. Not financial advice.",
+      "btn": "Start supplying"
+    }
+  },
+  "Faq": {
+    "title": "Frequently asked questions",
+    "items": {
+      "yield": {
+        "q": "How does supply yield work?",
+        "a": "Borrowers pay interest on loans. A portion is distributed to liquidity providers after the protocol reserve. Rates move with pool utilization — check the app for current APY."
+      },
+      "lockup": {
+        "q": "Is there a lock-up period?",
+        "a": "No fixed term for suppliers. You can withdraw when the pool has sufficient liquidity. During high utilization, withdrawals may queue until borrowers repay."
+      },
+      "liquidation": {
+        "q": "What happens if my loan health factor falls?",
+        "a": "If collateral value drops below the agreed LTV, liquidation may occur to repay outstanding debt. Health factor and liquidation price are shown in the dashboard before and during the loan."
+      },
+      "fees": {
+        "q": "What fees apply?",
+        "a": "Protocol fees are reflected in the net APY or loan terms shown at application. On-chain gas for deposits, borrows, and withdrawals is separate and paid to the network."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Ready to borrow or supply?",
+    "description": "Apply for a collateral loan or open the app to supply liquidity. Support is available if you need help scoping terms.",
+    "btn_primary": "Apply for loan",
+    "btn_secondary": "Contact team"
+  }
+}

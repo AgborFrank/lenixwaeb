@@ -1,37 +1,116 @@
 {
+  "meta": {
+    "title": "Pag-recover ng Access sa Wallet | Lenix Protocol",
+    "description": "Ibalik ang access sa software at hardware wallet kapag nawala ang password o nasira ang file. Sinusuri muna ang posibilidad. Ikaw pa rin ang may kontrol sa assets mo."
+  },
   "Hero": {
-    "badge": "Mga Serbisyo sa Pag-Decrypt ng Crypto Wallet",
-    "title1": "Serbisyo sa Pag-Unlock ng Cryptocurrency Wallet",
-    "subtitle1": "Serbisyo sa Pag-Decrypt ng Digital Currency Wallet",
-    "desc1": "Sa mabilis na umuunlad na mundo ng cryptocurrency, ang pag-secure ng access sa iyong mga asset ay mahalaga. Ang mga Serbisyo sa Pag-Decrypt ng Crypto Wallet ng Lenix Protocol ay nagbibigay ng mahalagang suporta para sa mga indibidwal at organisasyon na nawalan ng access sa kanilang mga wallet.",
-    "desc2": "Dahil sa nakalimutang mga password, nawalang mga access key, o sirang mga wallet file, dalubhasa ang aming koponan sa ligtas na pagbawi at pag-decrypt sa iyong digital currency.",
-    "btn_consultation": "Humiling ng Konsultasyon Ngayon"
+    "eyebrow": "Pag-recover ng access sa wallet",
+    "title1": "Mabawi ang access sa mga wallet ",
+    "title2": "na pag-aari mo na",
+    "subtitle": "Nakalimutang password, sirang wallet file, at partial backup — hindi exchange login reset o wallet ng ibang tao. Sinusuri namin kung makatuwiran ang recovery bago magsimula ang bayad na trabaho.",
+    "btn_primary": "Humiling ng assessment",
+    "btn_secondary": "Makipag-ugnayan sa team"
   },
-  "Approach": {
-    "title": "Ang Aming Diskarte sa Pag-Decrypt ng Wallet",
-    "card1_title": "Paunang Konsultasyon at Pagtataya ng Panganib",
-    "card1_desc": "Pag-unawa sa mga detalye ng iyong sitwasyon upang makapagbigay ng pinasadyang diskarte sa pagbawi.",
-    "card2_title": "Advanced na mga Teknik sa Pag-Decrypt",
-    "card2_desc": "Paggamit sa nangungunang teknolohiya at mga pamamaraan upang subukang bawiin ang mga password at encryption keys.",
-    "card3_title": "In-house na Pangangasiwa",
-    "card3_desc": "Pagtiyak sa integridad at seguridad ng iyong data sa buong proseso ng pag-decrypt."
+  "Audiences": {
+    "eyebrow": "Para kanino",
+    "title": "Karaniwang sitwasyon na sinusuri namin",
+    "description": "Karamihan ng kliyente may wallet file, device, o backup fragment pa. Nawala ang password, PIN path, o readable seed — hindi ang pagmamay-ari mismo.",
+    "cards": {
+      "password": {
+        "title": "Nakalimutang wallet password",
+        "desc": "Software wallet tulad ng MetaMask keystore, Electrum, o Bitcoin Core kung saan may file pero nawala ang encryption password."
+      },
+      "file": {
+        "title": "Sirang o partial na file",
+        "desc": "Sirang wallet.dat, hindi kumpletong backup, o metadata mula sa lumang device na maaaring may key material pa."
+      },
+      "estate": {
+        "title": "Estate at legal na usapin",
+        "desc": "Mga executor, trustee, o counsel na kailangan ng documented access paths para sa wallet ng namatay o incapacitated na holder — may tamang authorization."
+      },
+      "treasury": {
+        "title": "Operational wallet lockout",
+        "desc": "Mga team na nawalan ng credentials sa treasury o operations wallet at kailangan ng controlled recovery process na audit-friendly."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Bakit Piliin ang Lenix Protocol para sa Pagbawi ng Crypto Wallet?",
-    "desc": "Ang pangkat ng dalubhasa ng Lenix Protocol ang iyong pinakamahusay na solusyon. Nagdadala kami ng espesyal na pamamaraan at napatunayang track record sa bawat pagbawi.",
-    "point1_title": "Kadali sa Seguridad ng Cryptocurrency",
-    "point1_desc": "Malalim na pag-unawa sa teknolohiya ng blockchain at mga arkitektura ng wallet.",
-    "point2_title": "Kumpidensyal at Etikal na Serbisyo",
-    "point2_desc": "Ang lahat ng operasyon ay isinasagawa nang may matinding paggalang sa pagiging pribado at batas.",
-    "point3_title": "Rate ng Tagumpay",
-    "point3_desc": "May napatunayang track record sa pagbawi ng access para sa mga kliyente sa buong mundo."
+  "Boundaries": {
+    "eyebrow": "Saklaw at limitasyon",
+    "title1": "Ano ang ginagawa namin — ",
+    "title2": "at ano ang tinatanggihan",
+    "subtitle": "Karaniwang scam category ang wallet recovery. Tinatanggap lang ng Lenix ang mga kaso na may malinaw na ownership, documented authorization, at technical path na sulit subukan.",
+    "items": {
+      "ownership": {
+        "title": "Kailangan ang mapapatunayang ownership",
+        "desc": "Gumagana kami sa wallet na pag-aari mo o legal mong pinahihintulutang i-recover — hindi third-party address o credential na nakuha nang walang pahintulot."
+      },
+      "assessment": {
+        "title": "Posibilidad bago ang bayad",
+        "desc": "Sinusuri namin ang wallet type, backup state, at password hints bago i-scope ang bayad na decryption work. Maagang tinatanggihan ang hopeless cases."
+      },
+      "no_custody": {
+        "title": "Ikaw ang maglilipat ng assets",
+        "desc": "Kapag naibalik ang access, ikaw mismo ang magta-transfer ng pondo. Hindi kumukuha ng custody ang Lenix sa recovered cryptocurrency."
+      },
+      "no_scam": {
+        "title": "Walang remote-access tricks",
+        "desc": "Hindi kami humihingi ng screen sharing, verification deposit, o advance unlock fee — pattern ng fraudulent recovery sites."
+      },
+      "decline": {
+        "title": "Mga kasong karaniwang tinatanggihan",
+        "desc": "Public address lang, wallet file na binili online, o hardware wallet na nawala ang PIN at walang backup — kadalasang hindi ma-recover."
+      },
+      "confidential": {
+        "title": "Controlled handling",
+        "desc": "Pinoproseso ang wallet materials sa defined chain of custody na may access controls — hindi sa informal channels."
+      }
+    }
   },
-  "CTA": {
-    "title": "Makipag-ugnayan sa amin",
-    "title_highlight": "ngayon",
-    "desc_part1": "Makipag-ugnayan sa amin ngayon sa",
-    "desc_part2": "upang malaman pa kung paano makakatulong ang Lenix Protocol.",
-    "email_label": "Email Our Team",
-    "phone_label": "Call Our Office"
+  "Process": {
+    "eyebrow": "Paano ito gumagana",
+    "title": "Mula assessment hanggang access",
+    "description": "Structured path para sa holders at authorized representatives — hindi open-ended na brute-force promises.",
+    "step_label": "Hakbang {number}",
+    "steps": {
+      "submit": {
+        "title": "Isumite ang detalye ng kaso",
+        "desc": "Wallet type, anong backup material ang meron pa, at password hints o patterns na natatandaan mo. Bahagi ng intake ang initial viability review."
+      },
+      "scope": {
+        "title": "Saklaw at feasibility",
+        "desc": "Sinasabi namin nang diretso kung sulit subukan ang decryption, inaasahang effort, at bayad — bago ka mag-commit sa bayad na trabaho."
+      },
+      "recover": {
+        "title": "Controlled recovery",
+        "desc": "Kung na-engage, tumatakbo ang decryption sa controlled environment. Mabawi mo ang access at ilipat ang assets sa sarili mong takbo."
+      }
+    },
+    "btn_primary": "Simulan ang assessment",
+    "btn_secondary": "Makipag-usap sa team"
+  },
+  "Support": {
+    "eyebrow": "Technical coverage",
+    "title": "Mga wallet type na madalas naming makita",
+    "description": "Depende ang coverage sa file format, backup completeness, at encryption strength. Kumpirmahin ang sa iyo sa intake.",
+    "columns": {
+      "software": {
+        "title": "Software wallets",
+        "desc": "Bitcoin Core, Electrum, MetaMask JSON keystores, Exodus backups, at katulad na locally encrypted wallet files."
+      },
+      "hardware": {
+        "title": "Hardware devices",
+        "desc": "Select cases na may sirang Ledger o Trezor device kung saan chip data o backup ay maaaring magbigay pa ng recovery path — hindi lost PIN na zero backup."
+      },
+      "formats": {
+        "title": "Legacy at custom",
+        "desc": "Mas lumang wallet.dat variants, BIP38-encrypted keys, at enterprise vault exports — individually assessed."
+      }
+    }
+  },
+  "Cta": {
+    "title": "May wallet file pero nawala ang access?",
+    "subtitle": "Ilarawan ang wallet type at anong backup material ang natitira. Sasabihin namin kung may recovery path bago anumang bayad na engagement.",
+    "btn_primary": "Humiling ng assessment",
+    "btn_secondary": "Makipag-ugnayan sa team"
   }
 }

@@ -1,59 +1,135 @@
 {
-  "Hero": {
-    "badge": "Crypto Asset Identification Services",
-    "title1": "Uncovering Hidden Cryptocurrency and Digital Asset Identification",
-    "subtitle1": "Locating and verifying digital holdings has become a critical part of modern investigations.",
-    "desc1": "With the increasing use of cryptocurrency in both legitimate and illicit financial activity, locating and verifying digital holdings has become a critical part of modern investigations. Lenix Protocol provides expert Crypto Asset Identification services to help attorneys, investigators, and financial professionals trace, document, and validate digital wealth—even when it’s been deliberately concealed.",
-    "desc2": "Our team uses cutting-edge blockchain tools and forensic methodologies to perform comprehensive cryptocurrency tracing, including locating wallets, analyzing transaction history, and identifying potential exchanges or off-ramps used to move funds. Whether you’re involved in litigation, asset recovery, or compliance enforcement, Lenix Protocol delivers reliable, court-admissible results.",
-    "btn_consultation": "Request a Consultation Today"
+  "meta": {
+    "title": "Crypto Asset Identification | Lenix Protocol",
+    "description": "Locate, trace, and document cryptocurrency holdings for litigation, estate, and enforcement matters. Forensic methodology with clear scope and deliverables."
   },
-  "Coverage": {
-    "title": "What Our Crypto Asset Identification Services Cover",
-    "desc": "Our investigations are tailored to support civil, criminal, and regulatory matters involving:",
-    "card1_title": "Divorce and family law disputes",
-    "card1_desc": "Involving hidden crypto assets.",
-    "card2_title": "Fraud, theft, and embezzlement",
-    "card2_desc": "Cases with digital currency components.",
-    "card3_title": "Corporate internal investigations",
-    "card3_desc": "Involving misappropriated funds.",
-    "card4_title": "Estate planning and probate matters",
-    "card4_desc": "With unknown or undeclared assets.",
-    "card5_title": "Bankruptcy or judgment enforcement",
-    "card5_desc": "Requiring asset identification.",
-    "footer": "Lenix Protocol works with both plaintiffs and defense counsel, as well as serving as a neutral expert in asset division and valuation."
+  "Hero": {
+    "eyebrow": "Crypto asset identification",
+    "title1": "Document digital holdings ",
+    "title2": "others may not have disclosed",
+    "subtitle": "For attorneys, investigators, and financial professionals who need to locate, trace, and verify cryptocurrency in litigation, estate matters, and enforcement — using methodology designed to hold up under review.",
+    "btn_primary": "Start case review",
+    "btn_secondary": "Contact team"
+  },
+  "Audiences": {
+    "eyebrow": "Who this is for",
+    "title": "Matters we commonly support",
+    "description": "Identification work is scoped to authorized legal, regulatory, or corporate investigations — not open-ended searches on unrelated parties.",
+    "cards": {
+      "family": {
+        "title": "Family law and divorce",
+        "desc": "Asset division where one party may have undeclared wallets, exchange accounts, or on-chain holdings not reflected in financial disclosures."
+      },
+      "fraud": {
+        "title": "Fraud and embezzlement",
+        "desc": "Civil or criminal matters involving misappropriated digital funds — tracing movement from known source wallets or compromised accounts."
+      },
+      "estate": {
+        "title": "Estate and probate",
+        "desc": "Executors or counsel locating cryptocurrency a decedent held but did not document — starting from devices, records, or partial address leads."
+      },
+      "enforcement": {
+        "title": "Bankruptcy and enforcement",
+        "desc": "Judgment creditors, trustees, or regulators identifying attachable crypto assets and exchange touchpoints relevant to a debtor or subject."
+      }
+    }
   },
   "Methods": {
-    "title": "Methods for Cryptocurrency Tracing",
-    "card1_title": "Blockchain wallet identification",
-    "card1_desc": "And linkage analysis.",
-    "card2_title": "Transaction monitoring",
-    "card2_desc": "Across public and private blockchains.",
-    "card3_title": "NFT ownership verification",
-    "card3_desc": "And transfer tracking.",
-    "card4_title": "Identification of exchange accounts",
-    "card4_desc": "And transaction off-ramps.",
-    "card5_title": "Cross-referencing metadata",
-    "card5_desc": "And device evidence for wallet attribution.",
-    "footer": "Our digital asset identification work is conducted using forensically sound techniques that preserve the integrity of the evidence for use in court or regulatory settings."
+    "eyebrow": "What we trace",
+    "title": "Identification and analysis scope",
+    "description": "Work combines on-chain analysis with corroborating evidence from the matter — not blockchain lookups in isolation.",
+    "columns": {
+      "linkage": {
+        "title": "Wallet identification",
+        "desc": "Link blockchain addresses to subjects using transaction patterns, clustering, and cross-reference with device, financial, or testimony evidence."
+      },
+      "flows": {
+        "title": "Transaction flow analysis",
+        "desc": "Follow fund movement across chains and layers — including visible mixer use, bridge transfers, and consolidation points worth documenting."
+      },
+      "attribution": {
+        "title": "Exchange and NFT attribution",
+        "desc": "Identify likely custodial deposits, off-ramps, and NFT holdings tied to the matter when on-chain data and supporting leads allow."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Why Choose Lenix Protocol for Asset Identification?",
-    "desc": "At Lenix Protocol, our Crypto Asset Identification services help expose the full scope of a subject’s financial picture in a digital-first world. From tracing lost or stolen coins to identifying undeclared crypto wallets, we help clients find the digital assets others hoped to hide.",
-    "point1_title": "Proven expertise",
-    "point1_desc": "In cryptocurrency tracing and blockchain forensics.",
-    "point2_title": "Experience in hidden asset identification",
-    "point2_desc": "Across legal practice areas.",
-    "point3_title": "Court-qualified expert testimony",
-    "point3_desc": "In state, federal, and international jurisdictions.",
-    "point4_title": "Clear, defensible reports",
-    "point4_desc": "Tailored for litigation or compliance."
+  "Boundaries": {
+    "eyebrow": "Scope and limits",
+    "title1": "What identification can show — ",
+    "title2": "and what it cannot",
+    "subtitle": "Public blockchain data has limits. Lenix scopes each engagement to lawful access, available leads, and what can be supported in a report.",
+    "items": {
+      "legal_basis": {
+        "title": "Authorized matters only",
+        "desc": "We take cases with a legal, regulatory, or corporate investigation basis — not speculative tracing of unrelated individuals or addresses."
+      },
+      "chain_limits": {
+        "title": "On-chain is not the full picture",
+        "desc": "Exchange balances held in custodial accounts or undeclared cold storage may require separate legal process beyond public ledger analysis."
+      },
+      "evidence": {
+        "title": "Forensic integrity",
+        "desc": "Methods and data handling are documented for counsel review, regulatory settings, or court — with chain of custody preserved."
+      },
+      "neutral": {
+        "title": "Neutral capacity available",
+        "desc": "Lenix can support plaintiff counsel, defense, or serve as an independent expert in asset division and valuation disputes."
+      },
+      "no_guarantee": {
+        "title": "No completeness guarantee",
+        "desc": "Identification is bounded by leads provided, chain visibility, and lawful access. We state what is and is not recoverable from available data."
+      },
+      "disclosure": {
+        "title": "Controlled disclosure",
+        "desc": "Findings are shared only with parties authorized under the engagement — not broadcast or used outside the defined matter scope."
+      }
+    }
   },
-  "CTA": {
-    "title": "Contact us",
-    "title_highlight": "today",
-    "desc_part1": "Call us today at",
-    "desc_part2": "to discuss your crypto asset identification needs and discover how Lenix Protocol can support your case.",
-    "email_label": "Email Our Team",
-    "phone_label": "Call Our Office"
+  "Process": {
+    "eyebrow": "How it works",
+    "title": "From intake to documented findings",
+    "description": "A structured path for counsel and investigators — scoped before analysis begins.",
+    "step_label": "Step {number}",
+    "steps": {
+      "intake": {
+        "title": "Define matter scope",
+        "desc": "Case type, parties, known wallet addresses, device or financial records, and what questions identification needs to answer."
+      },
+      "trace": {
+        "title": "Trace and analyze",
+        "desc": "Wallet linkage, flow mapping, and exchange touchpoint analysis using on-chain data cross-referenced with matter evidence."
+      },
+      "report": {
+        "title": "Deliver findings",
+        "desc": "Written analysis with timelines and methodology section — suitable for litigation strategy, compliance, or further legal process."
+      }
+    },
+    "btn_primary": "Start case review",
+    "btn_secondary": "Talk to team"
+  },
+  "Deliverables": {
+    "eyebrow": "What you receive",
+    "title": "Outputs built for legal and compliance use",
+    "description": "Deliverables are tailored to the matter — not generic blockchain screenshots.",
+    "items": {
+      "timeline": {
+        "title": "Transaction chronology",
+        "desc": "Dated flow of relevant movements with wallet linkage maps showing how identified addresses connect to the subject matter."
+      },
+      "report": {
+        "title": "Written analysis",
+        "desc": "Methodology, findings, and limitations documented for counsel review — with clear separation of fact and inference."
+      },
+      "testimony": {
+        "title": "Expert support",
+        "desc": "Expert testimony or supplemental analysis available where jurisdiction, engagement terms, and case needs require it."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Need to locate undisclosed crypto in a matter?",
+    "subtitle": "Share the case context and leads you already have. We will outline what identification work is realistic before scoped engagement.",
+    "btn_primary": "Start case review",
+    "btn_secondary": "Contact team"
   }
 }

@@ -1,14 +1,15 @@
 {
   "Header": {
     "nav": {
-      "giveaway": "Hadiah 250K",
+      "giveaway": "Komunitas",
       "about": "Tentang",
       "solutions": "Solusi",
       "blockchain_forensics": "Forensik",
       "asset_recovery": "Pemulihan Aset",
       "crypto_recovery": "Pemulihan Kripto",
       "contact": "Kontak",
-      "airdrop": "Airdrop"
+      "airdrop": "Airdrop",
+      "banking_finance": "Banking & Finance"
     },
     "solutions": {
       "wallet": {
@@ -30,6 +31,10 @@
       "enforcement": {
         "title": "Penegakan Hukum",
         "desc": "Alat intelijen untuk lembaga."
+      },
+      "banking_finance": {
+        "title": "Banking & Finance",
+        "desc": "Transfers, liquidation, lending, and custody."
       }
     },
     "user_menu": {
@@ -47,12 +52,12 @@
     },
     "buttons": {
       "log_in": "Masuk",
-      "log_in_sign_up": "Masuk / Daftar",
-      "get_reward": "Dapatkan 50 USDT"
+      "log_in_sign_up": "Masuk",
+      "get_reward": "Akun"
     }
   },
   "Footer": {
-    "company_desc": "Protokol L1 untuk pembayaran kripto-bank & pemulihan aset. Menggunakan AI untuk skalabilitas dan keamanan.",
+    "company_desc": "Forensik blockchain, pemulihan aset, dan infrastruktur keuangan kripto. Protokol diaudit untuk pelacakan, kustodi, dan pembayaran lintas batas.",
     "headings": {
       "about": "TENTANG",
       "solutions": "SOLUSI",
@@ -77,10 +82,12 @@
       "privacy": "Privasi",
       "disclaimer": "Penafian",
       "wallet_decryption": "Dekripsi Dompet",
-      "crypto_asset_identification": "Identifikasi Aset Kripto"
+      "crypto_asset_identification": "Identifikasi Aset Kripto",
+      "security": "Keamanan",
+      "banking_finance": "Banking & Finance"
     },
     "buttons": {
-      "recover_assets": "Pulihkan Aset"
+      "recover_assets": "Pulihkan"
     },
     "certification_desc": "Tersertifikasi ISO27001. Kami mengelola data secara aman sesuai standar internasional.",
     "copyright": "© 2017 - 2026 Lenix Protocol, Semua Hak Dilindungi."
@@ -106,55 +113,69 @@
   },
   "Home": {
     "Hero": {
-      "title1": "Forensik ",
-      "title2": "Blockchain",
-      "title3": ",\nProtokol Keamanan dan Pemulihan Kripto.",
-      "subtitle1": "Analisis blockchain canggih dan investigasi forensik untuk melacak aset, mengungkap penipuan, và hỗ trợ các nỗ lực phục hồi pháp lý trên toàn cầu.",
-      "subtitle2": "Amankan masa depan digital Anda dengan investigasi ahli.",
-      "btn_signup": "Daftar ke Lenix",
-      "btn_login": "Masuk",
-      "widget_title": "Beli Sekarang",
-      "widget_subtitle": "Sebelum Harga Naik",
-      "usd_raised": "USD YANG TERKUMPUL SEJAUH INI:",
-      "tokens_sold": "Token Terjual:",
-      "price_usd": "Harga USD: ${price}",
-      "price_eth": "Harga ETH: {price} ETH",
-      "pay_eth": "ETH yang Anda bayar",
-      "pay_usdt": "USDT yang Anda bayar",
-      "pay_usd": "USD yang Anda bayar",
-      "receive_lnx": "$LNX yang Anda terima",
-      "btn_processing": "Memproses...",
-      "btn_pay_eth": "Bayar dengan ETH",
-      "btn_pay_usdt": "Bayar dengan USDT",
-      "btn_pay_card": "Masukkan detail kartu di bawah",
-      "card_info": "Didukung oleh Stripe. Jumlah ditagih dalam USD.",
-      "btn_connect": "Hubungkan Dompet",
-      "btn_giveaway": "Dapatkan Hadiah 500 USD",
-      "giveaway_info": "Terima hadiah token LNX senilai 500 USD"
-    },
-    "Pillars": {
-      "title1": "Keamanan, pemulihan, forensik, dan keuangan ",
-      "title2": "dalam satu tempat",
-      "subtitle": "Pilih yang Anda butuhkan – setiap pilar terhubung ke solusi khusus.",
-      "cards": {
-        "security": {
-          "title": "Keamanan Blockchain",
-          "desc": "Infrastruktur yang diaudit dan teknologi brankas aman untuk melindungi aset Anda.",
-          "cta": "Jelajahi keamanan"
-        },
+      "slides": {
         "recovery": {
-          "title": "Pemulihan Aset",
-          "desc": "Protokol khusus dan jalur hukum untuk mengklaim kembali kripto yang hilang atau dicuri dengan analisis forensik bersertifikat.",
-          "cta": "Mulai pemulihan"
+          "title1": "Blockchain forensics and recovery ",
+          "title2": "for stolen digital assets",
+          "title3": ".",
+          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
+          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
+          "btn_primary": "Start a recovery case",
+          "btn_secondary": "Contact our team"
         },
         "forensics": {
-          "title": "Forensik Blockchain",
-          "desc": "Investigasi ahli untuk melacak penipuan, peretasan, và cung cấp bằng chứng được tòa án chấp nhận để phục hồi pháp lý.",
-          "cta": "Pelajari lebih lanjut"
+          "title1": "Investigation-grade ",
+          "title2": "blockchain forensics",
+          "title3": ".",
+          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
+          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
+          "btn_primary": "View forensics",
+          "btn_secondary": "Contact our team"
+        },
+        "banking": {
+          "title1": "Cross-Border Financial Services, ",
+          "title2": "Payment and Remittance",
+          "title3": ".",
+          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
+          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
+          "btn_primary": "Create account",
+          "btn_secondary": "Banking & finance"
+        },
+        "settlement": {
+          "title1": "Crypto-to-fiat settlement ",
+          "title2": "your treasury can audit",
+          "title3": ".",
+          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
+          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
+          "btn_primary": "Open banking services",
+          "btn_secondary": "Contact our team"
+        }
+      },
+      "btn_login": "Masuk"
+    },
+    "Pillars": {
+      "title1": "Satu protokol, ",
+      "title2": "empat alur kerja",
+      "subtitle": "Pilih titik masuk yang sesuai situasi Anda. Setiap jalur memiliki tooling khusus dan langkah berikutnya yang jelas.",
+      "cards": {
+        "security": {
+          "title": "Keamanan blockchain",
+          "desc": "Vault diaudit, kustodi multi-sig, dan monitoring untuk tim yang perlu aset aman on-chain.",
+          "cta": "Lihat keamanan"
+        },
+        "recovery": {
+          "title": "Pemulihan aset",
+          "desc": "Pelacakan, koordinasi exchange, dan jalur hukum saat kripto hilang, dicuri, atau terjebak.",
+          "cta": "Mulai recovery"
+        },
+        "forensics": {
+          "title": "Forensik blockchain",
+          "desc": "Investigasi tingkat wallet dan pemetaan transaksi untuk tim compliance dan tinjauan hukum.",
+          "cta": "Lihat forensics"
         },
         "finance": {
-          "title": "Protokol Layanan Keuangan",
-          "desc": "Pembayaran, pinjaman, dompet, dan brankas untuk ekosistem kripto modern.",
+          "title": "Layanan keuangan",
+          "desc": "Pembayaran kripto-fiat, lending, wallet, dan vault untuk memindahkan dan menahan nilai.",
           "cta": "Lihat solusi"
         }
       }
@@ -169,61 +190,63 @@
       "card4": "Transfer Kripto-ke-Kripto"
     },
     "Merchant": {
-      "widget_alert": "Peringatan Pembayaran Faktur dari B Shaw",
+      "widget_alert": "Peringatan pembayaran faktur dari B Shaw",
       "widget_req": "PERMINTAAN PEMBAYARAN",
       "widget_verified": "TAUTAN PEMBAYARAN TERVERIFIKASI",
-      "widget_receipt": "TANDA TERIMA TRANSAKSI AKAN DIKIRIM KE ",
-      "widget_wallet": "Alamat dompet",
+      "widget_receipt": "BUKTI TRANSAKSI AKAN DIKIRIM KE ",
+      "widget_wallet": "Alamat wallet",
       "widget_order": "PESANAN",
       "widget_gas": "BIAYA GAS",
-      "btn_complete": "Selesaikan pembayaran",
+      "btn_complete": "Bayar",
       "btn_manual": "Bayar manual",
-      "title1": "Untuk Bisnis: terima kripto, ",
-      "title2": "lindungi",
-      "title3": " di brankas, pulihkan jika perlu.",
-      "point1": "Terima kripto dan selesaikan dalam fiat. Checkout sederhana dan API untuk merchant.",
-      "point2": "Simpan hasil di brankas aman kami dengan multi-sig dan kustodi – infrastruktur yang diaudit.",
-      "point3": "Jika dana hilang atau dicuri, tim kami dapat membantu melacak dan mengklaim kembali melalui saluran pemulihan dan hukum.",
-      "point4_1": "Jelajahi solusi",
+      "title1": "Infrastruktur merchant dengan ",
+      "title2": "pemulihan terintegrasi",
+      "title3": ".",
+      "point1": "Terima kripto dan settle ke fiat melalui checkout dan API merchant.",
+      "point2": "Alihkan hasil melalui kustodi vault diaudit dengan kontrol multi-sig.",
+      "point3": "Jika ada masalah setelah settlement, protokol yang sama mendukung pelacakan dan alur pemulihan.",
+      "point4_1": "Lihat solusi",
       "point4_2": " atau ",
-      "point4_3": "mulai kasus pemulihan",
-      "point4_4": "."
+      "point4_3": "Mulai recovery",
+      "point4_4": ".",
+      "mock_brand": "Merchant Lenix",
+      "image_alt": "Dashboard operasi merchant dan compliance Lenix"
     },
     "Payment": {
-      "badge": "Apa yang kami tawarkan",
-      "title": "Protokol untuk Pembayaran, Brankas, Pemulihan, dan Pinjaman",
-      "subtitle": "Satu tumpukan tunggal untuk cara Anda memindahkan, menyimpan, dan memulihkan nilai.",
+      "badge": "Protocol stack",
+      "title": "Move, hold, and recover value on one layer",
+      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
       "cards": {
         "fiat": {
-          "title": "Kripto-ke-fiat",
-          "desc": "Kirim kripto dan selesaikan dalam fiat melalui jaringan pembayaran lokal – lintas batas dan harian."
+          "title": "Crypto-to-fiat",
+          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
         },
         "vault": {
-          "title": "Brankas dan kustodi",
-          "desc": "Multi-sig dan kustodi aman untuk menjaga aset Anda tetap terlindungi."
+          "title": "Vault and custody",
+          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
         },
         "recovery": {
-          "title": "Pemulihan dan forensik",
-          "desc": "Ketika terjadi kesalahan, kami membantu melacak dan mengklaim kembali dana."
+          "title": "Recovery and forensics",
+          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
         },
         "lending": {
-          "title": "Pinjaman",
-          "desc": "Pinjam dengan jaminan dan akses likuiditas saat Anda membutuhkannya."
+          "title": "Lending",
+          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
         }
       },
-      "cta": "Jelajahi semua solusi"
+      "cta": "Lihat solusi"
     },
     "TokenDetails": {
-      "title1": "Detail Token ",
-      "title2": "Lenix Protocol",
-      "subtitle": "Gunakan informasi kontrak di bawah ini untuk menambahkan token Lenix Protocol ke dompet Anda.",
+      "title1": "Lenix Protocol",
+      "title2": " Token Details",
+      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
       "headers": {
-        "contract": "Alamat Kontrak",
-        "name": "Nama Token",
-        "symbol": "Simbol Token",
-        "supply": "Pasokan Token",
-        "network": "Jaringan",
-        "decimals": "Desimal"
+        "contract": "Contract Address",
+        "name": "Token Name",
+        "symbol": "Token Symbol",
+        "supply": "Token Supply",
+        "network": "Network",
+        "decimals": "Decimals"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -231,35 +254,1158 @@
       }
     },
     "Credibility": {
-      "title1": "Detail ",
-      "title2": "Lenix Protocol",
-      "subtitle1": "Diaudit oleh CertiK. Dibangun dengan kepercayaan.",
-      "subtitle2_1": "Audit kami mencakup seluruh tumpukan. Baca ",
-      "subtitle2_2": "Whitepaper",
-      "subtitle2_3": " dan laporan CertiK untuk detailnya.",
-      "col1_text": "Lenix Protocol telah diaudit sepenuhnya oleh CertiK, firma keamanan blockchain terkemuka di dunia.",
-      "col1_btn": "Lihat Audit CertiK",
-      "col2_text": "Baca laporan lengkap dan jelajahi whitepaper kami untuk melihat lebih dalam tentang teknologi dan tokenomics kami.",
+      "eyebrow": "Verifikasi",
+      "title1": "Kode diaudit. ",
+      "title2": "Kontrol terdokumentasi.",
+      "subtitle1": "Smart contract ditinjau CertiK dan operasi selaras ISO 27001 untuk tim yang butuh lebih dari klaim marketing.",
+      "subtitle2_1": "Baca ",
+      "subtitle2_2": "whitepaper",
+      "subtitle2_3": " dan dokumentasi audit tentang arsitektur, utilitas token, dan kontrol keamanan.",
+      "col1_text": "Smart contract Lenix Protocol telah ditinjau CertiK. Audit mencakup komponen inti protokol yang digunakan dalam alur produksi.",
+      "col1_btn": "Docs keamanan",
+      "col2_text": "Whitepaper menjelaskan bagaimana modul pemulihan, kustodi, dan pembayaran terhubung—dan posisi LNX dalam desain protokol.",
       "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Ikuti Kontes Kami untuk Kesempatan Memenangkan ",
-      "title2": "250K USD",
-      "subtitle": "Ikuti hadiah 250.000 USD Lenix Protocol! Sepuluh pemenang masing-masing akan menerima 25.000 USD dalam token LNX. Tingkatkan peluang Anda dengan berbagi dan menyelesaikan semua tugas untuk entri bonus. Jangan lewatkan kesempatan ini - gabung sekarang!",
-      "btn": "Ikuti Kontes Sekarang!"
+      "title1": "Community ",
+      "title2": "giveaway",
+      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "btn": "Komunitas"
     },
     "Features": {
       "wallet": "Dompet Lenix Protocol",
       "recipient": "Masukkan Penerima",
       "bank_details": "Detail Rekening Bank",
       "iban": "IBAN",
-      "btn_connect": "Hubungkan Dompet & Bayar",
-      "btn_manual": "Bayar Manual",
+      "btn_connect": "Hubungkan",
+      "btn_manual": "Bayar manual",
       "title_small": "Mengapa Lenix ProtocolPay?",
       "title_big": "Menghubungkan kripto dengan jaringan pembayaran lokal secara global.",
       "desc1": "Lenix ProtocolPay memberdayakan pemegang kripto dan bisnis untuk memfasilitasi transaksi kripto-ke-fiat di seluruh dunia, memanfaatkan jaringan pembayaran lokal dan teknologi blockchain.",
       "desc2": "Akhirnya, nikmati kecepatan kripto dengan kenyamanan sehari-hari dari pembayaran fiat.",
       "btn_whitepaper": "Whitepaper"
+    },
+    "LnxPurchaseWidget": {
+      "widget_title": "Buy LNX",
+      "widget_subtitle": "Protocol token sale",
+      "usd_raised": "USD raised so far:",
+      "tokens_sold": "Tokens sold:",
+      "price_usd": "USD price: ${price}",
+      "price_eth": "ETH price: {price} ETH",
+      "pay_eth": "ETH you pay",
+      "pay_usdt": "USDT you pay",
+      "pay_usd": "USD you pay",
+      "receive_lnx": "$LNX you receive",
+      "btn_processing": "Processing...",
+      "btn_pay_eth": "Pay with ETH",
+      "btn_pay_usdt": "Pay with USDT",
+      "btn_pay_card": "Bayar kartu",
+      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "btn_connect": "Hubungkan",
+      "btn_giveaway": "Bonus LNX",
+      "giveaway_info": "Connect your wallet to check eligibility."
+    },
+    "TokenSale": {
+      "title1": "LNX ",
+      "title2": "token sale",
+      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+    },
+    "Partners": {
+      "eyebrow": "Ekosistem",
+      "title": "Dibangun untuk exchange, kustodi, dan jaringan pembayaran",
+      "subtitle": "Lenix menghubungkan pelacakan, alur pemulihan, dan infrastruktur settlement di seluruh stack kripto."
+    },
+    "CaseWorkflow": {
+      "eyebrow": "Cara kerjanya",
+      "title1": "Dari intake hingga ",
+      "title2": "bukti yang dapat ditindaklanjuti",
+      "subtitle": "Proses terstruktur untuk korban, tim compliance, dan penasihat—bukan janji samar.",
+      "steps": {
+        "submit": {
+          "title": "Ajukan kasus Anda",
+          "desc": "Bagikan alamat wallet, hash transaksi, timeline, dan apa yang terjadi. Tinjauan awal gratis."
+        },
+        "trace": {
+          "title": "Lacak dan petakan aliran",
+          "desc": "Kami mengikuti dana lintas chain, mixer, bridge, dan deposit exchange untuk mengidentifikasi di mana nilai berakhir."
+        },
+        "deliver": {
+          "title": "Serahkan bukti",
+          "desc": "Anda menerima temuan terdokumentasi, diformat untuk meja compliance exchange, regulator, atau penasihat hukum."
+        }
+      },
+      "btn_primary": "Buka kasus",
+      "btn_secondary": "Tanya analis",
+      "step_label": "Langkah {number}"
+    },
+    "TrustSignals": {
+      "eyebrow": "Standar operasional",
+      "title1": "Dibangun untuk kasus di mana ",
+      "title2": "kepercayaan penting",
+      "subtitle": "Pemulihan menjadi target penipuan. Lenix mengikuti praktik yang digunakan firma serius untuk melindungi korban dan institusi.",
+      "items": {
+        "no_fees": {
+          "title": "Tanpa biaya unlock di muka",
+          "desc": "Kami tidak meminta pembayaran di muka untuk melepaskan, membuka, atau mentransfer dana Anda."
+        },
+        "no_seed": {
+          "title": "Tidak pernah minta seed phrase",
+          "desc": "Tanpa akses jarak jauh, tanpa private key, tanpa permintaan recovery phrase—selamanya."
+        },
+        "no_custody": {
+          "title": "Kami tidak memegang aset Anda",
+          "desc": "Lenix menyiapkan bukti dan mengoordinasikan jalur. Kami bukan kustodian wallet Anda."
+        },
+        "honest": {
+          "title": "Penilaian kasus yang jujur",
+          "desc": "Jika jejak habis atau pemulihan tidak mungkin, kami sampaikan sebelum engagement berbayar."
+        },
+        "audited": {
+          "title": "Stack protokol diaudit",
+          "desc": "Smart contract ditinjau CertiK. Operasi selaras dengan kontrol ISO 27001."
+        },
+        "chains": {
+          "title": "Cakupan multi-chain",
+          "desc": "Alur pelacakan mendukung jaringan EVM utama dan jenis aset umum dalam kasus pencurian."
+        }
+      },
+      "image_alt": "Analis meninjau dashboard investigasi blockchain dan bukti transaksi"
+    },
+    "CaseStudy": {
+      "eyebrow": "Contoh kasus",
+      "title1": "Ketika dana curian mencapai ",
+      "title2": "exchange kustodial",
+      "subtitle": "Contoh anonim. Identitas diubah. Proses ini representatif—bukan jaminan pemulihan.",
+      "situation": {
+        "label": "Situasi",
+        "text": "Dompet bisnis mengirim USDC ke kontrak phishing. Dalam beberapa jam, dana berpindah melalui dua dompet perantara dan disetor ke exchange besar."
+      },
+      "action": {
+        "label": "Yang dilakukan Lenix",
+        "text": "Kami memetakan jalur transaksi penuh, menandai alamat deposit, dan menyiapkan paket bukti dengan graf transaksi dan catatan timeline untuk tim compliance exchange."
+      },
+      "outcome": {
+        "label": "Hasil",
+        "text": "Meja compliance exchange menerima laporan. Dana dibekukan menunggu tinjauan. Penasihat hukum menerima dokumentasi yang sama untuk langkah legal paralel."
+      },
+      "disclaimer": "Hasil bervariasi menurut kasus, yurisdiksi, dan waktu respons exchange. Contoh ini menunjukkan bagaimana Lenix mendokumentasikan jejak—tidak setiap kasus berakhir dengan pemulihan.",
+      "image_alt": "Dasbor pemantauan transaksi alur dana antar wallet dan exchange"
+    },
+    "Cta": {
+      "title": "Siap membuka kasus?",
+      "subtitle": "Bagikan apa yang terjadi dan detail on-chain yang Anda miliki. Kami merespons dengan penilaian jujur apakah jalur pelacakan dan pemulihan ada.",
+      "btn_primary": "Buka kasus",
+      "btn_secondary": "Hubungi tim"
+    }
+  },
+  "Security": {
+    "meta": {
+      "title": "Keamanan & Audit | Lenix Protocol",
+      "description": "Audit smart contract CertiK, operasi selaras ISO 27001, dan kontrol keamanan untuk infrastruktur forensik dan pemulihan Lenix."
+    },
+    "hero": {
+      "eyebrow": "Keamanan",
+      "title1": "Protokol diaudit. ",
+      "title2": "Kontrol terdokumentasi.",
+      "subtitle": "Lenix menggabungkan tinjauan smart contract pihak ketiga dengan praktik keamanan operasional untuk tim yang menangani alur pemulihan dan kustodi sensitif."
+    },
+    "audit": {
+      "title": "Cakupan audit CertiK",
+      "desc": "Kontrak inti dalam alur produksi telah ditinjau CertiK. Cakupan audit meliputi komponen kritis deployment dan permukaan serangan yang dikenal.",
+      "certik_text": "CertiK meninjau smart contract Lenix untuk kerentanan umum, kontrol akses, dan kelemahan logika pada alur token dan vault.",
+      "certik_link": "Docs keamanan",
+      "items": {
+        "contracts": {
+          "title": "Cakupan tinjauan kontrak",
+          "desc": "Token sale, vault, dan modul protokol yang digunakan di jalur pembayaran dan kustodi live."
+        },
+        "access": {
+          "title": "Kontrol akses",
+          "desc": "Izin berbasis peran, persyaratan multi-sig, dan jalur upgrade jika berlaku."
+        },
+        "monitoring": {
+          "title": "Pemantauan berkelanjutan",
+          "desc": "Deployment produksi dipantau untuk interaksi kontrak anomali dan alert operasional."
+        }
+      },
+      "eyebrow": "Smart contract"
+    },
+    "iso": {
+      "title": "Operasi selaras ISO 27001",
+      "desc": "Lenix Protocol mempertahankan praktik manajemen keamanan informasi selaras ISO 27001 untuk data klien, materi investigasi, dan sistem internal."
+    },
+    "practices": {
+      "data": {
+        "title": "Penanganan data",
+        "desc": "Materi kasus disimpan dengan kontrol akses. Data investigasi dibagikan hanya kepada pihak yang berwenang."
+      },
+      "incident": {
+        "title": "Respons insiden",
+        "desc": "Prosedur terdefinisi untuk peristiwa keamanan yang memengaruhi data klien, infrastruktur protokol, atau alur investigasi."
+      },
+      "custody": {
+        "title": "Batas kustodi",
+        "desc": "Lenix menyiapkan bukti dan mengoordinasikan jalur. Kami tidak mengambil kustodi kunci wallet atau seed phrase klien."
+      },
+      "eyebrow": "Operasi",
+      "title": "Cara menangani pekerjaan sensitif",
+      "description": "Kasus recovery melibatkan data korban dan aliran dana berisiko tinggi. Ini batas kami.",
+      "image_alt": "Tim ops memantau aktivitas protokol dan peringatan keamanan"
+    },
+    "cta": {
+      "title": "Butuh dokumentasi?",
+      "subtitle": "Hubungi tim untuk ringkasan audit, detail ISO, atau tinjauan enterprise.",
+      "btn_primary": "Mulai recovery",
+      "btn_secondary": "Tim keamanan"
+    },
+    "assurance": {
+      "eyebrow": "Verifikasi",
+      "title": "Apa yang bisa kami tunjukkan",
+      "description": "Tinjauan kontrak independen dan kontrol operasional terdokumentasi — tanpa klaim kosong.",
+      "iso_link": "Tentang Lenix"
+    }
+  },
+  "AccountSidebar": {
+    "sections": {
+      "account": "Akun",
+      "wallet": "Dompet"
+    },
+    "nav": {
+      "home": "Beranda",
+      "vault": "Vault blockchain",
+      "lenix_wallet": "Dompet Lenix",
+      "banking": "Perbankan perusahaan",
+      "recovery_services": "Layanan pemulihan",
+      "crypto_loan": "Pinjaman kripto",
+      "assets": "Aset",
+      "send": "Kirim",
+      "receive": "Terima",
+      "transactions": "Transaksi",
+      "settings": "Pengaturan"
+    },
+    "support": {
+      "need_help": "Butuh bantuan?",
+      "contact_support": "Hubungi dukungan"
+    },
+    "header": {
+      "menu": "Menu",
+      "verified_user": "Pengguna terverifikasi",
+      "sign_out": "Keluar"
+    },
+    "logo_alt": "Lenix Protocol"
+  },
+  "AccountMobileTabs": {
+    "home": "Beranda",
+    "banking": "Perbankan",
+    "wallet": "Dompet",
+    "loan": "Pinjaman",
+    "settings": "Pengaturan"
+  },
+  "AccountDashboard": {
+    "status": {
+      "recovery": "Status kasus pemulihan",
+      "banking": "Status layanan perbankan",
+      "loan": "Status pengajuan pinjaman"
+    },
+    "timeline": {
+      "received_title": "Aplikasi diterima",
+      "received_desc": "Kami telah menerima detail Anda dan sedang meninjaunya.",
+      "review_title": "Sedang ditinjau",
+      "review_desc": "Tim kami saat ini sedang menganalisis permintaan Anda."
+    },
+    "submitted_details": "Detail yang dikirim",
+    "service_type": "Jenis layanan",
+    "service_types": {
+      "recovery": "Pemulihan",
+      "banking": "Perbankan",
+      "loan": "Pinjaman"
+    },
+    "details_fields": {
+      "name": "Nama",
+      "transaction_hash": "Hash transaksi",
+      "amount_stolen": "Jumlah yang dicuri",
+      "blockchain": "Blockchain",
+      "currency": "Mata uang",
+      "country_phone_code": "Kode telepon negara",
+      "incident_summary": "Ringkasan insiden",
+      "evidence": "Bukti",
+      "evidence_url": "URL bukti",
+      "notes": "Catatan",
+      "loan_type_id": "Jenis pinjaman",
+      "collateral_asset": "Aset jaminan",
+      "duration": "Durasi",
+      "loan_amount": "Jumlah pinjaman",
+      "phone_number": "Nomor telepon",
+      "payout_method": "Metode pembayaran"
+    },
+    "support": {
+      "title": "Butuh bantuan?",
+      "description": "Tim dukungan kami tersedia 24/7 untuk membantu Anda.",
+      "contact": "Hubungi dukungan"
+    }
+  },
+  "AccountVault": {
+    "page": {
+      "title": "Brankas Saya",
+      "subtitle": "Kelola aset digital terlindungi Anda.",
+      "history": "Riwayat",
+      "status_active": "Aktif",
+      "status_locked": "Terkunci",
+      "status_no_wallet": "Tidak ada dompet",
+      "load_error": "Gagal memuat kepemilikan"
+    },
+    "actions": {
+      "deposit": "Deposit",
+      "withdraw": "Tarik",
+      "swap": "Tukar",
+      "audit": "Audit"
+    },
+    "premium": {
+      "title": "Dapatkan perlindungan premium",
+      "description": "Tingkatkan ke integrasi Hardware Vault untuk keamanan maksimal.",
+      "cta": "Pelajari lebih lanjut"
+    },
+    "card": {
+      "total_value": "TOTAL NILAI BRANKAS",
+      "last_synced": "Sinkron terakhir: Baru saja",
+      "change_24h": "{percent}% (24 jam)",
+      "security_level": "Tingkat keamanan",
+      "security_very_high": "Sangat tinggi"
+    },
+    "assets": {
+      "title": "Aset brankas",
+      "count_zero": "0 aset",
+      "count": "{count} aset",
+      "empty": "Tidak ada aset ditemukan. Hubungkan atau impor dompet untuk memulai.",
+      "address_copied": "Alamat disalin",
+      "chains": {
+        "ethereum": "Ethereum",
+        "bsc": "BSC",
+        "polygon": "Polygon",
+        "evm": "EVM"
+      }
+    },
+    "security": {
+      "title": "Kesehatan keamanan brankas",
+      "score_label": "Skor keamanan",
+      "items": {
+        "wallet": "Dompet",
+        "cold_storage": "Penyimpanan dingin",
+        "encrypted_vault": "Brankas terenkripsi",
+        "session": "Sesi"
+      },
+      "status": {
+        "connected": "Terhubung",
+        "not_connected": "Tidak terhubung",
+        "active": "Aktif",
+        "unlocked": "Terbuka",
+        "locked": "Terkunci",
+        "no_wallet": "Tidak ada dompet",
+        "completed": "Selesai"
+      },
+      "unlock": "Buka kunci",
+      "recent_activity": "Aktivitas terbaru",
+      "view_all": "Lihat semua",
+      "no_activity": "Tidak ada aktivitas terbaru",
+      "wallet_connected": "Dompet terhubung",
+      "transaction": "Transaksi",
+      "transfer": "Transfer {symbol}"
+    },
+    "time": {
+      "just_now": "Baru saja",
+      "recently": "Baru-baru ini",
+      "min_ago": "{count} menit lalu",
+      "hours_ago": "{count} jam lalu",
+      "days_ago": "{count} hari lalu"
+    },
+    "drawer": {
+      "connect_wallet": "Hubungkan dompet",
+      "setup_title": "Siapkan brankas Anda",
+      "setup_description": "Buat dompet baru atau impor yang sudah ada untuk mengamankan aset Anda.",
+      "unlock_vault": "Buka kunci brankas",
+      "unlock_description": "Masukkan kata sandi untuk mengakses aset terlindungi Anda.",
+      "password_placeholder": "Masukkan kata sandi",
+      "unlocking": "Membuka kunci...",
+      "unlock": "Buka kunci",
+      "vault_connected": "Brankas terhubung",
+      "lenix_wallet": "Dompet Lenix",
+      "lock": "Kunci",
+      "imported_wallets": "Dompet yang diimpor",
+      "no_imported": "Belum ada dompet yang diimpor.",
+      "import_wallet": "Impor dompet",
+      "wallet_name_label": "Nama dompet (opsional)",
+      "wallet_name_placeholder": "MetaMask Saya",
+      "import_type_label": "Jenis impor",
+      "seed_phrase": "Frase seed",
+      "private_key": "Kunci privat",
+      "seed_phrase_label": "Frase pemulihan 12 atau 24 kata",
+      "private_key_label": "Kunci privat",
+      "seed_phrase_placeholder": "kata1 kata2 kata3 ...",
+      "private_key_placeholder": "0x...",
+      "encryption_password_label": "Kata sandi enkripsi (min. 8 karakter)",
+      "password_dots_placeholder": "••••••••",
+      "cancel": "Batal",
+      "import": "Impor",
+      "loading": "Memuat...",
+      "imported_seed_name": "Seed diimpor",
+      "imported_key_name": "Kunci diimpor"
+    },
+    "toast": {
+      "wallet_unlocked": "Dompet terbuka",
+      "incorrect_password": "Kata sandi salah",
+      "import_credentials_required": "Masukkan kredensial dan kata sandi (min. 8 karakter).",
+      "wallet_imported": "Dompet diimpor",
+      "import_failed": "Impor gagal",
+      "wallet_removed": "Dompet dihapus"
+    }
+  },
+  "AccountLenixWallet": {
+    "page": {
+      "title": "Dompet",
+      "subtitle": "Kelola aset kripto Anda",
+      "setup_title": "Siapkan dompet Anda",
+      "setup_subtitle": "Buat atau impor dompet untuk memulai",
+      "unlock_title": "Buka kunci dompet",
+      "unlock_subtitle": "Masukkan kata sandi untuk melanjutkan",
+      "password_placeholder": "Kata sandi",
+      "unlocking": "Membuka kunci...",
+      "unlock": "Buka kunci",
+      "network_placeholder": "Jaringan",
+      "logo_alt": "Dompet Lenix",
+      "show_evm_wallet": "Tampilkan dompet EVM",
+      "show_bitcoin_wallet": "Tampilkan dompet Bitcoin",
+      "evm_wallet": "Dompet EVM",
+      "bitcoin_wallet": "Dompet Bitcoin"
+    },
+    "networks": {
+      "all": "Semua jaringan",
+      "ethereum": "Ethereum",
+      "bsc": "BNB Chain",
+      "polygon": "Polygon",
+      "bitcoin": "Bitcoin"
+    },
+    "actions": {
+      "send": "Kirim",
+      "receive": "Terima",
+      "buy": "Beli",
+      "swap": "Tukar",
+      "coming_soon": "Segera hadir"
+    },
+    "wallet_card": {
+      "total_balance": "Saldo total",
+      "hide_balance": "Sembunyikan saldo",
+      "show_balance": "Tampilkan saldo",
+      "lock_wallet": "Kunci dompet",
+      "evm_networks": "Jaringan EVM",
+      "evm_chains": "ETH · BSC · Polygon · Arbitrum",
+      "address_copied": "Alamat disalin"
+    },
+    "bitcoin_card": {
+      "btc_balance": "Saldo BTC",
+      "not_activated": "Belum diaktifkan",
+      "activate_prompt": "Aktifkan dompet Bitcoin native Anda",
+      "password_placeholder": "Masukkan kata sandi dompet",
+      "creating": "Membuat...",
+      "activate": "Aktifkan",
+      "bitcoin_network": "Jaringan Bitcoin",
+      "segwit": "SegWit native BIP-84",
+      "bitcoin_alt": "Bitcoin",
+      "enter_password": "Masukkan kata sandi dompet Anda",
+      "wallet_created": "Dompet Bitcoin dibuat",
+      "create_failed": "Gagal membuat dompet Bitcoin",
+      "address_copied": "Alamat disalin"
+    },
+    "token_list": {
+      "assets": "Aset",
+      "market": "Pasar",
+      "tokens_count": "{count} token",
+      "no_assets": "Belum ada aset",
+      "frozen": "Dibekukan",
+      "deposit_to_unfreeze": "Deposit {amount} BTC untuk membuka",
+      "frozen_by_admin": "Dibekukan oleh admin",
+      "token_fallback": "Token"
+    },
+    "activity": {
+      "title": "Aktivitas",
+      "no_activity": "Tidak ada aktivitas terbaru",
+      "done": "Selesai",
+      "pending": "Menunggu"
+    },
+    "security": {
+      "title": "Keamanan",
+      "protected": "Terlindungi",
+      "recovery_phrase": "Frase pemulihan",
+      "backed_up": "Sudah dicadangkan",
+      "password": "Kata sandi",
+      "active": "Aktif",
+      "withdrawal_limit": "Batas penarikan",
+      "not_set": "Belum diatur",
+      "set": "Diatur"
+    },
+    "receive_modal": {
+      "title": "Terima",
+      "network": "Jaringan",
+      "evm_networks": "Jaringan EVM",
+      "evm_chains": "ETH, BSC, Polygon, Arbitrum",
+      "bitcoin": "Bitcoin",
+      "bitcoin_chains": "SegWit native (BIP-84)",
+      "not_set_up": "(Belum disetel)",
+      "qr_alt": "Kode QR",
+      "copied": "Disalin",
+      "btc_warning": "Hanya kirim BTC ke alamat ini",
+      "evm_warning": "Hanya kirim token kompatibel ERC-20"
+    },
+    "send_modal": {
+      "title": "Kirim kripto",
+      "description": "Masukkan alamat penerima dan jumlah penarikan untuk mengirim kripto."
+    },
+    "receive_page": {
+      "title": "Terima aset",
+      "subtitle": "Dapatkan alamat unik Anda untuk menerima pembayaran.",
+      "security_notice": "Untuk keamanan, pastikan jaringan benar-benar cocok sebelum menyetor. Aset yang dikirim ke jaringan yang salah tidak dapat dipulihkan.",
+      "no_wallet_title": "Dompet tidak ditemukan",
+      "no_wallet_description": "Buat dompet untuk menerima aset.",
+      "go_to_wallet": "Buka dompet",
+      "wallet_locked_title": "Dompet terkunci",
+      "wallet_locked_description": "Buka kunci dompet Anda untuk melihat alamatnya.",
+      "unlock_wallet": "Buka kunci dompet",
+      "card_title": "Terima aset",
+      "card_description": "Pindai kode QR atau salin alamat untuk menyetor.",
+      "select_network": "Pilih jaringan",
+      "bitcoin_provisioning": "Dompet Bitcoin masih dalam proses penyiapan.",
+      "qr_alt": "Kode QR alamat dompet",
+      "address_label": "Alamat {network} Anda",
+      "copy": "Salin",
+      "copied": "Disalin",
+      "share": "Bagikan",
+      "address_copied": "Alamat disalin ke clipboard",
+      "share_title": "Alamat dompet Lenix saya",
+      "share_text": "Berikut alamat {network} saya: {address}",
+      "networks": {
+        "bitcoin": {
+          "name": "Bitcoin (Native)",
+          "warning": "Hanya kirim Bitcoin native ke alamat ini. Jangan kirim BTC dari jaringan lain."
+        },
+        "ethereum": {
+          "name": "Ethereum (ERC-20)",
+          "warning": "Hanya kirim ETH dan token ERC-20 ke alamat ini."
+        },
+        "bnb": {
+          "name": "BNB Smart Chain (BEP-20)",
+          "warning": "Hanya kirim BNB dan token BEP-20 ke alamat ini."
+        },
+        "polygon": {
+          "name": "Polygon (MATIC)",
+          "warning": "Hanya kirim MATIC dan token jaringan Polygon ke alamat ini."
+        },
+        "arbitrum": {
+          "name": "Arbitrum One",
+          "warning": "Hanya kirim token jaringan Arbitrum One ke alamat ini."
+        },
+        "optimism": {
+          "name": "Optimism",
+          "warning": "Hanya kirim token jaringan Optimism ke alamat ini."
+        },
+        "avalanche": {
+          "name": "Avalanche C-Chain",
+          "warning": "Hanya kirim token Avalanche C-Chain ke alamat ini."
+        }
+      }
+    },
+    "send_page": {
+      "unlock_message": "Buka kunci dompet Lenix Anda untuk mengelola dana.",
+      "unlock_locked_prefix": "Masukkan kata sandi Anda di",
+      "unlock_locked_suffix": "untuk mendekripsi saldo.",
+      "wallet_page": "halaman dompet",
+      "unlock_no_wallet_prefix": "Buat dompet terlebih dahulu di",
+      "unlock_no_wallet_suffix": ".",
+      "wallet_dashboard": "dasbor dompet Lenix",
+      "estimated_total_value": "Perkiraan total nilai",
+      "wallet_label": "Dompet",
+      "pnl_today": "PnL hari ini",
+      "deposit": "Deposit",
+      "withdraw": "Tarik",
+      "transfer": "Transfer",
+      "more_funding_actions": "Aksi pendanaan lainnya",
+      "funding_title": "Pendanaan",
+      "search_placeholder": "Cari aset atau jaringan",
+      "small_asset_exchange": "Pertukaran aset kecil",
+      "hide_dust": "Sembunyikan aset < 1 USD",
+      "asset": "Aset",
+      "amount": "Jumlah",
+      "available": "Tersedia",
+      "frozen": "Dibekukan",
+      "action": "Aksi",
+      "unfreeze_deposit": "Setor {amount} BTC untuk membuka blokir",
+      "more_actions_for": "Aksi lain untuk {symbol}",
+      "no_assets": "Tidak ada aset",
+      "no_assets_match": "Tidak ada aset yang sesuai dengan filter Anda.",
+      "withdraw_modal": {
+        "title": "Tarik kripto",
+        "description": "Kirim dana ke dompet eksternal menggunakan jaringan yang tepat."
+      }
+    },
+    "send_form": {
+      "no_assets_alt": "Tidak ada aset",
+      "no_assets_title": "Belum ada aset pendanaan",
+      "no_assets_description": "Setor kripto ke dompet Lenix Anda untuk mengaktifkan penarikan dan transfer on-chain.",
+      "asset_label": "Aset",
+      "network_label": "Jaringan",
+      "chain_id": "ID rantai {id}",
+      "recipient_label": "Alamat penerima",
+      "paste": "Tempel",
+      "recipient_error_bitcoin": "Masukkan alamat Bitcoin yang valid.",
+      "recipient_error_evm": "Masukkan alamat dompet EVM yang valid.",
+      "amount_label": "Jumlah",
+      "amount_aria": "Jumlah {symbol} yang akan dikirim",
+      "available": "Tersedia",
+      "on_chain_only": "Saat ini hanya {amount} {symbol} yang benar-benar on-chain dan dapat dikirim.",
+      "summary_label": "Ringkasan transfer",
+      "network_fee": "Biaya jaringan",
+      "calculating_fee": "Menghitung…",
+      "recipient_receives": "Penerima menerima",
+      "frozen": "Dibekukan",
+      "frozen_message": "Aset ini dibekukan",
+      "frozen_unfreeze_instruction": " Setor minimal {amount} BTC ke dompet Bitcoin Lenix Anda untuk membuka blokir—akan terbuka otomatis setelah setoran terkonfirmasi.",
+      "frozen_contact_support": " Hubungi dukungan untuk menyelesaikan masalah.",
+      "irreversible_warning": "Konfirmasikan alamat dan jaringan sebelum mengirim. Transfer on-chain tidak dapat dibatalkan.",
+      "sending": "Mengirim…",
+      "send_now": "Kirim sekarang",
+      "wallet_locked_error": "Buka kunci dompet Lenix Anda untuk mengirim dana",
+      "clipboard_error": "Tidak dapat mengakses clipboard",
+      "bitcoin_send_success": "Transfer Bitcoin telah disiarkan",
+      "bitcoin_send_failed": "Penarikan Bitcoin gagal",
+      "unsupported_network": "Jaringan tidak didukung untuk aset ini",
+      "broadcasting_transaction": "Menyiarkan transaksi",
+      "transfer_confirmed": "Transfer dikonfirmasi",
+      "broadcasting_token_transfer": "Menyiarkan transfer token",
+      "token_transfer_complete": "Transfer token selesai",
+      "transaction_failed": "Transaksi gagal",
+      "fee_bitcoin_estimate": "Diperkirakan saat konfirmasi"
+    },
+    "setup": {
+      "back": "Kembali",
+      "welcome_title": "Dompet paling aman di dunia",
+      "welcome_description": "Siapkan dompet Anda untuk memulai. Lenix Wallet adalah dompet paling aman dan privat di dunia untuk menjaga kripto Anda.",
+      "create_new": "Buat dompet baru",
+      "import_existing": "Impor dompet yang ada",
+      "terms_notice": "Dengan membuat atau mengimpor dompet, Anda setuju dengan Ketentuan Layanan dan Kebijakan Privasi kami.",
+      "backup_title": "Cadangkan frase pemulihan Anda",
+      "backup_description": "Tuliskan 12 kata ini secara berurutan dan simpan dengan aman. Jika hilang, Anda bisa kehilangan dana selamanya.",
+      "security_check_title": "Pemeriksaan keamanan",
+      "security_check_description": "Jangan pernah bagikan frase ini kepada siapa pun. Dukungan Lenix tidak akan pernah memintanya.",
+      "saved_phrase": "Saya sudah menyimpan frase pemulihan",
+      "verify_title": "Verifikasi frase pemulihan",
+      "verify_description": "Konfirmasi bahwa Anda menyimpan frase dengan memasukkan kata yang diminta di bawah.",
+      "word_label": "Kata #{number}",
+      "word_placeholder": "Masukkan kata #{number}",
+      "verify_continue": "Verifikasi & lanjutkan",
+      "password_title": "Atur kata sandi aman",
+      "password_description": "Kata sandi ini akan digunakan untuk mengenkripsi dompet Anda di perangkat ini.",
+      "password_label": "Kata sandi",
+      "confirm_password_label": "Konfirmasi kata sandi",
+      "create_wallet": "Buat dompet",
+      "processing": "Memproses...",
+      "import_title": "Impor frase pemulihan",
+      "import_description": "Masukkan frase pemulihan 12 atau 24 kata untuk memulihkan dompet Anda.",
+      "import_placeholder": "apel pisang ceri...",
+      "continue": "Lanjutkan",
+      "import_wallet": "Impor dompet"
+    },
+    "toast": {
+      "wallet_unlocked": "Dompet terbuka",
+      "incorrect_password": "Kata sandi salah",
+      "phrase_copied": "Frase pemulihan disalin ke clipboard",
+      "incorrect_words": "Kata salah. Silakan coba lagi.",
+      "password_min_length": "Kata sandi minimal 8 karakter",
+      "passwords_mismatch": "Kata sandi tidak cocok",
+      "wallet_created": "Dompet berhasil dibuat!",
+      "create_failed": "Gagal membuat dompet",
+      "invalid_phrase": "Frase pemulihan tidak valid. Diharapkan 12 atau 24 kata, diterima {count}.",
+      "wallet_imported": "Dompet berhasil diimpor!",
+      "import_failed": "Gagal mengimpor dompet"
+    }
+  },
+  "AccountBanking": {
+    "meta": {
+      "title": "Perbankan perusahaan | Lenix Protocol",
+      "description": "Pindahkan aset digital antara Spot, Funding, dan rekening bank terverifikasi."
+    },
+    "error": {
+      "load_failed": "Tidak dapat memuat ruang kerja perbankan",
+      "unavailable_title": "Ruang kerja perbankan tidak tersedia",
+      "unavailable_description": "Ringkasan perbankan tidak dapat dimuat.",
+      "try_again": "Coba lagi"
+    },
+    "tabs": {
+      "overview": "Ringkasan",
+      "accounts": "Rekening bank",
+      "activity": "Aktivitas"
+    },
+    "empty_assets": {
+      "title": "Belum ada aset treasury",
+      "description": "Pindahkan aset ke dompet Spot atau Funding untuk memulai.",
+      "cta": "Pindahkan dana"
+    },
+    "fiat_balance": {
+      "funding": "Funding {currency}",
+      "available": "{amount} tersedia"
+    },
+    "summary": {
+      "title": "Perbankan perusahaan",
+      "verified": "Terverifikasi",
+      "verification_pending": "Menunggu verifikasi",
+      "subtitle": "Pindahkan aset digital antara dompet treasury dan rekening bank terverifikasi.",
+      "transfer": "Transfer",
+      "withdraw_to_bank": "Tarik ke bank",
+      "total_treasury": "Total nilai treasury",
+      "hide_balances": "Sembunyikan saldo",
+      "show_balances": "Tampilkan saldo",
+      "account": "Rekening",
+      "tier": "Tingkat",
+      "relationship_manager": "Manajer hubungan",
+      "spot_wallet": "Dompet Spot",
+      "spot_available": "Tersedia untuk trading",
+      "funding_wallet": "Dompet Funding",
+      "funding_available": "Tersedia untuk penyelesaian",
+      "in_settlement": "Dalam penyelesaian",
+      "pending_payouts": "Pada pembayaran bank aktif"
+    },
+    "assets": {
+      "title": "Saldo dompet",
+      "subtitle": "Aset Spot dan Funding siap dibayar",
+      "move_funds": "Pindahkan dana",
+      "columns": {
+        "asset": "Aset",
+        "wallet": "Dompet",
+        "balance": "Saldo",
+        "value": "Nilai",
+        "change_24h": "24 jam"
+      },
+      "location": {
+        "spot": "Spot",
+        "funding": "Funding"
+      }
+    },
+    "accounts": {
+      "linked_title": "Rekening bank terhubung",
+      "linked_subtitle": "Tujuan penyelesaian untuk penarikan bank",
+      "add_account": "Tambah rekening",
+      "empty_title": "Tidak ada rekening bank terhubung",
+      "empty_description": "Tambahkan rekening bank untuk mengaktifkan penarikan ke bank Anda.",
+      "default": "Default",
+      "status": {
+        "verified": "Terverifikasi",
+        "rejected": "Ditolak",
+        "pending": "Sedang ditinjau"
+      },
+      "limits_title": "Batas penyelesaian",
+      "limits_subtitle": "Kuota perusahaan bergulir",
+      "remaining": "{percent}% tersisa",
+      "limits_note": "Batas penyelesaian lebih tinggi ditinjau oleh manajer hubungan dan tim kepatuhan."
+    },
+    "activity": {
+      "title": "Aktivitas transaksi",
+      "subtitle": "Transfer internal dan penyelesaian bank",
+      "search_label": "Cari transaksi",
+      "search_placeholder": "Cari referensi atau aset",
+      "filter_label": "Filter status transaksi",
+      "filter_all": "Semua status",
+      "status": {
+        "completed": "Selesai",
+        "processing": "Diproses",
+        "review": "Tinjauan",
+        "under_review": "Sedang ditinjau",
+        "failed": "Gagal"
+      },
+      "columns": {
+        "transaction": "Transaksi",
+        "amount": "Jumlah",
+        "destination": "Tujuan",
+        "status": "Status",
+        "date": "Tanggal",
+        "view": "Lihat"
+      },
+      "direction": {
+        "spot_to_funding": "Spot ke Funding",
+        "funding_to_spot": "Funding ke Spot",
+        "funding_to_bank": "Funding ke bank",
+        "spot_to_bank": "Spot ke bank"
+      },
+      "view_transaction": "Lihat {reference}",
+      "empty_title": "Tidak ada transaksi yang cocok",
+      "empty_description": "Ubah pencarian atau filter status."
+    },
+    "add_account": {
+      "title": "Tambah rekening bank",
+      "description": "Rekening yang diajukan ditinjau tim kepatuhan kami sebelum dapat menerima penyelesaian. Biasanya membutuhkan 1–2 hari kerja.",
+      "fields": {
+        "bank_name": "Nama bank",
+        "bank_name_placeholder": "mis. BCA",
+        "account_holder": "Nama pemegang rekening",
+        "account_holder_placeholder": "Nama legal lengkap",
+        "account_number": "Nomor rekening / IBAN",
+        "account_number_placeholder": "Nomor rekening",
+        "routing_number": "Nomor routing (ACH/domestik)",
+        "swift_bic": "SWIFT / BIC (internasional)",
+        "optional": "Opsional",
+        "account_type": "Jenis rekening",
+        "checking": "Giro",
+        "savings": "Tabungan",
+        "currency": "Mata uang",
+        "country": "Negara",
+        "country_placeholder": "ID"
+      },
+      "submitting": "Mengirim...",
+      "submit": "Kirim untuk verifikasi",
+      "required_fields": "Harap isi semua field wajib",
+      "success": "Rekening bank dikirim untuk verifikasi",
+      "failed": "Gagal menambahkan rekening bank"
+    },
+    "transfer": {
+      "title_form": "Pindahkan dana",
+      "title_review": "Tinjau transfer",
+      "title_success": "Status transfer",
+      "desc_form": "Pindahkan aset antar dompet atau selesaikan ke bank terhubung.",
+      "desc_review": "Kurs dicadangkan selama lima menit.",
+      "desc_success": "Referensi Anda siap untuk dilacak.",
+      "back_label": "Kembali ke detail transfer",
+      "step_label": "Langkah {step} dari 3",
+      "cancel": "Batal",
+      "review_transfer": "Tinjau transfer",
+      "confirm_submit": "Konfirmasi dan kirim",
+      "done": "Selesai",
+      "quote_failed": "Tidak dapat membuat penawaran",
+      "transfer_failed": "Tidak dapat mengirim transfer",
+      "type_legend": "Jenis transfer",
+      "types": {
+        "spot_to_funding": {
+          "label": "Spot → Funding",
+          "description": "Siapkan aset untuk pembayaran"
+        },
+        "funding_to_spot": {
+          "label": "Funding → Spot",
+          "description": "Kembalikan aset untuk trading"
+        },
+        "funding_to_bank": {
+          "label": "Funding → Bank",
+          "description": "Tarik dana yang tersedia"
+        },
+        "spot_to_bank": {
+          "label": "Spot → Bank",
+          "description": "Konversi dan tarik"
+        }
+      },
+      "from": "Dari",
+      "to": "Ke",
+      "spot_wallet": "Dompet Spot",
+      "funding_wallet": "Dompet Funding",
+      "bank_account": "Rekening bank",
+      "asset": "Aset",
+      "amount": "Jumlah",
+      "max": "MAKS",
+      "amount_placeholder": "0,00",
+      "payout_currency": "Mata uang pembayaran",
+      "currencies": {
+        "USD": "USD · Dolar AS",
+        "EUR": "EUR · Euro",
+        "GBP": "GBP · Pound Inggris"
+      },
+      "select_account": "Pilih rekening",
+      "available": "Tersedia"
+    },
+    "review": {
+      "recipient_receives": "Penerima menerima",
+      "from_amount": "Dari {amount} {asset}",
+      "market_value": "Nilai pasar",
+      "exchange_rate": "Kurs",
+      "exchange_rate_value": "1 USD = {rate} {currency}",
+      "platform_fee": "Biaya platform",
+      "banking_fee": "Biaya perbankan",
+      "estimated_arrival": "Perkiraan tiba",
+      "authorization": "Dengan mengonfirmasi, Anda mengotorisasi konversi aset dan instruksi penyelesaian di atas.",
+      "withdrawal_submitted": "Penarikan dikirim",
+      "transfer_completed": "Transfer selesai",
+      "withdrawal_desc": "Penyelesaian Anda lulus validasi awal dan kini memasuki pemeriksaan kepatuhan.",
+      "transfer_desc": "Saldo Anda telah diperbarui di ruang kerja perbankan.",
+      "reference": "Referensi",
+      "status": "Status",
+      "destination": "Tujuan",
+      "processing": "Diproses",
+      "completed": "Selesai"
+    },
+    "detail": {
+      "title": "Detail transfer",
+      "reference": "Referensi {reference}",
+      "payout_amount": "Jumlah pembayaran",
+      "destination": "Tujuan",
+      "estimated_arrival": "Perkiraan tiba",
+      "fees": "Biaya",
+      "requested": "Diminta",
+      "timeline_title": "Linimasa penyelesaian",
+      "pending": "Menunggu",
+      "download_receipt": "Unduh tanda terima",
+      "status": {
+        "completed": "Selesai",
+        "processing": "Diproses",
+        "under_review": "Sedang ditinjau",
+        "failed": "Gagal"
+      }
+    },
+    "skeleton": {
+      "loading": "Memuat dasbor perbankan"
+    }
+  },
+  "AccountRecoveryServices": {
+    "page": {
+      "title": "Layanan pemulihan",
+      "subtitle": "Kirim permintaan pemulihan untuk aset kripto yang hilang atau dicuri. Tim forensik kami akan menilai kasus Anda dan menghubungi dalam 24–48 jam.",
+      "process_title": "Proses",
+      "form_title": "Detail pemulihan aset dan forensik",
+      "form_subtitle": "Kami membantu Anda melacak dan memulihkan aset kripto yang hilang serta menyusun bukti terverifikasi untuk pemulihan dana secara legal."
+    },
+    "process": {
+      "assessment": {
+        "title": "Penilaian",
+        "description": "Kami menganalisis jejak dan menilai kemungkinan pemulihan."
+      },
+      "strategy": {
+        "title": "Strategi",
+        "description": "Rencana khusus dengan dukungan hukum dan forensik."
+      },
+      "recovery": {
+        "title": "Pemulihan",
+        "description": "Kami berkoordinasi dengan bursa dan otoritas untuk mengambil kembali dana."
+      },
+      "return": {
+        "title": "Pengembalian",
+        "description": "Dana ditransfer ke dompet terverifikasi Anda."
+      }
+    },
+    "form": {
+      "name": "Nama",
+      "name_placeholder": "mis. Budi Santoso",
+      "transaction_hash": "Hash transaksi / Alamat dompet",
+      "transaction_hash_placeholder": "Masukkan hash atau alamat (mis. 0x1234...)",
+      "amount_stolen": "Perkiraan jumlah yang dicuri",
+      "amount_stolen_placeholder": "Masukkan perkiraan jumlah (mis. 200000)",
+      "incident_summary": "Ringkasan insiden",
+      "incident_summary_placeholder": "mis. Dana dicuri melalui penipuan phishing...",
+      "evidence": "Tangkapan layar atau bukti lain yang mendukung klaim",
+      "phone_number": "Nomor telepon",
+      "blockchain": "Pilih blockchain",
+      "blockchain_placeholder": "Pilih blockchain",
+      "currency": "Pilih mata uang",
+      "currency_placeholder": "Pilih mata uang",
+      "privacy_prefix": "Lenix Protocol memerlukan informasi kontak Anda untuk menghubungi terkait kasus pemulihan. Untuk detail, lihat",
+      "privacy_policy": "Kebijakan Privasi",
+      "privacy_suffix": " kami.",
+      "submit": "Kirim permintaan pemulihan",
+      "submitting": "Mengirim..."
+    },
+    "blockchains": {
+      "BTC": "Bitcoin (BTC)",
+      "ETH": "Ethereum (ETH)",
+      "SOL": "Solana (SOL)",
+      "TRX": "Tron (TRX)",
+      "BNB": "Binance Smart Chain (BNB)",
+      "MATIC": "Polygon Mainnet (MATIC)",
+      "AVAX": "Avalanche C-Chain (AVAX)",
+      "ARB": "Arbitrum One (ARB)",
+      "BASE": "Base (BASE)",
+      "FANTOM": "Fantom (Fantom)",
+      "GNOSIS": "Gnosis Chain (GNOSIS)",
+      "KAVA": "Kava (KAVA)",
+      "POL": "Polkadot (POL)",
+      "SUI": "Sui (SUI)",
+      "OTHER": "Lainnya"
+    },
+    "success": {
+      "title": "Permintaan terkirim",
+      "description": "Tim pemulihan kami akan meninjau kasus Anda dan menghubungi dalam 24–48 jam.",
+      "submit_another": "Kirim permintaan lain"
+    },
+    "toast": {
+      "required_fields": "Harap isi semua field wajib",
+      "submit_failed": "Gagal mengirim permintaan pemulihan",
+      "submit_success": "Permintaan pemulihan terkirim. Tim kami akan segera menghubungi Anda."
+    }
+  },
+  "AccountCryptoLoan": {
+    "page": {
+      "back_to_dashboard": "Kembali ke Dashboard",
+      "collateral_title": "Butuh lebih banyak jaminan?",
+      "collateral_description": "Deposit lebih banyak aset ke vault untuk meningkatkan limit pinjaman dan memperbaiki health factor.",
+      "go_to_vault": "Ke Vault"
+    },
+    "hero": {
+      "title_line1": "Buka likuiditas,",
+      "title_line2": "Pertahankan aset Anda",
+      "subtitle": "Dapatkan pinjaman instan dengan jaminan kripto tanpa menjual portofolio. Suku bunga rendah, tenor fleksibel, dan pendanaan langsung.",
+      "get_instant_loan": "Dapatkan pinjaman instan",
+      "how_it_works": "Cara kerjanya",
+      "active_loans": "Pinjaman aktif",
+      "total_borrowed": "Total dipinjam",
+      "lowest_rate": "Suku bunga terendah"
+    },
+    "active_loans": {
+      "empty_title": "Tidak ada pinjaman aktif",
+      "empty_description": "Pinjaman aktif Anda akan muncul di sini. Dapatkan likuiditas instan dengan mengajukan pinjaman baru.",
+      "title": "Portofolio Anda",
+      "active_count": "{count} aktif",
+      "borrowed_amount": "Jumlah dipinjam",
+      "collateral": "Jaminan",
+      "health_factor": "Health factor",
+      "repay_loan": "Bayar pinjaman",
+      "processing": "Memproses...",
+      "view_details": "Lihat detail",
+      "details_title": "Detail permintaan pinjaman",
+      "borrowed": "Dipinjam",
+      "apy": "APY",
+      "duration": "Tenor",
+      "start_date": "Tanggal mulai",
+      "contact_details": "Detail kontak",
+      "phone": "Telepon",
+      "telegram_whatsapp": "Telegram / WhatsApp",
+      "not_provided": "Tidak disediakan",
+      "payout_method": "Metode pencairan",
+      "no_payout_details": "Tidak ada detail pencairan tersimpan.",
+      "wallet": "Dompet",
+      "network": "Jaringan",
+      "bank": "Bank",
+      "swift_bic": "SWIFT/BIC",
+      "account": "Rekening",
+      "holder": "Pemegang",
+      "routing_iban": "Routing/IBAN"
+    },
+    "market_rates": {
+      "live_rates": "Suku bunga live",
+      "available_plans": "Paket tersedia",
+      "interest_rate": "Suku bunga",
+      "ltv": "{ltv}% LTV"
+    },
+    "application": {
+      "step_label": "Langkah {step} dari 2 — {phase}",
+      "phase_details": "Detail pinjaman",
+      "phase_payout": "Preferensi pencairan",
+      "title_details": "Ajukan pinjaman kripto",
+      "title_payout": "Menerima dana",
+      "subtitle_details": "Sesuaikan syarat pinjaman dengan kebutuhan Anda.",
+      "subtitle_payout": "Pilih ke mana kami mengirim detail pinjaman Anda.",
+      "select_loan_type": "Pilih jenis pinjaman",
+      "loan_type_summary": "{rate}% APR · Hingga {ltv}% LTV",
+      "borrow_amount": "Jumlah pinjaman (USD)",
+      "borrow_amount_placeholder": "mis. 5000",
+      "collateral_asset": "Aset jaminan",
+      "duration": "Tenor",
+      "continue_payout": "Lanjut ke pencairan",
+      "contact_title": "Bagaimana kami menghubungi Anda?",
+      "contact_subtitle": "Berikan minimal satu kontak agar kami dapat menghubungi terkait pengajuan Anda.",
+      "phone_number": "Nomor telepon",
+      "phone_placeholder": "mis. +62 812 3456 7890",
+      "phone_hint": "Untuk panggilan dan pembaruan SMS",
+      "telegram_whatsapp": "Telegram atau WhatsApp",
+      "telegram_placeholder": "mis. @username atau +6281234567890",
+      "telegram_hint": "Untuk pesan cepat",
+      "funds_title": "Ke mana kami kirim dana Anda?",
+      "payout_crypto": "Dompet kripto",
+      "payout_crypto_sub": "Transfer instan",
+      "payout_wire": "Transfer bank",
+      "payout_wire_sub": "1–3 hari kerja",
+      "payout_bank": "Setoran bank",
+      "payout_bank_sub": "ACH / SEPA",
+      "wallet_address": "Alamat dompet",
+      "wallet_placeholder": "0x...",
+      "select_network": "Pilih jaringan",
+      "network_erc20": "Ethereum (ERC20)",
+      "network_trc20": "Tron (TRC20)",
+      "network_bsc": "Binance Smart Chain (BEP20)",
+      "bank_name": "Nama bank",
+      "bank_name_placeholder": "mis. BCA",
+      "bank_name_alt_placeholder": "mis. Mandiri",
+      "swift_bic": "Kode SWIFT / BIC",
+      "swift_placeholder": "mis. CENAIDJA",
+      "account_number": "Nomor rekening",
+      "account_number_placeholder": "Nomor rekening Anda",
+      "account_holder": "Nama pemegang rekening",
+      "account_holder_placeholder": "Nama lengkap di rekening",
+      "reference_optional": "Referensi (opsional)",
+      "reference_placeholder": "Referensi pembayaran",
+      "routing_iban": "Nomor routing / IBAN",
+      "routing_iban_placeholder": "Routing ACH (AS) atau IBAN (UE)",
+      "back": "Kembali",
+      "submitting": "Mengirim...",
+      "submit": "Kirim pengajuan",
+      "success_title": "Pengajuan terkirim",
+      "success_description": "Permintaan pinjaman Anda telah diterima. Kami akan meninjau dan segera menghubungi Anda.",
+      "view_loans": "Lihat pinjaman saya"
+    },
+    "duration": {
+      "6": "6 bulan",
+      "12": "12 bulan",
+      "24": "24 bulan",
+      "months": "{count} bulan"
+    },
+    "collateral_assets": {
+      "BTC": "Bitcoin",
+      "ETH": "Ethereum",
+      "SOL": "Solana"
+    },
+    "status": {
+      "Active": "Aktif",
+      "Pending": "Menunggu",
+      "Repaid": "Lunas",
+      "Liquidated": "Dilikuidasi"
+    },
+    "payout_methods": {
+      "crypto": "kripto",
+      "wire_transfer": "transfer bank",
+      "bank": "bank"
+    },
+    "toast": {
+      "repay_success": "Pinjaman berhasil dibayar"
+    },
+    "overview": {
+      "total_borrowed": "Total dipinjam",
+      "total_borrowed_tooltip": "Total jumlah dipinjam di semua pinjaman aktif",
+      "current_interest": "Bunga saat ini",
+      "collateral_value": "Nilai jaminan",
+      "collateral_tooltip": "Total nilai aset yang dikunci sebagai jaminan",
+      "ltv_label": "LTV",
+      "low_risk": "Risiko rendah",
+      "health_factor": "Health factor",
+      "health_tooltip": "Indikator risiko likuidasi. Pertahankan di atas 1,5 untuk menghindari likuidasi.",
+      "safe": "Aman",
+      "liquidated": "1,0 (Dilikuidasi)",
+      "safe_threshold": "3,0 (Aman)"
+    },
+    "borrow_form": {
+      "title": "Kalkulator pinjaman",
+      "subtitle": "Hitung syarat pinjaman Anda secara instan.",
+      "borrow_tab": "Pinjam",
+      "repay_tab": "Bayar",
+      "want_to_borrow": "Saya ingin meminjam",
+      "my_collateral": "Jaminan saya",
+      "asset_placeholder": "Aset",
+      "ltv": "LTV",
+      "low_risk": "Risiko rendah",
+      "apy": "APY",
+      "total_repayment": "Total pelunasan",
+      "apply_new_loan": "Ajukan pinjaman baru",
+      "repay_title": "Kelola pelunasan",
+      "repay_description": "Gunakan daftar \"Pinjaman aktif\" untuk mengelola dan melunasi pinjaman spesifik Anda."
+    },
+    "collateral": {
+      "title": "Jaminan yang didukung",
+      "live_rates": "Suku bunga live",
+      "max_ltv": "LTV maks.: {ltv}",
+      "fee": "Biaya",
+      "assets": {
+        "BTC": "Bitcoin",
+        "ETH": "Ethereum",
+        "SOL": "Solana",
+        "XRP": "Ripple"
+      }
     }
   }
 }

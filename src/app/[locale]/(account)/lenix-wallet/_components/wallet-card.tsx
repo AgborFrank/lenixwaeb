@@ -1,17 +1,8 @@
 "use client";
 
-import {
-  TrendingUp,
-  MoreHorizontal,
-  Eye,
-  EyeOff,
-  Wallet,
-  Copy,
-  Check,
-  Lock,
-} from "lucide-react";
+import { Eye, EyeOff, Copy, Check, Lock, MoreHorizontal } from "lucide-react";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 import { useSettings } from "@/app/[locale]/(account)/_providers/settings-provider";
 import {
   DropdownMenu,
@@ -21,6 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { toast } from "sonner";
 import { WalletData } from "../_hooks/use-wallet";
+import { wallet } from "@/lib/wallet-styles";
 
 interface WalletCardProps {
   walletData: WalletData | null;
@@ -28,11 +20,8 @@ interface WalletCardProps {
   balance?: number;
 }
 
-export function WalletCard({
-  walletData,
-  lockWallet,
-  balance,
-}: WalletCardProps) {
+export function WalletCard({ walletData, lockWallet, balance }: WalletCardProps) {
+  const t = useTranslations("AccountLenixWallet.wallet_card");
   const { formatCurrency } = useSettings();
   const [showBalance, setShowBalance] = useState(true);
   const [copied, setCopied] = useState(false);
@@ -41,127 +30,79 @@ export function WalletCard({
     if (walletData?.address) {
       navigator.clipboard.writeText(walletData.address);
       setCopied(true);
-      toast.success("Address copied to clipboard");
+      toast.success(t("address_copied"));
       setTimeout(() => setCopied(false), 2000);
     }
   };
 
-  const formatAddress = (addr: string) => {
-    return `${addr.slice(0, 6)}...${addr.slice(-4)}`;
-  };
+  const truncateAddress = (addr: string) => `${addr.slice(0, 6)}...${addr.slice(-4)}`;
 
   return (
-    <div className="group relative overflow-hidden rounded-3xl p-6 sm:p-8 transition-all hover:scale-[1.01]">
-      {/* Background with Glassmorphism */}
-      <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 to-black z-0" />
-      <div className="absolute inset-0 bg-[url('/assets/img/grid-pattern.svg')] opacity-20 z-0 mix-blend-overlay" />
-      <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-yellow-500/10 blur-3xl" />
-      <div className="absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-yellow-600/10 blur-3xl" />
-
-      {/* Content */}
-      <div className="relative z-10 flex flex-col h-full justify-between gap-8">
-        {/* Header */}
-        <div className="flex items-start justify-between">
-          <div className="flex items-center gap-3">
-            <div className="p-2 rounded-xl bg-white/5 border border-white/10 backdrop-blur-md">
-              <Wallet className="h-6 w-6 text-yellow-400" />
-            </div>
-            <div>
-              <h3 className="text-zinc-400 text-sm font-medium tracking-wide">
-                TOTAL WALLET BALANCE
-              </h3>
-              <div className="flex items-center gap-2 mt-1">
-                {showBalance ? (
-                  <span className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-                    {balance !== undefined
-                      ? formatCurrency(balance)
-                      : (walletData?.balance ?? "0.00")}
-                  </span>
-                ) : (
-                  <span className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-                    ••••••••
-                  </span>
-                )}
-                <button
-                  onClick={() => setShowBalance(!showBalance)}
-                  className="p-1 rounded-lg hover:bg-white/10 text-zinc-500 hover:text-white transition-colors"
-                >
-                  {showBalance ? (
-                    <Eye className="h-4 w-4" />
-                  ) : (
-                    <EyeOff className="h-4 w-4" />
-                  )}
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="flex gap-2">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-zinc-400 hover:text-white hover:bg-white/10 rounded-full text-xs font-mono"
-              onClick={handleCopyAddress}
-            >
-              {walletData?.address ? formatAddress(walletData.address) : "..."}
-              {copied ? (
-                <Check className="ml-2 h-3 w-3 text-green-400" />
-              ) : (
-                <Copy className="ml-2 h-3 w-3" />
-              )}
-            </Button>
-
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-zinc-400 hover:text-white hover:bg-white/10 rounded-full"
-                >
-                  <MoreHorizontal className="h-6 w-6" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent
-                align="end"
-                className="w-40 bg-zinc-900 border-zinc-800 text-white"
-              >
-                <DropdownMenuItem
-                  onClick={lockWallet}
-                  className="text-red-400 focus:text-red-400 cursor-pointer"
-                >
-                  <Lock className="mr-2 h-4 w-4" />
-                  Lock Wallet
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-        </div>
-
-        {/* Footer / Status */}
-        <div className="flex items-end justify-between">
-          <div className="space-y-1">
-            <div className="flex items-center gap-2 text-emerald-400 text-sm font-medium bg-emerald-400/10 px-3 py-1 rounded-full w-fit border border-emerald-400/20">
-              <TrendingUp className="h-3 w-3" />
-              <span>+0.0% (24h)</span>
-            </div>
-            <p className="text-zinc-500 text-xs pl-1">Last synced: Just now</p>
-          </div>
-
-          <div className="flex flex-col items-end gap-1">
-            <span className="text-xs text-zinc-500 uppercase tracking-widest font-bold">
-              Network Status
+    <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#ffdc50] via-[#F0B90B] to-[#f9dd88] p-5 sm:p-6">
+      <div className="flex items-start justify-between">
+        <div>
+          <p className="text-sm font-medium text-black/60">{t("total_balance")}</p>
+          <div className="mt-2 flex items-center gap-3">
+            <span className="text-2xl font-bold tabular-nums tracking-tight text-black sm:text-3xl lg:text-4xl">
+              {showBalance
+                ? balance !== undefined
+                  ? formatCurrency(balance)
+                  : "$0.00"
+                : "••••••"}
             </span>
-            <div className="flex gap-1">
-              {[1, 2, 3, 4].map((i) => (
-                <div
-                  key={i}
-                  className="h-2 w-8 rounded-full bg-yellow-500 shadow-[0_0_10px_rgba(234,179,8,0.5)]"
-                />
-              ))}
-              <div className="h-2 w-8 rounded-full bg-zinc-800" />
-            </div>
-            <span className="text-xs text-yellow-400 font-medium">Optimal</span>
+            <button
+              type="button"
+              onClick={() => setShowBalance((v) => !v)}
+              className="rounded p-1 text-black/50 transition-colors hover:bg-black/10 hover:text-black"
+              aria-label={showBalance ? t("hide_balance") : t("show_balance")}
+            >
+              {showBalance ? <Eye className="h-4 w-4" /> : <EyeOff className="h-4 w-4" />}
+            </button>
           </div>
         </div>
+
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <button
+              type="button"
+              className="rounded-lg p-2 text-black/50 transition-colors hover:bg-black/10 hover:text-black"
+            >
+              <MoreHorizontal className="h-5 w-5" />
+            </button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end" className="w-40 border-zinc-800 bg-zinc-900 text-white">
+            <DropdownMenuItem
+              onClick={lockWallet}
+              className="cursor-pointer text-red-400 focus:bg-white/5 focus:text-red-400"
+            >
+              <Lock className="mr-2 h-4 w-4" />
+              {t("lock_wallet")}
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+
+      <div className="mt-6 flex items-end justify-between border-t border-black/10 pt-4">
+        <div>
+          <p className="text-[11px] font-medium uppercase tracking-wide text-black/50 sm:text-xs">
+            {t("evm_networks")}
+          </p>
+          <p className="mt-0.5 text-xs text-black/70 sm:text-sm">{t("evm_chains")}</p>
+        </div>
+        {walletData?.address && (
+          <button
+            type="button"
+            onClick={handleCopyAddress}
+            className="inline-flex items-center gap-1.5 rounded-lg bg-black/10 px-2 py-1 text-xs text-black/80 transition-colors hover:bg-black/20 sm:px-3 sm:py-1.5 sm:text-sm"
+          >
+            <span className="font-mono">{truncateAddress(walletData.address)}</span>
+            {copied ? (
+              <Check className="h-3 w-3 text-black" />
+            ) : (
+              <Copy className="h-3 w-3" />
+            )}
+          </button>
+        )}
       </div>
     </div>
   );

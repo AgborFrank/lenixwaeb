@@ -1,0 +1,1022 @@
+{
+  "de": {
+    "meta": {
+      "title": "Lenix Wallet | Multi-Chain-Krypto-Wallet",
+      "description": "Non-custodial Multi-Chain-Wallet zum Senden, Empfangen, Tauschen und für Beleihungskredite — mit verschlüsselter lokaler Speicherung und einem Weg zur Lenix-Recovery bei Bedarf.",
+      "keywords": "Krypto-Wallet, Multi-Chain-Wallet, Non-Custodial-Wallet, Lenix Wallet, Krypto-Kredite"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Multi-Chain-",
+      "eyebrow_highlight": "Wallet",
+      "eyebrow_suffix": " auf Lenix",
+      "title_prefix": "Senden, halten und leihen — mit ",
+      "title_highlight1": "Recovery",
+      "title_mid": ", wenn Sie sie brauchen, in einer ",
+      "title_highlight2": "App",
+      "subtitle": "Eine non-custodial Wallet für den Alltag — verschlüsselt auf Ihrem Gerät, standardmäßig multi-chain und an Lenix-Lending sowie Recovery angebunden, wenn mehr als ein Standard-Send nötig ist.",
+      "btn_download": "App herunterladen",
+      "btn_learn": "Funktionen ansehen",
+      "mock": {
+        "account": "Konto 1",
+        "total_balance": "Gesamtsaldo",
+        "change_24h": "+2,4 % (24 h)",
+        "send": "Senden",
+        "receive": "Empfangen",
+        "swap": "Tauschen",
+        "loan": "Kredit",
+        "tab_assets": "Assets",
+        "tab_history": "Verlauf"
+      }
+    },
+    "Features": {
+      "eyebrow": "FUNKTIONEN",
+      "title": "Mehr als Speicher",
+      "cards": {
+        "encryption": {
+          "title": "Verschlüsselt auf dem Gerät",
+          "desc": "Schlüssel sind mit einem Wallet-Passwort geschützt und lokal gespeichert — Lenix hält weder Ihre Seed-Phrase noch Signing-Keys."
+        },
+        "loans": {
+          "title": "Beleihungskredite",
+          "desc": "Stablecoins gegen unterstützte Assets leihen, ohne Ihre Position zu verkaufen — Konditionen und Beleihungsquoten werden vor der Bestätigung angezeigt."
+        },
+        "recovery": {
+          "title": "Recovery-Pfad",
+          "desc": "Bei Verlust oder Diebstahl von Assets einen Recovery-Fall im Lenix-Ökosystem eröffnen — Tracing und Börsenkoordination, wenn ein Standard-Wallet-Flow nicht ausreicht."
+        }
+      }
+    },
+    "Security": {
+      "title": "Sicherheit eingebaut, nicht nachgerüstet",
+      "points": {
+        "keys": {
+          "title": "Sie halten die Keys",
+          "desc": "Non-custodial by Design. Mittel bewegen sich nur, wenn Sie signieren — Lenix kann Ihr Wallet-Guthaben weder einfrieren noch umleiten."
+        },
+        "storage": {
+          "title": "Verschlüsselte lokale Speicherung",
+          "desc": "Wallet-Daten sind auf Ihrem Gerät verschlüsselt. Entsperren mit Ihrem Passwort; Recovery-Phrase offline sichern."
+        },
+        "access": {
+          "title": "Entsperren auf Geräteebene",
+          "desc": "Passwort bei der Einrichtung setzen und Geräte-Biometrie nutzen, wo unterstützt — eine zusätzliche Hürde, bevor Keys zum Signieren verwendet werden."
+        }
+      },
+      "mock_back": {
+        "title": "SYSTEM GESICHERT",
+        "network_label": "Netzwerk",
+        "network_status": "Verbunden",
+        "firewall_label": "Firewall",
+        "firewall_status": "Aktiv"
+      },
+      "mock_front": {
+        "title": "SICHERER TRESOR",
+        "subtitle": "GERÄT VERIFIZIERT",
+        "encryption_title": "Verschlüsselung",
+        "encryption_desc": "Lokale Keys verschlüsselt",
+        "network_title": "Netzwerkstatus",
+        "network_desc": "Multi-Chain bereit"
+      }
+    },
+    "Cta": {
+      "title": "Lenix Wallet herunterladen",
+      "subtitle": "Wallet in Minuten erstellen oder importieren. Dieselbe App für Senden, Empfangen, Tauschen und Kredit — mit Lenix-Recovery, wenn Sie sie brauchen.",
+      "btn_download": "App herunterladen"
+    }
+  },
+  "fr": {
+    "meta": {
+      "title": "Lenix Wallet | Portefeuille crypto multi-chaînes",
+      "description": "Portefeuille non custodial multi-chaînes pour envoyer, recevoir, échanger et emprunter sur garantie — stockage local chiffré et accès à la recovery Lenix si nécessaire.",
+      "keywords": "Portefeuille crypto, Portefeuille multi-chaînes, Portefeuille non custodial, Lenix Wallet, Prêts crypto"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Portefeuille ",
+      "eyebrow_highlight": "multi-chaînes",
+      "eyebrow_suffix": " sur Lenix",
+      "title_prefix": "Envoyer, conserver et emprunter — avec une ",
+      "title_highlight1": "recovery",
+      "title_mid": " quand il le faut, dans une seule ",
+      "title_highlight2": "app",
+      "subtitle": "Un portefeuille non custodial pour le quotidien — chiffré sur votre appareil, multi-chaînes par défaut, et relié au prêt et à la recovery Lenix quand un simple envoi ne suffit pas.",
+      "btn_download": "Télécharger l'app",
+      "btn_learn": "Voir les fonctions",
+      "mock": {
+        "account": "Compte 1",
+        "total_balance": "Solde total",
+        "change_24h": "+2,4 % (24 h)",
+        "send": "Envoyer",
+        "receive": "Recevoir",
+        "swap": "Échanger",
+        "loan": "Prêt",
+        "tab_assets": "Actifs",
+        "tab_history": "Historique"
+      }
+    },
+    "Features": {
+      "eyebrow": "FONCTIONNALITÉS",
+      "title": "Plus qu'un stockage",
+      "cards": {
+        "encryption": {
+          "title": "Chiffré sur l'appareil",
+          "desc": "Les clés sont protégées par un mot de passe wallet et stockées localement — Lenix ne détient ni votre phrase secrète ni vos clés de signature."
+        },
+        "loans": {
+          "title": "Prêts sur garantie",
+          "desc": "Empruntez des stablecoins contre des actifs pris en charge sans vendre votre position — conditions et ratios de garantie affichés avant confirmation."
+        },
+        "recovery": {
+          "title": "Parcours de recovery",
+          "desc": "En cas de perte ou vol d'actifs, ouvrez un dossier de recovery dans l'écosystème Lenix — traçage et coordination avec les exchanges quand le flux wallet standard ne suffit pas."
+        }
+      }
+    },
+    "Security": {
+      "title": "La sécurité intégrée, pas ajoutée",
+      "points": {
+        "keys": {
+          "title": "Vous détenez les clés",
+          "desc": "Non custodial par conception. Les fonds ne bougent que lorsque vous signez — Lenix ne peut ni geler ni rediriger le solde de votre wallet."
+        },
+        "storage": {
+          "title": "Stockage local chiffré",
+          "desc": "Les données du wallet sont chiffrées sur votre appareil. Déverrouillez avec votre mot de passe ; sauvegardez votre phrase de recovery hors ligne."
+        },
+        "access": {
+          "title": "Déverrouillage au niveau appareil",
+          "desc": "Définissez un mot de passe à la configuration et utilisez la biométrie de l'appareil si disponible — une barrière supplémentaire avant l'utilisation des clés pour signer."
+        }
+      },
+      "mock_back": {
+        "title": "SYSTÈME SÉCURISÉ",
+        "network_label": "Réseau",
+        "network_status": "Connecté",
+        "firewall_label": "Pare-feu",
+        "firewall_status": "Actif"
+      },
+      "mock_front": {
+        "title": "COFFRE SÉCURISÉ",
+        "subtitle": "APPAREIL VÉRIFIÉ",
+        "encryption_title": "Chiffrement",
+        "encryption_desc": "Clés locales chiffrées",
+        "network_title": "État du réseau",
+        "network_desc": "Multi-chaînes prêt"
+      }
+    },
+    "Cta": {
+      "title": "Télécharger Lenix Wallet",
+      "subtitle": "Créez ou importez un wallet en quelques minutes. La même app pour envoyer, recevoir, échanger et emprunter — avec la recovery Lenix disponible si besoin.",
+      "btn_download": "Télécharger l'app"
+    }
+  },
+  "es": {
+    "meta": {
+      "title": "Lenix Wallet | Cartera cripto multichain",
+      "description": "Cartera no custodial multichain para enviar, recibir, intercambiar y préstamos con garantía — almacenamiento local cifrado y acceso a la recovery de Lenix cuando haga falta.",
+      "keywords": "Cartera cripto, Cartera multichain, Cartera no custodial, Lenix Wallet, Préstamos cripto"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Cartera ",
+      "eyebrow_highlight": "multichain",
+      "eyebrow_suffix": " en Lenix",
+      "title_prefix": "Envía, guarda y pide prestado — con ",
+      "title_highlight1": "recovery",
+      "title_mid": " cuando la necesites, desde una sola ",
+      "title_highlight2": "app",
+      "subtitle": "Una cartera no custodial para el día a día — cifrada en tu dispositivo, multichain por defecto y conectada al lending y recovery de Lenix cuando hace falta más que un envío estándar.",
+      "btn_download": "Descargar app",
+      "btn_learn": "Ver funciones",
+      "mock": {
+        "account": "Cuenta 1",
+        "total_balance": "Saldo total",
+        "change_24h": "+2,4 % (24 h)",
+        "send": "Enviar",
+        "receive": "Recibir",
+        "swap": "Intercambiar",
+        "loan": "Préstamo",
+        "tab_assets": "Activos",
+        "tab_history": "Historial"
+      }
+    },
+    "Features": {
+      "eyebrow": "FUNCIONES",
+      "title": "Más que almacenamiento",
+      "cards": {
+        "encryption": {
+          "title": "Cifrado en el dispositivo",
+          "desc": "Las claves están protegidas con contraseña de wallet y se guardan localmente — Lenix no custodia tu frase semilla ni tus claves de firma."
+        },
+        "loans": {
+          "title": "Préstamos con garantía",
+          "desc": "Pide stablecoins contra activos admitidos sin vender tu posición — condiciones y ratios de garantía visibles antes de confirmar."
+        },
+        "recovery": {
+          "title": "Ruta de recovery",
+          "desc": "Si pierdes activos o te los roban, abre un caso de recovery en el ecosistema Lenix — trazado y coordinación con exchanges cuando el flujo wallet estándar no basta."
+        }
+      }
+    },
+    "Security": {
+      "title": "Seguridad integrada, no añadida",
+      "points": {
+        "keys": {
+          "title": "Tú tienes las claves",
+          "desc": "No custodial por diseño. Los fondos solo se mueven cuando firmas — Lenix no puede congelar ni redirigir el saldo de tu wallet."
+        },
+        "storage": {
+          "title": "Almacenamiento local cifrado",
+          "desc": "Los datos del wallet están cifrados en tu dispositivo. Desbloquea con tu contraseña; guarda tu frase de recovery offline."
+        },
+        "access": {
+          "title": "Desbloqueo a nivel dispositivo",
+          "desc": "Añade una contraseña al configurar y usa biometría del dispositivo donde esté disponible — una barrera extra antes de usar las claves para firmar."
+        }
+      },
+      "mock_back": {
+        "title": "SISTEMA ASEGURADO",
+        "network_label": "Red",
+        "network_status": "Conectada",
+        "firewall_label": "Firewall",
+        "firewall_status": "Activo"
+      },
+      "mock_front": {
+        "title": "BÓVEDA SEGURA",
+        "subtitle": "DISPOSITIVO VERIFICADO",
+        "encryption_title": "Cifrado",
+        "encryption_desc": "Claves locales cifradas",
+        "network_title": "Estado de red",
+        "network_desc": "Multichain listo"
+      }
+    },
+    "Cta": {
+      "title": "Descargar Lenix Wallet",
+      "subtitle": "Crea o importa un wallet en minutos. La misma app para enviar, recibir, intercambiar y pedir préstamo — con recovery Lenix disponible cuando la necesites.",
+      "btn_download": "Descargar app"
+    }
+  },
+  "pt": {
+    "meta": {
+      "title": "Lenix Wallet | Carteira cripto multichain",
+      "description": "Carteira não custodial multichain para enviar, receber, trocar e empréstimos com garantia — armazenamento local criptografado e caminho para recovery Lenix quando necessário.",
+      "keywords": "Carteira cripto, Carteira multichain, Carteira não custodial, Lenix Wallet, Empréstimos cripto"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Carteira ",
+      "eyebrow_highlight": "multichain",
+      "eyebrow_suffix": " na Lenix",
+      "title_prefix": "Envie, guarde e empreste — com ",
+      "title_highlight1": "recovery",
+      "title_mid": " quando precisar, numa só ",
+      "title_highlight2": "app",
+      "subtitle": "Uma carteira não custodial para o dia a dia — criptografada no seu dispositivo, multichain por padrão e ligada ao lending e recovery Lenix quando um envio padrão não basta.",
+      "btn_download": "Baixar app",
+      "btn_learn": "Ver recursos",
+      "mock": {
+        "account": "Conta 1",
+        "total_balance": "Saldo total",
+        "change_24h": "+2,4 % (24 h)",
+        "send": "Enviar",
+        "receive": "Receber",
+        "swap": "Trocar",
+        "loan": "Empréstimo",
+        "tab_assets": "Ativos",
+        "tab_history": "Histórico"
+      }
+    },
+    "Features": {
+      "eyebrow": "RECURSOS",
+      "title": "Mais que armazenamento",
+      "cards": {
+        "encryption": {
+          "title": "Criptografado no dispositivo",
+          "desc": "As chaves são protegidas com senha da wallet e armazenadas localmente — a Lenix não guarda sua seed phrase nem chaves de assinatura."
+        },
+        "loans": {
+          "title": "Empréstimos com garantia",
+          "desc": "Pegue stablecoins contra ativos suportados sem vender sua posição — termos e índices de garantia exibidos antes de confirmar."
+        },
+        "recovery": {
+          "title": "Caminho de recovery",
+          "desc": "Se ativos forem perdidos ou roubados, abra um caso de recovery no ecossistema Lenix — rastreamento e coordenação com exchanges quando o fluxo wallet padrão não basta."
+        }
+      }
+    },
+    "Security": {
+      "title": "Segurança integrada, não adicionada",
+      "points": {
+        "keys": {
+          "title": "Você detém as chaves",
+          "desc": "Não custodial por design. Fundos só se movem quando você assina — a Lenix não pode congelar nem redirecionar o saldo da sua wallet."
+        },
+        "storage": {
+          "title": "Armazenamento local criptografado",
+          "desc": "Dados da wallet são criptografados no seu dispositivo. Desbloqueie com sua senha; faça backup da frase de recovery offline."
+        },
+        "access": {
+          "title": "Desbloqueio no dispositivo",
+          "desc": "Defina uma senha na configuração e use biometria do dispositivo quando disponível — uma barreira extra antes das chaves serem usadas para assinar."
+        }
+      },
+      "mock_back": {
+        "title": "SISTEMA PROTEGIDO",
+        "network_label": "Rede",
+        "network_status": "Conectada",
+        "firewall_label": "Firewall",
+        "firewall_status": "Ativo"
+      },
+      "mock_front": {
+        "title": "COFRE SEGURO",
+        "subtitle": "DISPOSITIVO VERIFICADO",
+        "encryption_title": "Criptografia",
+        "encryption_desc": "Chaves locais criptografadas",
+        "network_title": "Status da rede",
+        "network_desc": "Multichain pronto"
+      }
+    },
+    "Cta": {
+      "title": "Baixar Lenix Wallet",
+      "subtitle": "Crie ou importe uma wallet em minutos. A mesma app para enviar, receber, trocar e emprestar — com recovery Lenix disponível quando precisar.",
+      "btn_download": "Baixar app"
+    }
+  },
+  "it": {
+    "meta": {
+      "title": "Lenix Wallet | Portafoglio crypto multichain",
+      "description": "Portafoglio non custodial multichain per inviare, ricevere, scambiare e prestiti con garanzia — archiviazione locale crittografata e percorso verso la recovery Lenix quando serve.",
+      "keywords": "Portafoglio crypto, Portafoglio multichain, Portafoglio non custodial, Lenix Wallet, Prestiti crypto"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Portafoglio ",
+      "eyebrow_highlight": "multichain",
+      "eyebrow_suffix": " su Lenix",
+      "title_prefix": "Invia, conserva e prendi in prestito — con ",
+      "title_highlight1": "recovery",
+      "title_mid": " quando ti serve, in un'unica ",
+      "title_highlight2": "app",
+      "subtitle": "Un portafoglio non custodial per l'uso quotidiano — crittografato sul tuo dispositivo, multichain di default e collegato al lending e alla recovery Lenix quando serve più di un semplice invio.",
+      "btn_download": "Scarica app",
+      "btn_learn": "Vedi funzioni",
+      "mock": {
+        "account": "Account 1",
+        "total_balance": "Saldo totale",
+        "change_24h": "+2,4 % (24 h)",
+        "send": "Invia",
+        "receive": "Ricevi",
+        "swap": "Scambia",
+        "loan": "Prestito",
+        "tab_assets": "Asset",
+        "tab_history": "Cronologia"
+      }
+    },
+    "Features": {
+      "eyebrow": "FUNZIONI",
+      "title": "Più di un semplice deposito",
+      "cards": {
+        "encryption": {
+          "title": "Crittografato sul dispositivo",
+          "desc": "Le chiavi sono protette con password del wallet e archiviate localmente — Lenix non detiene la seed phrase né le chiavi di firma."
+        },
+        "loans": {
+          "title": "Prestiti con garanzia",
+          "desc": "Prendi stablecoin contro asset supportati senza vendere la posizione — termini e rapporti di garanzia mostrati prima della conferma."
+        },
+        "recovery": {
+          "title": "Percorso di recovery",
+          "desc": "Se gli asset sono persi o rubati, apri un caso di recovery nell'ecosistema Lenix — tracciamento e coordinamento con gli exchange quando il flusso wallet standard non basta."
+        }
+      }
+    },
+    "Security": {
+      "title": "Sicurezza integrata, non aggiunta",
+      "points": {
+        "keys": {
+          "title": "Le chiavi restano tue",
+          "desc": "Non custodial per design. I fondi si muovono solo quando firmi — Lenix non può congelare né reindirizzare il saldo del wallet."
+        },
+        "storage": {
+          "title": "Archiviazione locale crittografata",
+          "desc": "I dati del wallet sono crittografati sul dispositivo. Sblocca con la password; esegui backup della frase di recovery offline."
+        },
+        "access": {
+          "title": "Sblocco a livello dispositivo",
+          "desc": "Imposta una password alla configurazione e usa la biometria del dispositivo dove supportata — un ulteriore controllo prima che le chiavi vengano usate per firmare."
+        }
+      },
+      "mock_back": {
+        "title": "SISTEMA PROTETTO",
+        "network_label": "Rete",
+        "network_status": "Connessa",
+        "firewall_label": "Firewall",
+        "firewall_status": "Attivo"
+      },
+      "mock_front": {
+        "title": "CASSAFORTE SICURA",
+        "subtitle": "DISPOSITIVO VERIFICATO",
+        "encryption_title": "Crittografia",
+        "encryption_desc": "Chiavi locali crittografate",
+        "network_title": "Stato rete",
+        "network_desc": "Multichain pronto"
+      }
+    },
+    "Cta": {
+      "title": "Scarica Lenix Wallet",
+      "subtitle": "Crea o importa un wallet in pochi minuti. La stessa app per inviare, ricevere, scambiare e prendere prestiti — con recovery Lenix disponibile quando serve.",
+      "btn_download": "Scarica app"
+    }
+  },
+  "id": {
+    "meta": {
+      "title": "Lenix Wallet | Dompet kripto multi-chain",
+      "description": "Dompet non-custodial multi-chain untuk kirim, terima, swap, dan pinjaman jaminan — penyimpanan lokal terenkripsi dan jalur recovery Lenix saat diperlukan.",
+      "keywords": "Dompet kripto, Dompet multi-chain, Dompet non-custodial, Lenix Wallet, Pinjaman kripto"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Dompet ",
+      "eyebrow_highlight": "multi-chain",
+      "eyebrow_suffix": " di Lenix",
+      "title_prefix": "Kirim, simpan, dan pinjam — dengan ",
+      "title_highlight1": "recovery",
+      "title_mid": " saat Anda butuh, dari satu ",
+      "title_highlight2": "app",
+      "subtitle": "Dompet non-custodial untuk kripto sehari-hari — terenkripsi di perangkat Anda, multi-chain secara default, dan terhubung ke lending serta recovery Lenix saat lebih dari sekadar kirim standar diperlukan.",
+      "btn_download": "Unduh app",
+      "btn_learn": "Lihat fitur",
+      "mock": {
+        "account": "Akun 1",
+        "total_balance": "Saldo total",
+        "change_24h": "+2,4% (24j)",
+        "send": "Kirim",
+        "receive": "Terima",
+        "swap": "Swap",
+        "loan": "Pinjaman",
+        "tab_assets": "Aset",
+        "tab_history": "Riwayat"
+      }
+    },
+    "Features": {
+      "eyebrow": "FITUR",
+      "title": "Lebih dari penyimpanan",
+      "cards": {
+        "encryption": {
+          "title": "Terenkripsi di perangkat",
+          "desc": "Kunci dilindungi dengan kata sandi wallet dan disimpan lokal — Lenix tidak menyimpan seed phrase atau kunci penandatanganan Anda."
+        },
+        "loans": {
+          "title": "Pinjaman jaminan",
+          "desc": "Pinjam stablecoin dengan aset yang didukung tanpa menjual posisi — syarat dan rasio jaminan ditampilkan sebelum Anda konfirmasi."
+        },
+        "recovery": {
+          "title": "Jalur recovery",
+          "desc": "Jika aset hilang atau dicuri, buka kasus recovery dari ekosistem Lenix — pelacakan dan koordinasi exchange saat alur wallet standar tidak cukup."
+        }
+      }
+    },
+    "Security": {
+      "title": "Keamanan terintegrasi, bukan tambahan",
+      "points": {
+        "keys": {
+          "title": "Anda pegang kuncinya",
+          "desc": "Non-custodial by design. Dana hanya bergerak saat Anda menandatangani — Lenix tidak bisa membekukan atau mengalihkan saldo wallet Anda."
+        },
+        "storage": {
+          "title": "Penyimpanan lokal terenkripsi",
+          "desc": "Data wallet dienkripsi di perangkat Anda. Buka kunci dengan kata sandi; cadangkan frase recovery secara offline."
+        },
+        "access": {
+          "title": "Buka kunci di perangkat",
+          "desc": "Tetapkan kata sandi saat setup dan gunakan biometrik perangkat jika didukung — lapisan tambahan sebelum kunci dipakai untuk menandatangani."
+        }
+      },
+      "mock_back": {
+        "title": "SISTEM AMAN",
+        "network_label": "Jaringan",
+        "network_status": "Terhubung",
+        "firewall_label": "Firewall",
+        "firewall_status": "Aktif"
+      },
+      "mock_front": {
+        "title": "BRANKAS AMAN",
+        "subtitle": "PERANGKAT TERVERIFIKASI",
+        "encryption_title": "Enkripsi",
+        "encryption_desc": "Kunci lokal terenkripsi",
+        "network_title": "Status jaringan",
+        "network_desc": "Multi-chain siap"
+      }
+    },
+    "Cta": {
+      "title": "Unduh Lenix Wallet",
+      "subtitle": "Buat atau impor wallet dalam hitungan menit. App yang sama untuk kirim, terima, swap, dan pinjam — dengan recovery Lenix tersedia saat Anda butuh.",
+      "btn_download": "Unduh app"
+    }
+  },
+  "vi": {
+    "meta": {
+      "title": "Lenix Wallet | Ví crypto đa chuỗi",
+      "description": "Ví non-custodial đa chuỗi để gửi, nhận, hoán đổi và vay thế chấp — lưu trữ cục bộ mã hóa và lối recovery Lenix khi cần.",
+      "keywords": "Ví crypto, Ví đa chuỗi, Ví non-custodial, Lenix Wallet, Vay crypto"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Ví ",
+      "eyebrow_highlight": "đa chuỗi",
+      "eyebrow_suffix": " trên Lenix",
+      "title_prefix": "Gửi, giữ và vay — với ",
+      "title_highlight1": "recovery",
+      "title_mid": " khi bạn cần, từ một ",
+      "title_highlight2": "app",
+      "subtitle": "Ví non-custodial cho crypto hàng ngày — mã hóa trên thiết bị, đa chuỗi mặc định và kết nối lending cùng recovery Lenix khi cần hơn một giao dịch gửi thông thường.",
+      "btn_download": "Tải app",
+      "btn_learn": "Xem tính năng",
+      "mock": {
+        "account": "Tài khoản 1",
+        "total_balance": "Tổng số dư",
+        "change_24h": "+2,4% (24h)",
+        "send": "Gửi",
+        "receive": "Nhận",
+        "swap": "Hoán đổi",
+        "loan": "Vay",
+        "tab_assets": "Tài sản",
+        "tab_history": "Lịch sử"
+      }
+    },
+    "Features": {
+      "eyebrow": "TÍNH NĂNG",
+      "title": "Hơn cả lưu trữ",
+      "cards": {
+        "encryption": {
+          "title": "Mã hóa trên thiết bị",
+          "desc": "Khóa được bảo vệ bằng mật khẩu ví và lưu cục bộ — Lenix không giữ seed phrase hay khóa ký của bạn."
+        },
+        "loans": {
+          "title": "Vay thế chấp",
+          "desc": "Vay stablecoin bằng tài sản được hỗ trợ mà không bán vị thế — điều khoản và tỷ lệ thế chấp hiển thị trước khi xác nhận."
+        },
+        "recovery": {
+          "title": "Lối recovery",
+          "desc": "Nếu tài sản bị mất hoặc đánh cắp, mở hồ sơ recovery từ hệ sinh thái Lenix — truy vết và phối hợp sàn khi luồng ví thông thường không đủ."
+        }
+      }
+    },
+    "Security": {
+      "title": "Bảo mật tích hợp sẵn",
+      "points": {
+        "keys": {
+          "title": "Bạn giữ khóa",
+          "desc": "Non-custodial theo thiết kế. Tiền chỉ di chuyển khi bạn ký — Lenix không thể đóng băng hay chuyển hướng số dư ví."
+        },
+        "storage": {
+          "title": "Lưu trữ cục bộ mã hóa",
+          "desc": "Dữ liệu ví được mã hóa trên thiết bị. Mở khóa bằng mật khẩu; sao lưu cụm từ recovery ngoại tuyến."
+        },
+        "access": {
+          "title": "Mở khóa cấp thiết bị",
+          "desc": "Đặt mật khẩu khi thiết lập và dùng sinh trắc học thiết bị nếu hỗ trợ — một lớp bảo vệ trước khi khóa được dùng để ký."
+        }
+      },
+      "mock_back": {
+        "title": "HỆ THỐNG AN TOÀN",
+        "network_label": "Mạng",
+        "network_status": "Đã kết nối",
+        "firewall_label": "Tường lửa",
+        "firewall_status": "Hoạt động"
+      },
+      "mock_front": {
+        "title": "KHO BẢO MẬT",
+        "subtitle": "THIẾT BỊ ĐÃ XÁC MINH",
+        "encryption_title": "Mã hóa",
+        "encryption_desc": "Khóa cục bộ đã mã hóa",
+        "network_title": "Trạng thái mạng",
+        "network_desc": "Sẵn sàng đa chuỗi"
+      }
+    },
+    "Cta": {
+      "title": "Tải Lenix Wallet",
+      "subtitle": "Tạo hoặc nhập ví trong vài phút. Cùng một app để gửi, nhận, hoán đổi và vay — với recovery Lenix sẵn sàng khi bạn cần.",
+      "btn_download": "Tải app"
+    }
+  },
+  "zh": {
+    "meta": {
+      "title": "Lenix Wallet | 多链加密钱包",
+      "description": "非托管多链钱包，支持发送、接收、兑换和抵押借贷 — 本地加密存储，需要时可接入 Lenix 恢复服务。",
+      "keywords": "加密钱包, 多链钱包, 非托管钱包, Lenix Wallet, 加密借贷"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Lenix ",
+      "eyebrow_highlight": "多链钱包",
+      "eyebrow_suffix": "",
+      "title_prefix": "发送、持有、借贷 — 需要时启用 ",
+      "title_highlight1": "恢复",
+      "title_mid": "，全部在一个 ",
+      "title_highlight2": "应用",
+      "subtitle": "面向日常使用的非托管钱包 — 设备端加密、默认多链，并在普通转账不够用时连接 Lenix 借贷与恢复服务。",
+      "btn_download": "下载应用",
+      "btn_learn": "查看功能",
+      "mock": {
+        "account": "账户 1",
+        "total_balance": "总余额",
+        "change_24h": "+2.4%（24h）",
+        "send": "发送",
+        "receive": "接收",
+        "swap": "兑换",
+        "loan": "借贷",
+        "tab_assets": "资产",
+        "tab_history": "历史"
+      }
+    },
+    "Features": {
+      "eyebrow": "功能",
+      "title": "不止于存储",
+      "cards": {
+        "encryption": {
+          "title": "设备端加密",
+          "desc": "密钥由钱包密码保护并本地存储 — Lenix 不持有您的助记词或签名密钥。"
+        },
+        "loans": {
+          "title": "抵押借贷",
+          "desc": "以支持的资产抵押借入稳定币，无需卖出持仓 — 确认前显示条款与抵押率。"
+        },
+        "recovery": {
+          "title": "恢复路径",
+          "desc": "若资产丢失或被盗，可在 Lenix 生态中开启恢复案件 — 当标准钱包流程不够时进行追踪与交易所协调。"
+        }
+      }
+    },
+    "Security": {
+      "title": "安全内置，而非事后加装",
+      "points": {
+        "keys": {
+          "title": "密钥归您所有",
+          "desc": "非托管设计。资金仅在您签名时转移 — Lenix 无法冻结或重定向您的钱包余额。"
+        },
+        "storage": {
+          "title": "本地加密存储",
+          "desc": "钱包数据在设备端加密。用密码解锁；离线备份恢复短语。"
+        },
+        "access": {
+          "title": "设备级解锁",
+          "desc": "设置时添加密码，并在支持时使用设备生物识别 — 使用密钥签名前的额外关卡。"
+        }
+      },
+      "mock_back": {
+        "title": "系统已保护",
+        "network_label": "网络",
+        "network_status": "已连接",
+        "firewall_label": "防火墙",
+        "firewall_status": "已启用"
+      },
+      "mock_front": {
+        "title": "安全金库",
+        "subtitle": "设备已验证",
+        "encryption_title": "加密",
+        "encryption_desc": "本地密钥已加密",
+        "network_title": "网络状态",
+        "network_desc": "多链就绪"
+      }
+    },
+    "Cta": {
+      "title": "下载 Lenix Wallet",
+      "subtitle": "几分钟内创建或导入钱包。同一应用完成发送、接收、兑换与借贷 — 需要时可使用 Lenix 恢复服务。",
+      "btn_download": "下载应用"
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "Lenix Wallet | محفظة عملات رقمية متعددة السلاسل",
+      "description": "محفظة غير وصائية متعددة السلاسل للإرسال والاستلام والمبادلة والقروض بالضمان — تخزين محلي مشفر ومسار إلى استرداد Lenix عند الحاجة.",
+      "keywords": "محفظة عملات رقمية, محفظة متعددة السلاسل, محفظة غير وصائية, Lenix Wallet, قروض رقمية"
+    },
+    "Hero": {
+      "eyebrow_prefix": "محفظة ",
+      "eyebrow_highlight": "متعددة السلاسل",
+      "eyebrow_suffix": " على Lenix",
+      "title_prefix": "أرسل واحتفظ واقترض — مع ",
+      "title_highlight1": "استرداد",
+      "title_mid": " عند الحاجة، من ",
+      "title_highlight2": "تطبيق",
+      "subtitle": "محفظة غير وصائية للاستخدام اليومي — مشفرة على جهازك، متعددة السلاسل افتراضياً، ومتصلة بإقراض واسترداد Lenix عندما يتجاوز الأمر إرسالاً عادياً.",
+      "btn_download": "حمّل التطبيق",
+      "btn_learn": "عرض الميزات",
+      "mock": {
+        "account": "الحساب 1",
+        "total_balance": "الرصيد الإجمالي",
+        "change_24h": "+2.4% (24 س)",
+        "send": "إرسال",
+        "receive": "استلام",
+        "swap": "مبادلة",
+        "loan": "قرض",
+        "tab_assets": "الأصول",
+        "tab_history": "السجل"
+      }
+    },
+    "Features": {
+      "eyebrow": "الميزات",
+      "title": "أكثر من التخزين",
+      "cards": {
+        "encryption": {
+          "title": "مشفر على الجهاز",
+          "desc": "المفاتيح محمية بكلمة مرور المحفظة ومخزنة محلياً — Lenix لا تحتفظ بعبارة الاسترداد أو مفاتيح التوقيع."
+        },
+        "loans": {
+          "title": "قروض بالضمان",
+          "desc": "اقترض stablecoins مقابل أصول مدعومة دون بيع مركزك — الشروط ونسب الضمان تظهر قبل التأكيد."
+        },
+        "recovery": {
+          "title": "مسار الاسترداد",
+          "desc": "إذا فُقدت الأصول أو سُرقت، افتح حالة استرداد من منظومة Lenix — تتبع وتنسيق مع البورصات عندما لا يكفي مسار المحفظة المعتاد."
+        }
+      }
+    },
+    "Security": {
+      "title": "أمان مدمج، وليس مضافاً",
+      "points": {
+        "keys": {
+          "title": "أنت تحتفظ بالمفاتيح",
+          "desc": "غير وصائية بالتصميم. الأموال تتحرك فقط عند توقيعك — Lenix لا تستطيع تجميد أو إعادة توجيه رصيد محفظتك."
+        },
+        "storage": {
+          "title": "تخزين محلي مشفر",
+          "desc": "بيانات المحفظة مشفرة على جهازك. افتح بكلمة المرور؛ احفظ عبارة الاسترداد دون اتصال."
+        },
+        "access": {
+          "title": "فتح على مستوى الجهاز",
+          "desc": "أضف كلمة مرور عند الإعداد واستخدم البصمة حيث يُدعم — حاجز إضافي قبل استخدام المفاتيح للتوقيع."
+        }
+      },
+      "mock_back": {
+        "title": "النظام مؤمّن",
+        "network_label": "الشبكة",
+        "network_status": "متصل",
+        "firewall_label": "جدار الحماية",
+        "firewall_status": "نشط"
+      },
+      "mock_front": {
+        "title": "خزنة آمنة",
+        "subtitle": "الجهاز موثّق",
+        "encryption_title": "التشفير",
+        "encryption_desc": "المفاتيح المحلية مشفرة",
+        "network_title": "حالة الشبكة",
+        "network_desc": "جاهز متعدد السلاسل"
+      }
+    },
+    "Cta": {
+      "title": "حمّل Lenix Wallet",
+      "subtitle": "أنشئ أو استورد محفظة خلال دقائق. نفس التطبيق للإرسال والاستلام والمبادلة والقرض — مع استرداد Lenix متاح عند الحاجة.",
+      "btn_download": "حمّل التطبيق"
+    }
+  },
+  "hi": {
+    "meta": {
+      "title": "Lenix Wallet | मल्टी-चेन क्रिप्टो वॉलेट",
+      "description": "भेजने, प्राप्त करने, स्वैप और collateral ऋण के लिए non-custodial मल्टी-चेन वॉलेट — एन्क्रिप्टेड लोकल स्टोरेज और जरूरत पर Lenix recovery का रास्ता।",
+      "keywords": "क्रिप्टो वॉलेट, मल्टी-चेन वॉलेट, Non-custodial वॉलेट, Lenix Wallet, क्रिप्टो ऋण"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Lenix पर ",
+      "eyebrow_highlight": "मल्टी-चेन",
+      "eyebrow_suffix": " वॉलेट",
+      "title_prefix": "भेजें, रखें और उधार लें — जरूरत पर ",
+      "title_highlight1": "recovery",
+      "title_mid": ", एक ही ",
+      "title_highlight2": "ऐप",
+      "subtitle": "रोज़मर्रा के क्रिप्टो के लिए non-custodial वॉलेट — आपके डिवाइस पर एन्क्रिप्टेड, डिफ़ॉल्ट रूप से मल्टी-चेन, और Lenix lending व recovery से जुड़ा जब साधारण send काफी न हो।",
+      "btn_download": "ऐप डाउनलोड",
+      "btn_learn": "फ़ीचर देखें",
+      "mock": {
+        "account": "खाता 1",
+        "total_balance": "कुल बैलेंस",
+        "change_24h": "+2.4% (24घं)",
+        "send": "भेजें",
+        "receive": "प्राप्त",
+        "swap": "स्वैप",
+        "loan": "ऋण",
+        "tab_assets": "संपत्ति",
+        "tab_history": "इतिहास"
+      }
+    },
+    "Features": {
+      "eyebrow": "फ़ीचर",
+      "title": "सिर्फ़ स्टोरेज से ज़्यादा",
+      "cards": {
+        "encryption": {
+          "title": "डिवाइस पर एन्क्रिप्टेड",
+          "desc": "कुंजियाँ वॉलेट पासवर्ड से सुरक्षित और स्थानीय रूप से स्टोर — Lenix आपकी seed phrase या signing keys नहीं रखता।"
+        },
+        "loans": {
+          "title": "Collateral ऋण",
+          "desc": "position बेचे बिना supported assets पर stablecoins उधार लें — confirm से पहले terms और collateral ratio दिखाए जाते हैं।"
+        },
+        "recovery": {
+          "title": "Recovery मार्ग",
+          "desc": "अगर assets खो जाएँ या चोरी हों, Lenix ecosystem से recovery case खोलें — tracing और exchange coordination जब standard wallet flow काफी न हो।"
+        }
+      }
+    },
+    "Security": {
+      "title": "सुरक्षा अंदर से, बाद में नहीं",
+      "points": {
+        "keys": {
+          "title": "कुंजियाँ आपकी",
+          "desc": "Design से non-custodial। Funds तभी move होते हैं जब आप sign करें — Lenix आपका wallet balance freeze या redirect नहीं कर सकता।"
+        },
+        "storage": {
+          "title": "एन्क्रिप्टेड लोकल स्टोरेज",
+          "desc": "Wallet data आपके डिवाइस पर encrypted। पासवर्ड से unlock; recovery phrase offline backup करें।"
+        },
+        "access": {
+          "title": "डिवाइस-स्तर unlock",
+          "desc": "Setup पर पासवर्ड सेट करें और जहाँ supported हो device biometrics use करें — sign करने से पहले extra gate।"
+        }
+      },
+      "mock_back": {
+        "title": "सिस्टम सुरक्षित",
+        "network_label": "नेटवर्क",
+        "network_status": "कनेक्टेड",
+        "firewall_label": "फ़ायरवॉल",
+        "firewall_status": "सक्रिय"
+      },
+      "mock_front": {
+        "title": "सुरक्षित वॉल्ट",
+        "subtitle": "डिवाइस सत्यापित",
+        "encryption_title": "एन्क्रिप्शन",
+        "encryption_desc": "लोकल keys encrypted",
+        "network_title": "नेटवर्क स्थिति",
+        "network_desc": "मल्टी-चेन तैयार"
+      }
+    },
+    "Cta": {
+      "title": "Lenix Wallet डाउनलोड",
+      "subtitle": "मिनटों में wallet बनाएँ या import करें। send, receive, swap और loan के लिए वही app — जरूरत पर Lenix recovery उपलब्ध।",
+      "btn_download": "ऐप डाउनलोड"
+    }
+  },
+  "tr": {
+    "meta": {
+      "title": "Lenix Wallet | Çok zincirli kripto cüzdan",
+      "description": "Gönderme, alma, takas ve teminatlı kredi için non-custodial çok zincirli cüzdan — şifreli yerel depolama ve gerektiğinde Lenix recovery yolu.",
+      "keywords": "Kripto cüzdan, Çok zincirli cüzdan, Non-custodial cüzdan, Lenix Wallet, Kripto krediler"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Lenix'te ",
+      "eyebrow_highlight": "çok zincirli",
+      "eyebrow_suffix": " cüzdan",
+      "title_prefix": "Gönder, tut ve borç al — gerektiğinde ",
+      "title_highlight1": "recovery",
+      "title_mid": " ile, tek bir ",
+      "title_highlight2": "uygulamada",
+      "subtitle": "Günlük kripto için non-custodial cüzdan — cihazınızda şifreli, varsayılan olarak çok zincirli ve standart gönderimin yetmediği durumlarda Lenix lending ve recovery'ye bağlı.",
+      "btn_download": "Uygulamayı indir",
+      "btn_learn": "Özellikleri gör",
+      "mock": {
+        "account": "Hesap 1",
+        "total_balance": "Toplam bakiye",
+        "change_24h": "+%2,4 (24s)",
+        "send": "Gönder",
+        "receive": "Al",
+        "swap": "Takas",
+        "loan": "Kredi",
+        "tab_assets": "Varlıklar",
+        "tab_history": "Geçmiş"
+      }
+    },
+    "Features": {
+      "eyebrow": "ÖZELLİKLER",
+      "title": "Depolamadan fazlası",
+      "cards": {
+        "encryption": {
+          "title": "Cihazda şifreli",
+          "desc": "Anahtarlar cüzdan parolasıyla korunur ve yerelde saklanır — Lenix seed phrase veya imza anahtarlarınızı tutmaz."
+        },
+        "loans": {
+          "title": "Teminatlı krediler",
+          "desc": "Pozisyonunuzu satmadan desteklenen varlıklara karşı stablecoin borç alın — onaylamadan önce koşullar ve teminat oranları gösterilir."
+        },
+        "recovery": {
+          "title": "Recovery yolu",
+          "desc": "Varlıklar kaybolursa veya çalınırsa Lenix ekosisteminden recovery dosyası açın — standart cüzdan akışı yetmediğinde izleme ve borsa koordinasyonu."
+        }
+      }
+    },
+    "Security": {
+      "title": "Güvenlik entegre, sonradan eklenmiş değil",
+      "points": {
+        "keys": {
+          "title": "Anahtarlar sizde",
+          "desc": "Tasarım gereği non-custodial. Fonlar yalnızca imzaladığınızda hareket eder — Lenix cüzdan bakiyenizi donduramaz veya yönlendiremez."
+        },
+        "storage": {
+          "title": "Şifreli yerel depolama",
+          "desc": "Cüzdan verileri cihazınızda şifrelenir. Parolanızla açın; recovery ifadesini çevrimdışı yedekleyin."
+        },
+        "access": {
+          "title": "Cihaz düzeyinde kilidi açma",
+          "desc": "Kurulumda parola ekleyin ve desteklenen yerlerde cihaz biyometrisini kullanın — imza için anahtarlar kullanılmadan önce ek engel."
+        }
+      },
+      "mock_back": {
+        "title": "SİSTEM GÜVENLİ",
+        "network_label": "Ağ",
+        "network_status": "Bağlı",
+        "firewall_label": "Güvenlik duvarı",
+        "firewall_status": "Aktif"
+      },
+      "mock_front": {
+        "title": "GÜVENLİ KASA",
+        "subtitle": "CİHAZ DOĞRULANDI",
+        "encryption_title": "Şifreleme",
+        "encryption_desc": "Yerel anahtarlar şifreli",
+        "network_title": "Ağ durumu",
+        "network_desc": "Çok zincirli hazır"
+      }
+    },
+    "Cta": {
+      "title": "Lenix Wallet'ı indir",
+      "subtitle": "Dakikalar içinde cüzdan oluşturun veya içe aktarın. Gönder, al, takas ve kredi için aynı uygulama — gerektiğinde Lenix recovery mevcut.",
+      "btn_download": "Uygulamayı indir"
+    }
+  },
+  "tl": {
+    "meta": {
+      "title": "Lenix Wallet | Multi-chain crypto wallet",
+      "description": "Non-custodial multi-chain wallet para magpadala, tumanggap, mag-swap, at collateral loan — naka-encrypt na local storage at daan sa Lenix recovery kung kailangan.",
+      "keywords": "Crypto wallet, Multi-chain wallet, Non-custodial wallet, Lenix Wallet, Crypto loan"
+    },
+    "Hero": {
+      "eyebrow_prefix": "Multi-chain ",
+      "eyebrow_highlight": "wallet",
+      "eyebrow_suffix": " sa Lenix",
+      "title_prefix": "Magpadala, mag-hold, at umutang — may ",
+      "title_highlight1": "recovery",
+      "title_mid": " kapag kailangan, mula sa isang ",
+      "title_highlight2": "app",
+      "subtitle": "Non-custodial wallet para sa araw-araw na crypto — naka-encrypt sa device mo, multi-chain by default, at konektado sa Lenix lending at recovery kapag hindi sapat ang karaniwang send.",
+      "btn_download": "I-download app",
+      "btn_learn": "Tingnan features",
+      "mock": {
+        "account": "Account 1",
+        "total_balance": "Kabuuang balanse",
+        "change_24h": "+2.4% (24o)",
+        "send": "Ipadala",
+        "receive": "Tanggapin",
+        "swap": "Mag-swap",
+        "loan": "Utang",
+        "tab_assets": "Mga asset",
+        "tab_history": "Kasaysayan"
+      }
+    },
+    "Features": {
+      "eyebrow": "MGA FEATURE",
+      "title": "Higit sa storage",
+      "cards": {
+        "encryption": {
+          "title": "Naka-encrypt sa device",
+          "desc": "Protektado ang keys ng wallet password at naka-store locally — hindi hawak ng Lenix ang seed phrase o signing keys mo."
+        },
+        "loans": {
+          "title": "Collateral loan",
+          "desc": "Humiram ng stablecoins laban sa supported assets nang hindi ibinebenta ang posisyon — ipinapakita ang terms at collateral ratio bago mag-confirm."
+        },
+        "recovery": {
+          "title": "Daan ng recovery",
+          "desc": "Kung nawala o ninakaw ang assets, magbukas ng recovery case mula sa Lenix ecosystem — tracing at exchange coordination kapag hindi sapat ang standard wallet flow."
+        }
+      }
+    },
+    "Security": {
+      "title": "Built-in ang seguridad",
+      "points": {
+        "keys": {
+          "title": "Ikaw ang may keys",
+          "desc": "Non-custodial by design. Gumagalaw lang ang pondo kapag nag-sign ka — hindi maaaring i-freeze o i-redirect ng Lenix ang balanse ng wallet mo."
+        },
+        "storage": {
+          "title": "Naka-encrypt na local storage",
+          "desc": "Naka-encrypt ang wallet data sa device mo. I-unlock gamit ang password; i-back up ang recovery phrase offline."
+        },
+        "access": {
+          "title": "Unlock sa device level",
+          "desc": "Maglagay ng password sa setup at gumamit ng device biometrics kung suportado — dagdag na gate bago gamitin ang keys para mag-sign."
+        }
+      },
+      "mock_back": {
+        "title": "SECURED ANG SYSTEM",
+        "network_label": "Network",
+        "network_status": "Konektado",
+        "firewall_label": "Firewall",
+        "firewall_status": "Aktibo"
+      },
+      "mock_front": {
+        "title": "SECURE VAULT",
+        "subtitle": "NA-VERIFY ANG DEVICE",
+        "encryption_title": "Encryption",
+        "encryption_desc": "Naka-encrypt ang local keys",
+        "network_title": "Status ng network",
+        "network_desc": "Handa ang multi-chain"
+      }
+    },
+    "Cta": {
+      "title": "I-download ang Lenix Wallet",
+      "subtitle": "Gumawa o mag-import ng wallet sa loob ng ilang minuto. Parehong app para sa send, receive, swap, at loan — may Lenix recovery kapag kailangan mo.",
+      "btn_download": "I-download app"
+    }
+  }
+}

@@ -1,66 +1,71 @@
 "use client";
 
 import { TrendingUp, ArrowUpRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Badge } from "@/components/ui/badge";
 
 const MOCK_ASSETS = [
-   { symbol: "BTC", name: "Bitcoin", price: "$64,230.15", change: "+1.2%" },
-   { symbol: "ETH", name: "Ethereum", price: "$3,450.80", change: "+0.8%" },
-   { symbol: "SOL", name: "Solana", price: "$145.20", change: "+4.5%" },
+  { symbol: "BTC", nameKey: "BTC" as const, price: "$64,230.15", change: "+1.2%" },
+  { symbol: "ETH", nameKey: "ETH" as const, price: "$3,450.80", change: "+0.8%" },
+  { symbol: "SOL", nameKey: "SOL" as const, price: "$145.20", change: "+4.5%" },
 ];
 
 export function MarketRates({ loanTypes }: { loanTypes: any[] }) {
-   return (
-      <div className="space-y-6">
-         {/* Live Rates */}
-         <div className="bg-zinc-900 border border-white/5 rounded-2xl p-5">
-            <h3 className="text-sm font-medium text-zinc-400 mb-4 flex items-center gap-2">
-               <TrendingUp className="w-4 h-4 text-emerald-400" /> Live Rates
-            </h3>
-            <div className="space-y-4">
-               {MOCK_ASSETS.map((asset) => (
-                  <div key={asset.symbol} className="flex items-center justify-between">
-                     <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-xs font-bold text-white">
-                           {asset.symbol[0]}
-                        </div>
-                        <div>
-                           <p className="text-sm font-bold text-white">{asset.symbol}</p>
-                           <p className="text-[10px] text-zinc-500">{asset.name}</p>
-                        </div>
-                     </div>
-                     <div className="text-right">
-                        <p className="text-sm font-bold text-white">{asset.price}</p>
-                        <p className="text-[10px] text-emerald-400">{asset.change}</p>
-                     </div>
-                  </div>
-               ))}
-            </div>
-         </div>
+  const t = useTranslations("AccountCryptoLoan.market_rates");
+  const tAssets = useTranslations("AccountCryptoLoan.collateral_assets");
 
-         {/* Loan Offers */}
-         <div className="bg-zinc-900 border border-white/5 rounded-2xl p-5">
-            <h3 className="text-sm font-medium text-zinc-400 mb-4">Available Plans</h3>
-            <div className="space-y-3">
-               {loanTypes.map((type) => (
-                  <div key={type.id} className="p-3 rounded-xl bg-white/5 border border-white/5 hover:border-white/10 transition-colors">
-                     <div className="flex justify-between items-start mb-2">
-                        <span className="text-sm font-bold text-white">{type.name}</span>
-                        <Badge variant="outline" className="text-[10px] border-yellow-400/20 text-yellow-400">
-                           {type.ltv}% LTV
-                        </Badge>
-                     </div>
-                     <div className="flex justify-between items-end">
-                        <div>
-                           <p className="text-[10px] text-zinc-500">Interest Rate</p>
-                           <p className="text-lg font-bold text-emerald-400">{type.interest_rate}%</p>
-                        </div>
-                        <ArrowUpRight className="w-4 h-4 text-zinc-600" />
-                     </div>
-                  </div>
-               ))}
+  return (
+    <div className="space-y-6">
+      <div className="rounded-2xl border border-white/5 bg-zinc-900 p-5">
+        <h3 className="mb-4 flex items-center gap-2 text-sm font-medium text-zinc-400">
+          <TrendingUp className="h-4 w-4 text-emerald-400" /> {t("live_rates")}
+        </h3>
+        <div className="space-y-4">
+          {MOCK_ASSETS.map((asset) => (
+            <div key={asset.symbol} className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white/5 text-xs font-bold text-white">
+                  {asset.symbol[0]}
+                </div>
+                <div>
+                  <p className="text-sm font-bold text-white">{asset.symbol}</p>
+                  <p className="text-[10px] text-zinc-500">{tAssets(asset.nameKey)}</p>
+                </div>
+              </div>
+              <div className="text-right">
+                <p className="text-sm font-bold text-white">{asset.price}</p>
+                <p className="text-[10px] text-emerald-400">{asset.change}</p>
+              </div>
             </div>
-         </div>
+          ))}
+        </div>
       </div>
-   )
+
+      <div className="rounded-2xl border border-white/5 bg-zinc-900 p-5">
+        <h3 className="mb-4 text-sm font-medium text-zinc-400">{t("available_plans")}</h3>
+        <div className="space-y-3">
+          {loanTypes.map((type) => (
+            <div
+              key={type.id}
+              className="rounded-xl border border-white/5 bg-white/5 p-3 transition-colors hover:border-white/10"
+            >
+              <div className="mb-2 flex items-start justify-between">
+                <span className="text-sm font-bold text-white">{type.name}</span>
+                <Badge variant="outline" className="border-yellow-400/20 text-[10px] text-yellow-400">
+                  {t("ltv", { ltv: type.ltv })}
+                </Badge>
+              </div>
+              <div className="flex items-end justify-between">
+                <div>
+                  <p className="text-[10px] text-zinc-500">{t("interest_rate")}</p>
+                  <p className="text-lg font-bold text-emerald-400">{type.interest_rate}%</p>
+                </div>
+                <ArrowUpRight className="h-4 w-4 text-zinc-600" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }

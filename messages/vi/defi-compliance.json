@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "title": "DeFi Compliance & AML | Lenix Protocol",
+    "description": "AML screening, counterparty diligence, and monitoring for DeFi protocols and crypto infrastructure teams — with configurable rules and documented scope."
+  },
+  "Hero": {
+    "badge": "DeFi compliance",
+    "title1": "AML and risk controls ",
+    "title2": "for decentralized finance",
+    "subtitle": "Screen wallets and flows, review protocol counterparties, and integrate compliance checks into your operations — without claiming DeFi can be made fully permissionless and regulation-free.",
+    "btn_primary": "Contact team",
+    "btn_secondary": "View capabilities"
+  },
+  "Overview": {
+    "title": "Compliance that fits how DeFi actually works",
+    "description": "Lenix helps protocol teams, treasuries, and infrastructure providers assess exposure across supported networks — pool interactions, bridge touchpoints, and wallet screening — with outputs your compliance function can audit, not opaque risk scores alone."
+  },
+  "Highlights": {
+    "items": {
+      "scale": {
+        "title": "Scale screening without losing review quality",
+        "desc": "Configurable rules and batch review help compliance teams focus on material exposure — not manual lookup for every wallet touch."
+      },
+      "cost": {
+        "title": "Integrate into existing workflows",
+        "desc": "API and export options fit internal queues and case tools so screening does not sit in a separate silo."
+      },
+      "coverage": {
+        "title": "Cross-chain context where supported",
+        "desc": "Review activity across networks and token types your program covers — with limits stated when a chain or asset is outside scope."
+      },
+      "threats": {
+        "title": "Proactive counterparty review",
+        "desc": "Assess pools, routers, and wallet connections before treasury moves or partner onboarding — bounded to your policy definitions."
+      }
+    }
+  },
+  "Capabilities": {
+    "pillars": {
+      "coverage": {
+        "label": "Asset coverage",
+        "title": "Screen activity across supported chains",
+        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
+      },
+      "integration": {
+        "label": "API integration",
+        "title": "Bring screening into your stack",
+        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
+      },
+      "screening": {
+        "label": "Transaction screening",
+        "title": "Flag exposure before funds move",
+        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
+      },
+      "monitoring": {
+        "label": "Automated monitoring",
+        "title": "Watchlists for protocols and treasuries",
+        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
+      },
+      "onboarding": {
+        "label": "Counterparty onboarding",
+        "title": "Review partners before integration",
+        "body": "Screen liquidity providers, pool contracts, and wallet counterparties during onboarding — surfacing exposure across supported chains when your policy requires it."
+      },
+      "diligence": {
+        "label": "Protocol due diligence",
+        "title": "Map exposure across the ecosystem",
+        "body": "Analyze how a protocol connects to exchanges, bridges, and high-risk services in on-chain data — with written limits on what public ledgers can and cannot show about off-chain control."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Building compliance into a DeFi product?",
+    "description": "Share your protocol type, jurisdictions, and what you need to screen or monitor. We outline realistic integration scope before engagement.",
+    "btn_primary": "Contact team",
+    "btn_secondary": "Compliance investigations"
+  },
+  "Features": {
+    "pillars": {
+      "coverage": {
+        "label": "Asset and network coverage",
+        "title": "Screen activity across supported chains",
+        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
+      },
+      "integration": {
+        "label": "Workflow integration",
+        "title": "Bring screening into your stack",
+        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
+      },
+      "screening": {
+        "label": "Transaction screening",
+        "title": "Flag exposure before funds move",
+        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
+      },
+      "monitoring": {
+        "label": "Ongoing monitoring",
+        "title": "Watchlists for protocols and treasuries",
+        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
+      }
+    }
+  }
+}

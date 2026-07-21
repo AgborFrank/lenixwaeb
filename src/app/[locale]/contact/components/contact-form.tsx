@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { Send, CheckCircle } from "lucide-react";
+import { CheckCircle, Loader2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { toast } from "sonner";
+import { home } from "@/lib/home-styles";
 
 interface FormData {
   name: string;
@@ -14,7 +16,24 @@ interface FormData {
   inquiryType: string;
 }
 
-export default function ContactForm() {
+interface ContactFormProps {
+  compact?: boolean;
+}
+
+const INQUIRY_KEYS = [
+  "general",
+  "recovery",
+  "crypto_loan",
+  "support",
+  "partnership",
+  "business",
+  "press",
+  "other",
+] as const;
+
+export default function ContactForm({ compact = false }: ContactFormProps) {
+  const t = useTranslations("Contact.Form");
+
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -29,14 +48,21 @@ export default function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [errors, setErrors] = useState<Partial<FormData>>({});
 
+  const labelClass = "block text-sm font-medium text-neutral-300 mb-1.5";
+
+  const fieldClass = (hasError: boolean) =>
+    `h-11 w-full rounded-md border bg-neutral-950 px-4 text-sm text-white placeholder:text-neutral-500 focus:outline-none focus:ring-2 focus:ring-yellow-400/40 focus:border-neutral-700 transition-colors ${
+      hasError ? "border-red-500/80" : "border-neutral-800"
+    }`;
+
+  const textareaClass = (hasError: boolean) =>
+    `${fieldClass(hasError)} min-h-[140px] py-3 h-auto resize-none`;
+
   const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
-    // Clear error when user starts typing
     if (errors[name as keyof FormData]) {
       setErrors((prev) => ({ ...prev, [name]: "" }));
     }
@@ -119,36 +145,35 @@ export default function ContactForm() {
     }
   };
 
+  const wrapperClass = `${home.card} ${home.cardBody}`;
+
   if (isSubmitted) {
     return (
-      <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8 text-center">
-        <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-          <CheckCircle className="w-8 h-8 text-white" />
+      <div className={`${wrapperClass} text-center`}>
+        <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-green-500/15 text-green-400">
+          <CheckCircle className="h-6 w-6" />
         </div>
-        <h3 className="text-2xl font-bold text-white mb-2">Message Sent!</h3>
-        <p className="text-gray-300 mb-6">
-          Thank you for reaching out. We&apos;ll get back to you within 24
-          hours.
-        </p>
-        <button
-          onClick={() => setIsSubmitted(false)}
-          className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
-        >
-          Send Another Message
+        <h3 className="text-lg font-semibold text-white mb-2">{t("success_title")}</h3>
+        <p className="text-sm text-neutral-400 mb-6">{t("success_description")}</p>
+        <button type="button" onClick={() => setIsSubmitted(false)} className={home.btnSecondary}>
+          {t("success_cta")}
         </button>
       </div>
     );
   }
 
   return (
-    <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-8">
-      <h2 className="text-3xl font-bold text-white mb-6">Send us a Message</h2>
+    <div className={wrapperClass}>
+      <div className="mb-6">
+        <h2 className="text-lg font-semibold text-white">{t("title")}</h2>
+        <p className="mt-1.5 text-sm text-neutral-500">{t("subtitle")}</p>
+      </div>
 
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="grid md:grid-cols-2 gap-6">
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="grid sm:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="name" className="block text-white font-medium mb-2">
-              Full Name *
+            <label htmlFor="name" className={labelClass}>
+              {t("name")}
             </label>
             <input
               type="text"
@@ -156,22 +181,15 @@ export default function ContactForm() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className={`w-full px-4 py-3 bg-gray-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 ${
-                errors.name ? "border-red-500" : "border-gray-600"
-              }`}
-              placeholder="Enter your full name"
+              className={fieldClass(Boolean(errors.name))}
+              placeholder={t("placeholder_name")}
             />
-            {errors.name && (
-              <p className="text-red-400 text-sm mt-1">{errors.name}</p>
-            )}
+            {errors.name ? <p className="text-red-400 text-xs mt-1">{errors.name}</p> : null}
           </div>
 
           <div>
-            <label
-              htmlFor="email"
-              className="block text-white font-medium mb-2"
-            >
-              Email Address *
+            <label htmlFor="email" className={labelClass}>
+              {t("email")}
             </label>
             <input
               type="email"
@@ -179,82 +197,70 @@ export default function ContactForm() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className={`w-full px-4 py-3 bg-gray-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 ${
-                errors.email ? "border-red-500" : "border-gray-600"
-              }`}
-              placeholder="Enter your email address"
+              className={fieldClass(Boolean(errors.email))}
+              placeholder={t("placeholder_email")}
             />
-            {errors.email && (
-              <p className="text-red-400 text-sm mt-1">{errors.email}</p>
-            )}
+            {errors.email ? <p className="text-red-400 text-xs mt-1">{errors.email}</p> : null}
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          <div>
-            <label htmlFor="phone" className="block text-white font-medium mb-2">
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-              placeholder="+1 234 567 8900"
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="whatsappOrTelegram"
-              className="block text-white font-medium mb-2"
-            >
-              WhatsApp or Telegram
-            </label>
-            <input
-              type="text"
-              id="whatsappOrTelegram"
-              name="whatsappOrTelegram"
-              value={formData.whatsappOrTelegram}
-              onChange={handleChange}
-              className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-              placeholder="@username or +1234567890"
-            />
-          </div>
-        </div>
+        {!compact ? (
+          <>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="phone" className={labelClass}>
+                  {t("phone")}
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className={fieldClass(false)}
+                  placeholder={t("placeholder_phone")}
+                />
+              </div>
+              <div>
+                <label htmlFor="whatsappOrTelegram" className={labelClass}>
+                  {t("whatsapp")}
+                </label>
+                <input
+                  type="text"
+                  id="whatsappOrTelegram"
+                  name="whatsappOrTelegram"
+                  value={formData.whatsappOrTelegram}
+                  onChange={handleChange}
+                  className={fieldClass(false)}
+                  placeholder={t("placeholder_whatsapp")}
+                />
+              </div>
+            </div>
 
-        <div>
-          <label
-            htmlFor="inquiryType"
-            className="block text-white font-medium mb-2"
-          >
-            Inquiry Type
-          </label>
-          <select
-            id="inquiryType"
-            name="inquiryType"
-            value={formData.inquiryType}
-            onChange={handleChange}
-            className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-yellow-400"
-          >
-            <option value="general">General Inquiry</option>
-            <option value="recovery">Recovery Services</option>
-            <option value="crypto_loan">Crypto Loan Services</option>
-            <option value="support">Technical Support</option>
-            <option value="partnership">Partnership</option>
-            <option value="business">Business Development</option>
-            <option value="press">Press & Media</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
+            <div>
+              <label htmlFor="inquiryType" className={labelClass}>
+                {t("inquiry_type")}
+              </label>
+              <select
+                id="inquiryType"
+                name="inquiryType"
+                value={formData.inquiryType}
+                onChange={handleChange}
+                className={fieldClass(false)}
+              >
+                {INQUIRY_KEYS.map((key) => (
+                  <option key={key} value={key}>
+                    {t(`inquiry_options.${key}`)}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </>
+        ) : null}
 
         <div>
-          <label
-            htmlFor="subject"
-            className="block text-white font-medium mb-2"
-          >
-            Subject *
+          <label htmlFor="subject" className={labelClass}>
+            {t("subject")}
           </label>
           <input
             type="text"
@@ -262,54 +268,42 @@ export default function ContactForm() {
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className={`w-full px-4 py-3 bg-gray-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 ${
-              errors.subject ? "border-red-500" : "border-gray-600"
-            }`}
-            placeholder="Enter subject"
+            className={fieldClass(Boolean(errors.subject))}
+            placeholder={t("placeholder_subject")}
           />
-          {errors.subject && (
-            <p className="text-red-400 text-sm mt-1">{errors.subject}</p>
-          )}
+          {errors.subject ? <p className="text-red-400 text-xs mt-1">{errors.subject}</p> : null}
         </div>
 
         <div>
-          <label
-            htmlFor="message"
-            className="block text-white font-medium mb-2"
-          >
-            Message *
+          <label htmlFor="message" className={labelClass}>
+            {t("message")}
           </label>
           <textarea
             id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
-            rows={6}
-            className={`w-full px-4 py-3 bg-gray-700 border rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none ${
-              errors.message ? "border-red-500" : "border-gray-600"
-            }`}
-            placeholder="Tell us how we can help you..."
+            rows={compact ? 5 : 6}
+            className={textareaClass(Boolean(errors.message))}
+            placeholder={t("placeholder_message")}
           />
-          {errors.message && (
-            <p className="text-red-400 text-sm mt-1">{errors.message}</p>
-          )}
+          {errors.message ? <p className="text-red-400 text-xs mt-1">{errors.message}</p> : null}
         </div>
+
+        <p className="text-xs text-neutral-500 leading-relaxed">{t("privacy")}</p>
 
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-yellow-400 text-black py-3 px-6 rounded-lg font-semibold hover:bg-yellow-300 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+          className={`${home.btnPrimary} w-full gap-2 disabled:opacity-50 disabled:cursor-not-allowed`}
         >
           {isSubmitting ? (
             <>
-              <div className="w-5 h-5 border-2 border-black border-t-transparent rounded-full animate-spin"></div>
-              <span>Sending...</span>
+              <Loader2 className="h-4 w-4 animate-spin" />
+              <span>{t("sending")}</span>
             </>
           ) : (
-            <>
-              <Send className="w-5 h-5" />
-              <span>Send Message</span>
-            </>
+            <span>{t("submit")}</span>
           )}
         </button>
       </form>

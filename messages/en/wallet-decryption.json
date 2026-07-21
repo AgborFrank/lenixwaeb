@@ -1,37 +1,116 @@
 {
+  "meta": {
+    "title": "Wallet Access Recovery | Lenix Protocol",
+    "description": "Recover access to software and hardware wallets when passwords are lost or files are damaged. Viability assessed first. You keep control of your assets."
+  },
   "Hero": {
-    "badge": "Crypto Wallet Decryption Services",
-    "title1": "Cryptocurrency Wallet Unlocking Services",
-    "subtitle1": "Digital Currency Wallet Decryption Services",
-    "desc1": "In the rapidly evolving world of cryptocurrency, securing access to your assets is paramount. Lenix Protocol’s Crypto Wallet Decryption Services provide crucial support for individuals and organizations that have lost access to their cryptocurrency wallets.",
-    "desc2": "Whether due to forgotten passwords, lost access keys, or corrupt wallet files, our team of forensic experts specializes in recovering and decrypting your digital currency safely and securely.",
-    "btn_consultation": "Request a Consultation Today"
+    "eyebrow": "Wallet access recovery",
+    "title1": "Regain access to wallets ",
+    "title2": "you already own",
+    "subtitle": "Forgotten passwords, corrupted wallet files, and partial backups — not exchange login resets or wallets belonging to someone else. We assess whether recovery is realistic before paid work begins.",
+    "btn_primary": "Request assessment",
+    "btn_secondary": "Contact team"
   },
-  "Approach": {
-    "title": "Our Approach to Wallet Decryption",
-    "card1_title": "Initial Consultation and Risk Assessment",
-    "card1_desc": "Understanding the specifics of your situation to provide a tailored recovery strategy.",
-    "card2_title": "Advanced Decryption Techniques",
-    "card2_desc": "Utilizing cutting-edge technology and proprietary methodologies to attempt recovery of passwords and encryption keys.",
-    "card3_title": "Native In-House Handling",
-    "card3_desc": "Ensuring the integrity and security of your data throughout the decryption process."
+  "Audiences": {
+    "eyebrow": "Who this is for",
+    "title": "Common situations we review",
+    "description": "Most clients still have a wallet file, device, or backup fragment. They lost the password, PIN path, or readable seed — not the underlying ownership.",
+    "cards": {
+      "password": {
+        "title": "Forgotten wallet password",
+        "desc": "Software wallets such as MetaMask keystores, Electrum, or Bitcoin Core where the file exists but the encryption password is lost."
+      },
+      "file": {
+        "title": "Damaged or partial files",
+        "desc": "Corrupted wallet.dat files, incomplete backups, or metadata recovered from an old device that may still hold the key material."
+      },
+      "estate": {
+        "title": "Estate and legal matters",
+        "desc": "Executors, trustees, or counsel who need documented access paths for a deceased or incapacitated holder's wallet — with proper authorization."
+      },
+      "treasury": {
+        "title": "Operational wallet lockout",
+        "desc": "Teams that lost credentials to a treasury or operations wallet and need a controlled recovery process with audit-friendly handling."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Why Choose Lenix Protocol for Crypto Wallet Recovery?",
-    "desc": "The Lenix Protocol expert team is your go-to solution for Crypto Wallet Decryption Services. We bring specialized methodology and a proven track record to every recovery engagement.",
-    "point1_title": "Expertise in Cryptocurrency Security",
-    "point1_desc": "Deep understanding of blockchain technology and wallet architectures.",
-    "point2_title": "Confidential and Ethical Service",
-    "point2_desc": "All operations are performed with the highest regard for privacy and legality by individuals who have held Secret and above clearances and academic experts.",
-    "point3_title": "Success Rate",
-    "point3_desc": "Proven track record of recovering access to encrypted wallets for clients worldwide."
+  "Boundaries": {
+    "eyebrow": "Scope and limits",
+    "title1": "What we do — ",
+    "title2": "and what we refuse",
+    "subtitle": "Wallet recovery is a common scam category. Lenix only takes cases with clear ownership, documented authorization, and a technical path worth attempting.",
+    "items": {
+      "ownership": {
+        "title": "Provable ownership required",
+        "desc": "We work on wallets you own or are legally authorized to recover — not third-party addresses or credentials obtained without consent."
+      },
+      "assessment": {
+        "title": "Viability before fees",
+        "desc": "We review wallet type, backup state, and password hints before scoping paid decryption work. Hopeless cases are declined early."
+      },
+      "no_custody": {
+        "title": "You move the assets",
+        "desc": "When access is restored, you transfer funds yourself. Lenix does not take custody of recovered cryptocurrency."
+      },
+      "no_scam": {
+        "title": "No remote-access tricks",
+        "desc": "We do not ask for screen sharing, verification deposits, or advance unlock fees — patterns used by fraudulent recovery sites."
+      },
+      "decline": {
+        "title": "Cases we usually decline",
+        "desc": "Public address only, wallet files bought online, or hardware wallets with lost PIN and no backup are typically not recoverable."
+      },
+      "confidential": {
+        "title": "Controlled handling",
+        "desc": "Wallet materials are processed in a defined chain of custody with access controls — not passed through informal channels."
+      }
+    }
   },
-  "CTA": {
-    "title": "Contact us",
-    "title_highlight": "today",
-    "desc_part1": "Contact us today at",
-    "desc_part2": "to learn more about how Lenix Protocol can assist with Crypto Wallet Decryption.",
-    "email_label": "Email Our Team",
-    "phone_label": "Call Our Office"
+  "Process": {
+    "eyebrow": "How it works",
+    "title": "From assessment to access",
+    "description": "A structured path designed for holders and authorized representatives — not open-ended brute-force promises.",
+    "step_label": "Step {number}",
+    "steps": {
+      "submit": {
+        "title": "Submit case details",
+        "desc": "Wallet type, what backup material exists, and any password hints or patterns you remember. Initial viability review is part of intake."
+      },
+      "scope": {
+        "title": "Scope and feasibility",
+        "desc": "We tell you plainly if decryption is worth attempting, expected effort, and fees — before you commit to paid work."
+      },
+      "recover": {
+        "title": "Controlled recovery",
+        "desc": "If engaged, decryption runs in a controlled environment. You regain access and move assets on your own schedule."
+      }
+    },
+    "btn_primary": "Start assessment",
+    "btn_secondary": "Talk to team"
+  },
+  "Support": {
+    "eyebrow": "Technical coverage",
+    "title": "Wallet types we commonly see",
+    "description": "Coverage depends on file format, backup completeness, and encryption strength. Confirm yours during intake.",
+    "columns": {
+      "software": {
+        "title": "Software wallets",
+        "desc": "Bitcoin Core, Electrum, MetaMask JSON keystores, Exodus backups, and similar locally encrypted wallet files."
+      },
+      "hardware": {
+        "title": "Hardware devices",
+        "desc": "Select cases involving damaged Ledger or Trezor devices where chip data or backups may still yield a recovery path — not lost PIN with zero backup."
+      },
+      "formats": {
+        "title": "Legacy and custom",
+        "desc": "Older wallet.dat variants, BIP38-encrypted keys, and enterprise vault exports — assessed individually."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Have a wallet file but lost access?",
+    "subtitle": "Describe the wallet type and what backup material you still have. We will tell you if a recovery path exists before any paid engagement.",
+    "btn_primary": "Request assessment",
+    "btn_secondary": "Contact team"
   }
 }

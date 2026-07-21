@@ -1,8 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { TrendingUp, Users, Globe, Shield, Award, Zap } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { HomeSectionHeader } from "@/app/[locale]/components/home/home-section-header";
+import { home } from "@/lib/home-styles";
+
+const STAT_KEYS = ["cases", "jurisdictions", "assets", "loans", "uptime", "team"] as const;
 
 export default function CompanyStats() {
   const t = useTranslations("About.Stats");
@@ -51,171 +54,40 @@ export default function CompanyStats() {
     return () => clearInterval(timer);
   }, []);
 
+  const values: Record<(typeof STAT_KEYS)[number], string> = {
+    cases: `${counts.users.toLocaleString()}+`,
+    jurisdictions: `${counts.countries}+`,
+    assets: `$${counts.volume}M+`,
+    loans: `${counts.transactions.toLocaleString()}+`,
+    uptime: `${counts.uptime}%`,
+    team: `${counts.team}+`,
+  };
+
   return (
-    <section className="bg-gradient-to-r from-gray-900 to-black py-20 px-4">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            {t("title1")}
-            <span className="text-yellow-400">{t("title2")}</span>
-          </h2>
-          <p className="text-gray-300 text-xl max-w-3xl mx-auto">
-            {t("subtitle")}
-          </p>
+    <section className={`${home.section} ${home.sectionMuted}`}>
+      <div className={home.container}>
+        <HomeSectionHeader
+          align="center"
+          title={`${t("title1")}${t("title2")}`}
+          description={t("subtitle")}
+        />
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {STAT_KEYS.map((id) => (
+            <article key={id} className={`${home.card} ${home.cardBody}`}>
+              <p className="text-3xl font-semibold text-white mb-2">{values[id]}</p>
+              <h3 className="text-sm font-semibold text-white mb-1">{t(`cards.${id}.title`)}</h3>
+              <p className="text-xs text-neutral-500 mb-2">{t(`cards.${id}.subtitle`)}</p>
+              <p className="text-sm text-neutral-400 leading-relaxed">{t(`cards.${id}.desc`)}</p>
+            </article>
+          ))}
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Active Users */}
-          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Users className="w-6 h-6 text-black" />
-              </div>
-              <div>
-                <h3 className="text-white text-lg font-semibold">
-                  {t("cards.cases.title")}
-                </h3>
-                <p className="text-gray-400 text-sm">{t("cards.cases.subtitle")}</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
-                {counts.users.toLocaleString()}+
-              </div>
-              <p className="text-gray-300 text-sm">{t("cards.cases.desc")}</p>
-            </div>
-          </div>
-
-          {/* Countries Served */}
-          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Globe className="w-6 h-6 text-black" />
-              </div>
-              <div>
-                <h3 className="text-white text-lg font-semibold">
-                  {t("cards.jurisdictions.title")}
-                </h3>
-                <p className="text-gray-400 text-sm">{t("cards.jurisdictions.subtitle")}</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
-                {counts.countries}+
-              </div>
-              <p className="text-gray-300 text-sm">{t("cards.jurisdictions.desc")}</p>
-            </div>
-          </div>
-
-          {/* Transaction Volume */}
-          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                <TrendingUp className="w-6 h-6 text-black" />
-              </div>
-              <div>
-                <h3 className="text-white text-lg font-semibold">
-                  {t("cards.assets.title")}
-                </h3>
-                <p className="text-gray-400 text-sm">{t("cards.assets.subtitle")}</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
-                ${counts.volume}M+
-              </div>
-              <p className="text-gray-300 text-sm">{t("cards.assets.desc")}</p>
-            </div>
-          </div>
-
-          {/* Total Transactions */}
-          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Zap className="w-6 h-6 text-black" />
-              </div>
-              <div>
-                <h3 className="text-white text-lg font-semibold">
-                  {t("cards.loans.title")}
-                </h3>
-                <p className="text-gray-400 text-sm">{t("cards.loans.subtitle")}</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
-                {counts.transactions.toLocaleString()}+
-              </div>
-              <p className="text-gray-300 text-sm">{t("cards.loans.desc")}</p>
-            </div>
-          </div>
-
-          {/* Platform Uptime */}
-          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Shield className="w-6 h-6 text-black" />
-              </div>
-              <div>
-                <h3 className="text-white text-lg font-semibold">
-                  {t("cards.uptime.title")}
-                </h3>
-                <p className="text-gray-400 text-sm">{t("cards.uptime.subtitle")}</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
-                {counts.uptime}%
-              </div>
-              <p className="text-gray-300 text-sm">
-                {t("cards.uptime.desc")}
-              </p>
-            </div>
-          </div>
-
-          {/* Team Size */}
-          <div className="bg-black rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Award className="w-6 h-6 text-black" />
-              </div>
-              <div>
-                <h3 className="text-white text-lg font-semibold">
-                  {t("cards.team.title")}
-                </h3>
-                <p className="text-gray-400 text-sm">{t("cards.team.subtitle")}</p>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <div className="text-3xl lg:text-4xl font-bold text-yellow-400">
-                {counts.team}+
-              </div>
-              <p className="text-gray-300 text-sm">{t("cards.team.desc")}</p>
-            </div>
-          </div>
-        </div>
-
-        {/* Additional Stats */}
-        <div className="mt-20 flex flex-wrap justify-center gap-8 lg:gap-16 pt-12 border-t border-black">
-          <div className="text-center">
-            <div className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-bold no-wrap">
-              {t("footer.support")}
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-bold no-wrap">
-              {t("footer.experience")}
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-bold no-wrap">
-              {t("footer.compliant")}
-            </div>
-          </div>
-          <div className="text-center">
-            <div className="text-gray-400 text-sm uppercase tracking-widest mb-2 font-bold no-wrap">
-              {t("footer.offices")}
-            </div>
-          </div>
+        <div className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-neutral-500">
+          <span>{t("footer.support")}</span>
+          <span>{t("footer.experience")}</span>
+          <span>{t("footer.compliant")}</span>
+          <span>{t("footer.offices")}</span>
         </div>
       </div>
     </section>

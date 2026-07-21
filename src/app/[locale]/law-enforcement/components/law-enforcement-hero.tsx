@@ -1,61 +1,59 @@
-"use client";
-
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { home } from "@/lib/home-styles";
 
-export default function LawEnforcementHero() {
+export default async function LawEnforcementHero() {
+  const t = await getTranslations("LawEnforcement.Hero");
+
   return (
     <section className="relative pt-32 pb-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/assets/img/bg-4.png')",
-            opacity: 0.35,
-          }}
+        <Image
+          src="/assets/img/bg-4.png"
+          alt=""
+          fill
+          className="object-cover opacity-35"
+          priority
         />
+        <div className="absolute inset-0 bg-black/60" />
       </div>
-      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl opacity-50 z-0" />
-      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl opacity-30" />
+      <div className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-yellow-500/10 rounded-full blur-3xl opacity-50 z-0 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl opacity-30 pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex">
-        <div className="md:w-2/3 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row justify-between gap-12 items-center">
+        <div className="md:w-1/2 w-full">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-400/10 border border-yellow-400/20 mb-6">
             <div className="w-1.5 h-1.5 rounded-full bg-yellow-400 animate-pulse" />
             <span className="text-xs font-medium text-yellow-400 uppercase tracking-wider">
-              Law Enforcement
+              {t("badge")}
             </span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-white to-zinc-500 mb-6 md:leading-16 leading-12">
-            Blockchain Intelligence for{" "}
-            <span className="text-yellow-400">Law Enforcement</span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-white tracking-tight leading-tight mb-6">
+            {t("title1")}
+            {t("title2")}
           </h1>
-          <p className="text-xl text-zinc-400 mb-8 leading-relaxed max-w-2xl">
-            Solve more crime than you could before with the industry&apos;s highest
-            quality blockchain intelligence and most powerful investigation tools,
-            making it quicker and easier to detect increasingly complex types of
-            illicit crypto activity.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link href="/contact">
-              <Button
-                size="lg"
-                className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold h-14 px-8 rounded-full"
-              >
-                Get started <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+          <p className="text-lg text-zinc-400 mb-8 leading-relaxed max-w-2xl">{t("subtitle")}</p>
+          <div className="flex flex-wrap gap-3">
+            <Link href="/contact" className={`${home.btnPrimary} h-12 px-8 gap-2`}>
+              {t("btn_primary")}
+              <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="#capabilities">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/10 text-white hover:bg-white/5 h-14 px-8 rounded-full"
-              >
-                Explore Capabilities
-              </Button>
-            </Link>
+            <a href="#capabilities" className={`${home.btnSecondary} h-12 px-8`}>
+              {t("btn_secondary")}
+            </a>
           </div>
+        </div>
+        <div className="md:w-1/2 w-full flex justify-center md:justify-end">
+          <Image
+            src="/assets/img/police.png"
+            alt=""
+            width={500}
+            height={500}
+            className="max-w-full h-auto"
+            priority
+          />
         </div>
       </div>
     </section>

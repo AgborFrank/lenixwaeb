@@ -1,27 +1,30 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { ThreatIntelligenceContent } from "./components/threat-intelligence-content";
+import ThreatIntelligenceHero from "./components/threat-intelligence-hero";
+import ThreatIntelligenceMission from "./components/threat-intelligence-mission";
+import ThreatIntelligenceCapabilities from "./components/threat-intelligence-capabilities";
+import ThreatIntelligenceCta from "./components/threat-intelligence-cta";
 
-export const metadata: Metadata = {
-  title: "Threat Intelligence & Blockchain Intelligence | Lenix Protocol",
-  description:
-    "Blockchain intelligence for national security and law enforcement. Close critical gaps, power investigations, and strengthen mission outcomes with high-fidelity blockchain data.",
-  keywords: [
-    "Threat Intelligence",
-    "Blockchain Intelligence",
-    "Law Enforcement",
-    "National Security",
-    "Crypto Investigations",
-    "Asset Tracing",
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("ThreatIntelligence.meta");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function ThreatIntelligencePage() {
   return (
     <>
       <Header />
-      <ThreatIntelligenceContent />
+      <div className="min-h-screen bg-black text-white selection:bg-yellow-400/30">
+        <ThreatIntelligenceHero />
+        <ThreatIntelligenceMission />
+        <ThreatIntelligenceCapabilities />
+        <ThreatIntelligenceCta />
+      </div>
       <Footer />
     </>
   );

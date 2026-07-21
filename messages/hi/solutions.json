@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "समाधान",
+    "title1": "रिकवरी, सेटलमेंट, lending ",
+    "title2": "और सुरक्षा इन्फ्रास्ट्रक्चर",
+    "title3": ".",
+    "subtitle1": "Lenix चोरी या गलत रूट की गई crypto का पता लगाता है, समर्थित corridors पर fiat में settle करता है, vault collateral पर loan देता है, और client assets रखने वाली teams के लिए monitoring चलाता है।",
+    "subtitle2": "हर workflow का अपना intake और deliverables है। Recovery में, paid engagement से पहले हम trail assess करते हैं — हम outcome का वादा नहीं करते।"
+  },
+  "Overview": {
+    "eyebrow": "कहाँ से शुरू करें",
+    "title": "समस्या को workflow से मिलाएँ",
+    "description": "ज़्यादातर visitors जानते हैं कि उन्हें tracing, payout, liquidity या operational controls चाहिए। summaries देखें, फिर सही section खोलें।",
+    "learn_more": "विवरण देखें",
+    "cards": {
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Funds चोरी, scam या गलत address पर गए। अगले कदम से पहले trace और documented evidence चाहिए।"
+      },
+      "payments": {
+        "title": "Cross-border payments",
+        "desc": "Treasury या finance को crypto से fiat conversion चाहिए — rates, fees और delivery status auditors को दिखाने योग्य।"
+      },
+      "lending": {
+        "title": "Crypto lending",
+        "desc": "Eligible collateral है और position बेचे बिना liquidity चाहिए।"
+      },
+      "security": {
+        "title": "Platform security",
+        "desc": "आपकी team client assets custody करती है — monitoring, access rules और written escalation path चाहिए।"
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Asset recovery",
+    "title": "पहले trace। तभी engage जब रास्ता हो।",
+    "description": "Wallet addresses, transaction hashes और short timeline भेजें। हम value कहाँ गई, यह follow करते हैं; exchanges और counsel के लिए findings तैयार करते हैं; paid engagement से पहले साफ बताते हैं recovery realistic है या नहीं। हम recovery का वादा नहीं करते।",
+    "points": {
+      "chains": "Major EVM networks, Bitcoin और theft cases में common stablecoins पर tracing",
+      "evidence": "Exchange compliance desks, counsel और law enforcement के लिए formatted documentation",
+      "terms": "Scope और fees केवल free recoverability review के बाद तय"
+    },
+    "cta": "केस शुरू"
+  },
+  "Payments": {
+    "eyebrow": "Cross-border payments",
+    "title": "Settlement जो आपकी treasury audit कर सके",
+    "description": "जहाँ local banking rails slow, expensive या opaque हों, crypto को fiat में convert करें। Wallet initiation से beneficiary delivery तक rate, fee और status visible — finance और ops guess नहीं करते।",
+    "cta": "भुगतान विकल्प",
+    "capabilities": {
+      "corridors": {
+        "title": "Active corridors",
+        "desc": "आज supported markets में bank accounts पर payout। अगर आपका corridor listed नहीं, contact करें।"
+      },
+      "visibility": {
+        "title": "Handoff tracking",
+        "desc": "Flow के हर step पर status — context के बिना single pending flag नहीं।"
+      },
+      "compliance": {
+        "title": "Sanctions और AML screening",
+        "desc": "Funds release से पहले inbound और outbound flows screened।"
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Crypto lending",
+    "title": "Collateral vault में रहे, liquidity मिले",
+    "description": "Approved collateral post करें, stablecoins या fiat draw करें। Disbursement से पहले LTV, repayment terms और liquidation thresholds दिखते हैं — sign के बाद hidden triggers नहीं।",
+    "points": {
+      "credit": "Eligible collateral types के लिए traditional credit check नहीं",
+      "ltv": "LTV और repayment schedules पहले से तय",
+      "custody": "Loan term के दौरान collateral segregated vaults में"
+    },
+    "cta": "ऋण आवेदन"
+  },
+  "Security": {
+    "eyebrow": "Platform security",
+    "title": "Client assets custody करने वाली teams के controls",
+    "description": "Wallet monitoring, permissioned access और incident escalation — उन organizations के लिए जो suspicious activity को back-burner ticket नहीं मान सकते। Ops teams के लिए, slide-deck security नहीं।",
+    "cta": "सुरक्षा अवलोकन",
+    "pillars": {
+      "monitoring": {
+        "title": "Activity monitoring",
+        "desc": "Unusual outflows, new counterparties और policy के बाहर transfers पर alerts।"
+      },
+      "access": {
+        "title": "Access और audit trail",
+        "desc": "Role-based permissions — किसने क्या approve किया, कब, इसका record।"
+      },
+      "incident": {
+        "title": "Incident response",
+        "desc": "Written escalation steps जब activity को human review चाहिए।"
+      }
+    }
+  },
+  "Cta": {
+    "title": "कौन सा workflow apply होता है, पक्का नहीं?",
+    "description": "Situation बताएँ — lost funds, payout, loan या ops concern — हम सही intake पर route करेंगे।",
+    "btn_primary": "टीम से संपर्क",
+    "btn_secondary": "केस शुरू"
+  }
+}

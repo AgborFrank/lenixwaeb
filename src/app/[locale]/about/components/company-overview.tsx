@@ -1,130 +1,99 @@
 "use client";
 
-import { Shield, Zap, CheckCircle2, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
+import { HomeSectionHeader } from "@/app/[locale]/components/home/home-section-header";
+import { home } from "@/lib/home-styles";
 
 export default function CompanyOverview() {
   const t = useTranslations("About.Overview");
   const [activeTab, setActiveTab] = useState<"forensics" | "finance">("forensics");
 
+  const tabContent =
+    activeTab === "forensics"
+      ? {
+          image: "/assets/img/investigate.webp",
+          imageAlt: t("forensics.title"),
+          subtitle: t("forensics.subtitle"),
+          description: t("forensics.description"),
+          points: [
+            t("forensics.points.recovery"),
+            t("forensics.points.threat"),
+            t("forensics.points.audits"),
+          ],
+        }
+      : {
+          image: "/assets/img/scale.webp",
+          imageAlt: t("finance.title"),
+          subtitle: t("finance.subtitle"),
+          description: t("finance.description"),
+          points: [
+            t("finance.points.approval"),
+            t("finance.points.credit"),
+            t("finance.points.vaults"),
+          ],
+          cta: { href: "/crypto-loan" as const, label: t("finance.cta") },
+        };
+
   return (
-    <section className="bg-black">
-      {/* Header */}
-      <div className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-4xl md:text-6xl font-bold text-white mb-4">
-          {t("title")}
-        </h2>
-        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-          {t("badge")}
-        </p>
-      </div>
+    <section className={`${home.section} bg-black`}>
+      <div className={home.container}>
+        <HomeSectionHeader
+          align="center"
+          eyebrow={t("badge")}
+          title={t("title")}
+        />
 
-      {/* Tab switcher */}
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex border-b border-gray-800">
-          <button
-            type="button"
-            onClick={() => setActiveTab("forensics")}
-            className={`flex-1 md:flex-none px-8 py-4 font-semibold transition-colors ${
-              activeTab === "forensics"
-                ? "text-yellow-400 border-b-2 border-yellow-400 -mb-px"
-                : "text-gray-500 hover:text-gray-300"
-            }`}
-          >
-            <span className="flex items-center justify-center gap-2">
-            
-              {t("forensics.title")}
-            </span>
-          </button>
-          <button
-            type="button"
-            onClick={() => setActiveTab("finance")}
-            className={`flex-1 md:flex-none px-8 py-4 font-semibold transition-colors ${
-              activeTab === "finance"
-                ? "text-yellow-400 border-b-2 border-yellow-400 -mb-px"
-                : "text-gray-500 hover:text-gray-300"
-            }`}
-          >
-            <span className="flex items-center justify-center gap-2">
-              
-              {t("finance.title")}
-            </span>
-          </button>
+        <div className="flex gap-2 mb-10">
+          {(["forensics", "finance"] as const).map((tab) => (
+            <button
+              key={tab}
+              type="button"
+              onClick={() => setActiveTab(tab)}
+              className={`rounded-md px-4 py-2 text-sm font-medium transition-colors ${
+                activeTab === tab
+                  ? "bg-neutral-800 text-white"
+                  : "text-neutral-400 hover:text-white hover:bg-neutral-900"
+              }`}
+            >
+              {t(`${tab}.title`)}
+            </button>
+          ))}
         </div>
-      </div>
 
-      {/* Content - Full width split */}
-      <div className="max-w-7xl mx-auto px-4 py-12 md:py-20">
-        <div className="grid md:grid-cols-2 gap-0 md:gap-16 items-center">
-          {/* Image - shows for active tab */}
-          <div className="relative aspect-video md:aspect-[4/5] rounded-2xl overflow-hidden mb-8 md:mb-0">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className={`${home.card} relative aspect-[4/3]`}>
             <Image
-              src="/assets/img/investigate.webp"
-              alt=""
+              src={tabContent.image}
+              alt={tabContent.imageAlt}
               fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className={home.mediaImage}
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-black/40 md:bg-transparent md:bg-gradient-to-r md:from-black/80 md:via-black/40 md:to-transparent" />
           </div>
 
-          {/* Content panel */}
-          <div className="space-y-8">
-            {activeTab === "forensics" && (
-              <div>
-                <p className="text-yellow-400 font-semibold text-2xl md:text-6xl tracking-tighter mb-2">
-                  {t("forensics.subtitle")}
-                </p>
-                <p className="text-white text-lg leading-relaxed mb-8">
-                  {t("forensics.description")}
-                </p>
-                <ul className="space-y-4">
-                  {[
-                    t("forensics.points.recovery"),
-                    t("forensics.points.threat"),
-                    t("forensics.points.audits"),
-                  ].map((point) => (
-                    <li key={point} className="flex gap-4 text-gray-300">
-                      <CheckCircle2 className="w-6 h-6 shrink-0 text-yellow-400 mt-0.5" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {activeTab === "finance" && (
-              <div>
-                <p className="text-yellow-400 font-semibold text-2xl md:text-6xl tracking-tighter mb-2">
-                  {t("finance.subtitle")}
-                </p>
-                <p className="text-white text-lg leading-relaxed mb-8">
-                  {t("finance.description")}
-                </p>
-                <ul className="space-y-4 mb-10">
-                  {[
-                    t("finance.points.approval"),
-                    t("finance.points.credit"),
-                    t("finance.points.vaults"),
-                  ].map((point) => (
-                    <li key={point} className="flex gap-4 text-gray-300">
-                      <CheckCircle2 className="w-6 h-6 shrink-0 text-yellow-400 mt-0.5" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/crypto-loan"
-                  className="inline-flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg transition-colors"
+          <div>
+            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 leading-snug">
+              {tabContent.subtitle}
+            </h3>
+            <p className={`${home.lead} mb-8`}>{tabContent.description}</p>
+            <ul className="space-y-3 mb-8">
+              {tabContent.points.map((point) => (
+                <li
+                  key={point}
+                  className="border-l-2 border-yellow-400/80 pl-4 text-sm text-neutral-300 leading-relaxed"
                 >
-                  {t("finance.cta")}
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </div>
-            )}
+                  {point}
+                </li>
+              ))}
+            </ul>
+            {"cta" in tabContent && tabContent.cta ? (
+              <Link href={tabContent.cta.href} className={home.btnPrimary}>
+                {tabContent.cta.label}
+              </Link>
+            ) : null}
           </div>
         </div>
       </div>

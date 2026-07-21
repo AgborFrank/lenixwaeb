@@ -1,57 +1,53 @@
-import { Check } from "lucide-react";
+"use client";
+
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import { home } from "@/lib/home-styles";
 
 export default function Merchant() {
   const t = useTranslations("Home.Merchant");
+
   return (
-    <section className="bg-accept bg-black py-20 px-6" >
-      <div className="max-w-screen-xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left side - Interface mockup */}
-          <div className="relative">
-            <Image src="/assets/img/social.png" alt="Merchant" width={500} height={500} className="relative md:-bottom-20" />
+    <section className={`${home.section} ${home.sectionMuted}`}>
+      <div className={home.container}>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className={`${home.card} relative aspect-[4/3] lg:aspect-auto lg:min-h-[420px]`}>
+            <Image
+              src="/assets/img/BringDeFiIntelligence.webp"
+              alt={t("image_alt")}
+              fill
+              className={home.mediaImage}
+              sizes="(max-width: 1024px) 100vw, 560px"
+            />
           </div>
 
-          {/* Right side - Content */}
-          <div className="text-white">
-            <h2 className="text-5xl md:text-6xl font-bold mb-8 md:leading-14 font-onest">
-              {t("title1")}<span className="text-yellow-400">{t("title2")}</span>{t("title3")}
+          <div>
+            <h2 className={`${home.title} mb-6`}>
+              {t("title1")}
+              {t("title2")}
+              {t("title3")}
             </h2>
 
-            <div className="space-y-6 text-gray-300 text-sm leading-relaxed">
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
-                <p className="md:text-base text-sm">
-                  {t("point1")}
-                </p>
-              </div>
+            <ul className="space-y-4 mb-8 list-none p-0 m-0">
+              {[t("point1"), t("point2"), t("point3")].map((point) => (
+                <li key={point} className="flex gap-3 text-sm text-neutral-300 leading-relaxed">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-yellow-400" aria-hidden />
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
 
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
-                <p>
-                  {t("point2")}
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
-                <p className="md:text-base text-sm">
-                  {t("point3")}
-                </p>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="w-2 h-2 bg-yellow-400 rounded-full mt-3 flex-shrink-0"></div>
-                <p className="md:text-base text-sm">
-                  <Link href="/solutions" className="text-yellow-400 hover:underline">{t("point4_1")}</Link>
-                  {t("point4_2")}
-                  <Link href="/crypto-recovery" className="text-yellow-400 hover:underline">{t("point4_3")}</Link>
-                  {t("point4_4")}
-                </p>
-              </div>
-            </div>
+            <p className="text-sm text-neutral-400 leading-relaxed">
+              <Link href="/solutions" className={home.textLink}>
+                {t("point4_1")}
+              </Link>
+              {t("point4_2")}
+              <Link href="/crypto-recovery" className={home.textLink}>
+                {t("point4_3")}
+              </Link>
+              {t("point4_4")}
+            </p>
           </div>
         </div>
       </div>

@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Lenix Wallet | Multi-chain crypto wallet",
+    "description": "Non-custodial multi-chain wallet para magpadala, tumanggap, mag-swap, at collateral loan — naka-encrypt na local storage at daan sa Lenix recovery kung kailangan.",
+    "keywords": "Crypto wallet, Multi-chain wallet, Non-custodial wallet, Lenix Wallet, Crypto loan"
+  },
+  "Hero": {
+    "eyebrow_prefix": "Multi-chain ",
+    "eyebrow_highlight": "wallet",
+    "eyebrow_suffix": " sa Lenix",
+    "title_prefix": "Magpadala, mag-hold, at umutang — may ",
+    "title_highlight1": "recovery",
+    "title_mid": " kapag kailangan, mula sa isang ",
+    "title_highlight2": "app",
+    "subtitle": "Non-custodial wallet para sa araw-araw na crypto — naka-encrypt sa device mo, multi-chain by default, at konektado sa Lenix lending at recovery kapag hindi sapat ang karaniwang send.",
+    "btn_download": "I-download app",
+    "btn_learn": "Tingnan features",
+    "mock": {
+      "account": "Account 1",
+      "total_balance": "Kabuuang balanse",
+      "change_24h": "+2.4% (24o)",
+      "send": "Ipadala",
+      "receive": "Tanggapin",
+      "swap": "Mag-swap",
+      "loan": "Utang",
+      "tab_assets": "Mga asset",
+      "tab_history": "Kasaysayan"
+    }
+  },
+  "Features": {
+    "eyebrow": "MGA FEATURE",
+    "title": "Higit sa storage",
+    "cards": {
+      "encryption": {
+        "title": "Naka-encrypt sa device",
+        "desc": "Protektado ang keys ng wallet password at naka-store locally — hindi hawak ng Lenix ang seed phrase o signing keys mo."
+      },
+      "loans": {
+        "title": "Collateral loan",
+        "desc": "Humiram ng stablecoins laban sa supported assets nang hindi ibinebenta ang posisyon — ipinapakita ang terms at collateral ratio bago mag-confirm.",
+        "link": "View lending"
+      },
+      "recovery": {
+        "title": "Daan ng recovery",
+        "desc": "Kung nawala o ninakaw ang assets, magbukas ng recovery case mula sa Lenix ecosystem — tracing at exchange coordination kapag hindi sapat ang standard wallet flow.",
+        "link": "Start recovery"
+      },
+      "multichain": {
+        "title": "Multi-chain balances",
+        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+      },
+      "transfers": {
+        "title": "Send, receive, swap",
+        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+      },
+      "access": {
+        "title": "Web and mobile",
+        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+      }
+    },
+    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "groups": {
+      "wallet": {
+        "title": "In the wallet"
+      },
+      "platform": {
+        "title": "Through Lenix"
+      }
+    }
+  },
+  "Security": {
+    "title": "Built-in ang seguridad",
+    "points": {
+      "keys": {
+        "title": "Ikaw ang may keys",
+        "desc": "Non-custodial by design. Gumagalaw lang ang pondo kapag nag-sign ka — hindi maaaring i-freeze o i-redirect ng Lenix ang balanse ng wallet mo."
+      },
+      "storage": {
+        "title": "Naka-encrypt na local storage",
+        "desc": "Naka-encrypt ang wallet data sa device mo. I-unlock gamit ang password; i-back up ang recovery phrase offline."
+      },
+      "access": {
+        "title": "Unlock sa device level",
+        "desc": "Maglagay ng password sa setup at gumamit ng device biometrics kung suportado — dagdag na gate bago gamitin ang keys para mag-sign."
+      }
+    },
+    "mock_back": {
+      "title": "SECURED ANG SYSTEM",
+      "network_label": "Network",
+      "network_status": "Konektado",
+      "firewall_label": "Firewall",
+      "firewall_status": "Aktibo"
+    },
+    "mock_front": {
+      "title": "SECURE VAULT",
+      "subtitle": "NA-VERIFY ANG DEVICE",
+      "encryption_title": "Encryption",
+      "encryption_desc": "Naka-encrypt ang local keys",
+      "network_title": "Status ng network",
+      "network_desc": "Handa ang multi-chain"
+    }
+  },
+  "Cta": {
+    "title": "I-download ang Lenix Wallet",
+    "subtitle": "Gumawa o mag-import ng wallet sa loob ng ilang minuto. Parehong app para sa send, receive, swap, at loan — may Lenix recovery kapag kailangan mo.",
+    "btn_download": "I-download app",
+    "btn_web": "Open web wallet"
+  },
+  "Networks": {
+    "eyebrow": "Supported networks",
+    "title": "Live on three EVM chains today",
+    "description": "Native balances, ERC-20 tokens, and transaction history — filtered by network in the wallet.",
+    "chains": {
+      "ethereum": "Ethereum",
+      "bnb": "BNB Chain",
+      "polygon": "Polygon"
+    }
+  },
+  "GettingStarted": {
+    "eyebrow": "Getting started",
+    "title": "Up and running in three steps",
+    "step_label": "Step {number}",
+    "steps": {
+      "create": {
+        "title": "Create or import",
+        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+      },
+      "secure": {
+        "title": "Set password and backup",
+        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+      },
+      "use": {
+        "title": "Send, swap, or borrow",
+        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+      }
+    }
+  },
+  "Ecosystem": {
+    "eyebrow": "Lenix ecosystem",
+    "title": "Wallet connects to the rest of the platform",
+    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "cards": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Create, unlock, send, and receive.",
+        "cta": "Open wallet"
+      },
+      "loan": {
+        "title": "Crypto loan",
+        "desc": "Borrow against vaulted collateral.",
+        "cta": "View lending"
+      },
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Trace stolen or misdirected funds.",
+        "cta": "Start recovery"
+      },
+      "security": {
+        "title": "Security",
+        "desc": "Audits and operational controls.",
+        "cta": "Read security"
+      }
+    }
+  },
+  "Trust": {
+    "text": "Smart contract and operational security documentation is published on our Security page.",
+    "link": "View security"
+  }
+}

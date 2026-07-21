@@ -8,6 +8,26 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Allow external images from crypto icon sources
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.jsdelivr.net',
+        pathname: '/gh/Cryptofonts/cryptoicons@**/SVG/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+        pathname: '/Cryptofonts/cryptoicons/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.coingecko.com',
+        pathname: '/**',
+      },
+    ],
+  },
   // Fix COOP check / WalletConnect popup: allow same-origin popups
   async headers() {
     return [

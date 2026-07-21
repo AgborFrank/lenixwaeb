@@ -1,14 +1,15 @@
 {
   "Header": {
     "nav": {
-      "giveaway": "هدية 250K",
+      "giveaway": "المجتمع",
       "about": "حول",
       "solutions": "حلول",
       "blockchain_forensics": "تحقيقات",
       "asset_recovery": "استرجاع الأصول",
       "crypto_recovery": "استرجاع العملات",
       "contact": "تواصل",
-      "airdrop": "أيردروب"
+      "airdrop": "أيردروب",
+      "banking_finance": "Banking & Finance"
     },
     "solutions": {
       "wallet": {
@@ -30,6 +31,10 @@
       "enforcement": {
         "title": "إنفاذ القانون",
         "desc": "أدوات استخبارات للوكالات."
+      },
+      "banking_finance": {
+        "title": "Banking & Finance",
+        "desc": "Transfers, liquidation, lending, and custody."
       }
     },
     "user_menu": {
@@ -47,12 +52,12 @@
     },
     "buttons": {
       "log_in": "دخول",
-      "log_in_sign_up": "دخول / تسجيل",
-      "get_reward": "احصل على 50 USDT"
+      "log_in_sign_up": "دخول",
+      "get_reward": "الحساب"
     }
   },
   "Footer": {
-    "company_desc": "بروتوكول الجيل الأول للدفع المشفر واسترجاع الأصول. نستخدم الذكاء الاصطناعي لتعزيز الأمان.",
+    "company_desc": "التحقيق الجنائي في البلوكشين واسترداد الأصول والبنية التحتية المالية للعملات الرقمية. بروتوكول مدقق للتتبع والحفظ والمدفوعات عبر الحدود.",
     "headings": {
       "about": "حول",
       "solutions": "حلول",
@@ -77,10 +82,12 @@
       "privacy": "الخصوصية",
       "disclaimer": "إخلاء المسؤولية",
       "wallet_decryption": "فك تشفير المحفظة",
-      "crypto_asset_identification": "تحديد الأصول المشفرة"
+      "crypto_asset_identification": "تحديد الأصول المشفرة",
+      "security": "الأمان",
+      "banking_finance": "Banking & Finance"
     },
     "buttons": {
-      "recover_assets": "استرجاع الأصول"
+      "recover_assets": "استرداد"
     },
     "certification_desc": "حاصلون على شهادة ISO27001. ندير البيانات وفق أعلى المعايير الدولية.",
     "copyright": "© 2017 - 2026 بروتوكول لينكس، جميع الحقوق محفوظة."
@@ -106,55 +113,69 @@
   },
   "Home": {
     "Hero": {
-      "title1": "التحقيق الجنائي في ",
-      "title2": "البلوكشين",
-      "title3": "،\nبروتوكول استرداد الأصول الرقمية والأمان.",
-      "subtitle1": "تحليلات بلوكشين متقدمة وتحقيقات جنائية لتتبع الأصول، وكشف الاحتيال، ودعم جهود الاسترداد القانوني على مستوى العالم.",
-      "subtitle2": "أمّن مستقبلك الرقمي من خلال تحقيقات الخبراء.",
-      "btn_signup": "اشترك في Lenix",
-      "btn_login": "تسجيل الدخول",
-      "widget_title": "اشتري الآن",
-      "widget_subtitle": "قبل ارتفاع السعر",
-      "usd_raised": "إجمالي ما تم جمعه بالدولار الأمريكي:",
-      "tokens_sold": "التوكنات المباعة:",
-      "price_usd": "سعر الدولار: {price}$",
-      "price_eth": "سعر الإيثيريوم: {price} ETH",
-      "pay_eth": "ما ستدفعه بالإيثيريوم",
-      "pay_usdt": "ما ستدفعه بالـ USDT",
-      "pay_usd": "ما ستدفعه بالدولار",
-      "receive_lnx": "ما ستستلمه من $LNX",
-      "btn_processing": "جاري المعالجة...",
-      "btn_pay_eth": "ادفع بالإيثيريوم",
-      "btn_pay_usdt": "ادفع بالـ USDT",
-      "btn_pay_card": "أدخل تفاصيل البطاقة أدناه",
-      "card_info": "مدعوم من Stripe. يتم الخصم بالدولار الأمريكي.",
-      "btn_connect": "ربط المحفظة",
-      "btn_giveaway": "احصل على هدية 500 دولار",
-      "giveaway_info": "احصل على توكنات LNX بقيمة 500 دولار كهدية"
+      "slides": {
+        "recovery": {
+          "title1": "Blockchain forensics and recovery ",
+          "title2": "for stolen digital assets",
+          "title3": ".",
+          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
+          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
+          "btn_primary": "Start a recovery case",
+          "btn_secondary": "Contact our team"
+        },
+        "forensics": {
+          "title1": "Investigation-grade ",
+          "title2": "blockchain forensics",
+          "title3": ".",
+          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
+          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
+          "btn_primary": "View forensics",
+          "btn_secondary": "Contact our team"
+        },
+        "banking": {
+          "title1": "Cross-Border Financial Services, ",
+          "title2": "Payment and Remittance",
+          "title3": ".",
+          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
+          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
+          "btn_primary": "Create account",
+          "btn_secondary": "Banking & finance"
+        },
+        "settlement": {
+          "title1": "Crypto-to-fiat settlement ",
+          "title2": "your treasury can audit",
+          "title3": ".",
+          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
+          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
+          "btn_primary": "Open banking services",
+          "btn_secondary": "Contact our team"
+        }
+      },
+      "btn_login": "دخول"
     },
     "Pillars": {
-      "title1": "الأمن والاسترداد والتحقيق الجنائي والمالية ",
-      "title2": "في مكان واحد",
-      "subtitle": "اختر ما تحتاجه - كل ركيزة تربطك بحلول مخصصة.",
+      "title1": "بروتوكول واحد، ",
+      "title2": "أربعة مسارات عمل",
+      "subtitle": "اختر نقطة الدخول المناسبة لوضعك. لكل مسار أدوات مخصصة وخطوة تالية واضحة.",
       "cards": {
         "security": {
-          "title": "أمن البلوكشين",
-          "desc": "بنية تحتية مدققة وتقنية خزنة آمنة لحماية أصولك.",
-          "cta": "استكشف الأمن"
+          "title": "أمان البلوكشين",
+          "desc": "خزائن مدققة وحفظ متعدد التوقيع ومراقبة للفرق التي تحتاج أصولًا آمنة on-chain.",
+          "cta": "استكشف الأمان"
         },
         "recovery": {
           "title": "استرداد الأصول",
-          "desc": "بروتوكولات متخصصة ومسارات قانونية لاستعادة الكريبتو المفقود أو المسروق مع تحليل جنائي معتمد.",
-          "cta": "ابدأ الاسترداد"
+          "desc": "تتبع وتنسيق مع المنصات ومسارات قانونية عند فقدان العملات أو سرقتها أو تعطلها.",
+          "cta": "بدء الاسترداد"
         },
         "forensics": {
-          "title": "التحقيق الجنائي في البلوكشين",
-          "desc": "تحقيقات خبراء لتتبع الاحتيال والاختراقات وتقديم أدلة مقبولة في المحكمة للاسترداد القانوني.",
-          "cta": "تعرف على المزيد"
+          "title": "التحقيق الجنائي على البلوكشين",
+          "desc": "تحقيقات على مستوى المحفظة وخرائط للمعاملات لفرق الامتثال والمراجعة القانونية.",
+          "cta": "عرض الطب الشرعي"
         },
         "finance": {
-          "title": "بروتوكول الخدمات المالية",
-          "desc": "المدفوعات والإقراض والمحفظة والخزنة لنظام الكريبتو الحديث.",
+          "title": "الخدمات المالية",
+          "desc": "مدفوعات crypto-fiat وإقراض ومحفظة وخزائن لنقل وحفظ القيمة.",
           "cta": "عرض الحلول"
         }
       }
@@ -176,54 +197,56 @@
       "widget_wallet": "عنوان المحفظة",
       "widget_order": "الطلب",
       "widget_gas": "رسوم الغاز",
-      "btn_complete": "إكمال الدفع",
-      "btn_manual": "الدفع يدوياً",
-      "title1": "للشركات: اقبل الكريبتو، ",
-      "title2": "احمِه",
-      "title3": " في الخزنة، واستردّه إذا لزم الأمر.",
-      "point1": "اقبل الكريبتو وقم بالتسوية بالنقد. دفع سهل وواجهة برمجة تطبيقات (API) للتجار.",
-      "point2": "احتفظ بالعوائد في خزنتنا الآمنة مع ميزة التوقيع المتعدد والحفظ - بنية تحتية مدققة.",
-      "point3": "إذا فُقدت الأموال أو سُرقت، يمكن لفريقنا المساعدة في تتبعها واستعادتها من خلال قنوات الاسترداد والقنوات القانونية.",
+      "btn_complete": "إتمام الدفع",
+      "btn_manual": "دفع يدوي",
+      "title1": "بنية تجارية مع ",
+      "title2": "استرداد مدمج",
+      "title3": ".",
+      "point1": "اقبل العملات المشفرة وسوِّ بال fiat عبر checkout وواجهات التاجر.",
+      "point2": "وجّه العائدات عبر حفظ vault مدقق مع ضوابط multi-sig.",
+      "point3": "إذا حدث خطأ بعد التسوية، يدعم نفس البروتوكول التتبع ومسارات الاسترداد.",
       "point4_1": "استكشف الحلول",
       "point4_2": " أو ",
-      "point4_3": "ابدأ حالة استرداد",
-      "point4_4": "."
+      "point4_3": "بدء الاسترداد",
+      "point4_4": ".",
+      "mock_brand": "تاجر Lenix",
+      "image_alt": "لوحة عمليات التاجر والامتثال Lenix"
     },
     "Payment": {
-      "badge": "ماذا نقدم",
-      "title": "بروتوكول المدفوعات والخزنة والاسترداد والإقراض",
-      "subtitle": "منصة واحدة لكيفية نقل وحفظ واستعادة القيمة.",
+      "badge": "Protocol stack",
+      "title": "Move, hold, and recover value on one layer",
+      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
       "cards": {
         "fiat": {
-          "title": "من كريبتو إلى نقدي",
-          "desc": "أرسل الكريبتو وقم بالتسوية بالنقد عبر شبكات الدفع المحلية - عبر الحدود واستخدامات يومية."
+          "title": "Crypto-to-fiat",
+          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
         },
         "vault": {
-          "title": "الخزنة والحفظ",
-          "desc": "توقيع متعدد وحفظ آمن لتبقى أصولك محمية."
+          "title": "Vault and custody",
+          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
         },
         "recovery": {
-          "title": "الاسترداد والتحقيق الجنائي",
-          "desc": "عندما تسوء الأمور، نساعد في تتبع الأموال واستعادتها."
+          "title": "Recovery and forensics",
+          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
         },
         "lending": {
-          "title": "الإقراض",
-          "desc": "اقترض بضمان أصولك واحصل على السيولة عندما تحتاجها."
+          "title": "Lending",
+          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
         }
       },
-      "cta": "استكشف جميع الحلول"
+      "cta": "عرض الحلول"
     },
     "TokenDetails": {
-      "title1": "تفاصيل توكن ",
-      "title2": "بروتوكول Lenix",
-      "subtitle": "استخدم معلومات العقد أدناه لإضافة توكن Lenix Protocol إلى محفظتك.",
+      "title1": "Lenix Protocol",
+      "title2": " Token Details",
+      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
       "headers": {
-        "contract": "عنوان العقد",
-        "name": "اسم التوكن",
-        "symbol": "رمز التوكن",
-        "supply": "إجمالي المعروض",
-        "network": "الشبكة",
-        "decimals": "الكسور العشرية"
+        "contract": "Contract Address",
+        "name": "Token Name",
+        "symbol": "Token Symbol",
+        "supply": "Token Supply",
+        "network": "Network",
+        "decimals": "Decimals"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -231,35 +254,1158 @@
       }
     },
     "Credibility": {
-      "title1": "بروتوكول Lenix ",
-      "title2": "بالتفصيل",
-      "subtitle1": "مدقق بواسطة CertiK. بني بثقة.",
-      "subtitle2_1": "تغطي عمليات التدقيق لدينا المنصة بالكامل. اقرأ ",
+      "eyebrow": "التحقق",
+      "title1": "كود مدقق. ",
+      "title2": "ضوابط موثقة.",
+      "subtitle1": "عقود ذكية راجعتها CertiK وعمليات متوافقة مع ISO 27001 للفرق التي تحتاج أكثر من ادعاءات تسويقية.",
+      "subtitle2_1": "اقرأ ",
       "subtitle2_2": "الورقة البيضاء",
-      "subtitle2_3": " وتقرير CertiK للحصول على التفاصيل.",
-      "col1_text": "تم تدقيق بروتوكول Lenix بالكامل بواسطة CertiK، شركة أمن البلوكشين الرائدة في العالم.",
-      "col1_btn": "عرض تدقيق CertiK",
-      "col2_text": "اقرأ التقرير الكامل واستكشف ورقتنا البيضاء للحصول على نظرة أعمق في تقنيتنا واقتصاديات التوكن.",
+      "subtitle2_3": " ووثائق التدقيق للبنية وفائدة الرمز وضوابط الأمان.",
+      "col1_text": "راجعت CertiK عقود Lenix Protocol الذكية. يغطي التدقيق مكونات البروتوكول الأساسية في مسارات الإنتاج.",
+      "col1_btn": "وثائق الأمان",
+      "col2_text": "تشرح الورقة البيضاء كيف تتصل وحدات الاسترداد والحفظ والدفع—ومكان LNX في تصميم البروتوكول.",
       "col2_btn": "الورقة البيضاء"
     },
     "Competition": {
-      "title1": "ادخل مسابقتنا للحصول على فرصة لربح ",
-      "title2": "250 ألف دولار",
-      "subtitle": "ادخل مسابقة Lenix Protocol بقيمة 250,000 دولار! عشرة فائزين سيحصل كل منهم على 25,000 دولار من عملة LNX. عزز فرصك من خلال المشاركة وإكمال جميع المهام للحصول على مدخلات إضافية. لا تفوت هذه الفرصة - انضم الآن!",
-      "btn": "ادخل المسابقة الآن!"
+      "title1": "Community ",
+      "title2": "giveaway",
+      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "btn": "برنامج المجتمع"
     },
     "Features": {
       "wallet": "محفظة Lenix Protocol",
       "recipient": "أدخل المستلم",
       "bank_details": "تفاصيل الحساب البنكي",
       "iban": "IBAN",
-      "btn_connect": "ربط المحفظة والدفع",
-      "btn_manual": "الدفع يدويًا",
+      "btn_connect": "ربط المحفظة",
+      "btn_manual": "دفع يدوي",
       "title_small": "لماذا محفظة Lenix Protocol؟",
       "title_big": "ربط العملات المشفرة بشبكات الدفع المحلية عالميًا.",
       "desc1": "تعمل Lenix ProtocolPay على تمكين حاملي العملات المشفرة والشركات من تسهيل المعاملات من العملات المشفرة إلى العملات الورقية في جميع أنحاء العالم، من خلال الاستفادة من شبكات الدفع المحلية وتقنية البلوكشين.",
       "desc2": "أخيرًا، استمتع بـسرعة العملات المشفرة مع الراحة اليومية للمدفوعات بالعملات الورقية.",
       "btn_whitepaper": "الورقة البيضاء"
+    },
+    "LnxPurchaseWidget": {
+      "widget_title": "Buy LNX",
+      "widget_subtitle": "Protocol token sale",
+      "usd_raised": "USD raised so far:",
+      "tokens_sold": "Tokens sold:",
+      "price_usd": "USD price: ${price}",
+      "price_eth": "ETH price: {price} ETH",
+      "pay_eth": "ETH you pay",
+      "pay_usdt": "USDT you pay",
+      "pay_usd": "USD you pay",
+      "receive_lnx": "$LNX you receive",
+      "btn_processing": "Processing...",
+      "btn_pay_eth": "Pay with ETH",
+      "btn_pay_usdt": "Pay with USDT",
+      "btn_pay_card": "الدفع بالبطاقة",
+      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "btn_connect": "ربط المحفظة",
+      "btn_giveaway": "مكافأة LNX",
+      "giveaway_info": "Connect your wallet to check eligibility."
+    },
+    "TokenSale": {
+      "title1": "LNX ",
+      "title2": "token sale",
+      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+    },
+    "Partners": {
+      "eyebrow": "النظام البيئي",
+      "title": "مصمم للعمل مع المنصات والحفظ وقنوات الدفع",
+      "subtitle": "تربط Lenix التتبع وسير عمل الاسترداد وبنية التسوية عبر مكدس العملات المشفرة."
+    },
+    "CaseWorkflow": {
+      "eyebrow": "كيف يعمل",
+      "title1": "من الاستقبال إلى ",
+      "title2": "أدلة قابلة للتنفيذ",
+      "subtitle": "عملية منظمة للضحايا وفرق الامتثال والمستشارين—لا وعود مبهمة.",
+      "steps": {
+        "submit": {
+          "title": "قدّم حالتك",
+          "desc": "شارك عناوين المحافظ وهashes المعاملات والجداول الزمنية وما حدث. المراجعة الأولية مجانية."
+        },
+        "trace": {
+          "title": "تتبع ورسم التدفقات",
+          "desc": "نتابع الأموال عبر السلاسل وال mixers والجسور وإيداعات المنصات لتحديد أين استقرت القيمة."
+        },
+        "deliver": {
+          "title": "تسليم الأدلة",
+          "desc": "تتلقى نتائج موثقة بصيغة مناسبة لمكاتب امتثال المنصات أو الجهات التنظيمية أو المستشارين."
+        }
+      },
+      "btn_primary": "فتح قضية",
+      "btn_secondary": "تحدث محلل",
+      "step_label": "الخطوة {number}"
+    },
+    "TrustSignals": {
+      "eyebrow": "معايير التشغيل",
+      "title1": "مصمم للحالات التي ",
+      "title2": "الثقة فيها مهمة",
+      "subtitle": "الاسترداد هدف للاحتيال. تتبع Lenix ممارسات تستخدمها شركات جادة لحماية الضحايا والمؤسسات.",
+      "items": {
+        "no_fees": {
+          "title": "لا رسوم فتح مسبقة",
+          "desc": "لا نطلب مدفوعات مقدمة لإطلاق أو فتح أو تحويل أموالك."
+        },
+        "no_seed": {
+          "title": "لا نطلب عبارات الاسترداد أبدًا",
+          "desc": "لا وصول عن بُعد، لا مفاتيح خاصة، لا طلبات لعبارة الاسترداد—أبدًا."
+        },
+        "no_custody": {
+          "title": "لا نحتفظ بأصولك",
+          "desc": "تُعد Lenix الأدلة وتنسق المسارات. لسنا حارسًا لمحفظتك."
+        },
+        "honest": {
+          "title": "تقييم صادق للحالة",
+          "desc": "إذا استُنفد المسار أو كان الاسترداد غير مرجح، نقول ذلك قبل التزام مدفوع."
+        },
+        "audited": {
+          "title": "مكدس بروتوكول مدقق",
+          "desc": "عقود ذكية راجعتها CertiK. عمليات متوافقة مع ضوابط ISO 27001."
+        },
+        "chains": {
+          "title": "تغطية متعددة السلاسل",
+          "desc": "مسارات التتبع تدعم شبكات EVM الرئيسية وأنواع الأصول الشائعة في حالات السرقة."
+        }
+      },
+      "image_alt": "محلل يراجع لوحة تحقيق بلوكشين وأدلة المعاملات"
+    },
+    "CaseStudy": {
+      "eyebrow": "مثال على حالة",
+      "title1": "عندما تصل الأموال المسروقة ",
+      "title2": "إلى منصة مركزية",
+      "subtitle": "مثال مجهول الهوية. تم تغيير المعرفات. العملية تمثيلية—وليست ضمانًا للاسترداد.",
+      "situation": {
+        "label": "الوضع",
+        "text": "أرسلت محفظة شركة USDC إلى عقد تصيد. خلال ساعات، انتقلت الأموال عبر محفظتين وسيطتين وأودعت في منصة كبرى."
+      },
+      "action": {
+        "label": "ما فعلته Lenix",
+        "text": "رسمنا مسار المعاملات بالكامل، حددنا عنوان الإيداع، وأعددنا حزمة أدلة برسوم بيانية وجدول زمني لفريق الامتثال في المنصة."
+      },
+      "outcome": {
+        "label": "النتيجة",
+        "text": "قبل مكتب الامتثال في المنصة الملف. جُمدت الأموال في انتظار المراجعة. تلقى المستشار القانوني نفس الوثائق للإجراءات القانونية المتوازية."
+      },
+      "disclaimer": "تختلف النتائج حسب الحالة والاختصاص القضائي ووقت استجابة المنصة. يُظهر هذا المثال كيف توثق Lenix المسار—وليس كل حالة تنتهي بالاسترداد.",
+      "image_alt": "لوحة مراقبة المعاملات تعرض تدفق الأموال عبر المحافظ والمنصات"
+    },
+    "Cta": {
+      "title": "مستعد لفتح حالة؟",
+      "subtitle": "شارك ما حدث والتفاصيل on-chain لديك. نرد بتقييم صادق لمسارات التتبع والاسترداد.",
+      "btn_primary": "فتح قضية",
+      "btn_secondary": "تواصل معنا"
+    }
+  },
+  "Security": {
+    "meta": {
+      "title": "الأمان والتدقيق | Lenix Protocol",
+      "description": "تدقيق CertiK للعقود الذكية، وعمليات متوافقة مع ISO 27001، وضوابط أمنية لبنية Lenix للتحقيق والاسترداد."
+    },
+    "hero": {
+      "eyebrow": "الأمان",
+      "title1": "بروتوكول مدقق. ",
+      "title2": "ضوابط موثقة.",
+      "subtitle": "تجمع Lenix بين مراجعة طرف ثالث للعقود الذكية وممارسات أمن تشغيلية للفرق التي تتعامل مع سير عمل استرداد وحفظ حساس."
+    },
+    "audit": {
+      "title": "نطاق تدقيق CertiK",
+      "desc": "تمت مراجعة العقود الأساسية في مسارات الإنتاج بواسطة CertiK. يغطي النطاق المكونات الحرجة وأسطح الهجوم المعروفة.",
+      "certik_text": "راجعت CertiK عقود Lenix الذكية بحثًا عن ثغرات شائعة ومشكلات التحكم بالوصول والأخطاء المنطقية في تدفقات الرمز والخزنة.",
+      "certik_link": "وثائق الأمان",
+      "items": {
+        "contracts": {
+          "title": "نطاق مراجعة العقود",
+          "desc": "بيع الرمز والخزنة ووحدات البروتوكول المستخدمة في مسارات الدفع والحفظ المباشرة."
+        },
+        "access": {
+          "title": "التحكم بالوصول",
+          "desc": "صلاحيات قائمة على الأدوار، متطلبات التوقيع المتعدد، ومسارات الترقية حيث ينطبق."
+        },
+        "monitoring": {
+          "title": "المراقبة المستمرة",
+          "desc": "تُراقب نشرات الإنتاج للتفاعلات غير الطبيعية والتنبيهات التشغيلية."
+        }
+      },
+      "eyebrow": "العقود الذكية"
+    },
+    "iso": {
+      "title": "عمليات متوافقة مع ISO 27001",
+      "desc": "تحافظ Lenix Protocol على ممارسات إدارة أمن المعلومات المتوافقة مع ISO 27001 لبيانات العملاء ومواد التحقيق والأنظمة الداخلية."
+    },
+    "practices": {
+      "data": {
+        "title": "معالجة البيانات",
+        "desc": "تُخزن مواد الحالات بضوابط وصول. تُشارك بيانات التحقيق فقط مع الأطراف المصرح لها."
+      },
+      "incident": {
+        "title": "الاستجابة للحوادث",
+        "desc": "إجراءات محددة للأحداث الأمنية التي تؤثر على بيانات العملاء أو بنية البروتوكول أو سير عمل التحقيق."
+      },
+      "custody": {
+        "title": "حدود الحفظ",
+        "desc": "تُعد Lenix الأدلة وتنسق المسارات. لا نحتفظ بمفاتيح المحافظ أو عبارات الاسترداد للعملاء."
+      },
+      "eyebrow": "العمليات",
+      "title": "كيف نتعامل مع الحساس",
+      "description": "قضايا الاسترداد تتضمن بيانات الضحايا وتدفقات عالية المخاطر. هذه حدودنا.",
+      "image_alt": "فريق عمليات يراقب النشاط وتنبيهات الأمان"
+    },
+    "cta": {
+      "title": "تحتاج وثائق؟",
+      "subtitle": "تواصل مع الفريق لملخصات التدقيق أو ISO أو مراجعات المؤسسات.",
+      "btn_primary": "بدء الاسترداد",
+      "btn_secondary": "تواصل الأمان"
+    },
+    "assurance": {
+      "eyebrow": "التحقق",
+      "title": "ما يمكننا إظهاره",
+      "description": "مراجعة مستقلة للعقود وضوابط تشغيل موثّقة — لا ادعاءات بلا دليل.",
+      "iso_link": "عن Lenix"
+    }
+  },
+  "AccountSidebar": {
+    "sections": {
+      "account": "الحساب",
+      "wallet": "المحفظة"
+    },
+    "nav": {
+      "home": "الرئيسية",
+      "vault": "خزنة البلوك تشين",
+      "lenix_wallet": "محفظة Lenix",
+      "banking": "الخدمات المصرفية للمؤسسات",
+      "recovery_services": "خدمات الاسترداد",
+      "crypto_loan": "قرض العملات الرقمية",
+      "assets": "الأصول",
+      "send": "إرسال",
+      "receive": "استلام",
+      "transactions": "المعاملات",
+      "settings": "الإعدادات"
+    },
+    "support": {
+      "need_help": "هل تحتاج مساعدة؟",
+      "contact_support": "تواصل مع الدعم"
+    },
+    "header": {
+      "menu": "القائمة",
+      "verified_user": "مستخدم موثّق",
+      "sign_out": "تسجيل الخروج"
+    },
+    "logo_alt": "Lenix Protocol"
+  },
+  "AccountMobileTabs": {
+    "home": "الرئيسية",
+    "banking": "البنك",
+    "wallet": "المحفظة",
+    "loan": "القرض",
+    "settings": "الإعدادات"
+  },
+  "AccountDashboard": {
+    "status": {
+      "recovery": "حالة قضية الاسترداد",
+      "banking": "حالة الخدمات المصرفية",
+      "loan": "حالة طلب القرض"
+    },
+    "timeline": {
+      "received_title": "تم استلام الطلب",
+      "received_desc": "لقد استلمنا بياناتك ونقوم بمراجعتها.",
+      "review_title": "قيد المراجعة",
+      "review_desc": "يقوم فريقنا حاليًا بتحليل طلبك."
+    },
+    "submitted_details": "التفاصيل المقدمة",
+    "service_type": "نوع الخدمة",
+    "service_types": {
+      "recovery": "استرداد",
+      "banking": "مصرفي",
+      "loan": "قرض"
+    },
+    "details_fields": {
+      "name": "الاسم",
+      "transaction_hash": "تجزئة المعاملة",
+      "amount_stolen": "المبلغ المسروق",
+      "blockchain": "البلوك تشين",
+      "currency": "العملة",
+      "country_phone_code": "رمز الهاتف الدولي",
+      "incident_summary": "ملخص الحادث",
+      "evidence": "دليل",
+      "evidence_url": "رابط الدليل",
+      "notes": "ملاحظات",
+      "loan_type_id": "نوع القرض",
+      "collateral_asset": "أصل الضمان",
+      "duration": "المدة",
+      "loan_amount": "مبلغ القرض",
+      "phone_number": "رقم الهاتف",
+      "payout_method": "طريقة الدفع"
+    },
+    "support": {
+      "title": "هل تحتاج مساعدة؟",
+      "description": "فريق الدعم لدينا متاح على مدار الساعة لمساعدتك.",
+      "contact": "تواصل مع الدعم"
+    }
+  },
+  "AccountVault": {
+    "page": {
+      "title": "خزنتي",
+      "subtitle": "إدارة أصولك الرقمية المؤمّنة.",
+      "history": "السجل",
+      "status_active": "نشط",
+      "status_locked": "مقفل",
+      "status_no_wallet": "لا توجد محفظة",
+      "load_error": "فشل تحميل المقتنيات"
+    },
+    "actions": {
+      "deposit": "إيداع",
+      "withdraw": "سحب",
+      "swap": "مبادلة",
+      "audit": "تدقيق"
+    },
+    "premium": {
+      "title": "احصل على حماية مميزة",
+      "description": "ترقية إلى تكامل Hardware Vault لأقصى درجات الأمان.",
+      "cta": "اعرف المزيد"
+    },
+    "card": {
+      "total_value": "إجمالي قيمة الخزنة",
+      "last_synced": "آخر مزامنة: للتو",
+      "change_24h": "{percent}٪ (24 ساعة)",
+      "security_level": "مستوى الأمان",
+      "security_very_high": "مرتفع جداً"
+    },
+    "assets": {
+      "title": "أصول الخزنة",
+      "count_zero": "0 أصل",
+      "count": "{count} أصل",
+      "empty": "لم يتم العثور على أصول. اربط محفظة أو استورد واحدة للبدء.",
+      "address_copied": "تم نسخ العنوان",
+      "chains": {
+        "ethereum": "Ethereum",
+        "bsc": "BSC",
+        "polygon": "Polygon",
+        "evm": "EVM"
+      }
+    },
+    "security": {
+      "title": "صحة أمان الخزنة",
+      "score_label": "درجة الأمان",
+      "items": {
+        "wallet": "المحفظة",
+        "cold_storage": "التخزين البارد",
+        "encrypted_vault": "خزنة مشفّرة",
+        "session": "الجلسة"
+      },
+      "status": {
+        "connected": "متصل",
+        "not_connected": "غير متصل",
+        "active": "نشط",
+        "unlocked": "مفتوح",
+        "locked": "مقفل",
+        "no_wallet": "لا توجد محفظة",
+        "completed": "مكتمل"
+      },
+      "unlock": "فتح القفل",
+      "recent_activity": "النشاط الأخير",
+      "view_all": "عرض الكل",
+      "no_activity": "لا يوجد نشاط حديث",
+      "wallet_connected": "تم ربط المحفظة",
+      "transaction": "معاملة",
+      "transfer": "تحويل {symbol}"
+    },
+    "time": {
+      "just_now": "الآن",
+      "recently": "مؤخراً",
+      "min_ago": "منذ {count} دقيقة",
+      "hours_ago": "منذ {count} ساعة",
+      "days_ago": "منذ {count} يوم"
+    },
+    "drawer": {
+      "connect_wallet": "ربط المحفظة",
+      "setup_title": "إعداد خزنتك",
+      "setup_description": "أنشئ محفظة جديدة أو استورد محفظة موجودة لتأمين أصولك.",
+      "unlock_vault": "فتح الخزنة",
+      "unlock_description": "أدخل كلمة المرور للوصول إلى أصولك المؤمّنة.",
+      "password_placeholder": "أدخل كلمة المرور",
+      "unlocking": "جارٍ الفتح...",
+      "unlock": "فتح القفل",
+      "vault_connected": "الخزنة متصلة",
+      "lenix_wallet": "محفظة Lenix",
+      "lock": "قفل",
+      "imported_wallets": "المحافظ المستوردة",
+      "no_imported": "لا توجد محافظ مستوردة بعد.",
+      "import_wallet": "استيراد محفظة",
+      "wallet_name_label": "اسم المحفظة (اختياري)",
+      "wallet_name_placeholder": "MetaMask الخاصة بي",
+      "import_type_label": "نوع الاستيراد",
+      "seed_phrase": "عبارة الاسترداد",
+      "private_key": "المفتاح الخاص",
+      "seed_phrase_label": "عبارة استرداد من 12 أو 24 كلمة",
+      "private_key_label": "المفتاح الخاص",
+      "seed_phrase_placeholder": "كلمة1 كلمة2 كلمة3 ...",
+      "private_key_placeholder": "0x...",
+      "encryption_password_label": "كلمة مرور التشفير (8 أحرف على الأقل)",
+      "password_dots_placeholder": "••••••••",
+      "cancel": "إلغاء",
+      "import": "استيراد",
+      "loading": "جارٍ التحميل...",
+      "imported_seed_name": "Seed مستوردة",
+      "imported_key_name": "مفتاح مستورد"
+    },
+    "toast": {
+      "wallet_unlocked": "تم فتح المحفظة",
+      "incorrect_password": "كلمة مرور غير صحيحة",
+      "import_credentials_required": "أدخل بيانات الاعتماد وكلمة مرور (8 أحرف على الأقل).",
+      "wallet_imported": "تم استيراد المحفظة",
+      "import_failed": "فشل الاستيراد",
+      "wallet_removed": "تمت إزالة المحفظة"
+    }
+  },
+  "AccountLenixWallet": {
+    "page": {
+      "title": "المحفظة",
+      "subtitle": "إدارة أصولك المشفّرة",
+      "setup_title": "إعداد محفظتك",
+      "setup_subtitle": "أنشئ محفظة أو استورد واحدة للبدء",
+      "unlock_title": "فتح المحفظة",
+      "unlock_subtitle": "أدخل كلمة المرور للمتابعة",
+      "password_placeholder": "كلمة المرور",
+      "unlocking": "جارٍ الفتح...",
+      "unlock": "فتح",
+      "network_placeholder": "الشبكة",
+      "logo_alt": "محفظة Lenix",
+      "show_evm_wallet": "عرض محفظة EVM",
+      "show_bitcoin_wallet": "عرض محفظة Bitcoin",
+      "evm_wallet": "محفظة EVM",
+      "bitcoin_wallet": "محفظة Bitcoin"
+    },
+    "networks": {
+      "all": "جميع الشبكات",
+      "ethereum": "Ethereum",
+      "bsc": "BNB Chain",
+      "polygon": "Polygon",
+      "bitcoin": "Bitcoin"
+    },
+    "actions": {
+      "send": "إرسال",
+      "receive": "استلام",
+      "buy": "شراء",
+      "swap": "مبادلة",
+      "coming_soon": "قريباً"
+    },
+    "wallet_card": {
+      "total_balance": "إجمالي الرصيد",
+      "hide_balance": "إخفاء الرصيد",
+      "show_balance": "إظهار الرصيد",
+      "lock_wallet": "قفل المحفظة",
+      "evm_networks": "شبكات EVM",
+      "evm_chains": "ETH · BSC · Polygon · Arbitrum",
+      "address_copied": "تم نسخ العنوان"
+    },
+    "bitcoin_card": {
+      "btc_balance": "رصيد BTC",
+      "not_activated": "غير مفعّلة",
+      "activate_prompt": "فعّل محفظة Bitcoin الأصلية",
+      "password_placeholder": "أدخل كلمة مرور المحفظة",
+      "creating": "جارٍ الإنشاء...",
+      "activate": "تفعيل",
+      "bitcoin_network": "شبكة Bitcoin",
+      "segwit": "SegWit الأصلي BIP-84",
+      "bitcoin_alt": "Bitcoin",
+      "enter_password": "أدخل كلمة مرور محفظتك",
+      "wallet_created": "تم إنشاء محفظة Bitcoin",
+      "create_failed": "فشل إنشاء محفظة Bitcoin",
+      "address_copied": "تم نسخ العنوان"
+    },
+    "token_list": {
+      "assets": "الأصول",
+      "market": "السوق",
+      "tokens_count": "{count} رمز",
+      "no_assets": "لا توجد أصول بعد",
+      "frozen": "مجمّد",
+      "deposit_to_unfreeze": "أودع {amount} BTC لإلغاء التجميد",
+      "frozen_by_admin": "مجمّد من قبل المسؤول",
+      "token_fallback": "رمز"
+    },
+    "activity": {
+      "title": "النشاط",
+      "no_activity": "لا يوجد نشاط حديث",
+      "done": "مكتمل",
+      "pending": "قيد الانتظار"
+    },
+    "security": {
+      "title": "الأمان",
+      "protected": "محمي",
+      "recovery_phrase": "عبارة الاسترداد",
+      "backed_up": "تم النسخ الاحتياطي",
+      "password": "كلمة المرور",
+      "active": "نشط",
+      "withdrawal_limit": "حد السحب",
+      "not_set": "غير محدد",
+      "set": "محدد"
+    },
+    "receive_modal": {
+      "title": "استلام",
+      "network": "الشبكة",
+      "evm_networks": "شبكات EVM",
+      "evm_chains": "ETH, BSC, Polygon, Arbitrum",
+      "bitcoin": "Bitcoin",
+      "bitcoin_chains": "SegWit الأصلي (BIP-84)",
+      "not_set_up": "(غير مهيأ)",
+      "qr_alt": "رمز QR",
+      "copied": "تم النسخ",
+      "btc_warning": "أرسل BTC فقط إلى هذا العنوان",
+      "evm_warning": "أرسل الرموز المتوافقة مع ERC-20 فقط"
+    },
+    "send_modal": {
+      "title": "إرسال العملات المشفّرة",
+      "description": "أدخل عنوان المستلم ومبلغ السحب لإرسال العملات المشفّرة."
+    },
+    "receive_page": {
+      "title": "استلام الأصول",
+      "subtitle": "استخدم عنوانك الفريد لاستلام المدفوعات.",
+      "security_notice": "لأمانك، تأكد من تطابق الشبكة تماماً قبل الإيداع. لا يمكن استرداد الأصول المرسلة عبر الشبكة الخطأ.",
+      "no_wallet_title": "لم يتم العثور على محفظة",
+      "no_wallet_description": "أنشئ محفظة لاستلام الأصول.",
+      "go_to_wallet": "الانتقال إلى المحفظة",
+      "wallet_locked_title": "المحفظة مقفلة",
+      "wallet_locked_description": "افتح محفظتك لعرض عنوانك.",
+      "unlock_wallet": "فتح المحفظة",
+      "card_title": "استلام الأصول",
+      "card_description": "امسح رمز QR أو انسخ العنوان للإيداع.",
+      "select_network": "اختر الشبكة",
+      "bitcoin_provisioning": "ما زال إعداد محفظة Bitcoin جارياً.",
+      "qr_alt": "رمز QR لعنوان المحفظة",
+      "address_label": "عنوان {network}",
+      "copy": "نسخ",
+      "copied": "تم النسخ",
+      "share": "مشاركة",
+      "address_copied": "تم نسخ العنوان إلى الحافظة",
+      "share_title": "عنوان محفظة Lenix",
+      "share_text": "عنوان {network} الخاص بي: {address}",
+      "networks": {
+        "bitcoin": {
+          "name": "Bitcoin (الأصلية)",
+          "warning": "أرسل Bitcoin الأصلي فقط إلى هذا العنوان. لا ترسل BTC من شبكة أخرى."
+        },
+        "ethereum": {
+          "name": "Ethereum (ERC-20)",
+          "warning": "أرسل ETH ورموز ERC-20 فقط إلى هذا العنوان."
+        },
+        "bnb": {
+          "name": "BNB Smart Chain (BEP-20)",
+          "warning": "أرسل BNB ورموز BEP-20 فقط إلى هذا العنوان."
+        },
+        "polygon": {
+          "name": "Polygon (MATIC)",
+          "warning": "أرسل MATIC ورموز شبكة Polygon فقط إلى هذا العنوان."
+        },
+        "arbitrum": {
+          "name": "Arbitrum One",
+          "warning": "أرسل رموز شبكة Arbitrum One فقط إلى هذا العنوان."
+        },
+        "optimism": {
+          "name": "Optimism",
+          "warning": "أرسل رموز شبكة Optimism فقط إلى هذا العنوان."
+        },
+        "avalanche": {
+          "name": "Avalanche C-Chain",
+          "warning": "أرسل رموز Avalanche C-Chain فقط إلى هذا العنوان."
+        }
+      }
+    },
+    "send_page": {
+      "unlock_message": "افتح محفظة Lenix لإدارة التمويل.",
+      "unlock_locked_prefix": "أدخل كلمة المرور في",
+      "unlock_locked_suffix": "لفك تشفير الأرصدة.",
+      "wallet_page": "صفحة المحفظة",
+      "unlock_no_wallet_prefix": "أنشئ محفظة أولاً من",
+      "unlock_no_wallet_suffix": ".",
+      "wallet_dashboard": "لوحة محفظة Lenix",
+      "estimated_total_value": "القيمة الإجمالية المقدّرة",
+      "wallet_label": "المحفظة",
+      "pnl_today": "أرباح وخسائر اليوم",
+      "deposit": "إيداع",
+      "withdraw": "سحب",
+      "transfer": "تحويل",
+      "more_funding_actions": "المزيد من إجراءات التمويل",
+      "funding_title": "التمويل",
+      "search_placeholder": "ابحث عن أصل أو شبكة",
+      "small_asset_exchange": "تبادل الأصول الصغيرة",
+      "hide_dust": "إخفاء الأصول الأقل من 1 USD",
+      "asset": "الأصل",
+      "amount": "المبلغ",
+      "available": "المتاح",
+      "frozen": "مجمّد",
+      "action": "الإجراء",
+      "unfreeze_deposit": "أودع {amount} BTC لإلغاء التجميد",
+      "more_actions_for": "المزيد من الإجراءات لـ {symbol}",
+      "no_assets": "لا توجد أصول",
+      "no_assets_match": "لا توجد أصول تطابق عوامل التصفية.",
+      "withdraw_modal": {
+        "title": "سحب العملات المشفّرة",
+        "description": "أرسل الأموال إلى محفظة خارجية باستخدام الشبكة الصحيحة."
+      }
+    },
+    "send_form": {
+      "no_assets_alt": "لا توجد أصول",
+      "no_assets_title": "لا توجد أصول تمويل بعد",
+      "no_assets_description": "أودع العملات المشفّرة في محفظة Lenix لفتح عمليات السحب والتحويلات على الشبكة.",
+      "asset_label": "الأصل",
+      "network_label": "الشبكة",
+      "chain_id": "معرّف السلسلة {id}",
+      "recipient_label": "عنوان المستلم",
+      "paste": "لصق",
+      "recipient_error_bitcoin": "أدخل عنوان Bitcoin صالحاً.",
+      "recipient_error_evm": "أدخل عنوان محفظة EVM صالحاً.",
+      "amount_label": "المبلغ",
+      "amount_aria": "مقدار {symbol} المراد إرساله",
+      "available": "المتاح",
+      "on_chain_only": "المتاح للإرسال حالياً هو {amount} {symbol} فقط، لأنه مدعوم بأموال حقيقية على الشبكة.",
+      "summary_label": "ملخص التحويل",
+      "network_fee": "رسوم الشبكة",
+      "calculating_fee": "جارٍ الحساب…",
+      "recipient_receives": "ما يستلمه المستلم",
+      "frozen": "مجمّد",
+      "frozen_message": "هذا الأصل مجمّد",
+      "frozen_unfreeze_instruction": " أودع ما لا يقل عن {amount} BTC في محفظة Bitcoin الخاصة بك على Lenix لإلغاء التجميد — وسيُفتح تلقائياً بعد تأكيد الإيداع.",
+      "frozen_contact_support": " تواصل مع الدعم لحل المشكلة.",
+      "irreversible_warning": "تحقق من عنوان المستلم والشبكة قبل الإرسال. لا يمكن التراجع عن التحويلات على الشبكة.",
+      "sending": "جارٍ الإرسال...",
+      "send_now": "إرسال الآن",
+      "wallet_locked_error": "افتح محفظة Lenix لإرسال الأموال",
+      "clipboard_error": "تعذر الوصول إلى الحافظة",
+      "bitcoin_send_success": "تم بث تحويل Bitcoin",
+      "bitcoin_send_failed": "فشل سحب Bitcoin",
+      "unsupported_network": "الشبكة غير مدعومة لهذا الأصل",
+      "broadcasting_transaction": "جارٍ بث المعاملة",
+      "transfer_confirmed": "تم تأكيد التحويل",
+      "broadcasting_token_transfer": "جارٍ بث تحويل الرمز",
+      "token_transfer_complete": "اكتمل تحويل الرمز",
+      "transaction_failed": "فشلت المعاملة",
+      "fee_bitcoin_estimate": "تقدّر عند التأكيد"
+    },
+    "setup": {
+      "back": "رجوع",
+      "welcome_title": "أكثر محفظة أماناً في العالم",
+      "welcome_description": "أعد محفظتك للبدء. محفظة Lenix هي أكثر محفظة أماناً وخصوصية في العالم لحماية عملاتك المشفّرة.",
+      "create_new": "إنشاء محفظة جديدة",
+      "import_existing": "استيراد محفظة موجودة",
+      "terms_notice": "بإنشاء أو استيراد محفظة، فإنك توافق على شروط الخدمة وسياسة الخصوصية.",
+      "backup_title": "انسخ عبارة الاسترداد احتياطياً",
+      "backup_description": "اكتب هذه الكلمات الـ12 بالترتيب واحتفظ بها في مكان آمن. إذا فقدتها، فقد تفقد أموالك إلى الأبد.",
+      "security_check_title": "فحص الأمان",
+      "security_check_description": "لا تشارك هذه العبارة مع أي شخص. دعم Lenix لن يطلبها أبداً.",
+      "saved_phrase": "لقد حفظت عبارة الاسترداد",
+      "verify_title": "التحقق من عبارة الاسترداد",
+      "verify_description": "أكد أنك حفظت عبارتك بإدخال الكلمات المطلوبة أدناه.",
+      "word_label": "الكلمة #{number}",
+      "word_placeholder": "أدخل الكلمة #{number}",
+      "verify_continue": "تحقق ومتابعة",
+      "password_title": "تعيين كلمة مرور آمنة",
+      "password_description": "ستُستخدم كلمة المرور هذه لتشفير محفظتك على هذا الجهاز.",
+      "password_label": "كلمة المرور",
+      "confirm_password_label": "تأكيد كلمة المرور",
+      "create_wallet": "إنشاء المحفظة",
+      "processing": "جارٍ المعالجة...",
+      "import_title": "استيراد عبارة الاسترداد",
+      "import_description": "أدخل عبارة الاسترداد المكونة من 12 أو 24 كلمة لاستعادة محفظتك.",
+      "import_placeholder": "تفاح موز كرز...",
+      "continue": "متابعة",
+      "import_wallet": "استيراد المحفظة"
+    },
+    "toast": {
+      "wallet_unlocked": "تم فتح المحفظة",
+      "incorrect_password": "كلمة مرور غير صحيحة",
+      "phrase_copied": "تم نسخ عبارة الاسترداد إلى الحافظة",
+      "incorrect_words": "كلمات غير صحيحة. يرجى المحاولة مرة أخرى.",
+      "password_min_length": "يجب أن تكون كلمة المرور 8 أحرف على الأقل",
+      "passwords_mismatch": "كلمتا المرور غير متطابقتين",
+      "wallet_created": "تم إنشاء المحفظة بنجاح!",
+      "create_failed": "فشل إنشاء المحفظة",
+      "invalid_phrase": "عبارة استرداد غير صالحة. متوقع 12 أو 24 كلمة، تم استلام {count}.",
+      "wallet_imported": "تم استيراد المحفظة بنجاح!",
+      "import_failed": "فشل استيراد المحفظة"
+    }
+  },
+  "AccountBanking": {
+    "meta": {
+      "title": "الخدمات المصرفية للمؤسسات | Lenix Protocol",
+      "description": "انقل الأصول الرقمية بين Spot وFunding والحسابات المصرفية الموثقة."
+    },
+    "error": {
+      "load_failed": "تعذّر تحميل مساحة العمل المصرفية",
+      "unavailable_title": "مساحة العمل المصرفية غير متاحة",
+      "unavailable_description": "تعذّر تحميل نظرة عامة على الخدمات المصرفية.",
+      "try_again": "حاول مرة أخرى"
+    },
+    "tabs": {
+      "overview": "نظرة عامة",
+      "accounts": "الحسابات المصرفية",
+      "activity": "النشاط"
+    },
+    "empty_assets": {
+      "title": "لا توجد أصول خزينة بعد",
+      "description": "انقل الأصول إلى محفظة Spot أو Funding للبدء.",
+      "cta": "نقل الأموال"
+    },
+    "fiat_balance": {
+      "funding": "Funding {currency}",
+      "available": "{amount} متاح"
+    },
+    "summary": {
+      "title": "الخدمات المصرفية للمؤسسات",
+      "verified": "موثّق",
+      "verification_pending": "التحقق قيد الانتظار",
+      "subtitle": "انقل الأصول الرقمية بين محافظ الخزينة والحسابات المصرفية الموثقة.",
+      "transfer": "تحويل",
+      "withdraw_to_bank": "سحب إلى البنك",
+      "total_treasury": "إجمالي قيمة الخزينة",
+      "hide_balances": "إخفاء الأرصدة",
+      "show_balances": "إظهار الأرصدة",
+      "account": "الحساب",
+      "tier": "المستوى",
+      "relationship_manager": "مدير العلاقات",
+      "spot_wallet": "محفظة Spot",
+      "spot_available": "متاح للتداول",
+      "funding_wallet": "محفظة Funding",
+      "funding_available": "متاح للتسوية",
+      "in_settlement": "قيد التسوية",
+      "pending_payouts": "عبر المدفوعات المصرفية النشطة"
+    },
+    "assets": {
+      "title": "أرصدة المحفظة",
+      "subtitle": "أصول Spot وFunding الجاهزة للدفع",
+      "move_funds": "نقل الأموال",
+      "columns": {
+        "asset": "الأصل",
+        "wallet": "المحفظة",
+        "balance": "الرصيد",
+        "value": "القيمة",
+        "change_24h": "24 س"
+      },
+      "location": {
+        "spot": "Spot",
+        "funding": "Funding"
+      }
+    },
+    "accounts": {
+      "linked_title": "الحسابات المصرفية المرتبطة",
+      "linked_subtitle": "وجهات التسوية للسحب المصرفي",
+      "add_account": "إضافة حساب",
+      "empty_title": "لا توجد حسابات مصرفية مرتبطة",
+      "empty_description": "أضف حسابًا مصرفيًا لتمكين السحب إلى بنكك.",
+      "default": "افتراضي",
+      "status": {
+        "verified": "موثّق",
+        "rejected": "مرفوض",
+        "pending": "قيد المراجعة"
+      },
+      "limits_title": "حدود التسوية",
+      "limits_subtitle": "حدود مؤسسية متجددة",
+      "remaining": "متبقٍ {percent}٪",
+      "limits_note": "تُراجع حدود التسوية الأعلى من قِبل مدير علاقاتك وفريق الامتثال."
+    },
+    "activity": {
+      "title": "نشاط المعاملات",
+      "subtitle": "التحويلات الداخلية والتسويات المصرفية",
+      "search_label": "البحث في المعاملات",
+      "search_placeholder": "ابحث عن مرجع أو أصل",
+      "filter_label": "تصفية حالة المعاملة",
+      "filter_all": "جميع الحالات",
+      "status": {
+        "completed": "مكتمل",
+        "processing": "قيد المعالجة",
+        "review": "مراجعة",
+        "under_review": "قيد المراجعة",
+        "failed": "فشل"
+      },
+      "columns": {
+        "transaction": "المعاملة",
+        "amount": "المبلغ",
+        "destination": "الوجهة",
+        "status": "الحالة",
+        "date": "التاريخ",
+        "view": "عرض"
+      },
+      "direction": {
+        "spot_to_funding": "Spot إلى Funding",
+        "funding_to_spot": "Funding إلى Spot",
+        "funding_to_bank": "Funding إلى البنك",
+        "spot_to_bank": "Spot إلى البنك"
+      },
+      "view_transaction": "عرض {reference}",
+      "empty_title": "لا توجد معاملات مطابقة",
+      "empty_description": "غيّر البحث أو مرشح الحالة."
+    },
+    "add_account": {
+      "title": "إضافة حساب مصرفي",
+      "description": "تُراجع الحسابات المقدمة من قِبل فريق الامتثال قبل أن تتمكن من استلام التسويات. يستغرق ذلك عادةً 1–2 أيام عمل.",
+      "fields": {
+        "bank_name": "اسم البنك",
+        "bank_name_placeholder": "مثال: البنك الأهلي",
+        "account_holder": "اسم صاحب الحساب",
+        "account_holder_placeholder": "الاسم القانوني الكامل",
+        "account_number": "رقم الحساب / IBAN",
+        "account_number_placeholder": "رقم الحساب",
+        "routing_number": "رقم التوجيه (ACH/محلي)",
+        "swift_bic": "SWIFT / BIC (دولي)",
+        "optional": "اختياري",
+        "account_type": "نوع الحساب",
+        "checking": "جاري",
+        "savings": "توفير",
+        "currency": "العملة",
+        "country": "البلد",
+        "country_placeholder": "SA"
+      },
+      "submitting": "جارٍ الإرسال...",
+      "submit": "إرسال للتحقق",
+      "required_fields": "يرجى ملء جميع الحقول المطلوبة",
+      "success": "تم إرسال الحساب المصرفي للتحقق",
+      "failed": "فشل إضافة الحساب المصرفي"
+    },
+    "transfer": {
+      "title_form": "نقل الأموال",
+      "title_review": "مراجعة التحويل",
+      "title_success": "حالة التحويل",
+      "desc_form": "انقل الأصول بين المحافظ أو سوِّ إلى بنك مرتبط.",
+      "desc_review": "يتم حجز الأسعار لمدة خمس دقائق.",
+      "desc_success": "مرجعك جاهز للتتبع.",
+      "back_label": "العودة إلى تفاصيل التحويل",
+      "step_label": "الخطوة {step} من 3",
+      "cancel": "إلغاء",
+      "review_transfer": "مراجعة التحويل",
+      "confirm_submit": "تأكيد وإرسال",
+      "done": "تم",
+      "quote_failed": "تعذّر إنشاء عرض سعر",
+      "transfer_failed": "تعذّر إرسال التحويل",
+      "type_legend": "نوع التحويل",
+      "types": {
+        "spot_to_funding": {
+          "label": "Spot → Funding",
+          "description": "تحضير الأصول للمدفوعات"
+        },
+        "funding_to_spot": {
+          "label": "Funding → Spot",
+          "description": "إعادة الأصول للتداول"
+        },
+        "funding_to_bank": {
+          "label": "Funding → البنك",
+          "description": "سحب الأموال المتاحة"
+        },
+        "spot_to_bank": {
+          "label": "Spot → البنك",
+          "description": "تحويل وسحب"
+        }
+      },
+      "from": "من",
+      "to": "إلى",
+      "spot_wallet": "محفظة Spot",
+      "funding_wallet": "محفظة Funding",
+      "bank_account": "حساب مصرفي",
+      "asset": "الأصل",
+      "amount": "المبلغ",
+      "max": "الحد الأقصى",
+      "amount_placeholder": "0.00",
+      "payout_currency": "عملة الدفع",
+      "currencies": {
+        "USD": "USD · دولار أمريكي",
+        "EUR": "EUR · يورو",
+        "GBP": "GBP · جنيه إسترليني"
+      },
+      "select_account": "اختر حسابًا",
+      "available": "متاح"
+    },
+    "review": {
+      "recipient_receives": "المستلم يحصل على",
+      "from_amount": "من {amount} {asset}",
+      "market_value": "القيمة السوقية",
+      "exchange_rate": "سعر الصرف",
+      "exchange_rate_value": "1 USD = {rate} {currency}",
+      "platform_fee": "رسوم المنصة",
+      "banking_fee": "رسوم مصرفية",
+      "estimated_arrival": "الوصول المتوقع",
+      "authorization": "بالتأكيد، فإنك تفوض تحويل الأصول وتعليمات التسوية الموضحة أعلاه.",
+      "withdrawal_submitted": "تم إرسال السحب",
+      "transfer_completed": "اكتمل التحويل",
+      "withdrawal_desc": "اجتازت تسويتك التحقق الأولي وهي الآن تدخل فحص الامتثال.",
+      "transfer_desc": "تم تحديث أرصدتك في مساحة العمل المصرفية.",
+      "reference": "المرجع",
+      "status": "الحالة",
+      "destination": "الوجهة",
+      "processing": "قيد المعالجة",
+      "completed": "مكتمل"
+    },
+    "detail": {
+      "title": "تفاصيل التحويل",
+      "reference": "المرجع {reference}",
+      "payout_amount": "مبلغ الدفع",
+      "destination": "الوجهة",
+      "estimated_arrival": "الوصول المتوقع",
+      "fees": "الرسوم",
+      "requested": "مطلوب",
+      "timeline_title": "جدول التسوية",
+      "pending": "قيد الانتظار",
+      "download_receipt": "تنزيل الإيصال",
+      "status": {
+        "completed": "مكتمل",
+        "processing": "قيد المعالجة",
+        "under_review": "قيد المراجعة",
+        "failed": "فشل"
+      }
+    },
+    "skeleton": {
+      "loading": "جارٍ تحميل لوحة الخدمات المصرفية"
+    }
+  },
+  "AccountRecoveryServices": {
+    "page": {
+      "title": "خدمات الاسترداد",
+      "subtitle": "قدّم طلب استرداد للأصول الرقمية المفقودة أو المسروقة. سيقيّم فريقنا الجنائي حالتك ويتواصل معك خلال 24–48 ساعة.",
+      "process_title": "العملية",
+      "form_title": "تفاصيل استرداد الأصول والتحليل الجنائي",
+      "form_subtitle": "نساعدك على تتبع واسترداد الأصول الرقمية المفقودة وبناء أدلة موثّقة لاسترداد الأموال وفق القانون."
+    },
+    "process": {
+      "assessment": {
+        "title": "التقييم",
+        "description": "نحلّل مسار الأموال ونقيّم إمكانية الاسترداد."
+      },
+      "strategy": {
+        "title": "الاستراتيجية",
+        "description": "خطة مخصّصة بدعم قانوني وجنائي."
+      },
+      "recovery": {
+        "title": "الاسترداد",
+        "description": "نتواصل مع المنصات والجهات المختصة لاسترجاع الأموال."
+      },
+      "return": {
+        "title": "الإرجاع",
+        "description": "تحويل الأموال إلى محفظتك الموثّقة."
+      }
+    },
+    "form": {
+      "name": "الاسم",
+      "name_placeholder": "مثال: أحمد محمد",
+      "transaction_hash": "تجزئة المعاملة / عنوان المحفظة",
+      "transaction_hash_placeholder": "أدخل تجزئة أو عنوانًا (مثال: 0x1234...)",
+      "amount_stolen": "المبلغ التقريبي المسروق",
+      "amount_stolen_placeholder": "أدخل المبلغ التقديري (مثال: 200000)",
+      "incident_summary": "ملخص الحادث",
+      "incident_summary_placeholder": "مثال: سُرقت الأموال عبر عملية تصيّد احتيالي...",
+      "evidence": "لقطة شاشة أو دليل آخر يدعم المطالبة",
+      "phone_number": "رقم الهاتف",
+      "blockchain": "اختر البلوك تشين",
+      "blockchain_placeholder": "اختر البلوك تشين",
+      "currency": "اختر العملة",
+      "currency_placeholder": "اختر العملة",
+      "privacy_prefix": "يحتاج Lenix Protocol إلى بيانات الاتصال الخاصة بك للتواصل بشأن حالة الاسترداد. للتفاصيل، راجع",
+      "privacy_policy": "سياسة الخصوصية",
+      "privacy_suffix": ".",
+      "submit": "إرسال طلب الاسترداد",
+      "submitting": "جارٍ الإرسال..."
+    },
+    "blockchains": {
+      "BTC": "Bitcoin (BTC)",
+      "ETH": "Ethereum (ETH)",
+      "SOL": "Solana (SOL)",
+      "TRX": "Tron (TRX)",
+      "BNB": "Binance Smart Chain (BNB)",
+      "MATIC": "Polygon Mainnet (MATIC)",
+      "AVAX": "Avalanche C-Chain (AVAX)",
+      "ARB": "Arbitrum One (ARB)",
+      "BASE": "Base (BASE)",
+      "FANTOM": "Fantom (Fantom)",
+      "GNOSIS": "Gnosis Chain (GNOSIS)",
+      "KAVA": "Kava (KAVA)",
+      "POL": "Polkadot (POL)",
+      "SUI": "Sui (SUI)",
+      "OTHER": "أخرى"
+    },
+    "success": {
+      "title": "تم إرسال الطلب",
+      "description": "سيراجع فريق الاسترداد حالتك ويتواصل معك خلال 24–48 ساعة.",
+      "submit_another": "إرسال طلب آخر"
+    },
+    "toast": {
+      "required_fields": "يرجى تعبئة جميع الحقول المطلوبة",
+      "submit_failed": "تعذّر إرسال طلب الاسترداد",
+      "submit_success": "تم إرسال طلب الاسترداد. سيتواصل فريقنا معك قريبًا."
+    }
+  },
+  "AccountCryptoLoan": {
+    "page": {
+      "back_to_dashboard": "العودة إلى لوحة التحكم",
+      "collateral_title": "هل تحتاج إلى مزيد من الضمان؟",
+      "collateral_description": "أودع المزيد من الأصول في خزنتك لزيادة حد الاقتراض وتحسين معامل الصحة.",
+      "go_to_vault": "الذهاب إلى الخزنة"
+    },
+    "hero": {
+      "title_line1": "حرّر السيولة،",
+      "title_line2": "احتفظ بأصولك",
+      "subtitle": "احصل على قرض فوري مدعوم بالعملات الرقمية دون بيع محفظتك. أسعار منخفضة وشروط مرنة وتمويل فوري.",
+      "get_instant_loan": "احصل على قرض فوري",
+      "how_it_works": "كيف يعمل",
+      "active_loans": "القروض النشطة",
+      "total_borrowed": "إجمالي المقترض",
+      "lowest_rate": "أقل سعر"
+    },
+    "active_loans": {
+      "empty_title": "لا توجد قروض نشطة",
+      "empty_description": "ستظهر قروضك النشطة هنا. احصل على سيولة فورية بتقديم طلب قرض جديد.",
+      "title": "محافظك",
+      "active_count": "{count} نشط",
+      "borrowed_amount": "المبلغ المقترض",
+      "collateral": "الضمان",
+      "health_factor": "معامل الصحة",
+      "repay_loan": "سداد القرض",
+      "processing": "جارٍ المعالجة...",
+      "view_details": "عرض التفاصيل",
+      "details_title": "تفاصيل طلب القرض",
+      "borrowed": "مقترض",
+      "apy": "APY",
+      "duration": "المدة",
+      "start_date": "تاريخ البدء",
+      "contact_details": "بيانات الاتصال",
+      "phone": "الهاتف",
+      "telegram_whatsapp": "Telegram / WhatsApp",
+      "not_provided": "غير مُقدَّم",
+      "payout_method": "طريقة الصرف",
+      "no_payout_details": "لا توجد تفاصيل صرف محفوظة.",
+      "wallet": "المحفظة",
+      "network": "الشبكة",
+      "bank": "البنك",
+      "swift_bic": "SWIFT/BIC",
+      "account": "الحساب",
+      "holder": "صاحب الحساب",
+      "routing_iban": "Routing/IBAN"
+    },
+    "market_rates": {
+      "live_rates": "الأسعار المباشرة",
+      "available_plans": "الخطط المتاحة",
+      "interest_rate": "سعر الفائدة",
+      "ltv": "{ltv}% LTV"
+    },
+    "application": {
+      "step_label": "الخطوة {step} من 2 — {phase}",
+      "phase_details": "تفاصيل القرض",
+      "phase_payout": "تفضيلات الصرف",
+      "title_details": "طلب قرض رقمي",
+      "title_payout": "استلام الأموال",
+      "subtitle_details": "خصّص شروط قرضك بما يناسب احتياجاتك.",
+      "subtitle_payout": "اختر أين نرسل تفاصيل قرضك.",
+      "select_loan_type": "اختر نوع القرض",
+      "loan_type_summary": "{rate}% APR · حتى {ltv}% LTV",
+      "borrow_amount": "مبلغ الاقتراض (USD)",
+      "borrow_amount_placeholder": "مثال: 5000",
+      "collateral_asset": "أصل الضمان",
+      "duration": "المدة",
+      "continue_payout": "المتابعة إلى الصرف",
+      "contact_title": "كيف يمكننا التواصل معك؟",
+      "contact_subtitle": "قدّم وسيلة واحدة على الأقل للتواصل بشأن طلبك.",
+      "phone_number": "رقم الهاتف",
+      "phone_placeholder": "مثال: +966 50 123 4567",
+      "phone_hint": "للمكالمات وتحديثات SMS",
+      "telegram_whatsapp": "Telegram أو WhatsApp",
+      "telegram_placeholder": "مثال: @username أو +966501234567",
+      "telegram_hint": "للمراسلة السريعة",
+      "funds_title": "أين نرسل أموالك؟",
+      "payout_crypto": "محفظة رقمية",
+      "payout_crypto_sub": "تحويل فوري",
+      "payout_wire": "تحويل بنكي",
+      "payout_wire_sub": "1–3 أيام عمل",
+      "payout_bank": "إيداع بنكي",
+      "payout_bank_sub": "ACH / SEPA",
+      "wallet_address": "عنوان المحفظة",
+      "wallet_placeholder": "0x...",
+      "select_network": "اختر الشبكة",
+      "network_erc20": "Ethereum (ERC20)",
+      "network_trc20": "Tron (TRC20)",
+      "network_bsc": "Binance Smart Chain (BEP20)",
+      "bank_name": "اسم البنك",
+      "bank_name_placeholder": "مثال: Al Rajhi Bank",
+      "bank_name_alt_placeholder": "مثال: SNB",
+      "swift_bic": "رمز SWIFT / BIC",
+      "swift_placeholder": "مثال: RJHISARI",
+      "account_number": "رقم الحساب",
+      "account_number_placeholder": "رقم حسابك",
+      "account_holder": "اسم صاحب الحساب",
+      "account_holder_placeholder": "الاسم الكامل على الحساب",
+      "reference_optional": "مرجع (اختياري)",
+      "reference_placeholder": "مرجع الدفع",
+      "routing_iban": "رقم التوجيه / IBAN",
+      "routing_iban_placeholder": "Routing ACH (US) أو IBAN (EU)",
+      "back": "رجوع",
+      "submitting": "جارٍ الإرسال...",
+      "submit": "إرسال الطلب",
+      "success_title": "تم إرسال الطلب",
+      "success_description": "استلمنا طلب القرض. سنراجعه ونتواصل معك قريبًا.",
+      "view_loans": "عرض قروضي"
+    },
+    "duration": {
+      "6": "6 أشهر",
+      "12": "12 شهرًا",
+      "24": "24 شهرًا",
+      "months": "{count} أشهر"
+    },
+    "collateral_assets": {
+      "BTC": "Bitcoin",
+      "ETH": "Ethereum",
+      "SOL": "Solana"
+    },
+    "status": {
+      "Active": "نشط",
+      "Pending": "قيد الانتظار",
+      "Repaid": "مسدّد",
+      "Liquidated": "مُصفّى"
+    },
+    "payout_methods": {
+      "crypto": "رقمي",
+      "wire_transfer": "تحويل بنكي",
+      "bank": "بنك"
+    },
+    "toast": {
+      "repay_success": "تم سداد القرض بنجاح"
+    },
+    "overview": {
+      "total_borrowed": "إجمالي المقترض",
+      "total_borrowed_tooltip": "إجمالي المبلغ المقترض عبر جميع القروض النشطة",
+      "current_interest": "الفائدة الحالية",
+      "collateral_value": "قيمة الضمان",
+      "collateral_tooltip": "إجمالي قيمة الأصول المقفلة كضمان",
+      "ltv_label": "LTV",
+      "low_risk": "مخاطر منخفضة",
+      "health_factor": "معامل الصحة",
+      "health_tooltip": "مؤشر مخاطر التصفية. حافظ على قيمة أعلى من 1.5 لتجنب التصفية.",
+      "safe": "آمن",
+      "liquidated": "1.0 (مُصفّى)",
+      "safe_threshold": "3.0 (آمن)"
+    },
+    "borrow_form": {
+      "title": "حاسبة القرض",
+      "subtitle": "احسب شروط قرضك فورًا.",
+      "borrow_tab": "اقتراض",
+      "repay_tab": "سداد",
+      "want_to_borrow": "أريد الاقتراض",
+      "my_collateral": "ضماني",
+      "asset_placeholder": "الأصل",
+      "ltv": "LTV",
+      "low_risk": "مخاطر منخفضة",
+      "apy": "APY",
+      "total_repayment": "إجمالي السداد",
+      "apply_new_loan": "طلب قرض جديد",
+      "repay_title": "إدارة السداد",
+      "repay_description": "استخدم قائمة \"القروض النشطة\" لإدارة وسداد قروضك المحددة."
+    },
+    "collateral": {
+      "title": "الضمانات المدعومة",
+      "live_rates": "الأسعار المباشرة",
+      "max_ltv": "أقصى LTV: {ltv}",
+      "fee": "الرسوم",
+      "assets": {
+        "BTC": "Bitcoin",
+        "ETH": "Ethereum",
+        "SOL": "Solana",
+        "XRP": "Ripple"
+      }
     }
   }
 }

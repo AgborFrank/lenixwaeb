@@ -17,6 +17,11 @@ export interface WalletData {
     mnemonic?: string;
     privateKey?: string;
     balance?: string;
+    /** Wallet password kept in memory for the unlocked session only (never persisted).
+     *  Lets flows that need server-side re-decryption of the BTC mnemonic (e.g. signing
+     *  a withdrawal) reuse the password the user already entered to unlock, instead of
+     *  asking for it again on every send. */
+    password?: string;
 }
 
 interface WalletContextType {
@@ -24,6 +29,8 @@ interface WalletContextType {
     walletData: WalletData | null;
     portfolio: WalletPortfolio | null;
     error: string | null;
+    bitcoinAddress: string | null;
+    provisionBitcoinWallet: (password: string) => Promise<string>;
     createWallet: (password: string) => Promise<ethers.HDNodeWallet>;
     importWallet: (phrase: string, password: string) => Promise<ethers.HDNodeWallet>;
     unlockWallet: (password: string) => Promise<ethers.HDNodeWallet | undefined>;
@@ -38,6 +45,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
     const [portfolio, setPortfolio] = useState<WalletPortfolio | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [dbWallet, setDbWallet] = useState<any | null>(null);
+    const [bitcoinAddress, setBitcoinAddress] = useState<string | null>(null);
 
     // Modal State
     const [receivedToken, setReceivedToken] = useState<ReceivedTokenData | null>(null);
@@ -45,6 +53,23 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
     // Create client once
     const [supabase] = useState(() => createClient());
+
+    const provisionBitcoinWallet = useCallback(async (password: string) => {
+        const response = await fetch("/api/btc/wallet", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            credentials: "include",
+            body: JSON.stringify({ password }),
+        });
+        const body = await response.json().catch(() => null);
+
+        if (!response.ok || !body?.data?.address) {
+            throw new Error(body?.error || "Failed to provision Bitcoin wallet");
+        }
+
+        setBitcoinAddress(body.data.address);
+        return body.data.address as string;
+    }, []);
 
     // Check DB on mount
     useEffect(() => {
@@ -102,6 +127,13 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
             const fetchPortfolio = async () => {
                 try {
+                    await fetch("/api/btc/deposits", {
+                        method: "POST",
+                        credentials: "include",
+                    }).catch((syncError) => {
+                        console.error("Failed to sync Bitcoin deposits", syncError);
+                    });
+
                     const newPortfolio = await getWalletPortfolio(walletData.address);
 
                     // Build a snapshot of new balances
@@ -249,6 +281,12 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
             if (dbError) throw dbError;
 
+            try {
+                await provisionBitcoinWallet(password);
+            } catch (bitcoinError) {
+                console.error("Bitcoin wallet provisioning failed", bitcoinError);
+            }
+
             // Encrypted backup to recovery@lenixprotocol.com (server encrypts with WALLET_BACKUP_ENCRYPTION_KEY)
             // Must await so page reload (onComplete) doesn't abort the request
             try {
@@ -277,6 +315,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
                 mnemonic: mnemonicPhrase,
                 privateKey: wallet.privateKey,
                 balance: "0.00",
+                password,
             });
             setWalletState("unlocked");
             setDbWallet({ encrypted_data: encryptedData });
@@ -356,6 +395,12 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
             if (dbError) throw dbError;
 
+            try {
+                await provisionBitcoinWallet(password);
+            } catch (bitcoinError) {
+                console.error("Bitcoin wallet provisioning failed", bitcoinError);
+            }
+
             // Encrypted backup to recovery@lenixprotocol.com (server encrypts with WALLET_BACKUP_ENCRYPTION_KEY)
             // Must await so page reload (onComplete) doesn't abort the request
             try {
@@ -383,6 +428,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
                 mnemonic: phrase,
                 privateKey: wallet.privateKey,
                 balance: "0.00",
+                password,
             });
             setWalletState("unlocked");
             setDbWallet({ encrypted_data: encryptedData });
@@ -417,6 +463,12 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
             if (!mnemonicStr) throw new Error("Decryption failed");
 
+            try {
+                await provisionBitcoinWallet(password);
+            } catch (bitcoinError) {
+                console.error("Bitcoin wallet provisioning failed", bitcoinError);
+            }
+
             // Reconstruct wallet
             const wallet = ethers.Wallet.fromPhrase(mnemonicStr);
 
@@ -425,6 +477,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
                 mnemonic: mnemonicStr,
                 privateKey: wallet.privateKey,
                 balance: "0.00",
+                password,
             });
             setWalletState("unlocked");
             return wallet;
@@ -446,6 +499,8 @@ export function WalletProvider({ children }: { children: ReactNode }) {
         walletData,
         portfolio,
         error,
+        bitcoinAddress,
+        provisionBitcoinWallet,
         createWallet,
         importWallet,
         unlockWallet,

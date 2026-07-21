@@ -1,0 +1,1622 @@
+{
+  "de": {
+    "meta": {
+      "title": "Krypto-Asset-Identifikation | Lenix Protocol",
+      "description": "Kryptowährungsbestände für Rechtsstreitigkeiten, Nachlass und Vollstreckung lokalisieren, nachverfolgen und dokumentieren. Forensische Methodik mit klarem Umfang und definierten Ergebnissen."
+    },
+    "Hero": {
+      "eyebrow": "Krypto-Asset-Identifikation",
+      "title1": "Digitale Bestände dokumentieren, ",
+      "title2": "die andere nicht offengelegt haben",
+      "subtitle": "Für Anwälte, Ermittler und Finanzexperten, die Kryptowährungen in Rechtsstreitigkeiten, Nachlassangelegenheiten und Vollstreckungsverfahren lokalisieren, nachverfolgen und verifizieren müssen — mit Methodik, die einer Prüfung standhält.",
+      "btn_primary": "Fallprüfung starten",
+      "btn_secondary": "Team kontaktieren"
+    },
+    "Audiences": {
+      "eyebrow": "Für wen das gilt",
+      "title": "Typische Mandate, die wir begleiten",
+      "description": "Identifikationsarbeit wird auf autorisierte rechtliche, regulatorische oder interne Untersuchungen begrenzt — nicht auf offene Recherchen zu unbeteiligten Dritten.",
+      "cards": {
+        "family": {
+          "title": "Familienrecht und Scheidung",
+          "desc": "Vermögensaufteilung, wenn eine Partei nicht deklarierte Wallets, Börsenkonten oder On-Chain-Bestände hat, die in Finanzoffenlegungen fehlen."
+        },
+        "fraud": {
+          "title": "Betrug und Unterschlagung",
+          "desc": "Zivil- oder Strafverfahren mit veruntreuten digitalen Mitteln — Nachverfolgung von bekannten Quell-Wallets oder kompromittierten Konten."
+        },
+        "estate": {
+          "title": "Nachlass und Probate",
+          "desc": "Testamentsvollstrecker oder Anwälte, die Kryptowährung eines Verstorbenen lokalisieren, die nicht dokumentiert wurde — ausgehend von Geräten, Unterlagen oder Teilanhaltspunkten."
+        },
+        "enforcement": {
+          "title": "Insolvenz und Vollstreckung",
+          "desc": "Gläubiger, Treuhänder oder Aufsichtsbehörden, die pfändbare Krypto-Assets und Börsenberührungspunkte eines Schuldners oder Betroffenen identifizieren."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "Was wir nachverfolgen",
+      "title": "Umfang der Identifikation und Analyse",
+      "description": "Die Arbeit verbindet On-Chain-Analyse mit belastbaren Belegen aus dem Mandat — nicht isolierte Blockchain-Abfragen.",
+      "columns": {
+        "linkage": {
+          "title": "Wallet-Identifikation",
+          "desc": "Blockchain-Adressen mit Betroffenen verknüpfen anhand von Transaktionsmustern, Clustering und Abgleich mit Geräte-, Finanz- oder Zeugenaussagen."
+        },
+        "flows": {
+          "title": "Transaktionsfluss-Analyse",
+          "desc": "Geldflüsse über Chains und Layer verfolgen — einschließlich sichtbarer Mixer-Nutzung, Bridge-Transfers und dokumentierungswürdiger Konsolidierungspunkte."
+        },
+        "attribution": {
+          "title": "Börsen- und NFT-Zuordnung",
+          "desc": "Wahrscheinliche verwahrte Einzahlungen, Off-Ramps und NFT-Bestände identifizieren, wenn On-Chain-Daten und Anhaltspunkte aus dem Mandat das erlauben."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Umfang und Grenzen",
+      "title1": "Was Identifikation zeigen kann — ",
+      "title2": "und was nicht",
+      "subtitle": "Öffentliche Blockchain-Daten haben Grenzen. Lenix begrenzt jedes Mandat auf rechtmäßigen Zugang, verfügbare Anhaltspunkte und das, was in einem Bericht belegbar ist.",
+      "items": {
+        "legal_basis": {
+          "title": "Nur autorisierte Mandate",
+          "desc": "Wir übernehmen Fälle mit rechtlicher, regulatorischer oder interner Ermittlungsgrundlage — keine spekulative Nachverfolgung unbeteiligter Personen oder Adressen."
+        },
+        "chain_limits": {
+          "title": "On-Chain ist nicht das Gesamtbild",
+          "desc": "Börsensalden in Verwahrungskonten oder nicht deklarierte Cold Storage erfordern ggf. gesonderte rechtliche Schritte jenseits der öffentlichen Ledger-Analyse."
+        },
+        "evidence": {
+          "title": "Forensische Integrität",
+          "desc": "Methoden und Datenhandhabung werden für Anwaltsprüfung, regulatorische Verfahren oder Gericht dokumentiert — mit erhaltener Chain of Custody."
+        },
+        "neutral": {
+          "title": "Neutrale Rolle möglich",
+          "desc": "Lenix kann Klägervertretung, Verteidigung oder die Rolle eines unabhängigen Sachverständigen bei Vermögensaufteilung und Bewertungsstreitigkeiten übernehmen."
+        },
+        "no_guarantee": {
+          "title": "Keine Vollständigkeitsgarantie",
+          "desc": "Identifikation ist begrenzt durch vorliegende Anhaltspunkte, Chain-Sichtbarkeit und rechtmäßigen Zugang. Wir benennen, was aus verfügbaren Daten ermittelbar ist — und was nicht."
+        },
+        "disclosure": {
+          "title": "Kontrollierte Offenlegung",
+          "desc": "Ergebnisse werden nur an im Mandat autorisierte Parteien weitergegeben — nicht verbreitet oder außerhalb des definierten Mandatsumfangs genutzt."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "So läuft es ab",
+      "title": "Von der Aufnahme zu dokumentierten Ergebnissen",
+      "description": "Ein strukturierter Ablauf für Anwälte und Ermittler — der Umfang wird vor Beginn der Analyse festgelegt.",
+      "step_label": "Schritt {number}",
+      "steps": {
+        "intake": {
+          "title": "Mandatsumfang definieren",
+          "desc": "Fallart, Parteien, bekannte Wallet-Adressen, Geräte- oder Finanzunterlagen und die Fragen, die die Identifikation beantworten soll."
+        },
+        "trace": {
+          "title": "Nachverfolgen und analysieren",
+          "desc": "Wallet-Verknüpfung, Flussmapping und Analyse von Börsenberührungspunkten mit On-Chain-Daten im Abgleich mit Mandatsbelegen."
+        },
+        "report": {
+          "title": "Ergebnisse liefern",
+          "desc": "Schriftliche Analyse mit Zeitachsen und Methodikteil — geeignet für Prozessstrategie, Compliance oder weiteres rechtliches Vorgehen."
+        }
+      },
+      "btn_primary": "Fallprüfung starten",
+      "btn_secondary": "Team ansprechen"
+    },
+    "Deliverables": {
+      "eyebrow": "Was Sie erhalten",
+      "title": "Ergebnisse für Recht und Compliance",
+      "description": "Liefergegenstände werden dem Mandat angepasst — keine generischen Blockchain-Screenshots.",
+      "items": {
+        "timeline": {
+          "title": "Transaktionschronologie",
+          "desc": "Datierter Ablauf relevanter Bewegungen mit Wallet-Verknüpfungskarten, die zeigen, wie identifizierte Adressen mit dem Mandat zusammenhängen."
+        },
+        "report": {
+          "title": "Schriftliche Analyse",
+          "desc": "Methodik, Befunde und Grenzen für die Anwaltsprüfung dokumentiert — mit klarer Trennung von Tatsache und Schlussfolgerung."
+        },
+        "testimony": {
+          "title": "Sachverständigenunterstützung",
+          "desc": "Sachverständigenaussage oder ergänzende Analyse, wenn Rechtsordnung, Mandatsbedingungen und Fallbedarf es erfordern."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Nicht offengelegte Krypto in einem Mandat lokalisieren?",
+      "subtitle": "Teilen Sie Fallkontext und vorhandene Anhaltspunkte. Wir skizzieren, welche Identifikationsarbeit realistisch ist, bevor ein begrenztes Mandat beginnt.",
+      "btn_primary": "Fallprüfung starten",
+      "btn_secondary": "Team kontaktieren"
+    }
+  },
+  "fr": {
+    "meta": {
+      "title": "Identification d'actifs crypto | Lenix Protocol",
+      "description": "Localiser, tracer et documenter des avoirs en cryptomonnaie pour litiges, successions et exécution. Méthodologie forensique avec périmètre et livrables clairs."
+    },
+    "Hero": {
+      "eyebrow": "Identification d'actifs crypto",
+      "title1": "Documenter des avoirs numériques ",
+      "title2": "que d'autres n'ont pas déclarés",
+      "subtitle": "Pour avocats, enquêteurs et professionnels financiers qui doivent localiser, tracer et vérifier des cryptomonnaies en litige, succession ou exécution — avec une méthodologie conçue pour résister à l'examen.",
+      "btn_primary": "Lancer l'examen",
+      "btn_secondary": "Contacter l'équipe"
+    },
+    "Audiences": {
+      "eyebrow": "À qui s'adresse ce service",
+      "title": "Dossiers que nous traitons couramment",
+      "description": "L'identification est limitée aux enquêtes juridiques, réglementaires ou internes autorisées — pas à des recherches ouvertes sur des tiers non concernés.",
+      "cards": {
+        "family": {
+          "title": "Droit de la famille et divorce",
+          "desc": "Partage d'actifs lorsqu'une partie peut détenir des portefeuilles non déclarés, comptes d'échange ou avoirs on-chain absents des déclarations financières."
+        },
+        "fraud": {
+          "title": "Fraude et détournement",
+          "desc": "Affaires civiles ou pénales impliquant des fonds numériques détournés — traçage depuis des portefeuilles sources connus ou comptes compromis."
+        },
+        "estate": {
+          "title": "Succession et probate",
+          "desc": "Exécuteurs testamentaires ou conseil localisant des cryptomonnaies détenues par un défunt mais non documentées — à partir d'appareils, dossiers ou indices partiels."
+        },
+        "enforcement": {
+          "title": "Faillite et exécution",
+          "desc": "Créanciers, syndics ou régulateurs identifiant des actifs crypto saisissables et points de contact avec les exchanges pour un débiteur ou une personne visée."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "Ce que nous traçons",
+      "title": "Périmètre d'identification et d'analyse",
+      "description": "Le travail combine analyse on-chain et éléments probants du dossier — pas des consultations blockchain isolées.",
+      "columns": {
+        "linkage": {
+          "title": "Identification de portefeuilles",
+          "desc": "Relier des adresses blockchain aux personnes visées via motifs transactionnels, clustering et recoupement avec appareils, finances ou témoignages."
+        },
+        "flows": {
+          "title": "Analyse des flux transactionnels",
+          "desc": "Suivre les mouvements de fonds entre chaînes et couches — y compris usage visible de mixers, transferts via bridges et points de consolidation à documenter."
+        },
+        "attribution": {
+          "title": "Attribution exchange et NFT",
+          "desc": "Identifier dépôts custodial probables, off-ramps et avoirs NFT liés au dossier lorsque les données on-chain et les indices le permettent."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Périmètre et limites",
+      "title1": "Ce que l'identification peut montrer — ",
+      "title2": "et ce qu'elle ne peut pas",
+      "subtitle": "Les données blockchain publiques ont des limites. Lenix cadre chaque mission selon l'accès légal, les indices disponibles et ce qui peut être étayé dans un rapport.",
+      "items": {
+        "legal_basis": {
+          "title": "Dossiers autorisés uniquement",
+          "desc": "Nous acceptons des dossiers avec base juridique, réglementaire ou d'enquête interne — pas de traçage spéculatif de personnes ou adresses non concernées."
+        },
+        "chain_limits": {
+          "title": "On-chain n'est pas la totalité",
+          "desc": "Soldes en comptes custodial ou cold storage non déclaré peuvent exiger des démarches juridiques distinctes au-delà de l'analyse du registre public."
+        },
+        "evidence": {
+          "title": "Intégrité forensique",
+          "desc": "Méthodes et traitement des données documentés pour examen par conseil, cadre réglementaire ou tribunal — avec chaîne de custody préservée."
+        },
+        "neutral": {
+          "title": "Capacité neutre disponible",
+          "desc": "Lenix peut soutenir le conseil du demandeur, la défense ou agir comme expert indépendant en partage d'actifs et litiges d'évaluation."
+        },
+        "no_guarantee": {
+          "title": "Aucune garantie d'exhaustivité",
+          "desc": "L'identification est limitée par les indices fournis, la visibilité on-chain et l'accès légal. Nous indiquons ce qui est et n'est pas récupérable des données disponibles."
+        },
+        "disclosure": {
+          "title": "Divulgation contrôlée",
+          "desc": "Les conclusions ne sont partagées qu'avec les parties autorisées dans le cadre de la mission — pas diffusées ni utilisées hors du périmètre défini."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Comment ça fonctionne",
+      "title": "De la prise en charge aux conclusions documentées",
+      "description": "Un parcours structuré pour conseil et enquêteurs — le périmètre est fixé avant le début de l'analyse.",
+      "step_label": "Étape {number}",
+      "steps": {
+        "intake": {
+          "title": "Définir le périmètre",
+          "desc": "Type de dossier, parties, adresses connues, appareils ou dossiers financiers, et les questions que l'identification doit résoudre."
+        },
+        "trace": {
+          "title": "Tracer et analyser",
+          "desc": "Liaison de portefeuilles, cartographie des flux et analyse des points de contact exchange avec données on-chain recoupées aux éléments du dossier."
+        },
+        "report": {
+          "title": "Livrer les conclusions",
+          "desc": "Analyse écrite avec chronologies et section méthodologique — adaptée à la stratégie contentieuse, la conformité ou une procédure juridique ultérieure."
+        }
+      },
+      "btn_primary": "Lancer l'examen",
+      "btn_secondary": "Parler à l'équipe"
+    },
+    "Deliverables": {
+      "eyebrow": "Ce que vous recevez",
+      "title": "Livrables conçus pour le juridique et la conformité",
+      "description": "Les livrables sont adaptés au dossier — pas des captures blockchain génériques.",
+      "items": {
+        "timeline": {
+          "title": "Chronologie transactionnelle",
+          "desc": "Flux daté des mouvements pertinents avec cartes de liaison montrant comment les adresses identifiées se rattachent au dossier."
+        },
+        "report": {
+          "title": "Analyse écrite",
+          "desc": "Méthodologie, conclusions et limites documentées pour examen par conseil — avec séparation claire entre fait et inférence."
+        },
+        "testimony": {
+          "title": "Appui d'expert",
+          "desc": "Témoignage d'expert ou analyse complémentaire disponible selon juridiction, termes de mission et besoins du dossier."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Localiser des crypto non déclarées dans un dossier ?",
+      "subtitle": "Partagez le contexte et les indices dont vous disposez. Nous préciserons le travail d'identification réaliste avant un engagement cadré.",
+      "btn_primary": "Lancer l'examen",
+      "btn_secondary": "Contacter l'équipe"
+    }
+  },
+  "es": {
+    "meta": {
+      "title": "Identificación de activos cripto | Lenix Protocol",
+      "description": "Localizar, rastrear y documentar tenencias de criptomonedas para litigios, sucesiones y ejecución. Metodología forense con alcance y entregables claros."
+    },
+    "Hero": {
+      "eyebrow": "Identificación de activos cripto",
+      "title1": "Documentar tenencias digitales ",
+      "title2": "que otros no han declarado",
+      "subtitle": "Para abogados, investigadores y profesionales financieros que necesitan localizar, rastrear y verificar criptomonedas en litigios, sucesiones y ejecución — con metodología diseñada para resistir revisión.",
+      "btn_primary": "Iniciar revisión",
+      "btn_secondary": "Contactar equipo"
+    },
+    "Audiences": {
+      "eyebrow": "Para quién es",
+      "title": "Asuntos que apoyamos con frecuencia",
+      "description": "El trabajo de identificación se limita a investigaciones legales, regulatorias o corporativas autorizadas — no búsquedas abiertas sobre terceros no relacionados.",
+      "cards": {
+        "family": {
+          "title": "Derecho de familia y divorcio",
+          "desc": "División de activos cuando una parte puede tener wallets no declaradas, cuentas en exchanges o tenencias on-chain ausentes de las declaraciones financieras."
+        },
+        "fraud": {
+          "title": "Fraude y malversación",
+          "desc": "Asuntos civiles o penales con fondos digitales malversados — rastreo desde wallets fuente conocidas o cuentas comprometidas."
+        },
+        "estate": {
+          "title": "Sucesión y probate",
+          "desc": "Albaceas o abogados localizando criptomonedas que un fallecido tenía pero no documentó — partiendo de dispositivos, registros o pistas parciales de direcciones."
+        },
+        "enforcement": {
+          "title": "Quiebra y ejecución",
+          "desc": "Acreedores, síndicos o reguladores identificando activos cripto embargables y puntos de contacto con exchanges de un deudor o sujeto."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "Qué rastreamos",
+      "title": "Alcance de identificación y análisis",
+      "description": "El trabajo combina análisis on-chain con evidencia del asunto — no consultas aisladas en blockchain.",
+      "columns": {
+        "linkage": {
+          "title": "Identificación de wallets",
+          "desc": "Vincular direcciones blockchain a sujetos mediante patrones de transacción, clustering y cruce con evidencia de dispositivos, finanzas o testimonios."
+        },
+        "flows": {
+          "title": "Análisis de flujos transaccionales",
+          "desc": "Seguir movimientos de fondos entre cadenas y capas — incluyendo uso visible de mixers, transferencias por bridges y puntos de consolidación dignos de documentar."
+        },
+        "attribution": {
+          "title": "Atribución de exchange y NFT",
+          "desc": "Identificar depósitos custodiales probables, off-ramps y tenencias NFT ligadas al asunto cuando los datos on-chain y las pistas lo permiten."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Alcance y límites",
+      "title1": "Qué puede mostrar la identificación — ",
+      "title2": "y qué no",
+      "subtitle": "Los datos públicos de blockchain tienen límites. Lenix delimita cada encargo según acceso legal, pistas disponibles y lo que puede respaldarse en un informe.",
+      "items": {
+        "legal_basis": {
+          "title": "Solo asuntos autorizados",
+          "desc": "Aceptamos casos con base legal, regulatoria o de investigación corporativa — no rastreo especulativo de personas o direcciones no relacionadas."
+        },
+        "chain_limits": {
+          "title": "On-chain no es el panorama completo",
+          "desc": "Saldos en cuentas custodiales o cold storage no declarado pueden requerir procesos legales aparte del análisis del ledger público."
+        },
+        "evidence": {
+          "title": "Integridad forense",
+          "desc": "Métodos y manejo de datos documentados para revisión de abogados, entornos regulatorios o tribunal — con cadena de custodia preservada."
+        },
+        "neutral": {
+          "title": "Capacidad neutral disponible",
+          "desc": "Lenix puede apoyar a abogados demandantes, defensa o actuar como perito independiente en división de activos y disputas de valoración."
+        },
+        "no_guarantee": {
+          "title": "Sin garantía de exhaustividad",
+          "desc": "La identificación está limitada por pistas aportadas, visibilidad on-chain y acceso legal. Indicamos qué es y no es recuperable de los datos disponibles."
+        },
+        "disclosure": {
+          "title": "Divulgación controlada",
+          "desc": "Los hallazgos se comparten solo con partes autorizadas bajo el encargo — no se difunden ni usan fuera del alcance definido."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Cómo funciona",
+      "title": "Desde la intake hasta hallazgos documentados",
+      "description": "Un recorrido estructurado para abogados e investigadores — el alcance se fija antes de comenzar el análisis.",
+      "step_label": "Paso {number}",
+      "steps": {
+        "intake": {
+          "title": "Definir alcance del asunto",
+          "desc": "Tipo de caso, partes, direcciones conocidas, registros de dispositivos o financieros y las preguntas que la identificación debe responder."
+        },
+        "trace": {
+          "title": "Rastrear y analizar",
+          "desc": "Vinculación de wallets, mapeo de flujos y análisis de puntos de contacto con exchanges usando datos on-chain cruzados con evidencia del asunto."
+        },
+        "report": {
+          "title": "Entregar hallazgos",
+          "desc": "Análisis escrito con cronologías y sección de metodología — apto para estrategia litigiosa, cumplimiento o proceso legal posterior."
+        }
+      },
+      "btn_primary": "Iniciar revisión",
+      "btn_secondary": "Hablar con equipo"
+    },
+    "Deliverables": {
+      "eyebrow": "Qué recibe",
+      "title": "Entregables para uso legal y de cumplimiento",
+      "description": "Los entregables se adaptan al asunto — no capturas genéricas de blockchain.",
+      "items": {
+        "timeline": {
+          "title": "Cronología transaccional",
+          "desc": "Flujo fechado de movimientos relevantes con mapas de vinculación que muestran cómo las direcciones identificadas se conectan al asunto."
+        },
+        "report": {
+          "title": "Análisis escrito",
+          "desc": "Metodología, hallazgos y limitaciones documentados para revisión de abogados — con separación clara entre hecho e inferencia."
+        },
+        "testimony": {
+          "title": "Apoyo pericial",
+          "desc": "Testimonio pericial o análisis complementario disponible según jurisdicción, términos del encargo y necesidades del caso."
+        }
+      }
+    },
+    "Cta": {
+      "title": "¿Necesita localizar cripto no declarada en un asunto?",
+      "subtitle": "Comparta el contexto del caso y las pistas que ya tiene. Indicaremos qué trabajo de identificación es realista antes de un encargo acotado.",
+      "btn_primary": "Iniciar revisión",
+      "btn_secondary": "Contactar equipo"
+    }
+  },
+  "pt": {
+    "meta": {
+      "title": "Identificação de ativos cripto | Lenix Protocol",
+      "description": "Localizar, rastrear e documentar holdings de criptomoedas para litígios, sucessões e execução. Metodologia forense com escopo e entregáveis claros."
+    },
+    "Hero": {
+      "eyebrow": "Identificação de ativos cripto",
+      "title1": "Documentar holdings digitais ",
+      "title2": "que outros não declararam",
+      "subtitle": "Para advogados, investigadores e profissionais financeiros que precisam localizar, rastrear e verificar criptomoedas em litígios, sucessões e execução — com metodologia feita para resistir a revisão.",
+      "btn_primary": "Iniciar revisão",
+      "btn_secondary": "Contactar equipa"
+    },
+    "Audiences": {
+      "eyebrow": "Para quem é",
+      "title": "Assuntos que apoiamos com frequência",
+      "description": "O trabalho de identificação limita-se a investigações legais, regulatórias ou corporativas autorizadas — não pesquisas abertas sobre terceiros não relacionados.",
+      "cards": {
+        "family": {
+          "title": "Direito de família e divórcio",
+          "desc": "Partilha de ativos quando uma parte pode ter wallets não declaradas, contas em exchanges ou holdings on-chain ausentes das declarações financeiras."
+        },
+        "fraud": {
+          "title": "Fraude e apropriação indebida",
+          "desc": "Assuntos civis ou criminais com fundos digitais desviados — rastreio a partir de wallets de origem conhecidas ou contas comprometidas."
+        },
+        "estate": {
+          "title": "Sucessão e probate",
+          "desc": "Inventariantes ou advogados localizando criptomoedas que um falecido detinha mas não documentou — a partir de dispositivos, registos ou pistas parciais de endereços."
+        },
+        "enforcement": {
+          "title": "Insolvência e execução",
+          "desc": "Credores, trustees ou reguladores identificando ativos cripto penhoráveis e pontos de contacto com exchanges de um devedor ou sujeito."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "O que rastreamos",
+      "title": "Escopo de identificação e análise",
+      "description": "O trabalho combina análise on-chain com evidência do assunto — não consultas isoladas à blockchain.",
+      "columns": {
+        "linkage": {
+          "title": "Identificação de wallets",
+          "desc": "Ligar endereços blockchain a sujeitos usando padrões de transação, clustering e cruzamento com evidência de dispositivos, finanças ou testemunhos."
+        },
+        "flows": {
+          "title": "Análise de fluxos transacionais",
+          "desc": "Seguir movimentos de fundos entre chains e camadas — incluindo uso visível de mixers, transferências por bridges e pontos de consolidação dignos de documentar."
+        },
+        "attribution": {
+          "title": "Atribuição de exchange e NFT",
+          "desc": "Identificar depósitos custodiais prováveis, off-ramps e holdings NFT ligados ao assunto quando dados on-chain e pistas o permitem."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Escopo e limites",
+      "title1": "O que a identificação pode mostrar — ",
+      "title2": "e o que não pode",
+      "subtitle": "Dados públicos de blockchain têm limites. A Lenix delimita cada engagement conforme acesso legal, pistas disponíveis e o que pode ser suportado num relatório.",
+      "items": {
+        "legal_basis": {
+          "title": "Apenas assuntos autorizados",
+          "desc": "Aceitamos casos com base legal, regulatória ou de investigação corporativa — não rastreio especulativo de pessoas ou endereços não relacionados."
+        },
+        "chain_limits": {
+          "title": "On-chain não é o quadro completo",
+          "desc": "Saldos em contas custodiais ou cold storage não declarado podem exigir processo legal separado além da análise do ledger público."
+        },
+        "evidence": {
+          "title": "Integridade forense",
+          "desc": "Métodos e tratamento de dados documentados para revisão de advogados, ambientes regulatórios ou tribunal — com cadeia de custódia preservada."
+        },
+        "neutral": {
+          "title": "Capacidade neutra disponível",
+          "desc": "A Lenix pode apoiar advogados do autor, defesa ou atuar como perito independente em partilha de ativos e disputas de avaliação."
+        },
+        "no_guarantee": {
+          "title": "Sem garantia de completude",
+          "desc": "A identificação é limitada por pistas fornecidas, visibilidade on-chain e acesso legal. Indicamos o que é e não é recuperável dos dados disponíveis."
+        },
+        "disclosure": {
+          "title": "Divulgação controlada",
+          "desc": "Conclusões são partilhadas apenas com partes autorizadas no engagement — não divulgadas nem usadas fora do escopo definido."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Como funciona",
+      "title": "Da intake a conclusões documentadas",
+      "description": "Um percurso estruturado para advogados e investigadores — o escopo é definido antes de iniciar a análise.",
+      "step_label": "Passo {number}",
+      "steps": {
+        "intake": {
+          "title": "Definir escopo do assunto",
+          "desc": "Tipo de caso, partes, endereços conhecidos, registos de dispositivos ou financeiros e as questões que a identificação deve responder."
+        },
+        "trace": {
+          "title": "Rastrear e analisar",
+          "desc": "Ligação de wallets, mapeamento de fluxos e análise de pontos de contacto com exchanges usando dados on-chain cruzados com evidência do assunto."
+        },
+        "report": {
+          "title": "Entregar conclusões",
+          "desc": "Análise escrita com cronologias e secção de metodologia — adequada a estratégia litigiosa, compliance ou processo legal posterior."
+        }
+      },
+      "btn_primary": "Iniciar revisão",
+      "btn_secondary": "Falar com equipa"
+    },
+    "Deliverables": {
+      "eyebrow": "O que recebe",
+      "title": "Entregáveis para uso legal e de compliance",
+      "description": "Entregáveis são adaptados ao assunto — não capturas genéricas de blockchain.",
+      "items": {
+        "timeline": {
+          "title": "Cronologia transacional",
+          "desc": "Fluxo datado de movimentos relevantes com mapas de ligação mostrando como endereços identificados se conectam ao assunto."
+        },
+        "report": {
+          "title": "Análise escrita",
+          "desc": "Metodologia, conclusões e limitações documentadas para revisão de advogados — com separação clara entre facto e inferência."
+        },
+        "testimony": {
+          "title": "Apoio pericial",
+          "desc": "Testemunho pericial ou análise complementar disponível conforme jurisdição, termos do engagement e necessidades do caso."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Precisa localizar cripto não declarada num assunto?",
+      "subtitle": "Partilhe o contexto do caso e as pistas que já tem. Indicaremos que trabalho de identificação é realista antes de um engagement delimitado.",
+      "btn_primary": "Iniciar revisão",
+      "btn_secondary": "Contactar equipa"
+    }
+  },
+  "it": {
+    "meta": {
+      "title": "Identificazione asset crypto | Lenix Protocol",
+      "description": "Localizzare, tracciare e documentare holdings di criptovalute per contenzioso, successioni ed esecuzione. Metodologia forense con ambito e deliverable chiari."
+    },
+    "Hero": {
+      "eyebrow": "Identificazione asset crypto",
+      "title1": "Documentare holdings digitali ",
+      "title2": "che altri non hanno dichiarato",
+      "subtitle": "Per avvocati, investigatori e professionisti finanziari che devono localizzare, tracciare e verificare criptovalute in contenzioso, successioni ed esecuzione — con metodologia pensata per resistere a revisione.",
+      "btn_primary": "Avvia revisione",
+      "btn_secondary": "Contatta team"
+    },
+    "Audiences": {
+      "eyebrow": "A chi è rivolto",
+      "title": "Casi che supportiamo di frequente",
+      "description": "Il lavoro di identificazione è limitato a indagini legali, regolamentari o aziendali autorizzate — non ricerche aperte su soggetti non correlati.",
+      "cards": {
+        "family": {
+          "title": "Diritto di famiglia e divorzio",
+          "desc": "Divisione patrimoniale quando una parte può avere wallet non dichiarati, conti exchange o holdings on-chain assenti dalle dichiarazioni finanziarie."
+        },
+        "fraud": {
+          "title": "Frode e appropriazione indebita",
+          "desc": "Questioni civili o penali con fondi digitali sottratti — tracciamento da wallet sorgente noti o account compromessi."
+        },
+        "estate": {
+          "title": "Successione e probate",
+          "desc": "Esecutori o consulenti che localizzano criptovalute detenute da un defunto ma non documentate — partendo da dispositivi, registri o indizi parziali di indirizzi."
+        },
+        "enforcement": {
+          "title": "Fallimento ed esecuzione",
+          "desc": "Creditori, curatori o regolatori che identificano asset crypto pignorabili e punti di contatto con exchange di un debitore o soggetto."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "Cosa tracciamo",
+      "title": "Ambito di identificazione e analisi",
+      "description": "Il lavoro combina analisi on-chain con evidenze del caso — non consultazioni blockchain isolate.",
+      "columns": {
+        "linkage": {
+          "title": "Identificazione wallet",
+          "desc": "Collegare indirizzi blockchain ai soggetti usando pattern transazionali, clustering e incrocio con evidenze da dispositivi, finanze o testimonianze."
+        },
+        "flows": {
+          "title": "Analisi flussi transazionali",
+          "desc": "Seguire movimenti di fondi tra chain e layer — incluso uso visibile di mixer, trasferimenti bridge e punti di consolidamento da documentare."
+        },
+        "attribution": {
+          "title": "Attribuzione exchange e NFT",
+          "desc": "Identificare depositi custodial probabili, off-ramp e holdings NFT legati al caso quando dati on-chain e indizi lo consentono."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Ambito e limiti",
+      "title1": "Cosa l'identificazione può mostrare — ",
+      "title2": "e cosa non può",
+      "subtitle": "I dati blockchain pubblici hanno limiti. Lenix delimita ogni incarico in base ad accesso legale, indizi disponibili e ciò che può essere supportato in un report.",
+      "items": {
+        "legal_basis": {
+          "title": "Solo casi autorizzati",
+          "desc": "Accettiamo casi con base legale, regolamentare o di indagine aziendale — non tracciamento speculativo di persone o indirizzi non correlati."
+        },
+        "chain_limits": {
+          "title": "On-chain non è il quadro completo",
+          "desc": "Saldi su conti custodial o cold storage non dichiarato possono richiedere procedimenti legali separati oltre l'analisi del ledger pubblico."
+        },
+        "evidence": {
+          "title": "Integrità forense",
+          "desc": "Metodi e gestione dati documentati per revisione legale, contesti regolamentari o tribunale — con catena di custodia preservata."
+        },
+        "neutral": {
+          "title": "Capacità neutrale disponibile",
+          "desc": "Lenix può supportare consulenza attorea, difesa o agire come perito indipendente in divisione patrimoniale e controversie di valutazione."
+        },
+        "no_guarantee": {
+          "title": "Nessuna garanzia di completezza",
+          "desc": "L'identificazione è limitata da indizi forniti, visibilità on-chain e accesso legale. Indichiamo cosa è e non è recuperabile dai dati disponibili."
+        },
+        "disclosure": {
+          "title": "Divulgazione controllata",
+          "desc": "I risultati sono condivisi solo con parti autorizzate nell'incarico — non diffusi né usati fuori dall'ambito definito."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Come funziona",
+      "title": "Dall'intake a risultati documentati",
+      "description": "Un percorso strutturato per consulenti e investigatori — l'ambito è definito prima dell'analisi.",
+      "step_label": "Passo {number}",
+      "steps": {
+        "intake": {
+          "title": "Definire ambito del caso",
+          "desc": "Tipo di caso, parti, indirizzi wallet noti, registri di dispositivi o finanziari e le domande che l'identificazione deve rispondere."
+        },
+        "trace": {
+          "title": "Tracciare e analizzare",
+          "desc": "Collegamento wallet, mappatura flussi e analisi punti di contatto exchange con dati on-chain incrociati con evidenze del caso."
+        },
+        "report": {
+          "title": "Consegnare risultati",
+          "desc": "Analisi scritta con cronologie e sezione metodologica — adatta a strategia processuale, compliance o ulteriore procedimento legale."
+        }
+      },
+      "btn_primary": "Avvia revisione",
+      "btn_secondary": "Parla col team"
+    },
+    "Deliverables": {
+      "eyebrow": "Cosa ricevi",
+      "title": "Output per uso legale e compliance",
+      "description": "I deliverable sono adattati al caso — non screenshot blockchain generici.",
+      "items": {
+        "timeline": {
+          "title": "Cronologia transazionale",
+          "desc": "Flusso datato di movimenti rilevanti con mappe di collegamento che mostrano come gli indirizzi identificati si connettono al caso."
+        },
+        "report": {
+          "title": "Analisi scritta",
+          "desc": "Metodologia, risultati e limiti documentati per revisione legale — con chiara separazione tra fatto e inferenza."
+        },
+        "testimony": {
+          "title": "Supporto peritale",
+          "desc": "Testimonianza peritale o analisi supplementare disponibile secondo giurisdizione, termini dell'incarico e esigenze del caso."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Devi localizzare crypto non dichiarata in un caso?",
+      "subtitle": "Condividi contesto del caso e indizi già disponibili. Delimiteremo quale lavoro di identificazione è realistico prima di un incarico definito.",
+      "btn_primary": "Avvia revisione",
+      "btn_secondary": "Contatta team"
+    }
+  },
+  "id": {
+    "meta": {
+      "title": "Identifikasi Aset Kripto | Lenix Protocol",
+      "description": "Melacak, menelusuri, dan mendokumentasikan kepemilikan kripto untuk litigasi, warisan, dan penegakan. Metodologi forensik dengan ruang lingkup dan deliverable yang jelas."
+    },
+    "Hero": {
+      "eyebrow": "Identifikasi aset kripto",
+      "title1": "Mendokumentasikan kepemilikan digital ",
+      "title2": "yang mungkin tidak diungkapkan",
+      "subtitle": "Untuk pengacara, investigator, dan profesional keuangan yang perlu melacak, menelusuri, dan memverifikasi kripto dalam litigasi, warisan, dan penegakan — dengan metodologi yang dirancang untuk tahan diperiksa.",
+      "btn_primary": "Mulai tinjauan",
+      "btn_secondary": "Hubungi tim"
+    },
+    "Audiences": {
+      "eyebrow": "Untuk siapa",
+      "title": "Kasus yang sering kami dukung",
+      "description": "Pekerjaan identifikasi dibatasi pada investigasi hukum, regulator, atau korporat yang berwenang — bukan pencarian terbuka terhadap pihak tidak terkait.",
+      "cards": {
+        "family": {
+          "title": "Hukum keluarga dan perceraian",
+          "desc": "Pembagian aset ketika satu pihak mungkin memiliki wallet tidak dilaporkan, akun exchange, atau holding on-chain yang tidak tercantum dalam pengungkapan finansial."
+        },
+        "fraud": {
+          "title": "Penipuan dan penggelapan",
+          "desc": "Kasus perdata atau pidana yang melibatkan dana digital yang disalahgunakan — melacak pergerakan dari wallet sumber yang diketahui atau akun yang dikompromikan."
+        },
+        "estate": {
+          "title": "Warisan dan probate",
+          "desc": "Pelaksana wasiat atau pengacara melacak kripto yang dimiliki almarhum tetapi tidak didokumentasikan — dimulai dari perangkat, catatan, atau petunjuk alamat sebagian."
+        },
+        "enforcement": {
+          "title": "Kebangkrutan dan penegakan",
+          "desc": "Kreditur, kurator, atau regulator mengidentifikasi aset kripto yang dapat disita dan titik sentuh exchange yang relevan bagi debitur atau subjek."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "Apa yang kami telusuri",
+      "title": "Ruang lingkup identifikasi dan analisis",
+      "description": "Pekerjaan menggabungkan analisis on-chain dengan bukti dari kasus — bukan pencarian blockchain secara terpisah.",
+      "columns": {
+        "linkage": {
+          "title": "Identifikasi wallet",
+          "desc": "Menghubungkan alamat blockchain ke subjek menggunakan pola transaksi, clustering, dan silang referensi dengan bukti perangkat, finansial, atau kesaksian."
+        },
+        "flows": {
+          "title": "Analisis alur transaksi",
+          "desc": "Mengikuti pergerakan dana antar chain dan layer — termasuk penggunaan mixer yang terlihat, transfer bridge, dan titik konsolidasi yang perlu didokumentasikan."
+        },
+        "attribution": {
+          "title": "Atribusi exchange dan NFT",
+          "desc": "Mengidentifikasi deposito custodial yang mungkin, off-ramp, dan holding NFT terkait kasus ketika data on-chain dan petunjuk mendukung."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Ruang lingkup dan batas",
+      "title1": "Apa yang identifikasi dapat tunjukkan — ",
+      "title2": "dan apa yang tidak",
+      "subtitle": "Data blockchain publik memiliki batas. Lenix membatasi setiap engagement pada akses legal, petunjuk yang tersedia, dan apa yang dapat didukung dalam laporan.",
+      "items": {
+        "legal_basis": {
+          "title": "Hanya kasus berwenang",
+          "desc": "Kami menerima kasus dengan dasar hukum, regulator, atau investigasi korporat — bukan pelacakan spekulatif terhadap individu atau alamat tidak terkait."
+        },
+        "chain_limits": {
+          "title": "On-chain bukan gambaran lengkap",
+          "desc": "Saldo exchange di akun custodial atau cold storage yang tidak dilaporkan mungkin memerlukan proses hukum terpisah di luar analisis ledger publik."
+        },
+        "evidence": {
+          "title": "Integritas forensik",
+          "desc": "Metode dan penanganan data didokumentasikan untuk tinjauan pengacara, lingkungan regulator, atau pengadilan — dengan chain of custody terjaga."
+        },
+        "neutral": {
+          "title": "Peran netral tersedia",
+          "desc": "Lenix dapat mendukung pengacara penggugat, pembela, atau bertindak sebagai ahli independen dalam pembagian aset dan sengketa valuasi."
+        },
+        "no_guarantee": {
+          "title": "Tanpa jaminan kelengkapan",
+          "desc": "Identifikasi dibatasi oleh petunjuk yang diberikan, visibilitas chain, dan akses legal. Kami menyatakan apa yang dapat dan tidak dapat diperoleh dari data tersedia."
+        },
+        "disclosure": {
+          "title": "Pengungkapan terkontrol",
+          "desc": "Temuan hanya dibagikan kepada pihak yang berwenang dalam engagement — tidak disebarluaskan atau digunakan di luar ruang lingkup yang ditetapkan."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Cara kerjanya",
+      "title": "Dari intake hingga temuan terdokumentasi",
+      "description": "Jalur terstruktur untuk pengacara dan investigator — ruang lingkup ditetapkan sebelum analisis dimulai.",
+      "step_label": "Langkah {number}",
+      "steps": {
+        "intake": {
+          "title": "Tetapkan ruang lingkup",
+          "desc": "Jenis kasus, pihak, alamat wallet yang diketahui, catatan perangkat atau finansial, dan pertanyaan yang perlu dijawab identifikasi."
+        },
+        "trace": {
+          "title": "Telusuri dan analisis",
+          "desc": "Penghubungan wallet, pemetaan alur, dan analisis titik sentuh exchange menggunakan data on-chain yang disilang dengan bukti kasus."
+        },
+        "report": {
+          "title": "Serahkan temuan",
+          "desc": "Analisis tertulis dengan timeline dan bagian metodologi — cocok untuk strategi litigasi, compliance, atau proses hukum lanjutan."
+        }
+      },
+      "btn_primary": "Mulai tinjauan",
+      "btn_secondary": "Bicara dengan tim"
+    },
+    "Deliverables": {
+      "eyebrow": "Apa yang Anda terima",
+      "title": "Output untuk kebutuhan hukum dan compliance",
+      "description": "Deliverable disesuaikan dengan kasus — bukan tangkapan layar blockchain generik.",
+      "items": {
+        "timeline": {
+          "title": "Kronologi transaksi",
+          "desc": "Alur ber tanggal pergerakan relevan dengan peta penghubungan wallet yang menunjukkan bagaimana alamat teridentifikasi terkait kasus."
+        },
+        "report": {
+          "title": "Analisis tertulis",
+          "desc": "Metodologi, temuan, dan keterbatasan didokumentasikan untuk tinjauan pengacara — dengan pemisahan jelas antara fakta dan inferensi."
+        },
+        "testimony": {
+          "title": "Dukungan ahli",
+          "desc": "Kesaksian ahli atau analisis tambahan tersedia sesuai yurisdiksi, ketentuan engagement, dan kebutuhan kasus."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Perlu melacak kripto tidak diungkapkan dalam kasus?",
+      "subtitle": "Bagikan konteks kasus dan petunjuk yang sudah Anda miliki. Kami akan merinci pekerjaan identifikasi yang realistis sebelum engagement terbatas dimulai.",
+      "btn_primary": "Mulai tinjauan",
+      "btn_secondary": "Hubungi tim"
+    }
+  },
+  "vi": {
+    "meta": {
+      "title": "Nhận dạng tài sản crypto | Lenix Protocol",
+      "description": "Định vị, truy vết và ghi nhận tài sản tiền mã hóa cho tranh tụng, thừa kế và thi hành. Phương pháp pháp y với phạm vi và sản phẩm bàn giao rõ ràng."
+    },
+    "Hero": {
+      "eyebrow": "Nhận dạng tài sản crypto",
+      "title1": "Ghi nhận tài sản số ",
+      "title2": "mà bên kia có thể chưa khai báo",
+      "subtitle": "Dành cho luật sư, điều tra viên và chuyên gia tài chính cần định vị, truy vết và xác minh tiền mã hóa trong tranh tụng, thừa kế và thi hành — với phương pháp chịu được kiểm tra.",
+      "btn_primary": "Bắt đầu rà soát",
+      "btn_secondary": "Liên hệ đội"
+    },
+    "Audiences": {
+      "eyebrow": "Dành cho ai",
+      "title": "Vụ việc chúng tôi thường hỗ trợ",
+      "description": "Công việc nhận dạng giới hạn trong các điều tra pháp lý, quản lý hoặc doanh nghiệp được ủy quyền — không phải tìm kiếm mở rộng đối với bên không liên quan.",
+      "cards": {
+        "family": {
+          "title": "Luật gia đình và ly hôn",
+          "desc": "Chia tài sản khi một bên có thể giữ ví chưa khai báo, tài khoản sàn hoặc tài sản on-chain không có trong công khai tài chính."
+        },
+        "fraud": {
+          "title": "Gian lận và chiếm đoạt",
+          "desc": "Vụ dân sự hoặc hình sự liên quan tiền số bị chiếm đoạt — truy vết từ ví nguồn đã biết hoặc tài khoản bị xâm phạm."
+        },
+        "estate": {
+          "title": "Thừa kế và probate",
+          "desc": "Người thi hành di chúc hoặc luật sư định vị tiền mã hóa người quá cố nắm giữ nhưng chưa ghi nhận — từ thiết bị, hồ sơ hoặc manh mối địa chỉ một phần."
+        },
+        "enforcement": {
+          "title": "Phá sản và thi hành",
+          "desc": "Chủ nợ, quản lý tài sản hoặc cơ quan quản lý xác định tài sản crypto có thể cưỡng chế và điểm chạm sàn liên quan đến con nợ hoặc đối tượng."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "Chúng tôi truy vết gì",
+      "title": "Phạm vi nhận dạng và phân tích",
+      "description": "Công việc kết hợp phân tích on-chain với bằng chứng từ vụ việc — không tra cứu blockchain riêng lẻ.",
+      "columns": {
+        "linkage": {
+          "title": "Nhận dạng ví",
+          "desc": "Liên kết địa chỉ blockchain với đối tượng qua mẫu giao dịch, clustering và đối chiếu với bằng chứng thiết bị, tài chính hoặc lời khai."
+        },
+        "flows": {
+          "title": "Phân tích dòng giao dịch",
+          "desc": "Theo dõi dòng tiền qua các chain và lớp — gồm dấu hiệu dùng mixer, chuyển bridge và điểm gom đáng ghi nhận."
+        },
+        "attribution": {
+          "title": "Gán nguồn sàn và NFT",
+          "desc": "Xác định nạp custodial có khả năng, off-ramp và NFT liên quan vụ việc khi dữ liệu on-chain và manh mối hỗ trợ."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Phạm vi và giới hạn",
+      "title1": "Nhận dạng có thể cho thấy gì — ",
+      "title2": "và không thể",
+      "subtitle": "Dữ liệu blockchain công khai có giới hạn. Lenix giới hạn từng hợp đồng theo quyền truy cập hợp pháp, manh mối sẵn có và những gì có thể chứng minh trong báo cáo.",
+      "items": {
+        "legal_basis": {
+          "title": "Chỉ vụ việc được ủy quyền",
+          "desc": "Chúng tôi nhận vụ có cơ sở pháp lý, quản lý hoặc điều tra doanh nghiệp — không truy vết suy đoán cá nhân hoặc địa chỉ không liên quan."
+        },
+        "chain_limits": {
+          "title": "On-chain không phải toàn cảnh",
+          "desc": "Số dư sàn ở tài khoản custodial hoặc cold storage chưa khai có thể cần thủ tục pháp lý riêng ngoài phân tích sổ cái công khai."
+        },
+        "evidence": {
+          "title": "Tính toàn vẹn pháp y",
+          "desc": "Phương pháp và xử lý dữ liệu được ghi nhận cho luật sư, môi trường quản lý hoặc tòa — với chuỗi lưu giữ được bảo toàn."
+        },
+        "neutral": {
+          "title": "Vai trò trung lập có sẵn",
+          "desc": "Lenix có thể hỗ trợ luật sư nguyên đơn, bị đơn hoặc làm chuyên gia độc lập trong tranh chia tài sản và định giá."
+        },
+        "no_guarantee": {
+          "title": "Không đảm bảo đầy đủ",
+          "desc": "Nhận dạng bị giới hạn bởi manh mối cung cấp, khả năng nhìn thấy chain và quyền truy cập hợp pháp. Chúng tôi nêu rõ phần có và không thể thu hồi từ dữ liệu hiện có."
+        },
+        "disclosure": {
+          "title": "Tiết lộ có kiểm soát",
+          "desc": "Kết quả chỉ chia sẻ với các bên được ủy quyền trong hợp đồng — không phát tán hay dùng ngoài phạm vi vụ việc."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Cách thực hiện",
+      "title": "Từ tiếp nhận đến kết quả có tài liệu",
+      "description": "Quy trình có cấu trúc cho luật sư và điều tra viên — phạm vi được xác định trước khi phân tích.",
+      "step_label": "Bước {number}",
+      "steps": {
+        "intake": {
+          "title": "Xác định phạm vi vụ việc",
+          "desc": "Loại vụ, các bên, địa chỉ ví đã biết, hồ sơ thiết bị hoặc tài chính và câu hỏi nhận dạng cần trả lời."
+        },
+        "trace": {
+          "title": "Truy vết và phân tích",
+          "desc": "Liên kết ví, lập bản đồ dòng tiền và phân tích điểm chạm sàn với dữ liệu on-chain đối chiếu bằng chứng vụ việc."
+        },
+        "report": {
+          "title": "Bàn giao kết quả",
+          "desc": "Phân tích bằng văn bản kèm dòng thời gian và phần phương pháp — phù hợp chiến lược tranh tụng, tuân thủ hoặc thủ tục pháp lý tiếp theo."
+        }
+      },
+      "btn_primary": "Bắt đầu rà soát",
+      "btn_secondary": "Trao đổi đội"
+    },
+    "Deliverables": {
+      "eyebrow": "Bạn nhận được gì",
+      "title": "Sản phẩm cho pháp lý và tuân thủ",
+      "description": "Sản phẩm bàn giao theo vụ việc — không phải ảnh chụp blockchain chung chung.",
+      "items": {
+        "timeline": {
+          "title": "Dòng thời gian giao dịch",
+          "desc": "Dòng chuyển động có ngày kèm bản đồ liên kết ví cho thấy địa chỉ đã xác định liên hệ vụ việc thế nào."
+        },
+        "report": {
+          "title": "Phân tích bằng văn bản",
+          "desc": "Phương pháp, phát hiện và giới hạn được ghi nhận cho luật sư — tách rõ sự kiện và suy luận."
+        },
+        "testimony": {
+          "title": "Hỗ trợ chuyên gia",
+          "desc": "Làm chứng chuyên gia hoặc phân tích bổ sung khi pháp lý, điều khoản hợp đồng và nhu cầu vụ việc yêu cầu."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Cần định vị crypto chưa khai trong vụ việc?",
+      "subtitle": "Chia sẻ bối cảnh vụ và manh mối hiện có. Chúng tôi sẽ phác thảo công việc nhận dạng khả thi trước khi ký hợp đồng có phạm vi.",
+      "btn_primary": "Bắt đầu rà soát",
+      "btn_secondary": "Liên hệ đội"
+    }
+  },
+  "zh": {
+    "meta": {
+      "title": "加密资产识别 | Lenix Protocol",
+      "description": "为诉讼、遗产与执行事项定位、追踪并记录加密货币持仓。取证方法论，范围与交付物清晰明确。"
+    },
+    "Hero": {
+      "eyebrow": "加密资产识别",
+      "title1": "记录他人可能未披露的 ",
+      "title2": "数字资产持仓",
+      "subtitle": "面向律师、调查人员与金融专业人士，在诉讼、遗产与执行事项中定位、追踪并核实加密货币——采用经得起审查的方法论。",
+      "btn_primary": "启动案件审查",
+      "btn_secondary": "联系团队"
+    },
+    "Audiences": {
+      "eyebrow": "适用对象",
+      "title": "我们常见支持的案件类型",
+      "description": "识别工作限于经授权的法律、监管或企业调查——不对无关方进行开放式搜索。",
+      "cards": {
+        "family": {
+          "title": "家庭法与离婚",
+          "desc": "资产分割中，一方可能持有未申报的钱包、交易所账户或财务披露中未反映的链上资产。"
+        },
+        "fraud": {
+          "title": "欺诈与挪用",
+          "desc": "涉及数字资金挪用的民事或刑事案件——从已知源钱包或遭入侵账户追踪资金流向。"
+        },
+        "estate": {
+          "title": "遗产与 probate",
+          "desc": "遗嘱执行人或律师定位死者持有但未记录的加密货币——从设备、记录或部分地址线索入手。"
+        },
+        "enforcement": {
+          "title": "破产与执行",
+          "desc": "债权人、受托人或监管机构识别债务人或对象可扣押的加密资产及交易所接触点。"
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "我们追踪的内容",
+      "title": "识别与分析范围",
+      "description": "工作结合链上分析与案件佐证——而非孤立的区块链查询。",
+      "columns": {
+        "linkage": {
+          "title": "钱包识别",
+          "desc": "通过交易模式、聚类分析，并结合设备、财务或证词证据，将区块链地址与对象关联。"
+        },
+        "flows": {
+          "title": "交易流分析",
+          "desc": "跨链与跨层追踪资金流动——包括可见的混币器使用、跨桥转移及值得记录的归集节点。"
+        },
+        "attribution": {
+          "title": "交易所与 NFT 归属",
+          "desc": "在链上数据与案件线索允许时，识别可能的托管充值、出金通道及与案件相关的 NFT 持仓。"
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "范围与限制",
+      "title1": "识别能说明什么——",
+      "title2": "以及不能说明什么",
+      "subtitle": "公开区块链数据有局限。Lenix 按合法访问、可用线索及报告可支撑内容界定每项委托范围。",
+      "items": {
+        "legal_basis": {
+          "title": "仅限授权案件",
+          "desc": "我们受理具有法律、监管或企业调查依据的案件——不对无关个人或地址进行推测性追踪。"
+        },
+        "chain_limits": {
+          "title": "链上并非全貌",
+          "desc": "托管账户中的交易所余额或未申报的冷存储，可能需要超出公开账本分析的单独法律程序。"
+        },
+        "evidence": {
+          "title": "取证完整性",
+          "desc": "方法与数据处理为律师审查、监管环境或法庭记录——并保留监管链。"
+        },
+        "neutral": {
+          "title": "可提供中立角色",
+          "desc": "Lenix 可支持原告律师、被告方，或在资产分割与估值争议中担任独立专家。"
+        },
+        "no_guarantee": {
+          "title": "不保证完整性",
+          "desc": "识别受所提供线索、链上可见性与合法访问所限。我们明确说明现有数据可及与不可及之处。"
+        },
+        "disclosure": {
+          "title": "受控披露",
+          "desc": "结论仅向委托授权方分享——不对外传播或用于定义范围之外。"
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "工作流程",
+      "title": "从受理到形成书面结论",
+      "description": "为律师与调查人员设计的结构化路径——分析开始前即界定范围。",
+      "step_label": "步骤 {number}",
+      "steps": {
+        "intake": {
+          "title": "界定案件范围",
+          "desc": "案件类型、各方、已知钱包地址、设备或财务记录，以及识别需回答的问题。"
+        },
+        "trace": {
+          "title": "追踪与分析",
+          "desc": "钱包关联、流向映射及交易所接触点分析，链上数据与案件证据交叉验证。"
+        },
+        "report": {
+          "title": "交付结论",
+          "desc": "书面分析含时间线与方法论章节——适用于诉讼策略、合规或进一步法律程序。"
+        }
+      },
+      "btn_primary": "启动案件审查",
+      "btn_secondary": "与团队沟通"
+    },
+    "Deliverables": {
+      "eyebrow": "您将获得",
+      "title": "面向法律与合规的交付物",
+      "description": "交付物按案件定制——而非通用区块链截图。",
+      "items": {
+        "timeline": {
+          "title": "交易时间线",
+          "desc": "相关流动的日期记录及钱包关联图，展示已识别地址如何与案件相连。"
+        },
+        "report": {
+          "title": "书面分析",
+          "desc": "方法论、发现与限制供律师审查——事实与推断清晰分离。"
+        },
+        "testimony": {
+          "title": "专家支持",
+          "desc": "在管辖、委托条款与案件需要时，可提供专家证词或补充分析。"
+        }
+      }
+    },
+    "Cta": {
+      "title": "需要在案件中定位未披露的加密资产？",
+      "subtitle": "分享案件背景与现有线索。我们将在限定委托开始前说明哪些识别工作切实可行。",
+      "btn_primary": "启动案件审查",
+      "btn_secondary": "联系团队"
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "تحديد الأصول المشفرة | Lenix Protocol",
+      "description": "تحديد وتتبع وتوثيق مقتنيات العملات المشفرة للتقاضي والتركات والتنفيذ. منهجية جنائية مع نطاق وتسليمات واضحة."
+    },
+    "Hero": {
+      "eyebrow": "تحديد الأصول المشفرة",
+      "title1": "توثيق المقتنيات الرقمية ",
+      "title2": "التي قد لا يكون الآخرون قد أفصحوا عنها",
+      "subtitle": "للمحامين والمحققين والمتخصصين الماليين الذين يحتاجون إلى تحديد وتتبع والتحقق من العملات المشفرة في التقاضي والتركات والتنفيذ — بمنهجية مصممة لتصمد أمام المراجعة.",
+      "btn_primary": "بدء مراجعة",
+      "btn_secondary": "تواصل مع الفريق"
+    },
+    "Audiences": {
+      "eyebrow": "لمن هذا",
+      "title": "القضايا التي ندعمها عادة",
+      "description": "يقتصر عمل التحديد على تحقيقات قانونية أو تنظيمية أو مؤسسية مصرح بها — وليس عمليات بحث مفتوحة عن أطراف غير ذات صلة.",
+      "cards": {
+        "family": {
+          "title": "قانون الأسرة والطلاق",
+          "desc": "تقسيم الأصول عندما قد يمتلك أحد الطرفين محافظ غير مُعلنة أو حسابات على منصات أو مقتنيات on-chain غير ظاهرة في الإفصاحات المالية."
+        },
+        "fraud": {
+          "title": "الاحتيال والاختلاس",
+          "desc": "قضايا مدنية أو جنائية تتضمن أموالاً رقمية مُختلسة — تتبع الحركة من محافظ مصدر معروفة أو حسابات مخترقة."
+        },
+        "estate": {
+          "title": "التركات والوصايا",
+          "desc": "منفذو الوصية أو المستشارون القانونيون يحددون عملات مشفرة يملكها المتوفى دون توثيق — انطلاقاً من الأجهزة أو السجلات أو دلائل عناوين جزئية."
+        },
+        "enforcement": {
+          "title": "الإفلاس والتنفيذ",
+          "desc": "الدائنون أو الأمناء أو الجهات الرقابية يحددون أصولاً مشفرة قابلة للحجز ونقاط اتصال بالمنصات تخص المدين أو الخاضع للتحقيق."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "ما نتتبعه",
+      "title": "نطاق التحديد والتحليل",
+      "description": "يجمع العمل بين التحليل on-chain والأدلة من القضية — وليس استعلامات blockchain منفصلة.",
+      "columns": {
+        "linkage": {
+          "title": "تحديد المحافظ",
+          "desc": "ربط عناوين blockchain بالأطراف المعنية عبر أنماط المعاملات والتجميع والمقارنة مع أدلة الأجهزة أو المالية أو الشهادات."
+        },
+        "flows": {
+          "title": "تحليل تدفق المعاملات",
+          "desc": "تتبع حركة الأموال عبر السلاسل والطبقات — بما في ذلك استخدام mixers الظاهر وتحويلات bridges ونقاط تجميع تستحق التوثيق."
+        },
+        "attribution": {
+          "title": "إسناد المنصات وNFT",
+          "desc": "تحديد إيداعات custodial محتملة وoff-ramps ومقتنيات NFT مرتبطة بالقضية عندما تسمح بيانات on-chain والدلائل المتاحة."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "النطاق والحدود",
+      "title1": "ما يمكن أن يُظهره التحديد — ",
+      "title2": "وما لا يمكن",
+      "subtitle": "لبيانات blockchain العامة حدود. يحد Lenix كل تكليف وفق الوصول القانوني والدلائل المتاحة وما يمكن دعمه في تقرير.",
+      "items": {
+        "legal_basis": {
+          "title": "قضايا مصرح بها فقط",
+          "desc": "نقبل قضايا لها أساس قانوني أو تنظيمي أو تحقيق مؤسسي — لا تتبعاً تخمينياً لأفراد أو عناوين غير ذات صلة."
+        },
+        "chain_limits": {
+          "title": "on-chain ليس الصورة الكاملة",
+          "desc": "أرصدة المنصات في حسابات custodial أو cold storage غير مُعلن قد تتطلب إجراءات قانونية منفصلة بعيداً عن تحليل السجل العام."
+        },
+        "evidence": {
+          "title": "النزاهة الجنائية",
+          "desc": "الطرق ومعالجة البيانات موثقة لمراجعة المحامين أو الإطار التنظيمي أو المحكمة — مع الحفاظ على سلسلة الحفظ."
+        },
+        "neutral": {
+          "title": "دور محايد متاح",
+          "desc": "يمكن لـ Lenix دعم محامي المدعي أو الدفاع أو العمل كخبير مستقل في نزاعات تقسيم الأصول والتقييم."
+        },
+        "no_guarantee": {
+          "title": "لا ضمان للاكتمال",
+          "desc": "يقتصر التحديد على الدلائل المقدمة ووضوح السلسلة والوصول القانوني. نبيّن ما يمكن وما لا يمكن استرداده من البيانات المتاحة."
+        },
+        "disclosure": {
+          "title": "إفصاح مُتحكم",
+          "desc": "تُشارك النتائج فقط مع الأطراف المصرح لها ضمن التكليف — دون نشر أو استخدام خارج نطاق القضية المحدد."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "كيف يعمل",
+      "title": "من الاستقبال إلى نتائج موثقة",
+      "description": "مسار منظم للمحامين والمحققين — يُحدد النطاق قبل بدء التحليل.",
+      "step_label": "الخطوة {number}",
+      "steps": {
+        "intake": {
+          "title": "تحديد نطاق القضية",
+          "desc": "نوع القضية والأطراف وعناوين المحافظ المعروفة وسجلات الأجهزة أو المالية والأسئلة التي يجب أن يجيب عنها التحديد."
+        },
+        "trace": {
+          "title": "التتبع والتحليل",
+          "desc": "ربط المحافظ ورسم التدفقات وتحليل نقاط اتصال المنصات باستخدام بيانات on-chain مقابل أدلة القضية."
+        },
+        "report": {
+          "title": "تسليم النتائج",
+          "desc": "تحليل مكتوب مع جداول زمنية وقسم منهجية — مناسب لاستراتيجية التقاضي أو الامتثال أو إجراءات قانونية لاحقة."
+        }
+      },
+      "btn_primary": "بدء مراجعة",
+      "btn_secondary": "تحدث مع الفريق"
+    },
+    "Deliverables": {
+      "eyebrow": "ما تتلقاه",
+      "title": "مخرجات للاستخدام القانوني والامتثال",
+      "description": "المخرجات مُخصصة للقضية — وليست لقطات blockchain عامة.",
+      "items": {
+        "timeline": {
+          "title": "التسلسل الزمني للمعاملات",
+          "desc": "تدفق مُؤرخ للحركات ذات الصلة مع خرائط ربط المحافظ توضح كيف ترتبط العناوين المحددة بالقضية."
+        },
+        "report": {
+          "title": "تحليل مكتوب",
+          "desc": "المنهجية والنتائج والحدود موثقة لمراجعة المحامين — مع فصل واضح بين الواقع والاستنتاج."
+        },
+        "testimony": {
+          "title": "دعم خبير",
+          "desc": "شهادة خبير أو تحليل إضافي متاح حسب الاختصاص وشروط التكليف واحتياجات القضية."
+        }
+      }
+    },
+    "Cta": {
+      "title": "تحتاج تحديد عملات مشفرة غير مُعلنة في قضية؟",
+      "subtitle": "شارك سياق القضية والدلائل المتاحة. سنحدد عمل التحديد الواقعي قبل بدء تكليف محدود النطاق.",
+      "btn_primary": "بدء مراجعة",
+      "btn_secondary": "تواصل مع الفريق"
+    }
+  },
+  "hi": {
+    "meta": {
+      "title": "क्रिप्टो एसेट पहचान | Lenix Protocol",
+      "description": "मुकदमे, वसीयत और प्रवर्तन मामलों के लिए क्रिप्टोकरेंसी holdings का पता लगाना, ट्रेस करना और दस्तावेज़ करना। स्पष्ट दायरे और deliverables के साथ फोरेंसिक methodology।"
+    },
+    "Hero": {
+      "eyebrow": "क्रिप्टो एसेट पहचान",
+      "title1": "डिजिटल holdings का दस्तावेज़ ",
+      "title2": "जो दूसरों ने शायद न बताई हों",
+      "subtitle": "वकीलों, जांचकर्ताओं और वित्तीय पेशेवरों के लिए जिन्हें मुकदमे, वसीयत और प्रवर्तन में क्रिप्टोकरेंसी का पता लगाना, ट्रेस करना और सत्यापित करना हो — review के लिए बनी methodology के साथ।",
+      "btn_primary": "समीक्षा शुरू",
+      "btn_secondary": "टीम से संपर्क"
+    },
+    "Audiences": {
+      "eyebrow": "किसके लिए",
+      "title": "मामले जिन्हें हम अक्सर सहायता देते हैं",
+      "description": "पहचान कार्य केवल अधिकृत कानूनी, नियामक या कॉर्पोरेट जांच तक सीमित — असंबंधित पक्षों पर खुली खोज नहीं।",
+      "cards": {
+        "family": {
+          "title": "पारिवारिक कानून और तलाक",
+          "desc": "संपत्ति विभाजन जहाँ एक पक्ष के पास अघोषित wallets, exchange accounts या on-chain holdings हो सकती हैं जो वित्तीय प्रकटीकरण में नहीं हैं।"
+        },
+        "fraud": {
+          "title": "धोखाधड़ी और गबन",
+          "desc": "अनुचित रूप से लिए गए डिजिटल धन वाले civil या criminal मामले — ज्ञात source wallets या compromised accounts से movement का trace।"
+        },
+        "estate": {
+          "title": "वसीयत और probate",
+          "desc": "Executor या counsel जो मृतक की undocumented क्रिप्टोकरेंसी locate करते हैं — devices, records या partial address leads से शुरू।"
+        },
+        "enforcement": {
+          "title": "दिवालियापन और प्रवर्तन",
+          "desc": "Creditors, trustees या regulators attachable crypto assets और exchange touchpoints identify करते हैं जो debtor या subject से जुड़े हों।"
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "हम क्या trace करते हैं",
+      "title": "पहचान और विश्लेषण का क्षेत्र",
+      "description": "कार्य on-chain analysis को matter के corroborating evidence के साथ जोड़ता है — अलग blockchain lookups नहीं।",
+      "columns": {
+        "linkage": {
+          "title": "Wallet पहचान",
+          "desc": "Transaction patterns, clustering और device, financial या testimony evidence के cross-reference से blockchain addresses को subjects से link करना।"
+        },
+        "flows": {
+          "title": "Transaction flow analysis",
+          "desc": "Chains और layers में fund movement follow करना — visible mixer use, bridge transfers और document करने योग्य consolidation points सहित।"
+        },
+        "attribution": {
+          "title": "Exchange और NFT attribution",
+          "desc": "संभावित custodial deposits, off-ramps और matter से जुड़ी NFT holdings identify करना जब on-chain data और leads अनुमति दें।"
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "क्षेत्र और सीमाएँ",
+      "title1": "पहचान क्या दिखा सकती है — ",
+      "title2": "और क्या नहीं",
+      "subtitle": "Public blockchain data की सीमाएँ हैं। Lenix प्रत्येक engagement को lawful access, available leads और report में supportable सीमा तक सीमित करता है।",
+      "items": {
+        "legal_basis": {
+          "title": "केवल अधिकृत मामले",
+          "desc": "हम legal, regulatory या corporate investigation basis वाले cases लेते हैं — unrelated individuals या addresses का speculative tracing नहीं।"
+        },
+        "chain_limits": {
+          "title": "On-chain पूरी तस्वीर नहीं",
+          "desc": "Custodial accounts में exchange balances या undeclared cold storage को public ledger analysis से परे अलग legal process चाहिए हो सकता है।"
+        },
+        "evidence": {
+          "title": "Forensic integrity",
+          "desc": "Methods और data handling counsel review, regulatory settings या court के लिए documented — chain of custody preserved।"
+        },
+        "neutral": {
+          "title": "Neutral capacity उपलब्ध",
+          "desc": "Lenix plaintiff counsel, defense या asset division और valuation disputes में independent expert के रूप में support कर सकता है।"
+        },
+        "no_guarantee": {
+          "title": "Completeness की कोई guarantee नहीं",
+          "desc": "पहचान provided leads, chain visibility और lawful access से bounded है। हम बताते हैं available data से क्या recoverable है और क्या नहीं।"
+        },
+        "disclosure": {
+          "title": "Controlled disclosure",
+          "desc": "Findings केवल engagement के तहत authorized parties के साथ share — defined matter scope के बाहर broadcast या use नहीं।"
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "कैसे काम करता है",
+      "title": "Intake से documented findings तक",
+      "description": "Counsel और investigators के लिए structured path — analysis शुरू होने से पहले scope तय।",
+      "step_label": "चरण {number}",
+      "steps": {
+        "intake": {
+          "title": "Matter scope define करें",
+          "desc": "Case type, parties, known wallet addresses, device या financial records, और वे प्रश्न जिनका identification को उत्तर देना है।"
+        },
+        "trace": {
+          "title": "Trace और analyze",
+          "desc": "Wallet linkage, flow mapping और exchange touchpoint analysis — on-chain data matter evidence के साथ cross-referenced।"
+        },
+        "report": {
+          "title": "Findings deliver करें",
+          "desc": "Timelines और methodology section के साथ written analysis — litigation strategy, compliance या further legal process के लिए उपयुक्त।"
+        }
+      },
+      "btn_primary": "समीक्षा शुरू",
+      "btn_secondary": "टीम से बात"
+    },
+    "Deliverables": {
+      "eyebrow": "आपको क्या मिलता है",
+      "title": "Legal और compliance use के outputs",
+      "description": "Deliverables matter के अनुसार — generic blockchain screenshots नहीं।",
+      "items": {
+        "timeline": {
+          "title": "Transaction chronology",
+          "desc": "Relevant movements का dated flow wallet linkage maps के साथ — identified addresses matter से कैसे जुड़ती हैं।"
+        },
+        "report": {
+          "title": "Written analysis",
+          "desc": "Methodology, findings और limitations counsel review के लिए documented — fact और inference का clear separation।"
+        },
+        "testimony": {
+          "title": "Expert support",
+          "desc": "Expert testimony या supplemental analysis jurisdiction, engagement terms और case needs के अनुसार उपलब्ध।"
+        }
+      }
+    },
+    "Cta": {
+      "title": "किसी matter में undisclosed crypto locate करना है?",
+      "subtitle": "Case context और existing leads साझा करें। Scoped engagement से पहले realistic identification work outline करेंगे।",
+      "btn_primary": "समीक्षा शुरू",
+      "btn_secondary": "टीम से संपर्क"
+    }
+  },
+  "tr": {
+    "meta": {
+      "title": "Kripto Varlık Tanımlama | Lenix Protocol",
+      "description": "Dava, miras ve icra konularında kripto para varlıklarını tespit etme, izleme ve belgeleme. Net kapsam ve teslimatlarla adli metodoloji."
+    },
+    "Hero": {
+      "eyebrow": "Kripto varlık tanımlama",
+      "title1": "Başkalarının açıklamadığı ",
+      "title2": "dijital varlıkları belgeleyin",
+      "subtitle": "Dava, miras ve icra süreçlerinde kripto parayı tespit, izleme ve doğrulama gereken avukatlar, soruşturmacılar ve finans uzmanları için — incelemeye dayanacak metodolojiyle.",
+      "btn_primary": "İnceleme başlat",
+      "btn_secondary": "Ekiple iletişim"
+    },
+    "Audiences": {
+      "eyebrow": "Kimler için",
+      "title": "Sık desteklediğimiz konular",
+      "description": "Tanımlama çalışması yetkili hukuki, düzenleyici veya kurumsal soruşturmalarla sınırlıdır — ilgisiz taraflara açık uçlu aramalar değil.",
+      "cards": {
+        "family": {
+          "title": "Aile hukuku ve boşanma",
+          "desc": "Bir tarafın beyan edilmemiş cüzdanları, borsa hesapları veya finansal açıklamalarda yer almayan on-chain varlıkları olabileceği mal paylaşımı."
+        },
+        "fraud": {
+          "title": "Dolandırıcılık ve zimmet",
+          "desc": "Zimmete geçirilmiş dijital fon içeren hukuk veya ceza davaları — bilinen kaynak cüzdanlardan veya ele geçirilmiş hesaplardan izleme."
+        },
+        "estate": {
+          "title": "Miras ve probate",
+          "desc": "Vefat edenin belgelemediği kripto parayı tespit eden vasiyet icracıları veya avukatlar — cihazlar, kayıtlar veya kısmi adres ipuçlarından."
+        },
+        "enforcement": {
+          "title": "İflas ve icra",
+          "desc": "Alacaklılar, mütevelli heyetler veya düzenleyiciler borçlu veya konuyla ilgili haczedilebilir kripto varlıkları ve borsa temas noktalarını belirler."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "Ne izliyoruz",
+      "title": "Tanımlama ve analiz kapsamı",
+      "description": "Çalışma on-chain analizi dosyadan gelen kanıtlarla birleştirir — izole blockchain sorguları değil.",
+      "columns": {
+        "linkage": {
+          "title": "Cüzdan tanımlama",
+          "desc": "İşlem kalıpları, kümeleme ve cihaz, finans veya tanık deliliyle çapraz referans kullanarak blockchain adreslerini kişilere bağlama."
+        },
+        "flows": {
+          "title": "İşlem akışı analizi",
+          "desc": "Zincirler ve katmanlar arasında fon hareketini izleme — görünür mixer kullanımı, bridge transferleri ve belgelenmeye değer birleşim noktaları dahil."
+        },
+        "attribution": {
+          "title": "Borsa ve NFT atfı",
+          "desc": "On-chain veri ve ipuçları izin verdiğinde olası saklama yatırımları, off-ramp'ler ve dosyayla bağlantılı NFT varlıklarını belirleme."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Kapsam ve sınırlar",
+      "title1": "Tanımlama ne gösterebilir — ",
+      "title2": "ve ne gösteremez",
+      "subtitle": "Halka açık blockchain verisinin sınırları vardır. Lenix her görevi yasal erişim, mevcut ipuçları ve raporda desteklenebileceklerle sınırlar.",
+      "items": {
+        "legal_basis": {
+          "title": "Yalnızca yetkili konular",
+          "desc": "Hukuki, düzenleyici veya kurumsal soruşturma dayanağı olan dosyaları alırız — ilgisiz kişi veya adreslerin spekülatif izlemesi değil."
+        },
+        "chain_limits": {
+          "title": "On-chain tam resim değil",
+          "desc": "Saklama hesaplarındaki borsa bakiyeleri veya beyan edilmemiş cold storage, halka açık defter analizinin ötesinde ayrı hukuki süreç gerektirebilir."
+        },
+        "evidence": {
+          "title": "Adli bütünlük",
+          "desc": "Yöntemler ve veri işleme avukat incelemesi, düzenleyici ortam veya mahkeme için belgelenir — zincirleme custodi korunur."
+        },
+        "neutral": {
+          "title": "Tarafsız rol mümkün",
+          "desc": "Lenix davacı vekili, savunma veya mal paylaşımı ve değerleme uyuşmazlıklarında bağımsız uzman olarak destek verebilir."
+        },
+        "no_guarantee": {
+          "title": "Tamlık garantisi yok",
+          "desc": "Tanımlama sağlanan ipuçları, zincir görünürlüğü ve yasal erişimle sınırlıdır. Mevcut veriden neyin elde edilebileceğini ve edilemeyeceğini açıkça belirtiriz."
+        },
+        "disclosure": {
+          "title": "Kontrollü açıklama",
+          "desc": "Bulgular yalnızca görev kapsamında yetkili taraflarla paylaşılır — tanımlanan konu dışında yayınlanmaz veya kullanılmaz."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Nasıl işler",
+      "title": "Alımdan belgelenmiş bulgulara",
+      "description": "Avukatlar ve soruşturmacılar için yapılandırılmış yol — analiz başlamadan kapsam belirlenir.",
+      "step_label": "Adım {number}",
+      "steps": {
+        "intake": {
+          "title": "Konu kapsamını tanımla",
+          "desc": "Dava türü, taraflar, bilinen cüzdan adresleri, cihaz veya finans kayıtları ve tanımlamanın yanıtlaması gereken sorular."
+        },
+        "trace": {
+          "title": "İzle ve analiz et",
+          "desc": "Cüzdan bağlantısı, akış haritalama ve borsa temas noktası analizi — on-chain veri dosya kanıtıyla çapraz referanslı."
+        },
+        "report": {
+          "title": "Bulguları teslim et",
+          "desc": "Zaman çizelgeleri ve metodoloji bölümüyle yazılı analiz — dava stratejisi, uyum veya sonraki hukuki süreç için uygun."
+        }
+      },
+      "btn_primary": "İnceleme başlat",
+      "btn_secondary": "Ekiple konuş"
+    },
+    "Deliverables": {
+      "eyebrow": "Ne alırsınız",
+      "title": "Hukuk ve uyum kullanımı için çıktılar",
+      "description": "Teslimatlar dosyaya göre uyarlanır — genel blockchain ekran görüntüleri değil.",
+      "items": {
+        "timeline": {
+          "title": "İşlem kronolojisi",
+          "desc": "Belirlenen adreslerin konuyla nasıl bağlandığını gösteren cüzdan bağlantı haritalarıyla ilgili hareketlerin tarihli akışı."
+        },
+        "report": {
+          "title": "Yazılı analiz",
+          "desc": "Metodoloji, bulgular ve sınırlamalar avukat incelemesi için belgelenir — gerçek ve çıkarım net ayrılır."
+        },
+        "testimony": {
+          "title": "Uzman desteği",
+          "desc": "Yargı yetkisi, görev şartları ve dava ihtiyacına göre uzman tanıklığı veya ek analiz."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Bir dosyada beyan edilmemiş kripto mu tespit edeceksiniz?",
+      "subtitle": "Dava bağlamını ve mevcut ipuçlarını paylaşın. Kapsamlı görev öncesi gerçekçi tanımlama çalışmasını özetleriz.",
+      "btn_primary": "İnceleme başlat",
+      "btn_secondary": "Ekiple iletişim"
+    }
+  },
+  "tl": {
+    "meta": {
+      "title": "Pagkilala sa Crypto Asset | Lenix Protocol",
+      "description": "Hanapin, subaybayan, at idokumento ang cryptocurrency holdings para sa litigasyon, estate, at enforcement. Forensic methodology na may malinaw na saklaw at deliverables."
+    },
+    "Hero": {
+      "eyebrow": "Pagkilala sa crypto asset",
+      "title1": "Idokumento ang digital holdings ",
+      "title2": "na maaaring hindi inihayag ng iba",
+      "subtitle": "Para sa mga abogado, imbestigator, at financial professional na kailangang hanapin, subaybayan, at i-verify ang cryptocurrency sa litigasyon, estate, at enforcement — gamit ang methodology na kayang tumayo sa review.",
+      "btn_primary": "Simulan review",
+      "btn_secondary": "Kontakin team"
+    },
+    "Audiences": {
+      "eyebrow": "Para kanino",
+      "title": "Mga usapin na madalas naming suportahan",
+      "description": "Limitado ang identification work sa awtorisadong legal, regulatory, o corporate investigation — hindi open-ended na paghahanap sa hindi kaugnay na partido.",
+      "cards": {
+        "family": {
+          "title": "Family law at diborsyo",
+          "desc": "Paghahati ng asset kung saan maaaring may hindi idineklarang wallet, exchange account, o on-chain holdings ang isang partido na wala sa financial disclosure."
+        },
+        "fraud": {
+          "title": "Panloloko at pag-appropriation",
+          "desc": "Civil o criminal na usapin na may maling ginamit na digital funds — pagsubaybay mula sa kilalang source wallet o compromised account."
+        },
+        "estate": {
+          "title": "Estate at probate",
+          "desc": "Mga executor o counsel na naghahanap ng cryptocurrency na hawak ng yumao ngunit hindi naidokumento — mula sa device, record, o partial address leads."
+        },
+        "enforcement": {
+          "title": "Bankruptcy at enforcement",
+          "desc": "Mga creditor, trustee, o regulator na tumutukoy ng attachable crypto assets at exchange touchpoints na relevant sa debtor o subject."
+        }
+      }
+    },
+    "Methods": {
+      "eyebrow": "Ano ang sinusubaybayan",
+      "title": "Saklaw ng identification at analysis",
+      "description": "Pinagsasama ng trabaho ang on-chain analysis at corroborating evidence mula sa matter — hindi isolated na blockchain lookup.",
+      "columns": {
+        "linkage": {
+          "title": "Wallet identification",
+          "desc": "I-link ang blockchain address sa subject gamit ang transaction pattern, clustering, at cross-reference sa device, financial, o testimony evidence."
+        },
+        "flows": {
+          "title": "Transaction flow analysis",
+          "desc": "Sundan ang galaw ng pondo sa chains at layers — kasama ang visible mixer use, bridge transfer, at consolidation point na dapat idokumento."
+        },
+        "attribution": {
+          "title": "Exchange at NFT attribution",
+          "desc": "Tukuyin ang posibleng custodial deposit, off-ramp, at NFT holdings na konektado sa matter kapag pinapayagan ng on-chain data at leads."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Saklaw at limitasyon",
+      "title1": "Ano ang maipapakita ng identification — ",
+      "title2": "at ano ang hindi",
+      "subtitle": "May limitasyon ang public blockchain data. Nililimitahan ng Lenix ang bawat engagement sa lawful access, available leads, at kung ano ang masusuportahan sa report.",
+      "items": {
+        "legal_basis": {
+          "title": "Awtorisadong usapin lamang",
+          "desc": "Tumatanggap kami ng kaso na may legal, regulatory, o corporate investigation basis — hindi speculative tracing ng unrelated individual o address."
+        },
+        "chain_limits": {
+          "title": "Hindi kumpletong larawan ang on-chain",
+          "desc": "Maaaring kailanganin ng hiwalay na legal process ang exchange balance sa custodial account o undeclared cold storage bukod sa public ledger analysis."
+        },
+        "evidence": {
+          "title": "Forensic integrity",
+          "desc": "Naidodokumento ang methods at data handling para sa counsel review, regulatory setting, o korte — may preserved chain of custody."
+        },
+        "neutral": {
+          "title": "Available ang neutral capacity",
+          "desc": "Maaaring suportahan ng Lenix ang plaintiff counsel, depensa, o magsilbing independent expert sa asset division at valuation dispute."
+        },
+        "no_guarantee": {
+          "title": "Walang completeness guarantee",
+          "desc": "Limitado ang identification sa ibinigay na leads, chain visibility, at lawful access. Sinasabi namin kung ano ang at hindi maaaring makuha mula sa available data."
+        },
+        "disclosure": {
+          "title": "Controlled disclosure",
+          "desc": "Ibinabahagi ang findings lamang sa authorized party sa ilalim ng engagement — hindi ipinapalaganap o ginagamit sa labas ng defined matter scope."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Paano gumagana",
+      "title": "Mula intake hanggang documented findings",
+      "description": "Structured path para sa counsel at investigator — tinutukoy ang scope bago magsimula ang analysis.",
+      "step_label": "Hakbang {number}",
+      "steps": {
+        "intake": {
+          "title": "Tukuyin ang matter scope",
+          "desc": "Uri ng kaso, partido, kilalang wallet address, device o financial record, at mga tanong na kailangang sagutin ng identification."
+        },
+        "trace": {
+          "title": "Subaybayan at suriin",
+          "desc": "Wallet linkage, flow mapping, at exchange touchpoint analysis gamit ang on-chain data na cross-referenced sa matter evidence."
+        },
+        "report": {
+          "title": "Ihatid ang findings",
+          "desc": "Written analysis na may timeline at methodology section — angkop sa litigation strategy, compliance, o karagdagang legal process."
+        }
+      },
+      "btn_primary": "Simulan review",
+      "btn_secondary": "Makipag-usap team"
+    },
+    "Deliverables": {
+      "eyebrow": "Ano ang matatanggap",
+      "title": "Output para sa legal at compliance",
+      "description": "Iniakma ang deliverables sa matter — hindi generic na blockchain screenshot.",
+      "items": {
+        "timeline": {
+          "title": "Transaction chronology",
+          "desc": "Dated flow ng relevant movement na may wallet linkage map na nagpapakita kung paano konektado ang identified address sa matter."
+        },
+        "report": {
+          "title": "Written analysis",
+          "desc": "Methodology, findings, at limitations na idinokumento para sa counsel review — malinaw na paghiwalay ng fact at inference."
+        },
+        "testimony": {
+          "title": "Expert support",
+          "desc": "Expert testimony o supplemental analysis available ayon sa jurisdiction, engagement terms, at case needs."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Kailangan hanapin ang undisclosed crypto sa isang matter?",
+      "subtitle": "Ibahagi ang case context at leads na mayroon na. Ilalahad namin ang realistic identification work bago magsimula ang scoped engagement.",
+      "btn_primary": "Simulan review",
+      "btn_secondary": "Kontakin team"
+    }
+  }
+}

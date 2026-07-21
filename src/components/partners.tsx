@@ -2,111 +2,89 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { home } from "@/lib/home-styles";
 
-const PARTNERS = [
-  {
-    name: "Coinbase",
-    logo: "/assets/partners/coinbase_black.png",
-    alt: "Coinbase",
-  },
-  {
-    name: "Revolut",
-    logo: "/assets/partners/Revolut_Logo.webp",
-    alt: "Revolut",
-  },
-  {
-    name: "Scam Tracker",
-    logo: "/assets/partners/tracker.webp",
-    alt: "Scam Tracker",
-  },
-  {
-    name: "BitGo",
-    logo: "/assets/partners/BitGo_black.avif",
-    alt: "BitGo",
-  },
-  {
-    name: "Binance",
-    logo: "/assets/partners/binance_black-01.svg",
-    alt: "Binance",
-  },
-  {
-    name: "Chain",
-    logo: "/assets/partners/chain.png",
-    alt: "Chain",
-  },
-  {
-    name: "Paysafe",
-    logo: "/assets/partners/paysafe-Logo-Oct2023.webp",
-    alt: "Paysafe",
-  },
-  {
-    name: "Etherium",
-    logo: "/assets/partners/etherium.png",
-    alt: "Etherium",
-  },
+export const MEDIA_PARTNERS = [
+  { name: "Bloomberg", logo: "/assets/part/bloomberg.png", alt: "Bloomberg" },
+  { name: "Yahoo Finance", logo: "/assets/part/yahoo.png", alt: "Yahoo Finance" },
+  { name: "CoinTelegraph", logo: "/assets/part/cointelegraph.png", alt: "CoinTelegraph" },
+  { name: "BeInCrypto", logo: "/assets/part/beincrypto.png", alt: "BeInCrypto" },
+  { name: "Benzinga", logo: "/assets/part/benzinga.png", alt: "Benzinga" },
+  { name: "MarketWatch", logo: "/assets/part/marketwatch.png", alt: "MarketWatch" },
+  { name: "Morningstar", logo: "/assets/part/morningstar.png", alt: "Morningstar" },
+  { name: "Bitcoin.com", logo: "/assets/part/bitcoin.png", alt: "Bitcoin.com" },
+  { name: "DexTools", logo: "/assets/part/dextools.png", alt: "DexTools" },
+  { name: "TON", logo: "/assets/part/ton.png", alt: "TON" },
 ] as const;
+
+export type Partner = (typeof MEDIA_PARTNERS)[number];
 
 interface PartnersProps {
   className?: string;
-  partners?: typeof PARTNERS;
+  partners?: readonly Partner[];
+  showHeader?: boolean;
 }
 
-function PartnerLogo({ partner }: { partner: (typeof PARTNERS)[number] }) {
+function PartnerLogo({ partner }: { partner: Partner }) {
   const [imageError, setImageError] = useState(false);
-  const isSvg = partner.logo.endsWith('.svg');
 
   if (imageError) {
     return (
-      <div className="flex items-center justify-center w-full h-20 p-4">
-        <span className="text-gray-400 text-sm font-medium">{partner.name}</span>
-      </div>
+      <span className="text-neutral-600 text-xs font-medium whitespace-nowrap px-4">
+        {partner.name}
+      </span>
     );
   }
 
   return (
-    <div className="flex items-center justify-center w-full h-20 p-4 transition-all duration-300 opacity-60 hover:opacity-100">
-      <div className="relative w-full h-full flex items-center justify-center bg-transparent">
-        {isSvg ? (
-          <img
-            src={partner.logo}
-            alt={partner.alt}
-            className="max-w-full max-h-full object-contain"
-            style={{ 
-              filter: 'brightness(0) invert(1)',
-            }}
-            onError={() => setImageError(true)}
-          />
-        ) : (
-          <Image
-            src={partner.logo}
-            alt={partner.alt}
-            width={120}
-            height={60}
-            className="max-w-full max-h-full object-contain"
-            style={{ 
-              filter: 'brightness(0) invert(1)',
-            }}
-            onError={() => setImageError(true)}
-            unoptimized
-          />
-        )}
-      </div>
+    <div className="flex h-14 sm:h-16 w-44 sm:w-52 shrink-0 items-center justify-center px-8 opacity-60">
+      <Image
+        src={partner.logo}
+        alt={partner.alt}
+        width={200}
+        height={56}
+        className="max-h-10 sm:max-h-12 w-auto object-contain"
+        onError={() => setImageError(true)}
+        unoptimized
+      />
     </div>
   );
 }
 
 export default function Partners({
   className = "",
-  partners = PARTNERS,
+  partners = MEDIA_PARTNERS,
+  showHeader = true,
 }: PartnersProps) {
+  const t = useTranslations("Home.Partners");
+
   return (
-    <section className={`py-8 md:py-4 ${className}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Partners Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center justify-items-center">
-          {partners.map((partner) => (
-            <PartnerLogo key={partner.name} partner={partner} />
-          ))}
+    <section className={`py-14 bg-neutral-950 ${className}`} aria-label={t("title")}>
+      <div className={home.container}>
+        {showHeader && (
+          <header className="mb-8 max-w-2xl">
+            <p className={`${home.eyebrow} mb-2`}>{t("eyebrow")}</p>
+            <h2 className="text-xl sm:text-2xl font-semibold text-white mb-1">{t("title")}</h2>
+            <p className="text-sm text-neutral-500">{t("subtitle")}</p>
+          </header>
+        )}
+
+        <div className="partners-marquee-mask overflow-hidden">
+          <div className="partners-marquee-track">
+            <div className="flex items-center" role="list" aria-label={t("title")}>
+              {partners.map((partner) => (
+                <div key={partner.name} role="listitem">
+                  <PartnerLogo partner={partner} />
+                </div>
+              ))}
+            </div>
+            <div className="flex items-center" aria-hidden="true">
+              {partners.map((partner) => (
+                <PartnerLogo key={`${partner.name}-duplicate`} partner={partner} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

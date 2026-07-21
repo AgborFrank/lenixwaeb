@@ -1,41 +1,25 @@
-"use client";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
+import { home } from "@/lib/home-styles";
 
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Mail } from "lucide-react";
+export default async function ThreatIntelligenceCta() {
+  const t = await getTranslations("ThreatIntelligence.Cta");
 
-export default function ThreatIntelligenceCTA() {
   return (
-    <section className="py-24">
-      <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
-          Are you ready to take a closer look?
-        </h2>
-        <p className="text-xl text-zinc-400 mb-10">
-          Get started with blockchain intelligence for investigations and
-          enforcement. Get the latest insights in your inbox.
-        </p>
-        <div className="flex flex-row justify-center gap-4 flex-wrap">
-          <Link href="/contact">
-            <Button
-              size="lg"
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold h-14 px-12 rounded-full text-lg"
-            >
-              Get started
-            </Button>
+    <section className="py-24 bg-black relative">
+      <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
+        <h2 className="text-3xl md:text-5xl font-semibold text-white mb-6">{t("title")}</h2>
+        <p className="text-lg text-zinc-400 mb-10 max-w-2xl mx-auto">{t("description")}</p>
+        <div className="flex flex-col sm:flex-row justify-center gap-3">
+          <Link href="/contact" className={`${home.btnPrimary} h-12 px-10 text-base`}>
+            {t("btn_primary")}
           </Link>
-          <Link href="https://t.me/Verified_protocol">
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white/10 text-white hover:bg-white/5 h-14 px-12 rounded-full text-lg inline-flex items-center gap-2"
-            >
-              <Mail className="w-5 h-5" />
-              Connect on Telegram
-            </Button>
+          <Link href="/blockchain-forensics" className={`${home.btnSecondary} h-12 px-10 text-base`}>
+            {t("btn_secondary")}
           </Link>
         </div>
       </div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-yellow-400/10 blur-[100px] -z-0 rounded-full pointer-events-none" />
     </section>
   );
 }

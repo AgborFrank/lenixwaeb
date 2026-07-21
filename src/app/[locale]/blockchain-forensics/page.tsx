@@ -1,21 +1,33 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { BlockchainForensicsContent } from "./components/blockchain-forensics-content";
+import BlockchainForensicsHero from "./components/blockchain-forensics-hero";
+import BlockchainForensicsCapabilities from "./components/blockchain-forensics-capabilities";
+import BlockchainForensicsUseCases from "./components/blockchain-forensics-use-cases";
+import BlockchainForensicsProcess from "./components/blockchain-forensics-process";
+import BlockchainForensicsCta from "./components/blockchain-forensics-cta";
 
-export const metadata: Metadata = {
-  title: "Blockchain Forensics & Asset Tracing Investigation | Lenix Protocol",
-  description: "Advanced blockchain intelligence and forensic reports for law enforcement and legal recovery. Professional asset tracing and fraud analysis.",
-  keywords: ["Blockchain Forensics", "Asset Tracing", "Crypto Investigation", "On-Chain Analytics", "Forensic Reports"],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("BlockchainForensics.meta");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function BlockchainForensicsPage() {
   return (
     <>
       <Header />
-      <BlockchainForensicsContent />
+      <div className="min-h-screen bg-black text-white selection:bg-yellow-400/30">
+        <BlockchainForensicsHero />
+        <BlockchainForensicsCapabilities />
+        <BlockchainForensicsUseCases />
+        <BlockchainForensicsProcess />
+        <BlockchainForensicsCta />
+      </div>
       <Footer />
     </>
   );
 }
-

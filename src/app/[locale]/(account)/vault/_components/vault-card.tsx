@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import { ShieldCheck, TrendingUp, TrendingDown, MoreHorizontal, Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { useSettings } from "@/app/[locale]/(account)/_providers/settings-provider";
 
@@ -13,6 +14,7 @@ interface VaultCardProps {
 }
 
 export function VaultCard({ totalBalance, change24h, isLoading }: VaultCardProps) {
+  const t = useTranslations("AccountVault.card");
   const { formatCurrency } = useSettings();
   const [showBalance, setShowBalance] = useState(true);
 
@@ -41,7 +43,7 @@ export function VaultCard({ totalBalance, change24h, isLoading }: VaultCardProps
               <ShieldCheck className="h-6 w-6 text-yellow-400" />
             </div>
             <div>
-              <h3 className="text-zinc-400 text-sm font-medium tracking-wide">TOTAL VAULT VALUE</h3>
+              <h3 className="text-zinc-400 text-sm font-medium tracking-wide">{t("total_value")}</h3>
               <div className="flex items-center gap-2 mt-1">
                 {showBalance ? (
                   <span className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
@@ -53,6 +55,7 @@ export function VaultCard({ totalBalance, change24h, isLoading }: VaultCardProps
                   </span>
                 )}
                 <button
+                  type="button"
                   onClick={() => setShowBalance(!showBalance)}
                   className="p-1 rounded-lg hover:bg-white/10 text-zinc-500 hover:text-white transition-colors"
                 >
@@ -83,15 +86,15 @@ export function VaultCard({ totalBalance, change24h, isLoading }: VaultCardProps
               {isPositive ? <TrendingUp className="h-3 w-3" /> : <TrendingDown className="h-3 w-3" />}
               <span>
                 {isPositive ? "+" : ""}
-                {change24h.toFixed(2)}% (24h)
+                {t("change_24h", { percent: change24h.toFixed(2) })}
               </span>
             </div>
-            <p className="text-zinc-500 text-xs pl-1">Last synced: Just now</p>
+            <p className="text-zinc-500 text-xs pl-1">{t("last_synced")}</p>
           </div>
 
           <div className="flex flex-col items-end gap-1">
             <span className="text-xs text-zinc-500 uppercase tracking-widest font-bold">
-              Security Level
+              {t("security_level")}
             </span>
             <div className="flex gap-1">
               {[1, 2, 3, 4].map((i) => (
@@ -102,7 +105,7 @@ export function VaultCard({ totalBalance, change24h, isLoading }: VaultCardProps
               ))}
               <div className="h-2 w-8 rounded-full bg-zinc-800" />
             </div>
-            <span className="text-xs text-yellow-400 font-medium">Very High</span>
+            <span className="text-xs text-yellow-400 font-medium">{t("security_very_high")}</span>
           </div>
         </div>
       </div>

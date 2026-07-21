@@ -1,14 +1,15 @@
 {
   "Header": {
     "nav": {
-      "giveaway": "250K Giveaway",
+      "giveaway": "Komunidad",
       "about": "Tungkol",
       "solutions": "Solusyon",
       "blockchain_forensics": "Forensics",
       "asset_recovery": "Pagbawi ng Asset",
       "crypto_recovery": "Pagbawi ng Crypto",
       "contact": "Makipag-ugnayan",
-      "airdrop": "Airdrop"
+      "airdrop": "Airdrop",
+      "banking_finance": "Banking & Finance"
     },
     "solutions": {
       "wallet": {
@@ -30,6 +31,10 @@
       "enforcement": {
         "title": "Pagpapatupad ng Batas",
         "desc": "Mga tool ng katalinuhan para sa ahensya."
+      },
+      "banking_finance": {
+        "title": "Banking & Finance",
+        "desc": "Transfers, liquidation, lending, and custody."
       }
     },
     "user_menu": {
@@ -47,12 +52,12 @@
     },
     "buttons": {
       "log_in": "Mag-log in",
-      "log_in_sign_up": "Mag-log in / Mag-sign up",
-      "get_reward": "Kumuha ng 50 USDT"
+      "log_in_sign_up": "Mag-log in",
+      "get_reward": "Account"
     }
   },
   "Footer": {
-    "company_desc": "L1 protocol para sa crypto-bank na pagbabayad at pagbawi ng asset. Gumagamit ng AI para sa scalability at seguridad.",
+    "company_desc": "Blockchain forensics, asset recovery, at crypto finance infrastructure. Audited protocol para sa tracing, custody, at cross-border payments.",
     "headings": {
       "about": "TUNGKOL",
       "solutions": "SOLUSYON",
@@ -77,10 +82,12 @@
       "privacy": "Privacy",
       "disclaimer": "Disclaimer",
       "wallet_decryption": "Pag-decrypt ng Wallet",
-      "crypto_asset_identification": "Pagkakakilanlan ng Crypto Asset"
+      "crypto_asset_identification": "Pagkakakilanlan ng Crypto Asset",
+      "security": "Seguridad",
+      "banking_finance": "Banking & Finance"
     },
     "buttons": {
-      "recover_assets": "Bawiin ang Mga Asset"
+      "recover_assets": "I-recover"
     },
     "certification_desc": "Sertipikadong ISO27001. Ligtas naming pinamamahalaan ang data ayon sa internasyonal na pamantayan.",
     "copyright": "© 2017 - 2026 Lenix Protocol, Lahat ng Karapatan ay Nakalaan."
@@ -106,56 +113,70 @@
   },
   "Home": {
     "Hero": {
-      "title1": "Blockchain ",
-      "title2": "Forensics",
-      "title3": ",\nCrypto Security at Recovery Protocol.",
-      "subtitle1": "Advanced blockchain analytics at forensic investigations para ma-trace ang assets, matuklasan ang fraud, at suportahan ang legal recovery efforts sa buong mundo.",
-      "subtitle2": "I-secure ang iyong digital future gamit ang expert investigation.",
-      "btn_signup": "Mag-sign up sa Lenix",
-      "btn_login": "Mag-log in",
-      "widget_title": "Bumili Na",
-      "widget_subtitle": "Bago Tumaas ang Presyo",
-      "usd_raised": "USD NA NAIPON SA NGAYON:",
-      "tokens_sold": "Mga Token na Naibenta:",
-      "price_usd": "Presyo sa USD: ${price}",
-      "price_eth": "Presyo sa ETH: {price} ETH",
-      "pay_eth": "ETH na iyong ibabayad",
-      "pay_usdt": "USDT na iyong ibabayad",
-      "pay_usd": "USD na iyong ibabayad",
-      "receive_lnx": "$LNX na iyong matatanggap",
-      "btn_processing": "Pinoproseso...",
-      "btn_pay_eth": "Magbayad gamit ang ETH",
-      "btn_pay_usdt": "Magbayad gamit ang USDT",
-      "btn_pay_card": "Ilagay ang detalye ng card sa ibaba",
-      "card_info": "Powered by Stripe. Halagang sisingilin sa USD.",
-      "btn_connect": "Ikonekta ang Wallet",
-      "btn_giveaway": "Kumuha ng 500 USD Giveaway",
-      "giveaway_info": "Tumanggap ng 500 USD na halaga ng LNX tokens bilang giveaway"
+      "slides": {
+        "recovery": {
+          "title1": "Blockchain forensics and recovery ",
+          "title2": "for stolen digital assets",
+          "title3": ".",
+          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
+          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
+          "btn_primary": "Start a recovery case",
+          "btn_secondary": "Contact our team"
+        },
+        "forensics": {
+          "title1": "Investigation-grade ",
+          "title2": "blockchain forensics",
+          "title3": ".",
+          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
+          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
+          "btn_primary": "View forensics",
+          "btn_secondary": "Contact our team"
+        },
+        "banking": {
+          "title1": "Cross-Border Financial Services, ",
+          "title2": "Payment and Remittance",
+          "title3": ".",
+          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
+          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
+          "btn_primary": "Create account",
+          "btn_secondary": "Banking & finance"
+        },
+        "settlement": {
+          "title1": "Crypto-to-fiat settlement ",
+          "title2": "your treasury can audit",
+          "title3": ".",
+          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
+          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
+          "btn_primary": "Open banking services",
+          "btn_secondary": "Contact our team"
+        }
+      },
+      "btn_login": "Mag-log in"
     },
     "Pillars": {
-      "title1": "Seguridad, pagbawi, forensics, at pananalapi ",
-      "title2": "sa iisang lugar",
-      "subtitle": "Piliin ang kailangan mo – bawat pillar ay nagli-link sa mga dedikadong solusyon.",
+      "title1": "Isang protocol, ",
+      "title2": "apat na workflow",
+      "subtitle": "Piliin ang entry point na tumutugma sa sitwasyon mo. Bawat landas may dedicated tooling at malinaw na susunod na hakbang.",
       "cards": {
         "security": {
-          "title": "Seguridad ng Blockchain",
-          "desc": "Audited infrastructure at secure vault technology para protektahan ang iyong assets.",
-          "cta": "I-explore ang seguridad"
+          "title": "Blockchain Security",
+          "desc": "Audited vaults, multi-sig custody, at monitoring para sa mga team na kailangang ligtas ang assets on-chain.",
+          "cta": "Tingnan security"
         },
         "recovery": {
-          "title": "Pagbawi ng Asset",
-          "desc": "Mga espesyal na protocol at legal na paraan para mabawi ang nawala o ninakaw na crypto gamit ang certified forensic analysis.",
-          "cta": "Simulan ang pagbawi"
+          "title": "Asset Recovery",
+          "desc": "Tracing, exchange coordination, at legal pathways kapag nawala, ninakaw, o na-stuck ang crypto.",
+          "cta": "Simulan recovery"
         },
         "forensics": {
           "title": "Blockchain Forensics",
-          "desc": "Expert investigation para ma-trace ang fraud, hacks, at magbigay ng court-admissible evidence para sa legal recovery.",
-          "cta": "Alamin pa"
+          "desc": "Wallet-level investigations at transaction mapping para sa compliance teams at legal review.",
+          "cta": "Tingnan forensics"
         },
         "finance": {
-          "title": "Financial Services Protocol",
-          "desc": "Pagbabayad, pautang, wallet, at vault para sa modernong crypto ecosystem.",
-          "cta": "Tingnan ang mga solusyon"
+          "title": "Financial Services",
+          "desc": "Crypto-to-fiat payments, lending, wallet, at vault tools para ilipat at i-hold ang value.",
+          "cta": "Tingnan solutions"
         }
       }
     },
@@ -170,58 +191,60 @@
     },
     "Merchant": {
       "widget_alert": "Invoice Payment Alert mula kay B Shaw",
-      "widget_req": "REQUEST FOR PAYMENT",
+      "widget_req": "PAYMENT REQUEST",
       "widget_verified": "VERIFIED PAYMENT LINK",
-      "widget_receipt": "ANG TRANSACTION RECEIPT AY IPAPADALA SA ",
+      "widget_receipt": "IPAPADALA ANG TRANSACTION RECEIPT SA ",
       "widget_wallet": "Wallet address",
       "widget_order": "ORDER",
       "widget_gas": "GAS FEE",
-      "btn_complete": "Kumpletuhin ang pagbabayad",
-      "btn_manual": "Magbayad nang manual",
-      "title1": "Para sa mga Negosyo: tumanggap ng crypto, ",
-      "title2": "protektahan",
-      "title3": " sa vault, bawiin kung kinakailangan.",
-      "point1": "Tumanggap ng crypto at i-settle sa fiat. Simple checkout at API para sa mga merchant.",
-      "point2": "Itago ang kinita sa aming secure vault na may multi-sig at custody – audited infrastructure.",
-      "point3": "Kung mawala o manakaw ang pondo, ang aming team ay makakatulong sa pag-trace at pagbawi sa pamamagitan ng recovery at legal channels.",
-      "point4_1": "I-explore ang mga solusyon",
+      "btn_complete": "Magbayad",
+      "btn_manual": "Manual bayad",
+      "title1": "Merchant infrastructure na may ",
+      "title2": "built-in recovery",
+      "title3": ".",
+      "point1": "Tanggapin ang crypto at mag-settle sa fiat sa checkout flows at merchant APIs.",
+      "point2": "I-route ang proceeds sa audited vault custody na may multi-sig controls.",
+      "point3": "Kung may mali pagkatapos ng settlement, sinusuportahan ng parehong protocol ang tracing at recovery workflows.",
+      "point4_1": "Tingnan solutions",
       "point4_2": " o ",
-      "point4_3": "magsimula ng recovery case",
-      "point4_4": "."
+      "point4_3": "Simulan recovery",
+      "point4_4": ".",
+      "mock_brand": "Lenix Merchant",
+      "image_alt": "Lenix merchant at compliance operations dashboard"
     },
     "Payment": {
-      "badge": "Ano ang aming inaalok",
-      "title": "Ang Protocol para sa mga Pagbabayad, Vault, Pagbawi, at Pautang",
-      "subtitle": "Isang solong stack para sa kung paano mo ginagalaw, hinahawakan, at binabawi ang halaga.",
+      "badge": "Protocol stack",
+      "title": "Move, hold, and recover value on one layer",
+      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
       "cards": {
         "fiat": {
           "title": "Crypto-to-fiat",
-          "desc": "Magpadala ng crypto at i-settle sa fiat sa pamamagitan ng local payment networks – cross-border at pang-araw-araw."
+          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
         },
         "vault": {
-          "title": "Vault at custody",
-          "desc": "Multi-sig at secure custody para manatiling protektado ang iyong assets."
+          "title": "Vault and custody",
+          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
         },
         "recovery": {
-          "title": "Pagbawi at forensics",
-          "desc": "Kapag nagkaroon ng problema, tumutulong kami sa pag-trace at pagbawi ng pondo."
+          "title": "Recovery and forensics",
+          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
         },
         "lending": {
-          "title": "Pagpapautang",
-          "desc": "Manghiram laban sa collateral at magkaroon ng access sa liquidity kapag kailangan mo."
+          "title": "Lending",
+          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
         }
       },
-      "cta": "I-explore ang lahat ng solusyon"
+      "cta": "Tingnan solutions"
     },
     "TokenDetails": {
-      "title1": "Mga Detalye ng Token ng ",
-      "title2": "Lenix Protocol",
-      "subtitle": "Gamitin ang impormasyon ng kontrata sa ibaba para idagdag ang Lenix Protocol token sa iyong wallet.",
+      "title1": "Lenix Protocol",
+      "title2": " Token Details",
+      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
       "headers": {
         "contract": "Contract Address",
-        "name": "Pangalan ng Token",
-        "symbol": "Simbolo ng Token",
-        "supply": "Supply ng Token",
+        "name": "Token Name",
+        "symbol": "Token Symbol",
+        "supply": "Token Supply",
         "network": "Network",
         "decimals": "Decimals"
       },
@@ -231,35 +254,1158 @@
       }
     },
     "Credibility": {
-      "title1": "Lenix Protocol sa ",
-      "title2": "detalye",
-      "subtitle1": "Audited ng CertiK. Binuo nang may tiwala.",
-      "subtitle2_1": "Sinasaklaw ng aming audits ang buong stack. Basahin ang ",
-      "subtitle2_2": "Whitepaper",
-      "subtitle2_3": " at CertiK report para sa mga detalye.",
-      "col1_text": "Ang Lenix Protocol ay ganap na na-audit ng CertiK, ang nangungunang blockchain security firm sa mundo.",
-      "col1_btn": "Tingnan ang CertiK Audit",
-      "col2_text": "Basahin ang buong report at i-explore ang aming whitepaper para sa mas malalim na pagtingin sa aming teknolohiya at tokenomics.",
+      "eyebrow": "Verification",
+      "title1": "Audited code. ",
+      "title2": "Documented controls.",
+      "subtitle1": "CertiK-reviewed smart contracts at ISO 27001-aligned operations para sa mga team na kailangan ng higit sa marketing claims.",
+      "subtitle2_1": "Basahin ang ",
+      "subtitle2_2": "whitepaper",
+      "subtitle2_3": " at audit documentation para sa architecture, token utility, at security controls.",
+      "col1_text": "Na-review ng CertiK ang Lenix Protocol smart contracts. Saklaw ng audit ang core protocol components sa production flows.",
+      "col1_btn": "Security docs",
+      "col2_text": "Ipinapaliwanag ng whitepaper kung paano nagkakaugnay ang recovery, custody, at payment modules—at kung saan pumapasok ang LNX sa protocol design.",
       "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Sumali sa Aming Kontes para sa Pagkakataong Manalo ng ",
-      "title2": "250K USD",
-      "subtitle": "Sumali sa 250,000 USD giveaway ng Lenix Protocol! Sampung nanalo ang makakatanggap ng 25,000 USD bawat isa sa LNX tokens. Palakihin ang iyong tsansa sa pamamagitan ng pag-share at pagkumpleto ng lahat ng tasks para sa bonus entries. Huwag palampasin ang pagkakataong ito - sumali na!",
-      "btn": "Sumali sa Kontes Ngayon!"
+      "title1": "Community ",
+      "title2": "giveaway",
+      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "btn": "Community"
     },
     "Features": {
       "wallet": "Lenix Protocol Wallet",
       "recipient": "Ipasok ang Tatanggap",
       "bank_details": "Mga Detalye ng Bank Account",
       "iban": "IBAN",
-      "btn_connect": "Ikonekta ang Wallet at Magbayad",
-      "btn_manual": "Magbayad nang Manual",
+      "btn_connect": "Ikonekta",
+      "btn_manual": "Manual bayad",
       "title_small": "Bakit Lenix ProtocolPay?",
       "title_big": "Pinag-uugnay ang crypto sa mga lokal na network ng pagbabayad sa buong mundo.",
       "desc1": "Binibigyang-kapangyarihan ng Lenix ProtocolPay ang mga may-hawak ng crypto at mga negosyo na mapadali ang mga transaksyong crypto-to-fiat sa buong mundo, gamit ang mga lokal na network ng pagbabayad at teknolohiya ng blockchain.",
       "desc2": "Sa wakas, tamasahin ang bilis ng crypto sa pang-araw-araw na kaginhawahan ng mga pagbabayad sa fiat.",
       "btn_whitepaper": "Whitepaper"
+    },
+    "LnxPurchaseWidget": {
+      "widget_title": "Buy LNX",
+      "widget_subtitle": "Protocol token sale",
+      "usd_raised": "USD raised so far:",
+      "tokens_sold": "Tokens sold:",
+      "price_usd": "USD price: ${price}",
+      "price_eth": "ETH price: {price} ETH",
+      "pay_eth": "ETH you pay",
+      "pay_usdt": "USDT you pay",
+      "pay_usd": "USD you pay",
+      "receive_lnx": "$LNX you receive",
+      "btn_processing": "Processing...",
+      "btn_pay_eth": "Pay with ETH",
+      "btn_pay_usdt": "Pay with USDT",
+      "btn_pay_card": "Magbayad card",
+      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "btn_connect": "Ikonekta",
+      "btn_giveaway": "LNX bonus",
+      "giveaway_info": "Connect your wallet to check eligibility."
+    },
+    "TokenSale": {
+      "title1": "LNX ",
+      "title2": "token sale",
+      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+    },
+    "Partners": {
+      "eyebrow": "Ecosystem",
+      "title": "Ginawa para sa exchanges, custody, at payment rails",
+      "subtitle": "Pinag-uugnay ng Lenix ang tracing, recovery workflows, at settlement infrastructure sa buong crypto stack."
+    },
+    "CaseWorkflow": {
+      "eyebrow": "Paano ito gumagana",
+      "title1": "Mula sa intake hanggang ",
+      "title2": "actionable evidence",
+      "subtitle": "Structured process para sa victims, compliance teams, at counsel—hindi vague promises.",
+      "steps": {
+        "submit": {
+          "title": "Isumite ang case mo",
+          "desc": "Ibahagi ang wallet addresses, transaction hashes, timelines, at nangyari. Libre ang initial review."
+        },
+        "trace": {
+          "title": "I-trace at i-map ang flows",
+          "desc": "Sinusundan namin ang pondo sa chains, mixers, bridges, at exchange deposits para malaman kung saan napunta ang value."
+        },
+        "deliver": {
+          "title": "I-deliver ang evidence",
+          "desc": "Makakatanggap ka ng documented findings na naka-format para sa exchange compliance desks, regulators, o legal counsel."
+        }
+      },
+      "btn_primary": "Simulan case",
+      "btn_secondary": "Makipag-usap analyst",
+      "step_label": "Hakbang {number}"
+    },
+    "TrustSignals": {
+      "eyebrow": "Operating standards",
+      "title1": "Ginawa para sa mga case kung saan ",
+      "title2": "mahalaga ang tiwala",
+      "subtitle": "Target ng scams ang recovery. Sumusunod ang Lenix sa mga praktis na ginagamit ng seryosong firms para protektahan ang victims at institutions.",
+      "items": {
+        "no_fees": {
+          "title": "Walang upfront unlock fees",
+          "desc": "Hindi kami humihingi ng advance payment para i-release, i-unlock, o i-transfer ang pondo mo."
+        },
+        "no_seed": {
+          "title": "Hindi kailanman hihingi ng seed phrases",
+          "desc": "Walang remote access, walang private keys, walang recovery phrase requests—kailanman."
+        },
+        "no_custody": {
+          "title": "Hindi namin hinahawakan ang assets mo",
+          "desc": "Naghahanda ang Lenix ng ebidensya at nagko-coordinate ng pathways. Hindi kami custodian ng wallet mo."
+        },
+        "honest": {
+          "title": "Tapat na case assessment",
+          "desc": "Kung ubos na ang trail o unlikely ang recovery, sasabihin namin bago ang paid engagement."
+        },
+        "audited": {
+          "title": "Audited protocol stack",
+          "desc": "Smart contracts na ni-review ng CertiK. Operations aligned sa ISO 27001 controls."
+        },
+        "chains": {
+          "title": "Multi-chain coverage",
+          "desc": "Sinusuportahan ng tracing workflows ang major EVM networks at common asset types sa theft cases."
+        }
+      },
+      "image_alt": "Analyst na nire-review ang blockchain investigation dashboard at transaction evidence"
+    },
+    "CaseStudy": {
+      "eyebrow": "Halimbawang kaso",
+      "title1": "Kapag ang ninakaw na pondo ay umabot ",
+      "title2": "sa custodial exchange",
+      "subtitle": "Anonymized na halimbawa. Binago ang mga identifier. Representatibo ang proseso—hindi garantiya ng recovery.",
+      "situation": {
+        "label": "Sitwasyon",
+        "text": "Isang business wallet ang nagpadala ng USDC sa phishing contract. Sa loob ng ilang oras, dumaan ang pondo sa dalawang intermediary wallet at na-deposit sa malaking exchange."
+      },
+      "action": {
+        "label": "Ginawa ng Lenix",
+        "text": "In-map namin ang buong transaction path, na-label ang deposit address, at naghanda ng evidence packet na may transaction graphs at timeline para sa compliance team ng exchange."
+      },
+      "outcome": {
+        "label": "Resulta",
+        "text": "Tinanggap ng exchange compliance desk ang filing. Na-freeze ang pondo habang nire-review. Natanggap ng counsel ang parehong dokumentasyon para sa parallel legal steps."
+      },
+      "disclaimer": "Nag-iiba ang resulta ayon sa kaso, hurisdiksyon, at response time ng exchange. Ipinapakita ng halimbawang ito kung paano idinodokumento ng Lenix ang trail—hindi lahat ng kaso ay nauuwi sa recovery.",
+      "image_alt": "Transaction monitoring dashboard na nagpapakita ng fund flow"
+    },
+    "Cta": {
+      "title": "Handa nang magbukas ng case?",
+      "subtitle": "Ibahagi kung ano ang nangyari at ang on-chain details na mayroon ka. Sumasagot kami nang tapat kung may tracing at recovery paths.",
+      "btn_primary": "Simulan case",
+      "btn_secondary": "Makipag-ugnayan"
+    }
+  },
+  "Security": {
+    "meta": {
+      "title": "Seguridad at Audit | Lenix Protocol",
+      "description": "CertiK smart contract audit, ISO 27001-aligned operations, at security controls para sa Lenix forensics at recovery infrastructure."
+    },
+    "hero": {
+      "eyebrow": "Seguridad",
+      "title1": "Na-audit na protocol. ",
+      "title2": "May dokumentasyon na kontrol.",
+      "subtitle": "Pinagsasama ng Lenix ang third-party smart contract review at operational security practices para sa mga team na humahawak ng sensitibong recovery at custody workflows."
+    },
+    "audit": {
+      "title": "CertiK audit scope",
+      "desc": "Na-review ng CertiK ang core contracts sa production flows. Saklaw ng audit ang deployment-critical components at kilalang attack surfaces.",
+      "certik_text": "Tiningnan ng CertiK ang Lenix smart contracts para sa common vulnerabilities, access control, at logic flaws sa token at vault flows.",
+      "certik_link": "Security docs",
+      "items": {
+        "contracts": {
+          "title": "Contract review scope",
+          "desc": "Token sale, vault, at protocol modules na ginagamit sa live payment at custody paths."
+        },
+        "access": {
+          "title": "Access control",
+          "desc": "Role-based permissions, multi-sig requirements, at upgrade paths kung applicable."
+        },
+        "monitoring": {
+          "title": "Tuloy-tuloy na monitoring",
+          "desc": "Minomonitor ang production deployments para sa anomalous contract interactions at operational alerts."
+        }
+      },
+      "eyebrow": "Smart contract"
+    },
+    "iso": {
+      "title": "ISO 27001-aligned operations",
+      "desc": "Pinapanatili ng Lenix Protocol ang information security management practices na aligned sa ISO 27001 para sa client data, investigation materials, at internal systems."
+    },
+    "practices": {
+      "data": {
+        "title": "Data handling",
+        "desc": "Naka-store ang case materials na may access controls. Ibinabahagi lang ang investigation data sa authorized parties."
+      },
+      "incident": {
+        "title": "Incident response",
+        "desc": "May tinukoy na procedures para sa security events na nakakaapekto sa client data, protocol infrastructure, o investigation workflows."
+      },
+      "custody": {
+        "title": "Custody boundaries",
+        "desc": "Naghahanda ang Lenix ng ebidensya at nagko-coordinate ng pathways. Hindi kami kumukuha ng custody ng client wallet keys o seed phrases."
+      },
+      "eyebrow": "Operations",
+      "title": "Paano namin hinahawakan ang sensitibo",
+      "description": "Recovery cases may victim data at high-stakes flows. Ito ang aming boundaries.",
+      "image_alt": "Ops team na nagmo-monitor ng activity at security alerts"
+    },
+    "cta": {
+      "title": "Kailangan ng documentation?",
+      "subtitle": "Makipag-ugnayan para sa audit summaries, ISO details, o enterprise reviews.",
+      "btn_primary": "Simulan recovery",
+      "btn_secondary": "Security team"
+    },
+    "assurance": {
+      "eyebrow": "Beripikasyon",
+      "title": "Ano ang maipapakita namin",
+      "description": "Independent contract review at documented operational controls — walang claim na walang ebidensya.",
+      "iso_link": "Tungkol sa Lenix"
+    }
+  },
+  "AccountSidebar": {
+    "sections": {
+      "account": "Account",
+      "wallet": "Wallet"
+    },
+    "nav": {
+      "home": "Home",
+      "vault": "Blockchain Vault",
+      "lenix_wallet": "Lenix Wallet",
+      "banking": "Enterprise Banking",
+      "recovery_services": "Recovery Services",
+      "crypto_loan": "Crypto Loan",
+      "assets": "Assets",
+      "send": "Ipadala",
+      "receive": "Tanggapin",
+      "transactions": "Mga Transaksyon",
+      "settings": "Settings"
+    },
+    "support": {
+      "need_help": "Kailangan ng tulong?",
+      "contact_support": "Makipag-ugnayan sa Support"
+    },
+    "header": {
+      "menu": "Menu",
+      "verified_user": "Verified User",
+      "sign_out": "Mag-sign out"
+    },
+    "logo_alt": "Lenix Protocol"
+  },
+  "AccountMobileTabs": {
+    "home": "Home",
+    "banking": "Banking",
+    "wallet": "Wallet",
+    "loan": "Loan",
+    "settings": "Settings"
+  },
+  "AccountDashboard": {
+    "status": {
+      "recovery": "Status ng recovery case",
+      "banking": "Status ng banking services",
+      "loan": "Status ng loan application"
+    },
+    "timeline": {
+      "received_title": "Natanggap ang aplikasyon",
+      "received_desc": "Natanggap na namin ang iyong detalye at sinusuri ito.",
+      "review_title": "Sinusuri",
+      "review_desc": "Sinusuri ng aming team ang iyong request."
+    },
+    "submitted_details": "Isinumiteng detalye",
+    "service_type": "Uri ng serbisyo",
+    "service_types": {
+      "recovery": "Recovery",
+      "banking": "Banking",
+      "loan": "Loan"
+    },
+    "details_fields": {
+      "name": "Pangalan",
+      "transaction_hash": "Transaction hash",
+      "amount_stolen": "Halagang ninakaw",
+      "blockchain": "Blockchain",
+      "currency": "Currency",
+      "country_phone_code": "Country phone code",
+      "incident_summary": "Buod ng insidente",
+      "evidence": "Ebidensya",
+      "evidence_url": "URL ng ebidensya",
+      "notes": "Mga tala",
+      "loan_type_id": "Uri ng loan",
+      "collateral_asset": "Collateral asset",
+      "duration": "Tagal",
+      "loan_amount": "Halaga ng loan",
+      "phone_number": "Numero ng telepono",
+      "payout_method": "Paraan ng payout"
+    },
+    "support": {
+      "title": "Kailangan ng tulong?",
+      "description": "Available ang aming support team 24/7 para tumulong sa iyo.",
+      "contact": "Makipag-ugnayan sa Support"
+    }
+  },
+  "AccountVault": {
+    "page": {
+      "title": "Aking Vault",
+      "subtitle": "Pamahalaan ang iyong secured digital assets.",
+      "history": "Kasaysayan",
+      "status_active": "Active",
+      "status_locked": "Naka-lock",
+      "status_no_wallet": "Walang Wallet",
+      "load_error": "Hindi ma-load ang holdings"
+    },
+    "actions": {
+      "deposit": "Mag-deposit",
+      "withdraw": "Mag-withdraw",
+      "swap": "Mag-swap",
+      "audit": "I-audit"
+    },
+    "premium": {
+      "title": "Kumuha ng Premium Protection",
+      "description": "Mag-upgrade sa Hardware Vault integration para sa maximum security.",
+      "cta": "Alamin pa"
+    },
+    "card": {
+      "total_value": "KABUUANG HALAGA NG VAULT",
+      "last_synced": "Huling sync: Ngayon lang",
+      "change_24h": "{percent}% (24h)",
+      "security_level": "Security Level",
+      "security_very_high": "Napakataas"
+    },
+    "assets": {
+      "title": "Vault Assets",
+      "count_zero": "0 Asset",
+      "count": "{count} Assets",
+      "empty": "Walang asset na nahanap. Ikonekta o i-import ang wallet para magsimula.",
+      "address_copied": "Nakopya ang address",
+      "chains": {
+        "ethereum": "Ethereum",
+        "bsc": "BSC",
+        "polygon": "Polygon",
+        "evm": "EVM"
+      }
+    },
+    "security": {
+      "title": "Vault Security Health",
+      "score_label": "Security Score",
+      "items": {
+        "wallet": "Wallet",
+        "cold_storage": "Cold Storage",
+        "encrypted_vault": "Encrypted Vault",
+        "session": "Session"
+      },
+      "status": {
+        "connected": "Nakakonekta",
+        "not_connected": "Hindi nakakonekta",
+        "active": "Active",
+        "unlocked": "Naka-unlock",
+        "locked": "Naka-lock",
+        "no_wallet": "Walang wallet",
+        "completed": "Tapos na"
+      },
+      "unlock": "I-unlock",
+      "recent_activity": "Kamakailang Aktibidad",
+      "view_all": "Tingnan Lahat",
+      "no_activity": "Walang kamakailang aktibidad",
+      "wallet_connected": "Nakakonekta ang Wallet",
+      "transaction": "Transaksyon",
+      "transfer": "{symbol} Transfer"
+    },
+    "time": {
+      "just_now": "Ngayon lang",
+      "recently": "Kamakailan",
+      "min_ago": "{count} min ang nakalipas",
+      "hours_ago": "{count} oras ang nakalipas",
+      "days_ago": "{count} araw ang nakalipas"
+    },
+    "drawer": {
+      "connect_wallet": "Ikonekta ang Wallet",
+      "setup_title": "I-set Up ang Iyong Vault",
+      "setup_description": "Gumawa ng bagong wallet o mag-import ng existing para i-secure ang assets mo.",
+      "unlock_vault": "I-unlock ang Vault",
+      "unlock_description": "Ilagay ang password para ma-access ang secured assets mo.",
+      "password_placeholder": "Ilagay ang password",
+      "unlocking": "Ina-unlock...",
+      "unlock": "I-unlock",
+      "vault_connected": "Nakakonekta ang Vault",
+      "lenix_wallet": "Lenix Wallet",
+      "lock": "I-lock",
+      "imported_wallets": "Mga Na-import na Wallet",
+      "no_imported": "Wala pang na-import na wallet.",
+      "import_wallet": "Mag-import ng Wallet",
+      "wallet_name_label": "Pangalan ng wallet (opsyonal)",
+      "wallet_name_placeholder": "Aking MetaMask",
+      "import_type_label": "Uri ng import",
+      "seed_phrase": "Seed phrase",
+      "private_key": "Private key",
+      "seed_phrase_label": "12 o 24 word recovery phrase",
+      "private_key_label": "Private key",
+      "seed_phrase_placeholder": "salita1 salita2 salita3 ...",
+      "private_key_placeholder": "0x...",
+      "encryption_password_label": "Encryption password (min 8 chars)",
+      "password_dots_placeholder": "••••••••",
+      "cancel": "Kanselahin",
+      "import": "I-import",
+      "loading": "Naglo-load...",
+      "imported_seed_name": "Na-import na Seed",
+      "imported_key_name": "Na-import na Key"
+    },
+    "toast": {
+      "wallet_unlocked": "Na-unlock ang wallet",
+      "incorrect_password": "Maling password",
+      "import_credentials_required": "Ilagay ang credentials at password (min 8 characters).",
+      "wallet_imported": "Na-import ang wallet",
+      "import_failed": "Nabigo ang import",
+      "wallet_removed": "Tinanggal ang wallet"
+    }
+  },
+  "AccountLenixWallet": {
+    "page": {
+      "title": "Wallet",
+      "subtitle": "Pamahalaan ang iyong crypto assets",
+      "setup_title": "I-set up ang wallet mo",
+      "setup_subtitle": "Gumawa o mag-import ng wallet para magsimula",
+      "unlock_title": "I-unlock ang Wallet",
+      "unlock_subtitle": "Ilagay ang password para magpatuloy",
+      "password_placeholder": "Password",
+      "unlocking": "Ina-unlock...",
+      "unlock": "I-unlock",
+      "network_placeholder": "Network",
+      "logo_alt": "Lenix Wallet",
+      "show_evm_wallet": "Ipakita ang EVM wallet",
+      "show_bitcoin_wallet": "Ipakita ang Bitcoin wallet",
+      "evm_wallet": "EVM wallet",
+      "bitcoin_wallet": "Bitcoin wallet"
+    },
+    "networks": {
+      "all": "Lahat ng Network",
+      "ethereum": "Ethereum",
+      "bsc": "BNB Chain",
+      "polygon": "Polygon",
+      "bitcoin": "Bitcoin"
+    },
+    "actions": {
+      "send": "Magpadala",
+      "receive": "Tumanggap",
+      "buy": "Bumili",
+      "swap": "Mag-swap",
+      "coming_soon": "Malapit na"
+    },
+    "wallet_card": {
+      "total_balance": "Kabuuang Balanse",
+      "hide_balance": "Itago ang balanse",
+      "show_balance": "Ipakita ang balanse",
+      "lock_wallet": "I-lock ang Wallet",
+      "evm_networks": "EVM Networks",
+      "evm_chains": "ETH · BSC · Polygon · Arbitrum",
+      "address_copied": "Nakopya ang address"
+    },
+    "bitcoin_card": {
+      "btc_balance": "BTC Balance",
+      "not_activated": "Hindi pa activated",
+      "activate_prompt": "I-activate ang native Bitcoin wallet mo",
+      "password_placeholder": "Ilagay ang wallet password",
+      "creating": "Ginagawa...",
+      "activate": "I-activate",
+      "bitcoin_network": "Bitcoin Network",
+      "segwit": "BIP-84 Native SegWit",
+      "bitcoin_alt": "Bitcoin",
+      "enter_password": "Ilagay ang wallet password mo",
+      "wallet_created": "Nagawa ang Bitcoin wallet",
+      "create_failed": "Hindi nagawa ang Bitcoin wallet",
+      "address_copied": "Nakopya ang address"
+    },
+    "token_list": {
+      "assets": "Assets",
+      "market": "Market",
+      "tokens_count": "{count} tokens",
+      "no_assets": "Wala pang assets",
+      "frozen": "Naka-freeze",
+      "deposit_to_unfreeze": "Mag-deposit ng {amount} BTC para i-unfreeze",
+      "frozen_by_admin": "Na-freeze ng admin",
+      "token_fallback": "Token"
+    },
+    "activity": {
+      "title": "Aktibidad",
+      "no_activity": "Walang kamakailang aktibidad",
+      "done": "Tapos na",
+      "pending": "Naghihintay"
+    },
+    "security": {
+      "title": "Security",
+      "protected": "Protected",
+      "recovery_phrase": "Recovery phrase",
+      "backed_up": "Na-back up",
+      "password": "Password",
+      "active": "Active",
+      "withdrawal_limit": "Withdrawal limit",
+      "not_set": "Hindi pa naka-set",
+      "set": "Naka-set"
+    },
+    "receive_modal": {
+      "title": "Tumanggap",
+      "network": "Network",
+      "evm_networks": "EVM Networks",
+      "evm_chains": "ETH, BSC, Polygon, Arbitrum",
+      "bitcoin": "Bitcoin",
+      "bitcoin_chains": "Native SegWit (BIP-84)",
+      "not_set_up": "(Hindi pa naka-set up)",
+      "qr_alt": "QR Code",
+      "copied": "Nakopya",
+      "btc_warning": "Magpadala lang ng BTC sa address na ito",
+      "evm_warning": "Magpadala lang ng ERC-20 compatible tokens"
+    },
+    "send_modal": {
+      "title": "Magpadala ng Crypto",
+      "description": "Ilagay ang address ng tatanggap at halaga ng withdrawal para magpadala ng crypto."
+    },
+    "receive_page": {
+      "title": "Tumanggap ng asset",
+      "subtitle": "Kunin ang iyong natatanging address para tumanggap ng bayad.",
+      "security_notice": "Para sa seguridad, tiyaking tugma ang network bago magdeposito. Hindi na mababawi ang asset kapag pinadala sa maling network.",
+      "no_wallet_title": "Walang wallet na nakita",
+      "no_wallet_description": "Gumawa ng wallet upang tumanggap ng asset.",
+      "go_to_wallet": "Pumunta sa wallet",
+      "wallet_locked_title": "Naka-lock ang wallet",
+      "wallet_locked_description": "I-unlock ang iyong wallet para makita ang address.",
+      "unlock_wallet": "I-unlock ang wallet",
+      "card_title": "Tumanggap ng asset",
+      "card_description": "I-scan ang QR code o kopyahin ang address para magdeposito.",
+      "select_network": "Piliin ang network",
+      "bitcoin_provisioning": "Isinaset-up pa ang Bitcoin wallet.",
+      "qr_alt": "QR code ng address ng wallet",
+      "address_label": "Iyong {network} address",
+      "copy": "Kopyahin",
+      "copied": "Nakopya",
+      "share": "Ibahagi",
+      "address_copied": "Nakopya na ang address sa clipboard",
+      "share_title": "Aking Lenix wallet address",
+      "share_text": "Narito ang aking {network} address: {address}",
+      "networks": {
+        "bitcoin": {
+          "name": "Bitcoin (Native)",
+          "warning": "Magpadala lamang ng native Bitcoin sa address na ito. Huwag magpadala ng BTC mula sa ibang network."
+        },
+        "ethereum": {
+          "name": "Ethereum (ERC-20)",
+          "warning": "Magpadala lamang ng ETH at ERC-20 tokens sa address na ito."
+        },
+        "bnb": {
+          "name": "BNB Smart Chain (BEP-20)",
+          "warning": "Magpadala lamang ng BNB at BEP-20 tokens sa address na ito."
+        },
+        "polygon": {
+          "name": "Polygon (MATIC)",
+          "warning": "Magpadala lamang ng MATIC at mga token ng Polygon network sa address na ito."
+        },
+        "arbitrum": {
+          "name": "Arbitrum One",
+          "warning": "Magpadala lamang ng mga token ng Arbitrum One network sa address na ito."
+        },
+        "optimism": {
+          "name": "Optimism",
+          "warning": "Magpadala lamang ng mga token ng Optimism network sa address na ito."
+        },
+        "avalanche": {
+          "name": "Avalanche C-Chain",
+          "warning": "Magpadala lamang ng mga token ng Avalanche C-Chain sa address na ito."
+        }
+      }
+    },
+    "send_page": {
+      "unlock_message": "I-unlock ang iyong Lenix wallet para pamahalaan ang pondo.",
+      "unlock_locked_prefix": "Ilagay ang iyong password sa",
+      "unlock_locked_suffix": "para ma-decrypt ang mga balanse.",
+      "wallet_page": "pahinang wallet",
+      "unlock_no_wallet_prefix": "Gumawa muna ng wallet sa",
+      "unlock_no_wallet_suffix": ".",
+      "wallet_dashboard": "Lenix wallet dashboard",
+      "estimated_total_value": "Tinatayang kabuuang halaga",
+      "wallet_label": "Wallet",
+      "pnl_today": "PnL ngayong araw",
+      "deposit": "Magdeposito",
+      "withdraw": "Mag-withdraw",
+      "transfer": "Maglipat",
+      "more_funding_actions": "Iba pang mga aksyon sa pagpopondo",
+      "funding_title": "Pagpopondo",
+      "search_placeholder": "Maghanap ng asset o network",
+      "small_asset_exchange": "Palitan ng maliliit na asset",
+      "hide_dust": "Itago ang mga asset na < 1 USD",
+      "asset": "Asset",
+      "amount": "Halaga",
+      "available": "Magagamit",
+      "frozen": "Naka-freeze",
+      "action": "Aksyon",
+      "unfreeze_deposit": "Magdeposito ng {amount} BTC para i-unfreeze",
+      "more_actions_for": "Iba pang aksyon para sa {symbol}",
+      "no_assets": "Walang asset",
+      "no_assets_match": "Walang asset na tumutugma sa iyong mga filter.",
+      "withdraw_modal": {
+        "title": "Mag-withdraw ng crypto",
+        "description": "Magpadala ng pondo sa panlabas na wallet gamit ang tamang network."
+      }
+    },
+    "send_form": {
+      "no_assets_alt": "Walang asset",
+      "no_assets_title": "Wala pang funding asset",
+      "no_assets_description": "Magdeposito ng crypto sa iyong Lenix wallet upang paganahin ang mga withdrawal at on-chain transfer.",
+      "asset_label": "Asset",
+      "network_label": "Network",
+      "chain_id": "Chain ID {id}",
+      "recipient_label": "Address ng tatanggap",
+      "paste": "I-paste",
+      "recipient_error_bitcoin": "Maglagay ng wastong Bitcoin address.",
+      "recipient_error_evm": "Maglagay ng wastong EVM wallet address.",
+      "amount_label": "Halaga",
+      "amount_aria": "Halagang {symbol} na ipapadala",
+      "available": "Magagamit",
+      "on_chain_only": "Tanging {amount} {symbol} lamang ang kasalukuyang backed on-chain at maaaring ipadala.",
+      "summary_label": "Buod ng transfer",
+      "network_fee": "Bayad sa network",
+      "calculating_fee": "Kinukuwenta…",
+      "recipient_receives": "Matatanggap ng tatanggap",
+      "frozen": "Naka-freeze",
+      "frozen_message": "Naka-freeze ang asset na ito",
+      "frozen_unfreeze_instruction": " Magdeposito ng hindi bababa sa {amount} BTC sa iyong Lenix Bitcoin wallet para i-unfreeze—automatic itong magbubukas kapag nakumpirma ang deposito.",
+      "frozen_contact_support": " Makipag-ugnayan sa support para maayos ito.",
+      "irreversible_warning": "Siguraduhin ang address at network bago magpadala. Hindi nare-reverse ang mga on-chain transfer.",
+      "sending": "Nagpapadala…",
+      "send_now": "Ipadala ngayon",
+      "wallet_locked_error": "I-unlock ang iyong Lenix wallet para magpadala ng pondo",
+      "clipboard_error": "Hindi ma-access ang clipboard",
+      "bitcoin_send_success": "Na-broadcast ang Bitcoin transfer",
+      "bitcoin_send_failed": "Nabigo ang Bitcoin withdrawal",
+      "unsupported_network": "Hindi suportadong network para sa asset na ito",
+      "broadcasting_transaction": "Binobroadcast ang transaksyon",
+      "transfer_confirmed": "Nakumpirma ang transfer",
+      "broadcasting_token_transfer": "Binobroadcast ang token transfer",
+      "token_transfer_complete": "Kumpleto na ang token transfer",
+      "transaction_failed": "Nabigo ang transaksyon",
+      "fee_bitcoin_estimate": "Tinatayang sa oras ng kumpirmasyon"
+    },
+    "setup": {
+      "back": "Bumalik",
+      "welcome_title": "Pinaka-secured na Wallet sa Mundo",
+      "welcome_description": "I-set up ang wallet mo para magsimula. Ang Lenix Wallet ay ang pinaka-secured at private na wallet sa mundo para panatilihing ligtas ang crypto mo.",
+      "create_new": "Gumawa ng Bagong Wallet",
+      "import_existing": "Mag-import ng Existing Wallet",
+      "terms_notice": "Sa paggawa o pag-import ng wallet, sumasang-ayon ka sa aming Terms of Service at Privacy Policy.",
+      "backup_title": "I-back up ang recovery phrase mo",
+      "backup_description": "Isulat ang 12 salitang ito nang sunod-sunod at itago nang ligtas. Kapag nawala, maaaring mawala ang pondo mo magpakailanman.",
+      "security_check_title": "Security Check",
+      "security_check_description": "Huwag ibahagi ang phrase na ito sa kahit sino. Hindi hihingi ng Lenix support nito.",
+      "saved_phrase": "Na-save ko na ang recovery phrase ko",
+      "verify_title": "I-verify ang recovery phrase",
+      "verify_description": "Kumpirmahin na na-save mo ang phrase sa pamamagitan ng paglalagay ng hinihinging salita sa ibaba.",
+      "word_label": "Salita #{number}",
+      "word_placeholder": "Ilagay ang salita #{number}",
+      "verify_continue": "I-verify at Magpatuloy",
+      "password_title": "Mag-set ng secure password",
+      "password_description": "Gagamitin ang password na ito para i-encrypt ang wallet mo sa device na ito.",
+      "password_label": "Password",
+      "confirm_password_label": "Kumpirmahin ang Password",
+      "create_wallet": "Gumawa ng Wallet",
+      "processing": "Pinoproseso...",
+      "import_title": "Mag-import ng Recovery Phrase",
+      "import_description": "Ilagay ang 12 o 24-word recovery phrase para i-restore ang wallet mo.",
+      "import_placeholder": "apple banana cherry...",
+      "continue": "Magpatuloy",
+      "import_wallet": "Mag-import ng Wallet"
+    },
+    "toast": {
+      "wallet_unlocked": "Na-unlock ang wallet",
+      "incorrect_password": "Maling password",
+      "phrase_copied": "Nakopya ang recovery phrase sa clipboard",
+      "incorrect_words": "Maling salita. Subukan muli.",
+      "password_min_length": "Dapat hindi bababa sa 8 characters ang password",
+      "passwords_mismatch": "Hindi magkatugma ang mga password",
+      "wallet_created": "Matagumpay na nagawa ang wallet!",
+      "create_failed": "Hindi nagawa ang wallet",
+      "invalid_phrase": "Invalid recovery phrase. Inaasahan ang 12 o 24 salita, nakuha ang {count}.",
+      "wallet_imported": "Matagumpay na na-import ang wallet!",
+      "import_failed": "Hindi na-import ang wallet"
+    }
+  },
+  "AccountBanking": {
+    "meta": {
+      "title": "Enterprise Banking | Lenix Protocol",
+      "description": "Ilipat ang digital assets sa pagitan ng Spot, Funding, at verified na bank accounts."
+    },
+    "error": {
+      "load_failed": "Hindi ma-load ang banking workspace",
+      "unavailable_title": "Hindi available ang banking workspace",
+      "unavailable_description": "Hindi ma-load ang banking overview.",
+      "try_again": "Subukan muli"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "accounts": "Mga bank account",
+      "activity": "Aktibidad"
+    },
+    "empty_assets": {
+      "title": "Wala pang treasury assets",
+      "description": "Ilipat ang assets sa Spot o Funding wallet para magsimula.",
+      "cta": "Ilipat ang pondo"
+    },
+    "fiat_balance": {
+      "funding": "Funding {currency}",
+      "available": "{amount} available"
+    },
+    "summary": {
+      "title": "Enterprise Banking",
+      "verified": "Verified",
+      "verification_pending": "Naghihintay ng verification",
+      "subtitle": "Ilipat ang digital assets sa pagitan ng treasury wallets at verified na bank accounts.",
+      "transfer": "Transfer",
+      "withdraw_to_bank": "Mag-withdraw sa bangko",
+      "total_treasury": "Kabuuang halaga ng treasury",
+      "hide_balances": "Itago ang balances",
+      "show_balances": "Ipakita ang balances",
+      "account": "Account",
+      "tier": "Tier",
+      "relationship_manager": "Relationship manager",
+      "spot_wallet": "Spot wallet",
+      "spot_available": "Available para sa trading",
+      "funding_wallet": "Funding wallet",
+      "funding_available": "Available para sa settlement",
+      "in_settlement": "Sa settlement",
+      "pending_payouts": "Sa mga aktibong bank payout"
+    },
+    "assets": {
+      "title": "Mga balance ng wallet",
+      "subtitle": "Spot at Funding assets na handa na para sa payout",
+      "move_funds": "Ilipat ang pondo",
+      "columns": {
+        "asset": "Asset",
+        "wallet": "Wallet",
+        "balance": "Balance",
+        "value": "Halaga",
+        "change_24h": "24 oras"
+      },
+      "location": {
+        "spot": "Spot",
+        "funding": "Funding"
+      }
+    },
+    "accounts": {
+      "linked_title": "Mga naka-link na bank account",
+      "linked_subtitle": "Mga destinasyon ng settlement para sa bank withdrawal",
+      "add_account": "Magdagdag ng account",
+      "empty_title": "Walang naka-link na bank account",
+      "empty_description": "Magdagdag ng bank account para paganahin ang withdrawal sa bangko mo.",
+      "default": "Default",
+      "status": {
+        "verified": "Verified",
+        "rejected": "Tinanggihan",
+        "pending": "Sinusuri"
+      },
+      "limits_title": "Mga limitasyon sa settlement",
+      "limits_subtitle": "Rolling enterprise allowances",
+      "remaining": "{percent}% natitira",
+      "limits_note": "Ang mas mataas na settlement limits ay sinusuri ng relationship manager at compliance team."
+    },
+    "activity": {
+      "title": "Aktibidad ng transaksyon",
+      "subtitle": "Internal transfers at bank settlements",
+      "search_label": "Maghanap ng transaksyon",
+      "search_placeholder": "Hanapin ang reference o asset",
+      "filter_label": "I-filter ang status ng transaksyon",
+      "filter_all": "Lahat ng status",
+      "status": {
+        "completed": "Tapos na",
+        "processing": "Pinoproseso",
+        "review": "Review",
+        "under_review": "Sinusuri",
+        "failed": "Nabigo"
+      },
+      "columns": {
+        "transaction": "Transaksyon",
+        "amount": "Halaga",
+        "destination": "Destinasyon",
+        "status": "Status",
+        "date": "Petsa",
+        "view": "Tingnan"
+      },
+      "direction": {
+        "spot_to_funding": "Spot papuntang Funding",
+        "funding_to_spot": "Funding papuntang Spot",
+        "funding_to_bank": "Funding papuntang bangko",
+        "spot_to_bank": "Spot papuntang bangko"
+      },
+      "view_transaction": "Tingnan ang {reference}",
+      "empty_title": "Walang tumutugmang transaksyon",
+      "empty_description": "Baguhin ang paghahanap o status filter."
+    },
+    "add_account": {
+      "title": "Magdagdag ng bank account",
+      "description": "Ang mga isinumiteng account ay sinusuri ng compliance team bago makatanggap ng settlements. Karaniwang tumatagal ng 1–2 araw ng negosyo.",
+      "fields": {
+        "bank_name": "Pangalan ng bangko",
+        "bank_name_placeholder": "hal. BDO",
+        "account_holder": "Pangalan ng account holder",
+        "account_holder_placeholder": "Buong legal na pangalan",
+        "account_number": "Account number / IBAN",
+        "account_number_placeholder": "Account number",
+        "routing_number": "Routing number (ACH/domestic)",
+        "swift_bic": "SWIFT / BIC (international)",
+        "optional": "Opsyonal",
+        "account_type": "Uri ng account",
+        "checking": "Checking",
+        "savings": "Savings",
+        "currency": "Currency",
+        "country": "Bansa",
+        "country_placeholder": "PH"
+      },
+      "submitting": "Isinusumite...",
+      "submit": "Isumite para sa verification",
+      "required_fields": "Pakipunan ang lahat ng kinakailangang field",
+      "success": "Na-submit ang bank account para sa verification",
+      "failed": "Hindi maidagdag ang bank account"
+    },
+    "transfer": {
+      "title_form": "Ilipat ang pondo",
+      "title_review": "Suriin ang transfer",
+      "title_success": "Status ng transfer",
+      "desc_form": "Ilipat ang assets sa pagitan ng wallets o mag-settle sa naka-link na bangko.",
+      "desc_review": "Naka-reserve ang rates sa loob ng limang minuto.",
+      "desc_success": "Handa na ang reference mo para sa tracking.",
+      "back_label": "Bumalik sa detalye ng transfer",
+      "step_label": "Hakbang {step} ng 3",
+      "cancel": "Kanselahin",
+      "review_transfer": "Suriin ang transfer",
+      "confirm_submit": "Kumpirmahin at isumite",
+      "done": "Tapos",
+      "quote_failed": "Hindi makagawa ng quote",
+      "transfer_failed": "Hindi maisumite ang transfer",
+      "type_legend": "Uri ng transfer",
+      "types": {
+        "spot_to_funding": {
+          "label": "Spot → Funding",
+          "description": "Ihanda ang assets para sa payments"
+        },
+        "funding_to_spot": {
+          "label": "Funding → Spot",
+          "description": "Ibalik ang assets para sa trading"
+        },
+        "funding_to_bank": {
+          "label": "Funding → Bangko",
+          "description": "Mag-withdraw ng cleared funds"
+        },
+        "spot_to_bank": {
+          "label": "Spot → Bangko",
+          "description": "I-convert at mag-withdraw"
+        }
+      },
+      "from": "Mula sa",
+      "to": "Papunta sa",
+      "spot_wallet": "Spot wallet",
+      "funding_wallet": "Funding wallet",
+      "bank_account": "Bank account",
+      "asset": "Asset",
+      "amount": "Halaga",
+      "max": "MAX",
+      "amount_placeholder": "0.00",
+      "payout_currency": "Payout currency",
+      "currencies": {
+        "USD": "USD · US Dollar",
+        "EUR": "EUR · Euro",
+        "GBP": "GBP · British Pound"
+      },
+      "select_account": "Pumili ng account",
+      "available": "Available"
+    },
+    "review": {
+      "recipient_receives": "Matatanggap ng recipient",
+      "from_amount": "Mula sa {amount} {asset}",
+      "market_value": "Market value",
+      "exchange_rate": "Exchange rate",
+      "exchange_rate_value": "1 USD = {rate} {currency}",
+      "platform_fee": "Platform fee",
+      "banking_fee": "Banking fee",
+      "estimated_arrival": "Tinatayang pagdating",
+      "authorization": "Sa pagkumpirma, pinahihintulutan mo ang asset conversion at settlement instructions sa itaas.",
+      "withdrawal_submitted": "Na-submit ang withdrawal",
+      "transfer_completed": "Tapos na ang transfer",
+      "withdrawal_desc": "Pumasa ang settlement mo sa initial validation at papasok na sa compliance screening.",
+      "transfer_desc": "Na-update ang balances mo sa banking workspace.",
+      "reference": "Reference",
+      "status": "Status",
+      "destination": "Destinasyon",
+      "processing": "Pinoproseso",
+      "completed": "Tapos na"
+    },
+    "detail": {
+      "title": "Detalye ng transfer",
+      "reference": "Reference {reference}",
+      "payout_amount": "Halaga ng payout",
+      "destination": "Destinasyon",
+      "estimated_arrival": "Tinatayang pagdating",
+      "fees": "Mga bayarin",
+      "requested": "Hiniling",
+      "timeline_title": "Timeline ng settlement",
+      "pending": "Naghihintay",
+      "download_receipt": "I-download ang resibo",
+      "status": {
+        "completed": "Tapos na",
+        "processing": "Pinoproseso",
+        "under_review": "Sinusuri",
+        "failed": "Nabigo"
+      }
+    },
+    "skeleton": {
+      "loading": "Nilo-load ang banking dashboard"
+    }
+  },
+  "AccountRecoveryServices": {
+    "page": {
+      "title": "Mga Serbisyo sa Recovery",
+      "subtitle": "Mag-submit ng recovery request para sa nawala o ninakaw na crypto assets. Susuriin ng forensic team namin ang kaso at makikipag-ugnayan sa loob ng 24–48 oras.",
+      "process_title": "Proseso",
+      "form_title": "Detalye ng Asset Recovery at Forensics",
+      "form_subtitle": "Tutulungan ka naming i-trace at i-recover ang nawalang crypto assets at bumuo ng verified evidence para sa legal na pagbawi ng pondo."
+    },
+    "process": {
+      "assessment": {
+        "title": "Assessment",
+        "description": "Sinusuri namin ang trail at tinataya ang posibilidad ng recovery."
+      },
+      "strategy": {
+        "title": "Strategy",
+        "description": "Customized na plano na may legal at forensic support."
+      },
+      "recovery": {
+        "title": "Recovery",
+        "description": "Kumokontak kami sa mga exchange at awtoridad para mabawi ang pondo."
+      },
+      "return": {
+        "title": "Pagbabalik",
+        "description": "Ililipat ang pondo sa iyong verified wallet."
+      }
+    },
+    "form": {
+      "name": "Pangalan",
+      "name_placeholder": "hal. Juan dela Cruz",
+      "transaction_hash": "Transaction hash / Wallet address",
+      "transaction_hash_placeholder": "Ilagay ang hash o address (hal. 0x1234...)",
+      "amount_stolen": "Tinatayang halagang ninakaw",
+      "amount_stolen_placeholder": "Ilagay ang tinatayang halaga (hal. 200000)",
+      "incident_summary": "Buod ng Insidente",
+      "incident_summary_placeholder": "hal. Ninakaw ang pondo sa pamamagitan ng phishing scam...",
+      "evidence": "Screenshot o iba pang ebidensya na sumusuporta sa claim",
+      "phone_number": "Numero ng Telepono",
+      "blockchain": "Pumili ng Blockchain",
+      "blockchain_placeholder": "Pumili ng blockchain",
+      "currency": "Pumili ng currency",
+      "currency_placeholder": "Pumili ng currency",
+      "privacy_prefix": "Kailangan ng Lenix Protocol ang iyong contact info para makipag-ugnayan tungkol sa recovery case. Para sa detalye, tingnan ang aming",
+      "privacy_policy": "Privacy Policy",
+      "privacy_suffix": ".",
+      "submit": "I-submit ang Recovery Request",
+      "submitting": "Isinusumite..."
+    },
+    "blockchains": {
+      "BTC": "Bitcoin (BTC)",
+      "ETH": "Ethereum (ETH)",
+      "SOL": "Solana (SOL)",
+      "TRX": "Tron (TRX)",
+      "BNB": "Binance Smart Chain (BNB)",
+      "MATIC": "Polygon Mainnet (MATIC)",
+      "AVAX": "Avalanche C-Chain (AVAX)",
+      "ARB": "Arbitrum One (ARB)",
+      "BASE": "Base (BASE)",
+      "FANTOM": "Fantom (Fantom)",
+      "GNOSIS": "Gnosis Chain (GNOSIS)",
+      "KAVA": "Kava (KAVA)",
+      "POL": "Polkadot (POL)",
+      "SUI": "Sui (SUI)",
+      "OTHER": "Iba pa"
+    },
+    "success": {
+      "title": "Na-submit ang Request",
+      "description": "Susuriin ng recovery team namin ang kaso at makikipag-ugnayan sa loob ng 24–48 oras.",
+      "submit_another": "Mag-submit ng Isa Pang Request"
+    },
+    "toast": {
+      "required_fields": "Pakipunan ang lahat ng kinakailangang field",
+      "submit_failed": "Hindi na-submit ang recovery request",
+      "submit_success": "Na-submit ang recovery request. Makikipag-ugnayan ang team namin sa lalong madaling panahon."
+    }
+  },
+  "AccountCryptoLoan": {
+    "page": {
+      "back_to_dashboard": "Bumalik sa Dashboard",
+      "collateral_title": "Kailangan ng mas maraming collateral?",
+      "collateral_description": "Mag-deposit ng mas maraming asset sa vault para tumaas ang borrowing limit at mapabuti ang health factor.",
+      "go_to_vault": "Pumunta sa Vault"
+    },
+    "hero": {
+      "title_line1": "I-unlock ang liquidity,",
+      "title_line2": "Panatilihin ang assets mo",
+      "subtitle": "Kumuha ng instant crypto-backed loan nang hindi ibinebenta ang portfolio mo. Mababang rate, flexible na terms, at agarang funding.",
+      "get_instant_loan": "Kumuha ng Instant Loan",
+      "how_it_works": "Paano ito gumagana",
+      "active_loans": "Aktibong Loans",
+      "total_borrowed": "Kabuuang Hiniram",
+      "lowest_rate": "Pinakamababang Rate"
+    },
+    "active_loans": {
+      "empty_title": "Walang Aktibong Loan",
+      "empty_description": "Lalabas dito ang aktibong loans mo. Kumuha ng instant liquidity sa pamamagitan ng bagong loan application.",
+      "title": "Mga Portfolio Mo",
+      "active_count": "{count} Aktibo",
+      "borrowed_amount": "Halagang Hiniram",
+      "collateral": "Collateral",
+      "health_factor": "Health Factor",
+      "repay_loan": "Bayaran ang Loan",
+      "processing": "Pinoproseso...",
+      "view_details": "Tingnan ang Detalye",
+      "details_title": "Detalye ng Loan Request",
+      "borrowed": "Hiniram",
+      "apy": "APY",
+      "duration": "Tagal",
+      "start_date": "Petsa ng Simula",
+      "contact_details": "Contact Details",
+      "phone": "Telepono",
+      "telegram_whatsapp": "Telegram / WhatsApp",
+      "not_provided": "Hindi ibinigay",
+      "payout_method": "Payout Method",
+      "no_payout_details": "Walang naka-store na payout details.",
+      "wallet": "Wallet",
+      "network": "Network",
+      "bank": "Bangko",
+      "swift_bic": "SWIFT/BIC",
+      "account": "Account",
+      "holder": "Holder",
+      "routing_iban": "Routing/IBAN"
+    },
+    "market_rates": {
+      "live_rates": "Live Rates",
+      "available_plans": "Available Plans",
+      "interest_rate": "Interest Rate",
+      "ltv": "{ltv}% LTV"
+    },
+    "application": {
+      "step_label": "Hakbang {step} ng 2 — {phase}",
+      "phase_details": "Loan Details",
+      "phase_payout": "Payout Preferences",
+      "title_details": "Mag-request ng Crypto Loan",
+      "title_payout": "Pagtanggap ng Pondo",
+      "subtitle_details": "I-customize ang loan terms ayon sa pangangailangan mo.",
+      "subtitle_payout": "Piliin kung saan ipapadala ang loan details mo.",
+      "select_loan_type": "Pumili ng Loan Type",
+      "loan_type_summary": "{rate}% APR · Hanggang {ltv}% LTV",
+      "borrow_amount": "Halagang Hihiramin (USD)",
+      "borrow_amount_placeholder": "hal. 5000",
+      "collateral_asset": "Collateral Asset",
+      "duration": "Tagal",
+      "continue_payout": "Magpatuloy sa Payout",
+      "contact_title": "Paano ka namin makokontak?",
+      "contact_subtitle": "Magbigay ng kahit isa para maabot ka namin tungkol sa application mo.",
+      "phone_number": "Numero ng telepono",
+      "phone_placeholder": "hal. +63 912 345 6789",
+      "phone_hint": "Para sa tawag at SMS updates",
+      "telegram_whatsapp": "Telegram o WhatsApp",
+      "telegram_placeholder": "hal. @username o +639123456789",
+      "telegram_hint": "Para sa mabilis na messaging",
+      "funds_title": "Saan namin ipapadala ang pondo mo?",
+      "payout_crypto": "Crypto Wallet",
+      "payout_crypto_sub": "Instant Transfer",
+      "payout_wire": "Wire Transfer",
+      "payout_wire_sub": "1–3 Business Days",
+      "payout_bank": "Bank Deposit",
+      "payout_bank_sub": "ACH / SEPA",
+      "wallet_address": "Wallet Address",
+      "wallet_placeholder": "0x...",
+      "select_network": "Pumili ng Network",
+      "network_erc20": "Ethereum (ERC20)",
+      "network_trc20": "Tron (TRC20)",
+      "network_bsc": "Binance Smart Chain (BEP20)",
+      "bank_name": "Pangalan ng Bangko",
+      "bank_name_placeholder": "hal. BDO",
+      "bank_name_alt_placeholder": "hal. BPI",
+      "swift_bic": "SWIFT / BIC Code",
+      "swift_placeholder": "hal. BNORPHMM",
+      "account_number": "Account Number",
+      "account_number_placeholder": "Account number mo",
+      "account_holder": "Pangalan ng Account Holder",
+      "account_holder_placeholder": "Buong pangalan sa account",
+      "reference_optional": "Reference (opsyonal)",
+      "reference_placeholder": "Payment reference",
+      "routing_iban": "Routing Number / IBAN",
+      "routing_iban_placeholder": "ACH routing (US) o IBAN (EU)",
+      "back": "Bumalik",
+      "submitting": "Isinusumite...",
+      "submit": "I-submit ang Application",
+      "success_title": "Na-submit ang application",
+      "success_description": "Natanggap na ang loan request mo. Susuriin namin ito at makikipag-ugnayan sa lalong madaling panahon.",
+      "view_loans": "Tingnan ang loans ko"
+    },
+    "duration": {
+      "6": "6 buwan",
+      "12": "12 buwan",
+      "24": "24 buwan",
+      "months": "{count} buwan"
+    },
+    "collateral_assets": {
+      "BTC": "Bitcoin",
+      "ETH": "Ethereum",
+      "SOL": "Solana"
+    },
+    "status": {
+      "Active": "Aktibo",
+      "Pending": "Naghihintay",
+      "Repaid": "Nabayaran",
+      "Liquidated": "Na-liquidate"
+    },
+    "payout_methods": {
+      "crypto": "crypto",
+      "wire_transfer": "wire transfer",
+      "bank": "bangko"
+    },
+    "toast": {
+      "repay_success": "Matagumpay na nabayaran ang loan"
+    },
+    "overview": {
+      "total_borrowed": "Kabuuang Hiniram",
+      "total_borrowed_tooltip": "Kabuuang halagang hiniram sa lahat ng aktibong loans",
+      "current_interest": "Kasalukuyang Interes",
+      "collateral_value": "Halaga ng Collateral",
+      "collateral_tooltip": "Kabuuang halaga ng assets na naka-lock bilang collateral",
+      "ltv_label": "LTV",
+      "low_risk": "Mababang Panganib",
+      "health_factor": "Health Factor",
+      "health_tooltip": "Indicator ng liquidation risk. Panatilihin ito sa ibabaw ng 1.5 para maiwasan ang liquidation.",
+      "safe": "Ligtas",
+      "liquidated": "1.0 (Na-liquidate)",
+      "safe_threshold": "3.0 (Ligtas)"
+    },
+    "borrow_form": {
+      "title": "Loan Calculator",
+      "subtitle": "Kalkulahin agad ang loan terms mo.",
+      "borrow_tab": "Humiram",
+      "repay_tab": "Magbayad",
+      "want_to_borrow": "Gusto kong humiram",
+      "my_collateral": "Collateral Ko",
+      "asset_placeholder": "Asset",
+      "ltv": "LTV",
+      "low_risk": "Mababang Panganib",
+      "apy": "APY",
+      "total_repayment": "Kabuuang Bayad",
+      "apply_new_loan": "Mag-apply para sa Bagong Loan",
+      "repay_title": "Pamahalaan ang Pagbabayad",
+      "repay_description": "Gamitin ang listahan ng \"Aktibong Loans\" para pamahalaan at bayaran ang partikular na loans mo."
+    },
+    "collateral": {
+      "title": "Suportadong Collateral",
+      "live_rates": "Live Rates",
+      "max_ltv": "Max LTV: {ltv}",
+      "fee": "Bayad",
+      "assets": {
+        "BTC": "Bitcoin",
+        "ETH": "Ethereum",
+        "SOL": "Solana",
+        "XRP": "Ripple"
+      }
     }
   }
 }

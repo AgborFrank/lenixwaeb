@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Solusi",
+    "title1": "Recovery, settlement, pinjaman ",
+    "title2": "dan infrastruktur keamanan",
+    "title3": ".",
+    "subtitle1": "Lenix melacak crypto yang dicuri atau salah arah, menyelesaikan ke fiat melalui koridor yang didukung, memberi pinjaman terhadap agunan vault, dan memantau wallet untuk tim yang menahan aset klien.",
+    "subtitle2": "Setiap alur kerja punya intake dan deliverable sendiri. Untuk recovery, kami menilai jejak sebelum engagement berbayar — kami tidak menjanjikan hasil."
+  },
+  "Overview": {
+    "eyebrow": "Mulai dari sini",
+    "title": "Cocokkan masalah dengan alur kerja",
+    "description": "Kebanyakan pengunjung sudah tahu apakah mereka butuh tracing, payout, likuiditas, atau kontrol operasional. Baca ringkasan, lalu buka bagian yang sesuai.",
+    "learn_more": "Lihat detail",
+    "cards": {
+      "recovery": {
+        "title": "Pemulihan aset",
+        "desc": "Dana dicuri, ditipu, atau dikirim ke alamat salah. Anda butuh jejak dan bukti terdokumentasi sebelum memutuskan langkah berikutnya."
+      },
+      "payments": {
+        "title": "Pembayaran lintas batas",
+        "desc": "Treasury atau finance perlu mengonversi crypto ke fiat, dengan kurs, biaya, dan status pengiriman yang bisa ditunjukkan ke auditor."
+      },
+      "lending": {
+        "title": "Pinjaman crypto",
+        "desc": "Anda memegang agunan yang memenuhi syarat dan butuh likuiditas tanpa menjual posisi."
+      },
+      "security": {
+        "title": "Keamanan platform",
+        "desc": "Tim Anda mengcustodi aset klien dan butuh pemantauan, aturan akses, serta jalur eskalasi tertulis."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Pemulihan aset",
+    "title": "Lacak dulu. Terlibat hanya jika ada jalan.",
+    "description": "Kirim alamat wallet, hash transaksi, dan timeline singkat. Kami telusuri ke mana nilai bergerak, siapkan temuan untuk exchange dan penasihat hukum, dan jelaskan apakah recovery realistis sebelum engagement berbayar. Kami tidak menjanjikan recovery.",
+    "points": {
+      "chains": "Tracing di jaringan EVM utama, Bitcoin, dan stablecoin umum dalam kasus pencurian",
+      "evidence": "Dokumentasi diformat untuk meja compliance exchange, penasihat hukum, dan penegak hukum",
+      "terms": "Ruang lingkup dan biaya ditetapkan hanya setelah tinjauan recoverability gratis"
+    },
+    "cta": "Mulai recovery"
+  },
+  "Payments": {
+    "eyebrow": "Pembayaran lintas batas",
+    "title": "Settlement yang bisa diaudit treasury Anda",
+    "description": "Konversi crypto ke fiat di mana rel perbankan lokal lambat, mahal, atau tidak transparan. Kurs, biaya, dan status terlihat dari inisiasi wallet hingga pengiriman ke penerima — finance dan ops tidak menebak.",
+    "cta": "Opsi pembayaran",
+    "capabilities": {
+      "corridors": {
+        "title": "Koridor aktif",
+        "desc": "Pembayaran ke rekening bank di pasar yang kami dukung hari ini. Hubungi kami jika koridor Anda belum tercantum."
+      },
+      "visibility": {
+        "title": "Pelacakan serah terima",
+        "desc": "Status di setiap langkah alur, bukan satu flag pending tanpa konteks."
+      },
+      "compliance": {
+        "title": "Skrining sanksi dan AML",
+        "desc": "Alur masuk dan keluar diskrining sebelum dana dirilis."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Pinjaman crypto",
+    "title": "Likuiditas sementara agunan tetap di vault",
+    "description": "Setor agunan yang disetujui dan tarik stablecoin atau fiat. LTV, syarat pelunasan, dan ambang likuidasi ditampilkan sebelum pencairan — tanpa pemicu tersembunyi setelah tanda tangan.",
+    "points": {
+      "credit": "Jenis agunan yang memenuhi syarat tidak memerlukan cek kredit tradisional",
+      "ltv": "LTV dan jadwal pelunasan disepakati di awal",
+      "custody": "Agunan di vault terpisah selama jangka pinjaman"
+    },
+    "cta": "Ajukan pinjaman"
+  },
+  "Security": {
+    "eyebrow": "Keamanan platform",
+    "title": "Kontrol untuk tim yang mengcustodi aset klien",
+    "description": "Pemantauan wallet, akses berizin, dan eskalasi insiden untuk organisasi yang tidak bisa memperlakukan aktivitas mencurigakan sebagai tiket sampingan. Dibangun untuk tim ops, bukan keamanan slide deck.",
+    "cta": "Ringkasan keamanan",
+    "pillars": {
+      "monitoring": {
+        "title": "Pemantauan aktivitas",
+        "desc": "Peringatan untuk outflow tidak biasa, counterparty baru, dan transfer di luar kebijakan."
+      },
+      "access": {
+        "title": "Akses dan audit trail",
+        "desc": "Izin berbasis peran dengan catatan siapa menyetujui apa dan kapan."
+      },
+      "incident": {
+        "title": "Respons insiden",
+        "desc": "Langkah eskalasi tertulis yang tim Anda jalankan saat aktivitas perlu tinjauan manusia."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Tidak yakin alur kerja mana yang berlaku?",
+    "description": "Jelaskan situasinya — dana hilang, payout, pinjaman, atau masalah ops — kami arahkan ke intake yang tepat.",
+    "btn_primary": "Hubungi tim",
+    "btn_secondary": "Mulai recovery"
+  }
+}

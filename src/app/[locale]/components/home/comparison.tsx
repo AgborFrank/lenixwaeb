@@ -45,7 +45,6 @@ export default function Comparison() {
             <div className="bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-2xl p-6 text-black flex items-center justify-between border-4 border-yellow-500 shadow-lg transform scale-105">
               <div className="flex items-center space-x-4">
                 <div className="text-2xl font-bold flex items-center">
-                  <span className="mr-2">⚡</span>
                   Lenix Protocol
                 </div>
               </div>

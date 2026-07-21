@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Solutions",
+    "title1": "Recovery, settlement, lending, ",
+    "title2": "and security infrastructure",
+    "title3": ".",
+    "subtitle1": "Lenix traces stolen and misdirected crypto, settles to fiat across supported corridors, lends against vaulted collateral, and runs monitoring for asset-holding teams.",
+    "subtitle2": "Each workflow has its own intake and deliverables. On recovery, we assess the trail before paid engagement—we do not promise outcomes."
+  },
+  "Overview": {
+    "eyebrow": "Where to start",
+    "title": "Match the problem to the workflow",
+    "description": "Most visitors already know whether they need tracing, a payout, liquidity, or operational controls. Skim the summaries, then open the section that fits.",
+    "learn_more": "Read details",
+    "cards": {
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Funds were stolen, scammed, or sent to the wrong address. You need a trace and documented evidence before deciding on next steps."
+      },
+      "payments": {
+        "title": "Cross-border payments",
+        "desc": "Treasury or finance needs crypto converted to fiat, with rates, fees, and delivery status they can show auditors."
+      },
+      "lending": {
+        "title": "Crypto lending",
+        "desc": "You hold eligible collateral and need liquidity without selling the position outright."
+      },
+      "security": {
+        "title": "Platform security",
+        "desc": "Your team custodies client assets and needs monitoring, access rules, and a written escalation path."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Asset recovery",
+    "title": "Trace first. Engage only when a path exists.",
+    "description": "Submit wallet addresses, transaction hashes, and a short timeline. We follow where value moved, prepare findings for exchanges and counsel, and say plainly if recovery is realistic before any paid engagement. We do not promise recovery.",
+    "points": {
+      "chains": "Tracing on major EVM networks, Bitcoin, and stablecoins commonly seen in theft cases",
+      "evidence": "Documentation formatted for exchange compliance desks, counsel, and law enforcement",
+      "terms": "Scope and fees set only after a free recoverability review"
+    },
+    "cta": "Start a recovery case"
+  },
+  "Payments": {
+    "eyebrow": "Cross-border payments",
+    "title": "Settlement your treasury can audit",
+    "description": "Convert crypto to fiat where local banking rails are slow, expensive, or opaque. Rate, fee, and status are visible from wallet initiation through beneficiary delivery — so finance and ops are not guessing.",
+    "cta": "View payment options",
+    "capabilities": {
+      "corridors": {
+        "title": "Active corridors",
+        "desc": "Payout to bank accounts in markets we support today. Contact us if your corridor is not listed."
+      },
+      "visibility": {
+        "title": "Handoff tracking",
+        "desc": "Status at each step of the flow, not a single pending flag with no context."
+      },
+      "compliance": {
+        "title": "Sanctions and AML screening",
+        "desc": "Inbound and outbound flows screened before funds are released."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Crypto lending",
+    "title": "Liquidity while collateral stays in vault",
+    "description": "Post approved collateral and draw stablecoins or fiat. LTV, repayment terms, and liquidation thresholds are shown before disbursement — no hidden triggers after you sign.",
+    "points": {
+      "credit": "Eligible collateral types do not require a traditional credit check",
+      "ltv": "LTV and repayment schedules agreed upfront",
+      "custody": "Collateral held in segregated vaults for the loan term"
+    },
+    "cta": "Apply for a loan"
+  },
+  "Security": {
+    "eyebrow": "Platform security",
+    "title": "Controls for teams that custody client assets",
+    "description": "Wallet monitoring, permissioned access, and incident escalation for organizations that cannot treat suspicious activity as a back-burner ticket. Built for ops teams, not slide-deck security.",
+    "cta": "Security overview",
+    "pillars": {
+      "monitoring": {
+        "title": "Activity monitoring",
+        "desc": "Alerts on unusual outflows, new counterparties, and transfers outside policy."
+      },
+      "access": {
+        "title": "Access and audit trail",
+        "desc": "Role-based permissions with a record of who approved what and when."
+      },
+      "incident": {
+        "title": "Incident response",
+        "desc": "Written escalation steps your team can run when activity needs human review."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Not sure which workflow applies?",
+    "description": "Describe the situation — lost funds, a payout, a loan, or an ops concern — and we will route you to the right intake.",
+    "btn_primary": "Contact our team",
+    "btn_secondary": "Start a recovery case"
+  }
+}

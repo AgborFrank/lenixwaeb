@@ -1,22 +1,23 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { toast } from "sonner";
+import Image from "next/image";
 
 import { ReceiveModal } from "./_components/modals/receive-modal";
 import { SendModal } from "./_components/modals/send-modal";
-
-import { Input } from "@/components/ui/input";
-import { ArrowRight, ChevronDown, CreditCard, History, Lock } from "lucide-react";
-import { useEffect, useState } from "react";
-import { toast } from "sonner";
-import { ConnectWalletDrawer } from "../vault/_components/connect-wallet-drawer";
 import { ActionGrid } from "./_components/action-grid";
+import { BitcoinWalletCard } from "./_components/bitcoin-wallet-card";
 import { SetupWizard } from "./_components/setup/setup-wizard";
 import { TokenList } from "./_components/token-list";
 import { TransactionHistory } from "./_components/transaction-history";
@@ -24,234 +25,273 @@ import { WalletCard } from "./_components/wallet-card";
 import { WalletStatus } from "./_components/wallet-status";
 import { useWallet } from "./_hooks/use-wallet";
 import { getPopularCoins } from "./actions";
-
-const NETWORKS = [
-  { id: "all", name: "All Networks" },
-  { id: 1, name: "Ethereum" },
-  { id: 56, name: "BNB Chain" },
-  { id: 137, name: "Polygon" },
-];
+import { wallet } from "@/lib/wallet-styles";
 
 export default function LenixWalletPage() {
-  const { walletState, walletData, unlockWallet, lockWallet, portfolio } = useWallet();
+  const t = useTranslations("AccountLenixWallet");
+  const {
+    walletState,
+    walletData,
+    unlockWallet,
+    lockWallet,
+    portfolio,
+    bitcoinAddress,
+  } = useWallet();
+
   const [unlockPassword, setUnlockPassword] = useState("");
   const [isUnlocking, setIsUnlocking] = useState(false);
-  const [popularCoins, setPopularCoins] = useState<any[]>([]); 
-  const [selectedChain, setSelectedChain] = useState<string | number>("all");
+  const [popularCoins, setPopularCoins] = useState<any[]>([]);
+  const [selectedChain, setSelectedChain] = useState<string>("all");
+  const [activeWalletCard, setActiveWalletCard] = useState(0);
+  const walletCarouselRef = useRef<HTMLDivElement>(null);
 
-
-
-  // Modal States
   const [isSendOpen, setIsSendOpen] = useState(false);
   const [isReceiveOpen, setIsReceiveOpen] = useState(false);
 
-  // Fetch popular coins if portfolio is empty (market data mode)
+  const networks = useMemo(
+    () => [
+      { id: "all", name: t("networks.all") },
+      { id: 1, name: t("networks.ethereum") },
+      { id: 56, name: t("networks.bsc") },
+      { id: 137, name: t("networks.polygon") },
+      { id: 0, name: t("networks.bitcoin") },
+    ],
+    [t],
+  );
+
   useEffect(() => {
-     if (walletState === "unlocked" && portfolio && portfolio.tokens.length === 0) {
-         getPopularCoins().then(setPopularCoins).catch(console.error);
-     }
+    if (walletState === "unlocked" && portfolio && portfolio.tokens.length === 0) {
+      getPopularCoins().then(setPopularCoins).catch(console.error);
+    }
   }, [walletState, portfolio]);
 
-  const isLoadingData = walletState === "loading" || (walletState === "unlocked" && !portfolio);
+  const showWalletCard = (index: number) => {
+    const carousel = walletCarouselRef.current;
+    if (!carousel) return;
+    carousel.scrollTo({ left: index * carousel.clientWidth, behavior: "smooth" });
+    setActiveWalletCard(index);
+  };
 
-  // If loading, show nothing or skeleton
+  useEffect(() => {
+    if (walletState !== "unlocked") return;
+    showWalletCard(selectedChain === "0" ? 1 : 0);
+  }, [selectedChain, walletState]);
+
+  const isLoadingData =
+    walletState === "loading" || (walletState === "unlocked" && !portfolio);
+
   if (walletState === "loading") {
-    return <div className="flex items-center justify-center min-h-[60vh]">
-      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-400"></div>
-    </div>;
-  }
-
-  // If no wallet, show setup wizard
-  if (walletState === "no_wallet") {
     return (
-      <div className="max-w-7xl mx-auto space-y-6 pb-20">
-         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div>
-               <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-                  Lenix WalletSetup
-               </h1>
-               <p className="text-zinc-400 text-sm">Create or import a wallet to get started.</p>
-            </div>
-         </div>
-         <SetupWizard onComplete={() => window.location.reload()} />
+      <div className="flex min-h-[60vh] items-center justify-center">
+        <div className="h-8 w-8 animate-spin rounded-full border-2 border-zinc-700 border-t-white" />
       </div>
     );
   }
 
-  // If locked, show unlock screen
+  if (walletState === "no_wallet") {
+    return (
+      <div className={wallet.container}>
+        <div className="mb-6">
+          <h1 className={wallet.pageTitle}>{t("page.setup_title")}</h1>
+          <p className={wallet.pageSubtitle}>{t("page.setup_subtitle")}</p>
+        </div>
+        <SetupWizard onComplete={() => window.location.reload()} />
+      </div>
+    );
+  }
+
   if (walletState === "locked") {
     const handleUnlock = async (e: React.FormEvent) => {
       e.preventDefault();
       setIsUnlocking(true);
       try {
         await unlockWallet(unlockPassword);
-        toast.success("Wallet unlocked");
-      } catch (e) {
-        toast.error("Incorrect password");
+        toast.success(t("toast.wallet_unlocked"));
+      } catch {
+        toast.error(t("toast.incorrect_password"));
       } finally {
         setIsUnlocking(false);
       }
     };
 
     return (
-      <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="w-full max-w-md space-y-8 bg-zinc-900/50 p-8 rounded-2xl border border-white/5 backdrop-blur-xl">
-          <div className="text-center space-y-2">
-            <div className="inline-flex p-3 rounded-full bg-yellow-400/10 mb-4">
-              <Lock className="h-8 w-8 text-yellow-400" />
-            </div>
-            <h2 className="text-2xl font-bold text-white">Unlock Wallet</h2>
-            <p className="text-zinc-400">Enter your password to access your wallet.</p>
+      <div className="flex min-h-[60vh] items-center justify-center px-4">
+        <div className="w-full max-w-sm bg-white/10 rounded-3xl p-6">
+          <div className="mb-8 text-center">
+            <Image
+              src="/assets/vectors/start-deposit-no.svg"
+              alt={t("page.logo_alt")}
+              className="mx-auto mb-4"
+              width={56}
+              height={56}
+            />
+            <h1 className={wallet.pageTitle}>{t("page.unlock_title")}</h1>
+            <p className={wallet.pageSubtitle}>{t("page.unlock_subtitle")}</p>
           </div>
 
           <form onSubmit={handleUnlock} className="space-y-4">
             <Input
-              type="password" 
-              placeholder="Enter password"
-              className="bg-black/50 border-zinc-800 text-white h-12 text-lg"
+              type="password"
+              placeholder={t("page.password_placeholder")}
+              className={wallet.input}
               value={unlockPassword}
               onChange={(e) => setUnlockPassword(e.target.value)}
               autoFocus
             />
-            <Button 
-              type="submit" 
-              className="w-full h-12 text-base font-medium bg-yellow-400 text-black hover:bg-yellow-500"
+            <button
+              type="submit"
               disabled={!unlockPassword || isUnlocking}
+              className={wallet.primaryBtn}
             >
-              {isUnlocking ? "Unlocking..." : "Unlock Wallet"}
-              {!isUnlocking && <ArrowRight className="ml-2 h-5 w-5" />}
-            </Button>
+              {isUnlocking ? t("page.unlocking") : t("page.unlock")}
+              {!isUnlocking && <ArrowRight className="ml-2 inline h-4 w-4" />}
+            </button>
           </form>
         </div>
       </div>
     );
   }
 
-  // Filter tokens based on chain
-  const visibleTokens = portfolio?.tokens 
-      ? portfolio.tokens.filter(t => selectedChain === "all" || t.chainId === selectedChain)
-      : [];
-      
-  // Determine what to show in list: User Assets or Popular Coins
+  const chainId = selectedChain === "all" ? "all" : Number(selectedChain);
+  const visibleTokens = portfolio?.tokens
+    ? portfolio.tokens.filter((token) => chainId === "all" || token.chainId === chainId)
+    : [];
+
   const displayTokens = visibleTokens.length > 0 ? visibleTokens : popularCoins;
   const isMarketData = visibleTokens.length === 0 && popularCoins.length > 0;
 
-  // Filter popular coins by chain if in market mode
-  const filteredDisplayTokens = isMarketData 
-      ? displayTokens.filter(t => selectedChain === "all" || t.chainId === selectedChain)
-      : displayTokens;
+  const filteredDisplayTokens = isMarketData
+    ? displayTokens.filter((token) => chainId === "all" || token.chainId === chainId)
+    : displayTokens;
 
-  const currentNetworkName = NETWORKS.find(n => n.id === selectedChain)?.name || "All Networks";
-
-  // Modal States
-
-
-  // If unlocked, show dashboard
   return (
-    <div className="max-w-7xl mx-auto space-y-6 pb-20">
-      
-      {/* Header Actions */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-           <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-              Lenix Wallet
-              <span className="px-2 py-0.5 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-xs font-medium tracking-wide uppercase">
-                 Active
-              </span>
-           </h1>
-           <p className="text-zinc-400 text-sm">Manage your everyday crypto spending.</p>
+    <div className={wallet.container}>
+      <div className="mb-5 flex flex-row items-center justify-between gap-4 sm:mb-6">
+        <div className="min-w-0">
+          <h1 className={wallet.pageTitle}>{t("page.title")}</h1>
+          <p className={wallet.pageSubtitle}>{t("page.subtitle")}</p>
         </div>
-        
-        <div className="flex items-center gap-2 w-full sm:w-auto">
-           {/* Chain Selector */}
-           <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="outline" className="border-zinc-700 bg-zinc-900/50 text-zinc-300 hover:bg-zinc-800 hover:text-white min-w-[140px] justify-between">
-                   {currentNetworkName}
-                   <ChevronDown className="ml-2 h-4 w-4 opacity-50" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="bg-zinc-900 border-zinc-800">
-                {NETWORKS.map(net => (
-                   <DropdownMenuItem 
-                      key={net.id} 
-                      onClick={() => setSelectedChain(net.id)}
-                      className="text-zinc-300 focus:text-white focus:bg-zinc-800 cursor-pointer"
-                   >
-                      {net.name}
-                   </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-           </DropdownMenu>
 
-           <Button variant="outline" className="flex-1 sm:flex-none border-zinc-700 bg-zinc-900/50 text-zinc-300 hover:bg-zinc-800 hover:text-white">
-              <History className="mr-2 h-4 w-4" />
-              History
-           </Button>
-           <div className="flex-1 sm:flex-none">
-             <ConnectWalletDrawer />
-           </div>
+        <Select value={selectedChain} onValueChange={setSelectedChain}>
+          <SelectTrigger className="h-9 w-[140px] shrink-0 border-zinc-700 bg-zinc-900/50 text-sm text-white sm:h-10 sm:w-[160px]">
+            <SelectValue placeholder={t("page.network_placeholder")} className="text-xs" />
+          </SelectTrigger>
+          <SelectContent className="border-zinc-800 bg-zinc-900 text-white">
+            {networks.map((net) => (
+              <SelectItem
+                key={net.id}
+                value={String(net.id)}
+                className="cursor-pointer text-xs focus:bg-zinc-800 focus:text-white"
+              >
+                {net.name}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+
+      <div className={wallet.grid}>
+        <div className={wallet.mainCol}>
+          <div className="relative">
+            <div
+              ref={walletCarouselRef}
+              onScroll={(e) => {
+                const el = e.currentTarget;
+                const index = Math.round(el.scrollLeft / Math.max(el.clientWidth, 1));
+                setActiveWalletCard(Math.min(1, Math.max(0, index)));
+              }}
+              className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            >
+              <div className="min-w-full snap-center">
+                <WalletCard
+                  walletData={walletData}
+                  lockWallet={lockWallet}
+                  balance={portfolio?.totalBalanceUsd}
+                />
+              </div>
+              <div className="min-w-full snap-center">
+                <BitcoinWalletCard />
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => showWalletCard(0)}
+              disabled={activeWalletCard === 0}
+              aria-label={t("page.show_evm_wallet")}
+              className="absolute left-2 top-1/2 z-10 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-zinc-700 bg-zinc-900/90 text-white backdrop-blur transition-opacity hover:bg-zinc-800 disabled:opacity-0 sm:flex"
+            >
+              <ChevronLeft className="h-4 w-4" />
+            </button>
+            <button
+              type="button"
+              onClick={() => showWalletCard(1)}
+              disabled={activeWalletCard === 1}
+              aria-label={t("page.show_bitcoin_wallet")}
+              className="absolute right-2 top-1/2 z-10 hidden h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full border border-zinc-700 bg-zinc-900/90 text-white backdrop-blur transition-opacity hover:bg-zinc-800 disabled:opacity-0 sm:flex"
+            >
+              <ChevronRight className="h-4 w-4" />
+            </button>
+
+            <div className="mt-3 flex justify-center gap-1.5">
+              {[0, 1].map((i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => showWalletCard(i)}
+                  aria-label={i === 0 ? t("page.evm_wallet") : t("page.bitcoin_wallet")}
+                  className={`h-1.5 rounded-full transition-all ${
+                    activeWalletCard === i
+                      ? "w-5 bg-white"
+                      : "w-1.5 bg-zinc-700 hover:bg-zinc-500"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+
+          <ActionGrid
+            onSend={() => setIsSendOpen(true)}
+            onReceive={() => setIsReceiveOpen(true)}
+            onBuy={() => window.open("https://www.moonpay.com/buy/btc", "_blank")}
+            onSwap={() => toast.info(t("actions.coming_soon"))}
+          />
+
+          <TokenList
+            tokens={filteredDisplayTokens}
+            isLoading={isLoadingData}
+            isMarketData={isMarketData}
+          />
+        </div>
+
+        <div className={wallet.sideCol}>
+          <WalletStatus />
+
+          <div className={wallet.card}>
+            <TransactionHistory
+              transactions={portfolio?.transactions || []}
+              isLoading={isLoadingData}
+            />
+          </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-         {/* Main Column */}
-         <div className="lg:col-span-2 space-y-6">
-            <WalletCard walletData={walletData} lockWallet={lockWallet} balance={portfolio?.totalBalanceUsd} />
-            <ActionGrid 
-                onSend={() => setIsSendOpen(true)}
-                onReceive={() => setIsReceiveOpen(true)}
-                onBuy={() => toast.info("Buy feature coming soon!")}
-                onSwap={() => toast.info("Swap feature coming soon!")}
-            />
-            <TokenList 
-                tokens={filteredDisplayTokens} 
-                isLoading={isLoadingData} 
-                isMarketData={isMarketData} 
-            />
-         </div>
-
-         {/* Sidebar Column */}
-         <div className="space-y-6">
-            <WalletStatus />
-            
-            <div className="p-6 rounded-2xl bg-zinc-900/30 border border-white/5 backdrop-blur-sm">
-                <TransactionHistory transactions={portfolio?.transactions || []} isLoading={isLoadingData} />
-            </div>
-
-            {/* Promo / Upgrade Card */}
-            <div className="relative overflow-hidden rounded-2xl border border-yellow-400/20 bg-gradient-to-br from-yellow-400/10 to-transparent p-6">
-               <div className="absolute top-0 right-0 p-3 opacity-20">
-                  <CreditCard className="h-24 w-24 text-yellow-400 rotate-12" />
-               </div>
-               <h3 className="text-lg font-bold text-yellow-400 mb-2 relative z-10">Get the Lenix Card</h3>
-               <p className="text-sm text-yellow-100/80 mb-4 relative z-10">
-                  Spend your crypto anywhere with zero fees.
-               </p>
-               <Button size="sm" className="bg-yellow-500 text-black hover:bg-yellow-600 w-full relative z-10 font-medium border-0">
-                  Order Card
-               </Button>
-            </div>
-         </div>
-      </div>
-
-      {/* Modals */}
       {walletData?.address && (
-        <ReceiveModal 
-            isOpen={isReceiveOpen} 
-            onClose={() => setIsReceiveOpen(false)} 
-            address={walletData.address} 
-        />
-      )}
-      
-      {portfolio && (
-        <SendModal 
-            isOpen={isSendOpen} 
-            onClose={() => setIsSendOpen(false)} 
-            tokens={portfolio.tokens} 
+        <ReceiveModal
+          isOpen={isReceiveOpen}
+          onClose={() => setIsReceiveOpen(false)}
+          evmAddress={walletData.address}
+          bitcoinAddress={bitcoinAddress}
         />
       )}
 
+      {portfolio && (
+        <SendModal
+          isOpen={isSendOpen}
+          onClose={() => setIsSendOpen(false)}
+          tokens={portfolio.tokens}
+        />
+      )}
     </div>
   );
 }

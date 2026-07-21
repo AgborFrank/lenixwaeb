@@ -1,25 +1,26 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { login } from "../auth/actions";
 import { ArrowLeft, User, Lock } from "lucide-react";
 import Image from "next/image";
 import { useEffect } from "react";
 import { toast } from "sonner";
 
-export default function LoginPage({
-  searchParams,
-}: {
-  searchParams: { message: string; error: string };
-}) {
+export default function LoginPage() {
+  const searchParams = useSearchParams();
+  const message = searchParams.get("message");
+  const error = searchParams.get("error");
+
   useEffect(() => {
-    if (searchParams?.message) {
-      toast.success(searchParams.message);
+    if (message) {
+      toast.success(message);
     }
-    if (searchParams?.error) {
-      toast.error(searchParams.error);
+    if (error) {
+      toast.error(error);
     }
-  }, [searchParams]);
+  }, [message, error]);
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden p-4">

@@ -1,27 +1,34 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { DeFiComplianceContent } from "./components/defi-compliance-content";
+import Partners from "@/components/partners";
+import DeFiComplianceHero from "./components/defi-compliance-hero";
+import DeFiComplianceOverview from "./components/defi-compliance-overview";
+import DeFiComplianceHighlights from "./components/defi-compliance-highlights";
+import DeFiComplianceCapabilities from "./components/defi-compliance-capabilities";
+import DeFiComplianceCta from "./components/defi-compliance-cta";
 
-export const metadata: Metadata = {
-  title: "DeFi Compliance & AML Solutions | Lenix Protocol",
-  description:
-    "Evaluate ecosystem partners, prevent illicit activity, and protect end users with continuous due diligence designed for decentralized finance service protocols and crypto market infrastructure.",
-  keywords: [
-    "DeFi Compliance",
-    "AML DeFi",
-    "Decentralized Finance",
-    "DeFi Risk Management",
-    "Crypto Compliance",
-    "DeFi Due Diligence",
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("DeFiCompliance.meta");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function DeFiCompliancePage() {
   return (
     <>
       <Header />
-      <DeFiComplianceContent />
+      <div className="min-h-screen bg-black text-white selection:bg-yellow-400/30">
+        <DeFiComplianceHero />
+        <DeFiComplianceOverview />
+        <DeFiComplianceHighlights />
+        <DeFiComplianceCapabilities />
+        <Partners className="bg-zinc-900/30" />
+        <DeFiComplianceCta />
+      </div>
       <Footer />
     </>
   );

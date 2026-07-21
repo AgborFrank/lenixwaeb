@@ -65,7 +65,7 @@ export default function AssetsPage() {
       {/* Header */}
       <div>
          <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-            <Wallet className="h-6 w-6 text-yellow-400" />
+            
             My Assets
          </h1>
          <p className="text-zinc-400 text-sm mt-1">

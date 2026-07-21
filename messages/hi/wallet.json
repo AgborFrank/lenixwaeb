@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Lenix Wallet | मल्टी-चेन क्रिप्टो वॉलेट",
+    "description": "भेजने, प्राप्त करने, स्वैप और collateral ऋण के लिए non-custodial मल्टी-चेन वॉलेट — एन्क्रिप्टेड लोकल स्टोरेज और जरूरत पर Lenix recovery का रास्ता।",
+    "keywords": "क्रिप्टो वॉलेट, मल्टी-चेन वॉलेट, Non-custodial वॉलेट, Lenix Wallet, क्रिप्टो ऋण"
+  },
+  "Hero": {
+    "eyebrow_prefix": "Lenix पर ",
+    "eyebrow_highlight": "मल्टी-चेन",
+    "eyebrow_suffix": " वॉलेट",
+    "title_prefix": "भेजें, रखें और उधार लें — जरूरत पर ",
+    "title_highlight1": "recovery",
+    "title_mid": ", एक ही ",
+    "title_highlight2": "ऐप",
+    "subtitle": "रोज़मर्रा के क्रिप्टो के लिए non-custodial वॉलेट — आपके डिवाइस पर एन्क्रिप्टेड, डिफ़ॉल्ट रूप से मल्टी-चेन, और Lenix lending व recovery से जुड़ा जब साधारण send काफी न हो।",
+    "btn_download": "ऐप डाउनलोड",
+    "btn_learn": "फ़ीचर देखें",
+    "mock": {
+      "account": "खाता 1",
+      "total_balance": "कुल बैलेंस",
+      "change_24h": "+2.4% (24घं)",
+      "send": "भेजें",
+      "receive": "प्राप्त",
+      "swap": "स्वैप",
+      "loan": "ऋण",
+      "tab_assets": "संपत्ति",
+      "tab_history": "इतिहास"
+    }
+  },
+  "Features": {
+    "eyebrow": "फ़ीचर",
+    "title": "सिर्फ़ स्टोरेज से ज़्यादा",
+    "cards": {
+      "encryption": {
+        "title": "डिवाइस पर एन्क्रिप्टेड",
+        "desc": "कुंजियाँ वॉलेट पासवर्ड से सुरक्षित और स्थानीय रूप से स्टोर — Lenix आपकी seed phrase या signing keys नहीं रखता।"
+      },
+      "loans": {
+        "title": "Collateral ऋण",
+        "desc": "position बेचे बिना supported assets पर stablecoins उधार लें — confirm से पहले terms और collateral ratio दिखाए जाते हैं।",
+        "link": "View lending"
+      },
+      "recovery": {
+        "title": "Recovery मार्ग",
+        "desc": "अगर assets खो जाएँ या चोरी हों, Lenix ecosystem से recovery case खोलें — tracing और exchange coordination जब standard wallet flow काफी न हो।",
+        "link": "Start recovery"
+      },
+      "multichain": {
+        "title": "Multi-chain balances",
+        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+      },
+      "transfers": {
+        "title": "Send, receive, swap",
+        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+      },
+      "access": {
+        "title": "Web and mobile",
+        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+      }
+    },
+    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "groups": {
+      "wallet": {
+        "title": "In the wallet"
+      },
+      "platform": {
+        "title": "Through Lenix"
+      }
+    }
+  },
+  "Security": {
+    "title": "सुरक्षा अंदर से, बाद में नहीं",
+    "points": {
+      "keys": {
+        "title": "कुंजियाँ आपकी",
+        "desc": "Design से non-custodial। Funds तभी move होते हैं जब आप sign करें — Lenix आपका wallet balance freeze या redirect नहीं कर सकता।"
+      },
+      "storage": {
+        "title": "एन्क्रिप्टेड लोकल स्टोरेज",
+        "desc": "Wallet data आपके डिवाइस पर encrypted। पासवर्ड से unlock; recovery phrase offline backup करें।"
+      },
+      "access": {
+        "title": "डिवाइस-स्तर unlock",
+        "desc": "Setup पर पासवर्ड सेट करें और जहाँ supported हो device biometrics use करें — sign करने से पहले extra gate।"
+      }
+    },
+    "mock_back": {
+      "title": "सिस्टम सुरक्षित",
+      "network_label": "नेटवर्क",
+      "network_status": "कनेक्टेड",
+      "firewall_label": "फ़ायरवॉल",
+      "firewall_status": "सक्रिय"
+    },
+    "mock_front": {
+      "title": "सुरक्षित वॉल्ट",
+      "subtitle": "डिवाइस सत्यापित",
+      "encryption_title": "एन्क्रिप्शन",
+      "encryption_desc": "लोकल keys encrypted",
+      "network_title": "नेटवर्क स्थिति",
+      "network_desc": "मल्टी-चेन तैयार"
+    }
+  },
+  "Cta": {
+    "title": "Lenix Wallet डाउनलोड",
+    "subtitle": "मिनटों में wallet बनाएँ या import करें। send, receive, swap और loan के लिए वही app — जरूरत पर Lenix recovery उपलब्ध।",
+    "btn_download": "ऐप डाउनलोड",
+    "btn_web": "Open web wallet"
+  },
+  "Networks": {
+    "eyebrow": "Supported networks",
+    "title": "Live on three EVM chains today",
+    "description": "Native balances, ERC-20 tokens, and transaction history — filtered by network in the wallet.",
+    "chains": {
+      "ethereum": "Ethereum",
+      "bnb": "BNB Chain",
+      "polygon": "Polygon"
+    }
+  },
+  "GettingStarted": {
+    "eyebrow": "Getting started",
+    "title": "Up and running in three steps",
+    "step_label": "Step {number}",
+    "steps": {
+      "create": {
+        "title": "Create or import",
+        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+      },
+      "secure": {
+        "title": "Set password and backup",
+        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+      },
+      "use": {
+        "title": "Send, swap, or borrow",
+        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+      }
+    }
+  },
+  "Ecosystem": {
+    "eyebrow": "Lenix ecosystem",
+    "title": "Wallet connects to the rest of the platform",
+    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "cards": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Create, unlock, send, and receive.",
+        "cta": "Open wallet"
+      },
+      "loan": {
+        "title": "Crypto loan",
+        "desc": "Borrow against vaulted collateral.",
+        "cta": "View lending"
+      },
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Trace stolen or misdirected funds.",
+        "cta": "Start recovery"
+      },
+      "security": {
+        "title": "Security",
+        "desc": "Audits and operational controls.",
+        "cta": "Read security"
+      }
+    }
+  },
+  "Trust": {
+    "text": "Smart contract and operational security documentation is published on our Security page.",
+    "link": "View security"
+  }
+}

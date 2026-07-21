@@ -1,59 +1,135 @@
 {
-  "Hero": {
-    "badge": "Kripto Varlık Tanımlama Hizmetleri",
-    "title1": "Gizli Kripto Paraların Ortaya Çıkarılması ve Dijital Varlık Tanımlama",
-    "subtitle1": "Dijital varlıkların yerini tespit etmek ve doğrulamak modern soruşturmaların kritik bir parçası haline gelmiştir.",
-    "desc1": "Kripto paraların hem yasal hem de yasa dışı faaliyetlerde artan kullanımıyla, dijital varlıkları doğrulamak temel hale gelmiştir. Lenix Protocol, dijital serveti izlemek için uzman hizmetler sunar.",
-    "desc2": "Ekibimiz kapsamlı kripto para takibi gerçekleştirmek için en son blockchain araçlarını kullanır.",
-    "btn_consultation": "Bugün Danışmanlık İsteyin"
+  "meta": {
+    "title": "Kripto Varlık Tanımlama | Lenix Protocol",
+    "description": "Dava, miras ve icra konularında kripto para varlıklarını tespit etme, izleme ve belgeleme. Net kapsam ve teslimatlarla adli metodoloji."
   },
-  "Coverage": {
-    "title": "Tanımlama Hizmetlerimizin Kapsamı",
-    "desc": "Soruşturmalarımız aşağıdakileri içeren hukuki, cezai ve düzenleyici konuları desteklemek üzere tasarlanmıştır:",
-    "card1_title": "Boşanma ve aile hukuku uyuşmazlıkları",
-    "card1_desc": "Gizli kripto varlıkları içeren davalar.",
-    "card2_title": "Dolandırıcılık, hırsızlık ve zimmet",
-    "card2_desc": "Dijital para bileşenli vakalar.",
-    "card3_title": "Kurumsal iç soruşturmalar",
-    "card3_desc": "Kötüye kullanılan fonları içeren durumlar.",
-    "card4_title": "Miras planlaması ve vasiyet işleri",
-    "card4_desc": "Bilinmeyen veya beyan edilmemiş varlıklarla.",
-    "card5_title": "İflas veya icra takibi",
-    "card5_desc": "Varlık tanımlaması gerektiren durumlar.",
-    "footer": "Lenix Protocol, hem davacı hem de davalı vekiliyle çalışır ve tarafsız bir uzman olarak hizmet verir."
+  "Hero": {
+    "eyebrow": "Kripto varlık tanımlama",
+    "title1": "Başkalarının açıklamadığı ",
+    "title2": "dijital varlıkları belgeleyin",
+    "subtitle": "Dava, miras ve icra süreçlerinde kripto parayı tespit, izleme ve doğrulama gereken avukatlar, soruşturmacılar ve finans uzmanları için — incelemeye dayanacak metodolojiyle.",
+    "btn_primary": "İnceleme başlat",
+    "btn_secondary": "Ekiple iletişim"
+  },
+  "Audiences": {
+    "eyebrow": "Kimler için",
+    "title": "Sık desteklediğimiz konular",
+    "description": "Tanımlama çalışması yetkili hukuki, düzenleyici veya kurumsal soruşturmalarla sınırlıdır — ilgisiz taraflara açık uçlu aramalar değil.",
+    "cards": {
+      "family": {
+        "title": "Aile hukuku ve boşanma",
+        "desc": "Bir tarafın beyan edilmemiş cüzdanları, borsa hesapları veya finansal açıklamalarda yer almayan on-chain varlıkları olabileceği mal paylaşımı."
+      },
+      "fraud": {
+        "title": "Dolandırıcılık ve zimmet",
+        "desc": "Zimmete geçirilmiş dijital fon içeren hukuk veya ceza davaları — bilinen kaynak cüzdanlardan veya ele geçirilmiş hesaplardan izleme."
+      },
+      "estate": {
+        "title": "Miras ve probate",
+        "desc": "Vefat edenin belgelemediği kripto parayı tespit eden vasiyet icracıları veya avukatlar — cihazlar, kayıtlar veya kısmi adres ipuçlarından."
+      },
+      "enforcement": {
+        "title": "İflas ve icra",
+        "desc": "Alacaklılar, mütevelli heyetler veya düzenleyiciler borçlu veya konuyla ilgili haczedilebilir kripto varlıkları ve borsa temas noktalarını belirler."
+      }
+    }
   },
   "Methods": {
-    "title": "Kripto Para Takip Yöntemleri",
-    "card1_title": "Blockchain cüzdan tanımlama",
-    "card1_desc": "Ve bağlantı analizi.",
-    "card2_title": "İşlem izleme",
-    "card2_desc": "Genel ve özel blockchainler üzerinde.",
-    "card3_title": "NFT sahiplik doğrulaması",
-    "card3_desc": "Ve transfer takibi.",
-    "card4_title": "Borsa hesabı tanımlama",
-    "card4_desc": "Ve işlem çıkış noktaları.",
-    "card5_title": "Meta veri çapraz sorgulama",
-    "card5_desc": "Ve cüzdan ilişkilendirmesi için cihaz kanıtları.",
-    "footer": "Dijital varlık tanımlama çalışmamız, mahkemede kullanılabilir adli tekniklerle yürütülür."
+    "eyebrow": "Ne izliyoruz",
+    "title": "Tanımlama ve analiz kapsamı",
+    "description": "Çalışma on-chain analizi dosyadan gelen kanıtlarla birleştirir — izole blockchain sorguları değil.",
+    "columns": {
+      "linkage": {
+        "title": "Cüzdan tanımlama",
+        "desc": "İşlem kalıpları, kümeleme ve cihaz, finans veya tanık deliliyle çapraz referans kullanarak blockchain adreslerini kişilere bağlama."
+      },
+      "flows": {
+        "title": "İşlem akışı analizi",
+        "desc": "Zincirler ve katmanlar arasında fon hareketini izleme — görünür mixer kullanımı, bridge transferleri ve belgelenmeye değer birleşim noktaları dahil."
+      },
+      "attribution": {
+        "title": "Borsa ve NFT atfı",
+        "desc": "On-chain veri ve ipuçları izin verdiğinde olası saklama yatırımları, off-ramp'ler ve dosyayla bağlantılı NFT varlıklarını belirleme."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Neden Lenix Protocol'ü Seçmelisiniz?",
-    "desc": "Başkalarının saklamayı umduğu dijital varlıkları bulmanıza yardımcı oluyoruz.",
-    "point1_title": "Kanıtlanmış uzmanlık",
-    "point1_desc": "Kripto para takibi ve blockchain adli bilişiminde.",
-    "point2_title": "Gizli varlık tanımlama deneyimi",
-    "point2_desc": "Hukuki uygulama alanlarında.",
-    "point3_title": "Mahkemece kabul edilen uzman tanıklığı",
-    "point3_desc": "Eyalet, federal ve uluslararası yargı alanlarında.",
-    "point4_title": "Net, savunulabilir raporlar",
-    "point4_desc": "Dava veya uyumluluk için özel hazırlanmış."
+  "Boundaries": {
+    "eyebrow": "Kapsam ve sınırlar",
+    "title1": "Tanımlama ne gösterebilir — ",
+    "title2": "ve ne gösteremez",
+    "subtitle": "Halka açık blockchain verisinin sınırları vardır. Lenix her görevi yasal erişim, mevcut ipuçları ve raporda desteklenebileceklerle sınırlar.",
+    "items": {
+      "legal_basis": {
+        "title": "Yalnızca yetkili konular",
+        "desc": "Hukuki, düzenleyici veya kurumsal soruşturma dayanağı olan dosyaları alırız — ilgisiz kişi veya adreslerin spekülatif izlemesi değil."
+      },
+      "chain_limits": {
+        "title": "On-chain tam resim değil",
+        "desc": "Saklama hesaplarındaki borsa bakiyeleri veya beyan edilmemiş cold storage, halka açık defter analizinin ötesinde ayrı hukuki süreç gerektirebilir."
+      },
+      "evidence": {
+        "title": "Adli bütünlük",
+        "desc": "Yöntemler ve veri işleme avukat incelemesi, düzenleyici ortam veya mahkeme için belgelenir — zincirleme custodi korunur."
+      },
+      "neutral": {
+        "title": "Tarafsız rol mümkün",
+        "desc": "Lenix davacı vekili, savunma veya mal paylaşımı ve değerleme uyuşmazlıklarında bağımsız uzman olarak destek verebilir."
+      },
+      "no_guarantee": {
+        "title": "Tamlık garantisi yok",
+        "desc": "Tanımlama sağlanan ipuçları, zincir görünürlüğü ve yasal erişimle sınırlıdır. Mevcut veriden neyin elde edilebileceğini ve edilemeyeceğini açıkça belirtiriz."
+      },
+      "disclosure": {
+        "title": "Kontrollü açıklama",
+        "desc": "Bulgular yalnızca görev kapsamında yetkili taraflarla paylaşılır — tanımlanan konu dışında yayınlanmaz veya kullanılmaz."
+      }
+    }
   },
-  "CTA": {
-    "title": "Bize",
-    "title_highlight": "bugün ulaşın",
-    "desc_part1": "Kripto varlık tanımlama ihtiyaçlarınızı görüşmek için bize bugün",
-    "desc_part2": "numarasından ulaşın.",
-    "email_label": "Ekibimize E-posta Gönderin",
-    "phone_label": "Ofisimizi Arayın"
+  "Process": {
+    "eyebrow": "Nasıl işler",
+    "title": "Alımdan belgelenmiş bulgulara",
+    "description": "Avukatlar ve soruşturmacılar için yapılandırılmış yol — analiz başlamadan kapsam belirlenir.",
+    "step_label": "Adım {number}",
+    "steps": {
+      "intake": {
+        "title": "Konu kapsamını tanımla",
+        "desc": "Dava türü, taraflar, bilinen cüzdan adresleri, cihaz veya finans kayıtları ve tanımlamanın yanıtlaması gereken sorular."
+      },
+      "trace": {
+        "title": "İzle ve analiz et",
+        "desc": "Cüzdan bağlantısı, akış haritalama ve borsa temas noktası analizi — on-chain veri dosya kanıtıyla çapraz referanslı."
+      },
+      "report": {
+        "title": "Bulguları teslim et",
+        "desc": "Zaman çizelgeleri ve metodoloji bölümüyle yazılı analiz — dava stratejisi, uyum veya sonraki hukuki süreç için uygun."
+      }
+    },
+    "btn_primary": "İnceleme başlat",
+    "btn_secondary": "Ekiple konuş"
+  },
+  "Deliverables": {
+    "eyebrow": "Ne alırsınız",
+    "title": "Hukuk ve uyum kullanımı için çıktılar",
+    "description": "Teslimatlar dosyaya göre uyarlanır — genel blockchain ekran görüntüleri değil.",
+    "items": {
+      "timeline": {
+        "title": "İşlem kronolojisi",
+        "desc": "Belirlenen adreslerin konuyla nasıl bağlandığını gösteren cüzdan bağlantı haritalarıyla ilgili hareketlerin tarihli akışı."
+      },
+      "report": {
+        "title": "Yazılı analiz",
+        "desc": "Metodoloji, bulgular ve sınırlamalar avukat incelemesi için belgelenir — gerçek ve çıkarım net ayrılır."
+      },
+      "testimony": {
+        "title": "Uzman desteği",
+        "desc": "Yargı yetkisi, görev şartları ve dava ihtiyacına göre uzman tanıklığı veya ek analiz."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Bir dosyada beyan edilmemiş kripto mu tespit edeceksiniz?",
+    "subtitle": "Dava bağlamını ve mevcut ipuçlarını paylaşın. Kapsamlı görev öncesi gerçekçi tanımlama çalışmasını özetleriz.",
+    "btn_primary": "İnceleme başlat",
+    "btn_secondary": "Ekiple iletişim"
   }
 }

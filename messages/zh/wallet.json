@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Lenix Wallet | 多链加密钱包",
+    "description": "非托管多链钱包，支持发送、接收、兑换和抵押借贷 — 本地加密存储，需要时可接入 Lenix 恢复服务。",
+    "keywords": "加密钱包, 多链钱包, 非托管钱包, Lenix Wallet, 加密借贷"
+  },
+  "Hero": {
+    "eyebrow_prefix": "Lenix ",
+    "eyebrow_highlight": "多链钱包",
+    "eyebrow_suffix": "",
+    "title_prefix": "发送、持有、借贷 — 需要时启用 ",
+    "title_highlight1": "恢复",
+    "title_mid": "，全部在一个 ",
+    "title_highlight2": "应用",
+    "subtitle": "面向日常使用的非托管钱包 — 设备端加密、默认多链，并在普通转账不够用时连接 Lenix 借贷与恢复服务。",
+    "btn_download": "下载应用",
+    "btn_learn": "查看功能",
+    "mock": {
+      "account": "账户 1",
+      "total_balance": "总余额",
+      "change_24h": "+2.4%（24h）",
+      "send": "发送",
+      "receive": "接收",
+      "swap": "兑换",
+      "loan": "借贷",
+      "tab_assets": "资产",
+      "tab_history": "历史"
+    }
+  },
+  "Features": {
+    "eyebrow": "功能",
+    "title": "不止于存储",
+    "cards": {
+      "encryption": {
+        "title": "设备端加密",
+        "desc": "密钥由钱包密码保护并本地存储 — Lenix 不持有您的助记词或签名密钥。"
+      },
+      "loans": {
+        "title": "抵押借贷",
+        "desc": "以支持的资产抵押借入稳定币，无需卖出持仓 — 确认前显示条款与抵押率。",
+        "link": "View lending"
+      },
+      "recovery": {
+        "title": "恢复路径",
+        "desc": "若资产丢失或被盗，可在 Lenix 生态中开启恢复案件 — 当标准钱包流程不够时进行追踪与交易所协调。",
+        "link": "Start recovery"
+      },
+      "multichain": {
+        "title": "Multi-chain balances",
+        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+      },
+      "transfers": {
+        "title": "Send, receive, swap",
+        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+      },
+      "access": {
+        "title": "Web and mobile",
+        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+      }
+    },
+    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "groups": {
+      "wallet": {
+        "title": "In the wallet"
+      },
+      "platform": {
+        "title": "Through Lenix"
+      }
+    }
+  },
+  "Security": {
+    "title": "安全内置，而非事后加装",
+    "points": {
+      "keys": {
+        "title": "密钥归您所有",
+        "desc": "非托管设计。资金仅在您签名时转移 — Lenix 无法冻结或重定向您的钱包余额。"
+      },
+      "storage": {
+        "title": "本地加密存储",
+        "desc": "钱包数据在设备端加密。用密码解锁；离线备份恢复短语。"
+      },
+      "access": {
+        "title": "设备级解锁",
+        "desc": "设置时添加密码，并在支持时使用设备生物识别 — 使用密钥签名前的额外关卡。"
+      }
+    },
+    "mock_back": {
+      "title": "系统已保护",
+      "network_label": "网络",
+      "network_status": "已连接",
+      "firewall_label": "防火墙",
+      "firewall_status": "已启用"
+    },
+    "mock_front": {
+      "title": "安全金库",
+      "subtitle": "设备已验证",
+      "encryption_title": "加密",
+      "encryption_desc": "本地密钥已加密",
+      "network_title": "网络状态",
+      "network_desc": "多链就绪"
+    }
+  },
+  "Cta": {
+    "title": "下载 Lenix Wallet",
+    "subtitle": "几分钟内创建或导入钱包。同一应用完成发送、接收、兑换与借贷 — 需要时可使用 Lenix 恢复服务。",
+    "btn_download": "下载应用",
+    "btn_web": "Open web wallet"
+  },
+  "Networks": {
+    "eyebrow": "Supported networks",
+    "title": "Live on three EVM chains today",
+    "description": "Native balances, ERC-20 tokens, and transaction history — filtered by network in the wallet.",
+    "chains": {
+      "ethereum": "Ethereum",
+      "bnb": "BNB Chain",
+      "polygon": "Polygon"
+    }
+  },
+  "GettingStarted": {
+    "eyebrow": "Getting started",
+    "title": "Up and running in three steps",
+    "step_label": "Step {number}",
+    "steps": {
+      "create": {
+        "title": "Create or import",
+        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+      },
+      "secure": {
+        "title": "Set password and backup",
+        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+      },
+      "use": {
+        "title": "Send, swap, or borrow",
+        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+      }
+    }
+  },
+  "Ecosystem": {
+    "eyebrow": "Lenix ecosystem",
+    "title": "Wallet connects to the rest of the platform",
+    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "cards": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Create, unlock, send, and receive.",
+        "cta": "Open wallet"
+      },
+      "loan": {
+        "title": "Crypto loan",
+        "desc": "Borrow against vaulted collateral.",
+        "cta": "View lending"
+      },
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Trace stolen or misdirected funds.",
+        "cta": "Start recovery"
+      },
+      "security": {
+        "title": "Security",
+        "desc": "Audits and operational controls.",
+        "cta": "Read security"
+      }
+    }
+  },
+  "Trust": {
+    "text": "Smart contract and operational security documentation is published on our Security page.",
+    "link": "View security"
+  }
+}

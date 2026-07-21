@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Lenix Wallet | Portefeuille crypto multi-chaînes",
+    "description": "Portefeuille non custodial multi-chaînes pour envoyer, recevoir, échanger et emprunter sur garantie — stockage local chiffré et accès à la recovery Lenix si nécessaire.",
+    "keywords": "Portefeuille crypto, Portefeuille multi-chaînes, Portefeuille non custodial, Lenix Wallet, Prêts crypto"
+  },
+  "Hero": {
+    "eyebrow_prefix": "Portefeuille ",
+    "eyebrow_highlight": "multi-chaînes",
+    "eyebrow_suffix": " sur Lenix",
+    "title_prefix": "Envoyer, conserver et emprunter — avec une ",
+    "title_highlight1": "recovery",
+    "title_mid": " quand il le faut, dans une seule ",
+    "title_highlight2": "app",
+    "subtitle": "Un portefeuille non custodial pour le quotidien — chiffré sur votre appareil, multi-chaînes par défaut, et relié au prêt et à la recovery Lenix quand un simple envoi ne suffit pas.",
+    "btn_download": "Télécharger l'app",
+    "btn_learn": "Voir les fonctions",
+    "mock": {
+      "account": "Compte 1",
+      "total_balance": "Solde total",
+      "change_24h": "+2,4 % (24 h)",
+      "send": "Envoyer",
+      "receive": "Recevoir",
+      "swap": "Échanger",
+      "loan": "Prêt",
+      "tab_assets": "Actifs",
+      "tab_history": "Historique"
+    }
+  },
+  "Features": {
+    "eyebrow": "FONCTIONNALITÉS",
+    "title": "Plus qu'un stockage",
+    "cards": {
+      "encryption": {
+        "title": "Chiffré sur l'appareil",
+        "desc": "Les clés sont protégées par un mot de passe wallet et stockées localement — Lenix ne détient ni votre phrase secrète ni vos clés de signature."
+      },
+      "loans": {
+        "title": "Prêts sur garantie",
+        "desc": "Empruntez des stablecoins contre des actifs pris en charge sans vendre votre position — conditions et ratios de garantie affichés avant confirmation.",
+        "link": "View lending"
+      },
+      "recovery": {
+        "title": "Parcours de recovery",
+        "desc": "En cas de perte ou vol d'actifs, ouvrez un dossier de recovery dans l'écosystème Lenix — traçage et coordination avec les exchanges quand le flux wallet standard ne suffit pas.",
+        "link": "Start recovery"
+      },
+      "multichain": {
+        "title": "Multi-chain balances",
+        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+      },
+      "transfers": {
+        "title": "Send, receive, swap",
+        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+      },
+      "access": {
+        "title": "Web and mobile",
+        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+      }
+    },
+    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "groups": {
+      "wallet": {
+        "title": "In the wallet"
+      },
+      "platform": {
+        "title": "Through Lenix"
+      }
+    }
+  },
+  "Security": {
+    "title": "La sécurité intégrée, pas ajoutée",
+    "points": {
+      "keys": {
+        "title": "Vous détenez les clés",
+        "desc": "Non custodial par conception. Les fonds ne bougent que lorsque vous signez — Lenix ne peut ni geler ni rediriger le solde de votre wallet."
+      },
+      "storage": {
+        "title": "Stockage local chiffré",
+        "desc": "Les données du wallet sont chiffrées sur votre appareil. Déverrouillez avec votre mot de passe ; sauvegardez votre phrase de recovery hors ligne."
+      },
+      "access": {
+        "title": "Déverrouillage au niveau appareil",
+        "desc": "Définissez un mot de passe à la configuration et utilisez la biométrie de l'appareil si disponible — une barrière supplémentaire avant l'utilisation des clés pour signer."
+      }
+    },
+    "mock_back": {
+      "title": "SYSTÈME SÉCURISÉ",
+      "network_label": "Réseau",
+      "network_status": "Connecté",
+      "firewall_label": "Pare-feu",
+      "firewall_status": "Actif"
+    },
+    "mock_front": {
+      "title": "COFFRE SÉCURISÉ",
+      "subtitle": "APPAREIL VÉRIFIÉ",
+      "encryption_title": "Chiffrement",
+      "encryption_desc": "Clés locales chiffrées",
+      "network_title": "État du réseau",
+      "network_desc": "Multi-chaînes prêt"
+    }
+  },
+  "Cta": {
+    "title": "Télécharger Lenix Wallet",
+    "subtitle": "Créez ou importez un wallet en quelques minutes. La même app pour envoyer, recevoir, échanger et emprunter — avec la recovery Lenix disponible si besoin.",
+    "btn_download": "Télécharger l'app",
+    "btn_web": "Open web wallet"
+  },
+  "Networks": {
+    "eyebrow": "Supported networks",
+    "title": "Live on three EVM chains today",
+    "description": "Native balances, ERC-20 tokens, and transaction history — filtered by network in the wallet.",
+    "chains": {
+      "ethereum": "Ethereum",
+      "bnb": "BNB Chain",
+      "polygon": "Polygon"
+    }
+  },
+  "GettingStarted": {
+    "eyebrow": "Getting started",
+    "title": "Up and running in three steps",
+    "step_label": "Step {number}",
+    "steps": {
+      "create": {
+        "title": "Create or import",
+        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+      },
+      "secure": {
+        "title": "Set password and backup",
+        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+      },
+      "use": {
+        "title": "Send, swap, or borrow",
+        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+      }
+    }
+  },
+  "Ecosystem": {
+    "eyebrow": "Lenix ecosystem",
+    "title": "Wallet connects to the rest of the platform",
+    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "cards": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Create, unlock, send, and receive.",
+        "cta": "Open wallet"
+      },
+      "loan": {
+        "title": "Crypto loan",
+        "desc": "Borrow against vaulted collateral.",
+        "cta": "View lending"
+      },
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Trace stolen or misdirected funds.",
+        "cta": "Start recovery"
+      },
+      "security": {
+        "title": "Security",
+        "desc": "Audits and operational controls.",
+        "cta": "Read security"
+      }
+    }
+  },
+  "Trust": {
+    "text": "Smart contract and operational security documentation is published on our Security page.",
+    "link": "View security"
+  }
+}

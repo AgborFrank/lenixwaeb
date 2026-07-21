@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Giải pháp",
+    "title1": "Thu hồi, thanh toán, cho vay ",
+    "title2": "và hạ tầng bảo mật",
+    "title3": ".",
+    "subtitle1": "Lenix truy vết crypto bị đánh cắp hoặc chuyển nhầm, quy đổi sang fiat qua các hành lang được hỗ trợ, cho vay theo tài sản thế chấp trong kho và giám sát ví cho các đội giữ tài sản khách hàng.",
+    "subtitle2": "Mỗi quy trình có intake và deliverable riêng. Với thu hồi, chúng tôi đánh giá dấu vết trước khi cam kết trả phí — chúng tôi không hứa kết quả."
+  },
+  "Overview": {
+    "eyebrow": "Bắt đầu từ đâu",
+    "title": "Khớp vấn đề với quy trình",
+    "description": "Hầu hết khách truy cập đã biết họ cần truy vết, thanh toán, thanh khoản hay kiểm soát vận hành. Xem tóm tắt rồi mở phần phù hợp.",
+    "learn_more": "Chi tiết",
+    "cards": {
+      "recovery": {
+        "title": "Thu hồi tài sản",
+        "desc": "Tiền bị đánh cắp, lừa đảo hoặc gửi sai địa chỉ. Bạn cần truy vết và bằng chứng có tài liệu trước khi quyết định bước tiếp theo."
+      },
+      "payments": {
+        "title": "Thanh toán xuyên biên giới",
+        "desc": "Kho quỹ hoặc tài chính cần đổi crypto sang fiat, với tỷ giá, phí và trạng thái giao hàng trình bày được với kiểm toán."
+      },
+      "lending": {
+        "title": "Cho vay crypto",
+        "desc": "Bạn giữ tài sản thế chấp đủ điều kiện và cần thanh khoản mà không bán hết vị thế."
+      },
+      "security": {
+        "title": "Bảo mật nền tảng",
+        "desc": "Đội của bạn giữ tài sản khách hàng và cần giám sát, quy tắc truy cập và lộ trình leo thang có văn bản."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Thu hồi tài sản",
+    "title": "Truy vết trước. Cam kết chỉ khi có lối đi.",
+    "description": "Gửi địa chỉ ví, hash giao dịch và dòng thời gian ngắn. Chúng tôi theo dõi giá trị di chuyển đâu, chuẩn bị kết quả cho sàn và luật sư, và nói rõ liệu thu hồi có khả thi trước mọi cam kết trả phí. Chúng tôi không hứa thu hồi.",
+    "points": {
+      "chains": "Truy vết trên mạng EVM chính, Bitcoin và stablecoin thường gặp trong vụ trộm",
+      "evidence": "Tài liệu định dạng cho bàn compliance sàn, luật sư và cơ quan thực thi",
+      "terms": "Phạm vi và phí chỉ xác định sau đánh giá miễn phí khả năng thu hồi"
+    },
+    "cta": "Thu hồi"
+  },
+  "Payments": {
+    "eyebrow": "Thanh toán xuyên biên giới",
+    "title": "Thanh toán bù trừ mà kho quỹ có thể kiểm toán",
+    "description": "Đổi crypto sang fiat nơi hệ thống ngân hàng địa phương chậm, đắt hoặc thiếu minh bạch. Tỷ giá, phí và trạng thái hiển thị từ lúc khởi tạo ví đến khi người thụ hưởng nhận — tài chính và vận hành không phải đoán.",
+    "cta": "Thanh toán",
+    "capabilities": {
+      "corridors": {
+        "title": "Hành lang đang hoạt động",
+        "desc": "Chi trả vào tài khoản ngân hàng tại thị trường chúng tôi hỗ trợ hiện nay. Liên hệ nếu hành lang của bạn chưa có trong danh sách."
+      },
+      "visibility": {
+        "title": "Theo dõi bàn giao",
+        "desc": "Trạng thái từng bước của luồng, không phải một cờ chờ duy nhất không có ngữ cảnh."
+      },
+      "compliance": {
+        "title": "Sàng lọc trừng phạt và AML",
+        "desc": "Luồng vào và ra được sàng lọc trước khi giải ngân."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Cho vay crypto",
+    "title": "Thanh khoản trong khi tài sản thế chấp ở kho",
+    "description": "Gửi tài sản thế chấp được duyệt và rút stablecoin hoặc fiat. LTV, điều khoản trả nợ và ngưỡng thanh lý hiển thị trước giải ngân — không có kích hoạt ẩn sau khi ký.",
+    "points": {
+      "credit": "Loại tài sản thế chấp đủ điều kiện không cần kiểm tra tín dụng truyền thống",
+      "ltv": "LTV và lịch trả nợ thống nhất trước",
+      "custody": "Tài sản thế chấp trong kho tách biệt suốt thời hạn vay"
+    },
+    "cta": "Đăng ký vay"
+  },
+  "Security": {
+    "eyebrow": "Bảo mật nền tảng",
+    "title": "Kiểm soát cho đội giữ tài sản khách hàng",
+    "description": "Giám sát ví, truy cập có phân quyền và leo thang sự cố cho tổ chức không thể coi hoạt động đáng ngờ là ticket phụ. Xây cho đội vận hành, không phải bảo mật trên slide.",
+    "cta": "Bảo mật",
+    "pillars": {
+      "monitoring": {
+        "title": "Giám sát hoạt động",
+        "desc": "Cảnh báo dòng ra bất thường, đối tác mới và chuyển khoản ngoài chính sách."
+      },
+      "access": {
+        "title": "Truy cập và audit trail",
+        "desc": "Quyền theo vai trò với bản ghi ai phê duyệt gì và khi nào."
+      },
+      "incident": {
+        "title": "Ứng phó sự cố",
+        "desc": "Bước leo thang có văn bản đội bạn có thể thực hiện khi cần con người xem xét."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Không chắc quy trình nào áp dụng?",
+    "description": "Mô tả tình huống — mất tiền, thanh toán, vay hay lo ngại vận hành — và chúng tôi sẽ chuyển bạn đến intake đúng.",
+    "btn_primary": "Liên hệ",
+    "btn_secondary": "Thu hồi"
+  }
+}

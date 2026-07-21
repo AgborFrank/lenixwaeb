@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "Contact our team",
+    "description": "Reach Lenix Protocol for recovery cases, loan inquiries, partnerships, or platform support. Our forensic and client teams respond during business hours worldwide."
+  },
+  "Main": {
+    "title": "Ready to get started?",
+    "subtitle": "Whether you need recovery support, a loan consultation, or a partnership discussion, our team is here to help.",
+    "get_in_touch": "Get in touch",
+    "desc": "Choose the channel that works best for you. For time-sensitive cases, include transaction hashes or wallet addresses in your message.",
+    "email_cta": "Email support",
+    "footer": {
+      "support": "Support available",
+      "response": "Live chat response",
+      "confidential": "Confidential handling"
+    }
+  },
+  "Info": {
+    "title": "Contact information",
+    "address_title": "Office",
+    "address_line_1": "123 Blockchain Street",
+    "address_line_2": "San Francisco, CA 94105",
+    "address_line_3": "United States",
+    "email_title": "Email",
+    "email_line_1": "recovery@lenixprotocol.com",
+    "email_line_2": "loan@lenixprotocol.com",
+    "email_line_3": "support@lenixprotocol.com",
+    "phone_title": "Phone",
+    "phone_line": "+447887052128",
+    "hours_title": "Business hours",
+    "hours_line_1": "Monday – Friday: 9:00 AM – 6:00 PM EST",
+    "hours_line_2": "Saturday – Sunday: Closed",
+    "chat_title": "Need urgent help?",
+    "chat_description": "Our team monitors live chat around the clock for time-sensitive recovery and security matters.",
+    "chat_cta": "Start live chat",
+    "follow_title": "Follow us",
+    "response_title": "Typical response times",
+    "response_email": "Email",
+    "response_email_time": "Within 24 hours",
+    "response_chat": "Live chat",
+    "response_chat_time": "Under 5 minutes",
+    "response_phone": "Phone",
+    "response_phone_time": "Business hours"
+  },
+  "Form": {
+    "title": "Send us a message",
+    "subtitle": "We respond to most inquiries within one business day.",
+    "name": "Full name *",
+    "email": "Email address *",
+    "phone": "Phone number",
+    "whatsapp": "WhatsApp or Telegram",
+    "inquiry_type": "Inquiry type",
+    "subject": "Subject *",
+    "message": "Message *",
+    "placeholder_name": "Enter your full name",
+    "placeholder_email": "Enter your email",
+    "placeholder_phone": "+1 234 567 8900",
+    "placeholder_whatsapp": "@username or +1234567890",
+    "placeholder_subject": "What is this regarding?",
+    "placeholder_message": "Tell us how we can help…",
+    "submit": "Send message",
+    "privacy": "By submitting this form, you agree to our privacy policy and terms of service.",
+    "inquiry_options": {
+      "general": "General inquiry",
+      "recovery": "Recovery services",
+      "crypto_loan": "Crypto loan services",
+      "support": "Technical support",
+      "partnership": "Partnership",
+      "business": "Business development",
+      "press": "Press & media",
+      "other": "Other"
+    },
+    "success_title": "Message sent",
+    "success_description": "Thank you for reaching out. We will get back to you within 24 hours.",
+    "success_cta": "Send another message",
+    "sending": "Sending…"
+  },
+  "FAQ": {
+    "title": "Frequently asked questions",
+    "subtitle": "Answers to common questions about recovery, lending, and platform security.",
+    "cta_text": "Still have questions?",
+    "email_cta": "Email support",
+    "chat_cta": "Start live chat",
+    "items": {
+      "start": {
+        "question": "How do I start a recovery or loan case?",
+        "answer": "Submit your details through this form or email recovery@lenixprotocol.com. For loans, visit the crypto loan page to begin onboarding. Our team will confirm scope, documentation, and next steps."
+      },
+      "assets": {
+        "question": "Which assets and chains do you support?",
+        "answer": "We trace activity across major EVM chains, Bitcoin, and commonly used stablecoins. Coverage expands as cases require — contact us with your transaction details for a case-specific assessment."
+      },
+      "security": {
+        "question": "How is client data protected?",
+        "answer": "Case materials are handled under strict access controls, encryption in transit and at rest, and segregated review workflows. We do not request private keys or seed phrases."
+      },
+      "fees": {
+        "question": "How are recovery and loan fees structured?",
+        "answer": "Recovery engagements are scoped per case. Loan pricing depends on collateral, term, and LTV. We provide written terms before any work begins or funds are disbursed."
+      },
+      "timeline": {
+        "question": "How long do investigations take?",
+        "answer": "Timelines vary by complexity, jurisdiction, and exchange cooperation. Initial tracing reports often ship within days; full recovery paths may take weeks depending on legal and custodial factors."
+      },
+      "availability": {
+        "question": "Do you work with law enforcement?",
+        "answer": "Yes. We support law enforcement and compliance teams with trace packages, expert review, and documentation suitable for regulatory and court proceedings."
+      }
+    }
+  }
+}

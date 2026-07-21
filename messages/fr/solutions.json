@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Solutions",
+    "title1": "Récupération, règlement, crédit ",
+    "title2": "et infrastructure de sécurité",
+    "title3": ".",
+    "subtitle1": "Lenix trace les crypto volées ou mal orientées, règle en fiat via les corridors pris en charge, prête contre des garanties en coffre et assure la surveillance pour les équipes qui détiennent des actifs clients.",
+    "subtitle2": "Chaque workflow a sa propre prise en charge et ses livrables. Pour la récupération, nous évaluons la piste avant tout engagement payant — nous ne promettons pas de résultat."
+  },
+  "Overview": {
+    "eyebrow": "Par où commencer",
+    "title": "Faites correspondre le problème au workflow",
+    "description": "La plupart des visiteurs savent déjà s'ils ont besoin d'une traçabilité, d'un paiement, de liquidité ou de contrôles opérationnels. Parcourez les résumés, puis ouvrez la section adaptée.",
+    "learn_more": "Voir détails",
+    "cards": {
+      "recovery": {
+        "title": "Récupération d'actifs",
+        "desc": "Des fonds volés, escroqués ou envoyés à la mauvaise adresse. Vous avez besoin d'une trace et de preuves documentées avant de décider des prochaines étapes."
+      },
+      "payments": {
+        "title": "Paiements transfrontaliers",
+        "desc": "La trésorerie ou la finance doit convertir des crypto en fiat, avec des taux, des frais et un statut de livraison présentables aux auditeurs."
+      },
+      "lending": {
+        "title": "Prêt crypto",
+        "desc": "Vous détenez une garantie admissible et avez besoin de liquidité sans vendre la position."
+      },
+      "security": {
+        "title": "Sécurité de la plateforme",
+        "desc": "Votre équipe conserve des actifs clients et a besoin de surveillance, de règles d'accès et d'un parcours d'escalade formalisé."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Récupération d'actifs",
+    "title": "Tracer d'abord. S'engager seulement si une voie existe.",
+    "description": "Soumettez les adresses de portefeuille, les hash de transaction et une chronologie courte. Nous suivons où la valeur s'est déplacée, préparons des conclusions pour les exchanges et les conseils, et indiquons clairement si la récupération est réaliste avant tout engagement payant. Nous ne promettons pas la récupération.",
+    "points": {
+      "chains": "Traçage sur les principaux réseaux EVM, Bitcoin et stablecoins fréquents dans les cas de vol",
+      "evidence": "Documentation formatée pour les desks conformité des exchanges, les conseils et les forces de l'ordre",
+      "terms": "Périmètre et honoraires définis uniquement après un examen gratuit de récupérabilité"
+    },
+    "cta": "Ouvrir dossier"
+  },
+  "Payments": {
+    "eyebrow": "Paiements transfrontaliers",
+    "title": "Un règlement que votre trésorerie peut auditer",
+    "description": "Convertissez des crypto en fiat là où les rails bancaires locaux sont lents, coûteux ou opaques. Taux, frais et statut sont visibles de l'initiation du portefeuille jusqu'à la livraison au bénéficiaire — finance et ops ne travaillent pas à l'aveugle.",
+    "cta": "Voir paiements",
+    "capabilities": {
+      "corridors": {
+        "title": "Corridors actifs",
+        "desc": "Versement sur comptes bancaires dans les marchés que nous couvrons aujourd'hui. Contactez-nous si votre corridor n'est pas listé."
+      },
+      "visibility": {
+        "title": "Suivi des transferts",
+        "desc": "Statut à chaque étape du flux, pas un simple indicateur « en attente » sans contexte."
+      },
+      "compliance": {
+        "title": "Filtrage sanctions et LBC",
+        "desc": "Flux entrants et sortants filtrés avant libération des fonds."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Prêt crypto",
+    "title": "De la liquidité pendant que la garantie reste en coffre",
+    "description": "Déposez une garantie approuvée et tirez des stablecoins ou du fiat. LTV, conditions de remboursement et seuils de liquidation sont affichés avant tout décaissement — pas de déclencheurs cachés après signature.",
+    "points": {
+      "credit": "Les types de garantie admissibles ne nécessitent pas de scoring de crédit traditionnel",
+      "ltv": "LTV et calendriers de remboursement convenus dès le départ",
+      "custody": "Garantie détenue dans des coffres segregés pour la durée du prêt"
+    },
+    "cta": "Demander prêt"
+  },
+  "Security": {
+    "eyebrow": "Sécurité de la plateforme",
+    "title": "Contrôles pour les équipes qui conservent des actifs clients",
+    "description": "Surveillance des portefeuilles, accès permissionné et escalade d'incidents pour les organisations qui ne peuvent pas traiter une activité suspecte comme un ticket secondaire. Conçu pour les équipes ops, pas pour une sécurité de présentation.",
+    "cta": "Voir sécurité",
+    "pillars": {
+      "monitoring": {
+        "title": "Surveillance d'activité",
+        "desc": "Alertes sur les sorties inhabituelles, nouveaux contreparties et transferts hors politique."
+      },
+      "access": {
+        "title": "Accès et piste d'audit",
+        "desc": "Permissions par rôle avec trace de qui a approuvé quoi et quand."
+      },
+      "incident": {
+        "title": "Réponse aux incidents",
+        "desc": "Étapes d'escalade formalisées que votre équipe peut exécuter quand une activité nécessite un examen humain."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Vous ne savez pas quel workflow s'applique ?",
+    "description": "Décrivez la situation — fonds perdus, paiement, prêt ou problème ops — et nous vous orienterons vers la bonne prise en charge.",
+    "btn_primary": "Contacter équipe",
+    "btn_secondary": "Ouvrir dossier"
+  }
+}

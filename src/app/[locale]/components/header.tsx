@@ -260,8 +260,11 @@ export default function Header() {
             >
               <span>{t("nav.asset_recovery")}</span>
             </Link>
-            <Link href="/contact" className="text-white hover:text-gray-300">
-              {t("nav.contact")}
+            <Link
+              href="/banking-finance"
+              className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer"
+            >
+              <span>{t("nav.banking_finance")}</span>
             </Link>
             <Link href="/airdrop" className="text-white hover:text-gray-300">
               {t("nav.airdrop")}
@@ -511,11 +514,11 @@ export default function Header() {
                 <span>{t("nav.crypto_recovery")}</span>
               </Link>
               <Link
-                href="/contact"
-                className="block px-3 py-2 text-white hover:text-gray-300"
+                href="/banking-finance"
+                className="block px-3 py-2 text-white hover:text-gray-300 cursor-pointer"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Contact
+                <span>{t("nav.banking_finance")}</span>
               </Link>
               <Link
                 href="/airdrop"

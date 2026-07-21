@@ -1,14 +1,15 @@
 {
   "Header": {
     "nav": {
-      "giveaway": "250K इनाम",
+      "giveaway": "समुदाय",
       "about": "परिचय",
       "solutions": "समाधान",
       "blockchain_forensics": "फोरेंसिक्स",
       "asset_recovery": "संपत्ति पुनर्प्राप्ति",
       "crypto_recovery": "क्रिप्टो पुनर्प्राप्ति",
       "contact": "संपर्क",
-      "airdrop": "एयरड्रॉप"
+      "airdrop": "एयरड्रॉप",
+      "banking_finance": "Banking & Finance"
     },
     "solutions": {
       "wallet": {
@@ -30,6 +31,10 @@
       "enforcement": {
         "title": "कानून प्रवर्तन",
         "desc": "एजेंसियों के लिए खुफिया उपकरण।"
+      },
+      "banking_finance": {
+        "title": "Banking & Finance",
+        "desc": "Transfers, liquidation, lending, and custody."
       }
     },
     "user_menu": {
@@ -47,12 +52,12 @@
     },
     "buttons": {
       "log_in": "लॉग इन",
-      "log_in_sign_up": "लॉग इन / साइन अप",
-      "get_reward": "50 USDT पाएं"
+      "log_in_sign_up": "लॉग इन",
+      "get_reward": "खाता"
     }
   },
   "Footer": {
-    "company_desc": "क्रिप्टो-बैंक भुगतान और संपत्ति पुनर्प्राप्ति के लिए L1 प्रोटोकॉल। स्केलेबिलिटी और सुरक्षा के लिए AI का उपयोग।",
+    "company_desc": "ब्लॉकचेन फोरेंसिक, एसेट रिकवरी और क्रिप्टो वित्त बुनियाद। ट्रेसिंग, कस्टडी और cross-border भुगतान के लिए ऑडिटेड प्रोटोकॉल।",
     "headings": {
       "about": "परिचय",
       "solutions": "समाधान",
@@ -77,10 +82,12 @@
       "privacy": "गोपनीयता",
       "disclaimer": "अस्वीकरण",
       "wallet_decryption": "वॉलेट डिक्रिप्शन",
-      "crypto_asset_identification": "क्रिप्टो एसेट आइडेंटिफिकेशन"
+      "crypto_asset_identification": "क्रिप्टो एसेट आइडेंटिफिकेशन",
+      "security": "सुरक्षा",
+      "banking_finance": "Banking & Finance"
     },
     "buttons": {
-      "recover_assets": "संपत्ति पुनर्प्राप्त करें"
+      "recover_assets": "रिकवर करें"
     },
     "certification_desc": "ISO27001 प्रमाणित। हम अंतर्राष्ट्रीय मानकों के अनुसार डेटा सुरक्षित रूप से प्रबंधित करते हैं।",
     "copyright": "© 2017 - 2026 Lenix Protocol, सर्वाधिकार सुरक्षित।"
@@ -106,55 +113,69 @@
   },
   "Home": {
     "Hero": {
-      "title1": "ब्लॉकचैन ",
-      "title2": "फोरेंसिक",
-      "title3": ",\nक्रिप्टो सुरक्षा और रिकवरी प्रोटोकॉल।",
-      "subtitle1": "संपत्तियों का पता लगाने, धोखाधड़ी को उजागर करने और विश्व स्तर पर कानूनी रिकवरी प्रयासों का समर्थन करने के लिए उन्नत ब्लॉकचेन एनालिटिक्स और फोरेंसिक जांच।",
-      "subtitle2": "विशेषज्ञ जांच के साथ अपने डिजिटल भविष्य को सुरक्षित करें।",
-      "btn_signup": "Lenix पर साइन अप करें",
-      "btn_login": "लॉग इन करें",
-      "widget_title": "अभी खरीदें",
-      "widget_subtitle": "कीमत बढ़ने से पहले",
-      "usd_raised": "अब तक जुटाया गया USD:",
-      "tokens_sold": "बेचे गए टोकन:",
-      "price_usd": "USD कीमत: ${price}",
-      "price_eth": "ETH कीमत: {price} ETH",
-      "pay_eth": "ETH जो आप भुगतान करते हैं",
-      "pay_usdt": "USDT जो आप भुगतान करते हैं",
-      "pay_usd": "USD जो आप भुगतान करते हैं",
-      "receive_lnx": "$LNX जो आपको प्राप्त होते हैं",
-      "btn_processing": "प्रसंस्करण...",
-      "btn_pay_eth": "ETH से भुगतान करें",
-      "btn_pay_usdt": "USDT से भुगतान करें",
-      "btn_pay_card": "नीचे कार्ड विवरण दर्ज करें",
-      "card_info": "Stripe द्वारा संचालित। USD में शुल्क लिया गया।",
-      "btn_connect": "वॉलेट कनेक्ट करें",
-      "btn_giveaway": "500 USD गिवअवे प्राप्त करें",
-      "giveaway_info": "गिवअवे के रूप में 500 USD मूल्य के LNX टोकन प्राप्त करें"
+      "slides": {
+        "recovery": {
+          "title1": "Blockchain forensics and recovery ",
+          "title2": "for stolen digital assets",
+          "title3": ".",
+          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
+          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
+          "btn_primary": "Start a recovery case",
+          "btn_secondary": "Contact our team"
+        },
+        "forensics": {
+          "title1": "Investigation-grade ",
+          "title2": "blockchain forensics",
+          "title3": ".",
+          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
+          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
+          "btn_primary": "View forensics",
+          "btn_secondary": "Contact our team"
+        },
+        "banking": {
+          "title1": "Cross-Border Financial Services, ",
+          "title2": "Payment and Remittance",
+          "title3": ".",
+          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
+          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
+          "btn_primary": "Create account",
+          "btn_secondary": "Banking & finance"
+        },
+        "settlement": {
+          "title1": "Crypto-to-fiat settlement ",
+          "title2": "your treasury can audit",
+          "title3": ".",
+          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
+          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
+          "btn_primary": "Open banking services",
+          "btn_secondary": "Contact our team"
+        }
+      },
+      "btn_login": "लॉग इन"
     },
     "Pillars": {
-      "title1": "सुरक्षा, रिकवरी, फोरेंसिक और वित्त ",
-      "title2": "एक ही स्थान पर",
-      "subtitle": "वह चुनें जिसकी आपको आवश्यकता है - प्रत्येक स्तंभ समर्पित समाधानों की ओर ले जाता है।",
+      "title1": "एक प्रोटोकॉल, ",
+      "title2": "चार वर्कफ़्लो",
+      "subtitle": "अपनी स्थिति से मेल खाने वाला प्रवेश बिंदु चुनें। हर रास्ते में समर्पित टूलिंग और स्पष्ट अगला कदम है।",
       "cards": {
         "security": {
           "title": "ब्लॉकचेन सुरक्षा",
-          "desc": "आपकी संपत्तियों की सुरक्षा के लिए ऑडिटेड इंफ्रास्ट्रक्चर और सुरक्षित वॉल्ट तकनीक।",
-          "cta": "सुरक्षा का अन्वेषण करें"
+          "desc": "ऑडिटेड वॉल्ट, मल्टी-सिग कस्टडी और मॉनिटरिंग उन टीमों के लिए जिन्हें on-chain सुरक्षित संपत्ति रखनी है।",
+          "cta": "सुरक्षा देखें"
         },
         "recovery": {
           "title": "संपत्ति रिकवरी",
-          "desc": "प्रमाणित फोरेंसिक विश्लेषण के साथ खोई या चोरी हुई क्रिप्टो को पुनः प्राप्त करने के लिए विशेष प्रोटोकॉल और कानूनी रास्ते।",
-          "cta": "रिकवरी शुरू करें"
+          "desc": "जब क्रिप्टो खो जाए, चोरी हो या अटक जाए—ट्रेसिंग, एक्सचेंज समन्वय और कानूनी रास्ते।",
+          "cta": "रिकवरी शुरू"
         },
         "forensics": {
-          "title": "ब्लॉकचेन फोरेंसिक",
-          "desc": "धोखाधड़ी, हैक का पता लगाने और कानूनी रिकवरी के लिए अदालत में स्वीकार्य साक्ष्य प्रदान करने के लिए विशेषज्ञ जांच।",
-          "cta": "और जानें"
+          "title": "ब्लॉकचेन फ़ोरेंसिक",
+          "desc": "कंप्लायंस टीमों और कानूनी समीक्षा के लिए वॉलेट-स्तरीय जांच और लेन-देन मैपिंग।",
+          "cta": "फोरेंसिक देखें"
         },
         "finance": {
-          "title": "वित्तीय सेवा प्रोटोकॉल",
-          "desc": "आधुनिक क्रिप्टो इकोसिस्टम के लिए भुगतान, ऋण, वॉलेट और वॉल्ट।",
+          "title": "वित्तीय सेवाएँ",
+          "desc": "क्रिप्टो-से-फ़ियाट भुगतान, lending, wallet और vault—मूल्य स्थानांतरित और रखने के लिए।",
           "cta": "समाधान देखें"
         }
       }
@@ -169,61 +190,63 @@
       "card4": "क्रिप्टो-टू-क्रिप्टो ट्रांसफर"
     },
     "Merchant": {
-      "widget_alert": "बी शॉ से चालान भुगतान अलर्ट",
-      "widget_req": "भुगतान के लिए अनुरोध",
+      "widget_alert": "B Shaw से चालान भुगतान अलर्ट",
+      "widget_req": "भुगतान अनुरोध",
       "widget_verified": "सत्यापित भुगतान लिंक",
-      "widget_receipt": "लेन-देन की रसीद भेजी जाएगी ",
+      "widget_receipt": "लेन-देन रसीद भेजी जाएगी ",
       "widget_wallet": "वॉलेट पता",
       "widget_order": "ऑर्डर",
-      "widget_gas": "गैस शुल्क",
-      "btn_complete": "भुगतान पूरा करें",
-      "btn_manual": "मैन्युअल भुगतान करें",
-      "title1": "व्यवसायों के लिए: क्रिप्टो स्वीकार करें, ",
-      "title2": "सुरक्षित",
-      "title3": " करें वॉल्ट में, आवश्यकता होने पर रिकवर करें।",
-      "point1": "क्रिप्टो स्वीकार करें और फिएट में सेटल करें। व्यापारियों के लिए सरल चेकआउट और API।",
-      "point2": "मल्टी-सिग और कस्टडी के साथ हमारे सुरक्षित वॉल्ट में आय रखें - ऑडिटेड इंफ्रास्ट्रक्चर।",
-      "point3": "यदि धन खो जाता है या चोरी हो जाता है, तो हमारी टीम रिकवरी और कानूनी चैनलों के माध्यम से पता लगाने और पुनः प्राप्त करने में सहायता कर सकती है।",
-      "point4_1": "समाधान खोजें",
+      "widget_gas": "GAS शुल्क",
+      "btn_complete": "भुगतान करें",
+      "btn_manual": "मैन्युअल भुगतान",
+      "title1": "मर्चेंट इन्फ्रास्ट्रक्चर ",
+      "title2": "रिकवरी के साथ",
+      "title3": "।",
+      "point1": "checkout फ़्लो और merchant API के माध्यम से क्रिप्टो स्वीकार करें और fiat में settle करें।",
+      "point2": "आय को multi-sig नियंत्रण वाली ऑडिटेड vault कस्टडी से रूट करें।",
+      "point3": "सेटलमेंट के बाद कुछ गलत हो तो, वही प्रोटोकॉल ट्रेसिंग और रिकवरी वर्कफ़्लो का समर्थन करता है।",
+      "point4_1": "समाधान देखें",
       "point4_2": " या ",
-      "point4_3": "रिकवरी केस शुरू करें",
-      "point4_4": "।"
+      "point4_3": "केस शुरू",
+      "point4_4": "।",
+      "mock_brand": "Lenix मर्चेंट",
+      "image_alt": "Lenix मर्चेंट और कंप्लायंस संचालन डैशबोर्ड"
     },
     "Payment": {
-      "badge": "हम क्या प्रदान करते हैं",
-      "title": "भुगतान, वॉल्ट, रिकवरी और ऋण के लिए प्रोटोकॉल",
-      "subtitle": "आप मूल्य को कैसे स्थानांतरित करते हैं, रखते हैं और पुनः प्राप्त करते हैं, इसके लिए एक एकल स्टैक।",
+      "badge": "Protocol stack",
+      "title": "Move, hold, and recover value on one layer",
+      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
       "cards": {
         "fiat": {
-          "title": "क्रिप्टो-टू-फिएट",
-          "desc": "क्रिप्टो भेजें और स्थानीय भुगतान नेटवर्क के माध्यम से फिएट में सेटल करें - क्रॉस-बॉर्डर और दैनिक।"
+          "title": "Crypto-to-fiat",
+          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
         },
         "vault": {
-          "title": "वॉल्ट और कस्टडी",
-          "desc": "आपकी संपत्तियों को सुरक्षित रखने के लिए मल्टी-सिग और सुरक्षित कस्टडी।"
+          "title": "Vault and custody",
+          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
         },
         "recovery": {
-          "title": "रिकवरी और फोरेंसिक",
-          "desc": "जब चीजें गलत हो जाती हैं, तो हम धन का पता लगाने और पुनः प्राप्त करने में मदद करते हैं।"
+          "title": "Recovery and forensics",
+          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
         },
         "lending": {
-          "title": "ऋण",
-          "desc": "संपार्श्विक के विरुद्ध उधार लें और आवश्यकता पड़ने पर तरलता प्राप्त करें।"
+          "title": "Lending",
+          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
         }
       },
-      "cta": "सभी समाधान खोजें"
+      "cta": "समाधान देखें"
     },
     "TokenDetails": {
-      "title1": "Lenix Protocol ",
-      "title2": "टोकन विवरण",
-      "subtitle": "अपने वॉलेट में Lenix Protocol टोकन जोड़ने के लिए नीचे दी गई अनुबंध जानकारी का उपयोग करें।",
+      "title1": "Lenix Protocol",
+      "title2": " Token Details",
+      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
       "headers": {
-        "contract": "अनुबंध पता",
-        "name": "टोकन नाम",
-        "symbol": "टोकन प्रतीक",
-        "supply": "टोकन आपूर्ति",
-        "network": "नेटवर्क",
-        "decimals": "दशमलव"
+        "contract": "Contract Address",
+        "name": "Token Name",
+        "symbol": "Token Symbol",
+        "supply": "Token Supply",
+        "network": "Network",
+        "decimals": "Decimals"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -231,35 +254,1158 @@
       }
     },
     "Credibility": {
-      "title1": "विस्तार से ",
-      "title2": "Lenix Protocol",
-      "subtitle1": "CertiK द्वारा ऑडिट किया गया। विश्वास के साथ बनाया गया।",
-      "subtitle2_1": "हमारे ऑडिट पूरे स्टैक को कवर करते हैं। विवरण के लिए ",
+      "eyebrow": "सत्यापन",
+      "title1": "ऑडिटेड कोड। ",
+      "title2": "दस्तावेज़ित नियंत्रण।",
+      "subtitle1": "CertiK-समीक्षित smart contracts और ISO 27001-संरेखित संचालन उन टीमों के लिए जिन्हें मार्केटिंग दावों से अधिक चाहिए।",
+      "subtitle2_1": "पढ़ें ",
       "subtitle2_2": "व्हाइटपेपर",
-      "subtitle2_3": " और CertiK रिपोर्ट पढ़ें।",
-      "col1_text": "Lenix Protocol को दुनिया की अग्रणी ब्लॉकचेन सुरक्षा फर्म CertiK द्वारा पूरी तरह से ऑडिट किया गया है।",
-      "col1_btn": "CertiK ऑडिट देखें",
-      "col2_text": "पूरी रिपोर्ट पढ़ें और हमारी तकनीक और टोकनइकॉनॉमिक्स पर गहराई से नज़र डालने के लिए हमारे व्हाइटपेपर का अन्वेषण करें।",
-      "col2_btn": "व्हाइटपेपर"
+      "subtitle2_3": " और ऑडिट दस्तावेज़—आर्किटेक्चर, टोकन उपयोगिता और सुरक्षा नियंत्रण के लिए।",
+      "col1_text": "Lenix Protocol smart contracts की CertiK ने समीक्षा की है। ऑडिट में production फ़्लो में उपयोग किए गए core प्रोटोकॉल घटक शामिल हैं।",
+      "col1_btn": "सुरक्षा docs",
+      "col2_text": "व्हाइटपेपर बताता है कि recovery, custody और payment मॉड्यूल कैसे जुड़ते हैं—और LNX प्रोटोकॉल डिज़ाइन में कहाँ फिट बैठता है।",
+      "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "जीतने के मौके के लिए हमारी प्रतियोगिता में भाग लें ",
-      "title2": "250K USD",
-      "subtitle": "Lenix Protocol के 250,000 USD गिवअवे में शामिल हों! दस विजेताओं में से प्रत्येक को LNX टोकन में 25,000 USD प्राप्त होंगे। साझा करके और बोनस प्रविष्टियों के लिए सभी कार्यों को पूरा करके अपनी संभावना बढ़ाएं। इस मौके को न चूकें - अभी शामिल हों!",
-      "btn": "अभी प्रतियोगिता में भाग लें!"
+      "title1": "Community ",
+      "title2": "giveaway",
+      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "btn": "कम्युनिटी"
     },
     "Features": {
       "wallet": "Lenix Protocol वॉलेट",
       "recipient": "प्राप्तकर्ता दर्ज करें",
       "bank_details": "बैंक खाते का विवरण",
       "iban": "IBAN",
-      "btn_connect": "वॉलेट कनेक्ट करें और भुगतान करें",
-      "btn_manual": "मैन्युअल रूप से भुगतान करें",
+      "btn_connect": "वॉलेट जोड़ें",
+      "btn_manual": "मैन्युअल भुगतान",
       "title_small": "Lenix ProtocolPay क्यों?",
       "title_big": "विश्व स्तर पर स्थानीय भुगतान नेटवर्क के साथ क्रिप्टो को जोड़ना।",
       "desc1": "Lenix ProtocolPay क्रिप्टो धारकों और व्यवसायों को स्थानीय भुगतान नेटवर्क और ब्लॉकचेन तकनीक का लाभ उठाते हुए दुनिया भर में क्रिप्टो-टू-फिएट लेनदेन की सुविधा प्रदान करने के लिए सशक्त बनाता है।",
       "desc2": "अंत में, फिएट भुगतान की रोजमर्रा की सुविधा के साथ क्रिप्टो की गति का आनंद लें।",
-      "btn_whitepaper": "व्हाइटपेपर"
+      "btn_whitepaper": "Whitepaper"
+    },
+    "LnxPurchaseWidget": {
+      "widget_title": "Buy LNX",
+      "widget_subtitle": "Protocol token sale",
+      "usd_raised": "USD raised so far:",
+      "tokens_sold": "Tokens sold:",
+      "price_usd": "USD price: ${price}",
+      "price_eth": "ETH price: {price} ETH",
+      "pay_eth": "ETH you pay",
+      "pay_usdt": "USDT you pay",
+      "pay_usd": "USD you pay",
+      "receive_lnx": "$LNX you receive",
+      "btn_processing": "Processing...",
+      "btn_pay_eth": "Pay with ETH",
+      "btn_pay_usdt": "Pay with USDT",
+      "btn_pay_card": "कार्ड से भुगतान",
+      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "btn_connect": "वॉलेट जोड़ें",
+      "btn_giveaway": "LNX बोनस",
+      "giveaway_info": "Connect your wallet to check eligibility."
+    },
+    "TokenSale": {
+      "title1": "LNX ",
+      "title2": "token sale",
+      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+    },
+    "Partners": {
+      "eyebrow": "इकोसिस्टम",
+      "title": "एक्सचेंज, कस्टडी और भुगतान रेल के साथ काम करने के लिए बनाया गया",
+      "subtitle": "Lenix क्रिप्टो स्टैक में ट्रेसिंग, रिकवरी वर्कफ़्लो और सेटलमेंट इन्फ्रास्ट्रक्चर जोड़ता है।"
+    },
+    "CaseWorkflow": {
+      "eyebrow": "यह कैसे काम करता है",
+      "title1": "इंटेक से ",
+      "title2": "कार्रवाई योग्य साक्ष्य तक",
+      "subtitle": "पीड़ितों, कंप्लायंस टीमों और वकीलों के लिए संरचित प्रक्रिया—अस्पष्ट वादे नहीं।",
+      "steps": {
+        "submit": {
+          "title": "अपना केस जमा करें",
+          "desc": "वॉलेट पते, लेन-देन हैश, समयरेखा और क्या हुआ—साझा करें। प्रारंभिक समीक्षा निःशुल्क है।"
+        },
+        "trace": {
+          "title": "प्रवाह ट्रेस और मैप करें",
+          "desc": "हम चेन, मिक्सर, ब्रिज और एक्सचेंज जमा पर फंड का पीछा करते हैं कि मूल्य कहाँ पहुँचा।"
+        },
+        "deliver": {
+          "title": "साक्ष्य प्रदान करें",
+          "desc": "आपको दस्तावेज़ित निष्कर्ष मिलते हैं—एक्सचेंज कंप्लायंस, नियामकों या वकीलों के लिए प्रारूपित।"
+        }
+      },
+      "btn_primary": "केस शुरू",
+      "btn_secondary": "विश्लेषक से बात",
+      "step_label": "चरण {number}"
+    },
+    "TrustSignals": {
+      "eyebrow": "संचालन मानक",
+      "title1": "ऐसे मामलों के लिए बनाया गया जहाँ ",
+      "title2": "विश्वास मायने रखता है",
+      "subtitle": "रिकवरी घोटालों का लक्ष्य है। Lenix गंभीर फर्मों की प्रथाओं का पालन करता है जो पीड़ितों और संस्थानों की रक्षा करती हैं।",
+      "items": {
+        "no_fees": {
+          "title": "कोई अग्रिम अनलॉक शुल्क नहीं",
+          "desc": "हम आपके फंड जारी, अनलॉक या ट्रांसफर करने के लिए अग्रिम भुगतान नहीं मांगते।"
+        },
+        "no_seed": {
+          "title": "कभी seed phrase नहीं मांगते",
+          "desc": "कोई रिमोट एक्सेस नहीं, कोई private key नहीं, कोई recovery phrase अनुरोध नहीं—कभी नहीं।"
+        },
+        "no_custody": {
+          "title": "हम आपकी संपत्ति नहीं रखते",
+          "desc": "Lenix साक्ष्य तैयार करता है और रास्ते समन्वयित करता है। हम आपके वॉलेट के कस्टोडियन नहीं हैं।"
+        },
+        "honest": {
+          "title": "ईमानदार केस मूल्यांकन",
+          "desc": "यदि ट्रेल समाप्त है या रिकवरी असंभाव्य है, तो हम paid engagement से पहले बताते हैं।"
+        },
+        "audited": {
+          "title": "ऑडिटेड प्रोटोकॉल स्टैक",
+          "desc": "CertiK द्वारा समीक्षित smart contracts। ISO 27001 नियंत्रणों के अनुरूप संचालन।"
+        },
+        "chains": {
+          "title": "मल्टी-चेन कवरेज",
+          "desc": "ट्रेसिंग वर्कफ़्लो प्रमुख EVM नेटवर्क और चोरी के मामलों में सामान्य संपत्ति प्रकारों का समर्थन करते हैं।"
+        }
+      },
+      "image_alt": "विश्लेषक ब्लॉकचेन जांच डैशबोर्ड और लेन-देन साक्ष्य की समीक्षा कर रहा है"
+    },
+    "CaseStudy": {
+      "eyebrow": "केस उदाहरण",
+      "title1": "जब चोरी की गई राशि ",
+      "title2": "कस्टोडियल एक्सचेंज तक पहुँचती है",
+      "subtitle": "गुमनाम उदाहरण। पहचान बदली गई। प्रक्रिया प्रतिनिधि है—रिकवरी की गारंटी नहीं।",
+      "situation": {
+        "label": "स्थिति",
+        "text": "एक व्यापारिक वॉलेट ने USDC एक फ़िशिंग कॉन्ट्रैक्ट को भेजा। कुछ घंटों में धन दो मध्यस्थ वॉलेट से होकर बड़े एक्सचेंज में जमा हुआ।"
+      },
+      "action": {
+        "label": "Lenix ने क्या किया",
+        "text": "हमने पूरा लेन-देन पATH मैप किया, जमा पता लेबल किया, और एक्सचेंज compliance टीम के लिए ट्रांज़ैक्शन ग्राफ और टाइमलाइन के साथ साक्ष्य पैकेट तैयार किया।"
+      },
+      "outcome": {
+        "label": "परिणाम",
+        "text": "एक्सचेंज compliance डेस्क ने फाइलिंग स्वीकार की। समीक्षा तक धन फ्रोज़ रहे। कानूनी सलाहकार को समान दस्तावेज़ मिले।"
+      },
+      "disclaimer": "परिणाम केस, अधिकार क्षेत्र और एक्सचेंज प्रतिक्रिया समय के अनुसार भिन्न होते हैं। यह उदाहरण दिखाता है कि Lenix ट्रेल कैसे दस्तावेज़ करता है—हर केस में रिकवरी नहीं होती।",
+      "image_alt": "लेन-देन मॉनिटरिंग डैशबोर्ड जो वॉलेट और एक्सचेंज में धन प्रवाह दिखाता है"
+    },
+    "Cta": {
+      "title": "केस खोलने के लिए तैयार?",
+      "subtitle": "बताएँ क्या हुआ और आपके पास जो on-chain विवरण हैं। हम ईमानदारी से बताते हैं कि ट्रेसिंग और रिकवरी के रास्ते हैं या नहीं।",
+      "btn_primary": "केस शुरू",
+      "btn_secondary": "टीम से संपर्क"
+    }
+  },
+  "Security": {
+    "meta": {
+      "title": "सुरक्षा और ऑडिट | Lenix Protocol",
+      "description": "CertiK स्मार्ट कॉन्ट्रैक्ट ऑडिट, ISO 27001-संरेखित संचालन, और Lenix फ़ोरेंसिक व रिकवरी इन्फ्रास्ट्रक्चर के लिए सुरक्षा नियंत्रण।"
+    },
+    "hero": {
+      "eyebrow": "सुरक्षा",
+      "title1": "ऑडिटेड प्रोटोकॉल। ",
+      "title2": "दस्तावेज़ित नियंत्रण।",
+      "subtitle": "Lenix संवेदनशील रिकवरी और कस्टडी वर्कफ़्लो वाली टीमों के लिए तृतीय-पक्ष स्मार्ट कॉन्ट्रैक्ट समीक्षा और परिचालन सुरक्षा प्रथाओं को जोड़ता है।"
+    },
+    "audit": {
+      "title": "CertiK ऑडिट दायरा",
+      "desc": "प्रोडक्शन फ़्लो में उपयोग किए गए मुख्य कॉन्ट्रैक्ट CertiK द्वारा समीक्षित हैं। ऑडिट स्कोप में deployment-महत्वपूर्ण घटक और ज्ञात हमले की सतहें शामिल हैं।",
+      "certik_text": "CertiK ने Lenix स्मार्ट कॉन्ट्रैक्ट की सामान्य कमजोरियों, एक्सेस नियंत्रण और टोकन/वॉल्ट फ़्लो में तार्किक दोषों की समीक्षा की।",
+      "certik_link": "सुरक्षा docs",
+      "items": {
+        "contracts": {
+          "title": "कॉन्ट्रैक्ट समीक्षा स्कोप",
+          "desc": "लाइव भुगतान और कस्टडी पATH में उपयोग किए गए टोकन सेल, वॉल्ट और प्रोटोकॉल मॉड्यूल।"
+        },
+        "access": {
+          "title": "एक्सेस नियंत्रण",
+          "desc": "भूमिका-आधारित अनुमतियाँ, multi-sig आवश्यकताएँ, और जहाँ लागू हो अपग्रेड पATH।"
+        },
+        "monitoring": {
+          "title": "निरंतर निगरानी",
+          "desc": "प्रोडक्शन deployments में असामान्य कॉन्ट्रैक्ट इंटरैक्शन और परिचालन अलर्ट की निगरानी।"
+        }
+      },
+      "eyebrow": "स्मार्ट अनुबंध"
+    },
+    "iso": {
+      "title": "ISO 27001-संरेखित संचालन",
+      "desc": "Lenix Protocol क्लाइंट डेटा, जांच सामग्री और आंतरिक सिस्टम के लिए ISO 27001 के अनुरूप सूचना सुरक्षा प्रबंधन प्रथाएँ बनाए रखता है।"
+    },
+    "practices": {
+      "data": {
+        "title": "डेटा हैंडलिंग",
+        "desc": "केस सामग्री एक्सेस नियंत्रण के साथ संग्रहीत। जांच डेटा केवल अधिकृत पक्षों के साथ साझा।"
+      },
+      "incident": {
+        "title": "घटना प्रतिक्रिया",
+        "desc": "क्लाइंट डेटा, प्रोटोकॉल इन्फ्रास्ट्रक्चर या जांच वर्कफ़्लो को प्रभावित करने वाली सुरक्षा घटनाओं के लिए परिभाषित प्रक्रियाएँ।"
+      },
+      "custody": {
+        "title": "कस्टडी सीमाएँ",
+        "desc": "Lenix साक्ष्य तैयार करता है और पATH समन्वय करता है। हम क्लाइंट वॉलेट कीज़ या seed phrases की कस्टडी नहीं लेते।"
+      },
+      "eyebrow": "संचालन",
+      "title": "संवेदनशील कार्य कैसे",
+      "description": "रिकवरी मामले पीड़ित डेटा और उच्च जोखिम वाले फ्लो शामिल करते हैं। ये हमारी सीमाएँ हैं।",
+      "image_alt": "ऑप्स टीम गतिविधि और सुरक्षा अलर्ट की निगरानी करती है"
+    },
+    "cta": {
+      "title": "दस्तावेज़ चाहिए?",
+      "subtitle": "ऑडिट सारांश, ISO विवरण या एंटरप्राइज़ समीक्षा के लिए संपर्क करें।",
+      "btn_primary": "केस शुरू",
+      "btn_secondary": "सुरक्षा टीम"
+    },
+    "assurance": {
+      "eyebrow": "सत्यापन",
+      "title": "हम क्या दिखा सकते हैं",
+      "description": "स्वतंत्र अनुबंध समीक्षा और दस्तावेज़ित संचालन नियंत्रण — बिना सबूत दावे नहीं।",
+      "iso_link": "Lenix के बारे में"
+    }
+  },
+  "AccountSidebar": {
+    "sections": {
+      "account": "खाता",
+      "wallet": "वॉलेट"
+    },
+    "nav": {
+      "home": "होम",
+      "vault": "ब्लॉकचेन वॉल्ट",
+      "lenix_wallet": "Lenix वॉलेट",
+      "banking": "एंटरप्राइज बैंकिंग",
+      "recovery_services": "रिकवरी सेवाएँ",
+      "crypto_loan": "क्रिप्टो लोन",
+      "assets": "संपत्ति",
+      "send": "भेजें",
+      "receive": "प्राप्त करें",
+      "transactions": "लेनदेन",
+      "settings": "सेटिंग्स"
+    },
+    "support": {
+      "need_help": "मदद चाहिए?",
+      "contact_support": "सपोर्ट से संपर्क करें"
+    },
+    "header": {
+      "menu": "मेनू",
+      "verified_user": "सत्यापित उपयोगकर्ता",
+      "sign_out": "साइन आउट"
+    },
+    "logo_alt": "Lenix Protocol"
+  },
+  "AccountMobileTabs": {
+    "home": "होम",
+    "banking": "बैंकिंग",
+    "wallet": "वॉलेट",
+    "loan": "लोन",
+    "settings": "सेटिंग्स"
+  },
+  "AccountDashboard": {
+    "status": {
+      "recovery": "रिकवरी केस की स्थिति",
+      "banking": "बैंकिंग सेवाओं की स्थिति",
+      "loan": "लोन आवेदन की स्थिति"
+    },
+    "timeline": {
+      "received_title": "आवेदन प्राप्त",
+      "received_desc": "हमें आपका विवरण मिल गया है और हम उसकी समीक्षा कर रहे हैं।",
+      "review_title": "समीक्षाधीन",
+      "review_desc": "हमारी टीम वर्तमान में आपके अनुरोध का विश्लेषण कर रही है।"
+    },
+    "submitted_details": "जमा किए गए विवरण",
+    "service_type": "सेवा प्रकार",
+    "service_types": {
+      "recovery": "रिकवरी",
+      "banking": "बैंकिंग",
+      "loan": "लोन"
+    },
+    "details_fields": {
+      "name": "नाम",
+      "transaction_hash": "लेनदेन हैश",
+      "amount_stolen": "चोरी की गई राशि",
+      "blockchain": "ब्लॉकचेन",
+      "currency": "मुद्रा",
+      "country_phone_code": "देश फोन कोड",
+      "incident_summary": "घटना सारांश",
+      "evidence": "साक्ष्य",
+      "evidence_url": "साक्ष्य URL",
+      "notes": "नोट्स",
+      "loan_type_id": "लोन प्रकार",
+      "collateral_asset": "संपार्श्विक संपत्ति",
+      "duration": "अवधि",
+      "loan_amount": "लोन राशि",
+      "phone_number": "फोन नंबर",
+      "payout_method": "भुगतान विधि"
+    },
+    "support": {
+      "title": "मदद चाहिए?",
+      "description": "हमारी सपोर्ट टीम आपकी सहायता के लिए 24/7 उपलब्ध है।",
+      "contact": "सपोर्ट से संपर्क करें"
+    }
+  },
+  "AccountVault": {
+    "page": {
+      "title": "मेरा वॉल्ट",
+      "subtitle": "अपनी सुरक्षित डिजिटल संपत्तियों का प्रबंधन करें।",
+      "history": "इतिहास",
+      "status_active": "सक्रिय",
+      "status_locked": "लॉक",
+      "status_no_wallet": "कोई वॉलेट नहीं",
+      "load_error": "होल्डिंग लोड करने में विफल"
+    },
+    "actions": {
+      "deposit": "जमा",
+      "withdraw": "निकासी",
+      "swap": "स्वैप",
+      "audit": "ऑडिट"
+    },
+    "premium": {
+      "title": "प्रीमियम सुरक्षा प्राप्त करें",
+      "description": "अधिकतम सुरक्षा के लिए Hardware Vault इंटीग्रेशन में अपग्रेड करें।",
+      "cta": "और जानें"
+    },
+    "card": {
+      "total_value": "कुल वॉल्ट मूल्य",
+      "last_synced": "अंतिम सिंक: अभी-अभी",
+      "change_24h": "{percent}% (24 घं.)",
+      "security_level": "सुरक्षा स्तर",
+      "security_very_high": "बहुत उच्च"
+    },
+    "assets": {
+      "title": "वॉल्ट संपत्तियाँ",
+      "count_zero": "0 संपत्ति",
+      "count": "{count} संपत्ति",
+      "empty": "कोई संपत्ति नहीं मिली। शुरू करने के लिए वॉलेट कनेक्ट या इмпोर्ट करें।",
+      "address_copied": "पता कॉपी किया गया",
+      "chains": {
+        "ethereum": "Ethereum",
+        "bsc": "BSC",
+        "polygon": "Polygon",
+        "evm": "EVM"
+      }
+    },
+    "security": {
+      "title": "वॉल्ट सुरक्षा स्थिति",
+      "score_label": "सुरक्षा स्कोर",
+      "items": {
+        "wallet": "वॉलेट",
+        "cold_storage": "कोल्ड स्टोरेज",
+        "encrypted_vault": "एन्क्रिप्टेड वॉल्ट",
+        "session": "सत्र"
+      },
+      "status": {
+        "connected": "कनेक्टेड",
+        "not_connected": "कनेक्ट नहीं",
+        "active": "सक्रिय",
+        "unlocked": "अनलॉक",
+        "locked": "लॉक",
+        "no_wallet": "कोई वॉलेट नहीं",
+        "completed": "पूर्ण"
+      },
+      "unlock": "अनलॉक करें",
+      "recent_activity": "हाल की गतिविधि",
+      "view_all": "सभी देखें",
+      "no_activity": "कोई हालिया गतिविधि नहीं",
+      "wallet_connected": "वॉलेट कनेक्टेड",
+      "transaction": "लेनदेन",
+      "transfer": "{symbol} ट्रांसफर"
+    },
+    "time": {
+      "just_now": "अभी-अभी",
+      "recently": "हाल ही में",
+      "min_ago": "{count} मिनट पहले",
+      "hours_ago": "{count} घंटे पहले",
+      "days_ago": "{count} दिन पहले"
+    },
+    "drawer": {
+      "connect_wallet": "वॉलेट कनेक्ट करें",
+      "setup_title": "अपना वॉल्ट सेट अप करें",
+      "setup_description": "अपनी संपत्तियों को सुरक्षित करने के लिए नया वॉलेट बनाएं या मौजूदा इмпोर्ट करें।",
+      "unlock_vault": "वॉल्ट अनलॉक करें",
+      "unlock_description": "अपनी सुरक्षित संपत्तियों तक पहुँचने के लिए पासवर्ड दर्ज करें।",
+      "password_placeholder": "पासवर्ड दर्ज करें",
+      "unlocking": "अनलॉक हो रहा है...",
+      "unlock": "अनलॉक करें",
+      "vault_connected": "वॉल्ट कनेक्टेड",
+      "lenix_wallet": "Lenix वॉलेट",
+      "lock": "लॉक करें",
+      "imported_wallets": "इмпोर्ट किए गए वॉलेट",
+      "no_imported": "अभी तक कोई इмпोर्टेड वॉलेट नहीं।",
+      "import_wallet": "वॉलेट इмпोर्ट करें",
+      "wallet_name_label": "वॉलेट नाम (वैकल्पिक)",
+      "wallet_name_placeholder": "मेरा MetaMask",
+      "import_type_label": "इмпोर्ट प्रकार",
+      "seed_phrase": "सीड फ्रेज",
+      "private_key": "प्राइवेट की",
+      "seed_phrase_label": "12 या 24 शब्दों की रिकवरी फ्रेज",
+      "private_key_label": "प्राइवेट की",
+      "seed_phrase_placeholder": "शब्द1 शब्द2 शब्द3 ...",
+      "private_key_placeholder": "0x...",
+      "encryption_password_label": "एन्क्रिप्शन पासवर्ड (न्यूनतम 8 अक्षर)",
+      "password_dots_placeholder": "••••••••",
+      "cancel": "रद्द करें",
+      "import": "इмпोर्ट",
+      "loading": "लोड हो रहा है...",
+      "imported_seed_name": "इмпोर्टेड सीड",
+      "imported_key_name": "इмпोर्टेड की"
+    },
+    "toast": {
+      "wallet_unlocked": "वॉलेट अनलॉक हो गया",
+      "incorrect_password": "गलत पासवर्ड",
+      "import_credentials_required": "क्रेडेंशियल और पासवर्ड दर्ज करें (न्यूनतम 8 अक्षर)।",
+      "wallet_imported": "वॉलेट इмпोर्ट हो गया",
+      "import_failed": "इмпोर्ट विफल",
+      "wallet_removed": "वॉलेट हटाया गया"
+    }
+  },
+  "AccountLenixWallet": {
+    "page": {
+      "title": "वॉलेट",
+      "subtitle": "अपनी क्रिप्टो संपत्तियों का प्रबंधन करें",
+      "setup_title": "अपना वॉलेट सेट अप करें",
+      "setup_subtitle": "शुरू करने के लिए वॉलेट बनाएं या इмпोर्ट करें",
+      "unlock_title": "वॉलेट अनलॉक करें",
+      "unlock_subtitle": "जारी रखने के लिए पासवर्ड दर्ज करें",
+      "password_placeholder": "पासवर्ड",
+      "unlocking": "अनलॉक हो रहा है...",
+      "unlock": "अनलॉक करें",
+      "network_placeholder": "नेटवर्क",
+      "logo_alt": "Lenix वॉलेट",
+      "show_evm_wallet": "EVM वॉलेट दिखाएं",
+      "show_bitcoin_wallet": "Bitcoin वॉलेट दिखाएं",
+      "evm_wallet": "EVM वॉलेट",
+      "bitcoin_wallet": "Bitcoin वॉलेट"
+    },
+    "networks": {
+      "all": "सभी नेटवर्क",
+      "ethereum": "Ethereum",
+      "bsc": "BNB Chain",
+      "polygon": "Polygon",
+      "bitcoin": "Bitcoin"
+    },
+    "actions": {
+      "send": "भेजें",
+      "receive": "प्राप्त करें",
+      "buy": "खरीदें",
+      "swap": "स्वैप",
+      "coming_soon": "जल्द आ रहा है"
+    },
+    "wallet_card": {
+      "total_balance": "कुल बैलेंस",
+      "hide_balance": "बैलेंस छिपाएं",
+      "show_balance": "बैलेंस दिखाएं",
+      "lock_wallet": "वॉलेट लॉक करें",
+      "evm_networks": "EVM नेटवर्क",
+      "evm_chains": "ETH · BSC · Polygon · Arbitrum",
+      "address_copied": "पता कॉपी किया गया"
+    },
+    "bitcoin_card": {
+      "btc_balance": "BTC बैलेंस",
+      "not_activated": "सक्रिय नहीं",
+      "activate_prompt": "अपना नेटिव Bitcoin वॉलेट सक्रिय करें",
+      "password_placeholder": "वॉलेट पासवर्ड दर्ज करें",
+      "creating": "बनाया जा रहा है...",
+      "activate": "सक्रिय करें",
+      "bitcoin_network": "Bitcoin नेटवर्क",
+      "segwit": "BIP-84 Native SegWit",
+      "bitcoin_alt": "Bitcoin",
+      "enter_password": "अपना वॉलेट पासवर्ड दर्ज करें",
+      "wallet_created": "Bitcoin वॉलेट बनाया गया",
+      "create_failed": "Bitcoin वॉलेट बनाने में विफल",
+      "address_copied": "पता कॉपी किया गया"
+    },
+    "token_list": {
+      "assets": "संपत्तियाँ",
+      "market": "बाज़ार",
+      "tokens_count": "{count} टोकन",
+      "no_assets": "अभी कोई संपत्ति नहीं",
+      "frozen": "फ्रोज़न",
+      "deposit_to_unfreeze": "अनफ्रोज़ करने के लिए {amount} BTC जमा करें",
+      "frozen_by_admin": "एडमिन द्वारा फ्रोज़न",
+      "token_fallback": "टोकन"
+    },
+    "activity": {
+      "title": "गतिविधि",
+      "no_activity": "कोई हालिया गतिविधि नहीं",
+      "done": "पूर्ण",
+      "pending": "लंबित"
+    },
+    "security": {
+      "title": "सुरक्षा",
+      "protected": "सुरक्षित",
+      "recovery_phrase": "रिकवरी फ्रेज",
+      "backed_up": "बैकअप किया गया",
+      "password": "पासवर्ड",
+      "active": "सक्रिय",
+      "withdrawal_limit": "निकासी सीमा",
+      "not_set": "सेट नहीं",
+      "set": "सेट"
+    },
+    "receive_modal": {
+      "title": "प्राप्त करें",
+      "network": "नेटवर्क",
+      "evm_networks": "EVM नेटवर्क",
+      "evm_chains": "ETH, BSC, Polygon, Arbitrum",
+      "bitcoin": "Bitcoin",
+      "bitcoin_chains": "Native SegWit (BIP-84)",
+      "not_set_up": "(सेट अप नहीं)",
+      "qr_alt": "QR कोड",
+      "copied": "कॉपी किया गया",
+      "btc_warning": "इस पते पर केवल BTC भेजें",
+      "evm_warning": "केवल ERC-20 संगत टोकन भेजें"
+    },
+    "send_modal": {
+      "title": "क्रिप्टो भेजें",
+      "description": "क्रिप्टो भेजने के लिए प्राप्तकर्ता का पता और निकासी राशि दर्ज करें।"
+    },
+    "receive_page": {
+      "title": "एसेट प्राप्त करें",
+      "subtitle": "भुगतान प्राप्त करने के लिए अपना यूनिक पता प्राप्त करें।",
+      "security_notice": "सुरक्षा के लिए, जमा करने से पहले नेटवर्क पूरी तरह मेल खाता है या नहीं यह जांचें। गलत नेटवर्क पर भेजे गए एसेट वापस नहीं किए जा सकते।",
+      "no_wallet_title": "वॉलेट नहीं मिला",
+      "no_wallet_description": "एसेट प्राप्त करने के लिए वॉलेट बनाएं।",
+      "go_to_wallet": "वॉलेट पर जाएं",
+      "wallet_locked_title": "वॉलेट लॉक है",
+      "wallet_locked_description": "पता देखने के लिए वॉलेट अनलॉक करें।",
+      "unlock_wallet": "वॉलेट अनलॉक करें",
+      "card_title": "एसेट प्राप्त करें",
+      "card_description": "जमा करने के लिए QR कोड स्कैन करें या पता कॉपी करें।",
+      "select_network": "नेटवर्क चुनें",
+      "bitcoin_provisioning": "Bitcoin वॉलेट अभी तैयार किया जा रहा है।",
+      "qr_alt": "वॉलेट पता QR कोड",
+      "address_label": "आपका {network} पता",
+      "copy": "कॉपी करें",
+      "copied": "कॉपी किया गया",
+      "share": "शेयर करें",
+      "address_copied": "पता क्लिपबोर्ड में कॉपी किया गया",
+      "share_title": "मेरा Lenix वॉलेट पता",
+      "share_text": "यह मेरा {network} पता है: {address}",
+      "networks": {
+        "bitcoin": {
+          "name": "Bitcoin (Native)",
+          "warning": "केवल मूल Bitcoin इस पते पर भेजें। किसी अन्य नेटवर्क से BTC न भेजें।"
+        },
+        "ethereum": {
+          "name": "Ethereum (ERC-20)",
+          "warning": "केवल ETH और ERC-20 टोकन इस पते पर भेजें।"
+        },
+        "bnb": {
+          "name": "BNB Smart Chain (BEP-20)",
+          "warning": "केवल BNB और BEP-20 टोकन इस पते पर भेजें।"
+        },
+        "polygon": {
+          "name": "Polygon (MATIC)",
+          "warning": "केवल MATIC और Polygon नेटवर्क टोकन इस पते पर भेजें।"
+        },
+        "arbitrum": {
+          "name": "Arbitrum One",
+          "warning": "केवल Arbitrum One नेटवर्क टोकन इस पते पर भेजें।"
+        },
+        "optimism": {
+          "name": "Optimism",
+          "warning": "केवल Optimism नेटवर्क टोकन इस पते पर भेजें।"
+        },
+        "avalanche": {
+          "name": "Avalanche C-Chain",
+          "warning": "केवल Avalanche C-Chain टोकन इस पते पर भेजें।"
+        }
+      }
+    },
+    "send_page": {
+      "unlock_message": "Lenix वॉलेट अनलॉक करें और फंड्स प्रबंधित करें।",
+      "unlock_locked_prefix": "शेष राशि डिक्रिप्ट करने के लिए अपना पासवर्ड",
+      "unlock_locked_suffix": "पर दर्ज करें।",
+      "wallet_page": "वॉलेट पेज",
+      "unlock_no_wallet_prefix": "सबसे पहले",
+      "unlock_no_wallet_suffix": "पर वॉलेट बनाएं।",
+      "wallet_dashboard": "Lenix वॉलेट डैशबोर्ड",
+      "estimated_total_value": "अनुमानित कुल मूल्य",
+      "wallet_label": "वॉलेट",
+      "pnl_today": "आज का PnL",
+      "deposit": "जमा करें",
+      "withdraw": "निकालें",
+      "transfer": "ट्रांसफर करें",
+      "more_funding_actions": "अधिक फंडिंग कार्य",
+      "funding_title": "फंडिंग",
+      "search_placeholder": "एसेट या नेटवर्क खोजें",
+      "small_asset_exchange": "छोटे एसेट का एक्सचेंज",
+      "hide_dust": "1 USD से कम एसेट छिपाएं",
+      "asset": "एसेट",
+      "amount": "राशि",
+      "available": "उपलब्ध",
+      "frozen": "फ्रीज़",
+      "action": "कार्रवाई",
+      "unfreeze_deposit": "फ्रीज़ हटाने के लिए {amount} BTC जमा करें",
+      "more_actions_for": "{symbol} के लिए अन्य कार्रवाइयाँ",
+      "no_assets": "कोई एसेट नहीं",
+      "no_assets_match": "आपके फ़िल्टर से कोई एसेट मेल नहीं खाता।",
+      "withdraw_modal": {
+        "title": "क्रिप्टो निकासी",
+        "description": "सही नेटवर्क का उपयोग करते हुए फंड्स को बाहरी वॉलेट में भेजें।"
+      }
+    },
+    "send_form": {
+      "no_assets_alt": "कोई एसेट नहीं",
+      "no_assets_title": "अभी तक कोई फंडिंग एसेट नहीं",
+      "no_assets_description": "Lenix वॉलेट में क्रिप्टो जमा करें ताकि निकासी और ऑन-चेन ट्रांसफर सक्षम हों।",
+      "asset_label": "एसेट",
+      "network_label": "नेटवर्क",
+      "chain_id": "चेन ID {id}",
+      "recipient_label": "प्राप्तकर्ता का पता",
+      "paste": "पेस्ट करें",
+      "recipient_error_bitcoin": "मान्य Bitcoin पता दर्ज करें।",
+      "recipient_error_evm": "मान्य EVM वॉलेट पता दर्ज करें।",
+      "amount_label": "राशि",
+      "amount_aria": "{symbol} की भेजी जाने वाली राशि",
+      "available": "उपलब्ध",
+      "on_chain_only": "फ़िलहाल केवल {amount} {symbol} ऑन-चेन समर्थित हैं और भेजे जा सकते हैं।",
+      "summary_label": "ट्रांसफर विवरण",
+      "network_fee": "नेटवर्क शुल्क",
+      "calculating_fee": "गणना हो रही है…",
+      "recipient_receives": "प्राप्तकर्ता को मिलेगा",
+      "frozen": "फ्रीज़",
+      "frozen_message": "यह एसेट फ्रीज़ है",
+      "frozen_unfreeze_instruction": " अपने Lenix Bitcoin वॉलेट में कम से कम {amount} BTC जमा करें — जमा की पुष्टि होते ही स्वचालित रूप से अनलॉक हो जाएगा।",
+      "frozen_contact_support": " सहायता से संपर्क करके समस्या का समाधान करें।",
+      "irreversible_warning": "भेजने से पहले प्राप्तकर्ता का पता और नेटवर्क अवश्य जांचें। ऑन-चेन ट्रांसफर वापस नहीं किए जा सकते।",
+      "sending": "भेजा जा रहा है…",
+      "send_now": "अभी भेजें",
+      "wallet_locked_error": "फंड भेजने के लिए अपना Lenix वॉलेट अनलॉक करें",
+      "clipboard_error": "क्लिपबोर्ड तक पहुंच नहीं हो सकी",
+      "bitcoin_send_success": "Bitcoin ट्रांसफर प्रसारित किया गया",
+      "bitcoin_send_failed": "Bitcoin निकासी विफल",
+      "unsupported_network": "यह नेटवर्क इस एसेट के लिए समर्थित नहीं है",
+      "broadcasting_transaction": "लेन-देन प्रसारित किया जा रहा है",
+      "transfer_confirmed": "ट्रांसफर की पुष्टि हुई",
+      "broadcasting_token_transfer": "टोकन ट्रांसफर प्रसारित हो रहा है",
+      "token_transfer_complete": "टोकन ट्रांसफर पूर्ण",
+      "transaction_failed": "लेन-देन विफल",
+      "fee_bitcoin_estimate": "पुष्टि के समय अनुमानित"
+    },
+    "setup": {
+      "back": "वापस",
+      "welcome_title": "दुनिया का सबसे सुरक्षित वॉलेट",
+      "welcome_description": "शुरू करने के लिए अपना वॉलेट सेट अप करें। Lenix Wallet दुनिया का सबसे सुरक्षित, निजी वॉलेट है जो आपकी क्रिप्टो को सुरक्षित रखता है।",
+      "create_new": "नया वॉलेट बनाएं",
+      "import_existing": "मौजूदा वॉलेट इмпोर्ट करें",
+      "terms_notice": "वॉलेट बनाकर या इмпोर्ट करके, आप हमारी सेवा की शर्तों और गोपनीयता नीति से सहमत होते हैं।",
+      "backup_title": "अपनी रिकवरी फ्रेज का बैकअप लें",
+      "backup_description": "इन 12 शब्दों को क्रम में लिखें और सुरक्षित रखें। खोने पर आप अपने फंड हमेशा के लिए गंवा सकते हैं।",
+      "security_check_title": "सुरक्षा जाँच",
+      "security_check_description": "इस फ्रेज को कभी किसी के साथ साझा न करें। Lenix सपोर्ट इसे कभी नहीं माँगेगा।",
+      "saved_phrase": "मैंने अपनी रिकवरी फ्रेज सहेज ली है",
+      "verify_title": "रिकवरी फ्रेज सत्यापित करें",
+      "verify_description": "नीचे अनुरोधित शब्द दर्ज करके पुष्टि करें कि आपने फ्रेज सहेजी है।",
+      "word_label": "शब्द #{number}",
+      "word_placeholder": "शब्द #{number} दर्ज करें",
+      "verify_continue": "सत्यापित करें और जारी रखें",
+      "password_title": "सुरक्षित पासवर्ड सेट करें",
+      "password_description": "यह पासवर्ड इस डिवाइस पर आपके वॉलेट को एन्क्रिप्ट करने के लिए उपयोग होगा।",
+      "password_label": "पासवर्ड",
+      "confirm_password_label": "पासवर्ड की पुष्टि करें",
+      "create_wallet": "वॉलेट बनाएं",
+      "processing": "प्रसंस्करण...",
+      "import_title": "रिकवरी फ्रेज इмпोर्ट करें",
+      "import_description": "वॉलेट पुनर्स्थापित करने के लिए 12 या 24 शब्दों की रिकवरी फ्रेज दर्ज करें।",
+      "import_placeholder": "apple banana cherry...",
+      "continue": "जारी रखें",
+      "import_wallet": "वॉलेट इмпोर्ट करें"
+    },
+    "toast": {
+      "wallet_unlocked": "वॉलेट अनलॉक हो गया",
+      "incorrect_password": "गलत पासवर्ड",
+      "phrase_copied": "रिकवरी फ्रेज क्लिपबोर्ड पर कॉपी की गई",
+      "incorrect_words": "गलत शब्द। कृपया पुनः प्रयास करें।",
+      "password_min_length": "पासवर्ड कम से कम 8 अक्षर का होना चाहिए",
+      "passwords_mismatch": "पासवर्ड मेल नहीं खाते",
+      "wallet_created": "वॉलेट सफलतापूर्वक बनाया गया!",
+      "create_failed": "वॉलेट बनाने में विफल",
+      "invalid_phrase": "अमान्य रिकवरी फ्रेज। 12 या 24 शब्द अपेक्षित, {count} प्राप्त।",
+      "wallet_imported": "वॉलेट सफलतापूर्वक इмпोर्ट हुआ!",
+      "import_failed": "वॉलेट इмпोर्ट विफल"
+    }
+  },
+  "AccountBanking": {
+    "meta": {
+      "title": "एंटरप्राइज़ बैंकिंग | Lenix Protocol",
+      "description": "Spot, Funding और सत्यापित बैंक खातों के बीच डिजिटल संपत्ति स्थानांतरित करें।"
+    },
+    "error": {
+      "load_failed": "बैंकिंग वर्कस्पेस लोड नहीं हो सका",
+      "unavailable_title": "बैंकिंग वर्कस्पेस उपलब्ध नहीं",
+      "unavailable_description": "बैंकिंग अवलोकन लोड नहीं हो सका।",
+      "try_again": "पुनः प्रयास करें"
+    },
+    "tabs": {
+      "overview": "अवलोकन",
+      "accounts": "बैंक खाते",
+      "activity": "गतिविधि"
+    },
+    "empty_assets": {
+      "title": "अभी तक कोई ट्रेज़री संपत्ति नहीं",
+      "description": "शुरू करने के लिए संपत्ति अपने Spot या Funding वॉलेट में स्थानांतरित करें।",
+      "cta": "धन स्थानांतरित करें"
+    },
+    "fiat_balance": {
+      "funding": "Funding {currency}",
+      "available": "{amount} उपलब्ध"
+    },
+    "summary": {
+      "title": "एंटरप्राइज़ बैंकिंग",
+      "verified": "सत्यापित",
+      "verification_pending": "सत्यापन लंबित",
+      "subtitle": "ट्रेज़री वॉलेट और सत्यापित बैंक खातों के बीच डिजिटल संपत्ति स्थानांतरित करें।",
+      "transfer": "स्थानांतरण",
+      "withdraw_to_bank": "बैंक में निकासी",
+      "total_treasury": "कुल ट्रेज़री मूल्य",
+      "hide_balances": "शेष राशि छिपाएँ",
+      "show_balances": "शेष राशि दिखाएँ",
+      "account": "खाता",
+      "tier": "स्तर",
+      "relationship_manager": "संबंध प्रबंधक",
+      "spot_wallet": "Spot वॉलेट",
+      "spot_available": "ट्रेडिंग के लिए उपलब्ध",
+      "funding_wallet": "Funding वॉलेट",
+      "funding_available": "निपटान के लिए उपलब्ध",
+      "in_settlement": "निपटान में",
+      "pending_payouts": "सक्रिय बैंक भुगतानों में"
+    },
+    "assets": {
+      "title": "वॉलेट शेष",
+      "subtitle": "Spot और भुगतान-तैयार Funding संपत्ति",
+      "move_funds": "धन स्थानांतरित करें",
+      "columns": {
+        "asset": "संपत्ति",
+        "wallet": "वॉलेट",
+        "balance": "शेष",
+        "value": "मूल्य",
+        "change_24h": "24 घं."
+      },
+      "location": {
+        "spot": "Spot",
+        "funding": "Funding"
+      }
+    },
+    "accounts": {
+      "linked_title": "लिंक किए गए बैंक खाते",
+      "linked_subtitle": "बैंक निकासी के लिए निपटान गंतव्य",
+      "add_account": "खाता जोड़ें",
+      "empty_title": "कोई बैंक खाता लिंक नहीं",
+      "empty_description": "अपने बैंक में निकासी सक्षम करने के लिए बैंक खाता जोड़ें।",
+      "default": "डिफ़ॉल्ट",
+      "status": {
+        "verified": "सत्यापित",
+        "rejected": "अस्वीकृत",
+        "pending": "समीक्षाधीन"
+      },
+      "limits_title": "निपटान सीमाएँ",
+      "limits_subtitle": "रोलिंग एंटरप्राइज़ भत्ते",
+      "remaining": "{percent}% शेष",
+      "limits_note": "उच्च निपटान सीमाओं की समीक्षा आपके संबंध प्रबंधक और अनुपालन टीम द्वारा की जाती है।"
+    },
+    "activity": {
+      "title": "लेनदेन गतिविधि",
+      "subtitle": "आंतरिक स्थानांतरण और बैंक निपटान",
+      "search_label": "लेनदेन खोजें",
+      "search_placeholder": "संदर्भ या संपत्ति खोजें",
+      "filter_label": "लेनदेन स्थिति फ़िल्टर करें",
+      "filter_all": "सभी स्थिति",
+      "status": {
+        "completed": "पूर्ण",
+        "processing": "प्रसंस्करण",
+        "review": "समीक्षा",
+        "under_review": "समीक्षाधीन",
+        "failed": "विफल"
+      },
+      "columns": {
+        "transaction": "लेनदेन",
+        "amount": "राशि",
+        "destination": "गंतव्य",
+        "status": "स्थिति",
+        "date": "तिथि",
+        "view": "देखें"
+      },
+      "direction": {
+        "spot_to_funding": "Spot से Funding",
+        "funding_to_spot": "Funding से Spot",
+        "funding_to_bank": "Funding से बैंक",
+        "spot_to_bank": "Spot से बैंक"
+      },
+      "view_transaction": "{reference} देखें",
+      "empty_title": "कोई मेल खाता लेनदेन नहीं",
+      "empty_description": "खोज या स्थिति फ़िल्टर बदलें।"
+    },
+    "add_account": {
+      "title": "बैंक खाता जोड़ें",
+      "description": "जमा किए गए खातों की समीक्षा निपटान प्राप्त करने से पहले हमारी अनुपालन टीम द्वारा की जाती है। इसमें आमतौर पर 1–2 व्यावसायिक दिन लगते हैं।",
+      "fields": {
+        "bank_name": "बैंक का नाम",
+        "bank_name_placeholder": "उदा. SBI",
+        "account_holder": "खाताधारक का नाम",
+        "account_holder_placeholder": "पूरा कानूनी नाम",
+        "account_number": "खाता संख्या / IBAN",
+        "account_number_placeholder": "खाता संख्या",
+        "routing_number": "रूटिंग नंबर (ACH/घरेलू)",
+        "swift_bic": "SWIFT / BIC (अंतर्राष्ट्रीय)",
+        "optional": "वैकल्पिक",
+        "account_type": "खाता प्रकार",
+        "checking": "चालू",
+        "savings": "बचत",
+        "currency": "मुद्रा",
+        "country": "देश",
+        "country_placeholder": "IN"
+      },
+      "submitting": "जमा हो रहा है...",
+      "submit": "सत्यापन के लिए जमा करें",
+      "required_fields": "कृपया सभी आवश्यक फ़ील्ड भरें",
+      "success": "बैंक खाता सत्यापन के लिए जमा किया गया",
+      "failed": "बैंक खाता जोड़ने में विफल"
+    },
+    "transfer": {
+      "title_form": "धन स्थानांतरित करें",
+      "title_review": "स्थानांतरण की समीक्षा",
+      "title_success": "स्थानांतरण स्थिति",
+      "desc_form": "वॉलेट के बीच संपत्ति स्थानांतरित करें या लिंक किए गए बैंक में निपटान करें।",
+      "desc_review": "दरें पाँच मिनट के लिए आरक्षित हैं।",
+      "desc_success": "आपका संदर्भ ट्रैकिंग के लिए तैयार है।",
+      "back_label": "स्थानांतरण विवरण पर वापस",
+      "step_label": "चरण {step} / 3",
+      "cancel": "रद्द करें",
+      "review_transfer": "स्थानांतरण की समीक्षा",
+      "confirm_submit": "पुष्टि करें और जमा करें",
+      "done": "पूर्ण",
+      "quote_failed": "कोट बनाने में असमर्थ",
+      "transfer_failed": "स्थानांतरण जमा करने में असमर्थ",
+      "type_legend": "स्थानांतरण प्रकार",
+      "types": {
+        "spot_to_funding": {
+          "label": "Spot → Funding",
+          "description": "भुगतान के लिए संपत्ति तैयार करें"
+        },
+        "funding_to_spot": {
+          "label": "Funding → Spot",
+          "description": "ट्रेडिंग के लिए संपत्ति वापस करें"
+        },
+        "funding_to_bank": {
+          "label": "Funding → बैंक",
+          "description": "उपलब्ध धन निकालें"
+        },
+        "spot_to_bank": {
+          "label": "Spot → बैंक",
+          "description": "रूपांतरित करें और निकालें"
+        }
+      },
+      "from": "से",
+      "to": "को",
+      "spot_wallet": "Spot वॉलेट",
+      "funding_wallet": "Funding वॉलेट",
+      "bank_account": "बैंक खाता",
+      "asset": "संपत्ति",
+      "amount": "राशि",
+      "max": "अधिकतम",
+      "amount_placeholder": "0.00",
+      "payout_currency": "भुगतान मुद्रा",
+      "currencies": {
+        "USD": "USD · अमेरिकी डॉलर",
+        "EUR": "EUR · यूरो",
+        "GBP": "GBP · ब्रिटिश पाउंड"
+      },
+      "select_account": "खाता चुनें",
+      "available": "उपलब्ध"
+    },
+    "review": {
+      "recipient_receives": "प्राप्तकर्ता को मिलता है",
+      "from_amount": "{amount} {asset} से",
+      "market_value": "बाज़ार मूल्य",
+      "exchange_rate": "विनिमय दर",
+      "exchange_rate_value": "1 USD = {rate} {currency}",
+      "platform_fee": "प्लेटफ़ॉर्म शुल्क",
+      "banking_fee": "बैंकिंग शुल्क",
+      "estimated_arrival": "अनुमानित आगमन",
+      "authorization": "पुष्टि करके, आप ऊपर दिखाए गए संपत्ति रूपांतरण और निपटान निर्देशों को अधिकृत करते हैं।",
+      "withdrawal_submitted": "निकासी जमा की गई",
+      "transfer_completed": "स्थानांतरण पूर्ण",
+      "withdrawal_desc": "आपका निपटान प्रारंभिक सत्यापन पास कर गया और अब अनुपालन जाँच में प्रवेश कर रहा है।",
+      "transfer_desc": "आपके शेष बैंकिंग वर्कस्पेस में अपडेट हो गए हैं।",
+      "reference": "संदर्भ",
+      "status": "स्थिति",
+      "destination": "गंतव्य",
+      "processing": "प्रसंस्करण",
+      "completed": "पूर्ण"
+    },
+    "detail": {
+      "title": "स्थानांतरण विवरण",
+      "reference": "संदर्भ {reference}",
+      "payout_amount": "भुगतान राशि",
+      "destination": "गंतव्य",
+      "estimated_arrival": "अनुमानित आगमन",
+      "fees": "शुल्क",
+      "requested": "अनुरोधित",
+      "timeline_title": "निपटान समयरेखा",
+      "pending": "लंबित",
+      "download_receipt": "रसीद डाउनलोड करें",
+      "status": {
+        "completed": "पूर्ण",
+        "processing": "प्रसंस्करण",
+        "under_review": "समीक्षाधीन",
+        "failed": "विफल"
+      }
+    },
+    "skeleton": {
+      "loading": "बैंकिंग डैशबोर्ड लोड हो रहा है"
+    }
+  },
+  "AccountRecoveryServices": {
+    "page": {
+      "title": "रिकवरी सेवाएँ",
+      "subtitle": "खोए या चोरी हुए क्रिप्टो संपत्ति के लिए रिकवरी अनुरोध जमा करें। हमारी फोरेंसिक टीम आपके मामले का आकलन करेगी और 24–48 घंटों में संपर्क करेगी।",
+      "process_title": "प्रक्रिया",
+      "form_title": "संपत्ति रिकवरी और फोरेंसिक विवरण",
+      "form_subtitle": "हम आपको खोई क्रिप्टो संपत्ति का पता लगाने और पुनर्प्राप्त करने में मदद करते हैं, साथ ही कानूनी धन वसूली के लिए सत्यापित साक्ष्य तैयार करते हैं।"
+    },
+    "process": {
+      "assessment": {
+        "title": "आकलन",
+        "description": "हम ट्रेल का विश्लेषण करते हैं और पुनर्प्राप्ति की संभावना तय करते हैं।"
+      },
+      "strategy": {
+        "title": "रणनीति",
+        "description": "कानूनी और फोरेंसिक सहायता के साथ अनुकूलित योजना।"
+      },
+      "recovery": {
+        "title": "रिकवरी",
+        "description": "धन वापस पाने के लिए हम एक्सचेंज और अधिकारियों से संपर्क करते हैं।"
+      },
+      "return": {
+        "title": "वापसी",
+        "description": "धन आपके सत्यापित वॉलेट में स्थानांतरित किया जाता है।"
+      }
+    },
+    "form": {
+      "name": "नाम",
+      "name_placeholder": "उदा. राहुल शर्मा",
+      "transaction_hash": "लेनदेन हैश / वॉलेट पता",
+      "transaction_hash_placeholder": "हैश या पता दर्ज करें (उदा. 0x1234...)",
+      "amount_stolen": "अनुमानित चोरी की राशि",
+      "amount_stolen_placeholder": "अनुमानित राशि दर्ज करें (उदा. 200000)",
+      "incident_summary": "घटना सारांश",
+      "incident_summary_placeholder": "उदा. फ़िशिंग घोटाले से धन चोरी हुआ...",
+      "evidence": "स्क्रीनशॉट या दावे का समर्थन करने वाला अन्य साक्ष्य",
+      "phone_number": "फ़ोन नंबर",
+      "blockchain": "ब्लॉकचेन चुनें",
+      "blockchain_placeholder": "ब्लॉकचेन चुनें",
+      "currency": "मुद्रा चुनें",
+      "currency_placeholder": "मुद्रा चुनें",
+      "privacy_prefix": "Lenix Protocol को आपके रिकवरी मामले पर संपर्क करने के लिए आपकी संपर्क जानकारी चाहिए। विवरण के लिए हमारी",
+      "privacy_policy": "गोपनीयता नीति",
+      "privacy_suffix": " देखें।",
+      "submit": "रिकवरी अनुरोध जमा करें",
+      "submitting": "जमा हो रहा है..."
+    },
+    "blockchains": {
+      "BTC": "Bitcoin (BTC)",
+      "ETH": "Ethereum (ETH)",
+      "SOL": "Solana (SOL)",
+      "TRX": "Tron (TRX)",
+      "BNB": "Binance Smart Chain (BNB)",
+      "MATIC": "Polygon Mainnet (MATIC)",
+      "AVAX": "Avalanche C-Chain (AVAX)",
+      "ARB": "Arbitrum One (ARB)",
+      "BASE": "Base (BASE)",
+      "FANTOM": "Fantom (Fantom)",
+      "GNOSIS": "Gnosis Chain (GNOSIS)",
+      "KAVA": "Kava (KAVA)",
+      "POL": "Polkadot (POL)",
+      "SUI": "Sui (SUI)",
+      "OTHER": "अन्य"
+    },
+    "success": {
+      "title": "अनुरोध जमा हो गया",
+      "description": "हमारी रिकवरी टीम आपके मामले की समीक्षा करेगी और 24–48 घंटों में संपर्क करेगी।",
+      "submit_another": "दूसरा अनुरोध जमा करें"
+    },
+    "toast": {
+      "required_fields": "कृपया सभी आवश्यक फ़ील्ड भरें",
+      "submit_failed": "रिकवरी अनुरोध जमा नहीं हो सका",
+      "submit_success": "रिकवरी अनुरोध जमा हो गया। हमारी टीम जल्द संपर्क करेगी।"
+    }
+  },
+  "AccountCryptoLoan": {
+    "page": {
+      "back_to_dashboard": "डैशबोर्ड पर वापस जाएँ",
+      "collateral_title": "और ज़्यादा संपार्श्विक चाहिए?",
+      "collateral_description": "उधार सीमा बढ़ाने और हेल्थ फैक्टर सुधारने के लिए अपने वॉल्ट में और संपत्ति जमा करें।",
+      "go_to_vault": "वॉल्ट पर जाएँ"
+    },
+    "hero": {
+      "title_line1": "लिक्विडिटी अनलॉक करें,",
+      "title_line2": "अपनी संपत्ति रखें",
+      "subtitle": "पोर्टफोलियो बेचे बिना तुरंत क्रिप्टो-बैक्ड लोन पाएँ। कम दरें, लचीली अवधि और तत्काल फंडिंग।",
+      "get_instant_loan": "तुरंत लोन पाएँ",
+      "how_it_works": "यह कैसे काम करता है",
+      "active_loans": "सक्रिय लोन",
+      "total_borrowed": "कुल उधार",
+      "lowest_rate": "सबसे कम दर"
+    },
+    "active_loans": {
+      "empty_title": "कोई सक्रिय लोन नहीं",
+      "empty_description": "आपके सक्रिय लोन यहाँ दिखेंगे। नया लोन आवेदन करके तुरंत लिक्विडिटी पाएँ।",
+      "title": "आपके पोर्टफोलियो",
+      "active_count": "{count} सक्रिय",
+      "borrowed_amount": "उधार राशि",
+      "collateral": "संपार्श्विक",
+      "health_factor": "हेल्थ फैक्टर",
+      "repay_loan": "लोन चुकाएँ",
+      "processing": "प्रसंस्करण...",
+      "view_details": "विवरण देखें",
+      "details_title": "लोन अनुरोध विवरण",
+      "borrowed": "उधार लिया",
+      "apy": "APY",
+      "duration": "अवधि",
+      "start_date": "प्रारंभ तिथि",
+      "contact_details": "संपर्क विवरण",
+      "phone": "फ़ोन",
+      "telegram_whatsapp": "Telegram / WhatsApp",
+      "not_provided": "प्रदान नहीं किया गया",
+      "payout_method": "भुगतान विधि",
+      "no_payout_details": "कोई भुगतान विवरण संग्रहीत नहीं।",
+      "wallet": "वॉलेट",
+      "network": "नेटवर्क",
+      "bank": "बैंक",
+      "swift_bic": "SWIFT/BIC",
+      "account": "खाता",
+      "holder": "धारक",
+      "routing_iban": "Routing/IBAN"
+    },
+    "market_rates": {
+      "live_rates": "लाइव दरें",
+      "available_plans": "उपलब्ध योजनाएँ",
+      "interest_rate": "ब्याज दर",
+      "ltv": "{ltv}% LTV"
+    },
+    "application": {
+      "step_label": "चरण {step}/2 — {phase}",
+      "phase_details": "लोन विवरण",
+      "phase_payout": "भुगतान प्राथमिकताएँ",
+      "title_details": "क्रिप्टो लोन अनुरोध",
+      "title_payout": "धन प्राप्ति",
+      "subtitle_details": "अपनी ज़रूरतों के अनुसार लोन शर्तें अनुकूलित करें।",
+      "subtitle_payout": "चुनें कि हम आपके लोन विवरण कहाँ भेजें।",
+      "select_loan_type": "लोन प्रकार चुनें",
+      "loan_type_summary": "{rate}% APR · {ltv}% LTV तक",
+      "borrow_amount": "उधार राशि (USD)",
+      "borrow_amount_placeholder": "उदा. 5000",
+      "collateral_asset": "संपार्श्विक संपत्ति",
+      "duration": "अवधि",
+      "continue_payout": "भुगतान पर जारी रखें",
+      "contact_title": "हम आपसे कैसे संपर्क करें?",
+      "contact_subtitle": "अपने आवेदन पर संपर्क के लिए कम से कम एक जानकारी दें।",
+      "phone_number": "फ़ोन नंबर",
+      "phone_placeholder": "उदा. +91 98765 43210",
+      "phone_hint": "कॉल और SMS अपडेट के लिए",
+      "telegram_whatsapp": "Telegram या WhatsApp",
+      "telegram_placeholder": "उदा. @username या +919876543210",
+      "telegram_hint": "त्वरित संदेश के लिए",
+      "funds_title": "हम आपके धन कहाँ भेजें?",
+      "payout_crypto": "क्रिप्टो वॉलेट",
+      "payout_crypto_sub": "तत्काल ट्रांसफर",
+      "payout_wire": "वायर ट्रांसफर",
+      "payout_wire_sub": "1–3 कार्य दिवस",
+      "payout_bank": "बैंक जमा",
+      "payout_bank_sub": "ACH / SEPA",
+      "wallet_address": "वॉलेट पता",
+      "wallet_placeholder": "0x...",
+      "select_network": "नेटवर्क चुनें",
+      "network_erc20": "Ethereum (ERC20)",
+      "network_trc20": "Tron (TRC20)",
+      "network_bsc": "Binance Smart Chain (BEP20)",
+      "bank_name": "बैंक का नाम",
+      "bank_name_placeholder": "उदा. SBI",
+      "bank_name_alt_placeholder": "उदा. HDFC Bank",
+      "swift_bic": "SWIFT / BIC कोड",
+      "swift_placeholder": "उदा. SBININBB",
+      "account_number": "खाता संख्या",
+      "account_number_placeholder": "आपकी खाता संख्या",
+      "account_holder": "खाताधारक का नाम",
+      "account_holder_placeholder": "खाते पर पूरा नाम",
+      "reference_optional": "संदर्भ (वैकल्पिक)",
+      "reference_placeholder": "भुगतान संदर्भ",
+      "routing_iban": "Routing नंबर / IBAN",
+      "routing_iban_placeholder": "ACH routing (US) या IBAN (EU)",
+      "back": "वापस",
+      "submitting": "जमा हो रहा है...",
+      "submit": "आवेदन जमा करें",
+      "success_title": "आवेदन जमा हो गया",
+      "success_description": "आपका लोन अनुरोध प्राप्त हुआ। हम इसकी समीक्षा करेंगे और जल्द संपर्क करेंगे।",
+      "view_loans": "मेरे लोन देखें"
+    },
+    "duration": {
+      "6": "6 महीने",
+      "12": "12 महीने",
+      "24": "24 महीने",
+      "months": "{count} महीने"
+    },
+    "collateral_assets": {
+      "BTC": "Bitcoin",
+      "ETH": "Ethereum",
+      "SOL": "Solana"
+    },
+    "status": {
+      "Active": "सक्रिय",
+      "Pending": "लंबित",
+      "Repaid": "चुकाया गया",
+      "Liquidated": "लिक्विडेटेड"
+    },
+    "payout_methods": {
+      "crypto": "क्रिप्टो",
+      "wire_transfer": "वायर ट्रांसफर",
+      "bank": "बैंक"
+    },
+    "toast": {
+      "repay_success": "लोन सफलतापूर्वक चुकाया गया"
+    },
+    "overview": {
+      "total_borrowed": "कुल उधार",
+      "total_borrowed_tooltip": "सभी सक्रिय लोन में कुल उधार राशि",
+      "current_interest": "वर्तमान ब्याज",
+      "collateral_value": "संपार्श्विक मूल्य",
+      "collateral_tooltip": "संपार्श्विक के रूप में लॉक की गई संपत्ति का कुल मूल्य",
+      "ltv_label": "LTV",
+      "low_risk": "कम जोखिम",
+      "health_factor": "हेल्थ फैक्टर",
+      "health_tooltip": "लिक्विडेशन जोखिम संकेतक। लिक्विडेशन से बचने के लिए 1.5 से ऊपर रखें।",
+      "safe": "सुरक्षित",
+      "liquidated": "1.0 (लिक्विडेटेड)",
+      "safe_threshold": "3.0 (सुरक्षित)"
+    },
+    "borrow_form": {
+      "title": "लोन कैलकुलेटर",
+      "subtitle": "अपनी लोन शर्तें तुरंत गणना करें।",
+      "borrow_tab": "उधार",
+      "repay_tab": "चुकाएँ",
+      "want_to_borrow": "मैं उधार लेना चाहता/चाहती हूँ",
+      "my_collateral": "मेरा संपार्श्विक",
+      "asset_placeholder": "संपत्ति",
+      "ltv": "LTV",
+      "low_risk": "कम जोखिम",
+      "apy": "APY",
+      "total_repayment": "कुल चुकौती",
+      "apply_new_loan": "नए लोन के लिए आवेदन",
+      "repay_title": "चुकौती प्रबंधित करें",
+      "repay_description": "अपने विशिष्ट लोन प्रबंधित और चुकाने के लिए \"सक्रिय लोन\" सूची का उपयोग करें।"
+    },
+    "collateral": {
+      "title": "समर्थित संपार्श्विक",
+      "live_rates": "लाइव दरें",
+      "max_ltv": "अधिकतम LTV: {ltv}",
+      "fee": "शुल्क",
+      "assets": {
+        "BTC": "Bitcoin",
+        "ETH": "Ethereum",
+        "SOL": "Solana",
+        "XRP": "Ripple"
+      }
     }
   }
 }

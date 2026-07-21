@@ -1,53 +1,85 @@
 "use client";
 
-import { ShieldCheck, Landmark, Lock } from "lucide-react";
+import {
+  Lock,
+  Globe,
+  ArrowRightLeft,
+  Smartphone,
+  Landmark,
+  ShieldCheck,
+} from "lucide-react";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+import { home } from "@/lib/home-styles";
+
+const WALLET_FEATURES = [
+  { id: "encryption", icon: Lock },
+  { id: "multichain", icon: Globe },
+  { id: "transfers", icon: ArrowRightLeft },
+  { id: "access", icon: Smartphone },
+] as const;
+
+const PLATFORM_FEATURES = [
+  { id: "loans", icon: Landmark, href: "/crypto-loan" as const },
+  { id: "recovery", icon: ShieldCheck, href: "/crypto-recovery" as const },
+] as const;
 
 export default function WalletFeatures() {
+  const t = useTranslations("WalletPage.Features");
+
   return (
-    <section className="py-24 px-4 relative">
-      <div className="max-w-screen-xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
-              <span className="text-yellow-400 font-mono tracking-wider text-sm">POWERFUL FEATURES</span>
-              <h2 className="text-3xl md:text-5xl font-bold text-white">More Than Just a Wallet</h2>
+    <section id="features" className="py-24 px-4 bg-white/5 scroll-mt-24">
+      <div className={home.container}>
+        <div className="lg:grid lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12 items-start">
+          <div className="lg:col-span-2 max-w-2xl">
+            <p className={home.eyebrow}>{t("eyebrow")}</p>
+            <h2 className={`${home.title} mt-3 mb-3`}>{t("title")}</h2>
+            <p className="text-sm text-neutral-500">{t("networks_line")}</p>
           </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-              {/* Feature 1: Layer 2 Security */}
-              <div className="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-yellow-400/50 transition-all duration-300 hover:bg-white/10 backdrop-blur-sm relative overflow-hidden">
-                  <div className="absolute -right-10 -top-10 w-32 h-32 bg-yellow-400/10 rounded-full blur-2xl group-hover:bg-yellow-400/20 transition-colors" />
-                  <div className="w-14 h-14 bg-black/50 border border-white/10 rounded-xl flex items-center justify-center mb-6 text-yellow-400">
-                      <Lock className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-3">Layer 2 Security</h3>
-                  <p className="text-gray-400 leading-relaxed">
-                      Built on advanced Layer 2 rollup technology, ensuring your transactions are processed off-chain for speed while maintaining mainnet-level security finality.
-                  </p>
-              </div>
 
-              {/* Feature 2: Crypto Loans */}
-              <div className="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-blue-400/50 transition-all duration-300 hover:bg-white/10 backdrop-blur-sm relative overflow-hidden">
-                  <div className="absolute -right-10 -top-10 w-32 h-32 bg-blue-400/10 rounded-full blur-2xl group-hover:bg-blue-400/20 transition-colors" />
-                  <div className="w-14 h-14 bg-black/50 border border-white/10 rounded-xl flex items-center justify-center mb-6 text-blue-400">
-                      <Landmark className="w-7 h-7" />
+          <div className="mt-10 lg:mt-0">
+            <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 mb-6">
+              {t("groups.wallet.title")}
+            </p>
+            <ul className="space-y-6 list-none p-0 m-0">
+              {WALLET_FEATURES.map(({ id, icon: Icon }) => (
+                <li key={id} className="flex gap-4">
+                  <div className="p-3 bg-black/40 rounded-lg h-fit border border-white/10 shrink-0">
+                    <Icon className="w-5 h-5 text-neutral-400" strokeWidth={1.75} />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">Crypto Loans</h3>
-                  <p className="text-gray-400 leading-relaxed">
-                      Access instant liquidity without selling your crypto. Use your Lenix Wallet assets as collateral for low-interest stablecoin loans through our decentralized protocol.
-                  </p>
-              </div>
-
-              {/* Feature 3: Asset Recovery */}
-              <div className="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-green-400/50 transition-all duration-300 hover:bg-white/10 backdrop-blur-sm relative overflow-hidden">
-                  <div className="absolute -right-10 -top-10 w-32 h-32 bg-green-400/10 rounded-full blur-2xl group-hover:bg-green-400/20 transition-colors" />
-                  <div className="w-14 h-14 bg-black/50 border border-white/10 rounded-xl flex items-center justify-center mb-6 text-green-400">
-                      <ShieldCheck className="w-7 h-7" />
+                  <div className="min-w-0 pt-0.5">
+                    <h3 className="text-base font-semibold text-white mb-1">{t(`cards.${id}.title`)}</h3>
+                    <p className="text-sm text-neutral-400 leading-relaxed">{t(`cards.${id}.desc`)}</p>
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-3">Smart Asset Recovery</h3>
-                  <p className="text-gray-400 leading-relaxed">
-                      Lost access to a wallet? Our unique social recovery and encrypted backup solutions provide a safety net to recover your funds securely, even in worst-case scenarios.
-                  </p>
-              </div>
+                </li>
+              ))}
+            </ul>
           </div>
+
+          <aside className="mt-12 lg:mt-0 p-8 rounded-2xl bg-black/40 border border-white/10 backdrop-blur-sm">
+            <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 mb-6">
+              {t("groups.platform.title")}
+            </p>
+            <ul className="space-y-8 list-none p-0 m-0">
+              {PLATFORM_FEATURES.map(({ id, icon: Icon, href }) => (
+                <li key={id}>
+                  <div className="flex gap-4 mb-3">
+                    <div className="p-3 bg-white/5 rounded-lg h-fit border border-white/10 shrink-0">
+                      <Icon className="w-5 h-5 text-neutral-400" strokeWidth={1.75} />
+                    </div>
+                    <div className="min-w-0 pt-0.5">
+                      <h3 className="text-base font-semibold text-white mb-1">{t(`cards.${id}.title`)}</h3>
+                      <p className="text-sm text-neutral-400 leading-relaxed">{t(`cards.${id}.desc`)}</p>
+                    </div>
+                  </div>
+                  <Link href={href} className={home.textLink}>
+                    {t(`cards.${id}.link`)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </aside>
+        </div>
       </div>
     </section>
   );

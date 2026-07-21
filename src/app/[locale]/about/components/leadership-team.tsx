@@ -1,120 +1,74 @@
-import { Linkedin, Twitter, Mail, Users, Award, Globe } from "lucide-react";
+"use client";
+
+import { Linkedin, Twitter, Mail } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { HomeSectionHeader } from "@/app/[locale]/components/home/home-section-header";
+import { home } from "@/lib/home-styles";
 
 const TEAM_MEMBERS = [
-  {
-    id: "sarah",
-    name: "Sarah Chen",
-    image: "/assets/team/1.webp",
-    socials: { linkedin: "#", twitter: "#", email: "#" },
-  },
-  {
-    id: "michael",
-    name: "Michael Rodriguez",
-    image: "/assets/team/2.webp",
-    socials: { linkedin: "#", twitter: "#", email: "#" },
-  },
-  {
-    id: "lisa",
-    name: "Lisa Thompson",
-    image: "/assets/team/3.webp",
-    socials: { linkedin: "#", twitter: "#", email: "#" },
-  },
-  {
-    id: "david",
-    name: "David Kim",
-    image: "/assets/team/4.webp",
-    socials: { linkedin: "#", twitter: "#", email: "#" },
-  },
-  {
-    id: "allen",
-    name: "Allen Terry",
-    image: "/assets/team/5.webp",
-    socials: { linkedin: "#", twitter: "#", email: "#" },
-  },
-];
+  { id: "sarah", name: "Sarah Chen", image: "/assets/team/1.webp" },
+  { id: "michael", name: "Michael Rodriguez", image: "/assets/team/2.webp" },
+  { id: "lisa", name: "Lisa Thompson", image: "/assets/team/3.webp" },
+  { id: "david", name: "David Kim", image: "/assets/team/4.webp" },
+  { id: "allen", name: "Allen Terry", image: "/assets/team/5.webp" },
+] as const;
 
 export default function LeadershipTeam() {
   const t = useTranslations("About.Leadership");
-  return (
-    <section className="bg-gradient-to-r from-gray-900 to-black py-20 px-4">
-      <div className="max-w-screen-xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            {t("title1")}
-            <span className="text-yellow-400"> {t("title2")}</span>
-          </h2>
-          <p className="text-gray-300 text-xl max-w-3xl mx-auto">
-            {t("subtitle")}
-          </p>
-        </div>
 
-        {/* Leadership Team Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {TEAM_MEMBERS.map((member, idx) => (
-            <div
-              key={idx}
-              className="bg-gray-900 rounded-2xl p-8 border border-gray-700 hover:border-yellow-400/50 transition-all duration-300 group"
-            >
-              <div className="text-center">
-                <div className="w-42 h-42 mx-auto mb-6 rounded-full overflow-hidden border-2 border-transparent group-hover:border-yellow-400/50 transition-colors">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    width={200}
-                    height={200}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h4 className="text-xl font-bold text-white mb-2">
-                  {member.name}
-                </h4>
-                <p className="text-yellow-400 font-medium mb-3">
-                  {t(`members.${member.id}.role`)}
-                </p>
-                <p className="text-gray-300 text-sm mb-6 leading-relaxed">
-                  {t(`members.${member.id}.bio`)}
-                </p>
-                <div className="flex justify-center gap-3">
-                  <a
-                    href={member.socials.linkedin}
-                    className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-yellow-400 transition-colors"
-                  >
-                    <Linkedin className="w-4 h-4 text-white" />
-                  </a>
-                  <a
-                    href={member.socials.twitter}
-                    className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-yellow-400 transition-colors"
-                  >
-                    <Twitter className="w-4 h-4 text-white" />
-                  </a>
-                  <a
-                    href={member.socials.email}
-                    className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-yellow-400 transition-colors"
-                  >
-                    <Mail className="w-4 h-4 text-white" />
-                  </a>
-                </div>
+  return (
+    <section className={`${home.section} ${home.sectionMuted}`}>
+      <div className={home.container}>
+        <HomeSectionHeader
+          align="center"
+          title={`${t("title1")}${t("title2")}`}
+          description={t("subtitle")}
+        />
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
+          {TEAM_MEMBERS.map((member) => (
+            <article key={member.id} className={`${home.card} ${home.cardBody} text-center`}>
+              <div className="relative w-28 h-28 mx-auto mb-5 rounded-full overflow-hidden bg-neutral-800">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover"
+                  sizes="112px"
+                />
               </div>
-            </div>
+              <h4 className="text-base font-semibold text-white mb-1">{member.name}</h4>
+              <p className="text-sm text-yellow-400 mb-3">{t(`members.${member.id}.role`)}</p>
+              <p className="text-sm text-neutral-400 leading-relaxed mb-5">
+                {t(`members.${member.id}.bio`)}
+              </p>
+              <div className="flex justify-center gap-2">
+                {[
+                  { Icon: Linkedin, label: "LinkedIn" },
+                  { Icon: Twitter, label: "Twitter" },
+                  { Icon: Mail, label: "Email" },
+                ].map(({ Icon, label }) => (
+                  <a
+                    key={label}
+                    href="#"
+                    aria-label={`${member.name} on ${label}`}
+                    className="flex h-9 w-9 items-center justify-center rounded-md bg-neutral-800 text-neutral-400 hover:text-white hover:bg-neutral-700 transition-colors"
+                  >
+                    <Icon className="w-4 h-4" />
+                  </a>
+                ))}
+              </div>
+            </article>
           ))}
         </div>
 
-        {/* Join Us CTA */}
-        <div className="text-center mt-16">
-          <div className="bg rounded-2xl p-8 border border-gray-700 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              {t("join.title")}
-            </h3>
-            <p className="text-gray-300 mb-6">
-              {t("join.description")}
-            </p>
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-3 rounded-lg transition-colors flex items-center gap-2 mx-auto">
-              {t("join.cta")}
-              <Users className="w-5 h-5" />
-            </button>
-          </div>
+        <div className={`${home.card} ${home.cardBody} max-w-2xl mx-auto text-center`}>
+          <h3 className="text-lg font-semibold text-white mb-2">{t("join.title")}</h3>
+          <p className={`${home.lead} mb-6`}>{t("join.description")}</p>
+          <button type="button" className={home.btnPrimary}>
+            {t("join.cta")}
+          </button>
         </div>
       </div>
     </section>

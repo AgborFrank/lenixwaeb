@@ -1,59 +1,135 @@
 {
-  "Hero": {
-    "badge": "Layanan Identifikasi Aset Kripto",
-    "title1": "Mengungkap Cryptocurrency Tersembunyi dan Identifikasi Aset Digital",
-    "subtitle1": "Menemukan dan memverifikasi kepemilikan digital telah menjadi bagian penting dari investigasi modern.",
-    "desc1": "Dengan meningkatnya penggunaan cryptocurrency, menemukan dan memverifikasi kepemilikan digital sangatlah penting. Lenix Protocol menyediakan layanan ahli untuk membantu pengacara melacak kekayaan digital.",
-    "desc2": "Tim kami menggunakan alat blockchain mutakhir dan metodologi forensik untuk melakukan pelacakan komprehensif.",
-    "btn_consultation": "Minta Konsultasi Hari Ini"
+  "meta": {
+    "title": "Identifikasi Aset Kripto | Lenix Protocol",
+    "description": "Melacak, menelusuri, dan mendokumentasikan kepemilikan kripto untuk litigasi, warisan, dan penegakan. Metodologi forensik dengan ruang lingkup dan deliverable yang jelas."
   },
-  "Coverage": {
-    "title": "Cakupan Layanan Identifikasi Kami",
-    "desc": "Investigasi kami disesuaikan untuk mendukung masalah perdata, pidana, dan peraturan yang melibatkan:",
-    "card1_title": "Perceraian dan perselisihan hukum keluarga",
-    "card1_desc": "Melibatkan aset kripto yang tersembunyi.",
-    "card2_title": "Penipuan, pencurian, dan penggelapan",
-    "card2_desc": "Kasus dengan komponen mata uang digital.",
-    "card3_title": "Investigasi internal perusahaan",
-    "card3_desc": "Melibatkan dana yang disalahgunakan.",
-    "card4_title": "Perencanaan warisan dan masalah wasiat",
-    "card4_desc": "Dengan aset yang tidak diketahui atau tidak dideklarasikan.",
-    "card5_title": "Kebangkrutan atau eksekusi putusan",
-    "card5_desc": "Memerlukan identifikasi aset.",
-    "footer": "Lenix Protocol bekerja sama dengan pengacara penggugat dan tergugat, serta bertindak sebagai ahli netral."
+  "Hero": {
+    "eyebrow": "Identifikasi aset kripto",
+    "title1": "Mendokumentasikan kepemilikan digital ",
+    "title2": "yang mungkin tidak diungkapkan",
+    "subtitle": "Untuk pengacara, investigator, dan profesional keuangan yang perlu melacak, menelusuri, dan memverifikasi kripto dalam litigasi, warisan, dan penegakan — dengan metodologi yang dirancang untuk tahan diperiksa.",
+    "btn_primary": "Mulai tinjauan",
+    "btn_secondary": "Hubungi tim"
+  },
+  "Audiences": {
+    "eyebrow": "Untuk siapa",
+    "title": "Kasus yang sering kami dukung",
+    "description": "Pekerjaan identifikasi dibatasi pada investigasi hukum, regulator, atau korporat yang berwenang — bukan pencarian terbuka terhadap pihak tidak terkait.",
+    "cards": {
+      "family": {
+        "title": "Hukum keluarga dan perceraian",
+        "desc": "Pembagian aset ketika satu pihak mungkin memiliki wallet tidak dilaporkan, akun exchange, atau holding on-chain yang tidak tercantum dalam pengungkapan finansial."
+      },
+      "fraud": {
+        "title": "Penipuan dan penggelapan",
+        "desc": "Kasus perdata atau pidana yang melibatkan dana digital yang disalahgunakan — melacak pergerakan dari wallet sumber yang diketahui atau akun yang dikompromikan."
+      },
+      "estate": {
+        "title": "Warisan dan probate",
+        "desc": "Pelaksana wasiat atau pengacara melacak kripto yang dimiliki almarhum tetapi tidak didokumentasikan — dimulai dari perangkat, catatan, atau petunjuk alamat sebagian."
+      },
+      "enforcement": {
+        "title": "Kebangkrutan dan penegakan",
+        "desc": "Kreditur, kurator, atau regulator mengidentifikasi aset kripto yang dapat disita dan titik sentuh exchange yang relevan bagi debitur atau subjek."
+      }
+    }
   },
   "Methods": {
-    "title": "Metode Pelacakan Cryptocurrency",
-    "card1_title": "Identifikasi dompet blockchain",
-    "card1_desc": "Dan analisis keterkaitan.",
-    "card2_title": "Pemantauan transaksi",
-    "card2_desc": "Di blockchain publik dan pribadi.",
-    "card3_title": "Verifikasi kepemilikan NFT",
-    "card3_desc": "Dan pelacakan transfer.",
-    "card4_title": "Identifikasi akun bursa",
-    "card4_desc": "Dan gerbang keluar transaksi.",
-    "card5_title": "Referensi silang metadata",
-    "card5_desc": "Dan bukti perangkat untuk atribusi dompet.",
-    "footer": "Pekerjaan kami dilakukan dengan teknik forensik yang menjaga integritas bukti."
+    "eyebrow": "Apa yang kami telusuri",
+    "title": "Ruang lingkup identifikasi dan analisis",
+    "description": "Pekerjaan menggabungkan analisis on-chain dengan bukti dari kasus — bukan pencarian blockchain secara terpisah.",
+    "columns": {
+      "linkage": {
+        "title": "Identifikasi wallet",
+        "desc": "Menghubungkan alamat blockchain ke subjek menggunakan pola transaksi, clustering, dan silang referensi dengan bukti perangkat, finansial, atau kesaksian."
+      },
+      "flows": {
+        "title": "Analisis alur transaksi",
+        "desc": "Mengikuti pergerakan dana antar chain dan layer — termasuk penggunaan mixer yang terlihat, transfer bridge, dan titik konsolidasi yang perlu didokumentasikan."
+      },
+      "attribution": {
+        "title": "Atribusi exchange dan NFT",
+        "desc": "Mengidentifikasi deposito custodial yang mungkin, off-ramp, dan holding NFT terkait kasus ketika data on-chain dan petunjuk mendukung."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Mengapa Memilih Lenix Protocol?",
-    "desc": "Kami membantu klien menemukan aset digital yang ingin disembunyikan orang lain.",
-    "point1_title": "Keahlian terbukti",
-    "point1_desc": "Dalam pelacakan cryptocurrency dan forensik blockchain.",
-    "point2_title": "Pengalaman identifikasi aset tersembunyi",
-    "point2_desc": "Di berbagai bidang praktik hukum.",
-    "point3_title": "Kesaksian ahli yang memenuhi syarat pengadilan",
-    "point3_desc": "Dalam yurisdiksi negara bagian, federal, dan internasional.",
-    "point4_title": "Laporan yang jelas dan dapat dipertanggungjawabkan",
-    "point4_desc": "Disesuaikan untuk litigasi atau kepatuhan."
+  "Boundaries": {
+    "eyebrow": "Ruang lingkup dan batas",
+    "title1": "Apa yang identifikasi dapat tunjukkan — ",
+    "title2": "dan apa yang tidak",
+    "subtitle": "Data blockchain publik memiliki batas. Lenix membatasi setiap engagement pada akses legal, petunjuk yang tersedia, dan apa yang dapat didukung dalam laporan.",
+    "items": {
+      "legal_basis": {
+        "title": "Hanya kasus berwenang",
+        "desc": "Kami menerima kasus dengan dasar hukum, regulator, atau investigasi korporat — bukan pelacakan spekulatif terhadap individu atau alamat tidak terkait."
+      },
+      "chain_limits": {
+        "title": "On-chain bukan gambaran lengkap",
+        "desc": "Saldo exchange di akun custodial atau cold storage yang tidak dilaporkan mungkin memerlukan proses hukum terpisah di luar analisis ledger publik."
+      },
+      "evidence": {
+        "title": "Integritas forensik",
+        "desc": "Metode dan penanganan data didokumentasikan untuk tinjauan pengacara, lingkungan regulator, atau pengadilan — dengan chain of custody terjaga."
+      },
+      "neutral": {
+        "title": "Peran netral tersedia",
+        "desc": "Lenix dapat mendukung pengacara penggugat, pembela, atau bertindak sebagai ahli independen dalam pembagian aset dan sengketa valuasi."
+      },
+      "no_guarantee": {
+        "title": "Tanpa jaminan kelengkapan",
+        "desc": "Identifikasi dibatasi oleh petunjuk yang diberikan, visibilitas chain, dan akses legal. Kami menyatakan apa yang dapat dan tidak dapat diperoleh dari data tersedia."
+      },
+      "disclosure": {
+        "title": "Pengungkapan terkontrol",
+        "desc": "Temuan hanya dibagikan kepada pihak yang berwenang dalam engagement — tidak disebarluaskan atau digunakan di luar ruang lingkup yang ditetapkan."
+      }
+    }
   },
-  "CTA": {
-    "title": "Hubungi kami",
-    "title_highlight": "hari ini",
-    "desc_part1": "Hubungi kami hari ini di",
-    "desc_part2": "untuk mendiskusikan kebutuhan identifikasi aset kripto Anda.",
-    "email_label": "Email Tim Kami",
-    "phone_label": "Hubungi Kantor Kami"
+  "Process": {
+    "eyebrow": "Cara kerjanya",
+    "title": "Dari intake hingga temuan terdokumentasi",
+    "description": "Jalur terstruktur untuk pengacara dan investigator — ruang lingkup ditetapkan sebelum analisis dimulai.",
+    "step_label": "Langkah {number}",
+    "steps": {
+      "intake": {
+        "title": "Tetapkan ruang lingkup",
+        "desc": "Jenis kasus, pihak, alamat wallet yang diketahui, catatan perangkat atau finansial, dan pertanyaan yang perlu dijawab identifikasi."
+      },
+      "trace": {
+        "title": "Telusuri dan analisis",
+        "desc": "Penghubungan wallet, pemetaan alur, dan analisis titik sentuh exchange menggunakan data on-chain yang disilang dengan bukti kasus."
+      },
+      "report": {
+        "title": "Serahkan temuan",
+        "desc": "Analisis tertulis dengan timeline dan bagian metodologi — cocok untuk strategi litigasi, compliance, atau proses hukum lanjutan."
+      }
+    },
+    "btn_primary": "Mulai tinjauan",
+    "btn_secondary": "Bicara dengan tim"
+  },
+  "Deliverables": {
+    "eyebrow": "Apa yang Anda terima",
+    "title": "Output untuk kebutuhan hukum dan compliance",
+    "description": "Deliverable disesuaikan dengan kasus — bukan tangkapan layar blockchain generik.",
+    "items": {
+      "timeline": {
+        "title": "Kronologi transaksi",
+        "desc": "Alur ber tanggal pergerakan relevan dengan peta penghubungan wallet yang menunjukkan bagaimana alamat teridentifikasi terkait kasus."
+      },
+      "report": {
+        "title": "Analisis tertulis",
+        "desc": "Metodologi, temuan, dan keterbatasan didokumentasikan untuk tinjauan pengacara — dengan pemisahan jelas antara fakta dan inferensi."
+      },
+      "testimony": {
+        "title": "Dukungan ahli",
+        "desc": "Kesaksian ahli atau analisis tambahan tersedia sesuai yurisdiksi, ketentuan engagement, dan kebutuhan kasus."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Perlu melacak kripto tidak diungkapkan dalam kasus?",
+    "subtitle": "Bagikan konteks kasus dan petunjuk yang sudah Anda miliki. Kami akan merinci pekerjaan identifikasi yang realistis sebelum engagement terbatas dimulai.",
+    "btn_primary": "Mulai tinjauan",
+    "btn_secondary": "Hubungi tim"
   }
 }

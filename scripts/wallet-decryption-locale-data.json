@@ -1,0 +1,1394 @@
+{
+  "de": {
+    "meta": {
+      "title": "Wallet-Zugang wiederherstellen | Lenix Protocol",
+      "description": "Zugang zu Software- und Hardware-Wallets wiederherstellen, wenn Passwörter verloren sind oder Dateien beschädigt wurden. Machbarkeit wird zuerst geprüft. Sie behalten die Kontrolle über Ihre Assets."
+    },
+    "Hero": {
+      "eyebrow": "Wallet-Zugang wiederherstellen",
+      "title1": "Wieder Zugang zu Wallets, ",
+      "title2": "die Ihnen gehören",
+      "subtitle": "Vergessene Passwörter, beschädigte Wallet-Dateien und unvollständige Backups — nicht Exchange-Login-Resets oder Wallets Dritter. Wir prüfen, ob eine Wiederherstellung realistisch ist, bevor kostenpflichtige Arbeit beginnt.",
+      "btn_primary": "Bewertung anfragen",
+      "btn_secondary": "Team kontaktieren"
+    },
+    "Audiences": {
+      "eyebrow": "Für wen das gilt",
+      "title": "Typische Fälle, die wir prüfen",
+      "description": "Die meisten Mandanten haben noch eine Wallet-Datei, ein Gerät oder ein Backup-Fragment. Sie haben das Passwort, den PIN-Pfad oder die lesbare Seed verloren — nicht das Eigentum an den Assets.",
+      "cards": {
+        "password": {
+          "title": "Vergessenes Wallet-Passwort",
+          "desc": "Software-Wallets wie MetaMask-Keystores, Electrum oder Bitcoin Core, bei denen die Datei vorhanden ist, das Verschlüsselungspasswort aber fehlt."
+        },
+        "file": {
+          "title": "Beschädigte oder unvollständige Dateien",
+          "desc": "Beschädigte wallet.dat-Dateien, unvollständige Backups oder Metadaten von einem alten Gerät, die möglicherweise noch Schlüsselmaterial enthalten."
+        },
+        "estate": {
+          "title": "Nachlass und rechtliche Angelegenheiten",
+          "desc": "Testamentsvollstrecker, Treuhänder oder Anwälte, die dokumentierte Zugangswege für die Wallet eines verstorbenen oder handlungsunfähigen Inhabers benötigen — mit ordnungsgemäßer Autorisierung."
+        },
+        "treasury": {
+          "title": "Betrieblicher Wallet-Ausschluss",
+          "desc": "Teams, die Zugangsdaten zu einer Treasury- oder Operations-Wallet verloren haben und einen kontrollierten Wiederherstellungsprozess mit prüffreundlicher Handhabung benötigen."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Umfang und Grenzen",
+      "title1": "Was wir tun — ",
+      "title2": "und was wir ablehnen",
+      "subtitle": "Wallet-Wiederherstellung ist eine häufige Betrugskategorie. Lenix übernimmt nur Fälle mit klarem Eigentum, dokumentierter Autorisierung und einem technischen Ansatz, der einen Versuch rechtfertigt.",
+      "items": {
+        "ownership": {
+          "title": "Nachweisbares Eigentum erforderlich",
+          "desc": "Wir arbeiten an Wallets, die Ihnen gehören oder die Sie rechtlich wiederherstellen dürfen — nicht an Adressen Dritter oder Zugangsdaten ohne Einwilligung."
+        },
+        "assessment": {
+          "title": "Machbarkeit vor Gebühren",
+          "desc": "Wir prüfen Wallet-Typ, Backup-Stand und Passwort-Hinweise, bevor kostenpflichtige Entschlüsselung geplant wird. Aussichtslose Fälle lehnen wir früh ab."
+        },
+        "no_custody": {
+          "title": "Sie bewegen die Assets",
+          "desc": "Wenn der Zugang wiederhergestellt ist, übertragen Sie die Mittel selbst. Lenix übernimmt keine Verwahrung wiederhergestellter Kryptowährung."
+        },
+        "no_scam": {
+          "title": "Keine Remote-Zugriffstricks",
+          "desc": "Wir verlangen kein Screen-Sharing, keine Verifizierungs-Einzahlungen und keine Vorauszahlungen zum Freischalten — Muster betrügerischer Recovery-Seiten."
+        },
+        "decline": {
+          "title": "Fälle, die wir meist ablehnen",
+          "desc": "Nur öffentliche Adresse, online gekaufte Wallet-Dateien oder Hardware-Wallets mit verlorener PIN und ohne Backup sind in der Regel nicht wiederherstellbar."
+        },
+        "confidential": {
+          "title": "Kontrollierte Handhabung",
+          "desc": "Wallet-Material wird in einer definierten Chain of Custody mit Zugriffskontrollen verarbeitet — nicht über informelle Kanäle."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "So läuft es ab",
+      "title": "Von der Bewertung zum Zugang",
+      "description": "Ein strukturierter Ablauf für Inhaber und bevollmächtigte Vertreter — keine offenen Brute-Force-Versprechen.",
+      "step_label": "Schritt {number}",
+      "steps": {
+        "submit": {
+          "title": "Falldetails einreichen",
+          "desc": "Wallet-Typ, vorhandenes Backup-Material und Passwort-Hinweise oder Muster, an die Sie sich erinnern. Die erste Machbarkeitsprüfung gehört zur Aufnahme."
+        },
+        "scope": {
+          "title": "Umfang und Machbarkeit",
+          "desc": "Wir sagen Ihnen offen, ob eine Entschlüsselung sinnvoll ist, mit welchem Aufwand und welchen Gebühren — bevor Sie kostenpflichtige Arbeit beauftragen."
+        },
+        "recover": {
+          "title": "Kontrollierte Wiederherstellung",
+          "desc": "Bei Beauftragung läuft die Entschlüsselung in einer kontrollierten Umgebung. Sie erhalten wieder Zugang und bewegen Assets in Ihrem eigenen Tempo."
+        }
+      },
+      "btn_primary": "Bewertung starten",
+      "btn_secondary": "Mit Team sprechen"
+    },
+    "Support": {
+      "eyebrow": "Technische Abdeckung",
+      "title": "Wallet-Typen, die wir häufig sehen",
+      "description": "Die Abdeckung hängt von Dateiformat, Backup-Vollständigkeit und Verschlüsselungsstärke ab. Bestätigen Sie Ihren Fall bei der Aufnahme.",
+      "columns": {
+        "software": {
+          "title": "Software-Wallets",
+          "desc": "Bitcoin Core, Electrum, MetaMask JSON-Keystores, Exodus-Backups und ähnliche lokal verschlüsselte Wallet-Dateien."
+        },
+        "hardware": {
+          "title": "Hardware-Geräte",
+          "desc": "Ausgewählte Fälle mit beschädigten Ledger- oder Trezor-Geräten, bei denen Chip-Daten oder Backups noch einen Wiederherstellungsweg ergeben — nicht verlorene PIN ohne jegliches Backup."
+        },
+        "formats": {
+          "title": "Legacy und Sonderfälle",
+          "desc": "Ältere wallet.dat-Varianten, BIP38-verschlüsselte Keys und Enterprise-Vault-Exporte — einzeln bewertet."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Wallet-Datei vorhanden, Zugang verloren?",
+      "subtitle": "Beschreiben Sie den Wallet-Typ und welches Backup-Material Sie noch haben. Wir sagen Ihnen, ob ein Wiederherstellungsweg existiert, bevor ein kostenpflichtiges Mandat beginnt.",
+      "btn_primary": "Bewertung anfragen",
+      "btn_secondary": "Team kontaktieren"
+    }
+  },
+  "fr": {
+    "meta": {
+      "title": "Récupération d'accès aux wallets | Lenix Protocol",
+      "description": "Retrouver l'accès aux wallets logiciels et matériels lorsque les mots de passe sont perdus ou les fichiers endommagés. Faisabilité évaluée en premier. Vous gardez le contrôle de vos actifs."
+    },
+    "Hero": {
+      "eyebrow": "Récupération d'accès aux wallets",
+      "title1": "Retrouver l'accès aux wallets ",
+      "title2": "que vous possédez déjà",
+      "subtitle": "Mots de passe oubliés, fichiers wallet corrompus et sauvegardes partielles — pas les réinitialisations de connexion exchange ni les wallets appartenant à autrui. Nous évaluons si une récupération est réaliste avant tout travail payant.",
+      "btn_primary": "Demander une évaluation",
+      "btn_secondary": "Contacter l'équipe"
+    },
+    "Audiences": {
+      "eyebrow": "Pour qui",
+      "title": "Situations courantes que nous examinons",
+      "description": "La plupart des clients ont encore un fichier wallet, un appareil ou un fragment de sauvegarde. Ils ont perdu le mot de passe, le chemin PIN ou la seed lisible — pas la propriété sous-jacente.",
+      "cards": {
+        "password": {
+          "title": "Mot de passe wallet oublié",
+          "desc": "Wallets logiciels tels que keystores MetaMask, Electrum ou Bitcoin Core où le fichier existe mais le mot de passe de chiffrement est perdu."
+        },
+        "file": {
+          "title": "Fichiers endommagés ou partiels",
+          "desc": "Fichiers wallet.dat corrompus, sauvegardes incomplètes ou métadonnées récupérées d'un ancien appareil pouvant encore contenir le matériel de clé."
+        },
+        "estate": {
+          "title": "Succession et questions juridiques",
+          "desc": "Exécuteurs testamentaires, fiduciaires ou conseils qui ont besoin de voies d'accès documentées pour le wallet d'un titulaire décédé ou incapacité — avec autorisation appropriée."
+        },
+        "treasury": {
+          "title": "Verrouillage opérationnel de wallet",
+          "desc": "Équipes ayant perdu les identifiants d'un wallet trésorerie ou opérations et ayant besoin d'un processus de récupération contrôlé avec traitement compatible audit."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Périmètre et limites",
+      "title1": "Ce que nous faisons — ",
+      "title2": "et ce que nous refusons",
+      "subtitle": "La récupération de wallet est une catégorie de fraude courante. Lenix n'accepte que les dossiers avec propriété claire, autorisation documentée et une voie technique qui vaut la peine d'être tentée.",
+      "items": {
+        "ownership": {
+          "title": "Propriété vérifiable requise",
+          "desc": "Nous travaillons sur les wallets que vous possédez ou que vous êtes légalement autorisé à récupérer — pas les adresses tierces ou identifiants obtenus sans consentement."
+        },
+        "assessment": {
+          "title": "Faisabilité avant frais",
+          "desc": "Nous examinons le type de wallet, l'état des sauvegardes et les indices de mot de passe avant de cadrer un travail de déchiffrement payant. Les dossiers sans issue sont refusés tôt."
+        },
+        "no_custody": {
+          "title": "Vous déplacez les actifs",
+          "desc": "Une fois l'accès rétabli, vous transférez les fonds vous-même. Lenix ne prend pas en garde la cryptomonnaie récupérée."
+        },
+        "no_scam": {
+          "title": "Pas de pièges d'accès à distance",
+          "desc": "Nous ne demandons pas de partage d'écran, de dépôts de vérification ni de frais de déblocage anticipés — schémas utilisés par les sites de récupération frauduleux."
+        },
+        "decline": {
+          "title": "Dossiers que nous refusons généralement",
+          "desc": "Adresse publique seule, fichiers wallet achetés en ligne, ou wallets matériels avec PIN perdu et sans sauvegarde ne sont généralement pas récupérables."
+        },
+        "confidential": {
+          "title": "Traitement contrôlé",
+          "desc": "Les matériaux wallet sont traités dans une chaîne de custody définie avec contrôles d'accès — pas transmis par des canaux informels."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Comment ça marche",
+      "title": "De l'évaluation à l'accès",
+      "description": "Un parcours structuré pour les titulaires et représentants autorisés — pas de promesses ouvertes de force brute.",
+      "step_label": "Étape {number}",
+      "steps": {
+        "submit": {
+          "title": "Soumettre les détails du dossier",
+          "desc": "Type de wallet, matériel de sauvegarde disponible et indices ou schémas de mot de passe mémorisés. L'examen initial de faisabilité fait partie de l'admission."
+        },
+        "scope": {
+          "title": "Périmètre et faisabilité",
+          "desc": "Nous vous disons clairement si le déchiffrement vaut la peine, l'effort attendu et les frais — avant que vous ne vous engagiez sur un travail payant."
+        },
+        "recover": {
+          "title": "Récupération contrôlée",
+          "desc": "Si mandaté, le déchiffrement s'exécute dans un environnement contrôlé. Vous retrouvez l'accès et déplacez les actifs à votre rythme."
+        }
+      },
+      "btn_primary": "Commencer l'évaluation",
+      "btn_secondary": "Parler à l'équipe"
+    },
+    "Support": {
+      "eyebrow": "Couverture technique",
+      "title": "Types de wallets que nous voyons souvent",
+      "description": "La couverture dépend du format de fichier, de l'exhaustivité des sauvegardes et de la force du chiffrement. Confirmez le vôtre lors de l'admission.",
+      "columns": {
+        "software": {
+          "title": "Wallets logiciels",
+          "desc": "Bitcoin Core, Electrum, keystores JSON MetaMask, sauvegardes Exodus et fichiers wallet chiffrés localement similaires."
+        },
+        "hardware": {
+          "title": "Appareils matériels",
+          "desc": "Cas sélectionnés impliquant des appareils Ledger ou Trezor endommagés où les données de puce ou sauvegardes peuvent encore offrir une voie — pas PIN perdu sans aucune sauvegarde."
+        },
+        "formats": {
+          "title": "Legacy et sur mesure",
+          "desc": "Anciennes variantes wallet.dat, clés chiffrées BIP38 et exports de coffre entreprise — évalués individuellement."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Vous avez un fichier wallet mais plus d'accès ?",
+      "subtitle": "Décrivez le type de wallet et le matériel de sauvegarde restant. Nous vous dirons si une voie de récupération existe avant tout engagement payant.",
+      "btn_primary": "Demander une évaluation",
+      "btn_secondary": "Contacter l'équipe"
+    }
+  },
+  "es": {
+    "meta": {
+      "title": "Recuperación de acceso a wallets | Lenix Protocol",
+      "description": "Recupere el acceso a wallets de software y hardware cuando se pierden contraseñas o se dañan archivos. Viabilidad evaluada primero. Usted mantiene el control de sus activos."
+    },
+    "Hero": {
+      "eyebrow": "Recuperación de acceso a wallets",
+      "title1": "Recupere el acceso a wallets ",
+      "title2": "que ya le pertenecen",
+      "subtitle": "Contraseñas olvidadas, archivos wallet corruptos y copias de seguridad parciales — no restablecimientos de acceso en exchanges ni wallets de terceros. Evaluamos si la recuperación es realista antes de iniciar trabajo de pago.",
+      "btn_primary": "Solicitar evaluación",
+      "btn_secondary": "Contactar al equipo"
+    },
+    "Audiences": {
+      "eyebrow": "Para quién es",
+      "title": "Situaciones habituales que revisamos",
+      "description": "La mayoría de clientes aún tienen un archivo wallet, dispositivo o fragmento de backup. Perdieron la contraseña, la ruta del PIN o la seed legible — no la propiedad subyacente.",
+      "cards": {
+        "password": {
+          "title": "Contraseña de wallet olvidada",
+          "desc": "Wallets de software como keystores de MetaMask, Electrum o Bitcoin Core donde el archivo existe pero se perdió la contraseña de cifrado."
+        },
+        "file": {
+          "title": "Archivos dañados o parciales",
+          "desc": "Archivos wallet.dat corruptos, copias incompletas o metadatos recuperados de un dispositivo antiguo que aún pueden contener material de clave."
+        },
+        "estate": {
+          "title": "Sucesión y asuntos legales",
+          "desc": "Albaceas, fiduciarios o abogados que necesitan rutas de acceso documentadas para la wallet de un titular fallecido o incapacitado — con autorización adecuada."
+        },
+        "treasury": {
+          "title": "Bloqueo operativo de wallet",
+          "desc": "Equipos que perdieron credenciales de una wallet de tesorería u operaciones y necesitan un proceso de recuperación controlado con manejo apto para auditoría."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Alcance y límites",
+      "title1": "Lo que hacemos — ",
+      "title2": "y lo que rechazamos",
+      "subtitle": "La recuperación de wallets es una categoría frecuente de estafa. Lenix solo acepta casos con propiedad clara, autorización documentada y una vía técnica que valga la pena intentar.",
+      "items": {
+        "ownership": {
+          "title": "Propiedad demostrable requerida",
+          "desc": "Trabajamos en wallets que usted posee o está legalmente autorizado a recuperar — no direcciones de terceros ni credenciales obtenidas sin consentimiento."
+        },
+        "assessment": {
+          "title": "Viabilidad antes de honorarios",
+          "desc": "Revisamos tipo de wallet, estado del backup e indicios de contraseña antes de definir trabajo de descifrado de pago. Rechazamos pronto los casos sin salida."
+        },
+        "no_custody": {
+          "title": "Usted mueve los activos",
+          "desc": "Cuando se restablece el acceso, usted transfiere los fondos. Lenix no toma custodia de criptomoneda recuperada."
+        },
+        "no_scam": {
+          "title": "Sin trucos de acceso remoto",
+          "desc": "No pedimos compartir pantalla, depósitos de verificación ni tarifas anticipadas de desbloqueo — patrones de sitios de recuperación fraudulentos."
+        },
+        "decline": {
+          "title": "Casos que solemos rechazar",
+          "desc": "Solo dirección pública, archivos wallet comprados en línea o wallets hardware con PIN perdido y sin backup suelen no ser recuperables."
+        },
+        "confidential": {
+          "title": "Manejo controlado",
+          "desc": "Los materiales de wallet se procesan en una cadena de custodia definida con controles de acceso — no por canales informales."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Cómo funciona",
+      "title": "De la evaluación al acceso",
+      "description": "Un recorrido estructurado para titulares y representantes autorizados — no promesas abiertas de fuerza bruta.",
+      "step_label": "Paso {number}",
+      "steps": {
+        "submit": {
+          "title": "Enviar detalles del caso",
+          "desc": "Tipo de wallet, material de backup disponible e indicios o patrones de contraseña que recuerde. La revisión inicial de viabilidad forma parte de la admisión."
+        },
+        "scope": {
+          "title": "Alcance y factibilidad",
+          "desc": "Le decimos con claridad si vale la pena intentar el descifrado, el esfuerzo esperado y los honorarios — antes de comprometer trabajo de pago."
+        },
+        "recover": {
+          "title": "Recuperación controlada",
+          "desc": "Si se contrata, el descifrado se ejecuta en un entorno controlado. Recupera el acceso y mueve activos a su propio ritmo."
+        }
+      },
+      "btn_primary": "Iniciar evaluación",
+      "btn_secondary": "Hablar con el equipo"
+    },
+    "Support": {
+      "eyebrow": "Cobertura técnica",
+      "title": "Tipos de wallet que vemos con frecuencia",
+      "description": "La cobertura depende del formato de archivo, completitud del backup y fuerza del cifrado. Confirme el suyo en la admisión.",
+      "columns": {
+        "software": {
+          "title": "Wallets de software",
+          "desc": "Bitcoin Core, Electrum, keystores JSON de MetaMask, backups de Exodus y archivos wallet cifrados localmente similares."
+        },
+        "hardware": {
+          "title": "Dispositivos hardware",
+          "desc": "Casos selectos con dispositivos Ledger o Trezor dañados donde datos del chip o backups aún pueden ofrecer una vía — no PIN perdido sin ningún backup."
+        },
+        "formats": {
+          "title": "Legacy y personalizado",
+          "desc": "Variantes antiguas de wallet.dat, claves cifradas BIP38 y exportaciones de bóveda empresarial — evaluadas individualmente."
+        }
+      }
+    },
+    "Cta": {
+      "title": "¿Tiene archivo wallet pero perdió el acceso?",
+      "subtitle": "Describa el tipo de wallet y qué material de backup conserva. Le diremos si existe una vía de recuperación antes de cualquier compromiso de pago.",
+      "btn_primary": "Solicitar evaluación",
+      "btn_secondary": "Contactar al equipo"
+    }
+  },
+  "pt": {
+    "meta": {
+      "title": "Recuperação de acesso a wallets | Lenix Protocol",
+      "description": "Recupere o acesso a wallets de software e hardware quando senhas são perdidas ou arquivos danificados. Viabilidade avaliada primeiro. Você mantém o controle dos seus ativos."
+    },
+    "Hero": {
+      "eyebrow": "Recuperação de acesso a wallets",
+      "title1": "Recupere o acesso a wallets ",
+      "title2": "que já são seus",
+      "subtitle": "Senhas esquecidas, arquivos wallet corrompidos e backups parciais — não redefinições de login em exchanges nem wallets de terceiros. Avaliamos se a recuperação é realista antes de iniciar trabalho pago.",
+      "btn_primary": "Solicitar avaliação",
+      "btn_secondary": "Contactar equipa"
+    },
+    "Audiences": {
+      "eyebrow": "Para quem é",
+      "title": "Situações comuns que analisamos",
+      "description": "A maioria dos clientes ainda tem um arquivo wallet, dispositivo ou fragmento de backup. Perderam a senha, o caminho do PIN ou a seed legível — não a propriedade subjacente.",
+      "cards": {
+        "password": {
+          "title": "Senha de wallet esquecida",
+          "desc": "Wallets de software como keystores MetaMask, Electrum ou Bitcoin Core onde o arquivo existe mas a senha de criptografia foi perdida."
+        },
+        "file": {
+          "title": "Arquivos danificados ou parciais",
+          "desc": "Arquivos wallet.dat corrompidos, backups incompletos ou metadados recuperados de um dispositivo antigo que ainda podem conter material de chave."
+        },
+        "estate": {
+          "title": "Sucessão e questões legais",
+          "desc": "Inventariantes, fiduciários ou advogados que precisam de caminhos de acesso documentados para a wallet de um titular falecido ou incapacitado — com autorização adequada."
+        },
+        "treasury": {
+          "title": "Bloqueio operacional de wallet",
+          "desc": "Equipas que perderam credenciais de uma wallet de tesouraria ou operações e precisam de um processo de recuperação controlado com tratamento compatível com auditoria."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Âmbito e limites",
+      "title1": "O que fazemos — ",
+      "title2": "e o que recusamos",
+      "subtitle": "Recuperação de wallet é uma categoria comum de fraude. A Lenix só aceita casos com propriedade clara, autorização documentada e um caminho técnico que valha a pena tentar.",
+      "items": {
+        "ownership": {
+          "title": "Propriedade comprovável exigida",
+          "desc": "Trabalhamos em wallets que você possui ou está legalmente autorizado a recuperar — não endereços de terceiros ou credenciais obtidas sem consentimento."
+        },
+        "assessment": {
+          "title": "Viabilidade antes de honorários",
+          "desc": "Analisamos tipo de wallet, estado do backup e pistas de senha antes de definir trabalho de descriptografia pago. Recusamos cedo casos sem saída."
+        },
+        "no_custody": {
+          "title": "Você move os ativos",
+          "desc": "Quando o acesso é restabelecido, você transfere os fundos. A Lenix não toma custódia de criptomoeda recuperada."
+        },
+        "no_scam": {
+          "title": "Sem truques de acesso remoto",
+          "desc": "Não pedimos partilha de ecrã, depósitos de verificação nem taxas antecipadas de desbloqueio — padrões de sites de recuperação fraudulentos."
+        },
+        "decline": {
+          "title": "Casos que normalmente recusamos",
+          "desc": "Apenas endereço público, arquivos wallet comprados online ou wallets hardware com PIN perdido e sem backup geralmente não são recuperáveis."
+        },
+        "confidential": {
+          "title": "Tratamento controlado",
+          "desc": "Materiais de wallet são processados numa cadeia de custódia definida com controlos de acesso — não por canais informais."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Como funciona",
+      "title": "Da avaliação ao acesso",
+      "description": "Um percurso estruturado para titulares e representantes autorizados — não promessas abertas de força bruta.",
+      "step_label": "Passo {number}",
+      "steps": {
+        "submit": {
+          "title": "Enviar detalhes do caso",
+          "desc": "Tipo de wallet, material de backup existente e pistas ou padrões de senha que lembre. A revisão inicial de viabilidade faz parte da admissão."
+        },
+        "scope": {
+          "title": "Âmbito e viabilidade",
+          "desc": "Dizemos claramente se a descriptografia vale a pena, o esforço esperado e os honorários — antes de comprometer trabalho pago."
+        },
+        "recover": {
+          "title": "Recuperação controlada",
+          "desc": "Se contratado, a descriptografia corre num ambiente controlado. Recupera o acesso e move ativos ao seu ritmo."
+        }
+      },
+      "btn_primary": "Iniciar avaliação",
+      "btn_secondary": "Falar com a equipa"
+    },
+    "Support": {
+      "eyebrow": "Cobertura técnica",
+      "title": "Tipos de wallet que vemos com frequência",
+      "description": "A cobertura depende do formato de arquivo, completude do backup e força da criptografia. Confirme o seu na admissão.",
+      "columns": {
+        "software": {
+          "title": "Wallets de software",
+          "desc": "Bitcoin Core, Electrum, keystores JSON MetaMask, backups Exodus e arquivos wallet cifrados localmente semelhantes."
+        },
+        "hardware": {
+          "title": "Dispositivos hardware",
+          "desc": "Casos selecionados com dispositivos Ledger ou Trezor danificados onde dados do chip ou backups ainda podem oferecer uma via — não PIN perdido sem qualquer backup."
+        },
+        "formats": {
+          "title": "Legacy e personalizado",
+          "desc": "Variantes antigas de wallet.dat, chaves cifradas BIP38 e exportações de cofre empresarial — avaliadas individualmente."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Tem arquivo wallet mas perdeu o acesso?",
+      "subtitle": "Descreva o tipo de wallet e que material de backup ainda tem. Diremos se existe um caminho de recuperação antes de qualquer compromisso pago.",
+      "btn_primary": "Solicitar avaliação",
+      "btn_secondary": "Contactar equipa"
+    }
+  },
+  "it": {
+    "meta": {
+      "title": "Recupero accesso wallet | Lenix Protocol",
+      "description": "Recupera l'accesso a wallet software e hardware quando le password sono perse o i file danneggiati. Fattibilità valutata per prima. Mantieni il controllo dei tuoi asset."
+    },
+    "Hero": {
+      "eyebrow": "Recupero accesso wallet",
+      "title1": "Riprendi l'accesso ai wallet ",
+      "title2": "che possiedi già",
+      "subtitle": "Password dimenticate, file wallet corrotti e backup parziali — non reset di login exchange né wallet di altri. Valutiamo se il recupero è realistico prima di iniziare lavoro a pagamento.",
+      "btn_primary": "Richiedi valutazione",
+      "btn_secondary": "Contatta il team"
+    },
+    "Audiences": {
+      "eyebrow": "Per chi è",
+      "title": "Situazioni comuni che esaminiamo",
+      "description": "La maggior parte dei clienti ha ancora un file wallet, un dispositivo o un frammento di backup. Hanno perso la password, il percorso PIN o la seed leggibile — non la proprietà sottostante.",
+      "cards": {
+        "password": {
+          "title": "Password wallet dimenticata",
+          "desc": "Wallet software come keystore MetaMask, Electrum o Bitcoin Core dove il file esiste ma la password di crittografia è persa."
+        },
+        "file": {
+          "title": "File danneggiati o parziali",
+          "desc": "File wallet.dat corrotti, backup incompleti o metadati recuperati da un dispositivo vecchio che possono ancora contenere materiale chiave."
+        },
+        "estate": {
+          "title": "Successione e questioni legali",
+          "desc": "Esecutori, fiduciari o consulenti che necessitano percorsi di accesso documentati per il wallet di un titolare deceduto o incapace — con autorizzazione appropriata."
+        },
+        "treasury": {
+          "title": "Blocco operativo del wallet",
+          "desc": "Team che hanno perso le credenziali di un wallet tesoreria o operazioni e necessitano un processo di recupero controllato con gestione adatta all'audit."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Ambito e limiti",
+      "title1": "Cosa facciamo — ",
+      "title2": "e cosa rifiutiamo",
+      "subtitle": "Il recupero wallet è una categoria comune di truffa. Lenix accetta solo casi con proprietà chiara, autorizzazione documentata e un percorso tecnico che vale la pena tentare.",
+      "items": {
+        "ownership": {
+          "title": "Proprietà dimostrabile richiesta",
+          "desc": "Lavoriamo su wallet che possiedi o sei legalmente autorizzato a recuperare — non indirizzi di terzi o credenziali ottenute senza consenso."
+        },
+        "assessment": {
+          "title": "Fattibilità prima delle tariffe",
+          "desc": "Esaminiamo tipo di wallet, stato del backup e indizi password prima di definire lavoro di decrittazione a pagamento. I casi senza prospettive vengono rifiutati presto."
+        },
+        "no_custody": {
+          "title": "Sposti tu gli asset",
+          "desc": "Quando l'accesso è ripristinato, trasferisci i fondi tu. Lenix non prende in custodia criptovaluta recuperata."
+        },
+        "no_scam": {
+          "title": "Nessun trucco di accesso remoto",
+          "desc": "Non chiediamo condivisione schermo, depositi di verifica o tariffe anticipate di sblocco — schemi usati da siti di recupero fraudolenti."
+        },
+        "decline": {
+          "title": "Casi che di solito rifiutiamo",
+          "desc": "Solo indirizzo pubblico, file wallet acquistati online o wallet hardware con PIN perso e senza backup di solito non sono recuperabili."
+        },
+        "confidential": {
+          "title": "Gestione controllata",
+          "desc": "I materiali wallet sono elaborati in una catena di custodia definita con controlli di accesso — non tramite canali informali."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Come funziona",
+      "title": "Dalla valutazione all'accesso",
+      "description": "Un percorso strutturato per titolari e rappresentanti autorizzati — non promesse aperte di forza bruta.",
+      "step_label": "Passo {number}",
+      "steps": {
+        "submit": {
+          "title": "Invia dettagli del caso",
+          "desc": "Tipo di wallet, materiale di backup esistente e indizi o schemi password che ricordi. La revisione iniziale di fattibilità fa parte dell'intake."
+        },
+        "scope": {
+          "title": "Ambito e fattibilità",
+          "desc": "Ti diciamo chiaramente se vale la pena tentare la decrittazione, lo sforzo atteso e le tariffe — prima di impegnarti in lavoro a pagamento."
+        },
+        "recover": {
+          "title": "Recupero controllato",
+          "desc": "Se incaricati, la decrittazione avviene in un ambiente controllato. Riprendi l'accesso e sposti gli asset al tuo ritmo."
+        }
+      },
+      "btn_primary": "Avvia valutazione",
+      "btn_secondary": "Parla con il team"
+    },
+    "Support": {
+      "eyebrow": "Copertura tecnica",
+      "title": "Tipi di wallet che vediamo spesso",
+      "description": "La copertura dipende dal formato file, completezza del backup e forza della crittografia. Conferma il tuo durante l'intake.",
+      "columns": {
+        "software": {
+          "title": "Wallet software",
+          "desc": "Bitcoin Core, Electrum, keystore JSON MetaMask, backup Exodus e file wallet crittografati localmente simili."
+        },
+        "hardware": {
+          "title": "Dispositivi hardware",
+          "desc": "Casi selezionati con dispositivi Ledger o Trezor danneggiati dove dati del chip o backup possono ancora offrire un percorso — non PIN perso senza alcun backup."
+        },
+        "formats": {
+          "title": "Legacy e personalizzato",
+          "desc": "Varianti wallet.dat più vecchie, chiavi crittografate BIP38 ed export di vault enterprise — valutati individualmente."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Hai un file wallet ma hai perso l'accesso?",
+      "subtitle": "Descrivi il tipo di wallet e quale materiale di backup conservi. Ti diremo se esiste un percorso di recupero prima di qualsiasi impegno a pagamento.",
+      "btn_primary": "Richiedi valutazione",
+      "btn_secondary": "Contatta il team"
+    }
+  },
+  "id": {
+    "meta": {
+      "title": "Pemulihan Akses Wallet | Lenix Protocol",
+      "description": "Pulihkan akses ke wallet perangkat lunak dan keras saat kata sandi hilang atau file rusak. Kelayakan dinilai terlebih dahulu. Anda tetap mengontrol aset Anda."
+    },
+    "Hero": {
+      "eyebrow": "Pemulihan akses wallet",
+      "title1": "Dapatkan kembali akses ke wallet ",
+      "title2": "yang sudah Anda miliki",
+      "subtitle": "Kata sandi terlupa, file wallet rusak, dan cadangan sebagian — bukan reset login exchange atau wallet milik orang lain. Kami menilai apakah pemulihan realistis sebelum pekerjaan berbayar dimulai.",
+      "btn_primary": "Minta penilaian",
+      "btn_secondary": "Hubungi tim"
+    },
+    "Audiences": {
+      "eyebrow": "Untuk siapa",
+      "title": "Situasi umum yang kami tinjau",
+      "description": "Kebanyakan klien masih memiliki file wallet, perangkat, atau fragmen cadangan. Mereka kehilangan kata sandi, jalur PIN, atau seed yang terbaca — bukan kepemilikan asetnya.",
+      "cards": {
+        "password": {
+          "title": "Kata sandi wallet terlupa",
+          "desc": "Wallet perangkat lunak seperti keystore MetaMask, Electrum, atau Bitcoin Core di mana filenya ada tetapi kata sandi enkripsi hilang."
+        },
+        "file": {
+          "title": "File rusak atau sebagian",
+          "desc": "File wallet.dat rusak, cadangan tidak lengkap, atau metadata dari perangkat lama yang mungkin masih menyimpan materi kunci."
+        },
+        "estate": {
+          "title": "Warisan dan urusan hukum",
+          "desc": "Pelaksana wasiat, trustee, atau penasihat yang membutuhkan jalur akses terdokumentasi untuk wallet pemegang yang meninggal atau tidak mampu — dengan otorisasi yang tepat."
+        },
+        "treasury": {
+          "title": "Kunci operasional wallet",
+          "desc": "Tim yang kehilangan kredensial wallet treasury atau operasi dan membutuhkan proses pemulihan terkendali dengan penanganan yang ramah audit."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Ruang lingkup dan batas",
+      "title1": "Yang kami lakukan — ",
+      "title2": "dan yang kami tolak",
+      "subtitle": "Pemulihan wallet adalah kategori penipuan yang umum. Lenix hanya menerima kasus dengan kepemilikan jelas, otorisasi terdokumentasi, dan jalur teknis yang layak dicoba.",
+      "items": {
+        "ownership": {
+          "title": "Kepemilikan yang dapat dibuktikan diperlukan",
+          "desc": "Kami bekerja pada wallet yang Anda miliki atau diizinkan secara hukum untuk dipulihkan — bukan alamat pihak ketiga atau kredensial tanpa persetujuan."
+        },
+        "assessment": {
+          "title": "Kelayakan sebelum biaya",
+          "desc": "Kami meninjau jenis wallet, status cadangan, dan petunjuk kata sandi sebelum menentukan pekerjaan dekripsi berbayar. Kasus tanpa harapan ditolak lebih awal."
+        },
+        "no_custody": {
+          "title": "Anda yang memindahkan aset",
+          "desc": "Saat akses dipulihkan, Anda mentransfer dana sendiri. Lenix tidak mengambil kustodi kripto yang dipulihkan."
+        },
+        "no_scam": {
+          "title": "Tanpa trik akses jarak jauh",
+          "desc": "Kami tidak meminta berbagi layar, deposit verifikasi, atau biaya buka kunci di muka — pola situs pemulihan palsu."
+        },
+        "decline": {
+          "title": "Kasus yang biasanya kami tolak",
+          "desc": "Hanya alamat publik, file wallet dibeli online, atau wallet hardware dengan PIN hilang tanpa cadangan biasanya tidak dapat dipulihkan."
+        },
+        "confidential": {
+          "title": "Penanganan terkendali",
+          "desc": "Materi wallet diproses dalam rantai penahanan yang terdefinisi dengan kontrol akses — bukan melalui saluran informal."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Cara kerjanya",
+      "title": "Dari penilaian ke akses",
+      "description": "Jalur terstruktur untuk pemegang dan perwakilan berwenang — bukan janji brute-force tanpa batas.",
+      "step_label": "Langkah {number}",
+      "steps": {
+        "submit": {
+          "title": "Kirim detail kasus",
+          "desc": "Jenis wallet, materi cadangan yang ada, dan petunjuk atau pola kata sandi yang Anda ingat. Tinjauan kelayakan awal adalah bagian dari intake."
+        },
+        "scope": {
+          "title": "Ruangan lingkup dan kelayakan",
+          "desc": "Kami memberitahu dengan jelas apakah dekripsi layak dicoba, perkiraan usaha, dan biaya — sebelum Anda berkomitmen pada pekerjaan berbayar."
+        },
+        "recover": {
+          "title": "Pemulihan terkendali",
+          "desc": "Jika dipercayakan, dekripsi berjalan di lingkungan terkendali. Anda mendapat kembali akses dan memindahkan aset sesuai jadwal Anda."
+        }
+      },
+      "btn_primary": "Mulai penilaian",
+      "btn_secondary": "Bicara dengan tim"
+    },
+    "Support": {
+      "eyebrow": "Cakupan teknis",
+      "title": "Jenis wallet yang sering kami lihat",
+      "description": "Cakupan bergantung pada format file, kelengkapan cadangan, dan kekuatan enkripsi. Konfirmasi milik Anda saat intake.",
+      "columns": {
+        "software": {
+          "title": "Wallet perangkat lunak",
+          "desc": "Bitcoin Core, Electrum, keystore JSON MetaMask, cadangan Exodus, dan file wallet terenkripsi lokal serupa."
+        },
+        "hardware": {
+          "title": "Perangkat keras",
+          "desc": "Kasus terpilih dengan perangkat Ledger atau Trezor rusak di mana data chip atau cadangan masih mungkin memberi jalur — bukan PIN hilang tanpa cadangan sama sekali."
+        },
+        "formats": {
+          "title": "Legacy dan kustom",
+          "desc": "Varian wallet.dat lama, kunci terenkripsi BIP38, dan ekspor vault enterprise — dinilai per kasus."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Punya file wallet tapi kehilangan akses?",
+      "subtitle": "Jelaskan jenis wallet dan materi cadangan yang masih Anda miliki. Kami akan memberitahu apakah ada jalur pemulihan sebelum engagement berbayar.",
+      "btn_primary": "Minta penilaian",
+      "btn_secondary": "Hubungi tim"
+    }
+  },
+  "vi": {
+    "meta": {
+      "title": "Khôi phục quyền truy cập ví | Lenix Protocol",
+      "description": "Khôi phục quyền truy cập ví phần mềm và phần cứng khi mất mật khẩu hoặc file bị hỏng. Khả thi được đánh giá trước. Bạn giữ quyền kiểm soát tài sản."
+    },
+    "Hero": {
+      "eyebrow": "Khôi phục quyền truy cập ví",
+      "title1": "Lấy lại quyền truy cập ví ",
+      "title2": "thuộc về bạn",
+      "subtitle": "Quên mật khẩu, file ví hỏng và bản sao lưu không đầy đủ — không phải đặt lại đăng nhập sàn hay ví của người khác. Chúng tôi đánh giá khả năng khôi phục trước khi bắt đầu công việc trả phí.",
+      "btn_primary": "Yêu cầu đánh giá",
+      "btn_secondary": "Liên hệ đội ngũ"
+    },
+    "Audiences": {
+      "eyebrow": "Dành cho ai",
+      "title": "Tình huống thường gặp chúng tôi xem xét",
+      "description": "Hầu hết khách hàng vẫn còn file ví, thiết bị hoặc mảnh sao lưu. Họ mất mật khẩu, đường PIN hoặc seed đọc được — không mất quyền sở hữu tài sản.",
+      "cards": {
+        "password": {
+          "title": "Quên mật khẩu ví",
+          "desc": "Ví phần mềm như keystore MetaMask, Electrum hoặc Bitcoin Core khi file còn nhưng mất mật khẩu mã hóa."
+        },
+        "file": {
+          "title": "File hỏng hoặc không đầy đủ",
+          "desc": "File wallet.dat hỏng, bản sao lưu chưa hoàn chỉnh hoặc metadata từ thiết bị cũ có thể vẫn chứa vật liệu khóa."
+        },
+        "estate": {
+          "title": "Di sản và vấn đề pháp lý",
+          "desc": "Người thi hành, ủy thác hoặc luật sư cần đường truy cập có tài liệu cho ví của người nắm giữ đã mất hoặc mất năng lực — với ủy quyền hợp lệ."
+        },
+        "treasury": {
+          "title": "Khóa ví vận hành",
+          "desc": "Đội mất thông tin đăng nhập ví kho quỹ hoặc vận hành và cần quy trình khôi phục có kiểm soát với xử lý phù hợp kiểm toán."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Phạm vi và giới hạn",
+      "title1": "Chúng tôi làm gì — ",
+      "title2": "và từ chối gì",
+      "subtitle": "Khôi phục ví là loại lừa đảo phổ biến. Lenix chỉ nhận hồ sơ có quyền sở hữu rõ ràng, ủy quyền có tài liệu và đường kỹ thuật đáng thử.",
+      "items": {
+        "ownership": {
+          "title": "Yêu cầu chứng minh quyền sở hữu",
+          "desc": "Chúng tôi làm việc với ví bạn sở hữu hoặc được phép khôi phục hợp pháp — không phải địa chỉ bên thứ ba hay thông tin đăng nhập không có sự đồng ý."
+        },
+        "assessment": {
+          "title": "Khả thi trước phí",
+          "desc": "Chúng tôi xem xét loại ví, trạng thái sao lưu và gợi ý mật khẩu trước khi xác định công việc giải mã trả phí. Từ chối sớm các hồ sơ không có hy vọng."
+        },
+        "no_custody": {
+          "title": "Bạn tự chuyển tài sản",
+          "desc": "Khi truy cập được khôi phục, bạn tự chuyển tiền. Lenix không giữ hộ tiền mã hóa đã khôi phục."
+        },
+        "no_scam": {
+          "title": "Không dùng trò truy cập từ xa",
+          "desc": "Chúng tôi không yêu cầu chia sẻ màn hình, nạp xác minh hay phí mở khóa trước — mẫu của các trang khôi phục lừa đảo."
+        },
+        "decline": {
+          "title": "Hồ sơ thường bị từ chối",
+          "desc": "Chỉ có địa chỉ công khai, file ví mua online, hoặc ví phần cứng mất PIN không có sao lưu thường không thể khôi phục."
+        },
+        "confidential": {
+          "title": "Xử lý có kiểm soát",
+          "desc": "Vật liệu ví được xử lý theo chuỗi lưu giữ xác định với kiểm soát truy cập — không qua kênh không chính thức."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Cách hoạt động",
+      "title": "Từ đánh giá đến truy cập",
+      "description": "Lộ trình có cấu trúc cho người nắm giữ và đại diện được ủy quyền — không hứa brute-force mở rộng.",
+      "step_label": "Bước {number}",
+      "steps": {
+        "submit": {
+          "title": "Gửi chi tiết hồ sơ",
+          "desc": "Loại ví, vật liệu sao lưu còn lại và gợi ý hoặc mẫu mật khẩu bạn nhớ. Đánh giá khả thi ban đầu là một phần của intake."
+        },
+        "scope": {
+          "title": "Phạm vi và khả thi",
+          "desc": "Chúng tôi nói rõ liệu giải mã có đáng thử, công sức dự kiến và phí — trước khi bạn cam kết công việc trả phí."
+        },
+        "recover": {
+          "title": "Khôi phục có kiểm soát",
+          "desc": "Nếu được thuê, giải mã chạy trong môi trường kiểm soát. Bạn lấy lại quyền truy cập và chuyển tài sản theo nhịp của mình."
+        }
+      },
+      "btn_primary": "Bắt đầu đánh giá",
+      "btn_secondary": "Nói chuyện với đội"
+    },
+    "Support": {
+      "eyebrow": "Phạm vi kỹ thuật",
+      "title": "Loại ví thường gặp",
+      "description": "Phạm vi phụ thuộc định dạng file, mức đầy đủ sao lưu và độ mạnh mã hóa. Xác nhận của bạn khi intake.",
+      "columns": {
+        "software": {
+          "title": "Ví phần mềm",
+          "desc": "Bitcoin Core, Electrum, keystore JSON MetaMask, sao lưu Exodus và file ví mã hóa cục bộ tương tự."
+        },
+        "hardware": {
+          "title": "Thiết bị phần cứng",
+          "desc": "Một số trường hợp thiết bị Ledger hoặc Trezor hỏng khi dữ liệu chip hoặc sao lưu vẫn có thể cho đường khôi phục — không phải mất PIN không có sao lưu."
+        },
+        "formats": {
+          "title": "Legacy và tùy chỉnh",
+          "desc": "Biến thể wallet.dat cũ, khóa mã hóa BIP38 và xuất vault doanh nghiệp — đánh giá từng trường hợp."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Có file ví nhưng mất quyền truy cập?",
+      "subtitle": "Mô tả loại ví và vật liệu sao lưu bạn còn. Chúng tôi sẽ cho biết có đường khôi phục hay không trước bất kỳ cam kết trả phí nào.",
+      "btn_primary": "Yêu cầu đánh giá",
+      "btn_secondary": "Liên hệ đội ngũ"
+    }
+  },
+  "zh": {
+    "meta": {
+      "title": "钱包访问恢复 | Lenix Protocol",
+      "description": "在密码丢失或文件损坏时恢复软件和硬件钱包的访问权限。先评估可行性。资产控制权始终在您手中。"
+    },
+    "Hero": {
+      "eyebrow": "钱包访问恢复",
+      "title1": "重新获得您 ",
+      "title2": "已拥有钱包的访问权",
+      "subtitle": "遗忘密码、损坏的钱包文件和不完整备份——不包括交易所登录重置或他人钱包。付费工作开始前，我们会先评估恢复是否现实可行。",
+      "btn_primary": "申请评估",
+      "btn_secondary": "联系团队"
+    },
+    "Audiences": {
+      "eyebrow": "适用对象",
+      "title": "我们常见的审查情形",
+      "description": "大多数客户仍有钱包文件、设备或备份片段。他们丢失的是密码、PIN 路径或可读的助记词——而非资产所有权本身。",
+      "cards": {
+        "password": {
+          "title": "遗忘钱包密码",
+          "desc": "MetaMask keystore、Electrum 或 Bitcoin Core 等软件钱包，文件仍在但加密密码丢失。"
+        },
+        "file": {
+          "title": "损坏或不完整文件",
+          "desc": "损坏的 wallet.dat、不完整备份，或从旧设备恢复的可能仍含密钥材料的元数据。"
+        },
+        "estate": {
+          "title": "遗产与法律事务",
+          "desc": "遗嘱执行人、受托人或律师需要为已故或无行为能力持有人的钱包建立有据可查的访问路径——须具备适当授权。"
+        },
+        "treasury": {
+          "title": "运营钱包锁定",
+          "desc": "团队丢失财库或运营钱包凭证，需要可控的恢复流程和便于审计的处理方式。"
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "范围与限制",
+      "title1": "我们做什么——",
+      "title2": "以及拒绝什么",
+      "subtitle": "钱包恢复是常见诈骗类别。Lenix 仅接受所有权清晰、授权有据、且技术路径值得尝试的案件。",
+      "items": {
+        "ownership": {
+          "title": "须可证明所有权",
+          "desc": "我们仅处理您拥有或经法律授权可恢复的钱包——不接受第三方地址或未经同意获得的凭证。"
+        },
+        "assessment": {
+          "title": "收费前先评估可行性",
+          "desc": "在确定付费解密工作前，我们会审查钱包类型、备份状态和密码线索。无望案件会尽早拒绝。"
+        },
+        "no_custody": {
+          "title": "资产由您自行转移",
+          "desc": "访问恢复后，由您自行转移资金。Lenix 不托管已恢复的加密货币。"
+        },
+        "no_scam": {
+          "title": "不使用远程访问套路",
+          "desc": "我们不会要求屏幕共享、验证存款或预付解锁费用——这些是欺诈恢复网站的常见手段。"
+        },
+        "decline": {
+          "title": "我们通常拒绝的案件",
+          "desc": "仅有公开地址、在线购买的钱包文件，或 PIN 丢失且无备份的硬件钱包，通常无法恢复。"
+        },
+        "confidential": {
+          "title": "受控处理",
+          "desc": "钱包材料在定义明确的监管链中处理，并设有访问控制——不通过非正式渠道流转。"
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "工作流程",
+      "title": "从评估到访问",
+      "description": "为持有人和授权代表设计的结构化路径——而非开放式暴力破解承诺。",
+      "step_label": "步骤 {number}",
+      "steps": {
+        "submit": {
+          "title": "提交案件详情",
+          "desc": "钱包类型、现有备份材料以及您记得的密码线索或模式。初步可行性审查属于受理环节的一部分。"
+        },
+        "scope": {
+          "title": "范围与可行性",
+          "desc": "在您承诺付费工作前，我们会明确告知是否值得尝试解密、预期工作量和费用。"
+        },
+        "recover": {
+          "title": "受控恢复",
+          "desc": "如受委托，解密在受控环境中进行。您重新获得访问权并按自己的节奏转移资产。"
+        }
+      },
+      "btn_primary": "开始评估",
+      "btn_secondary": "与团队沟通"
+    },
+    "Support": {
+      "eyebrow": "技术覆盖",
+      "title": "我们常见的钱包类型",
+      "description": "覆盖范围取决于文件格式、备份完整性和加密强度。受理时请确认您的情况。",
+      "columns": {
+        "software": {
+          "title": "软件钱包",
+          "desc": "Bitcoin Core、Electrum、MetaMask JSON keystore、Exodus 备份及类似的本地加密钱包文件。"
+        },
+        "hardware": {
+          "title": "硬件设备",
+          "desc": "部分 Ledger 或 Trezor 设备损坏案件，芯片数据或备份仍可能提供恢复路径——不包括 PIN 丢失且无任何备份的情况。"
+        },
+        "formats": {
+          "title": "旧版与定制",
+          "desc": "较旧的 wallet.dat 变体、BIP38 加密密钥和企业金库导出——逐案评估。"
+        }
+      }
+    },
+    "Cta": {
+      "title": "有钱包文件但无法访问？",
+      "subtitle": "说明钱包类型及您仍保留的备份材料。在任何付费合作前，我们会告知是否存在恢复路径。",
+      "btn_primary": "申请评估",
+      "btn_secondary": "联系团队"
+    }
+  },
+  "ar": {
+    "meta": {
+      "title": "استعادة الوصول إلى المحفظة | Lenix Protocol",
+      "description": "استعد الوصول إلى محافظ البرمجيات والأجهزة عند فقدان كلمات المرور أو تلف الملفات. تُقيَّم الجدوى أولاً. تبقى السيطرة على أصولك بيدك."
+    },
+    "Hero": {
+      "eyebrow": "استعادة الوصول إلى المحفظة",
+      "title1": "استعد الوصول إلى المحافظ ",
+      "title2": "التي تملكها بالفعل",
+      "subtitle": "كلمات مرور منسية، ملفات محفظة تالفة، ونسخ احتياطية جزئية — وليس إعادة تعيين دخول المنصات أو محافظ تخص شخصاً آخر. نُقيّم ما إذا كانت الاستعادة واقعية قبل بدء أي عمل مدفوع.",
+      "btn_primary": "طلب تقييم",
+      "btn_secondary": "تواصل مع الفريق"
+    },
+    "Audiences": {
+      "eyebrow": "لمن هذا مخصص",
+      "title": "حالات شائعة نراجعها",
+      "description": "معظم العملاء ما زال لديهم ملف محفظة أو جهازاً أو جزءاً من نسخة احتياطية. فقدوا كلمة المرور أو مسار PIN أو العبارة القابلة للقراءة — وليس الملكية الأساسية.",
+      "cards": {
+        "password": {
+          "title": "كلمة مرور محفظة منسية",
+          "desc": "محافظ برمجية مثل keystores MetaMask أو Electrum أو Bitcoin Core حيث الملف موجود لكن كلمة مرور التشفير مفقودة."
+        },
+        "file": {
+          "title": "ملفات تالفة أو جزئية",
+          "desc": "ملفات wallet.dat تالفة، نسخ احتياطية غير مكتملة، أو بيانات وصفية مُستردة من جهاز قديم قد تحتوي على مادة المفتاح."
+        },
+        "estate": {
+          "title": "التركات والمسائل القانونية",
+          "desc": "منفّذو الوصايا أو الأمناء أو المستشارون الذين يحتاجون مسارات وصول موثّقة لمحفظة حامل متوفى أو عديم الأهلية — بترخيص مناسب."
+        },
+        "treasury": {
+          "title": "قفل محفظة تشغيلية",
+          "desc": "فرق فقدت بيانات اعتماد محفظة خزينة أو عمليات وتحتاج عملية استعادة مُراقَبة مع معالجة مناسبة للتدقيق."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "النطاق والحدود",
+      "title1": "ما نفعله — ",
+      "title2": "وما نرفضه",
+      "subtitle": "استعادة المحافظ فئة شائعة للاحتيال. Lenix تقبل فقط الحالات ذات الملكية الواضحة والترخيص الموثّق ومسار تقني يستحق المحاولة.",
+      "items": {
+        "ownership": {
+          "title": "ملكية قابلة للإثبات مطلوبة",
+          "desc": "نعمل على محافظ تملكها أو مُخوَّل لك قانوناً استعادتها — لا عناوين طرف ثالث أو بيانات اعتماد حُصل عليها دون موافقة."
+        },
+        "assessment": {
+          "title": "الجدوى قبل الرسوم",
+          "desc": "نراجع نوع المحفظة وحالة النسخ الاحتياطي وتلميحات كلمة المرور قبل تحديد عمل فك التشفير المدفوع. نرفض الحالات الميؤوس منها مبكراً."
+        },
+        "no_custody": {
+          "title": "أنت تنقل الأصول",
+          "desc": "عند استعادة الوصول، تنقل الأموال بنفسك. Lenix لا تتولى حفظ العملات المشفرة المُستردة."
+        },
+        "no_scam": {
+          "title": "لا حيل وصول عن بُعد",
+          "desc": "لا نطلب مشاركة الشاشة أو ودائع التحقق أو رسوم فتح مسبقة — أنماط مواقع الاستعادة الاحتيالية."
+        },
+        "decline": {
+          "title": "حالات نرفضها عادة",
+          "desc": "عنوان عام فقط، أو ملفات محفظة مُشتراة online، أو محافظ أجهزة بـ PIN مفقود دون نسخة احتياطية — غالباً غير قابلة للاستعادة."
+        },
+        "confidential": {
+          "title": "معالجة مُراقَبة",
+          "desc": "تُعالَج مواد المحفظة في سلسلة حفظ محددة مع ضوابط وصول — لا عبر قنوات غير رسمية."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "كيف يعمل",
+      "title": "من التقييم إلى الوصول",
+      "description": "مسار منظّم للحاملين والممثلين المخوّلين — لا وعود brute-force مفتوحة.",
+      "step_label": "الخطوة {number}",
+      "steps": {
+        "submit": {
+          "title": "إرسال تفاصيل الحالة",
+          "desc": "نوع المحفظة، مواد النسخ الاحتياطي المتوفرة، وأي تلميحات أو أنماط لكلمة المرور تتذكرها. مراجعة الجدوى الأولية جزء من الاستقبال."
+        },
+        "scope": {
+          "title": "النطاق والجدوى",
+          "desc": "نخبرك بوضوح إن كان فك التشفير يستحق المحاولة، والجهد المتوقع، والرسوم — قبل التزامك بعمل مدفوع."
+        },
+        "recover": {
+          "title": "استعادة مُراقَبة",
+          "desc": "إذا تم التكليف، يُجرى فك التشفير في بيئة مُراقَبة. تستعيد الوصول وتنقل الأصول وفق جدولك."
+        }
+      },
+      "btn_primary": "بدء التقييم",
+      "btn_secondary": "تحدث مع الفريق"
+    },
+    "Support": {
+      "eyebrow": "التغطية التقنية",
+      "title": "أنواع المحافظ التي نراها كثيراً",
+      "description": "التغطية تعتمد على تنسيق الملف واكتمال النسخ الاحتياطي وقوة التشفير. أكّد حالتك عند الاستقبال.",
+      "columns": {
+        "software": {
+          "title": "محافظ برمجية",
+          "desc": "Bitcoin Core وElectrum وkeystores JSON MetaMask ونسخ Exodus الاحتياطية وملفات محفظة مشفّرة محلياً مماثلة."
+        },
+        "hardware": {
+          "title": "أجهزة hardware",
+          "desc": "حالات مختارة لأجهزة Ledger أو Trezor تالفة حيث قد تتيح بيانات الشريحة أو النسخ الاحتياطية مساراً — لا PIN مفقود دون أي نسخة احتياطية."
+        },
+        "formats": {
+          "title": "قديم ومخصص",
+          "desc": "متغيرات wallet.dat أقدم ومفاتيح مشفّرة BIP38 وتصديرات خزائن enterprise — تُقيَّم فردياً."
+        }
+      }
+    },
+    "Cta": {
+      "title": "لديك ملف محفظة لكن فقدت الوصول؟",
+      "subtitle": "صف نوع المحفظة ومواد النسخ الاحتياطي المتبقية. سنخبرك إن وُجد مسار استعادة قبل أي التزام مدفوع.",
+      "btn_primary": "طلب تقييم",
+      "btn_secondary": "تواصل مع الفريق"
+    }
+  },
+  "hi": {
+    "meta": {
+      "title": "वॉलेट एक्सेस रिकवरी | Lenix Protocol",
+      "description": "पासवर्ड खो जाने या फ़ाइलें क्षतिग्रस्त होने पर सॉफ़्टवेयर और हार्डवेयर वॉलेट तक पहुँच बहाल करें। पहले व्यवहार्यता का आकलन। संपत्ति पर नियंत्रण आपके पास रहता है।"
+    },
+    "Hero": {
+      "eyebrow": "वॉलेट एक्सेस रिकवरी",
+      "title1": "उन वॉलेट तक पहुँच फिर पाएँ ",
+      "title2": "जो पहले से आपके हैं",
+      "subtitle": "भूले पासवर्ड, क्षतिग्रस्त वॉलेट फ़ाइलें और आंशिक बैकअप — एक्सचेंज लॉगिन रीसेट या दूसरे व्यक्ति के वॉलेट नहीं। सशुल्क कार्य शुरू होने से पहले हम आकलन करते हैं कि रिकवरी व्यावहारिक है या नहीं।",
+      "btn_primary": "मूल्यांकन अनुरोध",
+      "btn_secondary": "टीम से संपर्क"
+    },
+    "Audiences": {
+      "eyebrow": "किसके लिए",
+      "title": "हम जिन स्थितियों की समीक्षा करते हैं",
+      "description": "अधिकांश ग्राहकों के पास अभी भी वॉलेट फ़ाइल, डिवाइस या बैकअप का टुकड़ा है। उन्होंने पासवर्ड, PIN पथ या पढ़ने योग्य seed खो दिया — मूल स्वामित्व नहीं।",
+      "cards": {
+        "password": {
+          "title": "भूला वॉलेट पासवर्ड",
+          "desc": "MetaMask keystore, Electrum या Bitcoin Core जैसे सॉफ़्टवेयर वॉलेट जहाँ फ़ाइल है लेकिन एन्क्रिप्शन पासवर्ड खो गया।"
+        },
+        "file": {
+          "title": "क्षतिग्रस्त या आंशिक फ़ाइलें",
+          "desc": "क्षतिग्रस्त wallet.dat, अधूरे बैकअप, या पुराने डिवाइस से बरामद metadata जिसमें अभी भी कुंजी सामग्री हो सकती है।"
+        },
+        "estate": {
+          "title": "विरासत और कानूनी मामले",
+          "desc": "निष्पादक, ट्रस्टी या वकील जिन्हें मृत या अक्षम धारक के वॉलेट के लिए प्रलेखित पहुँच मार्ग चाहिए — उचित अनुमति के साथ।"
+        },
+        "treasury": {
+          "title": "परिचालन वॉलेट लॉकआउट",
+          "desc": "टीमें जिन्होंने ट्रेजरी या परिचालन वॉलेट के क्रेडेंशियल खो दिए और ऑडिट-अनुकूल handling के साथ नियंत्रित पुनर्प्राप्ति प्रक्रिया चाहिए।"
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "दायरा और सीमाएँ",
+      "title1": "हम क्या करते हैं — ",
+      "title2": "और क्या अस्वीकार करते हैं",
+      "subtitle": "वॉलेट रिकवरी एक आम धोखाधड़ी की श्रेणी है। Lenix केवल स्पष्ट स्वामित्व, प्रलेखित अनुमति और तकनीकी मार्ग वाले मामले लेती है जो प्रयास के योग्य हों।",
+      "items": {
+        "ownership": {
+          "title": "सिद्ध करने योग्य स्वामित्व आवश्यक",
+          "desc": "हम उन वॉलेट पर काम करते हैं जो आपके हैं या जिन्हें कानूनी रूप से पुनर्प्राप्त करने की अनुमति है — तृतीय-पक्ष पते या सहमति के बिना प्राप्त क्रेडेंशियल नहीं।"
+        },
+        "assessment": {
+          "title": "शुल्क से पहले व्यवहार्यता",
+          "desc": "सशुल्क डिक्रिप्शन कार्य निर्धारित करने से पहले वॉलेट प्रकार, बैकअप स्थिति और पासवर्ड संकेतों की समीक्षा। निराशाजनक मामले शीघ्र अस्वीकार।"
+        },
+        "no_custody": {
+          "title": "आप संपत्ति स्थानांतरित करते हैं",
+          "desc": "पहुँच बहाल होने पर आप स्वयं धनराशि स्थानांतरित करते हैं। Lenix पुनर्प्राप्त क्रिप्टोकरेंसी की custody नहीं लेती।"
+        },
+        "no_scam": {
+          "title": "कोई दूरस्थ-पहुँच की चाल नहीं",
+          "desc": "हम स्क्रीन शेयरिंग, सत्यापन जमा या अग्रिम अनलॉक शुल्क नहीं माँगते — धोखाधड़ी वाली recovery साइटों के पैटर्न।"
+        },
+        "decline": {
+          "title": "मामले जिन्हें हम आमतौर पर अस्वीकार करते हैं",
+          "desc": "केवल सार्वजनिक पता, ऑनलाइन खरीदी wallet files, या खोया PIN और कोई backup नहीं वाले hardware wallets आमतौर पर पुनर्प्राप्त नहीं होते।"
+        },
+        "confidential": {
+          "title": "नियंत्रित handling",
+          "desc": "वॉलेट सामग्री परिभाषित custody chain और access controls के साथ संसाधित — अनौपचारिक चैनलों से नहीं।"
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "कैसे काम करता है",
+      "title": "मूल्यांकन से एक्सेस तक",
+      "description": "धारकों और अधिकृत प्रतिनिधियों के लिए संरचित मार्ग — असीमित बल-प्रयोग वादे नहीं।",
+      "step_label": "चरण {number}",
+      "steps": {
+        "submit": {
+          "title": "केस विवरण जमा करें",
+          "desc": "वॉलेट प्रकार, मौजूदा बैकअप सामग्री, और याद रहने वाले पासवर्ड संकेत या पैटर्न। प्रारंभिक व्यवहार्यता समीक्षा स्वागत प्रक्रिया का हिस्सा।"
+        },
+        "scope": {
+          "title": "दायरा और व्यवहार्यता",
+          "desc": "हम स्पष्ट बताते हैं कि डिक्रिप्शन प्रयास के योग्य है या नहीं, अपेक्षित प्रयास और शुल्क — सशुल्क कार्य से पहले।"
+        },
+        "recover": {
+          "title": "नियंत्रित पुनर्प्राप्ति",
+          "desc": "नियुक्त होने पर डिक्रिप्शन नियंत्रित वातावरण में चलता है। आप पहुँच पुनः प्राप्त करें और अपनी गति से संपत्ति स्थानांतरित करें।"
+        }
+      },
+      "btn_primary": "मूल्यांकन शुरू करें",
+      "btn_secondary": "टीम से बात करें"
+    },
+    "Support": {
+      "eyebrow": "तकनीकी कवरेज",
+      "title": "वॉलेट प्रकार जो हम अक्सर देखते हैं",
+      "description": "कवरेज फ़ाइल प्रारूप, बैकअप पूर्णता और एन्क्रिप्शन शक्ति पर निर्भर करता है। स्वागत पर अपना पुष्टि करें।",
+      "columns": {
+        "software": {
+          "title": "सॉफ़्टवेयर वॉलेट",
+          "desc": "Bitcoin Core, Electrum, MetaMask JSON keystores, Exodus backups, और similar locally encrypted wallet files।"
+        },
+        "hardware": {
+          "title": "हार्डवेयर उपकरण",
+          "desc": "क्षतिग्रस्त Ledger या Trezor मामले जहाँ chip data या backups recovery path दे सकते हैं — शून्य backup के साथ खोया PIN नहीं।"
+        },
+        "formats": {
+          "title": "पुराना और कस्टम",
+          "desc": "पुराने wallet.dat variants, BIP38-encrypted keys, enterprise vault exports — प्रत्येक का अलग आकलन।"
+        }
+      }
+    },
+    "Cta": {
+      "title": "वॉलेट फ़ाइल है लेकिन पहुँच खो गई?",
+      "subtitle": "वॉलेट प्रकार और बची backup सामग्री बताएँ। किसी सशुल्क अनुबंध से पहले हम बताएँगे कि पुनर्प्राप्ति का मार्ग है या नहीं।",
+      "btn_primary": "मूल्यांकन अनुरोध",
+      "btn_secondary": "टीम से संपर्क"
+    }
+  },
+  "tr": {
+    "meta": {
+      "title": "Cüzdan Erişim Kurtarma | Lenix Protocol",
+      "description": "Parolalar kaybolduğunda veya dosyalar hasar gördüğünde yazılım ve donanım cüzdanlarına erişimi geri kazanın. Önce uygulanabilirlik değerlendirilir. Varlıkların kontrolü sizde kalır."
+    },
+    "Hero": {
+      "eyebrow": "Cüzdan erişim kurtarma",
+      "title1": "Zaten sahip olduğunuz ",
+      "title2": "cüzdanlara erişimi geri kazanın",
+      "subtitle": "Unutulan parolalar, bozuk cüzdan dosyaları ve kısmi yedekler — borsa giriş sıfırlamaları veya başkasına ait cüzdanlar değil. Ücretli çalışma başlamadan önce kurtarmanın gerçekçi olup olmadığını değerlendiririz.",
+      "btn_primary": "Değerlendirme iste",
+      "btn_secondary": "Ekiple iletişim"
+    },
+    "Audiences": {
+      "eyebrow": "Kimler için",
+      "title": "Sık incelediğimiz durumlar",
+      "description": "Çoğu müşterinin hâlâ bir cüzdan dosyası, cihazı veya yedek parçası vardır. Parola, PIN yolu veya okunabilir seed kaybolmuştur — temel mülkiyet değil.",
+      "cards": {
+        "password": {
+          "title": "Unutulan cüzdan parolası",
+          "desc": "MetaMask keystore, Electrum veya Bitcoin Core gibi dosya mevcut ama şifreleme parolası kaybolmuş yazılım cüzdanları."
+        },
+        "file": {
+          "title": "Hasarlı veya eksik dosyalar",
+          "desc": "Bozuk wallet.dat dosyaları, eksik yedekler veya eski cihazdan kurtarılan ve hâlâ anahtar materyali içerebilecek metadata."
+        },
+        "estate": {
+          "title": "Miras ve hukuki konular",
+          "desc": "Vefat etmiş veya ehliyetsiz bir sahibin cüzdanı için belgelenmiş erişim yollarına ihtiyaç duyan vasiler, mütevelli heyetler veya avukatlar — uygun yetkilendirme ile."
+        },
+        "treasury": {
+          "title": "Operasyonel cüzdan kilidi",
+          "desc": "Hazine veya operasyon cüzdanı kimlik bilgilerini kaybeden ve denetime uygun işlemeyle kontrollü kurtarma süreci gereken ekipler."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Kapsam ve sınırlar",
+      "title1": "Ne yapıyoruz — ",
+      "title2": "ve neyi reddediyoruz",
+      "subtitle": "Cüzdan kurtarma yaygın bir dolandırıcılık kategorisidir. Lenix yalnızca net mülkiyet, belgelenmiş yetki ve denemeye değer teknik yolu olan dosyaları alır.",
+      "items": {
+        "ownership": {
+          "title": "Kanıtlanabilir mülkiyet gerekli",
+          "desc": "Sahip olduğunuz veya yasal olarak kurtarmaya yetkili olduğunuz cüzdanlarda çalışırız — üçüncü taraf adresler veya rızasız elde edilmiş kimlik bilgileri değil."
+        },
+        "assessment": {
+          "title": "Ücretlerden önce uygulanabilirlik",
+          "desc": "Ücretli şifre çözme işini kapsamlandırmadan önce cüzdan türü, yedek durumu ve parola ipuçlarını inceleriz. Umutsuz vakalar erken reddedilir."
+        },
+        "no_custody": {
+          "title": "Varlıkları siz taşırsınız",
+          "desc": "Erişim geri geldiğinde fonları kendiniz transfer edersiniz. Lenix kurtarılan kriptoyu saklamaz."
+        },
+        "no_scam": {
+          "title": "Uzaktan erişim hileleri yok",
+          "desc": "Ekran paylaşımı, doğrulama yatırımları veya peşin kilit açma ücretleri istemeyiz — sahte kurtarma sitelerinin kalıpları."
+        },
+        "decline": {
+          "title": "Genellikle reddettiğimiz vakalar",
+          "desc": "Yalnızca genel adres, çevrimiçi satın alınmış cüzdan dosyaları veya PIN kaybı ve sıfır yedekli donanım cüzdanları genelde kurtarılamaz."
+        },
+        "confidential": {
+          "title": "Kontrollü işlem",
+          "desc": "Cüzdan materyalleri erişim kontrolleriyle tanımlı bir saklama zincirinde işlenir — gayri resmi kanallardan geçmez."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Nasıl çalışır",
+      "title": "Değerlendirmeden erişime",
+      "description": "Sahipler ve yetkili temsilciler için yapılandırılmış yol — sınırsız brute-force vaatleri değil.",
+      "step_label": "Adım {number}",
+      "steps": {
+        "submit": {
+          "title": "Vaka ayrıntılarını gönderin",
+          "desc": "Cüzdan türü, mevcut yedek materyal ve hatırladığınız parola ipuçları veya kalıpları. İlk uygulanabilirlik incelemesi kabul sürecinin parçasıdır."
+        },
+        "scope": {
+          "title": "Kapsam ve uygulanabilirlik",
+          "desc": "Ücretli işe bağlanmadan önce şifre çözmenin denemeye değer olup olmadığını, beklenen çabayı ve ücretleri açıkça söyleriz."
+        },
+        "recover": {
+          "title": "Kontrollü kurtarma",
+          "desc": "Görevlendirilirse şifre çözme kontrollü bir ortamda yapılır. Erişimi geri kazanır ve varlıkları kendi temponuzda taşırsınız."
+        }
+      },
+      "btn_primary": "Değerlendirmeyi başlat",
+      "btn_secondary": "Ekiple konuş"
+    },
+    "Support": {
+      "eyebrow": "Teknik kapsam",
+      "title": "Sık gördüğümüz cüzdan türleri",
+      "description": "Kapsam dosya formatına, yedek bütünlüğüne ve şifreleme gücüne bağlıdır. Kabul sırasında sizinkini doğrulayın.",
+      "columns": {
+        "software": {
+          "title": "Yazılım cüzdanları",
+          "desc": "Bitcoin Core, Electrum, MetaMask JSON keystore, Exodus yedekleri ve benzer yerel şifreli cüzdan dosyaları."
+        },
+        "hardware": {
+          "title": "Donanım cihazları",
+          "desc": "Hasarlı Ledger veya Trezor cihazlarında çip verisi veya yedeklerin hâlâ yol sağlayabileceği seçili vakalar — sıfır yedekle kayıp PIN değil."
+        },
+        "formats": {
+          "title": "Eski ve özel",
+          "desc": "Eski wallet.dat varyantları, BIP38 şifreli anahtarlar ve kurumsal kasa dışa aktarımları — tek tek değerlendirilir."
+        }
+      }
+    },
+    "Cta": {
+      "title": "Cüzdan dosyanız var ama erişimi kaybettiniz mi?",
+      "subtitle": "Cüzdan türünü ve elinizde kalan yedek materyali açıklayın. Herhangi bir ücretli görevlendirmeden önce kurtarma yolu olup olmadığını söyleriz.",
+      "btn_primary": "Değerlendirme iste",
+      "btn_secondary": "Ekiple iletişim"
+    }
+  },
+  "tl": {
+    "meta": {
+      "title": "Pag-recover ng Access sa Wallet | Lenix Protocol",
+      "description": "Ibalik ang access sa software at hardware wallet kapag nawala ang password o nasira ang file. Sinusuri muna ang posibilidad. Ikaw pa rin ang may kontrol sa assets mo."
+    },
+    "Hero": {
+      "eyebrow": "Pag-recover ng access sa wallet",
+      "title1": "Mabawi ang access sa mga wallet ",
+      "title2": "na pag-aari mo na",
+      "subtitle": "Nakalimutang password, sirang wallet file, at partial backup — hindi exchange login reset o wallet ng ibang tao. Sinusuri namin kung makatuwiran ang recovery bago magsimula ang bayad na trabaho.",
+      "btn_primary": "Humiling ng assessment",
+      "btn_secondary": "Makipag-ugnayan sa team"
+    },
+    "Audiences": {
+      "eyebrow": "Para kanino",
+      "title": "Karaniwang sitwasyon na sinusuri namin",
+      "description": "Karamihan ng kliyente may wallet file, device, o backup fragment pa. Nawala ang password, PIN path, o readable seed — hindi ang pagmamay-ari mismo.",
+      "cards": {
+        "password": {
+          "title": "Nakalimutang wallet password",
+          "desc": "Software wallet tulad ng MetaMask keystore, Electrum, o Bitcoin Core kung saan may file pero nawala ang encryption password."
+        },
+        "file": {
+          "title": "Sirang o partial na file",
+          "desc": "Sirang wallet.dat, hindi kumpletong backup, o metadata mula sa lumang device na maaaring may key material pa."
+        },
+        "estate": {
+          "title": "Estate at legal na usapin",
+          "desc": "Mga executor, trustee, o counsel na kailangan ng documented access paths para sa wallet ng namatay o incapacitated na holder — may tamang authorization."
+        },
+        "treasury": {
+          "title": "Operational wallet lockout",
+          "desc": "Mga team na nawalan ng credentials sa treasury o operations wallet at kailangan ng controlled recovery process na audit-friendly."
+        }
+      }
+    },
+    "Boundaries": {
+      "eyebrow": "Saklaw at limitasyon",
+      "title1": "Ano ang ginagawa namin — ",
+      "title2": "at ano ang tinatanggihan",
+      "subtitle": "Karaniwang scam category ang wallet recovery. Tinatanggap lang ng Lenix ang mga kaso na may malinaw na ownership, documented authorization, at technical path na sulit subukan.",
+      "items": {
+        "ownership": {
+          "title": "Kailangan ang mapapatunayang ownership",
+          "desc": "Gumagana kami sa wallet na pag-aari mo o legal mong pinahihintulutang i-recover — hindi third-party address o credential na nakuha nang walang pahintulot."
+        },
+        "assessment": {
+          "title": "Posibilidad bago ang bayad",
+          "desc": "Sinusuri namin ang wallet type, backup state, at password hints bago i-scope ang bayad na decryption work. Maagang tinatanggihan ang hopeless cases."
+        },
+        "no_custody": {
+          "title": "Ikaw ang maglilipat ng assets",
+          "desc": "Kapag naibalik ang access, ikaw mismo ang magta-transfer ng pondo. Hindi kumukuha ng custody ang Lenix sa recovered cryptocurrency."
+        },
+        "no_scam": {
+          "title": "Walang remote-access tricks",
+          "desc": "Hindi kami humihingi ng screen sharing, verification deposit, o advance unlock fee — pattern ng fraudulent recovery sites."
+        },
+        "decline": {
+          "title": "Mga kasong karaniwang tinatanggihan",
+          "desc": "Public address lang, wallet file na binili online, o hardware wallet na nawala ang PIN at walang backup — kadalasang hindi ma-recover."
+        },
+        "confidential": {
+          "title": "Controlled handling",
+          "desc": "Pinoproseso ang wallet materials sa defined chain of custody na may access controls — hindi sa informal channels."
+        }
+      }
+    },
+    "Process": {
+      "eyebrow": "Paano ito gumagana",
+      "title": "Mula assessment hanggang access",
+      "description": "Structured path para sa holders at authorized representatives — hindi open-ended na brute-force promises.",
+      "step_label": "Hakbang {number}",
+      "steps": {
+        "submit": {
+          "title": "Isumite ang detalye ng kaso",
+          "desc": "Wallet type, anong backup material ang meron pa, at password hints o patterns na natatandaan mo. Bahagi ng intake ang initial viability review."
+        },
+        "scope": {
+          "title": "Saklaw at feasibility",
+          "desc": "Sinasabi namin nang diretso kung sulit subukan ang decryption, inaasahang effort, at bayad — bago ka mag-commit sa bayad na trabaho."
+        },
+        "recover": {
+          "title": "Controlled recovery",
+          "desc": "Kung na-engage, tumatakbo ang decryption sa controlled environment. Mabawi mo ang access at ilipat ang assets sa sarili mong takbo."
+        }
+      },
+      "btn_primary": "Simulan ang assessment",
+      "btn_secondary": "Makipag-usap sa team"
+    },
+    "Support": {
+      "eyebrow": "Technical coverage",
+      "title": "Mga wallet type na madalas naming makita",
+      "description": "Depende ang coverage sa file format, backup completeness, at encryption strength. Kumpirmahin ang sa iyo sa intake.",
+      "columns": {
+        "software": {
+          "title": "Software wallets",
+          "desc": "Bitcoin Core, Electrum, MetaMask JSON keystores, Exodus backups, at katulad na locally encrypted wallet files."
+        },
+        "hardware": {
+          "title": "Hardware devices",
+          "desc": "Select cases na may sirang Ledger o Trezor device kung saan chip data o backup ay maaaring magbigay pa ng recovery path — hindi lost PIN na zero backup."
+        },
+        "formats": {
+          "title": "Legacy at custom",
+          "desc": "Mas lumang wallet.dat variants, BIP38-encrypted keys, at enterprise vault exports — individually assessed."
+        }
+      }
+    },
+    "Cta": {
+      "title": "May wallet file pero nawala ang access?",
+      "subtitle": "Ilarawan ang wallet type at anong backup material ang natitira. Sasabihin namin kung may recovery path bago anumang bayad na engagement.",
+      "btn_primary": "Humiling ng assessment",
+      "btn_secondary": "Makipag-ugnayan sa team"
+    }
+  }
+}

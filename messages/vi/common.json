@@ -1,14 +1,15 @@
 {
   "Header": {
     "nav": {
-      "giveaway": "Tặng thưởng 250K",
+      "giveaway": "Cộng đồng",
       "about": "Giới thiệu",
       "solutions": "Giải pháp",
       "blockchain_forensics": "Điều tra",
       "asset_recovery": "Thu hồi tài sản",
       "crypto_recovery": "Thu hồi Crypto",
       "contact": "Liên hệ",
-      "airdrop": "Airdrop"
+      "airdrop": "Airdrop",
+      "banking_finance": "Banking & Finance"
     },
     "solutions": {
       "wallet": {
@@ -30,6 +31,10 @@
       "enforcement": {
         "title": "Thực thi pháp luật",
         "desc": "Công cụ tình báo cho cơ quan."
+      },
+      "banking_finance": {
+        "title": "Banking & Finance",
+        "desc": "Transfers, liquidation, lending, and custody."
       }
     },
     "user_menu": {
@@ -47,12 +52,12 @@
     },
     "buttons": {
       "log_in": "Đăng nhập",
-      "log_in_sign_up": "Đăng nhập / Đăng ký",
-      "get_reward": "Nhận 50 USDT"
+      "log_in_sign_up": "Đăng nhập",
+      "get_reward": "Tài khoản"
     }
   },
   "Footer": {
-    "company_desc": "Giao thức L1 cho thanh toán crypto-ngân hàng & thu hồi tài sản. Dùng AI để tăng hiệu suất và bảo mật.",
+    "company_desc": "Pháp y blockchain, phục hồi tài sản và hạ tầng tài chính crypto. Giao thức được kiểm toán cho truy vết, lưu ký và thanh toán xuyên biên giới.",
     "headings": {
       "about": "GIỚI THIỆU",
       "solutions": "GIẢI PHÁP",
@@ -77,10 +82,12 @@
       "privacy": "Quyền riêng tư",
       "disclaimer": "Tuyên bố từ chối",
       "wallet_decryption": "Giải mã Ví",
-      "crypto_asset_identification": "Nhận dạng Tài sản Crypto"
+      "crypto_asset_identification": "Nhận dạng Tài sản Crypto",
+      "security": "Bảo mật",
+      "banking_finance": "Banking & Finance"
     },
     "buttons": {
-      "recover_assets": "Thu hồi tài sản"
+      "recover_assets": "Thu hồi"
     },
     "certification_desc": "Chứng nhận ISO27001. Chúng tôi quản lý dữ liệu theo tiêu chuẩn quốc tế.",
     "copyright": "© 2017 - 2026 Lenix Protocol, Bảo lưu mọi quyền."
@@ -106,55 +113,69 @@
   },
   "Home": {
     "Hero": {
-      "title1": "Pháp y ",
-      "title2": "Blockchain",
-      "title3": ",\nNghị định thư phục hồi và bảo mật tiền điện tử.",
-      "subtitle1": "Phân tích blockchain tiên tiến và điều tra pháp y để theo dấu tài sản, phát hiện gian lận và hỗ trợ các nỗ lực phục hồi pháp lý trên toàn cầu.",
-      "subtitle2": "Bảo mật tương lai kỹ thuật số của bạn với sự điều tra chuyên nghiệp.",
-      "btn_signup": "Đăng ký Lenix",
-      "btn_login": "Đăng nhập",
-      "widget_title": "Mua ngay",
-      "widget_subtitle": "Trước khi giá tăng",
-      "usd_raised": "USD ĐÃ HUY ĐỘNG ĐƯỢC :",
-      "tokens_sold": "Token đã bán :",
-      "price_usd": "Giá USD: ${price}",
-      "price_eth": "Giá ETH: {price} ETH",
-      "pay_eth": "ETH bạn trả",
-      "pay_usdt": "USDT bạn trả",
-      "pay_usd": "USD bạn trả",
-      "receive_lnx": "$LNX bạn nhận được",
-      "btn_processing": "Đang xử lý...",
-      "btn_pay_eth": "Thanh toán bằng ETH",
-      "btn_pay_usdt": "Thanh toán bằng USDT",
-      "btn_pay_card": "Nhập chi tiết thẻ bên dưới",
-      "card_info": "Được cung cấp bởi Stripe. Số tiền được tính bằng USD.",
-      "btn_connect": "Kết nối ví",
-      "btn_giveaway": "Nhận quà tặng 500USD",
-      "giveaway_info": "Nhận 500USD token LNX làm quà tặng"
-    },
-    "Pillars": {
-      "title1": "Bảo mật, phục hồi, pháp y và tài chính ",
-      "title2": "ở một nơi",
-      "subtitle": "Chọn những gì bạn cần—mỗi trụ cột liên kết đến các giải pháp chuyên dụng.",
-      "cards": {
-        "security": {
-          "title": "Bảo mật Blockchain",
-          "desc": "Cơ sở hạ tầng được kiểm duyệt và công nghệ kho lưu trữ an toàn để bảo vệ tài sản của bạn.",
-          "cta": "Khám phá bảo mật"
-        },
+      "slides": {
         "recovery": {
-          "title": "Phục hồi tài sản",
-          "desc": "Các nghị định thư chuyên biệt và con đường pháp lý để đòi lại tiền điện tử bị mất hoặc bị đánh cắp với phân tích pháp y được chứng nhận.",
-          "cta": "Bắt đầu phục hồi"
+          "title1": "Blockchain forensics and recovery ",
+          "title2": "for stolen digital assets",
+          "title3": ".",
+          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
+          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
+          "btn_primary": "Start a recovery case",
+          "btn_secondary": "Contact our team"
         },
         "forensics": {
-          "title": "Pháp y Blockchain",
-          "desc": "Điều tra chuyên gia để theo dấu gian lận, hack và cung cấp bằng chứng được tòa án chấp nhận để phục hồi pháp lý.",
-          "cta": "Tìm hiểu thêm"
+          "title1": "Investigation-grade ",
+          "title2": "blockchain forensics",
+          "title3": ".",
+          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
+          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
+          "btn_primary": "View forensics",
+          "btn_secondary": "Contact our team"
+        },
+        "banking": {
+          "title1": "Cross-Border Financial Services, ",
+          "title2": "Payment and Remittance",
+          "title3": ".",
+          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
+          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
+          "btn_primary": "Create account",
+          "btn_secondary": "Banking & finance"
+        },
+        "settlement": {
+          "title1": "Crypto-to-fiat settlement ",
+          "title2": "your treasury can audit",
+          "title3": ".",
+          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
+          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
+          "btn_primary": "Open banking services",
+          "btn_secondary": "Contact our team"
+        }
+      },
+      "btn_login": "Đăng nhập"
+    },
+    "Pillars": {
+      "title1": "Một giao thức, ",
+      "title2": "bốn quy trình",
+      "subtitle": "Chọn điểm vào phù hợp tình huống của bạn. Mỗi lộ trình có công cụ riêng và bước tiếp theo rõ ràng.",
+      "cards": {
+        "security": {
+          "title": "Bảo mật blockchain",
+          "desc": "Vault được kiểm toán, lưu ký multi-sig và giám sát cho đội cần giữ tài sản an toàn on-chain.",
+          "cta": "Xem bảo mật"
+        },
+        "recovery": {
+          "title": "Thu hồi tài sản",
+          "desc": "Truy vết, phối hợp sàn và lộ trình pháp lý khi crypto bị mất, đánh cắp hoặc kẹt.",
+          "cta": "Thu hồi"
+        },
+        "forensics": {
+          "title": "Điều tra blockchain",
+          "desc": "Điều tra cấp ví và lập bản đồ giao dịch cho đội compliance và rà soát pháp lý.",
+          "cta": "Xem forensics"
         },
         "finance": {
-          "title": "Nghị định thư dịch vụ tài chính",
-          "desc": "Thanh toán, cho vay, ví và kho lưu trữ cho hệ sinh thái tiền điện tử hiện đại.",
+          "title": "Dịch vụ tài chính",
+          "desc": "Thanh toán crypto-fiat, cho vay, ví và vault để di chuyển và giữ giá trị.",
           "cta": "Xem giải pháp"
         }
       }
@@ -172,58 +193,60 @@
       "widget_alert": "Cảnh báo thanh toán hóa đơn từ B Shaw",
       "widget_req": "YÊU CẦU THANH TOÁN",
       "widget_verified": "LIÊN KẾT THANH TOÁN ĐÃ XÁC MINH",
-      "widget_receipt": "BIÊN LAI GIAO DỊCH SẼ ĐƯỢC GỬI ĐẾN ",
+      "widget_receipt": "BIÊN LAI GIAO DỊCH SẼ GỬI ĐẾN ",
       "widget_wallet": "Địa chỉ ví",
       "widget_order": "ĐƠN HÀNG",
       "widget_gas": "PHÍ GAS",
-      "btn_complete": "Hoàn tất thanh toán",
-      "btn_manual": "Thanh toán thủ công",
-      "title1": "Dành cho doanh nghiệp: chấp nhận tiền điện tử, ",
-      "title2": "bảo vệ",
-      "title3": " trong kho lưu trữ, phục hồi nếu cần.",
-      "point1": "Chấp nhận tiền điện tử và kết toán bằng tiền mặt. Thanh toán đơn giản và API cho người bán.",
-      "point2": "Giữ tiền trong kho lưu trữ an toàn của chúng tôi với đa chữ ký và lưu ký—cơ sở hạ tầng được kiểm duyệt.",
-      "point3": "Nếu tiền bị mất hoặc bị đánh cắp, nhóm của chúng tôi có thể giúp theo dấu và đòi lại thông qua các kênh phục hồi và pháp lý.",
-      "point4_1": "Khám phá giải pháp",
+      "btn_complete": "Thanh toán",
+      "btn_manual": "Trả thủ công",
+      "title1": "Hạ tầng thương nhân với ",
+      "title2": "thu hồi tích hợp",
+      "title3": ".",
+      "point1": "Chấp nhận crypto và quyết toán fiat qua checkout và API thương nhân.",
+      "point2": "Định tuyến doanh thu qua lưu ký vault được kiểm toán với kiểm soát multi-sig.",
+      "point3": "Nếu có sự cố sau quyết toán, cùng giao thức hỗ trợ truy vết và quy trình thu hồi.",
+      "point4_1": "Xem giải pháp",
       "point4_2": " hoặc ",
-      "point4_3": "bắt đầu trường hợp phục hồi",
-      "point4_4": "."
+      "point4_3": "Thu hồi",
+      "point4_4": ".",
+      "mock_brand": "Thương nhân Lenix",
+      "image_alt": "Bảng điều khiển vận hành thương nhân và compliance Lenix"
     },
     "Payment": {
-      "badge": "Những gì chúng tôi cung cấp",
-      "title": "Nghị định thư cho thanh toán, kho lưu trữ, phục hồi và cho vay",
-      "subtitle": "Một ngăn xếp duy nhất cho cách bạn di chuyển, nắm giữ và phục hồi giá trị.",
+      "badge": "Protocol stack",
+      "title": "Move, hold, and recover value on one layer",
+      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
       "cards": {
         "fiat": {
-          "title": "Tiền điện tử sang tiền mặt",
-          "desc": "Gửi tiền điện tử và kết toán bằng tiền mặt thông qua mạng lưới thanh toán địa phương—xuyên biên giới và hàng ngày."
+          "title": "Crypto-to-fiat",
+          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
         },
         "vault": {
-          "title": "Kho lưu trữ và lưu ký",
-          "desc": "Đa chữ ký và lưu ký an toàn để tài sản của bạn luôn được bảo vệ."
+          "title": "Vault and custody",
+          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
         },
         "recovery": {
-          "title": "Phục hồi và pháp y",
-          "desc": "Khi có sự cố xảy ra, chúng tôi giúp theo dấu và đòi lại tiền."
+          "title": "Recovery and forensics",
+          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
         },
         "lending": {
-          "title": "Cho vay",
-          "desc": "Vay thế chấp bằng tài sản và tiếp cận thanh khoản khi bạn cần."
+          "title": "Lending",
+          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
         }
       },
-      "cta": "Khám phá tất cả giải pháp"
+      "cta": "Xem giải pháp"
     },
     "TokenDetails": {
-      "title1": "Chi tiết token ",
-      "title2": "Lenix Protocol",
-      "subtitle": "Sử dụng thông tin hợp đồng bên dưới để thêm token Lenix Protocol vào ví của bạn.",
+      "title1": "Lenix Protocol",
+      "title2": " Token Details",
+      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
       "headers": {
-        "contract": "Địa chỉ hợp đồng",
-        "name": "Tên token",
-        "symbol": "Ký hiệu token",
-        "supply": "Cung lượng token",
-        "network": "Mạng lưới",
-        "decimals": "Chữ số thập phân"
+        "contract": "Contract Address",
+        "name": "Token Name",
+        "symbol": "Token Symbol",
+        "supply": "Token Supply",
+        "network": "Network",
+        "decimals": "Decimals"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -231,35 +254,1158 @@
       }
     },
     "Credibility": {
-      "title1": "Chi tiết về ",
-      "title2": "Lenix Protocol",
-      "subtitle1": "Được kiểm duyệt bởi CertiK. Xây dựng bằng sự tin cậy.",
-      "subtitle2_1": "Các cuộc kiểm toán của chúng tôi bao quát toàn bộ ngăn xếp. Đọc ",
-      "subtitle2_2": "Sách trắng",
-      "subtitle2_3": " và báo cáo của CertiK để biết chi tiết.",
-      "col1_text": "Lenix Protocol đã được kiểm toán đầy đủ bởi CertiK, công ty bảo mật blockchain hàng đầu thế giới.",
-      "col1_btn": "Xem kiểm toán CertiK",
-      "col2_text": "Đọc báo cáo đầy đủ và khám phá sách trắng của chúng tôi để tìm hiểu sâu hơn về công nghệ và kinh tế học token.",
-      "col2_btn": "Sách trắng"
+      "eyebrow": "Xác minh",
+      "title1": "Mã được kiểm toán. ",
+      "title2": "Kiểm soát có tài liệu.",
+      "subtitle1": "Smart contract được CertiK rà soát và vận hành theo ISO 27001 cho đội cần hơn cả tuyên bố marketing.",
+      "subtitle2_1": "Đọc ",
+      "subtitle2_2": "whitepaper",
+      "subtitle2_3": " và tài liệu kiểm toán về kiến trúc, tiện ích token và kiểm soát bảo mật.",
+      "col1_text": "Smart contract Lenix Protocol đã được CertiK rà soát. Kiểm toán bao gồm thành phần lõi dùng trong luồng sản xuất.",
+      "col1_btn": "Docs bảo mật",
+      "col2_text": "Whitepaper giải thích cách module thu hồi, lưu ký và thanh toán kết nối—và vị trí LNX trong thiết kế giao thức.",
+      "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Tham gia cuộc thi của chúng tôi để có cơ hội giành được ",
-      "title2": "250K$",
-      "subtitle": "Tham gia quà tặng 250.000$ của Lenix Protocol! Mỗi người trong số mười người chiến thắng sẽ nhận được 25.000$ giá trị LNX. Tăng cơ hội bằng cách chia sẻ và hoàn thành tất cả nhiệm vụ để nhận thêm lượt dự thi. Đừng bỏ lỡ cơ hội này - tham gia ngay!",
-      "btn": "Tham gia cuộc thi ngay!"
+      "title1": "Community ",
+      "title2": "giveaway",
+      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "btn": "Cộng đồng"
     },
     "Features": {
       "wallet": "Ví Lenix Protocol",
       "recipient": "Nhập người nhận",
       "bank_details": "Chi tiết tài khoản ngân hàng",
       "iban": "IBAN",
-      "btn_connect": "Kết nối ví và thanh toán",
-      "btn_manual": "Thanh toán thủ công",
+      "btn_connect": "Kết nối ví",
+      "btn_manual": "Trả thủ công",
       "title_small": "Tại sao chọn Lenix ProtocolPay?",
       "title_big": "Kết nối tiền điện tử với các mạng thanh toán địa phương trên toàn cầu.",
       "desc1": "Lenix ProtocolPay trao quyền cho những người nắm giữ tiền điện tử và doanh nghiệp để thực hiện các giao dịch từ tiền điện tử sang tiền pháp định trên toàn thế giới, tận dụng các mạng thanh toán địa phương và công nghệ blockchain.",
       "desc2": "Cuối cùng, hãy tận hưởng tốc độ của tiền điện tử với sự tiện lợi hàng ngày của thanh toán bằng tiền pháp định.",
-      "btn_whitepaper": "Sách trắng"
+      "btn_whitepaper": "Whitepaper"
+    },
+    "LnxPurchaseWidget": {
+      "widget_title": "Buy LNX",
+      "widget_subtitle": "Protocol token sale",
+      "usd_raised": "USD raised so far:",
+      "tokens_sold": "Tokens sold:",
+      "price_usd": "USD price: ${price}",
+      "price_eth": "ETH price: {price} ETH",
+      "pay_eth": "ETH you pay",
+      "pay_usdt": "USDT you pay",
+      "pay_usd": "USD you pay",
+      "receive_lnx": "$LNX you receive",
+      "btn_processing": "Processing...",
+      "btn_pay_eth": "Pay with ETH",
+      "btn_pay_usdt": "Pay with USDT",
+      "btn_pay_card": "Thẻ tín dụng",
+      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "btn_connect": "Kết nối ví",
+      "btn_giveaway": "Bonus LNX",
+      "giveaway_info": "Connect your wallet to check eligibility."
+    },
+    "TokenSale": {
+      "title1": "LNX ",
+      "title2": "token sale",
+      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+    },
+    "Partners": {
+      "eyebrow": "Hệ sinh thái",
+      "title": "Thiết kế cho sàn giao dịch, lưu ký và mạng thanh toán",
+      "subtitle": "Lenix kết nối truy vết, quy trình thu hồi và hạ tầng thanh toán trên toàn bộ stack crypto."
+    },
+    "CaseWorkflow": {
+      "eyebrow": "Cách hoạt động",
+      "title1": "Từ tiếp nhận đến ",
+      "title2": "bằng chứng có thể hành động",
+      "subtitle": "Quy trình có cấu trúc cho nạn nhân, đội compliance và luật sư—không phải lời hứa mơ hồ.",
+      "steps": {
+        "submit": {
+          "title": "Gửi vụ việc của bạn",
+          "desc": "Chia sẻ địa chỉ ví, hash giao dịch, dòng thời gian và diễn biến. Đánh giá ban đầu miễn phí."
+        },
+        "trace": {
+          "title": "Truy vết và lập bản đồ luồng",
+          "desc": "Chúng tôi theo dõi quỹ qua chuỗi, mixer, bridge và nạp sàn để xác định giá trị đi đâu."
+        },
+        "deliver": {
+          "title": "Giao bằng chứng",
+          "desc": "Bạn nhận phát hiện có tài liệu, định dạng cho bàn compliance sàn, cơ quan quản lý hoặc luật sư."
+        }
+      },
+      "btn_primary": "Mở vụ việc",
+      "btn_secondary": "Nói chuyện analyst",
+      "step_label": "Bước {number}"
+    },
+    "TrustSignals": {
+      "eyebrow": "Tiêu chuẩn vận hành",
+      "title1": "Thiết kế cho các vụ ",
+      "title2": "cần sự tin cậy",
+      "subtitle": "Thu hồi là mục tiêu của lừa đảo. Lenix tuân thủ thực hành mà các công ty nghiêm túc dùng để bảo vệ nạn nhân và tổ chức.",
+      "items": {
+        "no_fees": {
+          "title": "Không phí mở khóa trước",
+          "desc": "Chúng tôi không yêu cầu thanh toán trước để giải phóng, mở khóa hoặc chuyển quỹ của bạn."
+        },
+        "no_seed": {
+          "title": "Không bao giờ hỏi seed phrase",
+          "desc": "Không truy cập từ xa, không private key, không yêu cầu cụm từ khôi phục—không bao giờ."
+        },
+        "no_custody": {
+          "title": "Chúng tôi không giữ tài sản của bạn",
+          "desc": "Lenix chuẩn bị bằng chứng và phối hợp lộ trình. Chúng tôi không phải người giữ ký quỹ ví của bạn."
+        },
+        "honest": {
+          "title": "Đánh giá vụ việc trung thực",
+          "desc": "Nếu dấu vết cạn hoặc thu hồi khó khả thi, chúng tôi nói rõ trước khi cam kết trả phí."
+        },
+        "audited": {
+          "title": "Stack giao thức được kiểm toán",
+          "desc": "Smart contract được CertiK rà soát. Vận hành theo kiểm soát ISO 27001."
+        },
+        "chains": {
+          "title": "Phủ sóng đa chuỗi",
+          "desc": "Quy trình truy vết hỗ trợ mạng EVM chính và loại tài sản phổ biến trong vụ trộm."
+        }
+      },
+      "image_alt": "Chuyên viên phân tích xem bảng điều tra blockchain và bằng chứng giao dịch"
+    },
+    "CaseStudy": {
+      "eyebrow": "Ví dụ vụ việc",
+      "title1": "Khi tiền bị đánh cắp đến ",
+      "title2": "sàn giao dịch custodial",
+      "subtitle": "Ví dụ ẩn danh. Định danh đã thay đổi. Quy trình mang tính minh họa—không đảm bảo thu hồi.",
+      "situation": {
+        "label": "Tình huống",
+        "text": "Ví doanh nghiệp gửi USDC tới hợp đồng phishing. Trong vài giờ, tiền chuyển qua hai ví trung gian và nạp vào một sàn lớn."
+      },
+      "action": {
+        "label": "Lenix đã làm gì",
+        "text": "Chúng tôi lập bản đồ toàn bộ luồng giao dịch, gắn nhãn địa chỉ nạp và chuẩn bị gói bằng chứng với đồ thị giao dịch và dòng thời gian cho đội compliance của sàn."
+      },
+      "outcome": {
+        "label": "Kết quả",
+        "text": "Bộ phận compliance của sàn chấp nhận hồ sơ. Tiền bị đóng băng chờ xem xét. Luật sư nhận cùng tài liệu cho các bước pháp lý song song."
+      },
+      "disclaimer": "Kết quả khác nhau theo vụ việc, pháp lý và thời gian phản hồi của sàn. Ví dụ này cho thấy Lenix ghi nhận dấu vết—không phải mọi vụ đều thu hồi được.",
+      "image_alt": "Bảng giám sát giao dịch thể hiện luồng tiền qua ví và sàn"
+    },
+    "Cta": {
+      "title": "Sẵn sàng mở vụ việc?",
+      "subtitle": "Chia sẻ diễn biến và chi tiết on-chain bạn có. Chúng tôi phản hồi với đánh giá trung thực về lộ trình truy vết và thu hồi.",
+      "btn_primary": "Mở vụ việc",
+      "btn_secondary": "Liên hệ"
+    }
+  },
+  "Security": {
+    "meta": {
+      "title": "Bảo mật & Kiểm toán | Lenix Protocol",
+      "description": "Kiểm toán smart contract CertiK, vận hành theo ISO 27001 và kiểm soát bảo mật cho hạ tầng điều tra và thu hồi của Lenix."
+    },
+    "hero": {
+      "eyebrow": "Bảo mật",
+      "title1": "Giao thức được kiểm toán. ",
+      "title2": "Kiểm soát có tài liệu.",
+      "subtitle": "Lenix kết hợp đánh giá smart contract bên thứ ba với thực hành bảo mật vận hành cho các đội xử lý quy trình thu hồi và lưu ký nhạy cảm."
+    },
+    "audit": {
+      "title": "Phạm vi audit CertiK",
+      "desc": "Hợp đồng lõi trong luồng sản xuất đã được CertiK xem xét. Phạm vi bao gồm thành phần triển khai quan trọng và bề mặt tấn công đã biết.",
+      "certik_text": "CertiK xem xét smart contract Lenix về lỗ hổng phổ biến, kiểm soát truy cập và lỗi logic trong luồng token và vault.",
+      "certik_link": "Docs bảo mật",
+      "items": {
+        "contracts": {
+          "title": "Phạm vi xem xét hợp đồng",
+          "desc": "Bán token, vault và module giao thức dùng trong luồng thanh toán và lưu ký thực tế."
+        },
+        "access": {
+          "title": "Kiểm soát truy cập",
+          "desc": "Quyền theo vai trò, yêu cầu multi-sig và đường nâng cấp khi áp dụng."
+        },
+        "monitoring": {
+          "title": "Giám sát liên tục",
+          "desc": "Triển khai sản xuất được giám sát tương tác bất thường và cảnh báo vận hành."
+        }
+      },
+      "eyebrow": "Smart contract"
+    },
+    "iso": {
+      "title": "Vận hành theo ISO 27001",
+      "desc": "Lenix Protocol duy trì thực hành quản lý an ninh thông tin theo ISO 27001 cho dữ liệu khách hàng, tài liệu điều tra và hệ thống nội bộ."
+    },
+    "practices": {
+      "data": {
+        "title": "Xử lý dữ liệu",
+        "desc": "Tài liệu vụ việc được lưu với kiểm soát truy cập. Dữ liệu điều tra chỉ chia sẻ với bên được ủy quyền."
+      },
+      "incident": {
+        "title": "Ứng phó sự cố",
+        "desc": "Quy trình xác định cho sự kiện bảo mật ảnh hưởng dữ liệu khách hàng, hạ tầng giao thức hoặc quy trình điều tra."
+      },
+      "custody": {
+        "title": "Ran giới lưu ký",
+        "desc": "Lenix chuẩn bị bằng chứng và phối hợp lộ trình. Chúng tôi không giữ khóa ví hay seed phrase của khách hàng."
+      },
+      "eyebrow": "Vận hành",
+      "title": "Cách xử lý dữ liệu nhạy cảm",
+      "description": "Vụ thu hồi liên quan dữ liệu nạn nhân và dòng tiền rủi ro cao. Đây là ranh giới của chúng tôi.",
+      "image_alt": "Đội vận hành giám sát hoạt động và cảnh báo bảo mật"
+    },
+    "cta": {
+      "title": "Cần tài liệu bảo mật?",
+      "subtitle": "Liên hệ để nhận tóm tắt audit, chi tiết ISO hoặc đánh giá doanh nghiệp.",
+      "btn_primary": "Thu hồi",
+      "btn_secondary": "Liên hệ"
+    },
+    "assurance": {
+      "eyebrow": "Xác minh",
+      "title": "Những gì chúng tôi có thể cung cấp",
+      "description": "Đánh giá hợp đồng độc lập và kiểm soát vận hành có tài liệu — không hứa hẹn suông.",
+      "iso_link": "Về Lenix"
+    }
+  },
+  "AccountSidebar": {
+    "sections": {
+      "account": "Tài khoản",
+      "wallet": "Ví"
+    },
+    "nav": {
+      "home": "Trang chủ",
+      "vault": "Kho blockchain",
+      "lenix_wallet": "Ví Lenix",
+      "banking": "Ngân hàng doanh nghiệp",
+      "recovery_services": "Dịch vụ khôi phục",
+      "crypto_loan": "Vay crypto",
+      "assets": "Tài sản",
+      "send": "Gửi",
+      "receive": "Nhận",
+      "transactions": "Giao dịch",
+      "settings": "Cài đặt"
+    },
+    "support": {
+      "need_help": "Cần trợ giúp?",
+      "contact_support": "Liên hệ hỗ trợ"
+    },
+    "header": {
+      "menu": "Menu",
+      "verified_user": "Người dùng đã xác minh",
+      "sign_out": "Đăng xuất"
+    },
+    "logo_alt": "Lenix Protocol"
+  },
+  "AccountMobileTabs": {
+    "home": "Trang chủ",
+    "banking": "Ngân hàng",
+    "wallet": "Ví",
+    "loan": "Vay",
+    "settings": "Cài đặt"
+  },
+  "AccountDashboard": {
+    "status": {
+      "recovery": "Trạng thái hồ sơ khôi phục",
+      "banking": "Trạng thái dịch vụ ngân hàng",
+      "loan": "Trạng thái đơn vay"
+    },
+    "timeline": {
+      "received_title": "Đã nhận đơn",
+      "received_desc": "Chúng tôi đã nhận thông tin của bạn và đang xem xét.",
+      "review_title": "Đang xem xét",
+      "review_desc": "Nhóm của chúng tôi đang phân tích yêu cầu của bạn."
+    },
+    "submitted_details": "Chi tiết đã gửi",
+    "service_type": "Loại dịch vụ",
+    "service_types": {
+      "recovery": "Khôi phục",
+      "banking": "Ngân hàng",
+      "loan": "Vay"
+    },
+    "details_fields": {
+      "name": "Tên",
+      "transaction_hash": "Hash giao dịch",
+      "amount_stolen": "Số tiền bị mất",
+      "blockchain": "Blockchain",
+      "currency": "Tiền tệ",
+      "country_phone_code": "Mã điện thoại quốc gia",
+      "incident_summary": "Tóm tắt sự cố",
+      "evidence": "Bằng chứng",
+      "evidence_url": "URL bằng chứng",
+      "notes": "Ghi chú",
+      "loan_type_id": "Loại vay",
+      "collateral_asset": "Tài sản thế chấp",
+      "duration": "Thời hạn",
+      "loan_amount": "Số tiền vay",
+      "phone_number": "Số điện thoại",
+      "payout_method": "Phương thức thanh toán"
+    },
+    "support": {
+      "title": "Cần trợ giúp?",
+      "description": "Đội hỗ trợ của chúng tôi sẵn sàng 24/7 để hỗ trợ bạn.",
+      "contact": "Liên hệ hỗ trợ"
+    }
+  },
+  "AccountVault": {
+    "page": {
+      "title": "Kho bảo mật của tôi",
+      "subtitle": "Quản lý tài sản số được bảo vệ của bạn.",
+      "history": "Lịch sử",
+      "status_active": "Đang hoạt động",
+      "status_locked": "Đã khóa",
+      "status_no_wallet": "Chưa có ví",
+      "load_error": "Không tải được tài sản nắm giữ"
+    },
+    "actions": {
+      "deposit": "Nạp",
+      "withdraw": "Rút",
+      "swap": "Hoán đổi",
+      "audit": "Kiểm toán"
+    },
+    "premium": {
+      "title": "Nhận bảo vệ cao cấp",
+      "description": "Nâng cấp tích hợp Hardware Vault để bảo mật tối đa.",
+      "cta": "Tìm hiểu thêm"
+    },
+    "card": {
+      "total_value": "TỔNG GIÁ TRỊ KHO",
+      "last_synced": "Đồng bộ lần cuối: vừa xong",
+      "change_24h": "{percent}% (24 giờ)",
+      "security_level": "Mức bảo mật",
+      "security_very_high": "Rất cao"
+    },
+    "assets": {
+      "title": "Tài sản trong kho",
+      "count_zero": "0 tài sản",
+      "count": "{count} tài sản",
+      "empty": "Không tìm thấy tài sản. Kết nối hoặc nhập ví để bắt đầu.",
+      "address_copied": "Đã sao chép địa chỉ",
+      "chains": {
+        "ethereum": "Ethereum",
+        "bsc": "BSC",
+        "polygon": "Polygon",
+        "evm": "EVM"
+      }
+    },
+    "security": {
+      "title": "Tình trạng bảo mật kho",
+      "score_label": "Điểm bảo mật",
+      "items": {
+        "wallet": "Ví",
+        "cold_storage": "Lưu trữ lạnh",
+        "encrypted_vault": "Kho mã hóa",
+        "session": "Phiên"
+      },
+      "status": {
+        "connected": "Đã kết nối",
+        "not_connected": "Chưa kết nối",
+        "active": "Đang hoạt động",
+        "unlocked": "Đã mở khóa",
+        "locked": "Đã khóa",
+        "no_wallet": "Chưa có ví",
+        "completed": "Hoàn tất"
+      },
+      "unlock": "Mở khóa",
+      "recent_activity": "Hoạt động gần đây",
+      "view_all": "Xem tất cả",
+      "no_activity": "Không có hoạt động gần đây",
+      "wallet_connected": "Đã kết nối ví",
+      "transaction": "Giao dịch",
+      "transfer": "Chuyển {symbol}"
+    },
+    "time": {
+      "just_now": "Vừa xong",
+      "recently": "Gần đây",
+      "min_ago": "{count} phút trước",
+      "hours_ago": "{count} giờ trước",
+      "days_ago": "{count} ngày trước"
+    },
+    "drawer": {
+      "connect_wallet": "Kết nối ví",
+      "setup_title": "Thiết lập kho của bạn",
+      "setup_description": "Tạo ví mới hoặc nhập ví hiện có để bảo vệ tài sản.",
+      "unlock_vault": "Mở khóa kho",
+      "unlock_description": "Nhập mật khẩu để truy cập tài sản được bảo vệ.",
+      "password_placeholder": "Nhập mật khẩu",
+      "unlocking": "Đang mở khóa...",
+      "unlock": "Mở khóa",
+      "vault_connected": "Kho đã kết nối",
+      "lenix_wallet": "Ví Lenix",
+      "lock": "Khóa",
+      "imported_wallets": "Ví đã nhập",
+      "no_imported": "Chưa có ví nào được nhập.",
+      "import_wallet": "Nhập ví",
+      "wallet_name_label": "Tên ví (tùy chọn)",
+      "wallet_name_placeholder": "MetaMask của tôi",
+      "import_type_label": "Loại nhập",
+      "seed_phrase": "Cụm từ khôi phục",
+      "private_key": "Khóa riêng",
+      "seed_phrase_label": "Cụm khôi phục 12 hoặc 24 từ",
+      "private_key_label": "Khóa riêng",
+      "seed_phrase_placeholder": "từ1 từ2 từ3 ...",
+      "private_key_placeholder": "0x...",
+      "encryption_password_label": "Mật khẩu mã hóa (tối thiểu 8 ký tự)",
+      "password_dots_placeholder": "••••••••",
+      "cancel": "Hủy",
+      "import": "Nhập",
+      "loading": "Đang tải...",
+      "imported_seed_name": "Seed đã nhập",
+      "imported_key_name": "Khóa đã nhập"
+    },
+    "toast": {
+      "wallet_unlocked": "Đã mở khóa ví",
+      "incorrect_password": "Mật khẩu không đúng",
+      "import_credentials_required": "Nhập thông tin đăng nhập và mật khẩu (tối thiểu 8 ký tự).",
+      "wallet_imported": "Đã nhập ví",
+      "import_failed": "Nhập thất bại",
+      "wallet_removed": "Đã xóa ví"
+    }
+  },
+  "AccountLenixWallet": {
+    "page": {
+      "title": "Ví",
+      "subtitle": "Quản lý tài sản crypto của bạn",
+      "setup_title": "Thiết lập ví",
+      "setup_subtitle": "Tạo hoặc nhập ví để bắt đầu",
+      "unlock_title": "Mở khóa ví",
+      "unlock_subtitle": "Nhập mật khẩu để tiếp tục",
+      "password_placeholder": "Mật khẩu",
+      "unlocking": "Đang mở khóa...",
+      "unlock": "Mở khóa",
+      "network_placeholder": "Mạng",
+      "logo_alt": "Ví Lenix",
+      "show_evm_wallet": "Hiển thị ví EVM",
+      "show_bitcoin_wallet": "Hiển thị ví Bitcoin",
+      "evm_wallet": "Ví EVM",
+      "bitcoin_wallet": "Ví Bitcoin"
+    },
+    "networks": {
+      "all": "Tất cả mạng",
+      "ethereum": "Ethereum",
+      "bsc": "BNB Chain",
+      "polygon": "Polygon",
+      "bitcoin": "Bitcoin"
+    },
+    "actions": {
+      "send": "Gửi",
+      "receive": "Nhận",
+      "buy": "Mua",
+      "swap": "Hoán đổi",
+      "coming_soon": "Sắp ra mắt"
+    },
+    "wallet_card": {
+      "total_balance": "Tổng số dư",
+      "hide_balance": "Ẩn số dư",
+      "show_balance": "Hiện số dư",
+      "lock_wallet": "Khóa ví",
+      "evm_networks": "Mạng EVM",
+      "evm_chains": "ETH · BSC · Polygon · Arbitrum",
+      "address_copied": "Đã sao chép địa chỉ"
+    },
+    "bitcoin_card": {
+      "btc_balance": "Số dư BTC",
+      "not_activated": "Chưa kích hoạt",
+      "activate_prompt": "Kích hoạt ví Bitcoin gốc của bạn",
+      "password_placeholder": "Nhập mật khẩu ví",
+      "creating": "Đang tạo...",
+      "activate": "Kích hoạt",
+      "bitcoin_network": "Mạng Bitcoin",
+      "segwit": "SegWit gốc BIP-84",
+      "bitcoin_alt": "Bitcoin",
+      "enter_password": "Nhập mật khẩu ví của bạn",
+      "wallet_created": "Đã tạo ví Bitcoin",
+      "create_failed": "Không thể tạo ví Bitcoin",
+      "address_copied": "Đã sao chép địa chỉ"
+    },
+    "token_list": {
+      "assets": "Tài sản",
+      "market": "Thị trường",
+      "tokens_count": "{count} token",
+      "no_assets": "Chưa có tài sản",
+      "frozen": "Đã đóng băng",
+      "deposit_to_unfreeze": "Nạp {amount} BTC để mở khóa",
+      "frozen_by_admin": "Bị quản trị viên đóng băng",
+      "token_fallback": "Token"
+    },
+    "activity": {
+      "title": "Hoạt động",
+      "no_activity": "Không có hoạt động gần đây",
+      "done": "Hoàn tất",
+      "pending": "Đang chờ"
+    },
+    "security": {
+      "title": "Bảo mật",
+      "protected": "Được bảo vệ",
+      "recovery_phrase": "Cụm từ khôi phục",
+      "backed_up": "Đã sao lưu",
+      "password": "Mật khẩu",
+      "active": "Đang hoạt động",
+      "withdrawal_limit": "Giới hạn rút",
+      "not_set": "Chưa đặt",
+      "set": "Đã đặt"
+    },
+    "receive_modal": {
+      "title": "Nhận",
+      "network": "Mạng",
+      "evm_networks": "Mạng EVM",
+      "evm_chains": "ETH, BSC, Polygon, Arbitrum",
+      "bitcoin": "Bitcoin",
+      "bitcoin_chains": "SegWit gốc (BIP-84)",
+      "not_set_up": "(Chưa thiết lập)",
+      "qr_alt": "Mã QR",
+      "copied": "Đã sao chép",
+      "btc_warning": "Chỉ gửi BTC đến địa chỉ này",
+      "evm_warning": "Chỉ gửi token tương thích ERC-20"
+    },
+    "send_modal": {
+      "title": "Gửi crypto",
+      "description": "Nhập địa chỉ người nhận và số tiền rút để gửi crypto."
+    },
+    "receive_page": {
+      "title": "Nhận tài sản",
+      "subtitle": "Nhận địa chỉ duy nhất của bạn để nhận thanh toán.",
+      "security_notice": "Vì lý do an toàn, hãy kiểm tra mạng khớp hoàn toàn trước khi nạp. Tài sản gửi sai mạng sẽ không thể thu hồi.",
+      "no_wallet_title": "Không tìm thấy ví",
+      "no_wallet_description": "Tạo một ví để nhận tài sản.",
+      "go_to_wallet": "Đến ví",
+      "wallet_locked_title": "Ví đã khóa",
+      "wallet_locked_description": "Hãy mở khóa ví để xem địa chỉ.",
+      "unlock_wallet": "Mở khóa ví",
+      "card_title": "Nhận tài sản",
+      "card_description": "Quét mã QR hoặc sao chép địa chỉ để nạp.",
+      "select_network": "Chọn mạng",
+      "bitcoin_provisioning": "Ví Bitcoin vẫn đang được thiết lập.",
+      "qr_alt": "Mã QR địa chỉ ví",
+      "address_label": "Địa chỉ {network} của bạn",
+      "copy": "Sao chép",
+      "copied": "Đã sao chép",
+      "share": "Chia sẻ",
+      "address_copied": "Địa chỉ đã được sao chép",
+      "share_title": "Địa chỉ ví Lenix của tôi",
+      "share_text": "Đây là địa chỉ {network} của tôi: {address}",
+      "networks": {
+        "bitcoin": {
+          "name": "Bitcoin (Native)",
+          "warning": "Chỉ gửi Bitcoin native đến địa chỉ này. Không gửi BTC từ mạng khác."
+        },
+        "ethereum": {
+          "name": "Ethereum (ERC-20)",
+          "warning": "Chỉ gửi ETH và token ERC-20 đến địa chỉ này."
+        },
+        "bnb": {
+          "name": "BNB Smart Chain (BEP-20)",
+          "warning": "Chỉ gửi BNB và token BEP-20 đến địa chỉ này."
+        },
+        "polygon": {
+          "name": "Polygon (MATIC)",
+          "warning": "Chỉ gửi MATIC và token mạng Polygon đến địa chỉ này."
+        },
+        "arbitrum": {
+          "name": "Arbitrum One",
+          "warning": "Chỉ gửi token mạng Arbitrum One đến địa chỉ này."
+        },
+        "optimism": {
+          "name": "Optimism",
+          "warning": "Chỉ gửi token mạng Optimism đến địa chỉ này."
+        },
+        "avalanche": {
+          "name": "Avalanche C-Chain",
+          "warning": "Chỉ gửi token Avalanche C-Chain đến địa chỉ này."
+        }
+      }
+    },
+    "send_page": {
+      "unlock_message": "Mở khóa ví Lenix để quản lý nguồn tiền.",
+      "unlock_locked_prefix": "Nhập mật khẩu của bạn trên",
+      "unlock_locked_suffix": "để giải mã số dư.",
+      "wallet_page": "trang ví",
+      "unlock_no_wallet_prefix": "Hãy tạo ví trước ở",
+      "unlock_no_wallet_suffix": ".",
+      "wallet_dashboard": "bảng điều khiển ví Lenix",
+      "estimated_total_value": "Giá trị tổng ước tính",
+      "wallet_label": "Ví",
+      "pnl_today": "Lãi/lỗ hôm nay",
+      "deposit": "Nạp",
+      "withdraw": "Rút",
+      "transfer": "Chuyển",
+      "more_funding_actions": "Thêm thao tác cấp vốn",
+      "funding_title": "Nguồn vốn",
+      "search_placeholder": "Tìm kiếm tài sản hoặc mạng",
+      "small_asset_exchange": "Hoán đổi tài sản nhỏ",
+      "hide_dust": "Ẩn tài sản < 1 USD",
+      "asset": "Tài sản",
+      "amount": "Số lượng",
+      "available": "Khả dụng",
+      "frozen": "Đã đóng băng",
+      "action": "Thao tác",
+      "unfreeze_deposit": "Nạp {amount} BTC để mở khóa",
+      "more_actions_for": "Thêm thao tác cho {symbol}",
+      "no_assets": "Không có tài sản",
+      "no_assets_match": "Không có tài sản nào khớp với bộ lọc.",
+      "withdraw_modal": {
+        "title": "Rút tiền mã hóa",
+        "description": "Gửi tiền đến ví bên ngoài bằng mạng phù hợp."
+      }
+    },
+    "send_form": {
+      "no_assets_alt": "Không có tài sản",
+      "no_assets_title": "Chưa có tài sản cấp vốn",
+      "no_assets_description": "Nạp tiền mã hóa vào ví Lenix để bật chức năng rút và chuyển on-chain.",
+      "asset_label": "Tài sản",
+      "network_label": "Mạng",
+      "chain_id": "ID chuỗi {id}",
+      "recipient_label": "Địa chỉ người nhận",
+      "paste": "Dán",
+      "recipient_error_bitcoin": "Nhập địa chỉ Bitcoin hợp lệ.",
+      "recipient_error_evm": "Nhập địa chỉ ví EVM hợp lệ.",
+      "amount_label": "Số lượng",
+      "amount_aria": "Số {symbol} muốn gửi",
+      "available": "Khả dụng",
+      "on_chain_only": "Hiện chỉ có {amount} {symbol} đã được bảo chứng on-chain và có thể gửi.",
+      "summary_label": "Tóm tắt chuyển tiền",
+      "network_fee": "Phí mạng",
+      "calculating_fee": "Đang tính…",
+      "recipient_receives": "Người nhận nhận",
+      "frozen": "Đã đóng băng",
+      "frozen_message": "Tài sản này đang bị đóng băng",
+      "frozen_unfreeze_instruction": " Nạp ít nhất {amount} BTC vào ví Bitcoin Lenix của bạn để mở khóa — sẽ tự động mở khi tiền nạp được xác nhận.",
+      "frozen_contact_support": " Liên hệ bộ phận hỗ trợ để xử lý.",
+      "irreversible_warning": "Hãy kiểm tra địa chỉ và mạng trước khi gửi. Giao dịch on-chain không thể hoàn tác.",
+      "sending": "Đang gửi…",
+      "send_now": "Gửi ngay",
+      "wallet_locked_error": "Mở khóa ví Lenix của bạn để gửi tiền",
+      "clipboard_error": "Không thể truy cập bộ nhớ tạm",
+      "bitcoin_send_success": "Giao dịch Bitcoin đã được phát",
+      "bitcoin_send_failed": "Rút Bitcoin thất bại",
+      "unsupported_network": "Mạng không được hỗ trợ cho tài sản này",
+      "broadcasting_transaction": "Đang phát giao dịch",
+      "transfer_confirmed": "Chuyển tiền đã xác nhận",
+      "broadcasting_token_transfer": "Đang phát giao dịch chuyển token",
+      "token_transfer_complete": "Chuyển token hoàn tất",
+      "transaction_failed": "Giao dịch thất bại",
+      "fee_bitcoin_estimate": "Ước tính khi xác nhận"
+    },
+    "setup": {
+      "back": "Quay lại",
+      "welcome_title": "Ví an toàn nhất thế giới",
+      "welcome_description": "Thiết lập ví để bắt đầu. Lenix Wallet là ví an toàn và riêng tư nhất thế giới để bảo vệ crypto của bạn.",
+      "create_new": "Tạo ví mới",
+      "import_existing": "Nhập ví hiện có",
+      "terms_notice": "Bằng việc tạo hoặc nhập ví, bạn đồng ý với Điều khoản dịch vụ và Chính sách quyền riêng tư.",
+      "backup_title": "Sao lưu cụm từ khôi phục",
+      "backup_description": "Ghi lại 12 từ này theo thứ tự và giữ an toàn. Nếu mất, bạn có thể mất tiền vĩnh viễn.",
+      "security_check_title": "Kiểm tra bảo mật",
+      "security_check_description": "Không bao giờ chia sẻ cụm từ này với ai. Hỗ trợ Lenix sẽ không bao giờ yêu cầu.",
+      "saved_phrase": "Tôi đã lưu cụm từ khôi phục",
+      "verify_title": "Xác minh cụm từ khôi phục",
+      "verify_description": "Xác nhận bạn đã lưu cụm từ bằng cách nhập các từ được yêu cầu bên dưới.",
+      "word_label": "Từ #{number}",
+      "word_placeholder": "Nhập từ #{number}",
+      "verify_continue": "Xác minh và tiếp tục",
+      "password_title": "Đặt mật khẩu an toàn",
+      "password_description": "Mật khẩu này sẽ được dùng để mã hóa ví trên thiết bị này.",
+      "password_label": "Mật khẩu",
+      "confirm_password_label": "Xác nhận mật khẩu",
+      "create_wallet": "Tạo ví",
+      "processing": "Đang xử lý...",
+      "import_title": "Nhập cụm từ khôi phục",
+      "import_description": "Nhập cụm khôi phục 12 hoặc 24 từ để khôi phục ví.",
+      "import_placeholder": "táo chuối cherry...",
+      "continue": "Tiếp tục",
+      "import_wallet": "Nhập ví"
+    },
+    "toast": {
+      "wallet_unlocked": "Đã mở khóa ví",
+      "incorrect_password": "Mật khẩu không đúng",
+      "phrase_copied": "Đã sao chép cụm từ khôi phục",
+      "incorrect_words": "Từ không đúng. Vui lòng thử lại.",
+      "password_min_length": "Mật khẩu phải có ít nhất 8 ký tự",
+      "passwords_mismatch": "Mật khẩu không khớp",
+      "wallet_created": "Tạo ví thành công!",
+      "create_failed": "Không thể tạo ví",
+      "invalid_phrase": "Cụm từ khôi phục không hợp lệ. Cần 12 hoặc 24 từ, nhận được {count}.",
+      "wallet_imported": "Nhập ví thành công!",
+      "import_failed": "Không thể nhập ví"
+    }
+  },
+  "AccountBanking": {
+    "meta": {
+      "title": "Ngân hàng doanh nghiệp | Lenix Protocol",
+      "description": "Chuyển tài sản số giữa Spot, Funding và tài khoản ngân hàng đã xác minh."
+    },
+    "error": {
+      "load_failed": "Không thể tải không gian ngân hàng",
+      "unavailable_title": "Không gian ngân hàng không khả dụng",
+      "unavailable_description": "Không thể tải tổng quan ngân hàng.",
+      "try_again": "Thử lại"
+    },
+    "tabs": {
+      "overview": "Tổng quan",
+      "accounts": "Tài khoản ngân hàng",
+      "activity": "Hoạt động"
+    },
+    "empty_assets": {
+      "title": "Chưa có tài sản kho bạc",
+      "description": "Chuyển tài sản vào ví Spot hoặc Funding để bắt đầu.",
+      "cta": "Chuyển tiền"
+    },
+    "fiat_balance": {
+      "funding": "Funding {currency}",
+      "available": "{amount} khả dụng"
+    },
+    "summary": {
+      "title": "Ngân hàng doanh nghiệp",
+      "verified": "Đã xác minh",
+      "verification_pending": "Đang chờ xác minh",
+      "subtitle": "Chuyển tài sản số giữa ví kho bạc và tài khoản ngân hàng đã xác minh.",
+      "transfer": "Chuyển",
+      "withdraw_to_bank": "Rút về ngân hàng",
+      "total_treasury": "Tổng giá trị kho bạc",
+      "hide_balances": "Ẩn số dư",
+      "show_balances": "Hiện số dư",
+      "account": "Tài khoản",
+      "tier": "Hạng",
+      "relationship_manager": "Quản lý quan hệ",
+      "spot_wallet": "Ví Spot",
+      "spot_available": "Khả dụng để giao dịch",
+      "funding_wallet": "Ví Funding",
+      "funding_available": "Khả dụng để thanh toán",
+      "in_settlement": "Đang thanh toán",
+      "pending_payouts": "Trong các khoản chi trả ngân hàng đang hoạt động"
+    },
+    "assets": {
+      "title": "Số dư ví",
+      "subtitle": "Tài sản Spot và Funding sẵn sàng chi trả",
+      "move_funds": "Chuyển tiền",
+      "columns": {
+        "asset": "Tài sản",
+        "wallet": "Ví",
+        "balance": "Số dư",
+        "value": "Giá trị",
+        "change_24h": "24 giờ"
+      },
+      "location": {
+        "spot": "Spot",
+        "funding": "Funding"
+      }
+    },
+    "accounts": {
+      "linked_title": "Tài khoản ngân hàng đã liên kết",
+      "linked_subtitle": "Điểm đến thanh toán cho rút tiền ngân hàng",
+      "add_account": "Thêm tài khoản",
+      "empty_title": "Chưa liên kết tài khoản ngân hàng",
+      "empty_description": "Thêm tài khoản ngân hàng để bật rút tiền về ngân hàng của bạn.",
+      "default": "Mặc định",
+      "status": {
+        "verified": "Đã xác minh",
+        "rejected": "Đã từ chối",
+        "pending": "Đang xem xét"
+      },
+      "limits_title": "Giới hạn thanh toán",
+      "limits_subtitle": "Hạn mức doanh nghiệp luân chuyển",
+      "remaining": "Còn lại {percent}%",
+      "limits_note": "Giới hạn thanh toán cao hơn được xem xét bởi quản lý quan hệ và nhóm tuân thủ."
+    },
+    "activity": {
+      "title": "Hoạt động giao dịch",
+      "subtitle": "Chuyển nội bộ và thanh toán ngân hàng",
+      "search_label": "Tìm giao dịch",
+      "search_placeholder": "Tìm mã tham chiếu hoặc tài sản",
+      "filter_label": "Lọc trạng thái giao dịch",
+      "filter_all": "Tất cả trạng thái",
+      "status": {
+        "completed": "Hoàn tất",
+        "processing": "Đang xử lý",
+        "review": "Xem xét",
+        "under_review": "Đang xem xét",
+        "failed": "Thất bại"
+      },
+      "columns": {
+        "transaction": "Giao dịch",
+        "amount": "Số tiền",
+        "destination": "Điểm đến",
+        "status": "Trạng thái",
+        "date": "Ngày",
+        "view": "Xem"
+      },
+      "direction": {
+        "spot_to_funding": "Spot sang Funding",
+        "funding_to_spot": "Funding sang Spot",
+        "funding_to_bank": "Funding sang ngân hàng",
+        "spot_to_bank": "Spot sang ngân hàng"
+      },
+      "view_transaction": "Xem {reference}",
+      "empty_title": "Không có giao dịch phù hợp",
+      "empty_description": "Thay đổi tìm kiếm hoặc bộ lọc trạng thái."
+    },
+    "add_account": {
+      "title": "Thêm tài khoản ngân hàng",
+      "description": "Tài khoản đã gửi được nhóm tuân thủ xem xét trước khi nhận thanh toán. Thường mất 1–2 ngày làm việc.",
+      "fields": {
+        "bank_name": "Tên ngân hàng",
+        "bank_name_placeholder": "vd. Vietcombank",
+        "account_holder": "Tên chủ tài khoản",
+        "account_holder_placeholder": "Họ tên pháp lý đầy đủ",
+        "account_number": "Số tài khoản / IBAN",
+        "account_number_placeholder": "Số tài khoản",
+        "routing_number": "Mã định tuyến (ACH/nội địa)",
+        "swift_bic": "SWIFT / BIC (quốc tế)",
+        "optional": "Tùy chọn",
+        "account_type": "Loại tài khoản",
+        "checking": "Thanh toán",
+        "savings": "Tiết kiệm",
+        "currency": "Tiền tệ",
+        "country": "Quốc gia",
+        "country_placeholder": "VN"
+      },
+      "submitting": "Đang gửi...",
+      "submit": "Gửi để xác minh",
+      "required_fields": "Vui lòng điền tất cả trường bắt buộc",
+      "success": "Tài khoản ngân hàng đã gửi để xác minh",
+      "failed": "Không thể thêm tài khoản ngân hàng"
+    },
+    "transfer": {
+      "title_form": "Chuyển tiền",
+      "title_review": "Xem lại chuyển khoản",
+      "title_success": "Trạng thái chuyển khoản",
+      "desc_form": "Chuyển tài sản giữa các ví hoặc thanh toán về ngân hàng đã liên kết.",
+      "desc_review": "Tỷ giá được giữ trong năm phút.",
+      "desc_success": "Mã tham chiếu của bạn đã sẵn sàng để theo dõi.",
+      "back_label": "Quay lại chi tiết chuyển khoản",
+      "step_label": "Bước {step} / 3",
+      "cancel": "Hủy",
+      "review_transfer": "Xem lại chuyển khoản",
+      "confirm_submit": "Xác nhận và gửi",
+      "done": "Xong",
+      "quote_failed": "Không thể tạo báo giá",
+      "transfer_failed": "Không thể gửi chuyển khoản",
+      "type_legend": "Loại chuyển khoản",
+      "types": {
+        "spot_to_funding": {
+          "label": "Spot → Funding",
+          "description": "Chuẩn bị tài sản cho thanh toán"
+        },
+        "funding_to_spot": {
+          "label": "Funding → Spot",
+          "description": "Trả tài sản để giao dịch"
+        },
+        "funding_to_bank": {
+          "label": "Funding → Ngân hàng",
+          "description": "Rút tiền đã sẵn sàng"
+        },
+        "spot_to_bank": {
+          "label": "Spot → Ngân hàng",
+          "description": "Quy đổi và rút"
+        }
+      },
+      "from": "Từ",
+      "to": "Đến",
+      "spot_wallet": "Ví Spot",
+      "funding_wallet": "Ví Funding",
+      "bank_account": "Tài khoản ngân hàng",
+      "asset": "Tài sản",
+      "amount": "Số tiền",
+      "max": "TỐI ĐA",
+      "amount_placeholder": "0,00",
+      "payout_currency": "Tiền tệ chi trả",
+      "currencies": {
+        "USD": "USD · Đô la Mỹ",
+        "EUR": "EUR · Euro",
+        "GBP": "GBP · Bảng Anh"
+      },
+      "select_account": "Chọn tài khoản",
+      "available": "Khả dụng"
+    },
+    "review": {
+      "recipient_receives": "Người nhận nhận",
+      "from_amount": "Từ {amount} {asset}",
+      "market_value": "Giá trị thị trường",
+      "exchange_rate": "Tỷ giá",
+      "exchange_rate_value": "1 USD = {rate} {currency}",
+      "platform_fee": "Phí nền tảng",
+      "banking_fee": "Phí ngân hàng",
+      "estimated_arrival": "Thời gian đến dự kiến",
+      "authorization": "Bằng việc xác nhận, bạn ủy quyền chuyển đổi tài sản và hướng dẫn thanh toán ở trên.",
+      "withdrawal_submitted": "Đã gửi yêu cầu rút",
+      "transfer_completed": "Chuyển khoản hoàn tất",
+      "withdrawal_desc": "Thanh toán của bạn đã qua xác thực ban đầu và đang vào kiểm tra tuân thủ.",
+      "transfer_desc": "Số dư của bạn đã được cập nhật trong không gian ngân hàng.",
+      "reference": "Mã tham chiếu",
+      "status": "Trạng thái",
+      "destination": "Điểm đến",
+      "processing": "Đang xử lý",
+      "completed": "Hoàn tất"
+    },
+    "detail": {
+      "title": "Chi tiết chuyển khoản",
+      "reference": "Mã tham chiếu {reference}",
+      "payout_amount": "Số tiền chi trả",
+      "destination": "Điểm đến",
+      "estimated_arrival": "Thời gian đến dự kiến",
+      "fees": "Phí",
+      "requested": "Đã yêu cầu",
+      "timeline_title": "Tiến trình thanh toán",
+      "pending": "Đang chờ",
+      "download_receipt": "Tải biên lai",
+      "status": {
+        "completed": "Hoàn tất",
+        "processing": "Đang xử lý",
+        "under_review": "Đang xem xét",
+        "failed": "Thất bại"
+      }
+    },
+    "skeleton": {
+      "loading": "Đang tải bảng điều khiển ngân hàng"
+    }
+  },
+  "AccountRecoveryServices": {
+    "page": {
+      "title": "Dịch vụ khôi phục",
+      "subtitle": "Gửi yêu cầu khôi phục tài sản crypto bị mất hoặc bị đánh cắp. Đội forensics sẽ đánh giá hồ sơ và liên hệ với bạn trong 24–48 giờ.",
+      "process_title": "Quy trình",
+      "form_title": "Chi tiết khôi phục tài sản và forensics",
+      "form_subtitle": "Chúng tôi giúp bạn truy vết và khôi phục tài sản crypto bị mất, đồng thời xây dựng bằng chứng đã xác minh cho việc thu hồi tiền theo pháp luật."
+    },
+    "process": {
+      "assessment": {
+        "title": "Đánh giá",
+        "description": "Chúng tôi phân tích dấu vết và đánh giá khả năng khôi phục."
+      },
+      "strategy": {
+        "title": "Chiến lược",
+        "description": "Kế hoạch tùy chỉnh với hỗ trợ pháp lý và forensics."
+      },
+      "recovery": {
+        "title": "Khôi phục",
+        "description": "Chúng tôi phối hợp với sàn giao dịch và cơ quan chức năng để thu hồi tiền."
+      },
+      "return": {
+        "title": "Hoàn trả",
+        "description": "Chuyển tiền vào ví đã xác minh của bạn."
+      }
+    },
+    "form": {
+      "name": "Họ và tên",
+      "name_placeholder": "vd. Nguyễn Văn A",
+      "transaction_hash": "Hash giao dịch / Địa chỉ ví",
+      "transaction_hash_placeholder": "Nhập hash hoặc địa chỉ (vd. 0x1234...)",
+      "amount_stolen": "Số tiền bị đánh cắp (ước tính)",
+      "amount_stolen_placeholder": "Nhập số tiền ước tính (vd. 200000)",
+      "incident_summary": "Tóm tắt sự cố",
+      "incident_summary_placeholder": "vd. Tiền bị đánh cắp qua lừa đảo phishing...",
+      "evidence": "Ảnh chụp màn hình hoặc bằng chứng khác hỗ trợ yêu cầu",
+      "phone_number": "Số điện thoại",
+      "blockchain": "Chọn blockchain",
+      "blockchain_placeholder": "Chọn blockchain",
+      "currency": "Chọn loại tiền",
+      "currency_placeholder": "Chọn loại tiền",
+      "privacy_prefix": "Lenix Protocol cần thông tin liên hệ của bạn để trao đổi về hồ sơ khôi phục. Xem chi tiết tại",
+      "privacy_policy": "Chính sách quyền riêng tư",
+      "privacy_suffix": ".",
+      "submit": "Gửi yêu cầu khôi phục",
+      "submitting": "Đang gửi..."
+    },
+    "blockchains": {
+      "BTC": "Bitcoin (BTC)",
+      "ETH": "Ethereum (ETH)",
+      "SOL": "Solana (SOL)",
+      "TRX": "Tron (TRX)",
+      "BNB": "Binance Smart Chain (BNB)",
+      "MATIC": "Polygon Mainnet (MATIC)",
+      "AVAX": "Avalanche C-Chain (AVAX)",
+      "ARB": "Arbitrum One (ARB)",
+      "BASE": "Base (BASE)",
+      "FANTOM": "Fantom (Fantom)",
+      "GNOSIS": "Gnosis Chain (GNOSIS)",
+      "KAVA": "Kava (KAVA)",
+      "POL": "Polkadot (POL)",
+      "SUI": "Sui (SUI)",
+      "OTHER": "Khác"
+    },
+    "success": {
+      "title": "Đã gửi yêu cầu",
+      "description": "Đội khôi phục sẽ xem xét hồ sơ và liên hệ với bạn trong 24–48 giờ.",
+      "submit_another": "Gửi yêu cầu khác"
+    },
+    "toast": {
+      "required_fields": "Vui lòng điền đầy đủ các trường bắt buộc",
+      "submit_failed": "Không thể gửi yêu cầu khôi phục",
+      "submit_success": "Đã gửi yêu cầu khôi phục. Đội ngũ sẽ liên hệ với bạn sớm."
+    }
+  },
+  "AccountCryptoLoan": {
+    "page": {
+      "back_to_dashboard": "Quay lại bảng điều khiển",
+      "collateral_title": "Cần thêm tài sản thế chấp?",
+      "collateral_description": "Nạp thêm tài sản vào kho để tăng hạn mức vay và cải thiện hệ số sức khỏe.",
+      "go_to_vault": "Đến kho"
+    },
+    "hero": {
+      "title_line1": "Giải phóng thanh khoản,",
+      "title_line2": "Giữ tài sản của bạn",
+      "subtitle": "Nhận khoản vay bảo chứng bằng crypto tức thì mà không cần bán danh mục. Lãi suất thấp, kỳ hạn linh hoạt và giải ngân ngay.",
+      "get_instant_loan": "Nhận vay tức thì",
+      "how_it_works": "Cách hoạt động",
+      "active_loans": "Khoản vay đang hoạt động",
+      "total_borrowed": "Tổng đã vay",
+      "lowest_rate": "Lãi suất thấp nhất"
+    },
+    "active_loans": {
+      "empty_title": "Không có khoản vay đang hoạt động",
+      "empty_description": "Các khoản vay đang hoạt động sẽ hiển thị tại đây. Nhận thanh khoản tức thì bằng cách đăng ký vay mới.",
+      "title": "Danh mục của bạn",
+      "active_count": "{count} đang hoạt động",
+      "borrowed_amount": "Số tiền vay",
+      "collateral": "Tài sản thế chấp",
+      "health_factor": "Hệ số sức khỏe",
+      "repay_loan": "Trả nợ",
+      "processing": "Đang xử lý...",
+      "view_details": "Xem chi tiết",
+      "details_title": "Chi tiết yêu cầu vay",
+      "borrowed": "Đã vay",
+      "apy": "APY",
+      "duration": "Kỳ hạn",
+      "start_date": "Ngày bắt đầu",
+      "contact_details": "Thông tin liên hệ",
+      "phone": "Điện thoại",
+      "telegram_whatsapp": "Telegram / WhatsApp",
+      "not_provided": "Chưa cung cấp",
+      "payout_method": "Phương thức giải ngân",
+      "no_payout_details": "Không có chi tiết giải ngân đã lưu.",
+      "wallet": "Ví",
+      "network": "Mạng",
+      "bank": "Ngân hàng",
+      "swift_bic": "SWIFT/BIC",
+      "account": "Tài khoản",
+      "holder": "Chủ tài khoản",
+      "routing_iban": "Routing/IBAN"
+    },
+    "market_rates": {
+      "live_rates": "Lãi suất trực tiếp",
+      "available_plans": "Gói khả dụng",
+      "interest_rate": "Lãi suất",
+      "ltv": "{ltv}% LTV"
+    },
+    "application": {
+      "step_label": "Bước {step}/2 — {phase}",
+      "phase_details": "Chi tiết khoản vay",
+      "phase_payout": "Tùy chọn giải ngân",
+      "title_details": "Yêu cầu vay crypto",
+      "title_payout": "Nhận tiền",
+      "subtitle_details": "Tùy chỉnh điều khoản vay theo nhu cầu của bạn.",
+      "subtitle_payout": "Chọn nơi chúng tôi gửi chi tiết khoản vay.",
+      "select_loan_type": "Chọn loại vay",
+      "loan_type_summary": "{rate}% APR · Tối đa {ltv}% LTV",
+      "borrow_amount": "Số tiền vay (USD)",
+      "borrow_amount_placeholder": "vd. 5000",
+      "collateral_asset": "Tài sản thế chấp",
+      "duration": "Kỳ hạn",
+      "continue_payout": "Tiếp tục đến giải ngân",
+      "contact_title": "Chúng tôi liên hệ với bạn như thế nào?",
+      "contact_subtitle": "Cung cấp ít nhất một cách để chúng tôi liên hệ về đơn của bạn.",
+      "phone_number": "Số điện thoại",
+      "phone_placeholder": "vd. +84 912 345 678",
+      "phone_hint": "Cho cuộc gọi và cập nhật SMS",
+      "telegram_whatsapp": "Telegram hoặc WhatsApp",
+      "telegram_placeholder": "vd. @username hoặc +84912345678",
+      "telegram_hint": "Cho nhắn tin nhanh",
+      "funds_title": "Chúng tôi gửi tiền đến đâu?",
+      "payout_crypto": "Ví crypto",
+      "payout_crypto_sub": "Chuyển tức thì",
+      "payout_wire": "Chuyển khoản ngân hàng",
+      "payout_wire_sub": "1–3 ngày làm việc",
+      "payout_bank": "Nạp ngân hàng",
+      "payout_bank_sub": "ACH / SEPA",
+      "wallet_address": "Địa chỉ ví",
+      "wallet_placeholder": "0x...",
+      "select_network": "Chọn mạng",
+      "network_erc20": "Ethereum (ERC20)",
+      "network_trc20": "Tron (TRC20)",
+      "network_bsc": "Binance Smart Chain (BEP20)",
+      "bank_name": "Tên ngân hàng",
+      "bank_name_placeholder": "vd. Vietcombank",
+      "bank_name_alt_placeholder": "vd. Techcombank",
+      "swift_bic": "Mã SWIFT / BIC",
+      "swift_placeholder": "vd. BFTVVNVX",
+      "account_number": "Số tài khoản",
+      "account_number_placeholder": "Số tài khoản của bạn",
+      "account_holder": "Tên chủ tài khoản",
+      "account_holder_placeholder": "Họ tên đầy đủ trên tài khoản",
+      "reference_optional": "Tham chiếu (tùy chọn)",
+      "reference_placeholder": "Mã tham chiếu thanh toán",
+      "routing_iban": "Số routing / IBAN",
+      "routing_iban_placeholder": "Routing ACH (Mỹ) hoặc IBAN (EU)",
+      "back": "Quay lại",
+      "submitting": "Đang gửi...",
+      "submit": "Gửi đơn",
+      "success_title": "Đã gửi đơn",
+      "success_description": "Chúng tôi đã nhận yêu cầu vay. Sẽ xem xét và liên hệ sớm.",
+      "view_loans": "Xem khoản vay của tôi"
+    },
+    "duration": {
+      "6": "6 tháng",
+      "12": "12 tháng",
+      "24": "24 tháng",
+      "months": "{count} tháng"
+    },
+    "collateral_assets": {
+      "BTC": "Bitcoin",
+      "ETH": "Ethereum",
+      "SOL": "Solana"
+    },
+    "status": {
+      "Active": "Đang hoạt động",
+      "Pending": "Đang chờ",
+      "Repaid": "Đã trả",
+      "Liquidated": "Đã thanh lý"
+    },
+    "payout_methods": {
+      "crypto": "crypto",
+      "wire_transfer": "chuyển khoản ngân hàng",
+      "bank": "ngân hàng"
+    },
+    "toast": {
+      "repay_success": "Trả nợ thành công"
+    },
+    "overview": {
+      "total_borrowed": "Tổng đã vay",
+      "total_borrowed_tooltip": "Tổng số tiền vay trên tất cả khoản vay đang hoạt động",
+      "current_interest": "Lãi hiện tại",
+      "collateral_value": "Giá trị thế chấp",
+      "collateral_tooltip": "Tổng giá trị tài sản bị khóa làm thế chấp",
+      "ltv_label": "LTV",
+      "low_risk": "Rủi ro thấp",
+      "health_factor": "Hệ số sức khỏe",
+      "health_tooltip": "Chỉ báo rủi ro thanh lý. Giữ trên 1,5 để tránh thanh lý.",
+      "safe": "An toàn",
+      "liquidated": "1,0 (Đã thanh lý)",
+      "safe_threshold": "3,0 (An toàn)"
+    },
+    "borrow_form": {
+      "title": "Máy tính khoản vay",
+      "subtitle": "Tính điều khoản vay ngay lập tức.",
+      "borrow_tab": "Vay",
+      "repay_tab": "Trả nợ",
+      "want_to_borrow": "Tôi muốn vay",
+      "my_collateral": "Tài sản thế chấp của tôi",
+      "asset_placeholder": "Tài sản",
+      "ltv": "LTV",
+      "low_risk": "Rủi ro thấp",
+      "apy": "APY",
+      "total_repayment": "Tổng trả nợ",
+      "apply_new_loan": "Đăng ký vay mới",
+      "repay_title": "Quản lý trả nợ",
+      "repay_description": "Vui lòng dùng danh sách \"Khoản vay đang hoạt động\" để quản lý và trả các khoản vay cụ thể."
+    },
+    "collateral": {
+      "title": "Tài sản thế chấp được hỗ trợ",
+      "live_rates": "Lãi suất trực tiếp",
+      "max_ltv": "LTV tối đa: {ltv}",
+      "fee": "Phí",
+      "assets": {
+        "BTC": "Bitcoin",
+        "ETH": "Ethereum",
+        "SOL": "Solana",
+        "XRP": "Ripple"
+      }
     }
   }
 }

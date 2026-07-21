@@ -17,6 +17,15 @@ const RECOVERY_FIELDS = [
 
 const LOAN_FIELDS = ["loan_type_id", "loan_amount", "collateral_asset", "duration"] as const;
 
+const BANKING_FIELDS = [
+    "name",
+    "phone_number",
+    "country_phone_code",
+    "country",
+    "banking_service",
+    "notes",
+] as const;
+
 export async function submitServiceSelection(formData: FormData) {
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
@@ -90,6 +99,12 @@ export async function submitOnboardingDetails(formData: FormData) {
             } catch {
                 // Keep only filename if upload fails
             }
+        }
+    } else if (serviceType === "banking") {
+        for (const key of BANKING_FIELDS) {
+            const value = formData.get(key);
+            if (value !== null && value !== undefined && value !== "")
+                details[key] = String(value);
         }
     } else {
         // Loan application: explicitly save every loan field

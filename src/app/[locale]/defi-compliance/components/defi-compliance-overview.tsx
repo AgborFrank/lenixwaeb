@@ -1,21 +1,14 @@
-export default function DeFiComplianceOverview() {
+import { getTranslations } from "next-intl/server";
+
+export default async function DeFiComplianceOverview() {
+  const t = await getTranslations("DeFiCompliance.Overview");
+
   return (
-    <section className="py-20 bg-zinc-900/30 border-y border-white/5">
+    <section className="py-20 bg-zinc-900/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4">
-            Navigate evolving regulations while protecting DeFi ecosystem partners
-          </h2>
-          <p className="text-zinc-400 max-w-3xl mx-auto">
-            Meet the unique operational and compliance requirements of
-            decentralized finance with automated due diligence, powered by the
-            industry's broadest blockchain coverage and next-generation
-            cross-chain screening solutions. Assess counterparties, monitor
-            liquidity pools, and screen wallet interactions for links to
-            sanctioned entities or illicit activity. Lenix Protocol's solutions
-            are designed for decentralized protocols, enabling risk management
-            without compromising the principles of DeFi.
-          </p>
+        <div className="text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4">{t("title")}</h2>
+          <p className="text-zinc-400 leading-relaxed">{t("description")}</p>
         </div>
       </div>
     </section>

@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Soluções",
+    "title1": "Recuperação, liquidação, crédito ",
+    "title2": "e infraestrutura de segurança",
+    "title3": ".",
+    "subtitle1": "A Lenix rastreia cripto roubada ou mal direcionada, liquida em fiat por corredores suportados, empresta contra garantia em cofre e monitoriza carteiras para equipas que custodiam ativos de clientes.",
+    "subtitle2": "Cada fluxo de trabalho tem admissão e entregáveis próprios. Em recuperação, avaliamos a pista antes de qualquer compromisso pago — não prometemos resultados."
+  },
+  "Overview": {
+    "eyebrow": "Por onde começar",
+    "title": "Associe o problema ao fluxo de trabalho",
+    "description": "A maioria dos visitantes já sabe se precisa de rastreio, pagamento, liquidez ou controlos operacionais. Leia os resumos e abra a secção adequada.",
+    "learn_more": "Ver detalhes",
+    "cards": {
+      "recovery": {
+        "title": "Recuperação de ativos",
+        "desc": "Fundos roubados, fraudulentos ou enviados para o endereço errado. Precisa de rastreio e provas documentadas antes de decidir os próximos passos."
+      },
+      "payments": {
+        "title": "Pagamentos transfronteiriços",
+        "desc": "Tesouraria ou finanças precisa converter cripto em fiat, com taxas, comissões e estado de entrega apresentáveis a auditores."
+      },
+      "lending": {
+        "title": "Empréstimo cripto",
+        "desc": "Detém garantia elegível e precisa de liquidez sem vender a posição."
+      },
+      "security": {
+        "title": "Segurança da plataforma",
+        "desc": "A sua equipa custodia ativos de clientes e precisa de monitorização, regras de acesso e um percurso de escalada documentado."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Recuperação de ativos",
+    "title": "Rastrear primeiro. Comprometer-se só quando existir caminho.",
+    "description": "Envie endereços de carteira, hashes de transação e uma cronologia breve. Seguimos para onde o valor se moveu, preparamos conclusões para exchanges e advogados, e dizemos claramente se a recuperação é realista antes de qualquer compromisso pago. Não prometemos recuperação.",
+    "points": {
+      "chains": "Rastreio nas principais redes EVM, Bitcoin e stablecoins comuns em casos de roubo",
+      "evidence": "Documentação formatada para mesas de compliance de exchanges, advogados e autoridades",
+      "terms": "Âmbito e honorários definidos apenas após revisão gratuita de recuperabilidade"
+    },
+    "cta": "Iniciar recovery"
+  },
+  "Payments": {
+    "eyebrow": "Pagamentos transfronteiriços",
+    "title": "Liquidação que a sua tesouraria pode auditar",
+    "description": "Converta cripto em fiat onde os rails bancários locais são lentos, caros ou opacos. Taxa, comissão e estado são visíveis desde a iniciativa da carteira até à entrega ao beneficiário — finanças e ops não adivinham.",
+    "cta": "Ver pagamentos",
+    "capabilities": {
+      "corridors": {
+        "title": "Corredores ativos",
+        "desc": "Pagamento a contas bancárias nos mercados que suportamos hoje. Contacte-nos se o seu corredor não estiver listado."
+      },
+      "visibility": {
+        "title": "Acompanhamento de transferências",
+        "desc": "Estado em cada passo do fluxo, não um único indicador pendente sem contexto."
+      },
+      "compliance": {
+        "title": "Triagem de sanções e AML",
+        "desc": "Fluxos de entrada e saída triados antes da libertação de fundos."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Empréstimo cripto",
+    "title": "Liquidez enquanto a garantia permanece em cofre",
+    "description": "Deposite garantia aprovada e levante stablecoins ou fiat. LTV, prazos de reembolso e limiares de liquidação são mostrados antes do desembolso — sem gatilhos ocultos após assinar.",
+    "points": {
+      "credit": "Tipos de garantia elegíveis não exigem verificação de crédito tradicional",
+      "ltv": "LTV e calendários de reembolso acordados antecipadamente",
+      "custody": "Garantia em cofres segregados durante o prazo do empréstimo"
+    },
+    "cta": "Pedir empréstimo"
+  },
+  "Security": {
+    "eyebrow": "Segurança da plataforma",
+    "title": "Controlos para equipas que custodiam ativos de clientes",
+    "description": "Monitorização de carteiras, acesso com permissões e escalada de incidentes para organizações que não podem tratar atividade suspeita como ticket secundário. Feito para equipas de ops, não para segurança de apresentação.",
+    "cta": "Ver segurança",
+    "pillars": {
+      "monitoring": {
+        "title": "Monitorização de atividade",
+        "desc": "Alertas sobre saídas invulgares, novas contrapartes e transferências fora da política."
+      },
+      "access": {
+        "title": "Acesso e trilho de auditoria",
+        "desc": "Permissões por função com registo de quem aprovou o quê e quando."
+      },
+      "incident": {
+        "title": "Resposta a incidentes",
+        "desc": "Passos de escalada documentados que a sua equipa pode executar quando a atividade precisa de revisão humana."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Não tem a certeza de qual fluxo se aplica?",
+    "description": "Descreva a situação — fundos perdidos, pagamento, empréstimo ou preocupação operacional — e encaminhamo-lo para a admissão certa.",
+    "btn_primary": "Contactar equipa",
+    "btn_secondary": "Iniciar recovery"
+  }
+}

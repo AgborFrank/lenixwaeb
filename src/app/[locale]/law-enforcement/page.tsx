@@ -1,27 +1,34 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { LawEnforcementContent } from "./components/law-enforcement-content";
+import Partners from "@/components/partners";
+import LawEnforcementHero from "./components/law-enforcement-hero";
+import LawEnforcementOverview from "./components/law-enforcement-overview";
+import LawEnforcementHighlights from "./components/law-enforcement-highlights";
+import LawEnforcementCapabilities from "./components/law-enforcement-capabilities";
+import LawEnforcementCta from "./components/law-enforcement-cta";
 
-export const metadata: Metadata = {
-  title: "Blockchain Intelligence for Law Enforcement | Lenix Protocol",
-  description:
-    "Solve more crime with the industry's highest quality blockchain intelligence and investigation tools. Track illicit crypto activity, recover assets, and build cases with confidence.",
-  keywords: [
-    "Law Enforcement",
-    "Blockchain Intelligence",
-    "Crypto Investigations",
-    "Criminal Investigations",
-    "Asset Recovery",
-    "Blockchain Forensics",
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("LawEnforcement.meta");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function LawEnforcementPage() {
   return (
     <>
       <Header />
-      <LawEnforcementContent />
+      <div className="min-h-screen bg-black text-white selection:bg-yellow-400/30">
+        <LawEnforcementHero />
+        <LawEnforcementOverview />
+        <LawEnforcementHighlights />
+        <LawEnforcementCapabilities />
+        <Partners className="bg-zinc-900/30" />
+        <LawEnforcementCta />
+      </div>
       <Footer />
     </>
   );

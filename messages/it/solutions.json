@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Soluzioni",
+    "title1": "Recovery, regolamento, credito ",
+    "title2": "e infrastruttura di sicurezza",
+    "title3": ".",
+    "subtitle1": "Lenix traccia crypto rubate o indirizzate male, regola in fiat sui corridoi supportati, presta contro garanzie in vault e monitora i wallet per i team che custodiscono asset dei clienti.",
+    "subtitle2": "Ogni workflow ha intake e deliverable propri. Per il recovery, valutiamo la traccia prima di qualsiasi impegno a pagamento — non promettiamo risultati."
+  },
+  "Overview": {
+    "eyebrow": "Da dove iniziare",
+    "title": "Abbina il problema al workflow",
+    "description": "La maggior parte dei visitatori sa già se serve tracing, un pagamento, liquidità o controlli operativi. Leggi i riepiloghi e apri la sezione adatta.",
+    "learn_more": "Vedi dettagli",
+    "cards": {
+      "recovery": {
+        "title": "Recupero asset",
+        "desc": "Fondi rubati, truffati o inviati all'indirizzo sbagliato. Serve una traccia e prove documentate prima di decidere i prossimi passi."
+      },
+      "payments": {
+        "title": "Pagamenti transfrontalieri",
+        "desc": "Tesoreria o finance deve convertire crypto in fiat, con tassi, commissioni e stato di consegna mostrabili agli auditor."
+      },
+      "lending": {
+        "title": "Prestito crypto",
+        "desc": "Detieni garanzia idonea e ti serve liquidità senza vendere la posizione."
+      },
+      "security": {
+        "title": "Sicurezza piattaforma",
+        "desc": "Il tuo team custodisce asset dei clienti e ha bisogno di monitoraggio, regole di accesso e un percorso di escalation documentato."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Recupero asset",
+    "title": "Tracciare prima. Impegnarsi solo quando esiste una via.",
+    "description": "Invia indirizzi wallet, hash di transazione e una breve cronologia. Seguiamo dove si è spostato il valore, prepariamo risultati per exchange e consulenti legali, e diciamo chiaramente se il recupero è realistico prima di qualsiasi impegno a pagamento. Non promettiamo il recupero.",
+    "points": {
+      "chains": "Tracing sulle principali reti EVM, Bitcoin e stablecoin comuni nei casi di furto",
+      "evidence": "Documentazione formattata per desk compliance degli exchange, consulenti e forze dell'ordine",
+      "terms": "Ambito e compensi definiti solo dopo una revisione gratuita di recuperabilità"
+    },
+    "cta": "Apri caso"
+  },
+  "Payments": {
+    "eyebrow": "Pagamenti transfrontalieri",
+    "title": "Regolamento che la tesoreria può auditare",
+    "description": "Converti crypto in fiat dove i rail bancari locali sono lenti, costosi o opachi. Tasso, commissione e stato sono visibili dall'avvio del wallet alla consegna al beneficiario — finance e ops non indovinano.",
+    "cta": "Vedi pagamenti",
+    "capabilities": {
+      "corridors": {
+        "title": "Corridoi attivi",
+        "desc": "Pagamento su conti bancari nei mercati che supportiamo oggi. Contattaci se il tuo corridoio non è in elenco."
+      },
+      "visibility": {
+        "title": "Tracking dei passaggi",
+        "desc": "Stato a ogni passo del flusso, non un solo flag in sospeso senza contesto."
+      },
+      "compliance": {
+        "title": "Screening sanzioni e AML",
+        "desc": "Flussi in entrata e in uscita controllati prima del rilascio dei fondi."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Prestito crypto",
+    "title": "Liquidità mentre la garanzia resta in vault",
+    "description": "Deposita garanzia approvata e preleva stablecoin o fiat. LTV, termini di rimborso e soglie di liquidazione sono mostrati prima del disbursement — nessun trigger nascosto dopo la firma.",
+    "points": {
+      "credit": "I tipi di garanzia idonei non richiedono un credit check tradizionale",
+      "ltv": "LTV e piani di rimborso concordati in anticipo",
+      "custody": "Garanzia in vault segregati per la durata del prestito"
+    },
+    "cta": "Richiedi prestito"
+  },
+  "Security": {
+    "eyebrow": "Sicurezza piattaforma",
+    "title": "Controlli per team che custodiscono asset dei clienti",
+    "description": "Monitoraggio wallet, accesso con permessi ed escalation incidenti per organizzazioni che non possono trattare attività sospette come ticket secondario. Pensato per team ops, non per sicurezza da slide.",
+    "cta": "Vedi sicurezza",
+    "pillars": {
+      "monitoring": {
+        "title": "Monitoraggio attività",
+        "desc": "Alert su uscite insolite, nuove controparti e trasferimenti fuori policy."
+      },
+      "access": {
+        "title": "Accesso e audit trail",
+        "desc": "Permessi per ruolo con registro di chi ha approvato cosa e quando."
+      },
+      "incident": {
+        "title": "Risposta agli incidenti",
+        "desc": "Passi di escalation documentati che il team può eseguire quando serve revisione umana."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Non sai quale workflow si applica?",
+    "description": "Descrivi la situazione — fondi persi, pagamento, prestito o problema ops — e ti indirizzeremo all'intake giusto.",
+    "btn_primary": "Contatta team",
+    "btn_secondary": "Apri caso"
+  }
+}

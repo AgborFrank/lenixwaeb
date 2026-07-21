@@ -1,14 +1,15 @@
 {
   "Header": {
     "nav": {
-      "giveaway": "Cadeau 250K",
+      "giveaway": "Communauté",
       "about": "À propos",
       "solutions": "Solutions",
       "blockchain_forensics": "Forensique",
       "asset_recovery": "Récupération d'Actifs",
       "crypto_recovery": "Récupération Crypto",
       "contact": "Contact",
-      "airdrop": "Airdrop"
+      "airdrop": "Airdrop",
+      "banking_finance": "Banking & Finance"
     },
     "solutions": {
       "wallet": {
@@ -30,6 +31,10 @@
       "enforcement": {
         "title": "Forces de l'Ordre",
         "desc": "Outils d'enquête pour agences."
+      },
+      "banking_finance": {
+        "title": "Banking & Finance",
+        "desc": "Transfers, liquidation, lending, and custody."
       }
     },
     "user_menu": {
@@ -47,12 +52,12 @@
     },
     "buttons": {
       "log_in": "Connexion",
-      "log_in_sign_up": "Connexion / Inscription",
-      "get_reward": "Obtenir 50 USDT"
+      "log_in_sign_up": "Connexion",
+      "get_reward": "Compte"
     }
   },
   "Footer": {
-    "company_desc": "Protocole L1 pour paiements crypto-banque & récupération d'actifs. Utilise l'IA pour l'évolutivité et la sécurité.",
+    "company_desc": "Forensique blockchain, récupération d'actifs et infrastructure financière crypto. Protocole audité pour le traçage, la garde et les paiements transfrontaliers.",
     "headings": {
       "about": "À PROPOS",
       "solutions": "SOLUTIONS",
@@ -77,10 +82,12 @@
       "privacy": "Confidentialité",
       "disclaimer": "Avertissement",
       "wallet_decryption": "Décryptage de Portefeuille",
-      "crypto_asset_identification": "Identification des Actifs Crypto"
+      "crypto_asset_identification": "Identification des Actifs Crypto",
+      "security": "Sécurité",
+      "banking_finance": "Banking & Finance"
     },
     "buttons": {
-      "recover_assets": "Récupérer des Actifs"
+      "recover_assets": "Récupérer"
     },
     "certification_desc": "Certifié ISO27001. Nous gérons vos données selon les normes internationales.",
     "copyright": "© 2017 - 2026 Lenix Protocol, Tous droits réservés."
@@ -106,56 +113,70 @@
   },
   "Home": {
     "Hero": {
-      "title1": "Criminologie ",
-      "title2": "Blockchain",
-      "title3": ",\nProtocole de récupération et de sécurité crypto.",
-      "subtitle1": "Analyses blockchain avancées et enquêtes médico-légales pour retracer les actifs, découvrir les fraudes et soutenir les efforts de récupération légale à l'échelle mondiale.",
-      "subtitle2": "Sécurisez votre avenir numérique grâce à une enquête d'experts.",
-      "btn_signup": "S'inscrire à Lenix",
-      "btn_login": "Se connecter",
-      "widget_title": "Acheter maintenant",
-      "widget_subtitle": "Avant la hausse des prix",
-      "usd_raised": "USD RÉCOLTÉS À CE JOUR :",
-      "tokens_sold": "Jetons vendus :",
-      "price_usd": "Prix USD: ${price}",
-      "price_eth": "Prix ETH: {price} ETH",
-      "pay_eth": "ETH que vous payez",
-      "pay_usdt": "USDT que vous payez",
-      "pay_usd": "USD que vous payez",
-      "receive_lnx": "$LNX que vous recevez",
-      "btn_processing": "Traitement...",
-      "btn_pay_eth": "Payer avec ETH",
-      "btn_pay_usdt": "Payer avec USDT",
-      "btn_pay_card": "Entrez les détails de la carte ci-dessous",
-      "card_info": "Propulsé par Stripe. Montant facturé en USD.",
-      "btn_connect": "Connecter le portefeuille",
-      "btn_giveaway": "Obtenir un cadeau de 500 USD",
-      "giveaway_info": "Recevez 500 USD de jetons LNX en cadeau"
+      "slides": {
+        "recovery": {
+          "title1": "Blockchain forensics and recovery ",
+          "title2": "for stolen digital assets",
+          "title3": ".",
+          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
+          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
+          "btn_primary": "Start a recovery case",
+          "btn_secondary": "Contact our team"
+        },
+        "forensics": {
+          "title1": "Investigation-grade ",
+          "title2": "blockchain forensics",
+          "title3": ".",
+          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
+          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
+          "btn_primary": "View forensics",
+          "btn_secondary": "Contact our team"
+        },
+        "banking": {
+          "title1": "Cross-Border Financial Services, ",
+          "title2": "Payment and Remittance",
+          "title3": ".",
+          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
+          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
+          "btn_primary": "Create account",
+          "btn_secondary": "Banking & finance"
+        },
+        "settlement": {
+          "title1": "Crypto-to-fiat settlement ",
+          "title2": "your treasury can audit",
+          "title3": ".",
+          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
+          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
+          "btn_primary": "Open banking services",
+          "btn_secondary": "Contact our team"
+        }
+      },
+      "btn_login": "Connexion"
     },
     "Pillars": {
-      "title1": "Sécurité, récupération, criminalistique et finance ",
-      "title2": "en un seul endroit",
-      "subtitle": "Choisissez ce dont vous avez besoin - chaque pilier renvoie à des solutions dédiées.",
+      "title1": "Un protocole, ",
+      "title2": "quatre workflows",
+      "subtitle": "Choisissez le point d'entrée adapté à votre situation. Chaque voie dispose d'outils dédiés et d'une prochaine étape claire.",
       "cards": {
         "security": {
-          "title": "Sécurité Blockchain",
-          "desc": "Infrastructure auditée et technologie de coffre-fort sécurisé pour protéger vos actifs.",
-          "cta": "Explorer la sécurité"
+          "title": "Sécurité blockchain",
+          "desc": "Vaults audités, custody multi-sig et monitoring pour les équipes qui doivent conserver des actifs en sécurité on-chain.",
+          "cta": "Voir sécurité"
         },
         "recovery": {
           "title": "Récupération d'actifs",
-          "desc": "Protocoles spécialisés et voies juridiques pour réclamer des cryptos perdues ou volées avec une analyse médico-légale certifiée.",
-          "cta": "Démarrer la récupération"
+          "desc": "Tracing, coordination avec les exchanges et voies juridiques lorsque des crypto sont perdues, volées ou bloquées.",
+          "cta": "Lancer recovery"
         },
         "forensics": {
-          "title": "Criminologie Blockchain",
-          "desc": "Enquête d'experts pour retracer les fraudes, les piratages et fournir des preuves recevables en justice pour la récupération légale.",
-          "cta": "En savoir plus"
+          "title": "Forensique blockchain",
+          "desc": "Enquêtes au niveau des portefeuilles et cartographie des transactions pour les équipes compliance et la revue juridique.",
+          "cta": "Voir forensique"
         },
         "finance": {
-          "title": "Protocole de service financier",
-          "desc": "Paiements, prêts, portefeuille et coffre-fort pour l'écosystème crypto moderne.",
-          "cta": "Voir les solutions"
+          "title": "Services financiers",
+          "desc": "Paiements crypto-fiat, prêt, wallet et vault pour déplacer et conserver de la valeur.",
+          "cta": "Voir solutions"
         }
       }
     },
@@ -172,58 +193,60 @@
       "widget_alert": "Alerte de paiement de facture de B Shaw",
       "widget_req": "DEMANDE DE PAIEMENT",
       "widget_verified": "LIEN DE PAIEMENT VÉRIFIÉ",
-      "widget_receipt": "LE REÇU DE LA TRANSACTION SERA ENVOYÉ À ",
+      "widget_receipt": "LE REÇU DE TRANSACTION SERA ENVOYÉ À ",
       "widget_wallet": "Adresse du portefeuille",
       "widget_order": "COMMANDE",
-      "widget_gas": "FRAIS DE GAZ",
-      "btn_complete": "Compléter le paiement",
-      "btn_manual": "Payer manuellement",
-      "title1": "Pour les entreprises : acceptez les cryptos, ",
-      "title2": "protégez",
-      "title3": " dans le coffre-fort, récupérez si nécessaire.",
-      "point1": "Acceptez les cryptos et réglez en fiat. Paiement simple et API pour les marchands.",
-      "point2": "Conservez les revenus dans notre coffre-fort sécurisé avec multi-sig et garde — infrastructure auditée.",
-      "point3": "Si les fonds sont perdus ou volés, notre équipe peut aider à les retracer et à les réclamer via des canaux de récupération et juridiques.",
-      "point4_1": "Explorer les solutions",
+      "widget_gas": "FRAIS DE GAS",
+      "btn_complete": "Payer",
+      "btn_manual": "Payer manuel",
+      "title1": "Infrastructure marchande avec ",
+      "title2": "récupération intégrée",
+      "title3": ".",
+      "point1": "Acceptez la crypto et réglez en fiat via checkout et APIs marchands.",
+      "point2": "Acheminez les recettes via une custody vault auditée avec contrôles multi-sig.",
+      "point3": "Si un problème survient après règlement, le même protocole prend en charge tracing et workflows de récupération.",
+      "point4_1": "Voir solutions",
       "point4_2": " ou ",
-      "point4_3": "commencer un dossier de récupération",
-      "point4_4": "."
+      "point4_3": "Ouvrir dossier",
+      "point4_4": ".",
+      "mock_brand": "Marchand Lenix",
+      "image_alt": "Tableau de bord opérations marchand et compliance Lenix"
     },
     "Payment": {
-      "badge": "Ce que nous offrons",
-      "title": "Le protocole pour les paiements, le coffre-fort, la récupération et le prêt",
-      "subtitle": "Une seule pile pour la façon dont vous déplacez, détenez et récupérez de la valeur.",
+      "badge": "Protocol stack",
+      "title": "Move, hold, and recover value on one layer",
+      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
       "cards": {
         "fiat": {
-          "title": "Crypto-vers-fiat",
-          "desc": "Envoyez des cryptos et réglez en fiat via les réseaux de paiement locaux — transfrontaliers et quotidiens."
+          "title": "Crypto-to-fiat",
+          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
         },
         "vault": {
-          "title": "Coffre-fort et garde",
-          "desc": "Multi-sig et garde sécurisée pour que vos actifs restent protégés."
+          "title": "Vault and custody",
+          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
         },
         "recovery": {
-          "title": "Récupération et criminalistique",
-          "desc": "Quand les choses tournent mal, nous aidons à retracer et à réclamer les fonds."
+          "title": "Recovery and forensics",
+          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
         },
         "lending": {
-          "title": "Prêt",
-          "desc": "Empruntez sur garantie et accédez à des liquidités quand vous en avez besoin."
+          "title": "Lending",
+          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
         }
       },
-      "cta": "Explorer toutes les solutions"
+      "cta": "Voir solutions"
     },
     "TokenDetails": {
-      "title1": "Détails du jeton ",
-      "title2": "Lenix Protocol",
-      "subtitle": "Utilisez les informations du contrat ci-dessous pour ajouter le jeton Lenix Protocol à votre portefeuille.",
+      "title1": "Lenix Protocol",
+      "title2": " Token Details",
+      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
       "headers": {
-        "contract": "Adresse du contrat",
-        "name": "Nom du jeton",
-        "symbol": "Symbole du jeton",
-        "supply": "Offre de jetons",
-        "network": "Réseau",
-        "decimals": "Décimales"
+        "contract": "Contract Address",
+        "name": "Token Name",
+        "symbol": "Token Symbol",
+        "supply": "Token Supply",
+        "network": "Network",
+        "decimals": "Decimals"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -231,35 +254,1158 @@
       }
     },
     "Credibility": {
-      "title1": "Lenix Protocol en ",
-      "title2": "détail",
-      "subtitle1": "Audité par CertiK. Construit avec confiance.",
-      "subtitle2_1": "Nos audits couvrent toute la pile. Lisez le ",
-      "subtitle2_2": "Livre blanc",
-      "subtitle2_3": " et le rapport CertiK pour les détails.",
-      "col1_text": "Lenix Protocol a été entièrement audité par CertiK, la principale société de sécurité blockchain au monde.",
-      "col1_btn": "Voir l'audit CertiK",
-      "col2_text": "Lisez le rapport complet et explorez notre livre blanc pour un aperçu plus approfondi de notre technologie et de notre économie de jetons.",
+      "eyebrow": "Vérification",
+      "title1": "Code audité. ",
+      "title2": "Contrôles documentés.",
+      "subtitle1": "Smart contracts revus par CertiK et opérations alignées ISO 27001 pour les équipes qui exigent plus que du marketing.",
+      "subtitle2_1": "Consultez le ",
+      "subtitle2_2": "whitepaper",
+      "subtitle2_3": " et la documentation d'audit sur l'architecture, l'utilité du token et les contrôles de sécurité.",
+      "col1_text": "Les smart contracts Lenix Protocol ont été revus par CertiK. L'audit couvre les composants core utilisés en production.",
+      "col1_btn": "Docs sécurité",
+      "col2_text": "Le whitepaper explique comment recovery, custody et paiements s'articulent—et la place de LNX dans le design du protocole.",
       "col2_btn": "Livre blanc"
     },
     "Competition": {
-      "title1": "Participez à notre concours pour courir la chance de gagner ",
-      "title2": "250K $",
-      "subtitle": "Participez au cadeau de 250 000 $ de Lenix Protocol ! Dix gagnants recevront chacun 25 000 $ en LNX. Boostez vos chances en partageant et en accomplissant toutes les tâches pour des entrées bonus. Ne manquez pas cette chance - inscrivez-vous maintenant !",
-      "btn": "Participez au concours maintenant !"
+      "title1": "Community ",
+      "title2": "giveaway",
+      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "btn": "Programme communauté"
     },
     "Features": {
       "wallet": "Portefeuille Lenix Protocol",
       "recipient": "Entrer le destinataire",
       "bank_details": "Détails du compte bancaire",
       "iban": "IBAN",
-      "btn_connect": "Connecter le portefeuille et payer",
-      "btn_manual": "Payer manuellement",
+      "btn_connect": "Connecter",
+      "btn_manual": "Payer manuel",
       "title_small": "Pourquoi Lenix ProtocolPay ?",
       "title_big": "Relier la crypto aux réseaux de paiement locaux dans le monde entier.",
       "desc1": "Lenix ProtocolPay permet aux détenteurs de crypto et aux entreprises de faciliter les transactions crypto-fiat dans le monde entier, en tirant parti des réseaux de paiement locaux et de la technologie blockchain.",
       "desc2": "Enfin, profitez de la rapidité de la crypto avec la commodité quotidienne des paiements en monnaie fiduciaire.",
       "btn_whitepaper": "Livre blanc"
+    },
+    "LnxPurchaseWidget": {
+      "widget_title": "Buy LNX",
+      "widget_subtitle": "Protocol token sale",
+      "usd_raised": "USD raised so far:",
+      "tokens_sold": "Tokens sold:",
+      "price_usd": "USD price: ${price}",
+      "price_eth": "ETH price: {price} ETH",
+      "pay_eth": "ETH you pay",
+      "pay_usdt": "USDT you pay",
+      "pay_usd": "USD you pay",
+      "receive_lnx": "$LNX you receive",
+      "btn_processing": "Processing...",
+      "btn_pay_eth": "Pay with ETH",
+      "btn_pay_usdt": "Pay with USDT",
+      "btn_pay_card": "Payer par carte",
+      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "btn_connect": "Connecter",
+      "btn_giveaway": "Bonus LNX",
+      "giveaway_info": "Connect your wallet to check eligibility."
+    },
+    "TokenSale": {
+      "title1": "LNX ",
+      "title2": "token sale",
+      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+    },
+    "Partners": {
+      "eyebrow": "Écosystème",
+      "title": "Conçu pour les exchanges, la custody et les rails de paiement",
+      "subtitle": "Lenix connecte le tracing, les workflows de récupération et l'infrastructure de règlement dans l'ensemble de la stack crypto."
+    },
+    "CaseWorkflow": {
+      "eyebrow": "Comment ça marche",
+      "title1": "De l'intake aux ",
+      "title2": "preuves exploitables",
+      "subtitle": "Un processus structuré conçu pour les victimes, équipes compliance et conseils—sans promesses vagues.",
+      "steps": {
+        "submit": {
+          "title": "Soumettre votre dossier",
+          "desc": "Partagez adresses de portefeuille, hashes de transaction, chronologies et faits. L'examen initial est gratuit."
+        },
+        "trace": {
+          "title": "Tracer et cartographier les flux",
+          "desc": "Nous suivons les fonds sur les chaînes, mixers, bridges et dépôts exchange pour identifier où la valeur a abouti."
+        },
+        "deliver": {
+          "title": "Livrer les preuves",
+          "desc": "Vous recevez des conclusions documentées, formatées pour les desks compliance des exchanges, régulateurs ou conseils."
+        }
+      },
+      "btn_primary": "Ouvrir dossier",
+      "btn_secondary": "Parler analyste",
+      "step_label": "Étape {number}"
+    },
+    "TrustSignals": {
+      "eyebrow": "Standards opérationnels",
+      "title1": "Conçu pour les dossiers où ",
+      "title2": "la confiance compte",
+      "subtitle": "La récupération est une cible pour les arnaques. Lenix applique les pratiques que les firmes sérieuses utilisent pour protéger victimes et institutions.",
+      "items": {
+        "no_fees": {
+          "title": "Pas de frais de déblocage anticipés",
+          "desc": "Nous ne demandons pas de paiements anticipés pour libérer, débloquer ou transférer vos fonds."
+        },
+        "no_seed": {
+          "title": "Jamais de phrase secrète",
+          "desc": "Pas d'accès à distance, pas de clés privées, pas de demande de phrase de récupération—jamais."
+        },
+        "no_custody": {
+          "title": "Nous ne détenons pas vos actifs",
+          "desc": "Lenix prépare les preuves et coordonne les voies. Nous ne sommes pas custodian de votre portefeuille."
+        },
+        "honest": {
+          "title": "Évaluation honnête du dossier",
+          "desc": "Si une piste est épuisée ou la récupération improbable, nous le disons avant un engagement payant."
+        },
+        "audited": {
+          "title": "Stack protocolaire audité",
+          "desc": "Smart contracts revus par CertiK. Opérations alignées sur les contrôles ISO 27001."
+        },
+        "chains": {
+          "title": "Couverture multi-chaînes",
+          "desc": "Les workflows de tracing couvrent les principaux réseaux EVM et types d'actifs courants dans les cas de vol."
+        }
+      },
+      "image_alt": "Analyste examinant un tableau de bord d'enquête blockchain et des preuves de transaction"
+    },
+    "CaseStudy": {
+      "eyebrow": "Exemple de cas",
+      "title1": "Quand des fonds volés atteignent ",
+      "title2": "un exchange custodial",
+      "subtitle": "Exemple anonymisé. Identifiants modifiés. Le processus est représentatif—sans garantie de récupération.",
+      "situation": {
+        "label": "Situation",
+        "text": "Un portefeuille d'entreprise a envoyé des USDC à un contrat de phishing. En quelques heures, les fonds ont transité par deux portefeuilles intermédiaires vers un grand exchange."
+      },
+      "action": {
+        "label": "Ce que Lenix a fait",
+        "text": "Nous avons cartographié le parcours complet, identifié l'adresse de dépôt et préparé un dossier de preuves avec graphes de transactions et chronologie pour l'équipe compliance de l'exchange."
+      },
+      "outcome": {
+        "label": "Résultat",
+        "text": "Le service compliance de l'exchange a accepté le dossier. Les fonds ont été gelés en attente d'examen. Les avocats ont reçu la même documentation pour les démarches juridiques parallèles."
+      },
+      "disclaimer": "Les résultats varient selon le cas, la juridiction et le délai de réponse de l'exchange. Cet exemple montre comment Lenix documente une piste—chaque cas ne se termine pas par une récupération.",
+      "image_alt": "Tableau de bord de surveillance des transactions et flux de fonds"
+    },
+    "Cta": {
+      "title": "Prêt à ouvrir un dossier ?",
+      "subtitle": "Décrivez ce qui s'est passé et les détails on-chain dont vous disposez. Nous répondons avec une lecture honnête des voies de tracing et récupération.",
+      "btn_primary": "Ouvrir dossier",
+      "btn_secondary": "Contacter équipe"
+    }
+  },
+  "Security": {
+    "meta": {
+      "title": "Sécurité & Audits | Lenix Protocol",
+      "description": "Audits CertiK, opérations alignées ISO 27001 et contrôles de sécurité pour l'infrastructure forensique et de récupération Lenix."
+    },
+    "hero": {
+      "eyebrow": "Sécurité",
+      "title1": "Protocole audité. ",
+      "title2": "Contrôles documentés.",
+      "subtitle": "Lenix combine une revue tierce des smart contracts avec des pratiques de sécurité opérationnelle pour les équipes gérant des workflows sensibles de récupération et de custody."
+    },
+    "audit": {
+      "title": "Périmètre audit CertiK",
+      "desc": "Les contrats principaux utilisés en production ont été revus par CertiK. Le périmètre couvre les composants critiques et les surfaces d'attaque connues.",
+      "certik_text": "CertiK a examiné les smart contracts Lenix pour les vulnérabilités courantes, les contrôles d'accès et les failles logiques des flux token et vault.",
+      "certik_link": "Docs sécurité",
+      "items": {
+        "contracts": {
+          "title": "Périmètre de revue",
+          "desc": "Modules de vente de token, vault et protocole utilisés dans les flux de paiement et custody en production."
+        },
+        "access": {
+          "title": "Contrôle d'accès",
+          "desc": "Permissions par rôle, exigences multi-sig et chemins de mise à jour le cas échéant."
+        },
+        "monitoring": {
+          "title": "Surveillance continue",
+          "desc": "Les déploiements en production sont surveillés pour détecter les interactions anormales et alertes opérationnelles."
+        }
+      },
+      "eyebrow": "Smart contracts"
+    },
+    "iso": {
+      "title": "Opérations alignées ISO 27001",
+      "desc": "Lenix Protocol maintient des pratiques de gestion de la sécurité de l'information alignées sur ISO 27001 pour les données clients, les matériaux d'enquête et les systèmes internes."
+    },
+    "practices": {
+      "data": {
+        "title": "Traitement des données",
+        "desc": "Les dossiers sont stockés avec contrôles d'accès. Les données d'enquête ne sont partagées qu'avec des parties autorisées."
+      },
+      "incident": {
+        "title": "Réponse aux incidents",
+        "desc": "Procédures définies pour les événements de sécurité affectant les données clients, l'infrastructure ou les workflows d'enquête."
+      },
+      "custody": {
+        "title": "Limites de custody",
+        "desc": "Lenix prépare les preuves et coordonne les voies. Nous ne prenons pas en custody les clés ou phrases secrètes des clients."
+      },
+      "eyebrow": "Opérations",
+      "title": "Comment nous traitons le sensible",
+      "description": "Les dossiers recovery impliquent des données victimes et des flux à enjeu. Voici nos limites.",
+      "image_alt": "Équipe ops surveillant l'activité et les alertes sécurité"
+    },
+    "cta": {
+      "title": "Besoin de documentation ?",
+      "subtitle": "Contactez-nous pour résumés d'audit, alignement ISO ou revues enterprise.",
+      "btn_primary": "Ouvrir dossier",
+      "btn_secondary": "Contact sécurité"
+    },
+    "assurance": {
+      "eyebrow": "Vérification",
+      "title": "Ce que nous pouvons montrer",
+      "description": "Revue indépendante des contrats et contrôles opérationnels documentés — pas de promesses sans preuve.",
+      "iso_link": "À propos"
+    }
+  },
+  "AccountSidebar": {
+    "sections": {
+      "account": "Compte",
+      "wallet": "Portefeuille"
+    },
+    "nav": {
+      "home": "Accueil",
+      "vault": "Coffre-fort blockchain",
+      "lenix_wallet": "Portefeuille Lenix",
+      "banking": "Banque entreprise",
+      "recovery_services": "Services de récupération",
+      "crypto_loan": "Prêt crypto",
+      "assets": "Actifs",
+      "send": "Envoyer",
+      "receive": "Recevoir",
+      "transactions": "Transactions",
+      "settings": "Paramètres"
+    },
+    "support": {
+      "need_help": "Besoin d'aide ?",
+      "contact_support": "Contacter le support"
+    },
+    "header": {
+      "menu": "Menu",
+      "verified_user": "Utilisateur vérifié",
+      "sign_out": "Déconnexion"
+    },
+    "logo_alt": "Lenix Protocol"
+  },
+  "AccountMobileTabs": {
+    "home": "Accueil",
+    "banking": "Banque",
+    "wallet": "Portefeuille",
+    "loan": "Prêt",
+    "settings": "Paramètres"
+  },
+  "AccountDashboard": {
+    "status": {
+      "recovery": "Statut du dossier de récupération",
+      "banking": "Statut des services bancaires",
+      "loan": "Statut de la demande de prêt"
+    },
+    "timeline": {
+      "received_title": "Demande reçue",
+      "received_desc": "Nous avons reçu vos informations et les examinons.",
+      "review_title": "En cours d'examen",
+      "review_desc": "Notre équipe analyse actuellement votre demande."
+    },
+    "submitted_details": "Détails soumis",
+    "service_type": "Type de service",
+    "service_types": {
+      "recovery": "Récupération",
+      "banking": "Banque",
+      "loan": "Prêt"
+    },
+    "details_fields": {
+      "name": "Nom",
+      "transaction_hash": "Hash de transaction",
+      "amount_stolen": "Montant volé",
+      "blockchain": "Blockchain",
+      "currency": "Devise",
+      "country_phone_code": "Indicatif téléphonique",
+      "incident_summary": "Résumé de l'incident",
+      "evidence": "Preuve",
+      "evidence_url": "URL de la preuve",
+      "notes": "Notes",
+      "loan_type_id": "Type de prêt",
+      "collateral_asset": "Actif de garantie",
+      "duration": "Durée",
+      "loan_amount": "Montant du prêt",
+      "phone_number": "Numéro de téléphone",
+      "payout_method": "Mode de paiement"
+    },
+    "support": {
+      "title": "Besoin d'aide ?",
+      "description": "Notre équipe d'assistance est disponible 24h/24 et 7j/7 pour vous aider.",
+      "contact": "Contacter le support"
+    }
+  },
+  "AccountVault": {
+    "page": {
+      "title": "Mon coffre-fort",
+      "subtitle": "Gérez vos actifs numériques sécurisés.",
+      "history": "Historique",
+      "status_active": "Actif",
+      "status_locked": "Verrouillé",
+      "status_no_wallet": "Aucun portefeuille",
+      "load_error": "Échec du chargement des avoirs"
+    },
+    "actions": {
+      "deposit": "Dépôt",
+      "withdraw": "Retrait",
+      "swap": "Échange",
+      "audit": "Audit"
+    },
+    "premium": {
+      "title": "Obtenir une protection premium",
+      "description": "Passez à l'intégration Hardware Vault pour une sécurité maximale.",
+      "cta": "En savoir plus"
+    },
+    "card": {
+      "total_value": "VALEUR TOTALE DU COFFRE",
+      "last_synced": "Dernière synchro : à l'instant",
+      "change_24h": "{percent} % (24 h)",
+      "security_level": "Niveau de sécurité",
+      "security_very_high": "Très élevé"
+    },
+    "assets": {
+      "title": "Actifs du coffre",
+      "count_zero": "0 actif",
+      "count": "{count} actifs",
+      "empty": "Aucun actif trouvé. Connectez ou importez un portefeuille pour commencer.",
+      "address_copied": "Adresse copiée",
+      "chains": {
+        "ethereum": "Ethereum",
+        "bsc": "BSC",
+        "polygon": "Polygon",
+        "evm": "EVM"
+      }
+    },
+    "security": {
+      "title": "État de sécurité du coffre",
+      "score_label": "Score de sécurité",
+      "items": {
+        "wallet": "Portefeuille",
+        "cold_storage": "Stockage à froid",
+        "encrypted_vault": "Coffre chiffré",
+        "session": "Session"
+      },
+      "status": {
+        "connected": "Connecté",
+        "not_connected": "Non connecté",
+        "active": "Actif",
+        "unlocked": "Déverrouillé",
+        "locked": "Verrouillé",
+        "no_wallet": "Aucun portefeuille",
+        "completed": "Terminé"
+      },
+      "unlock": "Déverrouiller",
+      "recent_activity": "Activité récente",
+      "view_all": "Tout afficher",
+      "no_activity": "Aucune activité récente",
+      "wallet_connected": "Portefeuille connecté",
+      "transaction": "Transaction",
+      "transfer": "Transfert {symbol}"
+    },
+    "time": {
+      "just_now": "À l'instant",
+      "recently": "Récemment",
+      "min_ago": "Il y a {count} min",
+      "hours_ago": "Il y a {count} heures",
+      "days_ago": "Il y a {count} jours"
+    },
+    "drawer": {
+      "connect_wallet": "Connecter un portefeuille",
+      "setup_title": "Configurer votre coffre",
+      "setup_description": "Créez un nouveau portefeuille ou importez-en un existant pour sécuriser vos actifs.",
+      "unlock_vault": "Déverrouiller le coffre",
+      "unlock_description": "Entrez votre mot de passe pour accéder à vos actifs sécurisés.",
+      "password_placeholder": "Entrez le mot de passe",
+      "unlocking": "Déverrouillage...",
+      "unlock": "Déverrouiller",
+      "vault_connected": "Coffre connecté",
+      "lenix_wallet": "Portefeuille Lenix",
+      "lock": "Verrouiller",
+      "imported_wallets": "Portefeuilles importés",
+      "no_imported": "Aucun portefeuille importé pour l'instant.",
+      "import_wallet": "Importer un portefeuille",
+      "wallet_name_label": "Nom du portefeuille (facultatif)",
+      "wallet_name_placeholder": "Mon MetaMask",
+      "import_type_label": "Type d'importation",
+      "seed_phrase": "Phrase secrète",
+      "private_key": "Clé privée",
+      "seed_phrase_label": "Phrase de récupération de 12 ou 24 mots",
+      "private_key_label": "Clé privée",
+      "seed_phrase_placeholder": "mot1 mot2 mot3 ...",
+      "private_key_placeholder": "0x...",
+      "encryption_password_label": "Mot de passe de chiffrement (min. 8 caractères)",
+      "password_dots_placeholder": "••••••••",
+      "cancel": "Annuler",
+      "import": "Importer",
+      "loading": "Chargement...",
+      "imported_seed_name": "Seed importée",
+      "imported_key_name": "Clé importée"
+    },
+    "toast": {
+      "wallet_unlocked": "Portefeuille déverrouillé",
+      "incorrect_password": "Mot de passe incorrect",
+      "import_credentials_required": "Saisissez les identifiants et un mot de passe (min. 8 caractères).",
+      "wallet_imported": "Portefeuille importé",
+      "import_failed": "Échec de l'importation",
+      "wallet_removed": "Portefeuille supprimé"
+    }
+  },
+  "AccountLenixWallet": {
+    "page": {
+      "title": "Portefeuille",
+      "subtitle": "Gérez vos actifs crypto",
+      "setup_title": "Configurer votre portefeuille",
+      "setup_subtitle": "Créez ou importez un portefeuille pour commencer",
+      "unlock_title": "Déverrouiller le portefeuille",
+      "unlock_subtitle": "Entrez votre mot de passe pour continuer",
+      "password_placeholder": "Mot de passe",
+      "unlocking": "Déverrouillage...",
+      "unlock": "Déverrouiller",
+      "network_placeholder": "Réseau",
+      "logo_alt": "Portefeuille Lenix",
+      "show_evm_wallet": "Afficher le portefeuille EVM",
+      "show_bitcoin_wallet": "Afficher le portefeuille Bitcoin",
+      "evm_wallet": "Portefeuille EVM",
+      "bitcoin_wallet": "Portefeuille Bitcoin"
+    },
+    "networks": {
+      "all": "Tous les réseaux",
+      "ethereum": "Ethereum",
+      "bsc": "BNB Chain",
+      "polygon": "Polygon",
+      "bitcoin": "Bitcoin"
+    },
+    "actions": {
+      "send": "Envoyer",
+      "receive": "Recevoir",
+      "buy": "Acheter",
+      "swap": "Échanger",
+      "coming_soon": "Bientôt disponible"
+    },
+    "wallet_card": {
+      "total_balance": "Solde total",
+      "hide_balance": "Masquer le solde",
+      "show_balance": "Afficher le solde",
+      "lock_wallet": "Verrouiller le portefeuille",
+      "evm_networks": "Réseaux EVM",
+      "evm_chains": "ETH · BSC · Polygon · Arbitrum",
+      "address_copied": "Adresse copiée"
+    },
+    "bitcoin_card": {
+      "btc_balance": "Solde BTC",
+      "not_activated": "Non activé",
+      "activate_prompt": "Activez votre portefeuille Bitcoin natif",
+      "password_placeholder": "Entrez le mot de passe du portefeuille",
+      "creating": "Création...",
+      "activate": "Activer",
+      "bitcoin_network": "Réseau Bitcoin",
+      "segwit": "SegWit natif BIP-84",
+      "bitcoin_alt": "Bitcoin",
+      "enter_password": "Entrez le mot de passe de votre portefeuille",
+      "wallet_created": "Portefeuille Bitcoin créé",
+      "create_failed": "Échec de la création du portefeuille Bitcoin",
+      "address_copied": "Adresse copiée"
+    },
+    "token_list": {
+      "assets": "Actifs",
+      "market": "Marché",
+      "tokens_count": "{count} jetons",
+      "no_assets": "Aucun actif pour l'instant",
+      "frozen": "Gelé",
+      "deposit_to_unfreeze": "Déposez {amount} BTC pour débloquer",
+      "frozen_by_admin": "Gelé par l'administrateur",
+      "token_fallback": "Jeton"
+    },
+    "activity": {
+      "title": "Activité",
+      "no_activity": "Aucune activité récente",
+      "done": "Terminé",
+      "pending": "En attente"
+    },
+    "security": {
+      "title": "Sécurité",
+      "protected": "Protégé",
+      "recovery_phrase": "Phrase de récupération",
+      "backed_up": "Sauvegardée",
+      "password": "Mot de passe",
+      "active": "Actif",
+      "withdrawal_limit": "Limite de retrait",
+      "not_set": "Non définie",
+      "set": "Définie"
+    },
+    "receive_modal": {
+      "title": "Recevoir",
+      "network": "Réseau",
+      "evm_networks": "Réseaux EVM",
+      "evm_chains": "ETH, BSC, Polygon, Arbitrum",
+      "bitcoin": "Bitcoin",
+      "bitcoin_chains": "SegWit natif (BIP-84)",
+      "not_set_up": "(Non configuré)",
+      "qr_alt": "Code QR",
+      "copied": "Copié",
+      "btc_warning": "Envoyez uniquement des BTC à cette adresse",
+      "evm_warning": "Envoyez uniquement des jetons compatibles ERC-20"
+    },
+    "send_modal": {
+      "title": "Envoyer des crypto",
+      "description": "Saisissez l'adresse du destinataire et le montant du retrait pour envoyer des crypto."
+    },
+    "receive_page": {
+      "title": "Recevoir des actifs",
+      "subtitle": "Obtenez votre adresse unique pour recevoir des paiements.",
+      "security_notice": "Pour votre sécurité, vérifiez que le réseau correspond exactement avant de déposer. Les actifs envoyés sur le mauvais réseau ne peuvent pas être récupérés.",
+      "no_wallet_title": "Portefeuille introuvable",
+      "no_wallet_description": "Créez un portefeuille pour recevoir des actifs.",
+      "go_to_wallet": "Aller au portefeuille",
+      "wallet_locked_title": "Portefeuille verrouillé",
+      "wallet_locked_description": "Déverrouillez votre portefeuille pour afficher votre adresse.",
+      "unlock_wallet": "Déverrouiller le portefeuille",
+      "card_title": "Recevoir des actifs",
+      "card_description": "Scannez le QR code ou copiez l'adresse pour déposer.",
+      "select_network": "Sélectionner un réseau",
+      "bitcoin_provisioning": "La configuration du portefeuille Bitcoin est en cours.",
+      "qr_alt": "QR code de l'adresse du portefeuille",
+      "address_label": "Adresse {network}",
+      "copy": "Copier",
+      "copied": "Copié",
+      "share": "Partager",
+      "address_copied": "Adresse copiée dans le presse-papiers",
+      "share_title": "Adresse de mon portefeuille Lenix",
+      "share_text": "Voici mon adresse {network} : {address}",
+      "networks": {
+        "bitcoin": {
+          "name": "Bitcoin (Natif)",
+          "warning": "Envoyez uniquement du Bitcoin natif à cette adresse. N’envoyez pas de BTC depuis un autre réseau."
+        },
+        "ethereum": {
+          "name": "Ethereum (ERC-20)",
+          "warning": "Envoyez uniquement de l’ETH et des jetons ERC-20 à cette adresse."
+        },
+        "bnb": {
+          "name": "BNB Smart Chain (BEP-20)",
+          "warning": "Envoyez uniquement du BNB et des jetons BEP-20 à cette adresse."
+        },
+        "polygon": {
+          "name": "Polygon (MATIC)",
+          "warning": "Envoyez uniquement du MATIC et des jetons du réseau Polygon à cette adresse."
+        },
+        "arbitrum": {
+          "name": "Arbitrum One",
+          "warning": "Envoyez uniquement des jetons du réseau Arbitrum One à cette adresse."
+        },
+        "optimism": {
+          "name": "Optimism",
+          "warning": "Envoyez uniquement des jetons du réseau Optimism à cette adresse."
+        },
+        "avalanche": {
+          "name": "Avalanche C-Chain",
+          "warning": "Envoyez uniquement des jetons Avalanche C-Chain à cette adresse."
+        }
+      }
+    },
+    "send_page": {
+      "unlock_message": "Déverrouillez votre portefeuille Lenix pour gérer vos fonds.",
+      "unlock_locked_prefix": "Entrez votre mot de passe sur la",
+      "unlock_locked_suffix": "pour déchiffrer les soldes.",
+      "wallet_page": "page du portefeuille",
+      "unlock_no_wallet_prefix": "Créez d’abord un portefeuille depuis le",
+      "unlock_no_wallet_suffix": ".",
+      "wallet_dashboard": "tableau de bord du portefeuille Lenix",
+      "estimated_total_value": "Valeur totale estimée",
+      "wallet_label": "Portefeuille",
+      "pnl_today": "PnL du jour",
+      "deposit": "Déposer",
+      "withdraw": "Retirer",
+      "transfer": "Transférer",
+      "more_funding_actions": "Plus d’actions de financement",
+      "funding_title": "Financement",
+      "search_placeholder": "Rechercher un actif ou un réseau",
+      "small_asset_exchange": "Échange de petits actifs",
+      "hide_dust": "Masquer les actifs < 1 USD",
+      "asset": "Actif",
+      "amount": "Montant",
+      "available": "Disponible",
+      "frozen": "Gelé",
+      "action": "Action",
+      "unfreeze_deposit": "Déposez {amount} BTC pour le dégeler",
+      "more_actions_for": "Plus d’actions pour {symbol}",
+      "no_assets": "Aucun actif",
+      "no_assets_match": "Aucun actif ne correspond à vos filtres.",
+      "withdraw_modal": {
+        "title": "Retirer des crypto-actifs",
+        "description": "Envoyez des fonds vers un portefeuille externe en utilisant le réseau approprié."
+      }
+    },
+    "send_form": {
+      "no_assets_alt": "Aucun actif",
+      "no_assets_title": "Aucun actif de financement pour l’instant",
+      "no_assets_description": "Déposez des crypto-actifs dans votre portefeuille Lenix pour activer les retraits et les transferts on-chain.",
+      "asset_label": "Actif",
+      "network_label": "Réseau",
+      "chain_id": "Identifiant de la chaîne {id}",
+      "recipient_label": "Adresse du destinataire",
+      "paste": "Coller",
+      "recipient_error_bitcoin": "Entrez une adresse Bitcoin valide.",
+      "recipient_error_evm": "Entrez une adresse de portefeuille EVM valide.",
+      "amount_label": "Montant",
+      "amount_aria": "Montant de {symbol} à envoyer",
+      "available": "Disponible",
+      "on_chain_only": "Seuls {amount} {symbol} sont actuellement couverts par des fonds on-chain et peuvent être envoyés.",
+      "summary_label": "Résumé du transfert",
+      "network_fee": "Frais réseau",
+      "calculating_fee": "Calcul…",
+      "recipient_receives": "Le destinataire reçoit",
+      "frozen": "Gelé",
+      "frozen_message": "Cet actif est gelé",
+      "frozen_unfreeze_instruction": " Déposez au moins {amount} BTC dans votre portefeuille Bitcoin Lenix pour le dégeler — il sera libéré automatiquement une fois le dépôt confirmé.",
+      "frozen_contact_support": " Contactez l’assistance pour résoudre le problème.",
+      "irreversible_warning": "Vérifiez l’adresse du destinataire et le réseau avant d’envoyer. Les transferts on-chain sont irréversibles.",
+      "sending": "Envoi…",
+      "send_now": "Envoyer maintenant",
+      "wallet_locked_error": "Déverrouillez votre portefeuille Lenix pour envoyer des fonds",
+      "clipboard_error": "Impossible d’accéder au presse-papiers",
+      "bitcoin_send_success": "Transfert Bitcoin diffusé",
+      "bitcoin_send_failed": "Échec du retrait Bitcoin",
+      "unsupported_network": "Réseau non pris en charge pour cet actif",
+      "broadcasting_transaction": "Diffusion de la transaction",
+      "transfer_confirmed": "Transfert confirmé",
+      "broadcasting_token_transfer": "Diffusion du transfert de jetons",
+      "token_transfer_complete": "Transfert de jetons terminé",
+      "transaction_failed": "Échec de la transaction",
+      "fee_bitcoin_estimate": "Estimé à la confirmation"
+    },
+    "setup": {
+      "back": "Retour",
+      "welcome_title": "Le portefeuille le plus sécurisé au monde",
+      "welcome_description": "Configurez votre portefeuille pour commencer. Lenix Wallet est le portefeuille le plus sécurisé et privé au monde pour protéger vos crypto.",
+      "create_new": "Créer un nouveau portefeuille",
+      "import_existing": "Importer un portefeuille existant",
+      "terms_notice": "En créant ou important un portefeuille, vous acceptez nos Conditions d'utilisation et notre Politique de confidentialité.",
+      "backup_title": "Sauvegardez votre phrase de récupération",
+      "backup_description": "Notez ces 12 mots dans l'ordre et conservez-les en lieu sûr. Si vous les perdez, vous risquez de perdre vos fonds définitivement.",
+      "security_check_title": "Contrôle de sécurité",
+      "security_check_description": "Ne partagez jamais cette phrase avec qui que ce soit. Le support Lenix ne vous la demandera jamais.",
+      "saved_phrase": "J'ai sauvegardé ma phrase de récupération",
+      "verify_title": "Vérifier la phrase de récupération",
+      "verify_description": "Confirmez que vous avez sauvegardé votre phrase en saisissant les mots demandés ci-dessous.",
+      "word_label": "Mot n°{number}",
+      "word_placeholder": "Saisissez le mot n°{number}",
+      "verify_continue": "Vérifier et continuer",
+      "password_title": "Définir un mot de passe sécurisé",
+      "password_description": "Ce mot de passe sera utilisé pour chiffrer votre portefeuille sur cet appareil.",
+      "password_label": "Mot de passe",
+      "confirm_password_label": "Confirmer le mot de passe",
+      "create_wallet": "Créer le portefeuille",
+      "processing": "Traitement...",
+      "import_title": "Importer une phrase de récupération",
+      "import_description": "Entrez votre phrase de récupération de 12 ou 24 mots pour restaurer votre portefeuille.",
+      "import_placeholder": "pomme banane cerise...",
+      "continue": "Continuer",
+      "import_wallet": "Importer le portefeuille"
+    },
+    "toast": {
+      "wallet_unlocked": "Portefeuille déverrouillé",
+      "incorrect_password": "Mot de passe incorrect",
+      "phrase_copied": "Phrase de récupération copiée dans le presse-papiers",
+      "incorrect_words": "Mots incorrects. Veuillez réessayer.",
+      "password_min_length": "Le mot de passe doit contenir au moins 8 caractères",
+      "passwords_mismatch": "Les mots de passe ne correspondent pas",
+      "wallet_created": "Portefeuille créé avec succès !",
+      "create_failed": "Échec de la création du portefeuille",
+      "invalid_phrase": "Phrase de récupération invalide. 12 ou 24 mots attendus, {count} reçus.",
+      "wallet_imported": "Portefeuille importé avec succès !",
+      "import_failed": "Échec de l'importation du portefeuille"
+    }
+  },
+  "AccountBanking": {
+    "meta": {
+      "title": "Banque entreprise | Lenix Protocol",
+      "description": "Déplacez des actifs numériques entre Spot, Funding et des comptes bancaires vérifiés."
+    },
+    "error": {
+      "load_failed": "Impossible de charger l'espace bancaire",
+      "unavailable_title": "Espace bancaire indisponible",
+      "unavailable_description": "L'aperçu bancaire n'a pas pu être chargé.",
+      "try_again": "Réessayer"
+    },
+    "tabs": {
+      "overview": "Aperçu",
+      "accounts": "Comptes bancaires",
+      "activity": "Activité"
+    },
+    "empty_assets": {
+      "title": "Aucun actif de trésorerie pour le moment",
+      "description": "Déplacez des actifs vers votre portefeuille Spot ou Funding pour commencer.",
+      "cta": "Déplacer des fonds"
+    },
+    "fiat_balance": {
+      "funding": "Funding {currency}",
+      "available": "{amount} disponible"
+    },
+    "summary": {
+      "title": "Banque entreprise",
+      "verified": "Vérifié",
+      "verification_pending": "Vérification en attente",
+      "subtitle": "Déplacez des actifs numériques entre les portefeuilles de trésorerie et les comptes bancaires vérifiés.",
+      "transfer": "Transfert",
+      "withdraw_to_bank": "Retirer vers la banque",
+      "total_treasury": "Valeur totale de trésorerie",
+      "hide_balances": "Masquer les soldes",
+      "show_balances": "Afficher les soldes",
+      "account": "Compte",
+      "tier": "Niveau",
+      "relationship_manager": "Gestionnaire de relation",
+      "spot_wallet": "Portefeuille Spot",
+      "spot_available": "Disponible pour le trading",
+      "funding_wallet": "Portefeuille Funding",
+      "funding_available": "Disponible pour le règlement",
+      "in_settlement": "En cours de règlement",
+      "pending_payouts": "Sur les paiements bancaires actifs"
+    },
+    "assets": {
+      "title": "Soldes des portefeuilles",
+      "subtitle": "Actifs Spot et Funding prêts pour le paiement",
+      "move_funds": "Déplacer des fonds",
+      "columns": {
+        "asset": "Actif",
+        "wallet": "Portefeuille",
+        "balance": "Solde",
+        "value": "Valeur",
+        "change_24h": "24 h"
+      },
+      "location": {
+        "spot": "Spot",
+        "funding": "Funding"
+      }
+    },
+    "accounts": {
+      "linked_title": "Comptes bancaires liés",
+      "linked_subtitle": "Destinations de règlement pour les retraits bancaires",
+      "add_account": "Ajouter un compte",
+      "empty_title": "Aucun compte bancaire lié",
+      "empty_description": "Ajoutez un compte bancaire pour activer les retraits vers votre banque.",
+      "default": "Par défaut",
+      "status": {
+        "verified": "Vérifié",
+        "rejected": "Rejeté",
+        "pending": "En cours d'examen"
+      },
+      "limits_title": "Limites de règlement",
+      "limits_subtitle": "Plafonds entreprise glissants",
+      "remaining": "{percent} % restant",
+      "limits_note": "Les limites de règlement plus élevées sont examinées par votre gestionnaire de relation et l'équipe conformité."
+    },
+    "activity": {
+      "title": "Activité des transactions",
+      "subtitle": "Transferts internes et règlements bancaires",
+      "search_label": "Rechercher des transactions",
+      "search_placeholder": "Rechercher une référence ou un actif",
+      "filter_label": "Filtrer par statut de transaction",
+      "filter_all": "Tous les statuts",
+      "status": {
+        "completed": "Terminé",
+        "processing": "En cours",
+        "review": "Examen",
+        "under_review": "En cours d'examen",
+        "failed": "Échoué"
+      },
+      "columns": {
+        "transaction": "Transaction",
+        "amount": "Montant",
+        "destination": "Destination",
+        "status": "Statut",
+        "date": "Date",
+        "view": "Voir"
+      },
+      "direction": {
+        "spot_to_funding": "Spot vers Funding",
+        "funding_to_spot": "Funding vers Spot",
+        "funding_to_bank": "Funding vers banque",
+        "spot_to_bank": "Spot vers banque"
+      },
+      "view_transaction": "Voir {reference}",
+      "empty_title": "Aucune transaction correspondante",
+      "empty_description": "Modifiez la recherche ou le filtre de statut."
+    },
+    "add_account": {
+      "title": "Ajouter un compte bancaire",
+      "description": "Les comptes soumis sont examinés par notre équipe conformité avant de pouvoir recevoir des règlements. Cela prend généralement 1 à 2 jours ouvrables.",
+      "fields": {
+        "bank_name": "Nom de la banque",
+        "bank_name_placeholder": "ex. BNP Paribas",
+        "account_holder": "Nom du titulaire",
+        "account_holder_placeholder": "Nom légal complet",
+        "account_number": "Numéro de compte / IBAN",
+        "account_number_placeholder": "Numéro de compte",
+        "routing_number": "Numéro de routage (ACH/domestique)",
+        "swift_bic": "SWIFT / BIC (international)",
+        "optional": "Facultatif",
+        "account_type": "Type de compte",
+        "checking": "Compte courant",
+        "savings": "Compte épargne",
+        "currency": "Devise",
+        "country": "Pays",
+        "country_placeholder": "FR"
+      },
+      "submitting": "Envoi en cours...",
+      "submit": "Soumettre pour vérification",
+      "required_fields": "Veuillez remplir tous les champs obligatoires",
+      "success": "Compte bancaire soumis pour vérification",
+      "failed": "Échec de l'ajout du compte bancaire"
+    },
+    "transfer": {
+      "title_form": "Déplacer des fonds",
+      "title_review": "Examiner le transfert",
+      "title_success": "Statut du transfert",
+      "desc_form": "Déplacez des actifs entre portefeuilles ou règlez vers une banque liée.",
+      "desc_review": "Les taux sont réservés pendant cinq minutes.",
+      "desc_success": "Votre référence est prête pour le suivi.",
+      "back_label": "Retour aux détails du transfert",
+      "step_label": "Étape {step} sur 3",
+      "cancel": "Annuler",
+      "review_transfer": "Examiner le transfert",
+      "confirm_submit": "Confirmer et soumettre",
+      "done": "Terminé",
+      "quote_failed": "Impossible de créer un devis",
+      "transfer_failed": "Impossible de soumettre le transfert",
+      "type_legend": "Type de transfert",
+      "types": {
+        "spot_to_funding": {
+          "label": "Spot → Funding",
+          "description": "Préparer les actifs pour les paiements"
+        },
+        "funding_to_spot": {
+          "label": "Funding → Spot",
+          "description": "Renvoyer les actifs pour le trading"
+        },
+        "funding_to_bank": {
+          "label": "Funding → Banque",
+          "description": "Retirer les fonds disponibles"
+        },
+        "spot_to_bank": {
+          "label": "Spot → Banque",
+          "description": "Convertir et retirer"
+        }
+      },
+      "from": "De",
+      "to": "Vers",
+      "spot_wallet": "Portefeuille Spot",
+      "funding_wallet": "Portefeuille Funding",
+      "bank_account": "Compte bancaire",
+      "asset": "Actif",
+      "amount": "Montant",
+      "max": "MAX",
+      "amount_placeholder": "0,00",
+      "payout_currency": "Devise de paiement",
+      "currencies": {
+        "USD": "USD · Dollar américain",
+        "EUR": "EUR · Euro",
+        "GBP": "GBP · Livre sterling"
+      },
+      "select_account": "Sélectionner un compte",
+      "available": "Disponible"
+    },
+    "review": {
+      "recipient_receives": "Le bénéficiaire reçoit",
+      "from_amount": "De {amount} {asset}",
+      "market_value": "Valeur de marché",
+      "exchange_rate": "Taux de change",
+      "exchange_rate_value": "1 USD = {rate} {currency}",
+      "platform_fee": "Frais de plateforme",
+      "banking_fee": "Frais bancaires",
+      "estimated_arrival": "Arrivée estimée",
+      "authorization": "En confirmant, vous autorisez la conversion d'actifs et les instructions de règlement ci-dessus.",
+      "withdrawal_submitted": "Retrait soumis",
+      "transfer_completed": "Transfert terminé",
+      "withdrawal_desc": "Votre règlement a passé la validation initiale et entre maintenant en contrôle conformité.",
+      "transfer_desc": "Vos soldes ont été mis à jour dans l'espace bancaire.",
+      "reference": "Référence",
+      "status": "Statut",
+      "destination": "Destination",
+      "processing": "En cours",
+      "completed": "Terminé"
+    },
+    "detail": {
+      "title": "Détails du transfert",
+      "reference": "Référence {reference}",
+      "payout_amount": "Montant du paiement",
+      "destination": "Destination",
+      "estimated_arrival": "Arrivée estimée",
+      "fees": "Frais",
+      "requested": "Demandé",
+      "timeline_title": "Chronologie du règlement",
+      "pending": "En attente",
+      "download_receipt": "Télécharger le reçu",
+      "status": {
+        "completed": "Terminé",
+        "processing": "En cours",
+        "under_review": "En cours d'examen",
+        "failed": "Échoué"
+      }
+    },
+    "skeleton": {
+      "loading": "Chargement du tableau de bord bancaire"
+    }
+  },
+  "AccountRecoveryServices": {
+    "page": {
+      "title": "Services de récupération",
+      "subtitle": "Soumettez une demande de récupération pour des actifs crypto perdus ou volés. Notre équipe forensique évaluera votre dossier et vous contactera sous 24 à 48 heures.",
+      "process_title": "Processus",
+      "form_title": "Détails de récupération d'actifs et forensique",
+      "form_subtitle": "Nous vous aidons à tracer et récupérer des actifs crypto perdus et à constituer des preuves vérifiées pour une récupération légale des fonds."
+    },
+    "process": {
+      "assessment": {
+        "title": "Évaluation",
+        "description": "Nous analysons la piste et évaluons la récupérabilité."
+      },
+      "strategy": {
+        "title": "Stratégie",
+        "description": "Plan sur mesure avec appui juridique et forensique."
+      },
+      "recovery": {
+        "title": "Récupération",
+        "description": "Nous mobilisons les exchanges et les autorités pour récupérer les fonds."
+      },
+      "return": {
+        "title": "Restitution",
+        "description": "Fonds transférés vers votre portefeuille vérifié."
+      }
+    },
+    "form": {
+      "name": "Nom",
+      "name_placeholder": "ex. Jean Dupont",
+      "transaction_hash": "Hash de transaction / Adresse de portefeuille",
+      "transaction_hash_placeholder": "Saisissez un hash ou une adresse (ex. 0x1234...)",
+      "amount_stolen": "Montant approximatif volé",
+      "amount_stolen_placeholder": "Saisissez le montant estimé (ex. 200000)",
+      "incident_summary": "Résumé de l'incident",
+      "incident_summary_placeholder": "ex. Des fonds ont été volés via une arnaque au phishing...",
+      "evidence": "Capture d'écran ou autre preuve à l'appui de la demande",
+      "phone_number": "Numéro de téléphone",
+      "blockchain": "Sélectionner la blockchain",
+      "blockchain_placeholder": "Sélectionner une blockchain",
+      "currency": "Sélectionner la devise",
+      "currency_placeholder": "Sélectionner une devise",
+      "privacy_prefix": "Lenix Protocol a besoin de vos coordonnées pour vous contacter au sujet de votre dossier de récupération. Pour plus de détails, consultez notre",
+      "privacy_policy": "Politique de confidentialité",
+      "privacy_suffix": ".",
+      "submit": "Soumettre la demande de récupération",
+      "submitting": "Envoi en cours..."
+    },
+    "blockchains": {
+      "BTC": "Bitcoin (BTC)",
+      "ETH": "Ethereum (ETH)",
+      "SOL": "Solana (SOL)",
+      "TRX": "Tron (TRX)",
+      "BNB": "Binance Smart Chain (BNB)",
+      "MATIC": "Polygon Mainnet (MATIC)",
+      "AVAX": "Avalanche C-Chain (AVAX)",
+      "ARB": "Arbitrum One (ARB)",
+      "BASE": "Base (BASE)",
+      "FANTOM": "Fantom (Fantom)",
+      "GNOSIS": "Gnosis Chain (GNOSIS)",
+      "KAVA": "Kava (KAVA)",
+      "POL": "Polkadot (POL)",
+      "SUI": "Sui (SUI)",
+      "OTHER": "Autre"
+    },
+    "success": {
+      "title": "Demande envoyée",
+      "description": "Notre équipe de récupération examinera votre dossier et vous contactera sous 24 à 48 heures.",
+      "submit_another": "Soumettre une autre demande"
+    },
+    "toast": {
+      "required_fields": "Veuillez remplir tous les champs obligatoires",
+      "submit_failed": "Échec de l'envoi de la demande de récupération",
+      "submit_success": "Demande de récupération envoyée. Notre équipe vous contactera prochainement."
+    }
+  },
+  "AccountCryptoLoan": {
+    "page": {
+      "back_to_dashboard": "Retour au tableau de bord",
+      "collateral_title": "Besoin de plus de garantie ?",
+      "collateral_description": "Déposez davantage d'actifs dans votre coffre pour augmenter votre limite d'emprunt et améliorer le facteur de santé.",
+      "go_to_vault": "Aller au coffre"
+    },
+    "hero": {
+      "title_line1": "Libérez de la liquidité,",
+      "title_line2": "Gardez vos actifs",
+      "subtitle": "Obtenez un prêt crypto instantané sans vendre votre portefeuille. Taux bas, conditions flexibles et financement immédiat.",
+      "get_instant_loan": "Obtenir un prêt instantané",
+      "how_it_works": "Comment ça marche",
+      "active_loans": "Prêts actifs",
+      "total_borrowed": "Total emprunté",
+      "lowest_rate": "Taux le plus bas"
+    },
+    "active_loans": {
+      "empty_title": "Aucun prêt actif",
+      "empty_description": "Vos prêts actifs apparaîtront ici. Obtenez une liquidité instantanée en demandant un nouveau prêt.",
+      "title": "Vos portefeuilles",
+      "active_count": "{count} actif(s)",
+      "borrowed_amount": "Montant emprunté",
+      "collateral": "Garantie",
+      "health_factor": "Facteur de santé",
+      "repay_loan": "Rembourser le prêt",
+      "processing": "Traitement...",
+      "view_details": "Voir les détails",
+      "details_title": "Détails de la demande de prêt",
+      "borrowed": "Emprunté",
+      "apy": "APY",
+      "duration": "Durée",
+      "start_date": "Date de début",
+      "contact_details": "Coordonnées",
+      "phone": "Téléphone",
+      "telegram_whatsapp": "Telegram / WhatsApp",
+      "not_provided": "Non renseigné",
+      "payout_method": "Mode de versement",
+      "no_payout_details": "Aucun détail de versement enregistré.",
+      "wallet": "Portefeuille",
+      "network": "Réseau",
+      "bank": "Banque",
+      "swift_bic": "SWIFT/BIC",
+      "account": "Compte",
+      "holder": "Titulaire",
+      "routing_iban": "Routing/IBAN"
+    },
+    "market_rates": {
+      "live_rates": "Taux en direct",
+      "available_plans": "Offres disponibles",
+      "interest_rate": "Taux d'intérêt",
+      "ltv": "{ltv} % LTV"
+    },
+    "application": {
+      "step_label": "Étape {step} sur 2 — {phase}",
+      "phase_details": "Détails du prêt",
+      "phase_payout": "Préférences de versement",
+      "title_details": "Demander un prêt crypto",
+      "title_payout": "Réception des fonds",
+      "subtitle_details": "Personnalisez les conditions de votre prêt selon vos besoins.",
+      "subtitle_payout": "Choisissez où nous envoyer les détails de votre prêt.",
+      "select_loan_type": "Sélectionner le type de prêt",
+      "loan_type_summary": "{rate} % APR · Jusqu'à {ltv} % LTV",
+      "borrow_amount": "Montant à emprunter (USD)",
+      "borrow_amount_placeholder": "ex. 5000",
+      "collateral_asset": "Actif en garantie",
+      "duration": "Durée",
+      "continue_payout": "Continuer vers le versement",
+      "contact_title": "Comment pouvons-nous vous contacter ?",
+      "contact_subtitle": "Indiquez au moins un moyen pour que nous puissions vous joindre au sujet de votre demande.",
+      "phone_number": "Numéro de téléphone",
+      "phone_placeholder": "ex. +33 6 12 34 56 78",
+      "phone_hint": "Pour les appels et mises à jour par SMS",
+      "telegram_whatsapp": "Telegram ou WhatsApp",
+      "telegram_placeholder": "ex. @utilisateur ou +33612345678",
+      "telegram_hint": "Pour une messagerie rapide",
+      "funds_title": "Où devons-nous envoyer vos fonds ?",
+      "payout_crypto": "Portefeuille crypto",
+      "payout_crypto_sub": "Virement instantané",
+      "payout_wire": "Virement bancaire",
+      "payout_wire_sub": "1 à 3 jours ouvrés",
+      "payout_bank": "Dépôt bancaire",
+      "payout_bank_sub": "ACH / SEPA",
+      "wallet_address": "Adresse du portefeuille",
+      "wallet_placeholder": "0x...",
+      "select_network": "Sélectionner le réseau",
+      "network_erc20": "Ethereum (ERC20)",
+      "network_trc20": "Tron (TRC20)",
+      "network_bsc": "Binance Smart Chain (BEP20)",
+      "bank_name": "Nom de la banque",
+      "bank_name_placeholder": "ex. BNP Paribas",
+      "bank_name_alt_placeholder": "ex. Société Générale",
+      "swift_bic": "Code SWIFT / BIC",
+      "swift_placeholder": "ex. BNPAFRPP",
+      "account_number": "Numéro de compte",
+      "account_number_placeholder": "Votre numéro de compte",
+      "account_holder": "Nom du titulaire",
+      "account_holder_placeholder": "Nom complet sur le compte",
+      "reference_optional": "Référence (facultatif)",
+      "reference_placeholder": "Référence de paiement",
+      "routing_iban": "Numéro de routage / IBAN",
+      "routing_iban_placeholder": "Routing ACH (US) ou IBAN (UE)",
+      "back": "Retour",
+      "submitting": "Envoi en cours...",
+      "submit": "Soumettre la demande",
+      "success_title": "Demande envoyée",
+      "success_description": "Votre demande de prêt a été reçue. Nous l'examinerons et vous contacterons prochainement.",
+      "view_loans": "Voir mes prêts"
+    },
+    "duration": {
+      "6": "6 mois",
+      "12": "12 mois",
+      "24": "24 mois",
+      "months": "{count} mois"
+    },
+    "collateral_assets": {
+      "BTC": "Bitcoin",
+      "ETH": "Ethereum",
+      "SOL": "Solana"
+    },
+    "status": {
+      "Active": "Actif",
+      "Pending": "En attente",
+      "Repaid": "Remboursé",
+      "Liquidated": "Liquidé"
+    },
+    "payout_methods": {
+      "crypto": "crypto",
+      "wire_transfer": "virement bancaire",
+      "bank": "banque"
+    },
+    "toast": {
+      "repay_success": "Prêt remboursé avec succès"
+    },
+    "overview": {
+      "total_borrowed": "Total emprunté",
+      "total_borrowed_tooltip": "Montant total emprunté sur tous les prêts actifs",
+      "current_interest": "Intérêts actuels",
+      "collateral_value": "Valeur de la garantie",
+      "collateral_tooltip": "Valeur totale des actifs bloqués en garantie",
+      "ltv_label": "LTV",
+      "low_risk": "Risque faible",
+      "health_factor": "Facteur de santé",
+      "health_tooltip": "Indicateur de risque de liquidation. Maintenez au-dessus de 1,5 pour éviter la liquidation.",
+      "safe": "Sûr",
+      "liquidated": "1,0 (Liquidé)",
+      "safe_threshold": "3,0 (Sûr)"
+    },
+    "borrow_form": {
+      "title": "Simulateur de prêt",
+      "subtitle": "Calculez instantanément les conditions de votre prêt.",
+      "borrow_tab": "Emprunter",
+      "repay_tab": "Rembourser",
+      "want_to_borrow": "Je souhaite emprunter",
+      "my_collateral": "Ma garantie",
+      "asset_placeholder": "Actif",
+      "ltv": "LTV",
+      "low_risk": "Risque faible",
+      "apy": "APY",
+      "total_repayment": "Remboursement total",
+      "apply_new_loan": "Demander un nouveau prêt",
+      "repay_title": "Gérer les remboursements",
+      "repay_description": "Utilisez la liste « Prêts actifs » pour gérer et rembourser vos prêts spécifiques."
+    },
+    "collateral": {
+      "title": "Garanties prises en charge",
+      "live_rates": "Taux en direct",
+      "max_ltv": "LTV max. : {ltv}",
+      "fee": "Frais",
+      "assets": {
+        "BTC": "Bitcoin",
+        "ETH": "Ethereum",
+        "SOL": "Solana",
+        "XRP": "Ripple"
+      }
     }
   }
 }

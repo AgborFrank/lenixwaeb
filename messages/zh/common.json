@@ -1,14 +1,15 @@
 {
   "Header": {
     "nav": {
-      "giveaway": "25万赠品",
+      "giveaway": "社区",
       "about": "关于",
       "solutions": "解决方案",
       "blockchain_forensics": "区块链取证",
       "asset_recovery": "资产追回",
       "crypto_recovery": "加密追回",
       "contact": "联系",
-      "airdrop": "空投"
+      "airdrop": "空投",
+      "banking_finance": "Banking & Finance"
     },
     "solutions": {
       "wallet": {
@@ -30,6 +31,10 @@
       "enforcement": {
         "title": "执法机构",
         "desc": "为机构提供的区块链情报工具。"
+      },
+      "banking_finance": {
+        "title": "Banking & Finance",
+        "desc": "Transfers, liquidation, lending, and custody."
       }
     },
     "user_menu": {
@@ -47,12 +52,12 @@
     },
     "buttons": {
       "log_in": "登录",
-      "log_in_sign_up": "登录 / 注册",
-      "get_reward": "领取 50 USDT"
+      "log_in_sign_up": "登录",
+      "get_reward": "账户"
     }
   },
   "Footer": {
-    "company_desc": "L1 区块链协议，用于加密银行支付和资产追回，借助 AI 提升安全性与可扩展性。",
+    "company_desc": "区块链取证、资产恢复和加密金融基础设施。用于追踪、托管和跨境支付的审计协议。",
     "headings": {
       "about": "关于",
       "solutions": "解决方案",
@@ -77,7 +82,9 @@
       "privacy": "隐私",
       "disclaimer": "免责声明",
       "wallet_decryption": "钱包解密",
-      "crypto_asset_identification": "加密资产识别"
+      "crypto_asset_identification": "加密资产识别",
+      "security": "安全",
+      "banking_finance": "Banking & Finance"
     },
     "buttons": {
       "recover_assets": "追回资产"
@@ -106,56 +113,70 @@
   },
   "Home": {
     "Hero": {
-      "title1": "区块链",
-      "title2": "取证",
-      "title3": "、\n加密恢复与安全协议。",
-      "subtitle1": "先进的区块链分析和取证调查，用于追踪资产、发现欺诈并支持全球法律恢复工作。",
-      "subtitle2": "通过专家调查保障您的数字未来。",
-      "btn_signup": "注册 Lenix",
-      "btn_login": "登录",
-      "widget_title": "立即购买",
-      "widget_subtitle": "价格上涨前",
-      "usd_raised": "目前募集的美元：",
-      "tokens_sold": "已售代币：",
-      "price_usd": "美元价格：${price}",
-      "price_eth": "ETH 价格：{price} ETH",
-      "pay_eth": "您支付的 ETH",
-      "pay_usdt": "您支付的 USDT",
-      "pay_usd": "您支付的美元",
-      "receive_lnx": "您收到的 $LNX",
-      "btn_processing": "处理中...",
-      "btn_pay_eth": "使用 ETH 支付",
-      "btn_pay_usdt": "使用 USDT 支付",
-      "btn_pay_card": "在下面输入卡详细信息",
-      "card_info": "由 Stripe 提供支持。以美元计费。",
-      "btn_connect": "连接钱包",
-      "btn_giveaway": "获取 500 美元奖励",
-      "giveaway_info": "领取 500 美元 LNX 代币奖励"
+      "slides": {
+        "recovery": {
+          "title1": "Blockchain forensics and recovery ",
+          "title2": "for stolen digital assets",
+          "title3": ".",
+          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
+          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
+          "btn_primary": "Start a recovery case",
+          "btn_secondary": "Contact our team"
+        },
+        "forensics": {
+          "title1": "Investigation-grade ",
+          "title2": "blockchain forensics",
+          "title3": ".",
+          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
+          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
+          "btn_primary": "View forensics",
+          "btn_secondary": "Contact our team"
+        },
+        "banking": {
+          "title1": "Cross-Border Financial Services, ",
+          "title2": "Payment and Remittance",
+          "title3": ".",
+          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
+          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
+          "btn_primary": "Create account",
+          "btn_secondary": "Banking & finance"
+        },
+        "settlement": {
+          "title1": "Crypto-to-fiat settlement ",
+          "title2": "your treasury can audit",
+          "title3": ".",
+          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
+          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
+          "btn_primary": "Open banking services",
+          "btn_secondary": "Contact our team"
+        }
+      },
+      "btn_login": "登录"
     },
     "Pillars": {
-      "title1": "安全、恢复、取证和金融",
-      "title2": "一站式服务",
-      "subtitle": "选择您需要的服务——每个支柱都链接到专门的解决方案。",
+      "title1": "一个协议，",
+      "title2": "四条工作流",
+      "subtitle": "选择与您的处境匹配的入口。每条路径都有专用工具与明确的下一步。",
       "cards": {
         "security": {
           "title": "区块链安全",
-          "desc": "经过审计的基础设施和安全的保险库技术，保护您的资产。",
-          "cta": "探索安全"
+          "desc": "经审计的金库、多签托管与监控，适用于需要在链上安全持有资产的团队。",
+          "cta": "了解安全"
         },
         "recovery": {
-          "title": "资产恢复",
-          "desc": "专门的协议和法律途径，通过经过验证的取证分析追回丢失或被盗的加密货币。",
-          "cta": "开始恢复"
+          "title": "资产追回",
+          "desc": "当加密资产丢失、被盗或卡住时，提供追踪、交易所协调与法律路径。",
+          "cta": "开始追回"
         },
         "forensics": {
           "title": "区块链取证",
-          "desc": "专家调查，追踪欺诈、黑客攻击，并为法律恢复提供法庭认可的证据。",
-          "cta": "了解更多"
+          "desc": "面向合规团队与法律审查的钱包级调查与交易映射。",
+          "cta": "查看取证"
         },
         "finance": {
-          "title": "金融服务协议",
-          "desc": "为现代加密生态系统提供支付、借贷、钱包和保险库服务。",
-          "cta": "查看解决方案"
+          "title": "金融服务",
+          "desc": "加密兑法币支付、借贷、钱包与金库工具，用于转移与持有价值。",
+          "cta": "查看方案"
         }
       }
     },
@@ -169,61 +190,63 @@
       "card4": "加密货币到加密货币转账"
     },
     "Merchant": {
-      "widget_alert": "来自 B Shaw 的发票支付警报",
+      "widget_alert": "来自 B Shaw 的发票付款提醒",
       "widget_req": "付款请求",
-      "widget_verified": "已验证的付款链接",
-      "widget_receipt": "交易收据将发送至",
+      "widget_verified": "已验证付款链接",
+      "widget_receipt": "交易收据将发送至 ",
       "widget_wallet": "钱包地址",
       "widget_order": "订单",
-      "widget_gas": "汽油费",
-      "btn_complete": "完成付款",
-      "btn_manual": "手动付款",
-      "title1": "对于企业：接受加密货币，",
-      "title2": "保护",
-      "title3": "在保险库中，必要时进行恢复。",
-      "point1": "接受加密货币并用法币结算。为商户提供简单快捷的结账和 API。",
-      "point2": "将收益保存在我们具有多重签名和托管功能的安全保险库中——经过审计的基础设施。",
-      "point3": "如果资金丢失或被盗，我们的团队可以帮助通过恢复和法律渠道进行追踪和追回。",
-      "point4_1": "探索解决方案",
-      "point4_2": " 或 ",
-      "point4_3": "开始恢复案例",
-      "point4_4": "。"
+      "widget_gas": "Gas 费用",
+      "btn_complete": "完成支付",
+      "btn_manual": "手动支付",
+      "title1": "商户基础设施，",
+      "title2": "内置追回能力",
+      "title3": "。",
+      "point1": "通过结账流程与商户 API 接受加密资产并以法币结算。",
+      "point2": "通过经审计的多签金库托管路由收入。",
+      "point3": "若结算后出现问题，同一协议支持追踪与追回工作流。",
+      "point4_1": "查看方案",
+      "point4_2": "或",
+      "point4_3": "开始追回",
+      "point4_4": "。",
+      "mock_brand": "Lenix 商户",
+      "image_alt": "Lenix 商户与合规运营仪表板"
     },
     "Payment": {
-      "badge": "我们提供的服务",
-      "title": "用于支付、保险库、恢复和借贷的协议",
-      "subtitle": "为您移动、持有和恢复价值提供一站式技术栈。",
+      "badge": "Protocol stack",
+      "title": "Move, hold, and recover value on one layer",
+      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
       "cards": {
         "fiat": {
-          "title": "加密货币到法币",
-          "desc": "发送加密货币并通过本地支付网络用法币结算——支持跨境和日常使用。"
+          "title": "Crypto-to-fiat",
+          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
         },
         "vault": {
-          "title": "保险库和托管",
-          "desc": "多重签名和安全托管，确保您的资产得到保护。"
+          "title": "Vault and custody",
+          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
         },
         "recovery": {
-          "title": "恢复和取证",
-          "desc": "当出现问题时，我们帮助追踪和追回资金。"
+          "title": "Recovery and forensics",
+          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
         },
         "lending": {
-          "title": "借贷",
-          "desc": "以抵押品借款，并在需要时获取流动性。"
+          "title": "Lending",
+          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
         }
       },
-      "cta": "探索所有解决方案"
+      "cta": "查看方案"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " 代币详情",
-      "subtitle": "使用下面的合约信息将 Lenix Protocol 代币添加到您的钱包。",
+      "title2": " Token Details",
+      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
       "headers": {
-        "contract": "合约地址",
-        "name": "代币名称",
-        "symbol": "代币符号",
-        "supply": "代币供应量",
-        "network": "网络",
-        "decimals": "小数位"
+        "contract": "Contract Address",
+        "name": "Token Name",
+        "symbol": "Token Symbol",
+        "supply": "Token Supply",
+        "network": "Network",
+        "decimals": "Decimals"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -231,35 +254,1158 @@
       }
     },
     "Credibility": {
-      "title1": "详解 ",
-      "title2": "Lenix Protocol",
-      "subtitle1": "由 CertiK 审计。建立在信心之上。",
-      "subtitle2_1": "我们的审计涵盖全栈。阅读 ",
+      "eyebrow": "验证",
+      "title1": "经审计的代码。",
+      "title2": "有文档的控制措施。",
+      "subtitle1": "CertiK 审查的智能合约与 ISO 27001 对齐运营，满足需要实质保障而非营销说辞的团队。",
+      "subtitle2_1": "阅读",
       "subtitle2_2": "白皮书",
-      "subtitle2_3": " 和 CertiK 报告了解详细信息。",
-      "col1_text": "Lenix Protocol 已由全球领先的区块链安全公司 CertiK 全面审计。",
-      "col1_btn": "查看 CertiK 审计",
-      "col2_text": "阅读完整报告并浏览我们的白皮书，深入了解我们的技术和代币经济学。",
+      "subtitle2_3": "及审计文档，了解架构、代币用途与安全控制。",
+      "col1_text": "Lenix Protocol 智能合约已由 CertiK 审查。审计涵盖生产流程中使用的核心协议组件。",
+      "col1_btn": "安全文档",
+      "col2_text": "白皮书说明追回、托管与支付模块如何衔接——以及 LNX 在协议设计中的位置。",
       "col2_btn": "白皮书"
     },
     "Competition": {
-      "title1": "参加我们的竞赛，赢取",
-      "title2": "25 万美元",
-      "subtitle": "参加 Lenix Protocol 250,000 美元大奖活动！十名获胜者将各获得 25,000 美元的 LNX 代币。通过分享和完成所有任务获得奖励条目，从而提高您的获胜几率。不要错过这个机会 - 立即加入！",
-      "btn": "立即参加竞赛！"
+      "title1": "Community ",
+      "title2": "giveaway",
+      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "btn": "社区计划"
     },
     "Features": {
       "wallet": "Lenix Protocol 钱包",
       "recipient": "输入收款人",
       "bank_details": "银行账户详情",
       "iban": "IBAN",
-      "btn_connect": "连接钱包并支付",
+      "btn_connect": "连接钱包",
       "btn_manual": "手动支付",
       "title_small": "为什么选择 Lenix ProtocolPay？",
       "title_big": "全球范围内连接加密货币与本地支付网络。",
       "desc1": "Lenix ProtocolPay 使加密货币持有者和企业能够在全球范围内促进加密货币到法定货币的交易，利用本地支付网络和区块链技术。",
       "desc2": "终于，享受到加密货币的速度和法定货币支付的日常便利。",
       "btn_whitepaper": "白皮书"
+    },
+    "LnxPurchaseWidget": {
+      "widget_title": "Buy LNX",
+      "widget_subtitle": "Protocol token sale",
+      "usd_raised": "USD raised so far:",
+      "tokens_sold": "Tokens sold:",
+      "price_usd": "USD price: ${price}",
+      "price_eth": "ETH price: {price} ETH",
+      "pay_eth": "ETH you pay",
+      "pay_usdt": "USDT you pay",
+      "pay_usd": "USD you pay",
+      "receive_lnx": "$LNX you receive",
+      "btn_processing": "Processing...",
+      "btn_pay_eth": "Pay with ETH",
+      "btn_pay_usdt": "Pay with USDT",
+      "btn_pay_card": "银行卡支付",
+      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "btn_connect": "连接钱包",
+      "btn_giveaway": "LNX 奖励",
+      "giveaway_info": "Connect your wallet to check eligibility."
+    },
+    "TokenSale": {
+      "title1": "LNX ",
+      "title2": "token sale",
+      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+    },
+    "Partners": {
+      "eyebrow": "生态",
+      "title": "面向交易所、托管与支付通道而构建",
+      "subtitle": "Lenix 在加密技术栈中连接追踪、追回流程与结算基础设施。"
+    },
+    "CaseWorkflow": {
+      "eyebrow": "工作流程",
+      "title1": "从受理到 ",
+      "title2": "可执行的证据",
+      "subtitle": "为受害者、合规团队与法律顾问设计的结构化流程——不是空泛承诺。",
+      "steps": {
+        "submit": {
+          "title": "提交案件",
+          "desc": "提供钱包地址、交易哈希、时间线与事件经过。初步审查免费。"
+        },
+        "trace": {
+          "title": "追踪并映射资金流",
+          "desc": "我们跨链、混币器、跨链桥与交易所充值追踪资金，确定价值最终去向。"
+        },
+        "deliver": {
+          "title": "交付证据",
+          "desc": "您将收到格式化文档，适用于交易所合规部门、监管机构或法律顾问。"
+        }
+      },
+      "btn_primary": "提交案件",
+      "btn_secondary": "联系分析师",
+      "step_label": "步骤 {number}"
+    },
+    "TrustSignals": {
+      "eyebrow": "运营标准",
+      "title1": "为 ",
+      "title2": "信任至关重要的案件而构建",
+      "subtitle": "追回领域是诈骗重灾区。Lenix 遵循严肃机构保护受害者与机构所采用的做法。",
+      "items": {
+        "no_fees": {
+          "title": "无预付解锁费用",
+          "desc": "我们不会要求预付费用来释放、解锁或转移您的资金。"
+        },
+        "no_seed": {
+          "title": "绝不索要助记词",
+          "desc": "无远程访问、无私钥、无恢复短语请求——绝不。"
+        },
+        "no_custody": {
+          "title": "我们不托管您的资产",
+          "desc": "Lenix 准备证据并协调路径。我们不是您钱包的托管方。"
+        },
+        "honest": {
+          "title": "诚实的案件评估",
+          "desc": "若追踪线索已耗尽或追回可能性低，我们会在付费合作前如实说明。"
+        },
+        "audited": {
+          "title": "经审计的协议栈",
+          "desc": "智能合约经 CertiK 审查。运营符合 ISO 27001 控制要求。"
+        },
+        "chains": {
+          "title": "多链覆盖",
+          "desc": "追踪工作流支持主要 EVM 网络及盗窃案件中常见的资产类型。"
+        }
+      },
+      "image_alt": "分析师查看区块链调查仪表板与交易证据"
+    },
+    "CaseStudy": {
+      "eyebrow": "案例示例",
+      "title1": "当被盗资金进入 ",
+      "title2": "中心化交易所",
+      "subtitle": "匿名化示例。标识已更改。流程具有代表性——不保证追回。",
+      "situation": {
+        "label": "情况",
+        "text": "企业钱包向钓鱼合约发送 USDC。数小时内，资金经两个中转钱包存入大型交易所。"
+      },
+      "action": {
+        "label": "Lenix 做了什么",
+        "text": "我们绘制完整交易路径，标记充值地址，并为交易所合规团队准备含交易图谱与时间线的证据包。"
+      },
+      "outcome": {
+        "label": "结果",
+        "text": "交易所合规部门受理材料。资金冻结待审核。法律顾问收到相同文档以并行推进法律程序。"
+      },
+      "disclaimer": "结果因案件、司法管辖区及交易所响应时间而异。此示例展示 Lenix 如何记录链上轨迹——并非每个案件都能追回。",
+      "image_alt": "交易监控仪表盘，展示资金在钱包与交易所间的流向"
+    },
+    "Cta": {
+      "title": "准备开启案件？",
+      "subtitle": "说明事件经过及您掌握的链上细节。我们将如实评估是否存在追踪与追回路径。",
+      "btn_primary": "提交案件",
+      "btn_secondary": "联系团队"
+    }
+  },
+  "Security": {
+    "meta": {
+      "title": "安全与审计 | Lenix Protocol",
+      "description": "CertiK 智能合约审计、ISO 27001 对齐运营及 Lenix 取证与追回基础设施的安全控制。"
+    },
+    "hero": {
+      "eyebrow": "安全",
+      "title1": "经审计的协议。",
+      "title2": "有文档的控制措施。",
+      "subtitle": "Lenix 将第三方智能合约审查与运营安全实践结合，服务于处理敏感追回与托管流程的团队。"
+    },
+    "audit": {
+      "title": "CertiK 审计范围",
+      "desc": "生产流程中的核心合约已由 CertiK 审查。审计范围涵盖部署关键组件与已知攻击面。",
+      "certik_text": "CertiK 审查 Lenix 智能合约的常见漏洞、访问控制及代币与金库流程中的逻辑缺陷。",
+      "certik_link": "安全文档",
+      "items": {
+        "contracts": {
+          "title": "合约审查范围",
+          "desc": "用于实时支付与托管路径的代币销售、金库及协议模块。"
+        },
+        "access": {
+          "title": "访问控制",
+          "desc": "基于角色的权限、多签要求及适用的升级路径。"
+        },
+        "monitoring": {
+          "title": "持续监控",
+          "desc": "监控生产部署中的异常合约交互与运营告警。"
+        }
+      },
+      "eyebrow": "智能合约"
+    },
+    "iso": {
+      "title": "ISO 27001 对齐运营",
+      "desc": "Lenix Protocol 针对客户数据、调查材料及内部系统，维持与 ISO 27001 对齐的信息安全管理实践。"
+    },
+    "practices": {
+      "data": {
+        "title": "数据处理",
+        "desc": "案件材料以访问控制存储。调查数据仅与授权方共享。"
+      },
+      "incident": {
+        "title": "事件响应",
+        "desc": "针对影响客户数据、协议基础设施或调查流程的安全事件，有明确定义的处理程序。"
+      },
+      "custody": {
+        "title": "托管边界",
+        "desc": "Lenix 准备证据并协调路径。我们不托管客户钱包密钥或助记词。"
+      },
+      "eyebrow": "运营",
+      "title": "如何处理敏感工作",
+      "description": "追回案件涉及受害者数据和高风险资金流。以下是我们的边界。",
+      "image_alt": "运营团队监控协议活动与安全告警"
+    },
+    "cta": {
+      "title": "需要安全文档？",
+      "subtitle": "联系团队获取审计摘要、ISO 说明或企业安全审查。",
+      "btn_primary": "开始追回",
+      "btn_secondary": "联系安全团队"
+    },
+    "assurance": {
+      "eyebrow": "验证",
+      "title": "我们可以提供什么",
+      "description": "独立合约审查与 documented 运营控制 — 不无依据的安全宣传。",
+      "iso_link": "关于 Lenix"
+    }
+  },
+  "AccountSidebar": {
+    "sections": {
+      "account": "账户",
+      "wallet": "钱包"
+    },
+    "nav": {
+      "home": "首页",
+      "vault": "区块链保险库",
+      "lenix_wallet": "Lenix 钱包",
+      "banking": "企业银行",
+      "recovery_services": "资产恢复服务",
+      "crypto_loan": "加密贷款",
+      "assets": "资产",
+      "send": "发送",
+      "receive": "接收",
+      "transactions": "交易记录",
+      "settings": "设置"
+    },
+    "support": {
+      "need_help": "需要帮助？",
+      "contact_support": "联系支持"
+    },
+    "header": {
+      "menu": "菜单",
+      "verified_user": "已验证用户",
+      "sign_out": "退出登录"
+    },
+    "logo_alt": "Lenix Protocol"
+  },
+  "AccountMobileTabs": {
+    "home": "首页",
+    "banking": "银行",
+    "wallet": "钱包",
+    "loan": "贷款",
+    "settings": "设置"
+  },
+  "AccountDashboard": {
+    "status": {
+      "recovery": "恢复案件状态",
+      "banking": "银行服务状态",
+      "loan": "贷款申请状态"
+    },
+    "timeline": {
+      "received_title": "申请已收到",
+      "received_desc": "我们已收到您的信息，正在审核中。",
+      "review_title": "审核中",
+      "review_desc": "我们的团队正在分析您的请求。"
+    },
+    "submitted_details": "已提交详情",
+    "service_type": "服务类型",
+    "service_types": {
+      "recovery": "资产恢复",
+      "banking": "银行",
+      "loan": "贷款"
+    },
+    "details_fields": {
+      "name": "姓名",
+      "transaction_hash": "交易哈希",
+      "amount_stolen": "被盗金额",
+      "blockchain": "区块链",
+      "currency": "货币",
+      "country_phone_code": "国家电话区号",
+      "incident_summary": "事件摘要",
+      "evidence": "证据",
+      "evidence_url": "证据链接",
+      "notes": "备注",
+      "loan_type_id": "贷款类型",
+      "collateral_asset": "抵押资产",
+      "duration": "期限",
+      "loan_amount": "贷款金额",
+      "phone_number": "电话号码",
+      "payout_method": "付款方式"
+    },
+    "support": {
+      "title": "需要帮助？",
+      "description": "我们的支持团队全天候为您提供协助。",
+      "contact": "联系支持"
+    }
+  },
+  "AccountVault": {
+    "page": {
+      "title": "我的保险库",
+      "subtitle": "管理您已保护的数字资产。",
+      "history": "历史记录",
+      "status_active": "活跃",
+      "status_locked": "已锁定",
+      "status_no_wallet": "无钱包",
+      "load_error": "加载持仓失败"
+    },
+    "actions": {
+      "deposit": "存入",
+      "withdraw": "提取",
+      "swap": "兑换",
+      "audit": "审计"
+    },
+    "premium": {
+      "title": "获取高级保护",
+      "description": "升级至 Hardware Vault 集成，获得最高安全级别。",
+      "cta": "了解更多"
+    },
+    "card": {
+      "total_value": "保险库总价值",
+      "last_synced": "上次同步：刚刚",
+      "change_24h": "{percent}%（24 小时）",
+      "security_level": "安全等级",
+      "security_very_high": "非常高"
+    },
+    "assets": {
+      "title": "保险库资产",
+      "count_zero": "0 项资产",
+      "count": "{count} 项资产",
+      "empty": "未找到资产。连接或导入钱包以开始使用。",
+      "address_copied": "地址已复制",
+      "chains": {
+        "ethereum": "Ethereum",
+        "bsc": "BSC",
+        "polygon": "Polygon",
+        "evm": "EVM"
+      }
+    },
+    "security": {
+      "title": "保险库安全状态",
+      "score_label": "安全评分",
+      "items": {
+        "wallet": "钱包",
+        "cold_storage": "冷存储",
+        "encrypted_vault": "加密保险库",
+        "session": "会话"
+      },
+      "status": {
+        "connected": "已连接",
+        "not_connected": "未连接",
+        "active": "活跃",
+        "unlocked": "已解锁",
+        "locked": "已锁定",
+        "no_wallet": "无钱包",
+        "completed": "已完成"
+      },
+      "unlock": "解锁",
+      "recent_activity": "近期活动",
+      "view_all": "查看全部",
+      "no_activity": "暂无近期活动",
+      "wallet_connected": "钱包已连接",
+      "transaction": "交易",
+      "transfer": "{symbol} 转账"
+    },
+    "time": {
+      "just_now": "刚刚",
+      "recently": "最近",
+      "min_ago": "{count} 分钟前",
+      "hours_ago": "{count} 小时前",
+      "days_ago": "{count} 天前"
+    },
+    "drawer": {
+      "connect_wallet": "连接钱包",
+      "setup_title": "设置您的保险库",
+      "setup_description": "创建新钱包或导入现有钱包以保护您的资产。",
+      "unlock_vault": "解锁保险库",
+      "unlock_description": "输入密码以访问您已保护的资产。",
+      "password_placeholder": "输入密码",
+      "unlocking": "解锁中...",
+      "unlock": "解锁",
+      "vault_connected": "保险库已连接",
+      "lenix_wallet": "Lenix 钱包",
+      "lock": "锁定",
+      "imported_wallets": "已导入钱包",
+      "no_imported": "尚无已导入钱包。",
+      "import_wallet": "导入钱包",
+      "wallet_name_label": "钱包名称（可选）",
+      "wallet_name_placeholder": "我的 MetaMask",
+      "import_type_label": "导入类型",
+      "seed_phrase": "助记词",
+      "private_key": "私钥",
+      "seed_phrase_label": "12 或 24 词恢复短语",
+      "private_key_label": "私钥",
+      "seed_phrase_placeholder": "词1 词2 词3 ...",
+      "private_key_placeholder": "0x...",
+      "encryption_password_label": "加密密码（至少 8 个字符）",
+      "password_dots_placeholder": "••••••••",
+      "cancel": "取消",
+      "import": "导入",
+      "loading": "加载中...",
+      "imported_seed_name": "已导入助记词",
+      "imported_key_name": "已导入私钥"
+    },
+    "toast": {
+      "wallet_unlocked": "钱包已解锁",
+      "incorrect_password": "密码不正确",
+      "import_credentials_required": "请输入凭据和密码（至少 8 个字符）。",
+      "wallet_imported": "钱包已导入",
+      "import_failed": "导入失败",
+      "wallet_removed": "钱包已移除"
+    }
+  },
+  "AccountLenixWallet": {
+    "page": {
+      "title": "钱包",
+      "subtitle": "管理您的加密资产",
+      "setup_title": "设置您的钱包",
+      "setup_subtitle": "创建或导入钱包以开始使用",
+      "unlock_title": "解锁钱包",
+      "unlock_subtitle": "输入密码以继续",
+      "password_placeholder": "密码",
+      "unlocking": "解锁中...",
+      "unlock": "解锁",
+      "network_placeholder": "网络",
+      "logo_alt": "Lenix 钱包",
+      "show_evm_wallet": "显示 EVM 钱包",
+      "show_bitcoin_wallet": "显示 Bitcoin 钱包",
+      "evm_wallet": "EVM 钱包",
+      "bitcoin_wallet": "Bitcoin 钱包"
+    },
+    "networks": {
+      "all": "所有网络",
+      "ethereum": "Ethereum",
+      "bsc": "BNB Chain",
+      "polygon": "Polygon",
+      "bitcoin": "Bitcoin"
+    },
+    "actions": {
+      "send": "发送",
+      "receive": "接收",
+      "buy": "购买",
+      "swap": "兑换",
+      "coming_soon": "即将推出"
+    },
+    "wallet_card": {
+      "total_balance": "总余额",
+      "hide_balance": "隐藏余额",
+      "show_balance": "显示余额",
+      "lock_wallet": "锁定钱包",
+      "evm_networks": "EVM 网络",
+      "evm_chains": "ETH · BSC · Polygon · Arbitrum",
+      "address_copied": "地址已复制"
+    },
+    "bitcoin_card": {
+      "btc_balance": "BTC 余额",
+      "not_activated": "未激活",
+      "activate_prompt": "激活您的原生 Bitcoin 钱包",
+      "password_placeholder": "输入钱包密码",
+      "creating": "创建中...",
+      "activate": "激活",
+      "bitcoin_network": "Bitcoin 网络",
+      "segwit": "BIP-84 原生 SegWit",
+      "bitcoin_alt": "Bitcoin",
+      "enter_password": "输入您的钱包密码",
+      "wallet_created": "Bitcoin 钱包已创建",
+      "create_failed": "创建 Bitcoin 钱包失败",
+      "address_copied": "地址已复制"
+    },
+    "token_list": {
+      "assets": "资产",
+      "market": "市场",
+      "tokens_count": "{count} 个代币",
+      "no_assets": "暂无资产",
+      "frozen": "已冻结",
+      "deposit_to_unfreeze": "存入 {amount} BTC 以解冻",
+      "frozen_by_admin": "管理员已冻结",
+      "token_fallback": "代币"
+    },
+    "activity": {
+      "title": "活动",
+      "no_activity": "暂无近期活动",
+      "done": "已完成",
+      "pending": "待处理"
+    },
+    "security": {
+      "title": "安全",
+      "protected": "已保护",
+      "recovery_phrase": "恢复短语",
+      "backed_up": "已备份",
+      "password": "密码",
+      "active": "活跃",
+      "withdrawal_limit": "提现限额",
+      "not_set": "未设置",
+      "set": "已设置"
+    },
+    "receive_modal": {
+      "title": "接收",
+      "network": "网络",
+      "evm_networks": "EVM 网络",
+      "evm_chains": "ETH、BSC、Polygon、Arbitrum",
+      "bitcoin": "Bitcoin",
+      "bitcoin_chains": "原生 SegWit (BIP-84)",
+      "not_set_up": "（未设置）",
+      "qr_alt": "二维码",
+      "copied": "已复制",
+      "btc_warning": "仅向此地址发送 BTC",
+      "evm_warning": "仅发送 ERC-20 兼容代币"
+    },
+    "send_modal": {
+      "title": "发送加密货币",
+      "description": "输入收款地址和提现金额以发送加密货币。"
+    },
+    "receive_page": {
+      "title": "接收资产",
+      "subtitle": "获取您的专属地址以接收付款。",
+      "security_notice": "为确保安全，充值前请核实网络完全一致。发送到错误网络的资产无法追回。",
+      "no_wallet_title": "未找到钱包",
+      "no_wallet_description": "请创建钱包以接收资产。",
+      "go_to_wallet": "前往钱包",
+      "wallet_locked_title": "钱包已锁定",
+      "wallet_locked_description": "请先解锁钱包以查看地址。",
+      "unlock_wallet": "解锁钱包",
+      "card_title": "接收资产",
+      "card_description": "扫描二维码或复制地址进行充值。",
+      "select_network": "选择网络",
+      "bitcoin_provisioning": "比特币钱包仍在初始化。",
+      "qr_alt": "钱包地址二维码",
+      "address_label": "您的 {network} 地址",
+      "copy": "复制",
+      "copied": "已复制",
+      "share": "分享",
+      "address_copied": "地址已复制到剪贴板",
+      "share_title": "我的 Lenix 钱包地址",
+      "share_text": "这是我的 {network} 地址：{address}",
+      "networks": {
+        "bitcoin": {
+          "name": "Bitcoin（原生）",
+          "warning": "请仅向此地址发送原生比特币。不要从其他网络发送 BTC。"
+        },
+        "ethereum": {
+          "name": "Ethereum（ERC-20）",
+          "warning": "仅向此地址发送 ETH 及 ERC-20 代币。"
+        },
+        "bnb": {
+          "name": "BNB Smart Chain（BEP-20）",
+          "warning": "仅向此地址发送 BNB 及 BEP-20 代币。"
+        },
+        "polygon": {
+          "name": "Polygon（MATIC）",
+          "warning": "仅向此地址发送 MATIC 及 Polygon 网络代币。"
+        },
+        "arbitrum": {
+          "name": "Arbitrum One",
+          "warning": "仅向此地址发送 Arbitrum One 网络代币。"
+        },
+        "optimism": {
+          "name": "Optimism",
+          "warning": "仅向此地址发送 Optimism 网络代币。"
+        },
+        "avalanche": {
+          "name": "Avalanche C-Chain",
+          "warning": "仅向此地址发送 Avalanche C-Chain 代币。"
+        }
+      }
+    },
+    "send_page": {
+      "unlock_message": "解锁您的 Lenix 钱包以管理资金。",
+      "unlock_locked_prefix": "请在",
+      "unlock_locked_suffix": "输入密码以解密余额。",
+      "wallet_page": "钱包页面",
+      "unlock_no_wallet_prefix": "请先在",
+      "unlock_no_wallet_suffix": "创建钱包。",
+      "wallet_dashboard": "Lenix 钱包仪表板",
+      "estimated_total_value": "预计总资产",
+      "wallet_label": "钱包",
+      "pnl_today": "今日盈亏",
+      "deposit": "充值",
+      "withdraw": "提币",
+      "transfer": "转账",
+      "more_funding_actions": "更多资金操作",
+      "funding_title": "资金",
+      "search_placeholder": "搜索资产或网络",
+      "small_asset_exchange": "小额资产兑换",
+      "hide_dust": "隐藏 < 1 USD 的资产",
+      "asset": "资产",
+      "amount": "数量",
+      "available": "可用",
+      "frozen": "冻结",
+      "action": "操作",
+      "unfreeze_deposit": "充值 {amount} BTC 以解冻",
+      "more_actions_for": "更多 {symbol} 操作",
+      "no_assets": "暂无资产",
+      "no_assets_match": "没有符合筛选条件的资产。",
+      "withdraw_modal": {
+        "title": "提取加密资产",
+        "description": "请使用正确的网络将资金发送到外部钱包。"
+      }
+    },
+    "send_form": {
+      "no_assets_alt": "暂无资产",
+      "no_assets_title": "尚未有可用的资金资产",
+      "no_assets_description": "向您的 Lenix 钱包充值加密资产，即可启用提币和链上转账。",
+      "asset_label": "资产",
+      "network_label": "网络",
+      "chain_id": "链 ID {id}",
+      "recipient_label": "收款地址",
+      "paste": "粘贴",
+      "recipient_error_bitcoin": "请输入有效的比特币地址。",
+      "recipient_error_evm": "请输入有效的 EVM 钱包地址。",
+      "amount_label": "数量",
+      "amount_aria": "要发送的 {symbol} 数量",
+      "available": "可用",
+      "on_chain_only": "目前只有 {amount} {symbol} 已在链上到账，可以发送。",
+      "summary_label": "转账概要",
+      "network_fee": "网络手续费",
+      "calculating_fee": "正在计算…",
+      "recipient_receives": "收款方将收到",
+      "frozen": "冻结",
+      "frozen_message": "该资产已冻结",
+      "frozen_unfreeze_instruction": " 请向您的 Lenix 比特币钱包充值至少 {amount} BTC 以解除冻结——入账确认后会自动解锁。",
+      "frozen_contact_support": " 请联系支持团队解决该问题。",
+      "irreversible_warning": "发送前请再次确认收款地址和网络。链上转账无法撤回。",
+      "sending": "正在发送…",
+      "send_now": "立即发送",
+      "wallet_locked_error": "解锁您的 Lenix 钱包以发送资金",
+      "clipboard_error": "无法访问剪贴板",
+      "bitcoin_send_success": "比特币转账已广播",
+      "bitcoin_send_failed": "比特币提币失败",
+      "unsupported_network": "该资产不支持此网络",
+      "broadcasting_transaction": "正在广播交易",
+      "transfer_confirmed": "转账已确认",
+      "broadcasting_token_transfer": "正在广播代币转账",
+      "token_transfer_complete": "代币转账完成",
+      "transaction_failed": "交易失败",
+      "fee_bitcoin_estimate": "确认时估算"
+    },
+    "setup": {
+      "back": "返回",
+      "welcome_title": "全球最安全的钱包",
+      "welcome_description": "设置钱包以开始使用。Lenix Wallet 是全球最安全、最私密的钱包，守护您的加密资产。",
+      "create_new": "创建新钱包",
+      "import_existing": "导入现有钱包",
+      "terms_notice": "创建或导入钱包即表示您同意我们的服务条款和隐私政策。",
+      "backup_title": "备份您的恢复短语",
+      "backup_description": "按顺序写下这 12 个词并妥善保管。若丢失，您可能永久失去资金。",
+      "security_check_title": "安全检查",
+      "security_check_description": "切勿与任何人分享此短语。Lenix 支持绝不会向您索取。",
+      "saved_phrase": "我已保存恢复短语",
+      "verify_title": "验证恢复短语",
+      "verify_description": "请在下方输入要求的词以确认您已保存短语。",
+      "word_label": "第 {number} 个词",
+      "word_placeholder": "输入第 {number} 个词",
+      "verify_continue": "验证并继续",
+      "password_title": "设置安全密码",
+      "password_description": "此密码将用于在此设备上加密您的钱包。",
+      "password_label": "密码",
+      "confirm_password_label": "确认密码",
+      "create_wallet": "创建钱包",
+      "processing": "处理中...",
+      "import_title": "导入恢复短语",
+      "import_description": "输入 12 或 24 词恢复短语以恢复您的钱包。",
+      "import_placeholder": "apple banana cherry...",
+      "continue": "继续",
+      "import_wallet": "导入钱包"
+    },
+    "toast": {
+      "wallet_unlocked": "钱包已解锁",
+      "incorrect_password": "密码不正确",
+      "phrase_copied": "恢复短语已复制到剪贴板",
+      "incorrect_words": "词不正确，请重试。",
+      "password_min_length": "密码至少需要 8 个字符",
+      "passwords_mismatch": "两次密码不一致",
+      "wallet_created": "钱包创建成功！",
+      "create_failed": "创建钱包失败",
+      "invalid_phrase": "恢复短语无效。应为 12 或 24 个词，实际为 {count} 个。",
+      "wallet_imported": "钱包导入成功！",
+      "import_failed": "导入钱包失败"
+    }
+  },
+  "AccountBanking": {
+    "meta": {
+      "title": "企业银行 | Lenix Protocol",
+      "description": "在 Spot、Funding 和已验证银行账户之间转移数字资产。"
+    },
+    "error": {
+      "load_failed": "无法加载银行工作区",
+      "unavailable_title": "银行工作区不可用",
+      "unavailable_description": "无法加载银行概览。",
+      "try_again": "重试"
+    },
+    "tabs": {
+      "overview": "概览",
+      "accounts": "银行账户",
+      "activity": "活动"
+    },
+    "empty_assets": {
+      "title": "暂无 treasury 资产",
+      "description": "将资产转入 Spot 或 Funding 钱包即可开始。",
+      "cta": "转移资金"
+    },
+    "fiat_balance": {
+      "funding": "{currency} Funding",
+      "available": "可用 {amount}"
+    },
+    "summary": {
+      "title": "企业银行",
+      "verified": "已验证",
+      "verification_pending": "待验证",
+      "subtitle": "在 treasury 钱包和已验证银行账户之间转移数字资产。",
+      "transfer": "转账",
+      "withdraw_to_bank": "提现至银行",
+      "total_treasury": "Treasury 总价值",
+      "hide_balances": "隐藏余额",
+      "show_balances": "显示余额",
+      "account": "账户",
+      "tier": "等级",
+      "relationship_manager": "客户经理",
+      "spot_wallet": "Spot 钱包",
+      "spot_available": "可用于交易",
+      "funding_wallet": "Funding 钱包",
+      "funding_available": "可用于结算",
+      "in_settlement": "结算中",
+      "pending_payouts": "在活跃的银行付款中"
+    },
+    "assets": {
+      "title": "钱包余额",
+      "subtitle": "Spot 和可支付的 Funding 资产",
+      "move_funds": "转移资金",
+      "columns": {
+        "asset": "资产",
+        "wallet": "钱包",
+        "balance": "余额",
+        "value": "价值",
+        "change_24h": "24小时"
+      },
+      "location": {
+        "spot": "Spot",
+        "funding": "Funding"
+      }
+    },
+    "accounts": {
+      "linked_title": "已关联银行账户",
+      "linked_subtitle": "银行提现的结算目的地",
+      "add_account": "添加账户",
+      "empty_title": "暂无关联银行账户",
+      "empty_description": "添加银行账户以启用提现至您的银行。",
+      "default": "默认",
+      "status": {
+        "verified": "已验证",
+        "rejected": "已拒绝",
+        "pending": "审核中"
+      },
+      "limits_title": "结算限额",
+      "limits_subtitle": "滚动企业额度",
+      "remaining": "剩余 {percent}%",
+      "limits_note": "更高的结算限额由您的客户经理和合规团队审核。"
+    },
+    "activity": {
+      "title": "交易活动",
+      "subtitle": "内部转账和银行结算",
+      "search_label": "搜索交易",
+      "search_placeholder": "搜索参考号或资产",
+      "filter_label": "筛选交易状态",
+      "filter_all": "全部状态",
+      "status": {
+        "completed": "已完成",
+        "processing": "处理中",
+        "review": "审核",
+        "under_review": "审核中",
+        "failed": "失败"
+      },
+      "columns": {
+        "transaction": "交易",
+        "amount": "金额",
+        "destination": "目的地",
+        "status": "状态",
+        "date": "日期",
+        "view": "查看"
+      },
+      "direction": {
+        "spot_to_funding": "Spot 至 Funding",
+        "funding_to_spot": "Funding 至 Spot",
+        "funding_to_bank": "Funding 至银行",
+        "spot_to_bank": "Spot 至银行"
+      },
+      "view_transaction": "查看 {reference}",
+      "empty_title": "没有匹配的交易",
+      "empty_description": "更改搜索或状态筛选条件。"
+    },
+    "add_account": {
+      "title": "添加银行账户",
+      "description": "提交的账户在接收结算前需经合规团队审核。通常需要 1–2 个工作日。",
+      "fields": {
+        "bank_name": "银行名称",
+        "bank_name_placeholder": "例如：工商银行",
+        "account_holder": "账户持有人姓名",
+        "account_holder_placeholder": "完整法定姓名",
+        "account_number": "账号 / IBAN",
+        "account_number_placeholder": "账号",
+        "routing_number": "路由号（ACH/国内）",
+        "swift_bic": "SWIFT / BIC（国际）",
+        "optional": "选填",
+        "account_type": "账户类型",
+        "checking": "支票账户",
+        "savings": "储蓄账户",
+        "currency": "货币",
+        "country": "国家",
+        "country_placeholder": "CN"
+      },
+      "submitting": "提交中...",
+      "submit": "提交验证",
+      "required_fields": "请填写所有必填字段",
+      "success": "银行账户已提交验证",
+      "failed": "添加银行账户失败"
+    },
+    "transfer": {
+      "title_form": "转移资金",
+      "title_review": "审核转账",
+      "title_success": "转账状态",
+      "desc_form": "在钱包之间转移资产或结算至已关联银行。",
+      "desc_review": "汇率保留五分钟。",
+      "desc_success": "您的参考号已可用于跟踪。",
+      "back_label": "返回转账详情",
+      "step_label": "第 {step} 步，共 3 步",
+      "cancel": "取消",
+      "review_transfer": "审核转账",
+      "confirm_submit": "确认并提交",
+      "done": "完成",
+      "quote_failed": "无法创建报价",
+      "transfer_failed": "无法提交转账",
+      "type_legend": "转账类型",
+      "types": {
+        "spot_to_funding": {
+          "label": "Spot → Funding",
+          "description": "准备资产用于支付"
+        },
+        "funding_to_spot": {
+          "label": "Funding → Spot",
+          "description": "将资产返回用于交易"
+        },
+        "funding_to_bank": {
+          "label": "Funding → 银行",
+          "description": "提取可用资金"
+        },
+        "spot_to_bank": {
+          "label": "Spot → 银行",
+          "description": "转换并提现"
+        }
+      },
+      "from": "从",
+      "to": "至",
+      "spot_wallet": "Spot 钱包",
+      "funding_wallet": "Funding 钱包",
+      "bank_account": "银行账户",
+      "asset": "资产",
+      "amount": "金额",
+      "max": "最大",
+      "amount_placeholder": "0.00",
+      "payout_currency": "付款货币",
+      "currencies": {
+        "USD": "USD · 美元",
+        "EUR": "EUR · 欧元",
+        "GBP": "GBP · 英镑"
+      },
+      "select_account": "选择账户",
+      "available": "可用"
+    },
+    "review": {
+      "recipient_receives": "收款方收到",
+      "from_amount": "从 {amount} {asset}",
+      "market_value": "市场价值",
+      "exchange_rate": "汇率",
+      "exchange_rate_value": "1 USD = {rate} {currency}",
+      "platform_fee": "平台费用",
+      "banking_fee": "银行费用",
+      "estimated_arrival": "预计到账",
+      "authorization": "确认即表示您授权上述资产转换和结算指令。",
+      "withdrawal_submitted": "提现已提交",
+      "transfer_completed": "转账已完成",
+      "withdrawal_desc": "您的结算已通过初步验证，现进入合规审查。",
+      "transfer_desc": "您的余额已在银行工作区更新。",
+      "reference": "参考号",
+      "status": "状态",
+      "destination": "目的地",
+      "processing": "处理中",
+      "completed": "已完成"
+    },
+    "detail": {
+      "title": "转账详情",
+      "reference": "参考号 {reference}",
+      "payout_amount": "付款金额",
+      "destination": "目的地",
+      "estimated_arrival": "预计到账",
+      "fees": "费用",
+      "requested": "已请求",
+      "timeline_title": "结算时间线",
+      "pending": "待处理",
+      "download_receipt": "下载收据",
+      "status": {
+        "completed": "已完成",
+        "processing": "处理中",
+        "under_review": "审核中",
+        "failed": "失败"
+      }
+    },
+    "skeleton": {
+      "loading": "正在加载银行仪表板"
+    }
+  },
+  "AccountRecoveryServices": {
+    "page": {
+      "title": "资产恢复服务",
+      "subtitle": "提交丢失或被盗加密资产的恢复申请。我们的取证团队将评估您的案件，并在 24–48 小时内与您联系。",
+      "process_title": "流程",
+      "form_title": "资产恢复与取证详情",
+      "form_subtitle": "我们协助您追踪并恢复丢失的加密资产，并构建经核实的证据以支持合法资金追回。"
+    },
+    "process": {
+      "assessment": {
+        "title": "评估",
+        "description": "我们分析资金轨迹并评估可恢复性。"
+      },
+      "strategy": {
+        "title": "策略",
+        "description": "定制方案，提供法律与取证支持。"
+      },
+      "recovery": {
+        "title": "恢复",
+        "description": "我们与交易所及监管机构协作以追回资金。"
+      },
+      "return": {
+        "title": "返还",
+        "description": "资金转入您已验证的钱包。"
+      }
+    },
+    "form": {
+      "name": "姓名",
+      "name_placeholder": "例如：张三",
+      "transaction_hash": "交易哈希 / 钱包地址",
+      "transaction_hash_placeholder": "输入哈希或地址（例如 0x1234...）",
+      "amount_stolen": "被盗大致金额",
+      "amount_stolen_placeholder": "输入估计金额（例如 200000）",
+      "incident_summary": "事件摘要",
+      "incident_summary_placeholder": "例如：资金通过钓鱼诈骗被盗...",
+      "evidence": "截图或其他支持索赔的证据",
+      "phone_number": "电话号码",
+      "blockchain": "选择区块链",
+      "blockchain_placeholder": "选择区块链",
+      "currency": "选择币种",
+      "currency_placeholder": "选择币种",
+      "privacy_prefix": "Lenix Protocol 需要您的联系方式以便就恢复案件与您沟通。详情请参阅我们的",
+      "privacy_policy": "隐私政策",
+      "privacy_suffix": "。",
+      "submit": "提交恢复申请",
+      "submitting": "提交中..."
+    },
+    "blockchains": {
+      "BTC": "Bitcoin (BTC)",
+      "ETH": "Ethereum (ETH)",
+      "SOL": "Solana (SOL)",
+      "TRX": "Tron (TRX)",
+      "BNB": "Binance Smart Chain (BNB)",
+      "MATIC": "Polygon Mainnet (MATIC)",
+      "AVAX": "Avalanche C-Chain (AVAX)",
+      "ARB": "Arbitrum One (ARB)",
+      "BASE": "Base (BASE)",
+      "FANTOM": "Fantom (Fantom)",
+      "GNOSIS": "Gnosis Chain (GNOSIS)",
+      "KAVA": "Kava (KAVA)",
+      "POL": "Polkadot (POL)",
+      "SUI": "Sui (SUI)",
+      "OTHER": "其他"
+    },
+    "success": {
+      "title": "申请已提交",
+      "description": "我们的恢复团队将审核您的案件，并在 24–48 小时内与您联系。",
+      "submit_another": "提交另一份申请"
+    },
+    "toast": {
+      "required_fields": "请填写所有必填字段",
+      "submit_failed": "恢复申请提交失败",
+      "submit_success": "恢复申请已提交。我们的团队将尽快与您联系。"
+    }
+  },
+  "AccountCryptoLoan": {
+    "page": {
+      "back_to_dashboard": "返回控制台",
+      "collateral_title": "需要更多抵押品？",
+      "collateral_description": "向金库存入更多资产，以提高借款额度并改善健康因子。",
+      "go_to_vault": "前往金库"
+    },
+    "hero": {
+      "title_line1": "释放流动性，",
+      "title_line2": "保留您的资产",
+      "subtitle": "无需出售投资组合即可获得即时加密抵押贷款。低利率、灵活期限、即时放款。",
+      "get_instant_loan": "获取即时贷款",
+      "how_it_works": "运作方式",
+      "active_loans": "活跃贷款",
+      "total_borrowed": "总借款",
+      "lowest_rate": "最低利率"
+    },
+    "active_loans": {
+      "empty_title": "暂无活跃贷款",
+      "empty_description": "您的活跃贷款将显示在此处。申请新贷款即可即时获得流动性。",
+      "title": "您的投资组合",
+      "active_count": "{count} 笔活跃",
+      "borrowed_amount": "借款金额",
+      "collateral": "抵押品",
+      "health_factor": "健康因子",
+      "repay_loan": "偿还贷款",
+      "processing": "处理中...",
+      "view_details": "查看详情",
+      "details_title": "贷款申请详情",
+      "borrowed": "已借",
+      "apy": "APY",
+      "duration": "期限",
+      "start_date": "开始日期",
+      "contact_details": "联系方式",
+      "phone": "电话",
+      "telegram_whatsapp": "Telegram / WhatsApp",
+      "not_provided": "未提供",
+      "payout_method": "放款方式",
+      "no_payout_details": "未保存放款详情。",
+      "wallet": "钱包",
+      "network": "网络",
+      "bank": "银行",
+      "swift_bic": "SWIFT/BIC",
+      "account": "账户",
+      "holder": "持有人",
+      "routing_iban": "Routing/IBAN"
+    },
+    "market_rates": {
+      "live_rates": "实时利率",
+      "available_plans": "可用方案",
+      "interest_rate": "利率",
+      "ltv": "{ltv}% LTV"
+    },
+    "application": {
+      "step_label": "第 {step} 步，共 2 步 — {phase}",
+      "phase_details": "贷款详情",
+      "phase_payout": "放款偏好",
+      "title_details": "申请加密贷款",
+      "title_payout": "接收资金",
+      "subtitle_details": "根据您的需求定制贷款条款。",
+      "subtitle_payout": "选择我们将贷款详情发送到的位置。",
+      "select_loan_type": "选择贷款类型",
+      "loan_type_summary": "{rate}% APR · 最高 {ltv}% LTV",
+      "borrow_amount": "借款金额（USD）",
+      "borrow_amount_placeholder": "例如 5000",
+      "collateral_asset": "抵押资产",
+      "duration": "期限",
+      "continue_payout": "继续设置放款",
+      "contact_title": "我们如何联系您？",
+      "contact_subtitle": "请至少提供一种联系方式，以便我们就您的申请与您沟通。",
+      "phone_number": "电话号码",
+      "phone_placeholder": "例如 +86 138 0000 0000",
+      "phone_hint": "用于电话和短信更新",
+      "telegram_whatsapp": "Telegram 或 WhatsApp",
+      "telegram_placeholder": "例如 @username 或 +8613800000000",
+      "telegram_hint": "用于快速消息沟通",
+      "funds_title": "资金应发送到哪里？",
+      "payout_crypto": "加密钱包",
+      "payout_crypto_sub": "即时转账",
+      "payout_wire": "电汇",
+      "payout_wire_sub": "1–3 个工作日",
+      "payout_bank": "银行存款",
+      "payout_bank_sub": "ACH / SEPA",
+      "wallet_address": "钱包地址",
+      "wallet_placeholder": "0x...",
+      "select_network": "选择网络",
+      "network_erc20": "Ethereum (ERC20)",
+      "network_trc20": "Tron (TRC20)",
+      "network_bsc": "Binance Smart Chain (BEP20)",
+      "bank_name": "银行名称",
+      "bank_name_placeholder": "例如 工商银行",
+      "bank_name_alt_placeholder": "例如 建设银行",
+      "swift_bic": "SWIFT / BIC 代码",
+      "swift_placeholder": "例如 ICBKCNBJ",
+      "account_number": "账号",
+      "account_number_placeholder": "您的账号",
+      "account_holder": "账户持有人姓名",
+      "account_holder_placeholder": "账户上的全名",
+      "reference_optional": "参考号（可选）",
+      "reference_placeholder": "付款参考",
+      "routing_iban": "Routing 号码 / IBAN",
+      "routing_iban_placeholder": "ACH routing（美国）或 IBAN（欧盟）",
+      "back": "返回",
+      "submitting": "提交中...",
+      "submit": "提交申请",
+      "success_title": "申请已提交",
+      "success_description": "我们已收到您的贷款申请。我们将审核并尽快与您联系。",
+      "view_loans": "查看我的贷款"
+    },
+    "duration": {
+      "6": "6 个月",
+      "12": "12 个月",
+      "24": "24 个月",
+      "months": "{count} 个月"
+    },
+    "collateral_assets": {
+      "BTC": "Bitcoin",
+      "ETH": "Ethereum",
+      "SOL": "Solana"
+    },
+    "status": {
+      "Active": "活跃",
+      "Pending": "待处理",
+      "Repaid": "已还清",
+      "Liquidated": "已清算"
+    },
+    "payout_methods": {
+      "crypto": "加密",
+      "wire_transfer": "电汇",
+      "bank": "银行"
+    },
+    "toast": {
+      "repay_success": "贷款已成功偿还"
+    },
+    "overview": {
+      "total_borrowed": "总借款",
+      "total_borrowed_tooltip": "所有活跃贷款的总借款金额",
+      "current_interest": "当前利息",
+      "collateral_value": "抵押品价值",
+      "collateral_tooltip": "作为抵押锁定资产的总价值",
+      "ltv_label": "LTV",
+      "low_risk": "低风险",
+      "health_factor": "健康因子",
+      "health_tooltip": "清算风险指标。保持在 1.5 以上以避免清算。",
+      "safe": "安全",
+      "liquidated": "1.0（已清算）",
+      "safe_threshold": "3.0（安全）"
+    },
+    "borrow_form": {
+      "title": "贷款计算器",
+      "subtitle": "即时计算您的贷款条款。",
+      "borrow_tab": "借款",
+      "repay_tab": "还款",
+      "want_to_borrow": "我想借",
+      "my_collateral": "我的抵押品",
+      "asset_placeholder": "资产",
+      "ltv": "LTV",
+      "low_risk": "低风险",
+      "apy": "APY",
+      "total_repayment": "总还款",
+      "apply_new_loan": "申请新贷款",
+      "repay_title": "管理还款",
+      "repay_description": "请使用「活跃贷款」列表来管理和偿还您的具体贷款。"
+    },
+    "collateral": {
+      "title": "支持的抵押品",
+      "live_rates": "实时利率",
+      "max_ltv": "最高 LTV：{ltv}",
+      "fee": "费用",
+      "assets": {
+        "BTC": "Bitcoin",
+        "ETH": "Ethereum",
+        "SOL": "Solana",
+        "XRP": "Ripple"
+      }
     }
   }
 }

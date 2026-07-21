@@ -1,8 +1,9 @@
 "use client";
 
 import { Plus, ArrowUpRight, ArrowDownLeft, ShieldCheck, History } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { ConnectWalletDrawer } from "./_components/connect-wallet-drawer";
 import { VaultCard } from "./_components/vault-card";
 import { AssetList } from "./_components/asset-list";
@@ -13,6 +14,7 @@ import { useEffect, useState } from "react";
 import { toast } from "sonner";
 
 export default function VaultPage() {
+  const t = useTranslations("AccountVault");
   const { walletState, walletData } = useWallet();
   const [portfolio, setPortfolio] = useState<{
     tokens: any[];
@@ -36,7 +38,7 @@ export default function VaultPage() {
         }
       } catch (e) {
         console.error("Failed to fetch vault portfolio", e);
-        if (!cancelled) toast.error("Failed to load holdings");
+        if (!cancelled) toast.error(t("page.load_error"));
       } finally {
         if (!cancelled) setPortfolioLoading(false);
       }
@@ -44,27 +46,30 @@ export default function VaultPage() {
     return () => {
       cancelled = true;
     };
-  }, [walletState]);
+  }, [walletState, t]);
 
   const displayTokens = portfolio?.tokens ?? [];
   const totalBalance = portfolio?.totalBalanceUsd ?? 0;
   const totalBalance24hAgo =
-    portfolio?.tokens?.reduce((acc: number, t: any) => acc + (t.quote_24h || 0), 0) ?? 0;
+    portfolio?.tokens?.reduce((acc: number, token: any) => acc + (token.quote_24h || 0), 0) ?? 0;
   const changeValue = totalBalance - totalBalance24hAgo;
   const changePercent = totalBalance24hAgo !== 0 ? (changeValue / totalBalance24hAgo) * 100 : 0;
 
   const statusLabel =
-    walletState === "unlocked" ? "Active" : walletState === "locked" ? "Locked" : "No Wallet";
+    walletState === "unlocked"
+      ? t("page.status_active")
+      : walletState === "locked"
+        ? t("page.status_locked")
+        : t("page.status_no_wallet");
   const statusVariant =
     walletState === "unlocked" ? "emerald" : walletState === "locked" ? "yellow" : "zinc";
 
   return (
     <div className="max-w-7xl mx-auto space-y-6 pb-20">
-      {/* Header Actions - Mobile optimized */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-            My Vault
+            {t("page.title")}
             <span
               className={`px-2 py-0.5 rounded-full text-xs font-medium tracking-wide uppercase border ${
                 statusVariant === "emerald"
@@ -77,7 +82,7 @@ export default function VaultPage() {
               {statusLabel}
             </span>
           </h1>
-          <p className="text-zinc-400 text-sm">Manage your secured digital assets.</p>
+          <p className="text-zinc-400 text-sm">{t("page.subtitle")}</p>
         </div>
 
         <div className="flex items-center gap-2 w-full sm:w-auto">
@@ -88,7 +93,7 @@ export default function VaultPage() {
           >
             <Link href="/lenix-wallet">
               <History className="mr-2 h-4 w-4" />
-              History
+              {t("page.history")}
             </Link>
           </Button>
           <div className="flex-1 sm:flex-none">
@@ -98,7 +103,6 @@ export default function VaultPage() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Main Column */}
         <div className="lg:col-span-2 space-y-6">
           <VaultCard
             totalBalance={totalBalance}
@@ -106,28 +110,16 @@ export default function VaultPage() {
             isLoading={isGlobalLoading}
           />
 
-          {/* Quick Actions Bar */}
           <div className="grid grid-cols-4 gap-2 sm:flex sm:items-center sm:gap-6">
-            <ActionButton
-              icon={Plus}
-              label="Deposit"
-              accent="text-emerald-400"
-              href="/receive"
-            />
-            <ActionButton icon={ArrowUpRight} label="Withdraw" href="/send" />
-            <ActionButton icon={ArrowDownLeft} label="Swap" href="/lenix-wallet" />
-            <ActionButton
-              icon={ShieldCheck}
-              label="Audit"
-              accent="text-yellow-400"
-              href="/lenix-wallet"
-            />
+            <ActionButton icon={Plus} label={t("actions.deposit")} accent="text-emerald-400" href="/receive" />
+            <ActionButton icon={ArrowUpRight} label={t("actions.withdraw")} href="/send" />
+            <ActionButton icon={ArrowDownLeft} label={t("actions.swap")} href="/lenix-wallet" />
+            <ActionButton icon={ShieldCheck} label={t("actions.audit")} accent="text-yellow-400" href="/lenix-wallet" />
           </div>
 
           <AssetList tokens={displayTokens} isLoading={isGlobalLoading} />
         </div>
 
-        {/* Sidebar Column */}
         <div className="space-y-6">
           <SecurityStatus
             walletState={walletState}
@@ -140,17 +132,17 @@ export default function VaultPage() {
               <ShieldCheck className="h-24 w-24 text-yellow-400 rotate-12" />
             </div>
             <h3 className="text-lg font-bold text-yellow-400 mb-2 relative z-10">
-              Get Premium Protection
+              {t("premium.title")}
             </h3>
             <p className="text-sm text-yellow-100/80 mb-4 relative z-10">
-              Upgrade to Hardware Vault integration for maximum security.
+              {t("premium.description")}
             </p>
             <Button
               size="sm"
               className="bg-yellow-400 text-black hover:bg-yellow-500 w-full relative z-10 font-medium"
               asChild
             >
-              <Link href="/lenix-wallet">Learn More</Link>
+              <Link href="/lenix-wallet">{t("premium.cta")}</Link>
             </Button>
           </div>
         </div>
@@ -165,7 +157,7 @@ function ActionButton({
   accent,
   href,
 }: {
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   label: string;
   accent?: string;
   href?: string;
@@ -185,17 +177,14 @@ function ActionButton({
 
   if (href) {
     return (
-      <Link
-        href={href}
-        className="flex flex-col items-center justify-center gap-2 min-w-[70px] group"
-      >
+      <Link href={href} className="flex flex-col items-center justify-center gap-2 min-w-[70px] group">
         {content}
       </Link>
     );
   }
 
   return (
-    <button className="flex flex-col items-center justify-center gap-2 min-w-[70px] group">
+    <button type="button" className="flex flex-col items-center justify-center gap-2 min-w-[70px] group">
       {content}
     </button>
   );

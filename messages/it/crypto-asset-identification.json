@@ -1,59 +1,135 @@
 {
-  "Hero": {
-    "badge": "Servizi di Identificazione degli Asset Crypto",
-    "title1": "Scoperta di Criptovalute Nascoste e Identificazione di Asset Digitali",
-    "subtitle1": "Individuare e verificare le disponibilità digitali è diventato una parte critica delle moderne indagini.",
-    "desc1": "Con l'uso crescente di criptovalute in attività finanziarie sia lecite che illecite, individuare e verificare le disponibilità digitali è fondamentale. Lenix Protocol fornisce servizi esperti di identificazione degli asset crypto per aiutare avvocati, investigatori e professionisti finanziari a tracciare e convalidare la ricchezza digitale.",
-    "desc2": "Il nostro team utilizza strumenti blockchain all'avanguardia e metodologie forensi per eseguire tracciamenti completi, inclusa la localizzazione dei portafogli e l'analisi della cronologia delle transazioni.",
-    "btn_consultation": "Richiedi una Consulenza Oggi"
+  "meta": {
+    "title": "Identificazione asset crypto | Lenix Protocol",
+    "description": "Localizzare, tracciare e documentare holdings di criptovalute per contenzioso, successioni ed esecuzione. Metodologia forense con ambito e deliverable chiari."
   },
-  "Coverage": {
-    "title": "Cosa Coprono i Nostri Servizi di Identificazione",
-    "desc": "Le nostre indagini sono personalizzate per supportare questioni civili, penali e normative che coinvolgono:",
-    "card1_title": "Divorzio e controversie di diritto familiare",
-    "card1_desc": "Che coinvolgono asset crypto nascosti.",
-    "card2_title": "Frode, furto e appropriazione indebita",
-    "card2_desc": "Casi con componenti di valuta digitale.",
-    "card3_title": "Indagini interne aziendali",
-    "card3_desc": "Che coinvolgono fondi malversati.",
-    "card4_title": "Pianificazione successoria e successioni",
-    "card4_desc": "Con asset sconosciuti o non dichiarati.",
-    "card5_title": "Fallimento o esecuzione di sentenze",
-    "card5_desc": "Che richiedono l'identificazione degli asset.",
-    "footer": "Lenix Protocol collabora con gli avvocati di attori e convenuti e funge da esperto neutrale nella divisione e valutazione dei beni."
+  "Hero": {
+    "eyebrow": "Identificazione asset crypto",
+    "title1": "Documentare holdings digitali ",
+    "title2": "che altri non hanno dichiarato",
+    "subtitle": "Per avvocati, investigatori e professionisti finanziari che devono localizzare, tracciare e verificare criptovalute in contenzioso, successioni ed esecuzione — con metodologia pensata per resistere a revisione.",
+    "btn_primary": "Avvia revisione",
+    "btn_secondary": "Contatta team"
+  },
+  "Audiences": {
+    "eyebrow": "A chi è rivolto",
+    "title": "Casi che supportiamo di frequente",
+    "description": "Il lavoro di identificazione è limitato a indagini legali, regolamentari o aziendali autorizzate — non ricerche aperte su soggetti non correlati.",
+    "cards": {
+      "family": {
+        "title": "Diritto di famiglia e divorzio",
+        "desc": "Divisione patrimoniale quando una parte può avere wallet non dichiarati, conti exchange o holdings on-chain assenti dalle dichiarazioni finanziarie."
+      },
+      "fraud": {
+        "title": "Frode e appropriazione indebita",
+        "desc": "Questioni civili o penali con fondi digitali sottratti — tracciamento da wallet sorgente noti o account compromessi."
+      },
+      "estate": {
+        "title": "Successione e probate",
+        "desc": "Esecutori o consulenti che localizzano criptovalute detenute da un defunto ma non documentate — partendo da dispositivi, registri o indizi parziali di indirizzi."
+      },
+      "enforcement": {
+        "title": "Fallimento ed esecuzione",
+        "desc": "Creditori, curatori o regolatori che identificano asset crypto pignorabili e punti di contatto con exchange di un debitore o soggetto."
+      }
+    }
   },
   "Methods": {
-    "title": "Metodi per il Tracciamento delle Criptovalute",
-    "card1_title": "Identificazione dei portafogli blockchain",
-    "card1_desc": "E analisi dei collegamenti.",
-    "card2_title": "Monitoraggio delle transazioni",
-    "card2_desc": "Su blockchain pubbliche e private.",
-    "card3_title": "Verifica della proprietà di NFT",
-    "card3_desc": "E tracciamento dei trasferimenti.",
-    "card4_title": "Identificazione dei conti sugli exchange",
-    "card4_desc": "E rampe di uscita delle transazioni.",
-    "card5_title": "Incrocio dei metadati",
-    "card5_desc": "E prove dai dispositivi per l'attribuzione dei portafogli.",
-    "footer": "Il nostro lavoro di identificazione degli asset digitali è condotto utilizzando tecniche forensi solide che preservano l'integrità delle prove."
+    "eyebrow": "Cosa tracciamo",
+    "title": "Ambito di identificazione e analisi",
+    "description": "Il lavoro combina analisi on-chain con evidenze del caso — non consultazioni blockchain isolate.",
+    "columns": {
+      "linkage": {
+        "title": "Identificazione wallet",
+        "desc": "Collegare indirizzi blockchain ai soggetti usando pattern transazionali, clustering e incrocio con evidenze da dispositivi, finanze o testimonianze."
+      },
+      "flows": {
+        "title": "Analisi flussi transazionali",
+        "desc": "Seguire movimenti di fondi tra chain e layer — incluso uso visibile di mixer, trasferimenti bridge e punti di consolidamento da documentare."
+      },
+      "attribution": {
+        "title": "Attribuzione exchange e NFT",
+        "desc": "Identificare depositi custodial probabili, off-ramp e holdings NFT legati al caso quando dati on-chain e indizi lo consentono."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Perché Scegliere Lenix Protocol ?",
-    "desc": "Presso Lenix Protocol, i nostri servizi di identificazione aiutano a esporre l'intera situazione finanziaria di un soggetto in un mondo digitale. Aiutiamo i clienti a trovare gli asset digitali che altri speravano di nascondere.",
-    "point1_title": "Esperienza comprovata",
-    "point1_desc": "Nel tracciamento delle criptovalute e nella forense blockchain.",
-    "point2_title": "Esperienza nell'identificazione di asset nascosti",
-    "point2_desc": "In varie aree di pratica legale.",
-    "point3_title": "Testimonianza di esperti qualificati",
-    "point3_desc": "In giurisdizioni statali, federali e internazionali.",
-    "point4_title": "Rapporti chiari e difendibili",
-    "point4_desc": "Progettati per procedimenti giudiziari o conformità."
+  "Boundaries": {
+    "eyebrow": "Ambito e limiti",
+    "title1": "Cosa l'identificazione può mostrare — ",
+    "title2": "e cosa non può",
+    "subtitle": "I dati blockchain pubblici hanno limiti. Lenix delimita ogni incarico in base ad accesso legale, indizi disponibili e ciò che può essere supportato in un report.",
+    "items": {
+      "legal_basis": {
+        "title": "Solo casi autorizzati",
+        "desc": "Accettiamo casi con base legale, regolamentare o di indagine aziendale — non tracciamento speculativo di persone o indirizzi non correlati."
+      },
+      "chain_limits": {
+        "title": "On-chain non è il quadro completo",
+        "desc": "Saldi su conti custodial o cold storage non dichiarato possono richiedere procedimenti legali separati oltre l'analisi del ledger pubblico."
+      },
+      "evidence": {
+        "title": "Integrità forense",
+        "desc": "Metodi e gestione dati documentati per revisione legale, contesti regolamentari o tribunale — con catena di custodia preservata."
+      },
+      "neutral": {
+        "title": "Capacità neutrale disponibile",
+        "desc": "Lenix può supportare consulenza attorea, difesa o agire come perito indipendente in divisione patrimoniale e controversie di valutazione."
+      },
+      "no_guarantee": {
+        "title": "Nessuna garanzia di completezza",
+        "desc": "L'identificazione è limitata da indizi forniti, visibilità on-chain e accesso legale. Indichiamo cosa è e non è recuperabile dai dati disponibili."
+      },
+      "disclosure": {
+        "title": "Divulgazione controllata",
+        "desc": "I risultati sono condivisi solo con parti autorizzate nell'incarico — non diffusi né usati fuori dall'ambito definito."
+      }
+    }
   },
-  "CTA": {
-    "title": "Contattaci",
-    "title_highlight": "oggi",
-    "desc_part1": "Chiamaci oggi al",
-    "desc_part2": "per discutere le tue esigenze di identificazione degli asset crypto e scoprire come Lenix Protocol può supportare il tuo caso.",
-    "email_label": "Email al Team",
-    "phone_label": "Chiama il Nostro Ufficio"
+  "Process": {
+    "eyebrow": "Come funziona",
+    "title": "Dall'intake a risultati documentati",
+    "description": "Un percorso strutturato per consulenti e investigatori — l'ambito è definito prima dell'analisi.",
+    "step_label": "Passo {number}",
+    "steps": {
+      "intake": {
+        "title": "Definire ambito del caso",
+        "desc": "Tipo di caso, parti, indirizzi wallet noti, registri di dispositivi o finanziari e le domande che l'identificazione deve rispondere."
+      },
+      "trace": {
+        "title": "Tracciare e analizzare",
+        "desc": "Collegamento wallet, mappatura flussi e analisi punti di contatto exchange con dati on-chain incrociati con evidenze del caso."
+      },
+      "report": {
+        "title": "Consegnare risultati",
+        "desc": "Analisi scritta con cronologie e sezione metodologica — adatta a strategia processuale, compliance o ulteriore procedimento legale."
+      }
+    },
+    "btn_primary": "Avvia revisione",
+    "btn_secondary": "Parla col team"
+  },
+  "Deliverables": {
+    "eyebrow": "Cosa ricevi",
+    "title": "Output per uso legale e compliance",
+    "description": "I deliverable sono adattati al caso — non screenshot blockchain generici.",
+    "items": {
+      "timeline": {
+        "title": "Cronologia transazionale",
+        "desc": "Flusso datato di movimenti rilevanti con mappe di collegamento che mostrano come gli indirizzi identificati si connettono al caso."
+      },
+      "report": {
+        "title": "Analisi scritta",
+        "desc": "Metodologia, risultati e limiti documentati per revisione legale — con chiara separazione tra fatto e inferenza."
+      },
+      "testimony": {
+        "title": "Supporto peritale",
+        "desc": "Testimonianza peritale o analisi supplementare disponibile secondo giurisdizione, termini dell'incarico e esigenze del caso."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Devi localizzare crypto non dichiarata in un caso?",
+    "subtitle": "Condividi contesto del caso e indizi già disponibili. Delimiteremo quale lavoro di identificazione è realistico prima di un incarico definito.",
+    "btn_primary": "Avvia revisione",
+    "btn_secondary": "Contatta team"
   }
 }

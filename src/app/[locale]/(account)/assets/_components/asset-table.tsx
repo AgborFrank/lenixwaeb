@@ -17,6 +17,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Image from "next/image";
 
 interface AssetTableProps {
   tokens: any[];
@@ -40,7 +41,14 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
 
   if (tokens.length === 0) {
     return (
-      <div className="rounded-3xl bg-zinc-900/30 border border-white/5 p-12 text-center">
+      <div className="flex flex-col items-center gap-4 rounded-3xl bg-zinc-900/30 border border-white/5 p-12 text-center">
+        <Image
+          src="/assets/vectors/coin.svg"
+          alt=""
+          width={100}
+          height={120}
+          className="mx-auto opacity-80"
+        />
         <p className="text-zinc-500">No assets found in your wallet.</p>
       </div>
     );

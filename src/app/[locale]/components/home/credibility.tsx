@@ -1,58 +1,52 @@
-import { ChevronRight } from "lucide-react";
+"use client";
+
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
+import { HomeSectionHeader } from "./home-section-header";
+import { home } from "@/lib/home-styles";
 
 export default function Credibility() {
   const t = useTranslations("Home.Credibility");
-  return (
-    <section className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold text-black mb-4">
-            {t("title1")}{" "}
-            <span className="bg-yellow-400 px-2 py-1 rounded-full">{t("title2")}</span>
-          </h2>
-          <p className="text-xl text-gray-600 mb-2">
-            {t("subtitle1")}
-          </p>
-          <p className="text-lg text-gray-600">
-            {t("subtitle2_1")}
-            <span className="font-semibold text-black">{t("subtitle2_2")}</span>
-            {t("subtitle2_3")}
-          </p>
-        </div>
 
-        {/* Two Column Content */}
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Left Column - CertiK Audit */}
-          <div className="text-center">
+  return (
+    <section className={`${home.section} bg-black`}>
+      <div className={home.container}>
+        <HomeSectionHeader
+          align="center"
+          eyebrow={t("eyebrow")}
+          title={`${t("title1")}${t("title2")}`}
+          description={t("subtitle1")}
+        />
+
+        <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
+          <article className={`${home.card} ${home.cardBody} flex flex-col items-start`}>
             <Image
               src="/assets/img/certiklogo.png"
               alt="CertiK"
-              className="w-1/2 mx-auto mb-4"
-              width={100}
-              height={100}
+              className="h-8 w-auto mb-6 brightness-0 invert opacity-90"
+              width={128}
+              height={32}
             />
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              {t("col1_text")}
-            </p>
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 rounded-lg transition-colors duration-200 flex items-center space-x-2 mx-auto">
-              <span>{t("col1_btn")}</span>
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
+            <p className="text-sm text-neutral-300 leading-relaxed mb-6 flex-1">{t("col1_text")}</p>
+            <Link href="/security" className={home.textLink}>
+              {t("col1_btn")} →
+            </Link>
+          </article>
 
-          {/* Right Column - Whitepaper */}
-          <div className="text-center">
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              {t("col2_text")}
-            </p>
-            <button className="bg-black hover:bg-gray-800 text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 flex items-center space-x-2 mx-auto">
-              <span>{t("col2_btn")}</span>
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
+          <article className={`${home.card} ${home.cardBody} flex flex-col items-start`}>
+            <Image
+              src="/assets/img/certy.webp"
+              alt="ISO 27001"
+              className="h-12 w-auto mb-6 opacity-90"
+              width={96}
+              height={48}
+            />
+            <p className="text-sm text-neutral-300 leading-relaxed mb-6 flex-1">{t("col2_text")}</p>
+            <Link href="/about" className={home.textLink}>
+              {t("col2_btn")} →
+            </Link>
+          </article>
         </div>
       </div>
     </section>

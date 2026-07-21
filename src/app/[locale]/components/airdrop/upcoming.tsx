@@ -31,7 +31,7 @@ export default function AirdropUpcoming() {
     ];
 
     return (
-        <section className="py-24 px-4 bg-black border-t border-white/5">
+        <section className="py-24 px-4 bg-black">
             <div className="max-w-screen-xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">

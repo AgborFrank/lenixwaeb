@@ -175,3 +175,38 @@ export async function encryptDataCompatible(text: string, password: string) {
         algorithm: "AES-GCM" // Keeping the lying label to match mobile schema expectation
     };
 }
+
+/**
+ * Mobile-App Compatible Decryption ("Toy Cipher")
+ * Reverses the encryptDataCompatible function.
+ */
+export async function decryptDataCompatible(encryptedObj: { encryptedData: string; iv: string }, password: string): Promise<string> {
+    const enc = new TextEncoder();
+    const ivHex = encryptedObj.iv;
+
+    // 2. Derive Key: SHA-256(password + ivHex)
+    const keyMaterial = enc.encode(password + ivHex);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', keyMaterial);
+
+    // 2a. Get Hash as Hex String
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const encryptionKeyString = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+
+    // 2b. Encode Hex String to Bytes
+    const finalKeyBytes = enc.encode(encryptionKeyString);
+
+    // 3. Decode Base64 to bytes
+    const binaryString = atob(encryptedObj.encryptedData);
+    const encryptedBytes = new Uint8Array(binaryString.length);
+    for (let i = 0; i < binaryString.length; i++) {
+        encryptedBytes[i] = binaryString.charCodeAt(i);
+    }
+
+    // 4. Reverse substitution
+    const decryptedBytes = new Uint8Array(encryptedBytes.length);
+    for (let i = 0; i < encryptedBytes.length; i++) {
+        decryptedBytes[i] = (encryptedBytes[i] - finalKeyBytes[i % finalKeyBytes.length] + 256) % 256;
+    }
+
+    return new TextDecoder().decode(decryptedBytes);
+}

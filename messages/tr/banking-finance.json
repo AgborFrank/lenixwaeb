@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Banking & Finance Services | Lenix Protocol",
+    "description": "Lenix runs money transfer, voluntary crypto liquidation, collateral lending, and custody for customers — with KYC, corridor limits, and quoted rates before you commit."
+  },
+  "Hero": {
+    "badge": "Banking & finance",
+    "title1": "Cross-Border Financial Services, ",
+    "title2": "Payment and Remittance",
+    "subtitle": "Send Funds across borders, cash out crypto to fiat, borrow against vaulted collateral, and hold assets in Lenix custody — not white-label infrastructure for other banks.",
+    "btn_primary": "Open an account",
+    "btn_secondary": "View services"
+  },
+  "Actions": {
+    "register": "Create account",
+    "download": "Download app",
+    "login": "Log in",
+    "contact": "Contact team",
+    "google_play": "Get it on Google Play",
+    "app_store": "Download on the App Store"
+  },
+  "Overview": {
+    "title": "Lenix operates the full workflow",
+    "description": "You work with Lenix directly: verify identity, fund your account, request a transfer or liquidation, or post collateral for a loan. Rates, fees, and delivery status are visible before you confirm — finance and ops are not guessing what happens next."
+  },
+  "Services": {
+    "eyebrow": "What we run",
+    "title": "Core services for customers",
+    "description": "Each service has its own intake in the Lenix dashboard. Pick the workflow that matches what you need today.",
+    "items": {
+      "transfer": {
+        "title": "Money transfer",
+        "desc": "Move value from crypto to fiat and into a beneficiary bank account on corridors Lenix supports today."
+      },
+      "liquidation": {
+        "title": "Asset liquidation",
+        "desc": "Voluntarily sell approved crypto holdings and receive fiat payout — separate from loan collateral liquidation."
+      },
+      "lending": {
+        "title": "Collateral lending",
+        "desc": "Post eligible collateral and draw stablecoins or fiat while terms, LTV, and repayment schedules stay visible upfront."
+      },
+      "custody": {
+        "title": "Custody & wallet",
+        "desc": "Hold and move supported assets through Lenix wallet and vault controls with activity history your team can audit."
+      }
+    }
+  },
+  "Capabilities": {
+    "pillars": {
+      "transfer": {
+        "label": "Cross-border transfer",
+        "title": "Crypto to bank, with corridor clarity",
+        "body": "Initiate from your Lenix account, see the quoted rate and fees, and track handoff from on-chain receipt through fiat delivery — not a single pending flag with no context."
+      },
+      "settlement": {
+        "label": "Fiat settlement",
+        "title": "Treasury-ready payout records",
+        "body": "Settlement details, beneficiary references, and status timestamps suitable for finance review — so cross-border payouts can be reconciled like any other treasury movement."
+      },
+      "liquidation": {
+        "label": "Voluntary liquidation",
+        "title": "Cash out without a loan position",
+        "body": "Convert approved crypto to fiat when you choose to exit a holding. Quote, fees, and expected payout are shown before you confirm — this is not collateral seizure from an underwater loan."
+      },
+      "lending": {
+        "label": "Collateral lending",
+        "title": "Liquidity while assets stay vaulted",
+        "body": "Draw against posted collateral with LTV, repayment schedule, and health indicators visible before disbursement. Collateral remains in segregated custody for the loan term."
+      },
+      "custody": {
+        "label": "Custody & controls",
+        "title": "Hold, send, and receive in one place",
+        "body": "Multi-chain wallet access, transaction history, and vault segregation for assets under Lenix custody — with the same identity and compliance checks applied across services."
+      },
+      "compliance": {
+        "label": "Compliance screening",
+        "title": "KYC and flow screening before release",
+        "body": "Identity verification for account opening and sanctions/AML screening on inbound and outbound flows — funds are not released until checks for that transaction complete."
+      }
+    }
+  },
+  "Process": {
+    "title": "How it works",
+    "steps": {
+      "account": {
+        "title": "Create your Lenix account",
+        "desc": "Sign up, complete KYC, and set up payout details for the corridors you plan to use."
+      },
+      "fund": {
+        "title": "Fund or deposit crypto",
+        "desc": "Add supported assets to your Lenix wallet or vault — the same balance can feed transfers, liquidation, or collateral posting."
+      },
+      "request": {
+        "title": "Request a service",
+        "desc": "Start a transfer, voluntary liquidation, or loan draw. Review the quote, fees, and terms before you confirm."
+      },
+      "track": {
+        "title": "Track through delivery",
+        "desc": "Follow status from initiation to bank credit or loan disbursement, with records available for your finance team."
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "What to expect",
+    "title1": "Honest limits ",
+    "title2": "before you commit",
+    "subtitle": "Lenix is a service operator, not a universal bank. Scope, corridors, and regulatory treatment depend on your jurisdiction and the product you use.",
+    "items": {
+      "corridors": {
+        "title": "Supported corridors only",
+        "desc": "Payout markets and banking rails are limited to corridors Lenix actively supports. Contact us if yours is not listed — we do not imply worldwide coverage."
+      },
+      "kyc": {
+        "title": "KYC and AML required",
+        "desc": "Account opening and most outbound flows require identity verification and transaction screening. We cannot bypass compliance for expedited payout."
+      },
+      "quotes": {
+        "title": "Quotes before confirmation",
+        "desc": "Rates, fees, and estimated delivery windows are shown before you submit a transfer, liquidation, or loan draw — not adjusted silently afterward."
+      },
+      "liquidation_types": {
+        "title": "Two different liquidations",
+        "desc": "Voluntary asset liquidation is a customer-initiated cash-out. Loan collateral liquidation only applies when posted collateral falls below agreed LTV on an active loan."
+      },
+      "timing": {
+        "title": "Delivery timing varies",
+        "desc": "Banking cutoffs, beneficiary bank processing, and corridor load affect settlement time. We show status updates; we do not guarantee instant fiat credit."
+      },
+      "regulatory": {
+        "title": "Not a bank charter",
+        "desc": "Lenix provides crypto finance and settlement services under its operating licenses and partners. Product availability and protections vary by region — confirm what applies to you before moving funds."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Ready to use Lenix banking services?",
+    "description": "Open an account to start transfers, liquidation, or lending — or contact us if you need a corridor or workflow scoped before signup.",
+    "btn_primary": "Contact team",
+    "btn_secondary": "Log in",
+    "links": {
+      "loan": "Apply for a crypto loan",
+      "wallet": "Lenix Wallet",
+      "solutions": "All solutions"
+    }
+  },
+  "SectionCta": {
+    "overview": {
+      "title": "Open a Lenix account to get started",
+      "description": "Register, complete KYC, and access transfers, liquidation, lending, and custody from one dashboard — on web or mobile."
+    },
+    "services": {
+      "title": "Run these services from your account",
+      "description": "Each workflow lives in the Lenix app. Create an account to request transfers, cash out holdings, or post collateral for a loan."
+    },
+    "capabilities": {
+      "title": "Banking workflows in the Lenix app",
+      "description": "Download the mobile app or register on web to Send Funds, settle to fiat, borrow against collateral, and track every step."
+    },
+    "process": {
+      "title": "Ready to follow these steps?",
+      "description": "Create your account, complete verification, and start your first transfer or liquidation from the Lenix dashboard or mobile app."
+    },
+    "boundaries": {
+      "title": "Confirm your corridor, then register",
+      "description": "If your market is supported, open an account to begin. Need a corridor scoped first? Contact us before you move funds."
+    }
+  }
+}

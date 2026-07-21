@@ -1,27 +1,30 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { ComplianceInvestigationsContent } from "./components/compliance-investigations-content";
+import ComplianceInvestigationsHero from "./components/compliance-investigations-hero";
+import ComplianceInvestigationsOverview from "./components/compliance-investigations-overview";
+import ComplianceInvestigationsFeatures from "./components/compliance-investigations-features";
+import ComplianceInvestigationsCta from "./components/compliance-investigations-cta";
 
-export const metadata: Metadata = {
-  title: "Crypto Compliance Investigations | Lenix Protocol",
-  description:
-    "Conduct investigations across blockchains and assets with a single click. Instantly visualize the flow of crypto funds through wallets, entities, and transactions to find meaningful evidence quickly and close cases faster.",
-  keywords: [
-    "Crypto Compliance",
-    "Blockchain Investigations",
-    "AML Compliance",
-    "Crypto Forensics",
-    "Transaction Tracing",
-    "Compliance Reporting",
-  ],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("ComplianceInvestigations.meta");
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
 
 export default function ComplianceInvestigationsPage() {
   return (
     <>
       <Header />
-      <ComplianceInvestigationsContent />
+      <div className="min-h-screen bg-black text-white selection:bg-yellow-400/30">
+        <ComplianceInvestigationsHero />
+        <ComplianceInvestigationsOverview />
+        <ComplianceInvestigationsFeatures />
+        <ComplianceInvestigationsCta />
+      </div>
       <Footer />
     </>
   );

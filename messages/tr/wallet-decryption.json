@@ -1,37 +1,116 @@
 {
+  "meta": {
+    "title": "Cüzdan Erişim Kurtarma | Lenix Protocol",
+    "description": "Parolalar kaybolduğunda veya dosyalar hasar gördüğünde yazılım ve donanım cüzdanlarına erişimi geri kazanın. Önce uygulanabilirlik değerlendirilir. Varlıkların kontrolü sizde kalır."
+  },
   "Hero": {
-    "badge": "Kripto Cüzdan Şifre Çözme Hizmetleri",
-    "title1": "Kripto Para Cüzdanı Kilit Açma Hizmetleri",
-    "subtitle1": "Dijital Para Cüzdanı Şifre Çözme Hizmetleri",
-    "desc1": "Hızla gelişen kripto para dünyasında, varlıklarınıza erişimi güvence altına almak çok önemlidir. Lenix Protocol'ün Kripto Cüzdan Şifre Çözme Hizmetleri, kripto cüzdanlarına erişimini kaybeden bireyler için kritik destek sağlar.",
-    "desc2": "İster unutulan şifreler, kaybedilen erişim anahtarları, ister bozuk cüzdan dosyaları nedeniyle olsun, uzman ekibimiz dijital paranızı güvenli bir şekilde kurtarma konusunda uzmanlaşmıştır.",
-    "btn_consultation": "Bugün Danışmanlık İsteyin"
+    "eyebrow": "Cüzdan erişim kurtarma",
+    "title1": "Zaten sahip olduğunuz ",
+    "title2": "cüzdanlara erişimi geri kazanın",
+    "subtitle": "Unutulan parolalar, bozuk cüzdan dosyaları ve kısmi yedekler — borsa giriş sıfırlamaları veya başkasına ait cüzdanlar değil. Ücretli çalışma başlamadan önce kurtarmanın gerçekçi olup olmadığını değerlendiririz.",
+    "btn_primary": "Değerlendirme iste",
+    "btn_secondary": "Ekiple iletişim"
   },
-  "Approach": {
-    "title": "Cüzdan Şifre Çözme Yaklaşımımız",
-    "card1_title": "İlk Danışmanlık ve Risk Değerlendirmesi",
-    "card1_desc": "Özel bir kurtarma stratejisi sunmak için durumunuzun özelliklerini anlamak.",
-    "card2_title": "Gelişmiş Şifre Çözme Teknikleri",
-    "card2_desc": "Şifrelerin ve şifreleme anahtarlarının kurtarılmasını denemek için ileri teknolojileri kullanmak.",
-    "card3_title": "Yerli Kurum İçi İşlem",
-    "card3_desc": "Şifre Çözme süreci boyunca verilerinizin bütünlüğünü ve güvenliğini sağlamak."
+  "Audiences": {
+    "eyebrow": "Kimler için",
+    "title": "Sık incelediğimiz durumlar",
+    "description": "Çoğu müşterinin hâlâ bir cüzdan dosyası, cihazı veya yedek parçası vardır. Parola, PIN yolu veya okunabilir seed kaybolmuştur — temel mülkiyet değil.",
+    "cards": {
+      "password": {
+        "title": "Unutulan cüzdan parolası",
+        "desc": "MetaMask keystore, Electrum veya Bitcoin Core gibi dosya mevcut ama şifreleme parolası kaybolmuş yazılım cüzdanları."
+      },
+      "file": {
+        "title": "Hasarlı veya eksik dosyalar",
+        "desc": "Bozuk wallet.dat dosyaları, eksik yedekler veya eski cihazdan kurtarılan ve hâlâ anahtar materyali içerebilecek metadata."
+      },
+      "estate": {
+        "title": "Miras ve hukuki konular",
+        "desc": "Vefat etmiş veya ehliyetsiz bir sahibin cüzdanı için belgelenmiş erişim yollarına ihtiyaç duyan vasiler, mütevelli heyetler veya avukatlar — uygun yetkilendirme ile."
+      },
+      "treasury": {
+        "title": "Operasyonel cüzdan kilidi",
+        "desc": "Hazine veya operasyon cüzdanı kimlik bilgilerini kaybeden ve denetime uygun işlemeyle kontrollü kurtarma süreci gereken ekipler."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Kripto Cüzdan Kurtarma için Neden Lenix Protocol'ü Seçmelisiniz?",
-    "desc": "Lenix Protocol uzman ekibi, şifre çözme hizmetleri için güvenilir çözümünüzdür.",
-    "point1_title": "Kripto Para Güvenliğinde Uzmanlık",
-    "point1_desc": "Akıllı sözleşmeler ve cüzdan mimarileri hakkında derin anlayış.",
-    "point2_title": "Gizli ve Etik Hizmet",
-    "point2_desc": "Tüm işlemler en yüksek gizlilik ve yasallıkla uzmanlar tarafından gerçekleştirilir.",
-    "point3_title": "Başarı Oranı",
-    "point3_desc": "Dünya çapındaki müşteriler için şifreli erişimi kurtarmada kanıtlanmış başarı."
+  "Boundaries": {
+    "eyebrow": "Kapsam ve sınırlar",
+    "title1": "Ne yapıyoruz — ",
+    "title2": "ve neyi reddediyoruz",
+    "subtitle": "Cüzdan kurtarma yaygın bir dolandırıcılık kategorisidir. Lenix yalnızca net mülkiyet, belgelenmiş yetki ve denemeye değer teknik yolu olan dosyaları alır.",
+    "items": {
+      "ownership": {
+        "title": "Kanıtlanabilir mülkiyet gerekli",
+        "desc": "Sahip olduğunuz veya yasal olarak kurtarmaya yetkili olduğunuz cüzdanlarda çalışırız — üçüncü taraf adresler veya rızasız elde edilmiş kimlik bilgileri değil."
+      },
+      "assessment": {
+        "title": "Ücretlerden önce uygulanabilirlik",
+        "desc": "Ücretli şifre çözme işini kapsamlandırmadan önce cüzdan türü, yedek durumu ve parola ipuçlarını inceleriz. Umutsuz vakalar erken reddedilir."
+      },
+      "no_custody": {
+        "title": "Varlıkları siz taşırsınız",
+        "desc": "Erişim geri geldiğinde fonları kendiniz transfer edersiniz. Lenix kurtarılan kriptoyu saklamaz."
+      },
+      "no_scam": {
+        "title": "Uzaktan erişim hileleri yok",
+        "desc": "Ekran paylaşımı, doğrulama yatırımları veya peşin kilit açma ücretleri istemeyiz — sahte kurtarma sitelerinin kalıpları."
+      },
+      "decline": {
+        "title": "Genellikle reddettiğimiz vakalar",
+        "desc": "Yalnızca genel adres, çevrimiçi satın alınmış cüzdan dosyaları veya PIN kaybı ve sıfır yedekli donanım cüzdanları genelde kurtarılamaz."
+      },
+      "confidential": {
+        "title": "Kontrollü işlem",
+        "desc": "Cüzdan materyalleri erişim kontrolleriyle tanımlı bir saklama zincirinde işlenir — gayri resmi kanallardan geçmez."
+      }
+    }
   },
-  "CTA": {
-    "title": "Bize",
-    "title_highlight": "bugün ulaşın",
-    "desc_part1": "Kripto Şifre Çözme hakkında daha fazla bilgi için bize",
-    "desc_part2": "numarasından bugün ulaşın.",
-    "email_label": "Ekibimize E-posta Gönderin",
-    "phone_label": "Ofisimizi Arayın"
+  "Process": {
+    "eyebrow": "Nasıl çalışır",
+    "title": "Değerlendirmeden erişime",
+    "description": "Sahipler ve yetkili temsilciler için yapılandırılmış yol — sınırsız brute-force vaatleri değil.",
+    "step_label": "Adım {number}",
+    "steps": {
+      "submit": {
+        "title": "Vaka ayrıntılarını gönderin",
+        "desc": "Cüzdan türü, mevcut yedek materyal ve hatırladığınız parola ipuçları veya kalıpları. İlk uygulanabilirlik incelemesi kabul sürecinin parçasıdır."
+      },
+      "scope": {
+        "title": "Kapsam ve uygulanabilirlik",
+        "desc": "Ücretli işe bağlanmadan önce şifre çözmenin denemeye değer olup olmadığını, beklenen çabayı ve ücretleri açıkça söyleriz."
+      },
+      "recover": {
+        "title": "Kontrollü kurtarma",
+        "desc": "Görevlendirilirse şifre çözme kontrollü bir ortamda yapılır. Erişimi geri kazanır ve varlıkları kendi temponuzda taşırsınız."
+      }
+    },
+    "btn_primary": "Değerlendirmeyi başlat",
+    "btn_secondary": "Ekiple konuş"
+  },
+  "Support": {
+    "eyebrow": "Teknik kapsam",
+    "title": "Sık gördüğümüz cüzdan türleri",
+    "description": "Kapsam dosya formatına, yedek bütünlüğüne ve şifreleme gücüne bağlıdır. Kabul sırasında sizinkini doğrulayın.",
+    "columns": {
+      "software": {
+        "title": "Yazılım cüzdanları",
+        "desc": "Bitcoin Core, Electrum, MetaMask JSON keystore, Exodus yedekleri ve benzer yerel şifreli cüzdan dosyaları."
+      },
+      "hardware": {
+        "title": "Donanım cihazları",
+        "desc": "Hasarlı Ledger veya Trezor cihazlarında çip verisi veya yedeklerin hâlâ yol sağlayabileceği seçili vakalar — sıfır yedekle kayıp PIN değil."
+      },
+      "formats": {
+        "title": "Eski ve özel",
+        "desc": "Eski wallet.dat varyantları, BIP38 şifreli anahtarlar ve kurumsal kasa dışa aktarımları — tek tek değerlendirilir."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Cüzdan dosyanız var ama erişimi kaybettiniz mi?",
+    "subtitle": "Cüzdan türünü ve elinizde kalan yedek materyali açıklayın. Herhangi bir ücretli görevlendirmeden önce kurtarma yolu olup olmadığını söyleriz.",
+    "btn_primary": "Değerlendirme iste",
+    "btn_secondary": "Ekiple iletişim"
   }
 }

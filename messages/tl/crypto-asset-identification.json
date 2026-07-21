@@ -1,59 +1,135 @@
 {
-  "Hero": {
-    "badge": "Mga Serbisyo sa Pagkilala ng Crypto Asset",
-    "title1": "Paglalantad ng Nakatagong Cryptocurrency at Pagkilala sa Digital Asset",
-    "subtitle1": "Ang paghahanap at pagpapatunay sa mga digital holdings ay naging kritikal na bahagi ng mga modernong imbestigasyon.",
-    "desc1": "Sa pagtaas ng paggamit ng cryptocurrency sa parehong legal at ilegal na aktibidad, mahalaga ang pagtukoy sa mga digital assets. Ang Lenix Protocol ay nagbibigay ng mga ekspertong serbisyo upang matulungan ang mga abogado na matunton ang digital wealth.",
-    "desc2": "Gumagamit ang aming koponan ng mga makabagong blockchain tools at forensic methodologies para sa komprehensibong pag-trace.",
-    "btn_consultation": "Humiling ng Konsultasyon Ngayon"
+  "meta": {
+    "title": "Pagkilala sa Crypto Asset | Lenix Protocol",
+    "description": "Hanapin, subaybayan, at idokumento ang cryptocurrency holdings para sa litigasyon, estate, at enforcement. Forensic methodology na may malinaw na saklaw at deliverables."
   },
-  "Coverage": {
-    "title": "Saklaw ng Aming Mga Serbisyo sa Pagkilala",
-    "desc": "Ang aming mga imbestigasyon ay pinasadya upang suportahan ang mga sibil, kriminal, at regulatoryong usapin sa:",
-    "card1_title": "Diborsyo at mga alitan sa batas ng pamilya",
-    "card1_desc": "Na may kinalaman sa nakatagong crypto assets.",
-    "card2_title": "Fraud, pagnanakaw, at embezzlement",
-    "card2_desc": "Mga kaso na may mga bahagi ng digital currency.",
-    "card3_title": "Mga internal na imbestigasyon sa korporasyon",
-    "card3_desc": "Na may kinalaman sa mga maling paggamit ng pondo.",
-    "card4_title": "Estate planning at mga usapin sa probate",
-    "card4_desc": "Na may mga hindi alam o hindi idineklarang asset.",
-    "card5_title": "Pagkalugi o pagpapatupad ng hatol",
-    "card5_desc": "Na nangangailangan ng pagkilala sa asset.",
-    "footer": "Ang Lenix Protocol ay nakikipagtulungan sa mga abogado ng magkabilang panig at nagsisilbing neutral na eksperto."
+  "Hero": {
+    "eyebrow": "Pagkilala sa crypto asset",
+    "title1": "Idokumento ang digital holdings ",
+    "title2": "na maaaring hindi inihayag ng iba",
+    "subtitle": "Para sa mga abogado, imbestigator, at financial professional na kailangang hanapin, subaybayan, at i-verify ang cryptocurrency sa litigasyon, estate, at enforcement — gamit ang methodology na kayang tumayo sa review.",
+    "btn_primary": "Simulan review",
+    "btn_secondary": "Kontakin team"
+  },
+  "Audiences": {
+    "eyebrow": "Para kanino",
+    "title": "Mga usapin na madalas naming suportahan",
+    "description": "Limitado ang identification work sa awtorisadong legal, regulatory, o corporate investigation — hindi open-ended na paghahanap sa hindi kaugnay na partido.",
+    "cards": {
+      "family": {
+        "title": "Family law at diborsyo",
+        "desc": "Paghahati ng asset kung saan maaaring may hindi idineklarang wallet, exchange account, o on-chain holdings ang isang partido na wala sa financial disclosure."
+      },
+      "fraud": {
+        "title": "Panloloko at pag-appropriation",
+        "desc": "Civil o criminal na usapin na may maling ginamit na digital funds — pagsubaybay mula sa kilalang source wallet o compromised account."
+      },
+      "estate": {
+        "title": "Estate at probate",
+        "desc": "Mga executor o counsel na naghahanap ng cryptocurrency na hawak ng yumao ngunit hindi naidokumento — mula sa device, record, o partial address leads."
+      },
+      "enforcement": {
+        "title": "Bankruptcy at enforcement",
+        "desc": "Mga creditor, trustee, o regulator na tumutukoy ng attachable crypto assets at exchange touchpoints na relevant sa debtor o subject."
+      }
+    }
   },
   "Methods": {
-    "title": "Mga Paraan para sa Pag-trace ng Cryptocurrency",
-    "card1_title": "Pagtukoy sa blockchain wallet",
-    "card1_desc": "At pagsusuri sa link.",
-    "card2_title": "Pagsubaybay sa transaksyon",
-    "card2_desc": "Sa mga pampubliko at pribadong blockchain.",
-    "card3_title": "Pagpapatunay ng pagmamay-ari ng NFT",
-    "card3_desc": "At pag-trace sa paglilipat.",
-    "card4_title": "Pagkilala sa mga exchange accounts",
-    "card4_desc": "At mga transaction off-ramps.",
-    "card5_title": "Cross-referencing ng metadata",
-    "card5_desc": "At ebidensya mula sa device para sa wallet attribution.",
-    "footer": "Ang aming trabaho ay isinasagawa gamit ang mga forensically sound na tekniko."
+    "eyebrow": "Ano ang sinusubaybayan",
+    "title": "Saklaw ng identification at analysis",
+    "description": "Pinagsasama ng trabaho ang on-chain analysis at corroborating evidence mula sa matter — hindi isolated na blockchain lookup.",
+    "columns": {
+      "linkage": {
+        "title": "Wallet identification",
+        "desc": "I-link ang blockchain address sa subject gamit ang transaction pattern, clustering, at cross-reference sa device, financial, o testimony evidence."
+      },
+      "flows": {
+        "title": "Transaction flow analysis",
+        "desc": "Sundan ang galaw ng pondo sa chains at layers — kasama ang visible mixer use, bridge transfer, at consolidation point na dapat idokumento."
+      },
+      "attribution": {
+        "title": "Exchange at NFT attribution",
+        "desc": "Tukuyin ang posibleng custodial deposit, off-ramp, at NFT holdings na konektado sa matter kapag pinapayagan ng on-chain data at leads."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Bakit Piliin ang Lenix Protocol?",
-    "desc": "Tinutulungan namin ang aming mga kliyente na mahanap ang mga digital assets na nais itago ng iba.",
-    "point1_title": "Napatunayang kadalubhasaan",
-    "point1_desc": "Sa cryptocurrency tracing at blockchain forensics.",
-    "point2_title": "Karanasan sa pagtukoy ng nakatagong asset",
-    "point2_desc": "Sa iba't ibang legal practice areas.",
-    "point3_title": "Testigo ng eksperto na kwalipikado sa korte",
-    "point3_desc": "Sa lokal at internasyonal na hurisdiksyon.",
-    "point4_title": "Malinaw at mapoprotektahang mga ulat",
-    "point4_desc": "Pinasadya para sa litigasyon o compliance."
+  "Boundaries": {
+    "eyebrow": "Saklaw at limitasyon",
+    "title1": "Ano ang maipapakita ng identification — ",
+    "title2": "at ano ang hindi",
+    "subtitle": "May limitasyon ang public blockchain data. Nililimitahan ng Lenix ang bawat engagement sa lawful access, available leads, at kung ano ang masusuportahan sa report.",
+    "items": {
+      "legal_basis": {
+        "title": "Awtorisadong usapin lamang",
+        "desc": "Tumatanggap kami ng kaso na may legal, regulatory, o corporate investigation basis — hindi speculative tracing ng unrelated individual o address."
+      },
+      "chain_limits": {
+        "title": "Hindi kumpletong larawan ang on-chain",
+        "desc": "Maaaring kailanganin ng hiwalay na legal process ang exchange balance sa custodial account o undeclared cold storage bukod sa public ledger analysis."
+      },
+      "evidence": {
+        "title": "Forensic integrity",
+        "desc": "Naidodokumento ang methods at data handling para sa counsel review, regulatory setting, o korte — may preserved chain of custody."
+      },
+      "neutral": {
+        "title": "Available ang neutral capacity",
+        "desc": "Maaaring suportahan ng Lenix ang plaintiff counsel, depensa, o magsilbing independent expert sa asset division at valuation dispute."
+      },
+      "no_guarantee": {
+        "title": "Walang completeness guarantee",
+        "desc": "Limitado ang identification sa ibinigay na leads, chain visibility, at lawful access. Sinasabi namin kung ano ang at hindi maaaring makuha mula sa available data."
+      },
+      "disclosure": {
+        "title": "Controlled disclosure",
+        "desc": "Ibinabahagi ang findings lamang sa authorized party sa ilalim ng engagement — hindi ipinapalaganap o ginagamit sa labas ng defined matter scope."
+      }
+    }
   },
-  "CTA": {
-    "title": "Makipag-ugnayan sa amin",
-    "title_highlight": "ngayon",
-    "desc_part1": "Tawagan kami ngayon sa",
-    "desc_part2": "upang pag-usapan ang iyong pangangailangan sa crypto asset identification.",
-    "email_label": "Email sa Koponan",
-    "phone_label": "Tumawag sa Opisina"
+  "Process": {
+    "eyebrow": "Paano gumagana",
+    "title": "Mula intake hanggang documented findings",
+    "description": "Structured path para sa counsel at investigator — tinutukoy ang scope bago magsimula ang analysis.",
+    "step_label": "Hakbang {number}",
+    "steps": {
+      "intake": {
+        "title": "Tukuyin ang matter scope",
+        "desc": "Uri ng kaso, partido, kilalang wallet address, device o financial record, at mga tanong na kailangang sagutin ng identification."
+      },
+      "trace": {
+        "title": "Subaybayan at suriin",
+        "desc": "Wallet linkage, flow mapping, at exchange touchpoint analysis gamit ang on-chain data na cross-referenced sa matter evidence."
+      },
+      "report": {
+        "title": "Ihatid ang findings",
+        "desc": "Written analysis na may timeline at methodology section — angkop sa litigation strategy, compliance, o karagdagang legal process."
+      }
+    },
+    "btn_primary": "Simulan review",
+    "btn_secondary": "Makipag-usap team"
+  },
+  "Deliverables": {
+    "eyebrow": "Ano ang matatanggap",
+    "title": "Output para sa legal at compliance",
+    "description": "Iniakma ang deliverables sa matter — hindi generic na blockchain screenshot.",
+    "items": {
+      "timeline": {
+        "title": "Transaction chronology",
+        "desc": "Dated flow ng relevant movement na may wallet linkage map na nagpapakita kung paano konektado ang identified address sa matter."
+      },
+      "report": {
+        "title": "Written analysis",
+        "desc": "Methodology, findings, at limitations na idinokumento para sa counsel review — malinaw na paghiwalay ng fact at inference."
+      },
+      "testimony": {
+        "title": "Expert support",
+        "desc": "Expert testimony o supplemental analysis available ayon sa jurisdiction, engagement terms, at case needs."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Kailangan hanapin ang undisclosed crypto sa isang matter?",
+    "subtitle": "Ibahagi ang case context at leads na mayroon na. Ilalahad namin ang realistic identification work bago magsimula ang scoped engagement.",
+    "btn_primary": "Simulan review",
+    "btn_secondary": "Kontakin team"
   }
 }

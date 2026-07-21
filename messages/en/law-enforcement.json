@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "title": "Blockchain Intelligence for Law Enforcement | Lenix Protocol",
+    "description": "On-chain tracing, wallet screening, and forensic reports for law enforcement and government teams — scoped engagements with documented methodology and limits."
+  },
+  "Hero": {
+    "badge": "Law enforcement",
+    "title1": "Blockchain intelligence ",
+    "title2": "for criminal investigations",
+    "subtitle": "Trace crypto flows, screen wallets, and produce documented findings for case files — with clear scope on what public ledger analysis can support and what requires separate legal process.",
+    "btn_primary": "Contact team",
+    "btn_secondary": "View capabilities"
+  },
+  "Overview": {
+    "title": "Investigation support built for case work",
+    "description": "Lenix helps agencies and task forces follow funds across supported networks, prioritize leads from bulk wallet uploads, and prepare outputs suitable for internal review or exchange escalation — without overstating attribution certainty or recovery outcomes."
+  },
+  "Highlights": {
+    "items": {
+      "follow": {
+        "title": "Follow flows across chains and services",
+        "desc": "Map movement through bridges, DEX touchpoints, and consolidation wallets where the ledger shows them — with notes on where visibility ends."
+      },
+      "data": {
+        "title": "Attribution context for case review",
+        "desc": "Cluster related addresses and flag exposure to known risky categories when your matter authorizes that scope — not a claim of complete wallet ownership."
+      },
+      "speed": {
+        "title": "Prioritize viable trails first",
+        "desc": "Screen wallet or transaction lists before deep analysis so investigators spend time on leads worth pursuing."
+      },
+      "evidence": {
+        "title": "Outputs for case files",
+        "desc": "Structured timelines and methodology sections suitable for supervisory review, counsel, or exchange escalation requests."
+      }
+    }
+  },
+  "Capabilities": {
+    "pillars": {
+      "intelligence": {
+        "label": "Threat intelligence",
+        "title": "Datasets tailored to investigation priorities",
+        "body": "Receive structured exports covering wallet clusters, flow summaries, and risk categories relevant to your case set — via file, feed, or API depending on engagement terms."
+      },
+      "tracing": {
+        "label": "Cross-network tracing",
+        "title": "Trace activity across supported networks",
+        "body": "Follow funds across chains and assets where on-chain data allows — including bridge and swap touchpoints — with hop-by-hop documentation for case notes."
+      },
+      "triage": {
+        "label": "Triage",
+        "title": "Screen volume before deep investigation",
+        "body": "Upload wallet or transaction batches for initial exposure review — sanctions links, scam typologies, and high-risk services — to rank which leads warrant full analysis."
+      },
+      "investigation": {
+        "label": "Investigation",
+        "title": "Develop the case view",
+        "body": "Build linked address and transaction paths in reports that separate verified ledger facts from inference — including likely exchange deposit points when visible on-chain."
+      },
+      "training": {
+        "label": "Training",
+        "title": "Operator onboarding for your unit",
+        "body": "Walkthroughs on crypto fundamentals, tracing workflows, and how to read Lenix outputs — scoped to your team's tools access and case types, not generic certification marketing."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Need blockchain support for an investigation?",
+    "description": "Describe the unit, case type, and data you already have. We respond with an honest read on what tracing and reporting can cover before scoped engagement.",
+    "btn_primary": "Contact team",
+    "btn_secondary": "Blockchain forensics"
+  }
+}

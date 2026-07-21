@@ -1,59 +1,135 @@
 {
-  "Hero": {
-    "badge": "Dịch vụ Nhận dạng Tài sản Crypto",
-    "title1": "Khám phá Tiền điện tử bị ẩn và Nhận dạng Tài sản Kỹ thuật số",
-    "subtitle1": "Việc định vị và xác minh tài sản kỹ thuật số đã trở thành một phần quan trọng của các cuộc điều tra hiện đại.",
-    "desc1": "Với việc sử dụng tiền điện tử ngày càng tăng trong cả hoạt động tài chính hợp pháp và bất hợp pháp, việc định vị tài sản kỹ thuật số là điều cần thiết. Lenix Protocol cung cấp dịch vụ chuyên gia để giúp các luật sư điều tra và xác thực sự giàu có kỹ thuật số.",
-    "desc2": "Đội ngũ của chúng tôi sử dụng các công cụ blockchain tiên tiến và phương pháp pháp y để thực hiện truy vết toàn diện.",
-    "btn_consultation": "Yêu cầu Tư vấn ngay hôm nay"
+  "meta": {
+    "title": "Nhận dạng tài sản crypto | Lenix Protocol",
+    "description": "Định vị, truy vết và ghi nhận tài sản tiền mã hóa cho tranh tụng, thừa kế và thi hành. Phương pháp pháp y với phạm vi và sản phẩm bàn giao rõ ràng."
   },
-  "Coverage": {
-    "title": "Dịch vụ Nhận dạng của Chúng tôi Bao gồm",
-    "desc": "Các cuộc điều tra của chúng tôi được điều chỉnh để hỗ trợ các vấn đề dân sự, hình sự và quy định liên quan đến:",
-    "card1_title": "Ly hôn và tranh chấp luật gia đình",
-    "card1_desc": "Liên quan đến tài sản crypto bị ẩn.",
-    "card2_title": "Gian lận, trộm cắp và tham ô",
-    "card2_desc": "Các vụ án có thành phần tiền kỹ thuật số.",
-    "card3_title": "Điều tra nội bộ doanh nghiệp",
-    "card3_desc": "Liên quan đến các khoản tiền bị chiếm dụng.",
-    "card4_title": "Lập kế hoạch di sản và thừa kế",
-    "card4_desc": "Với tài sản chưa biết hoặc chưa khai báo.",
-    "card5_title": "Phá sản hoặc thi hành án",
-    "card5_desc": "Yêu cầu nhận dạng tài sản.",
-    "footer": "Lenix Protocol làm việc với các luật sư của cả nguyên đơn và bị đơn, đóng vai trò là chuyên gia trung lập."
+  "Hero": {
+    "eyebrow": "Nhận dạng tài sản crypto",
+    "title1": "Ghi nhận tài sản số ",
+    "title2": "mà bên kia có thể chưa khai báo",
+    "subtitle": "Dành cho luật sư, điều tra viên và chuyên gia tài chính cần định vị, truy vết và xác minh tiền mã hóa trong tranh tụng, thừa kế và thi hành — với phương pháp chịu được kiểm tra.",
+    "btn_primary": "Bắt đầu rà soát",
+    "btn_secondary": "Liên hệ đội"
+  },
+  "Audiences": {
+    "eyebrow": "Dành cho ai",
+    "title": "Vụ việc chúng tôi thường hỗ trợ",
+    "description": "Công việc nhận dạng giới hạn trong các điều tra pháp lý, quản lý hoặc doanh nghiệp được ủy quyền — không phải tìm kiếm mở rộng đối với bên không liên quan.",
+    "cards": {
+      "family": {
+        "title": "Luật gia đình và ly hôn",
+        "desc": "Chia tài sản khi một bên có thể giữ ví chưa khai báo, tài khoản sàn hoặc tài sản on-chain không có trong công khai tài chính."
+      },
+      "fraud": {
+        "title": "Gian lận và chiếm đoạt",
+        "desc": "Vụ dân sự hoặc hình sự liên quan tiền số bị chiếm đoạt — truy vết từ ví nguồn đã biết hoặc tài khoản bị xâm phạm."
+      },
+      "estate": {
+        "title": "Thừa kế và probate",
+        "desc": "Người thi hành di chúc hoặc luật sư định vị tiền mã hóa người quá cố nắm giữ nhưng chưa ghi nhận — từ thiết bị, hồ sơ hoặc manh mối địa chỉ một phần."
+      },
+      "enforcement": {
+        "title": "Phá sản và thi hành",
+        "desc": "Chủ nợ, quản lý tài sản hoặc cơ quan quản lý xác định tài sản crypto có thể cưỡng chế và điểm chạm sàn liên quan đến con nợ hoặc đối tượng."
+      }
+    }
   },
   "Methods": {
-    "title": "Các Phương pháp Truy vết Tiền điện tử",
-    "card1_title": "Nhận dạng ví blockchain",
-    "card1_desc": "Và phân tích liên kết.",
-    "card2_title": "Giám sát giao dịch",
-    "card2_desc": "Trên các blockchain công khai và riêng tư.",
-    "card3_title": "Xác minh quyền sở hữu NFT",
-    "card3_desc": "Và theo dõi chuyển khoản.",
-    "card4_title": "Nhận dạng tài khoản sàn giao dịch",
-    "card4_desc": "Và các cổng quy đổi giao dịch.",
-    "card5_title": "Tham chiếu chéo siêu dữ liệu",
-    "card5_desc": "Và bằng chứng thiết bị để xác định chủ sở hữu ví.",
-    "footer": "Công việc nhận dạng tài sản kỹ thuật số được thực hiện bằng các kỹ thuật pháp y lành mạnh."
+    "eyebrow": "Chúng tôi truy vết gì",
+    "title": "Phạm vi nhận dạng và phân tích",
+    "description": "Công việc kết hợp phân tích on-chain với bằng chứng từ vụ việc — không tra cứu blockchain riêng lẻ.",
+    "columns": {
+      "linkage": {
+        "title": "Nhận dạng ví",
+        "desc": "Liên kết địa chỉ blockchain với đối tượng qua mẫu giao dịch, clustering và đối chiếu với bằng chứng thiết bị, tài chính hoặc lời khai."
+      },
+      "flows": {
+        "title": "Phân tích dòng giao dịch",
+        "desc": "Theo dõi dòng tiền qua các chain và lớp — gồm dấu hiệu dùng mixer, chuyển bridge và điểm gom đáng ghi nhận."
+      },
+      "attribution": {
+        "title": "Gán nguồn sàn và NFT",
+        "desc": "Xác định nạp custodial có khả năng, off-ramp và NFT liên quan vụ việc khi dữ liệu on-chain và manh mối hỗ trợ."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Tại sao chọn Lenix Protocol?",
-    "desc": "Tại Lenix Protocol, chúng tôi giúp khách hàng tìm thấy những tài sản kỹ thuật số mà người khác hy vọng che giấu.",
-    "point1_title": "Chuyên môn đã được chứng minh",
-    "point1_desc": "Trong việc truy vết tiền điện tử và pháp y blockchain.",
-    "point2_title": "Kinh nghiệm nhận dạng tài sản ẩn",
-    "point2_desc": "Trong nhiều lĩnh vực thực hành pháp lý.",
-    "point3_title": "Lời khai chuyên gia đủ điều kiện trước tòa",
-    "point3_desc": "Tại các khu vực pháp lý tiểu bang, liên bang và quốc tế.",
-    "point4_title": "Báo cáo rõ ràng, có thể bảo vệ",
-    "point4_desc": "Được thiết kế cho kiện tụng hoặc tuân thủ."
+  "Boundaries": {
+    "eyebrow": "Phạm vi và giới hạn",
+    "title1": "Nhận dạng có thể cho thấy gì — ",
+    "title2": "và không thể",
+    "subtitle": "Dữ liệu blockchain công khai có giới hạn. Lenix giới hạn từng hợp đồng theo quyền truy cập hợp pháp, manh mối sẵn có và những gì có thể chứng minh trong báo cáo.",
+    "items": {
+      "legal_basis": {
+        "title": "Chỉ vụ việc được ủy quyền",
+        "desc": "Chúng tôi nhận vụ có cơ sở pháp lý, quản lý hoặc điều tra doanh nghiệp — không truy vết suy đoán cá nhân hoặc địa chỉ không liên quan."
+      },
+      "chain_limits": {
+        "title": "On-chain không phải toàn cảnh",
+        "desc": "Số dư sàn ở tài khoản custodial hoặc cold storage chưa khai có thể cần thủ tục pháp lý riêng ngoài phân tích sổ cái công khai."
+      },
+      "evidence": {
+        "title": "Tính toàn vẹn pháp y",
+        "desc": "Phương pháp và xử lý dữ liệu được ghi nhận cho luật sư, môi trường quản lý hoặc tòa — với chuỗi lưu giữ được bảo toàn."
+      },
+      "neutral": {
+        "title": "Vai trò trung lập có sẵn",
+        "desc": "Lenix có thể hỗ trợ luật sư nguyên đơn, bị đơn hoặc làm chuyên gia độc lập trong tranh chia tài sản và định giá."
+      },
+      "no_guarantee": {
+        "title": "Không đảm bảo đầy đủ",
+        "desc": "Nhận dạng bị giới hạn bởi manh mối cung cấp, khả năng nhìn thấy chain và quyền truy cập hợp pháp. Chúng tôi nêu rõ phần có và không thể thu hồi từ dữ liệu hiện có."
+      },
+      "disclosure": {
+        "title": "Tiết lộ có kiểm soát",
+        "desc": "Kết quả chỉ chia sẻ với các bên được ủy quyền trong hợp đồng — không phát tán hay dùng ngoài phạm vi vụ việc."
+      }
+    }
   },
-  "CTA": {
-    "title": "Liên hệ ngay",
-    "title_highlight": "hôm nay",
-    "desc_part1": "Gọi cho chúng tôi ngay hôm nay tại",
-    "desc_part2": "để thảo luận về nhu cầu nhận dạng tài sản crypto của bạn.",
-    "email_label": "Email cho Đội ngũ Chúng tôi",
-    "phone_label": "Gọi đến Văn phòng"
+  "Process": {
+    "eyebrow": "Cách thực hiện",
+    "title": "Từ tiếp nhận đến kết quả có tài liệu",
+    "description": "Quy trình có cấu trúc cho luật sư và điều tra viên — phạm vi được xác định trước khi phân tích.",
+    "step_label": "Bước {number}",
+    "steps": {
+      "intake": {
+        "title": "Xác định phạm vi vụ việc",
+        "desc": "Loại vụ, các bên, địa chỉ ví đã biết, hồ sơ thiết bị hoặc tài chính và câu hỏi nhận dạng cần trả lời."
+      },
+      "trace": {
+        "title": "Truy vết và phân tích",
+        "desc": "Liên kết ví, lập bản đồ dòng tiền và phân tích điểm chạm sàn với dữ liệu on-chain đối chiếu bằng chứng vụ việc."
+      },
+      "report": {
+        "title": "Bàn giao kết quả",
+        "desc": "Phân tích bằng văn bản kèm dòng thời gian và phần phương pháp — phù hợp chiến lược tranh tụng, tuân thủ hoặc thủ tục pháp lý tiếp theo."
+      }
+    },
+    "btn_primary": "Bắt đầu rà soát",
+    "btn_secondary": "Trao đổi đội"
+  },
+  "Deliverables": {
+    "eyebrow": "Bạn nhận được gì",
+    "title": "Sản phẩm cho pháp lý và tuân thủ",
+    "description": "Sản phẩm bàn giao theo vụ việc — không phải ảnh chụp blockchain chung chung.",
+    "items": {
+      "timeline": {
+        "title": "Dòng thời gian giao dịch",
+        "desc": "Dòng chuyển động có ngày kèm bản đồ liên kết ví cho thấy địa chỉ đã xác định liên hệ vụ việc thế nào."
+      },
+      "report": {
+        "title": "Phân tích bằng văn bản",
+        "desc": "Phương pháp, phát hiện và giới hạn được ghi nhận cho luật sư — tách rõ sự kiện và suy luận."
+      },
+      "testimony": {
+        "title": "Hỗ trợ chuyên gia",
+        "desc": "Làm chứng chuyên gia hoặc phân tích bổ sung khi pháp lý, điều khoản hợp đồng và nhu cầu vụ việc yêu cầu."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Cần định vị crypto chưa khai trong vụ việc?",
+    "subtitle": "Chia sẻ bối cảnh vụ và manh mối hiện có. Chúng tôi sẽ phác thảo công việc nhận dạng khả thi trước khi ký hợp đồng có phạm vi.",
+    "btn_primary": "Bắt đầu rà soát",
+    "btn_secondary": "Liên hệ đội"
   }
 }

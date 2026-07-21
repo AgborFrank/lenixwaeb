@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Solusyon",
+    "title1": "Recovery, settlement, pautang ",
+    "title2": "at imprastraktura ng seguridad",
+    "title3": ".",
+    "subtitle1": "Tina-trace ng Lenix ang ninakaw o maling na-rout na crypto, nase-settle sa fiat sa suportadong corridors, nagpapautang laban sa vault collateral, at nagmo-monitor ng wallet para sa mga team na humahawak ng asset ng kliyente.",
+    "subtitle2": "May sariling intake at deliverables ang bawat workflow. Sa recovery, sinusuri namin ang trail bago ang paid engagement — hindi kami nangangako ng resulta."
+  },
+  "Overview": {
+    "eyebrow": "Saan magsisimula",
+    "title": "Itugma ang problema sa workflow",
+    "description": "Karamihan ng bisita alam na kung kailangan nila ng tracing, payout, liquidity, o operational controls. Basahin ang buod, buksan ang seksyong akma.",
+    "learn_more": "Tingnan detalye",
+    "cards": {
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Ninakaw, na-scam, o naipadala sa maling address ang pondo. Kailangan mo ng trace at documented evidence bago magdesisyon sa susunod na hakbang."
+      },
+      "payments": {
+        "title": "Cross-border payments",
+        "desc": "Kailangan ng treasury o finance i-convert ang crypto sa fiat, na may rates, fees, at delivery status na maipapakita sa auditors."
+      },
+      "lending": {
+        "title": "Crypto lending",
+        "desc": "May eligible collateral ka at kailangan ng liquidity nang hindi ibinebenta ang buong posisyon."
+      },
+      "security": {
+        "title": "Platform security",
+        "desc": "Ang team mo ay nag-custody ng asset ng kliyente at kailangan ng monitoring, access rules, at written escalation path."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Asset recovery",
+    "title": "I-trace muna. Mag-commit lang kapag may daan.",
+    "description": "Isumite ang wallet addresses, transaction hashes, at maikling timeline. Sinusundan namin kung saan pumunta ang halaga, naghahanda ng findings para sa exchanges at counsel, at sinasabi nang malinaw kung realistic ang recovery bago ang paid engagement. Hindi kami nangangako ng recovery.",
+    "points": {
+      "chains": "Tracing sa major EVM networks, Bitcoin, at common stablecoins sa theft cases",
+      "evidence": "Documentation na naka-format para sa exchange compliance desks, counsel, at law enforcement",
+      "terms": "Scope at fees tinutukoy lang pagkatapos ng libreng recoverability review"
+    },
+    "cta": "Simulan recovery"
+  },
+  "Payments": {
+    "eyebrow": "Cross-border payments",
+    "title": "Settlement na maaaring i-audit ng treasury mo",
+    "description": "I-convert ang crypto sa fiat kung saan mabagal, mahal, o opaque ang local banking rails. Kitang-kita ang rate, fee, at status mula wallet initiation hanggang beneficiary delivery — hindi hula ang finance at ops.",
+    "cta": "Payment options",
+    "capabilities": {
+      "corridors": {
+        "title": "Active corridors",
+        "desc": "Payout sa bank accounts sa markets na suportado namin ngayon. Makipag-ugnayan kung wala sa list ang corridor mo."
+      },
+      "visibility": {
+        "title": "Handoff tracking",
+        "desc": "Status sa bawat hakbang ng flow, hindi isang pending flag na walang context."
+      },
+      "compliance": {
+        "title": "Sanctions at AML screening",
+        "desc": "Sinusuri ang inbound at outbound flows bago i-release ang pondo."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Crypto lending",
+    "title": "Liquidity habang naka-vault ang collateral",
+    "description": "Mag-post ng approved collateral at kumuha ng stablecoins o fiat. Ipinapakita ang LTV, repayment terms, at liquidation thresholds bago ang disbursement — walang hidden triggers pagkatapos pumirma.",
+    "points": {
+      "credit": "Hindi kailangan ng traditional credit check ang eligible collateral types",
+      "ltv": "LTV at repayment schedules ay napagkasunduan nang maaga",
+      "custody": "Collateral sa segregated vaults habang loan term"
+    },
+    "cta": "Mag-apply loan"
+  },
+  "Security": {
+    "eyebrow": "Platform security",
+    "title": "Controls para sa teams na nag-custody ng client assets",
+    "description": "Wallet monitoring, permissioned access, at incident escalation para sa org na hindi maaaring ituring ang suspicious activity na secondary ticket. Para sa ops teams, hindi slide-deck security.",
+    "cta": "Security overview",
+    "pillars": {
+      "monitoring": {
+        "title": "Activity monitoring",
+        "desc": "Alerts sa unusual outflows, bagong counterparties, at transfers outside policy."
+      },
+      "access": {
+        "title": "Access at audit trail",
+        "desc": "Role-based permissions na may record kung sino ang nag-approve ng ano at kailan."
+      },
+      "incident": {
+        "title": "Incident response",
+        "desc": "Written escalation steps na puwedeng patakbuhin ng team kapag kailangan ng human review."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Hindi sigurado kung aling workflow ang akma?",
+    "description": "Ilarawan ang sitwasyon — nawawalang pondo, payout, loan, o ops concern — at iruruta ka namin sa tamang intake.",
+    "btn_primary": "Makipag-ugnayan",
+    "btn_secondary": "Simulan recovery"
+  }
+}

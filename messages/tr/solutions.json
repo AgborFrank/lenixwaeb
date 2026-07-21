@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Çözümler",
+    "title1": "Kurtarma, takas, kredi ",
+    "title2": "ve güvenlik altyapısı",
+    "title3": ".",
+    "subtitle1": "Lenix çalınan veya yanlış yönlendirilen kriptoyu izler, desteklenen koridorlarda fiat'a öder, kasa teminatına karşı kredi verir ve müşteri varlığı tutan ekipler için cüzdan izleme yapar.",
+    "subtitle2": "Her iş akışının kendi intake'i ve teslimatları vardır. Kurtarmada, ücretli taahhütten önce izi değerlendiririz — sonuç vaat etmeyiz."
+  },
+  "Overview": {
+    "eyebrow": "Nereden başlanır",
+    "title": "Sorunu iş akışıyla eşleştirin",
+    "description": "Ziyaretçilerin çoğu izleme, ödeme, likidite veya operasyonel kontrol gerekip gerekmediğini zaten bilir. Özetlere göz atın, uygun bölümü açın.",
+    "learn_more": "Detaylar",
+    "cards": {
+      "recovery": {
+        "title": "Varlık kurtarma",
+        "desc": "Çalınan, dolandırılan veya yanlış adrese gönderilen fonlar. Sonraki adıma karar vermeden önce iz ve belgelenmiş kanıt gerekir."
+      },
+      "payments": {
+        "title": "Sınır ötesi ödemeler",
+        "desc": "Hazine veya finans, denetçilere gösterilebilir kur, ücret ve teslimat durumuyla kriptoyu fiat'a çevirmeli."
+      },
+      "lending": {
+        "title": "Kripto kredi",
+        "desc": "Uygun teminatınız var ve pozisyonu satmadan likiditeye ihtiyacınız var."
+      },
+      "security": {
+        "title": "Platform güvenliği",
+        "desc": "Ekibiniz müşteri varlığı saklıyor; izleme, erişim kuralları ve yazılı eskalasyon yolu gerekiyor."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Varlık kurtarma",
+    "title": "Önce izle. Yol varsa devam et.",
+    "description": "Cüzdan adresleri, işlem hash'leri ve kısa bir zaman çizelgesi gönderin. Değerin nereye gittiğini takip eder, borsalar ve avukatlar için bulgular hazırlarız ve ücretli taahhütten önce kurtarmanın gerçekçi olup olmadığını açıkça söyleriz. Kurtarma vaat etmeyiz.",
+    "points": {
+      "chains": "Başlıca EVM ağları, Bitcoin ve hırsızlık vakalarında sık görülen stablecoin'lerde izleme",
+      "evidence": "Borsa uyum masaları, avukatlar ve kolluk için formatlanmış dokümantasyon",
+      "terms": "Kapsam ve ücretler yalnızca ücretsiz kurtarılabilirlik incelemesinden sonra belirlenir"
+    },
+    "cta": "Recovery başlat"
+  },
+  "Payments": {
+    "eyebrow": "Sınır ötesi ödemeler",
+    "title": "Hazinenizin denetleyebileceği takas",
+    "description": "Yerel bankacılık hatları yavaş, pahalı veya opak olduğunda kriptoyu fiat'a çevirin. Kur, ücret ve durum cüzdan başlangıcından alıcı teslimatına kadar görünür — finans ve ops tahmin etmez.",
+    "cta": "Ödeme seçenekleri",
+    "capabilities": {
+      "corridors": {
+        "title": "Aktif koridorlar",
+        "desc": "Bugün desteklediğimiz pazarlarda banka hesaplarına ödeme. Koridorunuz listede yoksa bize ulaşın."
+      },
+      "visibility": {
+        "title": "Devir takibi",
+        "desc": "Akışın her adımında durum; bağlamsız tek bir beklemede bayrağı değil."
+      },
+      "compliance": {
+        "title": "Yaptırım ve AML taraması",
+        "desc": "Gelen ve giden akışlar fon serbest bırakılmadan önce taranır."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Kripto kredi",
+    "title": "Teminat kasada kalırken likidite",
+    "description": "Onaylı teminat yatırın, stablecoin veya fiat çekin. LTV, geri ödeme koşulları ve likidasyon eşikleri ödemeden önce gösterilir — imzadan sonra gizli tetikleyici yok.",
+    "points": {
+      "credit": "Uygun teminat türleri geleneksel kredi kontrolü gerektirmez",
+      "ltv": "LTV ve geri ödeme planları önceden kararlaştırılır",
+      "custody": "Kredi süresince teminat ayrılmış kasalarda tutulur"
+    },
+    "cta": "Kredi başvur"
+  },
+  "Security": {
+    "eyebrow": "Platform güvenliği",
+    "title": "Müşteri varlığı saklayan ekipler için kontroller",
+    "description": "Şüpheli aktiviteyi ikincil bilet gibi göremeyen kuruluşlar için cüzdan izleme, yetkili erişim ve olay eskalasyonu. Sunum slaytı güvenliği değil, ops ekipleri için.",
+    "cta": "Güvenlik özeti",
+    "pillars": {
+      "monitoring": {
+        "title": "Aktivite izleme",
+        "desc": "Olağandışı çıkışlar, yeni karşı taraflar ve politika dışı transferler için uyarılar."
+      },
+      "access": {
+        "title": "Erişim ve denetim izi",
+        "desc": "Kimin neyi ne zaman onayladığının kaydıyla rol tabanlı izinler."
+      },
+      "incident": {
+        "title": "Olay müdahalesi",
+        "desc": "Aktivite insan incelemesi gerektirdiğinde ekibinizin uygulayabileceği yazılı eskalasyon adımları."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Hangi iş akışının geçerli olduğundan emin değil misiniz?",
+    "description": "Durumu anlatın — kayıp fon, ödeme, kredi veya ops endişesi — sizi doğru intake'e yönlendirelim.",
+    "btn_primary": "Ekiple iletişim",
+    "btn_secondary": "Recovery başlat"
+  }
+}

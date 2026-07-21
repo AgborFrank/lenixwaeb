@@ -1,37 +1,116 @@
 {
+  "meta": {
+    "title": "Recupero accesso wallet | Lenix Protocol",
+    "description": "Recupera l'accesso a wallet software e hardware quando le password sono perse o i file danneggiati. Fattibilità valutata per prima. Mantieni il controllo dei tuoi asset."
+  },
   "Hero": {
-    "badge": "Servizi di Decrittografia di Portafogli Crypto",
-    "title1": "Servizi di Sblocco di Portafogli di Criptovalute",
-    "subtitle1": "Servizi di Decrittografia di Portafogli di Valute Digitali",
-    "desc1": "Nel mondo in rapida evoluzione delle criptovalute, garantire l'accesso ai propri asset è fondamentale. I Servizi di Decrittografia di Portafogli Crypto di Lenix Protocol forniscono un supporto cruciale per individui e organizzazioni che hanno perso l'accesso ai loro portafogli di criptovalute.",
-    "desc2": "Sia per password dimenticate, chiavi di accesso perse o file di portafoglio corrotti, il nostro team di esperti forensi è specializzato nel recupero e nella decrittografia in modo sicuro della vostra valuta digitale.",
-    "btn_consultation": "Richiedi una Consulenza Oggi"
+    "eyebrow": "Recupero accesso wallet",
+    "title1": "Riprendi l'accesso ai wallet ",
+    "title2": "che possiedi già",
+    "subtitle": "Password dimenticate, file wallet corrotti e backup parziali — non reset di login exchange né wallet di altri. Valutiamo se il recupero è realistico prima di iniziare lavoro a pagamento.",
+    "btn_primary": "Richiedi valutazione",
+    "btn_secondary": "Contatta il team"
   },
-  "Approach": {
-    "title": "Il Nostro Approccio alla Decrittografia",
-    "card1_title": "Consulenza Iniziale e Valutazione del Rischio",
-    "card1_desc": "Comprendere le specifiche della vostra situazione per fornire una strategia di recupero su misura.",
-    "card2_title": "Tecniche di Decrittografia Avanzate",
-    "card2_desc": "Utilizzo di tecnologie all'avanguardia e metodologie proprietarie per tentare il recupero di password e chiavi crittografiche.",
-    "card3_title": "Gestione Interna Nativa",
-    "card3_desc": "Garantire l'integrità e la sicurezza dei vostri dati durante l'intero processo di decrittografia."
+  "Audiences": {
+    "eyebrow": "Per chi è",
+    "title": "Situazioni comuni che esaminiamo",
+    "description": "La maggior parte dei clienti ha ancora un file wallet, un dispositivo o un frammento di backup. Hanno perso la password, il percorso PIN o la seed leggibile — non la proprietà sottostante.",
+    "cards": {
+      "password": {
+        "title": "Password wallet dimenticata",
+        "desc": "Wallet software come keystore MetaMask, Electrum o Bitcoin Core dove il file esiste ma la password di crittografia è persa."
+      },
+      "file": {
+        "title": "File danneggiati o parziali",
+        "desc": "File wallet.dat corrotti, backup incompleti o metadati recuperati da un dispositivo vecchio che possono ancora contenere materiale chiave."
+      },
+      "estate": {
+        "title": "Successione e questioni legali",
+        "desc": "Esecutori, fiduciari o consulenti che necessitano percorsi di accesso documentati per il wallet di un titolare deceduto o incapace — con autorizzazione appropriata."
+      },
+      "treasury": {
+        "title": "Blocco operativo del wallet",
+        "desc": "Team che hanno perso le credenziali di un wallet tesoreria o operazioni e necessitano un processo di recupero controllato con gestione adatta all'audit."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Perché Scegliere Lenix Protocol per il Recupero del Portafoglio Crypto?",
-    "desc": "Il team di esperti di Lenix Protocol è la soluzione ideale per i Servizi di Decrittografia del Portafoglio Crypto. Portiamo una metodologia specializzata e un track record comprovato ad ogni impegno di recupero.",
-    "point1_title": "Esperienza nella Sicurezza delle Criptovalute",
-    "point1_desc": "Profonda comprensione della tecnologia blockchain e delle architetture dei portafogli.",
-    "point2_title": "Servizio Confidenziale ed Etico",
-    "point2_desc": "Tutte le operazioni sono eseguite con il massimo rispetto per la privacy e la legalità da esperti accademici e individui che hanno avuto nulla osta di sicurezza di livello Segreto e superiore.",
-    "point3_title": "Tasso di Successo",
-    "point3_desc": "Comprovata esperienza nel recupero dell'accesso a portafogli crittografati per clienti in tutto il mondo."
+  "Boundaries": {
+    "eyebrow": "Ambito e limiti",
+    "title1": "Cosa facciamo — ",
+    "title2": "e cosa rifiutiamo",
+    "subtitle": "Il recupero wallet è una categoria comune di truffa. Lenix accetta solo casi con proprietà chiara, autorizzazione documentata e un percorso tecnico che vale la pena tentare.",
+    "items": {
+      "ownership": {
+        "title": "Proprietà dimostrabile richiesta",
+        "desc": "Lavoriamo su wallet che possiedi o sei legalmente autorizzato a recuperare — non indirizzi di terzi o credenziali ottenute senza consenso."
+      },
+      "assessment": {
+        "title": "Fattibilità prima delle tariffe",
+        "desc": "Esaminiamo tipo di wallet, stato del backup e indizi password prima di definire lavoro di decrittazione a pagamento. I casi senza prospettive vengono rifiutati presto."
+      },
+      "no_custody": {
+        "title": "Sposti tu gli asset",
+        "desc": "Quando l'accesso è ripristinato, trasferisci i fondi tu. Lenix non prende in custodia criptovaluta recuperata."
+      },
+      "no_scam": {
+        "title": "Nessun trucco di accesso remoto",
+        "desc": "Non chiediamo condivisione schermo, depositi di verifica o tariffe anticipate di sblocco — schemi usati da siti di recupero fraudolenti."
+      },
+      "decline": {
+        "title": "Casi che di solito rifiutiamo",
+        "desc": "Solo indirizzo pubblico, file wallet acquistati online o wallet hardware con PIN perso e senza backup di solito non sono recuperabili."
+      },
+      "confidential": {
+        "title": "Gestione controllata",
+        "desc": "I materiali wallet sono elaborati in una catena di custodia definita con controlli di accesso — non tramite canali informali."
+      }
+    }
   },
-  "CTA": {
-    "title": "Contattaci",
-    "title_highlight": "oggi",
-    "desc_part1": "Contattaci oggi al",
-    "desc_part2": "per saperne di più su come Lenix Protocol può assistervi con la Decrittografia del Portafoglio Crypto.",
-    "email_label": "Email al nostro Team",
-    "phone_label": "Chiama il nostro Ufficio"
+  "Process": {
+    "eyebrow": "Come funziona",
+    "title": "Dalla valutazione all'accesso",
+    "description": "Un percorso strutturato per titolari e rappresentanti autorizzati — non promesse aperte di forza bruta.",
+    "step_label": "Passo {number}",
+    "steps": {
+      "submit": {
+        "title": "Invia dettagli del caso",
+        "desc": "Tipo di wallet, materiale di backup esistente e indizi o schemi password che ricordi. La revisione iniziale di fattibilità fa parte dell'intake."
+      },
+      "scope": {
+        "title": "Ambito e fattibilità",
+        "desc": "Ti diciamo chiaramente se vale la pena tentare la decrittazione, lo sforzo atteso e le tariffe — prima di impegnarti in lavoro a pagamento."
+      },
+      "recover": {
+        "title": "Recupero controllato",
+        "desc": "Se incaricati, la decrittazione avviene in un ambiente controllato. Riprendi l'accesso e sposti gli asset al tuo ritmo."
+      }
+    },
+    "btn_primary": "Avvia valutazione",
+    "btn_secondary": "Parla con il team"
+  },
+  "Support": {
+    "eyebrow": "Copertura tecnica",
+    "title": "Tipi di wallet che vediamo spesso",
+    "description": "La copertura dipende dal formato file, completezza del backup e forza della crittografia. Conferma il tuo durante l'intake.",
+    "columns": {
+      "software": {
+        "title": "Wallet software",
+        "desc": "Bitcoin Core, Electrum, keystore JSON MetaMask, backup Exodus e file wallet crittografati localmente simili."
+      },
+      "hardware": {
+        "title": "Dispositivi hardware",
+        "desc": "Casi selezionati con dispositivi Ledger o Trezor danneggiati dove dati del chip o backup possono ancora offrire un percorso — non PIN perso senza alcun backup."
+      },
+      "formats": {
+        "title": "Legacy e personalizzato",
+        "desc": "Varianti wallet.dat più vecchie, chiavi crittografate BIP38 ed export di vault enterprise — valutati individualmente."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Hai un file wallet ma hai perso l'accesso?",
+    "subtitle": "Descrivi il tipo di wallet e quale materiale di backup conservi. Ti diremo se esiste un percorso di recupero prima di qualsiasi impegno a pagamento.",
+    "btn_primary": "Richiedi valutazione",
+    "btn_secondary": "Contatta il team"
   }
 }

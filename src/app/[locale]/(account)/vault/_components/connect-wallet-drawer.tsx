@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
 import {
   Drawer,
   DrawerContent,
@@ -13,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Wallet, Lock, CheckCircle2, Loader2, Plus, Trash2, KeyRound, FileKey } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { toast } from "sonner";
 import { useWallet } from "@/app/[locale]/(account)/lenix-wallet/_hooks/use-wallet";
 import { SetupWizard } from "@/app/[locale]/(account)/lenix-wallet/_components/setup/setup-wizard";
@@ -25,6 +26,8 @@ import {
 } from "@/app/[locale]/(account)/vault/actions";
 
 export function ConnectWalletDrawer() {
+  const t = useTranslations("AccountVault.drawer");
+  const tToast = useTranslations("AccountVault.toast");
   const { walletState, walletData, unlockWallet, lockWallet } = useWallet();
   const [unlockPassword, setUnlockPassword] = useState("");
   const [isUnlocking, setIsUnlocking] = useState(false);
@@ -49,11 +52,11 @@ export function ConnectWalletDrawer() {
     setIsUnlocking(true);
     try {
       await unlockWallet(unlockPassword);
-      toast.success("Wallet unlocked");
+      toast.success(tToast("wallet_unlocked"));
       setIsOpen(false);
       setUnlockPassword("");
     } catch {
-      toast.error("Incorrect password");
+      toast.error(tToast("incorrect_password"));
     } finally {
       setIsUnlocking(false);
     }
@@ -72,13 +75,15 @@ export function ConnectWalletDrawer() {
   const handleImport = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!importCredentials.trim() || !importPassword || importPassword.length < 8) {
-      toast.error("Enter credentials and a password (min 8 characters).");
+      toast.error(tToast("import_credentials_required"));
       return;
     }
     setIsImporting(true);
     try {
       const err = await importVaultWallet({
-        walletName: importName || `Imported ${importType === "seed_phrase" ? "Seed" : "Key"}`,
+        walletName:
+          importName ||
+          (importType === "seed_phrase" ? t("imported_seed_name") : t("imported_key_name")),
         credentials: importCredentials.trim(),
         password: importPassword,
         type: importType,
@@ -87,7 +92,7 @@ export function ConnectWalletDrawer() {
         toast.error(err.error);
         return;
       }
-      toast.success("Wallet imported");
+      toast.success(tToast("wallet_imported"));
       setShowImportForm(false);
       setImportName("");
       setImportCredentials("");
@@ -95,7 +100,7 @@ export function ConnectWalletDrawer() {
       getVaultWallets().then(setVaultWallets);
       window.location.reload();
     } catch (e: any) {
-      toast.error(e.message || "Import failed");
+      toast.error(e.message || tToast("import_failed"));
     } finally {
       setIsImporting(false);
     }
@@ -107,7 +112,7 @@ export function ConnectWalletDrawer() {
       const err = await removeVaultWallet(id);
       if (err?.error) toast.error(err.error);
       else {
-        toast.success("Wallet removed");
+        toast.success(tToast("wallet_removed"));
         setVaultWallets((prev) => prev.filter((w) => w.id !== id));
         window.location.reload();
       }
@@ -125,17 +130,17 @@ export function ConnectWalletDrawer() {
             className="bg-yellow-400 text-black hover:bg-yellow-500 font-bold px-8 py-3 rounded-xl shadow-lg shadow-yellow-400/20 transition-all hover:scale-105 active:scale-95"
           >
             <Wallet className="mr-2 h-5 w-5" />
-            Connect Wallet
+            {t("connect_wallet")}
           </Button>
         </DrawerTrigger>
         <DrawerContent className="bg-zinc-950 border-zinc-800 text-white max-h-[90vh]">
           <div className="mx-auto w-full max-w-lg overflow-y-auto">
             <DrawerHeader>
               <DrawerTitle className="text-2xl font-bold text-center">
-                Set Up Your Vault
+                {t("setup_title")}
               </DrawerTitle>
               <DrawerDescription className="text-center text-zinc-400">
-                Create a new wallet or import an existing one to secure your assets.
+                {t("setup_description")}
               </DrawerDescription>
             </DrawerHeader>
             <div className="p-4 pb-6">
@@ -156,23 +161,23 @@ export function ConnectWalletDrawer() {
             className="bg-yellow-400 text-black hover:bg-yellow-500 font-bold px-8 py-3 rounded-xl shadow-lg shadow-yellow-400/20 transition-all hover:scale-105 active:scale-95"
           >
             <Lock className="mr-2 h-5 w-5" />
-            Unlock Vault
+            {t("unlock_vault")}
           </Button>
         </DrawerTrigger>
         <DrawerContent className="bg-zinc-950 border-zinc-800 text-white">
           <div className="mx-auto w-full max-w-sm">
             <DrawerHeader>
               <DrawerTitle className="text-2xl font-bold text-center">
-                Unlock Vault
+                {t("unlock_vault")}
               </DrawerTitle>
               <DrawerDescription className="text-center text-zinc-400">
-                Enter your password to access your secured assets.
+                {t("unlock_description")}
               </DrawerDescription>
             </DrawerHeader>
             <form onSubmit={handleUnlock} className="p-4 space-y-4">
               <Input
                 type="password"
-                placeholder="Enter password"
+                placeholder={t("password_placeholder")}
                 className="bg-zinc-900 border-zinc-700 text-white h-12"
                 value={unlockPassword}
                 onChange={(e) => setUnlockPassword(e.target.value)}
@@ -186,10 +191,10 @@ export function ConnectWalletDrawer() {
                 {isUnlocking ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Unlocking...
+                    {t("unlocking")}
                   </>
                 ) : (
-                  "Unlock"
+                  t("unlock")
                 )}
               </Button>
             </form>
@@ -215,7 +220,7 @@ export function ConnectWalletDrawer() {
           <div className="mx-auto w-full max-w-md overflow-y-auto">
             <DrawerHeader>
               <DrawerTitle className="text-xl font-bold text-center">
-                Vault Connected
+                {t("vault_connected")}
               </DrawerTitle>
               <DrawerDescription className="text-center text-zinc-400 font-mono text-sm break-all">
                 {walletData.address}
@@ -230,7 +235,7 @@ export function ConnectWalletDrawer() {
                 >
                   <Link href="/lenix-wallet">
                     <Wallet className="mr-2 h-4 w-4" />
-                    Lenix Wallet
+                    {t("lenix_wallet")}
                   </Link>
                 </Button>
                 <Button
@@ -239,15 +244,15 @@ export function ConnectWalletDrawer() {
                   onClick={handleLock}
                 >
                   <Lock className="mr-2 h-4 w-4" />
-                  Lock
+                  {t("lock")}
                 </Button>
               </div>
 
               <div className="border-t border-zinc-800 pt-4">
-                <h4 className="text-sm font-semibold text-zinc-300 mb-2">Imported Wallets</h4>
+                <h4 className="text-sm font-semibold text-zinc-300 mb-2">{t("imported_wallets")}</h4>
                 <div className="space-y-2 max-h-40 overflow-y-auto">
                   {vaultWallets.length === 0 ? (
-                    <p className="text-xs text-zinc-500">No imported wallets yet.</p>
+                    <p className="text-xs text-zinc-500">{t("no_imported")}</p>
                   ) : (
                     vaultWallets.map((w) => (
                       <div
@@ -291,21 +296,21 @@ export function ConnectWalletDrawer() {
                     onClick={() => setShowImportForm(true)}
                   >
                     <Plus className="mr-2 h-4 w-4" />
-                    Import Wallet
+                    {t("import_wallet")}
                   </Button>
                 ) : (
                   <form onSubmit={handleImport} className="mt-3 p-3 rounded-lg bg-zinc-900/50 border border-zinc-800 space-y-3">
                     <div>
-                      <Label className="text-xs text-zinc-400">Wallet name (optional)</Label>
+                      <Label className="text-xs text-zinc-400">{t("wallet_name_label")}</Label>
                       <Input
-                        placeholder="My MetaMask"
+                        placeholder={t("wallet_name_placeholder")}
                         className="mt-1 bg-zinc-950 border-zinc-700 h-9"
                         value={importName}
                         onChange={(e) => setImportName(e.target.value)}
                       />
                     </div>
                     <div>
-                      <Label className="text-xs text-zinc-400">Import type</Label>
+                      <Label className="text-xs text-zinc-400">{t("import_type_label")}</Label>
                       <div className="flex gap-2 mt-1">
                         <Button
                           type="button"
@@ -314,7 +319,7 @@ export function ConnectWalletDrawer() {
                           className={importType === "seed_phrase" ? "bg-yellow-400 text-black" : "border-zinc-700"}
                           onClick={() => setImportType("seed_phrase")}
                         >
-                          Seed phrase
+                          {t("seed_phrase")}
                         </Button>
                         <Button
                           type="button"
@@ -323,17 +328,21 @@ export function ConnectWalletDrawer() {
                           className={importType === "private_key" ? "bg-yellow-400 text-black" : "border-zinc-700"}
                           onClick={() => setImportType("private_key")}
                         >
-                          Private key
+                          {t("private_key")}
                         </Button>
                       </div>
                     </div>
                     <div>
                       <Label className="text-xs text-zinc-400">
-                        {importType === "seed_phrase" ? "12 or 24 word recovery phrase" : "Private key"}
+                        {importType === "seed_phrase" ? t("seed_phrase_label") : t("private_key_label")}
                       </Label>
                       <Input
                         type={importType === "private_key" ? "password" : "text"}
-                        placeholder={importType === "seed_phrase" ? "word1 word2 word3 ..." : "0x..."}
+                        placeholder={
+                          importType === "seed_phrase"
+                            ? t("seed_phrase_placeholder")
+                            : t("private_key_placeholder")
+                        }
                         className="mt-1 bg-zinc-950 border-zinc-700 h-9 font-mono text-sm"
                         value={importCredentials}
                         onChange={(e) => setImportCredentials(e.target.value)}
@@ -341,10 +350,10 @@ export function ConnectWalletDrawer() {
                       />
                     </div>
                     <div>
-                      <Label className="text-xs text-zinc-400">Encryption password (min 8 chars)</Label>
+                      <Label className="text-xs text-zinc-400">{t("encryption_password_label")}</Label>
                       <Input
                         type="password"
-                        placeholder="••••••••"
+                        placeholder={t("password_dots_placeholder")}
                         className="mt-1 bg-zinc-950 border-zinc-700 h-9"
                         value={importPassword}
                         onChange={(e) => setImportPassword(e.target.value)}
@@ -362,7 +371,7 @@ export function ConnectWalletDrawer() {
                           setImportPassword("");
                         }}
                       >
-                        Cancel
+                        {t("cancel")}
                       </Button>
                       <Button
                         type="submit"
@@ -370,7 +379,7 @@ export function ConnectWalletDrawer() {
                         className="flex-1 bg-yellow-400 text-black hover:bg-yellow-500"
                         disabled={isImporting}
                       >
-                        {isImporting ? <Loader2 className="h-4 w-4 animate-spin" /> : "Import"}
+                        {isImporting ? <Loader2 className="h-4 w-4 animate-spin" /> : t("import")}
                       </Button>
                     </div>
                   </form>
@@ -391,7 +400,7 @@ export function ConnectWalletDrawer() {
         className="bg-zinc-800 text-zinc-500 font-bold px-8 py-3 rounded-xl"
       >
         <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-        Loading...
+        {t("loading")}
       </Button>
     );
   }
@@ -404,7 +413,7 @@ export function ConnectWalletDrawer() {
     >
       <Link href="/lenix-wallet">
         <Wallet className="mr-2 h-5 w-5" />
-        Connect Wallet
+        {t("connect_wallet")}
       </Link>
     </Button>
   );

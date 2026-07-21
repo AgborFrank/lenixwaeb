@@ -1,0 +1,254 @@
+{
+  "Shell": {
+    "skip": "Skip for now",
+    "back": "Back",
+    "logoAlt": "Lenix Protocol",
+    "progressAria": "Progress",
+    "asideAria": "Help and information"
+  },
+  "Progress": {
+    "stepOf": "Step {current} of {total}",
+    "flows": {
+      "selection": {
+        "1": "Service",
+        "2": "Details",
+        "3": "Complete"
+      },
+      "recovery": {
+        "1": "Service",
+        "2": "Case details"
+      },
+      "loan": {
+        "1": "Service",
+        "2": "Loan details",
+        "3": "Payout"
+      },
+      "banking": {
+        "1": "Service",
+        "2": "Banking details"
+      }
+    }
+  },
+  "Selection": {
+    "title": "What brings you here?",
+    "description": "Choose the service you need to get started.",
+    "legend": "Select a service",
+    "sectionTitle": "Service",
+    "sectionDesc": "Required.",
+    "continue": "Continue",
+    "services": {
+      "recovery": {
+        "title": "Recover lost funds",
+        "description": "Track down stolen or lost crypto with our forensics team and build a case for recovery."
+      },
+      "loan": {
+        "title": "Get a crypto loan",
+        "description": "Borrow cash using your crypto as collateral. See rates and terms upfront."
+      },
+      "banking": {
+        "title": "Banking services",
+        "description": "Send and receive Funds across borders, convert crypto to cash, or store assets securely."
+      }
+    }
+  },
+  "Details": {
+    "backToSelection": "Back to service selection",
+    "backToLoan": "Back to loan details",
+    "recovery": {
+      "title": "Tell us what happened",
+      "description": "We'll need some details about the transaction and incident."
+    },
+    "banking": {
+      "title": "Let's get started",
+      "description": "Tell us what you need and where you're located."
+    },
+    "loan": {
+      "title": "Loan application",
+      "description": "Choose your loan type and tell us how much you need."
+    },
+    "payout": {
+      "title": "Where should we send it?",
+      "description": "Choose how you'd like to receive your funds."
+    }
+  },
+  "Aside": {
+    "recovery": {
+      "title": "Recovery intake",
+      "body": "Provide accurate transaction details to help our forensics team trace funds and document next steps.",
+      "bullet1": "Chain analysis by certified analysts",
+      "bullet2": "Evidence preserved for legal review",
+      "bullet3": "Case updates in your dashboard"
+    },
+    "loan": {
+      "title": "Loan application",
+      "body": "Terms, LTV, and collateral requirements are shown before you commit. Payout details are collected in the final step.",
+      "bullet1": "Transparent rates before disbursement",
+      "bullet2": "Collateral held in Lenix custody",
+      "bullet3": "Multiple payout methods supported"
+    },
+    "banking": {
+      "title": "What happens next",
+      "body": "We'll review your request and get back to you within 24 hours with next steps and pricing.",
+      "bullet1": "Get a quote with transparent fees",
+      "bullet2": "Complete verification if needed",
+      "bullet3": "Track everything in your dashboard"
+    },
+    "encryption": "Your data is encrypted and secure. We never share your information without permission.",
+    "support": "Questions? Reach out on Telegram after you submit."
+  },
+  "Common": {
+    "required": "*",
+    "fullName": "Your name",
+    "phoneNumber": "Phone number (optional)",
+    "submitFinish": "Submit request",
+    "continue": "Continue",
+    "continuePayout": "Continue to payout",
+    "submitting": "Sending...",
+    "privacyPrefix": "We'll reach out if we need more info. See our",
+    "privacyPrefixBanking": "We'll be in touch soon. See our",
+    "privacyPolicy": "privacy policy",
+    "privacySuffix": " for details.",
+    "placeholderName": "e.g. Sarah Chen",
+    "selectCountry": "Choose a country",
+    "selectService": "Choose one",
+    "selectBlockchain": "Choose blockchain",
+    "selectCurrency": "Choose currency",
+    "selectAsset": "Choose asset",
+    "selectNetwork": "Choose network",
+    "somethingWrong": "Something went wrong. Please try again.",
+    "pleaseLogin": "Please sign in to continue"
+  },
+  "RecoveryForm": {
+    "contactSectionTitle": "Contact information",
+    "contactSectionDesc": "How our team can reach you about this case.",
+    "transactionSectionTitle": "Transaction details",
+    "transactionSectionDesc": "On-chain identifiers and loss amount for forensic review.",
+    "incidentSectionTitle": "Incident & evidence",
+    "incidentSectionDesc": "Describe what happened and attach supporting files.",
+    "sectionTitle": "Incident information",
+    "sectionDesc": "Provide transaction details and a summary of what occurred.",
+    "transactionHash": "Transaction hash or wallet address",
+    "amountLost": "Approximate amount lost",
+    "amountPlaceholder": "e.g. 200000",
+    "transactionPlaceholder": "0x1234… or wallet address",
+    "blockchain": "Blockchain",
+    "currency": "Currency",
+    "incidentSummary": "Incident summary",
+    "incidentPlaceholder": "Describe what happened, when it occurred, and any parties involved.",
+    "evidence": "Supporting evidence",
+    "evidenceHint": "Screenshot or PDF (optional)",
+    "fileDropTitle": "Upload evidence",
+    "fileDropHint": "PNG, JPG, or PDF up to 10 MB"
+  },
+  "BankingForm": {
+    "contactSectionTitle": "About you",
+    "contactSectionDesc": "We'll use this to get in touch about your request.",
+    "serviceSectionTitle": "What you need",
+    "serviceSectionDesc": "Help us understand which service you're looking for.",
+    "sectionTitle": "Account & service details",
+    "sectionDesc": "Tell us who you are and which banking service you need on your corridor.",
+    "countryCorridor": "Country / corridor",
+    "serviceNeeded": "What do you need help with?",
+    "additionalDetails": "Anything else we should know?",
+    "notesPlaceholder": "Tell us about the amount, destination, or what you're trying to do...",
+    "services": {
+      "transfer": "Send Funds",
+      "receive": "Receive Funds/Assets",
+      "liquidation": "Convert crypto to cash",
+      "lending": "Borrow against crypto",
+      "custody": "Store and secure assets"
+    }
+  },
+  "LoanForm": {
+    "noProducts": "No loan products are available right now. Please check back later.",
+    "productTitle": "Loan product",
+    "productDesc": "Select the product that matches your needs.",
+    "productApr": "{rate}% APR · up to {ltv}% LTV",
+    "productCollateral": "Collateral ${min} – ${max}",
+    "selectedHint": "Selected: {name} — review terms before continuing.",
+    "paramsTitle": "Loan parameters",
+    "paramsDesc": "Enter the amount and collateral details for your application.",
+    "loanAmount": "Loan amount (USD)",
+    "loanAmountPlaceholder": "5000",
+    "collateralAsset": "Collateral asset",
+    "loanTerm": "Loan term",
+    "durations": {
+      "6": "6 months",
+      "12": "12 months",
+      "24": "24 months"
+    }
+  },
+  "PayoutForm": {
+    "contactTitle": "Contact details",
+    "contactDesc": "Provide at least one way to reach you.",
+    "telegramWhatsapp": "Telegram or WhatsApp",
+    "telegramPlaceholder": "@username or +1234567890",
+    "phonePlaceholder": "+1 234 567 8900",
+    "methodTitle": "Payout method",
+    "methodDesc": "How should we disburse your loan?",
+    "methods": {
+      "crypto": {
+        "label": "Crypto wallet",
+        "desc": "Send to your on-chain address"
+      },
+      "wire_transfer": {
+        "label": "Wire transfer",
+        "desc": "International SWIFT transfer"
+      },
+      "bank": {
+        "label": "Bank account",
+        "desc": "Domestic ACH or local transfer"
+      }
+    },
+    "cryptoTitle": "Crypto payout",
+    "walletAddress": "Wallet address",
+    "walletPlaceholder": "0x… or your address",
+    "network": "Network",
+    "memo": "Memo / tag",
+    "memoPlaceholder": "Required by some networks",
+    "wireTitle": "Wire transfer details",
+    "bankName": "Bank name",
+    "bankNamePlaceholder": "e.g. Chase, HSBC",
+    "swiftBic": "SWIFT / BIC",
+    "swiftPlaceholder": "CHASUS33",
+    "accountIban": "Account / IBAN",
+    "accountHolder": "Account holder",
+    "reference": "Reference",
+    "bankAccountTitle": "Bank account details",
+    "accountNumber": "Account number",
+    "routingIban": "Routing / IBAN"
+  },
+  "Blockchains": {
+    "BTC": "Bitcoin (BTC)",
+    "ETH": "Ethereum (ETH)",
+    "SOL": "Solana (SOL)",
+    "TRX": "Tron (TRX)",
+    "BNB": "Binance Smart Chain (BNB)",
+    "MATIC": "Polygon Mainnet (MATIC)",
+    "AVAX": "Avalanche C-Chain (AVAX)",
+    "ARB": "Arbitrum One (ARB)",
+    "BASE": "Base (BASE)",
+    "FANTOM": "Fantom (Fantom)",
+    "GNOSIS": "Gnosis Chain (GNOSIS)",
+    "KAVA": "Kava (KAVA)",
+    "POL": "Polkadot (POL)",
+    "SUI": "Sui (SUI)",
+    "OTHER": "Other"
+  },
+  "CollateralAssets": {
+    "BTC": "Bitcoin (BTC)",
+    "ETH": "Ethereum (ETH)",
+    "SOL": "Solana (SOL)",
+    "USDT": "USDT",
+    "USDC": "USDC"
+  },
+  "Networks": {
+    "ethereum": "Ethereum",
+    "polygon": "Polygon",
+    "arbitrum": "Arbitrum",
+    "optimism": "Optimism",
+    "bsc": "BSC",
+    "solana": "Solana",
+    "bitcoin": "Bitcoin"
+  }
+}

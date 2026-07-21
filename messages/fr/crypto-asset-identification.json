@@ -1,59 +1,135 @@
 {
-  "Hero": {
-    "badge": "Services d'Identification des Actifs Crypto",
-    "title1": "Découverte de Cryptomonnaies Cachées et Identification d'Actifs Numériques",
-    "subtitle1": "La localisation et la vérification des avoirs numériques sont devenues une partie cruciale des enquêtes modernes.",
-    "desc1": "Avec l'utilisation croissante des cryptomonnaies dans les activités financières tant légitimes qu'illicites, localiser et vérifier les avoirs numériques est devenu essentiel. Lenix Protocol fournit des services experts d'identification des actifs crypto pour aider les avocats, les enquêteurs et les professionnels de la finance à tracer, documenter et valider la richesse numérique, même lorsqu'elle a été délibérément dissimulée.",
-    "desc2": "Notre équipe utilise des outils blockchain de pointe et des méthodologies forensiques pour effectuer un traçage complet des cryptomonnaies, y compris la localisation de portefeuilles, l'analyse de l'historique des transactions et l'identification des bourses potentielles ou des rampes de sortie utilisées pour déplacer des fonds.",
-    "btn_consultation": "Demander une Consultation Aujourd'hui"
+  "meta": {
+    "title": "Identification d'actifs crypto | Lenix Protocol",
+    "description": "Localiser, tracer et documenter des avoirs en cryptomonnaie pour litiges, successions et exécution. Méthodologie forensique avec périmètre et livrables clairs."
   },
-  "Coverage": {
-    "title": "Ce que Couvrent nos Services d'Identification",
-    "desc": "Nos enquêtes sont adaptées pour soutenir les affaires civiles, pénales et réglementaires impliquant :",
-    "card1_title": "Divorce et litiges en droit de la famille",
-    "card1_desc": "Impliquant des actifs crypto cachés.",
-    "card2_title": "Fraude, vol et détournement de fonds",
-    "card2_desc": "Cas avec des composantes de monnaie numérique.",
-    "card3_title": "Enquêtes internes en entreprise",
-    "card3_desc": "Impliquant des fonds détournés.",
-    "card4_title": "Planification successorale et successions",
-    "card4_desc": "Avec des actifs inconnus ou non déclarés.",
-    "card5_title": "Faillite ou exécution de jugement",
-    "card5_desc": "Nécessitant une identification des actifs.",
-    "footer": "Lenix Protocol travaille avec les conseils des demandeurs et des défendeurs, et sert d'expert neutre dans le partage et l'évaluation des actifs."
+  "Hero": {
+    "eyebrow": "Identification d'actifs crypto",
+    "title1": "Documenter des avoirs numériques ",
+    "title2": "que d'autres n'ont pas déclarés",
+    "subtitle": "Pour avocats, enquêteurs et professionnels financiers qui doivent localiser, tracer et vérifier des cryptomonnaies en litige, succession ou exécution — avec une méthodologie conçue pour résister à l'examen.",
+    "btn_primary": "Lancer l'examen",
+    "btn_secondary": "Contacter l'équipe"
+  },
+  "Audiences": {
+    "eyebrow": "À qui s'adresse ce service",
+    "title": "Dossiers que nous traitons couramment",
+    "description": "L'identification est limitée aux enquêtes juridiques, réglementaires ou internes autorisées — pas à des recherches ouvertes sur des tiers non concernés.",
+    "cards": {
+      "family": {
+        "title": "Droit de la famille et divorce",
+        "desc": "Partage d'actifs lorsqu'une partie peut détenir des portefeuilles non déclarés, comptes d'échange ou avoirs on-chain absents des déclarations financières."
+      },
+      "fraud": {
+        "title": "Fraude et détournement",
+        "desc": "Affaires civiles ou pénales impliquant des fonds numériques détournés — traçage depuis des portefeuilles sources connus ou comptes compromis."
+      },
+      "estate": {
+        "title": "Succession et probate",
+        "desc": "Exécuteurs testamentaires ou conseil localisant des cryptomonnaies détenues par un défunt mais non documentées — à partir d'appareils, dossiers ou indices partiels."
+      },
+      "enforcement": {
+        "title": "Faillite et exécution",
+        "desc": "Créanciers, syndics ou régulateurs identifiant des actifs crypto saisissables et points de contact avec les exchanges pour un débiteur ou une personne visée."
+      }
+    }
   },
   "Methods": {
-    "title": "Méthodes de Traçage de Cryptomonnaies",
-    "card1_title": "Identification de portefeuilles blockchain",
-    "card1_desc": "Et analyse de liaison.",
-    "card2_title": "Surveillance des transactions",
-    "card2_desc": "Sur les blockchains publiques et privées.",
-    "card3_title": "Vérification de la propriété de NFT",
-    "card3_desc": "Et suivi des transferts.",
-    "card4_title": "Identification des comptes de bourses",
-    "card4_desc": "Et des rampes de sortie de transactions.",
-    "card5_title": "Recoupement des métadonnées",
-    "card5_desc": "Et preuves de dispositifs pour l'attribution des portefeuilles.",
-    "footer": "Notre travail d'identification des actifs numériques est mené selon des techniques forensiques saines qui préservent l'intégrité des preuves pour une utilisation en justice."
+    "eyebrow": "Ce que nous traçons",
+    "title": "Périmètre d'identification et d'analyse",
+    "description": "Le travail combine analyse on-chain et éléments probants du dossier — pas des consultations blockchain isolées.",
+    "columns": {
+      "linkage": {
+        "title": "Identification de portefeuilles",
+        "desc": "Relier des adresses blockchain aux personnes visées via motifs transactionnels, clustering et recoupement avec appareils, finances ou témoignages."
+      },
+      "flows": {
+        "title": "Analyse des flux transactionnels",
+        "desc": "Suivre les mouvements de fonds entre chaînes et couches — y compris usage visible de mixers, transferts via bridges et points de consolidation à documenter."
+      },
+      "attribution": {
+        "title": "Attribution exchange et NFT",
+        "desc": "Identifier dépôts custodial probables, off-ramps et avoirs NFT liés au dossier lorsque les données on-chain et les indices le permettent."
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Pourquoi Choisir Lenix Protocol ?",
-    "desc": "Chez Lenix Protocol, nos services d'identification aident à exposer toute l'étendue de la situation financière d'un sujet dans un monde numérique. Du traçage de pièces perdues ou volées à l'identification de portefeuilles non déclarés, nous aidons les clients à trouver ce que d'autres espéraient cacher.",
-    "point1_title": "Expertise prouvée",
-    "point1_desc": "En traçage de cryptomonnaies et forensique blockchain.",
-    "point2_title": "Expérience en actifs cachés",
-    "point2_desc": "À travers divers domaines juridiques.",
-    "point3_title": "Témoignage d'expert qualifié",
-    "point3_desc": "Dans les juridictions étatiques, fédérales et internationales.",
-    "point4_title": "Rapports clairs et défendables",
-    "point4_desc": "Adaptés pour le litige ou la conformité."
+  "Boundaries": {
+    "eyebrow": "Périmètre et limites",
+    "title1": "Ce que l'identification peut montrer — ",
+    "title2": "et ce qu'elle ne peut pas",
+    "subtitle": "Les données blockchain publiques ont des limites. Lenix cadre chaque mission selon l'accès légal, les indices disponibles et ce qui peut être étayé dans un rapport.",
+    "items": {
+      "legal_basis": {
+        "title": "Dossiers autorisés uniquement",
+        "desc": "Nous acceptons des dossiers avec base juridique, réglementaire ou d'enquête interne — pas de traçage spéculatif de personnes ou adresses non concernées."
+      },
+      "chain_limits": {
+        "title": "On-chain n'est pas la totalité",
+        "desc": "Soldes en comptes custodial ou cold storage non déclaré peuvent exiger des démarches juridiques distinctes au-delà de l'analyse du registre public."
+      },
+      "evidence": {
+        "title": "Intégrité forensique",
+        "desc": "Méthodes et traitement des données documentés pour examen par conseil, cadre réglementaire ou tribunal — avec chaîne de custody préservée."
+      },
+      "neutral": {
+        "title": "Capacité neutre disponible",
+        "desc": "Lenix peut soutenir le conseil du demandeur, la défense ou agir comme expert indépendant en partage d'actifs et litiges d'évaluation."
+      },
+      "no_guarantee": {
+        "title": "Aucune garantie d'exhaustivité",
+        "desc": "L'identification est limitée par les indices fournis, la visibilité on-chain et l'accès légal. Nous indiquons ce qui est et n'est pas récupérable des données disponibles."
+      },
+      "disclosure": {
+        "title": "Divulgation contrôlée",
+        "desc": "Les conclusions ne sont partagées qu'avec les parties autorisées dans le cadre de la mission — pas diffusées ni utilisées hors du périmètre défini."
+      }
+    }
   },
-  "CTA": {
-    "title": "Contactez-nous",
-    "title_highlight": "aujourd'hui",
-    "desc_part1": "Appelez-nous aujourd'hui au",
-    "desc_part2": "pour discuter de vos besoins d'identification d'actifs crypto et découvrir comment Lenix Protocol peut soutenir votre dossier.",
-    "email_label": "Envoyer un e-mail à l'équipe",
-    "phone_label": "Appeler notre bureau"
+  "Process": {
+    "eyebrow": "Comment ça fonctionne",
+    "title": "De la prise en charge aux conclusions documentées",
+    "description": "Un parcours structuré pour conseil et enquêteurs — le périmètre est fixé avant le début de l'analyse.",
+    "step_label": "Étape {number}",
+    "steps": {
+      "intake": {
+        "title": "Définir le périmètre",
+        "desc": "Type de dossier, parties, adresses connues, appareils ou dossiers financiers, et les questions que l'identification doit résoudre."
+      },
+      "trace": {
+        "title": "Tracer et analyser",
+        "desc": "Liaison de portefeuilles, cartographie des flux et analyse des points de contact exchange avec données on-chain recoupées aux éléments du dossier."
+      },
+      "report": {
+        "title": "Livrer les conclusions",
+        "desc": "Analyse écrite avec chronologies et section méthodologique — adaptée à la stratégie contentieuse, la conformité ou une procédure juridique ultérieure."
+      }
+    },
+    "btn_primary": "Lancer l'examen",
+    "btn_secondary": "Parler à l'équipe"
+  },
+  "Deliverables": {
+    "eyebrow": "Ce que vous recevez",
+    "title": "Livrables conçus pour le juridique et la conformité",
+    "description": "Les livrables sont adaptés au dossier — pas des captures blockchain génériques.",
+    "items": {
+      "timeline": {
+        "title": "Chronologie transactionnelle",
+        "desc": "Flux daté des mouvements pertinents avec cartes de liaison montrant comment les adresses identifiées se rattachent au dossier."
+      },
+      "report": {
+        "title": "Analyse écrite",
+        "desc": "Méthodologie, conclusions et limites documentées pour examen par conseil — avec séparation claire entre fait et inférence."
+      },
+      "testimony": {
+        "title": "Appui d'expert",
+        "desc": "Témoignage d'expert ou analyse complémentaire disponible selon juridiction, termes de mission et besoins du dossier."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Localiser des crypto non déclarées dans un dossier ?",
+    "subtitle": "Partagez le contexte et les indices dont vous disposez. Nous préciserons le travail d'identification réaliste avant un engagement cadré.",
+    "btn_primary": "Lancer l'examen",
+    "btn_secondary": "Contacter l'équipe"
   }
 }

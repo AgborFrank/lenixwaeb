@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Crypto Compliance Investigations | Lenix Protocol",
+    "description": "AML and compliance investigation workflows for tracing crypto flows, documenting findings, and supporting SAR and escalation processes — with clear scope on what on-chain review can show."
+  },
+  "Hero": {
+    "badge": "Compliance investigations",
+    "title1": "Investigate crypto flows ",
+    "title2": "with documented findings",
+    "subtitle": "Trace transactions across supported networks, review wallet exposure, and export structured analysis for compliance escalations — without overstating what public ledger data alone can prove.",
+    "btn_primary": "Contact team",
+    "btn_secondary": "View capabilities"
+  },
+  "Overview": {
+    "title": "Built for compliance and investigation teams",
+    "description": "Lenix supports AML reviews, enhanced due diligence, and internal investigations with trace workflows, risk context, and report outputs your team can attach to case files — not vanity dashboards with unverifiable metrics."
+  },
+  "Features": {
+    "pillars": {
+      "tracing": {
+        "label": "Cross-network tracing",
+        "title": "Follow flows across chains and assets",
+        "body": "Map fund movement from a known wallet or transaction through bridges, swaps, and exchange deposits where visible on-chain. Outputs include timelines and hop-by-hop notes suitable for SAR preparation or internal escalation."
+      },
+      "workflow": {
+        "label": "Investigation workflow",
+        "title": "From alert to documented review",
+        "body": "Start from a flagged address or transaction hash and build a case view linking related wallets, entities, and behaviors. Findings can be shared internally with audit-friendly notes on methodology and limits."
+      },
+      "diligence": {
+        "label": "Due diligence",
+        "title": "Review addresses before you move funds",
+        "body": "Screen counterparty wallets and historical flows for exposure to known risky categories — scams, sanctions-related touchpoints, and high-risk services — scoped to your policy rules, not a generic score alone."
+      },
+      "monitoring": {
+        "label": "Ongoing monitoring",
+        "title": "Watchlists and activity alerts",
+        "body": "Configure address lists and receive notifications when new activity matches your criteria. Monitoring supports recurring compliance reviews — alert volume and coverage depend on engagement terms and supported networks."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Need compliance investigation support?",
+    "description": "Describe your team, regulatory context, and what you need from tracing or screening. We outline realistic scope before engagement.",
+    "btn_primary": "Contact team",
+    "btn_secondary": "Threat intelligence"
+  }
+}

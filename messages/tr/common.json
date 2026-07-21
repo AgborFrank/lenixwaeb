@@ -1,14 +1,15 @@
 {
   "Header": {
     "nav": {
-      "giveaway": "250K Çekiliş",
+      "giveaway": "Topluluk",
       "about": "Hakkında",
       "solutions": "Çözümler",
       "blockchain_forensics": "Adli Analiz",
       "asset_recovery": "Varlık Kurtarma",
       "crypto_recovery": "Kripto Kurtarma",
       "contact": "İletişim",
-      "airdrop": "Airdrop"
+      "airdrop": "Airdrop",
+      "banking_finance": "Banking & Finance"
     },
     "solutions": {
       "wallet": {
@@ -30,6 +31,10 @@
       "enforcement": {
         "title": "Kolluk Kuvvetleri",
         "desc": "Kurumlar için istihbarat araçları."
+      },
+      "banking_finance": {
+        "title": "Banking & Finance",
+        "desc": "Transfers, liquidation, lending, and custody."
       }
     },
     "user_menu": {
@@ -46,13 +51,13 @@
       "sign_out": "Çıkış Yap"
     },
     "buttons": {
-      "log_in": "Giriş Yap",
-      "log_in_sign_up": "Giriş / Kayıt",
-      "get_reward": "50 USDT Al"
+      "log_in": "Giriş",
+      "log_in_sign_up": "Giriş",
+      "get_reward": "Hesap"
     }
   },
   "Footer": {
-    "company_desc": "Kripto-banka ödemeleri ve varlık kurtarma için L1 protokolü. Ölçeklenebilirlik ve güvenlik için yapay zeka kullanır.",
+    "company_desc": "Blockchain adli analiz, varlık kurtarma ve kripto finans altyapısı. İzleme, saklama ve sınır ötesi ödemeler için denetlenmiş protokol.",
     "headings": {
       "about": "HAKKINDA",
       "solutions": "ÇÖZÜMLER",
@@ -77,10 +82,12 @@
       "privacy": "Gizlilik",
       "disclaimer": "Sorumluluk Reddi",
       "wallet_decryption": "Cüzdan Şifre Çözme",
-      "crypto_asset_identification": "Kripto Varlık Tanımlama"
+      "crypto_asset_identification": "Kripto Varlık Tanımlama",
+      "security": "Güvenlik",
+      "banking_finance": "Banking & Finance"
     },
     "buttons": {
-      "recover_assets": "Varlıkları Kurtar"
+      "recover_assets": "Kurtar"
     },
     "certification_desc": "ISO27001 sertifikalı. Verileri uluslararası standartlara göre güvenli yönetiyoruz.",
     "copyright": "© 2017 - 2026 Lenix Protocol, Tüm Hakları Saklıdır."
@@ -106,56 +113,70 @@
   },
   "Home": {
     "Hero": {
-      "title1": "Blockchain ",
-      "title2": "Adli Analizi",
-      "title3": ",\nKripto Güvenlik ve Kurtarma Protokolü.",
-      "subtitle1": "Varlıkları izlemek, dolandırıcılığı ortaya çıkarmak ve küresel olarak yasal kurtarma çabalarını desteklemek için gelişmiş blockchain analitiği ve adli soruşturmalar.",
-      "subtitle2": "Dijital geleceğinizi uzman soruşturmasıyla güvence altına alın.",
-      "btn_signup": "Lenix'e Kayıt Ol",
-      "btn_login": "Giriş Yap",
-      "widget_title": "Şimdi Satın Al",
-      "widget_subtitle": "Fiyat Yükselmeden Önce",
-      "usd_raised": "ŞİMDİYE KADAR TOPLANAN USD:",
-      "tokens_sold": "Satılan Tokenlar:",
-      "price_usd": "USD Fiyatı: ${price}",
-      "price_eth": "ETH Fiyatı: {price} ETH",
-      "pay_eth": "Ödediğiniz ETH",
-      "pay_usdt": "Ödediğiniz USDT",
-      "pay_usd": "Ödediğiniz USD",
-      "receive_lnx": "Alacağınız $LNX",
-      "btn_processing": "İşleniyor...",
-      "btn_pay_eth": "ETH ile Öde",
-      "btn_pay_usdt": "USDT ile Öde",
-      "btn_pay_card": "Kart bilgilerini aşağıya girin",
-      "card_info": "Stripe tarafından desteklenmektedir. Tutar USD olarak tahsil edilir.",
-      "btn_connect": "Cüzdanı Bağla",
-      "btn_giveaway": "500 USD Çekilişine Katıl",
-      "giveaway_info": "Çekilişle 500 USD değerinde LNX token kazanın"
-    },
-    "Pillars": {
-      "title1": "Güvenlik, kurtarma, adli analiz ve finans ",
-      "title2": "tek bir yerde",
-      "subtitle": "İhtiyacınız olanı seçin – her bir sütun özel çözümlere yönlendirir.",
-      "cards": {
-        "security": {
-          "title": "Blockchain Güvenliği",
-          "desc": "Varlıklarınızı korumak için denetlenmiş altyapı và güvenli kasa teknolojisi.",
-          "cta": "Güvenliği keşfedin"
-        },
+      "slides": {
         "recovery": {
-          "title": "Varlık Kurtarma",
-          "desc": "Sertifikalı adli analiz ile kayıp veya çalınan kriptoları geri almak için özel protokoller ve yasal yollar.",
-          "cta": "Kurtarmayı başlat"
+          "title1": "Blockchain forensics and recovery ",
+          "title2": "for stolen digital assets",
+          "title3": ".",
+          "subtitle1": "Lenix traces funds across chains and prepares evidence packages for exchanges, regulators, and counsel.",
+          "subtitle2": "We do not promise recovery. We tell you what the chain shows and what paths may exist before you commit.",
+          "btn_primary": "Start a recovery case",
+          "btn_secondary": "Contact our team"
         },
         "forensics": {
-          "title": "Blockchain Adli Analizi",
-          "desc": "Dolandırıcılığı, hackleri izlemek ve yasal kurtarma için mahkemede kabul edilebilir kanıtlar sağlamak üzere uzman soruşturması.",
-          "cta": "Daha fazla bilgi al"
+          "title1": "Investigation-grade ",
+          "title2": "blockchain forensics",
+          "title3": ".",
+          "subtitle1": "Map wallet flows, screen exposure, and produce documented findings for compliance teams and legal review.",
+          "subtitle2": "Built for case work—not generic dashboards with overstated attribution claims.",
+          "btn_primary": "View forensics",
+          "btn_secondary": "Contact our team"
+        },
+        "banking": {
+          "title1": "Cross-Border Financial Services, ",
+          "title2": "Payment and Remittance",
+          "title3": ".",
+          "subtitle1": "Send Funds across borders, cash out crypto to fiat, borrow against collateral, and hold assets in Lenix custody.",
+          "subtitle2": "You work with Lenix directly—rates, fees, and delivery status visible before you confirm.",
+          "btn_primary": "Create account",
+          "btn_secondary": "Banking & finance"
+        },
+        "settlement": {
+          "title1": "Crypto-to-fiat settlement ",
+          "title2": "your treasury can audit",
+          "title3": ".",
+          "subtitle1": "Convert crypto to fiat on supported corridors with quoted rates, fees, and handoff tracking through bank delivery.",
+          "subtitle2": "Finance and ops see status at each step—not a single pending flag with no context.",
+          "btn_primary": "Open banking services",
+          "btn_secondary": "Contact our team"
+        }
+      },
+      "btn_login": "Giriş"
+    },
+    "Pillars": {
+      "title1": "Tek protokol, ",
+      "title2": "dört iş akışı",
+      "subtitle": "Durumunuza uygun giriş noktasını seçin. Her yolun özel araçları ve net bir sonraki adımı vardır.",
+      "cards": {
+        "security": {
+          "title": "Blockchain güvenliği",
+          "desc": "On-chain güvenli varlık tutması gereken ekipler için denetlenmiş vault'lar, multi-sig saklama ve izleme.",
+          "cta": "Güvenlik"
+        },
+        "recovery": {
+          "title": "Varlık kurtarma",
+          "desc": "Kripto kaybolduğunda, çalındığında veya takıldığında izleme, borsa koordinasyonu ve hukuki yollar.",
+          "cta": "Recovery başlat"
+        },
+        "forensics": {
+          "title": "Blockchain adli bilişim",
+          "desc": "Uyum ekipleri ve hukuki inceleme için cüzdan düzeyinde soruşturmalar ve işlem haritalama.",
+          "cta": "Forensics"
         },
         "finance": {
-          "title": "Finansal Hizmetler Protokolü",
-          "desc": "Modern kripto ekosistemi için ödemeler, borç verme, cüzdan ve kasa.",
-          "cta": "Çözümleri görüntüle"
+          "title": "Finansal hizmetler",
+          "desc": "Değer taşımak ve tutmak için kripto-fiat ödemeler, lending, cüzdan ve vault araçları.",
+          "cta": "Çözümler"
         }
       }
     },
@@ -169,61 +190,63 @@
       "card4": "Kripto'dan Kripto'ya Transferler"
     },
     "Merchant": {
-      "widget_alert": "B Shaw'dan Fatura Ödeme Uyarısı",
+      "widget_alert": "B Shaw'dan fatura ödeme uyarısı",
       "widget_req": "ÖDEME TALEBİ",
-      "widget_verified": "DOĞRULANMIŞ ÖDEME BAĞLANTISI",
-      "widget_receipt": "İŞLEM MAKBUZU ŞURAYA GÖNDERİLECEKTİR: ",
+      "widget_verified": "DOĞRULANMIŞ ÖDEME LİNKİ",
+      "widget_receipt": "İŞLEM MAKBUZU GÖNDERİLECEK: ",
       "widget_wallet": "Cüzdan adresi",
       "widget_order": "SİPARİŞ",
       "widget_gas": "GAS ÜCRETİ",
-      "btn_complete": "Ödemeyi tamamla",
+      "btn_complete": "Öde",
       "btn_manual": "Manuel öde",
-      "title1": "İşletmeler İçin: kripto kabul edin, ",
-      "title2": "koruyun",
-      "title3": " kasada; gerekirse kurtarın.",
-      "point1": "Kripto kabul edin ve fiat olarak çekin. Satıcılar için basit ödeme ve API.",
-      "point2": "Kazançları çoklu imza và saklama özellikli güvenli kasamızda tutun – denetlenmiş altyapı.",
-      "point3": "Fonlar kaybolursa veya çalınırsa, ekibimiz kurtarma và yasal kanallar aracılığıyla izleme ve geri alma konusunda yardımcı olabilir.",
-      "point4_1": "Çözümleri keşfedin",
+      "title1": "Satıcı altyapısı, ",
+      "title2": "entegre kurtarma ile",
+      "title3": ".",
+      "point1": "Checkout akışları ve satıcı API'leriyle kripto kabul edin ve fiat'ta settle edin.",
+      "point2": "Geliri multi-sig kontrollü denetlenmiş vault saklaması üzerinden yönlendirin.",
+      "point3": "Settlement sonrası bir sorun olursa, aynı protokol izleme ve kurtarma iş akışlarını destekler.",
+      "point4_1": "Çözümler",
       "point4_2": " veya ",
-      "point4_3": "bir kurtarma davası başlatın",
-      "point4_4": "."
+      "point4_3": "Recovery başlat",
+      "point4_4": ".",
+      "mock_brand": "Lenix Satıcı",
+      "image_alt": "Lenix satıcı ve uyum operasyonları paneli"
     },
     "Payment": {
-      "badge": "Neler sunuyoruz",
-      "title": "Ödemeler, Kasa, Kurtarma ve Borç Verme için Protokol",
-      "subtitle": "Değeri nasıl taşıdığınız, tuttuğunuz ve kurtardığınız için tek bir teknoloji yığını.",
+      "badge": "Protocol stack",
+      "title": "Move, hold, and recover value on one layer",
+      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
       "cards": {
         "fiat": {
-          "title": "Kriptodan fiata",
-          "desc": "Kripto gönderin và yerel ödeme ağları üzerinden fiat olarak çekin – sınır ötesi ve günlük."
+          "title": "Crypto-to-fiat",
+          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
         },
         "vault": {
-          "title": "Kasa ve saklama",
-          "desc": "Varlıklarınızın korunması için çoklu imza và güvenli saklama."
+          "title": "Vault and custody",
+          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
         },
         "recovery": {
-          "title": "Kurtarma ve adli analiz",
-          "desc": "İşler ters gittiğinde, fonları izlemeye ve geri almaya yardımcı oluyoruz."
+          "title": "Recovery and forensics",
+          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
         },
         "lending": {
-          "title": "Borç Verme",
-          "desc": "Teminat karşılığında borç alın và ihtiyacınız olduğunda likiditeye erişin."
+          "title": "Lending",
+          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
         }
       },
-      "cta": "Tüm çözümleri keşfedin"
+      "cta": "Çözümler"
     },
     "TokenDetails": {
-      "title1": "Lenix Protocol ",
-      "title2": "Token Detayları",
-      "subtitle": "Lenix Protocol token'ını cüzdanınıza eklemek için aşağıdaki sözleşme bilgilerini kullanın.",
+      "title1": "Lenix Protocol",
+      "title2": " Token Details",
+      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
       "headers": {
-        "contract": "Sözleşme Adresi",
-        "name": "Token Adı",
-        "symbol": "Token Sembolü",
-        "supply": "Token Arzı",
-        "network": "Ağ",
-        "decimals": "Ondalıklar"
+        "contract": "Contract Address",
+        "name": "Token Name",
+        "symbol": "Token Symbol",
+        "supply": "Token Supply",
+        "network": "Network",
+        "decimals": "Decimals"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -231,35 +254,1158 @@
       }
     },
     "Credibility": {
-      "title1": "Detaylarıyla ",
-      "title2": "Lenix Protocol",
-      "subtitle1": "CertiK tarafından denetlenmiştir. Güvenle inşa edilmiştir.",
-      "subtitle2_1": "Denetimlerimiz tüm teknoloji yığınını kapsar. Detaylar için ",
-      "subtitle2_2": "Whitepaper",
-      "subtitle2_3": "'ı và CertiK raporunu okuyun.",
-      "col1_text": "Lenix Protocol, dünyanın önde gelen blockchain güvenlik firması CertiK tarafından tamamen denetlenmiştir.",
-      "col1_btn": "CertiK Denetimini Görüntüle",
-      "col2_text": "Tam raporu okuyun và teknolojimiz ile token ekonomimiz hakkında daha derin bir bakış için whitepaper'ımızı keşfedin.",
+      "eyebrow": "Doğrulama",
+      "title1": "Denetlenmiş kod. ",
+      "title2": "Belgelendirilmiş kontroller.",
+      "subtitle1": "CertiK tarafından incelenen akıllı sözleşmeler ve ISO 27001 uyumlu operasyonlar—pazarlama iddialarından fazlasını isteyen ekipler için.",
+      "subtitle2_1": "Okuyun: ",
+      "subtitle2_2": "whitepaper",
+      "subtitle2_3": " ve mimari, token faydası ve güvenlik kontrolleri için denetim belgeleri.",
+      "col1_text": "Lenix Protocol akıllı sözleşmeleri CertiK tarafından incelendi. Denetim, üretim akışlarında kullanılan temel protokol bileşenlerini kapsar.",
+      "col1_btn": "Güvenlik docs",
+      "col2_text": "Whitepaper, kurtarma, saklama ve ödeme modüllerinin nasıl bağlandığını—ve LNX'in protokol tasarımındaki yerini açıklar.",
       "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Kazanma Şansı İçin Yarışmamıza Katılın ",
-      "title2": "250K USD",
-      "subtitle": "Lenix Protocol'ün 250.000 USD'lik çekilişine katılın! On kazananın her biri 25.000 USD değerinde LNX token alacak. Paylaşarak ve tüm görevleri tamamlayarak bonus girişlerle şansınızı artırın. Bu fırsatı kaçırmayın - şimdi katılın!",
-      "btn": "Yarışmaya Şimdi Katıl!"
+      "title1": "Community ",
+      "title2": "giveaway",
+      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "btn": "Topluluk"
     },
     "Features": {
       "wallet": "Lenix Protocol Cüzdanı",
       "recipient": "Alıcıyı Girin",
       "bank_details": "Banka Hesap Bilgileri",
       "iban": "IBAN",
-      "btn_connect": "Cüzdanı Bağla ve Öde",
-      "btn_manual": "Manuel Öde",
+      "btn_connect": "Bağlan",
+      "btn_manual": "Manuel öde",
       "title_small": "Neden Lenix ProtocolPay?",
       "title_big": "Kriptoyu dünya genelinde yerel ödeme ağlarıyla buluşturuyoruz.",
       "desc1": "Lenix ProtocolPay, kripto sahiplerine ve işletmelere, yerel ödeme ağlarını ve blok zinciri teknolojisini kullanarak dünya çapında kriptodan fiyata işlemleri kolaylaştırma imkanı sunar.",
       "desc2": "Sonunda, kripto hızıyla fiat ödemelerin günlük rahatlığının tadını çıkarın.",
       "btn_whitepaper": "Whitepaper"
+    },
+    "LnxPurchaseWidget": {
+      "widget_title": "Buy LNX",
+      "widget_subtitle": "Protocol token sale",
+      "usd_raised": "USD raised so far:",
+      "tokens_sold": "Tokens sold:",
+      "price_usd": "USD price: ${price}",
+      "price_eth": "ETH price: {price} ETH",
+      "pay_eth": "ETH you pay",
+      "pay_usdt": "USDT you pay",
+      "pay_usd": "USD you pay",
+      "receive_lnx": "$LNX you receive",
+      "btn_processing": "Processing...",
+      "btn_pay_eth": "Pay with ETH",
+      "btn_pay_usdt": "Pay with USDT",
+      "btn_pay_card": "Kartla öde",
+      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "btn_connect": "Bağlan",
+      "btn_giveaway": "LNX bonus",
+      "giveaway_info": "Connect your wallet to check eligibility."
+    },
+    "TokenSale": {
+      "title1": "LNX ",
+      "title2": "token sale",
+      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+    },
+    "Partners": {
+      "eyebrow": "Ekosistem",
+      "title": "Borsalar, saklama ve ödeme altyapılarıyla çalışmak için tasarlandı",
+      "subtitle": "Lenix, kripto yığınında izleme, kurtarma iş akışları ve settlement altyapısını birbirine bağlar."
+    },
+    "CaseWorkflow": {
+      "eyebrow": "Nasıl çalışır",
+      "title1": "Intake'ten ",
+      "title2": "eyleme dönük kanıta",
+      "subtitle": "Mağdurlar, uyum ekipleri ve avukatlar için yapılandırılmış süreç—belirsiz vaatler değil.",
+      "steps": {
+        "submit": {
+          "title": "Vakanızı gönderin",
+          "desc": "Cüzdan adresleri, işlem hash'leri, zaman çizelgeleri ve neler olduğunu paylaşın. İlk inceleme ücretsizdir."
+        },
+        "trace": {
+          "title": "Akışları izleyin ve haritalayın",
+          "desc": "Değerin nereye ulaştığını belirlemek için fonları zincirler, mixer'lar, köprüler ve borsa yatırımları boyunca takip ederiz."
+        },
+        "deliver": {
+          "title": "Kanıt teslim edin",
+          "desc": "Borsa uyum masaları, düzenleyiciler veya avukatlar için formatlanmış belgelenmiş bulgular alırsınız."
+        }
+      },
+      "btn_primary": "Vaka aç",
+      "btn_secondary": "Analistle konuş",
+      "step_label": "Adım {number}"
+    },
+    "TrustSignals": {
+      "eyebrow": "Operasyon standartları",
+      "title1": "Güvenin ",
+      "title2": "önemli olduğu vakalar için",
+      "subtitle": "Kurtarma dolandırıcıların hedefidir. Lenix, mağdurları ve kurumları korumak için ciddi firmaların uyguladığı yöntemleri izler.",
+      "items": {
+        "no_fees": {
+          "title": "Ön ödemeli kilit açma ücreti yok",
+          "desc": "Fonlarınızı serbest bırakmak, kilidini açmak veya transfer etmek için peşin ödeme istemiyoruz."
+        },
+        "no_seed": {
+          "title": "Asla seed phrase istemeyiz",
+          "desc": "Uzaktan erişim yok, özel anahtar yok, kurtarma ifadesi talebi yok—asla."
+        },
+        "no_custody": {
+          "title": "Varlıklarınızı tutmuyoruz",
+          "desc": "Lenix kanıt hazırlar ve yolları koordine eder. Cüzdanınızın saklayıcısı değiliz."
+        },
+        "honest": {
+          "title": "Dürüst vaka değerlendirmesi",
+          "desc": "İz tükendiyse veya kurtarma olası değilse, ücretli taahhütten önce söyleriz."
+        },
+        "audited": {
+          "title": "Denetlenmiş protokol yığını",
+          "desc": "CertiK tarafından incelenen akıllı sözleşmeler. ISO 27001 kontrolleriyle uyumlu operasyonlar."
+        },
+        "chains": {
+          "title": "Çoklu zincir kapsamı",
+          "desc": "İzleme iş akışları büyük EVM ağlarını ve hırsızlık vakalarında yaygın varlık türlerini destekler."
+        }
+      },
+      "image_alt": "Analist blockchain soruşturma paneli ve işlem kanıtlarını inceliyor"
+    },
+    "CaseStudy": {
+      "eyebrow": "Vaka örneği",
+      "title1": "Çalıntı fonlar ",
+      "title2": "merkezi bir borsaya ulaştığında",
+      "subtitle": "Anonimleştirilmiş örnek. Tanımlayıcılar değiştirildi. Süreç temsilidir—kurtarma garantisi değildir.",
+      "situation": {
+        "label": "Durum",
+        "text": "Bir iş cüzdanı USDC'yi bir oltalama sözleşmesine gönderdi. Saatler içinde fonlar iki ara cüzdan üzerinden büyük bir borsaya yatırıldı."
+      },
+      "action": {
+        "label": "Lenix'in yaptığı",
+        "text": "Tam işlem yolunu haritaladık, yatırma adresini etiketledik ve borsa uyum ekibi için işlem grafikleri ve zaman çizelgesi içeren kanıt paketi hazırladık."
+      },
+      "outcome": {
+        "label": "Sonuç",
+        "text": "Borsa uyum masası başvuruyu kabul etti. Fonlar inceleme beklerken donduruldu. Hukuk danışmanları paralel adımlar için aynı belgeleri aldı."
+      },
+      "disclaimer": "Sonuçlar vaka, yargı alanı ve borsa yanıt süresine göre değişir. Bu örnek Lenix'in izi nasıl belgelediğini gösterir—her vaka kurtarmayla bitmez.",
+      "image_alt": "Cüzdanlar ve borsalar arasında fon akışını gösteren işlem izleme paneli"
+    },
+    "Cta": {
+      "title": "Vaka açmaya hazır mısınız?",
+      "subtitle": "Ne olduğunu ve sahip olduğunuz on-chain ayrıntıları paylaşın. İzleme ve kurtarma yollarının olup olmadığı konusunda dürüst bir değerlendirme yaparız.",
+      "btn_primary": "Vaka aç",
+      "btn_secondary": "Ekiple iletişim"
+    }
+  },
+  "Security": {
+    "meta": {
+      "title": "Güvenlik ve Denetimler | Lenix Protocol",
+      "description": "CertiK akıllı sözleşme denetimleri, ISO 27001 uyumlu operasyonlar ve Lenix adli bilişim ve kurtarma altyapısı için güvenlik kontrolleri."
+    },
+    "hero": {
+      "eyebrow": "Güvenlik",
+      "title1": "Denetlenmiş protokol. ",
+      "title2": "Belgelendirilmiş kontroller.",
+      "subtitle": "Lenix, hassas kurtarma ve saklama iş akışlarını yöneten ekipler için üçüncü taraf akıllı sözleşme incelemesini operasyonel güvenlik uygulamalarıyla birleştirir."
+    },
+    "audit": {
+      "title": "CertiK audit kapsamı",
+      "desc": "Üretim akışlarındaki temel sözleşmeler CertiK tarafından incelendi. Denetim kapsamı dağıtım açısından kritik bileşenleri ve bilinen saldırı yüzeylerini kapsar.",
+      "certik_text": "CertiK, Lenix akıllı sözleşmelerini yaygın güvenlik açıkları, erişim kontrolü ve token/vault akışlarındaki mantık hataları açısından inceledi.",
+      "certik_link": "Güvenlik docs",
+      "items": {
+        "contracts": {
+          "title": "Sözleşme inceleme kapsamı",
+          "desc": "Canlı ödeme ve saklama yollarında kullanılan token satışı, vault ve protokol modülleri."
+        },
+        "access": {
+          "title": "Erişim kontrolü",
+          "desc": "Rol tabanlı izinler, multi-sig gereksinimleri ve uygun olduğunda yükseltme yolları."
+        },
+        "monitoring": {
+          "title": "Sürekli izleme",
+          "desc": "Üretim dağıtımları anormal sözleşme etkileşimleri ve operasyonel uyarılar için izlenir."
+        }
+      },
+      "eyebrow": "Smart contract"
+    },
+    "iso": {
+      "title": "ISO 27001 uyumlu operasyonlar",
+      "desc": "Lenix Protocol, müşteri verileri, soruşturma materyalleri ve dahili sistemler için ISO 27001 ile uyumlu bilgi güvenliği yönetimi uygulamalarını sürdürür."
+    },
+    "practices": {
+      "data": {
+        "title": "Veri işleme",
+        "desc": "Vaka materyalleri erişim kontrolleriyle saklanır. Soruşturma verileri yalnızca yetkili taraflarla paylaşılır."
+      },
+      "incident": {
+        "title": "Olay müdahalesi",
+        "desc": "Müşteri verilerini, protokol altyapısını veya soruşturma iş akışlarını etkileyen güvenlik olayları için tanımlı prosedürler."
+      },
+      "custody": {
+        "title": "Saklama sınırları",
+        "desc": "Lenix kanıt hazırlar ve yolları koordine eder. Müşteri cüzdan anahtarlarını veya seed ifadelerini saklamayız."
+      },
+      "eyebrow": "Operasyon",
+      "title": "Hassas işleri nasıl yönetiriz",
+      "description": "Recovery vakaları mağdur verisi ve yüksek riskli akışlar içerir. Sınırlarımız bunlar.",
+      "image_alt": "Ops ekibi protokol aktivitesi ve güvenlik uyarılarını izliyor"
+    },
+    "cta": {
+      "title": "Dokümantasyon mu lazım?",
+      "subtitle": "Audit özetleri, ISO detayları veya kurumsal incelemeler için ekiple iletişime geçin.",
+      "btn_primary": "Recovery başlat",
+      "btn_secondary": "Güvenlik ekibi"
+    },
+    "assurance": {
+      "eyebrow": "Doğrulama",
+      "title": "Gösterebileceklerimiz",
+      "description": "Bağımsız sözleşme incelemesi ve belgelenmiş operasyon kontrolleri — kanıtsız iddia yok.",
+      "iso_link": "Lenix hakkında"
+    }
+  },
+  "AccountSidebar": {
+    "sections": {
+      "account": "Hesap",
+      "wallet": "Cüzdan"
+    },
+    "nav": {
+      "home": "Ana sayfa",
+      "vault": "Blockchain kasası",
+      "lenix_wallet": "Lenix Cüzdanı",
+      "banking": "Kurumsal bankacılık",
+      "recovery_services": "Kurtarma hizmetleri",
+      "crypto_loan": "Kripto kredi",
+      "assets": "Varlıklar",
+      "send": "Gönder",
+      "receive": "Al",
+      "transactions": "İşlemler",
+      "settings": "Ayarlar"
+    },
+    "support": {
+      "need_help": "Yardıma mı ihtiyacınız var?",
+      "contact_support": "Destekle iletişime geçin"
+    },
+    "header": {
+      "menu": "Menü",
+      "verified_user": "Doğrulanmış kullanıcı",
+      "sign_out": "Çıkış yap"
+    },
+    "logo_alt": "Lenix Protocol"
+  },
+  "AccountMobileTabs": {
+    "home": "Ana sayfa",
+    "banking": "Banka",
+    "wallet": "Cüzdan",
+    "loan": "Kredi",
+    "settings": "Ayarlar"
+  },
+  "AccountDashboard": {
+    "status": {
+      "recovery": "Kurtarma dosyası durumu",
+      "banking": "Bankacılık hizmetleri durumu",
+      "loan": "Kredi başvurusu durumu"
+    },
+    "timeline": {
+      "received_title": "Başvuru alındı",
+      "received_desc": "Bilgilerinizi aldık ve inceliyoruz.",
+      "review_title": "İnceleniyor",
+      "review_desc": "Ekibimiz şu anda talebinizi analiz ediyor."
+    },
+    "submitted_details": "Gönderilen detaylar",
+    "service_type": "Hizmet türü",
+    "service_types": {
+      "recovery": "Kurtarma",
+      "banking": "Bankacılık",
+      "loan": "Kredi"
+    },
+    "details_fields": {
+      "name": "Ad",
+      "transaction_hash": "İşlem hash'i",
+      "amount_stolen": "Çalınan tutar",
+      "blockchain": "Blockchain",
+      "currency": "Para birimi",
+      "country_phone_code": "Ülke telefon kodu",
+      "incident_summary": "Olay özeti",
+      "evidence": "Kanıt",
+      "evidence_url": "Kanıt URL'si",
+      "notes": "Notlar",
+      "loan_type_id": "Kredi türü",
+      "collateral_asset": "Teminat varlığı",
+      "duration": "Süre",
+      "loan_amount": "Kredi tutarı",
+      "phone_number": "Telefon numarası",
+      "payout_method": "Ödeme yöntemi"
+    },
+    "support": {
+      "title": "Yardıma mı ihtiyacınız var?",
+      "description": "Destek ekibimiz size yardımcı olmak için 7/24 hazır.",
+      "contact": "Destekle iletişime geçin"
+    }
+  },
+  "AccountVault": {
+    "page": {
+      "title": "Kasam",
+      "subtitle": "Güvence altındaki dijital varlıklarınızı yönetin.",
+      "history": "Geçmiş",
+      "status_active": "Aktif",
+      "status_locked": "Kilitli",
+      "status_no_wallet": "Cüzdan yok",
+      "load_error": "Varlıklar yüklenemedi"
+    },
+    "actions": {
+      "deposit": "Yatır",
+      "withdraw": "Çek",
+      "swap": "Takas",
+      "audit": "Denetle"
+    },
+    "premium": {
+      "title": "Premium koruma alın",
+      "description": "Maksimum güvenlik için Hardware Vault entegrasyonuna yükseltin.",
+      "cta": "Daha fazla bilgi"
+    },
+    "card": {
+      "total_value": "TOPLAM KASA DEĞERİ",
+      "last_synced": "Son senkronizasyon: az önce",
+      "change_24h": "{percent} % (24 sa)",
+      "security_level": "Güvenlik seviyesi",
+      "security_very_high": "Çok yüksek"
+    },
+    "assets": {
+      "title": "Kasa varlıkları",
+      "count_zero": "0 varlık",
+      "count": "{count} varlık",
+      "empty": "Varlık bulunamadı. Başlamak için bir cüzdan bağlayın veya içe aktarın.",
+      "address_copied": "Adres kopyalandı",
+      "chains": {
+        "ethereum": "Ethereum",
+        "bsc": "BSC",
+        "polygon": "Polygon",
+        "evm": "EVM"
+      }
+    },
+    "security": {
+      "title": "Kasa güvenlik durumu",
+      "score_label": "Güvenlik puanı",
+      "items": {
+        "wallet": "Cüzdan",
+        "cold_storage": "Soğuk depolama",
+        "encrypted_vault": "Şifreli kasa",
+        "session": "Oturum"
+      },
+      "status": {
+        "connected": "Bağlı",
+        "not_connected": "Bağlı değil",
+        "active": "Aktif",
+        "unlocked": "Kilidi açık",
+        "locked": "Kilitli",
+        "no_wallet": "Cüzdan yok",
+        "completed": "Tamamlandı"
+      },
+      "unlock": "Kilidi aç",
+      "recent_activity": "Son aktivite",
+      "view_all": "Tümünü gör",
+      "no_activity": "Son aktivite yok",
+      "wallet_connected": "Cüzdan bağlandı",
+      "transaction": "İşlem",
+      "transfer": "{symbol} transferi"
+    },
+    "time": {
+      "just_now": "Az önce",
+      "recently": "Yakın zamanda",
+      "min_ago": "{count} dk önce",
+      "hours_ago": "{count} saat önce",
+      "days_ago": "{count} gün önce"
+    },
+    "drawer": {
+      "connect_wallet": "Cüzdan bağla",
+      "setup_title": "Kasanızı kurun",
+      "setup_description": "Varlıklarınızı güvence altına almak için yeni bir cüzdan oluşturun veya mevcut olanı içe aktarın.",
+      "unlock_vault": "Kasanın kilidini aç",
+      "unlock_description": "Güvence altındaki varlıklarınıza erişmek için şifrenizi girin.",
+      "password_placeholder": "Şifre girin",
+      "unlocking": "Kilit açılıyor...",
+      "unlock": "Kilidi aç",
+      "vault_connected": "Kasa bağlandı",
+      "lenix_wallet": "Lenix Cüzdan",
+      "lock": "Kilitle",
+      "imported_wallets": "İçe aktarılan cüzdanlar",
+      "no_imported": "Henüz içe aktarılmış cüzdan yok.",
+      "import_wallet": "Cüzdan içe aktar",
+      "wallet_name_label": "Cüzdan adı (isteğe bağlı)",
+      "wallet_name_placeholder": "MetaMask'ım",
+      "import_type_label": "İçe aktarma türü",
+      "seed_phrase": "Kurtarma ifadesi",
+      "private_key": "Özel anahtar",
+      "seed_phrase_label": "12 veya 24 kelimelik kurtarma ifadesi",
+      "private_key_label": "Özel anahtar",
+      "seed_phrase_placeholder": "kelime1 kelime2 kelime3 ...",
+      "private_key_placeholder": "0x...",
+      "encryption_password_label": "Şifreleme parolası (en az 8 karakter)",
+      "password_dots_placeholder": "••••••••",
+      "cancel": "İptal",
+      "import": "İçe aktar",
+      "loading": "Yükleniyor...",
+      "imported_seed_name": "İçe aktarılan seed",
+      "imported_key_name": "İçe aktarılan anahtar"
+    },
+    "toast": {
+      "wallet_unlocked": "Cüzdan kilidi açıldı",
+      "incorrect_password": "Yanlış şifre",
+      "import_credentials_required": "Kimlik bilgilerini ve bir şifre girin (en az 8 karakter).",
+      "wallet_imported": "Cüzdan içe aktarıldı",
+      "import_failed": "İçe aktarma başarısız",
+      "wallet_removed": "Cüzdan kaldırıldı"
+    }
+  },
+  "AccountLenixWallet": {
+    "page": {
+      "title": "Cüzdan",
+      "subtitle": "Kripto varlıklarınızı yönetin",
+      "setup_title": "Cüzdanınızı kurun",
+      "setup_subtitle": "Başlamak için cüzdan oluşturun veya içe aktarın",
+      "unlock_title": "Cüzdanın kilidini aç",
+      "unlock_subtitle": "Devam etmek için şifrenizi girin",
+      "password_placeholder": "Şifre",
+      "unlocking": "Kilit açılıyor...",
+      "unlock": "Kilidi aç",
+      "network_placeholder": "Ağ",
+      "logo_alt": "Lenix Cüzdan",
+      "show_evm_wallet": "EVM cüzdanını göster",
+      "show_bitcoin_wallet": "Bitcoin cüzdanını göster",
+      "evm_wallet": "EVM cüzdanı",
+      "bitcoin_wallet": "Bitcoin cüzdanı"
+    },
+    "networks": {
+      "all": "Tüm ağlar",
+      "ethereum": "Ethereum",
+      "bsc": "BNB Chain",
+      "polygon": "Polygon",
+      "bitcoin": "Bitcoin"
+    },
+    "actions": {
+      "send": "Gönder",
+      "receive": "Al",
+      "buy": "Satın al",
+      "swap": "Takas",
+      "coming_soon": "Yakında"
+    },
+    "wallet_card": {
+      "total_balance": "Toplam bakiye",
+      "hide_balance": "Bakiyeyi gizle",
+      "show_balance": "Bakiyeyi göster",
+      "lock_wallet": "Cüzdanı kilitle",
+      "evm_networks": "EVM ağları",
+      "evm_chains": "ETH · BSC · Polygon · Arbitrum",
+      "address_copied": "Adres kopyalandı"
+    },
+    "bitcoin_card": {
+      "btc_balance": "BTC bakiyesi",
+      "not_activated": "Etkin değil",
+      "activate_prompt": "Yerel Bitcoin cüzdanınızı etkinleştirin",
+      "password_placeholder": "Cüzdan şifresini girin",
+      "creating": "Oluşturuluyor...",
+      "activate": "Etkinleştir",
+      "bitcoin_network": "Bitcoin ağı",
+      "segwit": "BIP-84 Native SegWit",
+      "bitcoin_alt": "Bitcoin",
+      "enter_password": "Cüzdan şifrenizi girin",
+      "wallet_created": "Bitcoin cüzdanı oluşturuldu",
+      "create_failed": "Bitcoin cüzdanı oluşturulamadı",
+      "address_copied": "Adres kopyalandı"
+    },
+    "token_list": {
+      "assets": "Varlıklar",
+      "market": "Piyasa",
+      "tokens_count": "{count} token",
+      "no_assets": "Henüz varlık yok",
+      "frozen": "Donduruldu",
+      "deposit_to_unfreeze": "Çözmek için {amount} BTC yatırın",
+      "frozen_by_admin": "Yönetici tarafından donduruldu",
+      "token_fallback": "Token"
+    },
+    "activity": {
+      "title": "Aktivite",
+      "no_activity": "Son aktivite yok",
+      "done": "Tamamlandı",
+      "pending": "Beklemede"
+    },
+    "security": {
+      "title": "Güvenlik",
+      "protected": "Korumalı",
+      "recovery_phrase": "Kurtarma ifadesi",
+      "backed_up": "Yedeklendi",
+      "password": "Şifre",
+      "active": "Aktif",
+      "withdrawal_limit": "Çekim limiti",
+      "not_set": "Ayarlanmadı",
+      "set": "Ayarlandı"
+    },
+    "receive_modal": {
+      "title": "Al",
+      "network": "Ağ",
+      "evm_networks": "EVM ağları",
+      "evm_chains": "ETH, BSC, Polygon, Arbitrum",
+      "bitcoin": "Bitcoin",
+      "bitcoin_chains": "Native SegWit (BIP-84)",
+      "not_set_up": "(Kurulmadı)",
+      "qr_alt": "QR Kodu",
+      "copied": "Kopyalandı",
+      "btc_warning": "Bu adrese yalnızca BTC gönderin",
+      "evm_warning": "Yalnızca ERC-20 uyumlu token gönderin"
+    },
+    "send_modal": {
+      "title": "Kripto gönder",
+      "description": "Kripto göndermek için alıcı adresini ve çekim tutarını girin."
+    },
+    "receive_page": {
+      "title": "Varlık al",
+      "subtitle": "Ödemeleri almak için benzersiz adresinizi alın.",
+      "security_notice": "Güvenliğiniz için, yatırmadan önce ağın tam olarak eşleştiğini doğrulayın. Yanlış ağa gönderilen varlıklar kurtarılamaz.",
+      "no_wallet_title": "Cüzdan bulunamadı",
+      "no_wallet_description": "Varlık almak için bir cüzdan oluşturun.",
+      "go_to_wallet": "Cüzdana git",
+      "wallet_locked_title": "Cüzdan kilitli",
+      "wallet_locked_description": "Adresinizi görmek için cüzdanınızın kilidini açın.",
+      "unlock_wallet": "Cüzdanı aç",
+      "card_title": "Varlık al",
+      "card_description": "Yatırmak için QR kodunu tarayın veya adresi kopyalayın.",
+      "select_network": "Ağ seç",
+      "bitcoin_provisioning": "Bitcoin cüzdanı henüz hazırlanıyor.",
+      "qr_alt": "Cüzdan adresi QR kodu",
+      "address_label": "{network} adresiniz",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "share": "Paylaş",
+      "address_copied": "Adres panoya kopyalandı",
+      "share_title": "Lenix cüzdan adresim",
+      "share_text": "İşte {network} adresim: {address}",
+      "networks": {
+        "bitcoin": {
+          "name": "Bitcoin (Native)",
+          "warning": "Bu adrese yalnızca native Bitcoin gönderin. Başka bir ağdan BTC göndermeyin."
+        },
+        "ethereum": {
+          "name": "Ethereum (ERC-20)",
+          "warning": "Bu adrese yalnızca ETH ve ERC-20 token gönderin."
+        },
+        "bnb": {
+          "name": "BNB Smart Chain (BEP-20)",
+          "warning": "Bu adrese yalnızca BNB ve BEP-20 token gönderin."
+        },
+        "polygon": {
+          "name": "Polygon (MATIC)",
+          "warning": "Bu adrese yalnızca MATIC ve Polygon ağı tokenları gönderin."
+        },
+        "arbitrum": {
+          "name": "Arbitrum One",
+          "warning": "Bu adrese yalnızca Arbitrum One ağı tokenları gönderin."
+        },
+        "optimism": {
+          "name": "Optimism",
+          "warning": "Bu adrese yalnızca Optimism ağı tokenları gönderin."
+        },
+        "avalanche": {
+          "name": "Avalanche C-Chain",
+          "warning": "Bu adrese yalnızca Avalanche C-Chain tokenları gönderin."
+        }
+      }
+    },
+    "send_page": {
+      "unlock_message": "Lenix cüzdanınızı fonları yönetmek için kilidini açın.",
+      "unlock_locked_prefix": "Bakiyeleri çözmek için parolanızı",
+      "unlock_locked_suffix": "üzerinde girin.",
+      "wallet_page": "cüzdan sayfası",
+      "unlock_no_wallet_prefix": "Önce",
+      "unlock_no_wallet_suffix": "üzerinden bir cüzdan oluşturun.",
+      "wallet_dashboard": "Lenix cüzdan panosu",
+      "estimated_total_value": "Tahmini toplam değer",
+      "wallet_label": "Cüzdan",
+      "pnl_today": "Bugünkü kâr/zarar",
+      "deposit": "Yatır",
+      "withdraw": "Çek",
+      "transfer": "Transfer et",
+      "more_funding_actions": "Diğer finansman işlemleri",
+      "funding_title": "Finansman",
+      "search_placeholder": "Varlık veya ağ ara",
+      "small_asset_exchange": "Küçük varlık takası",
+      "hide_dust": "1 USD’den küçük varlıkları gizle",
+      "asset": "Varlık",
+      "amount": "Tutar",
+      "available": "Kullanılabilir",
+      "frozen": "Donduruldu",
+      "action": "İşlem",
+      "unfreeze_deposit": "Dondurmayı kaldırmak için {amount} BTC yatır",
+      "more_actions_for": "{symbol} için diğer işlemler",
+      "no_assets": "Varlık yok",
+      "no_assets_match": "Filtrelerinize uyan varlık bulunamadı.",
+      "withdraw_modal": {
+        "title": "Kripto çek",
+        "description": "Doğru ağı kullanarak fonları harici bir cüzdana gönderin."
+      }
+    },
+    "send_form": {
+      "no_assets_alt": "Varlık yok",
+      "no_assets_title": "Henüz finansman varlığı yok",
+      "no_assets_description": "Lenix cüzdanınıza kripto yatırarak çekim ve zincir üstü transferleri etkinleştirin.",
+      "asset_label": "Varlık",
+      "network_label": "Ağ",
+      "chain_id": "Zincir kimliği {id}",
+      "recipient_label": "Alıcı adresi",
+      "paste": "Yapıştır",
+      "recipient_error_bitcoin": "Geçerli bir Bitcoin adresi girin.",
+      "recipient_error_evm": "Geçerli bir EVM cüzdan adresi girin.",
+      "amount_label": "Tutar",
+      "amount_aria": "Gönderilecek {symbol} miktarı",
+      "available": "Kullanılabilir",
+      "on_chain_only": "Şu anda yalnızca {amount} {symbol} zincir üzerinde bulunuyor ve gönderilebilir.",
+      "summary_label": "Transfer özeti",
+      "network_fee": "Ağ ücreti",
+      "calculating_fee": "Hesaplanıyor…",
+      "recipient_receives": "Alıcı alacak",
+      "frozen": "Donduruldu",
+      "frozen_message": "Bu varlık donduruldu",
+      "frozen_unfreeze_instruction": " Dondurmayı kaldırmak için Lenix Bitcoin cüzdanınıza en az {amount} BTC yatırın — para yatırma onaylandığında otomatik olarak açılır.",
+      "frozen_contact_support": " Sorunu çözmek için destekle iletişime geçin.",
+      "irreversible_warning": "Göndermeden önce alıcı adresini ve ağı kontrol edin. Zincir üstü transferler geri alınamaz.",
+      "sending": "Gönderiliyor…",
+      "send_now": "Şimdi gönder",
+      "wallet_locked_error": "Fon göndermek için Lenix cüzdanınızın kilidini açın",
+      "clipboard_error": "Panoya erişilemedi",
+      "bitcoin_send_success": "Bitcoin transferi yayınlandı",
+      "bitcoin_send_failed": "Bitcoin çekimi başarısız oldu",
+      "unsupported_network": "Bu varlık için ağ desteklenmiyor",
+      "broadcasting_transaction": "İşlem yayınlanıyor",
+      "transfer_confirmed": "Transfer onaylandı",
+      "broadcasting_token_transfer": "Token transferi yayınlanıyor",
+      "token_transfer_complete": "Token transferi tamamlandı",
+      "transaction_failed": "İşlem başarısız oldu",
+      "fee_bitcoin_estimate": "Onay sırasında tahmin edilir"
+    },
+    "setup": {
+      "back": "Geri",
+      "welcome_title": "Dünyanın en güvenli cüzdanı",
+      "welcome_description": "Başlamak için cüzdanınızı kurun. Lenix Wallet, kriptonuzu güvende tutan dünyanın en güvenli ve özel cüzdanıdır.",
+      "create_new": "Yeni cüzdan oluştur",
+      "import_existing": "Mevcut cüzdanı içe aktar",
+      "terms_notice": "Cüzdan oluşturarak veya içe aktararak Hizmet Şartlarımızı ve Gizlilik Politikamızı kabul etmiş olursunuz.",
+      "backup_title": "Kurtarma ifadenizi yedekleyin",
+      "backup_description": "Bu 12 kelimeyi sırayla yazın ve güvenli bir yerde saklayın. Kaybederseniz fonlarınızı sonsuza dek kaybedebilirsiniz.",
+      "security_check_title": "Güvenlik kontrolü",
+      "security_check_description": "Bu ifadeyi asla kimseyle paylaşmayın. Lenix desteği bunu asla istemez.",
+      "saved_phrase": "Kurtarma ifademi kaydettim",
+      "verify_title": "Kurtarma ifadesini doğrula",
+      "verify_description": "Aşağıda istenen kelimeleri girerek ifadenizi kaydettiğinizi onaylayın.",
+      "word_label": "Kelime #{number}",
+      "word_placeholder": "#{number}. kelimeyi girin",
+      "verify_continue": "Doğrula ve devam et",
+      "password_title": "Güvenli şifre belirle",
+      "password_description": "Bu şifre, cüzdanınızı bu cihazda şifrelemek için kullanılacaktır.",
+      "password_label": "Şifre",
+      "confirm_password_label": "Şifreyi onayla",
+      "create_wallet": "Cüzdan oluştur",
+      "processing": "İşleniyor...",
+      "import_title": "Kurtarma ifadesini içe aktar",
+      "import_description": "Cüzdanınızı geri yüklemek için 12 veya 24 kelimelik kurtarma ifadesini girin.",
+      "import_placeholder": "elma muz kiraz...",
+      "continue": "Devam",
+      "import_wallet": "Cüzdanı içe aktar"
+    },
+    "toast": {
+      "wallet_unlocked": "Cüzdan kilidi açıldı",
+      "incorrect_password": "Yanlış şifre",
+      "phrase_copied": "Kurtarma ifadesi panoya kopyalandı",
+      "incorrect_words": "Yanlış kelimeler. Lütfen tekrar deneyin.",
+      "password_min_length": "Şifre en az 8 karakter olmalıdır",
+      "passwords_mismatch": "Şifreler eşleşmiyor",
+      "wallet_created": "Cüzdan başarıyla oluşturuldu!",
+      "create_failed": "Cüzdan oluşturulamadı",
+      "invalid_phrase": "Geçersiz kurtarma ifadesi. 12 veya 24 kelime bekleniyor, {count} alındı.",
+      "wallet_imported": "Cüzdan başarıyla içe aktarıldı!",
+      "import_failed": "Cüzdan içe aktarılamadı"
+    }
+  },
+  "AccountBanking": {
+    "meta": {
+      "title": "Kurumsal bankacılık | Lenix Protocol",
+      "description": "Spot, Funding ve doğrulanmış banka hesapları arasında dijital varlık taşıyın."
+    },
+    "error": {
+      "load_failed": "Bankacılık çalışma alanı yüklenemedi",
+      "unavailable_title": "Bankacılık çalışma alanı kullanılamıyor",
+      "unavailable_description": "Bankacılık özeti yüklenemedi.",
+      "try_again": "Tekrar dene"
+    },
+    "tabs": {
+      "overview": "Genel bakış",
+      "accounts": "Banka hesapları",
+      "activity": "Etkinlik"
+    },
+    "empty_assets": {
+      "title": "Henüz hazine varlığı yok",
+      "description": "Başlamak için varlıkları Spot veya Funding cüzdanınıza taşıyın.",
+      "cta": "Fon taşı"
+    },
+    "fiat_balance": {
+      "funding": "Funding {currency}",
+      "available": "{amount} kullanılabilir"
+    },
+    "summary": {
+      "title": "Kurumsal bankacılık",
+      "verified": "Doğrulandı",
+      "verification_pending": "Doğrulama bekleniyor",
+      "subtitle": "Hazine cüzdanları ile doğrulanmış banka hesapları arasında dijital varlık taşıyın.",
+      "transfer": "Transfer",
+      "withdraw_to_bank": "Bankaya çek",
+      "total_treasury": "Toplam hazine değeri",
+      "hide_balances": "Bakiyeleri gizle",
+      "show_balances": "Bakiyeleri göster",
+      "account": "Hesap",
+      "tier": "Seviye",
+      "relationship_manager": "İlişki yöneticisi",
+      "spot_wallet": "Spot cüzdan",
+      "spot_available": "İşlem için kullanılabilir",
+      "funding_wallet": "Funding cüzdan",
+      "funding_available": "Mutabakat için kullanılabilir",
+      "in_settlement": "Mutabakatta",
+      "pending_payouts": "Aktif banka ödemelerinde"
+    },
+    "assets": {
+      "title": "Cüzdan bakiyeleri",
+      "subtitle": "Spot ve ödemeye hazır Funding varlıkları",
+      "move_funds": "Fon taşı",
+      "columns": {
+        "asset": "Varlık",
+        "wallet": "Cüzdan",
+        "balance": "Bakiye",
+        "value": "Değer",
+        "change_24h": "24 sa"
+      },
+      "location": {
+        "spot": "Spot",
+        "funding": "Funding"
+      }
+    },
+    "accounts": {
+      "linked_title": "Bağlı banka hesapları",
+      "linked_subtitle": "Banka çekimleri için mutabakat hedefleri",
+      "add_account": "Hesap ekle",
+      "empty_title": "Bağlı banka hesabı yok",
+      "empty_description": "Bankanıza çekim yapmak için bir banka hesabı ekleyin.",
+      "default": "Varsayılan",
+      "status": {
+        "verified": "Doğrulandı",
+        "rejected": "Reddedildi",
+        "pending": "İnceleniyor"
+      },
+      "limits_title": "Mutabakat limitleri",
+      "limits_subtitle": "Yuvarlanan kurumsal limitler",
+      "remaining": "%{percent} kaldı",
+      "limits_note": "Daha yüksek mutabakat limitleri ilişki yöneticiniz ve uyum ekibi tarafından incelenir."
+    },
+    "activity": {
+      "title": "İşlem etkinliği",
+      "subtitle": "Dahili transferler ve banka mutabakatları",
+      "search_label": "İşlem ara",
+      "search_placeholder": "Referans veya varlık ara",
+      "filter_label": "İşlem durumunu filtrele",
+      "filter_all": "Tüm durumlar",
+      "status": {
+        "completed": "Tamamlandı",
+        "processing": "İşleniyor",
+        "review": "İnceleme",
+        "under_review": "İnceleniyor",
+        "failed": "Başarısız"
+      },
+      "columns": {
+        "transaction": "İşlem",
+        "amount": "Tutar",
+        "destination": "Hedef",
+        "status": "Durum",
+        "date": "Tarih",
+        "view": "Görüntüle"
+      },
+      "direction": {
+        "spot_to_funding": "Spot'tan Funding'e",
+        "funding_to_spot": "Funding'den Spot'a",
+        "funding_to_bank": "Funding'den bankaya",
+        "spot_to_bank": "Spot'tan bankaya"
+      },
+      "view_transaction": "{reference} görüntüle",
+      "empty_title": "Eşleşen işlem yok",
+      "empty_description": "Aramayı veya durum filtresini değiştirin."
+    },
+    "add_account": {
+      "title": "Banka hesabı ekle",
+      "description": "Gönderilen hesaplar mutabakat almadan önce uyum ekibimiz tarafından incelenir. Bu genellikle 1–2 iş günü sürer.",
+      "fields": {
+        "bank_name": "Banka adı",
+        "bank_name_placeholder": "ör. Ziraat Bankası",
+        "account_holder": "Hesap sahibi adı",
+        "account_holder_placeholder": "Tam yasal ad",
+        "account_number": "Hesap numarası / IBAN",
+        "account_number_placeholder": "Hesap numarası",
+        "routing_number": "Yönlendirme numarası (ACH/yurtiçi)",
+        "swift_bic": "SWIFT / BIC (uluslararası)",
+        "optional": "İsteğe bağlı",
+        "account_type": "Hesap türü",
+        "checking": "Vadesiz",
+        "savings": "Tasarruf",
+        "currency": "Para birimi",
+        "country": "Ülke",
+        "country_placeholder": "TR"
+      },
+      "submitting": "Gönderiliyor...",
+      "submit": "Doğrulama için gönder",
+      "required_fields": "Lütfen tüm zorunlu alanları doldurun",
+      "success": "Banka hesabı doğrulama için gönderildi",
+      "failed": "Banka hesabı eklenemedi"
+    },
+    "transfer": {
+      "title_form": "Fon taşı",
+      "title_review": "Transferi incele",
+      "title_success": "Transfer durumu",
+      "desc_form": "Varlıkları cüzdanlar arasında taşıyın veya bağlı bir bankaya mutabakat yapın.",
+      "desc_review": "Kurlar beş dakika boyunca ayrılır.",
+      "desc_success": "Referansınız takip için hazır.",
+      "back_label": "Transfer detaylarına dön",
+      "step_label": "Adım {step} / 3",
+      "cancel": "İptal",
+      "review_transfer": "Transferi incele",
+      "confirm_submit": "Onayla ve gönder",
+      "done": "Tamam",
+      "quote_failed": "Teklif oluşturulamadı",
+      "transfer_failed": "Transfer gönderilemedi",
+      "type_legend": "Transfer türü",
+      "types": {
+        "spot_to_funding": {
+          "label": "Spot → Funding",
+          "description": "Varlıkları ödemeler için hazırla"
+        },
+        "funding_to_spot": {
+          "label": "Funding → Spot",
+          "description": "Varlıkları işlem için geri al"
+        },
+        "funding_to_bank": {
+          "label": "Funding → Banka",
+          "description": "Kullanılabilir fonları çek"
+        },
+        "spot_to_bank": {
+          "label": "Spot → Banka",
+          "description": "Dönüştür ve çek"
+        }
+      },
+      "from": "Kaynak",
+      "to": "Hedef",
+      "spot_wallet": "Spot cüzdan",
+      "funding_wallet": "Funding cüzdan",
+      "bank_account": "Banka hesabı",
+      "asset": "Varlık",
+      "amount": "Tutar",
+      "max": "MAKS",
+      "amount_placeholder": "0,00",
+      "payout_currency": "Ödeme para birimi",
+      "currencies": {
+        "USD": "USD · ABD Doları",
+        "EUR": "EUR · Euro",
+        "GBP": "GBP · İngiliz Sterlini"
+      },
+      "select_account": "Hesap seç",
+      "available": "Kullanılabilir"
+    },
+    "review": {
+      "recipient_receives": "Alıcı alır",
+      "from_amount": "{amount} {asset} kaynağından",
+      "market_value": "Piyasa değeri",
+      "exchange_rate": "Döviz kuru",
+      "exchange_rate_value": "1 USD = {rate} {currency}",
+      "platform_fee": "Platform ücreti",
+      "banking_fee": "Bankacılık ücreti",
+      "estimated_arrival": "Tahmini varış",
+      "authorization": "Onaylayarak yukarıdaki varlık dönüşümünü ve mutabakat talimatlarını yetkilendirirsiniz.",
+      "withdrawal_submitted": "Çekim gönderildi",
+      "transfer_completed": "Transfer tamamlandı",
+      "withdrawal_desc": "Mutabakatınız ilk doğrulamayı geçti ve şimdi uyum taramasına giriyor.",
+      "transfer_desc": "Bakiyeleriniz bankacılık çalışma alanında güncellendi.",
+      "reference": "Referans",
+      "status": "Durum",
+      "destination": "Hedef",
+      "processing": "İşleniyor",
+      "completed": "Tamamlandı"
+    },
+    "detail": {
+      "title": "Transfer detayları",
+      "reference": "Referans {reference}",
+      "payout_amount": "Ödeme tutarı",
+      "destination": "Hedef",
+      "estimated_arrival": "Tahmini varış",
+      "fees": "Ücretler",
+      "requested": "İstendi",
+      "timeline_title": "Mutabakat zaman çizelgesi",
+      "pending": "Beklemede",
+      "download_receipt": "Makbuz indir",
+      "status": {
+        "completed": "Tamamlandı",
+        "processing": "İşleniyor",
+        "under_review": "İnceleniyor",
+        "failed": "Başarısız"
+      }
+    },
+    "skeleton": {
+      "loading": "Bankacılık panosu yükleniyor"
+    }
+  },
+  "AccountRecoveryServices": {
+    "page": {
+      "title": "Kurtarma hizmetleri",
+      "subtitle": "Kayıp veya çalınmış kripto varlıklar için kurtarma talebi gönderin. Adli bilişim ekibimiz dosyanızı değerlendirir ve 24–48 saat içinde sizinle iletişime geçer.",
+      "process_title": "Süreç",
+      "form_title": "Varlık kurtarma ve adli bilişim detayları",
+      "form_subtitle": "Kayıp kripto varlıkları izlemenize ve kurtarmanıza, ayrıca yasal fon geri kazanımı için doğrulanmış kanıt oluşturmanıza yardımcı oluyoruz."
+    },
+    "process": {
+      "assessment": {
+        "title": "Değerlendirme",
+        "description": "İzleri analiz eder ve kurtarılabilirliği değerlendiririz."
+      },
+      "strategy": {
+        "title": "Strateji",
+        "description": "Hukuki ve adli destekle özelleştirilmiş plan."
+      },
+      "recovery": {
+        "title": "Kurtarma",
+        "description": "Fonları geri almak için borsalar ve yetkililerle çalışırız."
+      },
+      "return": {
+        "title": "İade",
+        "description": "Fonlar doğrulanmış cüzdanınıza aktarılır."
+      }
+    },
+    "form": {
+      "name": "Ad",
+      "name_placeholder": "ör. Ahmet Yılmaz",
+      "transaction_hash": "İşlem hash'i / Cüzdan adresi",
+      "transaction_hash_placeholder": "Hash veya adres girin (ör. 0x1234...)",
+      "amount_stolen": "Yaklaşık çalınan tutar",
+      "amount_stolen_placeholder": "Tahmini tutarı girin (ör. 200000)",
+      "incident_summary": "Olay özeti",
+      "incident_summary_placeholder": "ör. Fonlar oltalama dolandırıcılığıyla çalındı...",
+      "evidence": "Ekran görüntüsü veya talebi destekleyen başka kanıt",
+      "phone_number": "Telefon numarası",
+      "blockchain": "Blockchain seçin",
+      "blockchain_placeholder": "Blockchain seçin",
+      "currency": "Para birimi seçin",
+      "currency_placeholder": "Para birimi seçin",
+      "privacy_prefix": "Lenix Protocol, kurtarma dosyanız hakkında sizinle iletişim kurmak için iletişim bilgilerinize ihtiyaç duyar. Ayrıntılar için",
+      "privacy_policy": "Gizlilik Politikamıza",
+      "privacy_suffix": " bakın.",
+      "submit": "Kurtarma talebi gönder",
+      "submitting": "Gönderiliyor..."
+    },
+    "blockchains": {
+      "BTC": "Bitcoin (BTC)",
+      "ETH": "Ethereum (ETH)",
+      "SOL": "Solana (SOL)",
+      "TRX": "Tron (TRX)",
+      "BNB": "Binance Smart Chain (BNB)",
+      "MATIC": "Polygon Mainnet (MATIC)",
+      "AVAX": "Avalanche C-Chain (AVAX)",
+      "ARB": "Arbitrum One (ARB)",
+      "BASE": "Base (BASE)",
+      "FANTOM": "Fantom (Fantom)",
+      "GNOSIS": "Gnosis Chain (GNOSIS)",
+      "KAVA": "Kava (KAVA)",
+      "POL": "Polkadot (POL)",
+      "SUI": "Sui (SUI)",
+      "OTHER": "Diğer"
+    },
+    "success": {
+      "title": "Talep gönderildi",
+      "description": "Kurtarma ekibimiz dosyanızı inceleyecek ve 24–48 saat içinde sizinle iletişime geçecek.",
+      "submit_another": "Başka bir talep gönder"
+    },
+    "toast": {
+      "required_fields": "Lütfen tüm zorunlu alanları doldurun",
+      "submit_failed": "Kurtarma talebi gönderilemedi",
+      "submit_success": "Kurtarma talebi gönderildi. Ekibimiz yakında sizinle iletişime geçecek."
+    }
+  },
+  "AccountCryptoLoan": {
+    "page": {
+      "back_to_dashboard": "Panele dön",
+      "collateral_title": "Daha fazla teminat mı gerekiyor?",
+      "collateral_description": "Borçlanma limitinizi artırmak ve sağlık faktörünü iyileştirmek için kasanıza daha fazla varlık yatırın.",
+      "go_to_vault": "Kasaya git"
+    },
+    "hero": {
+      "title_line1": "Likiditeyi açın,",
+      "title_line2": "Varlıklarınızı koruyun",
+      "subtitle": "Portföyünüzü satmadan anında kripto teminatlı kredi alın. Düşük oranlar, esnek vade ve anında fonlama.",
+      "get_instant_loan": "Anında kredi al",
+      "how_it_works": "Nasıl çalışır",
+      "active_loans": "Aktif krediler",
+      "total_borrowed": "Toplam borç",
+      "lowest_rate": "En düşük oran"
+    },
+    "active_loans": {
+      "empty_title": "Aktif kredi yok",
+      "empty_description": "Aktif kredileriniz burada görünür. Yeni bir kredi başvurusuyla anında likidite elde edin.",
+      "title": "Portföyleriniz",
+      "active_count": "{count} aktif",
+      "borrowed_amount": "Borçlanılan tutar",
+      "collateral": "Teminat",
+      "health_factor": "Sağlık faktörü",
+      "repay_loan": "Krediyi geri öde",
+      "processing": "İşleniyor...",
+      "view_details": "Detayları gör",
+      "details_title": "Kredi talebi detayları",
+      "borrowed": "Borçlanıldı",
+      "apy": "APY",
+      "duration": "Vade",
+      "start_date": "Başlangıç tarihi",
+      "contact_details": "İletişim bilgileri",
+      "phone": "Telefon",
+      "telegram_whatsapp": "Telegram / WhatsApp",
+      "not_provided": "Belirtilmedi",
+      "payout_method": "Ödeme yöntemi",
+      "no_payout_details": "Kayıtlı ödeme detayı yok.",
+      "wallet": "Cüzdan",
+      "network": "Ağ",
+      "bank": "Banka",
+      "swift_bic": "SWIFT/BIC",
+      "account": "Hesap",
+      "holder": "Sahibi",
+      "routing_iban": "Routing/IBAN"
+    },
+    "market_rates": {
+      "live_rates": "Canlı oranlar",
+      "available_plans": "Mevcut planlar",
+      "interest_rate": "Faiz oranı",
+      "ltv": "%{ltv} LTV"
+    },
+    "application": {
+      "step_label": "Adım {step}/2 — {phase}",
+      "phase_details": "Kredi detayları",
+      "phase_payout": "Ödeme tercihleri",
+      "title_details": "Kripto kredi talep et",
+      "title_payout": "Fon alımı",
+      "subtitle_details": "Kredi koşullarını ihtiyaçlarınıza göre özelleştirin.",
+      "subtitle_payout": "Kredi detaylarını nereye göndereceğimizi seçin.",
+      "select_loan_type": "Kredi türü seçin",
+      "loan_type_summary": "%{rate} APR · %{ltv} LTV'ye kadar",
+      "borrow_amount": "Borçlanılacak tutar (USD)",
+      "borrow_amount_placeholder": "ör. 5000",
+      "collateral_asset": "Teminat varlığı",
+      "duration": "Vade",
+      "continue_payout": "Ödemeye devam et",
+      "contact_title": "Size nasıl ulaşabiliriz?",
+      "contact_subtitle": "Başvurunuz hakkında ulaşabilmemiz için en az bir iletişim bilgisi verin.",
+      "phone_number": "Telefon numarası",
+      "phone_placeholder": "ör. +90 532 123 4567",
+      "phone_hint": "Aramalar ve SMS güncellemeleri için",
+      "telegram_whatsapp": "Telegram veya WhatsApp",
+      "telegram_placeholder": "ör. @kullanici veya +905321234567",
+      "telegram_hint": "Hızlı mesajlaşma için",
+      "funds_title": "Fonlarınızı nereye gönderelim?",
+      "payout_crypto": "Kripto cüzdan",
+      "payout_crypto_sub": "Anında transfer",
+      "payout_wire": "Banka havalesi",
+      "payout_wire_sub": "1–3 iş günü",
+      "payout_bank": "Banka yatırımı",
+      "payout_bank_sub": "ACH / SEPA",
+      "wallet_address": "Cüzdan adresi",
+      "wallet_placeholder": "0x...",
+      "select_network": "Ağ seçin",
+      "network_erc20": "Ethereum (ERC20)",
+      "network_trc20": "Tron (TRC20)",
+      "network_bsc": "Binance Smart Chain (BEP20)",
+      "bank_name": "Banka adı",
+      "bank_name_placeholder": "ör. Ziraat Bankası",
+      "bank_name_alt_placeholder": "ör. İş Bankası",
+      "swift_bic": "SWIFT / BIC kodu",
+      "swift_placeholder": "ör. TCZBTR2A",
+      "account_number": "Hesap numarası",
+      "account_number_placeholder": "Hesap numaranız",
+      "account_holder": "Hesap sahibi adı",
+      "account_holder_placeholder": "Hesaptaki tam ad",
+      "reference_optional": "Referans (isteğe bağlı)",
+      "reference_placeholder": "Ödeme referansı",
+      "routing_iban": "Routing numarası / IBAN",
+      "routing_iban_placeholder": "ACH routing (ABD) veya IBAN (AB)",
+      "back": "Geri",
+      "submitting": "Gönderiliyor...",
+      "submit": "Başvuruyu gönder",
+      "success_title": "Başvuru gönderildi",
+      "success_description": "Kredi talebiniz alındı. İnceleyip yakında sizinle iletişime geçeceğiz.",
+      "view_loans": "Kredilerimi gör"
+    },
+    "duration": {
+      "6": "6 ay",
+      "12": "12 ay",
+      "24": "24 ay",
+      "months": "{count} ay"
+    },
+    "collateral_assets": {
+      "BTC": "Bitcoin",
+      "ETH": "Ethereum",
+      "SOL": "Solana"
+    },
+    "status": {
+      "Active": "Aktif",
+      "Pending": "Beklemede",
+      "Repaid": "Geri ödendi",
+      "Liquidated": "Likide edildi"
+    },
+    "payout_methods": {
+      "crypto": "kripto",
+      "wire_transfer": "banka havalesi",
+      "bank": "banka"
+    },
+    "toast": {
+      "repay_success": "Kredi başarıyla geri ödendi"
+    },
+    "overview": {
+      "total_borrowed": "Toplam borç",
+      "total_borrowed_tooltip": "Tüm aktif kredilerdeki toplam borçlanılan tutar",
+      "current_interest": "Güncel faiz",
+      "collateral_value": "Teminat değeri",
+      "collateral_tooltip": "Teminat olarak kilitlenen varlıkların toplam değeri",
+      "ltv_label": "LTV",
+      "low_risk": "Düşük risk",
+      "health_factor": "Sağlık faktörü",
+      "health_tooltip": "Likidasyon risk göstergesi. Likidasyondan kaçınmak için 1,5'in üzerinde tutun.",
+      "safe": "Güvenli",
+      "liquidated": "1,0 (Likide edildi)",
+      "safe_threshold": "3,0 (Güvenli)"
+    },
+    "borrow_form": {
+      "title": "Kredi hesaplayıcı",
+      "subtitle": "Kredi koşullarınızı anında hesaplayın.",
+      "borrow_tab": "Borç al",
+      "repay_tab": "Geri öde",
+      "want_to_borrow": "Borç almak istiyorum",
+      "my_collateral": "Teminatım",
+      "asset_placeholder": "Varlık",
+      "ltv": "LTV",
+      "low_risk": "Düşük risk",
+      "apy": "APY",
+      "total_repayment": "Toplam geri ödeme",
+      "apply_new_loan": "Yeni kredi başvurusu",
+      "repay_title": "Geri ödemeleri yönet",
+      "repay_description": "Belirli kredilerinizi yönetmek ve geri ödemek için «Aktif krediler» listesini kullanın."
+    },
+    "collateral": {
+      "title": "Desteklenen teminatlar",
+      "live_rates": "Canlı oranlar",
+      "max_ltv": "Maks. LTV: {ltv}",
+      "fee": "Ücret",
+      "assets": {
+        "BTC": "Bitcoin",
+        "ETH": "Ethereum",
+        "SOL": "Solana",
+        "XRP": "Ripple"
+      }
     }
   }
 }

@@ -1,24 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
-import { MoralisClient } from '../../../../../lib/moralis-client';
-import { blacklistAddresses } from '../../../../../lib/token-lists';
+import { cryptoProvider } from '@/lib/crypto-provider';
+import { MoralisClient } from '@/lib/moralis-client';
+import { blacklistAddresses } from '@/lib/token-lists';
 
-// Validate environment variable
-const MORALIS_API_KEY = process.env.MORALIS_API_KEY || '';
-
-if (!MORALIS_API_KEY) {
-  console.warn('⚠️ MORALIS_API_KEY not set. Token fetching will fail.');
-}
-
-// Initialize Moralis client (can be reused across requests)
-const moralisClient = MORALIS_API_KEY ? new MoralisClient(MORALIS_API_KEY) : null;
-
-// Fetch tokens using Moralis client
+// Fetch tokens using crypto provider with fallback
 const fetchTokens = async (chainId: number, evmAddress: string) => {
-  if (!moralisClient) {
-    throw new Error('Moralis API key not configured');
-  }
-  return moralisClient.fetchTokens(chainId, evmAddress, blacklistAddresses);
+  const { data, provider } = await cryptoProvider.fetchTokens(chainId, evmAddress, blacklistAddresses);
+  console.log(`[ChainInfo] Tokens for chain ${chainId} fetched via ${provider}`);
+  return data;
 };
 
 const positiveIntFromString = (value: string): number => {

@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Lenix Wallet | محفظة عملات رقمية متعددة السلاسل",
+    "description": "محفظة غير وصائية متعددة السلاسل للإرسال والاستلام والمبادلة والقروض بالضمان — تخزين محلي مشفر ومسار إلى استرداد Lenix عند الحاجة.",
+    "keywords": "محفظة عملات رقمية, محفظة متعددة السلاسل, محفظة غير وصائية, Lenix Wallet, قروض رقمية"
+  },
+  "Hero": {
+    "eyebrow_prefix": "محفظة ",
+    "eyebrow_highlight": "متعددة السلاسل",
+    "eyebrow_suffix": " على Lenix",
+    "title_prefix": "أرسل واحتفظ واقترض — مع ",
+    "title_highlight1": "استرداد",
+    "title_mid": " عند الحاجة، من ",
+    "title_highlight2": "تطبيق",
+    "subtitle": "محفظة غير وصائية للاستخدام اليومي — مشفرة على جهازك، متعددة السلاسل افتراضياً، ومتصلة بإقراض واسترداد Lenix عندما يتجاوز الأمر إرسالاً عادياً.",
+    "btn_download": "حمّل التطبيق",
+    "btn_learn": "عرض الميزات",
+    "mock": {
+      "account": "الحساب 1",
+      "total_balance": "الرصيد الإجمالي",
+      "change_24h": "+2.4% (24 س)",
+      "send": "إرسال",
+      "receive": "استلام",
+      "swap": "مبادلة",
+      "loan": "قرض",
+      "tab_assets": "الأصول",
+      "tab_history": "السجل"
+    }
+  },
+  "Features": {
+    "eyebrow": "الميزات",
+    "title": "أكثر من التخزين",
+    "cards": {
+      "encryption": {
+        "title": "مشفر على الجهاز",
+        "desc": "المفاتيح محمية بكلمة مرور المحفظة ومخزنة محلياً — Lenix لا تحتفظ بعبارة الاسترداد أو مفاتيح التوقيع."
+      },
+      "loans": {
+        "title": "قروض بالضمان",
+        "desc": "اقترض stablecoins مقابل أصول مدعومة دون بيع مركزك — الشروط ونسب الضمان تظهر قبل التأكيد.",
+        "link": "View lending"
+      },
+      "recovery": {
+        "title": "مسار الاسترداد",
+        "desc": "إذا فُقدت الأصول أو سُرقت، افتح حالة استرداد من منظومة Lenix — تتبع وتنسيق مع البورصات عندما لا يكفي مسار المحفظة المعتاد.",
+        "link": "Start recovery"
+      },
+      "multichain": {
+        "title": "Multi-chain balances",
+        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+      },
+      "transfers": {
+        "title": "Send, receive, swap",
+        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+      },
+      "access": {
+        "title": "Web and mobile",
+        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+      }
+    },
+    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "groups": {
+      "wallet": {
+        "title": "In the wallet"
+      },
+      "platform": {
+        "title": "Through Lenix"
+      }
+    }
+  },
+  "Security": {
+    "title": "أمان مدمج، وليس مضافاً",
+    "points": {
+      "keys": {
+        "title": "أنت تحتفظ بالمفاتيح",
+        "desc": "غير وصائية بالتصميم. الأموال تتحرك فقط عند توقيعك — Lenix لا تستطيع تجميد أو إعادة توجيه رصيد محفظتك."
+      },
+      "storage": {
+        "title": "تخزين محلي مشفر",
+        "desc": "بيانات المحفظة مشفرة على جهازك. افتح بكلمة المرور؛ احفظ عبارة الاسترداد دون اتصال."
+      },
+      "access": {
+        "title": "فتح على مستوى الجهاز",
+        "desc": "أضف كلمة مرور عند الإعداد واستخدم البصمة حيث يُدعم — حاجز إضافي قبل استخدام المفاتيح للتوقيع."
+      }
+    },
+    "mock_back": {
+      "title": "النظام مؤمّن",
+      "network_label": "الشبكة",
+      "network_status": "متصل",
+      "firewall_label": "جدار الحماية",
+      "firewall_status": "نشط"
+    },
+    "mock_front": {
+      "title": "خزنة آمنة",
+      "subtitle": "الجهاز موثّق",
+      "encryption_title": "التشفير",
+      "encryption_desc": "المفاتيح المحلية مشفرة",
+      "network_title": "حالة الشبكة",
+      "network_desc": "جاهز متعدد السلاسل"
+    }
+  },
+  "Cta": {
+    "title": "حمّل Lenix Wallet",
+    "subtitle": "أنشئ أو استورد محفظة خلال دقائق. نفس التطبيق للإرسال والاستلام والمبادلة والقرض — مع استرداد Lenix متاح عند الحاجة.",
+    "btn_download": "حمّل التطبيق",
+    "btn_web": "Open web wallet"
+  },
+  "Networks": {
+    "eyebrow": "Supported networks",
+    "title": "Live on three EVM chains today",
+    "description": "Native balances, ERC-20 tokens, and transaction history — filtered by network in the wallet.",
+    "chains": {
+      "ethereum": "Ethereum",
+      "bnb": "BNB Chain",
+      "polygon": "Polygon"
+    }
+  },
+  "GettingStarted": {
+    "eyebrow": "Getting started",
+    "title": "Up and running in three steps",
+    "step_label": "Step {number}",
+    "steps": {
+      "create": {
+        "title": "Create or import",
+        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+      },
+      "secure": {
+        "title": "Set password and backup",
+        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+      },
+      "use": {
+        "title": "Send, swap, or borrow",
+        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+      }
+    }
+  },
+  "Ecosystem": {
+    "eyebrow": "Lenix ecosystem",
+    "title": "Wallet connects to the rest of the platform",
+    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "cards": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Create, unlock, send, and receive.",
+        "cta": "Open wallet"
+      },
+      "loan": {
+        "title": "Crypto loan",
+        "desc": "Borrow against vaulted collateral.",
+        "cta": "View lending"
+      },
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Trace stolen or misdirected funds.",
+        "cta": "Start recovery"
+      },
+      "security": {
+        "title": "Security",
+        "desc": "Audits and operational controls.",
+        "cta": "Read security"
+      }
+    }
+  },
+  "Trust": {
+    "text": "Smart contract and operational security documentation is published on our Security page.",
+    "link": "View security"
+  }
+}

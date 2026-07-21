@@ -1,92 +1,68 @@
 "use client";
 
-import { ShieldCheck, Activity, AlertTriangle, CheckCircle2, ArrowUpRight, ArrowDownLeft, RefreshCcw } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
+import { CheckCircle2, AlertCircle, Shield } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { wallet } from "@/lib/wallet-styles";
 
 export function WalletStatus() {
-  return (
-    <div className="space-y-6">
-      <div className="p-6 rounded-2xl bg-zinc-900/30 border border-white/5 backdrop-blur-sm">
-        <div className="flex items-center gap-3 mb-4">
-          <ShieldCheck className="h-5 w-5 text-yellow-400" />
-          <h3 className="text-lg font-semibold text-white">Wallet Health</h3>
-        </div>
-        
-        <div className="space-y-4">
-           <div className="space-y-2">
-              <div className="flex justify-between text-sm">
-                 <span className="text-zinc-400">Health Score</span>
-                 <span className="text-white font-bold">85/100</span>
-              </div>
-              <Progress value={85} className="h-2 bg-zinc-800" indicatorColor="bg-yellow-500" />
-           </div>
+  const t = useTranslations("AccountLenixWallet.security");
 
-           <div className="grid gap-3">
-              <SecurityItem 
-                 icon={CheckCircle2} 
-                 label="Phrase Backed Up" 
-                 status="Active" 
-                 color="text-emerald-400" 
-              />
-              <SecurityItem 
-                 icon={CheckCircle2} 
-                 label="Biometrics" 
-                 status="Enabled" 
-                 color="text-emerald-400" 
-              />
-              <SecurityItem 
-                 icon={AlertTriangle} 
-                 label="Withdrawal Limit" 
-                 status="Not Set" 
-                 color="text-yellow-400" 
-                 action="Set Limit"
-              />
-           </div>
+  return (
+    <div className={wallet.card}>
+      <div className="flex items-center justify-between">
+        <div className="flex items-center gap-2">
+          <Shield className="h-4 w-4 text-zinc-400" />
+          <h3 className="text-sm font-medium text-white sm:text-base">{t("title")}</h3>
         </div>
+        <span className={`${wallet.badge} ${wallet.badgeSuccess}`}>{t("protected")}</span>
+      </div>
+
+      <div className="mt-4 space-y-1">
+        <StatusRow icon={CheckCircle2} label={t("recovery_phrase")} value={t("backed_up")} positive />
+        <StatusRow icon={CheckCircle2} label={t("password")} value={t("active")} positive />
+        <StatusRow
+          icon={AlertCircle}
+          label={t("withdrawal_limit")}
+          value={t("not_set")}
+          action={t("set")}
+        />
       </div>
     </div>
   );
 }
 
-function SecurityItem({ icon: Icon, label, status, color, action }: any) {
-   return (
-      <div className="flex items-center justify-between text-sm p-3 rounded-lg bg-white/5 border border-white/5">
-         <div className="flex items-center gap-3">
-            <Icon className={`h-4 w-4 ${color}`} />
-            <span className="text-zinc-300">{label}</span>
-         </div>
-         <div className="flex items-center gap-3">
-            <span className={`text-xs font-medium ${color}`}>{status}</span>
-            {action && (
-               <button className="text-xs bg-yellow-400/10 text-yellow-400 px-2 py-1 rounded hover:bg-yellow-400/20 transition-colors">
-                  {action}
-               </button>
-            )}
-         </div>
+function StatusRow({
+  icon: Icon,
+  label,
+  value,
+  positive,
+  action,
+}: {
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+  value: string;
+  positive?: boolean;
+  action?: string;
+}) {
+  return (
+    <div className={wallet.listItem}>
+      <div className="flex items-center gap-2.5">
+        <Icon className={`h-4 w-4 ${positive ? "text-emerald-400" : "text-yellow-400"}`} />
+        <span className="text-sm text-zinc-400">{label}</span>
       </div>
-   );
-}
-
-function ActivityItem({ title, time, amount, desc, status, icon: Icon, iconColor }: any) {
-   return (
-      <div className="relative pl-6">
-         <div className="absolute left-0 top-1.5 h-3.5 w-3.5 rounded-full bg-zinc-900 border-2 border-zinc-700 ring-4 ring-zinc-950 z-10 flex items-center justify-center">
-            {/* Optional dot center */}
-         </div>
-         <div className="flex justify-between items-start">
-            <div>
-               <p className="text-sm font-medium text-white">{title}</p>
-               <p className="text-xs text-zinc-500">{time}</p>
-            </div>
-            <div className="text-right">
-               {amount && <p className="text-sm font-bold text-white">{amount}</p>}
-               {desc && <p className="text-xs text-zinc-400">{desc}</p>}
-               <span className="text-[10px] text-zinc-600 bg-zinc-900 px-1.5 py-0.5 rounded border border-zinc-800 mt-1 inline-block">
-                  {status}
-               </span>
-            </div>
-         </div>
+      <div className="flex items-center gap-2">
+        <span className={`text-xs font-medium ${positive ? "text-emerald-400" : "text-yellow-400"}`}>
+          {value}
+        </span>
+        {action && (
+          <button
+            type="button"
+            className="rounded bg-yellow-500/10 px-2 py-0.5 text-[11px] font-medium text-yellow-400 transition-colors hover:bg-yellow-500/20"
+          >
+            {action}
+          </button>
+        )}
       </div>
-   )
+    </div>
+  );
 }

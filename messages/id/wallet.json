@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "title": "Lenix Wallet | Dompet kripto multi-chain",
+    "description": "Dompet non-custodial multi-chain untuk kirim, terima, swap, dan pinjaman jaminan — penyimpanan lokal terenkripsi dan jalur recovery Lenix saat diperlukan.",
+    "keywords": "Dompet kripto, Dompet multi-chain, Dompet non-custodial, Lenix Wallet, Pinjaman kripto"
+  },
+  "Hero": {
+    "eyebrow_prefix": "Dompet ",
+    "eyebrow_highlight": "multi-chain",
+    "eyebrow_suffix": " di Lenix",
+    "title_prefix": "Kirim, simpan, dan pinjam — dengan ",
+    "title_highlight1": "recovery",
+    "title_mid": " saat Anda butuh, dari satu ",
+    "title_highlight2": "app",
+    "subtitle": "Dompet non-custodial untuk kripto sehari-hari — terenkripsi di perangkat Anda, multi-chain secara default, dan terhubung ke lending serta recovery Lenix saat lebih dari sekadar kirim standar diperlukan.",
+    "btn_download": "Unduh app",
+    "btn_learn": "Lihat fitur",
+    "mock": {
+      "account": "Akun 1",
+      "total_balance": "Saldo total",
+      "change_24h": "+2,4% (24j)",
+      "send": "Kirim",
+      "receive": "Terima",
+      "swap": "Swap",
+      "loan": "Pinjaman",
+      "tab_assets": "Aset",
+      "tab_history": "Riwayat"
+    }
+  },
+  "Features": {
+    "eyebrow": "FITUR",
+    "title": "Lebih dari penyimpanan",
+    "cards": {
+      "encryption": {
+        "title": "Terenkripsi di perangkat",
+        "desc": "Kunci dilindungi dengan kata sandi wallet dan disimpan lokal — Lenix tidak menyimpan seed phrase atau kunci penandatanganan Anda."
+      },
+      "loans": {
+        "title": "Pinjaman jaminan",
+        "desc": "Pinjam stablecoin dengan aset yang didukung tanpa menjual posisi — syarat dan rasio jaminan ditampilkan sebelum Anda konfirmasi.",
+        "link": "View lending"
+      },
+      "recovery": {
+        "title": "Jalur recovery",
+        "desc": "Jika aset hilang atau dicuri, buka kasus recovery dari ekosistem Lenix — pelacakan dan koordinasi exchange saat alur wallet standar tidak cukup.",
+        "link": "Start recovery"
+      },
+      "multichain": {
+        "title": "Multi-chain balances",
+        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+      },
+      "transfers": {
+        "title": "Send, receive, swap",
+        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+      },
+      "access": {
+        "title": "Web and mobile",
+        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+      }
+    },
+    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "groups": {
+      "wallet": {
+        "title": "In the wallet"
+      },
+      "platform": {
+        "title": "Through Lenix"
+      }
+    }
+  },
+  "Security": {
+    "title": "Keamanan terintegrasi, bukan tambahan",
+    "points": {
+      "keys": {
+        "title": "Anda pegang kuncinya",
+        "desc": "Non-custodial by design. Dana hanya bergerak saat Anda menandatangani — Lenix tidak bisa membekukan atau mengalihkan saldo wallet Anda."
+      },
+      "storage": {
+        "title": "Penyimpanan lokal terenkripsi",
+        "desc": "Data wallet dienkripsi di perangkat Anda. Buka kunci dengan kata sandi; cadangkan frase recovery secara offline."
+      },
+      "access": {
+        "title": "Buka kunci di perangkat",
+        "desc": "Tetapkan kata sandi saat setup dan gunakan biometrik perangkat jika didukung — lapisan tambahan sebelum kunci dipakai untuk menandatangani."
+      }
+    },
+    "mock_back": {
+      "title": "SISTEM AMAN",
+      "network_label": "Jaringan",
+      "network_status": "Terhubung",
+      "firewall_label": "Firewall",
+      "firewall_status": "Aktif"
+    },
+    "mock_front": {
+      "title": "BRANKAS AMAN",
+      "subtitle": "PERANGKAT TERVERIFIKASI",
+      "encryption_title": "Enkripsi",
+      "encryption_desc": "Kunci lokal terenkripsi",
+      "network_title": "Status jaringan",
+      "network_desc": "Multi-chain siap"
+    }
+  },
+  "Cta": {
+    "title": "Unduh Lenix Wallet",
+    "subtitle": "Buat atau impor wallet dalam hitungan menit. App yang sama untuk kirim, terima, swap, dan pinjam — dengan recovery Lenix tersedia saat Anda butuh.",
+    "btn_download": "Unduh app",
+    "btn_web": "Open web wallet"
+  },
+  "Networks": {
+    "eyebrow": "Supported networks",
+    "title": "Live on three EVM chains today",
+    "description": "Native balances, ERC-20 tokens, and transaction history — filtered by network in the wallet.",
+    "chains": {
+      "ethereum": "Ethereum",
+      "bnb": "BNB Chain",
+      "polygon": "Polygon"
+    }
+  },
+  "GettingStarted": {
+    "eyebrow": "Getting started",
+    "title": "Up and running in three steps",
+    "step_label": "Step {number}",
+    "steps": {
+      "create": {
+        "title": "Create or import",
+        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+      },
+      "secure": {
+        "title": "Set password and backup",
+        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+      },
+      "use": {
+        "title": "Send, swap, or borrow",
+        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+      }
+    }
+  },
+  "Ecosystem": {
+    "eyebrow": "Lenix ecosystem",
+    "title": "Wallet connects to the rest of the platform",
+    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "cards": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Create, unlock, send, and receive.",
+        "cta": "Open wallet"
+      },
+      "loan": {
+        "title": "Crypto loan",
+        "desc": "Borrow against vaulted collateral.",
+        "cta": "View lending"
+      },
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Trace stolen or misdirected funds.",
+        "cta": "Start recovery"
+      },
+      "security": {
+        "title": "Security",
+        "desc": "Audits and operational controls.",
+        "cta": "Read security"
+      }
+    }
+  },
+  "Trust": {
+    "text": "Smart contract and operational security documentation is published on our Security page.",
+    "link": "View security"
+  }
+}

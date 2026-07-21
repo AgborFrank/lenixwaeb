@@ -1,59 +1,135 @@
 {
-  "Hero": {
-    "badge": "क्रिप्टो एसेट आइडेंटिफिकेशन सेवाएं",
-    "title1": "छिपी हुई क्रिप्टोकरेंसी का खुलासा और डिजिटल एसेट की पहचान",
-    "subtitle1": "डिजिटल होल्डिंग्स का पता लगाना और उनका सत्यापन करना आधुनिक जांच का एक महत्वपूर्ण हिस्सा बन गया है।",
-    "desc1": "वैध और अवैध दोनों तरह की वित्तीय गतिविधियों में क्रिप्टोकरेंसी के बढ़ते उपयोग के साथ, डिजिटल होल्डिंग्स का पता लगाना और सत्यापित करना आवश्यक हो गया है। Lenix Protocol डिजिटल धन का पता लगाने और उसे सत्यापित करने में मदद करने के लिए विशेषज्ञ सेवाएं प्रदान करता है।",
-    "desc2": "हमारी टीम व्यापक क्रिप्टोकरेंसी ट्रेसिंग करने के लिए अत्याधुनिक ब्लॉकचेन टूल और फॉरेंसिक पद्धतियों का उपयोग करती है।",
-    "btn_consultation": "आज ही परामर्श का अनुरोध करें"
+  "meta": {
+    "title": "क्रिप्टो एसेट पहचान | Lenix Protocol",
+    "description": "मुकदमे, वसीयत और प्रवर्तन मामलों के लिए क्रिप्टोकरेंसी holdings का पता लगाना, ट्रेस करना और दस्तावेज़ करना। स्पष्ट दायरे और deliverables के साथ फोरेंसिक methodology।"
   },
-  "Coverage": {
-    "title": "हमारी पहचान सेवाएं क्या कवर करती हैं",
-    "desc": "हमारी जांच नागरिक, आपराधिक और नियामक मामलों का समर्थन करने के लिए तैयार की गई है, जिनमें शामिल हैं:",
-    "card1_title": "तलाक और पारिवारिक कानून विवाद",
-    "card1_desc": "छिपे हुए क्रिप्टो एसेट्स से जुड़े मामले।",
-    "card2_title": "धोखाधड़ी, चोरी और गबन",
-    "card2_desc": "डिजिटल मुद्रा घटकों वाले मामले।",
-    "card3_title": "कॉर्पोरेट आंतरिक जांच",
-    "card3_desc": "दुरुपयोग किए गए धन से जुड़े मामले।",
-    "card4_title": "संपदा योजना और प्रोबेट मामले",
-    "card4_desc": "अज्ञात या अघोषित संपत्ति के साथ।",
-    "card5_title": "दिवालियापन या निर्णय प्रवर्तन",
-    "card5_desc": "संपत्ति की पहचान की आवश्यकता वाले मामले।",
-    "footer": "Lenix Protocol वादी और प्रतिवादी दोनों के साथ काम करता है, साथ ही संपत्ति विभाजन में एक निष्पक्ष विशेषज्ञ के रूप में कार्य करता है।"
+  "Hero": {
+    "eyebrow": "क्रिप्टो एसेट पहचान",
+    "title1": "डिजिटल holdings का दस्तावेज़ ",
+    "title2": "जो दूसरों ने शायद न बताई हों",
+    "subtitle": "वकीलों, जांचकर्ताओं और वित्तीय पेशेवरों के लिए जिन्हें मुकदमे, वसीयत और प्रवर्तन में क्रिप्टोकरेंसी का पता लगाना, ट्रेस करना और सत्यापित करना हो — review के लिए बनी methodology के साथ।",
+    "btn_primary": "समीक्षा शुरू",
+    "btn_secondary": "टीम से संपर्क"
+  },
+  "Audiences": {
+    "eyebrow": "किसके लिए",
+    "title": "मामले जिन्हें हम अक्सर सहायता देते हैं",
+    "description": "पहचान कार्य केवल अधिकृत कानूनी, नियामक या कॉर्पोरेट जांच तक सीमित — असंबंधित पक्षों पर खुली खोज नहीं।",
+    "cards": {
+      "family": {
+        "title": "पारिवारिक कानून और तलाक",
+        "desc": "संपत्ति विभाजन जहाँ एक पक्ष के पास अघोषित wallets, exchange accounts या on-chain holdings हो सकती हैं जो वित्तीय प्रकटीकरण में नहीं हैं।"
+      },
+      "fraud": {
+        "title": "धोखाधड़ी और गबन",
+        "desc": "अनुचित रूप से लिए गए डिजिटल धन वाले civil या criminal मामले — ज्ञात source wallets या compromised accounts से movement का trace।"
+      },
+      "estate": {
+        "title": "वसीयत और probate",
+        "desc": "Executor या counsel जो मृतक की undocumented क्रिप्टोकरेंसी locate करते हैं — devices, records या partial address leads से शुरू।"
+      },
+      "enforcement": {
+        "title": "दिवालियापन और प्रवर्तन",
+        "desc": "Creditors, trustees या regulators attachable crypto assets और exchange touchpoints identify करते हैं जो debtor या subject से जुड़े हों।"
+      }
+    }
   },
   "Methods": {
-    "title": "क्रिप्टोकरेंसी ट्रेसिंग के तरीके",
-    "card1_title": "ब्लॉकचेन वॉलेट पहचान",
-    "card1_desc": "और लिंकेज विश्लेषण।",
-    "card2_title": "लेनदेन की निगरानी",
-    "card2_desc": "सार्वजनिक और निजी ब्लॉकचेन पर।",
-    "card3_title": "NFT स्वामित्व सत्यापन",
-    "card3_desc": "और स्थानांतरण ट्रैकिंग।",
-    "card4_title": "एक्सचेंज खातों की पहचान",
-    "card4_desc": "और लेनदेन ऑफ-रैंप।",
-    "card5_title": "मेटाडेटा क्रॉस-रेफरेंसिंग",
-    "card5_desc": "और वॉलेट एट्रिब्यूशन के लिए डिवाइस साक्ष्य।",
-    "footer": "हमारी डिजिटल संपत्ति पहचान फॉरेंसिक रूप से पुख्ता तकनीकों का उपयोग करके की जाती है।"
+    "eyebrow": "हम क्या trace करते हैं",
+    "title": "पहचान और विश्लेषण का क्षेत्र",
+    "description": "कार्य on-chain analysis को matter के corroborating evidence के साथ जोड़ता है — अलग blockchain lookups नहीं।",
+    "columns": {
+      "linkage": {
+        "title": "Wallet पहचान",
+        "desc": "Transaction patterns, clustering और device, financial या testimony evidence के cross-reference से blockchain addresses को subjects से link करना।"
+      },
+      "flows": {
+        "title": "Transaction flow analysis",
+        "desc": "Chains और layers में fund movement follow करना — visible mixer use, bridge transfers और document करने योग्य consolidation points सहित।"
+      },
+      "attribution": {
+        "title": "Exchange और NFT attribution",
+        "desc": "संभावित custodial deposits, off-ramps और matter से जुड़ी NFT holdings identify करना जब on-chain data और leads अनुमति दें।"
+      }
+    }
   },
-  "WhyChooseUs": {
-    "title": "Lenix Protocol क्यों चुनें?",
-    "desc": "Lenix Protocol में, हमारी पहचान सेवाएं डिजिटल दुनिया में किसी विषय की पूरी वित्तीय तस्वीर को उजागर करने में मदद करती हैं। हम ग्राहकों को उन डिजिटल संपत्तियों को खोजने में मदद करते हैं जिन्हें अन्य लोग छिपाना चाहते थे।",
-    "point1_title": "सिद्ध विशेषज्ञता",
-    "point1_desc": "क्रिप्टोकरेंसी ट्रेसिंग और ब्लॉकचेन फॉरेंसिक में।",
-    "point2_title": "छिपी हुई संपत्ति की पहचान में अनुभव",
-    "point2_desc": "कानूनी अभ्यास क्षेत्रों में।",
-    "point3_title": "अदालत-योग्य विशेषज्ञ गवाही",
-    "point3_desc": "राज्य, संघीय और अंतर्राष्ट्रीय न्यायालयों में।",
-    "point4_title": "स्पष्ट, बचाव योग्य रिपोर्ट",
-    "point4_desc": "मुकदमेबाजी या अनुपालन के लिए तैयार।"
+  "Boundaries": {
+    "eyebrow": "क्षेत्र और सीमाएँ",
+    "title1": "पहचान क्या दिखा सकती है — ",
+    "title2": "और क्या नहीं",
+    "subtitle": "Public blockchain data की सीमाएँ हैं। Lenix प्रत्येक engagement को lawful access, available leads और report में supportable सीमा तक सीमित करता है।",
+    "items": {
+      "legal_basis": {
+        "title": "केवल अधिकृत मामले",
+        "desc": "हम legal, regulatory या corporate investigation basis वाले cases लेते हैं — unrelated individuals या addresses का speculative tracing नहीं।"
+      },
+      "chain_limits": {
+        "title": "On-chain पूरी तस्वीर नहीं",
+        "desc": "Custodial accounts में exchange balances या undeclared cold storage को public ledger analysis से परे अलग legal process चाहिए हो सकता है।"
+      },
+      "evidence": {
+        "title": "Forensic integrity",
+        "desc": "Methods और data handling counsel review, regulatory settings या court के लिए documented — chain of custody preserved।"
+      },
+      "neutral": {
+        "title": "Neutral capacity उपलब्ध",
+        "desc": "Lenix plaintiff counsel, defense या asset division और valuation disputes में independent expert के रूप में support कर सकता है।"
+      },
+      "no_guarantee": {
+        "title": "Completeness की कोई guarantee नहीं",
+        "desc": "पहचान provided leads, chain visibility और lawful access से bounded है। हम बताते हैं available data से क्या recoverable है और क्या नहीं।"
+      },
+      "disclosure": {
+        "title": "Controlled disclosure",
+        "desc": "Findings केवल engagement के तहत authorized parties के साथ share — defined matter scope के बाहर broadcast या use नहीं।"
+      }
+    }
   },
-  "CTA": {
-    "title": "हमसे",
-    "title_highlight": "आज ही संपर्क करें",
-    "desc_part1": "अपनी क्रिप्टो एसेट पहचान आवश्यकताओं पर चर्चा करने के लिए आज ही हमें",
-    "desc_part2": "पर कॉल करें।",
-    "email_label": "हमारी टीम को ईमेल करें",
-    "phone_label": "हमारे कार्यालय को कॉल करें"
+  "Process": {
+    "eyebrow": "कैसे काम करता है",
+    "title": "Intake से documented findings तक",
+    "description": "Counsel और investigators के लिए structured path — analysis शुरू होने से पहले scope तय।",
+    "step_label": "चरण {number}",
+    "steps": {
+      "intake": {
+        "title": "Matter scope define करें",
+        "desc": "Case type, parties, known wallet addresses, device या financial records, और वे प्रश्न जिनका identification को उत्तर देना है।"
+      },
+      "trace": {
+        "title": "Trace और analyze",
+        "desc": "Wallet linkage, flow mapping और exchange touchpoint analysis — on-chain data matter evidence के साथ cross-referenced।"
+      },
+      "report": {
+        "title": "Findings deliver करें",
+        "desc": "Timelines और methodology section के साथ written analysis — litigation strategy, compliance या further legal process के लिए उपयुक्त।"
+      }
+    },
+    "btn_primary": "समीक्षा शुरू",
+    "btn_secondary": "टीम से बात"
+  },
+  "Deliverables": {
+    "eyebrow": "आपको क्या मिलता है",
+    "title": "Legal और compliance use के outputs",
+    "description": "Deliverables matter के अनुसार — generic blockchain screenshots नहीं।",
+    "items": {
+      "timeline": {
+        "title": "Transaction chronology",
+        "desc": "Relevant movements का dated flow wallet linkage maps के साथ — identified addresses matter से कैसे जुड़ती हैं।"
+      },
+      "report": {
+        "title": "Written analysis",
+        "desc": "Methodology, findings और limitations counsel review के लिए documented — fact और inference का clear separation।"
+      },
+      "testimony": {
+        "title": "Expert support",
+        "desc": "Expert testimony या supplemental analysis jurisdiction, engagement terms और case needs के अनुसार उपलब्ध।"
+      }
+    }
+  },
+  "Cta": {
+    "title": "किसी matter में undisclosed crypto locate करना है?",
+    "subtitle": "Case context और existing leads साझा करें। Scoped engagement से पहले realistic identification work outline करेंगे।",
+    "btn_primary": "समीक्षा शुरू",
+    "btn_secondary": "टीम से संपर्क"
   }
 }

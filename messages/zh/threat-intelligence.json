@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "Threat Intelligence & Blockchain Intelligence | Lenix Protocol",
+    "description": "Blockchain intelligence for compliance, security, and investigation teams. Attribution data, flow analysis, and structured exports — scoped to authorized matters."
+  },
+  "Hero": {
+    "badge": "Threat intelligence",
+    "title1": "Blockchain intelligence ",
+    "title2": "for investigation teams",
+    "subtitle": "Screen wallets, map fund flows, and export structured findings for compliance reviews, security operations, and law-enforcement support — with clear scope on what on-chain data can and cannot show.",
+    "btn_primary": "Contact team",
+    "btn_secondary": "View capabilities"
+  },
+  "Mission": {
+    "title": "Intelligence built for operational use",
+    "description": "Lenix provides curated blockchain datasets and analysis workflows for teams that need attribution context, risk screening, and documented fund flows — not generic market dashboards copied from consumer analytics products."
+  },
+  "Capabilities": {
+    "pillars": {
+      "actors": {
+        "label": "Actor and wallet context",
+        "title": "Identify linked addresses and exposure",
+        "body": "Cluster related wallets and flag connections to known risky categories — sanctions lists, scam typologies, and high-risk service touchpoints — when your matter authorizes that scope of review."
+      },
+      "geopolitical": {
+        "label": "Risk monitoring",
+        "title": "Monitor flows that matter to your mandate",
+        "body": "Track movements tied to jurisdictions, entities, or wallet sets you define. Screening is configurable to your policy — not a one-size-fits-all risk score."
+      },
+      "enforcement": {
+        "label": "Case support",
+        "title": "Documentation for escalation",
+        "body": "Produce source-of-funds traces and address attribution summaries formatted for internal review, exchange requests, or counsel — with methodology and limits stated in the deliverable."
+      },
+      "delivery": {
+        "label": "Flexible delivery",
+        "title": "Data where your team works",
+        "body": "Receive exports via file, feed, or API integration depending on engagement terms. Priority wallet sets and alert rules can be adjusted as your operational focus changes."
+      }
+    }
+  },
+  "Cta": {
+    "title": "Need blockchain intelligence for a team or case?",
+    "description": "Describe your mandate, data needs, and delivery preferences. We outline what Lenix can provide before scoped engagement.",
+    "btn_primary": "Contact team",
+    "btn_secondary": "Blockchain forensics"
+  }
+}

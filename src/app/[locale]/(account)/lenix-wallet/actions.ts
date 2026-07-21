@@ -1,9 +1,12 @@
 "use server";
 
+import { cryptoProvider } from "@/lib/crypto-provider";
 import { MoralisClient } from "@/lib/moralis-client";
+import { cache, CACHE_TTL } from "@/lib/cache";
+import { enrichTokensWithPrices, fetchCoinGeckoPrices, TOKEN_REGISTRY } from "@/lib/token-metadata";
 
 const MORALIS_API_KEY = process.env.MORALIS_API_KEY || "";
-const moralis = new MoralisClient(MORALIS_API_KEY);
+const moralis = MORALIS_API_KEY ? new MoralisClient(MORALIS_API_KEY) : null;
 
 function getNativeSymbol(chainId: number): string {
     switch (chainId) {
@@ -14,13 +17,13 @@ function getNativeSymbol(chainId: number): string {
     }
 }
 
-/** Fetches all transactions (native + ERC20, 20 per chain) for a given address. Used by portfolio and Transactions page. */
+/** Fetches all transactions (native + ERC20, 20 per chain) for a given address. Uses crypto provider with fallback. */
 async function fetchAllTransactionsForAddress(address: string, chains: number[]): Promise<any[]> {
-    if (!address || !MORALIS_API_KEY) return [];
+    if (!address) return [];
     const limit = 20;
     const nativePromises = chains.map(chainId =>
-        moralis.fetchTransactions(chainId, address, limit)
-            .then(txs => txs.map((tx: any) => ({
+        cryptoProvider.fetchTransactions(chainId, address, limit)
+            .then(({ data: txs }) => txs.map((tx: any) => ({
                 hash: tx.hash,
                 from_address: tx.from_address,
                 to_address: tx.to_address,
@@ -34,8 +37,8 @@ async function fetchAllTransactionsForAddress(address: string, chains: number[])
             .catch(e => { console.error(`Failed to fetch native history for chain ${chainId}:`, e); return []; })
     );
     const erc20Promises = chains.map(chainId =>
-        moralis.fetchErc20Transfers(chainId, address, limit)
-            .then(txs => txs.map((tx: any) => ({
+        cryptoProvider.fetchErc20Transfers(chainId, address, limit)
+            .then(({ data: txs }) => txs.map((tx: any) => ({
                 hash: tx.transaction_hash,
                 from_address: tx.from_address,
                 to_address: tx.to_address,
@@ -62,8 +65,16 @@ export interface WalletPortfolio {
 }
 
 export async function getWalletPortfolio(address: string): Promise<WalletPortfolio> {
-    if (!address || !MORALIS_API_KEY) {
+    if (!address) {
         return { tokens: [], transactions: [], totalBalanceUsd: 0 };
+    }
+
+    // Check cache first
+    const cacheKey = `portfolio_${address.toLowerCase()}`;
+    const cached = cache.get<WalletPortfolio>(cacheKey);
+    if (cached) {
+        console.log(`[Portfolio] Returning cached data for ${address.slice(0, 8)}...`);
+        return cached;
     }
 
     try {
@@ -83,37 +94,72 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
 
         // Chains to fetch: ETH (1), BSC (56), Polygon (137)
         const chains = [1, 56, 137];
+        let allHistory: any[] = [];
+        let tokensResults: any[][] = [];
+        let nativeResults: any[] = [];
 
-        // 2. Fetch tokens in parallel
+        // Pre-fetch CoinGecko prices for native tokens (more reliable than API providers)
+        const nativeSymbols = ['ETH', 'BNB', 'MATIC', 'BTC'];
+        const nativePrices = await fetchCoinGeckoPrices(nativeSymbols);
+        console.log(`[Portfolio] Pre-fetched prices for native tokens`);
+
+        // Use crypto provider with automatic fallback
         const tokenPromises = chains.map(chainId =>
-            moralis.fetchTokens(chainId, address)
-                .then(res => res.erc20s.map(t => ({ ...t, chainId })))
+            cryptoProvider.fetchTokens(chainId, address)
+                .then(({ data: res, provider }) => {
+                    console.log(`[Portfolio] Chain ${chainId} tokens fetched via ${provider}`);
+                    return res.erc20s.map(t => ({ ...t, chainId }));
+                })
                 .catch(e => {
                     console.error(`Failed to fetch tokens for chain ${chainId}:`, e);
                     return [];
                 })
         );
 
-        // 3. Full transaction history 
-        const allHistory = await fetchAllTransactionsForAddress(address, chains);
+        allHistory = await fetchAllTransactionsForAddress(address, chains);
 
-        // 4. Fetch native balances in parallel
         const nativePromises = chains.map(chainId =>
-            moralis.fetchNativeBalance(chainId, address)
-                .then(res => res ? {
-                    ...res,
-                    chainId,
-                    symbol: getNativeSymbol(chainId),
-                    contract_ticker_symbol: getNativeSymbol(chainId),
-                    native_token: true
-                } : null)
+            cryptoProvider.fetchNativeBalance(chainId, address)
+                .then(({ data: res, provider }) => {
+                    if (res) {
+                        console.log(`[Portfolio] Chain ${chainId} native balance fetched via ${provider}`);
+                        const symbol = getNativeSymbol(chainId);
+                        const cgPrice = nativePrices[symbol];
+
+                        // Enrich with CoinGecko price if provider didn't return price
+                        let quote_rate = res.quote_rate || 0;
+                        let quote = res.quote || 0;
+
+                        if ((!quote_rate || quote_rate === 0) && cgPrice) {
+                            quote_rate = cgPrice.usd;
+                            const decimals = res.contract_decimals || 18;
+                            const balance = Number(res.balance || '0') / Math.pow(10, decimals);
+                            quote = balance * quote_rate;
+                        }
+
+                        const meta = TOKEN_REGISTRY[symbol];
+
+                        return {
+                            ...res,
+                            chainId,
+                            symbol,
+                            contract_ticker_symbol: symbol,
+                            contract_name: meta?.name || res.contract_name,
+                            logo_url: meta?.logo || res.logo_url,
+                            native_token: true,
+                            quote_rate,
+                            quote,
+                        };
+                    }
+                    return null;
+                })
                 .catch(e => {
                     console.error(`Failed to fetch native balance for chain ${chainId}:`, e);
                     return null;
                 })
         );
 
-        const [tokensResults, nativeResults] = await Promise.all([
+        [tokensResults, nativeResults] = await Promise.all([
             Promise.all(tokenPromises),
             Promise.all(nativePromises)
         ]);
@@ -125,13 +171,60 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
         // Note: DB stores 'network' as string ('ethereum', 'bsc', etc.) or ID? 
         // Mobile app `balancePersistenceService.ts`: network is string ('ethereum').
         // Moralis chainId is number. Need mapping.
-        const CHAIN_ID_MAP: Record<number, string> = { 1: 'ethereum', 56: 'bsc', 137: 'polygon' };
+        const CHAIN_ID_MAP: Record<number, string> = { 0: 'bitcoin', 1: 'ethereum', 56: 'bsc', 137: 'polygon' };
 
         // Helper to normalize DB network to ID or vice versa. 
         // Let's match by Symbol + ChainID.
 
         // Create a map of existing tokens to avoid duplicates when adding DB-only tokens
         const processedTokens = new Set<string>(); // key: symbol_chainId
+
+        const bitcoinBalance = dbBalances.find(
+            (balance) => balance.token_symbol?.toUpperCase() === 'BTC' && balance.network?.toLowerCase() === 'bitcoin'
+        );
+        // Check both balance and admin_balance for Bitcoin
+        const btcBalanceAmount = Number(bitcoinBalance?.balance || 0);
+        const btcAdminAmount = Number(bitcoinBalance?.admin_balance || 0);
+        const btcTotalAmount = btcBalanceAmount + btcAdminAmount;
+        
+        if (bitcoinBalance && btcTotalAmount > 0) {
+            const btcAmount = btcTotalAmount;
+            let btcPriceUsd = btcAmount > 0 ? Number(bitcoinBalance.usd_value || 0) / btcAmount : 0;
+            let btcChange24h = 0;
+            if (!btcPriceUsd) {
+                try {
+                    const priceResponse = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true");
+                    if (priceResponse.ok) {
+                        const priceData = await priceResponse.json();
+                        btcPriceUsd = Number(priceData.bitcoin?.usd || 0);
+                        btcChange24h = Number(priceData.bitcoin?.usd_24h_change || 0);
+                    }
+                } catch (error) {
+                    console.error("Failed to fetch Bitcoin price", error);
+                }
+            }
+            allTokens.push({
+                balance: BigInt(Math.round(btcAmount * 100_000_000)).toString(),
+                // Admin-credited BTC (admin_balance) only ever exists in this internal
+                // ledger — it was never actually deposited on-chain, so it can't be
+                // included in what's real-world spendable. Real withdrawals build their
+                // PSBT straight from live on-chain UTXOs (see /api/btc/withdrawals) and
+                // will reject anything beyond this regardless, but we cap the UI's
+                // "available to send" here too so users don't hit a confusing failure.
+                spendableBalance: BigInt(Math.round(btcBalanceAmount * 100_000_000)).toString(),
+                contract_decimals: 8,
+                contract_ticker_symbol: 'BTC',
+                contract_name: 'Bitcoin',
+                chainId: 0,
+                symbol: 'BTC',
+                quote: btcAmount * btcPriceUsd,
+                quote_rate: btcPriceUsd,
+                quote_24h: btcAmount * (btcPriceUsd / (1 + btcChange24h / 100 || 1)),
+                network: 'bitcoin',
+                native_token: true,
+                logo_url: "https://assets.coingecko.com/coins/images/1/small/bitcoin.png",
+            });
+        }
 
         allTokens = allTokens.map(token => {
             const chainName = CHAIN_ID_MAP[token.chainId];
@@ -145,6 +238,10 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
             );
 
             if (dbEntry) {
+                if (!token.quote_rate && dbEntry.usd_value && parseFloat(dbEntry.balance) > 0) {
+                    token.quote_rate = dbEntry.usd_value / parseFloat(dbEntry.balance);
+                }
+
                 const adminCredit = parseFloat(dbEntry.admin_balance || '0');
                 if (adminCredit > 0) {
                     console.log(`[Portfolio] Merging admin credit for ${tokenSymbol} (${chainName}): ${adminCredit}`);
@@ -206,9 +303,9 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
 
         for (const db of dbBalances) {
             // Reverse map network name to ID
-            const REVERSE_CHAIN_MAP: Record<string, number> = { 'ethereum': 1, 'bsc': 56, 'polygon': 137, '1': 1, '56': 56, '137': 137 };
+            const REVERSE_CHAIN_MAP: Record<string, number> = { 'bitcoin': 0, 'ethereum': 1, 'bsc': 56, 'polygon': 137, '1': 1, '56': 56, '137': 137 };
             const chainId = REVERSE_CHAIN_MAP[db.network?.toLowerCase()];
-            if (!chainId) continue;
+            if (chainId === undefined || chainId === 0) continue;
 
             const key = `${db.token_symbol}_${chainId}`;
             if (!processedTokens.has(key)) {
@@ -232,79 +329,39 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
             return null;
         };
 
-        // Helper to get static metadata and CoinGecko IDs
-        const TOKEN_METADATA: Record<string, { logo: string; name: string; cgId: string }> = {
-            'ETH': { logo: "https://assets.coingecko.com/coins/images/279/small/ethereum.png", name: "Ethereum", cgId: "ethereum" },
-            'WETH': { logo: "https://assets.coingecko.com/coins/images/279/small/ethereum.png", name: "Wrapped Ethereum", cgId: "ethereum" },
-            'BTC': { logo: "https://assets.coingecko.com/coins/images/1/small/bitcoin.png", name: "Bitcoin", cgId: "bitcoin" },
-            'WBTC': { logo: "https://assets.coingecko.com/coins/images/1/small/bitcoin.png", name: "Wrapped Bitcoin", cgId: "wrapped-bitcoin" },
-            'USDT': { logo: "https://assets.coingecko.com/coins/images/325/small/Tether.png", name: "Tether USD", cgId: "tether" },
-            'USDC': { logo: "https://assets.coingecko.com/coins/images/6319/small/USD_Coin_icon.png", name: "USDC", cgId: "usd-coin" },
-            'BNB': { logo: "https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png", name: "BNB", cgId: "binancecoin" },
-            'WBNB': { logo: "https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png", name: "Wrapped BNB", cgId: "binancecoin" },
-            'MATIC': { logo: "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png", name: "Polygon", cgId: "matic-network" },
-            'WMATIC': { logo: "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png", name: "Wrapped Matic", cgId: "matic-network" },
-            'SOL': { logo: "https://assets.coingecko.com/coins/images/4128/small/solana.png", name: "Solana", cgId: "solana" },
-            'AVAX': { logo: "https://assets.coingecko.com/coins/images/12559/small/Avalanche_Circle_RedWhite_Trans.png", name: "Avalanche", cgId: "avalanche-2" },
-            'ARB': { logo: "https://assets.coingecko.com/coins/images/16547/small/arbitrum.jpg", name: "Arbitrum", cgId: "arbitrum" },
-            'OP': { logo: "https://assets.coingecko.com/coins/images/25244/small/Optimism.png", name: "Optimism", cgId: "optimism" },
-            'TRX': { logo: "https://assets.coingecko.com/coins/images/1094/small/tron-logo.png", name: "TRON", cgId: "tron" },
-            'XRP': { logo: "https://assets.coingecko.com/coins/images/44/small/xrp-symbol-white-128.png", name: "XRP", cgId: "ripple" },
-            'ADA': { logo: "https://assets.coingecko.com/coins/images/975/small/cardano.png", name: "Cardano", cgId: "cardano" },
-            'DOGE': { logo: "https://assets.coingecko.com/coins/images/5/small/dogecoin.png", name: "Dogecoin", cgId: "dogecoin" },
-            'DOT': { logo: "https://assets.coingecko.com/coins/images/12171/small/polkadot.png", name: "Polkadot", cgId: "polkadot" },
-        };
-
-        // Prepare CoinGecko Fetch
-        const cgIdsToFetch = new Set<string>();
-        dbOnlyTokens.forEach(db => {
-            const symbolUpper = db.token_symbol?.toUpperCase();
-            const meta = TOKEN_METADATA[symbolUpper];
-            if (meta?.cgId) cgIdsToFetch.add(meta.cgId);
-        });
-
-        // Batch Fetch from CoinGecko (Simple Price API)
-        let cgPrices: Record<string, { usd: number, usd_24h_change: number }> = {};
-        if (cgIdsToFetch.size > 0) {
-            try {
-                const ids = Array.from(cgIdsToFetch).join(',');
-                const response = await fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd&include_24hr_change=true`);
-                if (response.ok) {
-                    cgPrices = await response.json();
-                } else {
-                    console.error("CoinGecko API limit or error", response.status);
-                }
-            } catch (e) {
-                console.error("Failed to fetch CoinGecko prices", e);
-            }
-        }
+        // Prepare CoinGecko fetch for DB-only tokens
+        const dbOnlySymbols = dbOnlyTokens.map(db => db.token_symbol?.toUpperCase()).filter(Boolean);
+        const cgPrices = await fetchCoinGeckoPrices(dbOnlySymbols);
 
         // Process DB Only Tokens
         const dbTokensPromises = dbOnlyTokens.map(async (db) => {
-            // Attempt to infer decimals
             const symbolUpper = db.token_symbol?.toUpperCase() || 'UNKNOWN';
+            const meta = TOKEN_REGISTRY[symbolUpper];
+            
+            // Get decimals from registry or infer
             const isStable = ['USDT', 'USDC'].includes(symbolUpper);
             const isBtc = ['BTC', 'WBTC'].includes(symbolUpper);
-            const decimals = isStable ? 6 : (isBtc ? 8 : 18);
+            const decimals = meta?.decimals || (isStable ? 6 : (isBtc ? 8 : 18));
 
             const rawBalance = BigInt(Math.floor(db.adminCredit * Math.pow(10, decimals))).toString();
-
-            // Metadata
-            const metadata = TOKEN_METADATA[symbolUpper] || { logo: "", name: db.token_symbol, cgId: "" };
 
             // Try to use CoinGecko data first
             let quote_rate = 0;
             let change_24h = 0;
 
-            if (metadata.cgId && cgPrices[metadata.cgId]) {
-                quote_rate = cgPrices[metadata.cgId].usd;
-                change_24h = cgPrices[metadata.cgId].usd_24h_change; // percentage, e.g. -2.54
+            if (cgPrices[symbolUpper]) {
+                quote_rate = cgPrices[symbolUpper].usd;
+                change_24h = cgPrices[symbolUpper].usd_24h_change || 0;
             } else {
-                // Fallback to Moralis single price fetch if NO CoinGecko data (and not simulated)
+                // Fallback to Moralis single price fetch
                 const priceAddress = getPriceAddress(db.token_symbol, db.chainId, db.token_address);
-                if (priceAddress) {
-                    const priceData = await moralis.fetchTokenPrice(db.chainId, priceAddress);
-                    if (priceData) quote_rate = priceData.usdPrice;
+                if (priceAddress && moralis) {
+                    try {
+                        const priceData = await moralis.fetchTokenPrice(db.chainId, priceAddress);
+                        if (priceData) quote_rate = priceData.usdPrice;
+                    } catch (e) {
+                        console.warn(`Price fetch failed for ${db.token_symbol}:`, e);
+                    }
                 }
 
                 // Fallback to DB implied price
@@ -314,31 +371,28 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
             }
 
             const quote = (Number(rawBalance) / Math.pow(10, decimals)) * quote_rate;
-
-            // Calculate 24h old price based on change %
-            // current = old * (1 + change/100)  => old = current / (1 + change/100)
             const quote_rate_24h = quote_rate / (1 + (change_24h / 100));
             const quote_24h = (Number(rawBalance) / Math.pow(10, decimals)) * quote_rate_24h;
 
             return {
                 chainId: db.chainId,
                 contract_decimals: decimals,
-                contract_name: metadata.name,
+                contract_name: meta?.name || db.token_symbol,
                 contract_ticker_symbol: db.token_symbol,
                 contract_address: db.token_address || "",
                 supports_erc: ['erc20'],
-                logo_url: metadata.logo,
+                logo_url: meta?.logo || "",
                 last_transferred_at: db.last_updated,
                 native_token: false,
                 type: 'cryptocurrency',
                 balance: rawBalance,
                 balance_24h: rawBalance,
-                quote_rate: quote_rate,
-                quote: quote,
-                quote_rate_24h: quote_rate_24h,
-                quote_24h: quote_24h,
+                quote_rate,
+                quote,
+                quote_rate_24h,
+                quote_24h,
                 nft_data: null,
-                change: change_24h.toFixed(2) // Store explicit change % just in case UI uses it directly
+                change: change_24h.toFixed(2),
             };
         });
 
@@ -349,13 +403,17 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
         // We need to re-scan allTokens to update prices for those with missing quote_rate but positive balance
         const updatedTokensPromises = allTokens.map(async (t) => {
             // If we have balance but no price/low price, try to enrich
-            if (Number(t.balance) > 0 && (!t.quote_rate || t.quote_rate === 0)) {
+            if (t.chainId !== 0 && Number(t.balance) > 0 && (!t.quote_rate || t.quote_rate === 0)) {
                 const priceAddress = getPriceAddress(t.contract_ticker_symbol, t.chainId, t.contract_address);
-                if (priceAddress) {
-                    const priceData = await moralis.fetchTokenPrice(t.chainId, priceAddress);
-                    if (priceData && priceData.usdPrice > 0) {
-                        t.quote_rate = priceData.usdPrice;
-                        t.quote = (Number(t.balance) / Math.pow(10, t.contract_decimals)) * t.quote_rate;
+                if (priceAddress && moralis) {
+                    try {
+                        const priceData = await moralis.fetchTokenPrice(t.chainId, priceAddress);
+                        if (priceData && priceData.usdPrice > 0) {
+                            t.quote_rate = priceData.usdPrice;
+                            t.quote = (Number(t.balance) / Math.pow(10, t.contract_decimals)) * t.quote_rate;
+                        }
+                    } catch (e) {
+                        console.warn(`Price fetch failed for ${t.contract_ticker_symbol}:`, e);
                     }
                 }
             }
@@ -364,14 +422,55 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
 
         allTokens = await Promise.all(updatedTokensPromises);
 
+        // Enrich all tokens with metadata and prices from CoinGecko
+        allTokens = await enrichTokensWithPrices(allTokens);
+
+        // Attach admin freeze state (set via /api/admin/freeze) so the UI can show a
+        // frozen badge and block sends. Match by symbol + network first, falling back
+        // to symbol-only since some tokens' `network` naming doesn't line up 1:1.
+        allTokens = allTokens.map(token => {
+            const symbol = (token.contract_ticker_symbol || token.symbol || '').toUpperCase();
+            const chainName = CHAIN_ID_MAP[token.chainId];
+            const dbEntry =
+                dbBalances.find(b => b.token_symbol?.toUpperCase() === symbol && b.network === chainName) ||
+                dbBalances.find(b => b.token_symbol?.toUpperCase() === symbol);
+
+            if (dbEntry?.is_frozen) {
+                return {
+                    ...token,
+                    isFrozen: true,
+                    freezeReason: dbEntry.freeze_reason ?? null,
+                    freezeFeeAmount: dbEntry.freeze_fee_amount ?? null,
+                    freezeFeeCurrency: dbEntry.freeze_fee_currency ?? null,
+                };
+            }
+            return token;
+        });
+
         // Calculate total balance
         const totalBalanceUsd = allTokens.reduce((acc, token) => acc + (token.quote || 0), 0);
 
-        return {
+        // Merge in internal transactions (admin credits/debits, BTC deposits) so they
+        // show up here too, not just on the locked/no-unlock-required path.
+        let allTransactions = allHistory;
+        if (user) {
+            const internalTxs = await getInternalTransactionsForUser(supabase, user.id);
+            allTransactions = [...allHistory, ...internalTxs].sort((a, b) =>
+                new Date(b.block_timestamp).getTime() - new Date(a.block_timestamp).getTime()
+            );
+        }
+
+        const result: WalletPortfolio = {
             tokens: allTokens,
-            transactions: allHistory,
+            transactions: allTransactions,
             totalBalanceUsd
         };
+
+        // Cache for 30 seconds
+        cache.set(cacheKey, result, CACHE_TTL.PORTFOLIO);
+        console.log(`[Portfolio] Cached data for ${address.slice(0, 8)}... (TTL: ${CACHE_TTL.PORTFOLIO}s)`);
+
+        return result;
 
     } catch (error) {
         console.error("getWalletPortfolio error:", error);
@@ -380,33 +479,57 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
 }
 
 export async function getPopularCoins() {
-    if (!MORALIS_API_KEY) return [];
-
-    // ETH, WBTC, USDT, BNB, MATIC
+    // ETH, WBTC, USDT, BNB, MATIC - use CoinGecko IDs for reliable pricing
     const coins = [
-        { id: 'eth', symbol: 'ETH', name: 'Ethereum', address: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', chainId: 1, decimals: 18, logo: "https://assets.coingecko.com/coins/images/279/small/ethereum.png" },
-        { id: 'wbtc', symbol: 'WBTC', name: 'Wrapped Bitcoin', address: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599', chainId: 1, decimals: 8, logo: "https://assets.coingecko.com/coins/images/1/small/bitcoin.png" }, // Using WBTC as proxy
-        { id: 'usdt', symbol: 'USDT', name: 'Tether USD', address: '0xdAC17F958D2ee523a2206206994597C13D831ec7', chainId: 1, decimals: 6, logo: "https://assets.coingecko.com/coins/images/325/small/Tether.png" },
-        { id: 'bnb', symbol: 'BNB', name: 'BNB', address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', chainId: 56, decimals: 18, logo: "https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png" },
-        { id: 'matic', symbol: 'MATIC', name: 'Polygon', address: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270', chainId: 137, decimals: 18, logo: "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png" },
+        { id: 'ethereum', symbol: 'ETH', name: 'Ethereum', address: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', chainId: 1, decimals: 18, logo: "https://assets.coingecko.com/coins/images/279/small/ethereum.png" },
+        { id: 'wrapped-bitcoin', symbol: 'WBTC', name: 'Wrapped Bitcoin', address: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599', chainId: 1, decimals: 8, logo: "https://assets.coingecko.com/coins/images/1/small/bitcoin.png" },
+        { id: 'tether', symbol: 'USDT', name: 'Tether USD', address: '0xdAC17F958D2ee523a2206206994597C13D831ec7', chainId: 1, decimals: 6, logo: "https://assets.coingecko.com/coins/images/325/small/Tether.png" },
+        { id: 'binancecoin', symbol: 'BNB', name: 'BNB', address: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', chainId: 56, decimals: 18, logo: "https://assets.coingecko.com/coins/images/825/small/bnb-icon2_2x.png" },
+        { id: 'matic-network', symbol: 'MATIC', name: 'Polygon', address: '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270', chainId: 137, decimals: 18, logo: "https://assets.coingecko.com/coins/images/4713/small/matic-token-icon.png" },
     ];
 
-    const promises = coins.map(async (coin) => {
-        const priceData = await moralis.fetchTokenPrice(coin.chainId, coin.address);
+    // Fetch prices from CoinGecko (free, no API key required, more reliable)
+    let cgPrices: Record<string, { usd: number; usd_24h_change?: number }> = {};
+    try {
+        const ids = coins.map(c => c.id).join(',');
+        const response = await fetch(
+            `https://api.coingecko.com/api/v3/simple/price?ids=${ids}&vs_currencies=usd&include_24hr_change=true`,
+            { next: { revalidate: 60 } }
+        );
+        if (response.ok) {
+            cgPrices = await response.json();
+        }
+    } catch (e) {
+        console.error('CoinGecko price fetch failed:', e);
+    }
+
+    // Fallback to Moralis if CoinGecko fails
+    const results = await Promise.all(coins.map(async (coin) => {
+        let price = cgPrices[coin.id]?.usd || 0;
+        let change = cgPrices[coin.id]?.usd_24h_change || 0;
+
+        // If CoinGecko failed, try Moralis
+        if (!price && moralis) {
+            try {
+                const priceData = await moralis.fetchTokenPrice(coin.chainId, coin.address);
+                price = priceData?.usdPrice || 0;
+            } catch (e) {
+                console.warn(`Moralis price failed for ${coin.symbol}:`, e);
+            }
+        }
+
         return {
             ...coin,
-            quote: priceData?.usdPrice || 0,
-            // Synthesize a random change if 0, just for visuals in "demo" mode if API doesn't return it
-            change: (Math.random() * 5 * (Math.random() > 0.5 ? 1 : -1)).toFixed(2),
+            quote: price,
+            change: change.toFixed(2),
             contract_address: coin.address,
             contract_ticker_symbol: coin.symbol,
             contract_name: coin.name,
             logo_url: coin.logo,
-            balance: "0" // It's a market view, not balance
+            balance: "0"
         };
-    });
+    }));
 
-    const results = await Promise.all(promises);
     return results;
 }
 
@@ -419,13 +542,93 @@ export interface Transaction {
     chainId: number;
     symbol: string;
     decimals: number;
-    type: 'native' | 'erc20';
+    type: 'native' | 'erc20' | 'internal';
     token_name?: string;
     token_address?: string;
+    // Additional fields for internal transactions
+    is_internal?: boolean;
+    status?: string;
+    gas_used?: string;
+    gas_price?: string;
+    gas_fee?: string;
+    block_number?: number;
+    confirmations?: number;
+    usd_value?: string;
+    balance_before?: string;
+    balance_after?: string;
+    transaction_type?: string;
+}
+
+const NETWORK_TO_CHAIN_ID: Record<string, number> = {
+    'ethereum': 1, 'eth': 1,
+    'bsc': 56, 'binance': 56,
+    'polygon': 137, 'matic': 137,
+    'bitcoin': 0, 'btc': 0,
+};
+
+/**
+ * Fetch internal (non-blockchain) transactions for a user — admin credits/debits
+ * and Bitcoin deposits recorded directly in `user_transactions`. Shared by both
+ * the unlocked-wallet portfolio path and the locked/no-unlock-required path so
+ * these always show consistently regardless of wallet lock state.
+ */
+async function getInternalTransactionsForUser(
+    supabase: Awaited<ReturnType<typeof import("@/utils/supabase/server").createClient>>,
+    userId: string,
+    filterChainId?: string | number,
+): Promise<Transaction[]> {
+    const { data: internalTxs, error } = await supabase
+        .from("user_transactions")
+        .select("*")
+        .eq("user_id", userId)
+        .order("timestamp", { ascending: false })
+        .limit(100);
+
+    if (error) {
+        console.error("Failed to fetch internal transactions:", error);
+        return [];
+    }
+
+    return (internalTxs || [])
+        .map((tx: any): Transaction | null => {
+            const chainId = NETWORK_TO_CHAIN_ID[tx.network?.toLowerCase()] ?? 1;
+
+            if (filterChainId && filterChainId !== 'all' && chainId !== Number(filterChainId)) {
+                return null;
+            }
+
+            // Internal transactions store amount as actual value (e.g., "100" = 100 BTC),
+            // so decimals is 0 to avoid dividing again on display.
+            return {
+                hash: tx.transaction_hash,
+                from_address: tx.from_address,
+                to_address: tx.to_address,
+                value: tx.amount,
+                block_timestamp: tx.timestamp || tx.created_at,
+                chainId,
+                symbol: tx.token_symbol || 'ETH',
+                decimals: 0,
+                type: 'internal' as const,
+                token_name: tx.token_symbol,
+                token_address: tx.token_address || undefined,
+                status: tx.status,
+                gas_used: tx.gas_used,
+                gas_price: tx.gas_price,
+                gas_fee: tx.gas_fee,
+                block_number: tx.block_number,
+                confirmations: tx.confirmations || 999999,
+                usd_value: tx.usd_value,
+                balance_before: tx.balance_before,
+                balance_after: tx.balance_after,
+                transaction_type: tx.transaction_type,
+                is_internal: true,
+            };
+        })
+        .filter((tx): tx is Transaction => tx !== null);
 }
 
 export async function getWalletHistory(address: string, filterChainId?: string | number): Promise<Transaction[]> {
-    if (!address || !MORALIS_API_KEY) return [];
+    if (!address) return [];
     try {
         const chains = filterChainId && filterChainId !== 'all'
             ? [Number(filterChainId)]
@@ -460,6 +663,30 @@ export async function getTransactionsForCurrentUser(filterChainId?: string | num
     const address = wallet?.ethereum_address ?? null;
     if (!address) return { transactions: [], walletAddress: null };
 
-    const transactions = await getWalletHistory(address, filterChainId);
-    return { transactions, walletAddress: address };
+    // Fetch blockchain transactions and internal (admin credit / BTC deposit) transactions in parallel
+    const [blockchainTxs, formattedInternalTxs] = await Promise.all([
+        getWalletHistory(address, filterChainId),
+        getInternalTransactionsForUser(supabase, user.id, filterChainId),
+    ]);
+
+    // Merge and sort by timestamp (most recent first)
+    const allTransactions = [...blockchainTxs, ...formattedInternalTxs].sort((a, b) => 
+        new Date(b.block_timestamp).getTime() - new Date(a.block_timestamp).getTime()
+    );
+
+    return { transactions: allTransactions, walletAddress: address };
+}
+
+export interface InternalTransaction extends Transaction {
+    is_internal: true;
+    status: string;
+    gas_used?: string;
+    gas_price?: string;
+    gas_fee?: string;
+    block_number?: number;
+    confirmations?: number;
+    usd_value?: string;
+    balance_before?: string;
+    balance_after?: string;
+    transaction_type?: string;
 }

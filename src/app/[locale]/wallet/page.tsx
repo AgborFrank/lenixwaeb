@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { WalletContent } from "./components/wallet-content";
 
-export const metadata: Metadata = {
-  title: "Lenix Wallet – The Most Secure Vault for Your Assets",
-  description: "Experience professional-grade security with the Lenix Wallet. Securely manage, store, and grow your crypto assets with advanced encryption and recovery protocols.",
-  keywords: ["Crypto Wallet", "Secure Wallet", "Blockchain Vault", "LNX Wallet", "Asset Security"],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("WalletPage.meta");
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords").split(", "),
+  };
+}
 
 export default function LenixWalletPage() {
   return <WalletContent />;
 }
-

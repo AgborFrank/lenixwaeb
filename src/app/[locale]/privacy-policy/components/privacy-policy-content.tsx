@@ -6,7 +6,7 @@ export function PrivacyPolicyContent() {
   return (
     <div className="min-h-screen bg-black text-white selection:bg-yellow-400/30">
       {/* Hero */}
-      <section className="relative pt-32 pb-12 border-b border-white/5">
+      <section className="relative pt-32 pb-12">
         <div className="absolute inset-0 z-0 opacity-10">
           <div className="absolute inset-0 hero-grid-pattern" />
         </div>

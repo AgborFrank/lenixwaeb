@@ -1,10 +1,25 @@
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
-import Link from "next/link";
-import { ShieldCheck, Landmark, LayoutDashboard } from "lucide-react";
+import { getLocale, getTranslations } from "next-intl/server";
+import { ShieldCheck, LayoutDashboard } from "lucide-react";
+
+const TELEGRAM_URL = "https://t.me/Verified_protocol";
+
+function formatDetailLabel(
+  t: Awaited<ReturnType<typeof getTranslations>>,
+  key: string,
+) {
+  const fieldKey = `details_fields.${key}` as const;
+  if (t.has(fieldKey)) {
+    return t(fieldKey);
+  }
+  return key.replace(/_/g, " ");
+}
 
 export default async function DashboardPage() {
   const supabase = await createClient();
+  const t = await getTranslations("AccountDashboard");
+  const locale = await getLocale();
   const {
     data: { user },
   } = await supabase.auth.getUser();
@@ -21,12 +36,17 @@ export default async function DashboardPage() {
     redirect("/onboarding");
   }
 
-  const isRecovery = onboarding.service_type === "recovery";
+  const serviceType = onboarding.service_type as string;
+  const isRecovery = serviceType === "recovery";
+  const isBanking = serviceType === "banking";
+  const statusKey = isRecovery ? "recovery" : isBanking ? "banking" : "loan";
+  const serviceTypeLabel = t.has(`service_types.${serviceType}`)
+    ? t(`service_types.${serviceType}`)
+    : serviceType;
 
   return (
     <div className="max-w-7xl mx-auto text-white">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Main Status Card - glass style */}
         <div className="lg:col-span-2 space-y-8">
           <div className="rounded-2xl border border-white/20 bg-white/10 p-6 relative overflow-hidden shadow-2xl backdrop-blur-xl">
             <div className="absolute top-0 right-0 p-4 opacity-10">
@@ -34,12 +54,7 @@ export default async function DashboardPage() {
             </div>
 
             <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-              {isRecovery ? (
-                <ShieldCheck className="text-yellow-400" />
-              ) : (
-                <Landmark className="text-yellow-400" />
-              )}
-              {isRecovery ? "Recovery Case Status" : "Loan Application Status"}
+              {t(`status.${statusKey}`)}
             </h2>
 
             <div className="space-y-6">
@@ -51,13 +66,13 @@ export default async function DashboardPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">
-                      Application Received
+                      {t("timeline.received_title")}
                     </h3>
                     <p className="text-sm text-gray-400 mt-1">
-                      We have received your details and are reviewing them.
+                      {t("timeline.received_desc")}
                     </p>
                     <p className="text-xs text-gray-500 mt-1">
-                      {new Date(onboarding.created_at).toLocaleDateString()}
+                      {new Date(onboarding.created_at).toLocaleDateString(locale)}
                     </p>
                   </div>
                 </div>
@@ -67,10 +82,10 @@ export default async function DashboardPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-400">
-                      Under Review
+                      {t("timeline.review_title")}
                     </h3>
                     <p className="text-sm text-gray-500 mt-1">
-                      Our team is currently analyzing your request.
+                      {t("timeline.review_desc")}
                     </p>
                   </div>
                 </div>
@@ -78,20 +93,18 @@ export default async function DashboardPage() {
 
               <div className="rounded-xl border border-white/5 bg-black/30 p-4">
                 <h4 className="text-sm font-medium text-gray-300 mb-2">
-                  Submitted Details
+                  {t("submitted_details")}
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
                   <div>
-                    <span className="text-gray-500 block">Service Type</span>
-                    <span className="text-white capitalize">
-                      {onboarding.service_type}
-                    </span>
+                    <span className="text-gray-500 block">{t("service_type")}</span>
+                    <span className="text-white">{serviceTypeLabel}</span>
                   </div>
                   {onboarding.details &&
                     Object.entries(onboarding.details).map(([key, value]) => (
                       <div key={key}>
                         <span className="text-gray-500 block capitalize">
-                          {key.replace(/_/g, " ")}
+                          {formatDetailLabel(t, key)}
                         </span>
                         <span className="text-white">{String(value)}</span>
                       </div>
@@ -102,21 +115,20 @@ export default async function DashboardPage() {
           </div>
         </div>
 
-        {/* Right sidebar card */}
         <div className="space-y-8">
           <div className="rounded-2xl border border-yellow-400/10 bg-yellow-400/5 p-6 backdrop-blur-xl">
-            <h3 className="font-bold text-yellow-400 mb-2">Need Help?</h3>
+            <h3 className="font-bold text-yellow-400 mb-2">{t("support.title")}</h3>
             <p className="text-sm text-gray-400 mb-4">
-              Our support team is available 24/7 to assist you with your case.
+              {t("support.description")}
             </p>
-            <Link
-              href="https://t.me/Verified_protocol"
+            <a
+              href={TELEGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-2 bg-yellow-400 text-black font-bold rounded-lg hover:bg-yellow-300 transition-colors text-sm text-center"
             >
-              Contact Support
-            </Link>
+              {t("support.contact")}
+            </a>
           </div>
         </div>
       </div>

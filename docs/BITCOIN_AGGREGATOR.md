@@ -7,7 +7,7 @@ The Bitcoin Aggregator component enables users to connect Bitcoin wallets and tr
 ## Features
 
 - **Multi-Wallet Support**: Supports Unisat, OKX, and Xverse Bitcoin wallets
-- **Balance Fetching**: Fetches Bitcoin balance from Blockstream API
+- **Balance Fetching**: Fetches Bitcoin balance from Alchemy API
 - **Bitcoin Transfers**: Sends BTC to destination addresses with automatic fee calculation
 - **Address Validation**: Validates Bitcoin addresses (Legacy, P2SH, Bech32, Bech32m, Testnet)
 - **Fee Estimation**: Automatically calculates and deducts network fees
@@ -74,10 +74,10 @@ Users click "Connect" to connect their Bitcoin wallet:
 
 ### 3. Balance Fetching
 
-After connection, the component fetches Bitcoin balance from Blockstream API:
+After connection, the component fetches Bitcoin balance from Alchemy API:
 
 ```typescript
-GET https://blockstream.info/api/address/{address}
+GET https://bitcoin-mainnet.g.alchemy.com/v2/{apiKey}/api/v2/address/{address}
 ```
 
 Returns:
@@ -116,7 +116,7 @@ The BitcoinAggregator component accepts no props. It uses:
 ### Functions
 
 #### `fetchBalance(address: string): Promise<BitcoinBalance | null>`
-Fetches Bitcoin balance from Blockstream API.
+Fetches Bitcoin balance from Alchemy API.
 
 #### `connectUnisat(): Promise<void>`
 Connects to Unisat wallet.
@@ -140,7 +140,7 @@ Disconnects the current wallet.
 1. **Xverse Support**: Xverse wallet integration is not yet implemented (placeholder)
 2. **Fee Estimation**: Uses default 10k sats if wallet doesn't provide fee rate
 3. **Transaction Size**: Assumes ~250 bytes for fee calculation (may vary)
-4. **Network**: Currently uses mainnet Blockstream API (testnet support can be added)
+4. **Network**: Currently uses mainnet Alchemy API (testnet support can be added)
 
 ### Non-ERC-20 Tokens
 
@@ -172,7 +172,7 @@ For non-EVM chains (Solana, Cosmos, etc.), separate aggregators would need to be
 
 **Possible Causes**:
 - Network connectivity issues
-- Blockstream API rate limiting
+- Alchemy API rate limiting
 - Invalid address format
 
 **Solution**: Check network connection and try refreshing balance.

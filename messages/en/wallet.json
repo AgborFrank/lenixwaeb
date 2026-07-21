@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "title": "Lenix Wallet | Multi-Chain Crypto Wallet",
+    "description": "Non-custodial multi-chain wallet for send, receive, swap, and collateral loans — with encrypted local storage and a path to Lenix recovery when needed.",
+    "keywords": "Crypto Wallet, Multi-Chain Wallet, Non-Custodial Wallet, Lenix Wallet, Crypto Loans"
+  },
+  "Hero": {
+    "eyebrow_prefix": "Multi-chain ",
+    "eyebrow_highlight": "wallet",
+    "eyebrow_suffix": " on Lenix",
+    "title_prefix": "Send, hold, and borrow — with ",
+    "title_highlight1": "recovery",
+    "title_mid": " when you need it, from one ",
+    "title_highlight2": "app",
+    "subtitle": "A non-custodial wallet for everyday crypto — encrypted on your device, multi-chain by default, and connected to Lenix lending and recovery when the situation calls for more than a standard send.",
+    "btn_download": "Download app",
+    "btn_learn": "See features",
+    "mock": {
+      "account": "Account 1",
+      "total_balance": "Total Balance",
+      "change_24h": "+2.4% (24h)",
+      "send": "Send",
+      "receive": "Receive",
+      "swap": "Swap",
+      "loan": "Loan",
+      "tab_assets": "Assets",
+      "tab_history": "History"
+    }
+  },
+  "Features": {
+    "eyebrow": "Features",
+    "title": "More than storage",
+    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "groups": {
+      "wallet": {
+        "title": "In the wallet"
+      },
+      "platform": {
+        "title": "Through Lenix"
+      }
+    },
+    "cards": {
+      "encryption": {
+        "title": "Encrypted on device",
+        "desc": "Keys are protected with a wallet password and stored locally — Lenix does not hold your seed phrase or signing keys."
+      },
+      "multichain": {
+        "title": "Multi-chain balances",
+        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+      },
+      "transfers": {
+        "title": "Send, receive, swap",
+        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+      },
+      "loans": {
+        "title": "Collateral loans",
+        "desc": "Borrow stablecoins against supported assets without selling your position — terms and collateral ratios shown before you confirm.",
+        "link": "View lending"
+      },
+      "recovery": {
+        "title": "Recovery pathway",
+        "desc": "If assets are lost or stolen, open a recovery case from the Lenix ecosystem — tracing and exchange coordination when a standard wallet flow is not enough.",
+        "link": "Start recovery"
+      },
+      "access": {
+        "title": "Web and mobile",
+        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+      }
+    }
+  },
+  "GettingStarted": {
+    "eyebrow": "Getting started",
+    "title": "Up and running in three steps",
+    "step_label": "Step {number}",
+    "steps": {
+      "create": {
+        "title": "Create or import",
+        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+      },
+      "secure": {
+        "title": "Set password and backup",
+        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+      },
+      "use": {
+        "title": "Send, swap, or borrow",
+        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+      }
+    }
+  },
+  "Ecosystem": {
+    "eyebrow": "Lenix ecosystem",
+    "title": "Wallet connects to the rest of the platform",
+    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "cards": {
+      "wallet": {
+        "title": "Lenix Wallet",
+        "desc": "Create, unlock, send, and receive.",
+        "cta": "Open wallet"
+      },
+      "loan": {
+        "title": "Crypto loan",
+        "desc": "Borrow against vaulted collateral.",
+        "cta": "View lending"
+      },
+      "recovery": {
+        "title": "Asset recovery",
+        "desc": "Trace stolen or misdirected funds.",
+        "cta": "Start recovery"
+      },
+      "security": {
+        "title": "Security",
+        "desc": "Audits and operational controls.",
+        "cta": "Read security"
+      }
+    }
+  },
+  "Security": {
+    "title": "Security built in, not bolted on",
+    "points": {
+      "keys": {
+        "title": "You hold the keys",
+        "desc": "Non-custodial by design. Funds move only when you sign — Lenix cannot freeze or redirect your wallet balance."
+      },
+      "storage": {
+        "title": "Encrypted local storage",
+        "desc": "Wallet data is encrypted on your device. Unlock with your password; back up your recovery phrase offline."
+      },
+      "access": {
+        "title": "Device-level unlock",
+        "desc": "Add a password on setup and use device biometrics where supported — an extra gate before keys are used to sign."
+      }
+    },
+    "mock_back": {
+      "title": "SYSTEM SECURED",
+      "network_label": "Network",
+      "network_status": "Connected",
+      "firewall_label": "Firewall",
+      "firewall_status": "Active"
+    },
+    "mock_front": {
+      "title": "SECURE VAULT",
+      "subtitle": "DEVICE VERIFIED",
+      "encryption_title": "Encryption",
+      "encryption_desc": "Local keys encrypted",
+      "network_title": "Network status",
+      "network_desc": "Multi-chain ready"
+    }
+  },
+  "Cta": {
+    "title": "Download Lenix Wallet",
+    "subtitle": "Create or import a wallet in minutes. Same flows for send, receive, and swap — with lending and recovery in the Lenix ecosystem when you need them.",
+    "btn_download": "Download app",
+    "btn_web": "Open web wallet"
+  }
+}

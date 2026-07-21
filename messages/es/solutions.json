@@ -1,0 +1,102 @@
+{
+  "Hero": {
+    "eyebrow": "Soluciones",
+    "title1": "Recuperación, liquidación, crédito ",
+    "title2": "e infraestructura de seguridad",
+    "title3": ".",
+    "subtitle1": "Lenix rastrea cripto robada o mal dirigida, liquida a fiat en corredores compatibles, presta contra garantía en bóveda y monitoriza carteras para equipos que custodian activos de clientes.",
+    "subtitle2": "Cada flujo de trabajo tiene su propia admisión y entregables. En recuperación, evaluamos la pista antes de cualquier compromiso de pago — no prometemos resultados."
+  },
+  "Overview": {
+    "eyebrow": "Por dónde empezar",
+    "title": "Relaciona el problema con el flujo de trabajo",
+    "description": "La mayoría de visitantes ya saben si necesitan rastreo, un pago, liquidez o controles operativos. Revise los resúmenes y abra la sección que corresponda.",
+    "learn_more": "Ver detalles",
+    "cards": {
+      "recovery": {
+        "title": "Recuperación de activos",
+        "desc": "Fondos robados, estafados o enviados a la dirección incorrecta. Necesita un rastreo y evidencia documentada antes de decidir los siguientes pasos."
+      },
+      "payments": {
+        "title": "Pagos transfronterizos",
+        "desc": "Tesorería o finanzas necesita convertir cripto a fiat, con tipos, comisiones y estado de entrega que puedan mostrar a auditores."
+      },
+      "lending": {
+        "title": "Préstamos cripto",
+        "desc": "Tiene garantía elegible y necesita liquidez sin vender la posición por completo."
+      },
+      "security": {
+        "title": "Seguridad de la plataforma",
+        "desc": "Su equipo custodia activos de clientes y necesita monitorización, reglas de acceso y una ruta de escalada documentada."
+      }
+    }
+  },
+  "Recovery": {
+    "eyebrow": "Recuperación de activos",
+    "title": "Rastrear primero. Comprometerse solo cuando exista una vía.",
+    "description": "Envíe direcciones de wallet, hashes de transacción y una cronología breve. Seguimos dónde se movió el valor, preparamos hallazgos para exchanges y asesores legales, e indicamos con claridad si la recuperación es realista antes de cualquier compromiso de pago. No prometemos recuperación.",
+    "points": {
+      "chains": "Rastreo en redes EVM principales, Bitcoin y stablecoins habituales en casos de robo",
+      "evidence": "Documentación formateada para mesas de cumplimiento de exchanges, asesores y autoridades",
+      "terms": "Alcance y honorarios definidos solo tras una revisión gratuita de recuperabilidad"
+    },
+    "cta": "Iniciar recovery"
+  },
+  "Payments": {
+    "eyebrow": "Pagos transfronterizos",
+    "title": "Liquidación que su tesorería puede auditar",
+    "description": "Convierta cripto a fiat donde las vías bancarias locales son lentas, caras u opacas. Tipo, comisión y estado son visibles desde la iniciación del wallet hasta la entrega al beneficiario — finanzas y operaciones no adivinan.",
+    "cta": "Ver pagos",
+    "capabilities": {
+      "corridors": {
+        "title": "Corredores activos",
+        "desc": "Pago a cuentas bancarias en mercados que soportamos hoy. Contáctenos si su corredor no está listado."
+      },
+      "visibility": {
+        "title": "Seguimiento de traspasos",
+        "desc": "Estado en cada paso del flujo, no un único indicador pendiente sin contexto."
+      },
+      "compliance": {
+        "title": "Filtrado de sanciones y AML",
+        "desc": "Flujos entrantes y salientes filtrados antes de liberar fondos."
+      }
+    }
+  },
+  "Lending": {
+    "eyebrow": "Préstamos cripto",
+    "title": "Liquidez mientras la garantía permanece en bóveda",
+    "description": "Deposite garantía aprobada y retire stablecoins o fiat. LTV, plazos de reembolso y umbrales de liquidación se muestran antes del desembolso — sin disparadores ocultos después de firmar.",
+    "points": {
+      "credit": "Los tipos de garantía elegibles no requieren verificación crediticia tradicional",
+      "ltv": "LTV y calendarios de reembolso acordados de antemano",
+      "custody": "Garantía en bóvedas segregadas durante el plazo del préstamo"
+    },
+    "cta": "Pedir préstamo"
+  },
+  "Security": {
+    "eyebrow": "Seguridad de la plataforma",
+    "title": "Controles para equipos que custodian activos de clientes",
+    "description": "Monitorización de wallets, acceso con permisos y escalada de incidentes para organizaciones que no pueden tratar actividad sospechosa como un ticket secundario. Diseñado para equipos de operaciones, no para seguridad de presentación.",
+    "cta": "Ver seguridad",
+    "pillars": {
+      "monitoring": {
+        "title": "Monitorización de actividad",
+        "desc": "Alertas por salidas inusuales, nuevas contrapartes y transferencias fuera de política."
+      },
+      "access": {
+        "title": "Acceso y pista de auditoría",
+        "desc": "Permisos por rol con registro de quién aprobó qué y cuándo."
+      },
+      "incident": {
+        "title": "Respuesta a incidentes",
+        "desc": "Pasos de escalada documentados que su equipo puede ejecutar cuando la actividad requiere revisión humana."
+      }
+    }
+  },
+  "Cta": {
+    "title": "¿No está seguro de qué flujo aplica?",
+    "description": "Describa la situación — fondos perdidos, un pago, un préstamo o una preocupación operativa — y le dirigiremos a la admisión correcta.",
+    "btn_primary": "Contactar equipo",
+    "btn_secondary": "Iniciar recovery"
+  }
+}
