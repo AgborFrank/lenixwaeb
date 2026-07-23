@@ -1,9 +1,29 @@
+"use client";
+
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { forgotPassword } from "../auth/actions";
 import { ArrowLeft, Mail } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { useEffect } from "react";
+import { toast } from "sonner";
 
 export default function ForgotPasswordPage() {
+  const t = useTranslations("Auth");
+  const searchParams = useSearchParams();
+  const message = searchParams.get("message");
+  const error = searchParams.get("error");
+
+  useEffect(() => {
+    if (message) {
+      toast.success(t(`messages.${message}`));
+    }
+    if (error) {
+      toast.error(t(`messages.${error}`));
+    }
+  }, [message, error, t]);
+
   return (
     <main className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden p-4">
       {/* Background image */}
@@ -18,7 +38,7 @@ export default function ForgotPasswordPage() {
         className="absolute top-8 left-8 flex items-center gap-2 text-gray-400 hover:text-white transition-colors z-20"
       >
         <ArrowLeft className="w-4 h-4" />
-        <span>Back to Login</span>
+        <span>{t("backToLogin")}</span>
       </Link>
 
       <div className="w-full max-w-md relative z-10">
@@ -34,10 +54,10 @@ export default function ForgotPasswordPage() {
               />
             </Link>
             <h1 className="text-2xl font-bold text-white mb-2">
-              Reset Password
+              {t("forgotPassword.title")}
             </h1>
             <p className="text-gray-400 text-sm">
-              Enter your email to receive a reset link
+              {t("forgotPassword.subtitle")}
             </p>
           </div>
 
@@ -47,7 +67,7 @@ export default function ForgotPasswordPage() {
                 className="text-sm font-medium text-gray-300 ml-1"
                 htmlFor="email"
               >
-                Email Address
+                {t("forgotPassword.email")}
               </label>
               <div className="relative">
                 <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
@@ -57,7 +77,7 @@ export default function ForgotPasswordPage() {
                   type="email"
                   required
                   className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder-gray-500 focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/50 transition-all"
-                  placeholder="name@example.com"
+                  placeholder={t("forgotPassword.emailPlaceholder")}
                 />
               </div>
             </div>
@@ -66,7 +86,7 @@ export default function ForgotPasswordPage() {
               type="submit"
               className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-3.5 rounded-xl transition-all shadow-[0_0_20px_rgba(250,204,21,0.2)] hover:shadow-[0_0_30px_rgba(250,204,21,0.4)]"
             >
-              Send Reset Link
+              {t("forgotPassword.submit")}
             </button>
           </form>
         </div>

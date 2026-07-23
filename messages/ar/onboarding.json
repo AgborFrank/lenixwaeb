@@ -1,241 +1,251 @@
 {
   "Shell": {
-    "skip": "Skip for now",
-    "back": "Back",
-    "logoAlt": "Lenix Protocol",
-    "progressAria": "Progress",
-    "asideAria": "Help and information"
+    "skip": "تخطي الآن",
+    "back": "رجوع",
+    "logoAlt": "بروتوكول لينكس",
+    "progressAria": "التقدم",
+    "asideAria": "مساعدة ومعلومات"
   },
   "Progress": {
-    "stepOf": "Step {current} of {total}",
+    "stepOf": "الخطوة {current} من {total}",
     "flows": {
       "selection": {
-        "1": "Service",
-        "2": "Details",
-        "3": "Complete"
+        "1": "الخدمة",
+        "2": "التفاصيل",
+        "3": "الإنهاء"
       },
       "recovery": {
-        "1": "Service",
-        "2": "Case details"
+        "1": "الخدمة",
+        "2": "تفاصيل الحالة"
       },
       "loan": {
-        "1": "Service",
-        "2": "Loan details",
-        "3": "Payout"
+        "1": "الخدمة",
+        "2": "تفاصيل القرض",
+        "3": "الصرف"
       },
       "banking": {
-        "1": "Service",
-        "2": "Banking details"
+        "1": "الخدمة",
+        "2": "تفاصيل مصرفية"
       }
     }
   },
   "Selection": {
-    "title": "Choose your service",
-    "description": "Select the Lenix service that matches your request. You will complete a short intake form in the next step.",
-    "legend": "Select a service",
-    "sectionTitle": "Available services",
-    "sectionDesc": "Select one option to continue.",
-    "continue": "Continue",
+    "title": "ما الخدمة التي تبحث عنها؟",
+    "description": "اختر خدمة لينكس التي تناسب طلبك للبدء.",
+    "legend": "اختر خدمة",
+    "sectionTitle": "الخدمة",
+    "sectionDesc": "حقل إلزامي.",
+    "continue": "متابعة",
     "services": {
       "recovery": {
-        "title": "Crypto asset recovery",
-        "description": "Trace lost or stolen funds and build evidence for lawful recovery steps with our forensics team."
+        "title": "استرداد أصول رقمية",
+        "description": "تتبع الأموال المفقودة أو المسروقة مع فريق التحاليل الجنائية لدينا وبناء ملف لاستعادتها."
       },
       "loan": {
-        "title": "Crypto-backed loan",
-        "description": "Borrow against approved collateral with rates, LTV, and repayment terms shown before disbursement."
+        "title": "قرض بضمان العملات المشفرة",
+        "description": "اقترض مقابل ضمان معتمد مع عرض الأسعار ونسبة التمويل إلى الضمان والشروط قبل الصرف."
       },
       "banking": {
-        "title": "Finance & Banking",
-        "description": "Cross-border transfers, crypto liquidation, custody, and remittance on corridors Lenix supports."
+        "title": "خدمات مالية ومصرفية",
+        "description": "تحويلات عبر الحدود، تصفية العملات المشفرة، أو حفظ الأصول بأمان على الممرات التي يدعمها لينكس."
       }
     }
   },
   "Details": {
-    "backToSelection": "Back to service selection",
-    "backToLoan": "Back to loan details",
+    "backToSelection": "العودة لاختيار الخدمة",
+    "backToLoan": "العودة لتفاصيل القرض",
     "recovery": {
-      "title": "Asset recovery case details",
-      "description": "Provide transaction and incident information so our team can assess the trail and next steps."
+      "title": "ما الذي حدث؟",
+      "description": "نحتاج بعض التفاصيل حول المعاملة والواقعة."
     },
     "banking": {
-      "title": "Finance & Banking details",
-      "description": "Tell us which banking service you need and your corridor so we can confirm support and next steps."
+      "title": "لنبدأ",
+      "description": "أخبرنا بالخدمة المصرفية التي تحتاجها والدولة أو الممر الذي تعمل ضمنه."
     },
     "loan": {
-      "title": "Loan application details",
-      "description": "Tell us how much you need and what collateral you will post. Next, you will choose how to receive funds."
+      "title": "طلب قرض",
+      "description": "اختر نوع القرض والمبلغ الذي تحتاجه."
     },
     "payout": {
-      "title": "How should we send your funds?",
-      "description": "Choose a payout method and enter the details we need to disburse your loan."
+      "title": "كيف نرسل لك الأموال؟",
+      "description": "اختر طريقة الصرف التي تفضلها."
     }
   },
   "Aside": {
     "recovery": {
-      "title": "Recovery intake",
-      "body": "Provide accurate transaction details to help our forensics team trace funds and document next steps.",
-      "bullet1": "Chain analysis by certified analysts",
-      "bullet2": "Evidence preserved for legal review",
-      "bullet3": "Case updates in your dashboard"
+      "title": "استيفاء بيانات الاسترداد",
+      "body": "قدّم بيانات المعاملة الدقيقة لمساعدة فريقنا على تتبع الأموال وتوثيق الخطوات التالية.",
+      "bullet1": "تحليل على السلسلة بواسطة محللين معتمدين",
+      "bullet2": "حفظ الأدلة للمراجعة القانونية",
+      "bullet3": "تحديثات الحالة في لوحة التحكم"
     },
     "loan": {
-      "title": "Loan application",
-      "body": "Terms, LTV, and collateral requirements are shown before you commit. Payout details are collected in the final step.",
-      "bullet1": "Transparent rates before disbursement",
-      "bullet2": "Collateral held in Lenix custody",
-      "bullet3": "Multiple payout methods supported"
+      "title": "طلب القرض",
+      "body": "تظهر الشروط ونسبة التمويل ومتطلبات الضمان قبل التزامك. يتم جمع تفاصيل الصرف في الخطوة الأخيرة.",
+      "bullet1": "أسعار شفافة قبل الصرف",
+      "bullet2": "الضمان محفوظ لدى لينكس",
+      "bullet3": "طرق صرف متعددة مدعومة"
     },
     "banking": {
-      "title": "Banking services",
-      "body": "Lenix operates transfers, liquidation, lending, and custody directly — not white-label infrastructure.",
-      "bullet1": "Quoted rates before confirmation",
-      "bullet2": "KYC on supported corridors",
-      "bullet3": "Finance-grade audit trail"
+      "title": "ما التالي؟",
+      "body": "سنراجع طلبك ونتواصل معك خلال 24 ساعة بالتكاليف والخطوات القادمة."
     },
-    "encryption": "Your information is encrypted in transit and at rest. See our privacy policy for data handling practices.",
-    "support": "Need help? Contact support via Telegram after submitting your intake."
+    "encryption": "بياناتك مشفرة وآمنة ولن نشاركها دون إذنك.",
+    "support": "هل لديك أسئلة؟ تواصل معنا على تيليجرام بعد الإرسال."
   },
   "Common": {
     "required": "*",
-    "fullName": "Full name",
-    "phoneNumber": "Phone number",
-    "submitFinish": "Submit and finish",
-    "continue": "Continue",
-    "continuePayout": "Continue to payout",
-    "submitting": "Submitting…",
-    "privacyPrefix": "Lenix may contact you about this case. See our",
-    "privacyPrefixBanking": "A Lenix banking specialist will follow up on supported corridors. See our",
-    "privacyPolicy": "Privacy Policy",
-    "privacySuffix": ".",
-    "placeholderName": "John Doe",
-    "selectCountry": "Select country",
-    "selectService": "Select a service",
-    "selectBlockchain": "Select blockchain",
-    "selectCurrency": "Select currency",
-    "selectAsset": "Select asset",
-    "selectNetwork": "Select network",
-    "somethingWrong": "Something went wrong",
-    "pleaseLogin": "Please log in"
+    "fullName": "اسمك الكامل",
+    "phoneNumber": "رقم الهاتف (اختياري)",
+    "submitFinish": "إرسال الطلب",
+    "continue": "متابعة",
+    "continuePayout": "متابعة إلى الصرف",
+    "submitting": "جارٍ الإرسال...",
+    "privacyPrefix": "سنتواصل معك إذا احتجنا معلومات إضافية. راجع",
+    "privacyPrefixBanking": "سنتواصل معك قريبًا. راجع",
+    "privacyPolicy": "سياسة الخصوصية",
+    "privacySuffix": " للمزيد من التفاصيل.",
+    "placeholderName": "مثال: سارة تشين",
+    "selectCountry": "اختر دولة",
+    "selectService": "اختر خيارًا",
+    "selectBlockchain": "اختر سلسلة بلوكتشين",
+    "selectCurrency": "اختر عملة",
+    "selectAsset": "اختر أصلًا",
+    "selectNetwork": "اختر شبكة",
+    "somethingWrong": "حدث خطأ ما. يرجى المحاولة مجددًا.",
+    "pleaseLogin": "يرجى تسجيل الدخول للمتابعة"
   },
   "RecoveryForm": {
-    "sectionTitle": "Incident information",
-    "sectionDesc": "Provide transaction details and a summary of what occurred.",
-    "transactionHash": "Transaction hash or wallet address",
-    "amountLost": "Approximate amount lost",
-    "amountPlaceholder": "e.g. 200000",
-    "transactionPlaceholder": "0x1234… or wallet address",
-    "blockchain": "Blockchain",
-    "currency": "Currency",
-    "incidentSummary": "Incident summary",
-    "incidentPlaceholder": "Describe what happened, when it occurred, and any parties involved.",
-    "evidence": "Supporting evidence",
-    "evidenceHint": "Screenshot or PDF (optional)"
+    "contactSectionTitle": "معلومات الاتصال",
+    "contactSectionDesc": "كيف يمكن لفريقنا التواصل معك حول هذه الحالة.",
+    "transactionSectionTitle": "تفاصيل المعاملة",
+    "transactionSectionDesc": "معرّفات على السلسلة ومقدار الخسارة لتحليل الحالة.",
+    "incidentSectionTitle": "الواقعة والأدلة",
+    "incidentSectionDesc": "صفْ ما حدث وأرفق أي مستندات داعمة.",
+    "sectionTitle": "بيانات الواقعة",
+    "sectionDesc": "قدّم تفاصيل المعاملة وخلاصة لما حدث.",
+    "transactionHash": "هاش المعاملة أو عنوان المحفظة",
+    "amountLost": "المبلغ التقريبي المفقود",
+    "amountPlaceholder": "مثال: 200000",
+    "transactionPlaceholder": "0x1234… أو عنوان المحفظة",
+    "blockchain": "البلوك تشين",
+    "currency": "العملة",
+    "incidentSummary": "ملخص الواقعة",
+    "incidentPlaceholder": "اشرح ما حدث، متى وقع ومن الأطراف المعنية.",
+    "evidence": "الأدلة المؤيدة",
+    "evidenceHint": "لقطة شاشة أو PDF (اختياري)",
+    "fileDropTitle": "رفع الأدلة",
+    "fileDropHint": "PNG أو JPG أو PDF حتى 10 ميجابايت"
   },
   "BankingForm": {
-    "sectionTitle": "Account & service details",
-    "sectionDesc": "Tell us who you are and which banking service you need on your corridor.",
-    "countryCorridor": "Country / corridor",
-    "serviceNeeded": "Service needed",
-    "additionalDetails": "Additional details",
-    "notesPlaceholder": "Describe the transfer amount, beneficiary market, or account setup you need.",
+    "contactSectionTitle": "عن مقدم الطلب",
+    "contactSectionDesc": "سنستخدم هذه البيانات للتواصل معك بشأن طلبك.",
+    "serviceSectionTitle": "الخدمة المطلوبة",
+    "serviceSectionDesc": "ساعِدنا على فهم احتياجك.",
+    "sectionTitle": "تفاصيل الحساب والخدمة",
+    "sectionDesc": "أخبرنا من أنت وأي خدمة مصرفية تحتاجها على الممر الخاص بك.",
+    "countryCorridor": "الدولة / الممر",
+    "serviceNeeded": "بماذا نساعدك؟",
+    "additionalDetails": "ملاحظات إضافية؟",
+    "notesPlaceholder": "صف مبلغ التحويل أو الوجهة أو ما تحاول إنجازه...",
     "services": {
-      "transfer": "Money transfer",
-      "liquidation": "Asset liquidation",
-      "lending": "Collateral lending",
-      "custody": "Custody & wallet"
+      "transfer": "إرسال أموال",
+      "receive": "استلام أموال/أصول",
+      "liquidation": "تحويل الكريبتو إلى نقد",
+      "lending": "اقتراض مقابل أصول مشفرة",
+      "custody": "حفظ الأصول بأمان"
     }
   },
   "LoanForm": {
-    "noProducts": "No loan products are available right now. Please check back later.",
-    "productTitle": "Loan product",
-    "productDesc": "Select the product that matches your needs.",
-    "productApr": "{rate}% APR · up to {ltv}% LTV",
-    "productCollateral": "Collateral ${min} – ${max}",
-    "selectedHint": "Selected: {name} — review terms before continuing.",
-    "paramsTitle": "Loan parameters",
-    "paramsDesc": "Enter the amount and collateral details for your application.",
-    "loanAmount": "Loan amount (USD)",
+    "noProducts": "لا توجد منتجات قروض متاحة حاليًا. الرجاء المحاولة لاحقًا.",
+    "productTitle": "منتج القرض",
+    "productDesc": "اختر المنتج الذي يناسب احتياجك.",
+    "productApr": "سعر فائدة {rate}% سنويًا · حتى {ltv}% LTV",
+    "productCollateral": "الضمان ${min} – ${max}",
+    "selectedHint": "تم اختيار: {name} — راجع الشروط قبل المتابعة.",
+    "paramsTitle": "معايير القرض",
+    "paramsDesc": "أدخل المبلغ وتفاصيل الضمان لطلبك.",
+    "loanAmount": "قيمة القرض (دولار أمريكي)",
     "loanAmountPlaceholder": "5000",
-    "collateralAsset": "Collateral asset",
-    "loanTerm": "Loan term",
+    "collateralAsset": "الأصل الضامن",
+    "loanTerm": "مدة القرض",
     "durations": {
-      "6": "6 months",
-      "12": "12 months",
-      "24": "24 months"
+      "6": "6 أشهر",
+      "12": "12 شهرًا",
+      "24": "24 شهرًا"
     }
   },
   "PayoutForm": {
-    "contactTitle": "Contact details",
-    "contactDesc": "Provide at least one way to reach you.",
-    "telegramWhatsapp": "Telegram or WhatsApp",
-    "telegramPlaceholder": "@username or +1234567890",
-    "phonePlaceholder": "+1 234 567 8900",
-    "methodTitle": "Payout method",
-    "methodDesc": "How should we disburse your loan?",
+    "contactTitle": "بيانات الاتصال",
+    "contactDesc": "قدّم طريقة واحدة على الأقل للتواصل معك.",
+    "telegramWhatsapp": "تيليجرام أو واتساب",
+    "telegramPlaceholder": "@username أو +1234567890",
+    "phonePlaceholder": "+971 50 000 0000",
+    "methodTitle": "طريقة الصرف",
+    "methodDesc": "كيف تريد استلام القرض؟",
     "methods": {
       "crypto": {
-        "label": "Crypto wallet",
-        "desc": "Send to your on-chain address"
+        "label": "محفظة رقمية",
+        "desc": "إرسال إلى عنوانك على السلسلة"
       },
       "wire_transfer": {
-        "label": "Wire transfer",
-        "desc": "International SWIFT transfer"
+        "label": "تحويل بنكي",
+        "desc": "تحويل SWIFT دولي"
       },
       "bank": {
-        "label": "Bank account",
-        "desc": "Domestic ACH or local transfer"
+        "label": "حساب مصرفي",
+        "desc": "تحويل محلي أو ACH"
       }
     },
-    "cryptoTitle": "Crypto payout",
-    "walletAddress": "Wallet address",
-    "walletPlaceholder": "0x… or your address",
-    "network": "Network",
-    "memo": "Memo / tag",
-    "memoPlaceholder": "Required by some networks",
-    "wireTitle": "Wire transfer details",
-    "bankName": "Bank name",
-    "bankNamePlaceholder": "e.g. Chase, HSBC",
+    "cryptoTitle": "صرف بالكريبتو",
+    "walletAddress": "عنوان المحفظة",
+    "walletPlaceholder": "0x… أو عنوانك",
+    "network": "الشبكة",
+    "memo": "مذكرة / وسم",
+    "memoPlaceholder": "مطلوب في بعض الشبكات",
+    "wireTitle": "تفاصيل التحويل",
+    "bankName": "اسم البنك",
+    "bankNamePlaceholder": "مثال: بنك الإمارات دبي الوطني",
     "swiftBic": "SWIFT / BIC",
-    "swiftPlaceholder": "CHASUS33",
-    "accountIban": "Account / IBAN",
-    "accountHolder": "Account holder",
-    "reference": "Reference",
-    "bankAccountTitle": "Bank account details",
-    "accountNumber": "Account number",
+    "swiftPlaceholder": "EBILAEAD",
+    "accountIban": "الحساب / IBAN",
+    "accountHolder": "صاحب الحساب",
+    "reference": "المرجع",
+    "bankAccountTitle": "تفاصيل الحساب المصرفي",
+    "accountNumber": "رقم الحساب",
     "routingIban": "Routing / IBAN"
   },
   "Blockchains": {
-    "BTC": "Bitcoin (BTC)",
-    "ETH": "Ethereum (ETH)",
-    "SOL": "Solana (SOL)",
-    "TRX": "Tron (TRX)",
-    "BNB": "Binance Smart Chain (BNB)",
-    "MATIC": "Polygon Mainnet (MATIC)",
-    "AVAX": "Avalanche C-Chain (AVAX)",
-    "ARB": "Arbitrum One (ARB)",
-    "BASE": "Base (BASE)",
-    "FANTOM": "Fantom (Fantom)",
-    "GNOSIS": "Gnosis Chain (GNOSIS)",
-    "KAVA": "Kava (KAVA)",
-    "POL": "Polkadot (POL)",
-    "SUI": "Sui (SUI)",
-    "OTHER": "Other"
+    "BTC": "بيتكوين (BTC)",
+    "ETH": "إيثيريوم (ETH)",
+    "SOL": "سولانا (SOL)",
+    "TRX": "ترون (TRX)",
+    "BNB": "سلسلة باينانس الذكية (BNB)",
+    "MATIC": "بوليغون الرئيسية (MATIC)",
+    "AVAX": "أفالانش C-Chain (AVAX)",
+    "ARB": "أربيتريم ون (ARB)",
+    "BASE": "بيس (BASE)",
+    "FANTOM": "فانتوم (Fantom)",
+    "GNOSIS": "غنوسيس تشين (GNOSIS)",
+    "KAVA": "كافا (KAVA)",
+    "POL": "بولكادوت (POL)",
+    "SUI": "سوي (SUI)",
+    "OTHER": "أخرى"
   },
   "CollateralAssets": {
-    "BTC": "Bitcoin (BTC)",
-    "ETH": "Ethereum (ETH)",
-    "SOL": "Solana (SOL)",
+    "BTC": "بيتكوين (BTC)",
+    "ETH": "إيثيريوم (ETH)",
+    "SOL": "سولانا (SOL)",
     "USDT": "USDT",
     "USDC": "USDC"
   },
   "Networks": {
-    "ethereum": "Ethereum",
-    "polygon": "Polygon",
-    "arbitrum": "Arbitrum",
-    "optimism": "Optimism",
+    "ethereum": "إيثيريوم",
+    "polygon": "بوليغون",
+    "arbitrum": "أربيتريم",
+    "optimism": "أوبتيمزم",
     "bsc": "BSC",
-    "solana": "Solana",
-    "bitcoin": "Bitcoin"
+    "solana": "سولانا",
+    "bitcoin": "بيتكوين"
   }
 }

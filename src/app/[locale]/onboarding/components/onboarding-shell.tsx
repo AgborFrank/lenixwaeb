@@ -57,9 +57,7 @@ export async function OnboardingShell({
               priority
             />
           </Link>
-          <Link href="/dashboard" className={onboarding.skipLink}>
-            {t("skip")}
-          </Link>
+         
         </div>
       </header>
 

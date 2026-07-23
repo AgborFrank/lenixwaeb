@@ -17,7 +17,7 @@ export async function login(formData: FormData) {
     const { error } = await supabase.auth.signInWithPassword(data);
 
     if (error) {
-        redirect("/login?error=Could not authenticate user");
+        redirect("/login?error=authFailed");
     }
 
     // After login, check if user has completed web onboarding
@@ -58,11 +58,11 @@ export async function signup(formData: FormData) {
     });
 
     if (error) {
-        redirect("/signup?error=Could not create user");
+        redirect("/signup?error=createUserFailed");
     }
 
     revalidatePath("/", "layout");
-    redirect("/login?message=Check your email to confirm your account");
+    redirect("/login?message=checkEmailConfirm");
 }
 
 export async function logout() {
@@ -85,8 +85,8 @@ export async function forgotPassword(formData: FormData) {
     });
 
     if (error) {
-        redirect("/forgot-password?error=Could not send reset password email");
+        redirect("/forgot-password?error=resetEmailFailed");
     }
 
-    redirect("/forgot-password?message=Check your email for the reset link");
+    redirect("/forgot-password?message=checkEmailReset");
 }

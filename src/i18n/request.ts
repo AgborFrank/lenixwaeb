@@ -9,7 +9,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
         : routing.defaultLocale;
 
     // Load multiple namespaces for this locale
-    const [common, settings, about, contact, solutions, walletDecryption, cryptoAssetId, walletPage, financePage, bankingFinance, blockchainForensics, threatIntelligence, complianceInvestigations, deFiCompliance, lawEnforcement, onboardingPage] = await Promise.all([
+    const [common, settings, about, contact, solutions, walletDecryption, cryptoAssetId, walletPage, financePage, bankingFinance, blockchainForensics, threatIntelligence, complianceInvestigations, deFiCompliance, lawEnforcement, onboardingPage, authPage] = await Promise.all([
         import(`../../messages/${locale}/common.json`),
         import(`../../messages/${locale}/settings.json`).catch(() => ({ default: {} })),
         import(`../../messages/${locale}/about.json`).catch(() => ({ default: {} })),
@@ -26,6 +26,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
         import(`../../messages/${locale}/defi-compliance.json`).catch(() => ({ default: {} })),
         import(`../../messages/${locale}/law-enforcement.json`).catch(() => ({ default: {} })),
         import(`../../messages/${locale}/onboarding.json`).catch(() => ({ default: {} })),
+        import(`../../messages/${locale}/auth.json`).catch(() => ({ default: {} })),
     ]);
 
     const settingsMessages =
@@ -75,6 +76,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
             ...(Object.keys(deFiCompliance.default).length > 0 ? { DeFiCompliance: deFiCompliance.default } : {}),
             ...(Object.keys(lawEnforcement.default).length > 0 ? { LawEnforcement: lawEnforcement.default } : {}),
             ...(Object.keys(onboardingPage.default).length > 0 ? { Onboarding: onboardingPage.default } : {}),
+            ...(Object.keys(authPage.default).length > 0 ? { Auth: authPage.default } : {}),
         },
     };
 });

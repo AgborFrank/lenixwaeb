@@ -1,0 +1,2942 @@
+{
+  "es": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "Omitir por ahora",
+        "back": "Atrás",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "Progreso",
+        "asideAria": "Ayuda e información"
+      },
+      "Progress": {
+        "stepOf": "Paso {current} de {total}",
+        "flows": {
+          "selection": {
+            "1": "Servicio",
+            "2": "Detalles",
+            "3": "Finalizar"
+          },
+          "recovery": {
+            "1": "Servicio",
+            "2": "Detalles del caso"
+          },
+          "loan": {
+            "1": "Servicio",
+            "2": "Detalles del préstamo",
+            "3": "Desembolso"
+          },
+          "banking": {
+            "1": "Servicio",
+            "2": "Detalles bancarios"
+          }
+        }
+      },
+      "Selection": {
+        "title": "Elige tu servicio",
+        "description": "Selecciona el servicio de Lenix que se adapta a tu solicitud. Completarás un breve formulario en el siguiente paso.",
+        "legend": "Selecciona un servicio",
+        "sectionTitle": "Servicios disponibles",
+        "sectionDesc": "Elige una opción para continuar.",
+        "continue": "Continuar",
+        "services": {
+          "recovery": {
+            "title": "Recuperación de criptoactivos",
+            "description": "Rastrea fondos perdidos o robados y reúne evidencia para pasos legales de recuperación con nuestro equipo forense."
+          },
+          "loan": {
+            "title": "Préstamo respaldado por cripto",
+            "description": "Obtén un préstamo con colateral aprobado, con tasas, LTV y términos de pago visibles antes del desembolso."
+          },
+          "banking": {
+            "title": "Finanzas y banca",
+            "description": "Transferencias transfronterizas, liquidación de cripto, custodia y remesas en los corredores compatibles con Lenix."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "Volver a elegir servicio",
+        "backToLoan": "Volver a detalles del préstamo",
+        "recovery": {
+          "title": "Detalles del caso de recuperación",
+          "description": "Proporciona información de la transacción e incidente para que nuestro equipo evalúe el seguimiento y los siguientes pasos."
+        },
+        "banking": {
+          "title": "Detalles de finanzas y banca",
+          "description": "Cuéntanos qué servicio bancario necesitas y en qué corredor para confirmar soporte y próximos pasos."
+        },
+        "loan": {
+          "title": "Detalles de la solicitud de préstamo",
+          "description": "Indica cuánto necesitas y qué colateral aportarás. Después elegirás cómo recibir los fondos."
+        },
+        "payout": {
+          "title": "¿Cómo debemos enviar tus fondos?",
+          "description": "Elige un método de pago e ingresa los datos necesarios para desembolsar tu préstamo."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "Intake de recuperación",
+          "body": "Proporciona datos precisos de la transacción para ayudar a nuestro equipo forense a rastrear fondos y documentar los siguientes pasos.",
+          "bullet1": "Análisis on-chain por analistas certificados",
+          "bullet2": "Evidencia preservada para revisión legal",
+          "bullet3": "Actualizaciones del caso en tu panel"
+        },
+        "loan": {
+          "title": "Solicitud de préstamo",
+          "body": "Las condiciones, LTV y requisitos de colateral se muestran antes de comprometerte. Los detalles de pago se recogen en el paso final.",
+          "bullet1": "Tasas transparentes antes del desembolso",
+          "bullet2": "Colateral en custodia de Lenix",
+          "bullet3": "Múltiples métodos de pago compatibles"
+        },
+        "banking": {
+          "title": "Servicios bancarios",
+          "body": "Lenix opera directamente transferencias, liquidación, préstamos y custodia, sin infraestructura de terceros.",
+          "bullet1": "Tasas cotizadas antes de confirmar",
+          "bullet2": "KYC en corredores compatibles",
+          "bullet3": "Trazabilidad con nivel financiero"
+        },
+        "encryption": "Tu información está cifrada en tránsito y en reposo. Consulta nuestra política de privacidad sobre el manejo de datos.",
+        "support": "¿Necesitas ayuda? Contacta soporte por Telegram después de enviar tu solicitud."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "Nombre completo",
+        "phoneNumber": "Número de teléfono",
+        "submitFinish": "Enviar y finalizar",
+        "continue": "Continuar",
+        "continuePayout": "Continuar al pago",
+        "submitting": "Enviando...",
+        "privacyPrefix": "Lenix puede ponerse en contacto contigo sobre este caso. Consulta nuestra",
+        "privacyPrefixBanking": "Un especialista bancario de Lenix se comunicará contigo en corredores compatibles. Consulta nuestra",
+        "privacyPolicy": "política de privacidad",
+        "privacySuffix": ".",
+        "placeholderName": "Juan Pérez",
+        "selectCountry": "Selecciona un país",
+        "selectService": "Selecciona un servicio",
+        "selectBlockchain": "Selecciona blockchain",
+        "selectCurrency": "Selecciona moneda",
+        "selectAsset": "Selecciona activo",
+        "selectNetwork": "Selecciona red",
+        "somethingWrong": "Ocurrió un error",
+        "pleaseLogin": "Inicia sesión para continuar"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "Información del incidente",
+        "sectionDesc": "Proporciona detalles de la transacción y un resumen de lo ocurrido.",
+        "transactionHash": "Hash de transacción o dirección de wallet",
+        "amountLost": "Monto aproximado perdido",
+        "amountPlaceholder": "p. ej. 200000",
+        "transactionPlaceholder": "0x1234… o dirección de wallet",
+        "blockchain": "Blockchain",
+        "currency": "Moneda",
+        "incidentSummary": "Resumen del incidente",
+        "incidentPlaceholder": "Describe qué sucedió, cuándo ocurrió y a quiénes involucró.",
+        "evidence": "Evidencia de respaldo",
+        "evidenceHint": "Captura o PDF (opcional)",
+        "fileDropTitle": "Subir evidencia",
+        "fileDropHint": "PNG, JPG o PDF de hasta 10 MB"
+      },
+      "BankingForm": {
+        "sectionTitle": "Datos de la cuenta y servicio",
+        "sectionDesc": "Cuéntanos quién eres y qué servicio bancario necesitas en tu corredor.",
+        "countryCorridor": "País / corredor",
+        "serviceNeeded": "Servicio requerido",
+        "additionalDetails": "Detalles adicionales",
+        "notesPlaceholder": "Describe el monto de la transferencia, el mercado beneficiario o la configuración de cuenta que necesitas.",
+        "services": {
+          "transfer": "Transferencia de dinero",
+          "liquidation": "Liquidación de activos",
+          "lending": "Préstamo con garantía",
+          "custody": "Custodia y wallet"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "No hay productos de préstamo disponibles en este momento. Vuelve más tarde.",
+        "productTitle": "Producto de préstamo",
+        "productDesc": "Selecciona el producto que se ajuste a tus necesidades.",
+        "productApr": "{rate}% APR · hasta {ltv}% LTV",
+        "productCollateral": "Colateral ${min} – ${max}",
+        "selectedHint": "Seleccionado: {name} — revisa las condiciones antes de continuar.",
+        "paramsTitle": "Parámetros del préstamo",
+        "paramsDesc": "Ingresa el monto y los detalles de colateral para tu solicitud.",
+        "loanAmount": "Monto del préstamo (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "Activo de colateral",
+        "loanTerm": "Plazo del préstamo",
+        "durations": {
+          "6": "6 meses",
+          "12": "12 meses",
+          "24": "24 meses"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "Datos de contacto",
+        "contactDesc": "Proporciona al menos una forma de contactarte.",
+        "telegramWhatsapp": "Telegram o WhatsApp",
+        "telegramPlaceholder": "@usuario o +1234567890",
+        "phonePlaceholder": "+1 234 567 8900",
+        "methodTitle": "Método de desembolso",
+        "methodDesc": "¿Cómo debemos enviar tu préstamo?",
+        "methods": {
+          "crypto": {
+            "label": "Wallet cripto",
+            "desc": "Enviar a tu dirección on-chain"
+          },
+          "wire_transfer": {
+            "label": "Transferencia bancaria",
+            "desc": "Transferencia internacional SWIFT"
+          },
+          "bank": {
+            "label": "Cuenta bancaria",
+            "desc": "Transferencia local o ACH"
+          }
+        },
+        "cryptoTitle": "Pago en cripto",
+        "walletAddress": "Dirección de wallet",
+        "walletPlaceholder": "0x… o tu dirección",
+        "network": "Red",
+        "memo": "Memo / etiqueta",
+        "memoPlaceholder": "Requerido en algunas redes",
+        "wireTitle": "Detalles de transferencia SWIFT",
+        "bankName": "Nombre del banco",
+        "bankNamePlaceholder": "p. ej. Chase, HSBC",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "CHASUS33",
+        "accountIban": "Cuenta / IBAN",
+        "accountHolder": "Titular de la cuenta",
+        "reference": "Referencia",
+        "bankAccountTitle": "Detalles de cuenta bancaria",
+        "accountNumber": "Número de cuenta",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "Otro"
+      },
+      "CollateralAssets": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "Ethereum",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "Bitcoin"
+      }
+    }
+  },
+  "fr": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "Passer pour le moment",
+        "back": "Retour",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "Progression",
+        "asideAria": "Aide et informations"
+      },
+      "Progress": {
+        "stepOf": "Étape {current} sur {total}",
+        "flows": {
+          "selection": {
+            "1": "Service",
+            "2": "Détails",
+            "3": "Terminer"
+          },
+          "recovery": {
+            "1": "Service",
+            "2": "Détails du dossier"
+          },
+          "loan": {
+            "1": "Service",
+            "2": "Détails du prêt",
+            "3": "Versement"
+          },
+          "banking": {
+            "1": "Service",
+            "2": "Détails bancaires"
+          }
+        }
+      },
+      "Selection": {
+        "title": "Choisissez votre service",
+        "description": "Sélectionnez le service Lenix correspondant à votre demande. Vous remplirez un court formulaire d'intake à l'étape suivante.",
+        "legend": "Sélectionnez un service",
+        "sectionTitle": "Services disponibles",
+        "sectionDesc": "Choisissez une option pour continuer.",
+        "continue": "Continuer",
+        "services": {
+          "recovery": {
+            "title": "Récupération de crypto-actifs",
+            "description": "Retracez des fonds perdus ou volés et préparez des preuves pour les démarches légales avec notre équipe de forensic."
+          },
+          "loan": {
+            "title": "Prêt adossé à la crypto",
+            "description": "Empruntez sur un collatéral approuvé avec des taux, un LTV et des conditions visibles avant le décaissement."
+          },
+          "banking": {
+            "title": "Finance et banque",
+            "description": "Transferts transfrontaliers, liquidation de crypto, garde et remises sur les corridors couverts par Lenix."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "Retour à la sélection",
+        "backToLoan": "Retour aux détails du prêt",
+        "recovery": {
+          "title": "Détails du dossier de récupération",
+          "description": "Fournissez les informations sur la transaction et l'incident pour que notre équipe évalue la traçabilité et les prochaines étapes."
+        },
+        "banking": {
+          "title": "Détails finance et banque",
+          "description": "Indiquez le service bancaire et le corridor dont vous avez besoin pour confirmer l'éligibilité et les étapes suivantes."
+        },
+        "loan": {
+          "title": "Détails de la demande de prêt",
+          "description": "Précisez le montant souhaité et le collatéral proposé. Vous choisirez ensuite comment recevoir les fonds."
+        },
+        "payout": {
+          "title": "Comment devons-nous vous verser les fonds ?",
+          "description": "Choisissez un mode de versement et saisissez les informations nécessaires au décaissement."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "Intake de récupération",
+          "body": "Fournissez des données de transaction précises pour aider notre équipe forensic à tracer les fonds et documenter les actions suivantes.",
+          "bullet1": "Analyse on-chain par des analystes certifiés",
+          "bullet2": "Preuves conservées pour examen juridique",
+          "bullet3": "Mises à jour du dossier dans votre tableau de bord"
+        },
+        "loan": {
+          "title": "Demande de prêt",
+          "body": "Les conditions, le LTV et les exigences de collatéral sont affichés avant tout engagement. Les détails de versement sont collectés à la dernière étape.",
+          "bullet1": "Taux transparents avant décaissement",
+          "bullet2": "Collatéral conservé par Lenix",
+          "bullet3": "Multiples modes de versement pris en charge"
+        },
+        "banking": {
+          "title": "Services bancaires",
+          "body": "Lenix opère directement transferts, liquidation, prêts et garde — sans infrastructure sous marque blanche.",
+          "bullet1": "Taux proposés avant confirmation",
+          "bullet2": "KYC sur les corridors éligibles",
+          "bullet3": "Traçabilité conforme aux standards financiers"
+        },
+        "encryption": "Vos informations sont chiffrées en transit et au repos. Consultez notre politique de confidentialité pour la gestion des données.",
+        "support": "Besoin d'aide ? Contactez le support via Telegram après avoir envoyé votre demande."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "Nom complet",
+        "phoneNumber": "Numéro de téléphone",
+        "submitFinish": "Envoyer et terminer",
+        "continue": "Continuer",
+        "continuePayout": "Continuer vers le versement",
+        "submitting": "Envoi...",
+        "privacyPrefix": "Lenix peut vous contacter concernant ce dossier. Consultez notre",
+        "privacyPrefixBanking": "Un spécialiste bancaire Lenix vous contactera sur les corridors admissibles. Consultez notre",
+        "privacyPolicy": "politique de confidentialité",
+        "privacySuffix": ".",
+        "placeholderName": "Jean Dupont",
+        "selectCountry": "Sélectionnez un pays",
+        "selectService": "Sélectionnez un service",
+        "selectBlockchain": "Sélectionnez une blockchain",
+        "selectCurrency": "Sélectionnez une devise",
+        "selectAsset": "Sélectionnez un actif",
+        "selectNetwork": "Sélectionnez un réseau",
+        "somethingWrong": "Une erreur est survenue",
+        "pleaseLogin": "Connectez-vous pour continuer"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "Informations sur l'incident",
+        "sectionDesc": "Fournissez les détails de la transaction et un résumé des faits.",
+        "transactionHash": "Hash de transaction ou adresse de portefeuille",
+        "amountLost": "Montant approximatif perdu",
+        "amountPlaceholder": "ex. 200000",
+        "transactionPlaceholder": "0x1234… ou adresse",
+        "blockchain": "Blockchain",
+        "currency": "Devise",
+        "incidentSummary": "Résumé de l'incident",
+        "incidentPlaceholder": "Décrivez ce qui s'est passé, quand et les parties impliquées.",
+        "evidence": "Preuves justificatives",
+        "evidenceHint": "Capture ou PDF (facultatif)",
+        "fileDropTitle": "Téléverser des preuves",
+        "fileDropHint": "PNG, JPG ou PDF jusqu'à 10 Mo"
+      },
+      "BankingForm": {
+        "sectionTitle": "Informations compte et service",
+        "sectionDesc": "Indiquez qui vous êtes et le service bancaire requis sur votre corridor.",
+        "countryCorridor": "Pays / corridor",
+        "serviceNeeded": "Service requis",
+        "additionalDetails": "Détails complémentaires",
+        "notesPlaceholder": "Décrivez le montant du transfert, le marché bénéficiaire ou la configuration du compte souhaitée.",
+        "services": {
+          "transfer": "Transfert d'argent",
+          "liquidation": "Liquidation d'actifs",
+          "lending": "Prêt garanti",
+          "custody": "Garde et wallet"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "Aucun produit de prêt n'est disponible pour le moment. Revenez plus tard.",
+        "productTitle": "Produit de prêt",
+        "productDesc": "Sélectionnez le produit qui correspond à vos besoins.",
+        "productApr": "{rate}% TAEG · jusqu'à {ltv}% LTV",
+        "productCollateral": "Collatéral ${min} – ${max}",
+        "selectedHint": "Sélectionné : {name} — vérifiez les conditions avant de continuer.",
+        "paramsTitle": "Paramètres du prêt",
+        "paramsDesc": "Saisissez le montant et les détails du collatéral pour votre demande.",
+        "loanAmount": "Montant du prêt (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "Actif de collatéral",
+        "loanTerm": "Durée du prêt",
+        "durations": {
+          "6": "6 mois",
+          "12": "12 mois",
+          "24": "24 mois"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "Coordonnées",
+        "contactDesc": "Indiquez au moins un moyen de vous joindre.",
+        "telegramWhatsapp": "Telegram ou WhatsApp",
+        "telegramPlaceholder": "@utilisateur ou +1234567890",
+        "phonePlaceholder": "+1 234 567 8900",
+        "methodTitle": "Mode de versement",
+        "methodDesc": "Comment devons-nous vous décaisser le prêt ?",
+        "methods": {
+          "crypto": {
+            "label": "Portefeuille crypto",
+            "desc": "Envoyer à votre adresse on-chain"
+          },
+          "wire_transfer": {
+            "label": "Virement bancaire",
+            "desc": "Virement international SWIFT"
+          },
+          "bank": {
+            "label": "Compte bancaire",
+            "desc": "Transfert local ou ACH"
+          }
+        },
+        "cryptoTitle": "Versement en crypto",
+        "walletAddress": "Adresse de portefeuille",
+        "walletPlaceholder": "0x… ou votre adresse",
+        "network": "Réseau",
+        "memo": "Mémo / tag",
+        "memoPlaceholder": "Obligatoire sur certains réseaux",
+        "wireTitle": "Détails du virement SWIFT",
+        "bankName": "Nom de la banque",
+        "bankNamePlaceholder": "ex. BNP, HSBC",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "BNPAFRPP",
+        "accountIban": "Compte / IBAN",
+        "accountHolder": "Titulaire du compte",
+        "reference": "Référence",
+        "bankAccountTitle": "Détails du compte bancaire",
+        "accountNumber": "Numéro de compte",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "Autre"
+      },
+      "CollateralAssets": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "Ethereum",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "Bitcoin"
+      }
+    }
+  },
+  "de": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "Jetzt überspringen",
+        "back": "Zurück",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "Fortschritt",
+        "asideAria": "Hilfe und Informationen"
+      },
+      "Progress": {
+        "stepOf": "Schritt {current} von {total}",
+        "flows": {
+          "selection": {
+            "1": "Service",
+            "2": "Details",
+            "3": "Abschluss"
+          },
+          "recovery": {
+            "1": "Service",
+            "2": "Falldetails"
+          },
+          "loan": {
+            "1": "Service",
+            "2": "Kreditdetails",
+            "3": "Auszahlung"
+          },
+          "banking": {
+            "1": "Service",
+            "2": "Bankdetails"
+          }
+        }
+      },
+      "Selection": {
+        "title": "Wählen Sie Ihren Service",
+        "description": "Wählen Sie den Lenix-Service, der zu Ihrem Anliegen passt. Im nächsten Schritt füllen Sie ein kurzes Intake-Formular aus.",
+        "legend": "Service auswählen",
+        "sectionTitle": "Verfügbare Services",
+        "sectionDesc": "Wählen Sie eine Option, um fortzufahren.",
+        "continue": "Weiter",
+        "services": {
+          "recovery": {
+            "title": "Recovery von Krypto-Assets",
+            "description": "Verfolgen Sie verlorene oder gestohlene Gelder und erstellen Sie Beweise für rechtliche Schritte mit unserem Forensics-Team."
+          },
+          "loan": {
+            "title": "Kryptobesicherter Kredit",
+            "description": "Leihen Sie gegen genehmigte Sicherheiten – Zinssätze, LTV und Rückzahlungsbedingungen sehen Sie vor der Auszahlung."
+          },
+          "banking": {
+            "title": "Finanzen & Banking",
+            "description": "Grenzüberschreitende Transfers, Liquidation, Verwahrung und Remittances auf den von Lenix unterstützten Korridoren."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "Zurück zur Auswahl",
+        "backToLoan": "Zurück zu den Kreditdetails",
+        "recovery": {
+          "title": "Details zum Recovery-Fall",
+          "description": "Geben Sie Transaktions- und Vorfallsinformationen an, damit unser Team die Spur und nächste Schritte beurteilen kann."
+        },
+        "banking": {
+          "title": "Details zu Finanzen & Banking",
+          "description": "Beschreiben Sie den benötigten Banking-Service und Ihren Korridor, um Unterstützung und nächste Schritte zu bestätigen."
+        },
+        "loan": {
+          "title": "Details Ihrer Kreditanfrage",
+          "description": "Teilen Sie mit, wie viel Sie benötigen und welche Sicherheiten Sie einbringen. Anschließend wählen Sie die Auszahlungsmethode."
+        },
+        "payout": {
+          "title": "Wie sollen wir auszahlen?",
+          "description": "Wählen Sie eine Auszahlungsart und geben Sie die notwendigen Daten ein."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "Recovery Intake",
+          "body": "Genaue Transaktionsdaten helfen unserem Forensics-Team, Gelder zu verfolgen und die nächsten Schritte zu dokumentieren.",
+          "bullet1": "On-Chain-Analysen durch zertifizierte Analysten",
+          "bullet2": "Beweissicherung für rechtliche Prüfungen",
+          "bullet3": "Fall-Updates in Ihrem Dashboard"
+        },
+        "loan": {
+          "title": "Kreditantrag",
+          "body": "Konditionen, LTV und Sicherheitenanforderungen werden vor Ihrer Zusage angezeigt. Auszahlungsdetails erfassen wir im letzten Schritt.",
+          "bullet1": "Transparente Konditionen vor der Auszahlung",
+          "bullet2": "Sicherheiten in Lenix-Verwahrung",
+          "bullet3": "Mehrere Auszahlungswege unterstützt"
+        },
+        "banking": {
+          "title": "Banking-Services",
+          "body": "Lenix betreibt Transfers, Liquidation, Kreditvergabe und Verwahrung direkt – keine White-Label-Infrastruktur.",
+          "bullet1": "Angebote vor der Bestätigung",
+          "bullet2": "KYC auf unterstützten Korridoren",
+          "bullet3": "Audit-Trail in Bankenqualität"
+        },
+        "encryption": "Ihre Informationen werden während der Übertragung und Speicherung verschlüsselt. Lesen Sie unsere Datenschutzerklärung zur Datenverarbeitung.",
+        "support": "Brauchen Sie Hilfe? Kontaktieren Sie den Support nach dem Absenden über Telegram."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "Vollständiger Name",
+        "phoneNumber": "Telefonnummer",
+        "submitFinish": "Absenden und abschließen",
+        "continue": "Weiter",
+        "continuePayout": "Weiter zur Auszahlung",
+        "submitting": "Wird gesendet...",
+        "privacyPrefix": "Lenix kann Sie zu diesem Fall kontaktieren. Lesen Sie unsere",
+        "privacyPrefixBanking": "Ein Lenix-Banking-Spezialist meldet sich auf unterstützten Korridoren. Lesen Sie unsere",
+        "privacyPolicy": "Datenschutzerklärung",
+        "privacySuffix": ".",
+        "placeholderName": "Max Mustermann",
+        "selectCountry": "Land auswählen",
+        "selectService": "Service auswählen",
+        "selectBlockchain": "Blockchain auswählen",
+        "selectCurrency": "Währung auswählen",
+        "selectAsset": "Asset auswählen",
+        "selectNetwork": "Netzwerk auswählen",
+        "somethingWrong": "Etwas ist schiefgelaufen",
+        "pleaseLogin": "Bitte melden Sie sich an"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "Angaben zum Vorfall",
+        "sectionDesc": "Geben Sie Transaktionsdetails und eine Zusammenfassung ein.",
+        "transactionHash": "Transaktions-Hash oder Wallet-Adresse",
+        "amountLost": "Ungefährer Verlustbetrag",
+        "amountPlaceholder": "z. B. 200000",
+        "transactionPlaceholder": "0x1234… oder Adresse",
+        "blockchain": "Blockchain",
+        "currency": "Währung",
+        "incidentSummary": "Zusammenfassung des Vorfalls",
+        "incidentPlaceholder": "Beschreiben Sie, was passierte, wann und welche Parteien beteiligt waren.",
+        "evidence": "Unterstützende Belege",
+        "evidenceHint": "Screenshot oder PDF (optional)",
+        "fileDropTitle": "Beleg hochladen",
+        "fileDropHint": "PNG, JPG oder PDF bis 10 MB"
+      },
+      "BankingForm": {
+        "sectionTitle": "Kontaktdaten & Service",
+        "sectionDesc": "Nennen Sie uns Ihre Daten und den benötigten Banking-Service auf Ihrem Korridor.",
+        "countryCorridor": "Land / Korridor",
+        "serviceNeeded": "Benötigter Service",
+        "additionalDetails": "Weitere Details",
+        "notesPlaceholder": "Beschreiben Sie Transferbetrag, Zielmarkt oder gewünschte Kontoeinrichtung.",
+        "services": {
+          "transfer": "Geldtransfer",
+          "liquidation": "Asset-Liquidation",
+          "lending": "Besicherte Finanzierung",
+          "custody": "Verwahrung & Wallet"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "Derzeit sind keine Kreditprodukte verfügbar. Bitte später erneut prüfen.",
+        "productTitle": "Kreditprodukt",
+        "productDesc": "Wählen Sie das Produkt, das Ihren Bedarf deckt.",
+        "productApr": "{rate}% eff. Jahreszins · bis {ltv}% LTV",
+        "productCollateral": "Sicherheit ${min} – ${max}",
+        "selectedHint": "Ausgewählt: {name} — prüfen Sie die Konditionen vor dem Fortfahren.",
+        "paramsTitle": "Kreditparameter",
+        "paramsDesc": "Geben Sie Betrag und Sicherheiten für Ihre Anfrage ein.",
+        "loanAmount": "Kreditbetrag (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "Sicherheits-Asset",
+        "loanTerm": "Laufzeit",
+        "durations": {
+          "6": "6 Monate",
+          "12": "12 Monate",
+          "24": "24 Monate"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "Kontaktdaten",
+        "contactDesc": "Geben Sie mindestens eine Kontaktmöglichkeit an.",
+        "telegramWhatsapp": "Telegram oder WhatsApp",
+        "telegramPlaceholder": "@nutzername oder +1234567890",
+        "phonePlaceholder": "+49 160 0000000",
+        "methodTitle": "Auszahlungsart",
+        "methodDesc": "Wie sollen wir Ihren Kredit auszahlen?",
+        "methods": {
+          "crypto": {
+            "label": "Krypto-Wallet",
+            "desc": "An Ihre On-Chain-Adresse senden"
+          },
+          "wire_transfer": {
+            "label": "Banküberweisung",
+            "desc": "Internationaler SWIFT-Transfer"
+          },
+          "bank": {
+            "label": "Bankkonto",
+            "desc": "Inlandsüberweisung oder ACH"
+          }
+        },
+        "cryptoTitle": "Krypto-Auszahlung",
+        "walletAddress": "Wallet-Adresse",
+        "walletPlaceholder": "0x… oder Ihre Adresse",
+        "network": "Netzwerk",
+        "memo": "Memo / Tag",
+        "memoPlaceholder": "Auf manchen Netzwerken erforderlich",
+        "wireTitle": "SWIFT-Details",
+        "bankName": "Bankname",
+        "bankNamePlaceholder": "z. B. Deutsche Bank",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "DEUTDEFF",
+        "accountIban": "Konto / IBAN",
+        "accountHolder": "Kontoinhaber",
+        "reference": "Verwendungszweck",
+        "bankAccountTitle": "Bankkontodaten",
+        "accountNumber": "Kontonummer",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "Andere"
+      },
+      "CollateralAssets": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "Ethereum",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "Bitcoin"
+      }
+    }
+  },
+  "ar": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "تخطي الآن",
+        "back": "رجوع",
+        "logoAlt": "بروتوكول لينكس",
+        "progressAria": "التقدم",
+        "asideAria": "مساعدة ومعلومات"
+      },
+      "Progress": {
+        "stepOf": "الخطوة {current} من {total}",
+        "flows": {
+          "selection": {
+            "1": "الخدمة",
+            "2": "التفاصيل",
+            "3": "الإكمال"
+          },
+          "recovery": {
+            "1": "الخدمة",
+            "2": "تفاصيل الحالة"
+          },
+          "loan": {
+            "1": "الخدمة",
+            "2": "تفاصيل القرض",
+            "3": "الصرف"
+          },
+          "banking": {
+            "1": "الخدمة",
+            "2": "تفاصيل مصرفية"
+          }
+        }
+      },
+      "Selection": {
+        "title": "اختر خدمتك",
+        "description": "اختر خدمة لينكس المناسبة لطلبك. ستكمل نموذج قبول قصير في الخطوة التالية.",
+        "legend": "حدد خدمة",
+        "sectionTitle": "الخدمات المتاحة",
+        "sectionDesc": "اختر خيارًا للمتابعة.",
+        "continue": "متابعة",
+        "services": {
+          "recovery": {
+            "title": "استرداد الأصول المشفرة",
+            "description": "تتبع الأموال المفقودة أو المسروقة وأعدد الأدلة للإجراءات القانونية مع فريق التحليلات الجنائية لدينا."
+          },
+          "loan": {
+            "title": "قرض مدعوم بالعملات المشفرة",
+            "description": "اقترض مقابل ضمان معتمد مع عرض الأسعار، ونسبة التمويل إلى الضمان، وشروط السداد قبل الصرف."
+          },
+          "banking": {
+            "title": "الخدمات المالية والمصرفية",
+            "description": "تحويلات عبر الحدود، وتصريف للعملات المشفرة، وحفظ، وتحويلات على الممرات التي يدعمها لينكس."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "العودة إلى اختيار الخدمة",
+        "backToLoan": "العودة إلى تفاصيل القرض",
+        "recovery": {
+          "title": "تفاصيل حالة الاسترداد",
+          "description": "قدم معلومات المعاملة والحادث حتى يتمكن فريقنا من تقييم المسار والخطوات التالية."
+        },
+        "banking": {
+          "title": "تفاصيل التمويل والمصرفية",
+          "description": "أخبرنا بالخدمة المصرفية التي تحتاجها والممر المطلوب لتأكيد الدعم والخطوات التالية."
+        },
+        "loan": {
+          "title": "تفاصيل طلب القرض",
+          "description": "حدد المبلغ الذي تحتاجه والضمان الذي ستقدمه. بعد ذلك ستختار طريقة استلام الأموال."
+        },
+        "payout": {
+          "title": "كيف نرسل لك الأموال؟",
+          "description": "اختر طريقة الصرف وأدخل التفاصيل اللازمة لصرف القرض."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "إدخال الاسترداد",
+          "body": "قدّم بيانات دقيقة للمعاملات لمساعدة فريق التحليلات الجنائية لدينا على تتبع الأموال وتوثيق الخطوات التالية.",
+          "bullet1": "تحليل على السلسلة بواسطة محللين معتمدين",
+          "bullet2": "حفظ الأدلة للمراجعة القانونية",
+          "bullet3": "تحديثات الحالة في لوحة التحكم"
+        },
+        "loan": {
+          "title": "طلب القرض",
+          "body": "تظهر الشروط، ونسبة التمويل إلى الضمان، ومتطلبات الضمان قبل التزامك. يتم جمع تفاصيل الصرف في الخطوة الأخيرة.",
+          "bullet1": "أسعار شفافة قبل الصرف",
+          "bullet2": "الضمان محفوظ لدى لينكس",
+          "bullet3": "دعم لعدة طرق صرف"
+        },
+        "banking": {
+          "title": "الخدمات المصرفية",
+          "body": "يدير لينكس التحويلات، والتصريف، والإقراض، والحفظ مباشرة — بدون بنية تحتية بعلامة بيضاء.",
+          "bullet1": "أسعار معروضة قبل التأكيد",
+          "bullet2": "اعرف عميلك على الممرات المدعومة",
+          "bullet3": "سجل تدقيق بمستوى مصرفي"
+        },
+        "encryption": "يتم تشفير معلوماتك أثناء النقل والتخزين. راجع سياسة الخصوصية لمعرفة كيفية معالجة البيانات.",
+        "support": "هل تحتاج مساعدة؟ تواصل مع الدعم عبر تلغرام بعد إرسال النموذج."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "الاسم الكامل",
+        "phoneNumber": "رقم الهاتف",
+        "submitFinish": "إرسال وإنهاء",
+        "continue": "متابعة",
+        "continuePayout": "متابعة إلى الصرف",
+        "submitting": "جارٍ الإرسال...",
+        "privacyPrefix": "قد تتواصل معك لينكس بشأن هذه الحالة. اطلع على",
+        "privacyPrefixBanking": "سيتواصل معك مختص مصرفي من لينكس على الممرات المدعومة. اطلع على",
+        "privacyPolicy": "سياسة الخصوصية",
+        "privacySuffix": ".",
+        "placeholderName": "أحمد علي",
+        "selectCountry": "اختر دولة",
+        "selectService": "اختر خدمة",
+        "selectBlockchain": "اختر سلسلة بلوكتشين",
+        "selectCurrency": "اختر عملة",
+        "selectAsset": "اختر أصلًا",
+        "selectNetwork": "اختر شبكة",
+        "somethingWrong": "حدث خطأ ما",
+        "pleaseLogin": "يرجى تسجيل الدخول للمتابعة"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "معلومات الحادث",
+        "sectionDesc": "قدّم تفاصيل المعاملة وملخصًا لما حدث.",
+        "transactionHash": "هاش المعاملة أو عنوان المحفظة",
+        "amountLost": "المبلغ التقريبي المفقود",
+        "amountPlaceholder": "مثال 200000",
+        "transactionPlaceholder": "0x1234… أو عنوان المحفظة",
+        "blockchain": "البلوك تشين",
+        "currency": "العملة",
+        "incidentSummary": "ملخص الحادث",
+        "incidentPlaceholder": "صف ما حدث، وتاريخ الواقعة، والأطراف المعنية.",
+        "evidence": "الأدلة المساندة",
+        "evidenceHint": "لقطة شاشة أو PDF (اختياري)",
+        "fileDropTitle": "رفع الأدلة",
+        "fileDropHint": "PNG أو JPG أو PDF بحد أقصى 10 ميجابايت"
+      },
+      "BankingForm": {
+        "sectionTitle": "معلومات الحساب والخدمة",
+        "sectionDesc": "أخبرنا من أنت وما الخدمة المصرفية التي تحتاجها على ممرّك.",
+        "countryCorridor": "الدولة / الممر",
+        "serviceNeeded": "الخدمة المطلوبة",
+        "additionalDetails": "تفاصيل إضافية",
+        "notesPlaceholder": "صف مبلغ التحويل، أو السوق المستفيد، أو إعداد الحساب المطلوب.",
+        "services": {
+          "transfer": "تحويل أموال",
+          "liquidation": "تصفية أصول",
+          "lending": "إقراض بضمان",
+          "custody": "حفظ ومحفظة"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "لا توجد منتجات قروض متاحة حاليًا. يرجى التحقق لاحقًا.",
+        "productTitle": "منتج القرض",
+        "productDesc": "اختر المنتج الذي يناسب احتياجاتك.",
+        "productApr": "{rate}% نسبة سنوية · حتى {ltv}% LTV",
+        "productCollateral": "ضمان ${min} – ${max}",
+        "selectedHint": "تم الاختيار: {name} — راجع الشروط قبل المتابعة.",
+        "paramsTitle": "معايير القرض",
+        "paramsDesc": "أدخل المبلغ وتفاصيل الضمان لطلبك.",
+        "loanAmount": "مبلغ القرض (دولار أمريكي)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "الأصل الضامن",
+        "loanTerm": "مدة القرض",
+        "durations": {
+          "6": "6 أشهر",
+          "12": "12 شهرًا",
+          "24": "24 شهرًا"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "بيانات الاتصال",
+        "contactDesc": "قدم طريقة واحدة على الأقل للتواصل معك.",
+        "telegramWhatsapp": "تيليجرام أو واتساب",
+        "telegramPlaceholder": "@username أو +1234567890",
+        "phonePlaceholder": "+971 50 000 0000",
+        "methodTitle": "طريقة الصرف",
+        "methodDesc": "كيف نرسل أموال القرض؟",
+        "methods": {
+          "crypto": {
+            "label": "محفظة رقمية",
+            "desc": "إرسال إلى عنوانك على السلسلة"
+          },
+          "wire_transfer": {
+            "label": "تحويل مصرفي",
+            "desc": "تحويل SWIFT دولي"
+          },
+          "bank": {
+            "label": "حساب مصرفي",
+            "desc": "تحويل محلي أو ACH"
+          }
+        },
+        "cryptoTitle": "صرف بالعملات المشفرة",
+        "walletAddress": "عنوان المحفظة",
+        "walletPlaceholder": "0x… أو عنوانك",
+        "network": "الشبكة",
+        "memo": "مذكرة / وسم",
+        "memoPlaceholder": "مطلوب في بعض الشبكات",
+        "wireTitle": "تفاصيل تحويل SWIFT",
+        "bankName": "اسم البنك",
+        "bankNamePlaceholder": "مثال بنك الإمارات دبي الوطني",
+        "swiftBic": "Swift / BIC",
+        "swiftPlaceholder": "EBILAEAD",
+        "accountIban": "الحساب / IBAN",
+        "accountHolder": "صاحب الحساب",
+        "reference": "المرجع",
+        "bankAccountTitle": "تفاصيل الحساب البنكي",
+        "accountNumber": "رقم الحساب",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "بيتكوين (BTC)",
+        "ETH": "إيثيريوم (ETH)",
+        "SOL": "سولانا (SOL)",
+        "TRX": "ترون (TRX)",
+        "BNB": "سلسلة باينانس الذكية (BNB)",
+        "MATIC": "بوليغون مين نت (MATIC)",
+        "AVAX": "أفالانش C-Chain (AVAX)",
+        "ARB": "أربيتريم ون (ARB)",
+        "BASE": "بيس (BASE)",
+        "FANTOM": "فانتوم (Fantom)",
+        "GNOSIS": "غنوسيس تشين (GNOSIS)",
+        "KAVA": "كافا (KAVA)",
+        "POL": "بولكادوت (POL)",
+        "SUI": "سوي (SUI)",
+        "OTHER": "أخرى"
+      },
+      "CollateralAssets": {
+        "BTC": "بيتكوين (BTC)",
+        "ETH": "إيثيريوم (ETH)",
+        "SOL": "سولانا (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "إيثيريوم",
+        "polygon": "بوليغون",
+        "arbitrum": "أربيتريم",
+        "optimism": "أوبتيزم",
+        "bsc": "BSC",
+        "solana": "سولانا",
+        "bitcoin": "بيتكوين"
+      }
+    }
+  },
+  "pt": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "Pular por enquanto",
+        "back": "Voltar",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "Progresso",
+        "asideAria": "Ajuda e informações"
+      },
+      "Progress": {
+        "stepOf": "Etapa {current} de {total}",
+        "flows": {
+          "selection": {
+            "1": "Serviço",
+            "2": "Detalhes",
+            "3": "Concluir"
+          },
+          "recovery": {
+            "1": "Serviço",
+            "2": "Detalhes do caso"
+          },
+          "loan": {
+            "1": "Serviço",
+            "2": "Detalhes do empréstimo",
+            "3": "Pagamento"
+          },
+          "banking": {
+            "1": "Serviço",
+            "2": "Detalhes bancários"
+          }
+        }
+      },
+      "Selection": {
+        "title": "Escolha seu serviço",
+        "description": "Selecione o serviço Lenix que corresponde ao seu pedido. Você preencherá um breve formulário no próximo passo.",
+        "legend": "Selecione um serviço",
+        "sectionTitle": "Serviços disponíveis",
+        "sectionDesc": "Escolha uma opção para continuar.",
+        "continue": "Continuar",
+        "services": {
+          "recovery": {
+            "title": "Recuperação de criptoativos",
+            "description": "Rastreie fundos perdidos ou roubados e reúna evidências para medidas legais com nossa equipe forense."
+          },
+          "loan": {
+            "title": "Empréstimo garantido em cripto",
+            "description": "Tome crédito com garantia aprovada, com taxas, LTV e condições visíveis antes da liberação."
+          },
+          "banking": {
+            "title": "Finanças e banco",
+            "description": "Transferências internacionais, liquidação de cripto, custódia e remessas nos corredores suportados pela Lenix."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "Voltar à seleção",
+        "backToLoan": "Voltar aos detalhes do empréstimo",
+        "recovery": {
+          "title": "Detalhes da recuperação",
+          "description": "Forneça informações sobre a transação e o incidente para que nossa equipe avalie a trilha e os próximos passos."
+        },
+        "banking": {
+          "title": "Detalhes de finanças e banco",
+          "description": "Diga qual serviço bancário você precisa e o corredor para confirmar suporte e próximos passos."
+        },
+        "loan": {
+          "title": "Detalhes do pedido de empréstimo",
+          "description": "Informe quanto precisa e qual garantia fornecerá. Depois escolha como receber os fundos."
+        },
+        "payout": {
+          "title": "Como devemos enviar os fundos?",
+          "description": "Escolha um método de pagamento e informe os dados necessários para liberar o empréstimo."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "Entrada de recuperação",
+          "body": "Forneça dados precisos da transação para ajudar nossa equipe forense a rastrear os fundos e documentar os próximos passos.",
+          "bullet1": "Análise on-chain por analistas certificados",
+          "bullet2": "Evidências preservadas para revisão jurídica",
+          "bullet3": "Atualizações do caso no painel"
+        },
+        "loan": {
+          "title": "Solicitação de empréstimo",
+          "body": "Taxas, LTV e exigências de garantia são mostrados antes do compromisso. Os detalhes de pagamento são coletados no passo final.",
+          "bullet1": "Taxas transparentes antes da liberação",
+          "bullet2": "Garantia sob custódia da Lenix",
+          "bullet3": "Diversos métodos de pagamento suportados"
+        },
+        "banking": {
+          "title": "Serviços bancários",
+          "body": "A Lenix opera transferências, liquidação, empréstimos e custódia diretamente — sem infraestrutura white-label.",
+          "bullet1": "Taxas cotadas antes da confirmação",
+          "bullet2": "KYC nos corredores suportados",
+          "bullet3": "Trilha de auditoria com padrão financeiro"
+        },
+        "encryption": "Suas informações são criptografadas em trânsito e em repouso. Consulte nossa política de privacidade para saber como tratamos os dados.",
+        "support": "Precisa de ajuda? Fale com o suporte via Telegram após enviar o formulário."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "Nome completo",
+        "phoneNumber": "Número de telefone",
+        "submitFinish": "Enviar e finalizar",
+        "continue": "Continuar",
+        "continuePayout": "Continuar para o pagamento",
+        "submitting": "Enviando...",
+        "privacyPrefix": "A Lenix pode entrar em contato sobre este caso. Veja nossa",
+        "privacyPrefixBanking": "Um especialista bancário da Lenix entrará em contato nos corredores suportados. Veja nossa",
+        "privacyPolicy": "política de privacidade",
+        "privacySuffix": ".",
+        "placeholderName": "João Silva",
+        "selectCountry": "Selecione um país",
+        "selectService": "Selecione um serviço",
+        "selectBlockchain": "Selecione a blockchain",
+        "selectCurrency": "Selecione a moeda",
+        "selectAsset": "Selecione o ativo",
+        "selectNetwork": "Selecione a rede",
+        "somethingWrong": "Algo deu errado",
+        "pleaseLogin": "Faça login para continuar"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "Informações do incidente",
+        "sectionDesc": "Informe os detalhes da transação e um resumo do ocorrido.",
+        "transactionHash": "Hash da transação ou endereço da carteira",
+        "amountLost": "Valor aproximado perdido",
+        "amountPlaceholder": "ex. 200000",
+        "transactionPlaceholder": "0x1234… ou endereço",
+        "blockchain": "Blockchain",
+        "currency": "Moeda",
+        "incidentSummary": "Resumo do incidente",
+        "incidentPlaceholder": "Descreva o que aconteceu, quando e quem estava envolvido.",
+        "evidence": "Evidências de suporte",
+        "evidenceHint": "Captura ou PDF (opcional)",
+        "fileDropTitle": "Enviar evidência",
+        "fileDropHint": "PNG, JPG ou PDF até 10 MB"
+      },
+      "BankingForm": {
+        "sectionTitle": "Dados da conta e serviço",
+        "sectionDesc": "Informe quem você é e qual serviço bancário precisa no seu corredor.",
+        "countryCorridor": "País / corredor",
+        "serviceNeeded": "Serviço necessário",
+        "additionalDetails": "Detalhes adicionais",
+        "notesPlaceholder": "Descreva o valor da transferência, o mercado beneficiário ou a configuração de conta desejada.",
+        "services": {
+          "transfer": "Transferência de dinheiro",
+          "liquidation": "Liquidação de ativos",
+          "lending": "Empréstimo com garantia",
+          "custody": "Custódia e carteira"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "Nenhum produto de empréstimo disponível no momento. Volte mais tarde.",
+        "productTitle": "Produto de empréstimo",
+        "productDesc": "Escolha o produto que atende às suas necessidades.",
+        "productApr": "{rate}% APR · até {ltv}% LTV",
+        "productCollateral": "Garantia ${min} – ${max}",
+        "selectedHint": "Selecionado: {name} — revise as condições antes de continuar.",
+        "paramsTitle": "Parâmetros do empréstimo",
+        "paramsDesc": "Informe o valor e os detalhes da garantia do seu pedido.",
+        "loanAmount": "Valor do empréstimo (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "Ativo de garantia",
+        "loanTerm": "Prazo do empréstimo",
+        "durations": {
+          "6": "6 meses",
+          "12": "12 meses",
+          "24": "24 meses"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "Dados de contato",
+        "contactDesc": "Informe pelo menos uma forma de contato.",
+        "telegramWhatsapp": "Telegram ou WhatsApp",
+        "telegramPlaceholder": "@usuario ou +1234567890",
+        "phonePlaceholder": "+55 11 99999-9999",
+        "methodTitle": "Método de pagamento",
+        "methodDesc": "Como devemos liberar seu empréstimo?",
+        "methods": {
+          "crypto": {
+            "label": "Carteira cripto",
+            "desc": "Enviar para seu endereço on-chain"
+          },
+          "wire_transfer": {
+            "label": "Transferência bancária",
+            "desc": "Transferência SWIFT internacional"
+          },
+          "bank": {
+            "label": "Conta bancária",
+            "desc": "Transferência local ou ACH"
+          }
+        },
+        "cryptoTitle": "Pagamento em cripto",
+        "walletAddress": "Endereço da carteira",
+        "walletPlaceholder": "0x… ou seu endereço",
+        "network": "Rede",
+        "memo": "Memo / tag",
+        "memoPlaceholder": "Obrigatório em algumas redes",
+        "wireTitle": "Detalhes SWIFT",
+        "bankName": "Nome do banco",
+        "bankNamePlaceholder": "ex. Itaú, Santander",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "ITAUBRSP",
+        "accountIban": "Conta / IBAN",
+        "accountHolder": "Titular da conta",
+        "reference": "Referência",
+        "bankAccountTitle": "Detalhes da conta bancária",
+        "accountNumber": "Número da conta",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "Outro"
+      },
+      "CollateralAssets": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "Ethereum",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "Bitcoin"
+      }
+    }
+  },
+  "zh": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "暂时跳过",
+        "back": "返回",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "进度",
+        "asideAria": "帮助与信息"
+      },
+      "Progress": {
+        "stepOf": "第 {current}/{total} 步",
+        "flows": {
+          "selection": {
+            "1": "服务",
+            "2": "详情",
+            "3": "完成"
+          },
+          "recovery": {
+            "1": "服务",
+            "2": "案件详情"
+          },
+          "loan": {
+            "1": "服务",
+            "2": "贷款详情",
+            "3": "放款"
+          },
+          "banking": {
+            "1": "服务",
+            "2": "银行详情"
+          }
+        }
+      },
+      "Selection": {
+        "title": "选择您的服务",
+        "description": "选择与您诉求匹配的 Lenix 服务。下一步将填写一个简短的登记表。",
+        "legend": "选择服务",
+        "sectionTitle": "可用服务",
+        "sectionDesc": "选择一个选项继续。",
+        "continue": "继续",
+        "services": {
+          "recovery": {
+            "title": "加密资产追踪与找回",
+            "description": "追踪丢失或被盗资金，并与我们的取证团队一起为合法追偿准备证据。"
+          },
+          "loan": {
+            "title": "加密抵押贷款",
+            "description": "以获批抵押品借款，放款前即可查看利率、LTV 和还款条款。"
+          },
+          "banking": {
+            "title": "金融与银行服务",
+            "description": "跨境转账、加密资产清算、托管与汇款，覆盖 Lenix 支持的通道。"
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "返回服务选择",
+        "backToLoan": "返回贷款详情",
+        "recovery": {
+          "title": "找回案例详情",
+          "description": "提供交易与事件信息，帮助团队评估资金轨迹和下一步行动。"
+        },
+        "banking": {
+          "title": "金融与银行详情",
+          "description": "说明所需的银行服务和通道，以便确认支持和后续步骤。"
+        },
+        "loan": {
+          "title": "贷款申请详情",
+          "description": "填写需要的金额和抵押资产，下一步选择资金发放方式。"
+        },
+        "payout": {
+          "title": "选择放款方式",
+          "description": "选择放款方式并填写我们发放贷款所需的信息。"
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "找回登记",
+          "body": "请提供准确的交易数据，帮助我们的取证团队追踪资金并记录下一步。",
+          "bullet1": "认证分析师进行链上分析",
+          "bullet2": "证据保存供法律审核",
+          "bullet3": "案例更新显示于控制面板"
+        },
+        "loan": {
+          "title": "贷款申请",
+          "body": "利率、LTV 和抵押要求会在承诺前展示。最后一步收集放款信息。",
+          "bullet1": "放款前透明报价",
+          "bullet2": "抵押资产由 Lenix 托管",
+          "bullet3": "支持多种放款方式"
+        },
+        "banking": {
+          "title": "银行服务",
+          "body": "Lenix 直接运营转账、清算、信贷与托管，不依赖第三方白标。",
+          "bullet1": "确认前先给出报价",
+          "bullet2": "支持通道执行 KYC",
+          "bullet3": "具备金融级审计追踪"
+        },
+        "encryption": "您的信息在传输和存储时都会被加密。详情请查看我们的隐私政策。",
+        "support": "需要协助？提交后可通过 Telegram 联系客服。"
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "姓名",
+        "phoneNumber": "联系电话",
+        "submitFinish": "提交并完成",
+        "continue": "继续",
+        "continuePayout": "继续放款设置",
+        "submitting": "提交中...",
+        "privacyPrefix": "Lenix 可能就此案例与您联系。请查看",
+        "privacyPrefixBanking": "Lenix 银行业务专员会在支持的通道与您联系。请查看",
+        "privacyPolicy": "隐私政策",
+        "privacySuffix": "。",
+        "placeholderName": "例如 张伟",
+        "selectCountry": "选择国家",
+        "selectService": "选择服务",
+        "selectBlockchain": "选择区块链",
+        "selectCurrency": "选择币种",
+        "selectAsset": "选择资产",
+        "selectNetwork": "选择网络",
+        "somethingWrong": "发生错误",
+        "pleaseLogin": "请先登录"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "事件信息",
+        "sectionDesc": "提供交易详情并概述事件经过。",
+        "transactionHash": "交易哈希或钱包地址",
+        "amountLost": "损失金额（约）",
+        "amountPlaceholder": "例如 200000",
+        "transactionPlaceholder": "0x1234… 或钱包地址",
+        "blockchain": "区块链",
+        "currency": "币种",
+        "incidentSummary": "事件摘要",
+        "incidentPlaceholder": "描述发生了什么、时间以及涉及的对象。",
+        "evidence": "支持性证据",
+        "evidenceHint": "截图或 PDF（可选）",
+        "fileDropTitle": "上传证据",
+        "fileDropHint": "PNG、JPG 或 PDF，最大 10 MB"
+      },
+      "BankingForm": {
+        "sectionTitle": "账户与服务信息",
+        "sectionDesc": "告诉我们您的身份以及需要的银行服务和通道。",
+        "countryCorridor": "国家 / 通道",
+        "serviceNeeded": "所需服务",
+        "additionalDetails": "补充说明",
+        "notesPlaceholder": "说明转账金额、收款市场或所需账户设置。",
+        "services": {
+          "transfer": "资金转账",
+          "liquidation": "资产清算",
+          "lending": "抵押借贷",
+          "custody": "托管与钱包"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "当前暂无可用贷款产品，请稍后再试。",
+        "productTitle": "贷款产品",
+        "productDesc": "选择符合您需求的产品。",
+        "productApr": "年化 {rate}% · 最高 {ltv}% LTV",
+        "productCollateral": "抵押额度 ${min} – ${max}",
+        "selectedHint": "已选：{name} — 请在继续前检查条款。",
+        "paramsTitle": "贷款参数",
+        "paramsDesc": "填写申请金额与抵押详情。",
+        "loanAmount": "贷款金额 (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "抵押资产",
+        "loanTerm": "贷款期限",
+        "durations": {
+          "6": "6 个月",
+          "12": "12 个月",
+          "24": "24 个月"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "联系方式",
+        "contactDesc": "至少提供一种联系方式。",
+        "telegramWhatsapp": "Telegram 或 WhatsApp",
+        "telegramPlaceholder": "@用户名 或 +1234567890",
+        "phonePlaceholder": "+86 138 0000 0000",
+        "methodTitle": "放款方式",
+        "methodDesc": "我们应如何发放贷款？",
+        "methods": {
+          "crypto": {
+            "label": "加密钱包",
+            "desc": "发送至您的链上地址"
+          },
+          "wire_transfer": {
+            "label": "国际电汇",
+            "desc": "SWIFT 国际转账"
+          },
+          "bank": {
+            "label": "银行账户",
+            "desc": "本地转账或 ACH"
+          }
+        },
+        "cryptoTitle": "加密资产放款",
+        "walletAddress": "钱包地址",
+        "walletPlaceholder": "0x… 或您的地址",
+        "network": "网络",
+        "memo": "备注 / 标签",
+        "memoPlaceholder": "某些网络必填",
+        "wireTitle": "SWIFT 信息",
+        "bankName": "银行名称",
+        "bankNamePlaceholder": "如 招商银行、汇丰",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "HBBKCNBJ",
+        "accountIban": "账户 / IBAN",
+        "accountHolder": "开户名称",
+        "reference": "参考信息",
+        "bankAccountTitle": "银行账户详情",
+        "accountNumber": "账号",
+        "routingIban": "路由号 / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "比特币 (BTC)",
+        "ETH": "以太坊 (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "波场 (TRX)",
+        "BNB": "币安智能链 (BNB)",
+        "MATIC": "Polygon 主网 (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis 链 (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "其他"
+      },
+      "CollateralAssets": {
+        "BTC": "比特币 (BTC)",
+        "ETH": "以太坊 (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "以太坊",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "比特币"
+      }
+    }
+  },
+  "it": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "Salta per ora",
+        "back": "Indietro",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "Progresso",
+        "asideAria": "Assistenza e informazioni"
+      },
+      "Progress": {
+        "stepOf": "Passo {current} di {total}",
+        "flows": {
+          "selection": {
+            "1": "Servizio",
+            "2": "Dettagli",
+            "3": "Concludi"
+          },
+          "recovery": {
+            "1": "Servizio",
+            "2": "Dettagli del caso"
+          },
+          "loan": {
+            "1": "Servizio",
+            "2": "Dettagli del prestito",
+            "3": "Erogazione"
+          },
+          "banking": {
+            "1": "Servizio",
+            "2": "Dettagli bancari"
+          }
+        }
+      },
+      "Selection": {
+        "title": "Scegli il tuo servizio",
+        "description": "Seleziona il servizio Lenix che meglio risponde alla tua richiesta. Nel passaggio successivo completerai un breve modulo.",
+        "legend": "Seleziona un servizio",
+        "sectionTitle": "Servizi disponibili",
+        "sectionDesc": "Scegli un'opzione per proseguire.",
+        "continue": "Continua",
+        "services": {
+          "recovery": {
+            "title": "Recupero di crypto asset",
+            "description": "Traccia fondi persi o rubati e prepara prove per le azioni legali insieme al nostro team forense."
+          },
+          "loan": {
+            "title": "Prestito garantito da crypto",
+            "description": "Ottieni credito contro garanzie approvate con tassi, LTV e condizioni visibili prima dell'erogazione."
+          },
+          "banking": {
+            "title": "Finanza e banking",
+            "description": "Trasferimenti transfrontalieri, liquidazione crypto, custodia e rimesse sui corridoi supportati da Lenix."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "Torna alla selezione",
+        "backToLoan": "Torna ai dettagli del prestito",
+        "recovery": {
+          "title": "Dettagli del caso di recupero",
+          "description": "Fornisci informazioni su transazione e incidente così che il team valuti il tracciamento e le prossime mosse."
+        },
+        "banking": {
+          "title": "Dettagli finanza e banking",
+          "description": "Indica quale servizio bancario e quale corridoio ti servono per confermare supporto e prossimi passi."
+        },
+        "loan": {
+          "title": "Dettagli della richiesta di prestito",
+          "description": "Specificare l'importo desiderato e la garanzia offerta. In seguito sceglierai come ricevere i fondi."
+        },
+        "payout": {
+          "title": "Come dobbiamo inviarti i fondi?",
+          "description": "Scegli un metodo di erogazione e inserisci i dati necessari per il prestito."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "Intake di recupero",
+          "body": "Fornisci dati accurati sulla transazione per aiutare il nostro team forense a tracciare i fondi e documentare i passi successivi.",
+          "bullet1": "Analisi on-chain da analisti certificati",
+          "bullet2": "Prove conservate per la revisione legale",
+          "bullet3": "Aggiornamenti del caso nella dashboard"
+        },
+        "loan": {
+          "title": "Richiesta di prestito",
+          "body": "Condizioni, LTV e requisiti di garanzia vengono mostrati prima dell'impegno. I dettagli di erogazione sono raccolti nell'ultimo passaggio.",
+          "bullet1": "Tassi trasparenti prima dell'erogazione",
+          "bullet2": "Garanzia custodita da Lenix",
+          "bullet3": "Supporto per molteplici metodi di erogazione"
+        },
+        "banking": {
+          "title": "Servizi bancari",
+          "body": "Lenix gestisce direttamente trasferimenti, liquidazione, prestiti e custodia — senza infrastruttura white-label.",
+          "bullet1": "Tassi quotati prima della conferma",
+          "bullet2": "KYC sui corridoi supportati",
+          "bullet3": "Audit trail a standard finanziario"
+        },
+        "encryption": "Le informazioni sono criptate in transito e a riposo. Consulta la nostra informativa privacy per i dettagli sul trattamento dati.",
+        "support": "Hai bisogno di aiuto? Contatta il supporto via Telegram dopo l'invio."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "Nome completo",
+        "phoneNumber": "Numero di telefono",
+        "submitFinish": "Invia e termina",
+        "continue": "Continua",
+        "continuePayout": "Continua all'erogazione",
+        "submitting": "Invio in corso...",
+        "privacyPrefix": "Lenix potrebbe contattarti in merito a questo caso. Consulta la",
+        "privacyPrefixBanking": "Uno specialista bancario Lenix ti contatterà sui corridoi supportati. Consulta la",
+        "privacyPolicy": "informativa sulla privacy",
+        "privacySuffix": ".",
+        "placeholderName": "Mario Rossi",
+        "selectCountry": "Seleziona un paese",
+        "selectService": "Seleziona un servizio",
+        "selectBlockchain": "Seleziona la blockchain",
+        "selectCurrency": "Seleziona la valuta",
+        "selectAsset": "Seleziona l'asset",
+        "selectNetwork": "Seleziona la rete",
+        "somethingWrong": "Si è verificato un errore",
+        "pleaseLogin": "Accedi per continuare"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "Informazioni sull'incidente",
+        "sectionDesc": "Inserisci i dettagli della transazione e un riepilogo dell'accaduto.",
+        "transactionHash": "Hash della transazione o indirizzo wallet",
+        "amountLost": "Importo perso (approssimativo)",
+        "amountPlaceholder": "es. 200000",
+        "transactionPlaceholder": "0x1234… o indirizzo",
+        "blockchain": "Blockchain",
+        "currency": "Valuta",
+        "incidentSummary": "Sintesi dell'incidente",
+        "incidentPlaceholder": "Descrivi cosa è successo, quando e le parti coinvolte.",
+        "evidence": "Evidenza di supporto",
+        "evidenceHint": "Screenshot o PDF (opzionale)",
+        "fileDropTitle": "Carica evidenza",
+        "fileDropHint": "PNG, JPG o PDF fino a 10 MB"
+      },
+      "BankingForm": {
+        "sectionTitle": "Dettagli account e servizio",
+        "sectionDesc": "Indica chi sei e quale servizio bancario ti serve sul tuo corridoio.",
+        "countryCorridor": "Paese / corridoio",
+        "serviceNeeded": "Servizio richiesto",
+        "additionalDetails": "Dettagli aggiuntivi",
+        "notesPlaceholder": "Descrivi importo, mercato beneficiario o configurazione richiesta.",
+        "services": {
+          "transfer": "Trasferimento di denaro",
+          "liquidation": "Liquidazione di asset",
+          "lending": "Prestito garantito",
+          "custody": "Custodia e wallet"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "Nessun prodotto di prestito disponibile al momento. Riprovare più tardi.",
+        "productTitle": "Prodotto di prestito",
+        "productDesc": "Seleziona il prodotto adatto alle tue esigenze.",
+        "productApr": "{rate}% APR · fino a {ltv}% LTV",
+        "productCollateral": "Garanzia ${min} – ${max}",
+        "selectedHint": "Selezionato: {name} — verifica i termini prima di continuare.",
+        "paramsTitle": "Parametri del prestito",
+        "paramsDesc": "Inserisci importo e dettagli della garanzia.",
+        "loanAmount": "Importo del prestito (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "Asset di garanzia",
+        "loanTerm": "Durata del prestito",
+        "durations": {
+          "6": "6 mesi",
+          "12": "12 mesi",
+          "24": "24 mesi"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "Dettagli di contatto",
+        "contactDesc": "Fornisci almeno un canale di contatto.",
+        "telegramWhatsapp": "Telegram o WhatsApp",
+        "telegramPlaceholder": "@utente o +1234567890",
+        "phonePlaceholder": "+39 340 0000000",
+        "methodTitle": "Metodo di erogazione",
+        "methodDesc": "Come dobbiamo erogare il prestito?",
+        "methods": {
+          "crypto": {
+            "label": "Wallet crypto",
+            "desc": "Invia al tuo indirizzo on-chain"
+          },
+          "wire_transfer": {
+            "label": "Bonifico bancario",
+            "desc": "Bonifico internazionale SWIFT"
+          },
+          "bank": {
+            "label": "Conto bancario",
+            "desc": "Bonifico locale o ACH"
+          }
+        },
+        "cryptoTitle": "Erogazione in crypto",
+        "walletAddress": "Indirizzo wallet",
+        "walletPlaceholder": "0x… o il tuo indirizzo",
+        "network": "Rete",
+        "memo": "Memo / tag",
+        "memoPlaceholder": "Richiesto da alcune reti",
+        "wireTitle": "Dettagli SWIFT",
+        "bankName": "Nome banca",
+        "bankNamePlaceholder": "es. Intesa, UniCredit",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "BCITITMM",
+        "accountIban": "Conto / IBAN",
+        "accountHolder": "Intestatario",
+        "reference": "Riferimento",
+        "bankAccountTitle": "Dettagli conto bancario",
+        "accountNumber": "Numero di conto",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "Altro"
+      },
+      "CollateralAssets": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "Ethereum",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "Bitcoin"
+      }
+    }
+  },
+  "vi": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "Bỏ qua tạm thời",
+        "back": "Quay lại",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "Tiến độ",
+        "asideAria": "Trợ giúp & thông tin"
+      },
+      "Progress": {
+        "stepOf": "Bước {current}/{total}",
+        "flows": {
+          "selection": {
+            "1": "Dịch vụ",
+            "2": "Chi tiết",
+            "3": "Hoàn tất"
+          },
+          "recovery": {
+            "1": "Dịch vụ",
+            "2": "Chi tiết hồ sơ"
+          },
+          "loan": {
+            "1": "Dịch vụ",
+            "2": "Chi tiết khoản vay",
+            "3": "Giải ngân"
+          },
+          "banking": {
+            "1": "Dịch vụ",
+            "2": "Chi tiết ngân hàng"
+          }
+        }
+      },
+      "Selection": {
+        "title": "Chọn dịch vụ",
+        "description": "Chọn dịch vụ Lenix phù hợp với nhu cầu của bạn. Bước kế tiếp bạn sẽ điền một biểu mẫu ngắn.",
+        "legend": "Chọn một dịch vụ",
+        "sectionTitle": "Dịch vụ khả dụng",
+        "sectionDesc": "Chọn một tùy chọn để tiếp tục.",
+        "continue": "Tiếp tục",
+        "services": {
+          "recovery": {
+            "title": "Khôi phục tài sản số",
+            "description": "Truy vết tài sản bị mất hoặc bị đánh cắp và chuẩn bị bằng chứng pháp lý cùng đội ngũ forensic của chúng tôi."
+          },
+          "loan": {
+            "title": "Vay thế chấp crypto",
+            "description": "Vay vốn dựa trên tài sản thế chấp đã được phê duyệt, với lãi suất, LTV và điều khoản hiển thị trước khi giải ngân."
+          },
+          "banking": {
+            "title": "Tài chính & ngân hàng",
+            "description": "Chuyển tiền xuyên biên giới, quy đổi crypto, lưu ký và kiều hối trên các tuyến hành lang được Lenix hỗ trợ."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "Quay lại chọn dịch vụ",
+        "backToLoan": "Quay lại chi tiết khoản vay",
+        "recovery": {
+          "title": "Chi tiết hồ sơ khôi phục",
+          "description": "Cung cấp thông tin giao dịch và sự cố để đội ngũ đánh giá hành trình tài sản và các bước tiếp theo."
+        },
+        "banking": {
+          "title": "Chi tiết tài chính & ngân hàng",
+          "description": "Hãy cho chúng tôi biết dịch vụ và tuyến hành lang bạn cần để xác nhận hỗ trợ và bước tiếp theo."
+        },
+        "loan": {
+          "title": "Chi tiết yêu cầu vay",
+          "description": "Nêu số tiền cần vay và tài sản thế chấp. Sau đó chọn cách nhận tiền."
+        },
+        "payout": {
+          "title": "Bạn muốn chúng tôi giải ngân thế nào?",
+          "description": "Chọn phương thức giải ngân và cung cấp thông tin cần thiết."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "Tiếp nhận khôi phục",
+          "body": "Cung cấp dữ liệu giao dịch chính xác để đội forensic của chúng tôi truy vết tài sản và ghi lại kế hoạch hành động.",
+          "bullet1": "Phân tích on-chain bởi chuyên gia chứng nhận",
+          "bullet2": "Lưu trữ bằng chứng cho rà soát pháp lý",
+          "bullet3": "Cập nhật hồ sơ trong bảng điều khiển"
+        },
+        "loan": {
+          "title": "Đơn vay vốn",
+          "body": "Điều khoản, LTV và yêu cầu thế chấp được hiển thị trước khi cam kết. Thông tin giải ngân được thu thập ở bước cuối.",
+          "bullet1": "Lãi suất minh bạch trước giải ngân",
+          "bullet2": "Tài sản thế chấp do Lenix lưu ký",
+          "bullet3": "Hỗ trợ nhiều phương thức giải ngân"
+        },
+        "banking": {
+          "title": "Dịch vụ ngân hàng",
+          "body": "Lenix trực tiếp vận hành chuyển tiền, quy đổi, cho vay và lưu ký — không dùng hạ tầng white-label.",
+          "bullet1": "Báo giá trước khi xác nhận",
+          "bullet2": "KYC trên các tuyến hành lang hỗ trợ",
+          "bullet3": "Chuỗi kiểm toán chuẩn tài chính"
+        },
+        "encryption": "Thông tin của bạn được mã hóa khi truyền và lưu trữ. Xem chính sách quyền riêng tư để biết chi tiết.",
+        "support": "Cần hỗ trợ? Liên hệ đội ngũ qua Telegram sau khi gửi biểu mẫu."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "Họ và tên",
+        "phoneNumber": "Số điện thoại",
+        "submitFinish": "Gửi và hoàn tất",
+        "continue": "Tiếp tục",
+        "continuePayout": "Tiếp tục đến giải ngân",
+        "submitting": "Đang gửi...",
+        "privacyPrefix": "Lenix có thể liên hệ bạn về hồ sơ này. Xem",
+        "privacyPrefixBanking": "Chuyên gia ngân hàng của Lenix sẽ liên hệ trên các tuyến hỗ trợ. Xem",
+        "privacyPolicy": "chính sách quyền riêng tư",
+        "privacySuffix": ".",
+        "placeholderName": "Ví dụ: Nguyễn Minh",
+        "selectCountry": "Chọn quốc gia",
+        "selectService": "Chọn dịch vụ",
+        "selectBlockchain": "Chọn blockchain",
+        "selectCurrency": "Chọn loại tiền",
+        "selectAsset": "Chọn tài sản",
+        "selectNetwork": "Chọn mạng lưới",
+        "somethingWrong": "Đã xảy ra lỗi",
+        "pleaseLogin": "Vui lòng đăng nhập để tiếp tục"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "Thông tin sự cố",
+        "sectionDesc": "Nhập chi tiết giao dịch và tóm tắt sự kiện.",
+        "transactionHash": "Hash giao dịch hoặc địa chỉ ví",
+        "amountLost": "Số tiền bị mất (ước tính)",
+        "amountPlaceholder": "ví dụ 200000",
+        "transactionPlaceholder": "0x1234… hoặc địa chỉ ví",
+        "blockchain": "Blockchain",
+        "currency": "Loại tiền",
+        "incidentSummary": "Tóm tắt sự cố",
+        "incidentPlaceholder": "Mô tả điều gì đã xảy ra, thời gian và các bên liên quan.",
+        "evidence": "Tài liệu chứng minh",
+        "evidenceHint": "Ảnh chụp màn hình hoặc PDF (tùy chọn)",
+        "fileDropTitle": "Tải bằng chứng",
+        "fileDropHint": "PNG, JPG hoặc PDF tối đa 10 MB"
+      },
+      "BankingForm": {
+        "sectionTitle": "Thông tin tài khoản & dịch vụ",
+        "sectionDesc": "Cho chúng tôi biết bạn là ai và dịch vụ ngân hàng nào cần trên tuyến hành lang của bạn.",
+        "countryCorridor": "Quốc gia / hành lang",
+        "serviceNeeded": "Dịch vụ yêu cầu",
+        "additionalDetails": "Chi tiết bổ sung",
+        "notesPlaceholder": "Mô tả số tiền chuyển, thị trường thụ hưởng hoặc cấu hình tài khoản mong muốn.",
+        "services": {
+          "transfer": "Chuyển tiền",
+          "liquidation": "Thanh lý tài sản",
+          "lending": "Cho vay có thế chấp",
+          "custody": "Lưu ký & ví"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "Hiện chưa có sản phẩm vay nào. Vui lòng quay lại sau.",
+        "productTitle": "Sản phẩm khoản vay",
+        "productDesc": "Chọn sản phẩm phù hợp với nhu cầu của bạn.",
+        "productApr": "Lãi suất {rate}% · tối đa {ltv}% LTV",
+        "productCollateral": "Tài sản thế chấp ${min} – ${max}",
+        "selectedHint": "Đã chọn: {name} — hãy xem lại điều khoản trước khi tiếp tục.",
+        "paramsTitle": "Thông số khoản vay",
+        "paramsDesc": "Nhập số tiền và chi tiết tài sản thế chấp.",
+        "loanAmount": "Số tiền vay (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "Tài sản thế chấp",
+        "loanTerm": "Kỳ hạn vay",
+        "durations": {
+          "6": "6 tháng",
+          "12": "12 tháng",
+          "24": "24 tháng"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "Thông tin liên hệ",
+        "contactDesc": "Cung cấp ít nhất một cách liên hệ.",
+        "telegramWhatsapp": "Telegram hoặc WhatsApp",
+        "telegramPlaceholder": "@tennguoidung hoặc +1234567890",
+        "phonePlaceholder": "+84 90 000 0000",
+        "methodTitle": "Phương thức giải ngân",
+        "methodDesc": "Chúng tôi nên giải ngân khoản vay bằng cách nào?",
+        "methods": {
+          "crypto": {
+            "label": "Ví crypto",
+            "desc": "Gửi tới địa chỉ on-chain của bạn"
+          },
+          "wire_transfer": {
+            "label": "Chuyển khoản quốc tế",
+            "desc": "Chuyển SWIFT quốc tế"
+          },
+          "bank": {
+            "label": "Tài khoản ngân hàng",
+            "desc": "Chuyển khoản nội địa hoặc ACH"
+          }
+        },
+        "cryptoTitle": "Giải ngân bằng crypto",
+        "walletAddress": "Địa chỉ ví",
+        "walletPlaceholder": "0x… hoặc địa chỉ của bạn",
+        "network": "Mạng",
+        "memo": "Memo / tag",
+        "memoPlaceholder": "Một số mạng yêu cầu",
+        "wireTitle": "Thông tin chuyển SWIFT",
+        "bankName": "Tên ngân hàng",
+        "bankNamePlaceholder": "vd. Vietcombank",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "VCBVVNVX",
+        "accountIban": "Tài khoản / IBAN",
+        "accountHolder": "Chủ tài khoản",
+        "reference": "Ghi chú",
+        "bankAccountTitle": "Chi tiết tài khoản ngân hàng",
+        "accountNumber": "Số tài khoản",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "Khác"
+      },
+      "CollateralAssets": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "Ethereum",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "Bitcoin"
+      }
+    }
+  },
+  "tl": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "Laktawan muna",
+        "back": "Bumalik",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "Pag-usad",
+        "asideAria": "Tulong at impormasyon"
+      },
+      "Progress": {
+        "stepOf": "Hakbang {current} ng {total}",
+        "flows": {
+          "selection": {
+            "1": "Serbisyo",
+            "2": "Detalye",
+            "3": "Tapos"
+          },
+          "recovery": {
+            "1": "Serbisyo",
+            "2": "Detalye ng kaso"
+          },
+          "loan": {
+            "1": "Serbisyo",
+            "2": "Detalye ng loan",
+            "3": "Payout"
+          },
+          "banking": {
+            "1": "Serbisyo",
+            "2": "Detalye sa bangko"
+          }
+        }
+      },
+      "Selection": {
+        "title": "Pumili ng serbisyo",
+        "description": "Piliin ang Lenix service na tumutugma sa iyong kahilingan. Sa susunod na hakbang ay may maikling form na kailangan punan.",
+        "legend": "Piliin ang serbisyo",
+        "sectionTitle": "Mga available na serbisyo",
+        "sectionDesc": "Pumili ng opsyon para magpatuloy.",
+        "continue": "Magpatuloy",
+        "services": {
+          "recovery": {
+            "title": "Pagbawi ng crypto asset",
+            "description": "Subaybayan ang nawalang pondo at ihanda ang ebidensya para sa legal na hakbang kasama ang forensic team namin."
+          },
+          "loan": {
+            "title": "Crypto-backed loan",
+            "description": "Humiram gamit ang aprubadong collateral na may rates, LTV, at terms bago pa man i-release ang pondo."
+          },
+          "banking": {
+            "title": "Finance at banking",
+            "description": "Cross-border transfers, liquidation, custody at remittance sa mga corridor na sinusuportahan ng Lenix."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "Bumalik sa pagpili",
+        "backToLoan": "Bumalik sa detalye ng loan",
+        "recovery": {
+          "title": "Detalye ng kaso ng pagbawi",
+          "description": "Ibigay ang impormasyon ng transaksyon at insidente para masuri ng aming team ang trail at susunod na hakbang."
+        },
+        "banking": {
+          "title": "Detalye ng finance at banking",
+          "description": "Sabihin kung anong serbisyong banking ang kailangan at kung saang corridor, para ma-verify ang suporta."
+        },
+        "loan": {
+          "title": "Detalye ng loan application",
+          "description": "Ilagay ang halagang kailangan at ang collateral. Sa susunod pipili ka ng payout method."
+        },
+        "payout": {
+          "title": "Paano namin ipapadala ang pondo?",
+          "description": "Pumili ng paraan ng payout at ibigay ang kinakailangang detalye."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "Recovery intake",
+          "body": "Magbigay ng wasto at kumpletong datos ng transaksyon para matulungan ang forensic team na subaybayan ang pondo at i-dokumento ang mga susunod na hakbang.",
+          "bullet1": "On-chain analysis mula sa certified analysts",
+          "bullet2": "Ebidensya para sa legal review",
+          "bullet3": "Mga update ng kaso sa dashboard"
+        },
+        "loan": {
+          "title": "Loan application",
+          "body": "Ipinapakita ang terms, LTV at collateral requirements bago ka mag-commit. Sa huling hakbang kinokolekta ang payout details.",
+          "bullet1": "Transparent na rates bago i-release",
+          "bullet2": "Collateral na nasa Lenix custody",
+          "bullet3": "Maraming suportadong payout methods"
+        },
+        "banking": {
+          "title": "Banking services",
+          "body": "Direkta pinapatakbo ng Lenix ang transfers, liquidation, lending at custody — walang white-label na infra.",
+          "bullet1": "Quoted rates bago ang confirmation",
+          "bullet2": "KYC sa suportadong corridors",
+          "bullet3": "Finance-grade audit trail"
+        },
+        "encryption": "Encrypted ang iyong impormasyon habang ipinapadala at nakaimbak. Basahin ang aming privacy policy para sa detalye.",
+        "support": "Kailangan ng tulong? Makipag-ugnayan sa support sa Telegram matapos magsumite."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "Buong pangalan",
+        "phoneNumber": "Numero ng telepono",
+        "submitFinish": "Isumite at tapusin",
+        "continue": "Magpatuloy",
+        "continuePayout": "Magpatuloy sa payout",
+        "submitting": "Ipinapadala...",
+        "privacyPrefix": "Maaaring kontakin ka ng Lenix tungkol sa kasong ito. Tingnan ang",
+        "privacyPrefixBanking": "Makikipag-ugnayan ang Lenix banking specialist sa mga suportadong corridor. Tingnan ang",
+        "privacyPolicy": "patakaran sa privacy",
+        "privacySuffix": ".",
+        "placeholderName": "Hal. Juan Dela Cruz",
+        "selectCountry": "Pumili ng bansa",
+        "selectService": "Pumili ng serbisyo",
+        "selectBlockchain": "Pumili ng blockchain",
+        "selectCurrency": "Pumili ng currency",
+        "selectAsset": "Pumili ng asset",
+        "selectNetwork": "Pumili ng network",
+        "somethingWrong": "May nangyaring mali",
+        "pleaseLogin": "Mag-login upang magpatuloy"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "Impormasyon ng insidente",
+        "sectionDesc": "Ibigay ang detalye ng transaksyon at buod ng pangyayari.",
+        "transactionHash": "Transaction hash o address ng wallet",
+        "amountLost": "Tinatayang halaga na nawala",
+        "amountPlaceholder": "hal. 200000",
+        "transactionPlaceholder": "0x1234… o address",
+        "blockchain": "Blockchain",
+        "currency": "Pera",
+        "incidentSummary": "Buod ng insidente",
+        "incidentPlaceholder": "Ilarawan ang nangyari, kailan ito nangyari at sino ang kasangkot.",
+        "evidence": "Suportang ebidensya",
+        "evidenceHint": "Screenshot o PDF (opsyonal)",
+        "fileDropTitle": "I-upload ang ebidensya",
+        "fileDropHint": "PNG, JPG o PDF hanggang 10 MB"
+      },
+      "BankingForm": {
+        "sectionTitle": "Detalye ng account at serbisyo",
+        "sectionDesc": "Ipaalam kung sino ka at anong banking service ang kailangan mo sa corridor mo.",
+        "countryCorridor": "Bansa / corridor",
+        "serviceNeeded": "Kailangang serbisyo",
+        "additionalDetails": "Karagdagang detalye",
+        "notesPlaceholder": "Ilarawan ang halagang ililipat, target na merkado o setup ng account na kailangan.",
+        "services": {
+          "transfer": "Paglilipat ng pera",
+          "liquidation": "Paglikida ng asset",
+          "lending": "Pautang na may collateral",
+          "custody": "Custody at wallet"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "Walang loan product na available sa ngayon. Bumalik mamaya.",
+        "productTitle": "Loan product",
+        "productDesc": "Piliin ang produktong akma sa iyong pangangailangan.",
+        "productApr": "{rate}% APR · hanggang {ltv}% LTV",
+        "productCollateral": "Collateral ${min} – ${max}",
+        "selectedHint": "Napili: {name} — suriin ang terms bago magpatuloy.",
+        "paramsTitle": "Mga parameter ng loan",
+        "paramsDesc": "Ilagay ang halaga at detalye ng collateral para sa iyong aplikasyon.",
+        "loanAmount": "Halaga ng loan (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "Collateral asset",
+        "loanTerm": "Tagal ng loan",
+        "durations": {
+          "6": "6 na buwan",
+          "12": "12 buwan",
+          "24": "24 buwan"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "Detalye ng contact",
+        "contactDesc": "Magbigay ng kahit isang paraan para makontak ka.",
+        "telegramWhatsapp": "Telegram o WhatsApp",
+        "telegramPlaceholder": "@username o +1234567890",
+        "phonePlaceholder": "+63 917 000 0000",
+        "methodTitle": "Paraan ng payout",
+        "methodDesc": "Paano namin ipapadala ang pondo?",
+        "methods": {
+          "crypto": {
+            "label": "Crypto wallet",
+            "desc": "Ipadala sa iyong on-chain address"
+          },
+          "wire_transfer": {
+            "label": "Wire transfer",
+            "desc": "Internasyonal na SWIFT transfer"
+          },
+          "bank": {
+            "label": "Bank account",
+            "desc": "Lokal na transfer o ACH"
+          }
+        },
+        "cryptoTitle": "Crypto payout",
+        "walletAddress": "Wallet address",
+        "walletPlaceholder": "0x… o iyong address",
+        "network": "Network",
+        "memo": "Memo / tag",
+        "memoPlaceholder": "Kinakailangan sa ilang network",
+        "wireTitle": "Detalye ng SWIFT",
+        "bankName": "Pangalan ng bangko",
+        "bankNamePlaceholder": "hal. BDO, BPI",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "BOPIPHMM",
+        "accountIban": "Account / IBAN",
+        "accountHolder": "Pangalan ng may-ari",
+        "reference": "Reference",
+        "bankAccountTitle": "Detalye ng bank account",
+        "accountNumber": "Account number",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "Iba pa"
+      },
+      "CollateralAssets": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "Ethereum",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "Bitcoin"
+      }
+    }
+  },
+  "tr": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "Şimdilik atla",
+        "back": "Geri",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "İlerleme",
+        "asideAria": "Yardım ve bilgi"
+      },
+      "Progress": {
+        "stepOf": "Adım {current}/{total}",
+        "flows": {
+          "selection": {
+            "1": "Hizmet",
+            "2": "Detaylar",
+            "3": "Tamamla"
+          },
+          "recovery": {
+            "1": "Hizmet",
+            "2": "Vaka detayları"
+          },
+          "loan": {
+            "1": "Hizmet",
+            "2": "Kredi detayları",
+            "3": "Ödeme"
+          },
+          "banking": {
+            "1": "Hizmet",
+            "2": "Banka detayları"
+          }
+        }
+      },
+      "Selection": {
+        "title": "Hizmetinizi seçin",
+        "description": "Talebinize uygun Lenix hizmetini seçin. Bir sonraki adımda kısa bir form dolduracaksınız.",
+        "legend": "Hizmet seçin",
+        "sectionTitle": "Mevcut hizmetler",
+        "sectionDesc": "Devam etmek için bir seçenek seçin.",
+        "continue": "Devam",
+        "services": {
+          "recovery": {
+            "title": "Kripto varlık kurtarma",
+            "description": "Kayıp veya çalınan fonları takip edin ve adli ekibimizle yasal adımlar için kanıt oluşturun."
+          },
+          "loan": {
+            "title": "Kripto teminatlı kredi",
+            "description": "Onaylanmış teminatla kredi alın; faiz, LTV ve geri ödeme şartları ödemeden önce görünür."
+          },
+          "banking": {
+            "title": "Finans ve bankacılık",
+            "description": "Sınır ötesi transfer, kripto likidasyonu, saklama ve havale — Lenix'in desteklediği koridorlarda."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "Seçime geri dön",
+        "backToLoan": "Kredi detaylarına geri dön",
+        "recovery": {
+          "title": "Kurtarma vaka detayları",
+          "description": "Takımımızın izi değerlendirmesi ve sonraki adımları belirlemesi için işlem ve olay bilgilerini verin."
+        },
+        "banking": {
+          "title": "Finans ve bankacılık detayları",
+          "description": "Hangi bankacılık hizmetine ve koridora ihtiyacınız olduğunu belirtin; destek ve sonraki adımları doğrulayalım."
+        },
+        "loan": {
+          "title": "Kredi başvurusu detayları",
+          "description": "Ne kadar istediğinizi ve hangi teminatı sunacağınızı belirtin. Ardından fonları nasıl almak istediğinizi seçin."
+        },
+        "payout": {
+          "title": "Fonları nasıl alacaksınız?",
+          "description": "Bir ödeme yöntemi seçin ve krediyi göndermek için gerekli bilgileri girin."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "Kurtarma kabulü",
+          "body": "Doğru işlem verileri sağlayarak adli ekibimizin fonları izlemesine ve sonraki adımları belgelemesine yardımcı olun.",
+          "bullet1": "Sertifikalı analistlerden zincir üstü analiz",
+          "bullet2": "Hukuki inceleme için kanıtların saklanması",
+          "bullet3": "Kontrol panelinizde vaka güncellemeleri"
+        },
+        "loan": {
+          "title": "Kredi başvurusu",
+          "body": "Koşullar, LTV ve teminat gereklilikleri taahhüt öncesi gösterilir. Ödeme detayları son adımda toplanır.",
+          "bullet1": "Ödeme öncesi şeffaf oranlar",
+          "bullet2": "Teminat Lenix gözetiminde",
+          "bullet3": "Birden fazla ödeme yöntemi desteklenir"
+        },
+        "banking": {
+          "title": "Bankacılık hizmetleri",
+          "body": "Lenix transfer, likidasyon, kredi ve saklamayı doğrudan yürütür — white-label altyapı yoktur.",
+          "bullet1": "Onaydan önce teklif edilen oranlar",
+          "bullet2": "Destekli koridorlarda KYC",
+          "bullet3": "Finans seviyesinde denetim izi"
+        },
+        "encryption": "Bilgileriniz aktarım sırasında ve depolamada şifrelenir. Veri işlemede ayrıntılar için gizlilik politikasını inceleyin.",
+        "support": "Yardıma mı ihtiyacınız var? Formu gönderdikten sonra Telegram üzerinden destekle iletişime geçin."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "Tam isim",
+        "phoneNumber": "Telefon numarası",
+        "submitFinish": "Gönder ve bitir",
+        "continue": "Devam",
+        "continuePayout": "Ödemeye devam et",
+        "submitting": "Gönderiliyor...",
+        "privacyPrefix": "Lenix bu vaka hakkında sizinle iletişime geçebilir. Lütfen",
+        "privacyPrefixBanking": "Desteklenen koridorlarda bir Lenix bankacılık uzmanı sizinle iletişime geçecek. Lütfen",
+        "privacyPolicy": "gizlilik politikamızı",
+        "privacySuffix": " inceleyin.",
+        "placeholderName": "Örn. Ahmet Yılmaz",
+        "selectCountry": "Ülke seçin",
+        "selectService": "Hizmet seçin",
+        "selectBlockchain": "Blockchain seçin",
+        "selectCurrency": "Para birimi seçin",
+        "selectAsset": "Varlık seçin",
+        "selectNetwork": "Ağ seçin",
+        "somethingWrong": "Bir hata oluştu",
+        "pleaseLogin": "Devam etmek için giriş yapın"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "Olay bilgileri",
+        "sectionDesc": "İşlem detaylarını ve olay özetini girin.",
+        "transactionHash": "İşlem hash'i veya cüzdan adresi",
+        "amountLost": "Kaybedilen tahmini tutar",
+        "amountPlaceholder": "örn. 200000",
+        "transactionPlaceholder": "0x1234… veya cüzdan adresi",
+        "blockchain": "Blockchain",
+        "currency": "Para birimi",
+        "incidentSummary": "Olay özeti",
+        "incidentPlaceholder": "Ne olduğunu, zamanını ve ilgili tarafları açıklayın.",
+        "evidence": "Destekleyici kanıt",
+        "evidenceHint": "Ekran görüntüsü veya PDF (isteğe bağlı)",
+        "fileDropTitle": "Kanıt yükle",
+        "fileDropHint": "PNG, JPG veya PDF (maks. 10 MB)"
+      },
+      "BankingForm": {
+        "sectionTitle": "Hesap ve hizmet bilgileri",
+        "sectionDesc": "Kim olduğunuzu ve koridorunuzda hangi bankacılık hizmetine ihtiyaç duyduğunuzu belirtin.",
+        "countryCorridor": "Ülke / koridor",
+        "serviceNeeded": "Gerekli hizmet",
+        "additionalDetails": "Ek detaylar",
+        "notesPlaceholder": "Transfer tutarı, alıcı piyasa veya istenen hesap kurulumunu açıklayın.",
+        "services": {
+          "transfer": "Para transferi",
+          "liquidation": "Varlık tasfiyesi",
+          "lending": "Teminatlı kredi",
+          "custody": "Saklama ve cüzdan"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "Şu anda uygun kredi ürünü yok. Lütfen daha sonra tekrar deneyin.",
+        "productTitle": "Kredi ürünü",
+        "productDesc": "İhtiyacınıza en uygun ürünü seçin.",
+        "productApr": "{rate}% APR · en fazla {ltv}% LTV",
+        "productCollateral": "Teminat ${min} – ${max}",
+        "selectedHint": "Seçildi: {name} — devam etmeden önce şartları inceleyin.",
+        "paramsTitle": "Kredi parametreleri",
+        "paramsDesc": "Başvurunuz için tutar ve teminat detaylarını girin.",
+        "loanAmount": "Kredi tutarı (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "Teminat varlığı",
+        "loanTerm": "Kredi süresi",
+        "durations": {
+          "6": "6 ay",
+          "12": "12 ay",
+          "24": "24 ay"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "İletişim bilgileri",
+        "contactDesc": "En az bir iletişim yöntemi sağlayın.",
+        "telegramWhatsapp": "Telegram veya WhatsApp",
+        "telegramPlaceholder": "@kullanici veya +1234567890",
+        "phonePlaceholder": "+90 530 000 0000",
+        "methodTitle": "Ödeme yöntemi",
+        "methodDesc": "Krediyi nasıl göndermeliyiz?",
+        "methods": {
+          "crypto": {
+            "label": "Kripto cüzdan",
+            "desc": "Zincir üzerindeki adresinize gönder"
+          },
+          "wire_transfer": {
+            "label": "Havale/EFT",
+            "desc": "Uluslararası SWIFT transferi"
+          },
+          "bank": {
+            "label": "Banka hesabı",
+            "desc": "Yerel transfer veya ACH"
+          }
+        },
+        "cryptoTitle": "Kripto ile ödeme",
+        "walletAddress": "Cüzdan adresi",
+        "walletPlaceholder": "0x… veya adresiniz",
+        "network": "Ağ",
+        "memo": "Memo / etiket",
+        "memoPlaceholder": "Bazı ağlar için zorunlu",
+        "wireTitle": "SWIFT detayları",
+        "bankName": "Banka adı",
+        "bankNamePlaceholder": "örn. Ziraat, Garanti",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "TCZBTR2A",
+        "accountIban": "Hesap / IBAN",
+        "accountHolder": "Hesap sahibi",
+        "reference": "Referans",
+        "bankAccountTitle": "Banka hesap detayları",
+        "accountNumber": "Hesap numarası",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "Diğer"
+      },
+      "CollateralAssets": {
+        "BTC":"Bitcoin (BTC)",
+        "ETH":"Ethereum (ETH)",
+        "SOL":"Solana (SOL)",
+        "USDT":"USDT",
+        "USDC":"USDC"
+      },
+      "Networks": {
+        "ethereum":"Ethereum",
+        "polygon":"Polygon",
+        "arbitrum":"Arbitrum",
+        "optimism":"Optimism",
+        "bsc":"BSC",
+        "solana":"Solana",
+        "bitcoin":"Bitcoin"
+      }
+    }
+  },
+  "hi": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "फिलहाल छोड़ें",
+        "back": "वापस",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "प्रगति",
+        "asideAria": "सहायता और जानकारी"
+      },
+      "Progress": {
+        "stepOf": "चरण {current}/{total}",
+        "flows": {
+          "selection": {
+            "1": "सेवा",
+            "2": "विवरण",
+            "3": "समाप्त"
+          },
+          "recovery": {
+            "1": "सेवा",
+            "2": "केस विवरण"
+          },
+          "loan": {
+            "1": "सेवा",
+            "2": "ऋण विवरण",
+            "3": "भुगतान"
+          },
+          "banking": {
+            "1": "सेवा",
+            "2": "बैंक विवरण"
+          }
+        }
+      },
+      "Selection": {
+        "title": "अपनी सेवा चुनें",
+        "description": "Lenix सेवा चुनें जो आपके अनुरोध से मेल खाती है। अगले चरण में आप एक छोटा फॉर्म भरेंगे।",
+        "legend": "सेवा चुनें",
+        "sectionTitle": "उपलब्ध सेवाएं",
+        "sectionDesc": "जारी रखने के लिए एक विकल्प चुनें।",
+        "continue": "जारी रखें",
+        "services": {
+          "recovery": {
+            "title": "क्रिप्टो संपत्ति रिकवरी",
+            "description": "खोई या चोरी हुई राशि का पता लगाएँ और कानूनी कार्रवाई के लिए हमारे फॉरेंसिक टीम के साथ प्रमाण तैयार करें।"
+          },
+          "loan": {
+            "title": "क्रिप्टो समर्थित ऋण",
+            "description": "स्वीकृत कोलेट्रल पर ऋण लें, जिसमें दरें, LTV और भुगतान शर्तें रिलीज से पहले दिखाई देती हैं।"
+          },
+          "banking": {
+            "title": "वित्त और बैंकिंग",
+            "description": "Lenix द्वारा समर्थित कॉरिडोर पर सीमा-पार ट्रांसफर, क्रिप्टो लिक्विडेशन, कस्टडी और रेमिटेंस।"
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "सेवा चयन पर वापस",
+        "backToLoan": "ऋण विवरण पर वापस",
+        "recovery": {
+          "title": "रिकवरी केस विवरण",
+          "description": "हमारी टीम को ट्रेल और अगले कदम का आकलन करने हेतु ट्रांजैक्शन और घटना की जानकारी दें।"
+        },
+        "banking": {
+          "title": "वित्त और बैंकिंग विवरण",
+          "description": "कौन-सी बैंकिंग सेवा और कॉरिडोर चाहिए बताएं ताकि हम समर्थन और अगले कदम की पुष्टि कर सकें।"
+        },
+        "loan": {
+          "title": "ऋण आवेदन विवरण",
+          "description": "कितनी राशि चाहिए और कौन-सा कोलेट्रल देंगे यह बताएं। अगला चरण भुगतान विधि चुनने का होगा।"
+        },
+        "payout": {
+          "title": "हम धन कैसे भेजें?",
+          "description": "भुगतान का तरीका चुनें और ऋण भेजने के लिए आवश्यक जानकारी दें।"
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "रिकवरी इनटेक",
+          "body": "सटीक ट्रांज़ैक्शन डेटा दें ताकि हमारी फॉरेंसिक टीम धन का पता लगा सके और अगले कदम दस्तावेज़ कर सके।",
+          "bullet1": "प्रमाणित विश्लेषकों द्वारा ऑन-चेन विश्लेषण",
+          "bullet2": "कानूनी समीक्षा हेतु प्रमाण सुरक्षित",
+          "bullet3": "डैशबोर्ड में केस अपडेट"
+        },
+        "loan": {
+          "title": "ऋण आवेदन",
+          "body": "शर्तें, LTV और कोलेट्रल आवश्यकताएं प्रतिबद्धता से पहले दिखाई देती हैं। अंतिम चरण में भुगतान विवरण जुटाए जाते हैं।",
+          "bullet1": "रिलीज से पहले पारदर्शी दरें",
+          "bullet2": "Lenix कस्टडी में कोलेट्रल",
+          "bullet3": "कई भुगतान विधियां समर्थित"
+        },
+        "banking": {
+          "title": "बैंकिंग सेवाएं",
+          "body": "Lenix सीधे ट्रांसफर, लिक्विडेशन, ऋण और कस्टडी संचालित करता है — कोई व्हाइट-लेबल इन्फ्रा नहीं।",
+          "bullet1": "पुष्टि से पहले उद्धृत दरें",
+          "bullet2": "समर्थित कॉरिडोर पर KYC",
+          "bullet3": "वित्त-स्तरीय ऑडिट ट्रेल"
+        },
+        "encryption": "आपकी जानकारी ट्रांज़िट और स्टोरेज दोनों दौरान एन्क्रिप्टेड रहती है। डेटा प्रोसेसिंग के लिए हमारी गोपनीयता नीति देखें।",
+        "support": "मदद चाहिए? फ़ॉर्म जमा करने के बाद Telegram पर सपोर्ट से संपर्क करें।"
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "पूरा नाम",
+        "phoneNumber": "फोन नंबर",
+        "submitFinish": "सबमिट करें और समाप्त करें",
+        "continue": "जारी रखें",
+        "continuePayout": "पAYOUT जारी रखें",
+        "submitting": "भेजा जा रहा है...",
+        "privacyPrefix": "Lenix इस केस के बारे में आपसे संपर्क कर सकता है। कृपया हमारी",
+        "privacyPrefixBanking": "समर्थित कॉरिडोर पर Lenix बैंकिंग विशेषज्ञ आपसे संपर्क करेगा। कृपया हमारी",
+        "privacyPolicy": "गोपनीयता नीति",
+        "privacySuffix": " देखें।",
+        "placeholderName": "उदा. राज शर्मा",
+        "selectCountry": "देश चुनें",
+        "selectService": "सेवा चुनें",
+        "selectBlockchain": "ब्लॉकचेन चुनें",
+        "selectCurrency": "मुद्रा चुनें",
+        "selectAsset": "परिसंपत्ति चुनें",
+        "selectNetwork": "नेटवर्क चुनें",
+        "somethingWrong": "कुछ गलत हो गया",
+        "pleaseLogin": "जारी रखने के लिए लॉगिन करें"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "घटना की जानकारी",
+        "sectionDesc": "ट्रांज़ैक्शन विवरण और घटना का सार दर्ज करें।",
+        "transactionHash": "ट्रांज़ैक्शन हैश या वॉलेट पता",
+        "amountLost": "अनुमानित हानि राशि",
+        "amountPlaceholder": "उदा. 200000",
+        "transactionPlaceholder": "0x1234… या वॉलेट पता",
+        "blockchain": "ब्लॉकचेन",
+        "currency": "मुद्रा",
+        "incidentSummary": "घटना सारांश",
+        "incidentPlaceholder": "क्या हुआ, कब हुआ और कौन शामिल था, इसका वर्णन करें।",
+        "evidence": "समर्थनकारी साक्ष्य",
+        "evidenceHint": "स्क्रीनशॉट या PDF (वैकल्पिक)",
+        "fileDropTitle": "साक्ष्य अपलोड करें",
+        "fileDropHint": "PNG, JPG या PDF (अधिकतम 10 MB)"
+      },
+      "BankingForm": {
+        "sectionTitle": "खाता और सेवा विवरण",
+        "sectionDesc": "बताएं कि आप कौन हैं और कौन-सी बैंकिंग सेवा तथा कॉरिडोर चाहिए।",
+        "countryCorridor": "देश / कॉरिडोर",
+        "serviceNeeded": "आवश्यक सेवा",
+        "additionalDetails": "अतिरिक्त विवरण",
+        "notesPlaceholder": "ट्रांसफर राशि, लाभार्थी बाजार या वांछित खाता सेटअप का वर्णन करें।",
+        "services": {
+          "transfer": "धन हस्तांतरण",
+          "liquidation": "परिसंपत्ति लिक्विडेशन",
+          "lending": "जमानती ऋण",
+          "custody": "कस्टडी और वॉलेट"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "इस समय कोई ऋण उत्पाद उपलब्ध नहीं है। कृपया बाद में जाँचें।",
+        "productTitle": "ऋण उत्पाद",
+        "productDesc": "अपनी आवश्यकता के अनुरूप उत्पाद चुनें।",
+        "productApr": "{rate}% APR · अधिकतम {ltv}% LTV",
+        "productCollateral": "कोलेट्रल ${min} – ${max}",
+        "selectedHint": "चयनित: {name} — आगे बढ़ने से पहले शर्तें देखें।",
+        "paramsTitle": "ऋण पैरामीटर",
+        "paramsDesc": "अपने आवेदन के लिए राशि और कोलेट्रल विवरण दर्ज करें।",
+        "loanAmount": "ऋण राशि (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "कोलेट्रल परिसंपत्ति",
+        "loanTerm": "ऋण अवधि",
+        "durations": {
+          "6": "6 महीने",
+          "12": "12 महीने",
+          "24": "24 महीने"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "संपर्क विवरण",
+        "contactDesc": "कम से कम एक संपर्क माध्यम प्रदान करें।",
+        "telegramWhatsapp": "Telegram या WhatsApp",
+        "telegramPlaceholder": "@username या +1234567890",
+        "phonePlaceholder": "+91 98765 00000",
+        "methodTitle": "भुगतान विधि",
+        "methodDesc": "हमें ऋण कैसे भेजना चाहिए?",
+        "methods": {
+          "crypto": {
+            "label": "क्रिप्टो वॉलेट",
+            "desc": "आपके ऑन-चेन पते पर भेजें"
+          },
+          "wire_transfer": {
+            "label": "वायर ट्रांसफर",
+            "desc": "अंतरराष्ट्रीय SWIFT ट्रांसफर"
+          },
+          "bank": {
+            "label": "बैंक खाता",
+            "desc": "स्थानीय ट्रांसफर या ACH"
+          }
+        },
+        "cryptoTitle": "क्रिप्टो भुगतान",
+        "walletAddress": "वॉलेट पता",
+        "walletPlaceholder": "0x… या आपका पता",
+        "network": "नेटवर्क",
+        "memo": "मेमो / टैग",
+        "memoPlaceholder": "कुछ नेटवर्क में आवश्यक",
+        "wireTitle": "SWIFT विवरण",
+        "bankName": "बैंक का नाम",
+        "bankNamePlaceholder": "उदा. SBI, HDFC",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "SBININBB",
+        "accountIban": "खाता / IBAN",
+        "accountHolder": "खाताधारक",
+        "reference": "संदर्भ",
+        "bankAccountTitle": "बैंक खाता विवरण",
+        "accountNumber": "खाता संख्या",
+        "routingIban": "रूटिंग / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "बिटकॉइन (BTC)",
+        "ETH": "एथेरियम (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "अन्य"
+      },
+      "CollateralAssets": {
+        "BTC": "बिटकॉइन (BTC)",
+        "ETH": "एथेरियम (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "एथेरियम",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "बिटकॉइन"
+      }
+    }
+  },
+  "id": {
+    "Onboarding": {
+      "Shell": {
+        "skip": "Lewati dulu",
+        "back": "Kembali",
+        "logoAlt": "Lenix Protocol",
+        "progressAria": "Progres",
+        "asideAria": "Bantuan dan informasi"
+      },
+      "Progress": {
+        "stepOf": "Langkah {current} dari {total}",
+        "flows": {
+          "selection": {
+            "1": "Layanan",
+            "2": "Detail",
+            "3": "Selesai"
+          },
+          "recovery": {
+            "1": "Layanan",
+            "2": "Detail kasus"
+          },
+          "loan": {
+            "1": "Layanan",
+            "2": "Detail pinjaman",
+            "3": "Pencairan"
+          },
+          "banking": {
+            "1": "Layanan",
+            "2": "Detail bank"
+          }
+        }
+      },
+      "Selection": {
+        "title": "Pilih layanan",
+        "description": "Pilih layanan Lenix yang sesuai dengan permintaan Anda. Di langkah berikutnya Anda akan mengisi formulir singkat.",
+        "legend": "Pilih layanan",
+        "sectionTitle": "Layanan yang tersedia",
+        "sectionDesc": "Pilih satu opsi untuk melanjutkan.",
+        "continue": "Lanjutkan",
+        "services": {
+          "recovery": {
+            "title": "Pemulihan aset kripto",
+            "description": "Lacak dana yang hilang atau dicuri dan siapkan bukti untuk langkah hukum bersama tim forensik kami."
+          },
+          "loan": {
+            "title": "Pinjaman dengan jaminan kripto",
+            "description": "Ajukan pinjaman dengan jaminan yang disetujui, dengan suku bunga, LTV, dan syarat terlihat sebelum pencairan."
+          },
+          "banking": {
+            "title": "Keuangan dan perbankan",
+            "description": "Transfer lintas negara, likuidasi kripto, kustodian, dan remitansi di koridor yang didukung Lenix."
+          }
+        }
+      },
+      "Details": {
+        "backToSelection": "Kembali ke pemilihan layanan",
+        "backToLoan": "Kembali ke detail pinjaman",
+        "recovery": {
+          "title": "Detail kasus pemulihan",
+          "description": "Berikan informasi transaksi dan insiden agar tim kami dapat menilai alur dana dan langkah berikutnya."
+        },
+        "banking": {
+          "title": "Detail keuangan & perbankan",
+          "description": "Jelaskan layanan perbankan dan koridor yang Anda butuhkan untuk memastikan dukungan dan tindak lanjut."
+        },
+        "loan": {
+          "title": "Detail pengajuan pinjaman",
+          "description": "Cantumkan jumlah yang dibutuhkan dan jaminan yang akan diserahkan. Selanjutnya pilih cara pencairan dana."
+        },
+        "payout": {
+          "title": "Bagaimana dana dicairkan?",
+          "description": "Pilih metode pencairan dan berikan informasi yang diperlukan."
+        }
+      },
+      "Aside": {
+        "recovery": {
+          "title": "Intake pemulihan",
+          "body": "Berikan data transaksi yang akurat agar tim forensik kami dapat melacak dana dan mendokumentasikan langkah selanjutnya.",
+          "bullet1": "Analisis on-chain oleh analis tersertifikasi",
+          "bullet2": "Bukti disimpan untuk peninjauan hukum",
+          "bullet3": "Pembaruan kasus di dashboard Anda"
+        },
+        "loan": {
+          "title": "Pengajuan pinjaman",
+          "body": "Syarat, LTV, dan kebutuhan jaminan ditampilkan sebelum Anda menyetujui. Detail pencairan dikumpulkan di langkah terakhir.",
+          "bullet1": "Suku bunga transparan sebelum pencairan",
+          "bullet2": "Jaminan berada di kustodian Lenix",
+          "bullet3": "Berbagai metode pencairan didukung"
+        },
+        "banking": {
+          "title": "Layanan perbankan",
+          "body": "Lenix menjalankan transfer, likuidasi, pinjaman, dan kustodian secara langsung — tanpa infrastruktur white-label.",
+          "bullet1": "Tarif dikutip sebelum konfirmasi",
+          "bullet2": "KYC di koridor yang didukung",
+          "bullet3": "Audit trail setara standar keuangan"
+        },
+        "encryption": "Informasi Anda dienkripsi saat transit dan saat disimpan. Lihat kebijakan privasi kami untuk detail pemrosesan data.",
+        "support": "Butuh bantuan? Hubungi dukungan melalui Telegram setelah mengirim formulir."
+      },
+      "Common": {
+        "required": "*",
+        "fullName": "Nama lengkap",
+        "phoneNumber": "Nomor telepon",
+        "submitFinish": "Kirim & selesai",
+        "continue": "Lanjutkan",
+        "continuePayout": "Lanjut ke pencairan",
+        "submitting": "Mengirim...",
+        "privacyPrefix": "Lenix dapat menghubungi Anda mengenai kasus ini. Lihat",
+        "privacyPrefixBanking": "Spesialis perbankan Lenix akan menghubungi Anda di koridor yang didukung. Lihat",
+        "privacyPolicy": "kebijakan privasi",
+        "privacySuffix": ".",
+        "placeholderName": "Contoh: Budi Santoso",
+        "selectCountry": "Pilih negara",
+        "selectService": "Pilih layanan",
+        "selectBlockchain": "Pilih blockchain",
+        "selectCurrency": "Pilih mata uang",
+        "selectAsset": "Pilih aset",
+        "selectNetwork": "Pilih jaringan",
+        "somethingWrong": "Terjadi kesalahan",
+        "pleaseLogin": "Silakan masuk untuk melanjutkan"
+      },
+      "RecoveryForm": {
+        "sectionTitle": "Informasi insiden",
+        "sectionDesc": "Masukkan detail transaksi dan ringkasan kejadian.",
+        "transactionHash": "Hash transaksi atau alamat dompet",
+        "amountLost": "Perkiraan dana hilang",
+        "amountPlaceholder": "mis. 200000",
+        "transactionPlaceholder": "0x1234… atau alamat",
+        "blockchain": "Blockchain",
+        "currency": "Mata uang",
+        "incidentSummary": "Ringkasan insiden",
+        "incidentPlaceholder": "Jelaskan apa yang terjadi, kapan, dan pihak yang terlibat.",
+        "evidence": "Bukti pendukung",
+        "evidenceHint": "Screenshot atau PDF (opsional)",
+        "fileDropTitle": "Unggah bukti",
+        "fileDropHint": "PNG, JPG, atau PDF hingga 10 MB"
+      },
+      "BankingForm": {
+        "sectionTitle": "Detail akun & layanan",
+        "sectionDesc": "Beritahu siapa Anda dan layanan perbankan apa yang dibutuhkan di koridor Anda.",
+        "countryCorridor": "Negara / koridor",
+        "serviceNeeded": "Layanan yang dibutuhkan",
+        "additionalDetails": "Detail tambahan",
+        "notesPlaceholder": "Jelaskan jumlah transfer, pasar penerima, atau konfigurasi akun yang diperlukan.",
+        "services": {
+          "transfer": "Transfer dana",
+          "liquidation": "Likuidasi aset",
+          "lending": "Pinjaman dengan jaminan",
+          "custody": "Kustodian & dompet"
+        }
+      },
+      "LoanForm": {
+        "noProducts": "Tidak ada produk pinjaman yang tersedia saat ini. Coba lagi nanti.",
+        "productTitle": "Produk pinjaman",
+        "productDesc": "Pilih produk yang sesuai kebutuhan.",
+        "productApr": "{rate}% APR · hingga {ltv}% LTV",
+        "productCollateral": "Jaminan ${min} – ${max}",
+        "selectedHint": "Dipilih: {name} — periksa syarat sebelum melanjutkan.",
+        "paramsTitle": "Parameter pinjaman",
+        "paramsDesc": "Masukkan jumlah dan detail jaminan untuk pengajuan Anda.",
+        "loanAmount": "Jumlah pinjaman (USD)",
+        "loanAmountPlaceholder": "5000",
+        "collateralAsset": "Aset jaminan",
+        "loanTerm": "Tenor pinjaman",
+        "durations": {
+          "6": "6 bulan",
+          "12": "12 bulan",
+          "24": "24 bulan"
+        }
+      },
+      "PayoutForm": {
+        "contactTitle": "Detail kontak",
+        "contactDesc": "Berikan minimal satu cara untuk menghubungi Anda.",
+        "telegramWhatsapp": "Telegram atau WhatsApp",
+        "telegramPlaceholder": "@username atau +1234567890",
+        "phonePlaceholder": "+62 812 0000 0000",
+        "methodTitle": "Metode pencairan",
+        "methodDesc": "Bagaimana kami harus mencairkan pinjaman?",
+        "methods": {
+          "crypto": {
+            "label": "Dompet kripto",
+            "desc": "Kirim ke alamat on-chain Anda"
+          },
+          "wire_transfer": {
+            "label": "Transfer bank",
+            "desc": "Transfer SWIFT internasional"
+          },
+          "bank": {
+            "label": "Rekening bank",
+            "desc": "Transfer lokal atau ACH"
+          }
+        },
+        "cryptoTitle": "Pencairan kripto",
+        "walletAddress": "Alamat dompet",
+        "walletPlaceholder": "0x… atau alamat Anda",
+        "network": "Jaringan",
+        "memo": "Memo / tag",
+        "memoPlaceholder": "Wajib di beberapa jaringan",
+        "wireTitle": "Detail SWIFT",
+        "bankName": "Nama bank",
+        "bankNamePlaceholder": "contoh BCA, Mandiri",
+        "swiftBic": "SWIFT / BIC",
+        "swiftPlaceholder": "CENAIDJA",
+        "accountIban": "Rekening / IBAN",
+        "accountHolder": "Nama pemilik",
+        "reference": "Referensi",
+        "bankAccountTitle": "Detail rekening bank",
+        "accountNumber": "Nomor rekening",
+        "routingIban": "Routing / IBAN"
+      },
+      "Blockchains": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "TRX": "Tron (TRX)",
+        "BNB": "Binance Smart Chain (BNB)",
+        "MATIC": "Polygon Mainnet (MATIC)",
+        "AVAX": "Avalanche C-Chain (AVAX)",
+        "ARB": "Arbitrum One (ARB)",
+        "BASE": "Base (BASE)",
+        "FANTOM": "Fantom (Fantom)",
+        "GNOSIS": "Gnosis Chain (GNOSIS)",
+        "KAVA": "Kava (KAVA)",
+        "POL": "Polkadot (POL)",
+        "SUI": "Sui (SUI)",
+        "OTHER": "Lainnya"
+      },
+      "CollateralAssets": {
+        "BTC": "Bitcoin (BTC)",
+        "ETH": "Ethereum (ETH)",
+        "SOL": "Solana (SOL)",
+        "USDT": "USDT",
+        "USDC": "USDC"
+      },
+      "Networks": {
+        "ethereum": "Ethereum",
+        "polygon": "Polygon",
+        "arbitrum": "Arbitrum",
+        "optimism": "Optimism",
+        "bsc": "BSC",
+        "solana": "Solana",
+        "bitcoin": "Bitcoin"
+      }
+    }
+  }
+}

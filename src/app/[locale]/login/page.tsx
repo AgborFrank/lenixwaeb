@@ -7,20 +7,22 @@ import { ArrowLeft, User, Lock } from "lucide-react";
 import Image from "next/image";
 import { useEffect } from "react";
 import { toast } from "sonner";
+import { useTranslations } from "next-intl";
 
 export default function LoginPage() {
+  const t = useTranslations("Auth");
   const searchParams = useSearchParams();
   const message = searchParams.get("message");
   const error = searchParams.get("error");
 
   useEffect(() => {
     if (message) {
-      toast.success(message);
+      toast.success(t(`messages.${message}`));
     }
     if (error) {
-      toast.error(error);
+      toast.error(t(`messages.${error}`));
     }
-  }, [message, error]);
+  }, [message, error, t]);
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden p-4">
@@ -36,7 +38,7 @@ export default function LoginPage() {
         className="absolute top-8 left-8 flex items-center gap-2 text-gray-400 hover:text-white transition-colors z-20"
       >
         <ArrowLeft className="w-4 h-4" />
-        <span>Back to Home</span>
+        <span>{t("backToHome")}</span>
       </Link>
 
       <div className="w-full max-w-md relative z-10">
@@ -51,9 +53,9 @@ export default function LoginPage() {
                 className="h-8 w-auto mx-auto"
               />
             </Link>
-            <h1 className="text-2xl font-bold text-white mb-2">Welcome Back</h1>
+            <h1 className="text-2xl font-bold text-white mb-2">{t("login.title")}</h1>
             <p className="text-gray-400 text-sm">
-              Sign in to access your dashboard
+              {t("login.subtitle")}
             </p>
           </div>
 
@@ -63,7 +65,7 @@ export default function LoginPage() {
                 className="text-sm font-medium text-gray-300 ml-1"
                 htmlFor="email"
               >
-                Email Address
+                {t("login.email")}
               </label>
               <div className="relative">
                 <User className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
@@ -73,7 +75,7 @@ export default function LoginPage() {
                   type="email"
                   required
                   className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder-gray-500 focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/50 transition-all"
-                  placeholder="name@example.com"
+                  placeholder={t("login.emailPlaceholder")}
                 />
               </div>
             </div>
@@ -84,13 +86,13 @@ export default function LoginPage() {
                   className="text-sm font-medium text-gray-300"
                   htmlFor="password"
                 >
-                  Password
+                  {t("login.password")}
                 </label>
                 <Link
                   href="/forgot-password"
                   className="text-xs text-yellow-400 hover:text-yellow-300"
                 >
-                  Forgot password?
+                  {t("login.forgotPassword")}
                 </Link>
               </div>
               <div className="relative">
@@ -110,18 +112,18 @@ export default function LoginPage() {
               type="submit"
               className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-3.5 rounded-xl transition-all shadow-[0_0_20px_rgba(250,204,21,0.2)] hover:shadow-[0_0_30px_rgba(250,204,21,0.4)]"
             >
-              Sign In
+              {t("login.submit")}
             </button>
           </form>
 
           <div className="mt-8 text-center">
             <p className="text-gray-400 text-sm">
-              Don't have an account?{" "}
+              {t("login.noAccount")}{" "}
               <Link
                 href="/signup"
                 className="text-yellow-400 hover:text-yellow-300 font-medium"
               >
-                Create Account
+                {t("login.createAccount")}
               </Link>
             </p>
           </div>

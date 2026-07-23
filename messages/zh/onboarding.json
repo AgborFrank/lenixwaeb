@@ -1,241 +1,251 @@
 {
   "Shell": {
-    "skip": "Skip for now",
-    "back": "Back",
+    "skip": "暂时跳过",
+    "back": "返回",
     "logoAlt": "Lenix Protocol",
-    "progressAria": "Progress",
-    "asideAria": "Help and information"
+    "progressAria": "进度",
+    "asideAria": "帮助与信息"
   },
   "Progress": {
-    "stepOf": "Step {current} of {total}",
+    "stepOf": "第 {current}/{total} 步",
     "flows": {
       "selection": {
-        "1": "Service",
-        "2": "Details",
-        "3": "Complete"
+        "1": "服务",
+        "2": "详情",
+        "3": "完成"
       },
       "recovery": {
-        "1": "Service",
-        "2": "Case details"
+        "1": "服务",
+        "2": "案件详情"
       },
       "loan": {
-        "1": "Service",
-        "2": "Loan details",
-        "3": "Payout"
+        "1": "服务",
+        "2": "贷款详情",
+        "3": "发放"
       },
       "banking": {
-        "1": "Service",
-        "2": "Banking details"
+        "1": "服务",
+        "2": "银行信息"
       }
     }
   },
   "Selection": {
-    "title": "Choose your service",
-    "description": "Select the Lenix service that matches your request. You will complete a short intake form in the next step.",
-    "legend": "Select a service",
-    "sectionTitle": "Available services",
-    "sectionDesc": "Select one option to continue.",
-    "continue": "Continue",
+    "title": "选择所需服务",
+    "description": "挑选最符合您需求的 Lenix 服务以继续。",
+    "legend": "选择服务",
+    "sectionTitle": "服务",
+    "sectionDesc": "必填项。",
+    "continue": "继续",
     "services": {
       "recovery": {
-        "title": "Crypto asset recovery",
-        "description": "Trace lost or stolen funds and build evidence for lawful recovery steps with our forensics team."
+        "title": "追踪找回资金",
+        "description": "与我们的取证团队一起追踪遗失或被盗的资金并构建取回方案。"
       },
       "loan": {
-        "title": "Crypto-backed loan",
-        "description": "Borrow against approved collateral with rates, LTV, and repayment terms shown before disbursement."
+        "title": "加密抵押贷款",
+        "description": "以获批抵押物贷款，放款前即可查看利率、LTV 与条款。"
       },
       "banking": {
-        "title": "Finance & Banking",
-        "description": "Cross-border transfers, crypto liquidation, custody, and remittance on corridors Lenix supports."
+        "title": "金融与银行服务",
+        "description": "在 Lenix 支持的通道中安全转账、兑换或托管加密资产。"
       }
     }
   },
   "Details": {
-    "backToSelection": "Back to service selection",
-    "backToLoan": "Back to loan details",
+    "backToSelection": "返回服务选择",
+    "backToLoan": "返回贷款详情",
     "recovery": {
-      "title": "Asset recovery case details",
-      "description": "Provide transaction and incident information so our team can assess the trail and next steps."
+      "title": "请描述发生了什么",
+      "description": "我们的团队需要了解交易与事件细节。"
     },
     "banking": {
-      "title": "Finance & Banking details",
-      "description": "Tell us which banking service you need and your corridor so we can confirm support and next steps."
+      "title": "准备开始",
+      "description": "告诉我们您需要的银行服务与所在国家/通道。"
     },
     "loan": {
-      "title": "Loan application details",
-      "description": "Tell us how much you need and what collateral you will post. Next, you will choose how to receive funds."
+      "title": "贷款申请",
+      "description": "选择贷款类型并填写所需金额。"
     },
     "payout": {
-      "title": "How should we send your funds?",
-      "description": "Choose a payout method and enter the details we need to disburse your loan."
+      "title": "选择放款方式",
+      "description": "请提供我们发放资金所需的信息。"
     }
   },
   "Aside": {
     "recovery": {
-      "title": "Recovery intake",
-      "body": "Provide accurate transaction details to help our forensics team trace funds and document next steps.",
-      "bullet1": "Chain analysis by certified analysts",
-      "bullet2": "Evidence preserved for legal review",
-      "bullet3": "Case updates in your dashboard"
+      "title": "案件受理",
+      "body": "提供准确的交易数据，帮助我们追踪资金并规划下一步。",
+      "bullet1": "认证分析师的链上分析",
+      "bullet2": "证据留存供法律使用",
+      "bullet3": "案件进展实时在面板展示"
     },
     "loan": {
-      "title": "Loan application",
-      "body": "Terms, LTV, and collateral requirements are shown before you commit. Payout details are collected in the final step.",
-      "bullet1": "Transparent rates before disbursement",
-      "bullet2": "Collateral held in Lenix custody",
-      "bullet3": "Multiple payout methods supported"
+      "title": "贷款流程",
+      "body": "在确认前即可了解所有条款、LTV 与抵押要求。放款信息会在最后一步收集。",
+      "bullet1": "放款前透明报价",
+      "bullet2": "抵押资产由 Lenix 托管",
+      "bullet3": "多种放款方式可选"
     },
     "banking": {
-      "title": "Banking services",
-      "body": "Lenix operates transfers, liquidation, lending, and custody directly — not white-label infrastructure.",
-      "bullet1": "Quoted rates before confirmation",
-      "bullet2": "KYC on supported corridors",
-      "bullet3": "Finance-grade audit trail"
+      "title": "下一步安排",
+      "body": "我们会在 24 小时内与您联系，确认价格与后续步骤。"
     },
-    "encryption": "Your information is encrypted in transit and at rest. See our privacy policy for data handling practices.",
-    "support": "Need help? Contact support via Telegram after submitting your intake."
+    "encryption": "您的数据会被安全加密，未经许可不会共享。",
+    "support": "有疑问？提交后欢迎随时通过 Telegram 联系我们。"
   },
   "Common": {
     "required": "*",
-    "fullName": "Full name",
-    "phoneNumber": "Phone number",
-    "submitFinish": "Submit and finish",
-    "continue": "Continue",
-    "continuePayout": "Continue to payout",
-    "submitting": "Submitting…",
-    "privacyPrefix": "Lenix may contact you about this case. See our",
-    "privacyPrefixBanking": "A Lenix banking specialist will follow up on supported corridors. See our",
-    "privacyPolicy": "Privacy Policy",
-    "privacySuffix": ".",
-    "placeholderName": "John Doe",
-    "selectCountry": "Select country",
-    "selectService": "Select a service",
-    "selectBlockchain": "Select blockchain",
-    "selectCurrency": "Select currency",
-    "selectAsset": "Select asset",
-    "selectNetwork": "Select network",
-    "somethingWrong": "Something went wrong",
-    "pleaseLogin": "Please log in"
+    "fullName": "您的姓名",
+    "phoneNumber": "联系电话（可选）",
+    "submitFinish": "提交申请",
+    "continue": "继续",
+    "continuePayout": "继续设置放款",
+    "submitting": "提交中...",
+    "privacyPrefix": "若需更多信息我们会联系您，请查看",
+    "privacyPrefixBanking": "我们会尽快回复您，请查看",
+    "privacyPolicy": "隐私政策",
+    "privacySuffix": "了解详情。",
+    "placeholderName": "例如：张伟",
+    "selectCountry": "请选择国家",
+    "selectService": "请选择服务",
+    "selectBlockchain": "请选择区块链",
+    "selectCurrency": "请选择币种",
+    "selectAsset": "请选择资产",
+    "selectNetwork": "请选择网络",
+    "somethingWrong": "发生错误，请稍后再试。",
+    "pleaseLogin": "请先登录继续"
   },
   "RecoveryForm": {
-    "sectionTitle": "Incident information",
-    "sectionDesc": "Provide transaction details and a summary of what occurred.",
-    "transactionHash": "Transaction hash or wallet address",
-    "amountLost": "Approximate amount lost",
-    "amountPlaceholder": "e.g. 200000",
-    "transactionPlaceholder": "0x1234… or wallet address",
-    "blockchain": "Blockchain",
-    "currency": "Currency",
-    "incidentSummary": "Incident summary",
-    "incidentPlaceholder": "Describe what happened, when it occurred, and any parties involved.",
-    "evidence": "Supporting evidence",
-    "evidenceHint": "Screenshot or PDF (optional)"
+    "contactSectionTitle": "联系方式",
+    "contactSectionDesc": "我们将通过这些信息与您联系。",
+    "transactionSectionTitle": "交易详情",
+    "transactionSectionDesc": "用于分析的链上标识与损失金额。",
+    "incidentSectionTitle": "事件与证据",
+    "incidentSectionDesc": "描述事件经过并上传可选材料。",
+    "sectionTitle": "事件信息",
+    "sectionDesc": "请提供交易详情与事件摘要。",
+    "transactionHash": "交易哈希或钱包地址",
+    "amountLost": "损失金额（约）",
+    "amountPlaceholder": "例如 200000",
+    "transactionPlaceholder": "0x1234… 或钱包地址",
+    "blockchain": "区块链",
+    "currency": "币种",
+    "incidentSummary": "事件摘要",
+    "incidentPlaceholder": "描述发生了什么、时间节点及相关方。",
+    "evidence": "支持性证据",
+    "evidenceHint": "截图或 PDF（可选）",
+    "fileDropTitle": "上传证据",
+    "fileDropHint": "PNG、JPG 或 PDF，最大 10 MB"
   },
   "BankingForm": {
-    "sectionTitle": "Account & service details",
-    "sectionDesc": "Tell us who you are and which banking service you need on your corridor.",
-    "countryCorridor": "Country / corridor",
-    "serviceNeeded": "Service needed",
-    "additionalDetails": "Additional details",
-    "notesPlaceholder": "Describe the transfer amount, beneficiary market, or account setup you need.",
+    "contactSectionTitle": "关于您",
+    "contactSectionDesc": "我们将依此信息与您沟通需求。",
+    "serviceSectionTitle": "服务需求",
+    "serviceSectionDesc": "帮助我们了解您具体想完成的事项。",
+    "sectionTitle": "账户与服务信息",
+    "sectionDesc": "告知我们您的身份以及所需服务与通道。",
+    "countryCorridor": "国家 / 通道",
+    "serviceNeeded": "需要我们协助的内容",
+    "additionalDetails": "其他备注（可选）",
+    "notesPlaceholder": "说明金额、目标市场或希望达成的操作...",
     "services": {
-      "transfer": "Money transfer",
-      "liquidation": "Asset liquidation",
-      "lending": "Collateral lending",
-      "custody": "Custody & wallet"
+      "transfer": "资金转账",
+      "receive": "接收资金/资产",
+      "liquidation": "加密兑现金",
+      "lending": "加密抵押借款",
+      "custody": "资产托管"
     }
   },
   "LoanForm": {
-    "noProducts": "No loan products are available right now. Please check back later.",
-    "productTitle": "Loan product",
-    "productDesc": "Select the product that matches your needs.",
-    "productApr": "{rate}% APR · up to {ltv}% LTV",
-    "productCollateral": "Collateral ${min} – ${max}",
-    "selectedHint": "Selected: {name} — review terms before continuing.",
-    "paramsTitle": "Loan parameters",
-    "paramsDesc": "Enter the amount and collateral details for your application.",
-    "loanAmount": "Loan amount (USD)",
+    "noProducts": "当前暂无可用贷款产品，请稍后查看。",
+    "productTitle": "贷款产品",
+    "productDesc": "请选择符合您需求的产品。",
+    "productApr": "年化 {rate}% · 最高 {ltv}% LTV",
+    "productCollateral": "抵押额度 ${min} – ${max}",
+    "selectedHint": "已选择：{name}，继续前请确认条款。",
+    "paramsTitle": "贷款参数",
+    "paramsDesc": "填写申请金额及抵押细节。",
+    "loanAmount": "贷款金额（美元）",
     "loanAmountPlaceholder": "5000",
-    "collateralAsset": "Collateral asset",
-    "loanTerm": "Loan term",
+    "collateralAsset": "抵押资产",
+    "loanTerm": "贷款期限",
     "durations": {
-      "6": "6 months",
-      "12": "12 months",
-      "24": "24 months"
+      "6": "6 个月",
+      "12": "12 个月",
+      "24": "24 个月"
     }
   },
   "PayoutForm": {
-    "contactTitle": "Contact details",
-    "contactDesc": "Provide at least one way to reach you.",
-    "telegramWhatsapp": "Telegram or WhatsApp",
-    "telegramPlaceholder": "@username or +1234567890",
-    "phonePlaceholder": "+1 234 567 8900",
-    "methodTitle": "Payout method",
-    "methodDesc": "How should we disburse your loan?",
+    "contactTitle": "联系信息",
+    "contactDesc": "请至少提供一种联系方式。",
+    "telegramWhatsapp": "Telegram 或 WhatsApp",
+    "telegramPlaceholder": "@用户名 或 +1234567890",
+    "phonePlaceholder": "+86 138 0000 0000",
+    "methodTitle": "放款方式",
+    "methodDesc": "请选择我们如何向您发放贷款。",
     "methods": {
       "crypto": {
-        "label": "Crypto wallet",
-        "desc": "Send to your on-chain address"
+        "label": "加密钱包",
+        "desc": "发送至您的链上地址"
       },
       "wire_transfer": {
-        "label": "Wire transfer",
-        "desc": "International SWIFT transfer"
+        "label": "国际电汇",
+        "desc": "SWIFT 跨境转账"
       },
       "bank": {
-        "label": "Bank account",
-        "desc": "Domestic ACH or local transfer"
+        "label": "银行账户",
+        "desc": "本地转账或 ACH"
       }
     },
-    "cryptoTitle": "Crypto payout",
-    "walletAddress": "Wallet address",
-    "walletPlaceholder": "0x… or your address",
-    "network": "Network",
-    "memo": "Memo / tag",
-    "memoPlaceholder": "Required by some networks",
-    "wireTitle": "Wire transfer details",
-    "bankName": "Bank name",
-    "bankNamePlaceholder": "e.g. Chase, HSBC",
+    "cryptoTitle": "加密放款",
+    "walletAddress": "钱包地址",
+    "walletPlaceholder": "0x… 或您的地址",
+    "network": "网络",
+    "memo": "备注 / 标签",
+    "memoPlaceholder": "部分网络必填",
+    "wireTitle": "电汇信息",
+    "bankName": "银行名称",
+    "bankNamePlaceholder": "如 工商银行、汇丰",
     "swiftBic": "SWIFT / BIC",
-    "swiftPlaceholder": "CHASUS33",
-    "accountIban": "Account / IBAN",
-    "accountHolder": "Account holder",
-    "reference": "Reference",
-    "bankAccountTitle": "Bank account details",
-    "accountNumber": "Account number",
-    "routingIban": "Routing / IBAN"
+    "swiftPlaceholder": "HXBKCNBJ",
+    "accountIban": "账号 / IBAN",
+    "accountHolder": "账户姓名",
+    "reference": "附言",
+    "bankAccountTitle": "银行账户信息",
+    "accountNumber": "账号",
+    "routingIban": "路由 / IBAN"
   },
   "Blockchains": {
-    "BTC": "Bitcoin (BTC)",
-    "ETH": "Ethereum (ETH)",
+    "BTC": "比特币 (BTC)",
+    "ETH": "以太坊 (ETH)",
     "SOL": "Solana (SOL)",
-    "TRX": "Tron (TRX)",
-    "BNB": "Binance Smart Chain (BNB)",
-    "MATIC": "Polygon Mainnet (MATIC)",
+    "TRX": "波场 (TRX)",
+    "BNB": "币安智能链 (BNB)",
+    "MATIC": "Polygon 主网 (MATIC)",
     "AVAX": "Avalanche C-Chain (AVAX)",
     "ARB": "Arbitrum One (ARB)",
     "BASE": "Base (BASE)",
     "FANTOM": "Fantom (Fantom)",
-    "GNOSIS": "Gnosis Chain (GNOSIS)",
+    "GNOSIS": "Gnosis 链 (GNOSIS)",
     "KAVA": "Kava (KAVA)",
     "POL": "Polkadot (POL)",
     "SUI": "Sui (SUI)",
-    "OTHER": "Other"
+    "OTHER": "其他"
   },
   "CollateralAssets": {
-    "BTC": "Bitcoin (BTC)",
-    "ETH": "Ethereum (ETH)",
+    "BTC": "比特币 (BTC)",
+    "ETH": "以太坊 (ETH)",
     "SOL": "Solana (SOL)",
     "USDT": "USDT",
     "USDC": "USDC"
   },
   "Networks": {
-    "ethereum": "Ethereum",
+    "ethereum": "以太坊",
     "polygon": "Polygon",
     "arbitrum": "Arbitrum",
     "optimism": "Optimism",
     "bsc": "BSC",
     "solana": "Solana",
-    "bitcoin": "Bitcoin"
+    "bitcoin": "比特币"
   }
 }

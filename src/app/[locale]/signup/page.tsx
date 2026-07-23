@@ -1,9 +1,25 @@
+"use client";
+
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { signup } from "../auth/actions";
 import { ArrowLeft, User, Lock, Mail } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { useEffect } from "react";
+import { toast } from "sonner";
 
 export default function SignupPage() {
+  const t = useTranslations("Auth");
+  const searchParams = useSearchParams();
+  const error = searchParams.get("error");
+
+  useEffect(() => {
+    if (error) {
+      toast.error(t(`messages.${error}`));
+    }
+  }, [error, t]);
+
   return (
     <main className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden p-4">
       {/* Background image */}
@@ -18,7 +34,7 @@ export default function SignupPage() {
         className="absolute top-8 left-8 flex items-center gap-2 text-gray-400 hover:text-white transition-colors z-20"
       >
         <ArrowLeft className="w-4 h-4" />
-        <span>Back to Home</span>
+        <span>{t("backToHome")}</span>
       </Link>
 
       <div className="w-full max-w-md relative z-10">
@@ -34,9 +50,9 @@ export default function SignupPage() {
               />
             </Link>
             <h1 className="text-2xl font-bold text-white mb-2">
-              Create Account
+              {t("signup.title")}
             </h1>
-            <p className="text-gray-400 text-sm">Join Lenix Protocol today</p>
+            <p className="text-gray-400 text-sm">{t("signup.subtitle")}</p>
           </div>
 
           <form action={signup} className="space-y-6">
@@ -45,7 +61,7 @@ export default function SignupPage() {
                 className="text-sm font-medium text-gray-300 ml-1"
                 htmlFor="email"
               >
-                Email Address
+                {t("signup.email")}
               </label>
               <div className="relative">
                 <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
@@ -55,7 +71,7 @@ export default function SignupPage() {
                   type="email"
                   required
                   className="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-12 pr-4 text-white placeholder-gray-500 focus:outline-none focus:border-yellow-400/50 focus:ring-1 focus:ring-yellow-400/50 transition-all"
-                  placeholder="name@example.com"
+                  placeholder={t("signup.emailPlaceholder")}
                 />
               </div>
             </div>
@@ -65,7 +81,7 @@ export default function SignupPage() {
                 className="text-sm font-medium text-gray-300 ml-1"
                 htmlFor="password"
               >
-                Password
+                {t("signup.password")}
               </label>
               <div className="relative">
                 <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500" />
@@ -84,18 +100,18 @@ export default function SignupPage() {
               type="submit"
               className="w-full bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-3.5 rounded-xl transition-all shadow-[0_0_20px_rgba(250,204,21,0.2)] hover:shadow-[0_0_30px_rgba(250,204,21,0.4)]"
             >
-              Sign Up
+              {t("signup.submit")}
             </button>
           </form>
 
           <div className="mt-8 text-center">
             <p className="text-gray-400 text-sm">
-              Already have an account?{" "}
+              {t("signup.hasAccount")}{" "}
               <Link
                 href="/login"
                 className="text-yellow-400 hover:text-yellow-300 font-medium"
               >
-                Sign In
+                {t("signup.signIn")}
               </Link>
             </p>
           </div>

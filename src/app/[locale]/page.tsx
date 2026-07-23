@@ -55,7 +55,6 @@ export default function Home() {
       <TrustSignals />
       <Merchant />
       <Credibility />
-      
       <HomeCta />
       <MarketTicker />
       <Footer />
