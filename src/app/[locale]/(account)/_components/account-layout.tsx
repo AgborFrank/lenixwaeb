@@ -167,7 +167,7 @@ export function AccountLayout({
     <div className="min-h-screen flex">
       {/* Desktop sidebar - scrollbar hidden via .account-sidebar in globals.css */}
       <aside className="hidden lg:fixed lg:inset-y-0 lg:left-0 lg:z-30 lg:flex lg:w-64 lg:flex-col">
-        <div className="account-sidebar flex grow flex-col gap-y-5 overflow-y-auto overflow-x-hidden rounded-r-2xl border-r border-white/10 bg-white/5 backdrop-blur-xl px-4 pb-4 pt-6">
+        <div className="account-sidebar flex grow flex-col gap-y-5 overflow-y-auto overflow-x-hidden border-r border-zinc-800 bg-[#0B0E11] px-4 pb-4 pt-6">
           <div className="flex items-center justify-between gap-2 px-2">
             <Link href="/dashboard" className="flex shrink-0 items-center">
               <Image
@@ -190,7 +190,7 @@ export function AccountLayout({
       {/* Main area */}
       <div className="lg:pl-64 flex flex-1 flex-col">
         {/* Header */}
-        <header className="sticky top-0 z-20 flex h-16 shrink-0 items-center gap-3 border-b border-white/10 bg-white/5 backdrop-blur-xl px-4 sm:px-6 lg:px-8">
+        <header className="sticky top-0 z-20 flex h-16 shrink-0 items-center gap-3 border-b border-zinc-800 bg-[#0B0E11] px-4 sm:px-6 lg:px-8">
           {/* Mobile menu - inside header to avoid overlap with user details */}
           <div className="lg:hidden shrink-0">
             <Drawer
@@ -207,7 +207,7 @@ export function AccountLayout({
                   <Menu className="h-6 w-6" />
                 </Button>
               </DrawerTrigger>
-              <DrawerContent className="h-full w-[280px] rounded-none border-r border-white/10 bg-black/90 backdrop-blur-xl text-white">
+              <DrawerContent className="h-full w-[280px] rounded-none border-r border-zinc-800 bg-[#0B0E11] text-white">
                 <DrawerHeader className="flex flex-row items-center justify-between gap-3">
                   <DrawerTitle className="text-white">{t("header.menu")}</DrawerTitle>
                   <LanguagePicker isDark menuSide="bottom" />
@@ -217,11 +217,9 @@ export function AccountLayout({
             </Drawer>
           </div>
           <div className="flex flex-1 items-center justify-between gap-3 min-w-0">
-            <div className="min-w-0 flex-1">
-              <p className="text-sm font-medium text-white truncate">
-                {userEmail}
-              </p>
-              <p className="text-xs text-gray-500 truncate">{t("header.verified_user")}</p>
+            <div className="min-w-0 flex-1 ">
+             <Image src="/assets/img/logo.png" alt="logo" width={100} height={100} className="h-5 w-auto" />
+             
             </div>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -239,7 +237,7 @@ export function AccountLayout({
               </DropdownMenuTrigger>
               <DropdownMenuContent
                 align="end"
-                className="w-56 bg-black/95 border-white/10 text-white"
+                className="w-56 border-zinc-800 bg-[#000000b7] text-white"
               >
                 {DROPDOWN_LINKS.map((item) => (
                   <DropdownMenuItem key={item.href} asChild>
@@ -263,8 +261,8 @@ export function AccountLayout({
 
         {/* Page content */}
         <main className={cn(
-           "flex-1 pb-20 lg:pb-0", // Add bottom padding for mobile tabs
-           pathname === "/crypto-loan" ? "p-0" : "p-4 sm:p-6 lg:p-8"
+           "flex-1 pb-20 lg:pb-0 mb-20", // Add bottom padding for mobile tabs
+           pathname === "/crypto-loan" ? "p-0" : "p-2 sm:p-6 lg:p-8"
         )}>
           {children}
         </main>

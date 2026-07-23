@@ -962,11 +962,11 @@
       "account": "Account",
       "tier": "Tier",
       "relationship_manager": "Relationship manager",
-      "spot_wallet": "Spot wallet",
+      "spot_wallet": "Spot",
       "spot_available": "Available for trading",
-      "funding_wallet": "Funding wallet",
+      "funding_wallet": "Funding",
       "funding_available": "Available for settlement",
-      "in_settlement": "In settlement",
+      "in_settlement": "Settlement",
       "pending_payouts": "Across active bank payouts"
     },
     "assets": {

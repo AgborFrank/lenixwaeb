@@ -30,21 +30,14 @@ export default async function AccountLayoutWrapper({
   const { data: settings } = await getSettings();
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      <div
-        className="fixed inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url(/assets/img/background6.png)" }}
-      />
-      <div className="fixed inset-0 z-[1] bg-black/50" />
-      <div className="relative z-10">
-        <SettingsProvider initialSettings={settings ?? null}>
-          <WalletProvider>
-            <AccountLayout userEmail={user.email ?? ""}>
-              {children}
-            </AccountLayout>
-          </WalletProvider>
-        </SettingsProvider>
-      </div>
+    <div className="min-h-screen bg-[#0B0E11] text-[#EAECEF]">
+      <SettingsProvider initialSettings={settings ?? null}>
+        <WalletProvider>
+          <AccountLayout userEmail={user.email ?? ""}>
+            {children}
+          </AccountLayout>
+        </WalletProvider>
+      </SettingsProvider>
     </div>
   );
 }

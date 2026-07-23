@@ -140,7 +140,7 @@ export function BankingTransferDialog({
 
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
-      <DialogContent className="max-h-[92vh] overflow-y-auto border-zinc-800 bg-zinc-950 p-0 text-white sm:max-w-2xl">
+      <DialogContent className="max-h-[92vh] overflow-y-auto overscroll-contain border-zinc-800 bg-zinc-950 p-0 text-white sm:max-w-2xl">
         <DialogHeader className="border-b border-zinc-800 px-5 py-5 text-left sm:px-6">
           <div className="flex items-center gap-3">
             {step === "review" && (
@@ -200,7 +200,7 @@ export function BankingTransferDialog({
               <button
                 type="button"
                 onClick={() => handleOpenChange(false)}
-                className="inline-flex h-11 items-center justify-center rounded-lg border border-zinc-700 bg-zinc-900 px-5 text-sm font-semibold text-white transition-colors hover:bg-zinc-800"
+                className="inline-flex h-10 items-center justify-center rounded-md border border-zinc-700 bg-zinc-900 px-5 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800"
               >
                 {t("cancel")}
               </button>
@@ -210,7 +210,7 @@ export function BankingTransferDialog({
                 type="button"
                 disabled={isPending}
                 onClick={handleContinue}
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-[#FCD535] px-5 text-sm font-semibold text-black transition-colors hover:bg-[#F0B90B] disabled:cursor-not-allowed disabled:opacity-50"
+                className="inline-flex h-10 items-center justify-center gap-2 rounded-md bg-[#FCD535] px-5 text-sm font-semibold text-[#181a20] transition-colors hover:bg-[#F0B90B] disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {isPending && <Loader2 className="h-4 w-4 animate-spin" aria-hidden />}
                 {t("review_transfer")}
@@ -221,7 +221,7 @@ export function BankingTransferDialog({
                 type="button"
                 disabled={isPending}
                 onClick={handleConfirm}
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-[#FCD535] px-5 text-sm font-semibold text-black transition-colors hover:bg-[#F0B90B] disabled:cursor-not-allowed disabled:opacity-50"
+                className="inline-flex h-10 items-center justify-center gap-2 rounded-md bg-[#FCD535] px-5 text-sm font-semibold text-[#181a20] transition-colors hover:bg-[#F0B90B] disabled:cursor-not-allowed disabled:opacity-50"
               >
                 {isPending && <Loader2 className="h-4 w-4 animate-spin" aria-hidden />}
                 {t("confirm_submit")}
@@ -231,7 +231,7 @@ export function BankingTransferDialog({
               <button
                 type="button"
                 onClick={() => handleOpenChange(false)}
-                className="inline-flex h-11 items-center justify-center rounded-lg bg-[#FCD535] px-5 text-sm font-semibold text-black transition-colors hover:bg-[#F0B90B]"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-[#FCD535] px-5 text-sm font-semibold text-[#181a20] transition-colors hover:bg-[#F0B90B]"
               >
                 {t("done")}
               </button>

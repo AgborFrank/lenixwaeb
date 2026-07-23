@@ -20,6 +20,7 @@ import {
 } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import { format } from "date-fns";
+import Image from "next/image";
 
 const NETWORKS = [
   { id: "all", name: "All Networks" },
@@ -199,8 +200,8 @@ export default function TransactionsPage() {
              </div>
          ) : filteredTransactions.length === 0 ? (
              <div className="text-center py-20 border border-dashed border-zinc-800 rounded-2xl">
-                <History className="h-10 w-10 text-zinc-600 mx-auto mb-3" />
-                <p className="text-zinc-400 font-medium">
+                <Image src="/assets/vectors/transs.svg" width={48} height={48} alt="we" className="h-16 w-16 text-zinc-600 mx-auto mb-3" />
+                <p className="text-zinc-400 font-medium max-w-md mx-auto px-6">
                   {rawTransactions.length === 0 && walletState === "no_wallet"
                     ? "Create or import a Lenix Wallet to see transaction history."
                     : "No transactions found"}

@@ -14,6 +14,7 @@ interface AddBankAccountDialogProps {
 }
 
 const CURRENCIES: BankingCurrency[] = ["USD", "EUR", "GBP"];
+type RequiredField = "bankName" | "accountHolderName" | "accountNumber" | "country";
 
 export function AddBankAccountDialog({ open, onOpenChange, onAdded }: AddBankAccountDialogProps) {
   const t = useTranslations("AccountBanking.add_account");
@@ -26,6 +27,7 @@ export function AddBankAccountDialog({ open, onOpenChange, onAdded }: AddBankAcc
   const [accountType, setAccountType] = useState<"checking" | "savings">("checking");
   const [currency, setCurrency] = useState<BankingCurrency>("USD");
   const [country, setCountry] = useState("");
+  const [fieldErrors, setFieldErrors] = useState<Partial<Record<RequiredField, string>>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const reset = () => {
@@ -38,6 +40,11 @@ export function AddBankAccountDialog({ open, onOpenChange, onAdded }: AddBankAcc
     setAccountType("checking");
     setCurrency("USD");
     setCountry("");
+    setFieldErrors({});
+  };
+
+  const clearFieldError = (field: RequiredField) => {
+    setFieldErrors((current) => ({ ...current, [field]: undefined }));
   };
 
   const handleOpenChange = (nextOpen: boolean) => {
@@ -47,10 +54,16 @@ export function AddBankAccountDialog({ open, onOpenChange, onAdded }: AddBankAcc
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    if (!bankName.trim() || !accountHolderName.trim() || !accountNumber.trim() || !country.trim()) {
-      toast.error(t("required_fields"));
-      return;
-    }
+    const requiredError = t("required_fields");
+    const nextErrors: Partial<Record<RequiredField, string>> = {};
+
+    if (!bankName.trim()) nextErrors.bankName = requiredError;
+    if (!accountHolderName.trim()) nextErrors.accountHolderName = requiredError;
+    if (!accountNumber.trim()) nextErrors.accountNumber = requiredError;
+    if (!country.trim()) nextErrors.country = requiredError;
+
+    setFieldErrors(nextErrors);
+    if (Object.keys(nextErrors).length > 0) return;
 
     setIsSubmitting(true);
     try {
@@ -84,66 +97,97 @@ export function AddBankAccountDialog({ open, onOpenChange, onAdded }: AddBankAcc
 
   return (
     <Dialog open={open} onOpenChange={handleOpenChange}>
-      <DialogContent className="max-w-lg border-zinc-800 bg-zinc-950 text-white">
+      <DialogContent className="max-h-[92vh] max-w-lg overflow-y-auto overscroll-contain border-zinc-800 bg-zinc-950 text-white">
         <DialogHeader>
-          <DialogTitle>{t("title")}</DialogTitle>
-          <DialogDescription className="text-zinc-500">{t("description")}</DialogDescription>
+          <DialogTitle className="text-base sm:text-lg">{t("title")}</DialogTitle>
+          <DialogDescription className="text-xs sm:text-sm text-zinc-500">{t("description")}</DialogDescription>
         </DialogHeader>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="grid grid-cols-2 gap-3">
-            <Field label={t("fields.bank_name")} required>
+        <form noValidate onSubmit={handleSubmit} className="space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <Field label={t("fields.bank_name")} required error={fieldErrors.bankName}>
               <input
+                name="bankName"
+                autoComplete="organization"
+                required
                 value={bankName}
-                onChange={(e) => setBankName(e.target.value)}
+                onChange={(e) => {
+                  setBankName(e.target.value);
+                  clearFieldError("bankName");
+                }}
                 placeholder={t("fields.bank_name_placeholder")}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none focus:ring-1 focus:ring-yellow-400/50"
+                aria-invalid={Boolean(fieldErrors.bankName)}
+                className="w-full rounded-md border border-zinc-700 bg-zinc-900 px-3 h-10 text-sm text-white placeholder-zinc-500 focus:border-[#FCD535] focus:outline-none focus:ring-1 focus:ring-[#FCD535]/50"
               />
             </Field>
-            <Field label={t("fields.account_holder")} required>
+            <Field label={t("fields.account_holder")} required error={fieldErrors.accountHolderName}>
               <input
+                name="accountHolderName"
+                autoComplete="name"
+                required
                 value={accountHolderName}
-                onChange={(e) => setAccountHolderName(e.target.value)}
+                onChange={(e) => {
+                  setAccountHolderName(e.target.value);
+                  clearFieldError("accountHolderName");
+                }}
                 placeholder={t("fields.account_holder_placeholder")}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none focus:ring-1 focus:ring-yellow-400/50"
+                aria-invalid={Boolean(fieldErrors.accountHolderName)}
+                className="w-full rounded-md border border-zinc-700 bg-zinc-900 px-3 h-10 text-sm text-white placeholder-zinc-500 focus:border-[#FCD535] focus:outline-none focus:ring-1 focus:ring-[#FCD535]/50"
               />
             </Field>
           </div>
 
-          <Field label={t("fields.account_number")} required>
+          <Field label={t("fields.account_number")} required error={fieldErrors.accountNumber}>
             <input
+              name="accountNumber"
+              autoComplete="off"
+              inputMode="numeric"
+              spellCheck={false}
+              required
               value={accountNumber}
-              onChange={(e) => setAccountNumber(e.target.value)}
+              onChange={(e) => {
+                setAccountNumber(e.target.value);
+                clearFieldError("accountNumber");
+              }}
               placeholder={t("fields.account_number_placeholder")}
-              className="w-full rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none focus:ring-1 focus:ring-yellow-400/50"
+              aria-invalid={Boolean(fieldErrors.accountNumber)}
+              className="w-full rounded-md border border-zinc-700 bg-zinc-900 px-3 h-10 text-sm text-white placeholder-zinc-500 focus:border-[#FCD535] focus:outline-none focus:ring-1 focus:ring-[#FCD535]/50"
             />
           </Field>
 
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <Field label={t("fields.routing_number")}>
               <input
+                name="routingNumber"
+                autoComplete="off"
+                inputMode="numeric"
+                spellCheck={false}
                 value={routingNumber}
                 onChange={(e) => setRoutingNumber(e.target.value)}
                 placeholder={t("fields.optional")}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none focus:ring-1 focus:ring-yellow-400/50"
+                className="w-full rounded-md border border-zinc-700 bg-zinc-900 px-3 h-10 text-sm text-white placeholder-zinc-500 focus:border-[#FCD535] focus:outline-none focus:ring-1 focus:ring-[#FCD535]/50"
               />
             </Field>
             <Field label={t("fields.swift_bic")}>
               <input
+                name="swiftBic"
+                autoComplete="off"
+                spellCheck={false}
                 value={swiftBic}
                 onChange={(e) => setSwiftBic(e.target.value)}
                 placeholder={t("fields.optional")}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none focus:ring-1 focus:ring-yellow-400/50"
+                className="w-full rounded-md border border-zinc-700 bg-zinc-900 px-3 h-10 text-sm text-white placeholder-zinc-500 focus:border-[#FCD535] focus:outline-none focus:ring-1 focus:ring-[#FCD535]/50"
               />
             </Field>
           </div>
 
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Field label={t("fields.account_type")}>
               <select
+                name="accountType"
                 value={accountType}
                 onChange={(e) => setAccountType(e.target.value as "checking" | "savings")}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-2.5 text-sm text-white focus:border-yellow-400/50 focus:outline-none focus:ring-1 focus:ring-yellow-400/50"
+                className="w-full rounded-md border border-zinc-700 bg-zinc-900 px-3 h-10 text-sm text-white focus:border-[#FCD535] focus:outline-none focus:ring-1 focus:ring-[#FCD535]/50"
               >
                 <option value="checking">{t("fields.checking")}</option>
                 <option value="savings">{t("fields.savings")}</option>
@@ -151,9 +195,10 @@ export function AddBankAccountDialog({ open, onOpenChange, onAdded }: AddBankAcc
             </Field>
             <Field label={t("fields.currency")}>
               <select
+                name="currency"
                 value={currency}
                 onChange={(e) => setCurrency(e.target.value as BankingCurrency)}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-2.5 text-sm text-white focus:border-yellow-400/50 focus:outline-none focus:ring-1 focus:ring-yellow-400/50"
+                className="w-full rounded-md border border-zinc-700 bg-zinc-900 px-3 h-10 text-sm text-white focus:border-[#FCD535] focus:outline-none focus:ring-1 focus:ring-[#FCD535]/50"
               >
                 {CURRENCIES.map((c) => (
                   <option key={c} value={c}>
@@ -162,12 +207,19 @@ export function AddBankAccountDialog({ open, onOpenChange, onAdded }: AddBankAcc
                 ))}
               </select>
             </Field>
-            <Field label={t("fields.country")} required>
+            <Field label={t("fields.country")} required error={fieldErrors.country}>
               <input
+                name="country"
+                autoComplete="country"
+                required
                 value={country}
-                onChange={(e) => setCountry(e.target.value)}
+                onChange={(e) => {
+                  setCountry(e.target.value);
+                  clearFieldError("country");
+                }}
                 placeholder={t("fields.country_placeholder")}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-900 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none focus:ring-1 focus:ring-yellow-400/50"
+                aria-invalid={Boolean(fieldErrors.country)}
+                className="w-full rounded-md border border-zinc-700 bg-zinc-900 px-3 h-10 text-sm text-white placeholder-zinc-500 focus:border-[#FCD535] focus:outline-none focus:ring-1 focus:ring-[#FCD535]/50"
               />
             </Field>
           </div>
@@ -175,7 +227,7 @@ export function AddBankAccountDialog({ open, onOpenChange, onAdded }: AddBankAcc
           <button
             type="submit"
             disabled={isSubmitting}
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#FCD535] px-4 py-3 text-sm font-semibold text-black transition-colors hover:bg-[#F0B90B] disabled:cursor-not-allowed disabled:opacity-60"
+            className="flex h-10 w-full items-center justify-center gap-2 rounded-md bg-[#FCD535] px-4 text-sm font-semibold text-[#181a20] transition-colors hover:bg-[#F0B90B] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD535]/50 disabled:cursor-not-allowed disabled:opacity-60"
           >
             {isSubmitting && <Loader2 className="h-4 w-4 animate-spin" />}
             {isSubmitting ? t("submitting") : t("submit")}
@@ -186,14 +238,25 @@ export function AddBankAccountDialog({ open, onOpenChange, onAdded }: AddBankAcc
   );
 }
 
-function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
+function Field({
+  label,
+  required,
+  error,
+  children,
+}: {
+  label: string;
+  required?: boolean;
+  error?: string;
+  children: React.ReactNode;
+}) {
   return (
     <label className="block">
       <span className="mb-1.5 block text-xs font-medium text-zinc-400">
         {label}
-        {required && <span className="text-yellow-400"> *</span>}
+        {required && <span className="text-[#FCD535]"> *</span>}
       </span>
       {children}
+      {error && <span role="alert" className="mt-1.5 block text-xs text-red-400">{error}</span>}
     </label>
   );
 }

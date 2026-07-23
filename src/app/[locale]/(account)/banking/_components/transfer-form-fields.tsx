@@ -58,24 +58,24 @@ export function TransferFormFields({
     <div className="space-y-5">
       <fieldset>
         <legend className="mb-2 text-xs font-medium text-zinc-400">{t("type_legend")}</legend>
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-2 sm:gap-3">
           {transferDirections.map((option) => (
             <button
               key={option}
               type="button"
               onClick={() => onDirectionChange(option)}
-              className={`rounded-lg border p-3 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD535]/50 ${
+              className={`rounded-md border p-2.5 sm:p-3 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD535]/50 ${
                 direction === option ? "border-[#FCD535] bg-[#FCD535]/10" : "border-zinc-800 bg-zinc-900 hover:border-zinc-700"
               }`}
             >
-              <span className="block text-sm font-semibold text-white">{t(`types.${option}.label`)}</span>
-              <span className="mt-1 block text-xs text-zinc-500">{t(`types.${option}.description`)}</span>
+              <span className="block text-xs sm:text-sm font-semibold text-white">{t(`types.${option}.label`)}</span>
+              <span className="mt-1 block text-[11px] sm:text-xs text-zinc-500">{t(`types.${option}.description`)}</span>
             </button>
           ))}
         </div>
       </fieldset>
 
-      <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900/70 p-3">
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] items-center gap-3 rounded-md border border-zinc-800 bg-zinc-900/70 p-3">
         <div>
           <p className="text-[11px] uppercase tracking-widest text-zinc-500">{t("from")}</p>
           <p className="mt-1 flex items-center gap-2 text-sm font-medium text-white">
@@ -83,12 +83,12 @@ export function TransferFormFields({
             {sourceLocation === "spot" ? t("spot_wallet") : t("funding_wallet")}
           </p>
         </div>
-        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-700 bg-zinc-950 text-zinc-400">
-          <ArrowDown className="h-4 w-4 -rotate-90 sm:rotate-0" aria-hidden />
+        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-700 bg-zinc-950 text-zinc-400 mx-auto sm:mx-0">
+          <ArrowDown className="h-4 w-4 sm:rotate-0" aria-hidden />
         </span>
-        <div className="text-right">
+        <div className="text-left sm:text-right">
           <p className="text-[11px] uppercase tracking-widest text-zinc-500">{t("to")}</p>
-          <p className="mt-1 flex items-center justify-end gap-2 text-sm font-medium text-white">
+          <p className="mt-1 flex items-center gap-2 text-sm font-medium text-white sm:justify-end">
             {isBankTransfer ? (
               <Building2 className="h-4 w-4 text-zinc-400" aria-hidden />
             ) : (
@@ -99,14 +99,15 @@ export function TransferFormFields({
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2">
-        <label className="block">
-          <span className="mb-2 block text-xs font-medium text-zinc-400">{t("asset")}</span>
-          <select
-            value={asset}
-            onChange={(event) => onAssetChange(event.target.value)}
-            className="h-12 w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 text-sm font-medium text-white outline-none focus:border-[#FCD535]"
-          >
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          <label className="block">
+            <span className="mb-2 block text-xs font-medium text-zinc-400">{t("asset")}</span>
+            <select
+              name="asset"
+              value={asset}
+              onChange={(event) => onAssetChange(event.target.value)}
+              className="h-10 w-full rounded-md border border-zinc-800 bg-zinc-900 px-3 text-sm font-medium text-white outline-none focus:border-[#FCD535]"
+            >
             {sourceAssets.map((item) => (
               <option key={`${item.location}-${item.symbol}`} value={item.symbol}>
                 {item.symbol} · {item.amount.toLocaleString(undefined, { maximumFractionDigits: 6 })}
@@ -120,18 +121,19 @@ export function TransferFormFields({
             <button
               type="button"
               onClick={() => onAmountChange(String(selectedAsset?.amount ?? 0))}
-              className="font-semibold text-[#FCD535] hover:text-[#F0B90B]"
+              className="font-semibold text-red-600 hover:text-red-500"
             >
               {t("max")}
             </button>
           </span>
           <div className="relative">
             <input
+              name="amount"
               value={amount}
               onChange={(event) => onAmountChange(event.target.value)}
               inputMode="decimal"
               placeholder={t("amount_placeholder")}
-              className="h-12 w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 pr-16 text-lg font-medium text-white outline-none placeholder:text-zinc-600 focus:border-[#FCD535]"
+              className="h-10 w-full rounded-md border border-zinc-800 bg-zinc-900 px-3 pr-16 text-base sm:text-lg font-medium text-white outline-none placeholder:text-zinc-600 focus:border-[#FCD535]"
             />
             <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center text-sm font-medium text-zinc-400">
               {asset}
@@ -141,13 +143,14 @@ export function TransferFormFields({
       </div>
 
       {isBankTransfer && (
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <label className="block">
             <span className="mb-2 block text-xs font-medium text-zinc-400">{t("payout_currency")}</span>
             <select
+              name="payoutCurrency"
               value={payoutCurrency}
               onChange={(event) => onPayoutCurrencyChange(event.target.value as BankingCurrency)}
-              className="h-12 w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 text-sm font-medium text-white outline-none focus:border-[#FCD535]"
+              className="h-10 w-full rounded-md border border-zinc-800 bg-zinc-900 px-3 text-sm font-medium text-white outline-none focus:border-[#FCD535]"
             >
               <option value="USD">{t("currencies.USD")}</option>
               <option value="EUR">{t("currencies.EUR")}</option>
@@ -157,9 +160,10 @@ export function TransferFormFields({
           <label className="block">
             <span className="mb-2 block text-xs font-medium text-zinc-400">{t("bank_account")}</span>
             <select
+              name="bankAccountId"
               value={bankAccountId}
               onChange={(event) => onBankAccountChange(event.target.value)}
-              className="h-12 w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 text-sm font-medium text-white outline-none focus:border-[#FCD535]"
+              className="h-10 w-full rounded-md border border-zinc-800 bg-zinc-900 px-3 text-sm font-medium text-white outline-none focus:border-[#FCD535]"
             >
               <option value="">{t("select_account")}</option>
               {bankAccounts
@@ -182,7 +186,7 @@ export function TransferFormFields({
         </span>
       </div>
       {error && (
-        <div role="alert" className="rounded-lg border border-red-600/30 bg-red-600/10 px-3 py-2.5 text-sm text-red-200">
+        <div role="alert" className="rounded-md border border-red-600/30 bg-red-600/10 px-3 py-2.5 text-sm text-red-200">
           {error}
         </div>
       )}

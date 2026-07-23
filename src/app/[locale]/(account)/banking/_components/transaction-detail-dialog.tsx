@@ -1,7 +1,7 @@
 "use client";
 
 import { Check, Clock3, Download, ShieldCheck, XCircle } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import type { TransferRecord } from "@/lib/banking/types";
 
@@ -12,11 +12,12 @@ interface TransactionDetailDialogProps {
 
 export function TransactionDetailDialog({ transaction, onOpenChange }: TransactionDetailDialogProps) {
   const t = useTranslations("AccountBanking.detail");
+  const locale = useLocale();
 
   if (!transaction) return null;
 
   const formatMoney = (value: number, currency = "USD") =>
-    new Intl.NumberFormat("en-US", { style: "currency", currency, maximumFractionDigits: 2 }).format(value);
+    new Intl.NumberFormat(locale, { style: "currency", currency, maximumFractionDigits: 2 }).format(value);
 
   const statusLabel = (status: TransferRecord["status"]) => {
     if (status === "review") return t("status.under_review");
@@ -34,14 +35,14 @@ export function TransactionDetailDialog({ transaction, onOpenChange }: Transacti
         </DialogHeader>
 
         <div className="space-y-6 px-5 pb-6 sm:px-6">
-          <div className="flex items-start justify-between gap-4 border-b border-zinc-800 py-5">
+          <div className="flex flex-col gap-3 border-b border-zinc-800 py-5 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
             <div>
               <p className="text-xs font-medium uppercase tracking-widest text-zinc-500">{t("payout_amount")}</p>
               <p className="mt-2 text-2xl font-semibold text-white">
                 {formatMoney(transaction.fiatAmount, transaction.fiatCurrency)}
               </p>
-              <p className="mt-1 text-sm text-zinc-400">
-                {transaction.assetAmount.toLocaleString()} {transaction.asset}
+              <p className="mt-1 text-sm tabular-nums text-zinc-400">
+                {transaction.assetAmount.toLocaleString(locale)} {transaction.asset}
               </p>
             </div>
             <span className="rounded-full border border-zinc-700 bg-zinc-900 px-3 py-1 text-xs font-medium text-zinc-200">
@@ -49,10 +50,10 @@ export function TransactionDetailDialog({ transaction, onOpenChange }: Transacti
             </span>
           </div>
 
-          <dl className="grid grid-cols-2 gap-x-6 gap-y-4 text-sm">
+          <dl className="grid grid-cols-1 gap-x-6 gap-y-4 text-sm sm:grid-cols-2">
             <div>
               <dt className="text-zinc-500">{t("destination")}</dt>
-              <dd className="mt-1 font-medium text-white">{transaction.destination}</dd>
+              <dd className="mt-1 wrap-break-word font-medium text-white">{transaction.destination}</dd>
             </div>
             <div>
               <dt className="text-zinc-500">{t("estimated_arrival")}</dt>
@@ -64,7 +65,7 @@ export function TransactionDetailDialog({ transaction, onOpenChange }: Transacti
             </div>
             <div>
               <dt className="text-zinc-500">{t("requested")}</dt>
-              <dd className="mt-1 font-medium text-white">{new Date(transaction.createdAt).toLocaleString()}</dd>
+              <dd className="mt-1 font-medium tabular-nums text-white">{new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeStyle: "short" }).format(new Date(transaction.createdAt))}</dd>
             </div>
           </dl>
 
@@ -112,7 +113,7 @@ export function TransactionDetailDialog({ transaction, onOpenChange }: Transacti
 
           <button
             type="button"
-            className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg border border-zinc-700 bg-zinc-900 text-sm font-semibold text-white transition-colors hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD535]/50"
+            className="inline-flex h-10 w-full items-center justify-center gap-2 rounded-md border border-zinc-700 bg-zinc-900 text-sm font-semibold text-white transition-colors hover:border-zinc-500 hover:bg-zinc-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FCD535]/50"
           >
             <Download className="h-4 w-4" aria-hidden />
             {t("download_receipt")}

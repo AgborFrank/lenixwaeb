@@ -310,7 +310,83 @@ export default function SendPage() {
           </div>
         </div>
 
-        <div className="overflow-x-auto">
+        <div className="divide-y divide-white/6 lg:hidden">
+          {filteredTokens.length === 0 ? (
+            <div className="flex flex-col items-center gap-3 px-5 py-12 text-center text-zinc-400">
+              <Image
+                src="/assets/vectors/start-deposit-no.svg"
+                alt={t("no_assets")}
+                width={96}
+                height={96}
+                className="opacity-80"
+              />
+              <p className="text-sm">{t("no_assets_match")}</p>
+            </div>
+          ) : (
+            filteredTokens.map((token) => {
+              const chainDescriptor = CHAIN_LABEL[token.chainId]?.name ?? "EVM Chain";
+              const valueFormatted = formatCurrency(token.usdValue || 0);
+              const balanceFormatted = toFixed(token.balance, 6);
+              const withdrawReady = token.balance > 0 && !withdrawDisabled && !token.isFrozen;
+
+              return (
+                <article key={token.id} className="p-4">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="min-w-0 flex items-center gap-3">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={token.logoUrl || FALLBACK_VECTOR}
+                        alt=""
+                        width={36}
+                        height={36}
+                        className="h-9 w-9 shrink-0 rounded-full object-cover"
+                        onError={(event) => {
+                          (event.currentTarget as HTMLImageElement).src = FALLBACK_VECTOR;
+                        }}
+                      />
+                      <div className="min-w-0">
+                        <div className="flex items-center gap-1.5">
+                          <p className="truncate text-sm font-medium text-zinc-100">{token.symbol}</p>
+                          {token.isFrozen && (
+                            <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-red-500/10 px-1.5 py-0.5 text-[10px] font-medium text-red-400">
+                              <LockKeyhole className="h-2.5 w-2.5" aria-hidden />
+                              {t("frozen")}
+                            </span>
+                          )}
+                        </div>
+                        <p className="mt-0.5 truncate text-xs text-zinc-500">
+                          {token.isFrozen && token.freezeFeeAmount
+                            ? t("unfreeze_deposit", { amount: token.freezeFeeAmount })
+                            : `${token.name} · ${chainDescriptor}`}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="shrink-0 text-right">
+                      <p className="text-sm font-medium tabular-nums text-zinc-100">{balanceFormatted}</p>
+                      <p className="mt-0.5 text-xs tabular-nums text-zinc-500">{valueFormatted}</p>
+                    </div>
+                  </div>
+                  <div className="mt-3 flex items-center justify-between border-t border-white/6 pt-3 text-xs">
+                    <div className="text-zinc-500">
+                      <span>{t("available")}: </span>
+                      <span className="tabular-nums text-zinc-300">{balanceFormatted}</span>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => handleWithdraw(token.id)}
+                      disabled={!withdrawReady}
+                      className="inline-flex h-9 items-center justify-center rounded-md bg-yellow-400 px-3 font-semibold text-black transition-colors hover:bg-yellow-300 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-zinc-500"
+                    >
+                      {t("withdraw")}
+                    </button>
+                  </div>
+                </article>
+              );
+            })
+          )}
+        </div>
+
+        <div className="hidden overflow-x-auto lg:block">
           <table className="w-full min-w-[760px] text-left">
             <thead className="border-y border-white/6 text-[11px] font-medium text-zinc-500">
               <tr>
