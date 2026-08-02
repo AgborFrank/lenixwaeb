@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import { useRouter, useSearchParams } from "next/navigation";
+import { Link, useRouter } from "@/i18n/navigation";
+import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import { ArrowLeft, User, Lock, Loader2, ShieldCheck } from "lucide-react";
 import { toast } from "sonner";
@@ -47,7 +47,10 @@ export default function AdminLoginPage() {
       }
 
       toast.success("Welcome back!");
-      router.push(redirect || "/admin/dashboard");
+      const nextPath =
+        redirect?.replace(/^\/[a-z]{2}(?:-[A-Z]{2})?(?=\/admin(?:\/|$))/, "") ||
+        "/admin/dashboard";
+      router.push(nextPath.startsWith("/admin") ? nextPath : "/admin/dashboard");
       router.refresh();
     } catch {
       toast.error("An error occurred. Please try again.");

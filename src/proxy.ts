@@ -28,6 +28,23 @@ async function verifyAdminToken(token: string): Promise<boolean> {
   }
 }
 
+function getLocaleFromPathname(pathname: string): string {
+  const maybeLocale = pathname.split("/")[1];
+  if (routing.locales.includes(maybeLocale as (typeof routing.locales)[number])) {
+    return maybeLocale;
+  }
+  return routing.defaultLocale;
+}
+
+function getPathnameWithoutLocale(pathname: string): string {
+  const locale = getLocaleFromPathname(pathname);
+  if (pathname === `/${locale}`) return "/";
+  if (pathname.startsWith(`/${locale}/`)) {
+    return pathname.slice(locale.length + 1) || "/";
+  }
+  return pathname;
+}
+
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -36,27 +53,40 @@ export default async function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Handle admin routes
-  if (pathname.includes("/admin")) {
-    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}(-[A-Z]{2})?/, "");
-    const isAdminPath = pathWithoutLocale.startsWith("/admin");
+  // Unprefixed /admin → /{locale}/admin (admin always uses locale in the URL)
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) {
+    const locale =
+      request.cookies.get("NEXT_LOCALE")?.value &&
+      routing.locales.includes(
+        request.cookies.get("NEXT_LOCALE")!.value as (typeof routing.locales)[number],
+      )
+        ? request.cookies.get("NEXT_LOCALE")!.value
+        : routing.defaultLocale;
+    const url = request.nextUrl.clone();
+    url.pathname = `/${locale}${pathname}`;
+    return NextResponse.redirect(url);
+  }
+
+  const path = getPathnameWithoutLocale(pathname);
+  const locale = getLocaleFromPathname(pathname);
+  const isAdminPath = path === "/admin" || path.startsWith("/admin/");
+
+  if (isAdminPath) {
     const isPublicAdminPath = ADMIN_PUBLIC_PATHS.some(
-      (p) => pathWithoutLocale === p || pathWithoutLocale.startsWith(p + "/")
+      (p) => path === p || path.startsWith(`${p}/`),
     );
 
-    if (isAdminPath && !isPublicAdminPath) {
+    if (!isPublicAdminPath) {
       const token = request.cookies.get(ADMIN_COOKIE_NAME)?.value;
 
       if (!token || !(await verifyAdminToken(token))) {
-        const locale =
-          pathname.match(/^\/([a-z]{2}(-[A-Z]{2})?)\//)?.[1] || "en";
         const loginUrl = new URL(`/${locale}/admin/login`, request.url);
-        loginUrl.searchParams.set("redirect", pathname);
+        loginUrl.searchParams.set("redirect", path);
         return NextResponse.redirect(loginUrl);
       }
     }
 
-    // Admin routes don't need full i18n middleware processing
+    // Keep locale in the URL; skip Supabase user-session gate for admin
     return NextResponse.next();
   }
 

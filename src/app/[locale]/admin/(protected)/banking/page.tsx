@@ -15,7 +15,7 @@ import {
   Phone,
   Globe,
 } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { BankingApplicationStatusSelect } from "./_components/banking-status-select";
 
 interface UserBankingData {

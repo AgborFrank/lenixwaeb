@@ -1,14 +1,12 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import {
   Settings,
   User,
   Shield,
   Bell,
   Key,
-  Palette,
   ChevronLeft,
 } from "lucide-react";
 
@@ -52,10 +50,8 @@ export default function SettingsLayout({
 }) {
   const pathname = usePathname();
 
-  const isActive = (href: string) => {
-    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}(-[A-Z]{2})?/, "");
-    return pathWithoutLocale === href || pathWithoutLocale.startsWith(href + "/");
-  };
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <div className="min-h-screen">

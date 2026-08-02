@@ -43,6 +43,10 @@ export async function verifyPassword(
   password: string,
   hash: string,
 ): Promise<boolean> {
+  // Reject placeholders / non-bcrypt values (e.g. "managed_by_supabase_auth")
+  if (!hash || !hash.startsWith("$2")) {
+    return false;
+  }
   return bcrypt.compare(password, hash);
 }
 

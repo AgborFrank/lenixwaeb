@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import { redirect } from "@/i18n/navigation";
 
-export default function SettingsPage() {
-  redirect("/admin/settings/general");
+export default async function SettingsPage() {
+  await redirect("/admin/settings/general");
 }

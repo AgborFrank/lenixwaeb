@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+import { redirect } from "@/i18n/navigation";
 import { getAdminSession, getAdminById } from "@/lib/admin-auth";
 import { AdminSidebar } from "./_components/admin-sidebar";
 
@@ -10,13 +10,13 @@ export default async function AdminLayout({ children }: AdminLayoutProps) {
   const session = await getAdminSession();
 
   if (!session) {
-    redirect("/admin/login");
+    await redirect("/admin/login");
   }
 
   // Verify admin is still active
   const admin = await getAdminById(session.id);
   if (!admin || !admin.is_active) {
-    redirect("/admin/login?error=Session expired. Please log in again.");
+    await redirect("/admin/login?error=Session expired. Please log in again.");
   }
 
   return (

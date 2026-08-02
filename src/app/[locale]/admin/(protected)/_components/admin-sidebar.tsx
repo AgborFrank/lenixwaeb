@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import {
   LayoutDashboard,
   Users,
@@ -19,7 +18,6 @@ import {
   ShieldAlert,
 } from "lucide-react";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 
 interface AdminSession {
@@ -64,10 +62,8 @@ export function AdminSidebar({ admin }: AdminSidebarProps) {
     }
   };
 
-  const isActive = (href: string) => {
-    const pathWithoutLocale = pathname.replace(/^\/[a-z]{2}(-[A-Z]{2})?/, "");
-    return pathWithoutLocale === href || pathWithoutLocale.startsWith(href + "/");
-  };
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(`${href}/`);
 
   const SidebarContent = () => (
     <>

@@ -9,7 +9,7 @@ import {
   Calendar,
   ExternalLink,
 } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { LoanStatusSelect } from "./_components/loan-status-select";
 
 interface Loan {

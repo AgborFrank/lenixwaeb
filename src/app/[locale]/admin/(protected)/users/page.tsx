@@ -1,6 +1,6 @@
 import { createServiceRoleClient } from "@/utils/supabase/server";
 import { Search, User, Wallet, ExternalLink, ShieldAlert } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 interface UserWithWallet {
   user_id: string;
