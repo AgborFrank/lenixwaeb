@@ -1,5 +1,5 @@
 import { createClient } from "@/utils/supabase/server";
-import { redirect } from "next/navigation";
+import { redirect } from "@/i18n/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 import { ShieldCheck, LayoutDashboard } from "lucide-react";
 import Image from "next/image";

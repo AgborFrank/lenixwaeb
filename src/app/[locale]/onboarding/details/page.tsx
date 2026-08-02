@@ -1,5 +1,5 @@
 import { createClient } from "@/utils/supabase/server";
-import { redirect } from "next/navigation";
+import { redirect } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { RecoveryDetailsForm } from "./recovery-details-form";
 import { LoanApplicationForm, type LoanType } from "./loan-application-form";

@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
+import { redirect } from "@/i18n/navigation";
 import { createClient } from "@/utils/supabase/server";
 
 export async function login(formData: FormData) {
@@ -53,6 +53,7 @@ export async function signup(formData: FormData) {
     const { error } = await supabase.auth.signUp({
         ...data,
         options: {
+            // Locale is applied in /[locale]/auth/callback from NEXT_LOCALE / default
             emailRedirectTo: `${host}/auth/callback?next=/dashboard`,
         },
     });
@@ -77,8 +78,8 @@ export async function forgotPassword(formData: FormData) {
 
     const email = formData.get("email") as string;
     const callbackUrl = process.env.NEXT_PUBLIC_SITE_URL
-        ? `${process.env.NEXT_PUBLIC_SITE_URL}/auth/callback`
-        : "http://localhost:3000/auth/callback";
+        ? `${process.env.NEXT_PUBLIC_SITE_URL}/auth/callback?next=/dashboard`
+        : "http://localhost:3000/auth/callback?next=/dashboard";
 
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
         redirectTo: callbackUrl,

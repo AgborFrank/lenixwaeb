@@ -1,5 +1,5 @@
 import { createClient } from "@/utils/supabase/server";
-import { redirect } from "next/navigation";
+import { redirect } from "@/i18n/navigation";
 import { AccountLayout } from "./_components/account-layout";
 import { WalletProvider } from "./_providers/wallet-provider";
 import { SettingsProvider } from "./_providers/settings-provider";

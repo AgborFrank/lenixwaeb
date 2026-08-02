@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/navigation";
 import { Country } from "country-state-city";
 import { Loader2, AlertCircle, CheckCircle2 } from "lucide-react";
 import { Input } from "@/components/ui/input";

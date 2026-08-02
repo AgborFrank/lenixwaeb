@@ -1,7 +1,7 @@
 "use server";
 
 import { createClient } from "@/utils/supabase/server";
-import { redirect } from "next/navigation";
+import { redirect } from "@/i18n/navigation";
 import { revalidatePath } from "next/cache";
 
 const RECOVERY_FIELDS = [

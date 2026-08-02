@@ -1,5 +1,5 @@
 import { createClient } from "@/utils/supabase/server";
-import { redirect } from "next/navigation";
+import { redirect } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import { HandCoins, Landmark, SearchCheck } from "lucide-react";
 import { submitServiceSelection } from "./actions";
