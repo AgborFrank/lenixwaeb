@@ -17,7 +17,7 @@ export async function login(formData: FormData) {
     const { error } = await supabase.auth.signInWithPassword(data);
 
     if (error) {
-        redirect("/login?error=authFailed");
+        await redirect("/login?error=authFailed");
     }
 
     // After login, check if user has completed web onboarding
@@ -32,12 +32,12 @@ export async function login(formData: FormData) {
         const completed = onboarding && (onboarding.step_completed ?? 0) >= 2;
         if (!completed) {
             revalidatePath("/", "layout");
-            redirect("/onboarding");
+            await redirect("/onboarding");
         }
     }
 
     revalidatePath("/", "layout");
-    redirect("/");
+    await redirect("/");
 }
 
 export async function signup(formData: FormData) {
@@ -59,18 +59,18 @@ export async function signup(formData: FormData) {
     });
 
     if (error) {
-        redirect("/signup?error=createUserFailed");
+        await redirect("/signup?error=createUserFailed");
     }
 
     revalidatePath("/", "layout");
-    redirect("/login?message=checkEmailConfirm");
+    await redirect("/login?message=checkEmailConfirm");
 }
 
 export async function logout() {
     const supabase = await createClient();
     await supabase.auth.signOut();
     revalidatePath("/", "layout");
-    redirect("/login");
+    await redirect("/login");
 }
 
 export async function forgotPassword(formData: FormData) {
@@ -86,8 +86,8 @@ export async function forgotPassword(formData: FormData) {
     });
 
     if (error) {
-        redirect("/forgot-password?error=resetEmailFailed");
+        await redirect("/forgot-password?error=resetEmailFailed");
     }
 
-    redirect("/forgot-password?message=checkEmailReset");
+    await redirect("/forgot-password?message=checkEmailReset");
 }

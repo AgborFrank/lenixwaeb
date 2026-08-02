@@ -14,7 +14,7 @@ export default async function LoanPayoutPage({
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) redirect("/login");
+  if (!user) await redirect("/login");
 
   const { data: onboardingRow } = await supabase
     .from("web_onboarding")
@@ -22,8 +22,8 @@ export default async function LoanPayoutPage({
     .eq("user_id", user.id)
     .single();
 
-  if (!onboardingRow || onboardingRow.service_type !== "loan") redirect("/onboarding");
-  if (onboardingRow.step_completed >= 2) redirect("/dashboard");
+  if (!onboardingRow || onboardingRow.service_type !== "loan") await redirect("/onboarding");
+  if (onboardingRow.step_completed >= 2) await redirect("/dashboard");
 
   const params = await searchParams;
   const error = params.error;

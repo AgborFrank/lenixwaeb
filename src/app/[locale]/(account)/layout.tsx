@@ -15,7 +15,7 @@ export default async function AccountLayoutWrapper({
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) redirect("/login");
+  if (!user) await redirect("/login");
 
   const { data: onboarding } = await supabase
     .from("web_onboarding")
@@ -24,7 +24,7 @@ export default async function AccountLayoutWrapper({
     .single();
 
   if (!onboarding || (onboarding.step_completed ?? 0) < 2) {
-    redirect("/onboarding");
+    await redirect("/onboarding");
   }
 
   const { data: settings } = await getSettings();

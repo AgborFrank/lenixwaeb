@@ -25,7 +25,7 @@ export default async function DashboardPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) redirect("/login");
+  if (!user) await redirect("/login");
 
   const { data: onboarding } = await supabase
     .from("web_onboarding")
@@ -34,7 +34,7 @@ export default async function DashboardPage() {
     .single();
 
   if (!onboarding || (onboarding.step_completed ?? 0) < 2) {
-    redirect("/onboarding");
+    await redirect("/onboarding");
   }
 
   const serviceType = onboarding.service_type as string;

@@ -30,12 +30,12 @@ export async function submitServiceSelection(formData: FormData) {
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
 
-    if (!user) redirect("/login");
+    if (!user) await redirect("/login");
 
     const serviceType = formData.get("serviceType") as string;
 
     if (!serviceType) {
-        redirect("/onboarding?error=Please select a service");
+        await redirect(`/onboarding?error=${encodeURIComponent("Please select a service")}`);
     }
 
     // Update or Insert the selection
@@ -50,17 +50,17 @@ export async function submitServiceSelection(formData: FormData) {
 
     if (error) {
         console.error("Onboarding error:", error);
-        redirect("/onboarding?error=Something went wrong");
+        await redirect(`/onboarding?error=${encodeURIComponent("Something went wrong")}`);
     }
 
-    redirect("/onboarding/details");
+    await redirect("/onboarding/details");
 }
 
 export async function submitOnboardingDetails(formData: FormData) {
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
 
-    if (!user) redirect("/login");
+    if (!user) await redirect("/login");
 
     // Fetch current service type to validate fields
     const { data: onboarding } = await supabase
@@ -69,7 +69,7 @@ export async function submitOnboardingDetails(formData: FormData) {
         .eq("user_id", user.id)
         .single();
 
-    if (!onboarding) redirect("/onboarding");
+    if (!onboarding) await redirect("/onboarding");
 
     const details: Record<string, unknown> = {};
     const serviceType = onboarding.service_type as string;
@@ -126,24 +126,24 @@ export async function submitOnboardingDetails(formData: FormData) {
 
     if (error) {
         console.error("Onboarding Details error:", error);
-        redirect("/onboarding/details?error=Could not save details");
+        await redirect(`/onboarding/details?error=${encodeURIComponent("Could not save details")}`);
     }
 
-    redirect("/dashboard");
+    await redirect("/dashboard");
 }
 
 /** Loan step 1: save loan params only, then go to payout step */
 export async function submitLoanStep1(formData: FormData) {
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
-    if (!user) redirect("/login");
+    if (!user) await redirect("/login");
 
     const { data: onboarding } = await supabase
         .from("web_onboarding")
         .select("service_type")
         .eq("user_id", user.id)
         .single();
-    if (!onboarding || onboarding.service_type !== "loan") redirect("/onboarding");
+    if (!onboarding || onboarding.service_type !== "loan") await redirect("/onboarding");
 
     const details: Record<string, unknown> = {};
     for (const key of LOAN_FIELDS) {
@@ -163,8 +163,8 @@ export async function submitLoanStep1(formData: FormData) {
 
     if (error) {
         console.error("Loan step 1 error:", error);
-        redirect("/onboarding/details?error=Could not save");
+        await redirect(`/onboarding/details?error=${encodeURIComponent("Could not save")}`);
     }
-    redirect("/onboarding/details/loan-payout");
+    await redirect("/onboarding/details/loan-payout");
 }
 

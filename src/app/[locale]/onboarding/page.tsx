@@ -19,7 +19,7 @@ export default async function OnboardingPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) redirect("/login");
+  if (!user) await redirect("/login");
 
   const { data: onboardingRow } = await supabase
     .from("web_onboarding")
@@ -28,7 +28,7 @@ export default async function OnboardingPage() {
     .single();
 
   if (onboardingRow && onboardingRow.step_completed >= 2) {
-    redirect("/dashboard");
+    await redirect("/dashboard");
   }
 
   const t = await getTranslations("Onboarding.Selection");

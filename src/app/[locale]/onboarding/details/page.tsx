@@ -12,7 +12,7 @@ export default async function OnboardingDetailsPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) redirect("/login");
+  if (!user) await redirect("/login");
 
   const { data: onboardingRow } = await supabase
     .from("web_onboarding")
@@ -21,11 +21,11 @@ export default async function OnboardingDetailsPage() {
     .single();
 
   if (!onboardingRow || !onboardingRow.service_type) {
-    redirect("/onboarding");
+    await redirect("/onboarding");
   }
 
   if (onboardingRow.step_completed >= 2) {
-    redirect("/dashboard");
+    await redirect("/dashboard");
   }
 
   const serviceType = onboardingRow.service_type as "recovery" | "loan" | "banking";
