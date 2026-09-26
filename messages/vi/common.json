@@ -8,7 +8,7 @@
       "asset_recovery": "Thu hồi tài sản",
       "crypto_recovery": "Thu hồi Crypto",
       "contact": "Liên hệ",
-      "airdrop": "Airdrop",
+      "airdrop": "Phát không",
       "banking_finance": "Ngân hàng & Tài chính"
     },
     "solutions": {
@@ -69,11 +69,11 @@
       "ecosystem": "Hệ sinh thái",
       "tokenomics": "Kinh tế token",
       "whitepaper": "Sách trắng",
-      "litepaper": "Litepaper",
+      "litepaper": "Tài liệu ngắn",
       "roadmap": "Lộ trình",
       "threat_intelligence": "Tình báo đe dọa",
       "defi_compliance": "Tuân thủ DeFi",
-      "blog": "Blog",
+      "blog": "Bài viết",
       "documentation": "Tài liệu",
       "api_docs": "API",
       "support": "Hỗ trợ",
@@ -213,40 +213,40 @@
       "image_alt": "Bảng điều khiển vận hành thương nhân và compliance Lenix"
     },
     "Payment": {
-      "badge": "Protocol stack",
-      "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "badge": "Tầng giao thức",
+      "title": "Chuyển, giữ và khôi phục giá trị trên một lớp",
+      "subtitle": "Thanh toán, lưu ký, khôi phục và cho vay dùng chung hạ tầng đã kiểm toán — không phải bốn sản phẩm rời.",
       "cards": {
         "fiat": {
-          "title": "Crypto-to-fiat",
-          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
+          "title": "Crypto sang fiat",
+          "desc": "Tất toán crypto sang fiat qua kênh thanh toán địa phương, cho giao dịch xuyên biên giới và hằng ngày."
         },
         "vault": {
-          "title": "Vault and custody",
-          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
+          "title": "Két và lưu ký",
+          "desc": "Két đa chữ ký và lưu ký an toàn cho đội ngũ cần lưu trữ tài sản có kiểm soát."
         },
         "recovery": {
-          "title": "Recovery and forensics",
-          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
+          "title": "Khôi phục và giám định",
+          "desc": "Khi tài sản bị mất hoặc tranh chấp, truy vết và bằng chứng nằm trên cùng một tầng."
         },
         "lending": {
-          "title": "Lending",
-          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
+          "title": "Cho vay",
+          "desc": "Vay thế chấp với kiểm soát on-chain và đường tất toán rõ ràng."
         }
       },
       "cta": "Xem giải pháp"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " Token Details",
-      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "title2": " Chi tiết token",
+      "subtitle": "Dùng thông tin hợp đồng bên dưới để thêm token Lenix Protocol vào ví.",
       "headers": {
-        "contract": "Contract Address",
-        "name": "Token Name",
-        "symbol": "Token Symbol",
-        "supply": "Token Supply",
-        "network": "Network",
-        "decimals": "Decimals"
+        "contract": "Địa chỉ hợp đồng",
+        "name": "Tên token",
+        "symbol": "Ký hiệu token",
+        "supply": "Nguồn cung token",
+        "network": "Mạng",
+        "decimals": "Số thập phân"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -259,7 +259,7 @@
       "title2": "Kiểm soát có tài liệu.",
       "subtitle1": "Smart contract được CertiK rà soát và vận hành theo ISO 27001 cho đội cần hơn cả tuyên bố marketing.",
       "subtitle2_1": "Đọc ",
-      "subtitle2_2": "whitepaper",
+      "subtitle2_2": "sách trắng",
       "subtitle2_3": " và tài liệu kiểm toán về kiến trúc, tiện ích token và kiểm soát bảo mật.",
       "col1_text": "Smart contract Lenix Protocol đã được CertiK rà soát. Kiểm toán bao gồm thành phần lõi dùng trong luồng sản xuất.",
       "col1_btn": "Docs bảo mật",
@@ -267,9 +267,9 @@
       "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Community ",
-      "title2": "giveaway",
-      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "title1": "Cộng đồng ",
+      "title2": "tặng thưởng",
+      "subtitle": "Mười người thắng nhận 25.000 USD bằng LNX. Hoàn tất các bước đăng ký trên trang cộng đồng. Có điều khoản áp dụng.",
       "btn": "Cộng đồng"
     },
     "Features": {
@@ -283,32 +283,32 @@
       "title_big": "Kết nối tiền điện tử với các mạng thanh toán địa phương trên toàn cầu.",
       "desc1": "Lenix ProtocolPay trao quyền cho những người nắm giữ tiền điện tử và doanh nghiệp để thực hiện các giao dịch từ tiền điện tử sang tiền pháp định trên toàn thế giới, tận dụng các mạng thanh toán địa phương và công nghệ blockchain.",
       "desc2": "Cuối cùng, hãy tận hưởng tốc độ của tiền điện tử với sự tiện lợi hàng ngày của thanh toán bằng tiền pháp định.",
-      "btn_whitepaper": "Whitepaper"
+      "btn_whitepaper": "Sách trắng"
     },
     "LnxPurchaseWidget": {
-      "widget_title": "Buy LNX",
-      "widget_subtitle": "Protocol token sale",
-      "usd_raised": "USD raised so far:",
-      "tokens_sold": "Tokens sold:",
-      "price_usd": "USD price: ${price}",
-      "price_eth": "ETH price: {price} ETH",
-      "pay_eth": "ETH you pay",
-      "pay_usdt": "USDT you pay",
-      "pay_usd": "USD you pay",
-      "receive_lnx": "$LNX you receive",
-      "btn_processing": "Processing...",
-      "btn_pay_eth": "Pay with ETH",
-      "btn_pay_usdt": "Pay with USDT",
+      "widget_title": "Mua LNX",
+      "widget_subtitle": "Bán token giao thức",
+      "usd_raised": "USD đã gọi được:",
+      "tokens_sold": "Token đã bán:",
+      "price_usd": "Giá USD: ${price}",
+      "price_eth": "Giá ETH: {price} ETH",
+      "pay_eth": "ETH bạn trả",
+      "pay_usdt": "USDT bạn trả",
+      "pay_usd": "USD bạn trả",
+      "receive_lnx": "$LNX bạn nhận",
+      "btn_processing": "Đang xử lý...",
+      "btn_pay_eth": "Thanh toán bằng ETH",
+      "btn_pay_usdt": "Thanh toán bằng USDT",
       "btn_pay_card": "Thẻ tín dụng",
-      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "card_info": "Được hỗ trợ bởi Stripe. Số tiền tính bằng USD.",
       "btn_connect": "Kết nối ví",
       "btn_giveaway": "Bonus LNX",
-      "giveaway_info": "Connect your wallet to check eligibility."
+      "giveaway_info": "Kết nối ví để kiểm tra điều kiện."
     },
     "TokenSale": {
       "title1": "LNX ",
-      "title2": "token sale",
-      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+      "title2": "bán token",
+      "subtitle": "Mua LNX để tham gia giao thức. Chi tiết hợp đồng nằm bên dưới."
     },
     "Partners": {
       "eyebrow": "Hệ sinh thái",
@@ -495,7 +495,7 @@
       "contact_support": "Liên hệ hỗ trợ"
     },
     "header": {
-      "menu": "Menu",
+      "menu": "Trình đơn",
       "verified_user": "Người dùng đã xác minh",
       "sign_out": "Đăng xuất"
     },
@@ -531,7 +531,7 @@
       "name": "Tên",
       "transaction_hash": "Hash giao dịch",
       "amount_stolen": "Số tiền bị mất",
-      "blockchain": "Blockchain",
+      "blockchain": "Chuỗi khối",
       "currency": "Tiền tệ",
       "country_phone_code": "Mã điện thoại quốc gia",
       "incident_summary": "Tóm tắt sự cố",
@@ -990,8 +990,8 @@
         "change_24h": "24 giờ"
       },
       "location": {
-        "spot": "Spot",
-        "funding": "Funding"
+        "spot": "Giao ngay",
+        "funding": "Ký quỹ"
       }
     },
     "accounts": {
@@ -1087,11 +1087,11 @@
       "type_legend": "Loại chuyển khoản",
       "types": {
         "spot_to_funding": {
-          "label": "Spot → Funding",
+          "label": "Giao ngay → Ký quỹ",
           "description": "Chuẩn bị tài sản cho thanh toán"
         },
         "funding_to_spot": {
-          "label": "Funding → Spot",
+          "label": "Ký quỹ → Giao ngay",
           "description": "Trả tài sản để giao dịch"
         },
         "funding_to_bank": {
@@ -1115,7 +1115,7 @@
       "payout_currency": "Tiền tệ chi trả",
       "currencies": {
         "USD": "USD · Đô la Mỹ",
-        "EUR": "EUR · Euro",
+        "EUR": "EUR · đồng euro",
         "GBP": "GBP · Bảng Anh"
       },
       "select_account": "Chọn tài khoản",
@@ -1323,6 +1323,7 @@
       "payout_bank_sub": "ACH / SEPA",
       "wallet_address": "Địa chỉ ví",
       "wallet_placeholder": "0x...",
+      "network": "Mạng",
       "select_network": "Chọn mạng",
       "network_erc20": "Ethereum (ERC20)",
       "network_trc20": "Tron (TRC20)",
@@ -1365,7 +1366,7 @@
       "Liquidated": "Đã thanh lý"
     },
     "payout_methods": {
-      "crypto": "crypto",
+      "crypto": "tiền mã hóa",
       "wire_transfer": "chuyển khoản ngân hàng",
       "bank": "ngân hàng"
     },

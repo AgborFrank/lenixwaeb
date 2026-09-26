@@ -1,97 +1,73 @@
 {
   "meta": {
-    "title": "Blockchain Intelligence for Law Enforcement | Lenix Protocol",
-    "description": "On-chain tracing, wallet screening, and forensic reports for law enforcement and government teams — scoped engagements with documented methodology and limits."
+    "title": "Intelijen blockchain untuk penegak hukum | Lenix Protocol",
+    "description": "Penelusuran on-chain, penyaringan dompet, dan laporan forensik untuk penegak hukum dan tim pemerintah — keterlibatan berbatas cakupan dengan metodologi dan batas yang terdokumentasi."
   },
   "Hero": {
-    "badge": "Law enforcement",
-    "title1": "Blockchain intelligence ",
-    "title2": "for criminal investigations",
-    "subtitle": "Trace crypto flows, screen wallets, and produce documented findings for case files — with clear scope on what public ledger analysis can support and what requires separate legal process.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Penegak hukum",
+    "title1": "Intelijen blockchain ",
+    "title2": "untuk investigasi pidana",
+    "subtitle": "Telusuri arus kripto, saring dompet, dan hasilkan temuan terdokumentasi untuk berkas kasus — dengan cakupan yang jelas tentang apa yang dapat didukung analisis buku besar publik dan apa yang memerlukan proses hukum terpisah.",
+    "btn_primary": "Hubungi tim",
+    "btn_secondary": "Lihat kapabilitas"
   },
   "Overview": {
-    "title": "Investigation support built for case work",
-    "description": "Lenix helps agencies and task forces follow funds across supported networks, prioritize leads from bulk wallet uploads, and prepare outputs suitable for internal review or exchange escalation — without overstating attribution certainty or recovery outcomes."
+    "title": "Dukungan investigasi yang dibangun untuk kerja kasus",
+    "description": "Lenix membantu instansi dan satuan tugas mengikuti dana di jaringan yang didukung, memprioritaskan petunjuk dari unggahan dompet massal, dan menyiapkan keluaran yang sesuai untuk tinjauan internal atau eskalasi ke bursa — tanpa melebihkan kepastian atribusi atau hasil pemulihan."
   },
   "Highlights": {
     "items": {
       "follow": {
-        "title": "Follow flows across chains and services",
-        "desc": "Map movement through bridges, DEX touchpoints, and consolidation wallets where the ledger shows them — with notes on where visibility ends."
+        "title": "Ikuti arus lintas rantai dan layanan",
+        "desc": "Petakan pergerakan melalui bridge, titik sentuh DEX, dan dompet konsolidasi saat buku besar menunjukkannya — dengan catatan tentang di mana visibilitas berakhir."
       },
       "data": {
-        "title": "Attribution context for case review",
-        "desc": "Cluster related addresses and flag exposure to known risky categories when your matter authorizes that scope — not a claim of complete wallet ownership."
+        "title": "Konteks atribusi untuk tinjauan kasus",
+        "desc": "Kelompokkan alamat terkait dan tandai paparan terhadap kategori berisiko yang diketahui saat perkara Anda mengizinkan cakupan itu — bukan klaim kepemilikan dompet yang utuh."
       },
       "speed": {
-        "title": "Prioritize viable trails first",
-        "desc": "Screen wallet or transaction lists before deep analysis so investigators spend time on leads worth pursuing."
+        "title": "Utamakan jejak yang layak lebih dulu",
+        "desc": "Saring daftar dompet atau transaksi sebelum analisis mendalam agar penyelidik memakai waktu pada petunjuk yang pantas dikejar."
       },
       "evidence": {
-        "title": "Outputs for case files",
-        "desc": "Structured timelines and methodology sections suitable for supervisory review, counsel, or exchange escalation requests."
+        "title": "Keluaran untuk berkas kasus",
+        "desc": "Linimasa terstruktur dan bagian metodologi yang sesuai untuk tinjauan atasan, penasihat hukum, atau permintaan eskalasi ke bursa."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "intelligence": {
-        "label": "Threat intelligence",
-        "title": "Datasets tailored to investigation priorities",
-        "body": "Receive structured exports covering wallet clusters, flow summaries, and risk categories relevant to your case set — via file, feed, or API depending on engagement terms."
+        "label": "Intelijen ancaman",
+        "title": "Himpunan data sesuai prioritas investigasi",
+        "body": "Terima ekspor terstruktur yang mencakup klaster dompet, ringkasan arus, dan kategori risiko yang relevan dengan himpunan kasus Anda — lewat berkas, umpan, atau API sesuai syarat keterlibatan."
       },
       "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Trace activity across supported networks",
-        "body": "Follow funds across chains and assets where on-chain data allows — including bridge and swap touchpoints — with hop-by-hop documentation for case notes."
+        "label": "Penelusuran lintas jaringan",
+        "title": "Telusuri aktivitas di jaringan yang didukung",
+        "body": "Ikuti dana lintas rantai dan aset saat data on-chain memungkinkan — termasuk titik sentuh bridge dan swap — dengan dokumentasi hop demi hop untuk catatan kasus."
       },
       "triage": {
-        "label": "Triage",
-        "title": "Screen volume before deep investigation",
-        "body": "Upload wallet or transaction batches for initial exposure review — sanctions links, scam typologies, and high-risk services — to rank which leads warrant full analysis."
+        "label": "Triase",
+        "title": "Saring volume sebelum investigasi mendalam",
+        "body": "Unggah kumpulan dompet atau transaksi untuk tinjauan paparan awal — kaitan sanksi, tipologi penipuan, dan layanan berisiko tinggi — guna mengurutkan petunjuk mana yang layak dianalisis penuh."
       },
       "investigation": {
-        "label": "Investigation",
-        "title": "Develop the case view",
-        "body": "Build linked address and transaction paths in reports that separate verified ledger facts from inference — including likely exchange deposit points when visible on-chain."
+        "label": "Investigasi",
+        "title": "Kembangkan tampilan kasus",
+        "body": "Bangun jalur alamat dan transaksi yang terhubung dalam laporan yang memisahkan fakta buku besar yang terverifikasi dari inferensi — termasuk titik setoran bursa yang mungkin saat terlihat on-chain."
       },
       "training": {
-        "label": "Training",
-        "title": "Operator onboarding for your unit",
-        "body": "Walkthroughs on crypto fundamentals, tracing workflows, and how to read Lenix outputs — scoped to your team's tools access and case types, not generic certification marketing."
+        "label": "Pelatihan",
+        "title": "Orientasi operator untuk unit Anda",
+        "body": "Penjelasan dasar kripto, alur penelusuran, dan cara membaca keluaran Lenix — dibatasi pada akses alat tim Anda dan jenis kasus, bukan pemasaran sertifikasi yang generik."
       }
     }
   },
   "Cta": {
-    "title": "Need blockchain support for an investigation?",
-    "description": "Describe the unit, case type, and data you already have. We respond with an honest read on what tracing and reporting can cover before scoped engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Blockchain forensics"
-  },
-  "Features": {
-    "pillars": {
-      "triage": {
-        "label": "Triage and prioritization",
-        "title": "Screen leads before deep dives",
-        "body": "Upload wallet or transaction lists for initial exposure review — sanctions links, known scam categories, and high-risk service touchpoints — so investigators focus effort on viable trails first."
-      },
-      "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Map flows across chains and services",
-        "body": "Follow movement through bridges, swaps, and consolidation points where visible on-chain. Outputs include hop-by-hop notes and timelines your team can attach to case documentation."
-      },
-      "investigation": {
-        "label": "Case development",
-        "title": "Build an evidence-oriented case view",
-        "body": "Link addresses, clusters, and transaction paths in structured reports — separating verified ledger facts from inference, with limits stated for counsel and supervisory review."
-      },
-      "escalation": {
-        "label": "Exchange and escalation support",
-        "title": "Document touchpoints for next steps",
-        "body": "Identify likely custodial deposit paths when the chain shows them — supporting preservation requests, MLAT workflows, or internal escalation. Lenix does not compel exchanges or guarantee KYC disclosure."
-      }
-    }
+    "title": "Perlu dukungan blockchain untuk suatu investigasi?",
+    "description": "Jelaskan unit, jenis kasus, dan data yang sudah Anda miliki. Kami menjawab dengan bacaan yang jujur tentang apa yang dapat dicakup penelusuran dan pelaporan sebelum keterlibatan berbatas cakupan.",
+    "btn_primary": "Hubungi tim",
+    "btn_secondary": "Forensik blockchain"
   }
 }

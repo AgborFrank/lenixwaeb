@@ -1,102 +1,78 @@
 {
   "meta": {
-    "title": "DeFi Compliance & AML | Lenix Protocol",
-    "description": "AML screening, counterparty diligence, and monitoring for DeFi protocols and crypto infrastructure teams — with configurable rules and documented scope."
+    "title": "Cumplimiento DeFi y AML | Lenix Protocol",
+    "description": "Filtrado AML, diligencia de contrapartes y monitoreo para protocolos DeFi y equipos de infraestructura cripto — con reglas configurables y alcance documentado."
   },
   "Hero": {
-    "badge": "DeFi compliance",
-    "title1": "AML and risk controls ",
-    "title2": "for decentralized finance",
-    "subtitle": "Screen wallets and flows, review protocol counterparties, and integrate compliance checks into your operations — without claiming DeFi can be made fully permissionless and regulation-free.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Cumplimiento DeFi",
+    "title1": "Controles AML y de riesgo ",
+    "title2": "para las finanzas descentralizadas",
+    "subtitle": "Filtre billeteras y flujos, revise contrapartes del protocolo e integre controles de cumplimiento en sus operaciones — sin afirmar que la DeFi puede quedar del todo sin permisos y fuera de la regulación.",
+    "btn_primary": "Contactar al equipo",
+    "btn_secondary": "Ver capacidades"
   },
   "Overview": {
-    "title": "Compliance that fits how DeFi actually works",
-    "description": "Lenix helps protocol teams, treasuries, and infrastructure providers assess exposure across supported networks — pool interactions, bridge touchpoints, and wallet screening — with outputs your compliance function can audit, not opaque risk scores alone."
+    "title": "Cumplimiento ajustado a cómo funciona la DeFi",
+    "description": "Lenix ayuda a equipos de protocolo, tesorerías y proveedores de infraestructura a evaluar la exposición en las redes admitidas — interacciones de pools, puntos de contacto con bridges y filtrado de billeteras — con resultados que su función de cumplimiento puede auditar, no solo puntajes de riesgo opacos."
   },
   "Highlights": {
     "items": {
       "scale": {
-        "title": "Scale screening without losing review quality",
-        "desc": "Configurable rules and batch review help compliance teams focus on material exposure — not manual lookup for every wallet touch."
+        "title": "Filtrar a escala sin perder calidad de revisión",
+        "desc": "Reglas configurables y revisión por lotes ayudan a los equipos de cumplimiento a centrarse en la exposición material — no en una búsqueda manual por cada contacto de billetera."
       },
       "cost": {
-        "title": "Integrate into existing workflows",
-        "desc": "API and export options fit internal queues and case tools so screening does not sit in a separate silo."
+        "title": "Integrar en los flujos existentes",
+        "desc": "La API y las exportaciones encajan en colas internas y herramientas de caso, para que el filtrado no quede en un silo aparte."
       },
       "coverage": {
-        "title": "Cross-chain context where supported",
-        "desc": "Review activity across networks and token types your program covers — with limits stated when a chain or asset is outside scope."
+        "title": "Contexto entre cadenas donde esté admitido",
+        "desc": "Revise la actividad en las redes y tipos de token que cubre su programa — con los límites indicados cuando una cadena o un activo queda fuera de alcance."
       },
       "threats": {
-        "title": "Proactive counterparty review",
-        "desc": "Assess pools, routers, and wallet connections before treasury moves or partner onboarding — bounded to your policy definitions."
+        "title": "Revisión proactiva de contrapartes",
+        "desc": "Evalúe pools, routers y conexiones de billeteras antes de un movimiento de tesorería o la incorporación de un socio — acotado a las definiciones de su política."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "coverage": {
-        "label": "Asset coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
+        "label": "Cobertura de activos",
+        "title": "Filtrar actividad en las cadenas admitidas",
+        "body": "Evalúe transacciones y exposición de billeteras en las principales redes de capa 1 y capa 2, stablecoins y estándares de token habituales en DeFi — limitados a las redes y activos cubiertos en su encargo."
       },
       "integration": {
-        "label": "API integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
+        "label": "Integración por API",
+        "title": "Llevar el filtrado a su stack",
+        "body": "Conecte los resultados de Lenix a colas de revisión interna, gestión de casos o herramientas propias mediante API y exportaciones de archivos — para que los pasos de cumplimiento sigan en los flujos que su equipo ya ejecuta."
       },
       "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
+        "label": "Filtrado de transacciones",
+        "title": "Marcar la exposición antes de mover fondos",
+        "body": "Revise billeteras y transacciones por vínculos con entidades sancionadas, tipologías de estafa conocidas y categorías de servicios de alto riesgo — con resultados que su equipo puede aceptar, escalar o anular con notas."
       },
       "monitoring": {
-        "label": "Automated monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
+        "label": "Monitoreo automatizado",
+        "title": "Listas de vigilancia para protocolos y tesorerías",
+        "body": "Monitoree conjuntos de direcciones, interacciones de pools y flujos recurrentes de contrapartes. Las reglas de alerta y la cobertura dependen de las redes admitidas y de cómo su programa define el riesgo material."
       },
       "onboarding": {
-        "label": "Counterparty onboarding",
-        "title": "Review partners before integration",
-        "body": "Screen liquidity providers, pool contracts, and wallet counterparties during onboarding — surfacing exposure across supported chains when your policy requires it."
+        "label": "Incorporación de contrapartes",
+        "title": "Revisar socios antes de la integración",
+        "body": "Filtre proveedores de liquidez, contratos de pool y billeteras de contraparte durante la incorporación — mostrando la exposición en las cadenas admitidas cuando su política lo exige."
       },
       "diligence": {
-        "label": "Protocol due diligence",
-        "title": "Map exposure across the ecosystem",
-        "body": "Analyze how a protocol connects to exchanges, bridges, and high-risk services in on-chain data — with written limits on what public ledgers can and cannot show about off-chain control."
+        "label": "Diligencia de protocolo",
+        "title": "Mapear la exposición en el ecosistema",
+        "body": "Analice cómo un protocolo se conecta con exchanges, bridges y servicios de alto riesgo en los datos on-chain — con límites escritos sobre lo que los libros públicos pueden y no pueden mostrar del control fuera de la cadena."
       }
     }
   },
   "Cta": {
-    "title": "Building compliance into a DeFi product?",
-    "description": "Share your protocol type, jurisdictions, and what you need to screen or monitor. We outline realistic integration scope before engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Compliance investigations"
-  },
-  "Features": {
-    "pillars": {
-      "coverage": {
-        "label": "Asset and network coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
-      },
-      "integration": {
-        "label": "Workflow integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
-      },
-      "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
-      },
-      "monitoring": {
-        "label": "Ongoing monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
-      }
-    }
+    "title": "¿Está incorporando el cumplimiento a un producto DeFi?",
+    "description": "Indique el tipo de protocolo, las jurisdicciones y lo que necesita filtrar o monitorear. Delimitamos un alcance de integración realista antes del encargo.",
+    "btn_primary": "Contactar al equipo",
+    "btn_secondary": "Investigaciones de cumplimiento"
   }
 }

@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Crypto Compliance Investigations | Lenix Protocol",
-    "description": "AML and compliance investigation workflows for tracing crypto flows, documenting findings, and supporting SAR and escalation processes — with clear scope on what on-chain review can show."
+    "title": "क्रिप्टो अनुपालन जाँच | Lenix Protocol",
+    "description": "क्रिप्टो प्रवाह का पता लगाने, निष्कर्ष दर्ज करने और SAR तथा एस्केलेशन प्रक्रियाओं का समर्थन करने के लिए AML और अनुपालन जाँच वर्कफ़्लो — इस स्पष्ट दायरे के साथ कि ऑन-चेन समीक्षा क्या दिखा सकती है।"
   },
   "Hero": {
-    "badge": "Compliance investigations",
-    "title1": "Investigate crypto flows ",
-    "title2": "with documented findings",
-    "subtitle": "Trace transactions across supported networks, review wallet exposure, and export structured analysis for compliance escalations — without overstating what public ledger data alone can prove.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "अनुपालन जाँच",
+    "title1": "क्रिप्टो प्रवाह की जाँच करें ",
+    "title2": "दस्तावेज़ी निष्कर्षों के साथ",
+    "subtitle": "समर्थित नेटवर्क पर लेनदेन ट्रेस करें, वॉलेट एक्सपोज़र की समीक्षा करें और अनुपालन एस्केलेशन के लिए संरचित विश्लेषण निर्यात करें — यह बढ़ा-चढ़ाकर बताए बिना कि सार्वजनिक लेजर डेटा अकेले क्या सिद्ध कर सकता है।",
+    "btn_primary": "टीम से संपर्क करें",
+    "btn_secondary": "क्षमताएँ देखें"
   },
   "Overview": {
-    "title": "Built for compliance and investigation teams",
-    "description": "Lenix supports AML reviews, enhanced due diligence, and internal investigations with trace workflows, risk context, and report outputs your team can attach to case files — not vanity dashboards with unverifiable metrics."
+    "title": "अनुपालन और जाँच टीमों के लिए बनाया गया",
+    "description": "Lenix ट्रेस वर्कफ़्लो, जोखिम संदर्भ और ऐसी रिपोर्टों से AML समीक्षा, सशक्त उचित तत्परता और आंतरिक जाँच का समर्थन करता है जिन्हें आपकी टीम केस फ़ाइलों में जोड़ सकती है — असत्यापन योग्य मेट्रिक्स वाले दिखावटी डैशबोर्ड नहीं।"
   },
   "Features": {
     "pillars": {
       "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Follow flows across chains and assets",
-        "body": "Map fund movement from a known wallet or transaction through bridges, swaps, and exchange deposits where visible on-chain. Outputs include timelines and hop-by-hop notes suitable for SAR preparation or internal escalation."
+        "label": "क्रॉस-नेटवर्क ट्रेसिंग",
+        "title": "चेन और परिसंपत्तियों में प्रवाह का पालन करें",
+        "body": "किसी ज्ञात वॉलेट या लेनदेन से धन की गति को ब्रिज, स्वैप और एक्सचेंज जमा तक मैप करें, जहाँ वह ऑन-चेन दिखाई दे। आउटपुट में समयरेखा और हॉप-दर-हॉप नोट शामिल हैं, जो SAR तैयारी या आंतरिक एस्केलेशन के लिए उपयुक्त हैं।"
       },
       "workflow": {
-        "label": "Investigation workflow",
-        "title": "From alert to documented review",
-        "body": "Start from a flagged address or transaction hash and build a case view linking related wallets, entities, and behaviors. Findings can be shared internally with audit-friendly notes on methodology and limits."
+        "label": "जाँच वर्कफ़्लो",
+        "title": "अलर्ट से दस्तावेज़ी समीक्षा तक",
+        "body": "चिह्नित पते या लेनदेन हैश से शुरू करें और संबंधित वॉलेट, संस्थाओं और व्यवहारों को जोड़ने वाला केस दृश्य बनाएँ। निष्कर्ष कार्यप्रणाली और सीमाओं पर ऑडिट-अनुकूल नोटों के साथ आंतरिक रूप से साझा किए जा सकते हैं।"
       },
       "diligence": {
-        "label": "Due diligence",
-        "title": "Review addresses before you move funds",
-        "body": "Screen counterparty wallets and historical flows for exposure to known risky categories — scams, sanctions-related touchpoints, and high-risk services — scoped to your policy rules, not a generic score alone."
+        "label": "उचित तत्परता",
+        "title": "धन ले जाने से पहले पतों की समीक्षा करें",
+        "body": "प्रतिपक्ष वॉलेट और ऐतिहासिक प्रवाह को ज्ञात जोखिम श्रेणियों के संपर्क के लिए जाँचें — घोटाले, प्रतिबंध-संबंधी संपर्क बिंदु और उच्च-जोखिम सेवाएँ — आपकी नीति नियमों के अनुसार, केवल एक सामान्य स्कोर के आधार पर नहीं।"
       },
       "monitoring": {
-        "label": "Ongoing monitoring",
-        "title": "Watchlists and activity alerts",
-        "body": "Configure address lists and receive notifications when new activity matches your criteria. Monitoring supports recurring compliance reviews — alert volume and coverage depend on engagement terms and supported networks."
+        "label": "निरंतर निगरानी",
+        "title": "वॉचलिस्ट और गतिविधि अलर्ट",
+        "body": "पता सूचियाँ कॉन्फ़िगर करें और जब नई गतिविधि आपके मानदंडों से मेल खाए तो सूचनाएँ प्राप्त करें। निगरानी आवर्ती अनुपालन समीक्षाओं का समर्थन करती है — अलर्ट की मात्रा और कवरेज अनुबंध शर्तों और समर्थित नेटवर्क पर निर्भर करती है।"
       }
     }
   },
   "Cta": {
-    "title": "Need compliance investigation support?",
-    "description": "Describe your team, regulatory context, and what you need from tracing or screening. We outline realistic scope before engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Threat intelligence"
+    "title": "अनुपालन जाँच में सहायता चाहिए?",
+    "description": "अपनी टीम, नियामक संदर्भ और ट्रेसिंग या स्क्रीनिंग से जो चाहिए वह बताएँ। काम शुरू होने से पहले हम यथार्थवादी दायरा बताते हैं।",
+    "btn_primary": "टीम से संपर्क करें",
+    "btn_secondary": "खतरा आसूचना"
   }
 }

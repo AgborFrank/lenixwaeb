@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Crypto Compliance Investigations | Lenix Protocol",
-    "description": "AML and compliance investigation workflows for tracing crypto flows, documenting findings, and supporting SAR and escalation processes — with clear scope on what on-chain review can show."
+    "title": "Điều tra tuân thủ crypto | Lenix Protocol",
+    "description": "Quy trình điều tra AML và tuân thủ để truy vết dòng tiền crypto, ghi nhận kết luận và hỗ trợ quy trình SAR cùng leo thang — với phạm vi rõ về những gì rà soát on-chain có thể cho thấy."
   },
   "Hero": {
-    "badge": "Compliance investigations",
-    "title1": "Investigate crypto flows ",
-    "title2": "with documented findings",
-    "subtitle": "Trace transactions across supported networks, review wallet exposure, and export structured analysis for compliance escalations — without overstating what public ledger data alone can prove.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Điều tra tuân thủ",
+    "title1": "Điều tra dòng tiền crypto ",
+    "title2": "với kết luận có hồ sơ",
+    "subtitle": "Truy vết giao dịch trên các mạng được hỗ trợ, rà soát mức phơi nhiễm của ví và xuất phân tích có cấu trúc cho các lần leo thang tuân thủ — không phóng đại những gì dữ liệu sổ cái công khai tự nó có thể chứng minh.",
+    "btn_primary": "Liên hệ đội ngũ",
+    "btn_secondary": "Xem năng lực"
   },
   "Overview": {
-    "title": "Built for compliance and investigation teams",
-    "description": "Lenix supports AML reviews, enhanced due diligence, and internal investigations with trace workflows, risk context, and report outputs your team can attach to case files — not vanity dashboards with unverifiable metrics."
+    "title": "Dành cho đội tuân thủ và điều tra",
+    "description": "Lenix hỗ trợ rà soát AML, thẩm định tăng cường và điều tra nội bộ bằng quy trình truy vết, bối cảnh rủi ro và báo cáo đội có thể đính vào hồ sơ vụ việc — không phải bảng điều khiển phô trương với chỉ số không kiểm chứng được."
   },
   "Features": {
     "pillars": {
       "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Follow flows across chains and assets",
-        "body": "Map fund movement from a known wallet or transaction through bridges, swaps, and exchange deposits where visible on-chain. Outputs include timelines and hop-by-hop notes suitable for SAR preparation or internal escalation."
+        "label": "Truy vết xuyên mạng",
+        "title": "Theo dõi dòng tiền qua chuỗi và tài sản",
+        "body": "Lập bản đồ chuyển động tiền từ một ví hoặc giao dịch đã biết qua cầu, hoán đổi và nạp sàn khi nhìn thấy trên chuỗi. Kết quả gồm dòng thời gian và ghi chú từng chặng, phù hợp để chuẩn bị SAR hoặc leo thang nội bộ."
       },
       "workflow": {
-        "label": "Investigation workflow",
-        "title": "From alert to documented review",
-        "body": "Start from a flagged address or transaction hash and build a case view linking related wallets, entities, and behaviors. Findings can be shared internally with audit-friendly notes on methodology and limits."
+        "label": "Quy trình điều tra",
+        "title": "Từ cảnh báo đến bản rà soát có hồ sơ",
+        "body": "Bắt đầu từ địa chỉ bị gắn cờ hoặc mã băm giao dịch và dựng góc nhìn vụ việc nối các ví, thực thể và hành vi liên quan. Kết luận có thể chia sẻ nội bộ kèm ghi chú dễ kiểm toán về phương pháp và giới hạn."
       },
       "diligence": {
-        "label": "Due diligence",
-        "title": "Review addresses before you move funds",
-        "body": "Screen counterparty wallets and historical flows for exposure to known risky categories — scams, sanctions-related touchpoints, and high-risk services — scoped to your policy rules, not a generic score alone."
+        "label": "Thẩm định",
+        "title": "Rà soát địa chỉ trước khi chuyển tiền",
+        "body": "Sàng lọc ví đối tác và dòng tiền lịch sử theo mức phơi nhiễm với các nhóm rủi ro đã biết — lừa đảo, điểm chạm liên quan trừng phạt và dịch vụ rủi ro cao — theo quy tắc chính sách của bạn, không chỉ một điểm số chung."
       },
       "monitoring": {
-        "label": "Ongoing monitoring",
-        "title": "Watchlists and activity alerts",
-        "body": "Configure address lists and receive notifications when new activity matches your criteria. Monitoring supports recurring compliance reviews — alert volume and coverage depend on engagement terms and supported networks."
+        "label": "Giám sát liên tục",
+        "title": "Danh sách theo dõi và cảnh báo hoạt động",
+        "body": "Cấu hình danh sách địa chỉ và nhận thông báo khi hoạt động mới khớp tiêu chí. Giám sát hỗ trợ các kỳ rà soát tuân thủ lặp lại — khối lượng cảnh báo và phạm vi phủ phụ thuộc điều khoản hợp tác và các mạng được hỗ trợ."
       }
     }
   },
   "Cta": {
-    "title": "Need compliance investigation support?",
-    "description": "Describe your team, regulatory context, and what you need from tracing or screening. We outline realistic scope before engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Threat intelligence"
+    "title": "Cần hỗ trợ điều tra tuân thủ?",
+    "description": "Mô tả đội ngũ, bối cảnh quy định và những gì bạn cần từ truy vết hoặc sàng lọc. Chúng tôi nêu phạm vi thực tế trước khi bắt đầu.",
+    "btn_primary": "Liên hệ đội ngũ",
+    "btn_secondary": "Tình báo mối đe dọa"
   }
 }

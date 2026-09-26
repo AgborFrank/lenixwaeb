@@ -213,40 +213,40 @@
       "image_alt": "Lenix 商户与合规运营仪表板"
     },
     "Payment": {
-      "badge": "Protocol stack",
-      "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "badge": "协议栈",
+      "title": "在同一层上转移、持有并追回价值",
+      "subtitle": "支付、托管、追回和借贷共用同一套经过审计的基础设施，而不是四个互不相连的产品。",
       "cards": {
         "fiat": {
-          "title": "Crypto-to-fiat",
-          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
+          "title": "加密货币兑法币",
+          "desc": "通过本地支付通道将加密货币结算为法币，用于跨境与日常支付。"
         },
         "vault": {
-          "title": "Vault and custody",
-          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
+          "title": "金库与托管",
+          "desc": "为需要受控资产存储的团队提供多签金库与安全托管。"
         },
         "recovery": {
-          "title": "Recovery and forensics",
-          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
+          "title": "追回与取证",
+          "desc": "资产丢失或出现争议时，追踪与证据流程位于同一技术栈上。"
         },
         "lending": {
-          "title": "Lending",
-          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
+          "title": "借贷",
+          "desc": "以抵押品借款，具备链上控制与清晰的结算路径。"
         }
       },
       "cta": "查看方案"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " Token Details",
-      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "title2": " 代币详情",
+      "subtitle": "使用下方合约信息，将 Lenix Protocol 代币添加到您的钱包。",
       "headers": {
-        "contract": "Contract Address",
-        "name": "Token Name",
-        "symbol": "Token Symbol",
-        "supply": "Token Supply",
-        "network": "Network",
-        "decimals": "Decimals"
+        "contract": "合约地址",
+        "name": "代币名称",
+        "symbol": "代币符号",
+        "supply": "代币供应量",
+        "network": "网络",
+        "decimals": "小数位"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -267,9 +267,9 @@
       "col2_btn": "白皮书"
     },
     "Competition": {
-      "title1": "Community ",
-      "title2": "giveaway",
-      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "title1": "社区 ",
+      "title2": "赠送活动",
+      "subtitle": "十名获奖者将获得价值 25,000 美元的 LNX。请在社区页面完成参与步骤。须遵守条款。",
       "btn": "社区计划"
     },
     "Features": {
@@ -286,29 +286,29 @@
       "btn_whitepaper": "白皮书"
     },
     "LnxPurchaseWidget": {
-      "widget_title": "Buy LNX",
-      "widget_subtitle": "Protocol token sale",
-      "usd_raised": "USD raised so far:",
-      "tokens_sold": "Tokens sold:",
-      "price_usd": "USD price: ${price}",
-      "price_eth": "ETH price: {price} ETH",
-      "pay_eth": "ETH you pay",
-      "pay_usdt": "USDT you pay",
-      "pay_usd": "USD you pay",
-      "receive_lnx": "$LNX you receive",
-      "btn_processing": "Processing...",
-      "btn_pay_eth": "Pay with ETH",
-      "btn_pay_usdt": "Pay with USDT",
+      "widget_title": "购买 LNX",
+      "widget_subtitle": "协议代币发售",
+      "usd_raised": "已募集美元：",
+      "tokens_sold": "已售代币：",
+      "price_usd": "美元价格：${price}",
+      "price_eth": "ETH 价格：{price} ETH",
+      "pay_eth": "您支付的 ETH",
+      "pay_usdt": "您支付的 USDT",
+      "pay_usd": "您支付的美元",
+      "receive_lnx": "您收到的 $LNX",
+      "btn_processing": "处理中...",
+      "btn_pay_eth": "使用 ETH 支付",
+      "btn_pay_usdt": "使用 USDT 支付",
       "btn_pay_card": "银行卡支付",
-      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "card_info": "由 Stripe 提供支持。按美元扣款。",
       "btn_connect": "连接钱包",
       "btn_giveaway": "LNX 奖励",
-      "giveaway_info": "Connect your wallet to check eligibility."
+      "giveaway_info": "连接钱包以查看是否符合资格。"
     },
     "TokenSale": {
       "title1": "LNX ",
-      "title2": "token sale",
-      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+      "title2": "代币发售",
+      "subtitle": "购买 LNX 以参与协议。合约信息见下方。"
     },
     "Partners": {
       "eyebrow": "生态",
@@ -990,8 +990,8 @@
         "change_24h": "24小时"
       },
       "location": {
-        "spot": "Spot",
-        "funding": "Funding"
+        "spot": "现货",
+        "funding": "资金"
       }
     },
     "accounts": {
@@ -1087,11 +1087,11 @@
       "type_legend": "转账类型",
       "types": {
         "spot_to_funding": {
-          "label": "Spot → Funding",
+          "label": "现货 → 资金",
           "description": "准备资产用于支付"
         },
         "funding_to_spot": {
-          "label": "Funding → Spot",
+          "label": "资金 → 现货",
           "description": "将资产返回用于交易"
         },
         "funding_to_bank": {
@@ -1323,6 +1323,7 @@
       "payout_bank_sub": "ACH / SEPA",
       "wallet_address": "钱包地址",
       "wallet_placeholder": "0x...",
+      "network": "网络",
       "select_network": "选择网络",
       "network_erc20": "Ethereum (ERC20)",
       "network_trc20": "Tron (TRC20)",

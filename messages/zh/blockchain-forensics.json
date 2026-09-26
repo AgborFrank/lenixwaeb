@@ -1,90 +1,81 @@
 {
   "meta": {
-    "title": "Blockchain Forensics & On-Chain Investigation | Lenix Protocol",
-    "description": "Trace stolen and misdirected crypto, map wallet flows, and produce forensic reports for counsel, compliance teams, and law enforcement. Honest scope before engagement."
+    "title": "区块链取证与链上调查 | Lenix Protocol",
+    "description": "追踪被盗或误转的加密资产，绘制钱包流向，并为法律顾问、合规团队与执法机构出具取证报告。委托前先说明范围。"
   },
   "Hero": {
-    "badge": "Blockchain forensics",
-    "title1": "On-chain investigation ",
-    "title2": "with evidence you can use",
-    "subtitle": "Lenix maps transaction flows across chains and prepares documented findings for recovery decisions, legal review, and compliance — without promising outcomes the ledger cannot support.",
-    "btn_primary": "Start a case",
-    "btn_secondary": "How it works"
+    "badge": "区块链取证",
+    "title1": "链上调查，",
+    "title2": "形成可用证据",
+    "subtitle": "Lenix 跨链绘制交易流向，并为追回决策、法律审查与合规准备有文档的调查结果——不承诺账本无法支持的结果。",
+    "btn_primary": "立案",
+    "btn_secondary": "运作方式"
   },
   "Capabilities": {
-    "title": "What forensic work covers",
-    "description": "Investigations combine on-chain analysis with matter context — not automated blockchain lookups alone.",
+    "title": "取证工作覆盖什么",
+    "description": "调查把链上分析与案件背景结合起来——不是单独的自动化链上查询。",
     "cards": {
       "tracing": {
-        "title": "Transaction tracing",
-        "desc": "Follow fund movement from known source wallets through bridges, mixers, and consolidation points to identify where value likely landed."
+        "title": "交易追踪",
+        "desc": "从已知来源钱包出发，经过跨链桥、混币器与归集点，追踪资金去向，判断价值最可能落在何处。"
       },
       "reports": {
-        "title": "Reports and litigation support",
-        "desc": "Written analysis with timelines, methodology, and limitations — formatted for counsel, regulators, or exchange escalation when appropriate."
+        "title": "报告与诉讼支持",
+        "desc": "书面分析包含时间线、方法与局限——在适当时按法律顾问、监管机构或交易所升级所需的格式出具。"
       },
       "compliance": {
-        "title": "Compliance and due diligence",
-        "desc": "Screen wallets and flows for AML risk, sanctions exposure, and counterparty diligence before treasury moves or settlement."
+        "title": "合规与尽职调查",
+        "desc": "在资金调拨或结算前，筛查钱包与资金流的 AML 风险、制裁敞口与交易对手情况。"
       }
     }
   },
   "UseCases": {
-    "title": "When teams engage forensics",
-    "description": "Common matters where documented on-chain analysis helps decide next steps — recovery, legal process, or internal review.",
+    "title": "团队在什么情况下委托取证",
+    "description": "常见事项中，有文档的链上分析有助于决定下一步——追回、法律程序或内部审查。",
     "items": {
       "theft": {
-        "title": "Theft and unauthorized transfers",
-        "desc": "Wallet compromises, exchange account takeovers, or unauthorized outbound transfers where you need a trace before contacting platforms."
+        "title": "盗窃与未经授权的转账",
+        "desc": "钱包被盗、交易所账户被接管，或未经授权的出金，需要在联系平台前先完成追踪。"
       },
       "scams": {
-        "title": "Scams and social engineering",
-        "desc": "Investment fraud, impersonation, and phishing cases where victims need to show fund paths to counsel or reporting channels."
+        "title": "诈骗与社会工程",
+        "desc": "投资欺诈、冒充与钓鱼案件中，受害人需要向法律顾问或报案渠道说明资金路径。"
       },
       "ransom": {
-        "title": "Extortion payments",
-        "desc": "Ransomware or blackmail payments where law enforcement or insurers require documented flow analysis from payment wallets."
+        "title": "勒索付款",
+        "desc": "勒索软件或敲诈付款，执法机构或保险公司要求从付款钱包起提供有文档的流向分析。"
       },
       "insolvency": {
-        "title": "Disputes and insolvency",
-        "desc": "Bankruptcy, creditor enforcement, or internal investigations where attachable crypto or treasury movements must be verified."
-      }
-    },
-    "panel": {
-      "title": "Confidential handling",
-      "description": "Case materials are shared only with parties authorized under the engagement — not used outside the defined scope.",
-      "items": {
-        "nda": "NDA available on request",
-        "encrypted": "Encrypted intake and file transfer",
-        "privacy": "Privacy-aligned data handling"
+        "title": "争议与破产",
+        "desc": "破产、债权人执行或内部调查中，需要核实可处置的加密资产或资金调拨。"
       }
     }
   },
   "Process": {
-    "title": "Investigation process",
+    "title": "调查流程",
     "steps": {
       "intake": {
-        "title": "Intake and scoping",
-        "desc": "Known addresses, transaction hashes, timelines, and what questions the matter needs answered — before analysis hours are committed."
+        "title": "受理与范围确认",
+        "desc": "已知地址、交易哈希、时间线，以及本案需要回答的问题——在投入分析工时之前先明确。"
       },
       "extract": {
-        "title": "Data extraction",
-        "desc": "Pull relevant on-chain data across supported networks, including internal transfers, contract interactions, and exchange touchpoints where visible."
+        "title": "数据提取",
+        "desc": "在支持的网络上提取相关链上数据，包括内部转账、合约交互，以及可见的交易所接触点。"
       },
       "analyze": {
-        "title": "Analysis and clustering",
-        "desc": "Map flows, cluster related addresses, and separate verified movements from inference — with limits stated explicitly."
+        "title": "分析与聚类",
+        "desc": "绘制流向、聚类相关地址，并把已核实的移动与推断分开——局限会明确写出。"
       },
       "deliver": {
-        "title": "Report and next steps",
-        "desc": "Deliver findings with recommended paths: exchange escalation, legal process, recovery coordination, or closure when trails are exhausted."
+        "title": "报告与后续路径",
+        "desc": "交付调查结果并给出建议路径：交易所升级、法律程序、追回协调，或在线索耗尽时结案。"
       }
     }
   },
   "Cta": {
-    "title": "Need a forensic read on a case?",
-    "description": "Share what happened and the on-chain details you already have. We respond with an honest assessment of what tracing can show before scoped engagement.",
-    "btn_primary": "Contact forensics team",
-    "btn_secondary": "Crypto recovery"
+    "title": "需要对照案件做一次取证判断？",
+    "description": "说明发生了什么，以及您已有的链上细节。在确定委托范围前，我们会如实评估追踪能够显示什么。",
+    "btn_primary": "联系取证团队",
+    "btn_secondary": "加密资产追回"
   }
 }

@@ -88,7 +88,10 @@
     },
     "banking": {
       "title": "Et ensuite ?",
-      "body": "Nous examinerons votre demande et reviendrons vers vous sous 24h avec les prochaines étapes et une tarification."
+      "body": "Nous examinerons votre demande et reviendrons vers vous sous 24h avec les prochaines étapes et une tarification.",
+      "bullet1": "Obtenez un devis aux frais transparents",
+      "bullet2": "Effectuez la vérification si nécessaire",
+      "bullet3": "Suivez l'ensemble dans votre tableau de bord"
     },
     "encryption": "Vos données sont chiffrées et sécurisées. Jamais partagées sans votre accord.",
     "support": "Questions ? Contactez-nous sur Telegram après l'envoi."

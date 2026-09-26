@@ -1,90 +1,81 @@
 {
   "meta": {
-    "title": "Blockchain Forensics & On-Chain Investigation | Lenix Protocol",
-    "description": "Trace stolen and misdirected crypto, map wallet flows, and produce forensic reports for counsel, compliance teams, and law enforcement. Honest scope before engagement."
+    "title": "ब्लॉकचेन फ़ोरेंसिक और ऑन-चेन जाँच | Lenix Protocol",
+    "description": "चोरी और गलत दिशा में गई क्रिप्टो का पता लगाएँ, वॉलेट प्रवाह का नक्शा बनाएँ, और सलाहकार, अनुपालन टीमों व विधि प्रवर्तन के लिए फ़ोरेंसिक रिपोर्ट तैयार करें। कार्य से पहले स्पष्ट दायरा।"
   },
   "Hero": {
-    "badge": "Blockchain forensics",
-    "title1": "On-chain investigation ",
-    "title2": "with evidence you can use",
-    "subtitle": "Lenix maps transaction flows across chains and prepares documented findings for recovery decisions, legal review, and compliance — without promising outcomes the ledger cannot support.",
-    "btn_primary": "Start a case",
-    "btn_secondary": "How it works"
+    "badge": "ब्लॉकचेन फ़ोरेंसिक",
+    "title1": "ऑन-चेन जाँच ",
+    "title2": "ऐसे साक्ष्य के साथ जिसे आप उपयोग कर सकें",
+    "subtitle": "Lenix श्रृंखलाओं में लेनदेन प्रवाह का नक्शा बनाता है और रिकवरी निर्णयों, कानूनी समीक्षा व अनुपालन के लिए दस्तावेज़ी निष्कर्ष तैयार करता है — ऐसे परिणाम का वादा किए बिना जिन्हें लेजर सहारा नहीं दे सकता।",
+    "btn_primary": "केस शुरू करें",
+    "btn_secondary": "यह कैसे काम करता है"
   },
   "Capabilities": {
-    "title": "What forensic work covers",
-    "description": "Investigations combine on-chain analysis with matter context — not automated blockchain lookups alone.",
+    "title": "फ़ोरेंसिक कार्य क्या कवर करता है",
+    "description": "जाँच ऑन-चेन विश्लेषण को मामले के संदर्भ से जोड़ती है — केवल स्वचालित ब्लॉकचेन खोज नहीं।",
     "cards": {
       "tracing": {
-        "title": "Transaction tracing",
-        "desc": "Follow fund movement from known source wallets through bridges, mixers, and consolidation points to identify where value likely landed."
+        "title": "लेनदेन अनुरेखण",
+        "desc": "ज्ञात स्रोत वॉलेट से ब्रिज, मिक्सर और समेकन बिंदुओं तक धन की गति का अनुसरण करें, ताकि यह पता चले कि मूल्य संभवतः कहाँ पहुँचा।"
       },
       "reports": {
-        "title": "Reports and litigation support",
-        "desc": "Written analysis with timelines, methodology, and limitations — formatted for counsel, regulators, or exchange escalation when appropriate."
+        "title": "रिपोर्ट और मुकदमेबाजी सहायता",
+        "desc": "समयरेखा, पद्धति और सीमाओं सहित लिखित विश्लेषण — सलाहकार, नियामक या उचित होने पर एक्सचेंज एस्केलेशन के प्रारूप में।"
       },
       "compliance": {
-        "title": "Compliance and due diligence",
-        "desc": "Screen wallets and flows for AML risk, sanctions exposure, and counterparty diligence before treasury moves or settlement."
+        "title": "अनुपालन और उचित परिश्रम",
+        "desc": "ट्रेज़री गतिविधि या निपटान से पहले वॉलेट और प्रवाह को AML जोखिम, प्रतिबंध एक्सपोज़र और प्रतिपक्ष जाँच के लिए स्क्रीन करें।"
       }
     }
   },
   "UseCases": {
-    "title": "When teams engage forensics",
-    "description": "Common matters where documented on-chain analysis helps decide next steps — recovery, legal process, or internal review.",
+    "title": "टीमें फ़ोरेंसिक कब लगाती हैं",
+    "description": "सामान्य मामले जहाँ दस्तावेज़ी ऑन-चेन विश्लेषण अगला कदम तय करने में मदद करता है — रिकवरी, कानूनी प्रक्रिया या आंतरिक समीक्षा।",
     "items": {
       "theft": {
-        "title": "Theft and unauthorized transfers",
-        "desc": "Wallet compromises, exchange account takeovers, or unauthorized outbound transfers where you need a trace before contacting platforms."
+        "title": "चोरी और अनधिकृत हस्तांतरण",
+        "desc": "वॉलेट समझौता, एक्सचेंज खाता अधिग्रहण, या अनधिकृत जावक हस्तांतरण, जब प्लेटफ़ॉर्म से संपर्क से पहले अनुरेखण चाहिए।"
       },
       "scams": {
-        "title": "Scams and social engineering",
-        "desc": "Investment fraud, impersonation, and phishing cases where victims need to show fund paths to counsel or reporting channels."
+        "title": "धोखाधड़ी और सामाजिक इंजीनियरिंग",
+        "desc": "निवेश धोखा, प्रतिरूपण और फ़िशिंग, जब पीड़ितों को सलाहकार या रिपोर्टिंग चैनलों को धन का मार्ग दिखाना हो।"
       },
       "ransom": {
-        "title": "Extortion payments",
-        "desc": "Ransomware or blackmail payments where law enforcement or insurers require documented flow analysis from payment wallets."
+        "title": "जबरन वसूली के भुगतान",
+        "desc": "रैनसमवेयर या ब्लैकमेल भुगतान, जब विधि प्रवर्तन या बीमाकर्ता भुगतान वॉलेट से दस्तावेज़ी प्रवाह विश्लेषण माँगते हैं।"
       },
       "insolvency": {
-        "title": "Disputes and insolvency",
-        "desc": "Bankruptcy, creditor enforcement, or internal investigations where attachable crypto or treasury movements must be verified."
-      }
-    },
-    "panel": {
-      "title": "Confidential handling",
-      "description": "Case materials are shared only with parties authorized under the engagement — not used outside the defined scope.",
-      "items": {
-        "nda": "NDA available on request",
-        "encrypted": "Encrypted intake and file transfer",
-        "privacy": "Privacy-aligned data handling"
+        "title": "विवाद और दिवालियापन",
+        "desc": "दिवालियापन, लेनदार प्रवर्तन या आंतरिक जाँच, जब कुर्क योग्य क्रिप्टो या ट्रेज़री गतिविधि सत्यापित करनी हो।"
       }
     }
   },
   "Process": {
-    "title": "Investigation process",
+    "title": "जाँच प्रक्रिया",
     "steps": {
       "intake": {
-        "title": "Intake and scoping",
-        "desc": "Known addresses, transaction hashes, timelines, and what questions the matter needs answered — before analysis hours are committed."
+        "title": "ग्रहण और दायरा",
+        "desc": "ज्ञात पते, लेनदेन हैश, समयरेखा, और वे प्रश्न जिनका उत्तर मामला माँगता है — विश्लेषण के घंटे लगाने से पहले।"
       },
       "extract": {
-        "title": "Data extraction",
-        "desc": "Pull relevant on-chain data across supported networks, including internal transfers, contract interactions, and exchange touchpoints where visible."
+        "title": "डेटा निष्कर्षण",
+        "desc": "समर्थित नेटवर्क पर प्रासंगिक ऑन-चेन डेटा निकालें, जिसमें आंतरिक हस्तांतरण, अनुबंध इंटरैक्शन और जहाँ दिखें वहाँ एक्सचेंज संपर्क बिंदु शामिल हैं।"
       },
       "analyze": {
-        "title": "Analysis and clustering",
-        "desc": "Map flows, cluster related addresses, and separate verified movements from inference — with limits stated explicitly."
+        "title": "विश्लेषण और क्लस्टरिंग",
+        "desc": "प्रवाह का नक्शा बनाएँ, संबंधित पतों को समूहित करें, और सत्यापित गतिविधि को अनुमान से अलग करें — सीमाएँ स्पष्ट लिखी जाती हैं।"
       },
       "deliver": {
-        "title": "Report and next steps",
-        "desc": "Deliver findings with recommended paths: exchange escalation, legal process, recovery coordination, or closure when trails are exhausted."
+        "title": "रिपोर्ट और अगले कदम",
+        "desc": "निष्कर्ष सुझाए मार्गों के साथ दें: एक्सचेंज एस्केलेशन, कानूनी प्रक्रिया, रिकवरी समन्वय, या जब निशान समाप्त हों तो बंद करना।"
       }
     }
   },
   "Cta": {
-    "title": "Need a forensic read on a case?",
-    "description": "Share what happened and the on-chain details you already have. We respond with an honest assessment of what tracing can show before scoped engagement.",
-    "btn_primary": "Contact forensics team",
-    "btn_secondary": "Crypto recovery"
+    "title": "किसी केस पर फ़ोरेंसिक आकलन चाहिए?",
+    "description": "बताएँ क्या हुआ और आपके पास पहले से कौन-से ऑन-चेन विवरण हैं। निर्धारित कार्य से पहले हम ईमानदारी से बताते हैं कि अनुरेखण क्या दिखा सकता है।",
+    "btn_primary": "फ़ोरेंसिक टीम से संपर्क करें",
+    "btn_secondary": "क्रिप्टो रिकवरी"
   }
 }

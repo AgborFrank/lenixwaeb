@@ -9,7 +9,7 @@
     "eyebrow_highlight": "मल्टी-चेन",
     "eyebrow_suffix": " वॉलेट",
     "title_prefix": "भेजें, रखें और उधार लें — जरूरत पर ",
-    "title_highlight1": "recovery",
+    "title_highlight1": "पुनर्प्राप्ति",
     "title_mid": ", एक ही ",
     "title_highlight2": "ऐप",
     "subtitle": "रोज़मर्रा के क्रिप्टो के लिए non-custodial वॉलेट — आपके डिवाइस पर एन्क्रिप्टेड, डिफ़ॉल्ट रूप से मल्टी-चेन, और Lenix lending व recovery से जुड़ा जब साधारण send काफी न हो।",
@@ -38,33 +38,33 @@
       "loans": {
         "title": "Collateral ऋण",
         "desc": "position बेचे बिना supported assets पर stablecoins उधार लें — confirm से पहले terms और collateral ratio दिखाए जाते हैं।",
-        "link": "View lending"
+        "link": "लेंडिंग देखें"
       },
       "recovery": {
         "title": "Recovery मार्ग",
         "desc": "अगर assets खो जाएँ या चोरी हों, Lenix ecosystem से recovery case खोलें — tracing और exchange coordination जब standard wallet flow काफी न हो।",
-        "link": "Start recovery"
+        "link": "रिकवरी शुरू करें"
       },
       "multichain": {
-        "title": "Multi-chain balances",
-        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+        "title": "मल्टी-चेन बैलेंस",
+        "desc": "एक वॉलेट से Ethereum, BNB Chain और Polygon पर संपत्ति और इतिहास देखें — अलग ऐप के बिना नेटवर्क बदलें।"
       },
       "transfers": {
-        "title": "Send, receive, swap",
-        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+        "title": "भेजें, प्राप्त करें, स्वैप करें",
+        "desc": "टोकन ले जाएँ, प्राप्त पता कॉपी करें और समर्थित संपत्ति स्वैप करें — जहाँ एकीकृत प्रदाता उपलब्ध हों, वहाँ खरीद विकल्प के साथ।"
       },
       "access": {
-        "title": "Web and mobile",
-        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+        "title": "वेब और मोबाइल",
+        "desc": "lenixwallet.com पर ब्राउज़र वॉलेट इस्तेमाल करें या ऐप डाउनलोड करें — एक बार बनाएँ, रिकवरी फ़्रेज़ से दोनों पर इंपोर्ट करें।"
       }
     },
-    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "networks_line": "Ethereum, BNB Chain और Polygon पर उपलब्ध।",
     "groups": {
       "wallet": {
-        "title": "In the wallet"
+        "title": "वॉलेट में"
       },
       "platform": {
-        "title": "Through Lenix"
+        "title": "Lenix के माध्यम से"
       }
     }
   },
@@ -104,7 +104,7 @@
     "title": "Lenix Wallet डाउनलोड",
     "subtitle": "मिनटों में wallet बनाएँ या import करें। send, receive, swap और loan के लिए वही app — जरूरत पर Lenix recovery उपलब्ध।",
     "btn_download": "ऐप डाउनलोड",
-    "btn_web": "Open web wallet"
+    "btn_web": "वेब वॉलेट खोलें"
   },
   "Networks": {
     "eyebrow": "Supported networks",
@@ -117,48 +117,48 @@
     }
   },
   "GettingStarted": {
-    "eyebrow": "Getting started",
-    "title": "Up and running in three steps",
-    "step_label": "Step {number}",
+    "eyebrow": "शुरुआत",
+    "title": "तीन चरणों में तैयार",
+    "step_label": "चरण {number}",
     "steps": {
       "create": {
-        "title": "Create or import",
-        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+        "title": "बनाएँ या इंपोर्ट करें",
+        "desc": "नया वॉलेट बनाएँ या 12 या 24 शब्दों वाले रिकवरी फ़्रेज़ से बहाल करें।"
       },
       "secure": {
-        "title": "Set password and backup",
-        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+        "title": "पासवर्ड और बैकअप",
+        "desc": "वॉलेट पासवर्ड चुनें और रिकवरी फ़्रेज़ ऑफ़लाइन रखें — Lenix इसे आपके लिए रीसेट नहीं कर सकता।"
       },
       "use": {
-        "title": "Send, swap, or borrow",
-        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+        "title": "भेजें, स्वैप करें या उधार लें",
+        "desc": "संपत्ति ले जाएँ, चेन के हिसाब से इतिहास देखें, या Lenix इकोसिस्टम से लेंडिंग और रिकवरी फ़्लो खोलें।"
       }
     }
   },
   "Ecosystem": {
-    "eyebrow": "Lenix ecosystem",
-    "title": "Wallet connects to the rest of the platform",
-    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "eyebrow": "Lenix इकोसिस्टम",
+    "title": "वॉलेट बाकी प्लेटफ़ॉर्म से जुड़ता है",
+    "description": "संपत्ति यहाँ रखें। जब ट्रांसफ़र से ज़्यादा चाहिए, लिंक किए फ़्लो का पालन करें।",
     "cards": {
       "wallet": {
-        "title": "Lenix Wallet",
-        "desc": "Create, unlock, send, and receive.",
-        "cta": "Open wallet"
+        "title": "Lenix वॉलेट",
+        "desc": "बनाएँ, अनलॉक करें, भेजें और प्राप्त करें।",
+        "cta": "वॉलेट खोलें"
       },
       "loan": {
-        "title": "Crypto loan",
-        "desc": "Borrow against vaulted collateral.",
-        "cta": "View lending"
+        "title": "क्रिप्टो ऋण",
+        "desc": "वॉल्ट में रखे कोलैटरल पर उधार लें।",
+        "cta": "लेंडिंग देखें"
       },
       "recovery": {
-        "title": "Asset recovery",
-        "desc": "Trace stolen or misdirected funds.",
-        "cta": "Start recovery"
+        "title": "संपत्ति रिकवरी",
+        "desc": "चुराई या गलत भेजी गई धनराशि का पता लगाएँ।",
+        "cta": "रिकवरी शुरू करें"
       },
       "security": {
-        "title": "Security",
-        "desc": "Audits and operational controls.",
-        "cta": "Read security"
+        "title": "सुरक्षा",
+        "desc": "ऑडिट और परिचालन नियंत्रण।",
+        "cta": "सुरक्षा पढ़ें"
       }
     }
   },

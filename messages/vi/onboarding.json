@@ -1,209 +1,222 @@
 {
   "Shell": {
-    "skip": "Skip for now",
-    "back": "Back",
+    "skip": "Bỏ qua lúc này",
+    "back": "Quay lại",
     "logoAlt": "Lenix Protocol",
-    "progressAria": "Progress",
-    "asideAria": "Help and information"
+    "progressAria": "Tiến độ",
+    "asideAria": "Trợ giúp và thông tin"
   },
   "Progress": {
-    "stepOf": "Step {current} of {total}",
+    "stepOf": "Bước {current} / {total}",
     "flows": {
       "selection": {
-        "1": "Service",
-        "2": "Details",
-        "3": "Complete"
+        "1": "Dịch vụ",
+        "2": "Chi tiết",
+        "3": "Hoàn tất"
       },
       "recovery": {
-        "1": "Service",
-        "2": "Case details"
+        "1": "Dịch vụ",
+        "2": "Chi tiết hồ sơ"
       },
       "loan": {
-        "1": "Service",
-        "2": "Loan details",
-        "3": "Payout"
+        "1": "Dịch vụ",
+        "2": "Chi tiết khoản vay",
+        "3": "Giải ngân"
       },
       "banking": {
-        "1": "Service",
-        "2": "Banking details"
+        "1": "Dịch vụ",
+        "2": "Chi tiết ngân hàng"
       }
     }
   },
   "Selection": {
-    "title": "Choose your service",
-    "description": "Select the Lenix service that matches your request. You will complete a short intake form in the next step.",
-    "legend": "Select a service",
-    "sectionTitle": "Available services",
-    "sectionDesc": "Select one option to continue.",
-    "continue": "Continue",
+    "title": "Bạn đến đây vì việc gì?",
+    "description": "Chọn dịch vụ bạn cần để bắt đầu.",
+    "legend": "Chọn một dịch vụ",
+    "sectionTitle": "Dịch vụ",
+    "sectionDesc": "Bắt buộc.",
+    "continue": "Tiếp tục",
     "services": {
       "recovery": {
-        "title": "Crypto asset recovery",
-        "description": "Trace lost or stolen funds and build evidence for lawful recovery steps with our forensics team."
+        "title": "Khôi phục tiền bị mất",
+        "description": "Truy vết crypto bị đánh cắp hoặc thất lạc cùng đội pháp y của chúng tôi và lập hồ sơ để khôi phục."
       },
       "loan": {
-        "title": "Crypto-backed loan",
-        "description": "Borrow against approved collateral with rates, LTV, and repayment terms shown before disbursement."
+        "title": "Vay bằng crypto",
+        "description": "Vay tiền mặt, dùng crypto làm tài sản thế chấp. Xem lãi suất và điều khoản trước."
       },
       "banking": {
-        "title": "Finance & Banking",
-        "description": "Cross-border transfers, crypto liquidation, custody, and remittance on corridors Lenix supports."
+        "title": "Dịch vụ ngân hàng",
+        "description": "Gửi và nhận tiền xuyên biên giới, đổi crypto sang tiền mặt, hoặc lưu trữ tài sản an toàn."
       }
     }
   },
   "Details": {
-    "backToSelection": "Back to service selection",
-    "backToLoan": "Back to loan details",
+    "backToSelection": "Quay lại chọn dịch vụ",
+    "backToLoan": "Quay lại chi tiết khoản vay",
     "recovery": {
-      "title": "Asset recovery case details",
-      "description": "Provide transaction and incident information so our team can assess the trail and next steps."
+      "title": "Hãy cho chúng tôi biết chuyện đã xảy ra",
+      "description": "Chúng tôi cần một số chi tiết về giao dịch và sự cố."
     },
     "banking": {
-      "title": "Finance & Banking details",
-      "description": "Tell us which banking service you need and your corridor so we can confirm support and next steps."
+      "title": "Bắt đầu nào",
+      "description": "Cho chúng tôi biết bạn cần gì và bạn đang ở đâu."
     },
     "loan": {
-      "title": "Loan application details",
-      "description": "Tell us how much you need and what collateral you will post. Next, you will choose how to receive funds."
+      "title": "Đơn vay",
+      "description": "Chọn loại khoản vay và cho chúng tôi biết bạn cần bao nhiêu."
     },
     "payout": {
-      "title": "How should we send your funds?",
-      "description": "Choose a payout method and enter the details we need to disburse your loan."
+      "title": "Chúng tôi nên gửi tiền đến đâu?",
+      "description": "Chọn cách bạn muốn nhận tiền."
     }
   },
   "Aside": {
     "recovery": {
-      "title": "Recovery intake",
-      "body": "Provide accurate transaction details to help our forensics team trace funds and document next steps.",
-      "bullet1": "Chain analysis by certified analysts",
-      "bullet2": "Evidence preserved for legal review",
-      "bullet3": "Case updates in your dashboard"
+      "title": "Tiếp nhận hồ sơ khôi phục",
+      "body": "Cung cấp chi tiết giao dịch chính xác để đội pháp y truy vết tiền và ghi lại các bước tiếp theo.",
+      "bullet1": "Phân tích chuỗi bởi chuyên viên được chứng nhận",
+      "bullet2": "Bằng chứng được lưu để xem xét pháp lý",
+      "bullet3": "Cập nhật hồ sơ trên bảng điều khiển của bạn"
     },
     "loan": {
-      "title": "Loan application",
-      "body": "Terms, LTV, and collateral requirements are shown before you commit. Payout details are collected in the final step.",
-      "bullet1": "Transparent rates before disbursement",
-      "bullet2": "Collateral held in Lenix custody",
-      "bullet3": "Multiple payout methods supported"
+      "title": "Đơn vay",
+      "body": "Điều khoản, LTV và yêu cầu thế chấp được hiển thị trước khi bạn cam kết. Chi tiết giải ngân được thu ở bước cuối.",
+      "bullet1": "Lãi suất minh bạch trước khi giải ngân",
+      "bullet2": "Tài sản thế chấp do Lenix lưu ký",
+      "bullet3": "Hỗ trợ nhiều phương thức giải ngân"
     },
     "banking": {
-      "title": "Banking services",
-      "body": "Lenix operates transfers, liquidation, lending, and custody directly — not white-label infrastructure.",
-      "bullet1": "Quoted rates before confirmation",
-      "bullet2": "KYC on supported corridors",
-      "bullet3": "Finance-grade audit trail"
+      "title": "Tiếp theo sẽ là gì",
+      "body": "Chúng tôi sẽ xem xét yêu cầu và phản hồi trong vòng 24 giờ, kèm các bước tiếp theo và báo giá.",
+      "bullet1": "Nhận báo giá với phí minh bạch",
+      "bullet2": "Hoàn tất xác minh nếu cần",
+      "bullet3": "Theo dõi mọi thứ trên bảng điều khiển"
     },
-    "encryption": "Your information is encrypted in transit and at rest. See our privacy policy for data handling practices.",
-    "support": "Need help? Contact support via Telegram after submitting your intake."
+    "encryption": "Dữ liệu của bạn được mã hóa và bảo mật. Chúng tôi không chia sẻ thông tin của bạn khi chưa được phép.",
+    "support": "Có câu hỏi? Liên hệ trên Telegram sau khi bạn gửi."
   },
   "Common": {
     "required": "*",
-    "fullName": "Full name",
-    "phoneNumber": "Phone number",
-    "submitFinish": "Submit and finish",
-    "continue": "Continue",
-    "continuePayout": "Continue to payout",
-    "submitting": "Submitting…",
-    "privacyPrefix": "Lenix may contact you about this case. See our",
-    "privacyPrefixBanking": "A Lenix banking specialist will follow up on supported corridors. See our",
-    "privacyPolicy": "Privacy Policy",
-    "privacySuffix": ".",
-    "placeholderName": "John Doe",
-    "selectCountry": "Select country",
-    "selectService": "Select a service",
-    "selectBlockchain": "Select blockchain",
-    "selectCurrency": "Select currency",
-    "selectAsset": "Select asset",
-    "selectNetwork": "Select network",
-    "somethingWrong": "Something went wrong",
-    "pleaseLogin": "Please log in"
+    "fullName": "Tên của bạn",
+    "phoneNumber": "Số điện thoại (không bắt buộc)",
+    "submitFinish": "Gửi yêu cầu",
+    "continue": "Tiếp tục",
+    "continuePayout": "Tiếp tục đến bước giải ngân",
+    "submitting": "Đang gửi...",
+    "privacyPrefix": "Chúng tôi sẽ liên hệ nếu cần thêm thông tin. Xem ",
+    "privacyPrefixBanking": "Chúng tôi sẽ liên hệ sớm. Xem ",
+    "privacyPolicy": "chính sách quyền riêng tư",
+    "privacySuffix": " để biết chi tiết.",
+    "placeholderName": "vd. Sarah Chen",
+    "selectCountry": "Chọn quốc gia",
+    "selectService": "Chọn một mục",
+    "selectBlockchain": "Chọn chuỗi khối",
+    "selectCurrency": "Chọn loại tiền",
+    "selectAsset": "Chọn tài sản",
+    "selectNetwork": "Chọn mạng",
+    "somethingWrong": "Đã xảy ra lỗi. Vui lòng thử lại.",
+    "pleaseLogin": "Vui lòng đăng nhập để tiếp tục"
   },
   "RecoveryForm": {
-    "sectionTitle": "Incident information",
-    "sectionDesc": "Provide transaction details and a summary of what occurred.",
-    "transactionHash": "Transaction hash or wallet address",
-    "amountLost": "Approximate amount lost",
-    "amountPlaceholder": "e.g. 200000",
-    "transactionPlaceholder": "0x1234… or wallet address",
-    "blockchain": "Blockchain",
-    "currency": "Currency",
-    "incidentSummary": "Incident summary",
-    "incidentPlaceholder": "Describe what happened, when it occurred, and any parties involved.",
-    "evidence": "Supporting evidence",
-    "evidenceHint": "Screenshot or PDF (optional)"
+    "contactSectionTitle": "Thông tin liên hệ",
+    "contactSectionDesc": "Cách đội ngũ của chúng tôi liên hệ với bạn về hồ sơ này.",
+    "transactionSectionTitle": "Chi tiết giao dịch",
+    "transactionSectionDesc": "Mã định danh on-chain và số tiền mất, để đội pháp y xem xét.",
+    "incidentSectionTitle": "Sự cố và bằng chứng",
+    "incidentSectionDesc": "Mô tả chuyện đã xảy ra và đính kèm tệp hỗ trợ.",
+    "sectionTitle": "Thông tin sự cố",
+    "sectionDesc": "Cung cấp chi tiết giao dịch và tóm tắt những gì đã xảy ra.",
+    "transactionHash": "Hash giao dịch hoặc địa chỉ ví",
+    "amountLost": "Số tiền mất ước tính",
+    "amountPlaceholder": "vd. 200000",
+    "transactionPlaceholder": "0x1234… hoặc địa chỉ ví",
+    "blockchain": "Chuỗi khối",
+    "currency": "Loại tiền",
+    "incidentSummary": "Tóm tắt sự cố",
+    "incidentPlaceholder": "Mô tả chuyện đã xảy ra, thời điểm, và các bên liên quan.",
+    "evidence": "Bằng chứng hỗ trợ",
+    "evidenceHint": "Ảnh chụp màn hình hoặc PDF (không bắt buộc)",
+    "fileDropTitle": "Tải bằng chứng lên",
+    "fileDropHint": "PNG, JPG hoặc PDF, tối đa 10 MB"
   },
   "BankingForm": {
-    "sectionTitle": "Account & service details",
-    "sectionDesc": "Tell us who you are and which banking service you need on your corridor.",
-    "countryCorridor": "Country / corridor",
-    "serviceNeeded": "Service needed",
-    "additionalDetails": "Additional details",
-    "notesPlaceholder": "Describe the transfer amount, beneficiary market, or account setup you need.",
+    "contactSectionTitle": "Về bạn",
+    "contactSectionDesc": "Chúng tôi dùng thông tin này để liên hệ về yêu cầu của bạn.",
+    "serviceSectionTitle": "Bạn cần gì",
+    "serviceSectionDesc": "Giúp chúng tôi hiểu bạn đang tìm dịch vụ nào.",
+    "sectionTitle": "Chi tiết tài khoản và dịch vụ",
+    "sectionDesc": "Cho chúng tôi biết bạn là ai và bạn cần dịch vụ ngân hàng nào trên tuyến của mình.",
+    "countryCorridor": "Quốc gia / tuyến",
+    "serviceNeeded": "Bạn cần hỗ trợ việc gì?",
+    "additionalDetails": "Còn điều gì chúng tôi nên biết?",
+    "notesPlaceholder": "Cho chúng tôi biết số tiền, điểm đến, hoặc việc bạn đang muốn làm...",
     "services": {
-      "transfer": "Money transfer",
-      "liquidation": "Asset liquidation",
-      "lending": "Collateral lending",
-      "custody": "Custody & wallet"
+      "transfer": "Gửi tiền",
+      "receive": "Nhận tiền / tài sản",
+      "liquidation": "Đổi crypto sang tiền mặt",
+      "lending": "Vay thế chấp bằng crypto",
+      "custody": "Lưu trữ và bảo vệ tài sản"
     }
   },
   "LoanForm": {
-    "noProducts": "No loan products are available right now. Please check back later.",
-    "productTitle": "Loan product",
-    "productDesc": "Select the product that matches your needs.",
-    "productApr": "{rate}% APR · up to {ltv}% LTV",
-    "productCollateral": "Collateral ${min} – ${max}",
-    "selectedHint": "Selected: {name} — review terms before continuing.",
-    "paramsTitle": "Loan parameters",
-    "paramsDesc": "Enter the amount and collateral details for your application.",
-    "loanAmount": "Loan amount (USD)",
+    "noProducts": "Hiện chưa có sản phẩm vay. Vui lòng quay lại sau.",
+    "productTitle": "Sản phẩm vay",
+    "productDesc": "Chọn sản phẩm phù hợp với nhu cầu của bạn.",
+    "productApr": "{rate}% APR · tối đa {ltv}% LTV",
+    "productCollateral": "Tài sản thế chấp ${min} – ${max}",
+    "selectedHint": "Đã chọn: {name} — xem lại điều khoản trước khi tiếp tục.",
+    "paramsTitle": "Thông số khoản vay",
+    "paramsDesc": "Nhập số tiền và chi tiết tài sản thế chấp cho đơn của bạn.",
+    "loanAmount": "Số tiền vay (USD)",
     "loanAmountPlaceholder": "5000",
-    "collateralAsset": "Collateral asset",
-    "loanTerm": "Loan term",
+    "collateralAsset": "Tài sản thế chấp",
+    "loanTerm": "Kỳ hạn vay",
     "durations": {
-      "6": "6 months",
-      "12": "12 months",
-      "24": "24 months"
+      "6": "6 tháng",
+      "12": "12 tháng",
+      "24": "24 tháng"
     }
   },
   "PayoutForm": {
-    "contactTitle": "Contact details",
-    "contactDesc": "Provide at least one way to reach you.",
-    "telegramWhatsapp": "Telegram or WhatsApp",
-    "telegramPlaceholder": "@username or +1234567890",
+    "contactTitle": "Thông tin liên hệ",
+    "contactDesc": "Cung cấp ít nhất một cách để chúng tôi liên hệ với bạn.",
+    "telegramWhatsapp": "Telegram hoặc WhatsApp",
+    "telegramPlaceholder": "@username hoặc +1234567890",
     "phonePlaceholder": "+1 234 567 8900",
-    "methodTitle": "Payout method",
-    "methodDesc": "How should we disburse your loan?",
+    "methodTitle": "Phương thức giải ngân",
+    "methodDesc": "Chúng tôi nên giải ngân khoản vay bằng cách nào?",
     "methods": {
       "crypto": {
-        "label": "Crypto wallet",
-        "desc": "Send to your on-chain address"
+        "label": "Ví crypto",
+        "desc": "Gửi đến địa chỉ on-chain của bạn"
       },
       "wire_transfer": {
-        "label": "Wire transfer",
-        "desc": "International SWIFT transfer"
+        "label": "Chuyển khoản wire",
+        "desc": "Chuyển SWIFT quốc tế"
       },
       "bank": {
-        "label": "Bank account",
-        "desc": "Domestic ACH or local transfer"
+        "label": "Tài khoản ngân hàng",
+        "desc": "ACH nội địa hoặc chuyển khoản trong nước"
       }
     },
-    "cryptoTitle": "Crypto payout",
-    "walletAddress": "Wallet address",
-    "walletPlaceholder": "0x… or your address",
-    "network": "Network",
-    "memo": "Memo / tag",
-    "memoPlaceholder": "Required by some networks",
-    "wireTitle": "Wire transfer details",
-    "bankName": "Bank name",
-    "bankNamePlaceholder": "e.g. Chase, HSBC",
+    "cryptoTitle": "Giải ngân bằng crypto",
+    "walletAddress": "Địa chỉ ví",
+    "walletPlaceholder": "0x… hoặc địa chỉ của bạn",
+    "network": "Mạng",
+    "memo": "Ghi chú / tag",
+    "memoPlaceholder": "Một số mạng yêu cầu",
+    "wireTitle": "Chi tiết chuyển khoản wire",
+    "bankName": "Tên ngân hàng",
+    "bankNamePlaceholder": "vd. Chase, HSBC",
     "swiftBic": "SWIFT / BIC",
     "swiftPlaceholder": "CHASUS33",
-    "accountIban": "Account / IBAN",
-    "accountHolder": "Account holder",
-    "reference": "Reference",
-    "bankAccountTitle": "Bank account details",
-    "accountNumber": "Account number",
-    "routingIban": "Routing / IBAN"
+    "accountIban": "Tài khoản / IBAN",
+    "accountHolder": "Chủ tài khoản",
+    "reference": "Nội dung chuyển khoản",
+    "bankAccountTitle": "Chi tiết tài khoản ngân hàng",
+    "accountNumber": "Số tài khoản",
+    "routingIban": "Mã định tuyến / IBAN"
   },
   "Blockchains": {
     "BTC": "Bitcoin (BTC)",
@@ -220,7 +233,7 @@
     "KAVA": "Kava (KAVA)",
     "POL": "Polkadot (POL)",
     "SUI": "Sui (SUI)",
-    "OTHER": "Other"
+    "OTHER": "Khác"
   },
   "CollateralAssets": {
     "BTC": "Bitcoin (BTC)",

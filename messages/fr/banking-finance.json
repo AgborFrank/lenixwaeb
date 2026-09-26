@@ -1,169 +1,141 @@
 {
   "meta": {
-    "title": "Banking & Finance Services | Lenix Protocol",
-    "description": "Lenix runs money transfer, voluntary crypto liquidation, collateral lending, and custody for customers — with KYC, corridor limits, and quoted rates before you commit."
+    "title": "Services bancaires et financiers | Lenix Protocol",
+    "description": "Lenix opère le transfert d'argent, la liquidation volontaire de crypto, le prêt sur collatéral et la custody pour ses clients — avec KYC, limites de corridor et taux cotés avant engagement."
   },
   "Hero": {
-    "badge": "Banking & finance",
-    "title1": "Cross-Border Financial Services, ",
-    "title2": "Payment and Remittance",
-    "subtitle": "Send Funds across borders, cash out crypto to fiat, borrow against vaulted collateral, and hold assets in Lenix custody — not white-label infrastructure for other banks.",
-    "btn_primary": "Open an account",
-    "btn_secondary": "View services"
+    "badge": "Banque et finance",
+    "title1": "Services financiers transfrontaliers, ",
+    "title2": "paiement et remittance",
+    "subtitle": "Envoyez des fonds à l'étranger, convertissez la crypto en fiat, empruntez contre un collatéral en vault et conservez des actifs en custody Lenix — pas une infrastructure en marque blanche pour d'autres banques."
   },
   "Actions": {
-    "register": "Create account",
-    "download": "Download app",
-    "login": "Log in",
-    "contact": "Contact team",
-    "google_play": "Get it on Google Play",
-    "app_store": "Download on the App Store"
+    "register": "Créer un compte",
+    "download": "Télécharger l'application"
   },
   "Overview": {
-    "title": "Lenix operates the full workflow",
-    "description": "You work with Lenix directly: verify identity, fund your account, request a transfer or liquidation, or post collateral for a loan. Rates, fees, and delivery status are visible before you confirm — finance and ops are not guessing what happens next."
+    "title": "Lenix opère le workflow complet",
+    "description": "Vous travaillez directement avec Lenix : vérifiez votre identité, alimentez votre compte, demandez un transfert ou une liquidation, ou déposez un collatéral pour un prêt. Taux, frais et statut de livraison sont visibles avant confirmation — la finance et les opérations ne devinent pas la suite."
   },
   "Services": {
-    "eyebrow": "What we run",
-    "title": "Core services for customers",
-    "description": "Each service has its own intake in the Lenix dashboard. Pick the workflow that matches what you need today.",
+    "eyebrow": "Ce que nous opérons",
+    "title": "Services essentiels pour les clients",
+    "description": "Chaque service a son propre intake dans le tableau de bord Lenix. Choisissez le workflow qui correspond à votre besoin du jour.",
     "items": {
       "transfer": {
-        "title": "Money transfer",
-        "desc": "Move value from crypto to fiat and into a beneficiary bank account on corridors Lenix supports today."
+        "title": "Transfert d'argent",
+        "desc": "Déplacez de la valeur de la crypto vers le fiat, jusqu'à un compte bancaire bénéficiaire, sur les corridors que Lenix prend en charge aujourd'hui."
       },
       "liquidation": {
-        "title": "Asset liquidation",
-        "desc": "Voluntarily sell approved crypto holdings and receive fiat payout — separate from loan collateral liquidation."
+        "title": "Liquidation d'actifs",
+        "desc": "Vendez volontairement des avoirs crypto approuvés et recevez un paiement en fiat — distinct de la liquidation de collatéral de prêt."
       },
       "lending": {
-        "title": "Collateral lending",
-        "desc": "Post eligible collateral and draw stablecoins or fiat while terms, LTV, and repayment schedules stay visible upfront."
+        "title": "Prêt sur collatéral",
+        "desc": "Déposez un collatéral éligible et tirez des stablecoins ou du fiat, avec conditions, LTV et échéancier de remboursement visibles d'emblée."
       },
       "custody": {
-        "title": "Custody & wallet",
-        "desc": "Hold and move supported assets through Lenix wallet and vault controls with activity history your team can audit."
+        "title": "Custody et wallet",
+        "desc": "Détenez et déplacez les actifs pris en charge via le wallet et les contrôles de vault Lenix, avec un historique d'activité que votre équipe peut auditer."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "transfer": {
-        "label": "Cross-border transfer",
-        "title": "Crypto to bank, with corridor clarity",
-        "body": "Initiate from your Lenix account, see the quoted rate and fees, and track handoff from on-chain receipt through fiat delivery — not a single pending flag with no context."
+        "label": "Transfert transfrontalier",
+        "title": "De la crypto à la banque, avec des corridors clairs",
+        "body": "Lancez depuis votre compte Lenix, voyez le taux coté et les frais, et suivez le passage de la réception on-chain jusqu'à la livraison fiat — pas un simple statut en attente sans contexte."
       },
       "settlement": {
-        "label": "Fiat settlement",
-        "title": "Treasury-ready payout records",
-        "body": "Settlement details, beneficiary references, and status timestamps suitable for finance review — so cross-border payouts can be reconciled like any other treasury movement."
+        "label": "Règlement fiat",
+        "title": "Écritures de paiement prêtes pour la trésorerie",
+        "body": "Détails de règlement, références bénéficiaire et horodatages de statut adaptés à la revue finance — pour rapprocher les paiements transfrontaliers comme tout autre mouvement de trésorerie."
       },
       "liquidation": {
-        "label": "Voluntary liquidation",
-        "title": "Cash out without a loan position",
-        "body": "Convert approved crypto to fiat when you choose to exit a holding. Quote, fees, and expected payout are shown before you confirm — this is not collateral seizure from an underwater loan."
+        "label": "Liquidation volontaire",
+        "title": "Sortir en cash sans position de prêt",
+        "body": "Convertissez une crypto approuvée en fiat quand vous choisissez de sortir d'une position. Cours, frais et paiement attendu s'affichent avant confirmation — ce n'est pas une saisie de collatéral sur un prêt sous l'eau."
       },
       "lending": {
-        "label": "Collateral lending",
-        "title": "Liquidity while assets stay vaulted",
-        "body": "Draw against posted collateral with LTV, repayment schedule, and health indicators visible before disbursement. Collateral remains in segregated custody for the loan term."
+        "label": "Prêt sur collatéral",
+        "title": "De la liquidité pendant que les actifs restent en vault",
+        "body": "Tirez contre le collatéral déposé, avec LTV, échéancier de remboursement et indicateurs de santé visibles avant le décaissement. Le collatéral reste en custody ségréguée pendant la durée du prêt."
       },
       "custody": {
-        "label": "Custody & controls",
-        "title": "Hold, send, and receive in one place",
-        "body": "Multi-chain wallet access, transaction history, and vault segregation for assets under Lenix custody — with the same identity and compliance checks applied across services."
+        "label": "Custody et contrôles",
+        "title": "Détenir, envoyer et recevoir au même endroit",
+        "body": "Accès wallet multi-chaînes, historique des transactions et ségrégation de vault pour les actifs en custody Lenix — avec les mêmes contrôles d'identité et de conformité sur tous les services."
       },
       "compliance": {
-        "label": "Compliance screening",
-        "title": "KYC and flow screening before release",
-        "body": "Identity verification for account opening and sanctions/AML screening on inbound and outbound flows — funds are not released until checks for that transaction complete."
+        "label": "Criblage de conformité",
+        "title": "KYC et criblage des flux avant libération",
+        "body": "Vérification d'identité à l'ouverture du compte et criblage sanctions/AML sur les flux entrants et sortants — les fonds ne sont pas libérés tant que les contrôles de la transaction ne sont pas terminés."
       }
     }
   },
   "Process": {
-    "title": "How it works",
+    "title": "Comment ça fonctionne",
     "steps": {
       "account": {
-        "title": "Create your Lenix account",
-        "desc": "Sign up, complete KYC, and set up payout details for the corridors you plan to use."
+        "title": "Créez votre compte Lenix",
+        "desc": "Inscrivez-vous, complétez le KYC et renseignez les coordonnées de paiement pour les corridors que vous comptez utiliser."
       },
       "fund": {
-        "title": "Fund or deposit crypto",
-        "desc": "Add supported assets to your Lenix wallet or vault — the same balance can feed transfers, liquidation, or collateral posting."
+        "title": "Alimentez ou déposez de la crypto",
+        "desc": "Ajoutez des actifs pris en charge à votre wallet ou vault Lenix — le même solde peut alimenter un transfert, une liquidation ou un dépôt de collatéral."
       },
       "request": {
-        "title": "Request a service",
-        "desc": "Start a transfer, voluntary liquidation, or loan draw. Review the quote, fees, and terms before you confirm."
+        "title": "Demandez un service",
+        "desc": "Lancez un transfert, une liquidation volontaire ou un tirage de prêt. Relisez le cours, les frais et les conditions avant de confirmer."
       },
       "track": {
-        "title": "Track through delivery",
-        "desc": "Follow status from initiation to bank credit or loan disbursement, with records available for your finance team."
+        "title": "Suivez jusqu'à la livraison",
+        "desc": "Suivez le statut de l'initiation jusqu'au crédit bancaire ou au décaissement du prêt, avec des écritures disponibles pour votre équipe finance."
       }
     }
   },
   "Boundaries": {
-    "eyebrow": "What to expect",
-    "title1": "Honest limits ",
-    "title2": "before you commit",
-    "subtitle": "Lenix is a service operator, not a universal bank. Scope, corridors, and regulatory treatment depend on your jurisdiction and the product you use.",
+    "eyebrow": "À quoi s'attendre",
+    "title1": "Des limites claires ",
+    "title2": "avant de vous engager",
+    "subtitle": "Lenix est un opérateur de services, pas une banque universelle. Le périmètre, les corridors et le traitement réglementaire dépendent de votre juridiction et du produit utilisé.",
     "items": {
       "corridors": {
-        "title": "Supported corridors only",
-        "desc": "Payout markets and banking rails are limited to corridors Lenix actively supports. Contact us if yours is not listed — we do not imply worldwide coverage."
+        "title": "Corridors pris en charge uniquement",
+        "desc": "Les marchés de paiement et les rails bancaires se limitent aux corridors que Lenix opère activement. Contactez-nous si le vôtre n'est pas listé — nous n'indiquons pas une couverture mondiale."
       },
       "kyc": {
-        "title": "KYC and AML required",
-        "desc": "Account opening and most outbound flows require identity verification and transaction screening. We cannot bypass compliance for expedited payout."
+        "title": "KYC et AML obligatoires",
+        "desc": "L'ouverture de compte et la plupart des flux sortants exigent une vérification d'identité et un criblage des transactions. Nous ne contournons pas la conformité pour accélérer un paiement."
       },
       "quotes": {
-        "title": "Quotes before confirmation",
-        "desc": "Rates, fees, and estimated delivery windows are shown before you submit a transfer, liquidation, or loan draw — not adjusted silently afterward."
+        "title": "Cours avant confirmation",
+        "desc": "Taux, frais et fenêtres de livraison estimées s'affichent avant l'envoi d'un transfert, d'une liquidation ou d'un tirage de prêt — ils ne sont pas ajustés en silence ensuite."
       },
       "liquidation_types": {
-        "title": "Two different liquidations",
-        "desc": "Voluntary asset liquidation is a customer-initiated cash-out. Loan collateral liquidation only applies when posted collateral falls below agreed LTV on an active loan."
+        "title": "Deux liquidations distinctes",
+        "desc": "La liquidation volontaire d'actifs est une sortie en cash initiée par le client. La liquidation de collatéral de prêt ne s'applique que lorsque le collatéral déposé passe sous le LTV convenu sur un prêt actif."
       },
       "timing": {
-        "title": "Delivery timing varies",
-        "desc": "Banking cutoffs, beneficiary bank processing, and corridor load affect settlement time. We show status updates; we do not guarantee instant fiat credit."
+        "title": "Les délais de livraison varient",
+        "desc": "Les cut-offs bancaires, le traitement de la banque bénéficiaire et la charge du corridor influent sur le délai de règlement. Nous affichons les mises à jour de statut ; nous ne garantissons pas un crédit fiat instantané."
       },
       "regulatory": {
-        "title": "Not a bank charter",
-        "desc": "Lenix provides crypto finance and settlement services under its operating licenses and partners. Product availability and protections vary by region — confirm what applies to you before moving funds."
+        "title": "Pas une licence bancaire",
+        "desc": "Lenix fournit des services de finance crypto et de règlement sous ses licences d'exploitation et avec ses partenaires. La disponibilité des produits et les protections varient selon la région — confirmez ce qui s'applique à vous avant de déplacer des fonds."
       }
     }
   },
   "Cta": {
-    "title": "Ready to use Lenix banking services?",
-    "description": "Open an account to start transfers, liquidation, or lending — or contact us if you need a corridor or workflow scoped before signup.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Log in",
+    "title": "Prêt à utiliser les services bancaires Lenix ?",
+    "description": "Ouvrez un compte pour lancer un transfert, une liquidation ou un prêt — ou contactez-nous si un corridor ou un workflow doit être cadré avant l'inscription.",
+    "btn_primary": "Contacter l'équipe",
+    "btn_secondary": "Connexion",
     "links": {
-      "loan": "Apply for a crypto loan",
-      "wallet": "Lenix Wallet",
-      "solutions": "All solutions"
-    }
-  },
-  "SectionCta": {
-    "overview": {
-      "title": "Open a Lenix account to get started",
-      "description": "Register, complete KYC, and access transfers, liquidation, lending, and custody from one dashboard — on web or mobile."
-    },
-    "services": {
-      "title": "Run these services from your account",
-      "description": "Each workflow lives in the Lenix app. Create an account to request transfers, cash out holdings, or post collateral for a loan."
-    },
-    "capabilities": {
-      "title": "Banking workflows in the Lenix app",
-      "description": "Download the mobile app or register on web to Send Funds, settle to fiat, borrow against collateral, and track every step."
-    },
-    "process": {
-      "title": "Ready to follow these steps?",
-      "description": "Create your account, complete verification, and start your first transfer or liquidation from the Lenix dashboard or mobile app."
-    },
-    "boundaries": {
-      "title": "Confirm your corridor, then register",
-      "description": "If your market is supported, open an account to begin. Need a corridor scoped first? Contact us before you move funds."
+      "loan": "Demander un prêt crypto",
+      "wallet": "Portefeuille Lenix",
+      "solutions": "Toutes les solutions"
     }
   }
 }

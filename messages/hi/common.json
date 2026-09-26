@@ -213,40 +213,40 @@
       "image_alt": "Lenix मर्चेंट और कंप्लायंस संचालन डैशबोर्ड"
     },
     "Payment": {
-      "badge": "Protocol stack",
-      "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "badge": "प्रोटोकॉल स्टैक",
+      "title": "एक ही परत पर मूल्य ले जाएँ, रखें और वापस पाएँ",
+      "subtitle": "भुगतान, कस्टडी, रिकवरी और उधार एक ही ऑडिटेड इंफ्रास्ट्रक्चर साझा करते हैं — चार अलग उत्पाद नहीं।",
       "cards": {
         "fiat": {
-          "title": "Crypto-to-fiat",
-          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
+          "title": "क्रिप्टो से फ़िएट",
+          "desc": "क्रॉस-बॉर्डर और रोज़मर्रा के उपयोग के लिए स्थानीय भुगतान रेल से क्रिप्टो को फ़िएट में निपटाएँ।"
         },
         "vault": {
-          "title": "Vault and custody",
-          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
+          "title": "वॉल्ट और कस्टडी",
+          "desc": "नियंत्रित संपत्ति भंडारण चाहने वाली टीमों के लिए मल्टी-सिग वॉल्ट और सुरक्षित कस्टडी।"
         },
         "recovery": {
-          "title": "Recovery and forensics",
-          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
+          "title": "रिकवरी और फोरेंसिक",
+          "desc": "संपत्ति खोने या विवाद होने पर ट्रेसिंग और साक्ष्य वर्कफ़्लो उसी स्टैक पर होते हैं।"
         },
         "lending": {
-          "title": "Lending",
-          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
+          "title": "उधार",
+          "desc": "ऑन-चेन नियंत्रण और स्पष्ट निपटान पथ के साथ कोलैटरल पर उधार लें।"
         }
       },
       "cta": "समाधान देखें"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " Token Details",
-      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "title2": " टोकन विवरण",
+      "subtitle": "Lenix Protocol टोकन को अपने वॉलेट में जोड़ने के लिए नीचे दी गई अनुबंध जानकारी का उपयोग करें।",
       "headers": {
-        "contract": "Contract Address",
-        "name": "Token Name",
-        "symbol": "Token Symbol",
-        "supply": "Token Supply",
-        "network": "Network",
-        "decimals": "Decimals"
+        "contract": "अनुबंध पता",
+        "name": "टोकन नाम",
+        "symbol": "टोकन प्रतीक",
+        "supply": "टोकन आपूर्ति",
+        "network": "नेटवर्क",
+        "decimals": "दशमलव"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -267,9 +267,9 @@
       "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Community ",
-      "title2": "giveaway",
-      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "title1": "समुदाय ",
+      "title2": "उपहार",
+      "subtitle": "दस विजेताओं को LNX में $25,000 मिलते हैं। समुदाय पेज पर प्रवेश चरण पूरे करें। शर्तें लागू।",
       "btn": "कम्युनिटी"
     },
     "Features": {
@@ -283,32 +283,32 @@
       "title_big": "विश्व स्तर पर स्थानीय भुगतान नेटवर्क के साथ क्रिप्टो को जोड़ना।",
       "desc1": "Lenix ProtocolPay क्रिप्टो धारकों और व्यवसायों को स्थानीय भुगतान नेटवर्क और ब्लॉकचेन तकनीक का लाभ उठाते हुए दुनिया भर में क्रिप्टो-टू-फिएट लेनदेन की सुविधा प्रदान करने के लिए सशक्त बनाता है।",
       "desc2": "अंत में, फिएट भुगतान की रोजमर्रा की सुविधा के साथ क्रिप्टो की गति का आनंद लें।",
-      "btn_whitepaper": "Whitepaper"
+      "btn_whitepaper": "श्वेतपत्र"
     },
     "LnxPurchaseWidget": {
-      "widget_title": "Buy LNX",
-      "widget_subtitle": "Protocol token sale",
-      "usd_raised": "USD raised so far:",
-      "tokens_sold": "Tokens sold:",
-      "price_usd": "USD price: ${price}",
-      "price_eth": "ETH price: {price} ETH",
-      "pay_eth": "ETH you pay",
-      "pay_usdt": "USDT you pay",
-      "pay_usd": "USD you pay",
-      "receive_lnx": "$LNX you receive",
-      "btn_processing": "Processing...",
-      "btn_pay_eth": "Pay with ETH",
-      "btn_pay_usdt": "Pay with USDT",
+      "widget_title": "LNX खरीदें",
+      "widget_subtitle": "प्रोटोकॉल टोकन बिक्री",
+      "usd_raised": "अब तक जुटाई गई USD:",
+      "tokens_sold": "बेचे गए टोकन:",
+      "price_usd": "USD मूल्य: ${price}",
+      "price_eth": "ETH मूल्य: {price} ETH",
+      "pay_eth": "आप जितना ETH देंगे",
+      "pay_usdt": "आप जितना USDT देंगे",
+      "pay_usd": "आप जितना USD देंगे",
+      "receive_lnx": "आपको मिलने वाले $LNX",
+      "btn_processing": "प्रोसेस हो रहा है...",
+      "btn_pay_eth": "ETH से भुगतान करें",
+      "btn_pay_usdt": "USDT से भुगतान करें",
       "btn_pay_card": "कार्ड से भुगतान",
-      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "card_info": "Stripe द्वारा संचालित। राशि USD में ली जाती है।",
       "btn_connect": "वॉलेट जोड़ें",
       "btn_giveaway": "LNX बोनस",
-      "giveaway_info": "Connect your wallet to check eligibility."
+      "giveaway_info": "पात्रता जाँचने के लिए वॉलेट कनेक्ट करें।"
     },
     "TokenSale": {
       "title1": "LNX ",
-      "title2": "token sale",
-      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+      "title2": "टोकन बिक्री",
+      "subtitle": "प्रोटोकॉल में भाग लेने के लिए LNX खरीदें। अनुबंध विवरण नीचे दिए गए हैं।"
     },
     "Partners": {
       "eyebrow": "इकोसिस्टम",
@@ -990,8 +990,8 @@
         "change_24h": "24 घं."
       },
       "location": {
-        "spot": "Spot",
-        "funding": "Funding"
+        "spot": "हाजिर",
+        "funding": "निधि"
       }
     },
     "accounts": {
@@ -1087,11 +1087,11 @@
       "type_legend": "स्थानांतरण प्रकार",
       "types": {
         "spot_to_funding": {
-          "label": "Spot → Funding",
+          "label": "हाजिर → निधि",
           "description": "भुगतान के लिए संपत्ति तैयार करें"
         },
         "funding_to_spot": {
-          "label": "Funding → Spot",
+          "label": "निधि → हाजिर",
           "description": "ट्रेडिंग के लिए संपत्ति वापस करें"
         },
         "funding_to_bank": {
@@ -1323,6 +1323,7 @@
       "payout_bank_sub": "ACH / SEPA",
       "wallet_address": "वॉलेट पता",
       "wallet_placeholder": "0x...",
+      "network": "नेटवर्क",
       "select_network": "नेटवर्क चुनें",
       "network_erc20": "Ethereum (ERC20)",
       "network_trc20": "Tron (TRC20)",

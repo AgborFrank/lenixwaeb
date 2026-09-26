@@ -108,11 +108,11 @@
       "photo": "Küresel Genişleme"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - Protokol yükseltmeleri",
+      "desc": "Akıllı sözleşmelerimiz ve borç verme altyapımızda büyük yükseltmeler; yeni teminat seçenekleri ve güçlendirilmiş güvenlik protokolleri.",
+      "tag1": "V2 yayında",
+      "tag2": "Güçlendirilmiş güvenlik",
+      "photo": "Protokol V2"
     },
     "step7": {
       "title": "2027 - Sektör Lideri",
@@ -122,18 +122,18 @@
       "photo": "Sektörel Tanınırlık"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - Kurumsal benimseme",
+      "desc": "Kurumsal sermaye için güvenli giriş ve çıkış rampaları sunmak üzere büyük geleneksel finans kurumlarıyla ortaklık.",
+      "tag1": "Kurumlar katıldı",
+      "tag2": "TradFi ortaklıkları",
+      "photo": "Wall Street entegrasyonu"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - Yapay zeka adli motoru",
+      "desc": "Yasadışı blokzinciri faaliyetlerini öngörerek analiz edebilen, yapay zeka destekli yeni nesil adli motorumuzu kullanıma aldık.",
+      "tag1": "Yapay zeka entegrasyonu",
+      "tag2": "Öngörülü adli analiz",
+      "photo": "Yapay zeka motorunun lansmanı"
     }
   },
   "Leadership": {

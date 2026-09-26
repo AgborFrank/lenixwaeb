@@ -108,11 +108,11 @@
       "photo": "Expansion Mondiale"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - Mises à niveau du protocole",
+      "desc": "Mises à niveau majeures de nos contrats intelligents et de l'infrastructure de prêt, avec de nouvelles options de garantie et des protocoles de sécurité renforcés.",
+      "tag1": "V2 lancé",
+      "tag2": "Sécurité renforcée",
+      "photo": "Protocole V2"
     },
     "step7": {
       "title": "2027 - Leader de l'Industrie",
@@ -122,18 +122,18 @@
       "photo": "Reconnaissance de l'Industrie"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - Adoption institutionnelle",
+      "desc": "Partenariats avec de grandes institutions financières traditionnelles pour des rampes d'entrée et de sortie sécurisées du capital institutionnel.",
+      "tag1": "Institutions intégrées",
+      "tag2": "Partenariats TradFi",
+      "photo": "Intégration à Wall Street"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - Moteur forensique IA",
+      "desc": "Lancement de notre moteur forensique de nouvelle génération, propulsé par l'IA, capable d'analyser de façon prédictive les activités illicites sur la blockchain.",
+      "tag1": "Intégration IA",
+      "tag2": "Forensique prédictive",
+      "photo": "Lancement du moteur IA"
     }
   },
   "Leadership": {

@@ -67,9 +67,9 @@
     "links": {
       "about_us": "Tentang Kami",
       "ecosystem": "Ekosistem",
-      "tokenomics": "Tokenomics",
-      "whitepaper": "Whitepaper",
-      "litepaper": "Litepaper",
+      "tokenomics": "Ekonomi token",
+      "whitepaper": "Makalah",
+      "litepaper": "Dokumen singkat",
       "roadmap": "Peta Jalan",
       "threat_intelligence": "Intelijen Ancaman",
       "defi_compliance": "Kepatuhan DeFi",
@@ -213,40 +213,40 @@
       "image_alt": "Dashboard operasi merchant dan compliance Lenix"
     },
     "Payment": {
-      "badge": "Protocol stack",
-      "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "badge": "Lapisan protokol",
+      "title": "Pindahkan, simpan, dan pulihkan nilai pada satu lapisan",
+      "subtitle": "Pembayaran, kustodi, pemulihan, dan pinjaman memakai infrastruktur teraudit yang sama — bukan empat produk yang terpisah.",
       "cards": {
         "fiat": {
-          "title": "Crypto-to-fiat",
-          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
+          "title": "Kripto ke fiat",
+          "desc": "Selesaikan kripto ke fiat lewat jalur pembayaran lokal, untuk lintas negara dan pemakaian harian."
         },
         "vault": {
-          "title": "Vault and custody",
-          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
+          "title": "Brankas dan kustodi",
+          "desc": "Brankas multi-sig dan kustodi aman bagi tim yang butuh penyimpanan aset terkendali."
         },
         "recovery": {
-          "title": "Recovery and forensics",
-          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
+          "title": "Pemulihan dan forensik",
+          "desc": "Saat aset hilang atau disengketakan, pelacakan dan bukti berjalan di lapisan yang sama."
         },
         "lending": {
-          "title": "Lending",
-          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
+          "title": "Pinjaman",
+          "desc": "Pinjam dengan jaminan, kontrol on-chain, dan jalur penyelesaian yang jelas."
         }
       },
       "cta": "Lihat solusi"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " Token Details",
-      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "title2": " Detail token",
+      "subtitle": "Gunakan informasi kontrak di bawah untuk menambahkan token Lenix Protocol ke dompet Anda.",
       "headers": {
-        "contract": "Contract Address",
-        "name": "Token Name",
-        "symbol": "Token Symbol",
-        "supply": "Token Supply",
-        "network": "Network",
-        "decimals": "Decimals"
+        "contract": "Alamat kontrak",
+        "name": "Nama token",
+        "symbol": "Simbol token",
+        "supply": "Suplai token",
+        "network": "Jaringan",
+        "decimals": "Desimal"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -259,7 +259,7 @@
       "title2": "Kontrol terdokumentasi.",
       "subtitle1": "Smart contract ditinjau CertiK dan operasi selaras ISO 27001 untuk tim yang butuh lebih dari klaim marketing.",
       "subtitle2_1": "Baca ",
-      "subtitle2_2": "whitepaper",
+      "subtitle2_2": "makalah",
       "subtitle2_3": " dan dokumentasi audit tentang arsitektur, utilitas token, dan kontrol keamanan.",
       "col1_text": "Smart contract Lenix Protocol telah ditinjau CertiK. Audit mencakup komponen inti protokol yang digunakan dalam alur produksi.",
       "col1_btn": "Docs keamanan",
@@ -267,9 +267,9 @@
       "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Community ",
-      "title2": "giveaway",
-      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "title1": "Komunitas ",
+      "title2": "hadiah",
+      "subtitle": "Sepuluh pemenang menerima $25.000 dalam LNX. Selesaikan langkah pendaftaran di halaman komunitas. Syarat berlaku.",
       "btn": "Komunitas"
     },
     "Features": {
@@ -283,32 +283,32 @@
       "title_big": "Menghubungkan kripto dengan jaringan pembayaran lokal secara global.",
       "desc1": "Lenix ProtocolPay memberdayakan pemegang kripto dan bisnis untuk memfasilitasi transaksi kripto-ke-fiat di seluruh dunia, memanfaatkan jaringan pembayaran lokal dan teknologi blockchain.",
       "desc2": "Akhirnya, nikmati kecepatan kripto dengan kenyamanan sehari-hari dari pembayaran fiat.",
-      "btn_whitepaper": "Whitepaper"
+      "btn_whitepaper": "Makalah"
     },
     "LnxPurchaseWidget": {
-      "widget_title": "Buy LNX",
-      "widget_subtitle": "Protocol token sale",
-      "usd_raised": "USD raised so far:",
-      "tokens_sold": "Tokens sold:",
-      "price_usd": "USD price: ${price}",
-      "price_eth": "ETH price: {price} ETH",
-      "pay_eth": "ETH you pay",
-      "pay_usdt": "USDT you pay",
-      "pay_usd": "USD you pay",
-      "receive_lnx": "$LNX you receive",
-      "btn_processing": "Processing...",
-      "btn_pay_eth": "Pay with ETH",
-      "btn_pay_usdt": "Pay with USDT",
+      "widget_title": "Beli LNX",
+      "widget_subtitle": "Penjualan token protokol",
+      "usd_raised": "USD terkumpul sejauh ini:",
+      "tokens_sold": "Token terjual:",
+      "price_usd": "Harga USD: ${price}",
+      "price_eth": "Harga ETH: {price} ETH",
+      "pay_eth": "ETH yang Anda bayar",
+      "pay_usdt": "USDT yang Anda bayar",
+      "pay_usd": "USD yang Anda bayar",
+      "receive_lnx": "$LNX yang Anda terima",
+      "btn_processing": "Memproses...",
+      "btn_pay_eth": "Bayar dengan ETH",
+      "btn_pay_usdt": "Bayar dengan USDT",
       "btn_pay_card": "Bayar kartu",
-      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "card_info": "Didukung oleh Stripe. Jumlah ditagih dalam USD.",
       "btn_connect": "Hubungkan",
       "btn_giveaway": "Bonus LNX",
-      "giveaway_info": "Connect your wallet to check eligibility."
+      "giveaway_info": "Hubungkan dompet Anda untuk memeriksa kelayakan."
     },
     "TokenSale": {
       "title1": "LNX ",
-      "title2": "token sale",
-      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+      "title2": "penjualan token",
+      "subtitle": "Beli LNX untuk berpartisipasi dalam protokol. Detail kontrak tercantum di bawah."
     },
     "Partners": {
       "eyebrow": "Ekosistem",
@@ -531,7 +531,7 @@
       "name": "Nama",
       "transaction_hash": "Hash transaksi",
       "amount_stolen": "Jumlah yang dicuri",
-      "blockchain": "Blockchain",
+      "blockchain": "Rantai blok",
       "currency": "Mata uang",
       "country_phone_code": "Kode telepon negara",
       "incident_summary": "Ringkasan insiden",
@@ -562,10 +562,10 @@
       "load_error": "Gagal memuat kepemilikan"
     },
     "actions": {
-      "deposit": "Deposit",
+      "deposit": "Setoran",
       "withdraw": "Tarik",
       "swap": "Tukar",
-      "audit": "Audit"
+      "audit": "Pemeriksaan"
     },
     "premium": {
       "title": "Dapatkan perlindungan premium",
@@ -830,7 +830,7 @@
       "estimated_total_value": "Perkiraan total nilai",
       "wallet_label": "Dompet",
       "pnl_today": "PnL hari ini",
-      "deposit": "Deposit",
+      "deposit": "Setoran",
       "withdraw": "Tarik",
       "transfer": "Transfer",
       "more_funding_actions": "Aksi pendanaan lainnya",
@@ -990,8 +990,8 @@
         "change_24h": "24 jam"
       },
       "location": {
-        "spot": "Spot",
-        "funding": "Funding"
+        "spot": "Tunai",
+        "funding": "Pendanaan"
       }
     },
     "accounts": {
@@ -1087,19 +1087,19 @@
       "type_legend": "Jenis transfer",
       "types": {
         "spot_to_funding": {
-          "label": "Spot → Funding",
+          "label": "Tunai → Pendanaan",
           "description": "Siapkan aset untuk pembayaran"
         },
         "funding_to_spot": {
-          "label": "Funding → Spot",
+          "label": "Pendanaan → Tunai",
           "description": "Kembalikan aset untuk trading"
         },
         "funding_to_bank": {
-          "label": "Funding → Bank",
+          "label": "Pendanaan → Bank",
           "description": "Tarik dana yang tersedia"
         },
         "spot_to_bank": {
-          "label": "Spot → Bank",
+          "label": "Tunai → Bank",
           "description": "Konversi dan tarik"
         }
       },
@@ -1323,6 +1323,7 @@
       "payout_bank_sub": "ACH / SEPA",
       "wallet_address": "Alamat dompet",
       "wallet_placeholder": "0x...",
+      "network": "Jaringan",
       "select_network": "Pilih jaringan",
       "network_erc20": "Ethereum (ERC20)",
       "network_trc20": "Tron (TRC20)",

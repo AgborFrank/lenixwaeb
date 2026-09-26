@@ -1,169 +1,141 @@
 {
   "meta": {
-    "title": "Banking & Finance Services | Lenix Protocol",
-    "description": "Lenix runs money transfer, voluntary crypto liquidation, collateral lending, and custody for customers — with KYC, corridor limits, and quoted rates before you commit."
+    "title": "Dịch vụ ngân hàng và tài chính | Lenix Protocol",
+    "description": "Lenix vận hành chuyển tiền, thanh lý crypto tự nguyện, cho vay thế chấp và ký gửi cho khách hàng — kèm KYC, giới hạn hành lang và tỷ giá báo trước khi bạn cam kết."
   },
   "Hero": {
-    "badge": "Banking & finance",
-    "title1": "Cross-Border Financial Services, ",
-    "title2": "Payment and Remittance",
-    "subtitle": "Send Funds across borders, cash out crypto to fiat, borrow against vaulted collateral, and hold assets in Lenix custody — not white-label infrastructure for other banks.",
-    "btn_primary": "Open an account",
-    "btn_secondary": "View services"
+    "badge": "Ngân hàng và tài chính",
+    "title1": "Dịch vụ tài chính xuyên biên giới, ",
+    "title2": "thanh toán và chuyển tiền",
+    "subtitle": "Gửi tiền xuyên biên giới, đổi crypto sang fiat, vay trên tài sản thế chấp trong vault và giữ tài sản trong ký gửi Lenix — không phải hạ tầng nhãn trắng cho ngân hàng khác."
   },
   "Actions": {
-    "register": "Create account",
-    "download": "Download app",
-    "login": "Log in",
-    "contact": "Contact team",
-    "google_play": "Get it on Google Play",
-    "app_store": "Download on the App Store"
+    "register": "Tạo tài khoản",
+    "download": "Tải ứng dụng"
   },
   "Overview": {
-    "title": "Lenix operates the full workflow",
-    "description": "You work with Lenix directly: verify identity, fund your account, request a transfer or liquidation, or post collateral for a loan. Rates, fees, and delivery status are visible before you confirm — finance and ops are not guessing what happens next."
+    "title": "Lenix vận hành toàn bộ quy trình",
+    "description": "Bạn làm việc trực tiếp với Lenix: xác minh danh tính, nạp tiền vào tài khoản, yêu cầu chuyển tiền hoặc thanh lý, hoặc nộp tài sản thế chấp cho khoản vay. Tỷ giá, phí và trạng thái giao nhận hiện trước khi xác nhận — tài chính và vận hành không phải đoán bước tiếp theo."
   },
   "Services": {
-    "eyebrow": "What we run",
-    "title": "Core services for customers",
-    "description": "Each service has its own intake in the Lenix dashboard. Pick the workflow that matches what you need today.",
+    "eyebrow": "Những gì chúng tôi vận hành",
+    "title": "Dịch vụ cốt lõi cho khách hàng",
+    "description": "Mỗi dịch vụ có lối tiếp nhận riêng trên bảng điều khiển Lenix. Chọn quy trình khớp với nhu cầu hôm nay.",
     "items": {
       "transfer": {
-        "title": "Money transfer",
-        "desc": "Move value from crypto to fiat and into a beneficiary bank account on corridors Lenix supports today."
+        "title": "Chuyển tiền",
+        "desc": "Chuyển giá trị từ crypto sang fiat và vào tài khoản ngân hàng người thụ hưởng, trên các hành lang Lenix hỗ trợ hiện nay."
       },
       "liquidation": {
-        "title": "Asset liquidation",
-        "desc": "Voluntarily sell approved crypto holdings and receive fiat payout — separate from loan collateral liquidation."
+        "title": "Thanh lý tài sản",
+        "desc": "Tự nguyện bán số crypto được duyệt và nhận thanh toán fiat — tách biệt với thanh lý tài sản thế chấp khoản vay."
       },
       "lending": {
-        "title": "Collateral lending",
-        "desc": "Post eligible collateral and draw stablecoins or fiat while terms, LTV, and repayment schedules stay visible upfront."
+        "title": "Cho vay thế chấp",
+        "desc": "Nộp tài sản thế chấp đủ điều kiện và rút stablecoin hoặc fiat, với điều khoản, LTV và lịch trả nợ hiển thị ngay từ đầu."
       },
       "custody": {
-        "title": "Custody & wallet",
-        "desc": "Hold and move supported assets through Lenix wallet and vault controls with activity history your team can audit."
+        "title": "Ký gửi và ví",
+        "desc": "Giữ và chuyển tài sản được hỗ trợ qua ví và kiểm soát vault của Lenix, kèm lịch sử hoạt động để nhóm của bạn kiểm toán."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "transfer": {
-        "label": "Cross-border transfer",
-        "title": "Crypto to bank, with corridor clarity",
-        "body": "Initiate from your Lenix account, see the quoted rate and fees, and track handoff from on-chain receipt through fiat delivery — not a single pending flag with no context."
+        "label": "Chuyển tiền xuyên biên giới",
+        "title": "Từ crypto tới ngân hàng, hành lang rõ ràng",
+        "body": "Khởi tạo từ tài khoản Lenix, xem tỷ giá báo và phí, rồi theo dõi bàn giao từ nhận on-chain đến giao fiat — không phải một cờ chờ xử lý không có ngữ cảnh."
       },
       "settlement": {
-        "label": "Fiat settlement",
-        "title": "Treasury-ready payout records",
-        "body": "Settlement details, beneficiary references, and status timestamps suitable for finance review — so cross-border payouts can be reconciled like any other treasury movement."
+        "label": "Thanh toán fiat",
+        "title": "Hồ sơ chi trả sẵn cho bộ phận tài chính",
+        "body": "Chi tiết thanh toán, tham chiếu người thụ hưởng và mốc thời gian trạng thái phù hợp để tài chính rà soát — để đối soát chi trả xuyên biên giới như mọi chuyển động quỹ khác."
       },
       "liquidation": {
-        "label": "Voluntary liquidation",
-        "title": "Cash out without a loan position",
-        "body": "Convert approved crypto to fiat when you choose to exit a holding. Quote, fees, and expected payout are shown before you confirm — this is not collateral seizure from an underwater loan."
+        "label": "Thanh lý tự nguyện",
+        "title": "Rút tiền mặt mà không cần vị thế vay",
+        "body": "Đổi crypto được duyệt sang fiat khi bạn chọn thoát một vị thế. Báo giá, phí và khoản chi dự kiến hiện trước khi xác nhận — đây không phải thu giữ tài sản thế chấp của khoản vay dưới ngưỡng."
       },
       "lending": {
-        "label": "Collateral lending",
-        "title": "Liquidity while assets stay vaulted",
-        "body": "Draw against posted collateral with LTV, repayment schedule, and health indicators visible before disbursement. Collateral remains in segregated custody for the loan term."
+        "label": "Cho vay thế chấp",
+        "title": "Thanh khoản trong khi tài sản nằm trong vault",
+        "body": "Rút trên tài sản thế chấp đã nộp, với LTV, lịch trả nợ và chỉ số sức khỏe hiện trước giải ngân. Tài sản thế chấp ở lại ký gửi tách biệt trong suốt kỳ hạn vay."
       },
       "custody": {
-        "label": "Custody & controls",
-        "title": "Hold, send, and receive in one place",
-        "body": "Multi-chain wallet access, transaction history, and vault segregation for assets under Lenix custody — with the same identity and compliance checks applied across services."
+        "label": "Ký gửi và kiểm soát",
+        "title": "Giữ, gửi và nhận ở một nơi",
+        "body": "Truy cập ví đa chuỗi, lịch sử giao dịch và tách vault cho tài sản trong ký gửi Lenix — cùng bộ kiểm tra danh tính và tuân thủ trên mọi dịch vụ."
       },
       "compliance": {
-        "label": "Compliance screening",
-        "title": "KYC and flow screening before release",
-        "body": "Identity verification for account opening and sanctions/AML screening on inbound and outbound flows — funds are not released until checks for that transaction complete."
+        "label": "Sàng lọc tuân thủ",
+        "title": "KYC và sàng lọc dòng tiền trước khi giải phóng",
+        "body": "Xác minh danh tính khi mở tài khoản và sàng lọc trừng phạt/AML trên dòng vào và ra — tiền không được giải phóng cho đến khi kiểm tra của giao dịch đó hoàn tất."
       }
     }
   },
   "Process": {
-    "title": "How it works",
+    "title": "Cách thức hoạt động",
     "steps": {
       "account": {
-        "title": "Create your Lenix account",
-        "desc": "Sign up, complete KYC, and set up payout details for the corridors you plan to use."
+        "title": "Tạo tài khoản Lenix",
+        "desc": "Đăng ký, hoàn tất KYC và thiết lập thông tin chi trả cho các hành lang bạn dự định dùng."
       },
       "fund": {
-        "title": "Fund or deposit crypto",
-        "desc": "Add supported assets to your Lenix wallet or vault — the same balance can feed transfers, liquidation, or collateral posting."
+        "title": "Nạp hoặc gửi crypto",
+        "desc": "Thêm tài sản được hỗ trợ vào ví hoặc vault Lenix — cùng số dư có thể dùng cho chuyển tiền, thanh lý hoặc nộp thế chấp."
       },
       "request": {
-        "title": "Request a service",
-        "desc": "Start a transfer, voluntary liquidation, or loan draw. Review the quote, fees, and terms before you confirm."
+        "title": "Yêu cầu một dịch vụ",
+        "desc": "Bắt đầu chuyển tiền, thanh lý tự nguyện hoặc rút khoản vay. Xem lại báo giá, phí và điều khoản trước khi xác nhận."
       },
       "track": {
-        "title": "Track through delivery",
-        "desc": "Follow status from initiation to bank credit or loan disbursement, with records available for your finance team."
+        "title": "Theo dõi đến khi giao xong",
+        "desc": "Theo dõi trạng thái từ lúc khởi tạo đến khi ngân hàng ghi có hoặc giải ngân khoản vay, với hồ sơ cho nhóm tài chính."
       }
     }
   },
   "Boundaries": {
-    "eyebrow": "What to expect",
-    "title1": "Honest limits ",
-    "title2": "before you commit",
-    "subtitle": "Lenix is a service operator, not a universal bank. Scope, corridors, and regulatory treatment depend on your jurisdiction and the product you use.",
+    "eyebrow": "Điều cần biết trước",
+    "title1": "Giới hạn rõ ràng ",
+    "title2": "trước khi bạn cam kết",
+    "subtitle": "Lenix là đơn vị vận hành dịch vụ, không phải ngân hàng toàn năng. Phạm vi, hành lang và cách xử lý quy định phụ thuộc vào khu vực pháp lý và sản phẩm bạn dùng.",
     "items": {
       "corridors": {
-        "title": "Supported corridors only",
-        "desc": "Payout markets and banking rails are limited to corridors Lenix actively supports. Contact us if yours is not listed — we do not imply worldwide coverage."
+        "title": "Chỉ các hành lang được hỗ trợ",
+        "desc": "Thị trường chi trả và kênh ngân hàng chỉ gồm các hành lang Lenix đang vận hành. Liên hệ nếu hành lang của bạn chưa có trong danh sách — chúng tôi không ngụ ý phủ sóng toàn cầu."
       },
       "kyc": {
-        "title": "KYC and AML required",
-        "desc": "Account opening and most outbound flows require identity verification and transaction screening. We cannot bypass compliance for expedited payout."
+        "title": "Bắt buộc KYC và AML",
+        "desc": "Mở tài khoản và hầu hết dòng tiền đi đòi hỏi xác minh danh tính và sàng lọc giao dịch. Chúng tôi không bỏ qua tuân thủ để đẩy nhanh chi trả."
       },
       "quotes": {
-        "title": "Quotes before confirmation",
-        "desc": "Rates, fees, and estimated delivery windows are shown before you submit a transfer, liquidation, or loan draw — not adjusted silently afterward."
+        "title": "Báo giá trước khi xác nhận",
+        "desc": "Tỷ giá, phí và khung thời gian giao dự kiến hiện trước khi bạn gửi chuyển tiền, thanh lý hoặc rút khoản vay — không bị chỉnh âm thầm sau đó."
       },
       "liquidation_types": {
-        "title": "Two different liquidations",
-        "desc": "Voluntary asset liquidation is a customer-initiated cash-out. Loan collateral liquidation only applies when posted collateral falls below agreed LTV on an active loan."
+        "title": "Hai loại thanh lý khác nhau",
+        "desc": "Thanh lý tài sản tự nguyện là rút tiền do khách hàng khởi tạo. Thanh lý tài sản thế chấp khoản vay chỉ áp dụng khi tài sản đã nộp xuống dưới LTV đã thỏa thuận trên khoản vay đang hiệu lực."
       },
       "timing": {
-        "title": "Delivery timing varies",
-        "desc": "Banking cutoffs, beneficiary bank processing, and corridor load affect settlement time. We show status updates; we do not guarantee instant fiat credit."
+        "title": "Thời gian giao nhận thay đổi",
+        "desc": "Giờ cắt của ngân hàng, xử lý của ngân hàng thụ hưởng và tải hành lang ảnh hưởng thời gian thanh toán. Chúng tôi hiển thị cập nhật trạng thái; không bảo đảm ghi có fiat tức thì."
       },
       "regulatory": {
-        "title": "Not a bank charter",
-        "desc": "Lenix provides crypto finance and settlement services under its operating licenses and partners. Product availability and protections vary by region — confirm what applies to you before moving funds."
+        "title": "Không phải giấy phép ngân hàng",
+        "desc": "Lenix cung cấp dịch vụ tài chính crypto và thanh toán theo giấy phép vận hành và đối tác. Khả dụng sản phẩm và biện pháp bảo vệ khác nhau theo khu vực — xác nhận điều áp dụng với bạn trước khi chuyển tiền."
       }
     }
   },
   "Cta": {
-    "title": "Ready to use Lenix banking services?",
-    "description": "Open an account to start transfers, liquidation, or lending — or contact us if you need a corridor or workflow scoped before signup.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Log in",
+    "title": "Sẵn sàng dùng dịch vụ ngân hàng Lenix?",
+    "description": "Mở tài khoản để bắt đầu chuyển tiền, thanh lý hoặc vay — hoặc liên hệ nếu cần khoanh vùng hành lang hay quy trình trước khi đăng ký.",
+    "btn_primary": "Liên hệ nhóm",
+    "btn_secondary": "Đăng nhập",
     "links": {
-      "loan": "Apply for a crypto loan",
-      "wallet": "Lenix Wallet",
-      "solutions": "All solutions"
-    }
-  },
-  "SectionCta": {
-    "overview": {
-      "title": "Open a Lenix account to get started",
-      "description": "Register, complete KYC, and access transfers, liquidation, lending, and custody from one dashboard — on web or mobile."
-    },
-    "services": {
-      "title": "Run these services from your account",
-      "description": "Each workflow lives in the Lenix app. Create an account to request transfers, cash out holdings, or post collateral for a loan."
-    },
-    "capabilities": {
-      "title": "Banking workflows in the Lenix app",
-      "description": "Download the mobile app or register on web to Send Funds, settle to fiat, borrow against collateral, and track every step."
-    },
-    "process": {
-      "title": "Ready to follow these steps?",
-      "description": "Create your account, complete verification, and start your first transfer or liquidation from the Lenix dashboard or mobile app."
-    },
-    "boundaries": {
-      "title": "Confirm your corridor, then register",
-      "description": "If your market is supported, open an account to begin. Need a corridor scoped first? Contact us before you move funds."
+      "loan": "Nộp hồ sơ vay crypto",
+      "wallet": "Ví Lenix",
+      "solutions": "Tất cả giải pháp"
     }
   }
 }

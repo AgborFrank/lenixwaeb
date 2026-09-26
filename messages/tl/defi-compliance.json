@@ -1,102 +1,78 @@
 {
   "meta": {
-    "title": "DeFi Compliance & AML | Lenix Protocol",
-    "description": "AML screening, counterparty diligence, and monitoring for DeFi protocols and crypto infrastructure teams — with configurable rules and documented scope."
+    "title": "Pagsunod sa DeFi at AML | Lenix Protocol",
+    "description": "Screening ng AML, due diligence sa mga katapat, at pagsubaybay para sa mga protocol ng DeFi at mga koponan ng crypto infrastructure — na may mai-configure na mga tuntunin at dokumentadong saklaw."
   },
   "Hero": {
-    "badge": "DeFi compliance",
-    "title1": "AML and risk controls ",
-    "title2": "for decentralized finance",
-    "subtitle": "Screen wallets and flows, review protocol counterparties, and integrate compliance checks into your operations — without claiming DeFi can be made fully permissionless and regulation-free.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Pagsunod sa DeFi",
+    "title1": "Mga kontrol sa AML at panganib ",
+    "title2": "para sa desentralisadong pananalapi",
+    "subtitle": "I-screen ang mga wallet at daloy, suriin ang mga katapat ng protocol, at isama ang mga pagsusuri sa pagsunod sa operasyon ninyo — nang hindi inaangkin na maaaring gawing ganap na walang pahintulot at walang regulasyon ang DeFi.",
+    "btn_primary": "Makipag-ugnayan sa koponan",
+    "btn_secondary": "Tingnan ang mga kakayahan"
   },
   "Overview": {
-    "title": "Compliance that fits how DeFi actually works",
-    "description": "Lenix helps protocol teams, treasuries, and infrastructure providers assess exposure across supported networks — pool interactions, bridge touchpoints, and wallet screening — with outputs your compliance function can audit, not opaque risk scores alone."
+    "title": "Pagsunod na akma sa tunay na paraan ng paggana ng DeFi",
+    "description": "Tinutulungan ng Lenix ang mga koponan ng protocol, treasury, at provider ng infrastructure na tasahin ang exposure sa mga suportadong network — interaksiyon ng pool, touchpoint ng bridge, at screening ng wallet — na may output na maaaring i-audit ng function ng pagsunod, hindi lamang mga malabong risk score."
   },
   "Highlights": {
     "items": {
       "scale": {
-        "title": "Scale screening without losing review quality",
-        "desc": "Configurable rules and batch review help compliance teams focus on material exposure — not manual lookup for every wallet touch."
+        "title": "Palakihin ang screening nang hindi nawawala ang kalidad ng review",
+        "desc": "Ang mai-configure na mga tuntunin at batch review ay tumutulong sa mga koponan ng pagsunod na tumuon sa materyal na exposure — hindi sa manu-manong paghahanap sa bawat wallet touch."
       },
       "cost": {
-        "title": "Integrate into existing workflows",
-        "desc": "API and export options fit internal queues and case tools so screening does not sit in a separate silo."
+        "title": "Isama sa mga kasalukuyang workflow",
+        "desc": "Ang API at mga opsyon sa export ay akma sa mga panloob na pila at kasangkapan sa kaso, kaya hindi nakahiwalay ang screening."
       },
       "coverage": {
-        "title": "Cross-chain context where supported",
-        "desc": "Review activity across networks and token types your program covers — with limits stated when a chain or asset is outside scope."
+        "title": "Konteksto sa maraming chain kung saan suportado",
+        "desc": "Suriin ang aktibidad sa mga network at uri ng token na saklaw ng programa ninyo — na may nakasaad na limitasyon kapag ang isang chain o asset ay nasa labas ng saklaw."
       },
       "threats": {
-        "title": "Proactive counterparty review",
-        "desc": "Assess pools, routers, and wallet connections before treasury moves or partner onboarding — bounded to your policy definitions."
+        "title": "Proaktibong review ng mga katapat",
+        "desc": "Suriin ang mga pool, router, at koneksyon ng wallet bago ang galaw ng treasury o onboarding ng partner — limitado sa mga kahulugan ng patakaran ninyo."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "coverage": {
-        "label": "Asset coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
+        "label": "Saklaw ng asset",
+        "title": "I-screen ang aktibidad sa mga suportadong chain",
+        "body": "Suriin ang mga transaksyon at exposure ng wallet sa mga pangunahing network na Layer 1 at Layer 2, stablecoin, at karaniwang token standard sa DeFi — limitado sa mga network at asset na saklaw ng engagement ninyo."
       },
       "integration": {
-        "label": "API integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
+        "label": "Integrasyon ng API",
+        "title": "Dalhin ang screening sa stack ninyo",
+        "body": "Ikonekta ang mga output ng Lenix sa mga panloob na pila ng review, case management, o sariling kasangkapan sa pamamagitan ng API at file export — para manatili ang mga hakbang sa pagsunod sa mga workflow na pinapatakbo na ng koponan."
       },
       "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
+        "label": "Screening ng transaksyon",
+        "title": "I-flag ang exposure bago lumipat ang pondo",
+        "body": "Suriin ang mga wallet at transaksyon para sa ugnayan sa mga sanctioned na entidad, kilalang typology ng scam, at kategorya ng serbisyong mataas ang panganib — na may resulta na maaaring tanggapin, i-escalate, o i-override ng koponan kasama ng mga tala."
       },
       "monitoring": {
-        "label": "Automated monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
+        "label": "Awtomatikong pagsubaybay",
+        "title": "Mga watchlist para sa protocol at treasury",
+        "body": "Subaybayan ang mga set ng address, interaksiyon ng pool, at paulit-ulit na daloy ng katapat. Ang mga tuntunin ng alerto at saklaw ay nakasalalay sa mga suportadong network at sa kung paano tinutukoy ng programa ninyo ang materyal na panganib."
       },
       "onboarding": {
-        "label": "Counterparty onboarding",
-        "title": "Review partners before integration",
-        "body": "Screen liquidity providers, pool contracts, and wallet counterparties during onboarding — surfacing exposure across supported chains when your policy requires it."
+        "label": "Onboarding ng katapat",
+        "title": "Suriin ang mga partner bago ang integrasyon",
+        "body": "I-screen ang mga liquidity provider, kontrata ng pool, at wallet ng katapat habang nag-o-onboard — na inilalantad ang exposure sa mga suportadong chain kapag hinihingi ito ng patakaran ninyo."
       },
       "diligence": {
-        "label": "Protocol due diligence",
-        "title": "Map exposure across the ecosystem",
-        "body": "Analyze how a protocol connects to exchanges, bridges, and high-risk services in on-chain data — with written limits on what public ledgers can and cannot show about off-chain control."
+        "label": "Due diligence ng protocol",
+        "title": "I-mapa ang exposure sa ecosystem",
+        "body": "Suriin kung paano kumokonekta ang isang protocol sa mga exchange, bridge, at serbisyong mataas ang panganib sa on-chain na data — na may nakasulat na limitasyon kung ano ang kaya at hindi kayang ipakita ng pampublikong ledger tungkol sa kontrol sa labas ng chain."
       }
     }
   },
   "Cta": {
-    "title": "Building compliance into a DeFi product?",
-    "description": "Share your protocol type, jurisdictions, and what you need to screen or monitor. We outline realistic integration scope before engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Compliance investigations"
-  },
-  "Features": {
-    "pillars": {
-      "coverage": {
-        "label": "Asset and network coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
-      },
-      "integration": {
-        "label": "Workflow integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
-      },
-      "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
-      },
-      "monitoring": {
-        "label": "Ongoing monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
-      }
-    }
+    "title": "Isinasama ang pagsunod sa isang produkto ng DeFi?",
+    "description": "Ibahagi ang uri ng protocol, mga hurisdiksyon, at ang kailangan ninyong i-screen o subaybayan. Binabalangkas namin ang makatotohanang saklaw ng integrasyon bago magsimula ang engagement.",
+    "btn_primary": "Makipag-ugnayan sa koponan",
+    "btn_secondary": "Mga imbestigasyon sa pagsunod"
   }
 }

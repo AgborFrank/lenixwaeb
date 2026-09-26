@@ -9,9 +9,9 @@
     "eyebrow_highlight": "multichain",
     "eyebrow_suffix": " en Lenix",
     "title_prefix": "Envía, guarda y pide prestado — con ",
-    "title_highlight1": "recovery",
+    "title_highlight1": "recuperación",
     "title_mid": " cuando la necesites, desde una sola ",
-    "title_highlight2": "app",
+    "title_highlight2": "aplicación",
     "subtitle": "Una cartera no custodial para el día a día — cifrada en tu dispositivo, multichain por defecto y conectada al lending y recovery de Lenix cuando hace falta más que un envío estándar.",
     "btn_download": "Descargar app",
     "btn_learn": "Ver funciones",
@@ -38,33 +38,33 @@
       "loans": {
         "title": "Préstamos con garantía",
         "desc": "Pide stablecoins contra activos admitidos sin vender tu posición — condiciones y ratios de garantía visibles antes de confirmar.",
-        "link": "View lending"
+        "link": "Ver préstamos"
       },
       "recovery": {
         "title": "Ruta de recovery",
         "desc": "Si pierdes activos o te los roban, abre un caso de recovery en el ecosistema Lenix — trazado y coordinación con exchanges cuando el flujo wallet estándar no basta.",
-        "link": "Start recovery"
+        "link": "Iniciar recuperación"
       },
       "multichain": {
-        "title": "Multi-chain balances",
-        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+        "title": "Saldos multicadena",
+        "desc": "Consulta activos e historial en Ethereum, BNB Chain y Polygon desde una sola cartera — cambia de red sin apps separadas."
       },
       "transfers": {
-        "title": "Send, receive, swap",
-        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+        "title": "Enviar, recibir, intercambiar",
+        "desc": "Mueve tokens, copia tu dirección de recepción e intercambia activos compatibles — con opciones de compra donde haya proveedores integrados."
       },
       "access": {
-        "title": "Web and mobile",
-        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+        "title": "Web y móvil",
+        "desc": "Usa la cartera en el navegador en lenixwallet.com o descarga la app — créala una vez e impórtala con tu frase de recuperación en cualquiera de las dos."
       }
     },
-    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "networks_line": "Disponible en Ethereum, BNB Chain y Polygon.",
     "groups": {
       "wallet": {
-        "title": "In the wallet"
+        "title": "En la cartera"
       },
       "platform": {
-        "title": "Through Lenix"
+        "title": "A través de Lenix"
       }
     }
   },
@@ -88,7 +88,7 @@
       "title": "SISTEMA ASEGURADO",
       "network_label": "Red",
       "network_status": "Conectada",
-      "firewall_label": "Firewall",
+      "firewall_label": "Cortafuegos",
       "firewall_status": "Activo"
     },
     "mock_front": {
@@ -104,7 +104,7 @@
     "title": "Descargar Lenix Wallet",
     "subtitle": "Crea o importa un wallet en minutos. La misma app para enviar, recibir, intercambiar y pedir préstamo — con recovery Lenix disponible cuando la necesites.",
     "btn_download": "Descargar app",
-    "btn_web": "Open web wallet"
+    "btn_web": "Abrir cartera web"
   },
   "Networks": {
     "eyebrow": "Supported networks",
@@ -117,48 +117,48 @@
     }
   },
   "GettingStarted": {
-    "eyebrow": "Getting started",
-    "title": "Up and running in three steps",
-    "step_label": "Step {number}",
+    "eyebrow": "Primeros pasos",
+    "title": "Listo en tres pasos",
+    "step_label": "Paso {number}",
     "steps": {
       "create": {
-        "title": "Create or import",
-        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+        "title": "Crear o importar",
+        "desc": "Genera una cartera nueva o restáurala con tu frase de recuperación de 12 o 24 palabras."
       },
       "secure": {
-        "title": "Set password and backup",
-        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+        "title": "Contraseña y copia de seguridad",
+        "desc": "Elige una contraseña y guarda tu frase de recuperación sin conexión — Lenix no puede restablecerla."
       },
       "use": {
-        "title": "Send, swap, or borrow",
-        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+        "title": "Enviar, intercambiar o pedir prestado",
+        "desc": "Mueve activos, revisa el historial por cadena o abre los flujos de préstamo y recuperación del ecosistema Lenix."
       }
     }
   },
   "Ecosystem": {
-    "eyebrow": "Lenix ecosystem",
-    "title": "Wallet connects to the rest of the platform",
-    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "eyebrow": "Ecosistema Lenix",
+    "title": "La cartera se conecta al resto de la plataforma",
+    "description": "Guarda los activos aquí. Cuando necesites más que una transferencia, sigue el flujo enlazado.",
     "cards": {
       "wallet": {
-        "title": "Lenix Wallet",
-        "desc": "Create, unlock, send, and receive.",
-        "cta": "Open wallet"
+        "title": "Cartera Lenix",
+        "desc": "Crea, desbloquea, envía y recibe.",
+        "cta": "Abrir cartera"
       },
       "loan": {
-        "title": "Crypto loan",
-        "desc": "Borrow against vaulted collateral.",
-        "cta": "View lending"
+        "title": "Préstamo cripto",
+        "desc": "Pide prestado contra garantía en bóveda.",
+        "cta": "Ver préstamos"
       },
       "recovery": {
-        "title": "Asset recovery",
-        "desc": "Trace stolen or misdirected funds.",
-        "cta": "Start recovery"
+        "title": "Recuperación de activos",
+        "desc": "Rastrea fondos robados o enviados por error.",
+        "cta": "Iniciar recuperación"
       },
       "security": {
-        "title": "Security",
-        "desc": "Audits and operational controls.",
-        "cta": "Read security"
+        "title": "Seguridad",
+        "desc": "Auditorías y controles operativos.",
+        "cta": "Leer seguridad"
       }
     }
   },

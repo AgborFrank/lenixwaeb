@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Threat Intelligence & Blockchain Intelligence | Lenix Protocol",
-    "description": "Blockchain intelligence for compliance, security, and investigation teams. Attribution data, flow analysis, and structured exports — scoped to authorized matters."
+    "title": "खतरा आसूचना और ब्लॉकचेन आसूचना | Lenix Protocol",
+    "description": "अनुपालन, सुरक्षा और जाँच टीमों के लिए ब्लॉकचेन आसूचना। आरोपण डेटा, प्रवाह विश्लेषण और संरचित निर्यात — अधिकृत मामलों तक सीमित।"
   },
   "Hero": {
-    "badge": "Threat intelligence",
-    "title1": "Blockchain intelligence ",
-    "title2": "for investigation teams",
-    "subtitle": "Screen wallets, map fund flows, and export structured findings for compliance reviews, security operations, and law-enforcement support — with clear scope on what on-chain data can and cannot show.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "खतरा आसूचना",
+    "title1": "जाँच टीमों के लिए ",
+    "title2": "ब्लॉकचेन आसूचना",
+    "subtitle": "वॉलेट जाँचें, धन प्रवाह का मानचित्र बनाएँ और अनुपालन समीक्षा, सुरक्षा संचालन तथा कानून प्रवर्तन सहायता के लिए संरचित निष्कर्ष निर्यात करें — इस स्पष्ट दायरे के साथ कि ऑन-चेन डेटा क्या दिखा सकता है और क्या नहीं।",
+    "btn_primary": "टीम से संपर्क करें",
+    "btn_secondary": "क्षमताएँ देखें"
   },
   "Mission": {
-    "title": "Intelligence built for operational use",
-    "description": "Lenix provides curated blockchain datasets and analysis workflows for teams that need attribution context, risk screening, and documented fund flows — not generic market dashboards copied from consumer analytics products."
+    "title": "परिचालन उपयोग के लिए बनी आसूचना",
+    "description": "Lenix उन टीमों के लिए चयनित ब्लॉकचेन डेटासेट और विश्लेषण वर्कफ़्लो देता है जिन्हें आरोपण संदर्भ, जोखिम स्क्रीनिंग और दस्तावेज़ी धन प्रवाह चाहिए — उपभोक्ता विश्लेषण उत्पादों से नकल किए सामान्य बाज़ार डैशबोर्ड नहीं।"
   },
   "Capabilities": {
     "pillars": {
       "actors": {
-        "label": "Actor and wallet context",
-        "title": "Identify linked addresses and exposure",
-        "body": "Cluster related wallets and flag connections to known risky categories — sanctions lists, scam typologies, and high-risk service touchpoints — when your matter authorizes that scope of review."
+        "label": "कर्ता और वॉलेट संदर्भ",
+        "title": "जुड़े पते और एक्सपोज़र पहचानें",
+        "body": "संबंधित वॉलेट को क्लस्टर करें और ज्ञात जोखिम श्रेणियों से संबंध चिह्नित करें — प्रतिबंध सूची, घोटाला प्रकार और उच्च-जोखिम सेवा संपर्क बिंदु — जब आपका मामला उस समीक्षा दायरे को अधिकृत करे।"
       },
       "geopolitical": {
-        "label": "Risk monitoring",
-        "title": "Monitor flows that matter to your mandate",
-        "body": "Track movements tied to jurisdictions, entities, or wallet sets you define. Screening is configurable to your policy — not a one-size-fits-all risk score."
+        "label": "जोखिम निगरानी",
+        "title": "उन प्रवाहों की निगरानी करें जो आपके अधिदेश से जुड़े हों",
+        "body": "उन क्षेत्राधिकारों, संस्थाओं या वॉलेट समूहों से बंधी गतिविधि ट्रैक करें जिन्हें आप परिभाषित करें। स्क्रीनिंग आपकी नीति के अनुसार विन्यास होती है — सभी के लिए एक ही जोखिम स्कोर नहीं।"
       },
       "enforcement": {
-        "label": "Case support",
-        "title": "Documentation for escalation",
-        "body": "Produce source-of-funds traces and address attribution summaries formatted for internal review, exchange requests, or counsel — with methodology and limits stated in the deliverable."
+        "label": "केस सहायता",
+        "title": "एस्केलेशन के लिए दस्तावेज़",
+        "body": "आंतरिक समीक्षा, एक्सचेंज अनुरोध या कानूनी सलाह के लिए स्वरूपित धन-स्रोत ट्रेस और पता आरोपण सारांश तैयार करें — कार्यप्रणाली और सीमाएँ डिलिवरेबल में लिखी होती हैं।"
       },
       "delivery": {
-        "label": "Flexible delivery",
-        "title": "Data where your team works",
-        "body": "Receive exports via file, feed, or API integration depending on engagement terms. Priority wallet sets and alert rules can be adjusted as your operational focus changes."
+        "label": "लचीली डिलीवरी",
+        "title": "डेटा वहाँ जहाँ आपकी टीम काम करती है",
+        "body": "अनुबंध शर्तों के अनुसार फ़ाइल, फ़ीड या API एकीकरण से निर्यात प्राप्त करें। प्राथमिक वॉलेट समूह और अलर्ट नियम परिचालन फ़ोकस बदलने पर समायोजित किए जा सकते हैं।"
       }
     }
   },
   "Cta": {
-    "title": "Need blockchain intelligence for a team or case?",
-    "description": "Describe your mandate, data needs, and delivery preferences. We outline what Lenix can provide before scoped engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Blockchain forensics"
+    "title": "किसी टीम या केस के लिए ब्लॉकचेन आसूचना चाहिए?",
+    "description": "अपना अधिदेश, डेटा आवश्यकताएँ और डिलीवरी प्राथमिकताएँ बताएँ। दायरा-निर्धारित काम से पहले हम बताते हैं कि Lenix क्या दे सकता है।",
+    "btn_primary": "टीम से संपर्क करें",
+    "btn_secondary": "ब्लॉकचेन फोरेंसिक"
   }
 }

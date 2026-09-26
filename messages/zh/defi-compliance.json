@@ -1,102 +1,78 @@
 {
   "meta": {
-    "title": "DeFi Compliance & AML | Lenix Protocol",
-    "description": "AML screening, counterparty diligence, and monitoring for DeFi protocols and crypto infrastructure teams — with configurable rules and documented scope."
+    "title": "DeFi 合规与 AML | Lenix Protocol",
+    "description": "面向 DeFi 协议与加密基础设施团队的 AML 筛查、对手方尽职调查和监测——规则可配置，范围有书面说明。"
   },
   "Hero": {
-    "badge": "DeFi compliance",
-    "title1": "AML and risk controls ",
-    "title2": "for decentralized finance",
-    "subtitle": "Screen wallets and flows, review protocol counterparties, and integrate compliance checks into your operations — without claiming DeFi can be made fully permissionless and regulation-free.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "DeFi 合规",
+    "title1": "面向去中心化金融的 ",
+    "title2": "AML 与风险控制",
+    "subtitle": "筛查钱包与资金流，审查协议对手方，并把合规检查接入日常运营——同时不声称 DeFi 可以做到完全无许可、不受监管。",
+    "btn_primary": "联系团队",
+    "btn_secondary": "查看能力"
   },
   "Overview": {
-    "title": "Compliance that fits how DeFi actually works",
-    "description": "Lenix helps protocol teams, treasuries, and infrastructure providers assess exposure across supported networks — pool interactions, bridge touchpoints, and wallet screening — with outputs your compliance function can audit, not opaque risk scores alone."
+    "title": "符合 DeFi 实际运作方式的合规",
+    "description": "Lenix 帮助协议团队、资金库和基础设施提供方评估受支持网络上的暴露——资金池交互、跨链桥接触点以及钱包筛查——输出可供合规职能审计，而不是只有不透明的风险分数。"
   },
   "Highlights": {
     "items": {
       "scale": {
-        "title": "Scale screening without losing review quality",
-        "desc": "Configurable rules and batch review help compliance teams focus on material exposure — not manual lookup for every wallet touch."
+        "title": "扩大筛查规模，同时保住审查质量",
+        "desc": "可配置规则和批量审查帮助合规团队聚焦实质性暴露——不必对每一次钱包接触都做人工查询。"
       },
       "cost": {
-        "title": "Integrate into existing workflows",
-        "desc": "API and export options fit internal queues and case tools so screening does not sit in a separate silo."
+        "title": "接入现有工作流",
+        "desc": "API 与导出方式适配内部队列和案件工具，使筛查不必单独放在另一套系统里。"
       },
       "coverage": {
-        "title": "Cross-chain context where supported",
-        "desc": "Review activity across networks and token types your program covers — with limits stated when a chain or asset is outside scope."
+        "title": "在受支持范围内提供跨链背景",
+        "desc": "审查贵方方案覆盖的网络和代币类型上的活动——当某条链或某项资产超出范围时，会写明限制。"
       },
       "threats": {
-        "title": "Proactive counterparty review",
-        "desc": "Assess pools, routers, and wallet connections before treasury moves or partner onboarding — bounded to your policy definitions."
+        "title": "主动审查对手方",
+        "desc": "在资金库划转或合作方准入之前，评估资金池、路由和钱包关联——范围以贵方政策定义为准。"
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "coverage": {
-        "label": "Asset coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
+        "label": "资产覆盖",
+        "title": "筛查受支持链上的活动",
+        "body": "评估主要第一层与第二层网络、稳定币以及 DeFi 常用代币标准上的交易和钱包暴露——范围限于合作所覆盖的网络与资产。"
       },
       "integration": {
-        "label": "API integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
+        "label": "API 集成",
+        "title": "把筛查接入现有技术栈",
+        "body": "通过 API 和文件导出，将 Lenix 的输出连接到内部审查队列、案件管理或自有工具——让合规步骤留在团队已经在跑的流程里。"
       },
       "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
+        "label": "交易筛查",
+        "title": "在资金划转前标记暴露",
+        "body": "审查钱包和交易与受制裁实体、已知诈骗类型以及高风险服务类别的关联——团队可以接受、升级，或附注后覆盖结果。"
       },
       "monitoring": {
-        "label": "Automated monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
+        "label": "自动监测",
+        "title": "面向协议与资金库的观察名单",
+        "body": "监测地址集合、资金池交互和反复出现的对手方资金流。告警规则与覆盖范围取决于受支持的网络，以及贵方方案如何定义实质性风险。"
       },
       "onboarding": {
-        "label": "Counterparty onboarding",
-        "title": "Review partners before integration",
-        "body": "Screen liquidity providers, pool contracts, and wallet counterparties during onboarding — surfacing exposure across supported chains when your policy requires it."
+        "label": "对手方准入",
+        "title": "在接入前审查合作方",
+        "body": "在准入过程中筛查流动性提供方、资金池合约和对手方钱包——当政策要求时，呈现受支持链上的暴露。"
       },
       "diligence": {
-        "label": "Protocol due diligence",
-        "title": "Map exposure across the ecosystem",
-        "body": "Analyze how a protocol connects to exchanges, bridges, and high-risk services in on-chain data — with written limits on what public ledgers can and cannot show about off-chain control."
+        "label": "协议尽职调查",
+        "title": "绘制生态中的暴露",
+        "body": "分析协议在链上数据中与交易所、跨链桥和高风险服务的连接——并书面说明公开账本对链下控制能够显示和不能显示的内容。"
       }
     }
   },
   "Cta": {
-    "title": "Building compliance into a DeFi product?",
-    "description": "Share your protocol type, jurisdictions, and what you need to screen or monitor. We outline realistic integration scope before engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Compliance investigations"
-  },
-  "Features": {
-    "pillars": {
-      "coverage": {
-        "label": "Asset and network coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
-      },
-      "integration": {
-        "label": "Workflow integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
-      },
-      "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
-      },
-      "monitoring": {
-        "label": "Ongoing monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
-      }
-    }
+    "title": "正在把合规做进 DeFi 产品？",
+    "description": "说明协议类型、司法辖区，以及需要筛查或监测的内容。我们会在合作前划定切实可行的集成范围。",
+    "btn_primary": "联系团队",
+    "btn_secondary": "合规调查"
   }
 }

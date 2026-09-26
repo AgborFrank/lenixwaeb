@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "Fale com nossa equipe",
+    "description": "Fale com a Lenix Protocol sobre casos de recuperação, consultas de empréstimo, parcerias ou suporte da plataforma. As equipes de perícia e de clientes respondem no horário comercial, em qualquer fuso."
+  },
+  "Main": {
+    "title": "Pronto para começar?",
+    "subtitle": "Seja suporte de recuperação, uma consulta de empréstimo ou uma conversa de parceria, a equipe está aqui.",
+    "get_in_touch": "Entrar em contato",
+    "desc": "Escolha o canal que funcionar melhor. Em casos urgentes, inclua hashes de transação ou endereços de carteira na mensagem.",
+    "email_cta": "E-mail ao suporte",
+    "footer": {
+      "support": "Suporte disponível",
+      "response": "Resposta no chat ao vivo",
+      "confidential": "Tratamento confidencial"
+    }
+  },
+  "Info": {
+    "title": "Informações de contato",
+    "address_title": "Escritório",
+    "address_line_1": "123 Blockchain Street",
+    "address_line_2": "San Francisco, CA 94105",
+    "address_line_3": "Estados Unidos",
+    "email_title": "E-mail",
+    "email_line_1": "recovery@lenixprotocol.com",
+    "email_line_2": "loan@lenixprotocol.com",
+    "email_line_3": "support@lenixprotocol.com",
+    "phone_title": "Telefone",
+    "phone_line": "+447887052128",
+    "hours_title": "Horário comercial",
+    "hours_line_1": "Segunda – sexta: 9h – 18h EST",
+    "hours_line_2": "Sábado – domingo: fechado",
+    "chat_title": "Precisa de ajuda urgente?",
+    "chat_description": "A equipe acompanha o chat ao vivo o tempo todo em recuperações e questões de segurança que não podem esperar.",
+    "chat_cta": "Iniciar chat ao vivo",
+    "follow_title": "Siga-nos",
+    "response_title": "Prazos típicos de resposta",
+    "response_email": "E-mail",
+    "response_email_time": "Em até 24 horas",
+    "response_chat": "Chat ao vivo",
+    "response_chat_time": "Menos de 5 minutos",
+    "response_phone": "Telefone",
+    "response_phone_time": "Horário comercial"
+  },
+  "Form": {
+    "title": "Envie uma mensagem",
+    "subtitle": "Respondemos à maioria dos contatos em um dia útil.",
+    "name": "Nome completo *",
+    "email": "E-mail *",
+    "phone": "Telefone",
+    "whatsapp": "WhatsApp ou Telegram",
+    "inquiry_type": "Tipo de contato",
+    "subject": "Assunto *",
+    "message": "Sua mensagem *",
+    "placeholder_name": "Digite seu nome completo",
+    "placeholder_email": "Digite seu e-mail",
+    "placeholder_phone": "+1 234 567 8900",
+    "placeholder_whatsapp": "@usuário ou +1234567890",
+    "placeholder_subject": "Sobre o que é?",
+    "placeholder_message": "Diga como podemos ajudar…",
+    "submit": "Enviar mensagem",
+    "privacy": "Ao enviar este formulário, você concorda com a política de privacidade e os termos de serviço.",
+    "inquiry_options": {
+      "general": "Contato geral",
+      "recovery": "Serviços de recuperação",
+      "crypto_loan": "Empréstimos cripto",
+      "support": "Suporte técnico",
+      "partnership": "Parceria",
+      "business": "Desenvolvimento de negócios",
+      "press": "Imprensa e mídia",
+      "other": "Outro"
+    },
+    "success_title": "Mensagem enviada",
+    "success_description": "Obrigado pelo contato. Retornaremos em até 24 horas.",
+    "success_cta": "Enviar outra mensagem",
+    "sending": "Enviando…"
+  },
+  "FAQ": {
+    "title": "Perguntas frequentes",
+    "subtitle": "Respostas a dúvidas comuns sobre recuperação, crédito e segurança da plataforma.",
+    "cta_text": "Ainda tem dúvidas?",
+    "email_cta": "E-mail ao suporte",
+    "chat_cta": "Iniciar chat ao vivo",
+    "items": {
+      "start": {
+        "question": "Como abro um caso de recuperação ou de empréstimo?",
+        "answer": "Envie seus dados por este formulário ou para recovery@lenixprotocol.com. Para empréstimo, acesse a página de empréstimo cripto para iniciar o cadastro. A equipe confirmará o escopo, a documentação e os próximos passos."
+      },
+      "assets": {
+        "question": "Quais ativos e redes vocês cobrem?",
+        "answer": "Rastreamos atividade nas principais redes EVM, Bitcoin e stablecoins de uso comum. A cobertura cresce conforme o caso — envie os detalhes das transações para uma avaliação específica."
+      },
+      "security": {
+        "question": "Como os dados do cliente são protegidos?",
+        "answer": "O material do caso segue controle de acesso rígido, criptografia em trânsito e em repouso, e fluxos de revisão separados. Não pedimos chaves privadas nem frases-semente."
+      },
+      "fees": {
+        "question": "Como são estruturadas as taxas de recuperação e de empréstimo?",
+        "answer": "Os trabalhos de recuperação são definidos caso a caso. O preço do empréstimo depende do colateral, do prazo e do LTV. Entregamos condições por escrito antes de qualquer trabalho ou desembolso."
+      },
+      "timeline": {
+        "question": "Quanto tempo duram as investigações?",
+        "answer": "Os prazos variam conforme a complexidade, a jurisdição e a cooperação das exchanges. Relatórios iniciais de rastreio costumam sair em dias; um caminho completo de recuperação pode levar semanas, conforme fatores legais e de custódia."
+      },
+      "availability": {
+        "question": "Vocês trabalham com autoridades?",
+        "answer": "Sim. Apoiamos autoridades e equipes de compliance com pacotes de rastreio, revisão especializada e documentação adequada a processos regulatórios e judiciais."
+      }
+    }
+  }
+}

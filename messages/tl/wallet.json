@@ -5,18 +5,18 @@
     "keywords": "Crypto wallet, Multi-chain wallet, Non-custodial wallet, Lenix Wallet, Crypto loan"
   },
   "Hero": {
-    "eyebrow_prefix": "Multi-chain ",
-    "eyebrow_highlight": "wallet",
+    "eyebrow_prefix": "Maraming chain ",
+    "eyebrow_highlight": "pitaka",
     "eyebrow_suffix": " sa Lenix",
     "title_prefix": "Magpadala, mag-hold, at umutang — may ",
-    "title_highlight1": "recovery",
+    "title_highlight1": "pagbawi",
     "title_mid": " kapag kailangan, mula sa isang ",
-    "title_highlight2": "app",
+    "title_highlight2": "aplikasyon",
     "subtitle": "Non-custodial wallet para sa araw-araw na crypto — naka-encrypt sa device mo, multi-chain by default, at konektado sa Lenix lending at recovery kapag hindi sapat ang karaniwang send.",
     "btn_download": "I-download app",
     "btn_learn": "Tingnan features",
     "mock": {
-      "account": "Account 1",
+      "account": "Kuenta 1",
       "total_balance": "Kabuuang balanse",
       "change_24h": "+2.4% (24o)",
       "send": "Ipadala",
@@ -38,33 +38,33 @@
       "loans": {
         "title": "Collateral loan",
         "desc": "Humiram ng stablecoins laban sa supported assets nang hindi ibinebenta ang posisyon — ipinapakita ang terms at collateral ratio bago mag-confirm.",
-        "link": "View lending"
+        "link": "Tingnan ang pagpapahiram"
       },
       "recovery": {
         "title": "Daan ng recovery",
         "desc": "Kung nawala o ninakaw ang assets, magbukas ng recovery case mula sa Lenix ecosystem — tracing at exchange coordination kapag hindi sapat ang standard wallet flow.",
-        "link": "Start recovery"
+        "link": "Simulan ang pagbawi"
       },
       "multichain": {
-        "title": "Multi-chain balances",
-        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+        "title": "Mga balanse sa maraming chain",
+        "desc": "Tingnan ang mga asset at history sa Ethereum, BNB Chain, at Polygon mula sa isang pitaka — lumipat ng network nang walang hiwalay na app."
       },
       "transfers": {
-        "title": "Send, receive, swap",
-        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+        "title": "Magpadala, tumanggap, magpalit",
+        "desc": "Ilipat ang mga token, kopyahin ang address ng pagtanggap, at magpalit ng suportadong asset — may opsyon sa pagbili kung may integrated na provider."
       },
       "access": {
-        "title": "Web and mobile",
-        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+        "title": "Web at mobile",
+        "desc": "Gamitin ang pitaka sa browser sa lenixwallet.com o i-download ang app — gumawa nang isang beses, i-import gamit ang parirala ng pagbawi sa alinman."
       }
     },
-    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "networks_line": "Aktibo sa Ethereum, BNB Chain, at Polygon.",
     "groups": {
       "wallet": {
-        "title": "In the wallet"
+        "title": "Sa pitaka"
       },
       "platform": {
-        "title": "Through Lenix"
+        "title": "Sa pamamagitan ng Lenix"
       }
     }
   },
@@ -86,15 +86,15 @@
     },
     "mock_back": {
       "title": "SECURED ANG SYSTEM",
-      "network_label": "Network",
+      "network_label": "Kalambatan",
       "network_status": "Konektado",
-      "firewall_label": "Firewall",
+      "firewall_label": "Hadlang",
       "firewall_status": "Aktibo"
     },
     "mock_front": {
-      "title": "SECURE VAULT",
+      "title": "SEGURONG BAUL",
       "subtitle": "NA-VERIFY ANG DEVICE",
-      "encryption_title": "Encryption",
+      "encryption_title": "Pag-encrypt",
       "encryption_desc": "Naka-encrypt ang local keys",
       "network_title": "Status ng network",
       "network_desc": "Handa ang multi-chain"
@@ -104,7 +104,7 @@
     "title": "I-download ang Lenix Wallet",
     "subtitle": "Gumawa o mag-import ng wallet sa loob ng ilang minuto. Parehong app para sa send, receive, swap, at loan — may Lenix recovery kapag kailangan mo.",
     "btn_download": "I-download app",
-    "btn_web": "Open web wallet"
+    "btn_web": "Buksan ang pitaka sa web"
   },
   "Networks": {
     "eyebrow": "Supported networks",
@@ -117,48 +117,48 @@
     }
   },
   "GettingStarted": {
-    "eyebrow": "Getting started",
-    "title": "Up and running in three steps",
-    "step_label": "Step {number}",
+    "eyebrow": "Pagsisimula",
+    "title": "Handa sa tatlong hakbang",
+    "step_label": "Hakbang {number}",
     "steps": {
       "create": {
-        "title": "Create or import",
-        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+        "title": "Gumawa o mag-import",
+        "desc": "Gumawa ng bagong pitaka o i-restore gamit ang parirala ng pagbawi na 12 o 24 salita."
       },
       "secure": {
-        "title": "Set password and backup",
-        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+        "title": "Itakda ang password at backup",
+        "desc": "Pumili ng password ng pitaka at itago offline ang parirala ng pagbawi — hindi ito ma-reset ng Lenix para sa iyo."
       },
       "use": {
-        "title": "Send, swap, or borrow",
-        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+        "title": "Magpadala, magpalit, o humiram",
+        "desc": "Ilipat ang asset, suriin ang history ayon sa chain, o buksan ang lending at recovery mula sa ecosystem ng Lenix."
       }
     }
   },
   "Ecosystem": {
-    "eyebrow": "Lenix ecosystem",
-    "title": "Wallet connects to the rest of the platform",
-    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "eyebrow": "Ecosystem ng Lenix",
+    "title": "Kumokonekta ang pitaka sa iba pang bahagi ng platform",
+    "description": "Hawakan dito ang mga asset. Kapag kailangan mo ng higit sa transfer, sundan ang naka-link na workflow.",
     "cards": {
       "wallet": {
-        "title": "Lenix Wallet",
-        "desc": "Create, unlock, send, and receive.",
-        "cta": "Open wallet"
+        "title": "Pitaka ng Lenix",
+        "desc": "Gumawa, i-unlock, magpadala, at tumanggap.",
+        "cta": "Buksan ang pitaka"
       },
       "loan": {
-        "title": "Crypto loan",
-        "desc": "Borrow against vaulted collateral.",
-        "cta": "View lending"
+        "title": "Pautang na crypto",
+        "desc": "Humiram laban sa kolateral na nasa baul.",
+        "cta": "Tingnan ang pagpapahiram"
       },
       "recovery": {
-        "title": "Asset recovery",
-        "desc": "Trace stolen or misdirected funds.",
-        "cta": "Start recovery"
+        "title": "Pagbawi ng asset",
+        "desc": "Subaybayan ang ninakaw o maling naipadalang pondo.",
+        "cta": "Simulan ang pagbawi"
       },
       "security": {
-        "title": "Security",
-        "desc": "Audits and operational controls.",
-        "cta": "Read security"
+        "title": "Kaligtasan",
+        "desc": "Mga audit at kontrol sa operasyon.",
+        "cta": "Basahin ang seguridad"
       }
     }
   },

@@ -108,11 +108,11 @@
       "photo": "Globale Expansion"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - Protokoll-Upgrades",
+      "desc": "Umfangreiche Upgrades unserer Smart Contracts und der Kreditinfrastruktur, mit neuen Sicherheitenoptionen und verstärkten Sicherheitsprotokollen.",
+      "tag1": "V2 gestartet",
+      "tag2": "Verstärkte Sicherheit",
+      "photo": "Protokoll V2"
     },
     "step7": {
       "title": "2027 - Branchenführer",
@@ -122,18 +122,18 @@
       "photo": "Branchenanerkennung"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - Institutionelle Nutzung",
+      "desc": "Partnerschaften mit großen traditionellen Finanzinstituten für sichere On-Ramps und Off-Ramps institutionellen Kapitals.",
+      "tag1": "Institute angebunden",
+      "tag2": "TradFi-Partnerschaften",
+      "photo": "Wall-Street-Anbindung"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - KI-Forensik-Engine",
+      "desc": "Start unserer KI-gestützten Forensik-Engine der nächsten Generation, die unerlaubte Blockchain-Aktivität vorausschauend analysieren kann.",
+      "tag1": "KI-Integration",
+      "tag2": "Prädiktive Forensik",
+      "photo": "Start der KI-Engine"
     }
   },
   "Leadership": {

@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "Contactez notre équipe",
+    "description": "Écrivez à Lenix Protocol pour un dossier de récupération, une demande de prêt, un partenariat ou une question sur la plateforme. Nos équipes forensique et client répondent pendant les heures ouvrées, partout dans le monde."
+  },
+  "Main": {
+    "title": "Prêt à commencer ?",
+    "subtitle": "Récupération, consultation de prêt ou échange sur un partenariat : notre équipe est là.",
+    "get_in_touch": "Nous écrire",
+    "desc": "Choisissez le canal qui vous convient. Pour un dossier urgent, indiquez les empreintes de transaction ou les adresses de portefeuille dans votre message.",
+    "email_cta": "Écrire au support",
+    "footer": {
+      "support": "Support disponible",
+      "response": "Réponse par chat en direct",
+      "confidential": "Traitement confidentiel"
+    }
+  },
+  "Info": {
+    "title": "Coordonnées",
+    "address_title": "Bureau",
+    "address_line_1": "123 Blockchain Street",
+    "address_line_2": "San Francisco, CA 94105",
+    "address_line_3": "États-Unis",
+    "email_title": "E-mail",
+    "email_line_1": "recovery@lenixprotocol.com",
+    "email_line_2": "loan@lenixprotocol.com",
+    "email_line_3": "support@lenixprotocol.com",
+    "phone_title": "Téléphone",
+    "phone_line": "+447887052128",
+    "hours_title": "Heures d'ouverture",
+    "hours_line_1": "Lundi – vendredi : 9 h 00 – 18 h 00 EST",
+    "hours_line_2": "Samedi – dimanche : fermé",
+    "chat_title": "Besoin d'une aide urgente ?",
+    "chat_description": "Notre équipe suit le chat en direct en continu pour les dossiers de récupération et de sécurité qui ne peuvent pas attendre.",
+    "chat_cta": "Ouvrir le chat",
+    "follow_title": "Nous suivre",
+    "response_title": "Délais de réponse habituels",
+    "response_email": "E-mail",
+    "response_email_time": "Sous 24 heures",
+    "response_chat": "Chat en direct",
+    "response_chat_time": "Moins de 5 minutes",
+    "response_phone": "Téléphone",
+    "response_phone_time": "Heures ouvrées"
+  },
+  "Form": {
+    "title": "Envoyez-nous un message",
+    "subtitle": "Nous répondons à la plupart des demandes sous un jour ouvré.",
+    "name": "Nom complet *",
+    "email": "Adresse e-mail *",
+    "phone": "Numéro de téléphone",
+    "whatsapp": "WhatsApp ou Telegram",
+    "inquiry_type": "Type de demande",
+    "subject": "Objet *",
+    "message": "Votre message *",
+    "placeholder_name": "Saisissez votre nom complet",
+    "placeholder_email": "Saisissez votre e-mail",
+    "placeholder_phone": "+1 234 567 8900",
+    "placeholder_whatsapp": "@identifiant ou +1234567890",
+    "placeholder_subject": "Quel est l'objet ?",
+    "placeholder_message": "Dites-nous comment nous pouvons vous aider…",
+    "submit": "Envoyer le message",
+    "privacy": "En envoyant ce formulaire, vous acceptez notre politique de confidentialité et nos conditions d'utilisation.",
+    "inquiry_options": {
+      "general": "Demande générale",
+      "recovery": "Services de récupération",
+      "crypto_loan": "Prêts crypto",
+      "support": "Support technique",
+      "partnership": "Partenariat",
+      "business": "Développement commercial",
+      "press": "Presse et médias",
+      "other": "Autre"
+    },
+    "success_title": "Message envoyé",
+    "success_description": "Merci de nous avoir écrit. Nous vous répondrons sous 24 heures.",
+    "success_cta": "Envoyer un autre message",
+    "sending": "Envoi…"
+  },
+  "FAQ": {
+    "title": "Questions fréquentes",
+    "subtitle": "Réponses aux questions courantes sur la récupération, le prêt et la sécurité de la plateforme.",
+    "cta_text": "Vous avez encore des questions ?",
+    "email_cta": "Écrire au support",
+    "chat_cta": "Ouvrir le chat",
+    "items": {
+      "start": {
+        "question": "Comment ouvrir un dossier de récupération ou de prêt ?",
+        "answer": "Transmettez vos informations via ce formulaire ou par e-mail à recovery@lenixprotocol.com. Pour un prêt, ouvrez la page de prêt crypto afin de commencer l'intégration. Notre équipe confirmera le périmètre, les documents et les prochaines étapes."
+      },
+      "assets": {
+        "question": "Quels actifs et quelles chaînes prenez-vous en charge ?",
+        "answer": "Nous traçons l'activité sur les principales chaînes EVM, Bitcoin et les stablecoins d'usage courant. La couverture s'étend selon les dossiers — écrivez-nous avec le détail de vos transactions pour une évaluation propre à votre cas."
+      },
+      "security": {
+        "question": "Comment les données clients sont-elles protégées ?",
+        "answer": "Les pièces du dossier sont traitées sous contrôle d'accès strict, chiffrées en transit et au repos, et examinées dans des circuits séparés. Nous ne demandons ni clés privées ni phrases de récupération."
+      },
+      "fees": {
+        "question": "Comment sont structurés les frais de récupération et de prêt ?",
+        "answer": "Les missions de récupération sont cadrées dossier par dossier. Le prix d'un prêt dépend du collatéral, de la durée et du LTV. Nous remettons des conditions écrites avant tout début de travail ou tout décaissement."
+      },
+      "timeline": {
+        "question": "Combien de temps durent les investigations ?",
+        "answer": "Les délais varient selon la complexité, la juridiction et la coopération des plateformes d'échange. Les premiers rapports de traçage partent souvent en quelques jours ; un parcours de récupération complet peut prendre des semaines, selon les facteurs juridiques et de conservation."
+      },
+      "availability": {
+        "question": "Travaillez-vous avec les forces de l'ordre ?",
+        "answer": "Oui. Nous appuyons les forces de l'ordre et les équipes conformité avec des dossiers de traçage, une revue d'expert et une documentation utilisable dans les procédures réglementaires et judiciaires."
+      }
+    }
+  }
+}

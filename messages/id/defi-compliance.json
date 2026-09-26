@@ -1,102 +1,78 @@
 {
   "meta": {
-    "title": "DeFi Compliance & AML | Lenix Protocol",
-    "description": "AML screening, counterparty diligence, and monitoring for DeFi protocols and crypto infrastructure teams — with configurable rules and documented scope."
+    "title": "Kepatuhan DeFi dan AML | Lenix Protocol",
+    "description": "Penyaringan AML, uji tuntas pihak lawan, dan pemantauan untuk protokol DeFi serta tim infrastruktur kripto — dengan aturan yang dapat dikonfigurasi dan cakupan yang terdokumentasi."
   },
   "Hero": {
-    "badge": "DeFi compliance",
-    "title1": "AML and risk controls ",
-    "title2": "for decentralized finance",
-    "subtitle": "Screen wallets and flows, review protocol counterparties, and integrate compliance checks into your operations — without claiming DeFi can be made fully permissionless and regulation-free.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Kepatuhan DeFi",
+    "title1": "Kontrol AML dan risiko ",
+    "title2": "untuk keuangan terdesentralisasi",
+    "subtitle": "Saring dompet dan arus, tinjau pihak lawan protokol, dan masukkan pemeriksaan kepatuhan ke operasi Anda — tanpa mengklaim bahwa DeFi dapat dibuat sepenuhnya tanpa izin dan bebas regulasi.",
+    "btn_primary": "Hubungi tim",
+    "btn_secondary": "Lihat kapabilitas"
   },
   "Overview": {
-    "title": "Compliance that fits how DeFi actually works",
-    "description": "Lenix helps protocol teams, treasuries, and infrastructure providers assess exposure across supported networks — pool interactions, bridge touchpoints, and wallet screening — with outputs your compliance function can audit, not opaque risk scores alone."
+    "title": "Kepatuhan yang sesuai cara DeFi benar-benar bekerja",
+    "description": "Lenix membantu tim protokol, bendahara, dan penyedia infrastruktur menilai paparan di jaringan yang didukung — interaksi pool, titik sentuh bridge, dan penyaringan dompet — dengan hasil yang dapat diaudit fungsi kepatuhan Anda, bukan hanya skor risiko yang buram."
   },
   "Highlights": {
     "items": {
       "scale": {
-        "title": "Scale screening without losing review quality",
-        "desc": "Configurable rules and batch review help compliance teams focus on material exposure — not manual lookup for every wallet touch."
+        "title": "Perbesar penyaringan tanpa kehilangan mutu tinjauan",
+        "desc": "Aturan yang dapat dikonfigurasi dan tinjauan berkelompok membantu tim kepatuhan fokus pada paparan material — bukan pencarian manual untuk setiap sentuhan dompet."
       },
       "cost": {
-        "title": "Integrate into existing workflows",
-        "desc": "API and export options fit internal queues and case tools so screening does not sit in a separate silo."
+        "title": "Masuk ke alur kerja yang sudah ada",
+        "desc": "API dan opsi ekspor sesuai antrean internal dan alat kasus, sehingga penyaringan tidak berada di silo terpisah."
       },
       "coverage": {
-        "title": "Cross-chain context where supported",
-        "desc": "Review activity across networks and token types your program covers — with limits stated when a chain or asset is outside scope."
+        "title": "Konteks lintas rantai di tempat yang didukung",
+        "desc": "Tinjau aktivitas di jaringan dan jenis token yang dicakup program Anda — dengan batas yang dinyatakan saat suatu rantai atau aset berada di luar cakupan."
       },
       "threats": {
-        "title": "Proactive counterparty review",
-        "desc": "Assess pools, routers, and wallet connections before treasury moves or partner onboarding — bounded to your policy definitions."
+        "title": "Tinjauan pihak lawan yang proaktif",
+        "desc": "Nilai pool, router, dan koneksi dompet sebelum pergerakan bendahara atau onboarding mitra — dibatasi pada definisi kebijakan Anda."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "coverage": {
-        "label": "Asset coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
+        "label": "Cakupan aset",
+        "title": "Saring aktivitas di rantai yang didukung",
+        "body": "Nilai transaksi dan paparan dompet di jaringan lapisan 1 dan lapisan 2 utama, stablecoin, serta standar token yang umum di DeFi — dibatasi pada jaringan dan aset yang dicakup keterlibatan Anda."
       },
       "integration": {
-        "label": "API integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
+        "label": "Integrasi API",
+        "title": "Bawa penyaringan ke dalam stack Anda",
+        "body": "Hubungkan keluaran Lenix ke antrean tinjauan internal, manajemen kasus, atau alat khusus lewat API dan ekspor berkas — agar langkah kepatuhan tetap di alur yang sudah dijalankan tim Anda."
       },
       "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
+        "label": "Penyaringan transaksi",
+        "title": "Tandai paparan sebelum dana bergerak",
+        "body": "Tinjau dompet dan transaksi atas kaitan dengan entitas yang dikenai sanksi, tipologi penipuan yang diketahui, dan kategori layanan berisiko tinggi — dengan hasil yang dapat diterima, dieskalasi, atau ditimpa tim Anda beserta catatan."
       },
       "monitoring": {
-        "label": "Automated monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
+        "label": "Pemantauan otomatis",
+        "title": "Daftar pantau untuk protokol dan bendahara",
+        "body": "Pantau himpunan alamat, interaksi pool, dan arus pihak lawan yang berulang. Aturan peringatan dan cakupan bergantung pada jaringan yang didukung serta cara program Anda mendefinisikan risiko material."
       },
       "onboarding": {
-        "label": "Counterparty onboarding",
-        "title": "Review partners before integration",
-        "body": "Screen liquidity providers, pool contracts, and wallet counterparties during onboarding — surfacing exposure across supported chains when your policy requires it."
+        "label": "Onboarding pihak lawan",
+        "title": "Tinjau mitra sebelum integrasi",
+        "body": "Saring penyedia likuiditas, kontrak pool, dan dompet pihak lawan selama onboarding — menampilkan paparan di rantai yang didukung saat kebijakan Anda mensyaratkannya."
       },
       "diligence": {
-        "label": "Protocol due diligence",
-        "title": "Map exposure across the ecosystem",
-        "body": "Analyze how a protocol connects to exchanges, bridges, and high-risk services in on-chain data — with written limits on what public ledgers can and cannot show about off-chain control."
+        "label": "Uji tuntas protokol",
+        "title": "Petakan paparan di seluruh ekosistem",
+        "body": "Analisis bagaimana suatu protokol terhubung ke bursa, bridge, dan layanan berisiko tinggi dalam data on-chain — dengan batas tertulis tentang apa yang dapat dan tidak dapat ditunjukkan buku besar publik mengenai kendali di luar rantai."
       }
     }
   },
   "Cta": {
-    "title": "Building compliance into a DeFi product?",
-    "description": "Share your protocol type, jurisdictions, and what you need to screen or monitor. We outline realistic integration scope before engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Compliance investigations"
-  },
-  "Features": {
-    "pillars": {
-      "coverage": {
-        "label": "Asset and network coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
-      },
-      "integration": {
-        "label": "Workflow integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
-      },
-      "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
-      },
-      "monitoring": {
-        "label": "Ongoing monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
-      }
-    }
+    "title": "Membangun kepatuhan ke dalam produk DeFi?",
+    "description": "Sampaikan jenis protokol, yurisdiksi, dan apa yang perlu disaring atau dipantau. Kami menguraikan cakupan integrasi yang realistis sebelum keterlibatan dimulai.",
+    "btn_primary": "Hubungi tim",
+    "btn_secondary": "Investigasi kepatuhan"
   }
 }

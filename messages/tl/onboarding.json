@@ -1,209 +1,222 @@
 {
   "Shell": {
-    "skip": "Skip for now",
-    "back": "Back",
+    "skip": "Laktawan muna",
+    "back": "Bumalik",
     "logoAlt": "Lenix Protocol",
-    "progressAria": "Progress",
-    "asideAria": "Help and information"
+    "progressAria": "Pag-usad",
+    "asideAria": "Tulong at impormasyon"
   },
   "Progress": {
-    "stepOf": "Step {current} of {total}",
+    "stepOf": "Hakbang {current} ng {total}",
     "flows": {
       "selection": {
-        "1": "Service",
-        "2": "Details",
-        "3": "Complete"
+        "1": "Serbisyo",
+        "2": "Detalye",
+        "3": "Kumpleto"
       },
       "recovery": {
-        "1": "Service",
-        "2": "Case details"
+        "1": "Serbisyo",
+        "2": "Detalye ng kaso"
       },
       "loan": {
-        "1": "Service",
-        "2": "Loan details",
-        "3": "Payout"
+        "1": "Serbisyo",
+        "2": "Detalye ng pautang",
+        "3": "Pagpapadala"
       },
       "banking": {
-        "1": "Service",
-        "2": "Banking details"
+        "1": "Serbisyo",
+        "2": "Detalye ng bangko"
       }
     }
   },
   "Selection": {
-    "title": "Choose your service",
-    "description": "Select the Lenix service that matches your request. You will complete a short intake form in the next step.",
-    "legend": "Select a service",
-    "sectionTitle": "Available services",
-    "sectionDesc": "Select one option to continue.",
-    "continue": "Continue",
+    "title": "Ano ang sadya mo rito?",
+    "description": "Piliin ang serbisyong kailangan mo para makapagsimula.",
+    "legend": "Pumili ng serbisyo",
+    "sectionTitle": "Serbisyo",
+    "sectionDesc": "Kinakailangan.",
+    "continue": "Magpatuloy",
     "services": {
       "recovery": {
-        "title": "Crypto asset recovery",
-        "description": "Trace lost or stolen funds and build evidence for lawful recovery steps with our forensics team."
+        "title": "Bawiin ang nawalang pondo",
+        "description": "Hanapin ang ninakaw o nawalang crypto kasama ang forensics team namin at bumuo ng kaso para sa pagbawi."
       },
       "loan": {
-        "title": "Crypto-backed loan",
-        "description": "Borrow against approved collateral with rates, LTV, and repayment terms shown before disbursement."
+        "title": "Kumuha ng crypto loan",
+        "description": "Humiram ng pera gamit ang crypto bilang kolateral. Makikita ang mga rate at tuntunin bago ka magpatuloy."
       },
       "banking": {
-        "title": "Finance & Banking",
-        "description": "Cross-border transfers, crypto liquidation, custody, and remittance on corridors Lenix supports."
+        "title": "Mga serbisyo sa bangko",
+        "description": "Magpadala at tumanggap ng pondo sa ibang bansa, i-convert ang crypto sa cash, o mag-imbak ng asset nang ligtas."
       }
     }
   },
   "Details": {
-    "backToSelection": "Back to service selection",
-    "backToLoan": "Back to loan details",
+    "backToSelection": "Bumalik sa pagpili ng serbisyo",
+    "backToLoan": "Bumalik sa detalye ng pautang",
     "recovery": {
-      "title": "Asset recovery case details",
-      "description": "Provide transaction and incident information so our team can assess the trail and next steps."
+      "title": "Sabihin sa amin kung ano ang nangyari",
+      "description": "Kailangan namin ang ilang detalye tungkol sa transaksyon at insidente."
     },
     "banking": {
-      "title": "Finance & Banking details",
-      "description": "Tell us which banking service you need and your corridor so we can confirm support and next steps."
+      "title": "Magsimula tayo",
+      "description": "Sabihin kung ano ang kailangan mo at kung saan ka naroroon."
     },
     "loan": {
-      "title": "Loan application details",
-      "description": "Tell us how much you need and what collateral you will post. Next, you will choose how to receive funds."
+      "title": "Aplikasyon sa pautang",
+      "description": "Piliin ang uri ng pautang at sabihin kung magkano ang kailangan mo."
     },
     "payout": {
-      "title": "How should we send your funds?",
-      "description": "Choose a payout method and enter the details we need to disburse your loan."
+      "title": "Saan namin ito ipapadala?",
+      "description": "Piliin kung paano mo gustong matanggap ang pondo."
     }
   },
   "Aside": {
     "recovery": {
-      "title": "Recovery intake",
-      "body": "Provide accurate transaction details to help our forensics team trace funds and document next steps.",
-      "bullet1": "Chain analysis by certified analysts",
-      "bullet2": "Evidence preserved for legal review",
-      "bullet3": "Case updates in your dashboard"
+      "title": "Pagtanggap ng kaso sa pagbawi",
+      "body": "Magbigay ng tumpak na detalye ng transaksyon para matulungan ang forensics team na subaybayan ang pondo at itala ang susunod na hakbang.",
+      "bullet1": "Pagsusuri ng chain ng mga certified analyst",
+      "bullet2": "Napanatili ang ebidensya para sa legal na pagsusuri",
+      "bullet3": "Mga update ng kaso sa iyong dashboard"
     },
     "loan": {
-      "title": "Loan application",
-      "body": "Terms, LTV, and collateral requirements are shown before you commit. Payout details are collected in the final step.",
-      "bullet1": "Transparent rates before disbursement",
-      "bullet2": "Collateral held in Lenix custody",
-      "bullet3": "Multiple payout methods supported"
+      "title": "Aplikasyon sa pautang",
+      "body": "Ipinapakita ang mga tuntunin, LTV, at kinakailangang kolateral bago ka magpasyang magpatuloy. Kinokolekta ang detalye ng pagpapadala sa huling hakbang.",
+      "bullet1": "Malinaw na mga rate bago ang pagpapalabas",
+      "bullet2": "Hawak ng Lenix ang kolateral",
+      "bullet3": "Suportado ang maraming paraan ng pagpapadala"
     },
     "banking": {
-      "title": "Banking services",
-      "body": "Lenix operates transfers, liquidation, lending, and custody directly — not white-label infrastructure.",
-      "bullet1": "Quoted rates before confirmation",
-      "bullet2": "KYC on supported corridors",
-      "bullet3": "Finance-grade audit trail"
+      "title": "Ano ang susunod",
+      "body": "Susuriin namin ang iyong kahilingan at babalikan ka sa loob ng 24 oras kasama ang susunod na hakbang at presyo.",
+      "bullet1": "Kumuha ng quote na may malinaw na bayarin",
+      "bullet2": "Kumpletuhin ang beripikasyon kung kailangan",
+      "bullet3": "Subaybayan ang lahat sa iyong dashboard"
     },
-    "encryption": "Your information is encrypted in transit and at rest. See our privacy policy for data handling practices.",
-    "support": "Need help? Contact support via Telegram after submitting your intake."
+    "encryption": "Naka-encrypt at ligtas ang iyong data. Hindi namin ibinabahagi ang impormasyon mo nang walang pahintulot.",
+    "support": "May tanong? Makipag-ugnayan sa Telegram pagkatapos mong magsumite."
   },
   "Common": {
     "required": "*",
-    "fullName": "Full name",
-    "phoneNumber": "Phone number",
-    "submitFinish": "Submit and finish",
-    "continue": "Continue",
-    "continuePayout": "Continue to payout",
-    "submitting": "Submitting…",
-    "privacyPrefix": "Lenix may contact you about this case. See our",
-    "privacyPrefixBanking": "A Lenix banking specialist will follow up on supported corridors. See our",
-    "privacyPolicy": "Privacy Policy",
-    "privacySuffix": ".",
-    "placeholderName": "John Doe",
-    "selectCountry": "Select country",
-    "selectService": "Select a service",
-    "selectBlockchain": "Select blockchain",
-    "selectCurrency": "Select currency",
-    "selectAsset": "Select asset",
-    "selectNetwork": "Select network",
-    "somethingWrong": "Something went wrong",
-    "pleaseLogin": "Please log in"
+    "fullName": "Pangalan mo",
+    "phoneNumber": "Numero ng telepono (opsyonal)",
+    "submitFinish": "Isumite ang kahilingan",
+    "continue": "Magpatuloy",
+    "continuePayout": "Magpatuloy sa pagpapadala",
+    "submitting": "Ipinapadala...",
+    "privacyPrefix": "Makikipag-ugnayan kami kung kailangan pa ng impormasyon. Tingnan ang aming ",
+    "privacyPrefixBanking": "Makikipag-ugnayan kami sa lalong madaling panahon. Tingnan ang aming ",
+    "privacyPolicy": "patakaran sa privacy",
+    "privacySuffix": " para sa mga detalye.",
+    "placeholderName": "hal. Sarah Chen",
+    "selectCountry": "Pumili ng bansa",
+    "selectService": "Pumili ng isa",
+    "selectBlockchain": "Pumili ng kadena",
+    "selectCurrency": "Pumili ng pera",
+    "selectAsset": "Pumili ng asset",
+    "selectNetwork": "Pumili ng network",
+    "somethingWrong": "May nangyaring mali. Pakisubukan muli.",
+    "pleaseLogin": "Mag-sign in para magpatuloy"
   },
   "RecoveryForm": {
-    "sectionTitle": "Incident information",
-    "sectionDesc": "Provide transaction details and a summary of what occurred.",
-    "transactionHash": "Transaction hash or wallet address",
-    "amountLost": "Approximate amount lost",
-    "amountPlaceholder": "e.g. 200000",
-    "transactionPlaceholder": "0x1234… or wallet address",
-    "blockchain": "Blockchain",
-    "currency": "Currency",
-    "incidentSummary": "Incident summary",
-    "incidentPlaceholder": "Describe what happened, when it occurred, and any parties involved.",
-    "evidence": "Supporting evidence",
-    "evidenceHint": "Screenshot or PDF (optional)"
+    "contactSectionTitle": "Impormasyon sa pakikipag-ugnayan",
+    "contactSectionDesc": "Paano ka makokontak ng aming team tungkol sa kasong ito.",
+    "transactionSectionTitle": "Detalye ng transaksyon",
+    "transactionSectionDesc": "Mga on-chain na identifier at halaga ng pagkalugi para sa forensic review.",
+    "incidentSectionTitle": "Insidente at ebidensya",
+    "incidentSectionDesc": "Ilarawan kung ano ang nangyari at maglakip ng mga sumusuportang file.",
+    "sectionTitle": "Impormasyon ng insidente",
+    "sectionDesc": "Ibigay ang detalye ng transaksyon at buod ng nangyari.",
+    "transactionHash": "Transaction hash o address ng wallet",
+    "amountLost": "Tinatayang halagang nawala",
+    "amountPlaceholder": "hal. 200000",
+    "transactionPlaceholder": "0x1234… o address ng wallet",
+    "blockchain": "Kadena ng bloke",
+    "currency": "Pera",
+    "incidentSummary": "Buod ng insidente",
+    "incidentPlaceholder": "Ilarawan kung ano ang nangyari, kailan, at kung sinong mga panig ang kasangkot.",
+    "evidence": "Sumusuportang ebidensya",
+    "evidenceHint": "Screenshot o PDF (opsyonal)",
+    "fileDropTitle": "I-upload ang ebidensya",
+    "fileDropHint": "PNG, JPG, o PDF hanggang 10 MB"
   },
   "BankingForm": {
-    "sectionTitle": "Account & service details",
-    "sectionDesc": "Tell us who you are and which banking service you need on your corridor.",
-    "countryCorridor": "Country / corridor",
-    "serviceNeeded": "Service needed",
-    "additionalDetails": "Additional details",
-    "notesPlaceholder": "Describe the transfer amount, beneficiary market, or account setup you need.",
+    "contactSectionTitle": "Tungkol sa iyo",
+    "contactSectionDesc": "Gagamitin namin ito para makipag-ugnayan tungkol sa iyong kahilingan.",
+    "serviceSectionTitle": "Ang kailangan mo",
+    "serviceSectionDesc": "Tulungan kaming maintindihan kung aling serbisyo ang hinahanap mo.",
+    "sectionTitle": "Detalye ng account at serbisyo",
+    "sectionDesc": "Sabihin kung sino ka at aling serbisyo sa bangko ang kailangan mo sa iyong corridor.",
+    "countryCorridor": "Bansa / corridor",
+    "serviceNeeded": "Saan mo kailangan ng tulong?",
+    "additionalDetails": "May iba pa ba kaming dapat malaman?",
+    "notesPlaceholder": "Sabihin ang halaga, destinasyon, o ang gusto mong gawin...",
     "services": {
-      "transfer": "Money transfer",
-      "liquidation": "Asset liquidation",
-      "lending": "Collateral lending",
-      "custody": "Custody & wallet"
+      "transfer": "Magpadala ng pondo",
+      "receive": "Tumanggap ng pondo/asset",
+      "liquidation": "I-convert ang crypto sa cash",
+      "lending": "Humiram gamit ang crypto",
+      "custody": "Itago at protektahan ang mga asset"
     }
   },
   "LoanForm": {
-    "noProducts": "No loan products are available right now. Please check back later.",
-    "productTitle": "Loan product",
-    "productDesc": "Select the product that matches your needs.",
-    "productApr": "{rate}% APR · up to {ltv}% LTV",
-    "productCollateral": "Collateral ${min} – ${max}",
-    "selectedHint": "Selected: {name} — review terms before continuing.",
-    "paramsTitle": "Loan parameters",
-    "paramsDesc": "Enter the amount and collateral details for your application.",
-    "loanAmount": "Loan amount (USD)",
+    "noProducts": "Walang available na produkto ng pautang ngayon. Bumalik mamaya.",
+    "productTitle": "Produkto ng pautang",
+    "productDesc": "Piliin ang produktong tumutugma sa pangangailangan mo.",
+    "productApr": "{rate}% APR · hanggang {ltv}% LTV",
+    "productCollateral": "Kolateral ${min} – ${max}",
+    "selectedHint": "Napili: {name} — suriin ang mga tuntunin bago magpatuloy.",
+    "paramsTitle": "Mga parameter ng pautang",
+    "paramsDesc": "Ilagay ang halaga at detalye ng kolateral para sa aplikasyon mo.",
+    "loanAmount": "Halaga ng pautang (USD)",
     "loanAmountPlaceholder": "5000",
-    "collateralAsset": "Collateral asset",
-    "loanTerm": "Loan term",
+    "collateralAsset": "Asset na kolateral",
+    "loanTerm": "Termino ng pautang",
     "durations": {
-      "6": "6 months",
-      "12": "12 months",
-      "24": "24 months"
+      "6": "6 na buwan",
+      "12": "12 buwan",
+      "24": "24 na buwan"
     }
   },
   "PayoutForm": {
-    "contactTitle": "Contact details",
-    "contactDesc": "Provide at least one way to reach you.",
-    "telegramWhatsapp": "Telegram or WhatsApp",
-    "telegramPlaceholder": "@username or +1234567890",
+    "contactTitle": "Detalye ng contact",
+    "contactDesc": "Magbigay ng kahit isang paraan para makontak ka.",
+    "telegramWhatsapp": "Telegram o WhatsApp",
+    "telegramPlaceholder": "@username o +1234567890",
     "phonePlaceholder": "+1 234 567 8900",
-    "methodTitle": "Payout method",
-    "methodDesc": "How should we disburse your loan?",
+    "methodTitle": "Paraan ng pagpapadala",
+    "methodDesc": "Paano namin ipapadala ang iyong pautang?",
     "methods": {
-      "crypto": {
-        "label": "Crypto wallet",
-        "desc": "Send to your on-chain address"
+        "crypto": {
+        "label": "Pitaka ng crypto",
+        "desc": "Ipadala sa iyong on-chain address"
       },
       "wire_transfer": {
-        "label": "Wire transfer",
-        "desc": "International SWIFT transfer"
+        "label": "Paglipat sa wire",
+        "desc": "Internasyonal na SWIFT transfer"
       },
       "bank": {
-        "label": "Bank account",
-        "desc": "Domestic ACH or local transfer"
+        "label": "Account sa bangko",
+        "desc": "ACH sa loob ng bansa o lokal na transfer"
       }
     },
-    "cryptoTitle": "Crypto payout",
-    "walletAddress": "Wallet address",
-    "walletPlaceholder": "0x… or your address",
-    "network": "Network",
-    "memo": "Memo / tag",
-    "memoPlaceholder": "Required by some networks",
-    "wireTitle": "Wire transfer details",
-    "bankName": "Bank name",
-    "bankNamePlaceholder": "e.g. Chase, HSBC",
+    "cryptoTitle": "Pagpapadala sa crypto",
+    "walletAddress": "Address ng wallet",
+    "walletPlaceholder": "0x… o ang iyong address",
+    "network": "Linya ng padala",
+    "memo": "Memo / tanda",
+    "memoPlaceholder": "Kinakailangan sa ilang network",
+    "wireTitle": "Detalye ng wire transfer",
+    "bankName": "Pangalan ng bangko",
+    "bankNamePlaceholder": "hal. Chase, HSBC",
     "swiftBic": "SWIFT / BIC",
     "swiftPlaceholder": "CHASUS33",
-    "accountIban": "Account / IBAN",
-    "accountHolder": "Account holder",
-    "reference": "Reference",
-    "bankAccountTitle": "Bank account details",
-    "accountNumber": "Account number",
-    "routingIban": "Routing / IBAN"
+    "accountIban": "Numero ng account / IBAN",
+    "accountHolder": "May-ari ng account",
+    "reference": "Sanggunian",
+    "bankAccountTitle": "Detalye ng bank account",
+    "accountNumber": "Numero ng account",
+    "routingIban": "Kodigo ng ruta / IBAN"
   },
   "Blockchains": {
     "BTC": "Bitcoin (BTC)",
@@ -220,7 +233,7 @@
     "KAVA": "Kava (KAVA)",
     "POL": "Polkadot (POL)",
     "SUI": "Sui (SUI)",
-    "OTHER": "Other"
+    "OTHER": "Iba pa"
   },
   "CollateralAssets": {
     "BTC": "Bitcoin (BTC)",

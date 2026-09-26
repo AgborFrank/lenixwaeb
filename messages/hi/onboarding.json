@@ -1,209 +1,222 @@
 {
   "Shell": {
-    "skip": "Skip for now",
-    "back": "Back",
+    "skip": "अभी के लिए छोड़ें",
+    "back": "वापस",
     "logoAlt": "Lenix Protocol",
-    "progressAria": "Progress",
-    "asideAria": "Help and information"
+    "progressAria": "प्रगति",
+    "asideAria": "सहायता और जानकारी"
   },
   "Progress": {
-    "stepOf": "Step {current} of {total}",
+    "stepOf": "चरण {current} में से {total}",
     "flows": {
       "selection": {
-        "1": "Service",
-        "2": "Details",
-        "3": "Complete"
+        "1": "सेवा",
+        "2": "विवरण",
+        "3": "पूर्ण"
       },
       "recovery": {
-        "1": "Service",
-        "2": "Case details"
+        "1": "सेवा",
+        "2": "केस विवरण"
       },
       "loan": {
-        "1": "Service",
-        "2": "Loan details",
-        "3": "Payout"
+        "1": "सेवा",
+        "2": "ऋण विवरण",
+        "3": "भुगतान"
       },
       "banking": {
-        "1": "Service",
-        "2": "Banking details"
+        "1": "सेवा",
+        "2": "बैंकिंग विवरण"
       }
     }
   },
   "Selection": {
-    "title": "Choose your service",
-    "description": "Select the Lenix service that matches your request. You will complete a short intake form in the next step.",
-    "legend": "Select a service",
-    "sectionTitle": "Available services",
-    "sectionDesc": "Select one option to continue.",
-    "continue": "Continue",
+    "title": "आप यहाँ किस लिए आए हैं?",
+    "description": "शुरू करने के लिए अपनी ज़रूरत की सेवा चुनें।",
+    "legend": "एक सेवा चुनें",
+    "sectionTitle": "सेवा",
+    "sectionDesc": "आवश्यक।",
+    "continue": "जारी रखें",
     "services": {
       "recovery": {
-        "title": "Crypto asset recovery",
-        "description": "Trace lost or stolen funds and build evidence for lawful recovery steps with our forensics team."
+        "title": "खोई हुई राशि वापस पाएँ",
+        "description": "हमारी फॉरेंसिक टीम के साथ चोरी या खोई क्रिप्टो का पता लगाएँ और रिकवरी का केस तैयार करें।"
       },
       "loan": {
-        "title": "Crypto-backed loan",
-        "description": "Borrow against approved collateral with rates, LTV, and repayment terms shown before disbursement."
+        "title": "क्रिप्टो ऋण लें",
+        "description": "अपनी क्रिप्टो को कोलैटरल रखकर नकद उधार लें। दरें और शर्तें पहले से देखें।"
       },
       "banking": {
-        "title": "Finance & Banking",
-        "description": "Cross-border transfers, crypto liquidation, custody, and remittance on corridors Lenix supports."
+        "title": "बैंकिंग सेवाएँ",
+        "description": "सीमा पार धन भेजें और प्राप्त करें, क्रिप्टो को नकद में बदलें, या संपत्ति सुरक्षित रखें।"
       }
     }
   },
   "Details": {
-    "backToSelection": "Back to service selection",
-    "backToLoan": "Back to loan details",
+    "backToSelection": "सेवा चयन पर वापस जाएँ",
+    "backToLoan": "ऋण विवरण पर वापस जाएँ",
     "recovery": {
-      "title": "Asset recovery case details",
-      "description": "Provide transaction and incident information so our team can assess the trail and next steps."
+      "title": "बताएँ क्या हुआ",
+      "description": "हमें लेनदेन और घटना के कुछ विवरण चाहिए।"
     },
     "banking": {
-      "title": "Finance & Banking details",
-      "description": "Tell us which banking service you need and your corridor so we can confirm support and next steps."
+      "title": "शुरू करते हैं",
+      "description": "बताएँ आपको क्या चाहिए और आप कहाँ हैं।"
     },
     "loan": {
-      "title": "Loan application details",
-      "description": "Tell us how much you need and what collateral you will post. Next, you will choose how to receive funds."
+      "title": "ऋण आवेदन",
+      "description": "ऋण का प्रकार चुनें और बताएँ आपको कितनी राशि चाहिए।"
     },
     "payout": {
-      "title": "How should we send your funds?",
-      "description": "Choose a payout method and enter the details we need to disburse your loan."
+      "title": "हम इसे कहाँ भेजें?",
+      "description": "चुनें कि आप राशि कैसे प्राप्त करना चाहते हैं।"
     }
   },
   "Aside": {
     "recovery": {
-      "title": "Recovery intake",
-      "body": "Provide accurate transaction details to help our forensics team trace funds and document next steps.",
-      "bullet1": "Chain analysis by certified analysts",
-      "bullet2": "Evidence preserved for legal review",
-      "bullet3": "Case updates in your dashboard"
+      "title": "रिकवरी इनटेक",
+      "body": "सटीक लेनदेन विवरण दें ताकि हमारी फॉरेंसिक टीम धन का पता लगा सके और अगले कदम दर्ज कर सके।",
+      "bullet1": "प्रमाणित विश्लेषकों द्वारा चेन विश्लेषण",
+      "bullet2": "कानूनी समीक्षा के लिए साक्ष्य सुरक्षित",
+      "bullet3": "आपके डैशबोर्ड में केस अपडेट"
     },
     "loan": {
-      "title": "Loan application",
-      "body": "Terms, LTV, and collateral requirements are shown before you commit. Payout details are collected in the final step.",
-      "bullet1": "Transparent rates before disbursement",
-      "bullet2": "Collateral held in Lenix custody",
-      "bullet3": "Multiple payout methods supported"
+      "title": "ऋण आवेदन",
+      "body": "शर्तें, LTV और कोलैटरल की ज़रूरतें प्रतिबद्धता से पहले दिखाई जाती हैं। भुगतान विवरण अंतिम चरण में लिए जाते हैं।",
+      "bullet1": "वितरण से पहले पारदर्शी दरें",
+      "bullet2": "कोलैटरल Lenix की कस्टडी में",
+      "bullet3": "कई भुगतान तरीके समर्थित"
     },
     "banking": {
-      "title": "Banking services",
-      "body": "Lenix operates transfers, liquidation, lending, and custody directly — not white-label infrastructure.",
-      "bullet1": "Quoted rates before confirmation",
-      "bullet2": "KYC on supported corridors",
-      "bullet3": "Finance-grade audit trail"
+      "title": "आगे क्या होता है",
+      "body": "हम आपके अनुरोध की समीक्षा करेंगे और 24 घंटे के भीतर अगले कदम और कीमत के साथ संपर्क करेंगे।",
+      "bullet1": "पारदर्शी शुल्क के साथ कोटेशन पाएँ",
+      "bullet2": "ज़रूरत हो तो सत्यापन पूरा करें",
+      "bullet3": "सब कुछ अपने डैशबोर्ड में ट्रैक करें"
     },
-    "encryption": "Your information is encrypted in transit and at rest. See our privacy policy for data handling practices.",
-    "support": "Need help? Contact support via Telegram after submitting your intake."
+    "encryption": "आपका डेटा एन्क्रिप्टेड और सुरक्षित है। बिना अनुमति हम आपकी जानकारी साझा नहीं करते।",
+    "support": "सवाल हैं? जमा करने के बाद Telegram पर संपर्क करें।"
   },
   "Common": {
     "required": "*",
-    "fullName": "Full name",
-    "phoneNumber": "Phone number",
-    "submitFinish": "Submit and finish",
-    "continue": "Continue",
-    "continuePayout": "Continue to payout",
-    "submitting": "Submitting…",
-    "privacyPrefix": "Lenix may contact you about this case. See our",
-    "privacyPrefixBanking": "A Lenix banking specialist will follow up on supported corridors. See our",
-    "privacyPolicy": "Privacy Policy",
-    "privacySuffix": ".",
-    "placeholderName": "John Doe",
-    "selectCountry": "Select country",
-    "selectService": "Select a service",
-    "selectBlockchain": "Select blockchain",
-    "selectCurrency": "Select currency",
-    "selectAsset": "Select asset",
-    "selectNetwork": "Select network",
-    "somethingWrong": "Something went wrong",
-    "pleaseLogin": "Please log in"
+    "fullName": "आपका नाम",
+    "phoneNumber": "फ़ोन नंबर (वैकल्पिक)",
+    "submitFinish": "अनुरोध भेजें",
+    "continue": "जारी रखें",
+    "continuePayout": "भुगतान पर जारी रखें",
+    "submitting": "भेजा जा रहा है...",
+    "privacyPrefix": "अधिक जानकारी चाहिए तो हम संपर्क करेंगे। हमारी ",
+    "privacyPrefixBanking": "हम जल्द संपर्क करेंगे। हमारी ",
+    "privacyPolicy": "गोपनीयता नीति",
+    "privacySuffix": " देखें।",
+    "placeholderName": "उदा. Sarah Chen",
+    "selectCountry": "देश चुनें",
+    "selectService": "एक चुनें",
+    "selectBlockchain": "ब्लॉकचेन चुनें",
+    "selectCurrency": "मुद्रा चुनें",
+    "selectAsset": "संपत्ति चुनें",
+    "selectNetwork": "नेटवर्क चुनें",
+    "somethingWrong": "कुछ गलत हो गया। कृपया फिर कोशिश करें।",
+    "pleaseLogin": "जारी रखने के लिए साइन इन करें"
   },
   "RecoveryForm": {
-    "sectionTitle": "Incident information",
-    "sectionDesc": "Provide transaction details and a summary of what occurred.",
-    "transactionHash": "Transaction hash or wallet address",
-    "amountLost": "Approximate amount lost",
-    "amountPlaceholder": "e.g. 200000",
-    "transactionPlaceholder": "0x1234… or wallet address",
-    "blockchain": "Blockchain",
-    "currency": "Currency",
-    "incidentSummary": "Incident summary",
-    "incidentPlaceholder": "Describe what happened, when it occurred, and any parties involved.",
-    "evidence": "Supporting evidence",
-    "evidenceHint": "Screenshot or PDF (optional)"
+    "contactSectionTitle": "संपर्क जानकारी",
+    "contactSectionDesc": "इस केस के बारे में हमारी टीम आपसे कैसे संपर्क कर सकती है।",
+    "transactionSectionTitle": "लेनदेन विवरण",
+    "transactionSectionDesc": "फॉरेंसिक समीक्षा के लिए ऑन-चेन पहचान और नुकसान की राशि।",
+    "incidentSectionTitle": "घटना और साक्ष्य",
+    "incidentSectionDesc": "बताएँ क्या हुआ और सहायक फ़ाइलें संलग्न करें।",
+    "sectionTitle": "घटना की जानकारी",
+    "sectionDesc": "लेनदेन विवरण और जो हुआ उसका सार दें।",
+    "transactionHash": "लेनदेन हैश या वॉलेट पता",
+    "amountLost": "अनुमानित नुकसान की राशि",
+    "amountPlaceholder": "उदा. 200000",
+    "transactionPlaceholder": "0x1234… या वॉलेट पता",
+    "blockchain": "ब्लॉकचेन",
+    "currency": "मुद्रा",
+    "incidentSummary": "घटना का सार",
+    "incidentPlaceholder": "बताएँ क्या हुआ, कब हुआ, और कौन शामिल था।",
+    "evidence": "सहायक साक्ष्य",
+    "evidenceHint": "स्क्रीनशॉट या PDF (वैकल्पिक)",
+    "fileDropTitle": "साक्ष्य अपलोड करें",
+    "fileDropHint": "PNG, JPG या PDF, अधिकतम 10 MB"
   },
   "BankingForm": {
-    "sectionTitle": "Account & service details",
-    "sectionDesc": "Tell us who you are and which banking service you need on your corridor.",
-    "countryCorridor": "Country / corridor",
-    "serviceNeeded": "Service needed",
-    "additionalDetails": "Additional details",
-    "notesPlaceholder": "Describe the transfer amount, beneficiary market, or account setup you need.",
+    "contactSectionTitle": "आपके बारे में",
+    "contactSectionDesc": "हम इसका उपयोग आपके अनुरोध पर संपर्क करने के लिए करेंगे।",
+    "serviceSectionTitle": "आपको क्या चाहिए",
+    "serviceSectionDesc": "हमें समझने में मदद करें कि आप कौन-सी सेवा चाहते हैं।",
+    "sectionTitle": "खाता और सेवा विवरण",
+    "sectionDesc": "बताएँ आप कौन हैं और आपके कॉरिडोर पर कौन-सी बैंकिंग सेवा चाहिए।",
+    "countryCorridor": "देश / कॉरिडोर",
+    "serviceNeeded": "आपको किसमें मदद चाहिए?",
+    "additionalDetails": "और कुछ जो हमें जानना चाहिए?",
+    "notesPlaceholder": "राशि, गंतव्य, या आप क्या करना चाहते हैं, बताएँ...",
     "services": {
-      "transfer": "Money transfer",
-      "liquidation": "Asset liquidation",
-      "lending": "Collateral lending",
-      "custody": "Custody & wallet"
+      "transfer": "धन भेजें",
+      "receive": "धन/संपत्ति प्राप्त करें",
+      "liquidation": "क्रिप्टो को नकद में बदलें",
+      "lending": "क्रिप्टो के बदले उधार लें",
+      "custody": "संपत्ति रखें और सुरक्षित करें"
     }
   },
   "LoanForm": {
-    "noProducts": "No loan products are available right now. Please check back later.",
-    "productTitle": "Loan product",
-    "productDesc": "Select the product that matches your needs.",
-    "productApr": "{rate}% APR · up to {ltv}% LTV",
-    "productCollateral": "Collateral ${min} – ${max}",
-    "selectedHint": "Selected: {name} — review terms before continuing.",
-    "paramsTitle": "Loan parameters",
-    "paramsDesc": "Enter the amount and collateral details for your application.",
-    "loanAmount": "Loan amount (USD)",
+    "noProducts": "अभी कोई ऋण उत्पाद उपलब्ध नहीं है। कृपया बाद में देखें।",
+    "productTitle": "ऋण उत्पाद",
+    "productDesc": "वह उत्पाद चुनें जो आपकी ज़रूरत से मेल खाता हो।",
+    "productApr": "{rate}% APR · अधिकतम {ltv}% LTV",
+    "productCollateral": "कोलैटरल ${min} – ${max}",
+    "selectedHint": "चयनित: {name} — जारी रखने से पहले शर्तें देखें।",
+    "paramsTitle": "ऋण पैरामीटर",
+    "paramsDesc": "अपने आवेदन के लिए राशि और कोलैटरल विवरण दर्ज करें।",
+    "loanAmount": "ऋण राशि (USD)",
     "loanAmountPlaceholder": "5000",
-    "collateralAsset": "Collateral asset",
-    "loanTerm": "Loan term",
+    "collateralAsset": "कोलैटरल संपत्ति",
+    "loanTerm": "ऋण अवधि",
     "durations": {
-      "6": "6 months",
-      "12": "12 months",
-      "24": "24 months"
+      "6": "6 महीने",
+      "12": "12 महीने",
+      "24": "24 महीने"
     }
   },
   "PayoutForm": {
-    "contactTitle": "Contact details",
-    "contactDesc": "Provide at least one way to reach you.",
-    "telegramWhatsapp": "Telegram or WhatsApp",
-    "telegramPlaceholder": "@username or +1234567890",
+    "contactTitle": "संपर्क विवरण",
+    "contactDesc": "संपर्क का कम से कम एक तरीका दें।",
+    "telegramWhatsapp": "Telegram या WhatsApp",
+    "telegramPlaceholder": "@username या +1234567890",
     "phonePlaceholder": "+1 234 567 8900",
-    "methodTitle": "Payout method",
-    "methodDesc": "How should we disburse your loan?",
+    "methodTitle": "भुगतान का तरीका",
+    "methodDesc": "हम आपका ऋण कैसे जारी करें?",
     "methods": {
       "crypto": {
-        "label": "Crypto wallet",
-        "desc": "Send to your on-chain address"
+        "label": "क्रिप्टो वॉलेट",
+        "desc": "आपके ऑन-चेन पते पर भेजें"
       },
       "wire_transfer": {
-        "label": "Wire transfer",
-        "desc": "International SWIFT transfer"
+        "label": "वायर ट्रांसफर",
+        "desc": "अंतरराष्ट्रीय SWIFT ट्रांसफर"
       },
       "bank": {
-        "label": "Bank account",
-        "desc": "Domestic ACH or local transfer"
+        "label": "बैंक खाता",
+        "desc": "घरेलू ACH या स्थानीय ट्रांसफर"
       }
     },
-    "cryptoTitle": "Crypto payout",
-    "walletAddress": "Wallet address",
-    "walletPlaceholder": "0x… or your address",
-    "network": "Network",
-    "memo": "Memo / tag",
-    "memoPlaceholder": "Required by some networks",
-    "wireTitle": "Wire transfer details",
-    "bankName": "Bank name",
-    "bankNamePlaceholder": "e.g. Chase, HSBC",
+    "cryptoTitle": "क्रिप्टो भुगतान",
+    "walletAddress": "वॉलेट पता",
+    "walletPlaceholder": "0x… या आपका पता",
+    "network": "नेटवर्क",
+    "memo": "मेमो / टैग",
+    "memoPlaceholder": "कुछ नेटवर्क पर आवश्यक",
+    "wireTitle": "वायर ट्रांसफर विवरण",
+    "bankName": "बैंक का नाम",
+    "bankNamePlaceholder": "उदा. Chase, HSBC",
     "swiftBic": "SWIFT / BIC",
     "swiftPlaceholder": "CHASUS33",
-    "accountIban": "Account / IBAN",
-    "accountHolder": "Account holder",
-    "reference": "Reference",
-    "bankAccountTitle": "Bank account details",
-    "accountNumber": "Account number",
-    "routingIban": "Routing / IBAN"
+    "accountIban": "खाता / IBAN",
+    "accountHolder": "खाताधारक",
+    "reference": "संदर्भ",
+    "bankAccountTitle": "बैंक खाता विवरण",
+    "accountNumber": "खाता संख्या",
+    "routingIban": "रूटिंग / IBAN"
   },
   "Blockchains": {
     "BTC": "Bitcoin (BTC)",
@@ -220,7 +233,7 @@
     "KAVA": "Kava (KAVA)",
     "POL": "Polkadot (POL)",
     "SUI": "Sui (SUI)",
-    "OTHER": "Other"
+    "OTHER": "अन्य"
   },
   "CollateralAssets": {
     "BTC": "Bitcoin (BTC)",

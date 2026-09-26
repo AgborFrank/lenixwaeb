@@ -108,11 +108,11 @@
       "photo": "Ekspansi Secara Global"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - Peningkatan protokol",
+      "desc": "Peningkatan besar pada smart contract dan infrastruktur pinjaman kami, dengan opsi jaminan baru dan protokol keamanan yang diperkuat.",
+      "tag1": "V2 diluncurkan",
+      "tag2": "Keamanan yang diperkuat",
+      "photo": "Protokol V2"
     },
     "step7": {
       "title": "2027 - Menjadi Pemimpin Industri",
@@ -122,18 +122,18 @@
       "photo": "Penghargaan Industri Dikenal Luas"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - Adopsi institusional",
+      "desc": "Kemitraan dengan lembaga keuangan tradisional besar untuk jalur masuk dan keluar yang aman bagi modal institusional.",
+      "tag1": "Lembaga bergabung",
+      "tag2": "Kemitraan TradFi",
+      "photo": "Integrasi Wall Street"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - Mesin forensik AI",
+      "desc": "Meluncurkan mesin forensik generasi berikutnya berbasis AI, yang mampu menganalisis secara prediktif aktivitas blockchain yang melanggar hukum.",
+      "tag1": "Integrasi AI",
+      "tag2": "Forensik prediktif",
+      "photo": "Peluncuran mesin AI"
     }
   },
   "Leadership": {

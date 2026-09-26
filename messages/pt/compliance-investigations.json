@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Crypto Compliance Investigations | Lenix Protocol",
-    "description": "AML and compliance investigation workflows for tracing crypto flows, documenting findings, and supporting SAR and escalation processes — with clear scope on what on-chain review can show."
+    "title": "Investigações de conformidade cripto | Lenix Protocol",
+    "description": "Fluxos de investigação AML e de conformidade para rastrear movimentos cripto, documentar conclusões e apoiar processos SAR e de escalada — com âmbito claro sobre o que a revisão on-chain pode mostrar."
   },
   "Hero": {
-    "badge": "Compliance investigations",
-    "title1": "Investigate crypto flows ",
-    "title2": "with documented findings",
-    "subtitle": "Trace transactions across supported networks, review wallet exposure, and export structured analysis for compliance escalations — without overstating what public ledger data alone can prove.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Investigações de conformidade",
+    "title1": "Investigar fluxos cripto ",
+    "title2": "com conclusões documentadas",
+    "subtitle": "Rastreie transações nas redes suportadas, reveja a exposição de carteiras e exporte análise estruturada para escaladas de conformidade — sem exagerar o que os dados públicos do livro-razão conseguem provar por si.",
+    "btn_primary": "Contactar a equipa",
+    "btn_secondary": "Ver capacidades"
   },
   "Overview": {
-    "title": "Built for compliance and investigation teams",
-    "description": "Lenix supports AML reviews, enhanced due diligence, and internal investigations with trace workflows, risk context, and report outputs your team can attach to case files — not vanity dashboards with unverifiable metrics."
+    "title": "Feito para equipas de conformidade e investigação",
+    "description": "A Lenix apoia revisões AML, diligência reforçada e investigações internas com fluxos de rastreio, contexto de risco e relatórios que a equipa pode anexar aos processos — não dashboards de aparência com métricas impossíveis de verificar."
   },
   "Features": {
     "pillars": {
       "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Follow flows across chains and assets",
-        "body": "Map fund movement from a known wallet or transaction through bridges, swaps, and exchange deposits where visible on-chain. Outputs include timelines and hop-by-hop notes suitable for SAR preparation or internal escalation."
+        "label": "Rastreio entre redes",
+        "title": "Seguir fluxos entre cadeias e ativos",
+        "body": "Mapeie o movimento de fundos a partir de uma carteira ou transação conhecida, através de bridges, swaps e depósitos em exchanges quando visíveis on-chain. Os resultados incluem cronologias e notas salto a salto, adequadas à preparação de um SAR ou a uma escalada interna."
       },
       "workflow": {
-        "label": "Investigation workflow",
-        "title": "From alert to documented review",
-        "body": "Start from a flagged address or transaction hash and build a case view linking related wallets, entities, and behaviors. Findings can be shared internally with audit-friendly notes on methodology and limits."
+        "label": "Fluxo de investigação",
+        "title": "Do alerta à revisão documentada",
+        "body": "Comece num endereço sinalizado ou num hash de transação e construa uma vista do caso que liga carteiras, entidades e comportamentos relacionados. As conclusões podem ser partilhadas internamente com notas auditáveis sobre metodologia e limites."
       },
       "diligence": {
-        "label": "Due diligence",
-        "title": "Review addresses before you move funds",
-        "body": "Screen counterparty wallets and historical flows for exposure to known risky categories — scams, sanctions-related touchpoints, and high-risk services — scoped to your policy rules, not a generic score alone."
+        "label": "Diligência devida",
+        "title": "Rever endereços antes de mover fundos",
+        "body": "Filtre carteiras de contraparte e fluxos históricos quanto à exposição a categorias de risco conhecidas — burlas, pontos de contacto ligados a sanções e serviços de alto risco — segundo as regras da política, não um score genérico isolado."
       },
       "monitoring": {
-        "label": "Ongoing monitoring",
-        "title": "Watchlists and activity alerts",
-        "body": "Configure address lists and receive notifications when new activity matches your criteria. Monitoring supports recurring compliance reviews — alert volume and coverage depend on engagement terms and supported networks."
+        "label": "Monitorização contínua",
+        "title": "Listas de vigilância e alertas de atividade",
+        "body": "Configure listas de endereços e receba notificações quando nova atividade corresponde aos critérios. A monitorização apoia revisões de conformidade recorrentes — o volume de alertas e a cobertura dependem dos termos do compromisso e das redes suportadas."
       }
     }
   },
   "Cta": {
-    "title": "Need compliance investigation support?",
-    "description": "Describe your team, regulatory context, and what you need from tracing or screening. We outline realistic scope before engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Threat intelligence"
+    "title": "Precisa de apoio numa investigação de conformidade?",
+    "description": "Descreva a equipa, o contexto regulatório e o que precisa do rastreio ou do screening. Definimos um âmbito realista antes do compromisso.",
+    "btn_primary": "Contactar a equipa",
+    "btn_secondary": "Informação sobre ameaças"
   }
 }

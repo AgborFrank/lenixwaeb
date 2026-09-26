@@ -1,169 +1,141 @@
 {
   "meta": {
-    "title": "Banking & Finance Services | Lenix Protocol",
-    "description": "Lenix runs money transfer, voluntary crypto liquidation, collateral lending, and custody for customers — with KYC, corridor limits, and quoted rates before you commit."
+    "title": "银行与金融服务 | Lenix Protocol",
+    "description": "Lenix 为客户运营资金转账、自愿加密资产变现、抵押借贷与托管——在您确认前提供 KYC、通道范围与报价。"
   },
   "Hero": {
-    "badge": "Banking & finance",
-    "title1": "Cross-Border Financial Services, ",
-    "title2": "Payment and Remittance",
-    "subtitle": "Send Funds across borders, cash out crypto to fiat, borrow against vaulted collateral, and hold assets in Lenix custody — not white-label infrastructure for other banks.",
-    "btn_primary": "Open an account",
-    "btn_secondary": "View services"
+    "badge": "银行与金融",
+    "title1": "跨境金融服务，",
+    "title2": "支付与汇款",
+    "subtitle": "跨境汇出资金、将加密资产兑换为法币、以金库抵押品借款，并将资产托管于 Lenix——不是供其他银行使用的白标基础设施。"
   },
   "Actions": {
-    "register": "Create account",
-    "download": "Download app",
-    "login": "Log in",
-    "contact": "Contact team",
-    "google_play": "Get it on Google Play",
-    "app_store": "Download on the App Store"
+    "register": "创建账户",
+    "download": "下载应用"
   },
   "Overview": {
-    "title": "Lenix operates the full workflow",
-    "description": "You work with Lenix directly: verify identity, fund your account, request a transfer or liquidation, or post collateral for a loan. Rates, fees, and delivery status are visible before you confirm — finance and ops are not guessing what happens next."
+    "title": "Lenix 运营完整流程",
+    "description": "您直接与 Lenix 合作：核验身份、为账户注资、申请转账或变现，或提交贷款抵押品。费率、手续费与交付状态在确认前可见——财务与运营不必猜测下一步。"
   },
   "Services": {
-    "eyebrow": "What we run",
-    "title": "Core services for customers",
-    "description": "Each service has its own intake in the Lenix dashboard. Pick the workflow that matches what you need today.",
+    "eyebrow": "我们运营的服务",
+    "title": "面向客户的核心服务",
+    "description": "每项服务在 Lenix 控制台中都有独立受理入口。选择与您今日需求匹配的流程。",
     "items": {
       "transfer": {
-        "title": "Money transfer",
-        "desc": "Move value from crypto to fiat and into a beneficiary bank account on corridors Lenix supports today."
+        "title": "资金转账",
+        "desc": "在 Lenix 当前支持的通道上，将价值从加密资产转为法币并汇入收款人银行账户。"
       },
       "liquidation": {
-        "title": "Asset liquidation",
-        "desc": "Voluntarily sell approved crypto holdings and receive fiat payout — separate from loan collateral liquidation."
+        "title": "资产变现",
+        "desc": "自愿出售已核准的加密持仓并收取法币——与贷款抵押品清算相互独立。"
       },
       "lending": {
-        "title": "Collateral lending",
-        "desc": "Post eligible collateral and draw stablecoins or fiat while terms, LTV, and repayment schedules stay visible upfront."
+        "title": "抵押借贷",
+        "desc": "提交合格抵押品并提取稳定币或法币，条款、LTV 与还款计划事先可见。"
       },
       "custody": {
-        "title": "Custody & wallet",
-        "desc": "Hold and move supported assets through Lenix wallet and vault controls with activity history your team can audit."
+        "title": "托管与钱包",
+        "desc": "通过 Lenix 钱包与金库控制持有并转移支持的资产，并保留可供团队审计的活动记录。"
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "transfer": {
-        "label": "Cross-border transfer",
-        "title": "Crypto to bank, with corridor clarity",
-        "body": "Initiate from your Lenix account, see the quoted rate and fees, and track handoff from on-chain receipt through fiat delivery — not a single pending flag with no context."
+        "label": "跨境转账",
+        "title": "加密资产到银行，通道范围清楚",
+        "body": "从 Lenix 账户发起，查看报价与手续费，并跟踪从链上到账到法币交付的交接——不是一条没有上下文的待处理标记。"
       },
       "settlement": {
-        "label": "Fiat settlement",
-        "title": "Treasury-ready payout records",
-        "body": "Settlement details, beneficiary references, and status timestamps suitable for finance review — so cross-border payouts can be reconciled like any other treasury movement."
+        "label": "法币结算",
+        "title": "可供财务核对的付款记录",
+        "body": "结算明细、收款人参考号与状态时间戳适合财务复核——跨境付款可以像其他资金调拨一样对账。"
       },
       "liquidation": {
-        "label": "Voluntary liquidation",
-        "title": "Cash out without a loan position",
-        "body": "Convert approved crypto to fiat when you choose to exit a holding. Quote, fees, and expected payout are shown before you confirm — this is not collateral seizure from an underwater loan."
+        "label": "自愿变现",
+        "title": "没有贷款头寸也能兑出",
+        "body": "当您选择退出持仓时，将已核准的加密资产兑换为法币。报价、手续费与预计到账在确认前展示——这不是对水下贷款抵押品的处置。"
       },
       "lending": {
-        "label": "Collateral lending",
-        "title": "Liquidity while assets stay vaulted",
-        "body": "Draw against posted collateral with LTV, repayment schedule, and health indicators visible before disbursement. Collateral remains in segregated custody for the loan term."
+        "label": "抵押借贷",
+        "title": "资产留在金库中仍可获得流动性",
+        "body": "以已提交的抵押品提取资金，LTV、还款计划与健康指标在放款前可见。抵押品在贷款期限内保留在隔离托管中。"
       },
       "custody": {
-        "label": "Custody & controls",
-        "title": "Hold, send, and receive in one place",
-        "body": "Multi-chain wallet access, transaction history, and vault segregation for assets under Lenix custody — with the same identity and compliance checks applied across services."
+        "label": "托管与控制",
+        "title": "持有、发送与接收集中在一处",
+        "body": "多链钱包访问、交易记录与金库隔离，适用于 Lenix 托管下的资产——各项服务适用同一套身份与合规检查。"
       },
       "compliance": {
-        "label": "Compliance screening",
-        "title": "KYC and flow screening before release",
-        "body": "Identity verification for account opening and sanctions/AML screening on inbound and outbound flows — funds are not released until checks for that transaction complete."
+        "label": "合规筛查",
+        "title": "放行前完成 KYC 与资金流筛查",
+        "body": "开户时核验身份，并对出入金流进行制裁与 AML 筛查——该笔交易的检查完成前，资金不会放行。"
       }
     }
   },
   "Process": {
-    "title": "How it works",
+    "title": "运作方式",
     "steps": {
       "account": {
-        "title": "Create your Lenix account",
-        "desc": "Sign up, complete KYC, and set up payout details for the corridors you plan to use."
+        "title": "创建 Lenix 账户",
+        "desc": "注册、完成 KYC，并为计划使用的通道填写收款信息。"
       },
       "fund": {
-        "title": "Fund or deposit crypto",
-        "desc": "Add supported assets to your Lenix wallet or vault — the same balance can feed transfers, liquidation, or collateral posting."
+        "title": "注资或存入加密资产",
+        "desc": "将支持的资产存入 Lenix 钱包或金库——同一余额可用于转账、变现或提交抵押品。"
       },
       "request": {
-        "title": "Request a service",
-        "desc": "Start a transfer, voluntary liquidation, or loan draw. Review the quote, fees, and terms before you confirm."
+        "title": "申请一项服务",
+        "desc": "发起转账、自愿变现或贷款支取。确认前核对报价、手续费与条款。"
       },
       "track": {
-        "title": "Track through delivery",
-        "desc": "Follow status from initiation to bank credit or loan disbursement, with records available for your finance team."
+        "title": "跟踪至交付完成",
+        "desc": "从发起到银行入账或贷款放款全程查看状态，记录可供财务团队使用。"
       }
     }
   },
   "Boundaries": {
-    "eyebrow": "What to expect",
-    "title1": "Honest limits ",
-    "title2": "before you commit",
-    "subtitle": "Lenix is a service operator, not a universal bank. Scope, corridors, and regulatory treatment depend on your jurisdiction and the product you use.",
+    "eyebrow": "预期范围",
+    "title1": "确认前先看清",
+    "title2": "实际限制",
+    "subtitle": "Lenix 是服务运营方，不是全能银行。范围、通道与监管待遇取决于您所在司法辖区以及所使用的产品。",
     "items": {
       "corridors": {
-        "title": "Supported corridors only",
-        "desc": "Payout markets and banking rails are limited to corridors Lenix actively supports. Contact us if yours is not listed — we do not imply worldwide coverage."
+        "title": "仅限已支持的通道",
+        "desc": "付款市场与银行通道仅限于 Lenix 正在运营的走廊。若您的通道未列出，请联系我们——我们不暗示全球覆盖。"
       },
       "kyc": {
-        "title": "KYC and AML required",
-        "desc": "Account opening and most outbound flows require identity verification and transaction screening. We cannot bypass compliance for expedited payout."
+        "title": "必须完成 KYC 与 AML",
+        "desc": "开户以及大多数出金都需要身份核验与交易筛查。我们不会为加快付款而绕过合规。"
       },
       "quotes": {
-        "title": "Quotes before confirmation",
-        "desc": "Rates, fees, and estimated delivery windows are shown before you submit a transfer, liquidation, or loan draw — not adjusted silently afterward."
+        "title": "确认前给出报价",
+        "desc": "费率、手续费与预计交付时间在提交转账、变现或贷款支取前展示——事后不会静默调整。"
       },
       "liquidation_types": {
-        "title": "Two different liquidations",
-        "desc": "Voluntary asset liquidation is a customer-initiated cash-out. Loan collateral liquidation only applies when posted collateral falls below agreed LTV on an active loan."
+        "title": "两种不同的变现",
+        "desc": "自愿资产变现由客户发起兑出。贷款抵押品清算仅在有效贷款的抵押品跌破约定 LTV 时适用。"
       },
       "timing": {
-        "title": "Delivery timing varies",
-        "desc": "Banking cutoffs, beneficiary bank processing, and corridor load affect settlement time. We show status updates; we do not guarantee instant fiat credit."
+        "title": "交付时间会变化",
+        "desc": "银行截止时间、收款行处理与通道负载都会影响结算时长。我们展示状态更新；不保证法币即时入账。"
       },
       "regulatory": {
-        "title": "Not a bank charter",
-        "desc": "Lenix provides crypto finance and settlement services under its operating licenses and partners. Product availability and protections vary by region — confirm what applies to you before moving funds."
+        "title": "并非银行牌照",
+        "desc": "Lenix 依据其运营许可与合作方提供加密金融与结算服务。产品可用性与保障因地区而异——划转资金前请确认适用于您的安排。"
       }
     }
   },
   "Cta": {
-    "title": "Ready to use Lenix banking services?",
-    "description": "Open an account to start transfers, liquidation, or lending — or contact us if you need a corridor or workflow scoped before signup.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Log in",
+    "title": "准备使用 Lenix 银行服务？",
+    "description": "开立账户以开始转账、变现或借贷——若需在注册前先确认通道或流程范围，请联系我们。",
+    "btn_primary": "联系团队",
+    "btn_secondary": "登录",
     "links": {
-      "loan": "Apply for a crypto loan",
-      "wallet": "Lenix Wallet",
-      "solutions": "All solutions"
-    }
-  },
-  "SectionCta": {
-    "overview": {
-      "title": "Open a Lenix account to get started",
-      "description": "Register, complete KYC, and access transfers, liquidation, lending, and custody from one dashboard — on web or mobile."
-    },
-    "services": {
-      "title": "Run these services from your account",
-      "description": "Each workflow lives in the Lenix app. Create an account to request transfers, cash out holdings, or post collateral for a loan."
-    },
-    "capabilities": {
-      "title": "Banking workflows in the Lenix app",
-      "description": "Download the mobile app or register on web to Send Funds, settle to fiat, borrow against collateral, and track every step."
-    },
-    "process": {
-      "title": "Ready to follow these steps?",
-      "description": "Create your account, complete verification, and start your first transfer or liquidation from the Lenix dashboard or mobile app."
-    },
-    "boundaries": {
-      "title": "Confirm your corridor, then register",
-      "description": "If your market is supported, open an account to begin. Need a corridor scoped first? Contact us before you move funds."
+      "loan": "申请加密资产贷款",
+      "wallet": "Lenix 钱包",
+      "solutions": "全部方案"
     }
   }
 }

@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Threat Intelligence & Blockchain Intelligence | Lenix Protocol",
-    "description": "Blockchain intelligence for compliance, security, and investigation teams. Attribution data, flow analysis, and structured exports — scoped to authorized matters."
+    "title": "استخبارات التهديدات واستخبارات البلوك تشين | Lenix Protocol",
+    "description": "استخبارات بلوك تشين لفرق الامتثال والأمن والتحقيق. بيانات إسناد وتحليل تدفقات وتصديرات منظمة — محصورة في الملفات المأذون بها."
   },
   "Hero": {
-    "badge": "Threat intelligence",
-    "title1": "Blockchain intelligence ",
-    "title2": "for investigation teams",
-    "subtitle": "Screen wallets, map fund flows, and export structured findings for compliance reviews, security operations, and law-enforcement support — with clear scope on what on-chain data can and cannot show.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "استخبارات التهديدات",
+    "title1": "استخبارات البلوك تشين ",
+    "title2": "لفرق التحقيق",
+    "subtitle": "افحصوا المحافظ وارسموا تدفقات الأموال وصدّروا نتائج منظمة لمراجعات الامتثال وعمليات الأمن ودعم إنفاذ القانون — مع نطاق واضح لما يمكن أن تُظهره البيانات على السلسلة وما لا يمكنها إظهاره.",
+    "btn_primary": "تواصل مع الفريق",
+    "btn_secondary": "عرض القدرات"
   },
   "Mission": {
-    "title": "Intelligence built for operational use",
-    "description": "Lenix provides curated blockchain datasets and analysis workflows for teams that need attribution context, risk screening, and documented fund flows — not generic market dashboards copied from consumer analytics products."
+    "title": "استخبارات مبنية للاستخدام التشغيلي",
+    "description": "توفّر Lenix مجموعات بيانات بلوك تشين منتقاة ومسارات تحليل للفرق التي تحتاج إلى سياق إسناد وفحص مخاطر وتدفقات أموال موثّقة — لا لوحات سوق عامة منسوخة من منتجات تحليل للمستهلك."
   },
   "Capabilities": {
     "pillars": {
       "actors": {
-        "label": "Actor and wallet context",
-        "title": "Identify linked addresses and exposure",
-        "body": "Cluster related wallets and flag connections to known risky categories — sanctions lists, scam typologies, and high-risk service touchpoints — when your matter authorizes that scope of review."
+        "label": "سياق الجهات والمحافظ",
+        "title": "تحديد العناوين المرتبطة والتعرّض",
+        "body": "اجمعوا المحافظ المرتبطة وعلّموا الصلات بفئات مخاطر معروفة — قوائم العقوبات وأنماط الاحتيال ونقاط التماس مع خدمات عالية المخاطر — عندما يأذن ملفكم بنطاق المراجعة هذا."
       },
       "geopolitical": {
-        "label": "Risk monitoring",
-        "title": "Monitor flows that matter to your mandate",
-        "body": "Track movements tied to jurisdictions, entities, or wallet sets you define. Screening is configurable to your policy — not a one-size-fits-all risk score."
+        "label": "مراقبة المخاطر",
+        "title": "مراقبة التدفقات التي تهم تفويضكم",
+        "body": "تتبّعوا الحركات المرتبطة بالولايات القضائية أو الكيانات أو مجموعات المحافظ التي تحددونها. يُضبط الفحص وفق سياستكم — لا درجة مخاطر واحدة للجميع."
       },
       "enforcement": {
-        "label": "Case support",
-        "title": "Documentation for escalation",
-        "body": "Produce source-of-funds traces and address attribution summaries formatted for internal review, exchange requests, or counsel — with methodology and limits stated in the deliverable."
+        "label": "دعم القضية",
+        "title": "توثيق للتصعيد",
+        "body": "أنتجوا تتبّعات لمصدر الأموال وملخصات إسناد العناوين بصيغة تصلح للمراجعة الداخلية أو طلبات المنصات أو الاستشارة القانونية — مع بيان المنهجية والحدود في المخرج."
       },
       "delivery": {
-        "label": "Flexible delivery",
-        "title": "Data where your team works",
-        "body": "Receive exports via file, feed, or API integration depending on engagement terms. Priority wallet sets and alert rules can be adjusted as your operational focus changes."
+        "label": "تسليم مرن",
+        "title": "البيانات حيث يعمل فريقكم",
+        "body": "تلقّوا التصديرات عبر ملف أو تغذية أو تكامل API بحسب شروط التعاقد. يمكن تعديل مجموعات المحافظ ذات الأولوية وقواعد التنبيه عندما يتغيّر التركيز التشغيلي."
       }
     }
   },
   "Cta": {
-    "title": "Need blockchain intelligence for a team or case?",
-    "description": "Describe your mandate, data needs, and delivery preferences. We outline what Lenix can provide before scoped engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Blockchain forensics"
+    "title": "تحتاجون إلى استخبارات بلوك تشين لفريق أو قضية؟",
+    "description": "صفوا تفويضكم واحتياجات البيانات وتفضيلات التسليم. نبيّن ما يمكن أن توفّره Lenix قبل تعاقد محدد النطاق.",
+    "btn_primary": "تواصل مع الفريق",
+    "btn_secondary": "التحليل الجنائي للبلوك تشين"
   }
 }

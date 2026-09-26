@@ -1,7 +1,7 @@
 {
   "Header": {
     "nav": {
-      "giveaway": "Community",
+      "giveaway": "Gemeinschaft",
       "about": "Über uns",
       "solutions": "Lösungen",
       "blockchain_forensics": "Forensik",
@@ -13,7 +13,7 @@
     },
     "solutions": {
       "wallet": {
-        "title": "Lenix Wallet",
+        "title": "Lenix-Wallet",
         "desc": "Sichere Multi-Chain-Wallet."
       },
       "finance": {
@@ -25,7 +25,7 @@
         "desc": "Expertenhilfe für verlorene Assets."
       },
       "compliance": {
-        "title": "Compliance",
+        "title": "Konformität",
         "desc": "Cross-Chain-Ermittlungen mit 1 Klick."
       },
       "enforcement": {
@@ -39,11 +39,11 @@
     },
     "user_menu": {
       "account": "Konto",
-      "dashboard": "Dashboard",
+      "dashboard": "Übersicht",
       "vault": "Tresor",
-      "lenix_wallet": "Lenix Wallet",
+      "lenix_wallet": "Lenix-Wallet",
       "loan": "Krypto-Kredit",
-      "assets": "Assets",
+      "assets": "Bestände",
       "send": "Senden",
       "receive": "Empfangen",
       "transactions": "Verlauf",
@@ -67,16 +67,16 @@
     "links": {
       "about_us": "Über uns",
       "ecosystem": "Ökosystem",
-      "tokenomics": "Tokenomics",
-      "whitepaper": "Whitepaper",
-      "litepaper": "Litepaper",
-      "roadmap": "Roadmap",
+      "tokenomics": "Token-Ökonomie",
+      "whitepaper": "Weißbuch",
+      "litepaper": "Kurzpapier",
+      "roadmap": "Fahrplan",
       "threat_intelligence": "Bedrohungsanalyse",
-      "defi_compliance": "DeFi Compliance",
+      "defi_compliance": "DeFi-Compliance",
       "blog": "Blog",
       "documentation": "Docs",
       "api_docs": "API",
-      "support": "Support",
+      "support": "Hilfe",
       "terms": "AGB",
       "cookie": "Cookies",
       "privacy": "Datenschutz",
@@ -164,7 +164,7 @@
           "cta": "Sicherheit"
         },
         "recovery": {
-          "title": "Asset Recovery",
+          "title": "Asset-Wiederherstellung",
           "desc": "Tracing, Börsenkoordination und rechtliche Wege, wenn Krypto verloren, gestohlen oder blockiert ist.",
           "cta": "Recovery starten"
         },
@@ -213,40 +213,40 @@
       "image_alt": "Lenix Händler- und Compliance-Operations-Dashboard"
     },
     "Payment": {
-      "badge": "Protocol stack",
-      "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "badge": "Protokoll-Stack",
+      "title": "Werte auf einer Ebene bewegen, halten und wiederherstellen",
+      "subtitle": "Zahlungen, Verwahrung, Wiederherstellung und Kredit teilen dieselbe geprüfte Infrastruktur — nicht vier getrennte Produkte.",
       "cards": {
         "fiat": {
-          "title": "Crypto-to-fiat",
-          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
+          "title": "Krypto-zu-Fiat",
+          "desc": "Krypto über lokale Zahlungswege in Fiat abrechnen — für den grenzüberschreitenden und alltäglichen Gebrauch."
         },
         "vault": {
-          "title": "Vault and custody",
-          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
+          "title": "Tresor und Verwahrung",
+          "desc": "Multi-Sig-Tresore und sichere Verwahrung für Teams, die kontrollierte Asset-Speicherung brauchen."
         },
         "recovery": {
-          "title": "Recovery and forensics",
-          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
+          "title": "Wiederherstellung und Forensik",
+          "desc": "Gehen Assets verloren oder sind sie strittig, laufen Nachverfolgung und Beweise auf demselben Stack."
         },
         "lending": {
-          "title": "Lending",
-          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
+          "title": "Kreditvergabe",
+          "desc": "Leihen Sie gegen Sicherheiten — mit On-Chain-Kontrollen und klaren Abrechnungswegen."
         }
       },
       "cta": "Lösungen"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " Token Details",
-      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "title2": " Token-Details",
+      "subtitle": "Nutzen Sie die Vertragsdaten unten, um den Lenix Protocol-Token zu Ihrer Wallet hinzuzufügen.",
       "headers": {
-        "contract": "Contract Address",
-        "name": "Token Name",
-        "symbol": "Token Symbol",
-        "supply": "Token Supply",
-        "network": "Network",
-        "decimals": "Decimals"
+        "contract": "Vertragsadresse",
+        "name": "Token-Name",
+        "symbol": "Token-Symbol",
+        "supply": "Token-Angebot",
+        "network": "Netzwerk",
+        "decimals": "Dezimalstellen"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -267,13 +267,13 @@
       "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Community ",
-      "title2": "giveaway",
-      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "title1": "Gemeinschaft ",
+      "title2": "Verlosung",
+      "subtitle": "Zehn Gewinner erhalten 25.000 $ in LNX. Schließen Sie die Teilnahmeschritte auf der Community-Seite ab. Es gelten Bedingungen.",
       "btn": "Community"
     },
     "Features": {
-      "wallet": "Lenix Protocol Wallet",
+      "wallet": "Lenix Protocol-Wallet",
       "recipient": "Empfänger eingeben",
       "bank_details": "Bankkontodaten",
       "iban": "IBAN",
@@ -283,32 +283,32 @@
       "title_big": "Krypto weltweit mit lokalen Zahlungsnetzwerken verbinden.",
       "desc1": "Lenix ProtocolPay ermöglicht es Kryptobesitzern und Unternehmen, Krypto-zu-Fiat-Transaktionen weltweit zu vereinfachen, indem lokale Zahlungsnetzwerke und Blockchain-Technologie genutzt werden.",
       "desc2": "Genießen Sie endlich die Geschwindigkeit von Krypto with dem alltäglichen Komfort von Fiat-Zahlungen.",
-      "btn_whitepaper": "Whitepaper"
+      "btn_whitepaper": "Weißbuch"
     },
     "LnxPurchaseWidget": {
-      "widget_title": "Buy LNX",
-      "widget_subtitle": "Protocol token sale",
-      "usd_raised": "USD raised so far:",
-      "tokens_sold": "Tokens sold:",
-      "price_usd": "USD price: ${price}",
-      "price_eth": "ETH price: {price} ETH",
-      "pay_eth": "ETH you pay",
-      "pay_usdt": "USDT you pay",
-      "pay_usd": "USD you pay",
-      "receive_lnx": "$LNX you receive",
-      "btn_processing": "Processing...",
-      "btn_pay_eth": "Pay with ETH",
-      "btn_pay_usdt": "Pay with USDT",
+      "widget_title": "LNX kaufen",
+      "widget_subtitle": "Protokoll-Token-Verkauf",
+      "usd_raised": "Bisher gesammelte USD:",
+      "tokens_sold": "Verkaufte Token:",
+      "price_usd": "USD-Preis: ${price}",
+      "price_eth": "ETH-Preis: {price} ETH",
+      "pay_eth": "ETH, die Sie zahlen",
+      "pay_usdt": "USDT, die Sie zahlen",
+      "pay_usd": "USD, die Sie zahlen",
+      "receive_lnx": "$LNX, die Sie erhalten",
+      "btn_processing": "Wird verarbeitet...",
+      "btn_pay_eth": "Mit ETH zahlen",
+      "btn_pay_usdt": "Mit USDT zahlen",
       "btn_pay_card": "Mit Karte zahlen",
-      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "card_info": "Bereitgestellt von Stripe. Betrag wird in USD berechnet.",
       "btn_connect": "Verbinden",
       "btn_giveaway": "LNX-Bonus",
-      "giveaway_info": "Connect your wallet to check eligibility."
+      "giveaway_info": "Wallet verbinden, um die Berechtigung zu prüfen."
     },
     "TokenSale": {
       "title1": "LNX ",
-      "title2": "token sale",
-      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+      "title2": "Token-Verkauf",
+      "subtitle": "Kaufen Sie LNX, um am Protokoll teilzunehmen. Vertragsdetails stehen unten."
     },
     "Partners": {
       "eyebrow": "Ökosystem",
@@ -480,7 +480,7 @@
     "nav": {
       "home": "Start",
       "vault": "Blockchain-Tresor",
-      "lenix_wallet": "Lenix Wallet",
+      "lenix_wallet": "Lenix-Wallet",
       "banking": "Unternehmensbanking",
       "recovery_services": "Wiederherstellungsdienste",
       "crypto_loan": "Krypto-Kredit",
@@ -503,7 +503,7 @@
   },
   "AccountMobileTabs": {
     "home": "Start",
-    "banking": "Banking",
+    "banking": "Bankwesen",
     "wallet": "Wallet",
     "loan": "Kredit",
     "settings": "Einstellungen"
@@ -524,7 +524,7 @@
     "service_type": "Servicetyp",
     "service_types": {
       "recovery": "Wiederherstellung",
-      "banking": "Banking",
+      "banking": "Bankwesen",
       "loan": "Kredit"
     },
     "details_fields": {
@@ -597,7 +597,7 @@
       "score_label": "Sicherheitswert",
       "items": {
         "wallet": "Wallet",
-        "cold_storage": "Cold Storage",
+        "cold_storage": "Kaltlagerung",
         "encrypted_vault": "Verschlüsselter Tresor",
         "session": "Sitzung"
       },
@@ -635,7 +635,7 @@
       "unlocking": "Entsperren...",
       "unlock": "Entsperren",
       "vault_connected": "Tresor verbunden",
-      "lenix_wallet": "Lenix Wallet",
+      "lenix_wallet": "Lenix-Wallet",
       "lock": "Sperren",
       "imported_wallets": "Importierte Wallets",
       "no_imported": "Noch keine importierten Wallets.",
@@ -678,7 +678,7 @@
       "unlocking": "Entsperren...",
       "unlock": "Entsperren",
       "network_placeholder": "Netzwerk",
-      "logo_alt": "Lenix Wallet",
+      "logo_alt": "Lenix-Wallet",
       "show_evm_wallet": "EVM-Wallet anzeigen",
       "show_bitcoin_wallet": "Bitcoin-Wallet anzeigen",
       "evm_wallet": "EVM-Wallet",
@@ -838,7 +838,7 @@
       "search_placeholder": "Asset oder Netzwerk suchen",
       "small_asset_exchange": "Tausch kleiner Assets",
       "hide_dust": "Assets < 1 USD ausblenden",
-      "asset": "Asset",
+      "asset": "Vermögenswert",
       "amount": "Betrag",
       "available": "Verfügbar",
       "frozen": "Gesperrt",
@@ -856,7 +856,7 @@
       "no_assets_alt": "Keine Assets",
       "no_assets_title": "Noch keine Finanzierungs-Assets",
       "no_assets_description": "Zahle Krypto in deine Lenix-Wallet ein, um Auszahlungen und On-Chain-Transfers zu aktivieren.",
-      "asset_label": "Asset",
+      "asset_label": "Vermögenswert",
       "network_label": "Netzwerk",
       "chain_id": "Chain-ID {id}",
       "recipient_label": "Empfängeradresse",
@@ -935,7 +935,7 @@
   },
   "AccountBanking": {
     "meta": {
-      "title": "Enterprise Banking | Lenix Protocol",
+      "title": "Unternehmensbanking | Lenix Protocol",
       "description": "Verschieben Sie digitale Assets zwischen Spot, Funding und verifizierten Bankkonten."
     },
     "error": {
@@ -959,11 +959,11 @@
       "available": "{amount} verfügbar"
     },
     "summary": {
-      "title": "Enterprise Banking",
+      "title": "Unternehmensbanking",
       "verified": "Verifiziert",
       "verification_pending": "Verifizierung ausstehend",
       "subtitle": "Verschieben Sie digitale Assets zwischen Treasury-Wallets und verifizierten Bankkonten.",
-      "transfer": "Transfer",
+      "transfer": "Überweisung",
       "withdraw_to_bank": "Auf Bankkonto abheben",
       "total_treasury": "Gesamtwert Treasury",
       "hide_balances": "Salden ausblenden",
@@ -983,15 +983,15 @@
       "subtitle": "Spot- und auszahlungsbereite Funding-Assets",
       "move_funds": "Gelder verschieben",
       "columns": {
-        "asset": "Asset",
+        "asset": "Vermögenswert",
         "wallet": "Wallet",
         "balance": "Saldo",
         "value": "Wert",
         "change_24h": "24 h"
       },
       "location": {
-        "spot": "Spot",
-        "funding": "Funding"
+        "spot": "Kassa",
+        "funding": "Finanzierung"
       }
     },
     "accounts": {
@@ -1087,19 +1087,19 @@
       "type_legend": "Transfertyp",
       "types": {
         "spot_to_funding": {
-          "label": "Spot → Funding",
+          "label": "Kassa → Finanzierung",
           "description": "Assets für Zahlungen vorbereiten"
         },
         "funding_to_spot": {
-          "label": "Funding → Spot",
+          "label": "Finanzierung → Kassa",
           "description": "Assets für Trading zurückführen"
         },
         "funding_to_bank": {
-          "label": "Funding → Bank",
+          "label": "Finanzierung → Bank",
           "description": "Verfügbare Gelder abheben"
         },
         "spot_to_bank": {
-          "label": "Spot → Bank",
+          "label": "Kassa → Bank",
           "description": "Umwandeln und abheben"
         }
       },
@@ -1108,7 +1108,7 @@
       "spot_wallet": "Spot-Wallet",
       "funding_wallet": "Funding-Wallet",
       "bank_account": "Bankkonto",
-      "asset": "Asset",
+      "asset": "Vermögenswert",
       "amount": "Betrag",
       "max": "MAX",
       "amount_placeholder": "0,00",
@@ -1262,7 +1262,7 @@
       "active_count": "{count} aktiv",
       "borrowed_amount": "Geliehener Betrag",
       "collateral": "Sicherheit",
-      "health_factor": "Health Factor",
+      "health_factor": "Gesundheitsfaktor",
       "repay_loan": "Kredit zurückzahlen",
       "processing": "Wird verarbeitet...",
       "view_details": "Details anzeigen",
@@ -1323,6 +1323,7 @@
       "payout_bank_sub": "ACH / SEPA",
       "wallet_address": "Wallet-Adresse",
       "wallet_placeholder": "0x...",
+      "network": "Netzwerk",
       "select_network": "Netzwerk auswählen",
       "network_erc20": "Ethereum (ERC20)",
       "network_trc20": "Tron (TRC20)",
@@ -1380,7 +1381,7 @@
       "collateral_tooltip": "Gesamtwert der als Sicherheit hinterlegten Assets",
       "ltv_label": "LTV",
       "low_risk": "Geringes Risiko",
-      "health_factor": "Health Factor",
+      "health_factor": "Gesundheitsfaktor",
       "health_tooltip": "Indikator für Liquidationsrisiko. Halten Sie ihn über 1,5, um eine Liquidation zu vermeiden.",
       "safe": "Sicher",
       "liquidated": "1,0 (Liquidiert)",
@@ -1393,7 +1394,7 @@
       "repay_tab": "Zurückzahlen",
       "want_to_borrow": "Ich möchte leihen",
       "my_collateral": "Meine Sicherheit",
-      "asset_placeholder": "Asset",
+      "asset_placeholder": "Vermögenswert",
       "ltv": "LTV",
       "low_risk": "Geringes Risiko",
       "apy": "APY",

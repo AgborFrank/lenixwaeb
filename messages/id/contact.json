@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "Hubungi tim kami",
+    "description": "Hubungi Lenix Protocol untuk kasus pemulihan, pertanyaan pinjaman, kemitraan, atau dukungan platform. Tim forensik dan klien merespons pada jam kerja di seluruh dunia."
+  },
+  "Main": {
+    "title": "Siap memulai?",
+    "subtitle": "Dukungan pemulihan, konsultasi pinjaman, atau pembicaraan kemitraan — tim kami siap membantu.",
+    "get_in_touch": "Hubungi kami",
+    "desc": "Pilih saluran yang paling sesuai. Untuk kasus yang mendesak, sertakan hash transaksi atau alamat dompet dalam pesan.",
+    "email_cta": "Surel dukungan",
+    "footer": {
+      "support": "Dukungan tersedia",
+      "response": "Respons obrolan langsung",
+      "confidential": "Penanganan rahasia"
+    }
+  },
+  "Info": {
+    "title": "Informasi kontak",
+    "address_title": "Kantor",
+    "address_line_1": "123 Blockchain Street",
+    "address_line_2": "San Francisco, CA 94105",
+    "address_line_3": "Amerika Serikat",
+    "email_title": "Surel",
+    "email_line_1": "recovery@lenixprotocol.com",
+    "email_line_2": "loan@lenixprotocol.com",
+    "email_line_3": "support@lenixprotocol.com",
+    "phone_title": "Telepon",
+    "phone_line": "+447887052128",
+    "hours_title": "Jam kerja",
+    "hours_line_1": "Senin – Jumat: 09.00 – 18.00 EST",
+    "hours_line_2": "Sabtu – Minggu: tutup",
+    "chat_title": "Butuh bantuan mendesak?",
+    "chat_description": "Tim memantau obrolan langsung sepanjang waktu untuk pemulihan dan urusan keamanan yang tidak bisa menunggu.",
+    "chat_cta": "Mulai obrolan langsung",
+    "follow_title": "Ikuti kami",
+    "response_title": "Waktu respons yang biasa",
+    "response_email": "Surel",
+    "response_email_time": "Dalam 24 jam",
+    "response_chat": "Obrolan langsung",
+    "response_chat_time": "Di bawah 5 menit",
+    "response_phone": "Telepon",
+    "response_phone_time": "Jam kerja"
+  },
+  "Form": {
+    "title": "Kirim pesan kepada kami",
+    "subtitle": "Kami membalas sebagian besar pertanyaan dalam satu hari kerja.",
+    "name": "Nama lengkap *",
+    "email": "Alamat surel *",
+    "phone": "Nomor telepon",
+    "whatsapp": "WhatsApp atau Telegram",
+    "inquiry_type": "Jenis pertanyaan",
+    "subject": "Subjek *",
+    "message": "Pesan Anda *",
+    "placeholder_name": "Masukkan nama lengkap",
+    "placeholder_email": "Masukkan surel Anda",
+    "placeholder_phone": "+1 234 567 8900",
+    "placeholder_whatsapp": "@namapengguna atau +1234567890",
+    "placeholder_subject": "Ini mengenai apa?",
+    "placeholder_message": "Jelaskan bagaimana kami bisa membantu…",
+    "submit": "Kirim pesan",
+    "privacy": "Dengan mengirim formulir ini, Anda menyetujui kebijakan privasi dan ketentuan layanan kami.",
+    "inquiry_options": {
+      "general": "Pertanyaan umum",
+      "recovery": "Layanan pemulihan",
+      "crypto_loan": "Layanan pinjaman kripto",
+      "support": "Dukungan teknis",
+      "partnership": "Kemitraan",
+      "business": "Pengembangan bisnis",
+      "press": "Pers dan media",
+      "other": "Lainnya"
+    },
+    "success_title": "Pesan terkirim",
+    "success_description": "Terima kasih sudah menghubungi kami. Kami akan membalas dalam 24 jam.",
+    "success_cta": "Kirim pesan lain",
+    "sending": "Mengirim…"
+  },
+  "FAQ": {
+    "title": "Pertanyaan yang sering diajukan",
+    "subtitle": "Jawaban untuk pertanyaan umum tentang pemulihan, pinjaman, dan keamanan platform.",
+    "cta_text": "Masih ada pertanyaan?",
+    "email_cta": "Surel dukungan",
+    "chat_cta": "Mulai obrolan langsung",
+    "items": {
+      "start": {
+        "question": "Bagaimana cara membuka kasus pemulihan atau pinjaman?",
+        "answer": "Kirim data Anda lewat formulir ini atau surel ke recovery@lenixprotocol.com. Untuk pinjaman, buka halaman pinjaman kripto untuk memulai pendaftaran. Tim akan mengonfirmasi lingkup, dokumen, dan langkah berikutnya."
+      },
+      "assets": {
+        "question": "Aset dan chain apa yang didukung?",
+        "answer": "Kami melacak aktivitas di chain EVM utama, Bitcoin, dan stablecoin yang umum dipakai. Cakupan bertambah sesuai kasus — kirim detail transaksi untuk penilaian khusus kasus Anda."
+      },
+      "security": {
+        "question": "Bagaimana data klien dilindungi?",
+        "answer": "Materi kasus ditangani dengan kontrol akses yang ketat, enkripsi saat transit dan saat disimpan, serta alur tinjauan yang terpisah. Kami tidak meminta kunci privat atau seed phrase."
+      },
+      "fees": {
+        "question": "Bagaimana struktur biaya pemulihan dan pinjaman?",
+        "answer": "Pekerjaan pemulihan dibatasi per kasus. Harga pinjaman bergantung pada agunan, jangka waktu, dan LTV. Kami menyerahkan ketentuan tertulis sebelum pekerjaan dimulai atau dana dicairkan."
+      },
+      "timeline": {
+        "question": "Berapa lama investigasi berlangsung?",
+        "answer": "Waktu bergantung pada kerumitan, yurisdiksi, dan kerja sama bursa. Laporan pelacakan awal sering selesai dalam hitungan hari; jalur pemulihan penuh dapat memakan waktu berminggu-minggu, tergantung faktor hukum dan kustodi."
+      },
+      "availability": {
+        "question": "Apakah Anda bekerja dengan penegak hukum?",
+        "answer": "Ya. Kami mendukung penegak hukum dan tim kepatuhan dengan paket pelacakan, tinjauan ahli, dan dokumentasi yang layak untuk proses regulator serta pengadilan."
+      }
+    }
+  }
+}

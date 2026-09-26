@@ -108,11 +108,11 @@
       "photo": "Mở rộng Toàn cầu"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - Nâng cấp giao thức",
+      "desc": "Nâng cấp lớn cho hợp đồng thông minh và hạ tầng cho vay, thêm lựa chọn thế chấp mới và siết các giao thức bảo mật.",
+      "tag1": "Ra mắt V2",
+      "tag2": "Bảo mật tăng cường",
+      "photo": "Giao thức V2"
     },
     "step7": {
       "title": "2027 - Khẳng Định Vị Thế",
@@ -122,18 +122,18 @@
       "photo": "Sự Công nhận của Ngành"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - Tổ chức tham gia",
+      "desc": "Hợp tác với các tổ chức tài chính truyền thống lớn để mở lối vào và lối ra an toàn cho vốn tổ chức.",
+      "tag1": "Tổ chức đã tham gia",
+      "tag2": "Đối tác TradFi",
+      "photo": "Kết nối Wall Street"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - Công cụ giám định AI",
+      "desc": "Ra mắt công cụ giám định thế hệ mới chạy bằng AI, có thể phân tích dự báo hoạt động bất hợp pháp trên blockchain.",
+      "tag1": "Tích hợp AI",
+      "tag2": "Giám định dự báo",
+      "photo": "Ra mắt công cụ AI"
     }
   },
   "Leadership": {

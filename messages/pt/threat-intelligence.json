@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Threat Intelligence & Blockchain Intelligence | Lenix Protocol",
-    "description": "Blockchain intelligence for compliance, security, and investigation teams. Attribution data, flow analysis, and structured exports — scoped to authorized matters."
+    "title": "Informação sobre ameaças e inteligência blockchain | Lenix Protocol",
+    "description": "Inteligência blockchain para equipas de conformidade, segurança e investigação. Dados de atribuição, análise de fluxos e exportações estruturadas — limitadas a assuntos autorizados."
   },
   "Hero": {
-    "badge": "Threat intelligence",
-    "title1": "Blockchain intelligence ",
-    "title2": "for investigation teams",
-    "subtitle": "Screen wallets, map fund flows, and export structured findings for compliance reviews, security operations, and law-enforcement support — with clear scope on what on-chain data can and cannot show.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Informação sobre ameaças",
+    "title1": "Inteligência blockchain ",
+    "title2": "para equipas de investigação",
+    "subtitle": "Filtre carteiras, mapeie fluxos de fundos e exporte conclusões estruturadas para revisões de conformidade, operações de segurança e apoio às forças de segurança — com âmbito claro sobre o que os dados on-chain podem e não podem mostrar.",
+    "btn_primary": "Contactar a equipa",
+    "btn_secondary": "Ver capacidades"
   },
   "Mission": {
-    "title": "Intelligence built for operational use",
-    "description": "Lenix provides curated blockchain datasets and analysis workflows for teams that need attribution context, risk screening, and documented fund flows — not generic market dashboards copied from consumer analytics products."
+    "title": "Inteligência feita para uso operacional",
+    "description": "A Lenix fornece conjuntos de dados blockchain selecionados e fluxos de análise para equipas que precisam de contexto de atribuição, screening de risco e fluxos de fundos documentados — não dashboards de mercado genéricos copiados de produtos de analítica de consumo."
   },
   "Capabilities": {
     "pillars": {
       "actors": {
-        "label": "Actor and wallet context",
-        "title": "Identify linked addresses and exposure",
-        "body": "Cluster related wallets and flag connections to known risky categories — sanctions lists, scam typologies, and high-risk service touchpoints — when your matter authorizes that scope of review."
+        "label": "Contexto de atores e carteiras",
+        "title": "Identificar endereços ligados e exposição",
+        "body": "Agrupe carteiras relacionadas e sinalize ligações a categorias de risco conhecidas — listas de sanções, tipologias de burla e pontos de contacto com serviços de alto risco — quando o assunto autoriza esse âmbito de revisão."
       },
       "geopolitical": {
-        "label": "Risk monitoring",
-        "title": "Monitor flows that matter to your mandate",
-        "body": "Track movements tied to jurisdictions, entities, or wallet sets you define. Screening is configurable to your policy — not a one-size-fits-all risk score."
+        "label": "Monitorização de risco",
+        "title": "Monitorizar os fluxos que importam ao mandato",
+        "body": "Acompanhe movimentos ligados a jurisdições, entidades ou conjuntos de carteiras que define. O screening configura-se à política — não um score de risco único para todos."
       },
       "enforcement": {
-        "label": "Case support",
-        "title": "Documentation for escalation",
-        "body": "Produce source-of-funds traces and address attribution summaries formatted for internal review, exchange requests, or counsel — with methodology and limits stated in the deliverable."
+        "label": "Apoio ao caso",
+        "title": "Documentação para a escalada",
+        "body": "Produza rastros de origem de fundos e sínteses de atribuição de endereços formatadas para revisão interna, pedidos a exchanges ou aconselhamento jurídico — com metodologia e limites indicados no entregável."
       },
       "delivery": {
-        "label": "Flexible delivery",
-        "title": "Data where your team works",
-        "body": "Receive exports via file, feed, or API integration depending on engagement terms. Priority wallet sets and alert rules can be adjusted as your operational focus changes."
+        "label": "Entrega flexível",
+        "title": "Os dados onde a equipa trabalha",
+        "body": "Receba exportações por ficheiro, feed ou integração por API conforme os termos do compromisso. Os conjuntos de carteiras prioritários e as regras de alerta podem ser ajustados quando o foco operacional muda."
       }
     }
   },
   "Cta": {
-    "title": "Need blockchain intelligence for a team or case?",
-    "description": "Describe your mandate, data needs, and delivery preferences. We outline what Lenix can provide before scoped engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Blockchain forensics"
+    "title": "Precisa de inteligência blockchain para uma equipa ou um caso?",
+    "description": "Descreva o mandato, as necessidades de dados e as preferências de entrega. Indicamos o que a Lenix pode fornecer antes de um compromisso delimitado.",
+    "btn_primary": "Contactar a equipa",
+    "btn_secondary": "Forense blockchain"
   }
 }

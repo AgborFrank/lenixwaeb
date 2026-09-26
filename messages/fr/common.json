@@ -76,7 +76,7 @@
       "blog": "Blog",
       "documentation": "Docs",
       "api_docs": "API",
-      "support": "Support",
+      "support": "Assistance",
       "terms": "Conditions",
       "cookie": "Cookies",
       "privacy": "Confidentialité",
@@ -213,40 +213,40 @@
       "image_alt": "Tableau de bord opérations marchand et compliance Lenix"
     },
     "Payment": {
-      "badge": "Protocol stack",
-      "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "badge": "Pile du protocole",
+      "title": "Déplacer, conserver et récupérer de la valeur sur une seule couche",
+      "subtitle": "Paiements, conservation, récupération et prêt partagent la même infrastructure auditée — pas quatre produits séparés.",
       "cards": {
         "fiat": {
-          "title": "Crypto-to-fiat",
-          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
+          "title": "Crypto vers fiat",
+          "desc": "Convertissez la crypto en monnaie fiat via des rails de paiement locaux, pour l'usage transfrontalier et quotidien."
         },
         "vault": {
-          "title": "Vault and custody",
-          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
+          "title": "Coffre et conservation",
+          "desc": "Coffres multi-signatures et conservation sécurisée pour les équipes qui ont besoin d'un stockage d'actifs contrôlé."
         },
         "recovery": {
-          "title": "Recovery and forensics",
-          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
+          "title": "Récupération et juricomptabilité",
+          "desc": "Lorsque des actifs sont perdus ou contestés, le traçage et les preuves s'appuient sur la même pile."
         },
         "lending": {
-          "title": "Lending",
-          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
+          "title": "Prêt",
+          "desc": "Empruntez contre une garantie, avec des contrôles on-chain et des parcours de règlement clairs."
         }
       },
       "cta": "Voir solutions"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " Token Details",
-      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "title2": " Détails du jeton",
+      "subtitle": "Utilisez les informations de contrat ci-dessous pour ajouter le jeton Lenix Protocol à votre portefeuille.",
       "headers": {
-        "contract": "Contract Address",
-        "name": "Token Name",
-        "symbol": "Token Symbol",
-        "supply": "Token Supply",
-        "network": "Network",
-        "decimals": "Decimals"
+        "contract": "Adresse du contrat",
+        "name": "Nom du jeton",
+        "symbol": "Symbole du jeton",
+        "supply": "Offre du jeton",
+        "network": "Réseau",
+        "decimals": "Décimales"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -259,7 +259,7 @@
       "title2": "Contrôles documentés.",
       "subtitle1": "Smart contracts revus par CertiK et opérations alignées ISO 27001 pour les équipes qui exigent plus que du marketing.",
       "subtitle2_1": "Consultez le ",
-      "subtitle2_2": "whitepaper",
+      "subtitle2_2": "livre blanc",
       "subtitle2_3": " et la documentation d'audit sur l'architecture, l'utilité du token et les contrôles de sécurité.",
       "col1_text": "Les smart contracts Lenix Protocol ont été revus par CertiK. L'audit couvre les composants core utilisés en production.",
       "col1_btn": "Docs sécurité",
@@ -267,9 +267,9 @@
       "col2_btn": "Livre blanc"
     },
     "Competition": {
-      "title1": "Community ",
-      "title2": "giveaway",
-      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "title1": "Communauté ",
+      "title2": "tirage",
+      "subtitle": "Dix gagnants reçoivent 25 000 $ en LNX. Suivez les étapes d'inscription sur la page communauté. Conditions applicables.",
       "btn": "Programme communauté"
     },
     "Features": {
@@ -286,29 +286,29 @@
       "btn_whitepaper": "Livre blanc"
     },
     "LnxPurchaseWidget": {
-      "widget_title": "Buy LNX",
-      "widget_subtitle": "Protocol token sale",
-      "usd_raised": "USD raised so far:",
-      "tokens_sold": "Tokens sold:",
-      "price_usd": "USD price: ${price}",
-      "price_eth": "ETH price: {price} ETH",
-      "pay_eth": "ETH you pay",
-      "pay_usdt": "USDT you pay",
-      "pay_usd": "USD you pay",
-      "receive_lnx": "$LNX you receive",
-      "btn_processing": "Processing...",
-      "btn_pay_eth": "Pay with ETH",
-      "btn_pay_usdt": "Pay with USDT",
+      "widget_title": "Acheter LNX",
+      "widget_subtitle": "Vente du jeton du protocole",
+      "usd_raised": "USD levés à ce jour :",
+      "tokens_sold": "Jetons vendus :",
+      "price_usd": "Prix en USD : ${price}",
+      "price_eth": "Prix en ETH : {price} ETH",
+      "pay_eth": "ETH que vous payez",
+      "pay_usdt": "USDT que vous payez",
+      "pay_usd": "USD que vous payez",
+      "receive_lnx": "$LNX que vous recevez",
+      "btn_processing": "Traitement...",
+      "btn_pay_eth": "Payer en ETH",
+      "btn_pay_usdt": "Payer en USDT",
       "btn_pay_card": "Payer par carte",
-      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "card_info": "Propulsé par Stripe. Montant facturé en USD.",
       "btn_connect": "Connecter",
       "btn_giveaway": "Bonus LNX",
-      "giveaway_info": "Connect your wallet to check eligibility."
+      "giveaway_info": "Connectez votre portefeuille pour vérifier l'éligibilité."
     },
     "TokenSale": {
       "title1": "LNX ",
-      "title2": "token sale",
-      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+      "title2": "vente de jetons",
+      "subtitle": "Achetez des LNX pour participer au protocole. Les détails du contrat figurent ci-dessous."
     },
     "MarketTicker": {
       "label": "Marchés en direct",
@@ -435,7 +435,7 @@
           "desc": "Les déploiements en production sont surveillés pour détecter les interactions anormales et alertes opérationnelles."
         }
       },
-      "eyebrow": "Smart contracts"
+      "eyebrow": "Contrats intelligents"
     },
     "iso": {
       "title": "Opérations alignées ISO 27001",
@@ -531,7 +531,7 @@
       "name": "Nom",
       "transaction_hash": "Hash de transaction",
       "amount_stolen": "Montant volé",
-      "blockchain": "Blockchain",
+      "blockchain": "Chaîne de blocs",
       "currency": "Devise",
       "country_phone_code": "Indicatif téléphonique",
       "incident_summary": "Résumé de l'incident",
@@ -990,8 +990,8 @@
         "change_24h": "24 h"
       },
       "location": {
-        "spot": "Spot",
-        "funding": "Funding"
+        "spot": "Comptant",
+        "funding": "Financement"
       }
     },
     "accounts": {
@@ -1087,11 +1087,11 @@
       "type_legend": "Type de transfert",
       "types": {
         "spot_to_funding": {
-          "label": "Spot → Funding",
+          "label": "Comptant → Financement",
           "description": "Préparer les actifs pour les paiements"
         },
         "funding_to_spot": {
-          "label": "Funding → Spot",
+          "label": "Financement → Comptant",
           "description": "Renvoyer les actifs pour le trading"
         },
         "funding_to_bank": {
@@ -1323,6 +1323,7 @@
       "payout_bank_sub": "ACH / SEPA",
       "wallet_address": "Adresse du portefeuille",
       "wallet_placeholder": "0x...",
+      "network": "Réseau",
       "select_network": "Sélectionner le réseau",
       "network_erc20": "Ethereum (ERC20)",
       "network_trc20": "Tron (TRC20)",

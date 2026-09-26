@@ -108,11 +108,11 @@
       "photo": "Expansão Global"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - Atualizações do protocolo",
+      "desc": "Grandes atualizações dos nossos contratos inteligentes e da infraestrutura de empréstimos, com novas opções de garantia e protocolos de segurança reforçados.",
+      "tag1": "V2 lançado",
+      "tag2": "Segurança reforçada",
+      "photo": "Protocolo V2"
     },
     "step7": {
       "title": "2027 - Líder da Indústria",
@@ -122,18 +122,18 @@
       "photo": "Reconhecimento da Indústria"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - Adoção institucional",
+      "desc": "Parcerias com grandes instituições financeiras tradicionais para rampas de entrada e saída seguras do capital institucional.",
+      "tag1": "Instituições integradas",
+      "tag2": "Parcerias TradFi",
+      "photo": "Integração com Wall Street"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - Motor forense de IA",
+      "desc": "Lançamos o nosso motor forense de nova geração com IA, capaz de análise preditiva de atividades ilícitas na blockchain.",
+      "tag1": "Integração de IA",
+      "tag2": "Perícia preditiva",
+      "photo": "Lançamento do motor de IA"
     }
   },
   "Leadership": {

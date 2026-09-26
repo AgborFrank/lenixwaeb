@@ -1,158 +1,143 @@
 {
   "meta": {
-    "title": "Lenix Finance | Collateral Lending & Liquidity",
-    "description": "Borrow against approved crypto collateral or supply liquidity on Lenix Finance. LTV, rates, and liquidation thresholds shown before you commit.",
-    "keywords": "Crypto Lending, Collateral Loans, DeFi Liquidity, Lenix Finance, Crypto-to-Fiat"
+    "title": "Lenix Finance | إقراض بضمان وسيولة",
+    "description": "اقترض مقابل ضمان مشفر معتمد أو قدّم سيولة على Lenix Finance. تظهر نسبة LTV والأسعار وحدود التصفية قبل أن تلتزم.",
+    "keywords": "إقراض مشفر, قروض بضمان, سيولة DeFi, Lenix Finance, من التشفير إلى النقد"
   },
   "Hero": {
     "badge": "Lenix Finance",
-    "title1": "Liquidity while ",
-    "title2": "collateral stays in vault",
-    "subtitle": "Borrow stablecoins or fiat against approved assets, or supply liquidity to the protocol — with LTV, rates, and health factors visible before you sign.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "View markets",
+    "title1": "سيولة بينما ",
+    "title2": "يبقى الضمان في الخزنة",
+    "subtitle": "اقترض عملات مستقرة أو نقدًا مقابل أصول معتمدة، أو قدّم سيولة للبروتوكول — مع ظهور LTV والأسعار وعامل الصحة قبل التوقيع.",
+    "btn_primary": "اطلب قرضًا",
+    "btn_secondary": "عرض الأسواق",
     "mock": {
       "brand": "Lenix Finance",
-      "nav_dashboard": "Dashboard",
-      "nav_markets": "Markets",
-      "nav_staking": "Staking",
-      "nav_governance": "Governance",
-      "network": "Ethereum Mainnet",
-      "net_worth": "NET WORTH",
-      "net_apy": "NET APY",
-      "health_factor": "HEALTH FACTOR",
-      "liquidation_note": "Liquidation at < 1.00",
-      "tab_supplied": "Supplied",
-      "tab_borrowed": "Borrowed",
-      "col_asset": "ASSET",
-      "col_balance": "BALANCE",
+      "nav_dashboard": "لوحة التحكم",
+      "nav_markets": "الأسواق",
+      "nav_staking": "التخزين",
+      "nav_governance": "الحوكمة",
+      "network": "شبكة Ethereum الرئيسية",
+      "net_worth": "صافي الثروة",
+      "net_apy": "صافي APY",
+      "health_factor": "عامل الصحة",
+      "liquidation_note": "التصفية عند < 1.00",
+      "tab_supplied": "مودَع",
+      "tab_borrowed": "مقترَض",
+      "col_asset": "الأصل",
+      "col_balance": "الرصيد",
       "col_apy": "APY",
-      "col_collateral": "COLLATERAL",
-      "enabled": "Enabled",
-      "quick_actions": "Quick Actions",
-      "supply_asset": "Supply Asset",
-      "wallet_balance": "Wallet Balance:",
-      "supply_apy": "Supply APY",
-      "collateral_factor": "Collateral Factor",
-      "supply_btn": "Supply USDC"
+      "col_collateral": "الضمان",
+      "enabled": "مفعّل",
+      "quick_actions": "إجراءات سريعة",
+      "supply_asset": "إيداع أصل",
+      "wallet_balance": "رصيد المحفظة:",
+      "supply_apy": "APY الإيداع",
+      "collateral_factor": "عامل الضمان",
+      "supply_btn": "إيداع USDC"
     }
   },
   "Steps": {
-    "title": "How it works",
-    "description": "From wallet connection to funded loan or supplied liquidity — three steps with clear terms upfront.",
+    "title": "كيف يعمل",
+    "description": "من ربط المحفظة إلى قرض مموّل أو سيولة مودعة — ثلاث خطوات بشروط واضحة مسبقًا.",
     "steps": {
       "wallet": {
-        "title": "Connect your wallet",
-        "description": "Use Lenix Wallet or connect an supported wallet to access lending and supply flows."
+        "title": "اربط محفظتك",
+        "description": "استخدم Lenix Wallet أو اربط محفظة مدعومة للوصول إلى مساري الإقراض والإيداع."
       },
       "apply": {
-        "title": "Review terms",
-        "description": "Choose collateral, see LTV, repayment schedule, and liquidation thresholds before submitting."
+        "title": "راجع الشروط",
+        "description": "اختر الضمان، واطلع على LTV وجدول السداد وحدود التصفية قبل الإرسال."
       },
       "draw": {
-        "title": "Draw or supply",
-        "description": "Receive a loan disbursement or supply assets to earn from borrower interest — withdraw when liquidity allows."
+        "title": "اسحب أو أودع",
+        "description": "استلم صرف القرض أو أودع أصولًا لتربح من فائدة المقترضين — واسحب عندما تسمح السيولة."
       }
     }
   },
   "Markets": {
-    "title": "Market overview",
-    "description": "Indicative rates and liquidity across supported assets. Confirm live values in the app before transacting.",
-    "view_all": "View all markets",
+    "title": "نظرة على الأسواق",
+    "description": "أسعار وسيولة إرشادية للأصول المدعومة. أكّد القيم الحية في التطبيق قبل أي عملية.",
+    "view_all": "عرض كل الأسواق",
     "columns": {
-      "asset": "Asset",
-      "liquidity": "Total liquidity",
-      "supply_apy": "Supply APY",
-      "borrow_apy": "Borrow APY",
-      "actions": "Actions"
+      "asset": "الأصل",
+      "liquidity": "إجمالي السيولة",
+      "supply_apy": "APY الإيداع",
+      "borrow_apy": "APY الاقتراض",
+      "actions": "إجراءات"
     },
-    "supply": "Supply",
-    "borrow": "Borrow",
+    "supply": "إيداع",
+    "borrow": "اقتراض",
     "assets": {
-      "wbtc": {
-        "name": "Bitcoin",
-        "symbol": "WBTC"
-      },
-      "eth": {
-        "name": "Ethereum",
-        "symbol": "ETH"
-      },
-      "lnx": {
-        "name": "Lenix",
-        "symbol": "LNX"
-      },
-      "usdc": {
-        "name": "USDC",
-        "symbol": "USDC"
-      },
-      "usdt": {
-        "name": "Tether",
-        "symbol": "USDT"
-      }
+      "wbtc": { "name": "Bitcoin", "symbol": "WBTC" },
+      "eth": { "name": "Ethereum", "symbol": "ETH" },
+      "lnx": { "name": "Lenix", "symbol": "LNX" },
+      "usdc": { "name": "USDC", "symbol": "USDC" },
+      "usdt": { "name": "Tether", "symbol": "USDT" }
     }
   },
   "Features": {
     "cards": {
       "collateral": {
-        "title": "Collateralized borrowing",
-        "desc": "Draw stablecoins or fiat against approved vault collateral — without selling the underlying asset. Credit checks are not required for eligible collateral types."
+        "title": "اقتراض بضمان",
+        "desc": "اسحب عملات مستقرة أو نقدًا مقابل ضمان معتمد في الخزنة — دون بيع الأصل الأساسي. لا يلزم فحص ائتماني لأنواع الضمان المؤهلة."
       },
       "ltv": {
-        "title": "LTV shown upfront",
-        "desc": "Loan-to-value, repayment schedule, and liquidation thresholds are displayed before disbursement — not adjusted silently after you sign."
+        "title": "نسبة LTV ظاهرة مسبقًا",
+        "desc": "تُعرض نسبة القرض إلى القيمة وجدول السداد وحدود التصفية قبل الصرف — ولا تُعدَّل بصمت بعد التوقيع."
       },
       "liquidity": {
-        "title": "Supply and earn",
-        "desc": "Provide liquidity to the protocol and earn from borrower interest. Withdraw when pool liquidity is available — no fixed lock-up term."
+        "title": "أودع واكسب",
+        "desc": "قدّم سيولة للبروتوكول واكسب من فائدة المقترضين. اسحب عندما تتوفر سيولة المجمع — بلا مدة حجز ثابتة."
       }
     }
   },
   "Calculator": {
-    "title": "Estimate your returns",
-    "description": "Model supply-side yield at current indicative APYs. Actual returns depend on utilization, rates, and how long assets remain supplied.",
+    "title": "قدّر عائدك",
+    "description": "نمذج عائد جانب الإيداع وفق APY الإرشادي الحالي. العائد الفعلي يعتمد على الاستخدام والأسعار ومدة بقاء الأصول مودعة.",
     "stats": {
-      "max_apy_label": "Indicative max APY",
-      "max_apy_value": "Up to 18.5%",
-      "payout_label": "Accrual",
-      "payout_value": "Continuous"
+      "max_apy_label": "أعلى APY إرشادي",
+      "max_apy_value": "حتى 18.5%",
+      "payout_label": "الاستحقاق",
+      "payout_value": "مستمر"
     },
     "form": {
-      "amount_label": "Deposit amount",
-      "duration_label": "Duration",
-      "months": "{count} months",
-      "month_min": "1 month",
-      "month_max": "3 years",
-      "earnings_label": "Estimated earnings",
-      "total_label": "Total balance",
-      "disclaimer": "Illustrative only. Not financial advice.",
-      "btn": "Start supplying"
+      "amount_label": "مبلغ الإيداع",
+      "duration_label": "المدة",
+      "months": "{count} أشهر",
+      "month_min": "شهر واحد",
+      "month_max": "3 سنوات",
+      "earnings_label": "الأرباح التقديرية",
+      "total_label": "الرصيد الإجمالي",
+      "disclaimer": "للتوضيح فقط. ليست نصيحة مالية.",
+      "btn": "ابدأ الإيداع"
     }
   },
   "Faq": {
-    "title": "Frequently asked questions",
+    "title": "الأسئلة الشائعة",
     "items": {
       "yield": {
-        "q": "How does supply yield work?",
-        "a": "Borrowers pay interest on loans. A portion is distributed to liquidity providers after the protocol reserve. Rates move with pool utilization — check the app for current APY."
+        "q": "كيف يعمل عائد الإيداع؟",
+        "a": "يدفع المقترضون فائدة على القروض. يُوزَّع جزء منها على مزودي السيولة بعد احتياطي البروتوكول. تتحرك الأسعار مع استخدام المجمع — راجع التطبيق لمعرفة APY الحالي."
       },
       "lockup": {
-        "q": "Is there a lock-up period?",
-        "a": "No fixed term for suppliers. You can withdraw when the pool has sufficient liquidity. During high utilization, withdrawals may queue until borrowers repay."
+        "q": "هل توجد مدة حجز؟",
+        "a": "لا مدة ثابتة للمودعين. يمكنك السحب عندما يملك المجمع سيولة كافية. عند ارتفاع الاستخدام، قد تنتظر عمليات السحب حتى يسدد المقترضون."
       },
       "liquidation": {
-        "q": "What happens if my loan health factor falls?",
-        "a": "If collateral value drops below the agreed LTV, liquidation may occur to repay outstanding debt. Health factor and liquidation price are shown in the dashboard before and during the loan."
+        "q": "ماذا يحدث إذا انخفض عامل صحة القرض؟",
+        "a": "إذا هبطت قيمة الضمان دون LTV المتفق عليه، قد تتم التصفية لسداد الدين القائم. يظهر عامل الصحة وسعر التصفية في لوحة التحكم قبل القرض وأثناءه."
       },
       "fees": {
-        "q": "What fees apply?",
-        "a": "Protocol fees are reflected in the net APY or loan terms shown at application. On-chain gas for deposits, borrows, and withdrawals is separate and paid to the network."
+        "q": "ما الرسوم المطبقة؟",
+        "a": "رسوم البروتوكول ظاهرة في صافي APY أو في شروط القرض عند التقديم. غاز السلسلة للإيداع والاقتراض والسحب منفصل ويُدفع للشبكة."
       }
     }
   },
   "Cta": {
-    "title": "Ready to borrow or supply?",
-    "description": "Apply for a collateral loan or open the app to supply liquidity. Support is available if you need help scoping terms.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "Contact team"
+    "title": "مستعد للاقتراض أو الإيداع؟",
+    "description": "قدّم على قرض بضمان أو افتح التطبيق لإيداع السيولة. الدعم متاح إذا احتجت مساعدة في تحديد الشروط.",
+    "btn_primary": "اطلب قرضًا",
+    "btn_secondary": "تواصل مع الفريق"
   }
 }

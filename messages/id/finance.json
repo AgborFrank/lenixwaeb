@@ -1,158 +1,143 @@
 {
   "meta": {
-    "title": "Lenix Finance | Collateral Lending & Liquidity",
-    "description": "Borrow against approved crypto collateral or supply liquidity on Lenix Finance. LTV, rates, and liquidation thresholds shown before you commit.",
-    "keywords": "Crypto Lending, Collateral Loans, DeFi Liquidity, Lenix Finance, Crypto-to-Fiat"
+    "title": "Lenix Finance | Pinjaman beragunan dan likuiditas",
+    "description": "Pinjam dengan agunan kripto yang disetujui atau sediakan likuiditas di Lenix Finance. LTV, suku bunga, dan ambang likuidasi tampil sebelum Anda berkomitmen.",
+    "keywords": "Pinjaman kripto, pinjaman beragunan, likuiditas DeFi, Lenix Finance, kripto ke fiat"
   },
   "Hero": {
     "badge": "Lenix Finance",
-    "title1": "Liquidity while ",
-    "title2": "collateral stays in vault",
-    "subtitle": "Borrow stablecoins or fiat against approved assets, or supply liquidity to the protocol — with LTV, rates, and health factors visible before you sign.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "View markets",
+    "title1": "Likuiditas, ",
+    "title2": "agunan tetap di brankas",
+    "subtitle": "Pinjam stablecoin atau fiat dengan aset yang disetujui, atau sediakan likuiditas ke protokol — LTV, suku bunga, dan faktor kesehatan terlihat sebelum Anda menandatangani.",
+    "btn_primary": "Ajukan pinjaman",
+    "btn_secondary": "Lihat pasar",
     "mock": {
       "brand": "Lenix Finance",
-      "nav_dashboard": "Dashboard",
-      "nav_markets": "Markets",
-      "nav_staking": "Staking",
-      "nav_governance": "Governance",
-      "network": "Ethereum Mainnet",
-      "net_worth": "NET WORTH",
-      "net_apy": "NET APY",
-      "health_factor": "HEALTH FACTOR",
-      "liquidation_note": "Liquidation at < 1.00",
-      "tab_supplied": "Supplied",
-      "tab_borrowed": "Borrowed",
-      "col_asset": "ASSET",
-      "col_balance": "BALANCE",
+      "nav_dashboard": "Dasbor",
+      "nav_markets": "Pasar",
+      "nav_staking": "Penguncian",
+      "nav_governance": "Tata kelola",
+      "network": "Jaringan utama Ethereum",
+      "net_worth": "KEKAYAAN BERSIH",
+      "net_apy": "APY BERSIH",
+      "health_factor": "FAKTOR KESEHATAN",
+      "liquidation_note": "Likuidasi jika < 1.00",
+      "tab_supplied": "Disediakan",
+      "tab_borrowed": "Dipinjam",
+      "col_asset": "ASET",
+      "col_balance": "SALDO",
       "col_apy": "APY",
-      "col_collateral": "COLLATERAL",
-      "enabled": "Enabled",
-      "quick_actions": "Quick Actions",
-      "supply_asset": "Supply Asset",
-      "wallet_balance": "Wallet Balance:",
-      "supply_apy": "Supply APY",
-      "collateral_factor": "Collateral Factor",
-      "supply_btn": "Supply USDC"
+      "col_collateral": "AGUNAN",
+      "enabled": "Aktif",
+      "quick_actions": "Tindakan cepat",
+      "supply_asset": "Sediakan aset",
+      "wallet_balance": "Saldo dompet:",
+      "supply_apy": "APY penyediaan",
+      "collateral_factor": "Faktor agunan",
+      "supply_btn": "Sediakan USDC"
     }
   },
   "Steps": {
-    "title": "How it works",
-    "description": "From wallet connection to funded loan or supplied liquidity — three steps with clear terms upfront.",
+    "title": "Cara kerjanya",
+    "description": "Dari koneksi dompet ke pinjaman yang dicairkan atau likuiditas yang disediakan — tiga langkah, ketentuan jelas sejak awal.",
     "steps": {
       "wallet": {
-        "title": "Connect your wallet",
-        "description": "Use Lenix Wallet or connect an supported wallet to access lending and supply flows."
+        "title": "Hubungkan dompet Anda",
+        "description": "Pakai Lenix Wallet atau hubungkan dompet yang didukung untuk masuk ke alur pinjaman dan penyediaan."
       },
       "apply": {
-        "title": "Review terms",
-        "description": "Choose collateral, see LTV, repayment schedule, and liquidation thresholds before submitting."
+        "title": "Tinjau ketentuan",
+        "description": "Pilih agunan, lihat LTV, jadwal pelunasan, dan ambang likuidasi sebelum mengirim."
       },
       "draw": {
-        "title": "Draw or supply",
-        "description": "Receive a loan disbursement or supply assets to earn from borrower interest — withdraw when liquidity allows."
+        "title": "Tarik atau sediakan",
+        "description": "Terima pencairan pinjaman atau sediakan aset untuk mendapat bunga peminjam — tarik saat likuiditas memungkinkan."
       }
     }
   },
   "Markets": {
-    "title": "Market overview",
-    "description": "Indicative rates and liquidity across supported assets. Confirm live values in the app before transacting.",
-    "view_all": "View all markets",
+    "title": "Ikhtisar pasar",
+    "description": "Suku bunga dan likuiditas indikatif untuk aset yang didukung. Konfirmasi nilai langsung di aplikasi sebelum bertransaksi.",
+    "view_all": "Lihat semua pasar",
     "columns": {
-      "asset": "Asset",
-      "liquidity": "Total liquidity",
-      "supply_apy": "Supply APY",
-      "borrow_apy": "Borrow APY",
-      "actions": "Actions"
+      "asset": "Aset",
+      "liquidity": "Total likuiditas",
+      "supply_apy": "APY penyediaan",
+      "borrow_apy": "APY pinjaman",
+      "actions": "Tindakan"
     },
-    "supply": "Supply",
-    "borrow": "Borrow",
+    "supply": "Sediakan",
+    "borrow": "Pinjam",
     "assets": {
-      "wbtc": {
-        "name": "Bitcoin",
-        "symbol": "WBTC"
-      },
-      "eth": {
-        "name": "Ethereum",
-        "symbol": "ETH"
-      },
-      "lnx": {
-        "name": "Lenix",
-        "symbol": "LNX"
-      },
-      "usdc": {
-        "name": "USDC",
-        "symbol": "USDC"
-      },
-      "usdt": {
-        "name": "Tether",
-        "symbol": "USDT"
-      }
+      "wbtc": { "name": "Bitcoin", "symbol": "WBTC" },
+      "eth": { "name": "Ethereum", "symbol": "ETH" },
+      "lnx": { "name": "Lenix", "symbol": "LNX" },
+      "usdc": { "name": "USDC", "symbol": "USDC" },
+      "usdt": { "name": "Tether", "symbol": "USDT" }
     }
   },
   "Features": {
     "cards": {
       "collateral": {
-        "title": "Collateralized borrowing",
-        "desc": "Draw stablecoins or fiat against approved vault collateral — without selling the underlying asset. Credit checks are not required for eligible collateral types."
+        "title": "Pinjaman beragunan",
+        "desc": "Tarik stablecoin atau fiat dengan agunan brankas yang disetujui — tanpa menjual aset dasarnya. Pemeriksaan kredit tidak diperlukan untuk jenis agunan yang memenuhi syarat."
       },
       "ltv": {
-        "title": "LTV shown upfront",
-        "desc": "Loan-to-value, repayment schedule, and liquidation thresholds are displayed before disbursement — not adjusted silently after you sign."
+        "title": "LTV tampil di depan",
+        "desc": "Rasio pinjaman terhadap nilai, jadwal pelunasan, dan ambang likuidasi ditampilkan sebelum pencairan — tidak diubah diam-diam setelah Anda menandatangani."
       },
       "liquidity": {
-        "title": "Supply and earn",
-        "desc": "Provide liquidity to the protocol and earn from borrower interest. Withdraw when pool liquidity is available — no fixed lock-up term."
+        "title": "Sediakan dan dapatkan",
+        "desc": "Sediakan likuiditas ke protokol dan dapatkan bagian bunga peminjam. Tarik saat pool punya likuiditas — tanpa jangka kunci tetap."
       }
     }
   },
   "Calculator": {
-    "title": "Estimate your returns",
-    "description": "Model supply-side yield at current indicative APYs. Actual returns depend on utilization, rates, and how long assets remain supplied.",
+    "title": "Perkirakan imbal hasil",
+    "description": "Modelkan imbal hasil sisi penyedia pada APY indikatif saat ini. Hasil nyata bergantung pada utilisasi, suku bunga, dan lama aset tetap disediakan.",
     "stats": {
-      "max_apy_label": "Indicative max APY",
-      "max_apy_value": "Up to 18.5%",
-      "payout_label": "Accrual",
-      "payout_value": "Continuous"
+      "max_apy_label": "APY maksimum indikatif",
+      "max_apy_value": "Hingga 18,5%",
+      "payout_label": "Akrual",
+      "payout_value": "Berkelanjutan"
     },
     "form": {
-      "amount_label": "Deposit amount",
-      "duration_label": "Duration",
-      "months": "{count} months",
-      "month_min": "1 month",
-      "month_max": "3 years",
-      "earnings_label": "Estimated earnings",
-      "total_label": "Total balance",
-      "disclaimer": "Illustrative only. Not financial advice.",
-      "btn": "Start supplying"
+      "amount_label": "Jumlah setoran",
+      "duration_label": "Durasi",
+      "months": "{count} bulan",
+      "month_min": "1 bulan",
+      "month_max": "3 tahun",
+      "earnings_label": "Perkiraan hasil",
+      "total_label": "Saldo total",
+      "disclaimer": "Hanya ilustrasi. Bukan nasihat keuangan.",
+      "btn": "Mulai menyediakan"
     }
   },
   "Faq": {
-    "title": "Frequently asked questions",
+    "title": "Pertanyaan yang sering diajukan",
     "items": {
       "yield": {
-        "q": "How does supply yield work?",
-        "a": "Borrowers pay interest on loans. A portion is distributed to liquidity providers after the protocol reserve. Rates move with pool utilization — check the app for current APY."
+        "q": "Bagaimana imbal hasil penyediaan bekerja?",
+        "a": "Peminjam membayar bunga pinjaman. Sebagian dibagikan ke penyedia likuiditas setelah cadangan protokol. Suku bunga bergerak mengikuti utilisasi pool — cek aplikasi untuk APY saat ini."
       },
       "lockup": {
-        "q": "Is there a lock-up period?",
-        "a": "No fixed term for suppliers. You can withdraw when the pool has sufficient liquidity. During high utilization, withdrawals may queue until borrowers repay."
+        "q": "Apakah ada masa kunci?",
+        "a": "Tidak ada jangka tetap bagi penyedia. Anda dapat menarik saat pool punya likuiditas yang cukup. Saat utilisasi tinggi, penarikan dapat antre sampai peminjam melunasi."
       },
       "liquidation": {
-        "q": "What happens if my loan health factor falls?",
-        "a": "If collateral value drops below the agreed LTV, liquidation may occur to repay outstanding debt. Health factor and liquidation price are shown in the dashboard before and during the loan."
+        "q": "Apa yang terjadi jika faktor kesehatan pinjaman saya turun?",
+        "a": "Jika nilai agunan jatuh di bawah LTV yang disepakati, likuidasi dapat terjadi untuk melunasi utang yang tersisa. Faktor kesehatan dan harga likuidasi tampil di dasbor sebelum dan selama pinjaman."
       },
       "fees": {
-        "q": "What fees apply?",
-        "a": "Protocol fees are reflected in the net APY or loan terms shown at application. On-chain gas for deposits, borrows, and withdrawals is separate and paid to the network."
+        "q": "Biaya apa yang berlaku?",
+        "a": "Biaya protokol tercermin pada APY bersih atau ketentuan pinjaman yang tampil saat pengajuan. Gas on-chain untuk setoran, pinjaman, dan penarikan terpisah dan dibayar ke jaringan."
       }
     }
   },
   "Cta": {
-    "title": "Ready to borrow or supply?",
-    "description": "Apply for a collateral loan or open the app to supply liquidity. Support is available if you need help scoping terms.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "Contact team"
+    "title": "Siap meminjam atau menyediakan?",
+    "description": "Ajukan pinjaman beragunan atau buka aplikasi untuk menyediakan likuiditas. Dukungan tersedia jika Anda perlu bantuan merumuskan ketentuan.",
+    "btn_primary": "Ajukan pinjaman",
+    "btn_secondary": "Hubungi tim"
   }
 }

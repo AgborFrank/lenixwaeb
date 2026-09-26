@@ -1,158 +1,143 @@
 {
   "meta": {
-    "title": "Lenix Finance | Collateral Lending & Liquidity",
-    "description": "Borrow against approved crypto collateral or supply liquidity on Lenix Finance. LTV, rates, and liquidation thresholds shown before you commit.",
-    "keywords": "Crypto Lending, Collateral Loans, DeFi Liquidity, Lenix Finance, Crypto-to-Fiat"
+    "title": "Lenix Finance | Pautang na may kolateral at likido",
+    "description": "Mangutang laban sa aprubadong kolateral na crypto, o magbigay ng likido sa Lenix Finance. LTV, mga rate, at hangganan ng likidasyon ay nakikita bago ka magtaya.",
+    "keywords": "Pautang sa crypto, pautang na may kolateral, likido sa DeFi, Lenix Finance, crypto patungong fiat"
   },
   "Hero": {
     "badge": "Lenix Finance",
-    "title1": "Liquidity while ",
-    "title2": "collateral stays in vault",
-    "subtitle": "Borrow stablecoins or fiat against approved assets, or supply liquidity to the protocol — with LTV, rates, and health factors visible before you sign.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "View markets",
+    "title1": "May likido, ",
+    "title2": "nananatili ang kolateral sa imbakan",
+    "subtitle": "Mangutang ng stablecoin o fiat laban sa aprubadong ari-arian, o magbigay ng likido sa protokol — LTV, mga antas, at salik ng kalusugan ay nakikita bago pumirma.",
+    "btn_primary": "Humiling ng pautang",
+    "btn_secondary": "Tingnan ang mga merkado",
     "mock": {
       "brand": "Lenix Finance",
-      "nav_dashboard": "Dashboard",
-      "nav_markets": "Markets",
-      "nav_staking": "Staking",
-      "nav_governance": "Governance",
-      "network": "Ethereum Mainnet",
-      "net_worth": "NET WORTH",
-      "net_apy": "NET APY",
-      "health_factor": "HEALTH FACTOR",
-      "liquidation_note": "Liquidation at < 1.00",
-      "tab_supplied": "Supplied",
-      "tab_borrowed": "Borrowed",
-      "col_asset": "ASSET",
-      "col_balance": "BALANCE",
+      "nav_dashboard": "Panel",
+      "nav_markets": "Mga merkado",
+      "nav_staking": "Pag-stake",
+      "nav_governance": "Pamamahala",
+      "network": "Pangunahing kadena ng Ethereum",
+      "net_worth": "NETONG HALAGA",
+      "net_apy": "NETONG APY",
+      "health_factor": "SALIK NG KALUSUGAN",
+      "liquidation_note": "Likidasyon kapag < 1.00",
+      "tab_supplied": "Naibigay",
+      "tab_borrowed": "Nautang",
+      "col_asset": "ARI-ARIAN",
+      "col_balance": "BALANSE",
       "col_apy": "APY",
-      "col_collateral": "COLLATERAL",
-      "enabled": "Enabled",
-      "quick_actions": "Quick Actions",
-      "supply_asset": "Supply Asset",
-      "wallet_balance": "Wallet Balance:",
-      "supply_apy": "Supply APY",
-      "collateral_factor": "Collateral Factor",
-      "supply_btn": "Supply USDC"
+      "col_collateral": "KOLATERAL",
+      "enabled": "Naka-on",
+      "quick_actions": "Mabilis na aksyon",
+      "supply_asset": "Magbigay ng ari-arian",
+      "wallet_balance": "Balanse ng pitaka:",
+      "supply_apy": "APY ng pagbibigay",
+      "collateral_factor": "Salik ng kolateral",
+      "supply_btn": "Magbigay ng USDC"
     }
   },
   "Steps": {
-    "title": "How it works",
-    "description": "From wallet connection to funded loan or supplied liquidity — three steps with clear terms upfront.",
+    "title": "Paano ito gumagana",
+    "description": "Mula sa pagkonekta ng pitaka hanggang sa pautang na may pondo o likidong naibigay — tatlong hakbang, malinaw ang tuntunin mula sa simula.",
     "steps": {
       "wallet": {
-        "title": "Connect your wallet",
-        "description": "Use Lenix Wallet or connect an supported wallet to access lending and supply flows."
+        "title": "Ikonekta ang pitaka",
+        "description": "Gamitin ang Lenix Wallet o ikonekta ang suportadong pitaka para makapasok sa daloy ng pautang at pagbibigay."
       },
       "apply": {
-        "title": "Review terms",
-        "description": "Choose collateral, see LTV, repayment schedule, and liquidation thresholds before submitting."
+        "title": "Suriin ang mga tuntunin",
+        "description": "Piliin ang kolateral, tingnan ang LTV, iskedyul ng bayad, at hangganan ng likidasyon bago isumite."
       },
       "draw": {
-        "title": "Draw or supply",
-        "description": "Receive a loan disbursement or supply assets to earn from borrower interest — withdraw when liquidity allows."
+        "title": "Kunin o magbigay",
+        "description": "Tanggapin ang paglabas ng pautang, o magbigay ng ari-arian para kumita mula sa interes ng nangutang — maglabas kapag may likido."
       }
     }
   },
   "Markets": {
-    "title": "Market overview",
-    "description": "Indicative rates and liquidity across supported assets. Confirm live values in the app before transacting.",
-    "view_all": "View all markets",
+    "title": "Tanaw ng mga merkado",
+    "description": "Indikatibong antas at likido ng mga suportadong ari-arian. Kumpirmahin ang kasalukuyang halaga sa aplikasyon bago magtransaksyon.",
+    "view_all": "Tingnan ang lahat ng merkado",
     "columns": {
-      "asset": "Asset",
-      "liquidity": "Total liquidity",
-      "supply_apy": "Supply APY",
-      "borrow_apy": "Borrow APY",
-      "actions": "Actions"
+      "asset": "Ari-arian",
+      "liquidity": "Kabuuang likido",
+      "supply_apy": "APY ng pagbibigay",
+      "borrow_apy": "APY ng pautang",
+      "actions": "Mga aksyon"
     },
-    "supply": "Supply",
-    "borrow": "Borrow",
+    "supply": "Magbigay",
+    "borrow": "Mangutang",
     "assets": {
-      "wbtc": {
-        "name": "Bitcoin",
-        "symbol": "WBTC"
-      },
-      "eth": {
-        "name": "Ethereum",
-        "symbol": "ETH"
-      },
-      "lnx": {
-        "name": "Lenix",
-        "symbol": "LNX"
-      },
-      "usdc": {
-        "name": "USDC",
-        "symbol": "USDC"
-      },
-      "usdt": {
-        "name": "Tether",
-        "symbol": "USDT"
-      }
+      "wbtc": { "name": "Bitcoin", "symbol": "WBTC" },
+      "eth": { "name": "Ethereum", "symbol": "ETH" },
+      "lnx": { "name": "Lenix", "symbol": "LNX" },
+      "usdc": { "name": "USDC", "symbol": "USDC" },
+      "usdt": { "name": "Tether", "symbol": "USDT" }
     }
   },
   "Features": {
     "cards": {
       "collateral": {
-        "title": "Collateralized borrowing",
-        "desc": "Draw stablecoins or fiat against approved vault collateral — without selling the underlying asset. Credit checks are not required for eligible collateral types."
+        "title": "Pautang na may kolateral",
+        "desc": "Kumuha ng stablecoin o fiat laban sa aprubadong kolateral sa imbakan — nang hindi ibinebenta ang pinagbabatayang ari-arian. Hindi kailangan ng pagsusuri ng kredito para sa mga kuwalipikadong uri ng kolateral."
       },
       "ltv": {
-        "title": "LTV shown upfront",
-        "desc": "Loan-to-value, repayment schedule, and liquidation thresholds are displayed before disbursement — not adjusted silently after you sign."
+        "title": "LTV na nakikita agad",
+        "desc": "Ang ratio ng pautang sa halaga, iskedyul ng bayad, at hangganan ng likidasyon ay ipinapakita bago mailabas ang pondo — hindi binabago nang tahimik pagkatapos pumirma."
       },
       "liquidity": {
-        "title": "Supply and earn",
-        "desc": "Provide liquidity to the protocol and earn from borrower interest. Withdraw when pool liquidity is available — no fixed lock-up term."
+        "title": "Magbigay at kumita",
+        "desc": "Magbigay ng likido sa protokol at kumita mula sa interes ng nangutang. Maglabas kapag may likido ang pondohan — walang nakapirming pagkakakandado."
       }
     }
   },
   "Calculator": {
-    "title": "Estimate your returns",
-    "description": "Model supply-side yield at current indicative APYs. Actual returns depend on utilization, rates, and how long assets remain supplied.",
+    "title": "Tantiyahin ang kita",
+    "description": "Imodelo ang ani sa panig ng pagbibigay sa kasalukuyang indikatibong APY. Ang aktuwal na kita ay nakabatay sa paggamit, mga antas, at tagal na nananatiling ibinigay ang ari-arian.",
     "stats": {
-      "max_apy_label": "Indicative max APY",
-      "max_apy_value": "Up to 18.5%",
-      "payout_label": "Accrual",
-      "payout_value": "Continuous"
+      "max_apy_label": "Indikatibong pinakamataas na APY",
+      "max_apy_value": "Hanggang 18.5%",
+      "payout_label": "Pag-iipon",
+      "payout_value": "Tuloy-tuloy"
     },
     "form": {
-      "amount_label": "Deposit amount",
-      "duration_label": "Duration",
-      "months": "{count} months",
-      "month_min": "1 month",
-      "month_max": "3 years",
-      "earnings_label": "Estimated earnings",
-      "total_label": "Total balance",
-      "disclaimer": "Illustrative only. Not financial advice.",
-      "btn": "Start supplying"
+      "amount_label": "Halaga ng deposito",
+      "duration_label": "Tagal",
+      "months": "{count} buwan",
+      "month_min": "1 buwan",
+      "month_max": "3 taon",
+      "earnings_label": "Tinatayang kita",
+      "total_label": "Kabuuang balanse",
+      "disclaimer": "Ilustrasyon lamang. Hindi ito payo sa pananalapi.",
+      "btn": "Simulan ang pagbibigay"
     }
   },
   "Faq": {
-    "title": "Frequently asked questions",
+    "title": "Mga madalas itanong",
     "items": {
       "yield": {
-        "q": "How does supply yield work?",
-        "a": "Borrowers pay interest on loans. A portion is distributed to liquidity providers after the protocol reserve. Rates move with pool utilization — check the app for current APY."
+        "q": "Paano gumagana ang ani ng pagbibigay?",
+        "a": "Nagbabayad ng interes ang nangutang. Isang bahagi ang napupunta sa nagbibigay ng likido pagkatapos ng reserba ng protokol. Gumagalaw ang antas kasabay ng paggamit ng pondohan — tingnan ang kasalukuyang APY sa aplikasyon."
       },
       "lockup": {
-        "q": "Is there a lock-up period?",
-        "a": "No fixed term for suppliers. You can withdraw when the pool has sufficient liquidity. During high utilization, withdrawals may queue until borrowers repay."
+        "q": "May panahon ba ng pagkakakandado?",
+        "a": "Walang nakapirming termino para sa nagbibigay. Maaari kang maglabas kapag sapat ang likido ng pondohan. Kapag mataas ang paggamit, maaaring maghintay ang paglabas hanggang makabayad ang nangutang."
       },
       "liquidation": {
-        "q": "What happens if my loan health factor falls?",
-        "a": "If collateral value drops below the agreed LTV, liquidation may occur to repay outstanding debt. Health factor and liquidation price are shown in the dashboard before and during the loan."
+        "q": "Ano ang mangyayari kung bumaba ang salik ng kalusugan ng pautang ko?",
+        "a": "Kung bumaba ang halaga ng kolateral sa ibaba ng napagkasunduang LTV, maaaring magkaroon ng likidasyon para bayaran ang natitirang utang. Ang salik ng kalusugan at presyo ng likidasyon ay nasa panel bago at habang tumatakbo ang pautang."
       },
       "fees": {
-        "q": "What fees apply?",
-        "a": "Protocol fees are reflected in the net APY or loan terms shown at application. On-chain gas for deposits, borrows, and withdrawals is separate and paid to the network."
+        "q": "Anong mga bayad ang umaayon?",
+        "a": "Ang bayad ng protokol ay nasa netong APY o sa mga tuntunin ng pautang na ipinapakita sa aplikasyon. Hiwalay ang gas sa kadena para sa deposito, pautang, at paglabas, at ibinabayad sa kadena."
       }
     }
   },
   "Cta": {
-    "title": "Ready to borrow or supply?",
-    "description": "Apply for a collateral loan or open the app to supply liquidity. Support is available if you need help scoping terms.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "Contact team"
+    "title": "Handa nang mangutang o magbigay?",
+    "description": "Humiling ng pautang na may kolateral o buksan ang aplikasyon para magbigay ng likido. May suporta kung kailangan ng tulong sa pagtatakda ng tuntunin.",
+    "btn_primary": "Humiling ng pautang",
+    "btn_secondary": "Kontakin ang koponan"
   }
 }

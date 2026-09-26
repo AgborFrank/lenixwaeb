@@ -1,12 +1,12 @@
 {
   "Profile": {
-    "title": "Profile",
+    "title": "Propayl",
     "subtitle": "Impormasyon na makikita ng ibang mga gumagamit ng Lenix.",
     "remove_photo": "Alisin ang larawan",
     "account_identity": "Pagkakakilanlan ng account",
     "display_name": "Pangalan sa Display",
     "display_name_placeholder": "Ilagay ang iyong pangalan",
-    "email_address": "Email Address",
+    "email_address": "Address ng email",
     "email_hint": "Pangunahing email para sa mga alerto sa seguridad.",
     "identity_verified": "Na-verify ang pagkakakilanlan",
     "verified_desc": "Level 2 na access at mas mataas na limitasyon sa pag-withdraw.",
@@ -30,21 +30,21 @@
       "light_desc": "Malinis na light mode",
       "dark": "Madilim",
       "dark_desc": "Klasikong dark mode",
-      "system": "System",
+      "system": "Sistema",
       "system_desc": "Sundin ang settings ng device"
     },
     "currency_options": {
       "usd": {
-        "label": "US Dollar"
+        "label": "Dolyar ng US"
       },
       "eur": {
         "label": "Euro"
       },
       "gbp": {
-        "label": "British Pound"
+        "label": "Pound ng Britain"
       },
       "jpy": {
-        "label": "Japanese Yen"
+        "label": "Yen ng Japan"
       }
     },
     "currency_language": "Pera at Wika",
@@ -64,7 +64,7 @@
   "Security": {
     "title": "Seguridad",
     "subtitle": "Pamahalaan ang seguridad at authentication ng iyong account.",
-    "two_factor": "Two-Factor Authentication",
+    "two_factor": "Dalawang-hakbang na pagpapatunay",
     "two_factor_desc": "Protektahan ang iyong account gamit ang 2FA",
     "biometric": "Seguridad ng Biometric at Device",
     "use_biometric": "Gamitin ang FaceID / TouchID",
@@ -78,33 +78,33 @@
     "recent_access": "Kamakailang pag-access sa account",
     "last_active": "Huling aktibo: {date}",
     "current_session": "Kasalukuyang session",
-    "danger_zone": "Danger Zone",
+    "danger_zone": "Delikadong bahagi",
     "reset_keys": "I-reset ang mga Security Key",
     "delete_account": "I-delete ang Account",
     "toast_success": "Matagumpay na na-update ang mga setting ng seguridad",
-    "account_protection": "Account Protection",
-    "biometric_title": "Biometric Unlock",
-    "biometric_subtitle": "Use FaceID or TouchID to unlock your Lenix Wallet.",
-    "auto_lock_title": "Auto-Lock Timer",
-    "auto_lock_subtitle": "Automatically lock the app after 5 minutes of inactivity.",
-    "advanced_privacy": "Advanced Privacy",
-    "log_activity": "Log Activity",
-    "connected_sites": "Connected Sites",
-    "enabled": "Enabled",
-    "sites_count": "{count} Sites",
-    "current": "Current",
-    "recovery_phrase_title": "Secure Your Recovery Phrase",
-    "recovery_phrase_desc": "If you lose your recovery phrase, you lose access to your funds forever. Never share it with anyone, including Lenix employees.",
-    "back_up_now": "Back Up Now",
-    "encrypted_notice": "End-to-end encrypted account settings",
-    "toast_2fa_enabled": "2FA preference saved",
-    "toast_2fa_disabled": "2FA disabled"
+    "account_protection": "Proteksyon ng account",
+    "biometric_title": "Biometric na pag-unlock",
+    "biometric_subtitle": "Gamitin ang Face ID o Touch ID para i-unlock ang Lenix Wallet.",
+    "auto_lock_title": "Timer ng auto-lock",
+    "auto_lock_subtitle": "Awtomatikong i-lock ang app pagkalipas ng 5 minutong walang galaw.",
+    "advanced_privacy": "Advanced na privacy",
+    "log_activity": "I-log ang aktibidad",
+    "connected_sites": "Mga konektadong site",
+    "enabled": "Naka-on",
+    "sites_count": "{count} na site",
+    "current": "Kasalukuyan",
+    "recovery_phrase_title": "I-secure ang recovery phrase mo",
+    "recovery_phrase_desc": "Kapag nawala ang recovery phrase mo, mawawalan ka ng access sa pondo magpakailanman. Huwag itong ibahagi kahit kanino, kasama ang mga empleyado ng Lenix.",
+    "back_up_now": "I-backup ngayon",
+    "encrypted_notice": "Mga setting ng account na naka-encrypt nang end-to-end",
+    "toast_2fa_enabled": "Na-save ang preference ng 2FA",
+    "toast_2fa_disabled": "Na-off ang 2FA"
   },
   "Advanced": {
     "title": "Mga Advanced na Setting",
     "subtitle": "Mga teknikal na configuration para sa mga advanced na user at developer.",
     "dev_tools_title": "Mga Tool ng Developer",
-    "dev_mode": "Developer Mode",
+    "dev_mode": "Developer mode",
     "dev_mode_desc": "Ipakita ang mga testnet at advanced na impormasyon sa pag-debug.",
     "gas_analytics": "Pinahusay na Gas Analytics",
     "gas_analytics_desc": "Ipakita ang detalyadong breakdown ng gas para sa bawat transaksyon.",
@@ -113,7 +113,7 @@
     "download": "I-download",
     "sync_data": "I-sync ang Data",
     "force_refresh": "Sapilitang I-refresh",
-    "danger_zone": "Danger Zone",
+    "danger_zone": "Delikadong bahagi",
     "reset_account": "I-reset ang Account",
     "reset_account_desc": "Nililinis ang lahat ng kasaysayan ng transaksyon at naka-cache na data. Mananatiling ligtas ang iyong mga pondo sa blockchain.",
     "reset_state": "I-reset ang State",
@@ -134,7 +134,7 @@
     "no_contacts": "Walang nahanap na mga contact",
     "no_contacts_desc": "Subukan ang ibang term sa paghahanap o magdagdag ng bagong contact.",
     "clear_search": "I-clear ang Paghahanap",
-    "info_title": "Lenix Address Book",
+    "info_title": "Address book ng Lenix",
     "info_desc": "Gumagamit ang Lenix ng advanced na address book upang matulungan kang maiwasan ang pagpapadala ng mga pondo sa maling address. Lumilitaw ang mga paboritong contact sa tuktok ng iyong listahan ng pagpapadala."
   },
   "Notifications": {
@@ -190,9 +190,9 @@
     "groups": {
       "primary": "Pangunahin",
       "security": "Seguridad",
-      "system": "System"
+      "system": "Sistema"
     },
-    "profile": "Profile",
+    "profile": "Propayl",
     "preferences": "Mga Kagustuhan",
     "security": "Seguridad",
     "security_privacy": "Seguridad at Privacy",

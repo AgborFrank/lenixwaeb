@@ -1,158 +1,143 @@
 {
   "meta": {
-    "title": "Lenix Finance | Collateral Lending & Liquidity",
-    "description": "Borrow against approved crypto collateral or supply liquidity on Lenix Finance. LTV, rates, and liquidation thresholds shown before you commit.",
-    "keywords": "Crypto Lending, Collateral Loans, DeFi Liquidity, Lenix Finance, Crypto-to-Fiat"
+    "title": "Lenix Finance | 抵押借贷与流动性",
+    "description": "以获准的加密抵押品借款，或在 Lenix Finance 提供流动性。承诺前即可看到 LTV、利率和清算阈值。",
+    "keywords": "加密借贷, 抵押贷, DeFi 流动性, Lenix Finance, 加密兑换法币"
   },
   "Hero": {
     "badge": "Lenix Finance",
-    "title1": "Liquidity while ",
-    "title2": "collateral stays in vault",
-    "subtitle": "Borrow stablecoins or fiat against approved assets, or supply liquidity to the protocol — with LTV, rates, and health factors visible before you sign.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "View markets",
+    "title1": "获得流动性，",
+    "title2": "抵押品留在金库",
+    "subtitle": "以获准资产借入稳定币或法币，或向协议提供流动性——签署前即可看到 LTV、利率和健康因子。",
+    "btn_primary": "申请贷款",
+    "btn_secondary": "查看市场",
     "mock": {
       "brand": "Lenix Finance",
-      "nav_dashboard": "Dashboard",
-      "nav_markets": "Markets",
-      "nav_staking": "Staking",
-      "nav_governance": "Governance",
-      "network": "Ethereum Mainnet",
-      "net_worth": "NET WORTH",
-      "net_apy": "NET APY",
-      "health_factor": "HEALTH FACTOR",
-      "liquidation_note": "Liquidation at < 1.00",
-      "tab_supplied": "Supplied",
-      "tab_borrowed": "Borrowed",
-      "col_asset": "ASSET",
-      "col_balance": "BALANCE",
+      "nav_dashboard": "仪表盘",
+      "nav_markets": "市场",
+      "nav_staking": "质押",
+      "nav_governance": "治理",
+      "network": "Ethereum 主网",
+      "net_worth": "净资产",
+      "net_apy": "净 APY",
+      "health_factor": "健康因子",
+      "liquidation_note": "清算线 < 1.00",
+      "tab_supplied": "已存入",
+      "tab_borrowed": "已借入",
+      "col_asset": "资产",
+      "col_balance": "余额",
       "col_apy": "APY",
-      "col_collateral": "COLLATERAL",
-      "enabled": "Enabled",
-      "quick_actions": "Quick Actions",
-      "supply_asset": "Supply Asset",
-      "wallet_balance": "Wallet Balance:",
-      "supply_apy": "Supply APY",
-      "collateral_factor": "Collateral Factor",
-      "supply_btn": "Supply USDC"
+      "col_collateral": "抵押",
+      "enabled": "已启用",
+      "quick_actions": "快捷操作",
+      "supply_asset": "存入资产",
+      "wallet_balance": "钱包余额：",
+      "supply_apy": "存款 APY",
+      "collateral_factor": "抵押因子",
+      "supply_btn": "存入 USDC"
     }
   },
   "Steps": {
-    "title": "How it works",
-    "description": "From wallet connection to funded loan or supplied liquidity — three steps with clear terms upfront.",
+    "title": "运作方式",
+    "description": "从连接钱包到放款或存入流动性——三步，条款事先写清。",
     "steps": {
       "wallet": {
-        "title": "Connect your wallet",
-        "description": "Use Lenix Wallet or connect an supported wallet to access lending and supply flows."
+        "title": "连接钱包",
+        "description": "使用 Lenix Wallet，或连接受支持的钱包，进入借贷和存款流程。"
       },
       "apply": {
-        "title": "Review terms",
-        "description": "Choose collateral, see LTV, repayment schedule, and liquidation thresholds before submitting."
+        "title": "核对条款",
+        "description": "选择抵押品，提交前查看 LTV、还款计划和清算阈值。"
       },
       "draw": {
-        "title": "Draw or supply",
-        "description": "Receive a loan disbursement or supply assets to earn from borrower interest — withdraw when liquidity allows."
+        "title": "支取或存入",
+        "description": "领取贷款拨付，或存入资产以赚取借款人利息——池内有流动性时可提取。"
       }
     }
   },
   "Markets": {
-    "title": "Market overview",
-    "description": "Indicative rates and liquidity across supported assets. Confirm live values in the app before transacting.",
-    "view_all": "View all markets",
+    "title": "市场概览",
+    "description": "支持资产的参考利率与流动性。交易前请在应用中确认实时数值。",
+    "view_all": "查看全部市场",
     "columns": {
-      "asset": "Asset",
-      "liquidity": "Total liquidity",
-      "supply_apy": "Supply APY",
-      "borrow_apy": "Borrow APY",
-      "actions": "Actions"
+      "asset": "资产",
+      "liquidity": "总流动性",
+      "supply_apy": "存款 APY",
+      "borrow_apy": "借款 APY",
+      "actions": "操作"
     },
-    "supply": "Supply",
-    "borrow": "Borrow",
+    "supply": "存入",
+    "borrow": "借款",
     "assets": {
-      "wbtc": {
-        "name": "Bitcoin",
-        "symbol": "WBTC"
-      },
-      "eth": {
-        "name": "Ethereum",
-        "symbol": "ETH"
-      },
-      "lnx": {
-        "name": "Lenix",
-        "symbol": "LNX"
-      },
-      "usdc": {
-        "name": "USDC",
-        "symbol": "USDC"
-      },
-      "usdt": {
-        "name": "Tether",
-        "symbol": "USDT"
-      }
+      "wbtc": { "name": "Bitcoin", "symbol": "WBTC" },
+      "eth": { "name": "Ethereum", "symbol": "ETH" },
+      "lnx": { "name": "Lenix", "symbol": "LNX" },
+      "usdc": { "name": "USDC", "symbol": "USDC" },
+      "usdt": { "name": "Tether", "symbol": "USDT" }
     }
   },
   "Features": {
     "cards": {
       "collateral": {
-        "title": "Collateralized borrowing",
-        "desc": "Draw stablecoins or fiat against approved vault collateral — without selling the underlying asset. Credit checks are not required for eligible collateral types."
+        "title": "抵押借款",
+        "desc": "以金库中获准的抵押品支取稳定币或法币，无需卖出底层资产。符合条件的抵押品类型不要求信用审查。"
       },
       "ltv": {
-        "title": "LTV shown upfront",
-        "desc": "Loan-to-value, repayment schedule, and liquidation thresholds are displayed before disbursement — not adjusted silently after you sign."
+        "title": "LTV 事先列明",
+        "desc": "贷款价值比、还款计划和清算阈值在拨付前展示，签署后不会被悄然改动。"
       },
       "liquidity": {
-        "title": "Supply and earn",
-        "desc": "Provide liquidity to the protocol and earn from borrower interest. Withdraw when pool liquidity is available — no fixed lock-up term."
+        "title": "存入并赚取",
+        "desc": "向协议提供流动性，从借款人利息中获得收益。池内有流动性即可提取，没有固定锁定期。"
       }
     }
   },
   "Calculator": {
-    "title": "Estimate your returns",
-    "description": "Model supply-side yield at current indicative APYs. Actual returns depend on utilization, rates, and how long assets remain supplied.",
+    "title": "估算收益",
+    "description": "按当前参考 APY 模拟存款端收益。实际结果取决于利用率、利率以及资产存入的时长。",
     "stats": {
-      "max_apy_label": "Indicative max APY",
-      "max_apy_value": "Up to 18.5%",
-      "payout_label": "Accrual",
-      "payout_value": "Continuous"
+      "max_apy_label": "参考最高 APY",
+      "max_apy_value": "最高 18.5%",
+      "payout_label": "计息",
+      "payout_value": "连续"
     },
     "form": {
-      "amount_label": "Deposit amount",
-      "duration_label": "Duration",
-      "months": "{count} months",
-      "month_min": "1 month",
-      "month_max": "3 years",
-      "earnings_label": "Estimated earnings",
-      "total_label": "Total balance",
-      "disclaimer": "Illustrative only. Not financial advice.",
-      "btn": "Start supplying"
+      "amount_label": "存入金额",
+      "duration_label": "期限",
+      "months": "{count} 个月",
+      "month_min": "1 个月",
+      "month_max": "3 年",
+      "earnings_label": "预估收益",
+      "total_label": "总余额",
+      "disclaimer": "仅供说明。不构成财务建议。",
+      "btn": "开始存入"
     }
   },
   "Faq": {
-    "title": "Frequently asked questions",
+    "title": "常见问题",
     "items": {
       "yield": {
-        "q": "How does supply yield work?",
-        "a": "Borrowers pay interest on loans. A portion is distributed to liquidity providers after the protocol reserve. Rates move with pool utilization — check the app for current APY."
+        "q": "存款收益如何产生？",
+        "a": "借款人支付贷款利息。扣除协议准备金后，一部分分配给流动性提供者。利率随池利用率变动——请在应用中查看当前 APY。"
       },
       "lockup": {
-        "q": "Is there a lock-up period?",
-        "a": "No fixed term for suppliers. You can withdraw when the pool has sufficient liquidity. During high utilization, withdrawals may queue until borrowers repay."
+        "q": "有锁定期吗？",
+        "a": "供给方没有固定期限。池内流动性充足即可提取。利用率高时，提取可能要等到借款人还款。"
       },
       "liquidation": {
-        "q": "What happens if my loan health factor falls?",
-        "a": "If collateral value drops below the agreed LTV, liquidation may occur to repay outstanding debt. Health factor and liquidation price are shown in the dashboard before and during the loan."
+        "q": "贷款健康因子下降会怎样？",
+        "a": "若抵押品价值跌破约定 LTV，可能触发清算以偿还未偿债务。健康因子和清算价格在贷款前和贷款期间都会显示在仪表盘上。"
       },
       "fees": {
-        "q": "What fees apply?",
-        "a": "Protocol fees are reflected in the net APY or loan terms shown at application. On-chain gas for deposits, borrows, and withdrawals is separate and paid to the network."
+        "q": "有哪些费用？",
+        "a": "协议费用已体现在申请时展示的净 APY 或贷款条款中。存款、借款和提取的链上 gas 另行支付给网络。"
       }
     }
   },
   "Cta": {
-    "title": "Ready to borrow or supply?",
-    "description": "Apply for a collateral loan or open the app to supply liquidity. Support is available if you need help scoping terms.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "Contact team"
+    "title": "准备借款或存入？",
+    "description": "申请抵押贷，或打开应用存入流动性。如需帮助界定条款，可以联系支持。",
+    "btn_primary": "申请贷款",
+    "btn_secondary": "联系团队"
   }
 }

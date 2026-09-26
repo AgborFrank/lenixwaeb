@@ -108,11 +108,11 @@
       "photo": "वैश्विक विस्तार"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - प्रोटोकॉल अपग्रेड",
+      "desc": "हमारे स्मार्ट कॉन्ट्रैक्ट और उधार इंफ्रास्ट्रक्चर में बड़े अपग्रेड, नए कोलैटरल विकल्प और मज़बूत सुरक्षा प्रोटोकॉल के साथ।",
+      "tag1": "V2 लॉन्च",
+      "tag2": "बेहतर सुरक्षा",
+      "photo": "प्रोटोकॉल V2"
     },
     "step7": {
       "title": "2027 - उद्योग नेता",
@@ -122,18 +122,18 @@
       "photo": "उद्योग में मान्यता"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - संस्थागत अपनाना",
+      "desc": "संस्थागत पूंजी के लिए सुरक्षित ऑन-रैंप और ऑफ़-रैंप देने हेतु बड़े पारंपरिक वित्तीय संस्थानों के साथ साझेदारी।",
+      "tag1": "संस्थान जुड़े",
+      "tag2": "TradFi साझेदारियाँ",
+      "photo": "वॉल स्ट्रीट एकीकरण"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - AI फोरेंसिक इंजन",
+      "desc": "हमने अगली पीढ़ी का AI फोरेंसिक इंजन लॉन्च किया, जो अवैध ब्लॉकचेन गतिविधि का पूर्वानुमान विश्लेषण कर सकता है।",
+      "tag1": "AI एकीकरण",
+      "tag2": "पूर्वानुमान फोरेंसिक",
+      "photo": "AI इंजन लॉन्च"
     }
   },
   "Leadership": {

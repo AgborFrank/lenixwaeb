@@ -1,90 +1,81 @@
 {
   "meta": {
-    "title": "Blockchain Forensics & On-Chain Investigation | Lenix Protocol",
-    "description": "Trace stolen and misdirected crypto, map wallet flows, and produce forensic reports for counsel, compliance teams, and law enforcement. Honest scope before engagement."
+    "title": "Blockchain forensics ve zincir üstü inceleme | Lenix Protocol",
+    "description": "Çalınan ve yanlış yönlendirilen kriptoyu izleyin, cüzdan akışlarını haritalayın ve danışmanlar, uyum ekipleri ile kolluk için adli raporlar üretin. Görevlendirmeden önce dürüst kapsam."
   },
   "Hero": {
-    "badge": "Blockchain forensics",
-    "title1": "On-chain investigation ",
-    "title2": "with evidence you can use",
-    "subtitle": "Lenix maps transaction flows across chains and prepares documented findings for recovery decisions, legal review, and compliance — without promising outcomes the ledger cannot support.",
-    "btn_primary": "Start a case",
-    "btn_secondary": "How it works"
+    "badge": "Adli blokzincir incelemesi",
+    "title1": "Zincir üstü inceleme ",
+    "title2": "kullanılabilir kanıtla",
+    "subtitle": "Lenix işlem akışlarını zincirler arasında haritalar ve kurtarma kararları, hukuki inceleme ve uyum için belgelenmiş bulgular hazırlar — defterin destekleyemeyeceği sonuçlar vaat etmeden.",
+    "btn_primary": "Vaka başlat",
+    "btn_secondary": "Nasıl çalışır"
   },
   "Capabilities": {
-    "title": "What forensic work covers",
-    "description": "Investigations combine on-chain analysis with matter context — not automated blockchain lookups alone.",
+    "title": "Adli çalışma neleri kapsar",
+    "description": "İncelemeler zincir üstü analizi konu bağlamıyla birleştirir — yalnızca otomatik blockchain sorguları değildir.",
     "cards": {
       "tracing": {
-        "title": "Transaction tracing",
-        "desc": "Follow fund movement from known source wallets through bridges, mixers, and consolidation points to identify where value likely landed."
+        "title": "İşlem izleme",
+        "desc": "Bilinen kaynak cüzdanlardan köprüler, mikserler ve toplama noktaları üzerinden fon hareketini izleyerek değerin muhtemelen nereye ulaştığını belirleyin."
       },
       "reports": {
-        "title": "Reports and litigation support",
-        "desc": "Written analysis with timelines, methodology, and limitations — formatted for counsel, regulators, or exchange escalation when appropriate."
+        "title": "Raporlar ve dava desteği",
+        "desc": "Zaman çizelgeleri, yöntem ve sınırları içeren yazılı analiz — uygun olduğunda danışman, düzenleyici veya borsa eskalasyonu için biçimlendirilir."
       },
       "compliance": {
-        "title": "Compliance and due diligence",
-        "desc": "Screen wallets and flows for AML risk, sanctions exposure, and counterparty diligence before treasury moves or settlement."
+        "title": "Uyum ve durum tespiti",
+        "desc": "Hazine hareketi veya mutabakattan önce cüzdanları ve akışları AML riski, yaptırım maruziyeti ve karşı taraf incelemesi için tarayın."
       }
     }
   },
   "UseCases": {
-    "title": "When teams engage forensics",
-    "description": "Common matters where documented on-chain analysis helps decide next steps — recovery, legal process, or internal review.",
+    "title": "Ekipler forensics'i ne zaman devreye alır",
+    "description": "Belgelenmiş zincir üstü analizin sonraki adımı netleştirdiği yaygın konular — kurtarma, hukuki süreç veya iç inceleme.",
     "items": {
       "theft": {
-        "title": "Theft and unauthorized transfers",
-        "desc": "Wallet compromises, exchange account takeovers, or unauthorized outbound transfers where you need a trace before contacting platforms."
+        "title": "Hırsızlık ve yetkisiz transferler",
+        "desc": "Cüzdan ele geçirmeleri, borsa hesabı devralmaları veya yetkisiz çıkışlar; platformlara başvurmadan önce iz gerektiğinde."
       },
       "scams": {
-        "title": "Scams and social engineering",
-        "desc": "Investment fraud, impersonation, and phishing cases where victims need to show fund paths to counsel or reporting channels."
+        "title": "Dolandırıcılık ve sosyal mühendislik",
+        "desc": "Yatırım dolandırıcılığı, kimliğe bürünme ve kimlik avı; mağdurların fon yolunu danışmana veya bildirim kanallarına göstermesi gerektiğinde."
       },
       "ransom": {
-        "title": "Extortion payments",
-        "desc": "Ransomware or blackmail payments where law enforcement or insurers require documented flow analysis from payment wallets."
+        "title": "Şantaj ödemeleri",
+        "desc": "Fidye yazılımı veya şantaj ödemeleri; kolluk veya sigortacıların ödeme cüzdanlarından belgelenmiş akış analizi istediği durumlar."
       },
       "insolvency": {
-        "title": "Disputes and insolvency",
-        "desc": "Bankruptcy, creditor enforcement, or internal investigations where attachable crypto or treasury movements must be verified."
-      }
-    },
-    "panel": {
-      "title": "Confidential handling",
-      "description": "Case materials are shared only with parties authorized under the engagement — not used outside the defined scope.",
-      "items": {
-        "nda": "NDA available on request",
-        "encrypted": "Encrypted intake and file transfer",
-        "privacy": "Privacy-aligned data handling"
+        "title": "Uyuşmazlık ve iflas",
+        "desc": "İflas, alacaklı icrası veya iç soruşturmalar; haczi kabil kripto veya hazine hareketlerinin doğrulanması gerektiğinde."
       }
     }
   },
   "Process": {
-    "title": "Investigation process",
+    "title": "İnceleme süreci",
     "steps": {
       "intake": {
-        "title": "Intake and scoping",
-        "desc": "Known addresses, transaction hashes, timelines, and what questions the matter needs answered — before analysis hours are committed."
+        "title": "Kabul ve kapsam",
+        "desc": "Bilinen adresler, işlem hash'leri, zaman çizelgeleri ve konunun yanıtlaması gereken sorular — analiz saatleri bağlanmadan önce."
       },
       "extract": {
-        "title": "Data extraction",
-        "desc": "Pull relevant on-chain data across supported networks, including internal transfers, contract interactions, and exchange touchpoints where visible."
+        "title": "Veri çıkarma",
+        "desc": "Desteklenen ağlarda ilgili zincir üstü veriyi çekin; iç transferler, sözleşme etkileşimleri ve görünür borsa temas noktaları dahil."
       },
       "analyze": {
-        "title": "Analysis and clustering",
-        "desc": "Map flows, cluster related addresses, and separate verified movements from inference — with limits stated explicitly."
+        "title": "Analiz ve kümeleme",
+        "desc": "Akışları haritalayın, ilişkili adresleri kümeleyin ve doğrulanmış hareketleri çıkarımdan ayırın — sınırlar açıkça belirtilir."
       },
       "deliver": {
-        "title": "Report and next steps",
-        "desc": "Deliver findings with recommended paths: exchange escalation, legal process, recovery coordination, or closure when trails are exhausted."
+        "title": "Rapor ve sonraki adımlar",
+        "desc": "Bulguları önerilen yollarla teslim edin: borsa eskalasyonu, hukuki süreç, kurtarma koordinasyonu veya izler tükendiğinde kapanış."
       }
     }
   },
   "Cta": {
-    "title": "Need a forensic read on a case?",
-    "description": "Share what happened and the on-chain details you already have. We respond with an honest assessment of what tracing can show before scoped engagement.",
-    "btn_primary": "Contact forensics team",
-    "btn_secondary": "Crypto recovery"
+    "title": "Bir vaka için adli okuma mı gerekiyor?",
+    "description": "Ne olduğunu ve elinizdeki zincir üstü ayrıntıları paylaşın. Kapsamı belirli bir görevlendirmeden önce izlemenin ne gösterebileceğine dair dürüst bir değerlendirme ile yanıtlarız.",
+    "btn_primary": "Forensics ekibiyle iletişime geçin",
+    "btn_secondary": "Kripto kurtarma"
   }
 }

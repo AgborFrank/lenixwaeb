@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Threat Intelligence & Blockchain Intelligence | Lenix Protocol",
-    "description": "Blockchain intelligence for compliance, security, and investigation teams. Attribution data, flow analysis, and structured exports — scoped to authorized matters."
+    "title": "威胁情报与区块链情报 | Lenix Protocol",
+    "description": "面向合规、安全与调查团队的区块链情报。归属数据、资金流分析和结构化导出——限于已授权事项。"
   },
   "Hero": {
-    "badge": "Threat intelligence",
-    "title1": "Blockchain intelligence ",
-    "title2": "for investigation teams",
-    "subtitle": "Screen wallets, map fund flows, and export structured findings for compliance reviews, security operations, and law-enforcement support — with clear scope on what on-chain data can and cannot show.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "威胁情报",
+    "title1": "面向调查团队的 ",
+    "title2": "区块链情报",
+    "subtitle": "筛查钱包、绘制资金流，并为合规审查、安全运营和执法支持导出结构化调查发现——明确链上数据能够显示和不能显示的范围。",
+    "btn_primary": "联系团队",
+    "btn_secondary": "查看能力"
   },
   "Mission": {
-    "title": "Intelligence built for operational use",
-    "description": "Lenix provides curated blockchain datasets and analysis workflows for teams that need attribution context, risk screening, and documented fund flows — not generic market dashboards copied from consumer analytics products."
+    "title": "为实际使用而建的情报",
+    "description": "Lenix 为需要归属背景、风险筛查和有记录资金流的团队提供经整理的区块链数据集和分析流程——不是从消费级分析产品复制来的通用行情仪表盘。"
   },
   "Capabilities": {
     "pillars": {
       "actors": {
-        "label": "Actor and wallet context",
-        "title": "Identify linked addresses and exposure",
-        "body": "Cluster related wallets and flag connections to known risky categories — sanctions lists, scam typologies, and high-risk service touchpoints — when your matter authorizes that scope of review."
+        "label": "主体与钱包背景",
+        "title": "识别关联地址与暴露",
+        "body": "在事项授权该审查范围时，聚类相关钱包，并标记与已知风险类别的关联——制裁名单、诈骗类型以及高风险服务接触点。"
       },
       "geopolitical": {
-        "label": "Risk monitoring",
-        "title": "Monitor flows that matter to your mandate",
-        "body": "Track movements tied to jurisdictions, entities, or wallet sets you define. Screening is configurable to your policy — not a one-size-fits-all risk score."
+        "label": "风险监测",
+        "title": "监测与职责相关的资金流",
+        "body": "跟踪与贵方定义的司法辖区、实体或钱包集合相关的资金移动。筛查按政策配置——不是一套通用风险分数。"
       },
       "enforcement": {
-        "label": "Case support",
-        "title": "Documentation for escalation",
-        "body": "Produce source-of-funds traces and address attribution summaries formatted for internal review, exchange requests, or counsel — with methodology and limits stated in the deliverable."
+        "label": "案件支持",
+        "title": "供升级使用的文档",
+        "body": "出具资金来源追踪和地址归属摘要，格式适用于内部审查、向交易所提出请求或提交法律顾问——交付物中写明方法与局限。"
       },
       "delivery": {
-        "label": "Flexible delivery",
-        "title": "Data where your team works",
-        "body": "Receive exports via file, feed, or API integration depending on engagement terms. Priority wallet sets and alert rules can be adjusted as your operational focus changes."
+        "label": "灵活交付",
+        "title": "数据送到团队工作的地方",
+        "body": "按合作条款，通过文件、数据源或 API 集成接收导出。优先钱包集合和告警规则可随业务重点调整。"
       }
     }
   },
   "Cta": {
-    "title": "Need blockchain intelligence for a team or case?",
-    "description": "Describe your mandate, data needs, and delivery preferences. We outline what Lenix can provide before scoped engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Blockchain forensics"
+    "title": "团队或案件需要区块链情报？",
+    "description": "说明职责范围、数据需求和交付偏好。我们会在范围明确的合作开始前说明 Lenix 能够提供的内容。",
+    "btn_primary": "联系团队",
+    "btn_secondary": "区块链取证"
   }
 }

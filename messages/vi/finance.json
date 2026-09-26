@@ -1,158 +1,143 @@
 {
   "meta": {
-    "title": "Lenix Finance | Collateral Lending & Liquidity",
-    "description": "Borrow against approved crypto collateral or supply liquidity on Lenix Finance. LTV, rates, and liquidation thresholds shown before you commit.",
-    "keywords": "Crypto Lending, Collateral Loans, DeFi Liquidity, Lenix Finance, Crypto-to-Fiat"
+    "title": "Lenix Finance | Cho vay thế chấp và thanh khoản",
+    "description": "Vay bằng tài sản thế chấp tiền mã hóa đã được duyệt, hoặc cung cấp thanh khoản trên Lenix Finance. LTV, lãi suất và ngưỡng thanh lý hiện trước khi bạn cam kết.",
+    "keywords": "Cho vay tiền mã hóa, vay thế chấp, thanh khoản DeFi, Lenix Finance, tiền mã hóa sang tiền pháp định"
   },
   "Hero": {
     "badge": "Lenix Finance",
-    "title1": "Liquidity while ",
-    "title2": "collateral stays in vault",
-    "subtitle": "Borrow stablecoins or fiat against approved assets, or supply liquidity to the protocol — with LTV, rates, and health factors visible before you sign.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "View markets",
+    "title1": "Có thanh khoản, ",
+    "title2": "tài sản thế chấp ở lại kho",
+    "subtitle": "Vay stablecoin hoặc tiền pháp định bằng tài sản đã duyệt, hoặc cung cấp thanh khoản cho giao thức — LTV, lãi suất và hệ số sức khỏe hiện trước khi ký.",
+    "btn_primary": "Nộp hồ sơ vay",
+    "btn_secondary": "Xem thị trường",
     "mock": {
       "brand": "Lenix Finance",
-      "nav_dashboard": "Dashboard",
-      "nav_markets": "Markets",
-      "nav_staking": "Staking",
-      "nav_governance": "Governance",
-      "network": "Ethereum Mainnet",
-      "net_worth": "NET WORTH",
-      "net_apy": "NET APY",
-      "health_factor": "HEALTH FACTOR",
-      "liquidation_note": "Liquidation at < 1.00",
-      "tab_supplied": "Supplied",
-      "tab_borrowed": "Borrowed",
-      "col_asset": "ASSET",
-      "col_balance": "BALANCE",
+      "nav_dashboard": "Bảng điều khiển",
+      "nav_markets": "Thị trường",
+      "nav_staking": "Ký gửi",
+      "nav_governance": "Quản trị",
+      "network": "Mạng chính Ethereum",
+      "net_worth": "GIÁ TRỊ RÒNG",
+      "net_apy": "APY RÒNG",
+      "health_factor": "HỆ SỐ SỨC KHỎE",
+      "liquidation_note": "Thanh lý khi < 1.00",
+      "tab_supplied": "Đã cung cấp",
+      "tab_borrowed": "Đã vay",
+      "col_asset": "TÀI SẢN",
+      "col_balance": "SỐ DƯ",
       "col_apy": "APY",
-      "col_collateral": "COLLATERAL",
-      "enabled": "Enabled",
-      "quick_actions": "Quick Actions",
-      "supply_asset": "Supply Asset",
-      "wallet_balance": "Wallet Balance:",
-      "supply_apy": "Supply APY",
-      "collateral_factor": "Collateral Factor",
-      "supply_btn": "Supply USDC"
+      "col_collateral": "THẾ CHẤP",
+      "enabled": "Đã bật",
+      "quick_actions": "Thao tác nhanh",
+      "supply_asset": "Cung cấp tài sản",
+      "wallet_balance": "Số dư ví:",
+      "supply_apy": "APY cung cấp",
+      "collateral_factor": "Hệ số thế chấp",
+      "supply_btn": "Cung cấp USDC"
     }
   },
   "Steps": {
-    "title": "How it works",
-    "description": "From wallet connection to funded loan or supplied liquidity — three steps with clear terms upfront.",
+    "title": "Cách thức hoạt động",
+    "description": "Từ kết nối ví đến khoản vay đã giải ngân hoặc thanh khoản đã cung cấp — ba bước, điều khoản rõ từ đầu.",
     "steps": {
       "wallet": {
-        "title": "Connect your wallet",
-        "description": "Use Lenix Wallet or connect an supported wallet to access lending and supply flows."
+        "title": "Kết nối ví",
+        "description": "Dùng Lenix Wallet hoặc kết nối ví được hỗ trợ để vào luồng vay và cung cấp."
       },
       "apply": {
-        "title": "Review terms",
-        "description": "Choose collateral, see LTV, repayment schedule, and liquidation thresholds before submitting."
+        "title": "Xem lại điều khoản",
+        "description": "Chọn tài sản thế chấp, xem LTV, lịch trả và ngưỡng thanh lý trước khi gửi."
       },
       "draw": {
-        "title": "Draw or supply",
-        "description": "Receive a loan disbursement or supply assets to earn from borrower interest — withdraw when liquidity allows."
+        "title": "Rút hoặc cung cấp",
+        "description": "Nhận giải ngân khoản vay, hoặc cung cấp tài sản để hưởng lãi từ người vay — rút khi còn thanh khoản."
       }
     }
   },
   "Markets": {
-    "title": "Market overview",
-    "description": "Indicative rates and liquidity across supported assets. Confirm live values in the app before transacting.",
-    "view_all": "View all markets",
+    "title": "Tổng quan thị trường",
+    "description": "Lãi suất và thanh khoản tham chiếu của các tài sản được hỗ trợ. Xác nhận số liệu trực tiếp trong ứng dụng trước khi giao dịch.",
+    "view_all": "Xem mọi thị trường",
     "columns": {
-      "asset": "Asset",
-      "liquidity": "Total liquidity",
-      "supply_apy": "Supply APY",
-      "borrow_apy": "Borrow APY",
-      "actions": "Actions"
+      "asset": "Tài sản",
+      "liquidity": "Tổng thanh khoản",
+      "supply_apy": "APY cung cấp",
+      "borrow_apy": "APY vay",
+      "actions": "Thao tác"
     },
-    "supply": "Supply",
-    "borrow": "Borrow",
+    "supply": "Cung cấp",
+    "borrow": "Vay",
     "assets": {
-      "wbtc": {
-        "name": "Bitcoin",
-        "symbol": "WBTC"
-      },
-      "eth": {
-        "name": "Ethereum",
-        "symbol": "ETH"
-      },
-      "lnx": {
-        "name": "Lenix",
-        "symbol": "LNX"
-      },
-      "usdc": {
-        "name": "USDC",
-        "symbol": "USDC"
-      },
-      "usdt": {
-        "name": "Tether",
-        "symbol": "USDT"
-      }
+      "wbtc": { "name": "Bitcoin", "symbol": "WBTC" },
+      "eth": { "name": "Ethereum", "symbol": "ETH" },
+      "lnx": { "name": "Lenix", "symbol": "LNX" },
+      "usdc": { "name": "USDC", "symbol": "USDC" },
+      "usdt": { "name": "Tether", "symbol": "USDT" }
     }
   },
   "Features": {
     "cards": {
       "collateral": {
-        "title": "Collateralized borrowing",
-        "desc": "Draw stablecoins or fiat against approved vault collateral — without selling the underlying asset. Credit checks are not required for eligible collateral types."
+        "title": "Vay có thế chấp",
+        "desc": "Rút stablecoin hoặc tiền pháp định bằng thế chấp đã duyệt trong kho — không cần bán tài sản gốc. Loại thế chấp đủ điều kiện không yêu cầu kiểm tra tín dụng."
       },
       "ltv": {
-        "title": "LTV shown upfront",
-        "desc": "Loan-to-value, repayment schedule, and liquidation thresholds are displayed before disbursement — not adjusted silently after you sign."
+        "title": "LTV hiện trước",
+        "desc": "Tỷ lệ vay trên giá trị, lịch trả và ngưỡng thanh lý được hiển thị trước khi giải ngân — không bị chỉnh thầm sau khi ký."
       },
       "liquidity": {
-        "title": "Supply and earn",
-        "desc": "Provide liquidity to the protocol and earn from borrower interest. Withdraw when pool liquidity is available — no fixed lock-up term."
+        "title": "Cung cấp và nhận lãi",
+        "desc": "Cung cấp thanh khoản cho giao thức và hưởng một phần lãi người vay. Rút khi pool còn thanh khoản — không có kỳ khóa cố định."
       }
     }
   },
   "Calculator": {
-    "title": "Estimate your returns",
-    "description": "Model supply-side yield at current indicative APYs. Actual returns depend on utilization, rates, and how long assets remain supplied.",
+    "title": "Ước tính lợi suất",
+    "description": "Mô phỏng lợi suất phía cung cấp theo APY tham chiếu hiện tại. Kết quả thực tế phụ thuộc mức sử dụng, lãi suất và thời gian tài sản được giữ trong pool.",
     "stats": {
-      "max_apy_label": "Indicative max APY",
-      "max_apy_value": "Up to 18.5%",
-      "payout_label": "Accrual",
-      "payout_value": "Continuous"
+      "max_apy_label": "APY tối đa tham chiếu",
+      "max_apy_value": "Tối đa 18,5%",
+      "payout_label": "Dồn lãi",
+      "payout_value": "Liên tục"
     },
     "form": {
-      "amount_label": "Deposit amount",
-      "duration_label": "Duration",
-      "months": "{count} months",
-      "month_min": "1 month",
-      "month_max": "3 years",
-      "earnings_label": "Estimated earnings",
-      "total_label": "Total balance",
-      "disclaimer": "Illustrative only. Not financial advice.",
-      "btn": "Start supplying"
+      "amount_label": "Số tiền gửi",
+      "duration_label": "Thời hạn",
+      "months": "{count} tháng",
+      "month_min": "1 tháng",
+      "month_max": "3 năm",
+      "earnings_label": "Lãi ước tính",
+      "total_label": "Tổng số dư",
+      "disclaimer": "Chỉ để minh họa. Không phải tư vấn tài chính.",
+      "btn": "Bắt đầu cung cấp"
     }
   },
   "Faq": {
-    "title": "Frequently asked questions",
+    "title": "Câu hỏi thường gặp",
     "items": {
       "yield": {
-        "q": "How does supply yield work?",
-        "a": "Borrowers pay interest on loans. A portion is distributed to liquidity providers after the protocol reserve. Rates move with pool utilization — check the app for current APY."
+        "q": "Lợi suất cung cấp hoạt động thế nào?",
+        "a": "Người vay trả lãi khoản vay. Một phần được chia cho bên cung cấp thanh khoản sau quỹ dự trữ của giao thức. Lãi suất đi theo mức sử dụng pool — xem APY hiện tại trong ứng dụng."
       },
       "lockup": {
-        "q": "Is there a lock-up period?",
-        "a": "No fixed term for suppliers. You can withdraw when the pool has sufficient liquidity. During high utilization, withdrawals may queue until borrowers repay."
+        "q": "Có kỳ khóa không?",
+        "a": "Bên cung cấp không có kỳ hạn cố định. Bạn có thể rút khi pool đủ thanh khoản. Khi mức sử dụng cao, lệnh rút có thể phải chờ người vay trả nợ."
       },
       "liquidation": {
-        "q": "What happens if my loan health factor falls?",
-        "a": "If collateral value drops below the agreed LTV, liquidation may occur to repay outstanding debt. Health factor and liquidation price are shown in the dashboard before and during the loan."
+        "q": "Hệ số sức khỏe khoản vay giảm thì sao?",
+        "a": "Nếu giá trị thế chấp xuống dưới LTV đã thỏa thuận, có thể bị thanh lý để trả nợ còn lại. Hệ số sức khỏe và giá thanh lý hiện trên bảng điều khiển trước và trong suốt khoản vay."
       },
       "fees": {
-        "q": "What fees apply?",
-        "a": "Protocol fees are reflected in the net APY or loan terms shown at application. On-chain gas for deposits, borrows, and withdrawals is separate and paid to the network."
+        "q": "Áp dụng những khoản phí nào?",
+        "a": "Phí giao thức đã nằm trong APY ròng hoặc điều khoản khoản vay lúc nộp hồ sơ. Gas on-chain cho gửi, vay và rút là khoản riêng, trả cho mạng."
       }
     }
   },
   "Cta": {
-    "title": "Ready to borrow or supply?",
-    "description": "Apply for a collateral loan or open the app to supply liquidity. Support is available if you need help scoping terms.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "Contact team"
+    "title": "Sẵn sàng vay hoặc cung cấp?",
+    "description": "Nộp hồ sơ vay thế chấp hoặc mở ứng dụng để cung cấp thanh khoản. Có hỗ trợ nếu bạn cần giúp khoanh điều khoản.",
+    "btn_primary": "Nộp hồ sơ vay",
+    "btn_secondary": "Liên hệ nhóm"
   }
 }

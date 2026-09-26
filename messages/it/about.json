@@ -108,11 +108,11 @@
       "photo": "Espansione Globale"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - Aggiornamenti del protocollo",
+      "desc": "Aggiornamenti importanti dei nostri smart contract e dell'infrastruttura di prestito, con nuove opzioni di garanzia e protocolli di sicurezza rafforzati.",
+      "tag1": "V2 lanciato",
+      "tag2": "Sicurezza rafforzata",
+      "photo": "Protocollo V2"
     },
     "step7": {
       "title": "2027 - Leader di Settore",
@@ -122,18 +122,18 @@
       "photo": "Riconoscimento del Settore"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - Adozione istituzionale",
+      "desc": "Partnership con grandi istituzioni finanziarie tradizionali per rampe di ingresso e uscita sicure del capitale istituzionale.",
+      "tag1": "Istituzioni integrate",
+      "tag2": "Partnership TradFi",
+      "photo": "Integrazione con Wall Street"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - Motore forense IA",
+      "desc": "Abbiamo lanciato il motore forense di nuova generazione basato sull'IA, in grado di analisi predittiva delle attività illecite on-chain.",
+      "tag1": "Integrazione IA",
+      "tag2": "Forense predittiva",
+      "photo": "Lancio del motore IA"
     }
   },
   "Leadership": {

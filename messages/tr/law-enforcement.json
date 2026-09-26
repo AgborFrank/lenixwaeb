@@ -1,97 +1,73 @@
 {
   "meta": {
-    "title": "Blockchain Intelligence for Law Enforcement | Lenix Protocol",
-    "description": "On-chain tracing, wallet screening, and forensic reports for law enforcement and government teams — scoped engagements with documented methodology and limits."
+    "title": "Kolluk için blokzincir istihbaratı | Lenix Protocol",
+    "description": "Kolluk ve kamu ekipleri için zincir üstü iz sürme, cüzdan taraması ve adli raporlar — belgelenmiş yöntem ve sınırlarla kapsamı belirli çalışmalar."
   },
   "Hero": {
-    "badge": "Law enforcement",
-    "title1": "Blockchain intelligence ",
-    "title2": "for criminal investigations",
-    "subtitle": "Trace crypto flows, screen wallets, and produce documented findings for case files — with clear scope on what public ledger analysis can support and what requires separate legal process.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Kolluk",
+    "title1": "Ceza soruşturmaları için ",
+    "title2": "blokzincir istihbaratı",
+    "subtitle": "Kripto akışlarını izleyin, cüzdanları tarayın ve dosyalar için belgelenmiş bulgular üretin — kamuya açık defter analizinin neleri destekleyebileceği ve ayrı bir hukuki süreç gerektirenler konusunda net kapsamla.",
+    "btn_primary": "Ekiple iletişime geçin",
+    "btn_secondary": "Yetenekleri görüntüleyin"
   },
   "Overview": {
-    "title": "Investigation support built for case work",
-    "description": "Lenix helps agencies and task forces follow funds across supported networks, prioritize leads from bulk wallet uploads, and prepare outputs suitable for internal review or exchange escalation — without overstating attribution certainty or recovery outcomes."
+    "title": "Dosya çalışması için kurulmuş soruşturma desteği",
+    "description": "Lenix; kurumların ve görev güçlerinin fonları desteklenen ağlarda takip etmesine, toplu cüzdan yüklemelerinden gelen izleri önceliklendirmesine ve iç inceleme veya borsa eskalasyonu için uygun çıktılar hazırlamasına yardım eder — atıf kesinliğini veya geri kazanım sonuçlarını abartmadan."
   },
   "Highlights": {
     "items": {
       "follow": {
-        "title": "Follow flows across chains and services",
-        "desc": "Map movement through bridges, DEX touchpoints, and consolidation wallets where the ledger shows them — with notes on where visibility ends."
+        "title": "Akışları zincirler ve hizmetler arasında takip edin",
+        "desc": "Defterin gösterdiği yerde köprüler, DEX temas noktaları ve toplama cüzdanları üzerinden hareketi haritalayın — görünürlüğün bittiği yere dair notlarla."
       },
       "data": {
-        "title": "Attribution context for case review",
-        "desc": "Cluster related addresses and flag exposure to known risky categories when your matter authorizes that scope — not a claim of complete wallet ownership."
+        "title": "Dosya incelemesi için atıf bağlamı",
+        "desc": "Konunuz bu kapsamı yetkilendirdiğinde ilgili adresleri kümeleyin ve bilinen riskli kategorilere maruziyeti işaretleyin — cüzdanın tam sahipliği iddiası değil."
       },
       "speed": {
-        "title": "Prioritize viable trails first",
-        "desc": "Screen wallet or transaction lists before deep analysis so investigators spend time on leads worth pursuing."
+        "title": "Önce izlenebilir izlere öncelik verin",
+        "desc": "Derin analizden önce cüzdan veya işlem listelerini tarayın; soruşturmacılar zamanı takip etmeye değer izlere ayırsın."
       },
       "evidence": {
-        "title": "Outputs for case files",
-        "desc": "Structured timelines and methodology sections suitable for supervisory review, counsel, or exchange escalation requests."
+        "title": "Dosyalar için çıktılar",
+        "desc": "Amir incelemesi, hukuk danışmanlığı veya borsa eskalasyon talepleri için uygun yapılandırılmış zaman çizelgeleri ve yöntem bölümleri."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "intelligence": {
-        "label": "Threat intelligence",
-        "title": "Datasets tailored to investigation priorities",
-        "body": "Receive structured exports covering wallet clusters, flow summaries, and risk categories relevant to your case set — via file, feed, or API depending on engagement terms."
+        "label": "Tehdit istihbaratı",
+        "title": "Soruşturma önceliklerine göre veri kümeleri",
+        "body": "Dosya kümenize uygun cüzdan kümeleri, akış özetleri ve risk kategorilerini kapsayan yapılandırılmış dışa aktarmalar alın — sözleşme koşullarına göre dosya, akış veya API ile."
       },
       "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Trace activity across supported networks",
-        "body": "Follow funds across chains and assets where on-chain data allows — including bridge and swap touchpoints — with hop-by-hop documentation for case notes."
+        "label": "Ağlar arası iz sürme",
+        "title": "Desteklenen ağlardaki etkinliği izleyin",
+        "body": "Zincir üstü verinin izin verdiği yerde fonları zincirler ve varlıklar arasında takip edin — köprü ve takas temas noktaları dahil — dosya notları için adım adım belgelerle."
       },
       "triage": {
-        "label": "Triage",
-        "title": "Screen volume before deep investigation",
-        "body": "Upload wallet or transaction batches for initial exposure review — sanctions links, scam typologies, and high-risk services — to rank which leads warrant full analysis."
+        "label": "Ön eleme",
+        "title": "Derin soruşturmadan önce hacmi tarayın",
+        "body": "İlk maruziyet incelemesi için cüzdan veya işlem yığınları yükleyin — yaptırım bağlantıları, dolandırıcılık tipolojileri ve yüksek riskli hizmetler — hangi izlerin tam analizi hak ettiğini sıralayın."
       },
       "investigation": {
-        "label": "Investigation",
-        "title": "Develop the case view",
-        "body": "Build linked address and transaction paths in reports that separate verified ledger facts from inference — including likely exchange deposit points when visible on-chain."
+        "label": "Soruşturma",
+        "title": "Dosya görünümünü geliştirin",
+        "body": "Doğrulanmış defter olgularını çıkarımdan ayıran raporlarda bağlı adres ve işlem yolları kurun — zincir üstünde göründüğünde olası borsa yatırma noktaları dahil."
       },
       "training": {
-        "label": "Training",
-        "title": "Operator onboarding for your unit",
-        "body": "Walkthroughs on crypto fundamentals, tracing workflows, and how to read Lenix outputs — scoped to your team's tools access and case types, not generic certification marketing."
+        "label": "Eğitim",
+        "title": "Biriminiz için operatör oryantasyonu",
+        "body": "Kripto temelleri, iz sürme iş akışları ve Lenix çıktılarını okuma üzerine anlatımlar — ekibinizin araç erişimine ve dosya türlerine göre, genel sertifika pazarlaması değil."
       }
     }
   },
   "Cta": {
-    "title": "Need blockchain support for an investigation?",
-    "description": "Describe the unit, case type, and data you already have. We respond with an honest read on what tracing and reporting can cover before scoped engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Blockchain forensics"
-  },
-  "Features": {
-    "pillars": {
-      "triage": {
-        "label": "Triage and prioritization",
-        "title": "Screen leads before deep dives",
-        "body": "Upload wallet or transaction lists for initial exposure review — sanctions links, known scam categories, and high-risk service touchpoints — so investigators focus effort on viable trails first."
-      },
-      "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Map flows across chains and services",
-        "body": "Follow movement through bridges, swaps, and consolidation points where visible on-chain. Outputs include hop-by-hop notes and timelines your team can attach to case documentation."
-      },
-      "investigation": {
-        "label": "Case development",
-        "title": "Build an evidence-oriented case view",
-        "body": "Link addresses, clusters, and transaction paths in structured reports — separating verified ledger facts from inference, with limits stated for counsel and supervisory review."
-      },
-      "escalation": {
-        "label": "Exchange and escalation support",
-        "title": "Document touchpoints for next steps",
-        "body": "Identify likely custodial deposit paths when the chain shows them — supporting preservation requests, MLAT workflows, or internal escalation. Lenix does not compel exchanges or guarantee KYC disclosure."
-      }
-    }
+    "title": "Bir soruşturma için blokzincir desteği mi gerekiyor?",
+    "description": "Birimi, dosya türünü ve elinizdeki veriyi anlatın. Kapsamı belirli bir çalışmadan önce iz sürme ve raporlamanın neleri kapsayabileceğine dair dürüst bir okuma ile yanıt veririz.",
+    "btn_primary": "Ekiple iletişime geçin",
+    "btn_secondary": "Blokzincir adli analizi"
   }
 }

@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "Makipag-ugnayan sa aming koponan",
+    "description": "Sumulat sa Lenix Protocol para sa kaso ng pagbawi, tanong sa pautang, pakikipagtulungan, o suporta sa plataporma. Tumutugon ang mga koponan ng pagsusuri at kliyente sa oras ng opisina sa buong mundo."
+  },
+  "Main": {
+    "title": "Handa nang magsimula?",
+    "subtitle": "Suporta sa pagbawi, konsultasyon sa pautang, o usapan tungkol sa pakikipagtulungan — nandito ang koponan.",
+    "get_in_touch": "Makipag-ugnayan",
+    "desc": "Piliin ang kanal na bagay sa iyo. Sa mga kasong apurahan, isama ang hash ng transaksyon o address ng pitaka sa mensahe.",
+    "email_cta": "Sumulat sa suporta",
+    "footer": {
+      "support": "May suporta",
+      "response": "Sagot sa live chat",
+      "confidential": "Kumpedensyal na paghawak"
+    }
+  },
+  "Info": {
+    "title": "Impormasyon sa pakikipag-ugnayan",
+    "address_title": "Opisina",
+    "address_line_1": "123 Blockchain Street",
+    "address_line_2": "San Francisco, CA 94105",
+    "address_line_3": "Estados Unidos",
+    "email_title": "E-liham",
+    "email_line_1": "recovery@lenixprotocol.com",
+    "email_line_2": "loan@lenixprotocol.com",
+    "email_line_3": "support@lenixprotocol.com",
+    "phone_title": "Telepono",
+    "phone_line": "+447887052128",
+    "hours_title": "Oras ng opisina",
+    "hours_line_1": "Lunes – Biyernes: 9:00 AM – 6:00 PM EST",
+    "hours_line_2": "Sabado – Linggo: sarado",
+    "chat_title": "Kailangan ng agarang tulong?",
+    "chat_description": "Binabantayan ng koponan ang live chat sa buong oras para sa pagbawi at usaping panseguridad na hindi puwedeng maghintay.",
+    "chat_cta": "Simulan ang live chat",
+    "follow_title": "Sundan kami",
+    "response_title": "Karaniwang oras ng sagot",
+    "response_email": "E-liham",
+    "response_email_time": "Sa loob ng 24 oras",
+    "response_chat": "Usapang tuwiran",
+    "response_chat_time": "Wala pang 5 minuto",
+    "response_phone": "Telepono",
+    "response_phone_time": "Oras ng opisina"
+  },
+  "Form": {
+    "title": "Magpadala ng mensahe",
+    "subtitle": "Sumasagot kami sa karamihan ng tanong sa loob ng isang araw ng trabaho.",
+    "name": "Buong pangalan *",
+    "email": "E-liham *",
+    "phone": "Numero ng telepono",
+    "whatsapp": "WhatsApp o Telegram",
+    "inquiry_type": "Uri ng tanong",
+    "subject": "Paksa *",
+    "message": "Mensahe *",
+    "placeholder_name": "Ilagay ang buong pangalan",
+    "placeholder_email": "Ilagay ang e-liham",
+    "placeholder_phone": "+1 234 567 8900",
+    "placeholder_whatsapp": "@pangalan o +1234567890",
+    "placeholder_subject": "Tungkol saan ito?",
+    "placeholder_message": "Sabihin kung paano kami makakatulong…",
+    "submit": "Ipadala ang mensahe",
+    "privacy": "Sa pagpapadala ng pormularyong ito, sumasang-ayon ka sa aming patakaran sa pagkapribado at mga tuntunin ng serbisyo.",
+    "inquiry_options": {
+      "general": "Pangkalahatang tanong",
+      "recovery": "Serbisyo ng pagbawi",
+      "crypto_loan": "Serbisyo ng pautang sa crypto",
+      "support": "Suportang teknikal",
+      "partnership": "Pakikipagtulungan",
+      "business": "Pagpapaunlad ng negosyo",
+      "press": "Pahayagan at media",
+      "other": "Iba pa"
+    },
+    "success_title": "Naipadala ang mensahe",
+    "success_description": "Salamat sa pakikipag-ugnayan. Sasagot kami sa loob ng 24 oras.",
+    "success_cta": "Magpadala ng isa pang mensahe",
+    "sending": "Ipinapadala…"
+  },
+  "FAQ": {
+    "title": "Mga madalas itanong",
+    "subtitle": "Sagot sa karaniwang tanong tungkol sa pagbawi, pautang, at seguridad ng plataporma.",
+    "cta_text": "May tanong pa?",
+    "email_cta": "Sumulat sa suporta",
+    "chat_cta": "Simulan ang live chat",
+    "items": {
+      "start": {
+        "question": "Paano magsimula ng kaso ng pagbawi o pautang?",
+        "answer": "Ipadala ang detalye sa pormularyong ito o sa recovery@lenixprotocol.com. Para sa pautang, pumunta sa pahina ng pautang sa crypto para simulan ang pagpaparehistro. Kukumpirmahin ng koponan ang saklaw, mga dokumento, at susunod na hakbang."
+      },
+      "assets": {
+        "question": "Aling mga ari-arian at kadena ang sinusuportahan ninyo?",
+        "answer": "Sinusubaybayan namin ang aktibidad sa malalaking kadena ng EVM, Bitcoin, at mga stablecoin na karaniwang ginagamit. Lumalawak ang saklaw ayon sa kaso — sumulat kasama ang detalye ng transaksyon para sa tasang para sa kaso mo."
+      },
+      "security": {
+        "question": "Paano pinoprotektahan ang datos ng kliyente?",
+        "answer": "Hinahawakan ang materyales ng kaso sa ilalim ng mahigpit na kontrol sa akses, naka-encrypt habang ipinapadala at habang naka-imbak, at hiwalay na daloy ng pagsusuri. Hindi kami humihingi ng pribadong susi o parirala ng pagbawi."
+      },
+      "fees": {
+        "question": "Paano nakaayos ang bayad sa pagbawi at pautang?",
+        "answer": "Ang gawain sa pagbawi ay nililimitahan ayon sa kaso. Ang presyo ng pautang ay nakabatay sa kolateral, termino, at LTV. Nagbibigay kami ng nakasulat na tuntunin bago magsimula ang trabaho o mailabas ang pondo."
+      },
+      "timeline": {
+        "question": "Gaano katagal ang imbestigasyon?",
+        "answer": "Nag-iiba ang tagal ayon sa pagiging kumplikado, hurisdiksyon, at kooperasyon ng palitan. Madalas lumabas ang unang ulat ng pagsubaybay sa loob ng ilang araw; ang buong landas ng pagbawi ay maaaring umabot ng ilang linggo, depende sa legal at kustodiya."
+      },
+      "availability": {
+        "question": "Nakikipagtulungan ba kayo sa tagapagpatupad ng batas?",
+        "answer": "Oo. Sinusuportahan namin ang tagapagpatupad ng batas at mga koponan ng pagsunod sa pamamagitan ng pakete ng pagsubaybay, pagsusuri ng dalubhasa, at dokumentong angkop sa regulasyon at hukuman."
+      }
+    }
+  }
+}

@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Crypto Compliance Investigations | Lenix Protocol",
-    "description": "AML and compliance investigation workflows for tracing crypto flows, documenting findings, and supporting SAR and escalation processes — with clear scope on what on-chain review can show."
+    "title": "Kripto uyum soruşturmaları | Lenix Protocol",
+    "description": "Kripto akışlarını izlemek, bulguları belgelemek ve SAR ile eskalasyon süreçlerini desteklemek için AML ve uyum soruşturma iş akışları — zincir üstü incelemenin neleri gösterebileceğine dair net kapsamla."
   },
   "Hero": {
-    "badge": "Compliance investigations",
-    "title1": "Investigate crypto flows ",
-    "title2": "with documented findings",
-    "subtitle": "Trace transactions across supported networks, review wallet exposure, and export structured analysis for compliance escalations — without overstating what public ledger data alone can prove.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Uyum soruşturmaları",
+    "title1": "Kripto akışlarını soruşturun ",
+    "title2": "belgelenmiş bulgularla",
+    "subtitle": "Desteklenen ağlarda işlemleri izleyin, cüzdan maruziyetini gözden geçirin ve uyum eskalasyonları için yapılandırılmış analiz dışa aktarın — kamuya açık defter verisinin tek başına neleri kanıtlayabileceğini abartmadan.",
+    "btn_primary": "Ekiple iletişime geçin",
+    "btn_secondary": "Yetenekleri görüntüleyin"
   },
   "Overview": {
-    "title": "Built for compliance and investigation teams",
-    "description": "Lenix supports AML reviews, enhanced due diligence, and internal investigations with trace workflows, risk context, and report outputs your team can attach to case files — not vanity dashboards with unverifiable metrics."
+    "title": "Uyum ve soruşturma ekipleri için tasarlandı",
+    "description": "Lenix; iz sürme iş akışları, risk bağlamı ve ekibinizin dosyaya ekleyebileceği raporlarla AML incelemelerini, güçlendirilmiş özeni ve iç soruşturmaları destekler — doğrulanamayan metrikli vitrin panoları değil."
   },
   "Features": {
     "pillars": {
       "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Follow flows across chains and assets",
-        "body": "Map fund movement from a known wallet or transaction through bridges, swaps, and exchange deposits where visible on-chain. Outputs include timelines and hop-by-hop notes suitable for SAR preparation or internal escalation."
+        "label": "Ağlar arası iz sürme",
+        "title": "Akışları zincirler ve varlıklar arasında takip edin",
+        "body": "Bilinen bir cüzdan veya işlemden başlayarak fon hareketini köprüler, takaslar ve borsa yatırmaları üzerinden zincir üstünde göründüğü ölçüde haritalayın. Çıktılar, SAR hazırlığı veya iç eskalasyon için uygun zaman çizelgeleri ve adım adım notlar içerir."
       },
       "workflow": {
-        "label": "Investigation workflow",
-        "title": "From alert to documented review",
-        "body": "Start from a flagged address or transaction hash and build a case view linking related wallets, entities, and behaviors. Findings can be shared internally with audit-friendly notes on methodology and limits."
+        "label": "Soruşturma iş akışı",
+        "title": "Uyarıdan belgelenmiş incelemeye",
+        "body": "İşaretlenmiş bir adresten veya işlem hash'inden başlayın ve ilgili cüzdanları, varlıkları ve davranışları bağlayan bir dosya görünümü kurun. Bulgular, yöntem ve sınırlara dair denetlenebilir notlarla kurum içinde paylaşılabilir."
       },
       "diligence": {
-        "label": "Due diligence",
-        "title": "Review addresses before you move funds",
-        "body": "Screen counterparty wallets and historical flows for exposure to known risky categories — scams, sanctions-related touchpoints, and high-risk services — scoped to your policy rules, not a generic score alone."
+        "label": "Özen yükümlülüğü",
+        "title": "Fonları hareket ettirmeden önce adresleri inceleyin",
+        "body": "Karşı taraf cüzdanlarını ve geçmiş akışları bilinen riskli kategorilere maruziyet açısından tarayın — dolandırıcılık, yaptırım temas noktaları ve yüksek riskli hizmetler — politikanızın kurallarına göre, tek başına genel bir puana göre değil."
       },
       "monitoring": {
-        "label": "Ongoing monitoring",
-        "title": "Watchlists and activity alerts",
-        "body": "Configure address lists and receive notifications when new activity matches your criteria. Monitoring supports recurring compliance reviews — alert volume and coverage depend on engagement terms and supported networks."
+        "label": "Sürekli izleme",
+        "title": "İzleme listeleri ve etkinlik uyarıları",
+        "body": "Adres listeleri tanımlayın ve yeni etkinlik ölçütlerinize uyduğunda bildirim alın. İzleme, yinelenen uyum incelemelerini destekler — uyarı hacmi ve kapsam, sözleşme koşullarına ve desteklenen ağlara bağlıdır."
       }
     }
   },
   "Cta": {
-    "title": "Need compliance investigation support?",
-    "description": "Describe your team, regulatory context, and what you need from tracing or screening. We outline realistic scope before engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Threat intelligence"
+    "title": "Uyum soruşturması desteği mi gerekiyor?",
+    "description": "Ekibinizi, düzenleyici bağlamı ve iz sürme veya taramadan ne beklediğinizi anlatın. Çalışmaya başlamadan önce gerçekçi bir kapsam çizeriz.",
+    "btn_primary": "Ekiple iletişime geçin",
+    "btn_secondary": "Tehdit istihbaratı"
   }
 }

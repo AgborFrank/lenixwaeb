@@ -1,158 +1,143 @@
 {
   "meta": {
-    "title": "Lenix Finance | Collateral Lending & Liquidity",
-    "description": "Borrow against approved crypto collateral or supply liquidity on Lenix Finance. LTV, rates, and liquidation thresholds shown before you commit.",
-    "keywords": "Crypto Lending, Collateral Loans, DeFi Liquidity, Lenix Finance, Crypto-to-Fiat"
+    "title": "Lenix Finance | Besicherte Kredite und Liquidität",
+    "description": "Leihen Sie gegen zugelassenes Krypto-Pfand oder stellen Sie Liquidität auf Lenix Finance bereit. LTV, Zinsen und Liquidationsschwellen stehen fest, bevor Sie sich binden.",
+    "keywords": "Krypto-Kredit, besicherte Darlehen, DeFi-Liquidität, Lenix Finance, Krypto zu Fiat"
   },
   "Hero": {
     "badge": "Lenix Finance",
-    "title1": "Liquidity while ",
-    "title2": "collateral stays in vault",
-    "subtitle": "Borrow stablecoins or fiat against approved assets, or supply liquidity to the protocol — with LTV, rates, and health factors visible before you sign.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "View markets",
+    "title1": "Liquidität, ",
+    "title2": "die Sicherheit bleibt im Tresor",
+    "subtitle": "Leihen Sie Stablecoins oder Fiat gegen zugelassene Assets, oder stellen Sie dem Protokoll Liquidität bereit — LTV, Zinsen und Gesundheitsfaktor sind vor der Signatur sichtbar.",
+    "btn_primary": "Kredit beantragen",
+    "btn_secondary": "Märkte ansehen",
     "mock": {
       "brand": "Lenix Finance",
-      "nav_dashboard": "Dashboard",
-      "nav_markets": "Markets",
-      "nav_staking": "Staking",
-      "nav_governance": "Governance",
-      "network": "Ethereum Mainnet",
-      "net_worth": "NET WORTH",
-      "net_apy": "NET APY",
-      "health_factor": "HEALTH FACTOR",
-      "liquidation_note": "Liquidation at < 1.00",
-      "tab_supplied": "Supplied",
-      "tab_borrowed": "Borrowed",
-      "col_asset": "ASSET",
-      "col_balance": "BALANCE",
+      "nav_dashboard": "Übersicht",
+      "nav_markets": "Märkte",
+      "nav_staking": "Hinterlegung",
+      "nav_governance": "Abstimmung",
+      "network": "Ethereum-Hauptnetz",
+      "net_worth": "NETTOVERMÖGEN",
+      "net_apy": "NETTO-APY",
+      "health_factor": "GESUNDHEITSFAKTOR",
+      "liquidation_note": "Liquidation bei < 1.00",
+      "tab_supplied": "Bereitgestellt",
+      "tab_borrowed": "Geliehen",
+      "col_asset": "WERT",
+      "col_balance": "SALDO",
       "col_apy": "APY",
-      "col_collateral": "COLLATERAL",
-      "enabled": "Enabled",
-      "quick_actions": "Quick Actions",
-      "supply_asset": "Supply Asset",
-      "wallet_balance": "Wallet Balance:",
-      "supply_apy": "Supply APY",
-      "collateral_factor": "Collateral Factor",
-      "supply_btn": "Supply USDC"
+      "col_collateral": "SICHERHEIT",
+      "enabled": "Aktiv",
+      "quick_actions": "Schnellaktionen",
+      "supply_asset": "Wert bereitstellen",
+      "wallet_balance": "Wallet-Saldo:",
+      "supply_apy": "Bereitstellungs-APY",
+      "collateral_factor": "Besicherungsfaktor",
+      "supply_btn": "USDC bereitstellen"
     }
   },
   "Steps": {
-    "title": "How it works",
-    "description": "From wallet connection to funded loan or supplied liquidity — three steps with clear terms upfront.",
+    "title": "So funktioniert es",
+    "description": "Von der Wallet-Verbindung bis zum ausgezahlten Kredit oder bereitgestellter Liquidität — drei Schritte, Konditionen von Anfang an klar.",
     "steps": {
       "wallet": {
-        "title": "Connect your wallet",
-        "description": "Use Lenix Wallet or connect an supported wallet to access lending and supply flows."
+        "title": "Wallet verbinden",
+        "description": "Nutzen Sie Lenix Wallet oder verbinden Sie eine unterstützte Wallet, um Kredit- und Bereitstellungsabläufe zu öffnen."
       },
       "apply": {
-        "title": "Review terms",
-        "description": "Choose collateral, see LTV, repayment schedule, and liquidation thresholds before submitting."
+        "title": "Konditionen prüfen",
+        "description": "Wählen Sie die Sicherheit und sehen Sie LTV, Rückzahlungsplan und Liquidationsschwellen, bevor Sie absenden."
       },
       "draw": {
-        "title": "Draw or supply",
-        "description": "Receive a loan disbursement or supply assets to earn from borrower interest — withdraw when liquidity allows."
+        "title": "Ziehen oder bereitstellen",
+        "description": "Erhalten Sie eine Kreditauszahlung oder stellen Sie Assets bereit, um Zinsen der Kreditnehmer zu verdienen — Auszahlung, sobald Liquidität da ist."
       }
     }
   },
   "Markets": {
-    "title": "Market overview",
-    "description": "Indicative rates and liquidity across supported assets. Confirm live values in the app before transacting.",
-    "view_all": "View all markets",
+    "title": "Marktüberblick",
+    "description": "Indikative Zinsen und Liquidität der unterstützten Assets. Bestätigen Sie die Live-Werte in der App, bevor Sie handeln.",
+    "view_all": "Alle Märkte ansehen",
     "columns": {
-      "asset": "Asset",
-      "liquidity": "Total liquidity",
-      "supply_apy": "Supply APY",
-      "borrow_apy": "Borrow APY",
-      "actions": "Actions"
+      "asset": "Wert",
+      "liquidity": "Gesamtliquidität",
+      "supply_apy": "Bereitstellungs-APY",
+      "borrow_apy": "Kredit-APY",
+      "actions": "Aktionen"
     },
-    "supply": "Supply",
-    "borrow": "Borrow",
+    "supply": "Bereitstellen",
+    "borrow": "Leihen",
     "assets": {
-      "wbtc": {
-        "name": "Bitcoin",
-        "symbol": "WBTC"
-      },
-      "eth": {
-        "name": "Ethereum",
-        "symbol": "ETH"
-      },
-      "lnx": {
-        "name": "Lenix",
-        "symbol": "LNX"
-      },
-      "usdc": {
-        "name": "USDC",
-        "symbol": "USDC"
-      },
-      "usdt": {
-        "name": "Tether",
-        "symbol": "USDT"
-      }
+      "wbtc": { "name": "Bitcoin", "symbol": "WBTC" },
+      "eth": { "name": "Ethereum", "symbol": "ETH" },
+      "lnx": { "name": "Lenix", "symbol": "LNX" },
+      "usdc": { "name": "USDC", "symbol": "USDC" },
+      "usdt": { "name": "Tether", "symbol": "USDT" }
     }
   },
   "Features": {
     "cards": {
       "collateral": {
-        "title": "Collateralized borrowing",
-        "desc": "Draw stablecoins or fiat against approved vault collateral — without selling the underlying asset. Credit checks are not required for eligible collateral types."
+        "title": "Besichertes Leihen",
+        "desc": "Ziehen Sie Stablecoins oder Fiat gegen zugelassene Tresorsicherheit — ohne den Basiswert zu verkaufen. Für zulässige Sicherheitenarten ist keine Bonitätsprüfung nötig."
       },
       "ltv": {
-        "title": "LTV shown upfront",
-        "desc": "Loan-to-value, repayment schedule, and liquidation thresholds are displayed before disbursement — not adjusted silently after you sign."
+        "title": "LTV vorab sichtbar",
+        "desc": "Beleihungsauslauf, Rückzahlungsplan und Liquidationsschwellen stehen vor der Auszahlung. Sie werden nach der Signatur nicht still angepasst."
       },
       "liquidity": {
-        "title": "Supply and earn",
-        "desc": "Provide liquidity to the protocol and earn from borrower interest. Withdraw when pool liquidity is available — no fixed lock-up term."
+        "title": "Bereitstellen und verdienen",
+        "desc": "Stellen Sie dem Protokoll Liquidität bereit und verdienen Sie an den Zinsen der Kreditnehmer. Auszahlung, sobald der Pool Liquidität hat — keine feste Sperrfrist."
       }
     }
   },
   "Calculator": {
-    "title": "Estimate your returns",
-    "description": "Model supply-side yield at current indicative APYs. Actual returns depend on utilization, rates, and how long assets remain supplied.",
+    "title": "Rendite schätzen",
+    "description": "Modellieren Sie die Bereitstellungsrendite zu den aktuellen indikativen APYs. Das tatsächliche Ergebnis hängt von Auslastung, Zinsen und der Dauer der Bereitstellung ab.",
     "stats": {
-      "max_apy_label": "Indicative max APY",
-      "max_apy_value": "Up to 18.5%",
-      "payout_label": "Accrual",
-      "payout_value": "Continuous"
+      "max_apy_label": "Indikativer Höchst-APY",
+      "max_apy_value": "Bis zu 18,5 %",
+      "payout_label": "Abgrenzung",
+      "payout_value": "Fortlaufend"
     },
     "form": {
-      "amount_label": "Deposit amount",
-      "duration_label": "Duration",
-      "months": "{count} months",
-      "month_min": "1 month",
-      "month_max": "3 years",
-      "earnings_label": "Estimated earnings",
-      "total_label": "Total balance",
-      "disclaimer": "Illustrative only. Not financial advice.",
-      "btn": "Start supplying"
+      "amount_label": "Einzahlungsbetrag",
+      "duration_label": "Laufzeit",
+      "months": "{count} Monate",
+      "month_min": "1 Monat",
+      "month_max": "3 Jahre",
+      "earnings_label": "Geschätzter Ertrag",
+      "total_label": "Gesamtsaldo",
+      "disclaimer": "Nur zur Veranschaulichung. Keine Finanzberatung.",
+      "btn": "Bereitstellung starten"
     }
   },
   "Faq": {
-    "title": "Frequently asked questions",
+    "title": "Häufige Fragen",
     "items": {
       "yield": {
-        "q": "How does supply yield work?",
-        "a": "Borrowers pay interest on loans. A portion is distributed to liquidity providers after the protocol reserve. Rates move with pool utilization — check the app for current APY."
+        "q": "Wie funktioniert die Bereitstellungsrendite?",
+        "a": "Kreditnehmer zahlen Zinsen. Ein Teil geht nach der Protokollreserve an die Liquiditätsgeber. Die Sätze folgen der Pool-Auslastung — den aktuellen APY sehen Sie in der App."
       },
       "lockup": {
-        "q": "Is there a lock-up period?",
-        "a": "No fixed term for suppliers. You can withdraw when the pool has sufficient liquidity. During high utilization, withdrawals may queue until borrowers repay."
+        "q": "Gibt es eine Sperrfrist?",
+        "a": "Keine feste Laufzeit für Bereitsteller. Sie können auszahlen, wenn der Pool genug Liquidität hat. Bei hoher Auslastung können Auszahlungen warten, bis Kreditnehmer zurückzahlen."
       },
       "liquidation": {
-        "q": "What happens if my loan health factor falls?",
-        "a": "If collateral value drops below the agreed LTV, liquidation may occur to repay outstanding debt. Health factor and liquidation price are shown in the dashboard before and during the loan."
+        "q": "Was passiert, wenn der Gesundheitsfaktor meines Kredits sinkt?",
+        "a": "Fällt der Sicherheitenwert unter den vereinbarten LTV, kann eine Liquidation die offene Schuld tilgen. Gesundheitsfaktor und Liquidationspreis stehen vor und während des Kredits in der Übersicht."
       },
       "fees": {
-        "q": "What fees apply?",
-        "a": "Protocol fees are reflected in the net APY or loan terms shown at application. On-chain gas for deposits, borrows, and withdrawals is separate and paid to the network."
+        "q": "Welche Gebühren fallen an?",
+        "a": "Protokollgebühren stecken im Netto-APY oder in den Kreditkonditionen bei der Antragstellung. On-Chain-Gas für Einzahlungen, Kredite und Auszahlungen ist getrennt und geht an das Netzwerk."
       }
     }
   },
   "Cta": {
-    "title": "Ready to borrow or supply?",
-    "description": "Apply for a collateral loan or open the app to supply liquidity. Support is available if you need help scoping terms.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "Contact team"
+    "title": "Bereit zu leihen oder bereitzustellen?",
+    "description": "Beantragen Sie einen besicherten Kredit oder öffnen Sie die App, um Liquidität bereitzustellen. Der Support hilft beim Abgrenzen der Konditionen.",
+    "btn_primary": "Kredit beantragen",
+    "btn_secondary": "Team kontaktieren"
   }
 }

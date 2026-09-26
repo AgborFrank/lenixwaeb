@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Threat Intelligence & Blockchain Intelligence | Lenix Protocol",
-    "description": "Blockchain intelligence for compliance, security, and investigation teams. Attribution data, flow analysis, and structured exports — scoped to authorized matters."
+    "title": "Intelijen ancaman dan intelijen blockchain | Lenix Protocol",
+    "description": "Intelijen blockchain untuk tim kepatuhan, keamanan, dan investigasi. Data atribusi, analisis arus, dan ekspor terstruktur — dibatasi pada perkara yang diotorisasi."
   },
   "Hero": {
-    "badge": "Threat intelligence",
-    "title1": "Blockchain intelligence ",
-    "title2": "for investigation teams",
-    "subtitle": "Screen wallets, map fund flows, and export structured findings for compliance reviews, security operations, and law-enforcement support — with clear scope on what on-chain data can and cannot show.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Intelijen ancaman",
+    "title1": "Intelijen blockchain ",
+    "title2": "untuk tim investigasi",
+    "subtitle": "Saring dompet, petakan arus dana, dan ekspor temuan terstruktur untuk tinjauan kepatuhan, operasi keamanan, dan dukungan penegak hukum — dengan cakupan yang jelas tentang apa yang dapat dan tidak dapat ditunjukkan data on-chain.",
+    "btn_primary": "Hubungi tim",
+    "btn_secondary": "Lihat kapabilitas"
   },
   "Mission": {
-    "title": "Intelligence built for operational use",
-    "description": "Lenix provides curated blockchain datasets and analysis workflows for teams that need attribution context, risk screening, and documented fund flows — not generic market dashboards copied from consumer analytics products."
+    "title": "Intelijen yang dibangun untuk pemakaian operasional",
+    "description": "Lenix menyediakan himpunan data blockchain yang dikurasi dan alur analisis bagi tim yang membutuhkan konteks atribusi, penyaringan risiko, dan arus dana yang terdokumentasi — bukan dasbor pasar generik yang disalin dari produk analitik konsumen."
   },
   "Capabilities": {
     "pillars": {
       "actors": {
-        "label": "Actor and wallet context",
-        "title": "Identify linked addresses and exposure",
-        "body": "Cluster related wallets and flag connections to known risky categories — sanctions lists, scam typologies, and high-risk service touchpoints — when your matter authorizes that scope of review."
+        "label": "Konteks aktor dan dompet",
+        "title": "Identifikasi alamat terkait dan paparan",
+        "body": "Kelompokkan dompet terkait dan tandai koneksi ke kategori berisiko yang diketahui — daftar sanksi, tipologi penipuan, dan titik sentuh layanan berisiko tinggi — saat perkara Anda mengizinkan cakupan tinjauan itu."
       },
       "geopolitical": {
-        "label": "Risk monitoring",
-        "title": "Monitor flows that matter to your mandate",
-        "body": "Track movements tied to jurisdictions, entities, or wallet sets you define. Screening is configurable to your policy — not a one-size-fits-all risk score."
+        "label": "Pemantauan risiko",
+        "title": "Pantau arus yang relevan dengan mandat Anda",
+        "body": "Lacak pergerakan yang terkait yurisdiksi, entitas, atau himpunan dompet yang Anda tentukan. Penyaringan dikonfigurasi sesuai kebijakan Anda — bukan skor risiko yang sama untuk semua."
       },
       "enforcement": {
-        "label": "Case support",
-        "title": "Documentation for escalation",
-        "body": "Produce source-of-funds traces and address attribution summaries formatted for internal review, exchange requests, or counsel — with methodology and limits stated in the deliverable."
+        "label": "Dukungan kasus",
+        "title": "Dokumentasi untuk eskalasi",
+        "body": "Hasilkan jejak sumber dana dan ringkasan atribusi alamat yang diformat untuk tinjauan internal, permintaan ke bursa, atau penasihat hukum — dengan metodologi dan batas yang dinyatakan dalam hasil kerja."
       },
       "delivery": {
-        "label": "Flexible delivery",
-        "title": "Data where your team works",
-        "body": "Receive exports via file, feed, or API integration depending on engagement terms. Priority wallet sets and alert rules can be adjusted as your operational focus changes."
+        "label": "Pengiriman yang fleksibel",
+        "title": "Data di tempat tim Anda bekerja",
+        "body": "Terima ekspor lewat berkas, umpan, atau integrasi API sesuai syarat keterlibatan. Himpunan dompet prioritas dan aturan peringatan dapat disesuaikan saat fokus operasional berubah."
       }
     }
   },
   "Cta": {
-    "title": "Need blockchain intelligence for a team or case?",
-    "description": "Describe your mandate, data needs, and delivery preferences. We outline what Lenix can provide before scoped engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Blockchain forensics"
+    "title": "Perlu intelijen blockchain untuk suatu tim atau kasus?",
+    "description": "Jelaskan mandat, kebutuhan data, dan preferensi pengiriman Anda. Kami menguraikan apa yang dapat disediakan Lenix sebelum keterlibatan berbatas cakupan.",
+    "btn_primary": "Hubungi tim",
+    "btn_secondary": "Forensik blockchain"
   }
 }

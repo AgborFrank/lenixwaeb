@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "Kontaktieren Sie unser Team",
+    "description": "Wenden Sie sich an Lenix Protocol für Rückgewinnungsfälle, Kreditanfragen, Partnerschaften oder Plattform-Support. Unsere Forensik- und Kundenteams antworten während der Geschäftszeiten weltweit."
+  },
+  "Main": {
+    "title": "Bereit zu starten?",
+    "subtitle": "Ob Rückgewinnung, Kreditberatung oder Partnerschaftsgespräch: unser Team hilft Ihnen weiter.",
+    "get_in_touch": "Kontakt aufnehmen",
+    "desc": "Wählen Sie den Kanal, der für Sie passt. Bei zeitkritischen Fällen nennen Sie Transaktions-Hashes oder Wallet-Adressen in der Nachricht.",
+    "email_cta": "Support per E-Mail",
+    "footer": {
+      "support": "Support erreichbar",
+      "response": "Antwort im Live-Chat",
+      "confidential": "Vertrauliche Bearbeitung"
+    }
+  },
+  "Info": {
+    "title": "Kontaktdaten",
+    "address_title": "Büro",
+    "address_line_1": "123 Blockchain Street",
+    "address_line_2": "San Francisco, CA 94105",
+    "address_line_3": "Vereinigte Staaten",
+    "email_title": "E-Mail",
+    "email_line_1": "recovery@lenixprotocol.com",
+    "email_line_2": "loan@lenixprotocol.com",
+    "email_line_3": "support@lenixprotocol.com",
+    "phone_title": "Telefon",
+    "phone_line": "+447887052128",
+    "hours_title": "Geschäftszeiten",
+    "hours_line_1": "Montag – Freitag: 9:00 – 18:00 Uhr EST",
+    "hours_line_2": "Samstag – Sonntag: geschlossen",
+    "chat_title": "Dringende Hilfe nötig?",
+    "chat_description": "Unser Team beobachtet den Live-Chat rund um die Uhr bei zeitkritischen Rückgewinnungs- und Sicherheitsfällen.",
+    "chat_cta": "Live-Chat starten",
+    "follow_title": "Folgen Sie uns",
+    "response_title": "Übliche Antwortzeiten",
+    "response_email": "E-Mail",
+    "response_email_time": "Innerhalb von 24 Stunden",
+    "response_chat": "Live-Chat",
+    "response_chat_time": "Unter 5 Minuten",
+    "response_phone": "Telefon",
+    "response_phone_time": "Geschäftszeiten"
+  },
+  "Form": {
+    "title": "Nachricht senden",
+    "subtitle": "Die meisten Anfragen beantworten wir innerhalb eines Werktags.",
+    "name": "Vollständiger Name *",
+    "email": "E-Mail-Adresse *",
+    "phone": "Telefonnummer",
+    "whatsapp": "WhatsApp oder Telegram",
+    "inquiry_type": "Art der Anfrage",
+    "subject": "Betreff *",
+    "message": "Nachricht *",
+    "placeholder_name": "Vollständigen Namen eingeben",
+    "placeholder_email": "E-Mail eingeben",
+    "placeholder_phone": "+1 234 567 8900",
+    "placeholder_whatsapp": "@benutzername oder +1234567890",
+    "placeholder_subject": "Worum geht es?",
+    "placeholder_message": "Schreiben Sie, wobei wir helfen können…",
+    "submit": "Nachricht senden",
+    "privacy": "Mit dem Absenden akzeptieren Sie unsere Datenschutzrichtlinie und die Nutzungsbedingungen.",
+    "inquiry_options": {
+      "general": "Allgemeine Anfrage",
+      "recovery": "Rückgewinnung",
+      "crypto_loan": "Krypto-Kredit",
+      "support": "Technischer Support",
+      "partnership": "Partnerschaft",
+      "business": "Geschäftsentwicklung",
+      "press": "Presse und Medien",
+      "other": "Sonstiges"
+    },
+    "success_title": "Nachricht gesendet",
+    "success_description": "Danke für Ihre Nachricht. Wir melden uns innerhalb von 24 Stunden.",
+    "success_cta": "Weitere Nachricht senden",
+    "sending": "Wird gesendet…"
+  },
+  "FAQ": {
+    "title": "Häufige Fragen",
+    "subtitle": "Antworten auf gängige Fragen zu Rückgewinnung, Kredit und Plattformsicherheit.",
+    "cta_text": "Noch Fragen?",
+    "email_cta": "Support per E-Mail",
+    "chat_cta": "Live-Chat starten",
+    "items": {
+      "start": {
+        "question": "Wie eröffne ich einen Rückgewinnungs- oder Kreditfall?",
+        "answer": "Senden Sie Ihre Angaben über dieses Formular oder per E-Mail an recovery@lenixprotocol.com. Für einen Kredit starten Sie das Onboarding auf der Krypto-Kreditseite. Das Team bestätigt Umfang, Unterlagen und die nächsten Schritte."
+      },
+      "assets": {
+        "question": "Welche Assets und Chains unterstützen Sie?",
+        "answer": "Wir verfolgen Aktivität auf den großen EVM-Chains, Bitcoin und gängigen Stablecoins. Die Abdeckung wächst mit dem Fall — schicken Sie uns Ihre Transaktionsdaten für eine fallbezogene Einschätzung."
+      },
+      "security": {
+        "question": "Wie werden Kundendaten geschützt?",
+        "answer": "Fallunterlagen unterliegen strengen Zugriffskontrollen, Verschlüsselung bei Übertragung und Speicherung sowie getrennten Prüfabläufen. Wir fragen weder private Schlüssel noch Seed-Phrasen ab."
+      },
+      "fees": {
+        "question": "Wie sind Rückgewinnungs- und Kreditgebühren aufgebaut?",
+        "answer": "Rückgewinnungsaufträge werden je Fall abgegrenzt. Der Kreditpreis hängt von Sicherheit, Laufzeit und LTV ab. Schriftliche Konditionen liegen vor, bevor Arbeit beginnt oder Mittel ausgezahlt werden."
+      },
+      "timeline": {
+        "question": "Wie lange dauern Untersuchungen?",
+        "answer": "Die Dauer hängt von Komplexität, Rechtsraum und der Mitwirkung der Börsen ab. Erste Tracing-Berichte liegen oft innerhalb von Tagen vor; ein vollständiger Rückgewinnungspfad kann Wochen dauern, je nach rechtlichen und verwahrungsbezogenen Faktoren."
+      },
+      "availability": {
+        "question": "Arbeiten Sie mit Strafverfolgungsbehörden?",
+        "answer": "Ja. Wir unterstützen Strafverfolgung und Compliance-Teams mit Tracing-Paketen, fachlicher Prüfung und Unterlagen, die sich für aufsichtsrechtliche und gerichtliche Verfahren eignen."
+      }
+    }
+  }
+}

@@ -213,40 +213,40 @@
       "image_alt": "لوحة عمليات التاجر والامتثال Lenix"
     },
     "Payment": {
-      "badge": "Protocol stack",
-      "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "badge": "حزمة البروتوكول",
+      "title": "انقل القيمة واحتفظ بها واستردها على طبقة واحدة",
+      "subtitle": "المدفوعات والحفظ والاسترداد والإقراض تشترك في البنية المدققة نفسها — وليست أربعة منتجات منفصلة.",
       "cards": {
         "fiat": {
-          "title": "Crypto-to-fiat",
-          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
+          "title": "من العملات المشفرة إلى النقد",
+          "desc": "سوِّ العملات المشفرة إلى نقد عبر قنوات دفع محلية للاستخدام العابر للحدود واليومي."
         },
         "vault": {
-          "title": "Vault and custody",
-          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
+          "title": "الخزنة والحفظ",
+          "desc": "خزائن متعددة التوقيع وحفظ آمن للفرق التي تحتاج تخزين أصول خاضع للرقابة."
         },
         "recovery": {
-          "title": "Recovery and forensics",
-          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
+          "title": "الاسترداد والتحليل الجنائي",
+          "desc": "عند فقدان الأصول أو النزاع عليها، يعمل التتبع ومسارات الأدلة على الحزمة نفسها."
         },
         "lending": {
-          "title": "Lending",
-          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
+          "title": "الإقراض",
+          "desc": "اقترض بضمان مع ضوابط على السلسلة ومسارات تسوية واضحة."
         }
       },
       "cta": "عرض الحلول"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " Token Details",
-      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "title2": " تفاصيل الرمز",
+      "subtitle": "استخدم معلومات العقد أدناه لإضافة رمز Lenix Protocol إلى محفظتك.",
       "headers": {
-        "contract": "Contract Address",
-        "name": "Token Name",
-        "symbol": "Token Symbol",
-        "supply": "Token Supply",
-        "network": "Network",
-        "decimals": "Decimals"
+        "contract": "عنوان العقد",
+        "name": "اسم الرمز",
+        "symbol": "رمز العملة",
+        "supply": "المعروض من الرمز",
+        "network": "الشبكة",
+        "decimals": "الخانات العشرية"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -267,9 +267,9 @@
       "col2_btn": "الورقة البيضاء"
     },
     "Competition": {
-      "title1": "Community ",
-      "title2": "giveaway",
-      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "title1": "المجتمع ",
+      "title2": "هدية",
+      "subtitle": "يحصل عشرة فائزين على 25,000 دولار من LNX. أكمل خطوات المشاركة في صفحة المجتمع. تُطبق الشروط.",
       "btn": "برنامج المجتمع"
     },
     "Features": {
@@ -286,29 +286,29 @@
       "btn_whitepaper": "الورقة البيضاء"
     },
     "LnxPurchaseWidget": {
-      "widget_title": "Buy LNX",
-      "widget_subtitle": "Protocol token sale",
-      "usd_raised": "USD raised so far:",
-      "tokens_sold": "Tokens sold:",
-      "price_usd": "USD price: ${price}",
-      "price_eth": "ETH price: {price} ETH",
-      "pay_eth": "ETH you pay",
-      "pay_usdt": "USDT you pay",
-      "pay_usd": "USD you pay",
-      "receive_lnx": "$LNX you receive",
-      "btn_processing": "Processing...",
-      "btn_pay_eth": "Pay with ETH",
-      "btn_pay_usdt": "Pay with USDT",
+      "widget_title": "شراء LNX",
+      "widget_subtitle": "بيع رمز البروتوكول",
+      "usd_raised": "الدولار المُجمَّع حتى الآن:",
+      "tokens_sold": "الرموز المباعة:",
+      "price_usd": "السعر بالدولار: ${price}",
+      "price_eth": "السعر بـ ETH: {price} ETH",
+      "pay_eth": "ETH التي تدفعها",
+      "pay_usdt": "USDT التي تدفعها",
+      "pay_usd": "USD التي تدفعها",
+      "receive_lnx": "$LNX التي تستلمها",
+      "btn_processing": "جارٍ المعالجة...",
+      "btn_pay_eth": "ادفع بـ ETH",
+      "btn_pay_usdt": "ادفع بـ USDT",
       "btn_pay_card": "الدفع بالبطاقة",
-      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "card_info": "مدعوم من Stripe. يُحصَّل المبلغ بالدولار الأمريكي.",
       "btn_connect": "ربط المحفظة",
       "btn_giveaway": "مكافأة LNX",
-      "giveaway_info": "Connect your wallet to check eligibility."
+      "giveaway_info": "صِل محفظتك للتحقق من الأهلية."
     },
     "TokenSale": {
       "title1": "LNX ",
-      "title2": "token sale",
-      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+      "title2": "بيع الرموز",
+      "subtitle": "اشترِ LNX للمشاركة في البروتوكول. تفاصيل العقد مدرجة أدناه."
     },
     "Partners": {
       "eyebrow": "النظام البيئي",
@@ -990,8 +990,8 @@
         "change_24h": "24 س"
       },
       "location": {
-        "spot": "Spot",
-        "funding": "Funding"
+        "spot": "فوري",
+        "funding": "تمويل"
       }
     },
     "accounts": {
@@ -1087,11 +1087,11 @@
       "type_legend": "نوع التحويل",
       "types": {
         "spot_to_funding": {
-          "label": "Spot → Funding",
+          "label": "فوري → تمويل",
           "description": "تحضير الأصول للمدفوعات"
         },
         "funding_to_spot": {
-          "label": "Funding → Spot",
+          "label": "تمويل → فوري",
           "description": "إعادة الأصول للتداول"
         },
         "funding_to_bank": {
@@ -1323,6 +1323,7 @@
       "payout_bank_sub": "ACH / SEPA",
       "wallet_address": "عنوان المحفظة",
       "wallet_placeholder": "0x...",
+      "network": "الشبكة",
       "select_network": "اختر الشبكة",
       "network_erc20": "Ethereum (ERC20)",
       "network_trc20": "Tron (TRC20)",

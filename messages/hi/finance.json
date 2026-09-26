@@ -1,158 +1,143 @@
 {
   "meta": {
-    "title": "Lenix Finance | Collateral Lending & Liquidity",
-    "description": "Borrow against approved crypto collateral or supply liquidity on Lenix Finance. LTV, rates, and liquidation thresholds shown before you commit.",
-    "keywords": "Crypto Lending, Collateral Loans, DeFi Liquidity, Lenix Finance, Crypto-to-Fiat"
+    "title": "Lenix Finance | जमानती ऋण और तरलता",
+    "description": "स्वीकृत क्रिप्टो जमानत पर उधार लें या Lenix Finance पर तरलता दें। LTV, दरें और परिसमापन सीमा प्रतिबद्धता से पहले दिखती हैं।",
+    "keywords": "क्रिप्टो ऋण, जमानती ऋण, DeFi तरलता, Lenix Finance, क्रिप्टो से फ़िएट"
   },
   "Hero": {
     "badge": "Lenix Finance",
-    "title1": "Liquidity while ",
-    "title2": "collateral stays in vault",
-    "subtitle": "Borrow stablecoins or fiat against approved assets, or supply liquidity to the protocol — with LTV, rates, and health factors visible before you sign.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "View markets",
+    "title1": "तरलता, ",
+    "title2": "जमानत तिजोरी में रहती है",
+    "subtitle": "स्वीकृत परिसंपत्तियों पर स्टेबलकॉइन या फ़िएट उधार लें, या प्रोटोकॉल को तरलता दें — हस्ताक्षर से पहले LTV, दरें और स्वास्थ्य गुणांक दिखते हैं।",
+    "btn_primary": "ऋण के लिए आवेदन करें",
+    "btn_secondary": "बाज़ार देखें",
     "mock": {
       "brand": "Lenix Finance",
-      "nav_dashboard": "Dashboard",
-      "nav_markets": "Markets",
-      "nav_staking": "Staking",
-      "nav_governance": "Governance",
-      "network": "Ethereum Mainnet",
-      "net_worth": "NET WORTH",
-      "net_apy": "NET APY",
-      "health_factor": "HEALTH FACTOR",
-      "liquidation_note": "Liquidation at < 1.00",
-      "tab_supplied": "Supplied",
-      "tab_borrowed": "Borrowed",
-      "col_asset": "ASSET",
-      "col_balance": "BALANCE",
+      "nav_dashboard": "डैशबोर्ड",
+      "nav_markets": "बाज़ार",
+      "nav_staking": "स्टेकिंग",
+      "nav_governance": "शासन",
+      "network": "Ethereum मेननेट",
+      "net_worth": "शुद्ध मूल्य",
+      "net_apy": "शुद्ध APY",
+      "health_factor": "स्वास्थ्य गुणांक",
+      "liquidation_note": "परिसमापन जब < 1.00",
+      "tab_supplied": "जमा",
+      "tab_borrowed": "उधार",
+      "col_asset": "परिसंपत्ति",
+      "col_balance": "शेष",
       "col_apy": "APY",
-      "col_collateral": "COLLATERAL",
-      "enabled": "Enabled",
-      "quick_actions": "Quick Actions",
-      "supply_asset": "Supply Asset",
-      "wallet_balance": "Wallet Balance:",
-      "supply_apy": "Supply APY",
-      "collateral_factor": "Collateral Factor",
-      "supply_btn": "Supply USDC"
+      "col_collateral": "जमानत",
+      "enabled": "सक्रिय",
+      "quick_actions": "त्वरित कार्य",
+      "supply_asset": "परिसंपत्ति जमा करें",
+      "wallet_balance": "वॉलेट शेष:",
+      "supply_apy": "जमा APY",
+      "collateral_factor": "जमानत गुणांक",
+      "supply_btn": "USDC जमा करें"
     }
   },
   "Steps": {
-    "title": "How it works",
-    "description": "From wallet connection to funded loan or supplied liquidity — three steps with clear terms upfront.",
+    "title": "यह कैसे काम करता है",
+    "description": "वॉलेट जोड़ने से लेकर वित्तपोषित ऋण या जमा तरलता तक — तीन कदम, शर्तें पहले से स्पष्ट।",
     "steps": {
       "wallet": {
-        "title": "Connect your wallet",
-        "description": "Use Lenix Wallet or connect an supported wallet to access lending and supply flows."
+        "title": "अपना वॉलेट जोड़ें",
+        "description": "ऋण और जमा प्रवाह खोलने के लिए Lenix Wallet इस्तेमाल करें या समर्थित वॉलेट जोड़ें।"
       },
       "apply": {
-        "title": "Review terms",
-        "description": "Choose collateral, see LTV, repayment schedule, and liquidation thresholds before submitting."
+        "title": "शर्तें देखें",
+        "description": "जमानत चुनें और भेजने से पहले LTV, चुकौती अनुसूची और परिसमापन सीमा देखें।"
       },
       "draw": {
-        "title": "Draw or supply",
-        "description": "Receive a loan disbursement or supply assets to earn from borrower interest — withdraw when liquidity allows."
+        "title": "निकालें या जमा करें",
+        "description": "ऋण का वितरण लें या उधारकर्ताओं के ब्याज से कमाने के लिए परिसंपत्तियाँ जमा करें — तरलता होने पर निकालें।"
       }
     }
   },
   "Markets": {
-    "title": "Market overview",
-    "description": "Indicative rates and liquidity across supported assets. Confirm live values in the app before transacting.",
-    "view_all": "View all markets",
+    "title": "बाज़ार का अवलोकन",
+    "description": "समर्थित परिसंपत्तियों की सांकेतिक दरें और तरलता। लेनदेन से पहले ऐप में लाइव मान की पुष्टि करें।",
+    "view_all": "सभी बाज़ार देखें",
     "columns": {
-      "asset": "Asset",
-      "liquidity": "Total liquidity",
-      "supply_apy": "Supply APY",
-      "borrow_apy": "Borrow APY",
-      "actions": "Actions"
+      "asset": "परिसंपत्ति",
+      "liquidity": "कुल तरलता",
+      "supply_apy": "जमा APY",
+      "borrow_apy": "उधार APY",
+      "actions": "कार्रवाई"
     },
-    "supply": "Supply",
-    "borrow": "Borrow",
+    "supply": "जमा करें",
+    "borrow": "उधार लें",
     "assets": {
-      "wbtc": {
-        "name": "Bitcoin",
-        "symbol": "WBTC"
-      },
-      "eth": {
-        "name": "Ethereum",
-        "symbol": "ETH"
-      },
-      "lnx": {
-        "name": "Lenix",
-        "symbol": "LNX"
-      },
-      "usdc": {
-        "name": "USDC",
-        "symbol": "USDC"
-      },
-      "usdt": {
-        "name": "Tether",
-        "symbol": "USDT"
-      }
+      "wbtc": { "name": "Bitcoin", "symbol": "WBTC" },
+      "eth": { "name": "Ethereum", "symbol": "ETH" },
+      "lnx": { "name": "Lenix", "symbol": "LNX" },
+      "usdc": { "name": "USDC", "symbol": "USDC" },
+      "usdt": { "name": "Tether", "symbol": "USDT" }
     }
   },
   "Features": {
     "cards": {
       "collateral": {
-        "title": "Collateralized borrowing",
-        "desc": "Draw stablecoins or fiat against approved vault collateral — without selling the underlying asset. Credit checks are not required for eligible collateral types."
+        "title": "जमानती उधार",
+        "desc": "तिजोरी में स्वीकृत जमानत पर स्टेबलकॉइन या फ़िएट निकालें — अंतर्निहित परिसंपत्ति बेचे बिना। पात्र जमानत प्रकारों के लिए क्रेडिट जाँच आवश्यक नहीं।"
       },
       "ltv": {
-        "title": "LTV shown upfront",
-        "desc": "Loan-to-value, repayment schedule, and liquidation thresholds are displayed before disbursement — not adjusted silently after you sign."
+        "title": "LTV पहले से दिखता है",
+        "desc": "ऋण-मूल्य अनुपात, चुकौती अनुसूची और परिसमापन सीमा वितरण से पहले दिखते हैं। हस्ताक्षर के बाद चुपचाप नहीं बदले जाते।"
       },
       "liquidity": {
-        "title": "Supply and earn",
-        "desc": "Provide liquidity to the protocol and earn from borrower interest. Withdraw when pool liquidity is available — no fixed lock-up term."
+        "title": "जमा करें और कमाएँ",
+        "desc": "प्रोटोकॉल को तरलता दें और उधारकर्ताओं के ब्याज से कमाएँ। पूल में तरलता होने पर निकालें — कोई निश्चित लॉक अवधि नहीं।"
       }
     }
   },
   "Calculator": {
-    "title": "Estimate your returns",
-    "description": "Model supply-side yield at current indicative APYs. Actual returns depend on utilization, rates, and how long assets remain supplied.",
+    "title": "अपना प्रतिफल आँकें",
+    "description": "वर्तमान सांकेतिक APY पर जमा पक्ष का प्रतिफल मॉडल करें। वास्तविक परिणाम उपयोग, दरों और परिसंपत्तियों के जमा रहने की अवधि पर निर्भर करता है।",
     "stats": {
-      "max_apy_label": "Indicative max APY",
-      "max_apy_value": "Up to 18.5%",
-      "payout_label": "Accrual",
-      "payout_value": "Continuous"
+      "max_apy_label": "सांकेतिक अधिकतम APY",
+      "max_apy_value": "18.5% तक",
+      "payout_label": "उपचय",
+      "payout_value": "निरंतर"
     },
     "form": {
-      "amount_label": "Deposit amount",
-      "duration_label": "Duration",
-      "months": "{count} months",
-      "month_min": "1 month",
-      "month_max": "3 years",
-      "earnings_label": "Estimated earnings",
-      "total_label": "Total balance",
-      "disclaimer": "Illustrative only. Not financial advice.",
-      "btn": "Start supplying"
+      "amount_label": "जमा राशि",
+      "duration_label": "अवधि",
+      "months": "{count} महीने",
+      "month_min": "1 महीना",
+      "month_max": "3 वर्ष",
+      "earnings_label": "अनुमानित कमाई",
+      "total_label": "कुल शेष",
+      "disclaimer": "केवल उदाहरण। यह वित्तीय सलाह नहीं है।",
+      "btn": "जमा शुरू करें"
     }
   },
   "Faq": {
-    "title": "Frequently asked questions",
+    "title": "अक्सर पूछे जाने वाले प्रश्न",
     "items": {
       "yield": {
-        "q": "How does supply yield work?",
-        "a": "Borrowers pay interest on loans. A portion is distributed to liquidity providers after the protocol reserve. Rates move with pool utilization — check the app for current APY."
+        "q": "जमा प्रतिफल कैसे काम करता है?",
+        "a": "उधारकर्ता ऋण पर ब्याज देते हैं। प्रोटोकॉल रिज़र्व के बाद एक हिस्सा तरलता प्रदाताओं को मिलता है। दरें पूल के उपयोग के साथ चलती हैं — वर्तमान APY के लिए ऐप देखें।"
       },
       "lockup": {
-        "q": "Is there a lock-up period?",
-        "a": "No fixed term for suppliers. You can withdraw when the pool has sufficient liquidity. During high utilization, withdrawals may queue until borrowers repay."
+        "q": "क्या कोई लॉक अवधि है?",
+        "a": "जमा करने वालों के लिए कोई निश्चित अवधि नहीं। पूल में पर्याप्त तरलता होने पर निकाल सकते हैं। उच्च उपयोग पर निकासी तब तक रुक सकती है जब तक उधारकर्ता चुका न दें।"
       },
       "liquidation": {
-        "q": "What happens if my loan health factor falls?",
-        "a": "If collateral value drops below the agreed LTV, liquidation may occur to repay outstanding debt. Health factor and liquidation price are shown in the dashboard before and during the loan."
+        "q": "यदि मेरे ऋण का स्वास्थ्य गुणांक गिरे तो क्या होगा?",
+        "a": "यदि जमानत का मूल्य तय LTV से नीचे गिरे, तो बकाया ऋण चुकाने के लिए परिसमापन हो सकता है। स्वास्थ्य गुणांक और परिसमापन मूल्य ऋण से पहले और दौरान डैशबोर्ड पर दिखते हैं।"
       },
       "fees": {
-        "q": "What fees apply?",
-        "a": "Protocol fees are reflected in the net APY or loan terms shown at application. On-chain gas for deposits, borrows, and withdrawals is separate and paid to the network."
+        "q": "कौन से शुल्क लगते हैं?",
+        "a": "प्रोटोकॉल शुल्क आवेदन पर दिखने वाले शुद्ध APY या ऋण शर्तों में शामिल हैं। जमा, उधार और निकासी का ऑन-चेन गैस अलग है और नेटवर्क को जाता है।"
       }
     }
   },
   "Cta": {
-    "title": "Ready to borrow or supply?",
-    "description": "Apply for a collateral loan or open the app to supply liquidity. Support is available if you need help scoping terms.",
-    "btn_primary": "Apply for loan",
-    "btn_secondary": "Contact team"
+    "title": "उधार लेने या जमा करने के लिए तैयार?",
+    "description": "जमानती ऋण के लिए आवेदन करें या तरलता जमा करने के लिए ऐप खोलें। शर्तें तय करने में सहायता उपलब्ध है।",
+    "btn_primary": "ऋण के लिए आवेदन करें",
+    "btn_secondary": "टीम से संपर्क करें"
   }
 }

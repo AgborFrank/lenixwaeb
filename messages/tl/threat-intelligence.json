@@ -1,48 +1,48 @@
 {
   "meta": {
-    "title": "Threat Intelligence & Blockchain Intelligence | Lenix Protocol",
-    "description": "Blockchain intelligence for compliance, security, and investigation teams. Attribution data, flow analysis, and structured exports — scoped to authorized matters."
+    "title": "Intelligence sa banta at intelligence sa blockchain | Lenix Protocol",
+    "description": "Intelligence sa blockchain para sa mga koponan ng pagsunod, seguridad, at imbestigasyon. Data ng attribution, pagsusuri ng daloy, at structured na export — limitado sa mga awtorisadong usapin."
   },
   "Hero": {
-    "badge": "Threat intelligence",
-    "title1": "Blockchain intelligence ",
-    "title2": "for investigation teams",
-    "subtitle": "Screen wallets, map fund flows, and export structured findings for compliance reviews, security operations, and law-enforcement support — with clear scope on what on-chain data can and cannot show.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Intelligence sa banta",
+    "title1": "Intelligence sa blockchain ",
+    "title2": "para sa mga koponan ng imbestigasyon",
+    "subtitle": "I-screen ang mga wallet, i-mapa ang daloy ng pondo, at i-export ang structured na natuklasan para sa mga review ng pagsunod, operasyon ng seguridad, at suporta sa tagapagpatupad ng batas — na may malinaw na saklaw kung ano ang kaya at hindi kayang ipakita ng on-chain na data.",
+    "btn_primary": "Makipag-ugnayan sa koponan",
+    "btn_secondary": "Tingnan ang mga kakayahan"
   },
   "Mission": {
-    "title": "Intelligence built for operational use",
-    "description": "Lenix provides curated blockchain datasets and analysis workflows for teams that need attribution context, risk screening, and documented fund flows — not generic market dashboards copied from consumer analytics products."
+    "title": "Intelligence na ginawa para sa operational na gamit",
+    "description": "Nagbibigay ang Lenix ng piniling mga dataset ng blockchain at mga workflow ng pagsusuri para sa mga koponang nangangailangan ng konteksto ng attribution, screening ng panganib, at dokumentadong daloy ng pondo — hindi mga generic na market dashboard na kinopya mula sa mga produktong analytics para sa konsumer."
   },
   "Capabilities": {
     "pillars": {
       "actors": {
-        "label": "Actor and wallet context",
-        "title": "Identify linked addresses and exposure",
-        "body": "Cluster related wallets and flag connections to known risky categories — sanctions lists, scam typologies, and high-risk service touchpoints — when your matter authorizes that scope of review."
+        "label": "Konteksto ng aktor at wallet",
+        "title": "Tukuyin ang magkakaugnay na address at exposure",
+        "body": "I-cluster ang mga kaugnay na wallet at i-flag ang mga koneksyon sa mga kilalang kategorya ng panganib — mga listahan ng sanction, typology ng scam, at touchpoint ng serbisyong mataas ang panganib — kapag pinahihintulutan ng usapin ninyo ang saklaw ng review na iyon."
       },
       "geopolitical": {
-        "label": "Risk monitoring",
-        "title": "Monitor flows that matter to your mandate",
-        "body": "Track movements tied to jurisdictions, entities, or wallet sets you define. Screening is configurable to your policy — not a one-size-fits-all risk score."
+        "label": "Pagsubaybay sa panganib",
+        "title": "Subaybayan ang mga daloy na mahalaga sa mandato ninyo",
+        "body": "Subaybayan ang mga galaw na nauugnay sa mga hurisdiksyon, entidad, o set ng wallet na tinutukoy ninyo. Nako-configure ang screening ayon sa patakaran ninyo — hindi isang risk score na iisa para sa lahat."
       },
       "enforcement": {
-        "label": "Case support",
-        "title": "Documentation for escalation",
-        "body": "Produce source-of-funds traces and address attribution summaries formatted for internal review, exchange requests, or counsel — with methodology and limits stated in the deliverable."
+        "label": "Suporta sa kaso",
+        "title": "Dokumentasyon para sa escalation",
+        "body": "Gumawa ng mga trace ng pinagmulan ng pondo at buod ng attribution ng address na naka-format para sa panloob na review, mga kahilingan sa exchange, o counsel — na may nakasaad na metodolohiya at mga limitasyon sa deliverable."
       },
       "delivery": {
-        "label": "Flexible delivery",
-        "title": "Data where your team works",
-        "body": "Receive exports via file, feed, or API integration depending on engagement terms. Priority wallet sets and alert rules can be adjusted as your operational focus changes."
+        "label": "Flexible na paghahatid",
+        "title": "Data kung saan nagtatrabaho ang koponan",
+        "body": "Tumanggap ng mga export sa pamamagitan ng file, feed, o integrasyon ng API ayon sa mga tuntunin ng engagement. Maaaring iakma ang mga priyoridad na set ng wallet at mga tuntunin ng alerto kapag nagbago ang operational na pokus."
       }
     }
   },
   "Cta": {
-    "title": "Need blockchain intelligence for a team or case?",
-    "description": "Describe your mandate, data needs, and delivery preferences. We outline what Lenix can provide before scoped engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Blockchain forensics"
+    "title": "Kailangan ng intelligence sa blockchain para sa isang koponan o kaso?",
+    "description": "Ilarawan ang mandato, mga pangangailangan sa data, at mga kagustuhan sa paghahatid. Binabalangkas namin kung ano ang maibibigay ng Lenix bago ang engagement na may saklaw.",
+    "btn_primary": "Makipag-ugnayan sa koponan",
+    "btn_secondary": "Forensics ng blockchain"
   }
 }

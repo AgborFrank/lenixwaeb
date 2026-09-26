@@ -23,7 +23,7 @@
       "receive": "Empfangen",
       "swap": "Tauschen",
       "loan": "Kredit",
-      "tab_assets": "Assets",
+      "tab_assets": "Bestände",
       "tab_history": "Verlauf"
     }
   },
@@ -38,33 +38,33 @@
       "loans": {
         "title": "Beleihungskredite",
         "desc": "Stablecoins gegen unterstützte Assets leihen, ohne Ihre Position zu verkaufen — Konditionen und Beleihungsquoten werden vor der Bestätigung angezeigt.",
-        "link": "View lending"
+        "link": "Kreditvergabe ansehen"
       },
       "recovery": {
         "title": "Recovery-Pfad",
         "desc": "Bei Verlust oder Diebstahl von Assets einen Recovery-Fall im Lenix-Ökosystem eröffnen — Tracing und Börsenkoordination, wenn ein Standard-Wallet-Flow nicht ausreicht.",
-        "link": "Start recovery"
+        "link": "Wiederherstellung starten"
       },
       "multichain": {
-        "title": "Multi-chain balances",
-        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+        "title": "Multi-Chain-Salden",
+        "desc": "Assets und Verlauf über Ethereum, BNB Chain und Polygon in einer Wallet — Netzwerke wechseln ohne separate Apps."
       },
       "transfers": {
-        "title": "Send, receive, swap",
-        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+        "title": "Senden, empfangen, tauschen",
+        "desc": "Token verschieben, Empfangsadresse kopieren und unterstützte Assets tauschen — mit Kaufoptionen, wo integrierte Anbieter verfügbar sind."
       },
       "access": {
-        "title": "Web and mobile",
-        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+        "title": "Web und Mobil",
+        "desc": "Nutzen Sie die Browser-Wallet unter lenixwallet.com oder laden Sie die App herunter — einmal anlegen, mit der Wiederherstellungsphrase auf beiden importieren."
       }
     },
-    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "networks_line": "Verfügbar auf Ethereum, BNB Chain und Polygon.",
     "groups": {
       "wallet": {
-        "title": "In the wallet"
+        "title": "In der Wallet"
       },
       "platform": {
-        "title": "Through Lenix"
+        "title": "Über Lenix"
       }
     }
   },
@@ -104,7 +104,7 @@
     "title": "Lenix Wallet herunterladen",
     "subtitle": "Wallet in Minuten erstellen oder importieren. Dieselbe App für Senden, Empfangen, Tauschen und Kredit — mit Lenix-Recovery, wenn Sie sie brauchen.",
     "btn_download": "App herunterladen",
-    "btn_web": "Open web wallet"
+    "btn_web": "Web-Wallet öffnen"
   },
   "Networks": {
     "eyebrow": "Supported networks",
@@ -117,48 +117,48 @@
     }
   },
   "GettingStarted": {
-    "eyebrow": "Getting started",
-    "title": "Up and running in three steps",
-    "step_label": "Step {number}",
+    "eyebrow": "Erste Schritte",
+    "title": "In drei Schritten einsatzbereit",
+    "step_label": "Schritt {number}",
     "steps": {
       "create": {
-        "title": "Create or import",
-        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+        "title": "Erstellen oder importieren",
+        "desc": "Neue Wallet erzeugen oder mit Ihrer 12- oder 24-Wörter-Wiederherstellungsphrase wiederherstellen."
       },
       "secure": {
-        "title": "Set password and backup",
-        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+        "title": "Passwort und Backup",
+        "desc": "Wählen Sie ein Wallet-Passwort und bewahren Sie die Wiederherstellungsphrase offline auf — Lenix kann sie nicht zurücksetzen."
       },
       "use": {
-        "title": "Send, swap, or borrow",
-        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+        "title": "Senden, tauschen oder leihen",
+        "desc": "Assets bewegen, den Verlauf je Chain prüfen oder Lending- und Wiederherstellungsabläufe im Lenix-Ökosystem öffnen."
       }
     }
   },
   "Ecosystem": {
-    "eyebrow": "Lenix ecosystem",
-    "title": "Wallet connects to the rest of the platform",
-    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "eyebrow": "Lenix-Ökosystem",
+    "title": "Die Wallet verbindet sich mit dem Rest der Plattform",
+    "description": "Halten Sie Assets hier. Wenn Sie mehr als eine Überweisung brauchen, folgen Sie dem verlinkten Ablauf.",
     "cards": {
       "wallet": {
-        "title": "Lenix Wallet",
-        "desc": "Create, unlock, send, and receive.",
-        "cta": "Open wallet"
+        "title": "Lenix-Wallet",
+        "desc": "Erstellen, entsperren, senden und empfangen.",
+        "cta": "Wallet öffnen"
       },
       "loan": {
-        "title": "Crypto loan",
-        "desc": "Borrow against vaulted collateral.",
-        "cta": "View lending"
+        "title": "Krypto-Kredit",
+        "desc": "Leihen Sie gegen hinterlegte Sicherheiten.",
+        "cta": "Kreditvergabe ansehen"
       },
       "recovery": {
-        "title": "Asset recovery",
-        "desc": "Trace stolen or misdirected funds.",
-        "cta": "Start recovery"
+        "title": "Asset-Wiederherstellung",
+        "desc": "Gestohlene oder fehlgeleitete Gelder nachverfolgen.",
+        "cta": "Wiederherstellung starten"
       },
       "security": {
-        "title": "Security",
-        "desc": "Audits and operational controls.",
-        "cta": "Read security"
+        "title": "Sicherheit",
+        "desc": "Audits und operative Kontrollen.",
+        "cta": "Sicherheit lesen"
       }
     }
   },

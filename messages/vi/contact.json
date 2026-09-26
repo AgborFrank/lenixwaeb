@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "Liên hệ với nhóm của chúng tôi",
+    "description": "Liên hệ Lenix Protocol về vụ thu hồi, hỏi vay, hợp tác hoặc hỗ trợ nền tảng. Nhóm pháp chứng và chăm sóc khách hàng trả lời trong giờ làm việc trên toàn cầu."
+  },
+  "Main": {
+    "title": "Sẵn sàng bắt đầu?",
+    "subtitle": "Dù là hỗ trợ thu hồi, tư vấn khoản vay hay trao đổi hợp tác, nhóm luôn sẵn sàng.",
+    "get_in_touch": "Liên hệ",
+    "desc": "Chọn kênh phù hợp với bạn. Với vụ việc gấp, hãy ghi hash giao dịch hoặc địa chỉ ví trong tin nhắn.",
+    "email_cta": "Gửi thư hỗ trợ",
+    "footer": {
+      "support": "Có hỗ trợ",
+      "response": "Phản hồi qua trò chuyện trực tiếp",
+      "confidential": "Xử lý bảo mật"
+    }
+  },
+  "Info": {
+    "title": "Thông tin liên hệ",
+    "address_title": "Văn phòng",
+    "address_line_1": "123 Blockchain Street",
+    "address_line_2": "San Francisco, CA 94105",
+    "address_line_3": "Hoa Kỳ",
+    "email_title": "Thư điện tử",
+    "email_line_1": "recovery@lenixprotocol.com",
+    "email_line_2": "loan@lenixprotocol.com",
+    "email_line_3": "support@lenixprotocol.com",
+    "phone_title": "Điện thoại",
+    "phone_line": "+447887052128",
+    "hours_title": "Giờ làm việc",
+    "hours_line_1": "Thứ Hai – Thứ Sáu: 9:00 – 18:00 EST",
+    "hours_line_2": "Thứ Bảy – Chủ Nhật: đóng cửa",
+    "chat_title": "Cần giúp gấp?",
+    "chat_description": "Nhóm theo dõi trò chuyện trực tiếp suốt ngày đêm cho các vụ thu hồi và vấn đề an ninh không thể chờ.",
+    "chat_cta": "Mở trò chuyện trực tiếp",
+    "follow_title": "Theo dõi chúng tôi",
+    "response_title": "Thời gian phản hồi thường gặp",
+    "response_email": "Thư điện tử",
+    "response_email_time": "Trong 24 giờ",
+    "response_chat": "Trò chuyện trực tiếp",
+    "response_chat_time": "Dưới 5 phút",
+    "response_phone": "Điện thoại",
+    "response_phone_time": "Giờ làm việc"
+  },
+  "Form": {
+    "title": "Gửi tin nhắn cho chúng tôi",
+    "subtitle": "Chúng tôi trả lời hầu hết yêu cầu trong một ngày làm việc.",
+    "name": "Họ và tên *",
+    "email": "Địa chỉ thư điện tử *",
+    "phone": "Số điện thoại",
+    "whatsapp": "WhatsApp hoặc Telegram",
+    "inquiry_type": "Loại yêu cầu",
+    "subject": "Chủ đề *",
+    "message": "Nội dung *",
+    "placeholder_name": "Nhập họ và tên",
+    "placeholder_email": "Nhập thư điện tử",
+    "placeholder_phone": "+1 234 567 8900",
+    "placeholder_whatsapp": "@tennguoidung hoặc +1234567890",
+    "placeholder_subject": "Việc này liên quan đến gì?",
+    "placeholder_message": "Cho chúng tôi biết cần hỗ trợ thế nào…",
+    "submit": "Gửi tin nhắn",
+    "privacy": "Khi gửi biểu mẫu này, bạn đồng ý với chính sách quyền riêng tư và điều khoản dịch vụ.",
+    "inquiry_options": {
+      "general": "Yêu cầu chung",
+      "recovery": "Dịch vụ thu hồi",
+      "crypto_loan": "Dịch vụ vay tiền mã hóa",
+      "support": "Hỗ trợ kỹ thuật",
+      "partnership": "Hợp tác",
+      "business": "Phát triển kinh doanh",
+      "press": "Báo chí và truyền thông",
+      "other": "Khác"
+    },
+    "success_title": "Đã gửi tin nhắn",
+    "success_description": "Cảm ơn bạn đã liên hệ. Chúng tôi sẽ phản hồi trong 24 giờ.",
+    "success_cta": "Gửi tin nhắn khác",
+    "sending": "Đang gửi…"
+  },
+  "FAQ": {
+    "title": "Câu hỏi thường gặp",
+    "subtitle": "Giải đáp các câu hỏi phổ biến về thu hồi, cho vay và bảo mật nền tảng.",
+    "cta_text": "Vẫn còn câu hỏi?",
+    "email_cta": "Gửi thư hỗ trợ",
+    "chat_cta": "Mở trò chuyện trực tiếp",
+    "items": {
+      "start": {
+        "question": "Làm sao để mở vụ thu hồi hoặc khoản vay?",
+        "answer": "Gửi thông tin qua biểu mẫu này hoặc thư tới recovery@lenixprotocol.com. Với khoản vay, vào trang vay tiền mã hóa để bắt đầu hồ sơ. Nhóm sẽ xác nhận phạm vi, hồ sơ cần nộp và bước tiếp theo."
+      },
+      "assets": {
+        "question": "Các bạn hỗ trợ tài sản và chuỗi nào?",
+        "answer": "Chúng tôi truy vết hoạt động trên các chuỗi EVM lớn, Bitcoin và stablecoin thông dụng. Phạm vi mở rộng theo từng vụ — hãy gửi chi tiết giao dịch để được đánh giá riêng."
+      },
+      "security": {
+        "question": "Dữ liệu khách hàng được bảo vệ thế nào?",
+        "answer": "Hồ sơ vụ việc được kiểm soát truy cập chặt, mã hóa khi truyền và khi lưu, và được xem xét theo quy trình tách biệt. Chúng tôi không yêu cầu khóa riêng hay cụm từ khôi phục."
+      },
+      "fees": {
+        "question": "Phí thu hồi và phí vay được tính ra sao?",
+        "answer": "Hạng mục thu hồi được khoanh phạm vi theo từng vụ. Giá khoản vay phụ thuộc tài sản thế chấp, kỳ hạn và LTV. Chúng tôi đưa điều khoản bằng văn bản trước khi bắt đầu việc hoặc giải ngân."
+      },
+      "timeline": {
+        "question": "Điều tra mất bao lâu?",
+        "answer": "Thời gian tùy độ phức tạp, khu vực pháp lý và mức phối hợp của sàn. Báo cáo truy vết ban đầu thường có trong vài ngày; lộ trình thu hồi đầy đủ có thể mất vài tuần, tùy yếu tố pháp lý và lưu ký."
+      },
+      "availability": {
+        "question": "Các bạn có làm việc với cơ quan thực thi pháp luật không?",
+        "answer": "Có. Chúng tôi hỗ trợ cơ quan thực thi pháp luật và nhóm tuân thủ bằng gói truy vết, thẩm định chuyên môn và tài liệu phù hợp thủ tục quản lý cũng như tố tụng."
+      }
+    }
+  }
+}

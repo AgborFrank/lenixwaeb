@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "Ekibimizle iletişime geçin",
+    "description": "Kurtarma dosyaları, kredi soruları, ortaklıklar veya platform desteği için Lenix Protocol’e yazın. Adli inceleme ve müşteri ekiplerimiz dünya genelinde mesai saatlerinde yanıt verir."
+  },
+  "Main": {
+    "title": "Başlamaya hazır mısınız?",
+    "subtitle": "Kurtarma desteği, kredi görüşmesi veya ortaklık konuşması: ekibimiz yardımcı olmak için burada.",
+    "get_in_touch": "Bize ulaşın",
+    "desc": "Size uygun kanalı seçin. Zamanı kritik dosyalarda mesaja işlem hash’lerini veya cüzdan adreslerini ekleyin.",
+    "email_cta": "Destek e-postası",
+    "footer": {
+      "support": "Destek açık",
+      "response": "Canlı sohbet yanıtı",
+      "confidential": "Gizli işlem"
+    }
+  },
+  "Info": {
+    "title": "İletişim bilgileri",
+    "address_title": "Ofis",
+    "address_line_1": "123 Blockchain Street",
+    "address_line_2": "San Francisco, CA 94105",
+    "address_line_3": "Amerika Birleşik Devletleri",
+    "email_title": "E-posta",
+    "email_line_1": "recovery@lenixprotocol.com",
+    "email_line_2": "loan@lenixprotocol.com",
+    "email_line_3": "support@lenixprotocol.com",
+    "phone_title": "Telefon",
+    "phone_line": "+447887052128",
+    "hours_title": "Çalışma saatleri",
+    "hours_line_1": "Pazartesi – Cuma: 09:00 – 18:00 EST",
+    "hours_line_2": "Cumartesi – Pazar: kapalı",
+    "chat_title": "Acil yardım mı gerekiyor?",
+    "chat_description": "Ekibimiz, bekleyemeyen kurtarma ve güvenlik konularında canlı sohbeti gün boyu izler.",
+    "chat_cta": "Canlı sohbeti başlat",
+    "follow_title": "Bizi takip edin",
+    "response_title": "Olağan yanıt süreleri",
+    "response_email": "E-posta",
+    "response_email_time": "24 saat içinde",
+    "response_chat": "Canlı sohbet",
+    "response_chat_time": "5 dakikadan kısa",
+    "response_phone": "Telefon",
+    "response_phone_time": "Çalışma saatleri"
+  },
+  "Form": {
+    "title": "Bize mesaj gönderin",
+    "subtitle": "Başvuruların çoğuna bir iş günü içinde yanıt veririz.",
+    "name": "Ad soyad *",
+    "email": "E-posta adresi *",
+    "phone": "Telefon numarası",
+    "whatsapp": "WhatsApp veya Telegram",
+    "inquiry_type": "Başvuru türü",
+    "subject": "Konu *",
+    "message": "Mesajınız *",
+    "placeholder_name": "Adınızı ve soyadınızı girin",
+    "placeholder_email": "E-postanızı girin",
+    "placeholder_phone": "+1 234 567 8900",
+    "placeholder_whatsapp": "@kullaniciadi veya +1234567890",
+    "placeholder_subject": "Bu ne hakkında?",
+    "placeholder_message": "Nasıl yardımcı olabileceğimizi yazın…",
+    "submit": "Mesajı gönder",
+    "privacy": "Bu formu göndererek gizlilik politikamızı ve hizmet koşullarımızı kabul etmiş olursunuz.",
+    "inquiry_options": {
+      "general": "Genel başvuru",
+      "recovery": "Kurtarma hizmetleri",
+      "crypto_loan": "Kripto kredi hizmetleri",
+      "support": "Teknik destek",
+      "partnership": "Ortaklık",
+      "business": "İş geliştirme",
+      "press": "Basın ve medya",
+      "other": "Diğer"
+    },
+    "success_title": "Mesaj gönderildi",
+    "success_description": "Yazdığınız için teşekkürler. 24 saat içinde dönüş yapacağız.",
+    "success_cta": "Başka bir mesaj gönder",
+    "sending": "Gönderiliyor…"
+  },
+  "FAQ": {
+    "title": "Sık sorulan sorular",
+    "subtitle": "Kurtarma, kredi ve platform güvenliği hakkında sık gelen soruların yanıtları.",
+    "cta_text": "Hâlâ sorunuz mu var?",
+    "email_cta": "Destek e-postası",
+    "chat_cta": "Canlı sohbeti başlat",
+    "items": {
+      "start": {
+        "question": "Kurtarma veya kredi dosyasını nasıl açarım?",
+        "answer": "Bilgilerinizi bu formla veya recovery@lenixprotocol.com adresine e-posta ile gönderin. Kredi için kripto kredi sayfasından kayda başlayın. Ekip kapsamı, belgeleri ve sonraki adımları teyit eder."
+      },
+      "assets": {
+        "question": "Hangi varlıkları ve zincirleri destekliyorsunuz?",
+        "answer": "Başlıca EVM zincirlerinde, Bitcoin’de ve yaygın stablecoin’lerde hareketi izleriz. Kapsam dosyaya göre genişler — dosyanıza özel bir değerlendirme için işlem ayrıntılarınızı iletin."
+      },
+      "security": {
+        "question": "Müşteri verileri nasıl korunur?",
+        "answer": "Dosya malzemeleri sıkı erişim kontrolü, aktarım ve saklama sırasında şifreleme ve ayrılmış inceleme akışlarıyla işlenir. Özel anahtar veya kurtarma cümlesi istemeyiz."
+      },
+      "fees": {
+        "question": "Kurtarma ve kredi ücretleri nasıl kurulur?",
+        "answer": "Kurtarma işleri dosya bazında sınırlanır. Kredi fiyatı teminata, vadeye ve LTV’ye bağlıdır. Çalışma başlamadan veya ödeme yapılmadan önce yazılı koşulları veririz."
+      },
+      "timeline": {
+        "question": "İncelemeler ne kadar sürer?",
+        "answer": "Süre; karmaşıklığa, yargı yetkisine ve borsa iş birliğine göre değişir. İlk iz sürme raporları çoğu zaman günler içinde çıkar; tam kurtarma yolu yasal ve saklama etkenlerine göre haftalar sürebilir."
+      },
+      "availability": {
+        "question": "Kolluk kuvvetleriyle çalışıyor musunuz?",
+        "answer": "Evet. Kolluk kuvvetlerini ve uyum ekiplerini iz sürme paketleri, uzman incelemesi ve düzenleyici ile mahkeme süreçlerine uygun belgelerle destekleriz."
+      }
+    }
+  }
+}

@@ -14,25 +14,25 @@
     "learn_more": "विवरण देखें",
     "cards": {
       "recovery": {
-        "title": "Asset recovery",
+        "title": "परिसंपत्ति रिकवरी",
         "desc": "Funds चोरी, scam या गलत address पर गए। अगले कदम से पहले trace और documented evidence चाहिए।"
       },
       "payments": {
-        "title": "Cross-border payments",
+        "title": "सीमा-पार भुगतान",
         "desc": "Treasury या finance को crypto से fiat conversion चाहिए — rates, fees और delivery status auditors को दिखाने योग्य।"
       },
       "lending": {
-        "title": "Crypto lending",
+        "title": "क्रिप्टो ऋण",
         "desc": "Eligible collateral है और position बेचे बिना liquidity चाहिए।"
       },
       "security": {
-        "title": "Platform security",
+        "title": "प्लेटफ़ॉर्म सुरक्षा",
         "desc": "आपकी team client assets custody करती है — monitoring, access rules और written escalation path चाहिए।"
       }
     }
   },
   "Recovery": {
-    "eyebrow": "Asset recovery",
+    "eyebrow": "परिसंपत्ति रिकवरी",
     "title": "पहले trace। तभी engage जब रास्ता हो।",
     "description": "Wallet addresses, transaction hashes और short timeline भेजें। हम value कहाँ गई, यह follow करते हैं; exchanges और counsel के लिए findings तैयार करते हैं; paid engagement से पहले साफ बताते हैं recovery realistic है या नहीं। हम recovery का वादा नहीं करते।",
     "points": {
@@ -43,17 +43,17 @@
     "cta": "केस शुरू"
   },
   "Payments": {
-    "eyebrow": "Cross-border payments",
+    "eyebrow": "सीमा-पार भुगतान",
     "title": "Settlement जो आपकी treasury audit कर सके",
     "description": "जहाँ local banking rails slow, expensive या opaque हों, crypto को fiat में convert करें। Wallet initiation से beneficiary delivery तक rate, fee और status visible — finance और ops guess नहीं करते।",
     "cta": "भुगतान विकल्प",
     "capabilities": {
       "corridors": {
-        "title": "Active corridors",
+        "title": "सक्रिय कॉरिडोर",
         "desc": "आज supported markets में bank accounts पर payout। अगर आपका corridor listed नहीं, contact करें।"
       },
       "visibility": {
-        "title": "Handoff tracking",
+        "title": "हैंडऑफ़ ट्रैकिंग",
         "desc": "Flow के हर step पर status — context के बिना single pending flag नहीं।"
       },
       "compliance": {
@@ -63,7 +63,7 @@
     }
   },
   "Lending": {
-    "eyebrow": "Crypto lending",
+    "eyebrow": "क्रिप्टो ऋण",
     "title": "Collateral vault में रहे, liquidity मिले",
     "description": "Approved collateral post करें, stablecoins या fiat draw करें। Disbursement से पहले LTV, repayment terms और liquidation thresholds दिखते हैं — sign के बाद hidden triggers नहीं।",
     "points": {
@@ -74,13 +74,13 @@
     "cta": "ऋण आवेदन"
   },
   "Security": {
-    "eyebrow": "Platform security",
+    "eyebrow": "प्लेटफ़ॉर्म सुरक्षा",
     "title": "Client assets custody करने वाली teams के controls",
     "description": "Wallet monitoring, permissioned access और incident escalation — उन organizations के लिए जो suspicious activity को back-burner ticket नहीं मान सकते। Ops teams के लिए, slide-deck security नहीं।",
     "cta": "सुरक्षा अवलोकन",
     "pillars": {
       "monitoring": {
-        "title": "Activity monitoring",
+        "title": "गतिविधि निगरानी",
         "desc": "Unusual outflows, new counterparties और policy के बाहर transfers पर alerts।"
       },
       "access": {
@@ -88,7 +88,7 @@
         "desc": "Role-based permissions — किसने क्या approve किया, कब, इसका record।"
       },
       "incident": {
-        "title": "Incident response",
+        "title": "घटना प्रतिक्रिया",
         "desc": "Written escalation steps जब activity को human review चाहिए।"
       }
     }

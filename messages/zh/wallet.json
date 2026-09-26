@@ -38,33 +38,33 @@
       "loans": {
         "title": "抵押借贷",
         "desc": "以支持的资产抵押借入稳定币，无需卖出持仓 — 确认前显示条款与抵押率。",
-        "link": "View lending"
+        "link": "查看借贷"
       },
       "recovery": {
         "title": "恢复路径",
         "desc": "若资产丢失或被盗，可在 Lenix 生态中开启恢复案件 — 当标准钱包流程不够时进行追踪与交易所协调。",
-        "link": "Start recovery"
+        "link": "开始追回"
       },
       "multichain": {
-        "title": "Multi-chain balances",
-        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+        "title": "多链余额",
+        "desc": "在一个钱包中查看 Ethereum、BNB Chain 和 Polygon 上的资产与记录 — 切换网络无需单独的应用。"
       },
       "transfers": {
-        "title": "Send, receive, swap",
-        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+        "title": "发送、接收、兑换",
+        "desc": "转移代币、复制收款地址并兑换受支持的资产 — 在已接入服务商的情况下可购买。"
       },
       "access": {
-        "title": "Web and mobile",
-        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+        "title": "网页与移动端",
+        "desc": "在 lenixwallet.com 使用浏览器钱包，或下载应用 — 创建一次，用恢复短语在任一端导入。"
       }
     },
-    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "networks_line": "已在 Ethereum、BNB Chain 和 Polygon 上线。",
     "groups": {
       "wallet": {
-        "title": "In the wallet"
+        "title": "钱包内"
       },
       "platform": {
-        "title": "Through Lenix"
+        "title": "通过 Lenix"
       }
     }
   },
@@ -104,7 +104,7 @@
     "title": "下载 Lenix Wallet",
     "subtitle": "几分钟内创建或导入钱包。同一应用完成发送、接收、兑换与借贷 — 需要时可使用 Lenix 恢复服务。",
     "btn_download": "下载应用",
-    "btn_web": "Open web wallet"
+    "btn_web": "打开网页钱包"
   },
   "Networks": {
     "eyebrow": "Supported networks",
@@ -117,48 +117,48 @@
     }
   },
   "GettingStarted": {
-    "eyebrow": "Getting started",
-    "title": "Up and running in three steps",
-    "step_label": "Step {number}",
+    "eyebrow": "开始使用",
+    "title": "三步即可开始使用",
+    "step_label": "第 {number} 步",
     "steps": {
       "create": {
-        "title": "Create or import",
-        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+        "title": "创建或导入",
+        "desc": "生成新钱包，或用 12 或 24 个词的恢复短语恢复。"
       },
       "secure": {
-        "title": "Set password and backup",
-        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+        "title": "设置密码并备份",
+        "desc": "设置钱包密码，并离线保存恢复短语 — Lenix 无法为您重置。"
       },
       "use": {
-        "title": "Send, swap, or borrow",
-        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+        "title": "发送、兑换或借款",
+        "desc": "转移资产、按链查看记录，或从 Lenix 生态打开借贷与追回流程。"
       }
     }
   },
   "Ecosystem": {
-    "eyebrow": "Lenix ecosystem",
-    "title": "Wallet connects to the rest of the platform",
-    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "eyebrow": "Lenix 生态",
+    "title": "钱包连接到平台的其余部分",
+    "description": "在此持有资产。若需要的不只是转账，请按链接的流程操作。",
     "cards": {
       "wallet": {
-        "title": "Lenix Wallet",
-        "desc": "Create, unlock, send, and receive.",
-        "cta": "Open wallet"
+        "title": "Lenix 钱包",
+        "desc": "创建、解锁、发送和接收。",
+        "cta": "打开钱包"
       },
       "loan": {
-        "title": "Crypto loan",
-        "desc": "Borrow against vaulted collateral.",
-        "cta": "View lending"
+        "title": "加密借贷",
+        "desc": "以金库中的抵押品借款。",
+        "cta": "查看借贷"
       },
       "recovery": {
-        "title": "Asset recovery",
-        "desc": "Trace stolen or misdirected funds.",
-        "cta": "Start recovery"
+        "title": "资产追回",
+        "desc": "追踪被盗或误转的资金。",
+        "cta": "开始追回"
       },
       "security": {
-        "title": "Security",
-        "desc": "Audits and operational controls.",
-        "cta": "Read security"
+        "title": "安全",
+        "desc": "审计与运营控制。",
+        "cta": "阅读安全说明"
       }
     }
   },

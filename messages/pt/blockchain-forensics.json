@@ -1,90 +1,81 @@
 {
   "meta": {
-    "title": "Blockchain Forensics & On-Chain Investigation | Lenix Protocol",
-    "description": "Trace stolen and misdirected crypto, map wallet flows, and produce forensic reports for counsel, compliance teams, and law enforcement. Honest scope before engagement."
+    "title": "Forense blockchain e investigação on-chain | Lenix Protocol",
+    "description": "Rastreie cripto roubada ou mal encaminhada, mapeie fluxos de wallets e produza relatórios forenses para assessores, equipas de compliance e autoridades. Âmbito claro antes do compromisso."
   },
   "Hero": {
-    "badge": "Blockchain forensics",
-    "title1": "On-chain investigation ",
-    "title2": "with evidence you can use",
-    "subtitle": "Lenix maps transaction flows across chains and prepares documented findings for recovery decisions, legal review, and compliance — without promising outcomes the ledger cannot support.",
-    "btn_primary": "Start a case",
-    "btn_secondary": "How it works"
+    "badge": "Forense blockchain",
+    "title1": "Investigação on-chain ",
+    "title2": "com evidência que pode usar",
+    "subtitle": "A Lenix mapeia fluxos de transações entre cadeias e prepara conclusões documentadas para decisões de recuperação, revisão jurídica e conformidade — sem prometer resultados que o registo não consegue sustentar.",
+    "btn_primary": "Iniciar um caso",
+    "btn_secondary": "Como funciona"
   },
   "Capabilities": {
-    "title": "What forensic work covers",
-    "description": "Investigations combine on-chain analysis with matter context — not automated blockchain lookups alone.",
+    "title": "O que o trabalho forense cobre",
+    "description": "As investigações combinam análise on-chain com o contexto do assunto — não apenas consultas automáticas à blockchain.",
     "cards": {
       "tracing": {
-        "title": "Transaction tracing",
-        "desc": "Follow fund movement from known source wallets through bridges, mixers, and consolidation points to identify where value likely landed."
+        "title": "Rastreio de transações",
+        "desc": "Siga o movimento de fundos a partir de wallets de origem conhecidas, através de bridges, mixers e pontos de consolidação, para identificar onde o valor provavelmente chegou."
       },
       "reports": {
-        "title": "Reports and litigation support",
-        "desc": "Written analysis with timelines, methodology, and limitations — formatted for counsel, regulators, or exchange escalation when appropriate."
+        "title": "Relatórios e apoio em litígio",
+        "desc": "Análise escrita com cronologias, metodologia e limites — formatada para assessores, reguladores ou escalamento a uma exchange quando for adequado."
       },
       "compliance": {
-        "title": "Compliance and due diligence",
-        "desc": "Screen wallets and flows for AML risk, sanctions exposure, and counterparty diligence before treasury moves or settlement."
+        "title": "Conformidade e diligência",
+        "desc": "Rastreie wallets e fluxos quanto a risco AML, exposição a sanções e diligência de contraparte antes de movimentos de tesouraria ou liquidação."
       }
     }
   },
   "UseCases": {
-    "title": "When teams engage forensics",
-    "description": "Common matters where documented on-chain analysis helps decide next steps — recovery, legal process, or internal review.",
+    "title": "Quando as equipas recorrem à forense",
+    "description": "Assuntos habituais em que uma análise on-chain documentada ajuda a decidir o passo seguinte — recuperação, processo jurídico ou revisão interna.",
     "items": {
       "theft": {
-        "title": "Theft and unauthorized transfers",
-        "desc": "Wallet compromises, exchange account takeovers, or unauthorized outbound transfers where you need a trace before contacting platforms."
+        "title": "Roubo e transferências não autorizadas",
+        "desc": "Comprometimento de wallets, tomada de contas de exchange ou transferências de saída não autorizadas, quando precisa de um rastreio antes de contactar plataformas."
       },
       "scams": {
-        "title": "Scams and social engineering",
-        "desc": "Investment fraud, impersonation, and phishing cases where victims need to show fund paths to counsel or reporting channels."
+        "title": "Burlas e engenharia social",
+        "desc": "Fraude de investimento, usurpação e phishing, quando as vítimas precisam de mostrar o percurso dos fundos a um assessor ou a canais de denúncia."
       },
       "ransom": {
-        "title": "Extortion payments",
-        "desc": "Ransomware or blackmail payments where law enforcement or insurers require documented flow analysis from payment wallets."
+        "title": "Pagamentos de extorsão",
+        "desc": "Pagamentos de ransomware ou chantagem, quando as autoridades ou as seguradoras exigem análise documentada de fluxos a partir das wallets de pagamento."
       },
       "insolvency": {
-        "title": "Disputes and insolvency",
-        "desc": "Bankruptcy, creditor enforcement, or internal investigations where attachable crypto or treasury movements must be verified."
-      }
-    },
-    "panel": {
-      "title": "Confidential handling",
-      "description": "Case materials are shared only with parties authorized under the engagement — not used outside the defined scope.",
-      "items": {
-        "nda": "NDA available on request",
-        "encrypted": "Encrypted intake and file transfer",
-        "privacy": "Privacy-aligned data handling"
+        "title": "Litígios e insolvência",
+        "desc": "Falência, execução de credores ou investigações internas, quando cripto penhorável ou movimentos de tesouraria têm de ser verificados."
       }
     }
   },
   "Process": {
-    "title": "Investigation process",
+    "title": "Processo de investigação",
     "steps": {
       "intake": {
-        "title": "Intake and scoping",
-        "desc": "Known addresses, transaction hashes, timelines, and what questions the matter needs answered — before analysis hours are committed."
+        "title": "Intake e enquadramento",
+        "desc": "Endereços conhecidos, hashes de transação, cronologias e as perguntas a que o assunto tem de responder — antes de comprometer horas de análise."
       },
       "extract": {
-        "title": "Data extraction",
-        "desc": "Pull relevant on-chain data across supported networks, including internal transfers, contract interactions, and exchange touchpoints where visible."
+        "title": "Extração de dados",
+        "desc": "Recolha dados on-chain relevantes nas redes suportadas, incluindo transferências internas, interações com contratos e pontos de contacto com exchanges quando visíveis."
       },
       "analyze": {
-        "title": "Analysis and clustering",
-        "desc": "Map flows, cluster related addresses, and separate verified movements from inference — with limits stated explicitly."
+        "title": "Análise e clustering",
+        "desc": "Mapeie fluxos, agrupe endereços relacionados e separe movimentos verificados da inferência — com os limites declarados de forma explícita."
       },
       "deliver": {
-        "title": "Report and next steps",
-        "desc": "Deliver findings with recommended paths: exchange escalation, legal process, recovery coordination, or closure when trails are exhausted."
+        "title": "Relatório e passos seguintes",
+        "desc": "Entregue conclusões com vias recomendadas: escalamento a exchange, processo jurídico, coordenação de recuperação ou encerramento quando as pistas se esgotam."
       }
     }
   },
   "Cta": {
-    "title": "Need a forensic read on a case?",
-    "description": "Share what happened and the on-chain details you already have. We respond with an honest assessment of what tracing can show before scoped engagement.",
-    "btn_primary": "Contact forensics team",
-    "btn_secondary": "Crypto recovery"
+    "title": "Precisa de uma leitura forense de um caso?",
+    "description": "Partilhe o que aconteceu e os detalhes on-chain que já tem. Respondemos com uma avaliação honesta do que o rastreio pode mostrar, antes de um compromisso delimitado.",
+    "btn_primary": "Contactar a equipa de forense",
+    "btn_secondary": "Recuperação de cripto"
   }
 }

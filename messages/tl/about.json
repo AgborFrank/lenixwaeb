@@ -1,14 +1,14 @@
 {
   "Hero": {
     "title": "Nangunguna sa",
-    "span1": "Blockchain Forensics",
+    "span1": "Forensics ng blockchain",
     "span2": "& Crypto Lending",
     "description": "Nagbibigay kami ng institutional-grade na pagsubaybay para sa mga ninakaw na digital asset, matibay na pagsunod sa AML, at nag-uunlock ng agarang liquidity sa pamamagitan ng ligtas, over-collateralized na crypto loans nang walang credit check.",
     "sub_description": "Sinisiguro ang digital na kinabukasan. Pinapalakas ang pandaigdigang liquidity.",
     "stats": {
       "assets_traced": "Nasubaybayang Asset",
       "assets_count": "$850M+",
-      "credit_checks": "Credit Checks",
+      "credit_checks": "Mga credit check",
       "credit_count": "0",
       "jurisdictions": "Ahensya",
       "jurisdictions_count": "200+"
@@ -23,7 +23,7 @@
       "description": "Nangunguna ang aming proprietary blockchain forensic algorithms sa industriya sa pagtukoy at pagsubaybay sa mga ilegal na paggalaw ng crypto. Nakikipagtulungan kami sa mga pandaigdigang ahensya upang subaybayan ang mga ninakaw na asset at tiyakin ang mahigpit na pagsunod sa AML.",
       "points": {
         "recovery": "Pagbawi sa mga Ninakaw na Crypto",
-        "threat": "Proactive Threat Intelligence",
+        "threat": "Proaktibong threat intelligence",
         "audits": "Tinatanngap ng Korte na Blockchain Audits"
       }
     },
@@ -65,7 +65,7 @@
         "desc": "Mga over-collateralized loans"
       },
       "uptime": {
-        "title": "Platform Uptime",
+        "title": "Uptime ng platform",
         "subtitle": "Garantiyang Reliability",
         "desc": "100% availabilty"
       },
@@ -105,35 +105,35 @@
       "desc": "Pinapalawak ang aming mga serbisyong forensics s pamamagitan ng pakikipagtulungan sa mga kapulisan upang mabawi nang mahigit $150M. ",
       "tag1": "Partnership sa Interpol",
       "tag2": "$150M+ Narekober",
-      "photo": "Global Expansion"
+      "photo": "Pandaigdigang paglawak"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - Mga upgrade ng protocol",
+      "desc": "Malalaking upgrade sa aming smart contract at imprastraktura ng pagpapahiram, may bagong opsyon sa kolateral at mas mahigpit na protocol ng seguridad.",
+      "tag1": "Inilunsad ang V2",
+      "tag2": "Pinahusay na seguridad",
+      "photo": "Protokol V2"
     },
     "step7": {
-      "title": "2027 - Industry Leader",
+      "title": "2027 - Pinuno ng industriya",
       "desc": "Ngayon, kami na ang kinikilang pangkalahatang awtoridad para sa blockchain forensics at isang platform nang lider upang mapadali agpaghiram.",
       "tag1": "$850M+ Natracked",
       "tag2": "Nangungunang Lender",
       "photo": "Pamununo sa Industriya"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - Pag-adopt ng institusyon",
+      "desc": "Nakipagtulungan sa malalaking institusyong pinansyal para sa secure na on-ramp at off-ramp ng kapital ng institusyon.",
+      "tag1": "Mga institusyong naka-onboard",
+      "tag2": "Mga partnership sa TradFi",
+      "photo": "Integrasyon sa Wall Street"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - Engine na forensiko ng AI",
+      "desc": "Inilunsad ang susunod na henerasyon ng engine na forensiko na pinapagana ng AI, kayang humula sa ilegal na aktibidad sa blockchain.",
+      "tag1": "Integrasyon ng AI",
+      "tag2": "Forensikong prediktibo",
+      "photo": "Paglunsad ng engine ng AI"
     }
   },
   "Leadership": {
@@ -186,7 +186,7 @@
       "title": "Magpadala ng Mensahe",
       "subtitle": "Sasagutin namin kayo sa loob ng 24 oras.",
       "first_name": "Pangalan *",
-      "email": "Email Address *",
+      "email": "Address ng email *",
       "subject": "Paksa *",
       "message": "Mensahe *",
       "placeholder_name": "Ilagay ang pangalan",
@@ -198,8 +198,8 @@
     },
     "footer": {
       "support": "Available na Suporta",
-      "response": "Average Response Time",
-      "confidential": "Confidential"
+      "response": "Karaniwang oras ng tugon",
+      "confidential": "Kumpidensyal"
     }
   }
 }

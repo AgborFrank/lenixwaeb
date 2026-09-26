@@ -88,7 +88,10 @@
     },
     "banking": {
       "title": "Próximos passos",
-      "body": "Analisaremos seu pedido e retornaremos em até 24 horas com valores e orientações."
+      "body": "Analisaremos seu pedido e retornaremos em até 24 horas com valores e orientações.",
+      "bullet1": "Receba uma cotação com taxas transparentes",
+      "bullet2": "Conclua a verificação, se necessário",
+      "bullet3": "Acompanhe tudo no seu painel"
     },
     "encryption": "Suas informações são criptografadas e seguras. Nunca compartilhamos sem autorização.",
     "support": "Dúvidas? Fale conosco no Telegram após enviar."

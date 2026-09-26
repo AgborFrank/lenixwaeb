@@ -9,9 +9,9 @@
     "eyebrow_highlight": "multi-chain",
     "eyebrow_suffix": " di Lenix",
     "title_prefix": "Kirim, simpan, dan pinjam — dengan ",
-    "title_highlight1": "recovery",
+    "title_highlight1": "pemulihan",
     "title_mid": " saat Anda butuh, dari satu ",
-    "title_highlight2": "app",
+    "title_highlight2": "aplikasi",
     "subtitle": "Dompet non-custodial untuk kripto sehari-hari — terenkripsi di perangkat Anda, multi-chain secara default, dan terhubung ke lending serta recovery Lenix saat lebih dari sekadar kirim standar diperlukan.",
     "btn_download": "Unduh app",
     "btn_learn": "Lihat fitur",
@@ -21,7 +21,7 @@
       "change_24h": "+2,4% (24j)",
       "send": "Kirim",
       "receive": "Terima",
-      "swap": "Swap",
+      "swap": "Tukar",
       "loan": "Pinjaman",
       "tab_assets": "Aset",
       "tab_history": "Riwayat"
@@ -38,33 +38,33 @@
       "loans": {
         "title": "Pinjaman jaminan",
         "desc": "Pinjam stablecoin dengan aset yang didukung tanpa menjual posisi — syarat dan rasio jaminan ditampilkan sebelum Anda konfirmasi.",
-        "link": "View lending"
+        "link": "Lihat pinjaman"
       },
       "recovery": {
         "title": "Jalur recovery",
         "desc": "Jika aset hilang atau dicuri, buka kasus recovery dari ekosistem Lenix — pelacakan dan koordinasi exchange saat alur wallet standar tidak cukup.",
-        "link": "Start recovery"
+        "link": "Mulai pemulihan"
       },
       "multichain": {
-        "title": "Multi-chain balances",
-        "desc": "View assets and history across Ethereum, BNB Chain, and Polygon from one wallet — switch networks without separate apps."
+        "title": "Saldo multi-chain",
+        "desc": "Lihat aset dan riwayat di Ethereum, BNB Chain, dan Polygon dari satu dompet — ganti jaringan tanpa aplikasi terpisah."
       },
       "transfers": {
-        "title": "Send, receive, swap",
-        "desc": "Move tokens, copy your receive address, and swap supported assets — with buy options where integrated providers are available."
+        "title": "Kirim, terima, tukar",
+        "desc": "Pindahkan token, salin alamat penerimaan, dan tukar aset yang didukung — dengan opsi beli jika penyedia terintegrasi tersedia."
       },
       "access": {
-        "title": "Web and mobile",
-        "desc": "Use the browser wallet at lenixwallet.com or download the app — create once, import with your recovery phrase on either."
+        "title": "Web dan seluler",
+        "desc": "Gunakan dompet peramban di lenixwallet.com atau unduh aplikasinya — buat sekali, impor dengan frasa pemulihan di keduanya."
       }
     },
-    "networks_line": "Live on Ethereum, BNB Chain, and Polygon.",
+    "networks_line": "Aktif di Ethereum, BNB Chain, dan Polygon.",
     "groups": {
       "wallet": {
-        "title": "In the wallet"
+        "title": "Di dompet"
       },
       "platform": {
-        "title": "Through Lenix"
+        "title": "Melalui Lenix"
       }
     }
   },
@@ -88,7 +88,7 @@
       "title": "SISTEM AMAN",
       "network_label": "Jaringan",
       "network_status": "Terhubung",
-      "firewall_label": "Firewall",
+      "firewall_label": "Tembok api",
       "firewall_status": "Aktif"
     },
     "mock_front": {
@@ -104,7 +104,7 @@
     "title": "Unduh Lenix Wallet",
     "subtitle": "Buat atau impor wallet dalam hitungan menit. App yang sama untuk kirim, terima, swap, dan pinjam — dengan recovery Lenix tersedia saat Anda butuh.",
     "btn_download": "Unduh app",
-    "btn_web": "Open web wallet"
+    "btn_web": "Buka dompet web"
   },
   "Networks": {
     "eyebrow": "Supported networks",
@@ -117,48 +117,48 @@
     }
   },
   "GettingStarted": {
-    "eyebrow": "Getting started",
-    "title": "Up and running in three steps",
-    "step_label": "Step {number}",
+    "eyebrow": "Memulai",
+    "title": "Siap dalam tiga langkah",
+    "step_label": "Langkah {number}",
     "steps": {
       "create": {
-        "title": "Create or import",
-        "desc": "Generate a new wallet or restore with your 12- or 24-word recovery phrase."
+        "title": "Buat atau impor",
+        "desc": "Buat dompet baru atau pulihkan dengan frasa pemulihan 12 atau 24 kata."
       },
       "secure": {
-        "title": "Set password and backup",
-        "desc": "Choose a wallet password and store your recovery phrase offline — Lenix cannot reset it for you."
+        "title": "Atur kata sandi dan cadangan",
+        "desc": "Pilih kata sandi dompet dan simpan frasa pemulihan secara offline — Lenix tidak dapat mengaturnya ulang untuk Anda."
       },
       "use": {
-        "title": "Send, swap, or borrow",
-        "desc": "Move assets, review history by chain, or open lending and recovery flows from the Lenix ecosystem."
+        "title": "Kirim, tukar, atau pinjam",
+        "desc": "Pindahkan aset, tinjau riwayat per chain, atau buka alur pinjaman dan pemulihan dari ekosistem Lenix."
       }
     }
   },
   "Ecosystem": {
-    "eyebrow": "Lenix ecosystem",
-    "title": "Wallet connects to the rest of the platform",
-    "description": "Hold assets here. When you need more than a transfer, follow the linked workflow.",
+    "eyebrow": "Ekosistem Lenix",
+    "title": "Dompet terhubung ke bagian lain platform",
+    "description": "Simpan aset di sini. Jika Anda butuh lebih dari transfer, ikuti alur yang tertaut.",
     "cards": {
       "wallet": {
-        "title": "Lenix Wallet",
-        "desc": "Create, unlock, send, and receive.",
-        "cta": "Open wallet"
+        "title": "Dompet Lenix",
+        "desc": "Buat, buka kunci, kirim, dan terima.",
+        "cta": "Buka dompet"
       },
       "loan": {
-        "title": "Crypto loan",
-        "desc": "Borrow against vaulted collateral.",
-        "cta": "View lending"
+        "title": "Pinjaman kripto",
+        "desc": "Pinjam dengan jaminan yang disimpan di brankas.",
+        "cta": "Lihat pinjaman"
       },
       "recovery": {
-        "title": "Asset recovery",
-        "desc": "Trace stolen or misdirected funds.",
-        "cta": "Start recovery"
+        "title": "Pemulihan aset",
+        "desc": "Lacak dana yang dicuri atau salah kirim.",
+        "cta": "Mulai pemulihan"
       },
       "security": {
-        "title": "Security",
-        "desc": "Audits and operational controls.",
-        "cta": "Read security"
+        "title": "Keamanan",
+        "desc": "Audit dan kontrol operasional.",
+        "cta": "Baca keamanan"
       }
     }
   },

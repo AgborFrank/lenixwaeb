@@ -67,9 +67,9 @@
     "links": {
       "about_us": "Hakkımızda",
       "ecosystem": "Ekosistem",
-      "tokenomics": "Tokenomics",
-      "whitepaper": "Whitepaper",
-      "litepaper": "Litepaper",
+      "tokenomics": "Tokenomi",
+      "whitepaper": "Tanıtım belgesi",
+      "litepaper": "Kısa belge",
       "roadmap": "Yol Haritası",
       "threat_intelligence": "Tehdit İstihbaratı",
       "defi_compliance": "DeFi Uyumluluğu",
@@ -125,7 +125,7 @@
         },
         "forensics": {
           "title1": "Araştırma düzeyinde ",
-          "title2": "blockchain forensics",
+          "title2": "blokzinciri adli analizi",
           "title3": ".",
           "subtitle1": "Cüzdan akışlarını haritalayın, maruziyeti tarayın ve uyum ekipleri ile hukuki inceleme için belgelenmiş bulgular üretin.",
           "subtitle2": "Vaka çalışması için geliştirildi — abartılı atıf iddiaları olan genel paneller değil.",
@@ -213,40 +213,40 @@
       "image_alt": "Lenix satıcı ve uyum operasyonları paneli"
     },
     "Payment": {
-      "badge": "Protocol stack",
-      "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "badge": "Protokol yığını",
+      "title": "Değeri tek katmanda taşıyın, tutun ve kurtarın",
+      "subtitle": "Ödemeler, saklama, kurtarma ve borç verme aynı denetlenmiş altyapıyı paylaşır — dört kopuk ürün değil.",
       "cards": {
         "fiat": {
-          "title": "Crypto-to-fiat",
-          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
+          "title": "Kriptodan itibari paraya",
+          "desc": "Kriptoyu yerel ödeme hatları üzerinden itibari paraya çevirin — sınır ötesi ve günlük kullanım için."
         },
         "vault": {
-          "title": "Vault and custody",
-          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
+          "title": "Kasa ve saklama",
+          "desc": "Kontrollü varlık saklaması gereken ekipler için çoklu imzalı kasalar ve güvenli saklama."
         },
         "recovery": {
-          "title": "Recovery and forensics",
-          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
+          "title": "Kurtarma ve adli analiz",
+          "desc": "Varlıklar kaybolduğunda veya tartışmalı olduğunda iz sürme ve kanıt akışları aynı yığında çalışır."
         },
         "lending": {
-          "title": "Lending",
-          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
+          "title": "Borç verme",
+          "desc": "Zincir üstü kontroller ve net mutabakat yollarıyla teminat karşılığı borç alın."
         }
       },
       "cta": "Çözümler"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " Token Details",
-      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "title2": " Token ayrıntıları",
+      "subtitle": "Lenix Protocol tokenini cüzdanınıza eklemek için aşağıdaki sözleşme bilgilerini kullanın.",
       "headers": {
-        "contract": "Contract Address",
-        "name": "Token Name",
-        "symbol": "Token Symbol",
-        "supply": "Token Supply",
-        "network": "Network",
-        "decimals": "Decimals"
+        "contract": "Sözleşme adresi",
+        "name": "Token adı",
+        "symbol": "Token sembolü",
+        "supply": "Token arzı",
+        "network": "Ağ",
+        "decimals": "Ondalıklar"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -259,7 +259,7 @@
       "title2": "Belgelendirilmiş kontroller.",
       "subtitle1": "CertiK tarafından incelenen akıllı sözleşmeler ve ISO 27001 uyumlu operasyonlar—pazarlama iddialarından fazlasını isteyen ekipler için.",
       "subtitle2_1": "Okuyun: ",
-      "subtitle2_2": "whitepaper",
+      "subtitle2_2": "tanıtım belgesi",
       "subtitle2_3": " ve mimari, token faydası ve güvenlik kontrolleri için denetim belgeleri.",
       "col1_text": "Lenix Protocol akıllı sözleşmeleri CertiK tarafından incelendi. Denetim, üretim akışlarında kullanılan temel protokol bileşenlerini kapsar.",
       "col1_btn": "Güvenlik docs",
@@ -267,9 +267,9 @@
       "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Community ",
-      "title2": "giveaway",
-      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "title1": "Topluluk ",
+      "title2": "çekiliş",
+      "subtitle": "On kazanan, LNX cinsinden 25.000 $ alır. Topluluk sayfasındaki katılım adımlarını tamamlayın. Koşullar geçerlidir.",
       "btn": "Topluluk"
     },
     "Features": {
@@ -283,32 +283,32 @@
       "title_big": "Kriptoyu dünya genelinde yerel ödeme ağlarıyla buluşturuyoruz.",
       "desc1": "Lenix ProtocolPay, kripto sahiplerine ve işletmelere, yerel ödeme ağlarını ve blok zinciri teknolojisini kullanarak dünya çapında kriptodan fiyata işlemleri kolaylaştırma imkanı sunar.",
       "desc2": "Sonunda, kripto hızıyla fiat ödemelerin günlük rahatlığının tadını çıkarın.",
-      "btn_whitepaper": "Whitepaper"
+      "btn_whitepaper": "Tanıtım belgesi"
     },
     "LnxPurchaseWidget": {
-      "widget_title": "Buy LNX",
-      "widget_subtitle": "Protocol token sale",
-      "usd_raised": "USD raised so far:",
-      "tokens_sold": "Tokens sold:",
-      "price_usd": "USD price: ${price}",
-      "price_eth": "ETH price: {price} ETH",
-      "pay_eth": "ETH you pay",
-      "pay_usdt": "USDT you pay",
-      "pay_usd": "USD you pay",
-      "receive_lnx": "$LNX you receive",
-      "btn_processing": "Processing...",
-      "btn_pay_eth": "Pay with ETH",
-      "btn_pay_usdt": "Pay with USDT",
+      "widget_title": "LNX satın al",
+      "widget_subtitle": "Protokol token satışı",
+      "usd_raised": "Şu ana kadar toplanan USD:",
+      "tokens_sold": "Satılan token:",
+      "price_usd": "USD fiyatı: ${price}",
+      "price_eth": "ETH fiyatı: {price} ETH",
+      "pay_eth": "Ödeyeceğiniz ETH",
+      "pay_usdt": "Ödeyeceğiniz USDT",
+      "pay_usd": "Ödeyeceğiniz USD",
+      "receive_lnx": "Alacağınız $LNX",
+      "btn_processing": "İşleniyor...",
+      "btn_pay_eth": "ETH ile öde",
+      "btn_pay_usdt": "USDT ile öde",
       "btn_pay_card": "Kartla öde",
-      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "card_info": "Stripe altyapısı. Tutar USD olarak çekilir.",
       "btn_connect": "Bağlan",
       "btn_giveaway": "LNX bonus",
-      "giveaway_info": "Connect your wallet to check eligibility."
+      "giveaway_info": "Uygunluğu kontrol etmek için cüzdanınızı bağlayın."
     },
     "TokenSale": {
       "title1": "LNX ",
-      "title2": "token sale",
-      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+      "title2": "token satışı",
+      "subtitle": "Protokole katılmak için LNX satın alın. Sözleşme ayrıntıları aşağıdadır."
     },
     "Partners": {
       "eyebrow": "Ekosistem",
@@ -531,7 +531,7 @@
       "name": "Ad",
       "transaction_hash": "İşlem hash'i",
       "amount_stolen": "Çalınan tutar",
-      "blockchain": "Blockchain",
+      "blockchain": "Blokzinciri",
       "currency": "Para birimi",
       "country_phone_code": "Ülke telefon kodu",
       "incident_summary": "Olay özeti",
@@ -730,7 +730,7 @@
       "frozen": "Donduruldu",
       "deposit_to_unfreeze": "Çözmek için {amount} BTC yatırın",
       "frozen_by_admin": "Yönetici tarafından donduruldu",
-      "token_fallback": "Token"
+      "token_fallback": "Jeton"
     },
     "activity": {
       "title": "Aktivite",
@@ -963,7 +963,7 @@
       "verified": "Doğrulandı",
       "verification_pending": "Doğrulama bekleniyor",
       "subtitle": "Hazine cüzdanları ile doğrulanmış banka hesapları arasında dijital varlık taşıyın.",
-      "transfer": "Transfer",
+      "transfer": "Aktarım",
       "withdraw_to_bank": "Bankaya çek",
       "total_treasury": "Toplam hazine değeri",
       "hide_balances": "Bakiyeleri gizle",
@@ -990,8 +990,8 @@
         "change_24h": "24 sa"
       },
       "location": {
-        "spot": "Spot",
-        "funding": "Funding"
+        "spot": "Peşin",
+        "funding": "Fonlama"
       }
     },
     "accounts": {
@@ -1087,11 +1087,11 @@
       "type_legend": "Transfer türü",
       "types": {
         "spot_to_funding": {
-          "label": "Spot → Funding",
+          "label": "Peşin → Fonlama",
           "description": "Varlıkları ödemeler için hazırla"
         },
         "funding_to_spot": {
-          "label": "Funding → Spot",
+          "label": "Fonlama → Peşin",
           "description": "Varlıkları işlem için geri al"
         },
         "funding_to_bank": {
@@ -1115,7 +1115,7 @@
       "payout_currency": "Ödeme para birimi",
       "currencies": {
         "USD": "USD · ABD Doları",
-        "EUR": "EUR · Euro",
+        "EUR": "EUR · Avro",
         "GBP": "GBP · İngiliz Sterlini"
       },
       "select_account": "Hesap seç",
@@ -1323,6 +1323,7 @@
       "payout_bank_sub": "ACH / SEPA",
       "wallet_address": "Cüzdan adresi",
       "wallet_placeholder": "0x...",
+      "network": "Ağ",
       "select_network": "Ağ seçin",
       "network_erc20": "Ethereum (ERC20)",
       "network_trc20": "Tron (TRC20)",

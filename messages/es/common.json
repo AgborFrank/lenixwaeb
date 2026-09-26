@@ -67,9 +67,9 @@
     "links": {
       "about_us": "Acerca de",
       "ecosystem": "Ecosistema",
-      "tokenomics": "Tokenomics",
-      "whitepaper": "Whitepaper",
-      "litepaper": "Litepaper",
+      "tokenomics": "Economía del token",
+      "whitepaper": "Libro blanco",
+      "litepaper": "Documento breve",
       "roadmap": "Hoja de ruta",
       "threat_intelligence": "Inteligencia de Amenazas",
       "defi_compliance": "Cumplimiento DeFi",
@@ -213,40 +213,40 @@
       "image_alt": "Panel de operaciones de comerciante y compliance de Lenix"
     },
     "Payment": {
-      "badge": "Protocol stack",
-      "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "badge": "Capa del protocolo",
+      "title": "Mueve, conserva y recupera valor en una sola capa",
+      "subtitle": "Pagos, custodia, recuperación y préstamos comparten la misma infraestructura auditada, no cuatro productos desconectados.",
       "cards": {
         "fiat": {
-          "title": "Crypto-to-fiat",
-          "desc": "Settle crypto into fiat through local payment rails for cross-border and everyday use."
+          "title": "Cripto a fiat",
+          "desc": "Liquida cripto en fiat mediante redes de pago locales, para uso transfronterizo y cotidiano."
         },
         "vault": {
-          "title": "Vault and custody",
-          "desc": "Multi-sig vaults and secure custody for teams that need controlled asset storage."
+          "title": "Bóveda y custodia",
+          "desc": "Bóvedas multifirma y custodia segura para equipos que necesitan un almacenamiento controlado de activos."
         },
         "recovery": {
-          "title": "Recovery and forensics",
-          "desc": "When assets are lost or disputed, tracing and evidence workflows sit on the same stack."
+          "title": "Recuperación y análisis forense",
+          "desc": "Cuando los activos se pierden o se disputan, el rastreo y las pruebas usan la misma capa."
         },
         "lending": {
-          "title": "Lending",
-          "desc": "Borrow against collateral with on-chain controls and clear settlement paths."
+          "title": "Préstamos",
+          "desc": "Pide prestado contra garantía, con controles on-chain y vías de liquidación claras."
         }
       },
       "cta": "Ver soluciones"
     },
     "TokenDetails": {
       "title1": "Lenix Protocol",
-      "title2": " Token Details",
-      "subtitle": "Use the contract information below to add the Lenix Protocol token to your wallet.",
+      "title2": " Detalles del token",
+      "subtitle": "Usa la información del contrato de abajo para añadir el token de Lenix Protocol a tu cartera.",
       "headers": {
-        "contract": "Contract Address",
-        "name": "Token Name",
-        "symbol": "Token Symbol",
-        "supply": "Token Supply",
-        "network": "Network",
-        "decimals": "Decimals"
+        "contract": "Dirección del contrato",
+        "name": "Nombre del token",
+        "symbol": "Símbolo del token",
+        "supply": "Suministro del token",
+        "network": "Red",
+        "decimals": "Decimales"
       },
       "values": {
         "name": "Lenix Protocol",
@@ -259,7 +259,7 @@
       "title2": "Controles documentados.",
       "subtitle1": "Smart contracts revisados por CertiK y operaciones alineadas con ISO 27001 para equipos que necesitan más que marketing.",
       "subtitle2_1": "Lea el ",
-      "subtitle2_2": "whitepaper",
+      "subtitle2_2": "libro blanco",
       "subtitle2_3": " y la documentación de auditoría sobre arquitectura, utilidad del token y controles de seguridad.",
       "col1_text": "Los smart contracts de Lenix Protocol fueron revisados por CertiK. La auditoría cubre componentes core usados en flujos de producción.",
       "col1_btn": "Docs seguridad",
@@ -267,9 +267,9 @@
       "col2_btn": "Whitepaper"
     },
     "Competition": {
-      "title1": "Community ",
-      "title2": "giveaway",
-      "subtitle": "Ten winners receive $25,000 in LNX. Complete the entry steps on the community page. Terms apply.",
+      "title1": "Comunidad ",
+      "title2": "sorteo",
+      "subtitle": "Diez ganadores reciben 25.000 $ en LNX. Completa los pasos de inscripción en la página de la comunidad. Se aplican condiciones.",
       "btn": "Ver comunidad"
     },
     "Features": {
@@ -283,32 +283,32 @@
       "title_big": "Conectando las criptomonedas con las redes de pago locales a nivel mundial.",
       "desc1": "Lenix ProtocolPay permite a los poseedores de criptomonedas y a las empresas facilitar transacciones de cripto a fiat en todo el mundo, aprovechando las redes de pago locales y la tecnología blockchain.",
       "desc2": "Por fin, disfruta de la velocidad de las criptomonedas con la comodidad diaria de los pagos en moneda fiduciaria.",
-      "btn_whitepaper": "Whitepaper"
+      "btn_whitepaper": "Libro blanco"
     },
     "LnxPurchaseWidget": {
-      "widget_title": "Buy LNX",
-      "widget_subtitle": "Protocol token sale",
-      "usd_raised": "USD raised so far:",
-      "tokens_sold": "Tokens sold:",
-      "price_usd": "USD price: ${price}",
-      "price_eth": "ETH price: {price} ETH",
-      "pay_eth": "ETH you pay",
-      "pay_usdt": "USDT you pay",
-      "pay_usd": "USD you pay",
-      "receive_lnx": "$LNX you receive",
-      "btn_processing": "Processing...",
-      "btn_pay_eth": "Pay with ETH",
-      "btn_pay_usdt": "Pay with USDT",
+      "widget_title": "Comprar LNX",
+      "widget_subtitle": "Venta del token del protocolo",
+      "usd_raised": "USD recaudados hasta ahora:",
+      "tokens_sold": "Tokens vendidos:",
+      "price_usd": "Precio en USD: ${price}",
+      "price_eth": "Precio en ETH: {price} ETH",
+      "pay_eth": "ETH que pagas",
+      "pay_usdt": "USDT que pagas",
+      "pay_usd": "USD que pagas",
+      "receive_lnx": "$LNX que recibes",
+      "btn_processing": "Procesando...",
+      "btn_pay_eth": "Pagar con ETH",
+      "btn_pay_usdt": "Pagar con USDT",
       "btn_pay_card": "Pagar con tarjeta",
-      "card_info": "Powered by Stripe. Amount charged in USD.",
+      "card_info": "Con tecnología de Stripe. Importe cobrado en USD.",
       "btn_connect": "Conectar",
       "btn_giveaway": "Bonus LNX",
-      "giveaway_info": "Connect your wallet to check eligibility."
+      "giveaway_info": "Conecta tu cartera para comprobar la elegibilidad."
     },
     "TokenSale": {
       "title1": "LNX ",
-      "title2": "token sale",
-      "subtitle": "Purchase LNX to participate in the protocol. Contract details are listed below."
+      "title2": "venta de tokens",
+      "subtitle": "Compra LNX para participar en el protocolo. Los datos del contrato aparecen abajo."
     },
     "Partners": {
       "eyebrow": "Ecosistema",
@@ -435,7 +435,7 @@
           "desc": "Los despliegues en producción se monitorean por interacciones anómalas y alertas operativas."
         }
       },
-      "eyebrow": "Smart contracts"
+      "eyebrow": "Contratos inteligentes"
     },
     "iso": {
       "title": "Operaciones alineadas con ISO 27001",
@@ -531,7 +531,7 @@
       "name": "Nombre",
       "transaction_hash": "Hash de transacción",
       "amount_stolen": "Monto robado",
-      "blockchain": "Blockchain",
+      "blockchain": "Cadena de bloques",
       "currency": "Moneda",
       "country_phone_code": "Código telefónico del país",
       "incident_summary": "Resumen del incidente",
@@ -725,7 +725,7 @@
     "token_list": {
       "assets": "Activos",
       "market": "Mercado",
-      "tokens_count": "{count} tokens",
+      "tokens_count": "{count} tókenes",
       "no_assets": "Aún no hay activos",
       "frozen": "Congelado",
       "deposit_to_unfreeze": "Deposita {amount} BTC para descongelar",
@@ -990,8 +990,8 @@
         "change_24h": "24 h"
       },
       "location": {
-        "spot": "Spot",
-        "funding": "Funding"
+        "spot": "Contado",
+        "funding": "Financiación"
       }
     },
     "accounts": {
@@ -1087,11 +1087,11 @@
       "type_legend": "Tipo de transferencia",
       "types": {
         "spot_to_funding": {
-          "label": "Spot → Funding",
+          "label": "Contado → Financiación",
           "description": "Preparar activos para pagos"
         },
         "funding_to_spot": {
-          "label": "Funding → Spot",
+          "label": "Financiación → Contado",
           "description": "Devolver activos para trading"
         },
         "funding_to_bank": {
@@ -1323,6 +1323,7 @@
       "payout_bank_sub": "ACH / SEPA",
       "wallet_address": "Dirección de cartera",
       "wallet_placeholder": "0x...",
+      "network": "Red",
       "select_network": "Seleccionar red",
       "network_erc20": "Ethereum (ERC20)",
       "network_trc20": "Tron (TRC20)",

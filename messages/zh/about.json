@@ -108,11 +108,11 @@
       "photo": "全球扩展"
     },
     "step4": {
-      "title": "2024 - Protocol Upgrades",
-      "desc": "Major upgrades to our smart contracts and lending infrastructure, introducing new collateral options and enhanced security protocols.",
-      "tag1": "V2 Launched",
-      "tag2": "Enhanced Security",
-      "photo": "Protocol V2"
+      "title": "2024 - 协议升级",
+      "desc": "对智能合约和借贷基础设施进行重大升级，新增抵押选项并加强安全协议。",
+      "tag1": "V2 已上线",
+      "tag2": "安全加强",
+      "photo": "协议 V2"
     },
     "step7": {
       "title": "2027 - 行业领导者",
@@ -122,18 +122,18 @@
       "photo": "荣获行业认可"
     },
     "step5": {
-      "title": "2025 - Institutional Adoption",
-      "desc": "Partnered with major traditional financial institutions to provide secure on-ramps and off-ramps for institutional capital.",
-      "tag1": "Institutions Onboarded",
-      "tag2": "TradFi Partnerships",
-      "photo": "Wall Street Integration"
+      "title": "2025 - 机构采用",
+      "desc": "与大型传统金融机构合作，为机构资金提供安全的入金与出金通道。",
+      "tag1": "机构已接入",
+      "tag2": "TradFi 合作",
+      "photo": "华尔街对接"
     },
     "step6": {
-      "title": "2026 - AI Forensic Engine",
-      "desc": "Launched our next-generation AI-powered forensic engine, capable of predictive analysis of illicit blockchain activities.",
-      "tag1": "AI Integration",
-      "tag2": "Predictive Forensics",
-      "photo": "AI Engine Launch"
+      "title": "2026 - AI 取证引擎",
+      "desc": "推出下一代 AI 取证引擎，可对链上非法活动做预测分析。",
+      "tag1": "AI 集成",
+      "tag2": "预测性取证",
+      "photo": "AI 引擎发布"
     }
   },
   "Leadership": {

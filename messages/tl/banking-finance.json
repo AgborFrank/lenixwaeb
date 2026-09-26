@@ -1,169 +1,141 @@
 {
   "meta": {
-    "title": "Banking & Finance Services | Lenix Protocol",
-    "description": "Lenix runs money transfer, voluntary crypto liquidation, collateral lending, and custody for customers — with KYC, corridor limits, and quoted rates before you commit."
+    "title": "Mga serbisyong pagbabangko at pananalapi | Lenix Protocol",
+    "description": "Pinapatakbo ng Lenix ang padala ng pera, boluntaryong liquidation ng crypto, pagpapautang na may kolateral, at kustodiya para sa mga customer — may KYC, hangganan ng koridor, at naka-quote na rate bago ka tumuloy."
   },
   "Hero": {
-    "badge": "Banking & finance",
-    "title1": "Cross-Border Financial Services, ",
-    "title2": "Payment and Remittance",
-    "subtitle": "Send Funds across borders, cash out crypto to fiat, borrow against vaulted collateral, and hold assets in Lenix custody — not white-label infrastructure for other banks.",
-    "btn_primary": "Open an account",
-    "btn_secondary": "View services"
+    "badge": "Pagbabangko at pananalapi",
+    "title1": "Mga serbisyong pinansyal sa ibang bansa, ",
+    "title2": "bayad at padala",
+    "subtitle": "Magpadala ng pondo sa ibang bansa, i-convert ang crypto sa fiat, mangutang laban sa kolateral na nasa vault, at itago ang mga asset sa kustodiya ng Lenix — hindi white-label na imprastruktura para sa ibang bangko."
   },
   "Actions": {
-    "register": "Create account",
-    "download": "Download app",
-    "login": "Log in",
-    "contact": "Contact team",
-    "google_play": "Get it on Google Play",
-    "app_store": "Download on the App Store"
+    "register": "Gumawa ng account",
+    "download": "I-download ang app"
   },
   "Overview": {
-    "title": "Lenix operates the full workflow",
-    "description": "You work with Lenix directly: verify identity, fund your account, request a transfer or liquidation, or post collateral for a loan. Rates, fees, and delivery status are visible before you confirm — finance and ops are not guessing what happens next."
+    "title": "Pinapatakbo ng Lenix ang buong daloy",
+    "description": "Direktang nakikipagtrabaho ka sa Lenix: i-verify ang pagkakakilanlan, pondohan ang account, humiling ng padala o liquidation, o magdeposito ng kolateral para sa pautang. Nakikita ang rate, bayarin, at katayuan ng paghahatid bago kumpirmahin — hindi nanghuhula ang pananalapi at operasyon kung ano ang susunod."
   },
   "Services": {
-    "eyebrow": "What we run",
-    "title": "Core services for customers",
-    "description": "Each service has its own intake in the Lenix dashboard. Pick the workflow that matches what you need today.",
+    "eyebrow": "Ang pinapatakbo namin",
+    "title": "Mga pangunahing serbisyo para sa customer",
+    "description": "May sariling intake ang bawat serbisyo sa dashboard ng Lenix. Piliin ang daloy na tumutugma sa kailangan mo ngayon.",
     "items": {
       "transfer": {
-        "title": "Money transfer",
-        "desc": "Move value from crypto to fiat and into a beneficiary bank account on corridors Lenix supports today."
+        "title": "Padala ng pera",
+        "desc": "Ilipat ang halaga mula crypto patungong fiat at papunta sa bank account ng benepisyaryo, sa mga koridor na sinusuportahan ng Lenix ngayon."
       },
       "liquidation": {
-        "title": "Asset liquidation",
-        "desc": "Voluntarily sell approved crypto holdings and receive fiat payout — separate from loan collateral liquidation."
+        "title": "Liquidation ng asset",
+        "desc": "Boluntaryong ibenta ang aprubadong crypto at tumanggap ng payout na fiat — hiwalay sa liquidation ng kolateral ng pautang."
       },
       "lending": {
-        "title": "Collateral lending",
-        "desc": "Post eligible collateral and draw stablecoins or fiat while terms, LTV, and repayment schedules stay visible upfront."
+        "title": "Pautang na may kolateral",
+        "desc": "Magdeposito ng kwalipikadong kolateral at kumuha ng stablecoin o fiat, habang nakikita agad ang mga tuntunin, LTV, at iskedyul ng bayad."
       },
       "custody": {
-        "title": "Custody & wallet",
-        "desc": "Hold and move supported assets through Lenix wallet and vault controls with activity history your team can audit."
+        "title": "Kustodiya at wallet",
+        "desc": "Hawakan at ilipat ang mga suportadong asset sa wallet at mga kontrol ng vault ng Lenix, na may kasaysayan ng aktibidad na maaaring i-audit ng team mo."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "transfer": {
-        "label": "Cross-border transfer",
-        "title": "Crypto to bank, with corridor clarity",
-        "body": "Initiate from your Lenix account, see the quoted rate and fees, and track handoff from on-chain receipt through fiat delivery — not a single pending flag with no context."
+        "label": "Padalang cross-border",
+        "title": "Mula crypto papuntang bangko, malinaw ang koridor",
+        "body": "Magsimula sa account mo sa Lenix, tingnan ang naka-quote na rate at bayarin, at subaybayan ang pagpasa mula on-chain na resibo hanggang fiat na paghahatid — hindi isang pending na marka na walang konteksto."
       },
       "settlement": {
-        "label": "Fiat settlement",
-        "title": "Treasury-ready payout records",
-        "body": "Settlement details, beneficiary references, and status timestamps suitable for finance review — so cross-border payouts can be reconciled like any other treasury movement."
+        "label": "Settlement na fiat",
+        "title": "Mga tala ng payout na handa para sa treasury",
+        "body": "Mga detalye ng settlement, sanggunian ng benepisyaryo, at timestamp ng katayuan na angkop sa pagsusuri ng pananalapi — para ma-reconcile ang padala sa ibang bansa gaya ng ibang galaw ng treasury."
       },
       "liquidation": {
-        "label": "Voluntary liquidation",
-        "title": "Cash out without a loan position",
-        "body": "Convert approved crypto to fiat when you choose to exit a holding. Quote, fees, and expected payout are shown before you confirm — this is not collateral seizure from an underwater loan."
+        "label": "Boluntaryong liquidation",
+        "title": "I-cash out nang walang posisyon sa pautang",
+        "body": "I-convert ang aprubadong crypto sa fiat kapag pinili mong lumabas sa isang hawak. Quote, bayarin, at inaasahang payout ay ipinapakita bago kumpirmahin — hindi ito pagsamsam ng kolateral mula sa pautang na nasa ilalim ng tubig."
       },
       "lending": {
-        "label": "Collateral lending",
-        "title": "Liquidity while assets stay vaulted",
-        "body": "Draw against posted collateral with LTV, repayment schedule, and health indicators visible before disbursement. Collateral remains in segregated custody for the loan term."
+        "label": "Pautang na may kolateral",
+        "title": "Likido habang nasa vault ang mga asset",
+        "body": "Kumuha laban sa nadepositong kolateral, na may LTV, iskedyul ng bayad, at health indicator na nakikita bago ang disbursement. Nananatili ang kolateral sa hiwalay na kustodiya sa buong termino ng pautang."
       },
       "custody": {
-        "label": "Custody & controls",
-        "title": "Hold, send, and receive in one place",
-        "body": "Multi-chain wallet access, transaction history, and vault segregation for assets under Lenix custody — with the same identity and compliance checks applied across services."
+        "label": "Kustodiya at mga kontrol",
+        "title": "Hawakan, magpadala, at tumanggap sa isang lugar",
+        "body": "Access sa multi-chain na wallet, kasaysayan ng transaksyon, at paghihiwalay ng vault para sa mga asset sa kustodiya ng Lenix — parehong pagsusuri ng pagkakakilanlan at pagsunod sa lahat ng serbisyo."
       },
       "compliance": {
-        "label": "Compliance screening",
-        "title": "KYC and flow screening before release",
-        "body": "Identity verification for account opening and sanctions/AML screening on inbound and outbound flows — funds are not released until checks for that transaction complete."
+        "label": "Screening ng pagsunod",
+        "title": "KYC at screening ng daloy bago ilabas",
+        "body": "Beripikasyon ng pagkakakilanlan sa pagbubukas ng account at screening ng sanctions/AML sa papasok at palabas na daloy — hindi inilalabas ang pondo hanggang matapos ang mga pagsusuri ng transaksyong iyon."
       }
     }
   },
   "Process": {
-    "title": "How it works",
+    "title": "Paano ito gumagana",
     "steps": {
       "account": {
-        "title": "Create your Lenix account",
-        "desc": "Sign up, complete KYC, and set up payout details for the corridors you plan to use."
+        "title": "Gawin ang account mo sa Lenix",
+        "desc": "Mag-sign up, kumpletuhin ang KYC, at itakda ang detalye ng payout para sa mga koridor na balak mong gamitin."
       },
       "fund": {
-        "title": "Fund or deposit crypto",
-        "desc": "Add supported assets to your Lenix wallet or vault — the same balance can feed transfers, liquidation, or collateral posting."
+        "title": "Pondohan o magdeposito ng crypto",
+        "desc": "Magdagdag ng suportadong asset sa wallet o vault ng Lenix — ang parehong balanse ay maaaring magpakain ng padala, liquidation, o pagdeposito ng kolateral."
       },
       "request": {
-        "title": "Request a service",
-        "desc": "Start a transfer, voluntary liquidation, or loan draw. Review the quote, fees, and terms before you confirm."
+        "title": "Humiling ng serbisyo",
+        "desc": "Magsimula ng padala, boluntaryong liquidation, o draw ng pautang. Suriin ang quote, bayarin, at mga tuntunin bago kumpirmahin."
       },
       "track": {
-        "title": "Track through delivery",
-        "desc": "Follow status from initiation to bank credit or loan disbursement, with records available for your finance team."
+        "title": "Subaybayan hanggang maihatid",
+        "desc": "Sundan ang katayuan mula sa simula hanggang credit sa bangko o disbursement ng pautang, na may mga tala para sa team ng pananalapi."
       }
     }
   },
   "Boundaries": {
-    "eyebrow": "What to expect",
-    "title1": "Honest limits ",
-    "title2": "before you commit",
-    "subtitle": "Lenix is a service operator, not a universal bank. Scope, corridors, and regulatory treatment depend on your jurisdiction and the product you use.",
+    "eyebrow": "Ang dapat asahan",
+    "title1": "Malinaw na hangganan ",
+    "title2": "bago ka tumuloy",
+    "subtitle": "Operator ng serbisyo ang Lenix, hindi pangkalahatang bangko. Ang saklaw, mga koridor, at regulasyong pagtrato ay nakadepende sa hurisdiksyon mo at sa produktong gagamitin.",
     "items": {
       "corridors": {
-        "title": "Supported corridors only",
-        "desc": "Payout markets and banking rails are limited to corridors Lenix actively supports. Contact us if yours is not listed — we do not imply worldwide coverage."
+        "title": "Mga suportadong koridor lamang",
+        "desc": "Ang mga merkado ng payout at banking rail ay limitado sa mga koridor na aktibong pinapatakbo ng Lenix. Makipag-ugnayan kung wala sa listahan ang iyo — hindi kami nagpapahiwatig ng pandaigdigang saklaw."
       },
       "kyc": {
-        "title": "KYC and AML required",
-        "desc": "Account opening and most outbound flows require identity verification and transaction screening. We cannot bypass compliance for expedited payout."
+        "title": "Kailangan ang KYC at AML",
+        "desc": "Ang pagbubukas ng account at karamihan ng palabas na daloy ay nangangailangan ng beripikasyon ng pagkakakilanlan at screening ng transaksyon. Hindi namin nilalampasan ang pagsunod para mapabilis ang payout."
       },
       "quotes": {
-        "title": "Quotes before confirmation",
-        "desc": "Rates, fees, and estimated delivery windows are shown before you submit a transfer, liquidation, or loan draw — not adjusted silently afterward."
+        "title": "Mga quote bago kumpirmahin",
+        "desc": "Ipinapakita ang rate, bayarin, at tinatayang window ng paghahatid bago magsumite ng padala, liquidation, o draw ng pautang — hindi tahimik na inaayos pagkatapos."
       },
       "liquidation_types": {
-        "title": "Two different liquidations",
-        "desc": "Voluntary asset liquidation is a customer-initiated cash-out. Loan collateral liquidation only applies when posted collateral falls below agreed LTV on an active loan."
+        "title": "Dalawang magkaibang liquidation",
+        "desc": "Ang boluntaryong liquidation ng asset ay cash-out na sinimulan ng customer. Ang liquidation ng kolateral ng pautang ay nalalapat lamang kapag bumaba ang nadepositong kolateral sa napagkasunduang LTV ng aktibong pautang."
       },
       "timing": {
-        "title": "Delivery timing varies",
-        "desc": "Banking cutoffs, beneficiary bank processing, and corridor load affect settlement time. We show status updates; we do not guarantee instant fiat credit."
+        "title": "Nag-iiba ang oras ng paghahatid",
+        "desc": "Ang cutoff ng bangko, pagproseso ng bangko ng benepisyaryo, at load ng koridor ay nakaaapekto sa oras ng settlement. Nagpapakita kami ng update sa katayuan; hindi kami naggagarantiya ng instant na credit na fiat."
       },
       "regulatory": {
-        "title": "Not a bank charter",
-        "desc": "Lenix provides crypto finance and settlement services under its operating licenses and partners. Product availability and protections vary by region — confirm what applies to you before moving funds."
+        "title": "Hindi lisensya ng bangko",
+        "desc": "Nagbibigay ang Lenix ng serbisyong pananalapi sa crypto at settlement sa ilalim ng mga lisensya sa operasyon at mga partner. Nag-iiba ang availability ng produkto at proteksyon ayon sa rehiyon — kumpirmahin kung ano ang naaangkop sa iyo bago maglipat ng pondo."
       }
     }
   },
   "Cta": {
-    "title": "Ready to use Lenix banking services?",
-    "description": "Open an account to start transfers, liquidation, or lending — or contact us if you need a corridor or workflow scoped before signup.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Log in",
+    "title": "Handa nang gamitin ang mga serbisyong pagbabangko ng Lenix?",
+    "description": "Magbukas ng account para magsimula ng padala, liquidation, o pautang — o makipag-ugnayan kung kailangang saklawin ang koridor o daloy bago mag-sign up.",
+    "btn_primary": "Makipag-ugnayan sa team",
+    "btn_secondary": "Mag-log in",
     "links": {
-      "loan": "Apply for a crypto loan",
-      "wallet": "Lenix Wallet",
-      "solutions": "All solutions"
-    }
-  },
-  "SectionCta": {
-    "overview": {
-      "title": "Open a Lenix account to get started",
-      "description": "Register, complete KYC, and access transfers, liquidation, lending, and custody from one dashboard — on web or mobile."
-    },
-    "services": {
-      "title": "Run these services from your account",
-      "description": "Each workflow lives in the Lenix app. Create an account to request transfers, cash out holdings, or post collateral for a loan."
-    },
-    "capabilities": {
-      "title": "Banking workflows in the Lenix app",
-      "description": "Download the mobile app or register on web to Send Funds, settle to fiat, borrow against collateral, and track every step."
-    },
-    "process": {
-      "title": "Ready to follow these steps?",
-      "description": "Create your account, complete verification, and start your first transfer or liquidation from the Lenix dashboard or mobile app."
-    },
-    "boundaries": {
-      "title": "Confirm your corridor, then register",
-      "description": "If your market is supported, open an account to begin. Need a corridor scoped first? Contact us before you move funds."
+      "loan": "Mag-apply ng pautang sa crypto",
+      "wallet": "Wallet ng Lenix",
+      "solutions": "Lahat ng solusyon"
     }
   }
 }

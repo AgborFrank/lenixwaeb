@@ -1,90 +1,81 @@
 {
   "meta": {
-    "title": "Blockchain Forensics & On-Chain Investigation | Lenix Protocol",
-    "description": "Trace stolen and misdirected crypto, map wallet flows, and produce forensic reports for counsel, compliance teams, and law enforcement. Honest scope before engagement."
+    "title": "Phân tích pháp lý blockchain và điều tra on-chain | Lenix Protocol",
+    "description": "Truy vết crypto bị đánh cắp hoặc chuyển nhầm, lập bản đồ dòng chảy ví và lập báo cáo pháp lý cho cố vấn, nhóm tuân thủ và cơ quan thực thi pháp luật. Phạm vi rõ trước khi giao việc."
   },
   "Hero": {
-    "badge": "Blockchain forensics",
-    "title1": "On-chain investigation ",
-    "title2": "with evidence you can use",
-    "subtitle": "Lenix maps transaction flows across chains and prepares documented findings for recovery decisions, legal review, and compliance — without promising outcomes the ledger cannot support.",
-    "btn_primary": "Start a case",
-    "btn_secondary": "How it works"
+    "badge": "Phân tích pháp lý blockchain",
+    "title1": "Điều tra on-chain ",
+    "title2": "với bằng chứng dùng được",
+    "subtitle": "Lenix lập bản đồ dòng giao dịch xuyên chuỗi và chuẩn bị kết luận có tài liệu cho quyết định thu hồi, rà soát pháp lý và tuân thủ — không hứa kết quả mà sổ cái không thể hỗ trợ.",
+    "btn_primary": "Mở vụ việc",
+    "btn_secondary": "Cách thức hoạt động"
   },
   "Capabilities": {
-    "title": "What forensic work covers",
-    "description": "Investigations combine on-chain analysis with matter context — not automated blockchain lookups alone.",
+    "title": "Công việc pháp lý bao gồm những gì",
+    "description": "Điều tra kết hợp phân tích on-chain với bối cảnh vụ việc — không chỉ tra cứu blockchain tự động.",
     "cards": {
       "tracing": {
-        "title": "Transaction tracing",
-        "desc": "Follow fund movement from known source wallets through bridges, mixers, and consolidation points to identify where value likely landed."
+        "title": "Truy vết giao dịch",
+        "desc": "Theo dõi dòng tiền từ các ví nguồn đã biết, qua cầu nối, mixer và điểm gom, để xác định giá trị có khả năng dừng ở đâu."
       },
       "reports": {
-        "title": "Reports and litigation support",
-        "desc": "Written analysis with timelines, methodology, and limitations — formatted for counsel, regulators, or exchange escalation when appropriate."
+        "title": "Báo cáo và hỗ trợ tranh tụng",
+        "desc": "Phân tích bằng văn bản kèm dòng thời gian, phương pháp và giới hạn — định dạng cho cố vấn, cơ quan quản lý hoặc leo thang tới sàn khi phù hợp."
       },
       "compliance": {
-        "title": "Compliance and due diligence",
-        "desc": "Screen wallets and flows for AML risk, sanctions exposure, and counterparty diligence before treasury moves or settlement."
+        "title": "Tuân thủ và thẩm định",
+        "desc": "Sàng lọc ví và dòng tiền về rủi ro AML, phơi nhiễm trừng phạt và thẩm định đối tác trước khi điều chuyển quỹ hoặc thanh toán."
       }
     }
   },
   "UseCases": {
-    "title": "When teams engage forensics",
-    "description": "Common matters where documented on-chain analysis helps decide next steps — recovery, legal process, or internal review.",
+    "title": "Khi nào nhóm cần phân tích pháp lý",
+    "description": "Các vụ việc thường gặp mà phân tích on-chain có tài liệu giúp quyết định bước tiếp — thu hồi, thủ tục pháp lý hoặc rà soát nội bộ.",
     "items": {
       "theft": {
-        "title": "Theft and unauthorized transfers",
-        "desc": "Wallet compromises, exchange account takeovers, or unauthorized outbound transfers where you need a trace before contacting platforms."
+        "title": "Trộm cắp và chuyển khoản trái phép",
+        "desc": "Ví bị xâm nhập, chiếm tài khoản sàn hoặc chuyển đi trái phép, khi cần truy vết trước khi liên hệ nền tảng."
       },
       "scams": {
-        "title": "Scams and social engineering",
-        "desc": "Investment fraud, impersonation, and phishing cases where victims need to show fund paths to counsel or reporting channels."
+        "title": "Lừa đảo và thao túng xã hội",
+        "desc": "Gian lận đầu tư, mạo danh và lừa đảo phishing, khi nạn nhân cần chỉ ra đường đi của tiền cho cố vấn hoặc kênh báo cáo."
       },
       "ransom": {
-        "title": "Extortion payments",
-        "desc": "Ransomware or blackmail payments where law enforcement or insurers require documented flow analysis from payment wallets."
+        "title": "Khoản thanh toán tống tiền",
+        "desc": "Thanh toán ransomware hoặc tống tiền, khi cơ quan thực thi hoặc bên bảo hiểm yêu cầu phân tích dòng tiền có tài liệu từ ví thanh toán."
       },
       "insolvency": {
-        "title": "Disputes and insolvency",
-        "desc": "Bankruptcy, creditor enforcement, or internal investigations where attachable crypto or treasury movements must be verified."
-      }
-    },
-    "panel": {
-      "title": "Confidential handling",
-      "description": "Case materials are shared only with parties authorized under the engagement — not used outside the defined scope.",
-      "items": {
-        "nda": "NDA available on request",
-        "encrypted": "Encrypted intake and file transfer",
-        "privacy": "Privacy-aligned data handling"
+        "title": "Tranh chấp và mất khả năng thanh toán",
+        "desc": "Phá sản, thi hành của chủ nợ hoặc điều tra nội bộ, khi crypto có thể kê biên hoặc các chuyển động quỹ phải được xác minh."
       }
     }
   },
   "Process": {
-    "title": "Investigation process",
+    "title": "Quy trình điều tra",
     "steps": {
       "intake": {
-        "title": "Intake and scoping",
-        "desc": "Known addresses, transaction hashes, timelines, and what questions the matter needs answered — before analysis hours are committed."
+        "title": "Tiếp nhận và khoanh phạm vi",
+        "desc": "Địa chỉ đã biết, mã băm giao dịch, dòng thời gian và các câu hỏi vụ việc cần trả lời — trước khi cam kết giờ phân tích."
       },
       "extract": {
-        "title": "Data extraction",
-        "desc": "Pull relevant on-chain data across supported networks, including internal transfers, contract interactions, and exchange touchpoints where visible."
+        "title": "Trích xuất dữ liệu",
+        "desc": "Lấy dữ liệu on-chain liên quan trên các mạng được hỗ trợ, gồm chuyển nội bộ, tương tác hợp đồng và điểm chạm sàn khi nhìn thấy được."
       },
       "analyze": {
-        "title": "Analysis and clustering",
-        "desc": "Map flows, cluster related addresses, and separate verified movements from inference — with limits stated explicitly."
+        "title": "Phân tích và gom cụm",
+        "desc": "Lập bản đồ dòng chảy, gom các địa chỉ liên quan và tách chuyển động đã xác minh khỏi suy luận — giới hạn được nêu rõ."
       },
       "deliver": {
-        "title": "Report and next steps",
-        "desc": "Deliver findings with recommended paths: exchange escalation, legal process, recovery coordination, or closure when trails are exhausted."
+        "title": "Báo cáo và bước tiếp theo",
+        "desc": "Bàn giao kết luận kèm hướng đề xuất: leo thang sàn, thủ tục pháp lý, phối hợp thu hồi, hoặc đóng khi dấu vết đã cạn."
       }
     }
   },
   "Cta": {
-    "title": "Need a forensic read on a case?",
-    "description": "Share what happened and the on-chain details you already have. We respond with an honest assessment of what tracing can show before scoped engagement.",
-    "btn_primary": "Contact forensics team",
-    "btn_secondary": "Crypto recovery"
+    "title": "Cần một nhận định pháp lý cho vụ việc?",
+    "description": "Cho biết chuyện đã xảy ra và chi tiết on-chain bạn đã có. Chúng tôi trả lời bằng đánh giá thẳng thắn về những gì truy vết có thể cho thấy, trước khi khoanh phạm vi giao việc.",
+    "btn_primary": "Liên hệ nhóm pháp lý",
+    "btn_secondary": "Thu hồi crypto"
   }
 }

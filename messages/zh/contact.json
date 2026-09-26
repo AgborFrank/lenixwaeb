@@ -1,0 +1,111 @@
+{
+  "Hero": {
+    "title": "联系我们的团队",
+    "description": "如需追回案件、贷款咨询、合作或平台支持，请联系 Lenix Protocol。取证与客户团队在全球工作时间内回复。"
+  },
+  "Main": {
+    "title": "准备开始了吗？",
+    "subtitle": "无论是追回支持、贷款咨询还是合作洽谈，团队都可以协助。",
+    "get_in_touch": "取得联系",
+    "desc": "选择适合您的渠道。时效敏感的案件，请在消息中附上交易哈希或钱包地址。",
+    "email_cta": "邮件支持",
+    "footer": {
+      "support": "可提供支持",
+      "response": "在线聊天回复",
+      "confidential": "保密处理"
+    }
+  },
+  "Info": {
+    "title": "联系信息",
+    "address_title": "办公室",
+    "address_line_1": "123 Blockchain Street",
+    "address_line_2": "San Francisco, CA 94105",
+    "address_line_3": "美国",
+    "email_title": "电子邮件",
+    "email_line_1": "recovery@lenixprotocol.com",
+    "email_line_2": "loan@lenixprotocol.com",
+    "email_line_3": "support@lenixprotocol.com",
+    "phone_title": "电话",
+    "phone_line": "+447887052128",
+    "hours_title": "营业时间",
+    "hours_line_1": "周一至周五：美国东部时间 9:00–18:00",
+    "hours_line_2": "周六至周日：休息",
+    "chat_title": "需要紧急帮助？",
+    "chat_description": "团队全天候查看在线聊天，处理时效敏感的追回与安全事项。",
+    "chat_cta": "开始在线聊天",
+    "follow_title": "关注我们",
+    "response_title": "通常回复时间",
+    "response_email": "电子邮件",
+    "response_email_time": "24 小时内",
+    "response_chat": "在线聊天",
+    "response_chat_time": "5 分钟以内",
+    "response_phone": "电话",
+    "response_phone_time": "营业时间内"
+  },
+  "Form": {
+    "title": "给我们留言",
+    "subtitle": "大多数咨询会在一个工作日内回复。",
+    "name": "姓名 *",
+    "email": "电子邮箱 *",
+    "phone": "电话号码",
+    "whatsapp": "WhatsApp 或 Telegram",
+    "inquiry_type": "咨询类型",
+    "subject": "主题 *",
+    "message": "留言 *",
+    "placeholder_name": "请输入您的姓名",
+    "placeholder_email": "请输入您的邮箱",
+    "placeholder_phone": "+1 234 567 8900",
+    "placeholder_whatsapp": "@用户名 或 +1234567890",
+    "placeholder_subject": "这件事与什么有关？",
+    "placeholder_message": "请说明我们能如何协助……",
+    "submit": "发送",
+    "privacy": "提交即表示您同意我们的隐私政策和服务条款。",
+    "inquiry_options": {
+      "general": "一般咨询",
+      "recovery": "追回服务",
+      "crypto_loan": "加密贷款",
+      "support": "技术支持",
+      "partnership": "合作",
+      "business": "商务拓展",
+      "press": "媒体",
+      "other": "其他"
+    },
+    "success_title": "消息已发送",
+    "success_description": "感谢联系。我们将在 24 小时内回复。",
+    "success_cta": "再发一条",
+    "sending": "发送中…"
+  },
+  "FAQ": {
+    "title": "常见问题",
+    "subtitle": "关于追回、借贷和平台安全的常见问题。",
+    "cta_text": "还有问题？",
+    "email_cta": "邮件支持",
+    "chat_cta": "开始在线聊天",
+    "items": {
+      "start": {
+        "question": "如何开始追回或贷款案件？",
+        "answer": "通过此表单提交资料，或发送邮件至 recovery@lenixprotocol.com。贷款请前往加密贷款页面开始入驻。团队会确认范围、所需文件和下一步。"
+      },
+      "assets": {
+        "question": "支持哪些资产和链？",
+        "answer": "我们追踪主要 EVM 链、Bitcoin 及常用稳定币上的活动。覆盖范围随案件扩展——请附上交易详情，以便做针对性评估。"
+      },
+      "security": {
+        "question": "客户数据如何保护？",
+        "answer": "案件材料实行严格访问控制，传输与存储均加密，并按隔离流程审阅。我们不会索取私钥或助记词。"
+      },
+      "fees": {
+        "question": "追回和贷款费用如何计算？",
+        "answer": "追回按案件单独界定范围。贷款价格取决于抵押品、期限和 LTV。任何工作开始或资金拨付前，我们都会提供书面条款。"
+      },
+      "timeline": {
+        "question": "调查需要多久？",
+        "answer": "时间取决于复杂程度、司法辖区和交易所配合。初步追踪报告通常数日内交付；完整追回路径可能需要数周，视法律与托管因素而定。"
+      },
+      "availability": {
+        "question": "是否与执法部门合作？",
+        "answer": "会。我们为执法与合规团队提供追踪材料包、专家审阅，以及适用于监管和法庭程序的文件。"
+      }
+    }
+  }
+}

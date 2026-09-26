@@ -1,102 +1,78 @@
 {
   "meta": {
-    "title": "DeFi Compliance & AML | Lenix Protocol",
-    "description": "AML screening, counterparty diligence, and monitoring for DeFi protocols and crypto infrastructure teams — with configurable rules and documented scope."
+    "title": "Tuân thủ DeFi và AML | Lenix Protocol",
+    "description": "Sàng lọc AML, thẩm định đối tác và giám sát cho giao thức DeFi cùng đội hạ tầng crypto — với quy tắc cấu hình được và phạm vi được ghi nhận."
   },
   "Hero": {
-    "badge": "DeFi compliance",
-    "title1": "AML and risk controls ",
-    "title2": "for decentralized finance",
-    "subtitle": "Screen wallets and flows, review protocol counterparties, and integrate compliance checks into your operations — without claiming DeFi can be made fully permissionless and regulation-free.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Tuân thủ DeFi",
+    "title1": "Kiểm soát AML và rủi ro ",
+    "title2": "cho tài chính phi tập trung",
+    "subtitle": "Sàng lọc ví và dòng tiền, rà soát đối tác của giao thức và đưa kiểm tra tuân thủ vào vận hành — không khẳng định DeFi có thể trở thành hoàn toàn không cần phép và ngoài quy định.",
+    "btn_primary": "Liên hệ đội ngũ",
+    "btn_secondary": "Xem năng lực"
   },
   "Overview": {
-    "title": "Compliance that fits how DeFi actually works",
-    "description": "Lenix helps protocol teams, treasuries, and infrastructure providers assess exposure across supported networks — pool interactions, bridge touchpoints, and wallet screening — with outputs your compliance function can audit, not opaque risk scores alone."
+    "title": "Tuân thủ khớp với cách DeFi thực sự vận hành",
+    "description": "Lenix giúp đội giao thức, kho quỹ và nhà cung cấp hạ tầng đánh giá mức phơi nhiễm trên các mạng được hỗ trợ — tương tác pool, điểm chạm cầu và sàng lọc ví — với kết quả bộ phận tuân thủ có thể kiểm toán, không chỉ điểm rủi ro mờ đục."
   },
   "Highlights": {
     "items": {
       "scale": {
-        "title": "Scale screening without losing review quality",
-        "desc": "Configurable rules and batch review help compliance teams focus on material exposure — not manual lookup for every wallet touch."
+        "title": "Sàng lọc ở quy mô lớn mà vẫn giữ chất lượng rà soát",
+        "desc": "Quy tắc cấu hình được và rà soát theo lô giúp đội tuân thủ tập trung vào phơi nhiễm đáng kể — không phải tra cứu thủ công mỗi lần chạm ví."
       },
       "cost": {
-        "title": "Integrate into existing workflows",
-        "desc": "API and export options fit internal queues and case tools so screening does not sit in a separate silo."
+        "title": "Gắn vào quy trình đang dùng",
+        "desc": "API và tùy chọn xuất khớp hàng đợi nội bộ và công cụ vụ việc, để sàng lọc không nằm ở một hệ thống riêng."
       },
       "coverage": {
-        "title": "Cross-chain context where supported",
-        "desc": "Review activity across networks and token types your program covers — with limits stated when a chain or asset is outside scope."
+        "title": "Bối cảnh xuyên chuỗi ở nơi được hỗ trợ",
+        "desc": "Rà soát hoạt động trên các mạng và loại token mà chương trình của bạn bao phủ — có nêu giới hạn khi một chuỗi hoặc tài sản nằm ngoài phạm vi."
       },
       "threats": {
-        "title": "Proactive counterparty review",
-        "desc": "Assess pools, routers, and wallet connections before treasury moves or partner onboarding — bounded to your policy definitions."
+        "title": "Rà soát đối tác chủ động",
+        "desc": "Đánh giá pool, bộ định tuyến và liên kết ví trước khi kho quỹ chuyển tiền hoặc tiếp nhận đối tác — trong định nghĩa chính sách của bạn."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "coverage": {
-        "label": "Asset coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
+        "label": "Phủ tài sản",
+        "title": "Sàng lọc hoạt động trên các chuỗi được hỗ trợ",
+        "body": "Đánh giá giao dịch và mức phơi nhiễm ví trên các mạng lớp 1 và lớp 2 lớn, stablecoin và chuẩn token phổ biến trong DeFi — giới hạn ở mạng và tài sản được bao trong hợp tác."
       },
       "integration": {
-        "label": "API integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
+        "label": "Tích hợp API",
+        "title": "Đưa sàng lọc vào hệ thống của bạn",
+        "body": "Nối kết quả Lenix với hàng đợi rà soát nội bộ, quản lý vụ việc hoặc công cụ riêng qua API và xuất tệp — để các bước tuân thủ nằm trong quy trình đội đang chạy."
       },
       "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
+        "label": "Sàng lọc giao dịch",
+        "title": "Gắn cờ phơi nhiễm trước khi tiền chuyển",
+        "body": "Rà soát ví và giao dịch theo liên kết với thực thể bị trừng phạt, kiểu lừa đảo đã biết và nhóm dịch vụ rủi ro cao — với kết quả đội có thể chấp nhận, leo thang hoặc ghi đè kèm ghi chú."
       },
       "monitoring": {
-        "label": "Automated monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
+        "label": "Giám sát tự động",
+        "title": "Danh sách theo dõi cho giao thức và kho quỹ",
+        "body": "Giám sát tập địa chỉ, tương tác pool và dòng đối tác lặp lại. Quy tắc cảnh báo và phạm vi phủ phụ thuộc mạng được hỗ trợ và cách chương trình định nghĩa rủi ro đáng kể."
       },
       "onboarding": {
-        "label": "Counterparty onboarding",
-        "title": "Review partners before integration",
-        "body": "Screen liquidity providers, pool contracts, and wallet counterparties during onboarding — surfacing exposure across supported chains when your policy requires it."
+        "label": "Tiếp nhận đối tác",
+        "title": "Rà soát đối tác trước khi tích hợp",
+        "body": "Sàng lọc nhà cung cấp thanh khoản, hợp đồng pool và ví đối tác trong lúc tiếp nhận — nêu mức phơi nhiễm trên các chuỗi được hỗ trợ khi chính sách yêu cầu."
       },
       "diligence": {
-        "label": "Protocol due diligence",
-        "title": "Map exposure across the ecosystem",
-        "body": "Analyze how a protocol connects to exchanges, bridges, and high-risk services in on-chain data — with written limits on what public ledgers can and cannot show about off-chain control."
+        "label": "Thẩm định giao thức",
+        "title": "Lập bản đồ phơi nhiễm trong hệ sinh thái",
+        "body": "Phân tích cách một giao thức nối với sàn, cầu và dịch vụ rủi ro cao trong dữ liệu on-chain — kèm giới hạn bằng văn bản về những gì sổ cái công khai có thể và không thể cho thấy về quyền kiểm soát ngoài chuỗi."
       }
     }
   },
   "Cta": {
-    "title": "Building compliance into a DeFi product?",
-    "description": "Share your protocol type, jurisdictions, and what you need to screen or monitor. We outline realistic integration scope before engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Compliance investigations"
-  },
-  "Features": {
-    "pillars": {
-      "coverage": {
-        "label": "Asset and network coverage",
-        "title": "Screen activity across supported chains",
-        "body": "Evaluate transactions and wallet exposure on major Layer 1 and Layer 2 networks, stablecoins, and common token standards used in DeFi — scoped to networks and assets covered under your engagement."
-      },
-      "integration": {
-        "label": "Workflow integration",
-        "title": "Bring screening into your stack",
-        "body": "Connect Lenix outputs to internal review queues, case management, or custom tooling via API and file exports — so compliance steps stay in workflows your team already runs."
-      },
-      "screening": {
-        "label": "Transaction screening",
-        "title": "Flag exposure before funds move",
-        "body": "Review wallets and transactions for links to sanctioned entities, known scam typologies, and high-risk service categories — with results your team can accept, escalate, or override with notes."
-      },
-      "monitoring": {
-        "label": "Ongoing monitoring",
-        "title": "Watchlists for protocols and treasuries",
-        "body": "Monitor address sets, pool interactions, and recurring counterparty flows. Alert rules and coverage depend on supported networks and how your program defines material risk."
-      }
-    }
+    "title": "Đang đưa tuân thủ vào sản phẩm DeFi?",
+    "description": "Cho biết loại giao thức, khu vực pháp lý và những gì cần sàng lọc hoặc giám sát. Chúng tôi nêu phạm vi tích hợp thực tế trước khi bắt đầu.",
+    "btn_primary": "Liên hệ đội ngũ",
+    "btn_secondary": "Điều tra tuân thủ"
   }
 }

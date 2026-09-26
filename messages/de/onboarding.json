@@ -88,7 +88,10 @@
     },
     "banking": {
       "title": "Wie geht es weiter?",
-      "body": "Wir prüfen Ihre Anfrage und melden uns innerhalb von 24 Stunden mit Preisen und nächsten Schritten."
+      "body": "Wir prüfen Ihre Anfrage und melden uns innerhalb von 24 Stunden mit Preisen und nächsten Schritten.",
+      "bullet1": "Angebot mit transparenten Gebühren erhalten",
+      "bullet2": "Verifizierung bei Bedarf abschließen",
+      "bullet3": "Alles in Ihrem Dashboard nachverfolgen"
     },
     "encryption": "Ihre Daten sind verschlüsselt und sicher. Wir teilen sie nie ohne Ihre Zustimmung.",
     "support": "Fragen? Schreiben Sie uns nach dem Absenden auf Telegram."

@@ -1,97 +1,73 @@
 {
   "meta": {
-    "title": "Blockchain Intelligence for Law Enforcement | Lenix Protocol",
-    "description": "On-chain tracing, wallet screening, and forensic reports for law enforcement and government teams — scoped engagements with documented methodology and limits."
+    "title": "Intelligence sa blockchain para sa tagapagpatupad ng batas | Lenix Protocol",
+    "description": "On-chain na pagsubaybay, screening ng wallet, at forensic na ulat para sa tagapagpatupad ng batas at mga koponan ng gobyerno — mga engagement na may saklaw, dokumentadong metodolohiya, at mga limitasyon."
   },
   "Hero": {
-    "badge": "Law enforcement",
-    "title1": "Blockchain intelligence ",
-    "title2": "for criminal investigations",
-    "subtitle": "Trace crypto flows, screen wallets, and produce documented findings for case files — with clear scope on what public ledger analysis can support and what requires separate legal process.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "View capabilities"
+    "badge": "Tagapagpatupad ng batas",
+    "title1": "Intelligence sa blockchain ",
+    "title2": "para sa mga imbestigasyong kriminal",
+    "subtitle": "Subaybayan ang daloy ng crypto, i-screen ang mga wallet, at gumawa ng dokumentadong natuklasan para sa mga case file — na may malinaw na saklaw kung ano ang masusuportahan ng pagsusuri sa pampublikong ledger at kung ano ang nangangailangan ng hiwalay na prosesong legal.",
+    "btn_primary": "Makipag-ugnayan sa koponan",
+    "btn_secondary": "Tingnan ang mga kakayahan"
   },
   "Overview": {
-    "title": "Investigation support built for case work",
-    "description": "Lenix helps agencies and task forces follow funds across supported networks, prioritize leads from bulk wallet uploads, and prepare outputs suitable for internal review or exchange escalation — without overstating attribution certainty or recovery outcomes."
+    "title": "Suporta sa imbestigasyon na ginawa para sa trabaho sa kaso",
+    "description": "Tinutulungan ng Lenix ang mga ahensya at grupong gawain na sundan ang pondo sa mga suportadong network, unahin ang mga lead mula sa maramihang upload ng wallet, at maghanda ng output na angkop sa panloob na review o escalation sa exchange — nang hindi pinalalaki ang katiyakan ng attribution o ang resulta ng pagbawi."
   },
   "Highlights": {
     "items": {
       "follow": {
-        "title": "Follow flows across chains and services",
-        "desc": "Map movement through bridges, DEX touchpoints, and consolidation wallets where the ledger shows them — with notes on where visibility ends."
+        "title": "Sundan ang daloy sa mga chain at serbisyo",
+        "desc": "I-mapa ang galaw sa mga bridge, touchpoint ng DEX, at consolidation wallet kung saan ipinapakita ito ng ledger — na may tala kung saan nagtatapos ang visibility."
       },
       "data": {
-        "title": "Attribution context for case review",
-        "desc": "Cluster related addresses and flag exposure to known risky categories when your matter authorizes that scope — not a claim of complete wallet ownership."
+        "title": "Konteksto ng attribution para sa review ng kaso",
+        "desc": "I-cluster ang mga kaugnay na address at i-flag ang exposure sa mga kilalang kategorya ng panganib kapag pinahihintulutan ng usapin ninyo ang saklaw na iyon — hindi pag-aangkin ng buong pagmamay-ari ng wallet."
       },
       "speed": {
-        "title": "Prioritize viable trails first",
-        "desc": "Screen wallet or transaction lists before deep analysis so investigators spend time on leads worth pursuing."
+        "title": "Unahin muna ang mga bakas na maaaring sundan",
+        "desc": "I-screen ang mga listahan ng wallet o transaksyon bago ang malalim na pagsusuri para magugol ng mga imbestigador ang oras sa mga lead na sulit sundan."
       },
       "evidence": {
-        "title": "Outputs for case files",
-        "desc": "Structured timelines and methodology sections suitable for supervisory review, counsel, or exchange escalation requests."
+        "title": "Mga output para sa case file",
+        "desc": "Mga structured na timeline at seksyon ng metodolohiya na angkop sa supervisory review, counsel, o mga kahilingan ng escalation sa exchange."
       }
     }
   },
   "Capabilities": {
     "pillars": {
       "intelligence": {
-        "label": "Threat intelligence",
-        "title": "Datasets tailored to investigation priorities",
-        "body": "Receive structured exports covering wallet clusters, flow summaries, and risk categories relevant to your case set — via file, feed, or API depending on engagement terms."
+        "label": "Intelligence sa banta",
+        "title": "Mga dataset na ayon sa priyoridad ng imbestigasyon",
+        "body": "Tumanggap ng structured na export na sumasaklaw sa mga cluster ng wallet, buod ng daloy, at mga kategorya ng panganib na may kaugnayan sa set ng kaso ninyo — sa pamamagitan ng file, feed, o API ayon sa mga tuntunin ng engagement."
       },
       "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Trace activity across supported networks",
-        "body": "Follow funds across chains and assets where on-chain data allows — including bridge and swap touchpoints — with hop-by-hop documentation for case notes."
+        "label": "Pagsubaybay sa maraming network",
+        "title": "Subaybayan ang aktibidad sa mga suportadong network",
+        "body": "Sundan ang pondo sa mga chain at asset kung pinahihintulutan ng on-chain na data — kabilang ang mga touchpoint ng bridge at swap — na may dokumentasyon bawat hop para sa mga tala ng kaso."
       },
       "triage": {
-        "label": "Triage",
-        "title": "Screen volume before deep investigation",
-        "body": "Upload wallet or transaction batches for initial exposure review — sanctions links, scam typologies, and high-risk services — to rank which leads warrant full analysis."
+        "label": "Pagsasala",
+        "title": "I-screen ang dami bago ang malalim na imbestigasyon",
+        "body": "Mag-upload ng mga batch ng wallet o transaksyon para sa paunang review ng exposure — mga ugnay sa sanction, typology ng scam, at mga serbisyong mataas ang panganib — upang i-rank kung aling mga lead ang karapat-dapat sa buong pagsusuri."
       },
       "investigation": {
-        "label": "Investigation",
-        "title": "Develop the case view",
-        "body": "Build linked address and transaction paths in reports that separate verified ledger facts from inference — including likely exchange deposit points when visible on-chain."
+        "label": "Imbestigasyon",
+        "title": "Buuin ang view ng kaso",
+        "body": "Bumuo ng magkakaugnay na landas ng address at transaksyon sa mga ulat na naghihiwalay ng napatunayang katotohanan ng ledger sa hinuha — kabilang ang malamang na mga punto ng deposito sa exchange kapag nakikita on-chain."
       },
       "training": {
-        "label": "Training",
-        "title": "Operator onboarding for your unit",
-        "body": "Walkthroughs on crypto fundamentals, tracing workflows, and how to read Lenix outputs — scoped to your team's tools access and case types, not generic certification marketing."
+        "label": "Pagsasanay",
+        "title": "Onboarding ng operator para sa yunit ninyo",
+        "body": "Mga walkthrough sa mga batayan ng crypto, mga workflow ng pagsubaybay, at kung paano basahin ang mga output ng Lenix — limitado sa access sa kasangkapan ng koponan at sa mga uri ng kaso, hindi generic na marketing ng sertipikasyon."
       }
     }
   },
   "Cta": {
-    "title": "Need blockchain support for an investigation?",
-    "description": "Describe the unit, case type, and data you already have. We respond with an honest read on what tracing and reporting can cover before scoped engagement.",
-    "btn_primary": "Contact team",
-    "btn_secondary": "Blockchain forensics"
-  },
-  "Features": {
-    "pillars": {
-      "triage": {
-        "label": "Triage and prioritization",
-        "title": "Screen leads before deep dives",
-        "body": "Upload wallet or transaction lists for initial exposure review — sanctions links, known scam categories, and high-risk service touchpoints — so investigators focus effort on viable trails first."
-      },
-      "tracing": {
-        "label": "Cross-network tracing",
-        "title": "Map flows across chains and services",
-        "body": "Follow movement through bridges, swaps, and consolidation points where visible on-chain. Outputs include hop-by-hop notes and timelines your team can attach to case documentation."
-      },
-      "investigation": {
-        "label": "Case development",
-        "title": "Build an evidence-oriented case view",
-        "body": "Link addresses, clusters, and transaction paths in structured reports — separating verified ledger facts from inference, with limits stated for counsel and supervisory review."
-      },
-      "escalation": {
-        "label": "Exchange and escalation support",
-        "title": "Document touchpoints for next steps",
-        "body": "Identify likely custodial deposit paths when the chain shows them — supporting preservation requests, MLAT workflows, or internal escalation. Lenix does not compel exchanges or guarantee KYC disclosure."
-      }
-    }
+    "title": "Kailangan ng suporta sa blockchain para sa isang imbestigasyon?",
+    "description": "Ilarawan ang yunit, ang uri ng kaso, at ang data na mayroon na kayo. Tumutugon kami ng tapat na pagbasa kung ano ang kayang saklawin ng pagsubaybay at pag-uulat bago ang engagement na may saklaw.",
+    "btn_primary": "Makipag-ugnayan sa koponan",
+    "btn_secondary": "Forensics ng blockchain"
   }
 }

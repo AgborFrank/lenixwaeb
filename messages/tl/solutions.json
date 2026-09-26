@@ -14,25 +14,25 @@
     "learn_more": "Tingnan detalye",
     "cards": {
       "recovery": {
-        "title": "Asset recovery",
+        "title": "Pagbawi ng asset",
         "desc": "Ninakaw, na-scam, o naipadala sa maling address ang pondo. Kailangan mo ng trace at documented evidence bago magdesisyon sa susunod na hakbang."
       },
       "payments": {
-        "title": "Cross-border payments",
+        "title": "Mga pagbabayad sa ibang bansa",
         "desc": "Kailangan ng treasury o finance i-convert ang crypto sa fiat, na may rates, fees, at delivery status na maipapakita sa auditors."
       },
       "lending": {
-        "title": "Crypto lending",
+        "title": "Pagpapautang ng crypto",
         "desc": "May eligible collateral ka at kailangan ng liquidity nang hindi ibinebenta ang buong posisyon."
       },
       "security": {
-        "title": "Platform security",
+        "title": "Seguridad ng platform",
         "desc": "Ang team mo ay nag-custody ng asset ng kliyente at kailangan ng monitoring, access rules, at written escalation path."
       }
     }
   },
   "Recovery": {
-    "eyebrow": "Asset recovery",
+    "eyebrow": "Pagbawi ng asset",
     "title": "I-trace muna. Mag-commit lang kapag may daan.",
     "description": "Isumite ang wallet addresses, transaction hashes, at maikling timeline. Sinusundan namin kung saan pumunta ang halaga, naghahanda ng findings para sa exchanges at counsel, at sinasabi nang malinaw kung realistic ang recovery bago ang paid engagement. Hindi kami nangangako ng recovery.",
     "points": {
@@ -43,17 +43,17 @@
     "cta": "Simulan recovery"
   },
   "Payments": {
-    "eyebrow": "Cross-border payments",
+    "eyebrow": "Mga pagbabayad sa ibang bansa",
     "title": "Settlement na maaaring i-audit ng treasury mo",
     "description": "I-convert ang crypto sa fiat kung saan mabagal, mahal, o opaque ang local banking rails. Kitang-kita ang rate, fee, at status mula wallet initiation hanggang beneficiary delivery — hindi hula ang finance at ops.",
     "cta": "Payment options",
     "capabilities": {
       "corridors": {
-        "title": "Active corridors",
+        "title": "Mga aktibong koridor",
         "desc": "Payout sa bank accounts sa markets na suportado namin ngayon. Makipag-ugnayan kung wala sa list ang corridor mo."
       },
       "visibility": {
-        "title": "Handoff tracking",
+        "title": "Pagsubaybay sa paglilipat",
         "desc": "Status sa bawat hakbang ng flow, hindi isang pending flag na walang context."
       },
       "compliance": {
@@ -63,7 +63,7 @@
     }
   },
   "Lending": {
-    "eyebrow": "Crypto lending",
+    "eyebrow": "Pagpapautang ng crypto",
     "title": "Liquidity habang naka-vault ang collateral",
     "description": "Mag-post ng approved collateral at kumuha ng stablecoins o fiat. Ipinapakita ang LTV, repayment terms, at liquidation thresholds bago ang disbursement — walang hidden triggers pagkatapos pumirma.",
     "points": {
@@ -74,13 +74,13 @@
     "cta": "Mag-apply loan"
   },
   "Security": {
-    "eyebrow": "Platform security",
+    "eyebrow": "Seguridad ng platform",
     "title": "Controls para sa teams na nag-custody ng client assets",
     "description": "Wallet monitoring, permissioned access, at incident escalation para sa org na hindi maaaring ituring ang suspicious activity na secondary ticket. Para sa ops teams, hindi slide-deck security.",
-    "cta": "Security overview",
+    "cta": "Pangkalahatang-ideya ng seguridad",
     "pillars": {
       "monitoring": {
-        "title": "Activity monitoring",
+        "title": "Pagsubaybay sa aktibidad",
         "desc": "Alerts sa unusual outflows, bagong counterparties, at transfers outside policy."
       },
       "access": {
@@ -88,7 +88,7 @@
         "desc": "Role-based permissions na may record kung sino ang nag-approve ng ano at kailan."
       },
       "incident": {
-        "title": "Incident response",
+        "title": "Pagtugon sa insidente",
         "desc": "Written escalation steps na puwedeng patakbuhin ng team kapag kailangan ng human review."
       }
     }
