@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "توزيع توكن LNX والمكافآت | Lenix Protocol",
+    "description": "شارك في توزيع Lenix Protocol واحصل على توكنات LNX. احجز مكانك في تحليلات البلوكشين واسترداد الأصول.",
+    "keywords": "توزيع عملات، توكن LNX، عملات مجانية، مكافآت Lenix، مكافآت أمن البلوكشين"
+  },
+  "Hero": {
+    "badge": "برنامج مكافآت المجتمع",
+    "title1": "اطلب",
+    "title2": "التوزيع",
+    "description": "انضم إلى Lenix. نوزّع مكافآت بقيمة <amount>$10,000,000</amount> على الداعمين الأوائل وأعضاء المجتمع النشطين.",
+    "imageAlt": "خلفية التوزيع"
+  },
+  "Ongoing": {
+    "live": "حدث جارٍ",
+    "title1": "هدايا",
+    "title2": "سريعة",
+    "description": "اربط محفظتك الآن للتحقق من الأهلية واطلب مكافأة USDT فورًا. العرض محدود للمشتركين الأوائل.",
+    "rewardLabel": "المكافأة",
+    "rewardValue": "50 USDT",
+    "networkLabel": "الشبكة",
+    "networkValue": "TRC-20",
+    "remainingLabel": "المتبقي",
+    "remainingValue": "14%",
+    "connectTitle": "اربط المحفظة للطلب",
+    "connectButton": "ربط المحفظة",
+    "supported": "المدعوم: MetaMask وTrust Wallet وPhantom",
+    "connectedTitle": "تم ربط المحفظة",
+    "eligible": "أنت مؤهل.",
+    "claimButton": "اطلب 50 USDT",
+    "processing": "جارٍ معالجة المعاملة...",
+    "confirmWallet": "أكّد العملية داخل محفظتك",
+    "successTitle": "تم",
+    "successBody": "أُرسل 50 USDT إلى محفظتك.",
+    "disconnect": "قطع الاتصال / تبديل المحفظة"
+  },
+  "Upcoming": {
+    "title1": "الفعاليات",
+    "title2": "القادمة",
+    "subtitle": "سنعلن التوزيعات التالية هنا. معايير الأهلية تُنشر بعد ذلك بوقت قصير.",
+    "estDate": "التاريخ المتوقع",
+    "reward": "المكافأة",
+    "events": {
+      "lnx": {
+        "title": "توزيع توكن LNX",
+        "date": "قريبًا",
+        "description": "توزيع توكن الحوكمة لمزوّدي السيولة النشطين.",
+        "reward": "توكنات LNX",
+        "status": "مقفل"
+      },
+      "nft": {
+        "title": "قائمة NFT البيضاء",
+        "date": "الربع الرابع 2026",
+        "description": "وصول حصري إلى مجموعة NFT Lenix Genesis.",
+        "reward": "مقعد في القائمة",
+        "status": "قادم"
+      },
+      "partner": {
+        "title": "بروتوكول شريك",
+        "date": "يُحدد لاحقًا",
+        "description": "توزيع مفاجئ من شركائنا في DeFi.",
+        "reward": "صندوق غامض",
+        "status": "مقفل"
+      }
+    }
+  }
+}

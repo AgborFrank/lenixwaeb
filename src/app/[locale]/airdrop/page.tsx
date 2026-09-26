@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import { AirdropContent } from "./components/airdrop-content";
 
-export const metadata: Metadata = {
-  title: "LNX Token Airdrop & Rewards | Lenix Protocol",
-  description: "Participate in the Lenix Protocol airdrop and earn LNX tokens. Secure your spot in the future of blockchain forensics and asset recovery.",
-  keywords: ["Crypto Airdrop", "LNX Token", "Free Crypto", "Lenix Rewards", "Blockchain Security Rewards"],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("Airdrop.meta");
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords").split(", "),
+  };
+}
 
 export default function AirdropPage() {
   return <AirdropContent />;
 }
-

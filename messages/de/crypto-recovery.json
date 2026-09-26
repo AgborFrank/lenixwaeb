@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Zertifizierte Rückgewinnung von Krypto-Assets | Lenix Protocol",
+    "description": "Professionelle Rückgewinnung verlorener oder gestohlener Kryptowährung mit einer Erfolgsquote von 94 %. Spezialisiert auf die Wiederherstellung von Wallet-Passwörtern und forensisch geführte Betrugsermittlungen.",
+    "keywords": "Krypto-Rückgewinnung, Gestohlene Bitcoin zurückholen, Verlorene Wallet wiederherstellen, Krypto-Betrugsermittlung, Blockchain-Forensik"
+  },
+  "Hero": {
+    "eyebrow": "Zertifizierte Asset-Rückgewinnung",
+    "title": "Forensisch geführte Rückgewinnung bei gestohlener oder fehlgeleiteter Krypto",
+    "description": "Ermittler von Lenix verfolgen Bewegungen on-chain, bereiten Unterlagen für Börsen und Strafverfolgung vor und koordinieren das Einfrieren von Assets, solange eine Rückgewinnung realistisch bleibt.",
+    "submit": "Fall einreichen",
+    "process": "Ablauf ansehen",
+    "imageAlt": "Arbeitsplatz für forensische Blockchain-Ermittlung"
+  },
+  "Process": {
+    "eyebrow": "Methodik",
+    "title": "So läuft die Rückgewinnung ab",
+    "description": "Ein strukturierter Prozess in vier Phasen, eingesetzt bei Börsen-Hacks, Phishing-Vorfällen und unbefugten Überweisungen.",
+    "phase": "Phase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Erste Einschätzung",
+        "description": "Wir prüfen Transaktions-Hashes, Zeitverläufe und die Art des Verlusts, um Nachverfolgbarkeit und rechtliche Optionen zu bestimmen.",
+        "tag1": "Spurenprüfung",
+        "tag2": "Risikobewertung"
+      },
+      "strategy": {
+        "title": "Rückgewinnungsstrategie",
+        "description": "Ermittler stellen eine Akte mit On-Chain-Beweisen, Gegenparteien und den nächsten Schritten je nach Rechtsraum zusammen.",
+        "tag1": "Beweispaket",
+        "tag2": "Rechtlicher Weg"
+      },
+      "coordination": {
+        "title": "Aktive Koordination",
+        "description": "Wir sprechen Börsen, Verwahrer und Behörden an, um Gelder einzufrieren und rechtmäßige Rückgabewege zu verfolgen.",
+        "tag1": "Einfrierungsanträge",
+        "tag2": "Verhandlung"
+      },
+      "return": {
+        "title": "Rückgabe der Assets",
+        "description": "Zurückgewonnene Assets gehen an geprüfte Wallets, mit Hinweisen zur Absicherung der Konten danach.",
+        "tag1": "Geprüfte Auszahlung",
+        "tag2": "Fallabschluss"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "Verfolgte und beobachtete Assets",
+    "cases": "Geprüfte Fälle",
+    "jurisdictions": "Abgedeckte Rechtsräume",
+    "intake": "Vorfallaufnahme"
+  },
+  "Features": {
+    "eyebrow": "Leistungen",
+    "title": "Warum Kunden die Rückgewinnung von Lenix wählen",
+    "description": "Technik und Ermittlererfahrung zusammen, für Fälle, in denen Zeit und Beweisqualität zählen.",
+    "items": {
+      "tracing": {
+        "title": "Forensische Nachverfolgung",
+        "description": "On-Chain-Analyse über Mixer, Bridges und verschachtelte Wallet-Strukturen, um die Geldbewegung zu folgen."
+      },
+      "investigators": {
+        "title": "Von Ermittlern geführte Fälle",
+        "description": "Ehemalige Fachleute aus Nachrichtendienst, Cybersicherheit und Compliance werden jedem Auftrag zugewiesen."
+      },
+      "legal": {
+        "title": "Globales Rechtsnetz",
+        "description": "Abstimmung mit Strafverfolgung und Anwälten in wichtigen Rechtsräumen und mit Börsenpartnern."
+      },
+      "confidential": {
+        "title": "Vertrauliche Bearbeitung",
+        "description": "Verschlüsselte Aufnahme, getrennte Fallakten und strenge Zugriffskontrollen für sensibles Material."
+      },
+      "documentation": {
+        "title": "Gerichtsfeste Dokumentation",
+        "description": "Beweispakete im Format für Aufsichtseinreichungen, Zivilverfahren und Strafanzeigen."
+      },
+      "fees": {
+        "title": "Honorar am Ergebnis ausgerichtet",
+        "description": "Rückgewinnungshonorare sind an erfolgreiche Rückgaben gebunden. Die Konditionen werden bestätigt, bevor die Ermittlung beginnt."
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "Kundenergebnisse",
+    "title": "Beispielhafte Rückgewinnungen",
+    "description": "Anonymisierte Zusammenfassungen aus jüngeren Aufträgen. Einzelergebnisse hängen vom Sachverhalt und von der Mitwirkung Dritter ab.",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "Softwareentwickler",
+        "quote": "Nach einer Wallet-Kompromittierung hat Lenix den Fluss nachverfolgt und das Einfrieren bei einer Börse mit koordiniert. Die Kommunikation war in jeder Phase klar."
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Marketingdirektorin",
+        "quote": "Ein Phishing-Vorfall hat meine ETH-Bestände geleert. Das Team hat die Spur dokumentiert und den Großteil innerhalb von drei Wochen zurückgeholt."
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "Unternehmer",
+        "quote": "Ich hielt einen sechsstelligen USDT-Verlust für endgültig. Lenix hat ihn als Ermittlung behandelt, nicht als Verkaufsgespräch, und Ergebnisse geliefert."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "Häufige Fragen",
+    "title": "Gängige Fragen",
+    "subtitle": "Was Sie erwarten können, bevor Sie einen Fall einreichen.",
+    "discuss": "Möchten Sie einen konkreten Vorfall besprechen?",
+    "submit": "Rückgewinnungsanfrage einreichen →",
+    "items": {
+      "types": {
+        "question": "Welche Arten von Krypto-Verlusten können Sie zurückholen?",
+        "answer": "Wir bearbeiten Hacks, Phishing, unbefugte Überweisungen und ausgewählte Fälle von Wallet-Zugriff. Die Abdeckung hängt von der Chain, dem Zeitpunkt und dem Verbleib der Gelder ab. Wir bestätigen das nach Prüfung Ihrer Transaktionsdaten."
+      },
+      "duration": {
+        "question": "Wie lange dauert der Rückgewinnungsprozess?",
+        "answer": "Einfache Fälle gegenüber einer Börse können in Wochen abgeschlossen sein. Grenzüberschreitende oder mehrstufige Nachverfolgung kann ein bis drei Monate dauern. Nach der ersten Einschätzung erhalten Sie eine Zeitschätzung."
+      },
+      "fees": {
+        "question": "Wie sind die Honorare aufgebaut?",
+        "answer": "Honorare werden schriftlich vereinbart, bevor die Ermittlung beginnt. Viele Aufträge nutzen ergebnisabhängige Konditionen, gebunden an eine erfolgreiche Rückgewinnung, statt hoher Vorschüsse."
+      },
+      "confidential": {
+        "question": "Sind meine Angaben vertraulich?",
+        "answer": "Ja. Fallunterlagen sind verschlüsselt, der Zugriff ist kontrolliert, und sie werden nur mit den Stellen geteilt, die für die Rückgewinnung nötig sind — Börsen, Anwälte oder Behörden — mit Ihrer Zustimmung."
+      },
+      "guarantee": {
+        "question": "Garantieren Sie die Rückgewinnung?",
+        "answer": "Kein seriöses Unternehmen kann eine Rückgewinnung garantieren. Das Ergebnis hängt davon ab, wohin die Gelder geflossen sind, wie schnell der Fall gemeldet wird und ob Verwahrer oder Börsen handeln können. Bevor Sie sich festlegen, erhalten Sie eine ehrliche Einschätzung der Aussichten."
+      },
+      "include": {
+        "question": "Was soll ich beim Einreichen eines Falls beifügen?",
+        "answer": "Transaktions-Hashes, beteiligte Wallet-Adressen, ungefährer Betrag und Asset, Datum des Vorfalls sowie Börsen- oder Plattformkonten, die mit dem Verlust zusammenhängen. Screenshots, E-Mails oder Strafanzeigen stärken die Akte."
+      },
+      "mixers": {
+        "question": "Können Sie Gelder durch Mixer oder Privatsphäre-Tools verfolgen?",
+        "answer": "Manche Flüsse lassen sich noch über Adresscluster, Zeitmuster und Ausstiegswege analysieren, aber Privatsphäre-Protokolle und starke Verschleierung senken die Aussicht auf Rückgewinnung. Wir sagen Ihnen vorab, wenn die Spur voraussichtlich endet."
+      },
+      "enforcement": {
+        "question": "Arbeiten Sie mit Strafverfolgung und Börsen?",
+        "answer": "Ja. Wir bereiten Spurpakete für die Strafverfolgung vor und stellen Einfrierungs- oder Auskunftsanträge an Börsen und Verwahrer, wenn Rechtsraum und Beweise das tragen."
+      },
+      "keys": {
+        "question": "Werden Sie jemals nach meinen privaten Schlüsseln oder meiner Seed-Phrase fragen?",
+        "answer": "Niemals. Seriöse Rückgewinnungsarbeit braucht weder Ihre Seed-Phrase noch Ihre privaten Schlüssel. Wenn jemand, der Hilfe anbietet, danach fragt, behandeln Sie das als Betrug und brechen Sie den Kontakt sofort ab."
+      },
+      "after": {
+        "question": "Was passiert, nachdem ich das Formular abgesendet habe?",
+        "answer": "Unser Team prüft Ihre Unterlagen innerhalb eines Werktags, bestätigt, ob forensische Nachverfolgung realistisch ist, und skizziert nächste Schritte, nötige Dokumente und Honorarkonditionen, wenn Sie fortfahren möchten."
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Fallaufnahme",
+    "title": "Rückgewinnungsanfrage einreichen",
+    "description": "Geben Sie Transaktionsdaten und eine kurze Schilderung des Vorfalls an. Unsere Ermittler nutzen das, um die Nachverfolgbarkeit zu prüfen, bevor Konditionen besprochen werden.",
+    "submittedTitle": "Anfrage gesendet",
+    "submittedBody": "Unser Rückgewinnungsteam prüft Ihren Fall und meldet sich innerhalb von 24–48 Stunden.",
+    "submitAnother": "Weitere Anfrage einreichen",
+    "steps": "Schritte",
+    "step": "Schritt {id}",
+    "step1Title": "Kontakt und Verlustdetails",
+    "step1Desc": "Wer Sie sind und was verloren ging.",
+    "step2Title": "Vorfallbericht",
+    "step2Desc": "Zusammenfassung und Belege.",
+    "fullName": "Vollständiger Name",
+    "namePlaceholder": "Max Mustermann",
+    "email": "E-Mail",
+    "emailPlaceholder": "max@example.com",
+    "phone": "Telefon (optional)",
+    "txHash": "Transaktions-Hash oder Wallet-Adresse",
+    "txPlaceholder": "0x… oder bc1…",
+    "amount": "Ungefährer Verlustbetrag",
+    "amountPlaceholder": "z. B. 50000",
+    "currency": "Währung",
+    "blockchain": "Blockchain",
+    "selectBlockchain": "Blockchain auswählen",
+    "otherChain": "Sonstige",
+    "continue": "Weiter zu den Vorfalldetails",
+    "summary": "Zusammenfassung des Vorfalls",
+    "summaryPlaceholder": "Beschreiben Sie, was geschehen ist, wann es war und welche Plattformen oder Wallets beteiligt waren.",
+    "evidence": "Belege (optional)",
+    "evidenceHint": "Screenshots, Börsen-E-Mails oder Strafanzeigen (PDF, PNG, JPG).",
+    "privacy": "Lenix Protocol nutzt Ihre Kontaktdaten, um zu diesem Fall zu antworten. Siehe unsere <link>Datenschutzerklärung</link>.",
+    "back": "Zurück",
+    "submitting": "Wird gesendet…",
+    "submit": "Rückgewinnungsanfrage senden",
+    "points": {
+      "confidential": {
+        "title": "Vertraulich",
+        "desc": "Verschlüsselte Aufnahme und beschränkter Fallzugriff."
+      },
+      "review": {
+        "title": "Prüfung in 24 Std.",
+        "desc": "Erste Einschätzung innerhalb eines Werktags."
+      },
+      "fee": {
+        "title": "Kein Vorschuss",
+        "desc": "Konditionen werden vor der Ermittlung bestätigt."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Bitte füllen Sie alle Pflichtfelder aus, bevor Sie fortfahren.",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+      "required": "Bitte füllen Sie alle Pflichtfelder aus",
+      "failed": "Rückgewinnungsanfrage konnte nicht gesendet werden",
+      "success": "Rückgewinnungsanfrage gesendet. Unser Team meldet sich in Kürze."
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Airdrop at reward ng token na LNX | Lenix Protocol",
+    "description": "Sumali sa airdrop ng Lenix Protocol at tumanggap ng LNX token. Magreserba ng puwesto sa blockchain forensics at pagbawi ng asset.",
+    "keywords": "Crypto airdrop, LNX token, Libreng crypto, Reward ng Lenix, Reward sa seguridad ng blockchain"
+  },
+  "Hero": {
+    "badge": "Programa ng reward ng komunidad",
+    "title1": "Kunin ang iyong",
+    "title2": "Airdrop",
+    "description": "Sumali sa Lenix. Namamahagi kami ng <amount>$10,000,000</amount> na reward sa mga maagang sumuporta at sa mga aktibong miyembro ng komunidad.",
+    "imageAlt": "Background ng airdrop"
+  },
+  "Ongoing": {
+    "live": "Kasalukuyang event",
+    "title1": "Mabilis na",
+    "title2": "pamigay",
+    "description": "Ikonekta ang wallet para tingnan kung kwalipikado ka at kunin agad ang reward na USDT. Limitadong alok para sa mga maagang sasali.",
+    "rewardLabel": "Reward",
+    "rewardValue": "50 USDT",
+    "networkLabel": "Network",
+    "networkValue": "TRC-20",
+    "remainingLabel": "Natitira",
+    "remainingValue": "14%",
+    "connectTitle": "Ikonekta para kunin",
+    "connectButton": "Ikonekta ang wallet",
+    "supported": "Suportado: MetaMask, Trust Wallet, Phantom",
+    "connectedTitle": "Nakakonekta ang wallet",
+    "eligible": "Kwalipikado ka.",
+    "claimButton": "Kunin ang 50 USDT",
+    "processing": "Pinoproseso ang transaksyon...",
+    "confirmWallet": "Kumpirmahin sa iyong wallet",
+    "successTitle": "Tapos na",
+    "successBody": "Naipadala na ang 50 USDT sa iyong wallet.",
+    "disconnect": "Idiskonekta / palitan ang wallet"
+  },
+  "Upcoming": {
+    "title1": "Mga susunod na",
+    "title2": "event",
+    "subtitle": "Dito ilalabas ang susunod na pamamahagi. Susunod ang mga kundisyon ng pagiging kwalipikado.",
+    "estDate": "Tinatayang petsa",
+    "reward": "Reward",
+    "events": {
+      "lnx": {
+        "title": "Pamamahagi ng LNX token",
+        "date": "Malapit na",
+        "description": "Pamamahagi ng governance token para sa mga aktibong liquidity provider.",
+        "reward": "LNX token",
+        "status": "Naka-lock"
+      },
+      "nft": {
+        "title": "NFT whitelist",
+        "date": "Q4 2026",
+        "description": "Eksklusibong access sa koleksyon ng NFT na Lenix Genesis.",
+        "reward": "Puwesto sa listahan",
+        "status": "Paparating"
+      },
+      "partner": {
+        "title": "Partner protocol",
+        "date": "Ia-anunsyo",
+        "description": "Biglaang pamamahagi mula sa aming mga DeFi partner.",
+        "reward": "Mystery box",
+        "status": "Naka-lock"
+      }
+    }
+  }
+}

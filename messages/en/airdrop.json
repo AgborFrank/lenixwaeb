@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "LNX Token Airdrop & Rewards | Lenix Protocol",
+    "description": "Participate in the Lenix Protocol airdrop and earn LNX tokens. Secure your spot in the future of blockchain forensics and asset recovery.",
+    "keywords": "Crypto Airdrop, LNX Token, Free Crypto, Lenix Rewards, Blockchain Security Rewards"
+  },
+  "Hero": {
+    "badge": "Community Rewards Program",
+    "title1": "Claim your",
+    "title2": "Airdrop",
+    "description": "Join the Lenix revolution. We are distributing <amount>$10,000,000</amount> in rewards to our early supporters and active community members.",
+    "imageAlt": "Airdrop background"
+  },
+  "Ongoing": {
+    "live": "Live Event",
+    "title1": "Flash",
+    "title2": "Giveaway",
+    "description": "Connect your wallet now to check eligibility and instantly claim your USDT reward. Limited time offer for early adopters.",
+    "rewardLabel": "Reward",
+    "rewardValue": "50 USDT",
+    "networkLabel": "Network",
+    "networkValue": "TRC-20",
+    "remainingLabel": "Remaining",
+    "remainingValue": "14%",
+    "connectTitle": "Connect to Claim",
+    "connectButton": "Connect Wallet",
+    "supported": "Supported: MetaMask, Trust Wallet, Phantom",
+    "connectedTitle": "Wallet Connected",
+    "eligible": "You are eligible!",
+    "claimButton": "Claim 50 USDT",
+    "processing": "Processing Transaction...",
+    "confirmWallet": "Please confirm inside your wallet",
+    "successTitle": "Success!",
+    "successBody": "50 USDT has been sent to your wallet.",
+    "disconnect": "Disconnect / Switch Wallet"
+  },
+  "Upcoming": {
+    "title1": "Upcoming",
+    "title2": "Events",
+    "subtitle": "Stay tuned for future distribution events. Eligibility criteria will be announced shortly.",
+    "estDate": "Est. Date",
+    "reward": "Reward",
+    "events": {
+      "lnx": {
+        "title": "LNX Token Drop",
+        "date": "Coming Soon",
+        "description": "Governance token distribution for active liquidity providers.",
+        "reward": "LNX Tokens",
+        "status": "Locked"
+      },
+      "nft": {
+        "title": "NFT Whitelist",
+        "date": "Q4 2026",
+        "description": "Exclusive access to the Lenix Genesis NFT collection.",
+        "reward": "Whitelist Spot",
+        "status": "Upcoming"
+      },
+      "partner": {
+        "title": "Partner Protocol",
+        "date": "TBA",
+        "description": "Surprise drop from our strategic DeFi partners.",
+        "reward": "Mystery Box",
+        "status": "Locked"
+      }
+    }
+  }
+}

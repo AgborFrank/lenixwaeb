@@ -11,6 +11,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { glass } from "@/lib/recovery-styles";
 
 const BLOCKCHAINS = [
@@ -39,26 +41,6 @@ const CURRENCIES = [
   { value: "ETH", label: "ETH" },
 ];
 
-const INTAKE_POINTS = [
-  {
-    title: "Confidential",
-    desc: "Encrypted intake and restricted case access.",
-  },
-  {
-    title: "24h review",
-    desc: "Initial assessment within one business day.",
-  },
-  {
-    title: "No upfront fee",
-    desc: "Terms confirmed before investigative work.",
-  },
-];
-
-const FORM_STEPS = [
-  { id: 1 as const, title: "Contact & loss details", desc: "Who you are and what was lost." },
-  { id: 2 as const, title: "Incident report", desc: "Summary and supporting evidence." },
-];
-
 const countries = Country.getAllCountries() as {
   isoCode: string;
   name: string;
@@ -69,6 +51,7 @@ const selectTriggerClass =
   "h-11 w-full rounded-md border border-white/10 bg-black/30 text-sm text-white [&>svg]:text-neutral-500 focus:ring-2 focus:ring-yellow-400/25 focus:ring-offset-0";
 
 export default function RecoveryForm() {
+  const t = useTranslations("CryptoRecovery.Form");
   const formRef = useRef<HTMLFormElement>(null);
   const [step, setStep] = useState<1 | 2>(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -82,14 +65,14 @@ export default function RecoveryForm() {
     for (const field of required) {
       const value = (form.elements.namedItem(field) as HTMLInputElement | null)?.value?.trim();
       if (!value) {
-        toast.error("Please complete all required fields before continuing.");
+        toast.error(t("errors.requiredContinue"));
         return false;
       }
     }
 
     const email = (form.elements.namedItem("email") as HTMLInputElement).value.trim();
     if (!/\S+@\S+\.\S+/.test(email)) {
-      toast.error("Please enter a valid email address.");
+      toast.error(t("errors.email"));
       return false;
     }
 
@@ -108,7 +91,7 @@ export default function RecoveryForm() {
     const incident_summary = formData.get("incident_summary")?.toString()?.trim();
 
     if (!name || !transaction_hash || !amount_stolen || !incident_summary) {
-      toast.error("Please fill in all required fields");
+      toast.error(t("errors.required"));
       return;
     }
 
@@ -122,16 +105,16 @@ export default function RecoveryForm() {
       const data = await res.json().catch(() => ({}));
 
       if (!res.ok) {
-        toast.error(data.error || "Failed to submit recovery request");
+        toast.error(data.error || t("errors.failed"));
         return;
       }
 
-      toast.success("Recovery request submitted. Our team will contact you soon.");
+      toast.success(t("errors.success"));
       setIsSubmitted(true);
       setStep(1);
       form.reset();
     } catch {
-      toast.error("Failed to submit recovery request");
+      toast.error(t("errors.failed"));
     } finally {
       setIsSubmitting(false);
     }
@@ -141,12 +124,9 @@ export default function RecoveryForm() {
     <section className={`${glass.section} bg-black`} id="start-recovery">
       <div className={glass.container}>
         <header className="mb-10 lg:mb-12 max-w-2xl mx-auto text-center">
-          <p className={`${glass.eyebrow} mb-3`}>Case intake</p>
-          <h2 className={glass.titleCenter}>Submit a recovery request</h2>
-          <p className={`${glass.leadCenter} mt-4 text-neutral-300`}>
-            Provide transaction details and a brief incident summary. Our investigators use this to
-            determine traceability before any engagement terms are discussed.
-          </p>
+          <p className={`${glass.eyebrow} mb-3`}>{t("eyebrow")}</p>
+          <h2 className={glass.titleCenter}>{t("title")}</h2>
+          <p className={`${glass.leadCenter} mt-4 text-neutral-300`}>{t("description")}</p>
         </header>
 
         <div className="max-w-3xl mx-auto">
@@ -155,16 +135,14 @@ export default function RecoveryForm() {
               <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/15 text-emerald-400">
                 <CheckCircle className="h-6 w-6" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Request submitted</h3>
-              <p className="text-sm text-neutral-400 mb-6 max-w-md mx-auto">
-                Our recovery team will review your case and contact you within 24–48 hours.
-              </p>
+              <h3 className="text-lg font-semibold text-white mb-2">{t("submittedTitle")}</h3>
+              <p className="text-sm text-neutral-400 mb-6 max-w-md mx-auto">{t("submittedBody")}</p>
               <button
                 type="button"
                 onClick={() => setIsSubmitted(false)}
                 className={glass.btnGlass}
               >
-                Submit another request
+                {t("submitAnother")}
               </button>
             </div>
           ) : (
@@ -172,10 +150,15 @@ export default function RecoveryForm() {
               <div className="grid lg:grid-cols-[220px_minmax(0,1fr)]">
                 <aside className="border-b lg:border-b-0 lg:border-r border-white/10 bg-black/25 p-6">
                   <p className="text-xs font-medium uppercase tracking-wide text-neutral-500 mb-4">
-                    Steps
+                    {t("steps")}
                   </p>
                   <ol className="space-y-3">
-                    {FORM_STEPS.map((item) => {
+                    {([1, 2] as const).map((id) => {
+                      const item = {
+                        id,
+                        title: t(id === 1 ? "step1Title" : "step2Title"),
+                        desc: t(id === 1 ? "step1Desc" : "step2Desc"),
+                      };
                       const isActive = step === item.id;
                       const isComplete = step > item.id;
 
@@ -198,7 +181,7 @@ export default function RecoveryForm() {
                                 isActive || isComplete ? "text-yellow-400" : "text-neutral-500"
                               }`}
                             >
-                              Step {item.id}
+                              {t("step", { id: item.id })}
                             </p>
                             <p className="text-sm font-semibold text-white leading-snug">
                               {item.title}
@@ -229,40 +212,40 @@ export default function RecoveryForm() {
                         <div className="grid sm:grid-cols-2 gap-4">
                           <div>
                             <label htmlFor="name" className={glass.label}>
-                              Full name <span className="text-red-400/90">*</span>
+                              {t("fullName")} <span className="text-red-400/90">*</span>
                             </label>
                             <input
                               id="name"
                               name="name"
                               type="text"
                               required
-                              placeholder="John Doe"
+                              placeholder={t("namePlaceholder")}
                               className={glass.field}
                             />
                           </div>
                           <div>
                             <label htmlFor="email" className={glass.label}>
-                              Email <span className="text-red-400/90">*</span>
+                              {t("email")} <span className="text-red-400/90">*</span>
                             </label>
                             <input
                               id="email"
                               name="email"
                               type="email"
                               required
-                              placeholder="john@example.com"
+                              placeholder={t("emailPlaceholder")}
                               className={glass.field}
                             />
                           </div>
                         </div>
 
                         <div>
-                          <label className={glass.label}>Phone (optional)</label>
+                          <label className={glass.label}>{t("phone")}</label>
                           <PhoneCountrySelect countries={countries} />
                         </div>
 
                         <div>
                           <label htmlFor="transaction_hash" className={glass.label}>
-                            Transaction hash or wallet address{" "}
+                            {t("txHash")}{" "}
                             <span className="text-red-400/90">*</span>
                           </label>
                           <input
@@ -270,7 +253,7 @@ export default function RecoveryForm() {
                             name="transaction_hash"
                             type="text"
                             required
-                            placeholder="0x… or bc1…"
+                            placeholder={t("txPlaceholder")}
                             className={`${glass.field} font-mono text-xs sm:text-sm`}
                           />
                         </div>
@@ -278,20 +261,20 @@ export default function RecoveryForm() {
                         <div className="grid sm:grid-cols-2 gap-4">
                           <div>
                             <label htmlFor="amount_stolen" className={glass.label}>
-                              Approximate amount lost <span className="text-red-400/90">*</span>
+                              {t("amount")} <span className="text-red-400/90">*</span>
                             </label>
                             <input
                               id="amount_stolen"
                               name="amount_stolen"
                               type="text"
                               required
-                              placeholder="e.g. 50000"
+                              placeholder={t("amountPlaceholder")}
                               className={glass.field}
                             />
                           </div>
                           <div>
                             <label htmlFor="currency-select" className={glass.label}>
-                              Currency
+                              {t("currency")}
                             </label>
                             <Select
                               defaultValue="USD"
@@ -303,7 +286,7 @@ export default function RecoveryForm() {
                               }}
                             >
                               <SelectTrigger id="currency-select" className={selectTriggerClass}>
-                                <SelectValue placeholder="Currency" />
+                                <SelectValue placeholder={t("currency")} />
                               </SelectTrigger>
                               <SelectContent className="bg-neutral-950 border-white/10">
                                 {CURRENCIES.map((c) => (
@@ -322,7 +305,7 @@ export default function RecoveryForm() {
 
                         <div>
                           <label htmlFor="blockchain-select" className={glass.label}>
-                            Blockchain
+                            {t("blockchain")}
                           </label>
                           <Select
                             defaultValue="BTC"
@@ -334,7 +317,7 @@ export default function RecoveryForm() {
                             }}
                           >
                             <SelectTrigger id="blockchain-select" className={selectTriggerClass}>
-                              <SelectValue placeholder="Select blockchain" />
+                              <SelectValue placeholder={t("selectBlockchain")} />
                             </SelectTrigger>
                             <SelectContent className="bg-neutral-950 border-white/10 max-h-[280px]">
                               {BLOCKCHAINS.map((b) => (
@@ -343,7 +326,7 @@ export default function RecoveryForm() {
                                   value={b.value}
                                   className="text-white focus:bg-white/10"
                                 >
-                                  {b.label}
+                                  {b.value === "OTHER" ? t("otherChain") : b.label}
                                 </SelectItem>
                               ))}
                             </SelectContent>
@@ -358,7 +341,7 @@ export default function RecoveryForm() {
                             }}
                             className={`${glass.btnPrimary} w-full sm:w-auto`}
                           >
-                            Continue to incident details
+                            {t("continue")}
                           </button>
                         </div>
                       </div>
@@ -366,21 +349,21 @@ export default function RecoveryForm() {
                       <div className="space-y-4">
                         <div>
                           <label htmlFor="incident_summary" className={glass.label}>
-                            Incident summary <span className="text-red-400/90">*</span>
+                            {t("summary")} <span className="text-red-400/90">*</span>
                           </label>
                           <textarea
                             id="incident_summary"
                             name="incident_summary"
                             required
                             rows={5}
-                            placeholder="Describe what happened, when it occurred, and any platforms or wallets involved."
+                            placeholder={t("summaryPlaceholder")}
                             className={glass.textarea}
                           />
                         </div>
 
                         <div>
                           <label htmlFor="evidence" className={glass.label}>
-                            Supporting evidence (optional)
+                            {t("evidence")}
                           </label>
                           <input
                             id="evidence"
@@ -390,17 +373,18 @@ export default function RecoveryForm() {
                             className={`${glass.field} h-auto py-2.5 file:mr-3 file:rounded-md file:border-0 file:bg-white/10 file:px-3 file:py-1.5 file:text-xs file:font-medium file:text-white hover:file:bg-white/15 cursor-pointer`}
                           />
                           <p className="text-xs text-neutral-500 mt-1.5">
-                            Screenshots, exchange emails, or police reports (PDF, PNG, JPG).
+                            {t("evidenceHint")}
                           </p>
                         </div>
 
                         <p className="text-xs text-neutral-500 leading-relaxed">
-                          Lenix Protocol uses your contact details to respond about this case. See
-                          our{" "}
-                          <a href="/privacy-policy" className={glass.textLink}>
-                            Privacy Policy
-                          </a>
-                          .
+                          {t.rich("privacy", {
+                            link: (chunks) => (
+                              <Link href="/privacy-policy" className={glass.textLink}>
+                                {chunks}
+                              </Link>
+                            ),
+                          })}
                         </p>
 
                         <div className="flex flex-col-reverse sm:flex-row gap-3 pt-2">
@@ -409,7 +393,7 @@ export default function RecoveryForm() {
                             onClick={() => setStep(1)}
                             className={`${glass.btnGlass} w-full sm:w-auto`}
                           >
-                            Back
+                            {t("back")}
                           </button>
                           <button
                             type="submit"
@@ -419,10 +403,10 @@ export default function RecoveryForm() {
                             {isSubmitting ? (
                               <>
                                 <Loader2 className="h-4 w-4 animate-spin" />
-                                Submitting…
+                                {t("submitting")}
                               </>
                             ) : (
-                              "Submit recovery request"
+                              t("submit")
                             )}
                           </button>
                         </div>
@@ -436,10 +420,10 @@ export default function RecoveryForm() {
         </div>
 
         <div className="mt-10 grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto">
-          {INTAKE_POINTS.map((item) => (
-            <article key={item.title} className={`${glass.card} px-4 py-4 text-center sm:text-left`}>
-              <p className="text-sm font-semibold text-white mb-1">{item.title}</p>
-              <p className="text-xs text-neutral-500 leading-relaxed">{item.desc}</p>
+          {(["confidential", "review", "fee"] as const).map((key) => (
+            <article key={key} className={`${glass.card} px-4 py-4 text-center sm:text-left`}>
+              <p className="text-sm font-semibold text-white mb-1">{t(`points.${key}.title`)}</p>
+              <p className="text-xs text-neutral-500 leading-relaxed">{t(`points.${key}.desc`)}</p>
             </article>
           ))}
         </div>

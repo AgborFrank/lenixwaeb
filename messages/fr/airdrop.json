@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Airdrop et récompenses du jeton LNX | Lenix Protocol",
+    "description": "Participez à l'airdrop Lenix Protocol et recevez des jetons LNX. Réservez votre place dans la forensique blockchain et la récupération d'actifs.",
+    "keywords": "Airdrop crypto, Jeton LNX, Crypto gratuite, Récompenses Lenix, Récompenses sécurité blockchain"
+  },
+  "Hero": {
+    "badge": "Programme de récompenses communautaires",
+    "title1": "Réclamez votre",
+    "title2": "Airdrop",
+    "description": "Rejoignez le mouvement Lenix. Nous distribuons <amount>10 000 000 $</amount> de récompenses à nos premiers soutiens et aux membres actifs de la communauté.",
+    "imageAlt": "Arrière-plan de l'airdrop"
+  },
+  "Ongoing": {
+    "live": "Événement en cours",
+    "title1": "Cadeau",
+    "title2": "éclair",
+    "description": "Connectez votre portefeuille pour vérifier votre éligibilité et réclamer tout de suite votre récompense en USDT. Offre limitée aux premiers participants.",
+    "rewardLabel": "Récompense",
+    "rewardValue": "50 USDT",
+    "networkLabel": "Réseau",
+    "networkValue": "TRC-20",
+    "remainingLabel": "Restant",
+    "remainingValue": "14 %",
+    "connectTitle": "Connectez-vous pour réclamer",
+    "connectButton": "Connecter le portefeuille",
+    "supported": "Pris en charge : MetaMask, Trust Wallet, Phantom",
+    "connectedTitle": "Portefeuille connecté",
+    "eligible": "Vous êtes éligible !",
+    "claimButton": "Réclamer 50 USDT",
+    "processing": "Transaction en cours...",
+    "confirmWallet": "Confirmez dans votre portefeuille",
+    "successTitle": "C'est fait",
+    "successBody": "50 USDT ont été envoyés vers votre portefeuille.",
+    "disconnect": "Déconnecter / changer de portefeuille"
+  },
+  "Upcoming": {
+    "title1": "Événements",
+    "title2": "à venir",
+    "subtitle": "Les prochaines distributions seront annoncées ici. Les critères d'éligibilité suivront peu après.",
+    "estDate": "Date estimée",
+    "reward": "Récompense",
+    "events": {
+      "lnx": {
+        "title": "Distribution du jeton LNX",
+        "date": "Bientôt",
+        "description": "Distribution du jeton de gouvernance aux fournisseurs de liquidité actifs.",
+        "reward": "Jetons LNX",
+        "status": "Verrouillé"
+      },
+      "nft": {
+        "title": "Liste blanche NFT",
+        "date": "T4 2026",
+        "description": "Accès réservé à la collection NFT Lenix Genesis.",
+        "reward": "Place sur la liste",
+        "status": "À venir"
+      },
+      "partner": {
+        "title": "Protocole partenaire",
+        "date": "À confirmer",
+        "description": "Distribution surprise de nos partenaires DeFi.",
+        "reward": "Boîte mystère",
+        "status": "Verrouillé"
+      }
+    }
+  }
+}

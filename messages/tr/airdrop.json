@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "LNX token airdrop ve ödüller | Lenix Protocol",
+    "description": "Lenix Protocol airdrop'una katılın ve LNX token alın. Blok zinciri adli analizi ve varlık kurtarmada yerinizi ayırın.",
+    "keywords": "Kripto airdrop, LNX token, Ücretsiz kripto, Lenix ödülleri, Blok zinciri güvenlik ödülleri"
+  },
+  "Hero": {
+    "badge": "Topluluk ödül programı",
+    "title1": "Airdrop'unu",
+    "title2": "al",
+    "description": "Lenix'e katılın. Erken destekçilere ve aktif topluluk üyelerine <amount>$10,000,000</amount> ödül dağıtıyoruz.",
+    "imageAlt": "Airdrop arka planı"
+  },
+  "Ongoing": {
+    "live": "Canlı etkinlik",
+    "title1": "Hızlı",
+    "title2": "çekiliş",
+    "description": "Uygunluğu kontrol etmek ve USDT ödülünü hemen almak için cüzdanınızı bağlayın. Erken katılanlar için sınırlı süre.",
+    "rewardLabel": "Ödül",
+    "rewardValue": "50 USDT",
+    "networkLabel": "Ağ",
+    "networkValue": "TRC-20",
+    "remainingLabel": "Kalan",
+    "remainingValue": "%14",
+    "connectTitle": "Almak için bağlanın",
+    "connectButton": "Cüzdanı bağla",
+    "supported": "Desteklenenler: MetaMask, Trust Wallet, Phantom",
+    "connectedTitle": "Cüzdan bağlandı",
+    "eligible": "Uygunsunuz.",
+    "claimButton": "50 USDT al",
+    "processing": "İşlem işleniyor...",
+    "confirmWallet": "Cüzdanınızda onaylayın",
+    "successTitle": "Tamam",
+    "successBody": "50 USDT cüzdanınıza gönderildi.",
+    "disconnect": "Bağlantıyı kes / cüzdan değiştir"
+  },
+  "Upcoming": {
+    "title1": "Yaklaşan",
+    "title2": "etkinlikler",
+    "subtitle": "Sonraki dağıtımlar burada duyurulur. Uygunluk koşulları kısa süre sonra açıklanır.",
+    "estDate": "Tahmini tarih",
+    "reward": "Ödül",
+    "events": {
+      "lnx": {
+        "title": "LNX token dağıtımı",
+        "date": "Yakında",
+        "description": "Aktif likidite sağlayıcıları için yönetişim token dağıtımı.",
+        "reward": "LNX token",
+        "status": "Kilitli"
+      },
+      "nft": {
+        "title": "NFT beyaz listesi",
+        "date": "2026 4. çeyrek",
+        "description": "Lenix Genesis NFT koleksiyonuna özel erişim.",
+        "reward": "Liste hakkı",
+        "status": "Yakında"
+      },
+      "partner": {
+        "title": "Ortak protokol",
+        "date": "Belirlenecek",
+        "description": "DeFi ortaklarımızdan sürpriz dağıtım.",
+        "reward": "Gizem kutusu",
+        "status": "Kilitli"
+      }
+    }
+  }
+}

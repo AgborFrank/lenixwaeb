@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import { glass } from "@/lib/recovery-styles";
 
 export default function RecoveryHero() {
+  const t = useTranslations("CryptoRecovery.Hero");
   return (
     <section className="relative overflow-hidden pt-28 pb-16 lg:pt-32 lg:pb-24">
       <div className="absolute inset-0 z-0">
@@ -24,22 +26,21 @@ export default function RecoveryHero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8">
             <div className="space-y-5">
-              <p className={glass.eyebrow}>Certified asset recovery</p>
+              <p className={glass.eyebrow}>{t("eyebrow")}</p>
               <h1 className="text-4xl sm:text-5xl lg:text-[3.25rem] font-semibold text-white tracking-tight leading-[1.1]">
-                Forensic-led recovery for stolen and misdirected crypto
+                {t("title")}
               </h1>
               <p className={`${glass.lead} max-w-xl text-neutral-300`}>
-                Lenix investigators trace on-chain movement, prepare exchange and law-enforcement
-                packages, and coordinate asset freezes when recovery remains viable.
+                {t("description")}
               </p>
             </div>
 
             <div className="flex flex-wrap gap-3">
               <Link href="#start-recovery" className={glass.btnPrimary}>
-                Submit a case
+                {t("submit")}
               </Link>
               <Link href="#how-it-works" className={glass.btnGlass}>
-                View process
+                {t("process")}
               </Link>
             </div>
           </div>
@@ -47,7 +48,7 @@ export default function RecoveryHero() {
           <div className={`${glass.media} aspect-[4/3]`}>
             <Image
               src="/assets/img/investigate.webp"
-              alt="Blockchain forensic investigation workspace"
+              alt={t("imageAlt")}
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 560px"

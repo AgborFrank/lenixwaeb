@@ -1,16 +1,19 @@
 "use client";
 
-import { Gift, Sparkles, ArrowDown } from "lucide-react";
+import { Sparkles, ArrowDown } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function AirdropHero() {
+  const t = useTranslations("Airdrop.Hero");
+
   return (
     <section className="relative pt-32 pb-20 overflow-hidden min-h-[70vh] flex items-center bg-black">
       {/* Background with Glassmorphism */}
        <div className="absolute inset-0 z-0">
           <Image 
             src="/assets/img/competition.png" 
-            alt="Background" 
+            alt={t("imageAlt")}
             fill
             className="object-cover opacity-30"
             priority
@@ -29,18 +32,20 @@ export default function AirdropHero() {
         
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-yellow-400/10 border border-yellow-400/20 backdrop-blur-sm mb-8 animate-fade-in-up">
             <Sparkles className="w-4 h-4 text-yellow-400" />
-            <span className="text-yellow-400 font-bold text-sm tracking-wide uppercase">Community Rewards Program</span>
+            <span className="text-yellow-400 font-bold text-sm tracking-wide uppercase">{t("badge")}</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight tracking-tight mb-8 drop-shadow-2xl">
-          CLAIM YOUR <br/>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight tracking-tight mb-8 drop-shadow-2xl uppercase">
+          {t("title1")} <br/>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-300 animate-gradient">
-            AIRDROP
+            {t("title2")}
           </span>
         </h1>
 
         <p className="text-gray-300 text-xl md:text-2xl max-w-2xl mx-auto mb-12 leading-relaxed">
-            Join the Lenix revolution. We are distributing <span className="text-white font-bold">$10,000,000</span> in rewards to our early supporters and active community members.
+            {t.rich("description", {
+              amount: (chunks) => <span className="text-white font-bold">{chunks}</span>,
+            })}
         </p>
 
         <div className="flex justify-center">

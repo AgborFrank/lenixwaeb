@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Certified Crypto Asset Recovery Services | Lenix Protocol",
+    "description": "Professional recovery of lost or stolen cryptocurrency with 94% success rate. Specialized in wallet password recovery and forensic-led fraud investigation.",
+    "keywords": "Crypto Recovery, Stolen Bitcoin Recovery, Recover Lost Wallet, Crypto Fraud Investigation, Blockchain Forensics"
+  },
+  "Hero": {
+    "eyebrow": "Certified asset recovery",
+    "title": "Forensic-led recovery for stolen and misdirected crypto",
+    "description": "Lenix investigators trace on-chain movement, prepare exchange and law-enforcement packages, and coordinate asset freezes when recovery remains viable.",
+    "submit": "Submit a case",
+    "process": "View process",
+    "imageAlt": "Blockchain forensic investigation workspace"
+  },
+  "Process": {
+    "eyebrow": "Methodology",
+    "title": "How recovery works",
+    "description": "A structured four-phase process used across exchange hacks, phishing incidents, and unauthorized transfers.",
+    "phase": "Phase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Initial assessment",
+        "description": "We review transaction hashes, timelines, and loss type to determine traceability and legal options.",
+        "tag1": "Trace review",
+        "tag2": "Risk scoring"
+      },
+      "strategy": {
+        "title": "Recovery strategy",
+        "description": "Investigators build a case file with on-chain evidence, counterparties, and jurisdiction-specific next steps.",
+        "tag1": "Evidence pack",
+        "tag2": "Legal routing"
+      },
+      "coordination": {
+        "title": "Active coordination",
+        "description": "We engage exchanges, custodians, and authorities to freeze funds and pursue lawful return pathways.",
+        "tag1": "Freeze requests",
+        "tag2": "Negotiation"
+      },
+      "return": {
+        "title": "Asset return",
+        "description": "Recovered assets are returned to verified wallets with guidance on securing accounts going forward.",
+        "tag1": "Verified payout",
+        "tag2": "Case closure"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "Assets traced and monitored",
+    "cases": "Cases reviewed",
+    "jurisdictions": "Jurisdictions covered",
+    "intake": "Incident intake"
+  },
+  "Features": {
+    "eyebrow": "Capabilities",
+    "title": "Why clients choose Lenix recovery",
+    "description": "Technology and investigator experience combined for cases where time and evidence quality matter.",
+    "items": {
+      "tracing": {
+        "title": "Forensic tracing",
+        "description": "On-chain analysis across mixers, bridges, and nested wallet structures to follow fund movement."
+      },
+      "investigators": {
+        "title": "Investigator-led cases",
+        "description": "Former intelligence, cybersecurity, and compliance specialists assigned to each engagement."
+      },
+      "legal": {
+        "title": "Global legal network",
+        "description": "Coordination with law enforcement and counsel across major jurisdictions and exchange partners."
+      },
+      "confidential": {
+        "title": "Confidential handling",
+        "description": "Encrypted intake, segregated case files, and strict access controls for sensitive materials."
+      },
+      "documentation": {
+        "title": "Court-ready documentation",
+        "description": "Evidence packages formatted for regulatory submissions, civil proceedings, and police reports."
+      },
+      "fees": {
+        "title": "Outcome-aligned fees",
+        "description": "Recovery fees tied to successful returns — terms are confirmed before investigative work begins."
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "Client outcomes",
+    "title": "Representative recoveries",
+    "description": "Anonymized summaries from recent engagements. Individual results depend on case facts and third-party cooperation.",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "Software engineer",
+        "quote": "After a wallet compromise, Lenix traced the flow and helped coordinate an exchange freeze. Communication was clear at every stage."
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Marketing director",
+        "quote": "A phishing incident drained my ETH holdings. The team documented the trail and recovered the majority within three weeks."
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "Business owner",
+        "quote": "I assumed a six-figure USDT loss was permanent. Lenix treated it as an investigation, not a sales pitch — and delivered results."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Common questions",
+    "subtitle": "What to expect before you submit a case.",
+    "discuss": "Need to discuss a specific incident?",
+    "submit": "Submit a recovery request →",
+    "items": {
+      "types": {
+        "question": "What types of crypto losses can you recover?",
+        "answer": "We handle hacks, phishing, unauthorized transfers, and select wallet-access scenarios. Coverage depends on chain, timing, and where funds moved — we confirm after reviewing your transaction details."
+      },
+      "duration": {
+        "question": "How long does the recovery process take?",
+        "answer": "Straightforward exchange-facing cases may resolve in weeks. Cross-border or multi-hop tracing can take one to three months. You receive a timeline estimate after the initial assessment."
+      },
+      "fees": {
+        "question": "How are fees structured?",
+        "answer": "Fees are agreed in writing before investigative work begins. Many engagements use outcome-aligned terms tied to successful recovery rather than large upfront retainers."
+      },
+      "confidential": {
+        "question": "Is my information confidential?",
+        "answer": "Yes. Case materials are encrypted, access-controlled, and shared only with parties required to pursue recovery — exchanges, counsel, or authorities — with your approval."
+      },
+      "guarantee": {
+        "question": "Do you guarantee recovery?",
+        "answer": "No responsible firm can guarantee recovery. Outcomes depend on where funds moved, how quickly the case is reported, and whether custodians or exchanges can act. We provide an honest recoverability assessment before you commit."
+      },
+      "include": {
+        "question": "What should I include when submitting a case?",
+        "answer": "Transaction hashes, wallet addresses involved, approximate amount and asset, date of the incident, and any exchange or platform accounts linked to the loss. Screenshots, emails, or police reports strengthen the file."
+      },
+      "mixers": {
+        "question": "Can you trace funds through mixers or privacy tools?",
+        "answer": "Some flows can still be analyzed using clustering, timing, and off-ramp patterns, but privacy protocols and advanced obfuscation reduce recoverability. We tell you upfront if tracing is likely to hit a dead end."
+      },
+      "enforcement": {
+        "question": "Do you work with law enforcement and exchanges?",
+        "answer": "Yes. We prepare trace packages for law enforcement and submit freeze or information requests to exchanges and custodians when jurisdiction and evidence support it."
+      },
+      "keys": {
+        "question": "Will you ever ask for my private keys or seed phrase?",
+        "answer": "Never. Legitimate recovery work does not require your seed phrase or private keys. If anyone claiming to help asks for them, treat it as a scam and disengage immediately."
+      },
+      "after": {
+        "question": "What happens after I submit the intake form?",
+        "answer": "Our team reviews your materials within one business day, confirms whether forensic tracing is viable, and outlines next steps, documentation needs, and fee terms if you choose to proceed."
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Case intake",
+    "title": "Submit a recovery request",
+    "description": "Provide transaction details and a brief incident summary. Our investigators use this to determine traceability before any engagement terms are discussed.",
+    "submittedTitle": "Request submitted",
+    "submittedBody": "Our recovery team will review your case and contact you within 24–48 hours.",
+    "submitAnother": "Submit another request",
+    "steps": "Steps",
+    "step": "Step {id}",
+    "step1Title": "Contact & loss details",
+    "step1Desc": "Who you are and what was lost.",
+    "step2Title": "Incident report",
+    "step2Desc": "Summary and supporting evidence.",
+    "fullName": "Full name",
+    "namePlaceholder": "John Doe",
+    "email": "Email",
+    "emailPlaceholder": "john@example.com",
+    "phone": "Phone (optional)",
+    "txHash": "Transaction hash or wallet address",
+    "txPlaceholder": "0x… or bc1…",
+    "amount": "Approximate amount lost",
+    "amountPlaceholder": "e.g. 50000",
+    "currency": "Currency",
+    "blockchain": "Blockchain",
+    "selectBlockchain": "Select blockchain",
+    "otherChain": "Other",
+    "continue": "Continue to incident details",
+    "summary": "Incident summary",
+    "summaryPlaceholder": "Describe what happened, when it occurred, and any platforms or wallets involved.",
+    "evidence": "Supporting evidence (optional)",
+    "evidenceHint": "Screenshots, exchange emails, or police reports (PDF, PNG, JPG).",
+    "privacy": "Lenix Protocol uses your contact details to respond about this case. See our <link>Privacy Policy</link>.",
+    "back": "Back",
+    "submitting": "Submitting…",
+    "submit": "Submit recovery request",
+    "points": {
+      "confidential": {
+        "title": "Confidential",
+        "desc": "Encrypted intake and restricted case access."
+      },
+      "review": {
+        "title": "24h review",
+        "desc": "Initial assessment within one business day."
+      },
+      "fee": {
+        "title": "No upfront fee",
+        "desc": "Terms confirmed before investigative work."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Please complete all required fields before continuing.",
+      "email": "Please enter a valid email address.",
+      "required": "Please fill in all required fields",
+      "failed": "Failed to submit recovery request",
+      "success": "Recovery request submitted. Our team will contact you soon."
+    }
+  }
+}

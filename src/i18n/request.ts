@@ -9,7 +9,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
         : routing.defaultLocale;
 
     // Load multiple namespaces for this locale
-    const [common, settings, about, contact, solutions, walletDecryption, cryptoAssetId, walletPage, financePage, bankingFinance, blockchainForensics, threatIntelligence, complianceInvestigations, deFiCompliance, lawEnforcement, onboardingPage, authPage] = await Promise.all([
+    const [common, settings, about, contact, solutions, walletDecryption, cryptoAssetId, walletPage, financePage, bankingFinance, blockchainForensics, threatIntelligence, complianceInvestigations, deFiCompliance, lawEnforcement, onboardingPage, authPage, airdropPage, cryptoRecoveryPage] = await Promise.all([
         import(`../../messages/${locale}/common.json`),
         import(`../../messages/${locale}/settings.json`).catch(() => ({ default: {} })),
         import(`../../messages/${locale}/about.json`).catch(() => ({ default: {} })),
@@ -27,6 +27,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
         import(`../../messages/${locale}/law-enforcement.json`).catch(() => ({ default: {} })),
         import(`../../messages/${locale}/onboarding.json`).catch(() => ({ default: {} })),
         import(`../../messages/${locale}/auth.json`).catch(() => ({ default: {} })),
+        import(`../../messages/${locale}/airdrop.json`).catch(() => ({ default: {} })),
+        import(`../../messages/${locale}/crypto-recovery.json`).catch(() => ({ default: {} })),
     ]);
 
     const settingsMessages =
@@ -57,6 +59,13 @@ export default getRequestConfig(async ({ requestLocale }) => {
               ? {}
               : (await import("../../messages/en/solutions.json")).default;
 
+    const cryptoRecoveryMessages =
+        Object.keys(cryptoRecoveryPage.default).length > 0
+            ? cryptoRecoveryPage.default
+            : locale === "en"
+              ? {}
+              : (await import("../../messages/en/crypto-recovery.json")).default;
+
     return {
         locale,
         messages: {
@@ -77,6 +86,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
             ...(Object.keys(lawEnforcement.default).length > 0 ? { LawEnforcement: lawEnforcement.default } : {}),
             ...(Object.keys(onboardingPage.default).length > 0 ? { Onboarding: onboardingPage.default } : {}),
             ...(Object.keys(authPage.default).length > 0 ? { Auth: authPage.default } : {}),
+            ...(Object.keys(airdropPage.default).length > 0 ? { Airdrop: airdropPage.default } : {}),
+            ...(Object.keys(cryptoRecoveryMessages).length > 0 ? { CryptoRecovery: cryptoRecoveryMessages } : {}),
         },
     };
 });

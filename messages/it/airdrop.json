@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Airdrop e ricompense del token LNX | Lenix Protocol",
+    "description": "Partecipa all'airdrop di Lenix Protocol e ricevi token LNX. Prenota il tuo posto nella forensics blockchain e nel recupero degli asset.",
+    "keywords": "Airdrop crypto, Token LNX, Crypto gratis, Ricompense Lenix, Ricompense sicurezza blockchain"
+  },
+  "Hero": {
+    "badge": "Programma ricompense della community",
+    "title1": "Riscuoti il tuo",
+    "title2": "Airdrop",
+    "description": "Entra in Lenix. Stiamo distribuendo <amount>$10,000,000</amount> di ricompense a chi ci ha sostenuto presto e ai membri attivi della community.",
+    "imageAlt": "Sfondo dell'airdrop"
+  },
+  "Ongoing": {
+    "live": "Evento in corso",
+    "title1": "Giveaway",
+    "title2": "lampo",
+    "description": "Collega il wallet per verificare l'idoneità e riscuotere subito la ricompensa in USDT. Offerta a tempo per i primi partecipanti.",
+    "rewardLabel": "Ricompensa",
+    "rewardValue": "50 USDT",
+    "networkLabel": "Rete",
+    "networkValue": "TRC-20",
+    "remainingLabel": "Rimanente",
+    "remainingValue": "14%",
+    "connectTitle": "Collega per riscuotere",
+    "connectButton": "Collega wallet",
+    "supported": "Supportati: MetaMask, Trust Wallet, Phantom",
+    "connectedTitle": "Wallet collegato",
+    "eligible": "Sei idoneo.",
+    "claimButton": "Riscuoti 50 USDT",
+    "processing": "Transazione in corso...",
+    "confirmWallet": "Conferma nel wallet",
+    "successTitle": "Fatto",
+    "successBody": "50 USDT sono stati inviati al tuo wallet.",
+    "disconnect": "Disconnetti / cambia wallet"
+  },
+  "Upcoming": {
+    "title1": "Prossimi",
+    "title2": "eventi",
+    "subtitle": "Le prossime distribuzioni saranno annunciate qui. I criteri di idoneità arriveranno a breve.",
+    "estDate": "Data stimata",
+    "reward": "Ricompensa",
+    "events": {
+      "lnx": {
+        "title": "Distribuzione del token LNX",
+        "date": "In arrivo",
+        "description": "Distribuzione del token di governance per i fornitori di liquidità attivi.",
+        "reward": "Token LNX",
+        "status": "Bloccato"
+      },
+      "nft": {
+        "title": "Whitelist NFT",
+        "date": "T4 2026",
+        "description": "Accesso esclusivo alla collezione NFT Lenix Genesis.",
+        "reward": "Posto in lista",
+        "status": "In arrivo"
+      },
+      "partner": {
+        "title": "Protocollo partner",
+        "date": "Da definire",
+        "description": "Distribuzione a sorpresa dei nostri partner DeFi.",
+        "reward": "Mystery box",
+        "status": "Bloccato"
+      }
+    }
+  }
+}

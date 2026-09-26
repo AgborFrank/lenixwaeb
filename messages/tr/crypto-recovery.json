@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Sertifikalı kripto varlık kurtarma hizmetleri | Lenix Protocol",
+    "description": "Kayıp veya çalınmış kripto paranın profesyonel kurtarılması, %94 başarı oranıyla. Cüzdan parolası kurtarma ve adli incelemeye dayalı dolandırıcılık soruşturmasında uzmanız.",
+    "keywords": "Kripto kurtarma, Çalınan Bitcoin kurtarma, Kayıp cüzdanı kurtarma, Kripto dolandırıcılık soruşturması, Blokzincir adli inceleme"
+  },
+  "Hero": {
+    "eyebrow": "Sertifikalı varlık kurtarma",
+    "title": "Çalınan veya yanlış adrese giden kripto için adli incelemeye dayalı kurtarma",
+    "description": "Lenix araştırmacıları zincir üstü hareketi izler, borsa ve kolluk paketleri hazırlar ve kurtarma hâlâ mümkünken varlık dondurmayı koordine eder.",
+    "submit": "Dosya gönder",
+    "process": "Süreci gör",
+    "imageAlt": "Blokzincir adli inceleme çalışma alanı"
+  },
+  "Process": {
+    "eyebrow": "Yöntem",
+    "title": "Kurtarma nasıl işler",
+    "description": "Borsa saldırıları, kimlik avı olayları ve yetkisiz transferlerde kullanılan dört aşamalı yapılandırılmış süreç.",
+    "phase": "Aşama {number}",
+    "steps": {
+      "assessment": {
+        "title": "İlk değerlendirme",
+        "description": "İzlenebilirliği ve hukuki seçenekleri belirlemek için işlem hash'lerini, zaman çizelgesini ve kayıp türünü inceleriz.",
+        "tag1": "İz incelemesi",
+        "tag2": "Risk puanlama"
+      },
+      "strategy": {
+        "title": "Kurtarma stratejisi",
+        "description": "Araştırmacılar zincir üstü kanıt, karşı taraflar ve yargı yetkisine göre sonraki adımlarla bir dosya oluşturur.",
+        "tag1": "Kanıt paketi",
+        "tag2": "Hukuki yönlendirme"
+      },
+      "coordination": {
+        "title": "Aktif koordinasyon",
+        "description": "Fonları dondurmak ve yasal iade yollarını izlemek için borsalar, saklayıcılar ve yetkililerle çalışırız.",
+        "tag1": "Dondurma talepleri",
+        "tag2": "Müzakere"
+      },
+      "return": {
+        "title": "Varlık iadesi",
+        "description": "Kurtarılan varlıklar doğrulanmış cüzdanlara iade edilir; hesapların bundan sonra nasıl güvenceye alınacağı anlatılır.",
+        "tag1": "Doğrulanmış ödeme",
+        "tag2": "Dosya kapanışı"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "İzlenen ve takip edilen varlıklar",
+    "cases": "İncelenen dosyalar",
+    "jurisdictions": "Kapsanan yargı bölgeleri",
+    "intake": "Olay kaydı"
+  },
+  "Features": {
+    "eyebrow": "Yetenekler",
+    "title": "Müşteriler neden Lenix kurtarmayı seçer",
+    "description": "Zaman ve kanıt kalitesinin önemli olduğu dosyalar için teknoloji ile araştırmacı deneyimi bir arada.",
+    "items": {
+      "tracing": {
+        "title": "Adli izleme",
+        "description": "Fon hareketini takip etmek için mixer, köprü ve iç içe cüzdan yapıları boyunca zincir üstü analiz."
+      },
+      "investigators": {
+        "title": "Araştırmacı yönetiminde dosyalar",
+        "description": "Her işe istihbarat, siber güvenlik ve uyum alanından gelen uzmanlar atanır."
+      },
+      "legal": {
+        "title": "Küresel hukuk ağı",
+        "description": "Başlıca yargı bölgelerinde kolluk ve avukatlarla, ayrıca borsa ortaklarıyla koordinasyon."
+      },
+      "confidential": {
+        "title": "Gizli işlem",
+        "description": "Şifreli kayıt, ayrılmış dosyalar ve hassas malzeme için sıkı erişim kontrolleri."
+      },
+      "documentation": {
+        "title": "Mahkemeye hazır belgeler",
+        "description": "Düzenleyici başvurular, hukuk davaları ve polis tutanakları için biçimlendirilmiş kanıt paketleri."
+      },
+      "fees": {
+        "title": "Sonuca bağlı ücret",
+        "description": "Kurtarma ücretleri başarılı iadelere bağlıdır. Koşullar, soruşturma işi başlamadan önce kesinleşir."
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "Müşteri sonuçları",
+    "title": "Temsili kurtarmalar",
+    "description": "Yakın dönem işlerden anonim özetler. Bireysel sonuçlar dosya olgularına ve üçüncü tarafların iş birliğine bağlıdır.",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "Yazılım mühendisi",
+        "quote": "Bir cüzdan ele geçirildikten sonra Lenix akışı izledi ve borsada dondurmanın koordinasyonuna yardımcı oldu. Her aşamada iletişim netti."
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Pazarlama direktörü",
+        "quote": "Bir kimlik avı olayı ETH varlıklarımı boşalttı. Ekip izi belgeledi ve büyük kısmını üç hafta içinde kurtardı."
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "İşletme sahibi",
+        "quote": "Altı haneli bir USDT kaybının kalıcı olduğunu sanıyordum. Lenix bunu bir satış konuşması değil, soruşturma olarak ele aldı ve sonuç getirdi."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "Sık sorulan sorular",
+    "title": "Sık gelen sorular",
+    "subtitle": "Dosya göndermeden önce ne beklemelisiniz.",
+    "discuss": "Belirli bir olayı görüşmeniz mi gerekiyor?",
+    "submit": "Kurtarma talebi gönder →",
+    "items": {
+      "types": {
+        "question": "Hangi tür kripto kayıplarını kurtarabilirsiniz?",
+        "answer": "Saldırı, kimlik avı, yetkisiz transfer ve seçili cüzdan erişim senaryolarını ele alırız. Kapsam zincire, zamana ve fonların nereye gittiğine bağlıdır. İşlem ayrıntılarınızı inceledikten sonra bunu doğrularız."
+      },
+      "duration": {
+        "question": "Kurtarma süreci ne kadar sürer?",
+        "answer": "Borsaya dönük sade dosyalar haftalar içinde sonuçlanabilir. Sınır ötesi veya çok adımlı izleme bir ila üç ay sürebilir. İlk değerlendirmeden sonra bir süre tahmini alırsınız."
+      },
+      "fees": {
+        "question": "Ücretler nasıl yapılandırılır?",
+        "answer": "Ücretler, soruşturma işi başlamadan önce yazılı olarak kararlaştırılır. Birçok iş, yüksek peşin avans yerine başarılı kurtarmaya bağlı sonuç koşulları kullanır."
+      },
+      "confidential": {
+        "question": "Bilgilerim gizli mi?",
+        "answer": "Evet. Dosya malzemesi şifrelidir, erişim kontrollüdür ve yalnızca kurtarmayı sürdürmek için gereken taraflarla — borsalar, avukatlar veya yetkililer — sizin onayınızla paylaşılır."
+      },
+      "guarantee": {
+        "question": "Kurtarmayı garanti ediyor musunuz?",
+        "answer": "Hiçbir sorumlu kurum kurtarmayı garanti edemez. Sonuç, fonların nereye gittiğine, dosyanın ne kadar çabuk bildirildiğine ve saklayıcıların veya borsaların harekete geçip geçemeyeceğine bağlıdır. Siz bağlanmadan önce dürüst bir kurtarılabilirlik değerlendirmesi sunarız."
+      },
+      "include": {
+        "question": "Dosya gönderirken neleri eklemeliyim?",
+        "answer": "İşlem hash'leri, ilgili cüzdan adresleri, yaklaşık tutar ve varlık, olay tarihi ve kayıpla bağlantılı borsa veya platform hesapları. Ekran görüntüleri, e-postalar veya polis tutanakları dosyayı güçlendirir."
+      },
+      "mixers": {
+        "question": "Mixer veya gizlilik araçlarından geçen fonları izleyebilir misiniz?",
+        "answer": "Bazı akışlar kümeleme, zamanlama ve çıkış örüntüleriyle hâlâ incelenebilir, ancak gizlilik protokolleri ve ileri gizleme kurtarılabilirliği düşürür. İzlemenin çıkmaza girmesi muhtemelse bunu baştan söyleriz."
+      },
+      "enforcement": {
+        "question": "Kolluk ve borsalarla çalışıyor musunuz?",
+        "answer": "Evet. Kolluk için iz paketleri hazırlarız ve yargı yetkisi ile kanıt desteklediğinde borsalara ve saklayıcılara dondurma veya bilgi talebi iletiriz."
+      },
+      "keys": {
+        "question": "Özel anahtarlarımı veya seed ifademi hiç ister misiniz?",
+        "answer": "Asla. Meşru kurtarma çalışması seed ifadenizi veya özel anahtarlarınızı gerektirmez. Yardım ettiğini söyleyen biri bunları isterse bunu dolandırıcılık sayın ve iletişimi hemen kesin."
+      },
+      "after": {
+        "question": "Başvuru formunu gönderdikten sonra ne olur?",
+        "answer": "Ekibimiz malzemenizi bir iş günü içinde inceler, adli izlemenin uygulanabilir olup olmadığını doğrular ve devam etmeyi seçerseniz sonraki adımları, gereken belgeleri ve ücret koşullarını özetler."
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Dosya kaydı",
+    "title": "Kurtarma talebi gönder",
+    "description": "İşlem ayrıntılarını ve kısa bir olay özetini verin. Araştırmacılarımız, herhangi bir iş koşulu konuşulmadan önce izlenebilirliği bununla belirler.",
+    "submittedTitle": "Talep gönderildi",
+    "submittedBody": "Kurtarma ekibimiz dosyanızı inceleyecek ve 24–48 saat içinde sizinle iletişime geçecek.",
+    "submitAnother": "Başka bir talep gönder",
+    "steps": "Adımlar",
+    "step": "Adım {id}",
+    "step1Title": "İletişim ve kayıp ayrıntıları",
+    "step1Desc": "Kim olduğunuz ve neyin kaybolduğu.",
+    "step2Title": "Olay raporu",
+    "step2Desc": "Özet ve destekleyici kanıt.",
+    "fullName": "Ad soyad",
+    "namePlaceholder": "Ahmet Yılmaz",
+    "email": "E-posta",
+    "emailPlaceholder": "ahmet@example.com",
+    "phone": "Telefon (isteğe bağlı)",
+    "txHash": "İşlem hash'i veya cüzdan adresi",
+    "txPlaceholder": "0x… veya bc1…",
+    "amount": "Yaklaşık kayıp tutarı",
+    "amountPlaceholder": "örn. 50000",
+    "currency": "Para birimi",
+    "blockchain": "Blokzincir",
+    "selectBlockchain": "Blokzincir seçin",
+    "otherChain": "Diğer",
+    "continue": "Olay ayrıntılarına geç",
+    "summary": "Olay özeti",
+    "summaryPlaceholder": "Ne olduğunu, ne zaman gerçekleştiğini ve hangi platform veya cüzdanların dahil olduğunu yazın.",
+    "evidence": "Destekleyici kanıt (isteğe bağlı)",
+    "evidenceHint": "Ekran görüntüleri, borsa e-postaları veya polis tutanakları (PDF, PNG, JPG).",
+    "privacy": "Lenix Protocol bu dosya hakkında yanıt vermek için iletişim bilgilerinizi kullanır. <link>Gizlilik Politikası</link> sayfasına bakın.",
+    "back": "Geri",
+    "submitting": "Gönderiliyor…",
+    "submit": "Kurtarma talebini gönder",
+    "points": {
+      "confidential": {
+        "title": "Gizli",
+        "desc": "Şifreli kayıt ve kısıtlı dosya erişimi."
+      },
+      "review": {
+        "title": "24 saatte inceleme",
+        "desc": "Bir iş günü içinde ilk değerlendirme."
+      },
+      "fee": {
+        "title": "Peşin ücret yok",
+        "desc": "Koşullar soruşturma işinden önce kesinleşir."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Devam etmeden önce lütfen tüm zorunlu alanları doldurun.",
+      "email": "Lütfen geçerli bir e-posta adresi girin.",
+      "required": "Lütfen tüm zorunlu alanları doldurun",
+      "failed": "Kurtarma talebi gönderilemedi",
+      "success": "Kurtarma talebi gönderildi. Ekibimiz yakında sizinle iletişime geçecek."
+    }
+  }
+}

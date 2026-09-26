@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import RecoveryHero from "./components/recovery-hero";
@@ -9,11 +10,14 @@ import RecoveryStats from "./components/recovery-stats";
 import RecoveryForm from "./components/recovery-form";
 import RecoveryFAQ from "./components/recovery-faq";
 
-export const metadata: Metadata = {
-  title: "Certified Crypto Asset Recovery Services | Lenix Protocol",
-  description: "Professional recovery of lost or stolen cryptocurrency with 94% success rate. Specialized in wallet password recovery and forensic-led fraud investigation.",
-  keywords: ["Crypto Recovery", "Stolen Bitcoin Recovery", "Recover Lost Wallet", "Crypto Fraud Investigation", "Blockchain Forensics"],
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("CryptoRecovery.meta");
+  return {
+    title: t("title"),
+    description: t("description"),
+    keywords: t("keywords").split(", "),
+  };
+}
 
 export default function CryptoRecovery() {
   return (

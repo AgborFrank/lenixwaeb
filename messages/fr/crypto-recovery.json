@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Services certifiés de récupération d'actifs crypto | Lenix Protocol",
+    "description": "Récupération professionnelle de cryptomonnaies perdues ou volées, avec un taux de réussite de 94 %. Spécialisés dans la récupération de mots de passe de wallets et les enquêtes de fraude menées par la forensique.",
+    "keywords": "Récupération crypto, Récupération de Bitcoin volé, Retrouver un wallet perdu, Enquête sur la fraude crypto, Forensique blockchain"
+  },
+  "Hero": {
+    "eyebrow": "Récupération d'actifs certifiée",
+    "title": "Récupération forensique pour la crypto volée ou mal adressée",
+    "description": "Les enquêteurs Lenix retracent les mouvements on-chain, préparent les dossiers pour les exchanges et les forces de l'ordre, et coordonnent le gel des actifs lorsque la récupération reste viable.",
+    "submit": "Déposer un dossier",
+    "process": "Voir le processus",
+    "imageAlt": "Espace de travail d'enquête forensique blockchain"
+  },
+  "Process": {
+    "eyebrow": "Méthodologie",
+    "title": "Comment se déroule la récupération",
+    "description": "Un processus structuré en quatre phases, utilisé pour les piratages d'exchanges, les incidents de phishing et les transferts non autorisés.",
+    "phase": "Phase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Évaluation initiale",
+        "description": "Nous examinons les hashes de transaction, les chronologies et le type de perte pour déterminer la traçabilité et les options juridiques.",
+        "tag1": "Revue de la trace",
+        "tag2": "Évaluation du risque"
+      },
+      "strategy": {
+        "title": "Stratégie de récupération",
+        "description": "Les enquêteurs constituent un dossier avec les preuves on-chain, les contreparties et les prochaines étapes selon la juridiction.",
+        "tag1": "Dossier de preuves",
+        "tag2": "Orientation juridique"
+      },
+      "coordination": {
+        "title": "Coordination active",
+        "description": "Nous saisissons les exchanges, les dépositaires et les autorités pour geler les fonds et chercher des voies de restitution licites.",
+        "tag1": "Demandes de gel",
+        "tag2": "Négociation"
+      },
+      "return": {
+        "title": "Restitution des actifs",
+        "description": "Les actifs récupérés sont renvoyés vers des wallets vérifiés, avec des consignes pour sécuriser les comptes ensuite.",
+        "tag1": "Versement vérifié",
+        "tag2": "Clôture du dossier"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "Actifs tracés et suivis",
+    "cases": "Dossiers examinés",
+    "jurisdictions": "Juridictions couvertes",
+    "intake": "Prise en charge des incidents"
+  },
+  "Features": {
+    "eyebrow": "Capacités",
+    "title": "Pourquoi les clients choisissent la récupération Lenix",
+    "description": "La technologie et l'expérience des enquêteurs, réunies pour les dossiers où le délai et la qualité des preuves comptent.",
+    "items": {
+      "tracing": {
+        "title": "Traçage forensique",
+        "description": "Analyse on-chain à travers les mixers, les bridges et les structures de wallets imbriqués pour suivre le mouvement des fonds."
+      },
+      "investigators": {
+        "title": "Dossiers menés par des enquêteurs",
+        "description": "D'anciens spécialistes du renseignement, de la cybersécurité et de la conformité sont affectés à chaque mission."
+      },
+      "legal": {
+        "title": "Réseau juridique mondial",
+        "description": "Coordination avec les forces de l'ordre et les conseils dans les principales juridictions et auprès des exchanges partenaires."
+      },
+      "confidential": {
+        "title": "Traitement confidentiel",
+        "description": "Réception chiffrée, dossiers cloisonnés et contrôles d'accès stricts pour les pièces sensibles."
+      },
+      "documentation": {
+        "title": "Documentation prête pour le tribunal",
+        "description": "Dossiers de preuves formatés pour les dépôts réglementaires, les procédures civiles et les plaintes."
+      },
+      "fees": {
+        "title": "Honoraires liés au résultat",
+        "description": "Les honoraires de récupération sont liés aux restitutions obtenues. Les conditions sont confirmées avant le début du travail d'enquête."
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "Résultats clients",
+    "title": "Récupérations représentatives",
+    "description": "Résumés anonymisés de missions récentes. Les résultats individuels dépendent des faits du dossier et de la coopération de tiers.",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "Ingénieur logiciel",
+        "quote": "Après la compromission d'un wallet, Lenix a retracé le flux et aidé à coordonner un gel auprès d'un exchange. La communication est restée claire à chaque étape."
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Directrice marketing",
+        "quote": "Un incident de phishing a vidé mes avoirs en ETH. L'équipe a documenté la piste et récupéré la majeure partie en trois semaines."
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "Chef d'entreprise",
+        "quote": "Je pensais qu'une perte d'USDT à six chiffres était définitive. Lenix l'a traitée comme une enquête, pas comme un argumentaire commercial, et a obtenu des résultats."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "Questions fréquentes",
+    "title": "Questions courantes",
+    "subtitle": "À quoi vous attendre avant de déposer un dossier.",
+    "discuss": "Besoin de parler d'un incident précis ?",
+    "submit": "Déposer une demande de récupération →",
+    "items": {
+      "types": {
+        "question": "Quels types de pertes crypto pouvez-vous récupérer ?",
+        "answer": "Nous traitons les piratages, le phishing, les transferts non autorisés et certains cas d'accès aux wallets. La couverture dépend de la chaîne, du délai et de la destination des fonds. Nous le confirmons après examen de vos transactions."
+      },
+      "duration": {
+        "question": "Combien de temps dure le processus de récupération ?",
+        "answer": "Les dossiers simples face à un exchange peuvent se résoudre en quelques semaines. Un traçage transfrontalier ou à plusieurs sauts peut prendre un à trois mois. Vous recevez une estimation de délai après l'évaluation initiale."
+      },
+      "fees": {
+        "question": "Comment sont structurés les honoraires ?",
+        "answer": "Les honoraires sont convenus par écrit avant le début du travail d'enquête. Beaucoup de missions reposent sur des conditions liées au résultat, adossées à une récupération effective, plutôt que sur d'importantes provisions initiales."
+      },
+      "confidential": {
+        "question": "Mes informations sont-elles confidentielles ?",
+        "answer": "Oui. Les pièces du dossier sont chiffrées, l'accès est contrôlé, et elles ne sont partagées qu'avec les parties nécessaires à la récupération — exchanges, conseils ou autorités — avec votre accord."
+      },
+      "guarantee": {
+        "question": "Garantissez-vous la récupération ?",
+        "answer": "Aucun cabinet sérieux ne peut garantir une récupération. Le résultat dépend de la destination des fonds, de la rapidité du signalement et de la capacité des dépositaires ou des exchanges à agir. Nous fournissons une évaluation honnête de la récupérabilité avant que vous vous engagiez."
+      },
+      "include": {
+        "question": "Que dois-je joindre en déposant un dossier ?",
+        "answer": "Les hashes de transaction, les adresses de wallets concernées, le montant et l'actif approximatifs, la date de l'incident, et tout compte d'exchange ou de plateforme lié à la perte. Captures d'écran, e-mails ou plaintes renforcent le dossier."
+      },
+      "mixers": {
+        "question": "Pouvez-vous tracer des fonds passés par des mixers ou des outils de confidentialité ?",
+        "answer": "Certains flux restent analysables grâce au regroupement d'adresses, au calendrier et aux schémas de sortie, mais les protocoles de confidentialité et l'obfuscation avancée réduisent la récupérabilité. Nous vous disons d'emblée si le traçage risque d'aboutir à une impasse."
+      },
+      "enforcement": {
+        "question": "Travaillez-vous avec les forces de l'ordre et les exchanges ?",
+        "answer": "Oui. Nous préparons des dossiers de traçage pour les forces de l'ordre et adressons des demandes de gel ou d'information aux exchanges et aux dépositaires lorsque la juridiction et les preuves le permettent."
+      },
+      "keys": {
+        "question": "Me demanderez-vous un jour mes clés privées ou ma phrase seed ?",
+        "answer": "Jamais. Un travail de récupération légitime n'exige ni votre phrase seed ni vos clés privées. Si quelqu'un qui prétend vous aider les demande, considérez-le comme une arnaque et coupez le contact immédiatement."
+      },
+      "after": {
+        "question": "Que se passe-t-il après l'envoi du formulaire ?",
+        "answer": "Notre équipe examine vos pièces sous un jour ouvré, confirme si le traçage forensique est viable, et indique les prochaines étapes, les documents nécessaires et les conditions d'honoraires si vous décidez de poursuivre."
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Dépôt de dossier",
+    "title": "Déposer une demande de récupération",
+    "description": "Indiquez les détails de transaction et un bref résumé de l'incident. Nos enquêteurs s'en servent pour évaluer la traçabilité avant toute discussion des conditions d'engagement.",
+    "submittedTitle": "Demande envoyée",
+    "submittedBody": "Notre équipe de récupération examinera votre dossier et vous contactera sous 24–48 heures.",
+    "submitAnother": "Déposer une autre demande",
+    "steps": "Étapes",
+    "step": "Étape {id}",
+    "step1Title": "Contact et détails de la perte",
+    "step1Desc": "Qui vous êtes et ce qui a été perdu.",
+    "step2Title": "Rapport d'incident",
+    "step2Desc": "Résumé et pièces à l'appui.",
+    "fullName": "Nom complet",
+    "namePlaceholder": "Jean Dupont",
+    "email": "E-mail",
+    "emailPlaceholder": "jean@example.com",
+    "phone": "Téléphone (facultatif)",
+    "txHash": "Hash de transaction ou adresse de wallet",
+    "txPlaceholder": "0x… ou bc1…",
+    "amount": "Montant approximatif perdu",
+    "amountPlaceholder": "p. ex. 50000",
+    "currency": "Devise",
+    "blockchain": "Blockchain",
+    "selectBlockchain": "Sélectionner une blockchain",
+    "otherChain": "Autre",
+    "continue": "Continuer vers les détails de l'incident",
+    "summary": "Résumé de l'incident",
+    "summaryPlaceholder": "Décrivez ce qui s'est passé, quand cela a eu lieu, et les plateformes ou wallets concernés.",
+    "evidence": "Pièces justificatives (facultatif)",
+    "evidenceHint": "Captures d'écran, e-mails d'exchange ou plaintes (PDF, PNG, JPG).",
+    "privacy": "Lenix Protocol utilise vos coordonnées pour répondre au sujet de ce dossier. Consultez notre <link>politique de confidentialité</link>.",
+    "back": "Retour",
+    "submitting": "Envoi…",
+    "submit": "Envoyer la demande de récupération",
+    "points": {
+      "confidential": {
+        "title": "Confidentiel",
+        "desc": "Réception chiffrée et accès au dossier restreint."
+      },
+      "review": {
+        "title": "Examen sous 24 h",
+        "desc": "Évaluation initiale sous un jour ouvré."
+      },
+      "fee": {
+        "title": "Pas d'honoraires initiaux",
+        "desc": "Conditions confirmées avant le travail d'enquête."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Veuillez remplir tous les champs obligatoires avant de continuer.",
+      "email": "Veuillez saisir une adresse e-mail valide.",
+      "required": "Veuillez remplir tous les champs obligatoires",
+      "failed": "Échec de l'envoi de la demande de récupération",
+      "success": "Demande de récupération envoyée. Notre équipe vous contactera bientôt."
+    }
+  }
+}

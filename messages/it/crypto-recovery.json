@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Servizi certificati di recupero di cripto-asset | Lenix Protocol",
+    "description": "Recupero professionale di criptovalute perse o rubate, con un tasso di successo del 94%. Specializzati nel recupero di password dei wallet e nelle indagini sulle frodi guidate dalla forensica.",
+    "keywords": "Recupero cripto, Recupero di Bitcoin rubati, Recuperare un wallet perso, Indagine sulle frodi cripto, Forensica blockchain"
+  },
+  "Hero": {
+    "eyebrow": "Recupero certificato di asset",
+    "title": "Recupero forense per cripto rubate o inviate all'indirizzo sbagliato",
+    "description": "Gli investigatori Lenix tracciano i movimenti on-chain, preparano fascicoli per exchange e forze dell'ordine e coordinano il congelamento degli asset quando il recupero resta praticabile.",
+    "submit": "Invia un caso",
+    "process": "Vedi il processo",
+    "imageAlt": "Postazione di indagine forense sulla blockchain"
+  },
+  "Process": {
+    "eyebrow": "Metodologia",
+    "title": "Come funziona il recupero",
+    "description": "Un processo strutturato in quattro fasi, usato per hack agli exchange, incidenti di phishing e trasferimenti non autorizzati.",
+    "phase": "Fase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Valutazione iniziale",
+        "description": "Esaminiamo gli hash delle transazioni, le cronologie e il tipo di perdita per stabilire tracciabilità e opzioni legali.",
+        "tag1": "Revisione della traccia",
+        "tag2": "Valutazione del rischio"
+      },
+      "strategy": {
+        "title": "Strategia di recupero",
+        "description": "Gli investigatori costruiscono un fascicolo con prove on-chain, controparti e i passi successivi in base alla giurisdizione.",
+        "tag1": "Pacchetto di prove",
+        "tag2": "Percorso legale"
+      },
+      "coordination": {
+        "title": "Coordinamento attivo",
+        "description": "Contattiamo exchange, custodi e autorità per congelare i fondi e perseguire vie lecite di restituzione.",
+        "tag1": "Richieste di congelamento",
+        "tag2": "Negoziazione"
+      },
+      "return": {
+        "title": "Restituzione degli asset",
+        "description": "Gli asset recuperati tornano a wallet verificati, con indicazioni per mettere in sicurezza i conti in seguito.",
+        "tag1": "Pagamento verificato",
+        "tag2": "Chiusura del caso"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "Asset tracciati e monitorati",
+    "cases": "Casi esaminati",
+    "jurisdictions": "Giurisdizioni coperte",
+    "intake": "Ricezione degli incidenti"
+  },
+  "Features": {
+    "eyebrow": "Capacità",
+    "title": "Perché i clienti scelgono il recupero Lenix",
+    "description": "Tecnologia ed esperienza degli investigatori insieme, per i casi in cui contano tempi e qualità delle prove.",
+    "items": {
+      "tracing": {
+        "title": "Tracciamento forense",
+        "description": "Analisi on-chain attraverso mixer, bridge e strutture di wallet annidate per seguire il movimento dei fondi."
+      },
+      "investigators": {
+        "title": "Casi guidati da investigatori",
+        "description": "A ogni incarico sono assegnati ex specialisti di intelligence, cybersecurity e compliance."
+      },
+      "legal": {
+        "title": "Rete legale globale",
+        "description": "Coordinamento con forze dell'ordine e legali nelle principali giurisdizioni e con gli exchange partner."
+      },
+      "confidential": {
+        "title": "Trattamento riservato",
+        "description": "Ricezione cifrata, fascicoli separati e controlli di accesso rigorosi per il materiale sensibile."
+      },
+      "documentation": {
+        "title": "Documentazione pronta per il tribunale",
+        "description": "Pacchetti di prove formattati per depositi regolatori, procedimenti civili e denunce."
+      },
+      "fees": {
+        "title": "Compensi legati al risultato",
+        "description": "I compensi di recupero sono legati alle restituzioni ottenute. I termini si confermano prima che inizi il lavoro investigativo."
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "Esiti dei clienti",
+    "title": "Recuperi rappresentativi",
+    "description": "Sintesi anonimizzate di incarichi recenti. I risultati individuali dipendono dai fatti del caso e dalla cooperazione di terzi.",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "Ingegnere software",
+        "quote": "Dopo la compromissione di un wallet, Lenix ha tracciato il flusso e ha aiutato a coordinare un congelamento presso un exchange. La comunicazione è stata chiara in ogni fase."
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Direttrice marketing",
+        "quote": "Un incidente di phishing ha svuotato le mie disponibilità in ETH. Il team ha documentato la traccia e ha recuperato la maggior parte entro tre settimane."
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "Imprenditore",
+        "quote": "Davo per definitiva una perdita di USDT a sei cifre. Lenix l'ha trattata come un'indagine, non come una proposta commerciale, e ha ottenuto risultati."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "Domande frequenti",
+    "title": "Domande comuni",
+    "subtitle": "Cosa aspettarsi prima di inviare un caso.",
+    "discuss": "Deve discutere un incidente specifico?",
+    "submit": "Invia una richiesta di recupero →",
+    "items": {
+      "types": {
+        "question": "Quali tipi di perdite cripto potete recuperare?",
+        "answer": "Gestiamo hack, phishing, trasferimenti non autorizzati e alcuni scenari di accesso ai wallet. La copertura dipende dalla chain, dai tempi e da dove si sono mossi i fondi. Lo confermiamo dopo aver esaminato i dettagli delle Sue transazioni."
+      },
+      "duration": {
+        "question": "Quanto dura il processo di recupero?",
+        "answer": "I casi lineari verso un exchange possono risolversi in settimane. Un tracciamento transfrontaliero o a più passaggi può richiedere da uno a tre mesi. Dopo la valutazione iniziale riceve una stima dei tempi."
+      },
+      "fees": {
+        "question": "Come sono strutturati i compensi?",
+        "answer": "I compensi si concordano per iscritto prima che inizi il lavoro investigativo. Molti incarichi usano termini legati al risultato, ancorati a un recupero riuscito, invece di anticipi elevati."
+      },
+      "confidential": {
+        "question": "Le mie informazioni sono riservate?",
+        "answer": "Sì. Il materiale del caso è cifrato, l'accesso è controllato e viene condiviso solo con le parti necessarie al recupero — exchange, legali o autorità — con il Suo consenso."
+      },
+      "guarantee": {
+        "question": "Garantite il recupero?",
+        "answer": "Nessuno studio serio può garantire il recupero. L'esito dipende da dove si sono mossi i fondi, da quanto presto viene segnalato il caso e dal fatto che custodi o exchange possano agire. Prima che Lei si impegni, forniamo una valutazione onesta della recuperabilità."
+      },
+      "include": {
+        "question": "Cosa devo includere quando invio un caso?",
+        "answer": "Hash delle transazioni, indirizzi dei wallet coinvolti, importo e asset approssimativi, data dell'incidente e eventuali conti di exchange o piattaforme collegati alla perdita. Screenshot, e-mail o denunce rafforzano il fascicolo."
+      },
+      "mixers": {
+        "question": "Potete tracciare fondi passati da mixer o strumenti di privacy?",
+        "answer": "Alcuni flussi si possono ancora analizzare con clustering, tempi e schemi di uscita, ma i protocolli di privacy e l'offuscamento avanzato riducono la recuperabilità. Le diciamo subito se il tracciamento rischia di arrivare a un punto morto."
+      },
+      "enforcement": {
+        "question": "Lavorate con le forze dell'ordine e gli exchange?",
+        "answer": "Sì. Prepariamo pacchetti di tracciamento per le forze dell'ordine e inviamo richieste di congelamento o di informazioni a exchange e custodi quando giurisdizione e prove lo sostengono."
+      },
+      "keys": {
+        "question": "Mi chiederete mai le chiavi private o la seed phrase?",
+        "answer": "Mai. Un lavoro di recupero legittimo non richiede la Sua seed phrase né le Sue chiavi private. Se qualcuno che dice di aiutarLa le chiede, lo consideri una truffa e interrompa subito il contatto."
+      },
+      "after": {
+        "question": "Cosa succede dopo l'invio del modulo?",
+        "answer": "Il team esamina il materiale entro un giorno lavorativo, conferma se il tracciamento forense è praticabile e indica i passi successivi, i documenti necessari e i termini dei compensi se decide di procedere."
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Apertura del caso",
+    "title": "Invia una richiesta di recupero",
+    "description": "Indichi i dettagli della transazione e un breve riepilogo dell'incidente. Gli investigatori li usano per stabilire la tracciabilità prima di discutere i termini dell'incarico.",
+    "submittedTitle": "Richiesta inviata",
+    "submittedBody": "Il team di recupero esaminerà il Suo caso e La contatterà entro 24–48 ore.",
+    "submitAnother": "Invia un'altra richiesta",
+    "steps": "Passi",
+    "step": "Passo {id}",
+    "step1Title": "Contatto e dettagli della perdita",
+    "step1Desc": "Chi è e che cosa è andato perso.",
+    "step2Title": "Rapporto sull'incidente",
+    "step2Desc": "Riepilogo e prove a supporto.",
+    "fullName": "Nome e cognome",
+    "namePlaceholder": "Mario Rossi",
+    "email": "E-mail",
+    "emailPlaceholder": "mario@example.com",
+    "phone": "Telefono (facoltativo)",
+    "txHash": "Hash della transazione o indirizzo del wallet",
+    "txPlaceholder": "0x… o bc1…",
+    "amount": "Importo approssimativo perso",
+    "amountPlaceholder": "es. 50000",
+    "currency": "Valuta",
+    "blockchain": "Blockchain",
+    "selectBlockchain": "Seleziona la blockchain",
+    "otherChain": "Altra",
+    "continue": "Continua ai dettagli dell'incidente",
+    "summary": "Riepilogo dell'incidente",
+    "summaryPlaceholder": "Descriva che cosa è successo, quando è avvenuto e quali piattaforme o wallet erano coinvolti.",
+    "evidence": "Prove a supporto (facoltativo)",
+    "evidenceHint": "Screenshot, e-mail dell'exchange o denunce (PDF, PNG, JPG).",
+    "privacy": "Lenix Protocol usa i Suoi dati di contatto per rispondere su questo caso. Consulti la nostra <link>Informativa sulla privacy</link>.",
+    "back": "Indietro",
+    "submitting": "Invio…",
+    "submit": "Invia la richiesta di recupero",
+    "points": {
+      "confidential": {
+        "title": "Riservato",
+        "desc": "Ricezione cifrata e accesso al caso limitato."
+      },
+      "review": {
+        "title": "Revisione in 24 ore",
+        "desc": "Valutazione iniziale entro un giorno lavorativo."
+      },
+      "fee": {
+        "title": "Nessun anticipo",
+        "desc": "Termini confermati prima del lavoro investigativo."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Compili tutti i campi obbligatori prima di continuare.",
+      "email": "Inserisca un indirizzo e-mail valido.",
+      "required": "Compili tutti i campi obbligatori",
+      "failed": "Invio della richiesta di recupero non riuscito",
+      "success": "Richiesta di recupero inviata. Il team La contatterà a breve."
+    }
+  }
+}

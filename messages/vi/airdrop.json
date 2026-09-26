@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Airdrop và phần thưởng token LNX | Lenix Protocol",
+    "description": "Tham gia airdrop Lenix Protocol và nhận token LNX. Giữ chỗ trong giám định blockchain và thu hồi tài sản.",
+    "keywords": "Airdrop crypto, Token LNX, Crypto miễn phí, Phần thưởng Lenix, Phần thưởng bảo mật blockchain"
+  },
+  "Hero": {
+    "badge": "Chương trình thưởng cộng đồng",
+    "title1": "Nhận",
+    "title2": "Airdrop",
+    "description": "Tham gia Lenix. Chúng tôi đang phân phối <amount>$10,000,000</amount> phần thưởng cho người ủng hộ sớm và thành viên cộng đồng đang hoạt động.",
+    "imageAlt": "Nền airdrop"
+  },
+  "Ongoing": {
+    "live": "Đang diễn ra",
+    "title1": "Tặng",
+    "title2": "nhanh",
+    "description": "Kết nối ví để kiểm tra điều kiện và nhận thưởng USDT ngay. Ưu đãi có hạn cho người tham gia sớm.",
+    "rewardLabel": "Phần thưởng",
+    "rewardValue": "50 USDT",
+    "networkLabel": "Mạng",
+    "networkValue": "TRC-20",
+    "remainingLabel": "Còn lại",
+    "remainingValue": "14%",
+    "connectTitle": "Kết nối để nhận",
+    "connectButton": "Kết nối ví",
+    "supported": "Hỗ trợ: MetaMask, Trust Wallet, Phantom",
+    "connectedTitle": "Đã kết nối ví",
+    "eligible": "Bạn đủ điều kiện.",
+    "claimButton": "Nhận 50 USDT",
+    "processing": "Đang xử lý giao dịch...",
+    "confirmWallet": "Xác nhận trong ví của bạn",
+    "successTitle": "Xong",
+    "successBody": "50 USDT đã được gửi vào ví của bạn.",
+    "disconnect": "Ngắt kết nối / đổi ví"
+  },
+  "Upcoming": {
+    "title1": "Sự kiện",
+    "title2": "sắp tới",
+    "subtitle": "Các đợt phân phối tiếp theo sẽ được đăng tại đây. Tiêu chí đủ điều kiện công bố ngay sau đó.",
+    "estDate": "Ngày dự kiến",
+    "reward": "Phần thưởng",
+    "events": {
+      "lnx": {
+        "title": "Phát token LNX",
+        "date": "Sắp diễn ra",
+        "description": "Phân phối token quản trị cho nhà cung cấp thanh khoản đang hoạt động.",
+        "reward": "Token LNX",
+        "status": "Đã khóa"
+      },
+      "nft": {
+        "title": "Danh sách trắng NFT",
+        "date": "Quý 4 2026",
+        "description": "Quyền truy cập riêng bộ sưu tập NFT Lenix Genesis.",
+        "reward": "Suất danh sách",
+        "status": "Sắp diễn ra"
+      },
+      "partner": {
+        "title": "Giao thức đối tác",
+        "date": "Chưa chốt",
+        "description": "Đợt phát bất ngờ từ đối tác DeFi.",
+        "reward": "Hộp bí ẩn",
+        "status": "Đã khóa"
+      }
+    }
+  }
+}

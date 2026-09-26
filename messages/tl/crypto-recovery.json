@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Sertipikadong serbisyo sa pagbawi ng crypto asset | Lenix Protocol",
+    "description": "Propesyonal na pagbawi ng nawala o nanakaw na cryptocurrency, na may 94% na tagumpay. Dalubhasa sa pagbawi ng password ng wallet at imbestigasyon ng panloloko na pinangungunahan ng forensics.",
+    "keywords": "Pagbawi ng crypto, Pagbawi ng ninakaw na Bitcoin, Ibalik ang nawalang wallet, Imbestigasyon ng crypto fraud, Blockchain forensics"
+  },
+  "Hero": {
+    "eyebrow": "Sertipikadong pagbawi ng asset",
+    "title": "Pagbawing pinangungunahan ng forensics para sa ninakaw o maling napuntang crypto",
+    "description": "Sinusubaybayan ng mga imbestigador ng Lenix ang galaw on-chain, inihahanda ang pakete para sa exchange at awtoridad, at kinokordina ang pag-freeze ng asset kapag posible pa ang pagbawi.",
+    "submit": "Magsumite ng kaso",
+    "process": "Tingnan ang proseso",
+    "imageAlt": "Lugar ng trabaho para sa imbestigasyong forensic sa blockchain"
+  },
+  "Process": {
+    "eyebrow": "Pamamaraan",
+    "title": "Paano gumagana ang pagbawi",
+    "description": "Isang prosesong may apat na yugto, ginagamit sa hack ng exchange, insidente ng phishing, at hindi awtorisadong paglilipat.",
+    "phase": "Yugto {number}",
+    "steps": {
+      "assessment": {
+        "title": "Paunang pagtatasa",
+        "description": "Sinusuri namin ang hash ng transaksyon, ang takdang panahon, at ang uri ng pagkawala para malaman kung masusubaybayan at kung ano ang mga opsyong legal.",
+        "tag1": "Pagsusuri ng bakas",
+        "tag2": "Pagtatasa ng panganib"
+      },
+      "strategy": {
+        "title": "Estratehiya sa pagbawi",
+        "description": "Bumubuo ang mga imbestigador ng file ng kaso na may ebidensyang on-chain, mga katapat, at susunod na hakbang ayon sa hurisdiksyon.",
+        "tag1": "Pakete ng ebidensya",
+        "tag2": "Landas na legal"
+      },
+      "coordination": {
+        "title": "Aktibong koordinasyon",
+        "description": "Nakikipag-ugnayan kami sa mga exchange, tagapag-ingat, at awtoridad para i-freeze ang pondo at habulin ang legal na daan ng pagbabalik.",
+        "tag1": "Kahilingan sa freeze",
+        "tag2": "Negosasyon"
+      },
+      "return": {
+        "title": "Pagbabalik ng asset",
+        "description": "Ibinabalik ang na-recover na asset sa beripikadong wallet, kasama ang gabay sa pag-secure ng mga account pagkatapos.",
+        "tag1": "Beripikadong pagbabayad",
+        "tag2": "Pagsara ng kaso"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "Mga asset na nasubaybayan at mino-monitor",
+    "cases": "Mga kasong nasuri",
+    "jurisdictions": "Mga hurisdiksyong saklaw",
+    "intake": "Pagtanggap ng insidente"
+  },
+  "Features": {
+    "eyebrow": "Kakayahan",
+    "title": "Bakit pinipili ng mga kliyente ang pagbawi ng Lenix",
+    "description": "Pinagsama ang teknolohiya at karanasan ng imbestigador para sa mga kaso kung saan mahalaga ang oras at kalidad ng ebidensya.",
+    "items": {
+      "tracing": {
+        "title": "Forensic na pagsubaybay",
+        "description": "Pagsusuri on-chain sa mga mixer, bridge, at magkakapatong na istruktura ng wallet para sundan ang galaw ng pondo."
+      },
+      "investigators": {
+        "title": "Mga kasong pinamumunuan ng imbestigador",
+        "description": "Mga dating espesyalista sa katalinuhan, cybersecurity, at pagsunod ang itinatalaga sa bawat trabaho."
+      },
+      "legal": {
+        "title": "Pandaigdigang legal na network",
+        "description": "Koordinasyon sa awtoridad at abogado sa mga pangunahing hurisdiksyon at sa mga partner na exchange."
+      },
+      "confidential": {
+        "title": "Kumpidensyal na paghawak",
+        "description": "Naka-encrypt na intake, hiwalay na file ng kaso, at mahigpit na kontrol sa access para sa sensitibong materyal."
+      },
+      "documentation": {
+        "title": "Dokumentong handa sa korte",
+        "description": "Mga pakete ng ebidensya na naka-format para sa pagsusumite sa regulator, kasong sibil, at ulat sa pulis."
+      },
+      "fees": {
+        "title": "Bayad na nakaayon sa resulta",
+        "description": "Ang bayad sa pagbawi ay nakatali sa matagumpay na pagbabalik. Kinukumpirma ang mga tuntunin bago magsimula ang imbestigasyon."
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "Mga resulta ng kliyente",
+    "title": "Mga kinatawang pagbawi",
+    "description": "Mga buod na hindi nagpapakilala mula sa mga kamakailang trabaho. Ang resulta ng bawat kaso ay nakasalalay sa mga katotohanan at sa kooperasyon ng ikatlong partido.",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "Inhinyero ng software",
+        "quote": "Pagkatapos makompromiso ang isang wallet, na-trace ng Lenix ang daloy at tumulong sa pag-coordinate ng freeze sa exchange. Malinaw ang komunikasyon sa bawat yugto."
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Direktor ng marketing",
+        "quote": "Isang insidente ng phishing ang nag-ubos ng hawak kong ETH. Naidokumento ng koponan ang landas at nabawi ang karamihan sa loob ng tatlong linggo."
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "May-ari ng negosyo",
+        "quote": "Akala ko permanente na ang pagkawala ng USDT na anim na digit. Itinuring ito ng Lenix bilang imbestigasyon, hindi bilang diskurso sa pagbebenta, at naghatid ng resulta."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "Mga madalas itanong",
+    "title": "Mga karaniwang tanong",
+    "subtitle": "Ano ang aasahan bago magsumite ng kaso.",
+    "discuss": "Kailangan bang pag-usapan ang isang partikular na insidente?",
+    "submit": "Magsumite ng kahilingan sa pagbawi →",
+    "items": {
+      "types": {
+        "question": "Anong uri ng pagkawala sa crypto ang kayang bawiin ninyo?",
+        "answer": "Hinahawakan namin ang hack, phishing, hindi awtorisadong paglilipat, at piling sitwasyon ng access sa wallet. Nakadepende ang saklaw sa chain, sa timing, at sa kung saan napunta ang pondo. Kinukumpirma namin ito pagkatapos suriin ang detalye ng transaksyon mo."
+      },
+      "duration": {
+        "question": "Gaano katagal ang proseso ng pagbawi?",
+        "answer": "Ang tuwirang kaso sa harap ng exchange ay maaaring malutas sa loob ng ilang linggo. Ang pagsubaybay sa ibang bansa o sa maraming hakbang ay maaaring umabot ng isa hanggang tatlong buwan. Makakatanggap ka ng tantya ng oras pagkatapos ng paunang pagtatasa."
+      },
+      "fees": {
+        "question": "Paano nakaayos ang bayad?",
+        "answer": "Ang bayad ay napagkasunduan nang nakasulat bago magsimula ang imbestigasyon. Maraming trabaho ang gumagamit ng tuntuning nakaayon sa resulta, nakatali sa matagumpay na pagbawi, sa halip na malaking paunang bayad."
+      },
+      "confidential": {
+        "question": "Kumpidensyal ba ang impormasyon ko?",
+        "answer": "Oo. Naka-encrypt ang materyal ng kaso, kontrolado ang access, at ibinabahagi lamang sa mga partidong kailangan para ituloy ang pagbawi — exchange, abogado, o awtoridad — nang may pahintulot mo."
+      },
+      "guarantee": {
+        "question": "Ginagarantiya ba ninyo ang pagbawi?",
+        "answer": "Walang responsableng kumpanya ang makakagarantiya ng pagbawi. Ang resulta ay nakadepende sa kung saan napunta ang pondo, kung gaano kabilis naiulat ang kaso, at kung makakilos ang tagapag-ingat o exchange. Bago ka mangako, nagbibigay kami ng tapat na pagtatasa kung mababawi pa."
+      },
+      "include": {
+        "question": "Ano ang dapat kong isama kapag nagsusumite ng kaso?",
+        "answer": "Mga hash ng transaksyon, mga address ng wallet na kasangkot, tinatayang halaga at asset, petsa ng insidente, at anumang account sa exchange o platform na konektado sa pagkawala. Ang screenshot, email, o ulat sa pulis ay nagpapatibay sa file."
+      },
+      "mixers": {
+        "question": "Masusubaybayan ba ninyo ang pondo na dumaan sa mixer o kasangkapan sa privacy?",
+        "answer": "May mga daloy pa ring masusuri gamit ang pagpapangkat ng address, oras, at gawi ng paglabas, pero binabawasan ng protocol ng privacy at masusing pagtatago ang posibilidad ng pagbawi. Sasabihin namin agad kung malamang na matigil ang pagsubaybay."
+      },
+      "enforcement": {
+        "question": "Nakikipagtulungan ba kayo sa awtoridad at sa mga exchange?",
+        "answer": "Oo. Naghahanda kami ng trace package para sa awtoridad at nagsusumite ng kahilingan sa freeze o impormasyon sa mga exchange at custodian kapag sinusuportahan ito ng hurisdiksyon at ebidensya."
+      },
+      "keys": {
+        "question": "Hihingin ba ninyo ang private key o seed phrase ko?",
+        "answer": "Hindi kailanman. Hindi kailangan ng lehitimong pagbawi ang seed phrase o private key mo. Kung may nagsasabing tutulong at hihilingin ang mga iyon, ituring itong scam at putulin agad ang pakikipag-ugnayan."
+      },
+      "after": {
+        "question": "Ano ang mangyayari pagkatapos kong isumite ang pormularyo?",
+        "answer": "Susuriin ng koponan ang materyal mo sa loob ng isang araw ng trabaho, kukumpirmahin kung posible ang forensic na pagsubaybay, at ilalatag ang susunod na hakbang, kailangang dokumento, at tuntunin ng bayad kung magpapatuloy ka."
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Pagtanggap ng kaso",
+    "title": "Magsumite ng kahilingan sa pagbawi",
+    "description": "Ibigay ang detalye ng transaksyon at maikling buod ng insidente. Ginagamit ito ng mga imbestigador para malaman kung masusubaybayan, bago pag-usapan ang anumang tuntunin ng trabaho.",
+    "submittedTitle": "Naisumite ang kahilingan",
+    "submittedBody": "Susuriin ng koponan sa pagbawi ang kaso mo at makikipag-ugnayan sa loob ng 24–48 oras.",
+    "submitAnother": "Magsumite ng isa pang kahilingan",
+    "steps": "Mga hakbang",
+    "step": "Hakbang {id}",
+    "step1Title": "Pakikipag-ugnayan at detalye ng pagkawala",
+    "step1Desc": "Sino ka at ano ang nawala.",
+    "step2Title": "Ulat ng insidente",
+    "step2Desc": "Buod at sumusuportang ebidensya.",
+    "fullName": "Buong pangalan",
+    "namePlaceholder": "Juan dela Cruz",
+    "email": "Email",
+    "emailPlaceholder": "juan@example.com",
+    "phone": "Telepono (opsyonal)",
+    "txHash": "Hash ng transaksyon o address ng wallet",
+    "txPlaceholder": "0x… o bc1…",
+    "amount": "Tinatayang halagang nawala",
+    "amountPlaceholder": "hal. 50000",
+    "currency": "Pera",
+    "blockchain": "Blockchain",
+    "selectBlockchain": "Pumili ng blockchain",
+    "otherChain": "Iba pa",
+    "continue": "Magpatuloy sa detalye ng insidente",
+    "summary": "Buod ng insidente",
+    "summaryPlaceholder": "Ilarawan kung ano ang nangyari, kailan ito naganap, at aling platform o wallet ang kasangkot.",
+    "evidence": "Sumusuportang ebidensya (opsyonal)",
+    "evidenceHint": "Screenshot, email ng exchange, o ulat sa pulis (PDF, PNG, JPG).",
+    "privacy": "Ginagamit ng Lenix Protocol ang detalye ng pakikipag-ugnayan mo para tumugon tungkol sa kasong ito. Tingnan ang aming <link>Patakaran sa privacy</link>.",
+    "back": "Bumalik",
+    "submitting": "Isinusumite…",
+    "submit": "Isumite ang kahilingan sa pagbawi",
+    "points": {
+      "confidential": {
+        "title": "Kumpidensyal",
+        "desc": "Naka-encrypt na pagtanggap at limitadong access sa kaso."
+      },
+      "review": {
+        "title": "Pagsusuri sa loob ng 24 oras",
+        "desc": "Paunang pagtatasa sa loob ng isang araw ng trabaho."
+      },
+      "fee": {
+        "title": "Walang paunang bayad",
+        "desc": "Kinukumpirma ang tuntunin bago ang imbestigasyon."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Pakikumpleto ang lahat ng kinakailangang field bago magpatuloy.",
+      "email": "Maglagay ng wastong email address.",
+      "required": "Pakipunan ang lahat ng kinakailangang field",
+      "failed": "Hindi naisumite ang kahilingan sa pagbawi",
+      "success": "Naisumite ang kahilingan sa pagbawi. Makikipag-ugnayan ang koponan namin sa lalong madaling panahon."
+    }
+  }
+}

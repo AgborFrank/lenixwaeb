@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Airdrop dan hadiah token LNX | Lenix Protocol",
+    "description": "Ikuti airdrop Lenix Protocol dan terima token LNX. Amankan tempat Anda di forensik blockchain dan pemulihan aset.",
+    "keywords": "Airdrop kripto, Token LNX, Kripto gratis, Hadiah Lenix, Hadiah keamanan blockchain"
+  },
+  "Hero": {
+    "badge": "Program hadiah komunitas",
+    "title1": "Klaim",
+    "title2": "Airdrop",
+    "description": "Bergabung dengan Lenix. Kami membagikan hadiah senilai <amount>$10,000,000</amount> kepada pendukung awal dan anggota komunitas yang aktif.",
+    "imageAlt": "Latar airdrop"
+  },
+  "Ongoing": {
+    "live": "Sedang berlangsung",
+    "title1": "Hadiah",
+    "title2": "kilat",
+    "description": "Hubungkan dompet untuk memeriksa kelayakan dan klaim hadiah USDT sekarang. Penawaran terbatas untuk peserta awal.",
+    "rewardLabel": "Hadiah",
+    "rewardValue": "50 USDT",
+    "networkLabel": "Jaringan",
+    "networkValue": "TRC-20",
+    "remainingLabel": "Tersisa",
+    "remainingValue": "14%",
+    "connectTitle": "Hubungkan untuk klaim",
+    "connectButton": "Hubungkan dompet",
+    "supported": "Didukung: MetaMask, Trust Wallet, Phantom",
+    "connectedTitle": "Dompet terhubung",
+    "eligible": "Anda memenuhi syarat.",
+    "claimButton": "Klaim 50 USDT",
+    "processing": "Memproses transaksi...",
+    "confirmWallet": "Konfirmasi di dompet Anda",
+    "successTitle": "Selesai",
+    "successBody": "50 USDT telah dikirim ke dompet Anda.",
+    "disconnect": "Putuskan / ganti dompet"
+  },
+  "Upcoming": {
+    "title1": "Acara",
+    "title2": "berikutnya",
+    "subtitle": "Distribusi berikutnya diumumkan di sini. Syarat kelayakan menyusul tidak lama kemudian.",
+    "estDate": "Perkiraan tanggal",
+    "reward": "Hadiah",
+    "events": {
+      "lnx": {
+        "title": "Distribusi token LNX",
+        "date": "Segera",
+        "description": "Distribusi token tata kelola untuk penyedia likuiditas yang aktif.",
+        "reward": "Token LNX",
+        "status": "Terkunci"
+      },
+      "nft": {
+        "title": "Daftar putih NFT",
+        "date": "Kuartal 4 2026",
+        "description": "Akses khusus ke koleksi NFT Lenix Genesis.",
+        "reward": "Kursi daftar",
+        "status": "Akan datang"
+      },
+      "partner": {
+        "title": "Protokol mitra",
+        "date": "Menyusul",
+        "description": "Distribusi kejutan dari mitra DeFi kami.",
+        "reward": "Kotak misteri",
+        "status": "Terkunci"
+      }
+    }
+  }
+}

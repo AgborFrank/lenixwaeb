@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Recuperación certificada de criptoactivos | Lenix Protocol",
+    "description": "Recuperación de criptomonedas perdidas o robadas, con una tasa de éxito del 94%. Especialistas en recuperación de contraseñas de monederos e investigación de fraude con análisis forense.",
+    "keywords": "Recuperación cripto, Recuperación de Bitcoin robado, Recuperar monedero perdido, Investigación de fraude cripto, Forense blockchain"
+  },
+  "Hero": {
+    "eyebrow": "Recuperación certificada de activos",
+    "title": "Recuperación forense de cripto robado o enviado a la dirección equivocada",
+    "description": "Los investigadores de Lenix siguen el movimiento on-chain, preparan expedientes para exchanges y fuerzas de seguridad, y coordinan bloqueos de activos cuando la recuperación sigue siendo viable.",
+    "submit": "Abrir un caso",
+    "process": "Ver el proceso",
+    "imageAlt": "Espacio de trabajo de investigación forense blockchain"
+  },
+  "Process": {
+    "eyebrow": "Metodología",
+    "title": "Cómo funciona la recuperación",
+    "description": "Un proceso de cuatro fases para hackeos de exchanges, phishing y transferencias no autorizadas.",
+    "phase": "Fase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Evaluación inicial",
+        "description": "Revisamos hashes de transacción, plazos y tipo de pérdida para determinar si se puede rastrear y qué vías legales existen.",
+        "tag1": "Revisión del rastro",
+        "tag2": "Evaluación de riesgo"
+      },
+      "strategy": {
+        "title": "Estrategia de recuperación",
+        "description": "Los investigadores arman un expediente con evidencia on-chain, contrapartes y los siguientes pasos según la jurisdicción.",
+        "tag1": "Paquete de evidencia",
+        "tag2": "Vía legal"
+      },
+      "coordination": {
+        "title": "Coordinación activa",
+        "description": "Contactamos exchanges, custodios y autoridades para congelar fondos y buscar una devolución legal.",
+        "tag1": "Solicitudes de congelación",
+        "tag2": "Negociación"
+      },
+      "return": {
+        "title": "Devolución de activos",
+        "description": "Los activos recuperados vuelven a monederos verificados, con indicaciones para proteger las cuentas.",
+        "tag1": "Pago verificado",
+        "tag2": "Cierre del caso"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "Activos rastreados y monitorizados",
+    "cases": "Casos revisados",
+    "jurisdictions": "Jurisdicciones cubiertas",
+    "intake": "Recepción de incidentes"
+  },
+  "Features": {
+    "eyebrow": "Capacidades",
+    "title": "Por qué eligen la recuperación de Lenix",
+    "description": "Tecnología y experiencia de investigadores en casos donde importan el tiempo y la calidad de la evidencia.",
+    "items": {
+      "tracing": {
+        "title": "Rastreo forense",
+        "description": "Análisis on-chain en mixers, puentes y estructuras de monederos anidados para seguir el movimiento de fondos."
+      },
+      "investigators": {
+        "title": "Casos a cargo de investigadores",
+        "description": "Especialistas de inteligencia, ciberseguridad y cumplimiento asignados a cada encargo."
+      },
+      "legal": {
+        "title": "Red legal internacional",
+        "description": "Coordinación con fuerzas de seguridad y abogados en las principales jurisdicciones y con exchanges socios."
+      },
+      "confidential": {
+        "title": "Trato confidencial",
+        "description": "Recepción cifrada, expedientes separados y controles de acceso estrictos para material sensible."
+      },
+      "documentation": {
+        "title": "Documentación para tribunales",
+        "description": "Paquetes de evidencia preparados para presentaciones regulatorias, procedimientos civiles e informes policiales."
+      },
+      "fees": {
+        "title": "Honorarios ligados al resultado",
+        "description": "Los honorarios de recuperación se vinculan a devoluciones efectivas. Las condiciones se confirman antes de empezar la investigación."
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "Resultados de clientes",
+    "title": "Recuperaciones representativas",
+    "description": "Resúmenes anonimizados de encargos recientes. Cada resultado depende de los hechos del caso y de la cooperación de terceros.",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "Ingeniero de software",
+        "quote": "Tras el compromiso de un monedero, Lenix siguió el flujo y ayudó a coordinar un bloqueo en el exchange. La comunicación fue clara en cada etapa."
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Directora de marketing",
+        "quote": "Un phishing vació mis tenencias de ETH. El equipo documentó el rastro y recuperó la mayor parte en tres semanas."
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "Empresario",
+        "quote": "Di por perdida una cantidad de seis cifras en USDT. Lenix lo trató como una investigación, no como una venta, y hubo resultados."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Preguntas habituales",
+    "subtitle": "Qué esperar antes de abrir un caso.",
+    "discuss": "¿Necesita comentar un incidente concreto?",
+    "submit": "Enviar una solicitud de recuperación →",
+    "items": {
+      "types": {
+        "question": "¿Qué tipos de pérdidas cripto pueden recuperar?",
+        "answer": "Atendemos hackeos, phishing, transferencias no autorizadas y algunos casos de acceso al monedero. La cobertura depende de la cadena, el tiempo y adónde se movieron los fondos. Lo confirmamos tras revisar sus transacciones."
+      },
+      "duration": {
+        "question": "¿Cuánto tarda el proceso de recuperación?",
+        "answer": "Los casos directos frente a un exchange pueden resolverse en semanas. Un rastreo transfronterizo o con varios saltos puede llevar de uno a tres meses. Recibe una estimación de plazo tras la evaluación inicial."
+      },
+      "fees": {
+        "question": "¿Cómo se estructuran los honorarios?",
+        "answer": "Los honorarios se acuerdan por escrito antes de empezar la investigación. Muchos encargos usan condiciones ligadas al resultado de la recuperación, en lugar de un anticipo elevado."
+      },
+      "confidential": {
+        "question": "¿Mi información es confidencial?",
+        "answer": "Sí. El material del caso está cifrado, con acceso controlado, y solo se comparte con quienes hacen falta para la recuperación — exchanges, abogados o autoridades — con su aprobación."
+      },
+      "guarantee": {
+        "question": "¿Garantizan la recuperación?",
+        "answer": "Ninguna firma responsable puede garantizar la recuperación. El resultado depende de adónde se movieron los fondos, de lo rápido que se reporte el caso y de si custodios o exchanges pueden actuar. Antes de que se comprometa, damos una evaluación honesta de si es recuperable."
+      },
+      "include": {
+        "question": "¿Qué debo incluir al enviar un caso?",
+        "answer": "Hashes de transacción, direcciones de monedero implicadas, importe y activo aproximados, fecha del incidente y cuentas de exchange o plataforma ligadas a la pérdida. Capturas, correos o denuncias policiales refuerzan el expediente."
+      },
+      "mixers": {
+        "question": "¿Pueden rastrear fondos que pasaron por mixers o herramientas de privacidad?",
+        "answer": "Algunos flujos aún se pueden analizar con agrupación, tiempos y patrones de salida, pero los protocolos de privacidad y la ofuscación avanzada reducen las posibilidades. Si el rastreo probablemente se detenga, se lo decimos de entrada."
+      },
+      "enforcement": {
+        "question": "¿Trabajan con fuerzas de seguridad y exchanges?",
+        "answer": "Sí. Preparamos paquetes de rastreo para las fuerzas de seguridad y enviamos solicitudes de congelación o de información a exchanges y custodios cuando la jurisdicción y la evidencia lo permiten."
+      },
+      "keys": {
+        "question": "¿Alguna vez pedirán mis claves privadas o la frase semilla?",
+        "answer": "Nunca. Un trabajo de recuperación legítimo no necesita su frase semilla ni sus claves privadas. Si alguien que dice ayudar se las pide, trátalo como una estafa y corte el contacto."
+      },
+      "after": {
+        "question": "¿Qué pasa después de enviar el formulario?",
+        "answer": "El equipo revisa el material en un día hábil, confirma si el rastreo forense es viable y detalla los siguientes pasos, la documentación necesaria y las condiciones de honorarios si decide seguir."
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Apertura del caso",
+    "title": "Enviar una solicitud de recuperación",
+    "description": "Indique los datos de la transacción y un resumen breve del incidente. Los investigadores lo usan para ver si se puede rastrear, antes de hablar de condiciones.",
+    "submittedTitle": "Solicitud enviada",
+    "submittedBody": "El equipo de recuperación revisará su caso y le contactará en 24–48 horas.",
+    "submitAnother": "Enviar otra solicitud",
+    "steps": "Pasos",
+    "step": "Paso {id}",
+    "step1Title": "Contacto y datos de la pérdida",
+    "step1Desc": "Quién es y qué se perdió.",
+    "step2Title": "Informe del incidente",
+    "step2Desc": "Resumen y evidencia de apoyo.",
+    "fullName": "Nombre completo",
+    "namePlaceholder": "Juan Pérez",
+    "email": "Correo",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "phone": "Teléfono (opcional)",
+    "txHash": "Hash de transacción o dirección del monedero",
+    "txPlaceholder": "0x… o bc1…",
+    "amount": "Importe aproximado perdido",
+    "amountPlaceholder": "p. ej. 50000",
+    "currency": "Moneda",
+    "blockchain": "Blockchain",
+    "selectBlockchain": "Seleccionar blockchain",
+    "otherChain": "Otra",
+    "continue": "Continuar con los detalles del incidente",
+    "summary": "Resumen del incidente",
+    "summaryPlaceholder": "Describa qué ocurrió, cuándo y qué plataformas o monederos intervinieron.",
+    "evidence": "Evidencia de apoyo (opcional)",
+    "evidenceHint": "Capturas, correos del exchange o denuncias policiales (PDF, PNG, JPG).",
+    "privacy": "Lenix Protocol usa sus datos de contacto para responder sobre este caso. Consulte la <link>Política de privacidad</link>.",
+    "back": "Atrás",
+    "submitting": "Enviando…",
+    "submit": "Enviar solicitud de recuperación",
+    "points": {
+      "confidential": {
+        "title": "Confidencial",
+        "desc": "Recepción cifrada y acceso restringido al caso."
+      },
+      "review": {
+        "title": "Revisión en 24 h",
+        "desc": "Evaluación inicial en un día hábil."
+      },
+      "fee": {
+        "title": "Sin anticipo",
+        "desc": "Condiciones confirmadas antes de la investigación."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Complete todos los campos obligatorios antes de continuar.",
+      "email": "Introduzca un correo válido.",
+      "required": "Complete todos los campos obligatorios",
+      "failed": "No se pudo enviar la solicitud de recuperación",
+      "success": "Solicitud de recuperación enviada. El equipo le contactará pronto."
+    }
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "经认证的加密资产追回服务 | Lenix Protocol",
+    "description": "专业追回丢失或被盗的加密货币，成功率 94%。专注钱包密码恢复，以及以取证为主导的欺诈调查。",
+    "keywords": "加密货币追回, 被盗比特币追回, 找回丢失的钱包, 加密欺诈调查, 区块链取证"
+  },
+  "Hero": {
+    "eyebrow": "经认证的资产追回",
+    "title": "以取证为主导，追回被盗或转错的加密资产",
+    "description": "Lenix 的调查人员追踪链上资金走向，准备提交给交易所和执法部门的材料，并在追回仍有可能时协调资产冻结。",
+    "submit": "提交案件",
+    "process": "查看流程",
+    "imageAlt": "区块链取证调查工作台"
+  },
+  "Process": {
+    "eyebrow": "方法",
+    "title": "追回如何进行",
+    "description": "一套四阶段流程，用于交易所被盗、钓鱼事件和未经授权的转账。",
+    "phase": "第 {number} 阶段",
+    "steps": {
+      "assessment": {
+        "title": "初步评估",
+        "description": "我们核对交易哈希、时间线和损失类型，以判断可追踪性及法律途径。",
+        "tag1": "轨迹核查",
+        "tag2": "风险评分"
+      },
+      "strategy": {
+        "title": "追回策略",
+        "description": "调查人员整理案件档案，包含链上证据、交易对手以及按司法辖区确定的后续步骤。",
+        "tag1": "证据包",
+        "tag2": "法律路径"
+      },
+      "coordination": {
+        "title": "主动协调",
+        "description": "我们联系交易所、托管方和主管机关，冻结资金并寻求合法返还途径。",
+        "tag1": "冻结请求",
+        "tag2": "协商"
+      },
+      "return": {
+        "title": "资产返还",
+        "description": "追回的资产返还至已核实的钱包，并提供后续账户安全方面的指导。",
+        "tag1": "核实划付",
+        "tag2": "结案"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "已追踪并持续监测的资产",
+    "cases": "已审阅的案件",
+    "jurisdictions": "覆盖的司法辖区",
+    "intake": "事件受理"
+  },
+  "Features": {
+    "eyebrow": "能力",
+    "title": "客户为什么选择 Lenix 追回",
+    "description": "把技术与调查人员的经验放在一起，用于时间和证据质量都关键的案件。",
+    "items": {
+      "tracing": {
+        "title": "取证追踪",
+        "description": "跨混币器、跨链桥和嵌套钱包结构做链上分析，跟随资金走向。"
+      },
+      "investigators": {
+        "title": "调查人员主导的案件",
+        "description": "每位委托都配备曾从事情报、网络安全或合规工作的专家。"
+      },
+      "legal": {
+        "title": "全球法律网络",
+        "description": "与主要司法辖区的执法部门和律师，以及合作交易所进行协调。"
+      },
+      "confidential": {
+        "title": "保密处理",
+        "description": "加密受理、隔离的案件档案，以及对敏感材料的严格访问控制。"
+      },
+      "documentation": {
+        "title": "可用于法庭的文档",
+        "description": "按监管报送、民事诉讼和警方报案的格式整理证据包。"
+      },
+      "fees": {
+        "title": "与结果挂钩的费用",
+        "description": "追回费用与成功返还挂钩。调查工作开始前会确认条款。"
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "客户结果",
+    "title": "有代表性的追回",
+    "description": "近期委托的匿名摘要。个案结果取决于案情以及第三方是否配合。",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "软件工程师",
+        "quote": "钱包被盗后，Lenix 追踪了资金流向，并协助协调交易所冻结。每个阶段的沟通都很清楚。"
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "市场总监",
+        "quote": "一次钓鱼事件转走了我的 ETH。团队记录了资金轨迹，并在三周内追回了大部分。"
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "企业主",
+        "quote": "我原以为六位数的 USDT 损失已经无法挽回。Lenix 把它当成调查，而不是推销，并且交出了结果。"
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "常见问题",
+    "title": "大家常问的问题",
+    "subtitle": "提交案件之前，您可以预期什么。",
+    "discuss": "需要讨论某一起具体事件吗？",
+    "submit": "提交追回申请 →",
+    "items": {
+      "types": {
+        "question": "你们能追回哪些类型的加密资产损失？",
+        "answer": "我们处理被盗、钓鱼、未经授权的转账，以及部分钱包访问场景。是否受理取决于链、时机和资金去向。我们会在核对您的交易细节后确认。"
+      },
+      "duration": {
+        "question": "追回过程需要多久？",
+        "answer": "直接面向交易所的简单案件可能在数周内解决。跨境或多跳追踪可能需要一到三个月。初步评估之后，您会收到时间估计。"
+      },
+      "fees": {
+        "question": "费用如何安排？",
+        "answer": "调查工作开始前，费用以书面形式约定。许多委托采用与成功追回挂钩的条款，而不是高额预付。"
+      },
+      "confidential": {
+        "question": "我的信息保密吗？",
+        "answer": "保密。案件材料经过加密并控制访问，只在您同意后，与追回所必需的一方共享——交易所、律师或主管机关。"
+      },
+      "guarantee": {
+        "question": "你们保证能追回吗？",
+        "answer": "任何负责任的机构都不能保证追回。结果取决于资金流向、报案是否及时，以及托管方或交易所能否采取行动。在您决定委托之前，我们会给出诚实的可追回性评估。"
+      },
+      "include": {
+        "question": "提交案件时应附上什么？",
+        "answer": "交易哈希、涉及的钱包地址、大致金额和资产、事发日期，以及与损失相关的交易所或平台账户。截图、邮件或警方报案材料会加强档案。"
+      },
+      "mixers": {
+        "question": "资金经过混币器或隐私工具后，还能追踪吗？",
+        "answer": "部分流向仍可借助地址聚类、时间和出金模式分析，但隐私协议和高级混淆会降低可追回性。如果追踪很可能走到尽头，我们会提前说明。"
+      },
+      "enforcement": {
+        "question": "你们与执法部门和交易所合作吗？",
+        "answer": "合作。我们为执法部门准备追踪材料，并在司法辖区和证据支持时，向交易所和托管方提交冻结或信息请求。"
+      },
+      "keys": {
+        "question": "你们会索要我的私钥或助记词吗？",
+        "answer": "绝不会。正当的追回工作不需要您的助记词或私钥。如果有人以帮忙为名索要这些信息，请将其视为诈骗并立即停止联系。"
+      },
+      "after": {
+        "question": "提交受理表之后会发生什么？",
+        "answer": "团队会在一个工作日内审阅您的材料，确认取证追踪是否可行，并在您选择继续时说明后续步骤、所需文件和费用条款。"
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "案件受理",
+    "title": "提交追回申请",
+    "description": "请提供交易细节和简要事件说明。调查人员据此判断可追踪性，然后再讨论任何委托条款。",
+    "submittedTitle": "申请已提交",
+    "submittedBody": "追回团队将审阅您的案件，并在 24–48 小时内与您联系。",
+    "submitAnother": "再提交一份申请",
+    "steps": "步骤",
+    "step": "第 {id} 步",
+    "step1Title": "联系方式与损失详情",
+    "step1Desc": "您是谁，损失了什么。",
+    "step2Title": "事件说明",
+    "step2Desc": "摘要与支持材料。",
+    "fullName": "姓名",
+    "namePlaceholder": "张三",
+    "email": "电子邮箱",
+    "emailPlaceholder": "zhang@example.com",
+    "phone": "电话（选填）",
+    "txHash": "交易哈希或钱包地址",
+    "txPlaceholder": "0x… 或 bc1…",
+    "amount": "大致损失金额",
+    "amountPlaceholder": "例如 50000",
+    "currency": "币种",
+    "blockchain": "区块链",
+    "selectBlockchain": "选择区块链",
+    "otherChain": "其他",
+    "continue": "继续填写事件详情",
+    "summary": "事件摘要",
+    "summaryPlaceholder": "请说明发生了什么、何时发生，以及涉及哪些平台或钱包。",
+    "evidence": "支持材料（选填）",
+    "evidenceHint": "截图、交易所邮件或警方报案材料（PDF、PNG、JPG）。",
+    "privacy": "Lenix Protocol 使用您的联系方式回复本案。请参阅我们的<link>隐私政策</link>。",
+    "back": "返回",
+    "submitting": "提交中…",
+    "submit": "提交追回申请",
+    "points": {
+      "confidential": {
+        "title": "保密",
+        "desc": "加密受理，案件访问受限。"
+      },
+      "review": {
+        "title": "24 小时内审阅",
+        "desc": "一个工作日内完成初步评估。"
+      },
+      "fee": {
+        "title": "无预付费用",
+        "desc": "调查工作开始前确认条款。"
+      }
+    },
+    "errors": {
+      "requiredContinue": "请先填写所有必填项，再继续。",
+      "email": "请输入有效的电子邮箱。",
+      "required": "请填写所有必填项",
+      "failed": "追回申请提交失败",
+      "success": "追回申请已提交。我们的团队将尽快与您联系。"
+    }
+  }
+}

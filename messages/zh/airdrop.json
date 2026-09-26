@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "LNX 代币空投与奖励 | Lenix Protocol",
+    "description": "参与 Lenix Protocol 空投，领取 LNX 代币。在区块链取证与资产追回中占得一席。",
+    "keywords": "加密空投, LNX 代币, 免费加密货币, Lenix 奖励, 区块链安全奖励"
+  },
+  "Hero": {
+    "badge": "社区奖励计划",
+    "title1": "领取你的",
+    "title2": "空投",
+    "description": "加入 Lenix。我们正在向早期支持者和活跃社区成员发放 <amount>$10,000,000</amount> 奖励。",
+    "imageAlt": "空投背景"
+  },
+  "Ongoing": {
+    "live": "进行中",
+    "title1": "限时",
+    "title2": "赠送",
+    "description": "立即连接钱包，查看是否符合条件并领取 USDT 奖励。仅限早期参与者，名额有限。",
+    "rewardLabel": "奖励",
+    "rewardValue": "50 USDT",
+    "networkLabel": "网络",
+    "networkValue": "TRC-20",
+    "remainingLabel": "剩余",
+    "remainingValue": "14%",
+    "connectTitle": "连接后领取",
+    "connectButton": "连接钱包",
+    "supported": "支持：MetaMask、Trust Wallet、Phantom",
+    "connectedTitle": "钱包已连接",
+    "eligible": "你符合条件。",
+    "claimButton": "领取 50 USDT",
+    "processing": "正在处理交易...",
+    "confirmWallet": "请在钱包中确认",
+    "successTitle": "已完成",
+    "successBody": "50 USDT 已发送到你的钱包。",
+    "disconnect": "断开 / 切换钱包"
+  },
+  "Upcoming": {
+    "title1": "即将到来的",
+    "title2": "活动",
+    "subtitle": "后续发放会在这里公布。资格条件随后发布。",
+    "estDate": "预计日期",
+    "reward": "奖励",
+    "events": {
+      "lnx": {
+        "title": "LNX 代币发放",
+        "date": "即将开始",
+        "description": "向活跃流动性提供者发放治理代币。",
+        "reward": "LNX 代币",
+        "status": "未开放"
+      },
+      "nft": {
+        "title": "NFT 白名单",
+        "date": "2026 年第四季度",
+        "description": "优先获得 Lenix Genesis NFT 系列。",
+        "reward": "白名单名额",
+        "status": "即将开始"
+      },
+      "partner": {
+        "title": "合作协议",
+        "date": "待定",
+        "description": "来自 DeFi 合作方的额外发放。",
+        "reward": "神秘礼盒",
+        "status": "未开放"
+      }
+    }
+  }
+}

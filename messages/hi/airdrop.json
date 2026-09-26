@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "LNX टोकन एयरड्रॉप और इनाम | Lenix Protocol",
+    "description": "Lenix Protocol एयरड्रॉप में शामिल हों और LNX टोकन पाएं। ब्लॉकचेन फोरेंसिक और परिसंपत्ति रिकवरी में अपनी जगह रखें।",
+    "keywords": "क्रिप्टो एयरड्रॉप, LNX टोकन, मुफ्त क्रिप्टो, Lenix इनाम, ब्लॉकचेन सुरक्षा इनाम"
+  },
+  "Hero": {
+    "badge": "समुदाय इनाम कार्यक्रम",
+    "title1": "अपना",
+    "title2": "एयरड्रॉप लें",
+    "description": "Lenix से जुड़ें। हम शुरुआती समर्थकों और सक्रिय समुदाय सदस्यों को <amount>$10,000,000</amount> के इनाम बाँट रहे हैं।",
+    "imageAlt": "एयरड्रॉप पृष्ठभूमि"
+  },
+  "Ongoing": {
+    "live": "चल रहा कार्यक्रम",
+    "title1": "तुरंत",
+    "title2": "उपहार",
+    "description": "पात्रता जाँचने और USDT इनाम तुरंत लेने के लिए वॉलेट जोड़ें। शुरुआती प्रतिभागियों के लिए सीमित समय।",
+    "rewardLabel": "इनाम",
+    "rewardValue": "50 USDT",
+    "networkLabel": "नेटवर्क",
+    "networkValue": "TRC-20",
+    "remainingLabel": "शेष",
+    "remainingValue": "14%",
+    "connectTitle": "लेने के लिए जोड़ें",
+    "connectButton": "वॉलेट जोड़ें",
+    "supported": "समर्थित: MetaMask, Trust Wallet, Phantom",
+    "connectedTitle": "वॉलेट जुड़ गया",
+    "eligible": "आप पात्र हैं।",
+    "claimButton": "50 USDT लें",
+    "processing": "लेनदेन संसाधित हो रहा है...",
+    "confirmWallet": "अपने वॉलेट में पुष्टि करें",
+    "successTitle": "हो गया",
+    "successBody": "50 USDT आपके वॉलेट में भेज दिए गए हैं।",
+    "disconnect": "डिस्कनेक्ट / वॉलेट बदलें"
+  },
+  "Upcoming": {
+    "title1": "आने वाले",
+    "title2": "कार्यक्रम",
+    "subtitle": "अगले वितरण यहीं घोषित होंगे। पात्रता की शर्तें उसके तुरंत बाद आएंगी।",
+    "estDate": "अनुमानित तारीख",
+    "reward": "इनाम",
+    "events": {
+      "lnx": {
+        "title": "LNX टोकन वितरण",
+        "date": "जल्द",
+        "description": "सक्रिय लिक्विडिटी प्रदाताओं के लिए गवर्नेंस टोकन का वितरण।",
+        "reward": "LNX टोकन",
+        "status": "लॉक"
+      },
+      "nft": {
+        "title": "NFT व्हाइटलिस्ट",
+        "date": "Q4 2026",
+        "description": "Lenix Genesis NFT संग्रह तक विशेष पहुँच।",
+        "reward": "सूची में स्थान",
+        "status": "आगामी"
+      },
+      "partner": {
+        "title": "साझेदार प्रोटोकॉल",
+        "date": "बाद में",
+        "description": "हमारे DeFi साझेदारों की ओर से अतिरिक्त वितरण।",
+        "reward": "मिस्ट्री बॉक्स",
+        "status": "लॉक"
+      }
+    }
+  }
+}

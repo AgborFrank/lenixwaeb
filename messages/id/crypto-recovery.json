@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Layanan pemulihan aset kripto tersertifikasi | Lenix Protocol",
+    "description": "Pemulihan profesional mata uang kripto yang hilang atau dicuri, dengan tingkat keberhasilan 94%. Khusus pemulihan kata sandi wallet dan investigasi penipuan yang dipimpin forensik.",
+    "keywords": "Pemulihan kripto, Pemulihan Bitcoin curian, Pulihkan wallet hilang, Investigasi penipuan kripto, Forensik blockchain"
+  },
+  "Hero": {
+    "eyebrow": "Pemulihan aset tersertifikasi",
+    "title": "Pemulihan berbasis forensik untuk kripto yang dicuri atau salah kirim",
+    "description": "Penyidik Lenix menelusuri pergerakan on-chain, menyiapkan berkas untuk bursa dan penegak hukum, serta mengoordinasikan pembekuan aset saat pemulihan masih memungkinkan.",
+    "submit": "Ajukan kasus",
+    "process": "Lihat proses",
+    "imageAlt": "Ruang kerja investigasi forensik blockchain"
+  },
+  "Process": {
+    "eyebrow": "Metodologi",
+    "title": "Cara kerja pemulihan",
+    "description": "Proses terstruktur empat tahap yang dipakai pada peretasan bursa, insiden phishing, dan transfer tanpa izin.",
+    "phase": "Tahap {number}",
+    "steps": {
+      "assessment": {
+        "title": "Penilaian awal",
+        "description": "Kami meninjau hash transaksi, linimasa, dan jenis kerugian untuk menentukan keterlacakan serta opsi hukum.",
+        "tag1": "Tinjauan jejak",
+        "tag2": "Penilaian risiko"
+      },
+      "strategy": {
+        "title": "Strategi pemulihan",
+        "description": "Penyidik menyusun berkas kasus dengan bukti on-chain, pihak lawan, dan langkah berikutnya sesuai yurisdiksi.",
+        "tag1": "Paket bukti",
+        "tag2": "Jalur hukum"
+      },
+      "coordination": {
+        "title": "Koordinasi aktif",
+        "description": "Kami menghubungi bursa, kustodian, dan otoritas untuk membekukan dana dan menempuh jalur pengembalian yang sah.",
+        "tag1": "Permintaan pembekuan",
+        "tag2": "Negosiasi"
+      },
+      "return": {
+        "title": "Pengembalian aset",
+        "description": "Aset yang dipulihkan dikembalikan ke wallet yang terverifikasi, dengan panduan mengamankan akun selanjutnya.",
+        "tag1": "Pembayaran terverifikasi",
+        "tag2": "Penutupan kasus"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "Aset yang dilacak dan dipantau",
+    "cases": "Kasus yang ditinjau",
+    "jurisdictions": "Yurisdiksi yang dicakup",
+    "intake": "Penerimaan insiden"
+  },
+  "Features": {
+    "eyebrow": "Kemampuan",
+    "title": "Mengapa klien memilih pemulihan Lenix",
+    "description": "Teknologi dan pengalaman penyidik digabung untuk kasus yang waktu dan mutu buktinya menentukan.",
+    "items": {
+      "tracing": {
+        "title": "Pelacakan forensik",
+        "description": "Analisis on-chain melewati mixer, bridge, dan struktur wallet bersarang untuk mengikuti pergerakan dana."
+      },
+      "investigators": {
+        "title": "Kasus yang dipimpin penyidik",
+        "description": "Mantan spesialis intelijen, keamanan siber, dan kepatuhan ditugaskan pada setiap penugasan."
+      },
+      "legal": {
+        "title": "Jaringan hukum global",
+        "description": "Koordinasi dengan penegak hukum dan penasihat di yurisdiksi utama serta dengan bursa mitra."
+      },
+      "confidential": {
+        "title": "Penanganan rahasia",
+        "description": "Penerimaan terenkripsi, berkas kasus terpisah, dan kontrol akses ketat untuk materi sensitif."
+      },
+      "documentation": {
+        "title": "Dokumentasi siap sidang",
+        "description": "Paket bukti yang disusun untuk pengajuan regulator, perkara perdata, dan laporan polisi."
+      },
+      "fees": {
+        "title": "Biaya selaras hasil",
+        "description": "Biaya pemulihan terkait pengembalian yang berhasil. Ketentuan dikonfirmasi sebelum pekerjaan investigasi dimulai."
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "Hasil klien",
+    "title": "Pemulihan yang mewakili",
+    "description": "Ringkasan anonim dari penugasan baru-baru ini. Hasil tiap kasus bergantung pada fakta dan kerja sama pihak ketiga.",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "Insinyur perangkat lunak",
+        "quote": "Setelah wallet disusupi, Lenix menelusuri alur dan membantu mengoordinasikan pembekuan di bursa. Komunikasi jelas di setiap tahap."
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Direktur pemasaran",
+        "quote": "Insiden phishing mengosongkan kepemilikan ETH saya. Tim mendokumentasikan jejak dan memulihkan sebagian besar dalam tiga minggu."
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "Pemilik usaha",
+        "quote": "Saya mengira kerugian USDT enam digit sudah permanen. Lenix memperlakukannya sebagai investigasi, bukan ajakan jual, dan memberikan hasil."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "Pertanyaan umum",
+    "title": "Pertanyaan yang sering diajukan",
+    "subtitle": "Apa yang bisa diharapkan sebelum mengajukan kasus.",
+    "discuss": "Perlu membahas insiden tertentu?",
+    "submit": "Kirim permintaan pemulihan →",
+    "items": {
+      "types": {
+        "question": "Jenis kerugian kripto apa yang bisa dipulihkan?",
+        "answer": "Kami menangani peretasan, phishing, transfer tanpa izin, dan sejumlah skenario akses wallet. Cakupan bergantung pada chain, waktu, dan ke mana dana berpindah. Kami mengonfirmasinya setelah meninjau detail transaksi Anda."
+      },
+      "duration": {
+        "question": "Berapa lama proses pemulihan berlangsung?",
+        "answer": "Kasus yang langsung berhadapan dengan bursa dapat selesai dalam hitungan minggu. Pelacakan lintas batas atau banyak lompatan dapat memakan satu hingga tiga bulan. Anda menerima perkiraan waktu setelah penilaian awal."
+      },
+      "fees": {
+        "question": "Bagaimana struktur biayanya?",
+        "answer": "Biaya disepakati secara tertulis sebelum pekerjaan investigasi dimulai. Banyak penugasan memakai ketentuan yang selaras hasil, terkait pemulihan yang berhasil, bukan uang muka yang besar."
+      },
+      "confidential": {
+        "question": "Apakah informasi saya rahasia?",
+        "answer": "Ya. Materi kasus dienkripsi, aksesnya dikontrol, dan hanya dibagikan kepada pihak yang diperlukan untuk menempuh pemulihan — bursa, penasihat, atau otoritas — dengan persetujuan Anda."
+      },
+      "guarantee": {
+        "question": "Apakah pemulihan dijamin?",
+        "answer": "Tidak ada firma yang bertanggung jawab dapat menjamin pemulihan. Hasil bergantung pada ke mana dana berpindah, seberapa cepat kasus dilaporkan, dan apakah kustodian atau bursa dapat bertindak. Sebelum Anda berkomitmen, kami memberi penilaian jujur tentang kemungkinan pemulihan."
+      },
+      "include": {
+        "question": "Apa yang harus saya sertakan saat mengajukan kasus?",
+        "answer": "Hash transaksi, alamat wallet yang terlibat, jumlah dan aset perkiraan, tanggal insiden, serta akun bursa atau platform yang terkait kerugian. Tangkapan layar, surel, atau laporan polisi memperkuat berkas."
+      },
+      "mixers": {
+        "question": "Bisakah dana dilacak melalui mixer atau alat privasi?",
+        "answer": "Sebagian aliran masih bisa dianalisis lewat pengelompokan alamat, waktu, dan pola keluar, tetapi protokol privasi dan penyamaran lanjut menurunkan kemungkinan pemulihan. Kami memberi tahu di awal jika pelacakan kemungkinan menemui jalan buntu."
+      },
+      "enforcement": {
+        "question": "Apakah Anda bekerja dengan penegak hukum dan bursa?",
+        "answer": "Ya. Kami menyiapkan paket pelacakan untuk penegak hukum dan mengajukan permintaan pembekuan atau informasi ke bursa dan kustodian bila yurisdiksi dan bukti mendukung."
+      },
+      "keys": {
+        "question": "Apakah Anda akan meminta kunci privat atau seed phrase saya?",
+        "answer": "Tidak pernah. Pekerjaan pemulihan yang sah tidak memerlukan seed phrase atau kunci privat Anda. Jika ada yang mengaku membantu lalu memintanya, anggap itu penipuan dan putus kontak segera."
+      },
+      "after": {
+        "question": "Apa yang terjadi setelah saya mengirim formulir?",
+        "answer": "Tim meninjau materi Anda dalam satu hari kerja, mengonfirmasi apakah pelacakan forensik memungkinkan, dan menguraikan langkah berikutnya, kebutuhan dokumen, serta ketentuan biaya jika Anda memilih lanjut."
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Penerimaan kasus",
+    "title": "Kirim permintaan pemulihan",
+    "description": "Berikan detail transaksi dan ringkasan singkat insiden. Penyidik memakai ini untuk menentukan keterlacakan sebelum ketentuan penugasan dibahas.",
+    "submittedTitle": "Permintaan terkirim",
+    "submittedBody": "Tim pemulihan kami akan meninjau kasus Anda dan menghubungi dalam 24–48 jam.",
+    "submitAnother": "Kirim permintaan lain",
+    "steps": "Langkah",
+    "step": "Langkah {id}",
+    "step1Title": "Kontak dan detail kerugian",
+    "step1Desc": "Siapa Anda dan apa yang hilang.",
+    "step2Title": "Laporan insiden",
+    "step2Desc": "Ringkasan dan bukti pendukung.",
+    "fullName": "Nama lengkap",
+    "namePlaceholder": "Budi Santoso",
+    "email": "Surel",
+    "emailPlaceholder": "budi@example.com",
+    "phone": "Telepon (opsional)",
+    "txHash": "Hash transaksi atau alamat wallet",
+    "txPlaceholder": "0x… atau bc1…",
+    "amount": "Perkiraan jumlah yang hilang",
+    "amountPlaceholder": "mis. 50000",
+    "currency": "Mata uang",
+    "blockchain": "Blockchain",
+    "selectBlockchain": "Pilih blockchain",
+    "otherChain": "Lainnya",
+    "continue": "Lanjut ke detail insiden",
+    "summary": "Ringkasan insiden",
+    "summaryPlaceholder": "Jelaskan apa yang terjadi, kapan terjadinya, dan platform atau wallet mana yang terlibat.",
+    "evidence": "Bukti pendukung (opsional)",
+    "evidenceHint": "Tangkapan layar, surel bursa, atau laporan polisi (PDF, PNG, JPG).",
+    "privacy": "Lenix Protocol memakai data kontak Anda untuk menanggapi kasus ini. Lihat <link>Kebijakan Privasi</link> kami.",
+    "back": "Kembali",
+    "submitting": "Mengirim…",
+    "submit": "Kirim permintaan pemulihan",
+    "points": {
+      "confidential": {
+        "title": "Rahasia",
+        "desc": "Penerimaan terenkripsi dan akses kasus terbatas."
+      },
+      "review": {
+        "title": "Tinjauan 24 jam",
+        "desc": "Penilaian awal dalam satu hari kerja."
+      },
+      "fee": {
+        "title": "Tanpa biaya di muka",
+        "desc": "Ketentuan dikonfirmasi sebelum investigasi."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Lengkapi semua kolom wajib sebelum melanjutkan.",
+      "email": "Masukkan alamat surel yang valid.",
+      "required": "Isi semua kolom wajib",
+      "failed": "Gagal mengirim permintaan pemulihan",
+      "success": "Permintaan pemulihan terkirim. Tim kami akan segera menghubungi Anda."
+    }
+  }
+}

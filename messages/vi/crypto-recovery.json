@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "Dịch vụ thu hồi tài sản crypto được chứng nhận | Lenix Protocol",
+    "description": "Thu hồi chuyên nghiệp tiền mã hóa bị mất hoặc bị đánh cắp, với tỷ lệ thành công 94%. Chuyên khôi phục mật khẩu ví và điều tra gian lận theo hướng giám định.",
+    "keywords": "Thu hồi crypto, Thu hồi Bitcoin bị đánh cắp, Khôi phục ví bị mất, Điều tra gian lận crypto, Giám định blockchain"
+  },
+  "Hero": {
+    "eyebrow": "Thu hồi tài sản được chứng nhận",
+    "title": "Thu hồi theo hướng giám định cho crypto bị đánh cắp hoặc chuyển nhầm",
+    "description": "Điều tra viên Lenix truy vết dòng chảy on-chain, chuẩn bị hồ sơ cho sàn và cơ quan thực thi pháp luật, và phối hợp phong tỏa tài sản khi việc thu hồi vẫn còn khả thi.",
+    "submit": "Gửi vụ việc",
+    "process": "Xem quy trình",
+    "imageAlt": "Không gian làm việc điều tra giám định blockchain"
+  },
+  "Process": {
+    "eyebrow": "Phương pháp",
+    "title": "Thu hồi diễn ra thế nào",
+    "description": "Quy trình bốn giai đoạn, dùng cho vụ hack sàn, sự cố lừa đảo phishing và chuyển khoản trái phép.",
+    "phase": "Giai đoạn {number}",
+    "steps": {
+      "assessment": {
+        "title": "Đánh giá ban đầu",
+        "description": "Chúng tôi xem hash giao dịch, dòng thời gian và loại tổn thất để xác định khả năng truy vết và các lựa chọn pháp lý.",
+        "tag1": "Rà soát dấu vết",
+        "tag2": "Chấm điểm rủi ro"
+      },
+      "strategy": {
+        "title": "Chiến lược thu hồi",
+        "description": "Điều tra viên lập hồ sơ vụ việc với bằng chứng on-chain, các bên đối ứng và bước tiếp theo theo từng vùng tài phán.",
+        "tag1": "Gói bằng chứng",
+        "tag2": "Hướng pháp lý"
+      },
+      "coordination": {
+        "title": "Phối hợp đang diễn ra",
+        "description": "Chúng tôi làm việc với sàn, bên lưu ký và cơ quan chức năng để phong tỏa tiền và tìm đường trả lại hợp pháp.",
+        "tag1": "Yêu cầu phong tỏa",
+        "tag2": "Thương lượng"
+      },
+      "return": {
+        "title": "Trả lại tài sản",
+        "description": "Tài sản thu hồi được trả về ví đã xác minh, kèm hướng dẫn bảo vệ tài khoản về sau.",
+        "tag1": "Chi trả đã xác minh",
+        "tag2": "Đóng vụ"
+      }
+    }
+  },
+  "Stats": {
+    "traced": "Tài sản đã truy vết và theo dõi",
+    "cases": "Vụ đã xem xét",
+    "jurisdictions": "Vùng tài phán được phủ",
+    "intake": "Tiếp nhận sự cố"
+  },
+  "Features": {
+    "eyebrow": "Năng lực",
+    "title": "Vì sao khách chọn thu hồi của Lenix",
+    "description": "Công nghệ và kinh nghiệm điều tra viên đi cùng nhau, cho những vụ mà thời gian và chất lượng bằng chứng quyết định.",
+    "items": {
+      "tracing": {
+        "title": "Truy vết giám định",
+        "description": "Phân tích on-chain qua mixer, cầu nối và cấu trúc ví lồng nhau để theo dòng tiền."
+      },
+      "investigators": {
+        "title": "Vụ do điều tra viên dẫn dắt",
+        "description": "Chuyên gia từng làm tình báo, an ninh mạng và tuân thủ được phân công cho từng hợp đồng."
+      },
+      "legal": {
+        "title": "Mạng lưới pháp lý toàn cầu",
+        "description": "Phối hợp với cơ quan thực thi pháp luật và luật sư tại các vùng tài phán lớn và với sàn đối tác."
+      },
+      "confidential": {
+        "title": "Xử lý bảo mật",
+        "description": "Tiếp nhận được mã hóa, hồ sơ vụ tách riêng và kiểm soát truy cập chặt với tài liệu nhạy cảm."
+      },
+      "documentation": {
+        "title": "Hồ sơ dùng được trước tòa",
+        "description": "Gói bằng chứng định dạng cho nộp cơ quan quản lý, tố tụng dân sự và đơn trình báo công an."
+      },
+      "fees": {
+        "title": "Phí gắn với kết quả",
+        "description": "Phí thu hồi gắn với khoản trả lại thành công. Điều khoản được chốt trước khi công việc điều tra bắt đầu."
+      }
+    }
+  },
+  "Stories": {
+    "eyebrow": "Kết quả của khách",
+    "title": "Các vụ thu hồi tiêu biểu",
+    "description": "Tóm tắt ẩn danh từ các hợp đồng gần đây. Kết quả từng vụ phụ thuộc vào tình tiết và sự hợp tác của bên thứ ba.",
+    "items": {
+      "michael": {
+        "name": "Michael Chen",
+        "role": "Kỹ sư phần mềm",
+        "quote": "Sau khi ví bị xâm nhập, Lenix truy vết dòng tiền và hỗ trợ phối hợp phong tỏa tại sàn. Trao đổi rõ ràng ở từng giai đoạn."
+      },
+      "sarah": {
+        "name": "Sarah Johnson",
+        "role": "Giám đốc marketing",
+        "quote": "Một vụ phishing rút hết số ETH của tôi. Nhóm ghi lại dấu vết và thu hồi phần lớn trong ba tuần."
+      },
+      "david": {
+        "name": "David Rodriguez",
+        "role": "Chủ doanh nghiệp",
+        "quote": "Tôi tưởng khoản USDT sáu chữ số đã mất hẳn. Lenix xử lý như một cuộc điều tra, không phải bài chào hàng, và có kết quả."
+      }
+    }
+  },
+  "Faq": {
+    "eyebrow": "Câu hỏi thường gặp",
+    "title": "Những câu hỏi phổ biến",
+    "subtitle": "Bạn có thể chờ gì trước khi gửi vụ việc.",
+    "discuss": "Cần trao đổi về một sự cố cụ thể?",
+    "submit": "Gửi yêu cầu thu hồi →",
+    "items": {
+      "types": {
+        "question": "Các bạn thu hồi được những loại mất mát crypto nào?",
+        "answer": "Chúng tôi xử lý hack, phishing, chuyển khoản trái phép và một số tình huống mất quyền truy cập ví. Phạm vi phụ thuộc vào chuỗi, thời điểm và nơi tiền đã chuyển tới. Chúng tôi xác nhận sau khi xem chi tiết giao dịch của bạn."
+      },
+      "duration": {
+        "question": "Quy trình thu hồi mất bao lâu?",
+        "answer": "Vụ đơn giản đối mặt với sàn có thể xong trong vài tuần. Truy vết xuyên biên giới hoặc nhiều chặng có thể mất từ một đến ba tháng. Bạn nhận ước tính thời gian sau đánh giá ban đầu."
+      },
+      "fees": {
+        "question": "Phí được tính thế nào?",
+        "answer": "Phí được thỏa thuận bằng văn bản trước khi công việc điều tra bắt đầu. Nhiều hợp đồng dùng điều khoản gắn với kết quả, theo khoản thu hồi thành công, thay vì tạm ứng lớn."
+      },
+      "confidential": {
+        "question": "Thông tin của tôi có được bảo mật không?",
+        "answer": "Có. Tài liệu vụ việc được mã hóa, kiểm soát truy cập, và chỉ chia sẻ với bên cần thiết để theo đuổi thu hồi — sàn, luật sư hoặc cơ quan chức năng — khi có sự chấp thuận của bạn."
+      },
+      "guarantee": {
+        "question": "Các bạn có bảo đảm thu hồi được không?",
+        "answer": "Không tổ chức có trách nhiệm nào có thể bảo đảm thu hồi. Kết quả phụ thuộc vào tiền đã đi đâu, vụ được báo sớm đến mức nào, và bên lưu ký hoặc sàn có thể hành động hay không. Trước khi bạn cam kết, chúng tôi đưa đánh giá thẳng thắn về khả năng thu hồi."
+      },
+      "include": {
+        "question": "Khi gửi vụ việc tôi nên kèm những gì?",
+        "answer": "Hash giao dịch, địa chỉ ví liên quan, số tiền và tài sản ước tính, ngày xảy ra sự cố, cùng tài khoản sàn hoặc nền tảng gắn với khoản mất. Ảnh chụp màn hình, email hoặc đơn trình báo công an làm hồ sơ chắc hơn."
+      },
+      "mixers": {
+        "question": "Các bạn truy vết được tiền đi qua mixer hoặc công cụ riêng tư không?",
+        "answer": "Một số dòng chảy vẫn phân tích được bằng cụm địa chỉ, thời điểm và mẫu rút ra, nhưng giao thức riêng tư và kỹ thuật che giấu nâng cao làm giảm khả năng thu hồi. Chúng tôi nói trước nếu truy vết nhiều khả năng đi vào ngõ cụt."
+      },
+      "enforcement": {
+        "question": "Các bạn có làm việc với cơ quan thực thi pháp luật và sàn không?",
+        "answer": "Có. Chúng tôi chuẩn bị gói truy vết cho cơ quan thực thi pháp luật và gửi yêu cầu phong tỏa hoặc cung cấp thông tin tới sàn và bên lưu ký khi vùng tài phán và bằng chứng cho phép."
+      },
+      "keys": {
+        "question": "Các bạn có bao giờ hỏi khóa riêng hoặc cụm từ khôi phục của tôi không?",
+        "answer": "Không bao giờ. Công việc thu hồi hợp pháp không cần cụm từ khôi phục hay khóa riêng của bạn. Nếu ai đó nhận giúp mà đòi những thứ này, hãy coi đó là lừa đảo và ngắt liên lạc ngay."
+      },
+      "after": {
+        "question": "Sau khi tôi gửi biểu mẫu tiếp nhận thì sao?",
+        "answer": "Nhóm xem tài liệu của bạn trong một ngày làm việc, xác nhận truy vết giám định có khả thi không, và nêu bước tiếp theo, giấy tờ cần có cùng điều khoản phí nếu bạn chọn đi tiếp."
+      }
+    }
+  },
+  "Form": {
+    "eyebrow": "Tiếp nhận vụ việc",
+    "title": "Gửi yêu cầu thu hồi",
+    "description": "Cung cấp chi tiết giao dịch và tóm tắt ngắn sự cố. Điều tra viên dùng thông tin này để xác định khả năng truy vết trước khi bàn điều khoản hợp đồng.",
+    "submittedTitle": "Đã gửi yêu cầu",
+    "submittedBody": "Nhóm thu hồi sẽ xem vụ của bạn và liên hệ trong 24–48 giờ.",
+    "submitAnother": "Gửi yêu cầu khác",
+    "steps": "Các bước",
+    "step": "Bước {id}",
+    "step1Title": "Liên hệ và chi tiết tổn thất",
+    "step1Desc": "Bạn là ai và mất những gì.",
+    "step2Title": "Báo cáo sự cố",
+    "step2Desc": "Tóm tắt và bằng chứng hỗ trợ.",
+    "fullName": "Họ và tên",
+    "namePlaceholder": "Nguyễn Văn A",
+    "email": "Email",
+    "emailPlaceholder": "nguyen@example.com",
+    "phone": "Điện thoại (không bắt buộc)",
+    "txHash": "Hash giao dịch hoặc địa chỉ ví",
+    "txPlaceholder": "0x… hoặc bc1…",
+    "amount": "Số tiền mất ước tính",
+    "amountPlaceholder": "vd. 50000",
+    "currency": "Tiền tệ",
+    "blockchain": "Blockchain",
+    "selectBlockchain": "Chọn blockchain",
+    "otherChain": "Khác",
+    "continue": "Tiếp tục tới chi tiết sự cố",
+    "summary": "Tóm tắt sự cố",
+    "summaryPlaceholder": "Mô tả chuyện gì đã xảy ra, khi nào, và nền tảng hoặc ví nào có liên quan.",
+    "evidence": "Bằng chứng hỗ trợ (không bắt buộc)",
+    "evidenceHint": "Ảnh chụp màn hình, email từ sàn hoặc đơn trình báo (PDF, PNG, JPG).",
+    "privacy": "Lenix Protocol dùng thông tin liên hệ của bạn để trả lời về vụ này. Xem <link>Chính sách quyền riêng tư</link> của chúng tôi.",
+    "back": "Quay lại",
+    "submitting": "Đang gửi…",
+    "submit": "Gửi yêu cầu thu hồi",
+    "points": {
+      "confidential": {
+        "title": "Bảo mật",
+        "desc": "Tiếp nhận được mã hóa và quyền xem vụ bị giới hạn."
+      },
+      "review": {
+        "title": "Xem trong 24 giờ",
+        "desc": "Đánh giá ban đầu trong một ngày làm việc."
+      },
+      "fee": {
+        "title": "Không phí trả trước",
+        "desc": "Điều khoản được chốt trước công việc điều tra."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Vui lòng điền đủ các trường bắt buộc trước khi tiếp tục.",
+      "email": "Vui lòng nhập địa chỉ email hợp lệ.",
+      "required": "Vui lòng điền đủ các trường bắt buộc",
+      "failed": "Không gửi được yêu cầu thu hồi",
+      "success": "Đã gửi yêu cầu thu hồi. Nhóm của chúng tôi sẽ liên hệ sớm."
+    }
+  }
+}
