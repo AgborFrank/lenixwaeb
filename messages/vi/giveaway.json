@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Giveaway $250,000 – Lenix Protocol",
+    "description": "Tham gia Giveaway $250,000 của Lenix Protocol. Mười người thắng nhận $25,000 bằng LNX. Cách tham gia, giải thưởng, quy tắc và câu hỏi thường gặp."
+  },
+  "Hero": {
+    "title1": "Tham gia cuộc thi của chúng tôi để có cơ hội",
+    "titleHighlight": "Thắng $250,000",
+    "title2": "Giveaway",
+    "description": "Mười người thắng mỗi người nhận $25,000 bằng LNX. Hoàn thành nhiệm vụ, chia sẻ và tăng số lượt dự. Quy tắc minh bạch, chọn công bằng và phân phối on-chain.",
+    "howToEnter": "Cách tham gia",
+    "readFaqs": "Đọc FAQ"
+  },
+  "Prizes": {
+    "title": "Giải thưởng",
+    "description": "Tổng cộng $250,000 bằng LNX sẽ được phân phối cho 10 người thắng. Mỗi người thắng nhận $25,000 bằng LNX.",
+    "winner": "Người thắng {n}",
+    "amount": "$25,000 LNX"
+  },
+  "Enter": {
+    "title": "Cách tham gia",
+    "description": "Hoàn thành các bước bên dưới. Hoàn thành càng nhiều nhiệm vụ = càng nhiều lượt dự.",
+    "reviewRules": "Xem quy tắc",
+    "steps": {
+      "1": {
+        "label": "Bước 1",
+        "title": "Kết nối ví của bạn",
+        "description": "Dùng nút Connect Wallet trên thanh đầu trang. Đảm bảo bạn kiểm soát địa chỉ đó."
+      },
+      "2": {
+        "label": "Bước 2",
+        "title": "Hoàn thành nhiệm vụ bắt buộc",
+        "description": "Tham gia các kênh của chúng tôi, xác minh hành động và làm theo hướng dẫn trên trang chiến dịch."
+      },
+      "3": {
+        "label": "Bước 3",
+        "title": "Tăng cơ hội bằng hành động thưởng",
+        "description": "Chia sẻ chiến dịch và mời bạn bè để nhận thêm lượt dự."
+      },
+      "4": {
+        "label": "Bước 4",
+        "title": "Xác minh và gửi",
+        "description": "Xác nhận tham gia và giữ ví được kết nối để nhận giải thưởng."
+      }
+    }
+  },
+  "Rules": {
+    "title": "Điều kiện & quy tắc",
+    "items": {
+      "1": "Một địa chỉ ví chính cho mỗi người tham gia. Nhiều lượt từ cùng một người có thể bị loại.",
+      "2": "Người thắng được chọn công bằng dựa trên các lượt dự có thể xác minh. Chúng tôi có quyền xác minh lại người thắng.",
+      "3": "Giải thưởng được phân phối bằng LNX on-chain chỉ tới địa chỉ ví đã kết nối.",
+      "4": "Thuế, báo cáo và quy định địa phương là trách nhiệm của người thắng.",
+      "5": "Vô hiệu nơi bị cấm. Chúng tôi có thể loại trừ một số khu vực pháp lý để tuân thủ luật địa phương.",
+      "6": "Lịch trình và chi tiết chiến dịch có thể thay đổi; cập nhật sẽ được thông báo trên các kênh chính thức."
+    }
+  },
+  "Faq": {
+    "title": "Câu hỏi thường gặp",
+    "enterNow": "Tham gia ngay",
+    "disclaimer": "Không phải tư vấn tài chính. Việc tham gia phải tuân theo luật và quy định địa phương. Khi tham gia, bạn đồng ý với các quy tắc trên.",
+    "items": {
+      "winners": {
+        "question": "Người thắng được chọn như thế nào?",
+        "answer": "Người thắng được chọn công bằng từ các lượt dự đã xác thực. Nhiệm vụ thưởng bổ sung tăng cơ hội nhưng không đảm bảo chiến thắng."
+      },
+      "announce": {
+        "question": "Khi nào công bố người thắng?",
+        "answer": "Ngày công bố cuối cùng sẽ được chia sẻ trên các kênh chính thức của chúng tôi. Hãy theo dõi cập nhật lịch trình."
+      },
+      "paid": {
+        "question": "Giải thưởng được trả như thế nào?",
+        "answer": "Giải thưởng được phân phối bằng LNX on-chain trực tiếp tới địa chỉ ví đã kết nối. Đảm bảo bạn vẫn có quyền truy cập."
+      },
+      "wallets": {
+        "question": "Tôi có thể dùng nhiều ví không?",
+        "answer": "Không. Chỉ cho phép một ví chính cho mỗi người tham gia. Nhiều lượt từ cùng một người có thể bị loại."
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Sorteo de 250.000 $ – Lenix Protocol",
+    "description": "Participe en el sorteo de 250.000 $ de Lenix Protocol. Diez ganadores reciben 25.000 $ en LNX. Cómo participar, premios, reglas y preguntas frecuentes."
+  },
+  "Hero": {
+    "title1": "Participe en nuestro concurso y gane",
+    "titleHighlight": "250.000 $",
+    "title2": "en premios",
+    "description": "Diez ganadores reciben 25.000 $ en LNX cada uno. Complete tareas, comparta y sume entradas. Reglas claras, selección justa y distribución on-chain.",
+    "howToEnter": "Cómo participar",
+    "readFaqs": "Leer preguntas frecuentes"
+  },
+  "Prizes": {
+    "title": "Premios",
+    "description": "Se repartirán 250.000 $ en LNX entre 10 ganadores. Cada uno recibe 25.000 $ en LNX.",
+    "winner": "Ganador {n}",
+    "amount": "25.000 $ LNX"
+  },
+  "Enter": {
+    "title": "Cómo participar",
+    "description": "Complete los pasos siguientes. Cuantas más tareas complete, más entradas tendrá.",
+    "reviewRules": "Ver las reglas",
+    "steps": {
+      "1": {
+        "label": "Paso 1",
+        "title": "Conecte su monedero",
+        "description": "Use el botón Conectar monedero del encabezado. Asegúrese de controlar esa dirección."
+      },
+      "2": {
+        "label": "Paso 2",
+        "title": "Complete las tareas obligatorias",
+        "description": "Únase a nuestros canales, verifique las acciones y siga las instrucciones de la campaña."
+      },
+      "3": {
+        "label": "Paso 3",
+        "title": "Sume acciones extra",
+        "description": "Comparta la campaña e invite a amigos para ganar entradas adicionales."
+      },
+      "4": {
+        "label": "Paso 4",
+        "title": "Verifique y envíe",
+        "description": "Confirme su participación y mantenga el monedero conectado para recibir el premio."
+      }
+    }
+  },
+  "Rules": {
+    "title": "Elegibilidad y reglas",
+    "items": {
+      "1": "Una dirección de monedero principal por participante. Varias entradas de la misma persona pueden descalificarse.",
+      "2": "Los ganadores se eligen de forma justa entre entradas verificables. Nos reservamos el derecho de volver a verificarlos.",
+      "3": "Los premios se envían en LNX on-chain solo a la dirección del monedero conectado.",
+      "4": "Impuestos, declaraciones y normas locales son responsabilidad de los ganadores.",
+      "5": "Nulo donde esté prohibido. Podemos excluir jurisdicciones para cumplir la ley local.",
+      "6": "Los plazos y detalles de la campaña pueden cambiar; los avisos saldrán por los canales oficiales."
+    }
+  },
+  "Faq": {
+    "title": "Preguntas frecuentes",
+    "enterNow": "Participar ahora",
+    "disclaimer": "No es asesoramiento financiero. La participación está sujeta a las leyes locales. Al entrar, acepta las reglas anteriores.",
+    "items": {
+      "winners": {
+        "question": "¿Cómo se eligen los ganadores?",
+        "answer": "Se eligen de forma justa entre entradas validadas. Las tareas extra aumentan las probabilidades, pero no garantizan el premio."
+      },
+      "announce": {
+        "question": "¿Cuándo se anuncian los ganadores?",
+        "answer": "Las fechas finales se publicarán en nuestros canales oficiales. Esté atento a la actualización del calendario."
+      },
+      "paid": {
+        "question": "¿Cómo se pagan los premios?",
+        "answer": "Los premios se envían en LNX on-chain directamente a la dirección del monedero conectado. Conserve el acceso a esa dirección."
+      },
+      "wallets": {
+        "question": "¿Puedo usar varios monederos?",
+        "answer": "No. Solo se permite un monedero principal por participante. Varias entradas de la misma persona pueden descalificarse."
+      }
+    }
+  }
+}

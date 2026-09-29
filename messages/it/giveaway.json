@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Giveaway da 250.000 $ – Lenix Protocol",
+    "description": "Partecipa al giveaway da 250.000 $ di Lenix Protocol. Dieci vincitori ricevono 25.000 $ in LNX. Scopri come partecipare, premi, regole e FAQ."
+  },
+  "Hero": {
+    "title1": "Partecipa al nostro concorso per avere la possibilità di",
+    "titleHighlight": "Vincere 250.000 $",
+    "title2": "Giveaway",
+    "description": "Dieci vincitori ricevono ciascuno 25.000 $ in LNX. Completa le attività, condividi e aumenta le tue chance. Regole trasparenti, selezione equa e distribuzione on-chain.",
+    "howToEnter": "Come partecipare",
+    "readFaqs": "Leggi le FAQ"
+  },
+  "Prizes": {
+    "title": "Premi",
+    "description": "Un totale di 250.000 $ in LNX sarà distribuito a 10 vincitori. Ogni vincitore riceve 25.000 $ in LNX.",
+    "winner": "Vincitore {n}",
+    "amount": "25.000 $ LNX"
+  },
+  "Enter": {
+    "title": "Come partecipare",
+    "description": "Completa i passaggi seguenti. Più attività completi = più iscrizioni.",
+    "reviewRules": "Consulta le regole",
+    "steps": {
+      "1": {
+        "label": "Passaggio 1",
+        "title": "Collega il tuo wallet",
+        "description": "Usa il pulsante Connect Wallet nell'header. Assicurati di controllare l'indirizzo."
+      },
+      "2": {
+        "label": "Passaggio 2",
+        "title": "Completa le attività richieste",
+        "description": "Unisciti ai nostri canali, verifica le azioni e segui le istruzioni nella pagina della campagna."
+      },
+      "3": {
+        "label": "Passaggio 3",
+        "title": "Potenzia con azioni bonus",
+        "description": "Condividi la campagna e invita amici per ottenere iscrizioni extra."
+      },
+      "4": {
+        "label": "Passaggio 4",
+        "title": "Verifica e invia",
+        "description": "Conferma la partecipazione e mantieni il wallet collegato per la distribuzione dei premi."
+      }
+    }
+  },
+  "Rules": {
+    "title": "Idoneità e regole",
+    "items": {
+      "1": "Un indirizzo wallet principale per partecipante. Più iscrizioni dalla stessa persona possono essere squalificate.",
+      "2": "I vincitori sono selezionati equamente in base a iscrizioni verificabili. Ci riserviamo il diritto di ri-verificare i vincitori.",
+      "3": "I premi sono distribuiti in LNX on-chain solo all'indirizzo del wallet collegato.",
+      "4": "Tasse, obblighi di comunicazione e normative locali sono responsabilità dei vincitori.",
+      "5": "Nullo dove vietato. Possiamo escludere giurisdizioni per rispettare le leggi locali.",
+      "6": "Tempistiche e dettagli della campagna possono cambiare; gli aggiornamenti saranno annunciati sui canali ufficiali."
+    }
+  },
+  "Faq": {
+    "title": "FAQ",
+    "enterNow": "Partecipa ora",
+    "disclaimer": "Non costituisce consulenza finanziaria. La partecipazione è soggetta a leggi e normative locali. Partecipando, accetti le regole sopra.",
+    "items": {
+      "winners": {
+        "question": "Come vengono selezionati i vincitori?",
+        "answer": "I vincitori sono scelti equamente tra le iscrizioni validate. Le attività bonus aggiuntive aumentano le tue probabilità ma non garantiscono una vittoria."
+      },
+      "announce": {
+        "question": "Quando verranno annunciati i vincitori?",
+        "answer": "Le date finali dell'annuncio saranno comunicate sui nostri canali ufficiali. Resta aggiornato sulla timeline."
+      },
+      "paid": {
+        "question": "Come vengono pagati i premi?",
+        "answer": "I premi sono distribuiti in LNX on-chain direttamente all'indirizzo del wallet collegato. Assicurati di mantenere l'accesso."
+      },
+      "wallets": {
+        "question": "Posso usare più wallet?",
+        "answer": "No. È consentito un solo wallet principale per partecipante. Più iscrizioni dalla stessa persona possono essere squalificate."
+      }
+    }
+  }
+}

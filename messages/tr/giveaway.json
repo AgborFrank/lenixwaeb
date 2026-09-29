@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "250.000 $ Çekilişi – Lenix Protocol",
+    "description": "Lenix Protocol 250.000 $ Çekilişine katılın. On kazanan her biri LNX olarak 25.000 $ alır. Nasıl katılacağınızı, ödülleri, kuralları ve SSS’yi öğrenin."
+  },
+  "Hero": {
+    "title1": "Yarışmamıza katılın ve şansınızı deneyin:",
+    "titleHighlight": "250.000 $ Kazanın",
+    "title2": "Çekiliş",
+    "description": "On kazanan her biri LNX olarak 25.000 $ değerinde ödül alır. Görevleri tamamlayın, paylaşın ve girişlerinizi artırın. Şeffaf kurallar, adil seçim ve zincir üstü dağıtım.",
+    "howToEnter": "Nasıl Katılırım",
+    "readFaqs": "SSS’yi Oku"
+  },
+  "Prizes": {
+    "title": "Ödüller",
+    "description": "Toplam 250.000 $ LNX, 10 kazanan arasında dağıtılacak. Her kazanan LNX olarak 25.000 $ alır.",
+    "winner": "Kazanan {n}",
+    "amount": "25.000 $ LNX"
+  },
+  "Enter": {
+    "title": "Nasıl Katılırım",
+    "description": "Aşağıdaki adımları tamamlayın. Daha fazla tamamlanan görev = daha fazla giriş.",
+    "reviewRules": "Kuralları İncele",
+    "steps": {
+      "1": {
+        "label": "Adım 1",
+        "title": "Cüzdanınızı bağlayın",
+        "description": "Üst bardaki Connect Wallet düğmesini kullanın. Adresi sizin kontrol ettiğinizden emin olun."
+      },
+      "2": {
+        "label": "Adım 2",
+        "title": "Gerekli görevleri tamamlayın",
+        "description": "Kanallarımıza katılın, işlemleri doğrulayın ve kampanya sayfasındaki talimatları izleyin."
+      },
+      "3": {
+        "label": "Adım 3",
+        "title": "Bonus eylemlerle güçlendirin",
+        "description": "Kampanyayı paylaşın ve ekstra giriş kazanmak için arkadaşlarınızı davet edin."
+      },
+      "4": {
+        "label": "Adım 4",
+        "title": "Doğrulayın ve gönderin",
+        "description": "Katılımınızı onaylayın ve ödül dağıtımı için cüzdanınızı bağlı tutun."
+      }
+    }
+  },
+  "Rules": {
+    "title": "Uygunluk ve Kurallar",
+    "items": {
+      "1": "Katılımcı başına bir birincil cüzdan adresi. Aynı kişiden birden fazla giriş diskalifiye edilebilir.",
+      "2": "Kazananlar, doğrulanabilir girişlere göre adil şekilde seçilir. Kazananları yeniden doğrulama hakkını saklı tutarız.",
+      "3": "Ödüller yalnızca bağlı cüzdan adresine zincir üstü LNX olarak dağıtılır.",
+      "4": "Vergiler, bildirimler ve yerel düzenlemeler kazananların sorumluluğundadır.",
+      "5": "Yasaklandığı yerlerde geçersizdir. Yerel yasalara uymak için yargı bölgelerini hariç tutabiliriz.",
+      "6": "Kampanya zaman çizelgeleri ve ayrıntıları değişebilir; güncellemeler resmi kanallarda duyurulur."
+    }
+  },
+  "Faq": {
+    "title": "SSS",
+    "enterNow": "Şimdi Katıl",
+    "disclaimer": "Finansal tavsiye değildir. Katılım yerel yasa ve düzenlemelere tabidir. Katılarak yukarıdaki kuralları kabul etmiş olursunuz.",
+    "items": {
+      "winners": {
+        "question": "Kazananlar nasıl seçilir?",
+        "answer": "Kazananlar, doğrulanmış girişler arasından adil şekilde seçilir. Ek bonus görevler şansınızı artırır ancak kazanmayı garanti etmez."
+      },
+      "announce": {
+        "question": "Kazananlar ne zaman açıklanacak?",
+        "answer": "Nihai duyuru tarihleri resmi kanallarımızda paylaşılacaktır. Zaman çizelgesi güncellemesi için takipte kalın."
+      },
+      "paid": {
+        "question": "Ödüller nasıl ödenir?",
+        "answer": "Ödüller, bağlı cüzdan adresine doğrudan zincir üstü LNX olarak dağıtılır. Erişiminizi koruduğunuzdan emin olun."
+      },
+      "wallets": {
+        "question": "Birden fazla cüzdan kullanabilir miyim?",
+        "answer": "Hayır. Katılımcı başına yalnızca bir birincil cüzdana izin verilir. Aynı kişiden birden fazla giriş diskalifiye edilebilir."
+      }
+    }
+  }
+}

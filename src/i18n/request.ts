@@ -9,7 +9,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
         : routing.defaultLocale;
 
     // Load multiple namespaces for this locale
-    const [common, settings, about, contact, solutions, walletDecryption, cryptoAssetId, walletPage, financePage, bankingFinance, blockchainForensics, threatIntelligence, complianceInvestigations, deFiCompliance, lawEnforcement, onboardingPage, authPage, airdropPage, cryptoRecoveryPage] = await Promise.all([
+    const [common, settings, about, contact, solutions, walletDecryption, cryptoAssetId, walletPage, financePage, bankingFinance, blockchainForensics, threatIntelligence, complianceInvestigations, deFiCompliance, lawEnforcement, onboardingPage, authPage, airdropPage, cryptoRecoveryPage, giveawayPage] = await Promise.all([
         import(`../../messages/${locale}/common.json`),
         import(`../../messages/${locale}/settings.json`).catch(() => ({ default: {} })),
         import(`../../messages/${locale}/about.json`).catch(() => ({ default: {} })),
@@ -29,6 +29,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
         import(`../../messages/${locale}/auth.json`).catch(() => ({ default: {} })),
         import(`../../messages/${locale}/airdrop.json`).catch(() => ({ default: {} })),
         import(`../../messages/${locale}/crypto-recovery.json`).catch(() => ({ default: {} })),
+        import(`../../messages/${locale}/giveaway.json`).catch(() => ({ default: {} })),
     ]);
 
     const settingsMessages =
@@ -66,6 +67,13 @@ export default getRequestConfig(async ({ requestLocale }) => {
               ? {}
               : (await import("../../messages/en/crypto-recovery.json")).default;
 
+    const giveawayMessages =
+        Object.keys(giveawayPage.default).length > 0
+            ? giveawayPage.default
+            : locale === "en"
+              ? {}
+              : (await import("../../messages/en/giveaway.json")).default;
+
     return {
         locale,
         messages: {
@@ -88,6 +96,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
             ...(Object.keys(authPage.default).length > 0 ? { Auth: authPage.default } : {}),
             ...(Object.keys(airdropPage.default).length > 0 ? { Airdrop: airdropPage.default } : {}),
             ...(Object.keys(cryptoRecoveryMessages).length > 0 ? { CryptoRecovery: cryptoRecoveryMessages } : {}),
+            ...(Object.keys(giveawayMessages).length > 0 ? { Giveaway: giveawayMessages } : {}),
         },
     };
 });

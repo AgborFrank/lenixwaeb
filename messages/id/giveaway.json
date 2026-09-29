@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Giveaway $250.000 – Lenix Protocol",
+    "description": "Ikuti Giveaway $250.000 Lenix Protocol. Sepuluh pemenang menerima $25.000 dalam LNX. Pelajari cara ikut, hadiah, aturan, dan FAQ."
+  },
+  "Hero": {
+    "title1": "Ikuti kompetisi kami untuk kesempatan",
+    "titleHighlight": "Menangkan $250.000",
+    "title2": "Giveaway",
+    "description": "Sepuluh pemenang masing-masing menerima $25.000 dalam LNX. Selesaikan tugas, bagikan, dan tingkatkan entri Anda. Aturan transparan, pemilihan adil, dan distribusi on-chain.",
+    "howToEnter": "Cara Ikut",
+    "readFaqs": "Baca FAQ"
+  },
+  "Prizes": {
+    "title": "Hadiah",
+    "description": "Total $250.000 dalam LNX akan dibagikan kepada 10 pemenang. Setiap pemenang mendapat $25.000 dalam LNX.",
+    "winner": "Pemenang {n}",
+    "amount": "$25.000 LNX"
+  },
+  "Enter": {
+    "title": "Cara Ikut",
+    "description": "Selesaikan langkah di bawah. Semakin banyak tugas selesai = semakin banyak entri.",
+    "reviewRules": "Tinjau Aturan",
+    "steps": {
+      "1": {
+        "label": "Langkah 1",
+        "title": "Hubungkan dompet Anda",
+        "description": "Gunakan tombol Connect Wallet di header. Pastikan Anda mengontrol alamat tersebut."
+      },
+      "2": {
+        "label": "Langkah 2",
+        "title": "Selesaikan tugas yang diperlukan",
+        "description": "Bergabung dengan saluran kami, verifikasi tindakan, dan ikuti instruksi di halaman kampanye."
+      },
+      "3": {
+        "label": "Langkah 3",
+        "title": "Tingkatkan dengan aksi bonus",
+        "description": "Bagikan kampanye dan undang teman untuk mendapatkan entri ekstra."
+      },
+      "4": {
+        "label": "Langkah 4",
+        "title": "Verifikasi dan kirim",
+        "description": "Konfirmasikan partisipasi Anda dan tetap hubungkan dompet untuk distribusi hadiah."
+      }
+    }
+  },
+  "Rules": {
+    "title": "Kelayakan & Aturan",
+    "items": {
+      "1": "Satu alamat dompet utama per peserta. Beberapa entri dari orang yang sama dapat didiskualifikasi.",
+      "2": "Pemenang dipilih secara adil berdasarkan entri yang dapat diverifikasi. Kami berhak memverifikasi ulang pemenang.",
+      "3": "Hadiah didistribusikan dalam LNX on-chain hanya ke alamat dompet yang terhubung.",
+      "4": "Pajak, pelaporan, dan regulasi lokal menjadi tanggung jawab pemenang.",
+      "5": "Batal di mana dilarang. Kami dapat mengecualikan yurisdiksi untuk mematuhi hukum setempat.",
+      "6": "Jadwal dan detail kampanye dapat berubah; pembaruan akan diumumkan di saluran resmi."
+    }
+  },
+  "Faq": {
+    "title": "FAQ",
+    "enterNow": "Ikut Sekarang",
+    "disclaimer": "Bukan saran keuangan. Partisipasi tunduk pada hukum dan regulasi setempat. Dengan ikut, Anda menyetujui aturan di atas.",
+    "items": {
+      "winners": {
+        "question": "Bagaimana pemenang dipilih?",
+        "answer": "Pemenang dipilih secara adil dari entri yang tervalidasi. Tugas bonus tambahan meningkatkan peluang Anda tetapi tidak menjamin kemenangan."
+      },
+      "announce": {
+        "question": "Kapan pemenang akan diumumkan?",
+        "answer": "Tanggal pengumuman akhir akan dibagikan di saluran resmi kami. Pantau pembaruan jadwal."
+      },
+      "paid": {
+        "question": "Bagaimana hadiah dibayarkan?",
+        "answer": "Hadiah didistribusikan dalam LNX on-chain langsung ke alamat dompet yang terhubung. Pastikan Anda tetap memiliki akses."
+      },
+      "wallets": {
+        "question": "Bisakah saya memakai beberapa dompet?",
+        "answer": "Tidak. Hanya satu dompet utama per peserta yang diizinkan. Beberapa entri dari orang yang sama dapat didiskualifikasi."
+      }
+    }
+  }
+}

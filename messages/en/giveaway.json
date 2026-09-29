@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "$250K Giveaway – Lenix Protocol",
+    "description": "Enter the Lenix Protocol $250,000 Giveaway. Ten winners receive $25,000 in LNX. Learn how to enter, prizes, rules, and FAQs."
+  },
+  "Hero": {
+    "title1": "Enter Our Competition for a Chance to",
+    "titleHighlight": "Win $250,000",
+    "title2": "Giveaway",
+    "description": "Ten winners each receive $25,000 worth of LNX. Complete tasks, share, and boost your entries. Transparent rules, fair selection, and on-chain distribution.",
+    "howToEnter": "How to Enter",
+    "readFaqs": "Read FAQs"
+  },
+  "Prizes": {
+    "title": "Prizes",
+    "description": "A total of $250,000 in LNX will be distributed to 10 winners. Each winner gets $25,000 worth of LNX.",
+    "winner": "Winner {n}",
+    "amount": "$25,000 LNX"
+  },
+  "Enter": {
+    "title": "How to Enter",
+    "description": "Complete the steps below. More tasks completed = more entries.",
+    "reviewRules": "Review Rules",
+    "steps": {
+      "1": {
+        "label": "Step 1",
+        "title": "Connect your wallet",
+        "description": "Use the Connect Wallet button in the header. Ensure you control the address."
+      },
+      "2": {
+        "label": "Step 2",
+        "title": "Complete required tasks",
+        "description": "Join our channels, verify actions, and follow instructions on the campaign page."
+      },
+      "3": {
+        "label": "Step 3",
+        "title": "Boost with bonus actions",
+        "description": "Share the campaign and invite friends to earn extra entries."
+      },
+      "4": {
+        "label": "Step 4",
+        "title": "Verify and submit",
+        "description": "Confirm your participation and keep your wallet connected for prize distribution."
+      }
+    }
+  },
+  "Rules": {
+    "title": "Eligibility & Rules",
+    "items": {
+      "1": "One primary wallet address per participant. Multiple entries from the same person may be disqualified.",
+      "2": "Winners are selected fairly based on verifiable entries. We reserve the right to re-verify winners.",
+      "3": "Prizes are distributed in LNX on-chain to the connected wallet address only.",
+      "4": "Taxes, reporting, and local regulations are the responsibility of the winners.",
+      "5": "Void where prohibited. We may exclude jurisdictions to comply with local laws.",
+      "6": "Campaign timelines and details may change; updates will be announced on official channels."
+    }
+  },
+  "Faq": {
+    "title": "FAQs",
+    "enterNow": "Enter Now",
+    "disclaimer": "Not financial advice. Participation is subject to local laws and regulations. By entering, you agree to the rules above.",
+    "items": {
+      "winners": {
+        "question": "How are winners selected?",
+        "answer": "Winners are chosen fairly from validated entries. Additional bonus tasks increase your odds but don't guarantee a win."
+      },
+      "announce": {
+        "question": "When will winners be announced?",
+        "answer": "Final announcement dates will be shared on our official channels. Stay tuned for the timeline update."
+      },
+      "paid": {
+        "question": "How are prizes paid?",
+        "answer": "Prizes are distributed in LNX on-chain directly to the connected wallet address. Ensure you maintain access to it."
+      },
+      "wallets": {
+        "question": "Can I use multiple wallets?",
+        "answer": "No. Only one primary wallet per participant is allowed. Multiple entries from the same person may be disqualified."
+      }
+    }
+  }
+}

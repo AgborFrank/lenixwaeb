@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Jeu-concours 250 000 $ – Lenix Protocol",
+    "description": "Participez au jeu-concours de 250 000 $ de Lenix Protocol. Dix gagnants reçoivent 25 000 $ en LNX. Modalités, prix, règles et FAQ."
+  },
+  "Hero": {
+    "title1": "Participez à notre concours pour tenter de",
+    "titleHighlight": "Gagner 250 000 $",
+    "title2": "Jeu-concours",
+    "description": "Dix gagnants reçoivent chacun 25 000 $ en LNX. Accomplissez des tâches, partagez et multipliez vos chances. Règles transparentes, sélection équitable et distribution on-chain.",
+    "howToEnter": "Comment participer",
+    "readFaqs": "Lire la FAQ"
+  },
+  "Prizes": {
+    "title": "Prix",
+    "description": "Un total de 250 000 $ en LNX sera distribué à 10 gagnants. Chaque gagnant reçoit 25 000 $ en LNX.",
+    "winner": "Gagnant {n}",
+    "amount": "25 000 $ LNX"
+  },
+  "Enter": {
+    "title": "Comment participer",
+    "description": "Suivez les étapes ci-dessous. Plus vous accomplissez de tâches, plus vous avez d'entrées.",
+    "reviewRules": "Consulter les règles",
+    "steps": {
+      "1": {
+        "label": "Étape 1",
+        "title": "Connectez votre portefeuille",
+        "description": "Utilisez le bouton Connect Wallet dans l'en-tête. Assurez-vous de contrôler l'adresse."
+      },
+      "2": {
+        "label": "Étape 2",
+        "title": "Accomplissez les tâches requises",
+        "description": "Rejoignez nos canaux, vérifiez vos actions et suivez les instructions sur la page de la campagne."
+      },
+      "3": {
+        "label": "Étape 3",
+        "title": "Boostez avec des actions bonus",
+        "description": "Partagez la campagne et invitez des amis pour gagner des entrées supplémentaires."
+      },
+      "4": {
+        "label": "Étape 4",
+        "title": "Vérifiez et soumettez",
+        "description": "Confirmez votre participation et gardez votre portefeuille connecté pour la distribution des prix."
+      }
+    }
+  },
+  "Rules": {
+    "title": "Éligibilité et règles",
+    "items": {
+      "1": "Une adresse de portefeuille principale par participant. Plusieurs participations de la même personne peuvent être disqualifiées.",
+      "2": "Les gagnants sont sélectionnés équitablement sur la base d'entrées vérifiables. Nous nous réservons le droit de revérifier les gagnants.",
+      "3": "Les prix sont distribués en LNX on-chain uniquement à l'adresse du portefeuille connecté.",
+      "4": "Les impôts, déclarations et réglementations locales relèvent de la responsabilité des gagnants.",
+      "5": "Nul là où la loi l'interdit. Nous pouvons exclure certaines juridictions pour respecter les lois locales.",
+      "6": "Les calendriers et détails de la campagne peuvent évoluer ; les mises à jour seront annoncées sur les canaux officiels."
+    }
+  },
+  "Faq": {
+    "title": "FAQ",
+    "enterNow": "Participer maintenant",
+    "disclaimer": "Ceci ne constitue pas un conseil financier. La participation est soumise aux lois et réglementations locales. En participant, vous acceptez les règles ci-dessus.",
+    "items": {
+      "winners": {
+        "question": "Comment les gagnants sont-ils sélectionnés ?",
+        "answer": "Les gagnants sont choisis équitablement parmi les entrées validées. Les tâches bonus supplémentaires améliorent vos chances mais ne garantissent pas un gain."
+      },
+      "announce": {
+        "question": "Quand les gagnants seront-ils annoncés ?",
+        "answer": "Les dates d'annonce finales seront communiquées sur nos canaux officiels. Restez informés de la mise à jour du calendrier."
+      },
+      "paid": {
+        "question": "Comment les prix sont-ils versés ?",
+        "answer": "Les prix sont distribués en LNX on-chain directement à l'adresse du portefeuille connecté. Assurez-vous d'en conserver l'accès."
+      },
+      "wallets": {
+        "question": "Puis-je utiliser plusieurs portefeuilles ?",
+        "answer": "Non. Un seul portefeuille principal est autorisé par participant. Plusieurs participations de la même personne peuvent être disqualifiées."
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "title": "Sorteio de $250.000 – Lenix Protocol",
+    "description": "Participe do sorteio de $250.000 da Lenix Protocol. Dez ganhadores recebem $25.000 em LNX. Saiba como participar, prêmios, regras e perguntas frequentes."
+  },
+  "Hero": {
+    "title1": "Participe da nossa competição para ter a chance de",
+    "titleHighlight": "Ganhar $250.000",
+    "title2": "Sorteio",
+    "description": "Dez ganhadores recebem cada um $25.000 em LNX. Conclua tarefas, compartilhe e aumente suas entradas. Regras transparentes, seleção justa e distribuição on-chain.",
+    "howToEnter": "Como participar",
+    "readFaqs": "Ler perguntas frequentes"
+  },
+  "Prizes": {
+    "title": "Prêmios",
+    "description": "Um total de $250.000 em LNX será distribuído a 10 ganhadores. Cada ganhador recebe $25.000 em LNX.",
+    "winner": "Ganhador {n}",
+    "amount": "$25.000 LNX"
+  },
+  "Enter": {
+    "title": "Como participar",
+    "description": "Conclua as etapas abaixo. Quanto mais tarefas concluídas, mais entradas.",
+    "reviewRules": "Revisar regras",
+    "steps": {
+      "1": {
+        "label": "Etapa 1",
+        "title": "Conecte sua carteira",
+        "description": "Use o botão Connect Wallet no cabeçalho. Certifique-se de controlar o endereço."
+      },
+      "2": {
+        "label": "Etapa 2",
+        "title": "Conclua as tarefas obrigatórias",
+        "description": "Entre em nossos canais, verifique as ações e siga as instruções na página da campanha."
+      },
+      "3": {
+        "label": "Etapa 3",
+        "title": "Aumente com ações bônus",
+        "description": "Compartilhe a campanha e convide amigos para ganhar entradas extras."
+      },
+      "4": {
+        "label": "Etapa 4",
+        "title": "Verifique e envie",
+        "description": "Confirme sua participação e mantenha sua carteira conectada para a distribuição dos prêmios."
+      }
+    }
+  },
+  "Rules": {
+    "title": "Elegibilidade e regras",
+    "items": {
+      "1": "Um endereço de carteira principal por participante. Várias entradas da mesma pessoa podem ser desqualificadas.",
+      "2": "Os ganhadores são selecionados de forma justa com base em entradas verificáveis. Reservamo-nos o direito de reverificar os ganhadores.",
+      "3": "Os prêmios são distribuídos em LNX on-chain apenas para o endereço da carteira conectada.",
+      "4": "Impostos, declarações e regulamentações locais são de responsabilidade dos ganhadores.",
+      "5": "Nulo onde proibido. Podemos excluir jurisdições para cumprir as leis locais.",
+      "6": "Prazos e detalhes da campanha podem mudar; as atualizações serão anunciadas nos canais oficiais."
+    }
+  },
+  "Faq": {
+    "title": "Perguntas frequentes",
+    "enterNow": "Participar agora",
+    "disclaimer": "Não é aconselhamento financeiro. A participação está sujeita às leis e regulamentações locais. Ao participar, você concorda com as regras acima.",
+    "items": {
+      "winners": {
+        "question": "Como os ganhadores são selecionados?",
+        "answer": "Os ganhadores são escolhidos de forma justa entre as entradas validadas. Tarefas bônus adicionais aumentam suas chances, mas não garantem a vitória."
+      },
+      "announce": {
+        "question": "Quando os ganhadores serão anunciados?",
+        "answer": "As datas finais de anúncio serão divulgadas em nossos canais oficiais. Fique atento à atualização do cronograma."
+      },
+      "paid": {
+        "question": "Como os prêmios são pagos?",
+        "answer": "Os prêmios são distribuídos em LNX on-chain diretamente para o endereço da carteira conectada. Certifique-se de manter o acesso a ela."
+      },
+      "wallets": {
+        "question": "Posso usar várias carteiras?",
+        "answer": "Não. Apenas uma carteira principal por participante é permitida. Várias entradas da mesma pessoa podem ser desqualificadas."
+      }
+    }
+  }
+}
