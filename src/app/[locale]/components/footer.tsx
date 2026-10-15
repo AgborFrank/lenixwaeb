@@ -150,6 +150,9 @@ export default function Footer() {
               <FooterLink href="/crypto-recovery">{t("Header.solutions.recovery.title")}</FooterLink>
             </li>
             <li>
+              <FooterLink href="/purchase-refund">{t("Header.solutions.refund.title")}</FooterLink>
+            </li>
+            <li>
               <FooterLink href="/blockchain-forensics">{t("Header.nav.blockchain_forensics")}</FooterLink>
             </li>
             <li>

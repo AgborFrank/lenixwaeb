@@ -7,6 +7,7 @@
       "blockchain_forensics": "تحقيقات",
       "asset_recovery": "استرجاع الأصول",
       "crypto_recovery": "استرجاع العملات",
+      "purchase_refund": "استرداد المشتريات",
       "contact": "تواصل",
       "airdrop": "أيردروب",
       "banking_finance": "البنوك والمالية"
@@ -23,6 +24,10 @@
       "recovery": {
         "title": "استرجاع العملات",
         "desc": "مساعدة الخبراء للأصول المفقودة."
+      },
+      "refund": {
+        "title": "استرداد المشتريات",
+        "desc": "مشتريات مفقودة أو تالفة أو متأخرة أو غير مطابقة."
       },
       "compliance": {
         "title": "امتثال",

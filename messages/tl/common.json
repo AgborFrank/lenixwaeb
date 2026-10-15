@@ -7,6 +7,7 @@
       "blockchain_forensics": "Forensiko",
       "asset_recovery": "Pagbawi ng Asset",
       "crypto_recovery": "Pagbawi ng Crypto",
+      "purchase_refund": "Mga refund sa pagbili",
       "contact": "Makipag-ugnayan",
       "airdrop": "Pamigay",
       "banking_finance": "Banking at Pinansya"
@@ -23,6 +24,10 @@
       "recovery": {
         "title": "Pagbawi ng Crypto",
         "desc": "Tulong ng eksperto para sa nawalang asset."
+      },
+      "refund": {
+        "title": "Mga refund sa pagbili",
+        "desc": "Mga bili na nawala, nasira, naantala, o hindi tugma sa bayad."
       },
       "compliance": {
         "title": "Pagsunod",

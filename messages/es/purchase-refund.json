@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "Reembolsos de compra | Lenix Protocol",
+    "description": "Abra un caso de reembolso por una compra perdida, dañada, retrasada o no conforme. Revisamos el rastro primero. Usted paga una parte de lo recuperado, no de lo que reclamó.",
+    "keywords": "reembolso de compra, reclamación de paquete perdido, envío dañado, entrega retrasada, reembolso comprador, reembolso vendedor, Lenix Protocol"
+  },
+  "Hero": {
+    "eyebrow": "Reembolsos de compra",
+    "title": "Recuperar valor de compras perdidas, dañadas o fallidas",
+    "description": "Envíe el pedido, la prueba de pago y lo que falló. Comprobamos si una reclamación contra el transportista, el marketplace o la contraparte es recuperable. Un pago instantáneo, si lo hay, llega después de la suscripción. Los reembolsos no están garantizados.",
+    "submit": "Abrir un caso de reembolso",
+    "process": "Cómo avanza un caso",
+    "imageAlt": "Investigador revisando un expediente de disputa de compra"
+  },
+  "System": {
+    "eyebrow": "El desk",
+    "title": "Un solo expediente para lo que un transportista o una contraparte aún debe",
+    "description": "Algunas plataformas de reembolso se conectan a la cuenta de transportista de un comercio y vigilan cada etiqueta. Lenix no. Usted abre un caso. Lo revisamos, armamos el paquete y lo seguimos hasta que se liquide o lo cerremos por escrito.",
+    "items": {
+      "review": {
+        "title": "Revisión antes de presentar nada",
+        "description": "Rastro de pago, seguimiento, fotos y la ventana de reclamación que el transportista o el marketplace publicaron de verdad. Si ya está cerrada, lo decimos."
+      },
+      "file": {
+        "title": "Preparar y luego enviar",
+        "description": "El desk redacta la reclamación con sus pruebas. Nada va a un transportista, marketplace o contraparte hasta que acepte los términos."
+      },
+      "track": {
+        "title": "Un expediente, no un rastreador en vivo",
+        "description": "El estado, las pruebas y lo que volvió quedan en el caso. Recibe actualizaciones por escrito. No ingerimos cada envío desde su cuenta de transportista."
+      },
+      "fee": {
+        "title": "Honorarios sobre el valor recuperado",
+        "description": "Los honorarios de recuperación son una parte del dinero que realmente vuelve. Abrir el caso es gratis. Si no vuelve nada, no paga esos honorarios."
+      }
+    }
+  },
+  "Split": {
+    "eyebrow": "Vendedores y ops",
+    "title": "Paquetes estancados que suelen darse por perdidos",
+    "description": "Cuando el seguimiento se detiene y nadie tiene tiempo de quedarse en el portal del transportista, la pérdida queda en los libros. Si la ventana de reclamación sigue abierta, eso es un expediente de recuperación: seguimiento, valor declarado, fotos y el servicio que pagó.",
+    "points": {
+      "lost": "Perdido, sin escaneo o devuelto al remitente, cuando el contrato aún cubre la mercancía o el porte.",
+      "damaged": "Dañado a la llegada, con fotos y una fecha que aún cabe en el plazo del transportista.",
+      "late": "Tarde respecto a una garantía de entrega pagada, cuando la tarifa sí paga compensación.",
+      "manual": "Un comprador reporta un pedido faltante. Lo añade a mano. No necesitamos una API de transportista para empezar."
+    },
+    "cta": "Abrir un caso de vendedor",
+    "imageAlt": "Registros de seguimiento de paquetes usados como prueba de reclamación"
+  },
+  "Cases": {
+    "eyebrow": "Qué presentar",
+    "title": "Los incumplimientos que aceptamos",
+    "description": "Compradores y vendedores abren el mismo formulario. El desk dirige la reclamación a la parte que aún debe el valor.",
+    "items": {
+      "lost": {
+        "title": "Perdido en tránsito",
+        "description": "Sin escaneo de entrega, atascado en un depósito o marcado como entregado cuando el comprador no lo recibió. El seguimiento y la prueba de pago entran primero al expediente."
+      },
+      "damaged": {
+        "title": "Dañado a la llegada",
+        "description": "Llegó la caja, la mercancía no sobrevivió. Las fotos, el embalaje y el valor del pedido importan más que una queja larga."
+      },
+      "delayed": {
+        "title": "Tarde respecto a una garantía",
+        "description": "Pagó un servicio con plazo. El paquete no lo cumplió. La compensación depende de la ventana publicada por el transportista, no de cuánto se enfade el comprador."
+      },
+      "short": {
+        "title": "No es lo pagado",
+        "description": "Talla incorrecta, caja vacía, nunca enviado. Es una reclamación contra la contraparte, no un caso de wallet robada. La prueba de pago aún tiene que coincidir con el pedido."
+      }
+    }
+  },
+  "Process": {
+    "eyebrow": "Metodología",
+    "title": "Cómo avanza un caso de reembolso",
+    "description": "El mismo proceso de recuperación en cuatro fases que usamos en casos de activos perdidos, aplicado a una compra que falló o a un paquete que el transportista aún debe.",
+    "phase": "Fase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Evaluación inicial",
+        "description": "Revisamos el rastro de pago, el seguimiento, la contraparte y si la ventana de reclamación sigue abierta. Aquí no se mueve dinero.",
+        "tag1": "Revisión del rastro",
+        "tag2": "Ventana de reclamación"
+      },
+      "strategy": {
+        "title": "Estrategia de reembolso",
+        "description": "Términos por escrito: instantáneo o tras la devolución, quién asume el hueco si el artículo no vuelve, y los honorarios sobre el valor recuperado.",
+        "tag1": "Paquete de pruebas",
+        "tag2": "Términos de honorarios"
+      },
+      "coordination": {
+        "title": "Coordinación activa",
+        "description": "Si se aprueba el pago instantáneo, el comprador cobra primero. El artículo aún tiene siete días para enviarse. Seguimos en paralelo la reclamación al transportista o al marketplace.",
+        "tag1": "Instantáneo o espera",
+        "tag2": "Ventana de devolución"
+      },
+      "return": {
+        "title": "Pago verificado",
+        "description": "Los fondos van a una wallet verificada, o el caso se cierra con un motivo por escrito. No revertimos la venta original con tarjeta.",
+        "tag1": "Pago verificado",
+        "tag2": "Cierre del caso"
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "Límites",
+    "title": "Lo que este desk hace y lo que no hará",
+    "description": "Una página de reclamaciones completa dice ambas cosas. Si su caso queda del lado equivocado, lo derivaremos a otro sitio en vez de tomar el expediente.",
+    "take": {
+      "title": "Aceptamos",
+      "items": {
+        "a": "Compras perdidas, dañadas, retrasadas o no conformes, con rastro de pago.",
+        "b": "Reclamaciones de vendedor contra un transportista o marketplace mientras la ventana publicada siga abierta.",
+        "c": "Casos de comprador en los que la otra parte dejó de responder después de que la mercancía falló."
+      }
+    },
+    "skip": {
+      "title": "No hacemos",
+      "items": {
+        "a": "Conectar su cuenta de transportista y escanear cada etiqueta. Usted abre el caso.",
+        "b": "Presentar chargebacks de Visa o Mastercard. No somos el comercio de registro de la venta original.",
+        "c": "Tratar wallets robadas o vaciadas. Eso es el servicio de recuperación de activos."
+      }
+    },
+    "recoveryLink": "Abrir un caso de activo robado"
+  },
+  "Fees": {
+    "eyebrow": "Precios",
+    "title": "Paga una parte de lo que vuelve",
+    "description": "Abrir el caso no cobra honorarios de recuperación. Tras la evaluación enviamos términos. Los honorarios son un porcentaje del valor recuperado, no del monto reclamado. Si el caso no recupera nada, esos honorarios son cero.",
+    "cta": "Abrir un caso de reembolso",
+    "points": {
+      "intake": "Sin cargo de alta para abrir un expediente.",
+      "share": "Honorarios solo sobre fondos recuperados, nunca sobre una reclamación rechazada.",
+      "terms": "Nada se presenta, y no se envía ningún pago, hasta que acepte los términos por escrito."
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Antes de enviar",
+    "subtitle": "Respuestas directas sobre monitoreo, pagos y honorarios.",
+    "discuss": "Si este es un caso de wallet perdida, use en su lugar los servicios de recuperación.",
+    "submit": "Abrir un caso de reembolso",
+    "recovery": "Iniciar un caso de recuperación",
+    "items": {
+      "types": {
+        "question": "¿Qué puedo presentar aquí?",
+        "answer": "Compras perdidas, dañadas, retrasadas, vacías o no conformes. Compradores y vendedores usan el mismo formulario. La cripto robada es otro desk."
+      },
+      "monitor": {
+        "question": "¿Vigilan todos mis envíos?",
+        "answer": "No. Algunas plataformas se conectan a cuentas de transportista y marcan cada etiqueta estancada. Lenix revisa los casos que usted envía. Un número de seguimiento y una prueba de pago bastan para empezar."
+      },
+      "instant": {
+        "question": "¿Recupero el dinero en segundos?",
+        "answer": "No al enviar. El pago instantáneo es una decisión de suscripción después de valorar el riesgo de no devolución. Muchos casos esperan la devolución o el pago del transportista. No vamos a fingir lo contrario."
+      },
+      "fees": {
+        "question": "¿Qué cobran?",
+        "answer": "Una parte del valor recuperado, acordada por escrito antes de presentar o pagar. Abrir el caso es gratis. Si no se recupera nada, no paga esos honorarios de recuperación."
+      },
+      "chargebacks": {
+        "question": "¿Revertirán mi pago con tarjeta?",
+        "answer": "No. No representamos chargebacks ante Visa o Mastercard. El comercio de registro original se queda. Este desk recupera valor a través del transportista, el marketplace o la contraparte, y luego paga una wallet verificada si el caso sale adelante."
+      },
+      "timeline": {
+        "question": "¿Cuánto tarda un caso?",
+        "answer": "La evaluación vence en un día hábil. Las reclamaciones a transportista y marketplace siguen luego sus propios plazos, a menudo de dos a seis semanas. Recibe una estimación por escrito tras la revisión."
+      },
+      "evidence": {
+        "question": "¿Qué debo adjuntar?",
+        "answer": "Hash de pago o factura, seguimiento, fotos del daño si las tiene, y cualquier chat con la otra parte. PDF, JPG, PNG o WebP, 8 MB máx. Un caso puede empezar sin archivo. La evidencia débil solo retrasa la reclamación."
+      },
+      "guarantee": {
+        "question": "¿Garantizan un reembolso?",
+        "answer": "No. Ventanas de reclamación cerradas, pruebas faltantes y contrapartes que no pagan fracasan. Cerramos esos casos por escrito en vez de dejar el expediente abierto para aparentar."
+      }
+    }
+  },
+  "Account": {
+    "title": "Reembolsos de compra",
+    "subtitle": "Para paquetes perdidos, dañados, tardíos o no conformes con lo pagado. Los casos de wallet robada van a los servicios de recuperación.",
+    "stolenLink": "¿Cripto perdida o robada? Use los servicios de recuperación."
+  },
+  "Form": {
+    "eyebrow": "Apertura de caso",
+    "title": "Enviar una solicitud de reembolso",
+    "description": "No hay pago al enviar. El desk revisa si es recuperable en un día hábil y luego envía términos si el caso puede seguir.",
+    "submittedTitle": "Solicitud enviada",
+    "submittedBody": "El desk de reembolsos revisará este caso y se pondrá en contacto en 24 a 48 horas. Un pago instantáneo, si lo hay, llega después de la suscripción, no ahora.",
+    "submitAnother": "Enviar otra solicitud",
+    "steps": "Pasos",
+    "step": "Paso {id}",
+    "step1Title": "Quién y qué",
+    "step1Desc": "Comprador o vendedor, pedido e importe.",
+    "step2Title": "Qué falló",
+    "step2Desc": "Resumen del incidente y pruebas.",
+    "role": "Soy",
+    "roleBuyer": "Comprador",
+    "roleSeller": "Vendedor",
+    "fullName": "Nombre completo",
+    "namePlaceholder": "Jane Mensah",
+    "email": "Correo",
+    "emailPlaceholder": "jane@example.com",
+    "phone": "Teléfono (opcional)",
+    "counterparty": "Tienda, marketplace o contraparte",
+    "counterpartyPlaceholder": "Nombre de tienda o identificador del vendedor",
+    "orderRef": "ID de pedido (opcional)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Hash de pago, factura o ID de transferencia",
+    "paymentPlaceholder": "0x… o número de factura",
+    "amount": "Importe reclamado",
+    "amountPlaceholder": "p. ej. 480",
+    "currency": "Activo",
+    "blockchain": "Cadena (si se pagó en cripto)",
+    "selectBlockchain": "Seleccionar cadena",
+    "otherChain": "Otra",
+    "continue": "Continuar a los detalles del incidente",
+    "summary": "Qué faltó",
+    "summaryPlaceholder": "Qué se compró, seguimiento o fecha de entrega, qué llegó (o no), y cualquier respuesta del transportista o del vendedor.",
+    "evidence": "Pruebas de apoyo (opcional)",
+    "evidenceHint": "Recibo, fotos, chat o seguimiento. PDF, JPG, PNG o WebP. 8 MB máx.",
+    "privacy": "Lenix Protocol usa sus datos de contacto para responder sobre este caso de reembolso. Consulte la <link>Política de privacidad</link>.",
+    "back": "Atrás",
+    "submitting": "Enviando…",
+    "submit": "Enviar solicitud de reembolso",
+    "points": {
+      "confidential": {
+        "title": "Confidencial",
+        "desc": "Apertura cifrada y acceso restringido al caso."
+      },
+      "review": {
+        "title": "Revisión en 24h",
+        "desc": "Evaluación inicial en un día hábil."
+      },
+      "fee": {
+        "title": "Honorarios sobre recuperación",
+        "desc": "Paga una parte de lo que vuelve, no de lo que reclamó."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Complete los campos obligatorios antes de continuar.",
+      "email": "Introduzca una dirección de correo válida.",
+      "required": "Rellene todos los campos obligatorios.",
+      "failed": "Error al enviar la solicitud de reembolso",
+      "success": "Solicitud de reembolso enviada. El equipo se pondrá en contacto."
+    }
+  }
+}

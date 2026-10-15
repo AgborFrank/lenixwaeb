@@ -8,6 +8,7 @@
       "asset_recovery": "Asset Recovery",
       "banking_finance": "Banking & Finance",
       "crypto_recovery": "Crypto Recovery",
+      "purchase_refund": "Purchase Refunds",
       "contact": "Contact",
       "airdrop": "Airdrop"
     },
@@ -27,6 +28,10 @@
       "recovery": {
         "title": "Crypto Recovery",
         "desc": "Expert help for lost assets."
+      },
+      "refund": {
+        "title": "Purchase Refunds",
+        "desc": "Lost, damaged, delayed, or misdescribed purchases."
       },
       "compliance": {
         "title": "Compliance",

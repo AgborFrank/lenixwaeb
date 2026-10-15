@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "Rimborsi acquisto | Lenix Protocol",
+    "description": "Apri un caso di rimborso per un acquisto smarrito, danneggiato, in ritardo o non conforme. Esaminiamo prima la traccia. Paghi una quota di ciò che viene recuperato, non di quanto hai reclamato.",
+    "keywords": "rimborso acquisto, reclamo pacco smarrito, spedizione danneggiata, consegna in ritardo, rimborso acquirente, rimborso venditore, Lenix Protocol"
+  },
+  "Hero": {
+    "eyebrow": "Rimborsi acquisto",
+    "title": "Recuperare valore da acquisti smarriti, danneggiati o falliti",
+    "description": "Invia l'ordine, la prova di pagamento e cosa non ha funzionato. Verifichiamo se un reclamo verso il corriere, il marketplace o la controparte è recuperabile. Un pagamento immediato, se c'è, arriva dopo la sottoscrizione. I rimborsi non sono garantiti.",
+    "submit": "Apri un caso di rimborso",
+    "process": "Come procede un caso",
+    "imageAlt": "Investigatore che esamina un fascicolo di disputa sull'acquisto"
+  },
+  "System": {
+    "eyebrow": "Il desk",
+    "title": "Un solo fascicolo per ciò che corriere o controparte ancora devono",
+    "description": "Alcune piattaforme di rimborso si collegano all'account corriere di un merchant e sorvegliano ogni etichetta. Lenix no. Tu apri un caso. Lo esaminiamo, costruiamo il pack e lo seguiamo fino al regolamento o a una chiusura scritta.",
+    "items": {
+      "review": {
+        "title": "Esame prima di qualsiasi invio",
+        "description": "Traccia di pagamento, tracking, foto e la finestra di reclamo che corriere o marketplace hanno davvero pubblicato. Se la finestra è già chiusa, lo diciamo."
+      },
+      "file": {
+        "title": "Preparare, poi inviare",
+        "description": "Il desk redige il reclamo dalle tue prove. Niente va a un corriere, marketplace o controparte finché non accetti i termini."
+      },
+      "track": {
+        "title": "Un fascicolo, non un tracker in tempo reale",
+        "description": "Stato, prove e ciò che è tornato restano sul caso. Ricevi aggiornamenti scritti. Non ingeriamo ogni spedizione dal login del tuo corriere."
+      },
+      "fee": {
+        "title": "Compenso sul valore recuperato",
+        "description": "Il compenso di recovery è una quota del denaro che torna davvero. L'apertura è gratuita. Se non torna niente, non paghi quel compenso."
+      }
+    }
+  },
+  "Split": {
+    "eyebrow": "Venditori e ops",
+    "title": "Pacchi fermi che di solito vengono svalutati",
+    "description": "Quando il tracking si ferma e nessuno ha tempo di stare nel portale del corriere, la perdita resta nei libri. Se la finestra di reclamo è ancora aperta, quello è un fascicolo di recovery: tracking, valore dichiarato, foto e il servizio che hai pagato.",
+    "points": {
+      "lost": "Smarrito, senza scan o reso al mittente, quando il contratto copre ancora merce o porto.",
+      "damaged": "Danneggiato all'arrivo, con foto e una data che sta ancora nel termine del corriere.",
+      "late": "In ritardo rispetto a una garanzia di consegna pagata, quando la tariffa paga davvero un indennizzo.",
+      "manual": "Un acquirente segnala un ordine mancante. Lo aggiungi a mano. Non serve un'API del corriere per partire."
+    },
+    "cta": "Apri un caso venditore",
+    "imageAlt": "Registri di tracking dei pacchi usati come prova di reclamo"
+  },
+  "Cases": {
+    "eyebrow": "Cosa presentare",
+    "title": "Le mancanze che accettiamo",
+    "description": "Acquirenti e venditori aprono lo stesso modulo. Il desk indirizza il reclamo alla parte che ancora deve il valore.",
+    "items": {
+      "lost": {
+        "title": "Smarrito in transito",
+        "description": "Nessuno scan di consegna, fermo in un deposito o marcato consegnato quando l'acquirente non ha ricevuto nulla. Tracking e prova di pagamento entrano per primi nel fascicolo."
+      },
+      "damaged": {
+        "title": "Danneggiato all'arrivo",
+        "description": "La scatola è arrivata, la merce no. Foto, imballo e valore dell'ordine contano più di un reclamo lungo."
+      },
+      "delayed": {
+        "title": "In ritardo rispetto a una garanzia",
+        "description": "Hai pagato un servizio a tempo. Il pacco lo ha mancato. L'indennizzo dipende dalla finestra pubblicata dal corriere, non da quanto è arrabbiato l'acquirente."
+      },
+      "short": {
+        "title": "Non conforme al pagamento",
+        "description": "Taglia sbagliata, scatola vuota, mai spedito. È un reclamo verso la controparte, non un caso di wallet rubato. La prova di pagamento deve comunque coincidere con l'ordine."
+      }
+    }
+  },
+  "Process": {
+    "eyebrow": "Metodologia",
+    "title": "Come procede un caso di rimborso",
+    "description": "Lo stesso processo di recovery in quattro fasi che usiamo per gli asset smarriti, applicato a un acquisto mancato o a un pacco che il corriere ancora deve.",
+    "phase": "Fase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Valutazione iniziale",
+        "description": "Controlliamo la traccia di pagamento, il tracking, la controparte e se la finestra di reclamo è ancora aperta. Qui non si muove denaro.",
+        "tag1": "Revisione della traccia",
+        "tag2": "Finestra di reclamo"
+      },
+      "strategy": {
+        "title": "Strategia di rimborso",
+        "description": "Termini scritti: immediato o dopo il reso, chi copre il vuoto se l'articolo non torna mai, e il compenso sul valore recuperato.",
+        "tag1": "Pack di prove",
+        "tag2": "Termini del compenso"
+      },
+      "coordination": {
+        "title": "Coordinamento attivo",
+        "description": "Se l'immediato è approvato, l'acquirente viene pagato per primo. L'articolo ha ancora sette giorni per partire. Seguiamo in parallelo il reclamo a corriere o marketplace.",
+        "tag1": "Immediato o attesa",
+        "tag2": "Finestra di reso"
+      },
+      "return": {
+        "title": "Pagamento verificato",
+        "description": "I fondi vanno a un wallet verificato, o il caso si chiude con un motivo scritto. Non storniamo la vendita originale con carta.",
+        "tag1": "Pagamento verificato",
+        "tag2": "Chiusura del caso"
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "Limiti",
+    "title": "Cosa fa questo desk e cosa non farà",
+    "description": "Una pagina di reclami completa dice entrambe le cose. Se il tuo caso sta dalla parte sbagliata, ti indirizziamo altrove invece di prendere il fascicolo.",
+    "take": {
+      "title": "Accettiamo",
+      "items": {
+        "a": "Acquisti smarriti, danneggiati, in ritardo o non conformi, con traccia di pagamento.",
+        "b": "Reclami del venditore verso un corriere o un marketplace finché la finestra pubblicata è aperta.",
+        "c": "Casi acquirente in cui l'altra parte ha smesso di rispondere dopo che la merce è mancata."
+      }
+    },
+    "skip": {
+      "title": "Non facciamo",
+      "items": {
+        "a": "Collegare il tuo account corriere e scansionare ogni etichetta. Tu apri il caso.",
+        "b": "Presentare chargeback Visa o Mastercard. Non siamo il merchant of record della vendita originale.",
+        "c": "Gestire wallet rubati o svuotati. Quello è il servizio di recovery degli asset."
+      }
+    },
+    "recoveryLink": "Apri un caso di asset rubato"
+  },
+  "Fees": {
+    "eyebrow": "Prezzi",
+    "title": "Paghi una quota di ciò che torna",
+    "description": "L'apertura non addebita un compenso di recovery. Dopo la valutazione inviamo i termini. Il compenso è una percentuale del valore recuperato, non dell'importo reclamato. Se il caso non recupera nulla, quel compenso è zero.",
+    "cta": "Apri un caso di rimborso",
+    "points": {
+      "intake": "Nessun costo di setup per aprire un fascicolo.",
+      "share": "Compenso solo sui fondi recuperati, mai su un reclamo respinto.",
+      "terms": "Niente viene presentato, e nessun pagamento viene inviato, finché non accetti i termini per iscritto."
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Prima di inviare",
+    "subtitle": "Risposte dirette su monitoraggio, pagamenti e compensi.",
+    "discuss": "Se questo è un caso di wallet smarrito, usa invece i servizi di recovery.",
+    "submit": "Apri un caso di rimborso",
+    "recovery": "Avvia un caso di recovery",
+    "items": {
+      "types": {
+        "question": "Cosa posso presentare qui?",
+        "answer": "Acquisti smarriti, danneggiati, in ritardo, vuoti o non conformi. Acquirenti e venditori usano lo stesso modulo. La cripto rubata è un altro desk."
+      },
+      "monitor": {
+        "question": "Controllate tutte le mie spedizioni?",
+        "answer": "No. Alcune piattaforme si collegano agli account corriere e segnalano ogni etichetta ferma. Lenix esamina i casi che invii. Un numero di tracking e una prova di pagamento bastano per partire."
+      },
+      "instant": {
+        "question": "Riaverò i soldi in pochi secondi?",
+        "answer": "Non all'invio. Il pagamento immediato è una decisione di sottoscrizione dopo la valutazione del rischio di non-reso. Molti casi aspettano il reso o il pagamento del corriere. Non faremo finta del contrario."
+      },
+      "fees": {
+        "question": "Cosa addebitate?",
+        "answer": "Una quota del valore recuperato, concordata per iscritto prima di presentare o pagare. L'apertura è gratuita. Se non si recupera nulla, non paghi quel compenso di recovery."
+      },
+      "chargebacks": {
+        "question": "Stornate il mio pagamento con carta?",
+        "answer": "No. Non rappresentiamo chargeback verso Visa o Mastercard. Il merchant of record originale resta. Questo desk recupera valore tramite corriere, marketplace o controparte, poi paga un wallet verificato se il caso va a buon fine."
+      },
+      "timeline": {
+        "question": "Quanto dura un caso?",
+        "answer": "La valutazione è dovuta entro un giorno lavorativo. I reclami a corriere e marketplace seguono poi le loro finestre, spesso da due a sei settimane. Ricevi una stima scritta dopo l'esame."
+      },
+      "evidence": {
+        "question": "Cosa devo allegare?",
+        "answer": "Hash di pagamento o fattura, tracking, foto del danno se le hai, e qualsiasi chat con l'altra parte. PDF, JPG, PNG o WebP, 8 MB max. Un caso può partire senza file. Prove deboli rallentano solo il reclamo."
+      },
+      "guarantee": {
+        "question": "Garantite un rimborso?",
+        "answer": "No. Finestre di reclamo chiuse, prove mancanti e controparti che non pagano falliscono. Chiudiamo quei casi per iscritto invece di lasciare il fascicolo aperto per apparenza."
+      }
+    }
+  },
+  "Account": {
+    "title": "Rimborsi acquisto",
+    "subtitle": "Per pacchi smarriti, danneggiati, in ritardo o non conformi al pagamento. I casi di wallet rubato vanno ai servizi di recovery.",
+    "stolenLink": "Cripto smarrita o rubata? Usa i servizi di recovery."
+  },
+  "Form": {
+    "eyebrow": "Apertura caso",
+    "title": "Invia una richiesta di rimborso",
+    "description": "Nessun pagamento all'invio. Il desk esamina la recuperabilità entro un giorno lavorativo, poi invia i termini se il caso può procedere.",
+    "submittedTitle": "Richiesta inviata",
+    "submittedBody": "Il desk rimborsi esaminerà questo caso e ti contatterà entro 24-48 ore. Un pagamento immediato, se c'è, arriva dopo la sottoscrizione, non ora.",
+    "submitAnother": "Invia un'altra richiesta",
+    "steps": "Passaggi",
+    "step": "Passaggio {id}",
+    "step1Title": "Chi e cosa",
+    "step1Desc": "Acquirente o venditore, ordine e importo.",
+    "step2Title": "Cosa non ha funzionato",
+    "step2Desc": "Sintesi dell'incidente e prove.",
+    "role": "Sono",
+    "roleBuyer": "Acquirente",
+    "roleSeller": "Venditore",
+    "fullName": "Nome completo",
+    "namePlaceholder": "Jane Mensah",
+    "email": "Email",
+    "emailPlaceholder": "jane@example.com",
+    "phone": "Telefono (facoltativo)",
+    "counterparty": "Negozio, marketplace o controparte",
+    "counterpartyPlaceholder": "Nome del negozio o handle del venditore",
+    "orderRef": "ID ordine (facoltativo)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Hash di pagamento, fattura o ID bonifico",
+    "paymentPlaceholder": "0x… o numero fattura",
+    "amount": "Importo reclamato",
+    "amountPlaceholder": "es. 480",
+    "currency": "Asset",
+    "blockchain": "Chain (se pagato in cripto)",
+    "selectBlockchain": "Seleziona chain",
+    "otherChain": "Altra",
+    "continue": "Continua ai dettagli dell'incidente",
+    "summary": "Cosa è mancato",
+    "summaryPlaceholder": "Cosa è stato acquistato, tracking o data di consegna, cosa è arrivato (o no), e qualsiasi risposta del corriere o del venditore.",
+    "evidence": "Prove a supporto (facoltativo)",
+    "evidenceHint": "Ricevuta, foto, chat o tracking. PDF, JPG, PNG o WebP. 8 MB max.",
+    "privacy": "Lenix Protocol usa i Suoi dati di contatto per rispondere su questo caso di rimborso. Consulti la nostra <link>Informativa sulla privacy</link>.",
+    "back": "Indietro",
+    "submitting": "Invio…",
+    "submit": "Invia richiesta di rimborso",
+    "points": {
+      "confidential": {
+        "title": "Riservato",
+        "desc": "Apertura cifrata e accesso al caso limitato."
+      },
+      "review": {
+        "title": "Esame in 24h",
+        "desc": "Valutazione iniziale entro un giorno lavorativo."
+      },
+      "fee": {
+        "title": "Compenso sul recovery",
+        "desc": "Paghi una quota di ciò che torna, non di quanto hai reclamato."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Completa i campi obbligatori prima di continuare.",
+      "email": "Inserisci un indirizzo email valido.",
+      "required": "Compila tutti i campi obbligatori.",
+      "failed": "Invio della richiesta di rimborso non riuscito",
+      "success": "Richiesta di rimborso inviata. Il team ti contatterà."
+    }
+  }
+}

@@ -7,6 +7,7 @@
       "blockchain_forensics": "Forensik",
       "asset_recovery": "Pemulihan Aset",
       "crypto_recovery": "Pemulihan Kripto",
+      "purchase_refund": "Pengembalian pembelian",
       "contact": "Kontak",
       "airdrop": "Airdrop",
       "banking_finance": "Perbankan & Keuangan"
@@ -23,6 +24,10 @@
       "recovery": {
         "title": "Pemulihan Kripto",
         "desc": "Bantuan ahli untuk aset yang hilang."
+      },
+      "refund": {
+        "title": "Pengembalian pembelian",
+        "desc": "Pembelian hilang, rusak, terlambat, atau tidak sesuai."
       },
       "compliance": {
         "title": "Kepatuhan",

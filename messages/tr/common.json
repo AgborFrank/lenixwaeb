@@ -7,6 +7,7 @@
       "blockchain_forensics": "Adli Analiz",
       "asset_recovery": "Varlık Kurtarma",
       "crypto_recovery": "Kripto Kurtarma",
+      "purchase_refund": "Satın alma iadeleri",
       "contact": "İletişim",
       "airdrop": "Airdrop",
       "banking_finance": "Bankacılık & Finans"
@@ -23,6 +24,10 @@
       "recovery": {
         "title": "Kripto Kurtarma",
         "desc": "Kayıp varlıklar için uzman yardımı."
+      },
+      "refund": {
+        "title": "Satın alma iadeleri",
+        "desc": "Kayıp, hasarlı, gecikmiş veya tanımına uymayan alışverişler."
       },
       "compliance": {
         "title": "Uyumluluk",

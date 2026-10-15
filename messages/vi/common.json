@@ -7,6 +7,7 @@
       "blockchain_forensics": "Điều tra",
       "asset_recovery": "Thu hồi tài sản",
       "crypto_recovery": "Thu hồi Crypto",
+      "purchase_refund": "Hoàn tiền mua hàng",
       "contact": "Liên hệ",
       "airdrop": "Phát không",
       "banking_finance": "Ngân hàng & Tài chính"
@@ -23,6 +24,10 @@
       "recovery": {
         "title": "Thu hồi Crypto",
         "desc": "Hỗ trợ chuyên nghiệp cho tài sản bị mất."
+      },
+      "refund": {
+        "title": "Hoàn tiền mua hàng",
+        "desc": "Mua hàng bị mất, hỏng, trễ hoặc không đúng mô tả."
       },
       "compliance": {
         "title": "Tuân thủ",

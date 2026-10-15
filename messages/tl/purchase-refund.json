@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "Mga refund sa pagbili | Lenix Protocol",
+    "description": "Magbukas ng refund case para sa bili na nawala, nasira, naantala, o hindi tugma sa bayad. Sinusuri muna namin ang trail. Nagbabayad ka ng bahagi ng nare-recover, hindi ng inangkin mo.",
+    "keywords": "refund sa pagbili, claim sa nawalang parcel, nasirang shipment, delayed delivery, refund ng buyer, refund ng seller, Lenix Protocol"
+  },
+  "Hero": {
+    "eyebrow": "Mga refund sa pagbili",
+    "title": "I-recover ang halaga mula sa nawala, nasira, at palyadong pagbili",
+    "description": "Isumite ang order, ang patunay ng bayad, at kung ano ang nagkamali. Tinitingnan namin kung recoverable ang claim laban sa carrier, marketplace, o counterparty. Ang instant na payout, kung meron, ay pagkatapos ng underwriting. Hindi guaranteed ang refund.",
+    "submit": "Magbukas ng refund case",
+    "process": "Paano tumatakbo ang case",
+    "imageAlt": "Imbestigador na nagsusuri ng dispute file sa pagbili"
+  },
+  "System": {
+    "eyebrow": "Ang desk",
+    "title": "Isang file para sa utang pa ng carrier o counterparty",
+    "description": "May mga refund platform na kumokonekta sa carrier account ng merchant at binabantayan ang bawat label. Hindi ganoon ang Lenix. Ikaw ang magbubukas ng case. Sinusuri namin, binubuo ang pack, at sinusundan hanggang mag-settle o isara namin nang nakasulat.",
+    "items": {
+      "review": {
+        "title": "Suriin bago mag-file ang sinuman",
+        "description": "Payment trail, tracking, larawan, at ang claim window na talagang inilathala ng carrier o marketplace. Kung sarado na ang window, sinasabi namin."
+      },
+      "file": {
+        "title": "Ihanda, tapos ipadala",
+        "description": "Ang desk ang nagda-draft ng claim mula sa ebidensya mo. Walang papunta sa carrier, marketplace, o counterparty hangga't hindi mo tinatanggap ang terms."
+      },
+      "track": {
+        "title": "Case file, hindi live tracker",
+        "description": "Ang status, ebidensya, at kung ano ang bumalik ay nasa case. Nakakasulat kang update. Hindi namin sini-siphon ang bawat shipment mula sa carrier login mo."
+      },
+      "fee": {
+        "title": "Bayad sa nare-recover na halaga",
+        "description": "Ang recovery fee ay bahagi ng pera na talagang bumabalik. Libre ang intake. Kung walang bumabalik, hindi mo binabayaran ang fee na iyon."
+      }
+    }
+  },
+  "Split": {
+    "eyebrow": "Mga seller at ops",
+    "title": "Mga parcel na natigil at madalas isinusulat na loss",
+    "description": "Kapag tumigil ang tracking at walang oras umupo sa portal ng carrier, nakaupo ang loss sa books. Kung bukas pa ang claim window, iyon ay recovery file: tracking, declared value, larawan, at ang service na binayaran mo.",
+    "points": {
+      "lost": "Nawala, walang scan, o return-to-sender, kung sakop pa ng kontrata ang goods o postage.",
+      "damaged": "Nasira sa pagdating, may larawan at petsa na kasya pa sa deadline ng carrier.",
+      "late": "Huli laban sa bayad na delivery guarantee, kung ang tariff ay talagang nagbabayad ng compensation.",
+      "manual": "Nag-report ang buyer ng missing order. Idinagdag mo nang manu-mano. Hindi kailangan ng carrier API para magsimula."
+    },
+    "cta": "Magbukas ng seller case",
+    "imageAlt": "Mga tala ng parcel tracking na ginagamit bilang ebidensya ng claim"
+  },
+  "Cases": {
+    "eyebrow": "Ano ang i-file",
+    "title": "Ang mga kakulangan na tinatanggap namin",
+    "description": "Parehong intake ang buyer at seller. Ikinakarga ng desk ang claim sa partido na may utang pa sa halaga.",
+    "items": {
+      "lost": {
+        "title": "Nawala sa transit",
+        "description": "Walang delivery scan, nakadepot, o naka-mark delivered pero hindi natanggap ng buyer. Tracking at payment proof muna ang papasok sa file."
+      },
+      "damaged": {
+        "title": "Nasira sa pagdating",
+        "description": "Dumating ang kahon, hindi nakaligtas ang goods. Mas mahalaga ang larawan, packing, at order value kaysa mahabang reklamo."
+      },
+      "delayed": {
+        "title": "Huli laban sa guarantee",
+        "description": "Nagbayad ka ng timed service. Hindi naabutan ng parcel. Ang compensation ay nasa published window ng carrier, hindi sa galit ng buyer."
+      },
+      "short": {
+        "title": "Hindi tugma sa binayaran",
+        "description": "Maling size, walang laman na kahon, hindi na-ship. Claim ito sa counterparty, hindi stolen-wallet case. Kailangan pa ring tumugma ang payment proof sa order."
+      }
+    }
+  },
+  "Process": {
+    "eyebrow": "Metodolohiya",
+    "title": "Paano tumatakbo ang refund case",
+    "description": "Parehong apat na phase ng recovery na ginagamit namin sa lost-asset cases, inilapat sa palyadong bili o parcel na utang pa ng carrier.",
+    "phase": "Phase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Paunang pagtatasa",
+        "description": "Tinitingnan namin ang payment trail, tracking, counterparty, at kung bukas pa ang claim window. Walang gumagalaw na pera dito.",
+        "tag1": "Pagsusuri ng trail",
+        "tag2": "Claim window"
+      },
+      "strategy": {
+        "title": "Estratehiya sa refund",
+        "description": "Nakasulat na terms: instant o pagkatapos ng return, sino ang magdadala ng gap kung hindi na bumalik ang item, at ang fee sa nare-recover na halaga.",
+        "tag1": "Evidence pack",
+        "tag2": "Mga termino ng fee"
+      },
+      "coordination": {
+        "title": "Aktibong koordinasyon",
+        "description": "Kung naaprubahan ang instant, binabayaran muna ang buyer. May pitong araw pa ang item para ma-ship. Kasabay naming sinusundan ang claim sa carrier o marketplace.",
+        "tag1": "Instant o hintay",
+        "tag2": "Return window"
+      },
+      "return": {
+        "title": "Na-verify na payout",
+        "description": "Pupunta ang pondo sa na-verify na wallet, o isasara ang case na may nakasulat na dahilan. Hindi namin bine-reverse ang orihinal na card sale.",
+        "tag1": "Na-verify na payout",
+        "tag2": "Pagsasara ng case"
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "Mga limitasyon",
+    "title": "Ano ang ginagawa ng desk na ito, at ano ang hindi",
+    "description": "Isang kumpletong claims page ang nagsasabi ng dalawa. Kung nasa maling panig ang case mo, ituturo ka namin sa iba sa halip na kunin ang file.",
+    "take": {
+      "title": "Tinatanggap namin",
+      "items": {
+        "a": "Nawala, nasira, naantala, o hindi tugma sa bayad na pagbili na may payment trail.",
+        "b": "Mga claim ng seller laban sa carrier o marketplace habang bukas pa ang published window.",
+        "c": "Mga buyer case kung saan tumigil nang sagutin ng kabilang partido pagkatapos magkulang ang goods."
+      }
+    },
+    "skip": {
+      "title": "Hindi namin ginagawa",
+      "items": {
+        "a": "Ikonekta ang carrier account mo at i-scan ang bawat label. Ikaw ang magbubukas ng case.",
+        "b": "Mag-file ng Visa o Mastercard chargeback. Hindi kami ang merchant of record ng orihinal na sale.",
+        "c": "Hawakan ang ninakaw o na-drain na wallet. Iyon ay recovery services."
+      }
+    },
+    "recoveryLink": "Magbukas ng stolen-asset case"
+  },
+  "Fees": {
+    "eyebrow": "Presyo",
+    "title": "Nagbabayad ka ng bahagi ng bumabalik",
+    "description": "Walang recovery fee sa intake. Pagkatapos ng assessment ay magpapadala kami ng terms. Ang fee ay porsyento ng nare-recover na halaga, hindi ng inangkin. Kung walang nare-recover, zero ang fee na iyon.",
+    "cta": "Magbukas ng refund case",
+    "points": {
+      "intake": "Walang setup charge para magbukas ng file.",
+      "share": "Fee lang sa nare-recover na pondo, hindi kailanman sa rejected claim.",
+      "terms": "Walang nai-file, at walang payout na ipinapadala, hangga't hindi mo tinatanggap ang terms nang nakasulat."
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Bago magsumite",
+    "subtitle": "Tuwirang sagot sa monitoring, payout, at fee.",
+    "discuss": "Kung lost-wallet case ito, gamitin ang recovery services.",
+    "submit": "Magbukas ng refund case",
+    "recovery": "Magsimula ng recovery case",
+    "items": {
+      "types": {
+        "question": "Ano ang puwedeng i-file dito?",
+        "answer": "Nawala, nasira, naantala, walang laman, o hindi tugma sa bayad na pagbili. Iisang form ang buyer at seller. Ibang desk ang ninakaw na crypto."
+      },
+      "monitor": {
+        "question": "Binabantayan ba ninyo ang lahat ng shipment ko?",
+        "answer": "Hindi. May mga platform na kumokonekta sa carrier account at nagfa-flag ng bawat natigil na label. Sinusuri ng Lenix ang case na isinumite mo. Sapat na ang tracking number at payment proof para magsimula."
+      },
+      "instant": {
+        "question": "Babalik ba ang pera sa loob ng ilang segundo?",
+        "answer": "Hindi sa pagsumite. Ang instant payout ay desisyon sa underwriting pagkatapos naming i-score ang non-return risk. Maraming case ang naghihintay ng return o bayad ng carrier. Hindi namin ito itatago."
+      },
+      "fees": {
+        "question": "Ano ang sinisingil ninyo?",
+        "answer": "Bahagi ng nare-cover na halaga, napagkasunduan nang nakasulat bago mag-file o magbayad. Libre ang intake. Kung walang nare-cover, hindi mo binabayaran ang recovery fee na iyon."
+      },
+      "chargebacks": {
+        "question": "Ire-reverse ba ninyo ang card payment ko?",
+        "answer": "Hindi. Hindi kami nagrerepresenta ng chargeback sa Visa o Mastercard. Nanatili ang orihinal na merchant of record. Ang desk na ito ay nagrerecover ng halaga sa carrier, marketplace, o counterparty, tapos nagbabayad sa na-verify na wallet kung malinis ang case."
+      },
+      "timeline": {
+        "question": "Gaano katagal ang isang case?",
+        "answer": "Due ang assessment sa loob ng isang business day. Ang claim sa carrier at marketplace ay sumusunod sa sarili nilang window, madalas dalawa hanggang anim na linggo. Makakatanggap ka ng nakasulat na estimate pagkatapos ng review."
+      },
+      "evidence": {
+        "question": "Ano ang dapat kong i-attach?",
+        "answer": "Payment hash o invoice, tracking, larawan ng sira kung meron, at anumang chat sa kabilang partido. PDF, JPG, PNG, o WebP, 8 MB max. Puwedeng magsimula ang case nang walang file. Ang mahinang ebidensya ay nagpapabagal lang ng claim."
+      },
+      "guarantee": {
+        "question": "Ginagarantiya ba ninyo ang refund?",
+        "answer": "Hindi. Ang saradong claim window, kulang na patunay, at counterparty na hindi magbabayad ay palyado. Isinasara namin iyon nang nakasulat sa halip na iwanang bukas ang file para lang magmukhang aktibo."
+      }
+    }
+  },
+  "Account": {
+    "title": "Mga refund sa pagbili",
+    "subtitle": "Para sa parcel na nawala, nasira, huli, o hindi tugma sa bayad. Ang stolen-wallet case ay sa recovery services.",
+    "stolenLink": "Nawala o ninakaw na crypto? Gamitin ang recovery services."
+  },
+  "Form": {
+    "eyebrow": "Pagkuha ng case",
+    "title": "Magsumite ng refund request",
+    "description": "Walang payout sa pagsumite. Sinusuri ng desk ang recoverability sa loob ng isang business day, tapos magpapadala ng terms kung puwedeng ituloy ang case.",
+    "submittedTitle": "Naisumite ang request",
+    "submittedBody": "Susuriin ng refund desk ang case na ito at kokontakin ka sa loob ng 24 hanggang 48 oras. Ang instant payout, kung meron, ay pagkatapos ng underwriting, hindi ngayon.",
+    "submitAnother": "Magsumite ng isa pang request",
+    "steps": "Mga hakbang",
+    "step": "Hakbang {id}",
+    "step1Title": "Sino at ano",
+    "step1Desc": "Buyer o seller, order, at halaga.",
+    "step2Title": "Ano ang nagkamali",
+    "step2Desc": "Buod ng insidente at ebidensya.",
+    "role": "Ako ay",
+    "roleBuyer": "Buyer",
+    "roleSeller": "Seller",
+    "fullName": "Buong pangalan",
+    "namePlaceholder": "Jane Mensah",
+    "email": "Email",
+    "emailPlaceholder": "jane@example.com",
+    "phone": "Telepono (opsyonal)",
+    "counterparty": "Tindahan, marketplace, o counterparty",
+    "counterpartyPlaceholder": "Pangalan ng shop o handle ng seller",
+    "orderRef": "Order ID (opsyonal)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Payment hash, invoice, o transfer ID",
+    "paymentPlaceholder": "0x… o numero ng invoice",
+    "amount": "Inaangking halaga",
+    "amountPlaceholder": "hal. 480",
+    "currency": "Asset",
+    "blockchain": "Chain (kung crypto ang bayad)",
+    "selectBlockchain": "Pumili ng chain",
+    "otherChain": "Iba",
+    "continue": "Magpatuloy sa detalye ng insidente",
+    "summary": "Ano ang kulang",
+    "summaryPlaceholder": "Ano ang binili, tracking o petsa ng delivery, ano ang dumating (o hindi), at anumang sagot mula sa carrier o seller.",
+    "evidence": "Karagdagang ebidensya (opsyonal)",
+    "evidenceHint": "Resibo, larawan, chat, o tracking. PDF, JPG, PNG, o WebP. 8 MB max.",
+    "privacy": "Ginagamit ng Lenix Protocol ang detalye ng pakikipag-ugnayan mo para tumugon tungkol sa refund case na ito. Tingnan ang aming <link>Patakaran sa privacy</link>.",
+    "back": "Bumalik",
+    "submitting": "Isinusumite…",
+    "submit": "Isumite ang refund request",
+    "points": {
+      "confidential": {
+        "title": "Kumpidensyal",
+        "desc": "Naka-encrypt na intake at restricted na access sa case."
+      },
+      "review": {
+        "title": "Review sa 24h",
+        "desc": "Paunang pagtatasa sa loob ng isang business day."
+      },
+      "fee": {
+        "title": "Fee sa recovery",
+        "desc": "Nagbabayad ka ng bahagi ng bumabalik, hindi ng inangkin mo."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Kumpletuhin ang required fields bago magpatuloy.",
+      "email": "Maglagay ng valid na email address.",
+      "required": "Punuin ang lahat ng required fields.",
+      "failed": "Hindi naisumite ang refund request",
+      "success": "Naisumite ang refund request. Kokontakin ka ng team."
+    }
+  }
+}

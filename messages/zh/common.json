@@ -7,6 +7,7 @@
       "blockchain_forensics": "区块链取证",
       "asset_recovery": "资产追回",
       "crypto_recovery": "加密追回",
+      "purchase_refund": "购物退款",
       "contact": "联系",
       "airdrop": "空投",
       "banking_finance": "银行与金融"
@@ -23,6 +24,10 @@
       "recovery": {
         "title": "加密追回",
         "desc": "专业帮助追回丢失资产。"
+      },
+      "refund": {
+        "title": "购物退款",
+        "desc": "丢失、损坏、延误或与付款不符的购买。"
       },
       "compliance": {
         "title": "合规调查",

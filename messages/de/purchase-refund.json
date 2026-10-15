@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "Kaufrückerstattungen | Lenix Protocol",
+    "description": "Öffnen Sie einen Erstattungsfall für einen verlorenen, beschädigten, verspäteten oder nicht vertragsgemäßen Kauf. Wir prüfen zuerst die Spur. Sie zahlen einen Anteil am zurückgeholten Betrag, nicht am geforderten.",
+    "keywords": "Kaufrückerstattung, Sendung verloren, beschädigte Lieferung, verspätete Zustellung, Käufererstattung, Verkäufererstattung, Lenix Protocol"
+  },
+  "Hero": {
+    "eyebrow": "Kaufrückerstattungen",
+    "title": "Wert aus verlorenen, beschädigten und fehlgeschlagenen Käufen zurückholen",
+    "description": "Reichen Sie Bestellung, Zahlungsnachweis und den Vorfall ein. Wir prüfen, ob eine Forderung gegen Carrier, Marktplatz oder Gegenpartei durchsetzbar ist. Eine Sofortauszahlung, falls überhaupt, kommt nach der Prüfung. Erstattungen sind nicht garantiert.",
+    "submit": "Erstattungsfall öffnen",
+    "process": "So läuft ein Fall",
+    "imageAlt": "Ermittler prüft eine Kaufstreitakte"
+  },
+  "System": {
+    "eyebrow": "Der Desk",
+    "title": "Eine Akte für das, was Carrier oder Gegenpartei noch schulden",
+    "description": "Manche Erstattungsplattformen verbinden sich mit dem Carrier-Konto eines Händlers und überwachen jedes Label. Lenix nicht. Sie öffnen einen Fall. Wir prüfen ihn, bauen das Pack und verfolgen ihn, bis er sich erledigt oder wir ihn schriftlich schließen.",
+    "items": {
+      "review": {
+        "title": "Prüfen, bevor jemand einreicht",
+        "description": "Zahlungsspur, Tracking, Fotos und das vom Carrier oder Marktplatz tatsächlich veröffentlichte Reklamationsfenster. Ist das Fenster schon zu, sagen wir das."
+      },
+      "file": {
+        "title": "Vorbereiten, dann senden",
+        "description": "Der Desk entwirft die Reklamation aus Ihren Belegen. Nichts geht an Carrier, Marktplatz oder Gegenpartei, bevor Sie die Bedingungen akzeptieren."
+      },
+      "track": {
+        "title": "Eine Fallakte, kein Live-Tracker",
+        "description": "Status, Belege und was zurückkam liegen auf dem Fall. Sie bekommen schriftliche Updates. Wir ziehen nicht jede Sendung aus Ihrem Carrier-Login."
+      },
+      "fee": {
+        "title": "Gebühr auf zurückgeholten Wert",
+        "description": "Die Recovery-Gebühr ist ein Anteil am Geld, das tatsächlich zurückkommt. Die Aufnahme ist kostenlos. Kommt nichts zurück, zahlen Sie diese Gebühr nicht."
+      }
+    }
+  },
+  "Split": {
+    "eyebrow": "Verkäufer und Ops",
+    "title": "Stecken gebliebene Sendungen, die oft abgeschrieben werden",
+    "description": "Wenn das Tracking stoppt und niemand Zeit hat, im Carrier-Portal zu sitzen, bleibt der Verlust in den Büchern. Ist das Reklamationsfenster noch offen, ist das eine Recovery-Akte: Tracking, deklarierter Wert, Fotos und der Service, den Sie bezahlt haben.",
+    "points": {
+      "lost": "Verloren, ohne Scan oder retour an den Absender, wenn der Vertrag Ware oder Porto noch deckt.",
+      "damaged": "Bei Ankunft beschädigt, mit Fotos und einem Datum, das noch in die Carrier-Frist passt.",
+      "late": "Verspätet gegen eine bezahlte Zustellgarantie, wenn der Tarif tatsächlich Entschädigung zahlt.",
+      "manual": "Ein Käufer meldet eine fehlende Bestellung. Sie tragen sie von Hand nach. Wir brauchen keine Carrier-API, um zu starten."
+    },
+    "cta": "Verkäuferfall öffnen",
+    "imageAlt": "Paket-Trackingdaten als Reklamationsbeleg"
+  },
+  "Cases": {
+    "eyebrow": "Was Sie einreichen",
+    "title": "Die Abweichungen, die wir annehmen",
+    "description": "Käufer und Verkäufer öffnen dasselbe Formular. Der Desk leitet die Forderung an die Partei, die den Wert noch schuldet.",
+    "items": {
+      "lost": {
+        "title": "Im Transit verloren",
+        "description": "Kein Zustellscan, im Depot stecken geblieben oder als zugestellt markiert, obwohl der Käufer nichts erhalten hat. Tracking und Zahlungsnachweis gehören zuerst in die Akte."
+      },
+      "damaged": {
+        "title": "Bei Ankunft beschädigt",
+        "description": "Der Karton kam an, die Ware nicht. Fotos, Verpackung und Bestellwert zählen mehr als eine lange Beschwerde."
+      },
+      "delayed": {
+        "title": "Verspätet gegen eine Garantie",
+        "description": "Sie haben einen terminierten Service bezahlt. Das Paket hat ihn verfehlt. Die Entschädigung hängt vom veröffentlichten Fenster des Carriers ab, nicht davon, wie wütend der Käufer ist."
+      },
+      "short": {
+        "title": "Nicht wie bezahlt",
+        "description": "Falsche Größe, leerer Karton, nie versendet. Das ist eine Forderung gegen die Gegenpartei, kein gestohlener Wallet. Der Zahlungsnachweis muss trotzdem zur Bestellung passen."
+      }
+    }
+  },
+  "Process": {
+    "eyebrow": "Methodik",
+    "title": "So läuft ein Erstattungsfall",
+    "description": "Derselbe vierphasige Recovery-Prozess wie bei verlorenen Assets, angewendet auf einen fehlgeschlagenen Kauf oder eine Sendung, die der Carrier noch schuldet.",
+    "phase": "Phase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Erste Bewertung",
+        "description": "Wir prüfen Zahlungsspur, Tracking, Gegenpartei und ob das Reklamationsfenster noch offen ist. Hier bewegt sich kein Geld.",
+        "tag1": "Spurprüfung",
+        "tag2": "Reklamationsfenster"
+      },
+      "strategy": {
+        "title": "Erstattungsstrategie",
+        "description": "Schriftliche Bedingungen: sofort oder nach Rücksendung, wer die Lücke trägt, wenn der Artikel nie zurückkommt, und die Gebühr auf zurückgeholten Wert.",
+        "tag1": "Beweispack",
+        "tag2": "Gebührenbedingungen"
+      },
+      "coordination": {
+        "title": "Aktive Koordination",
+        "description": "Wird Sofortzahlung genehmigt, wird der Käufer zuerst bezahlt. Der Artikel hat noch sieben Tage zum Versand. Parallel verfolgen wir die Carrier- oder Marktplatzreklamation.",
+        "tag1": "Sofort oder warten",
+        "tag2": "Rücksendefenster"
+      },
+      "return": {
+        "title": "Verifizierte Auszahlung",
+        "description": "Mittel gehen an eine verifizierte Wallet, oder der Fall schließt mit schriftlicher Begründung. Wir stornieren den ursprünglichen Kartenzahlungsverkauf nicht.",
+        "tag1": "Verifizierte Auszahlung",
+        "tag2": "Fallabschluss"
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "Grenzen",
+    "title": "Was dieser Desk tut und was nicht",
+    "description": "Eine vollständige Reklamationsseite sagt beides. Sitzt Ihr Fall auf der falschen Seite, verweisen wir Sie woanders hin, statt die Akte anzunehmen.",
+    "take": {
+      "title": "Wir nehmen",
+      "items": {
+        "a": "Verlorene, beschädigte, verspätete oder nicht vertragsgemäße Käufe mit Zahlungsspur.",
+        "b": "Verkäuferforderungen gegen Carrier oder Marktplatz, solange das veröffentlichte Fenster offen ist.",
+        "c": "Käuferfälle, in denen die andere Seite nach dem Mangel nicht mehr antwortet."
+      }
+    },
+    "skip": {
+      "title": "Wir tun nicht",
+      "items": {
+        "a": "Ihr Carrier-Konto verbinden und jedes Label scannen. Sie öffnen den Fall.",
+        "b": "Visa- oder Mastercard-Chargebacks einreichen. Wir sind nicht der Merchant of Record des ursprünglichen Verkaufs.",
+        "c": "Gestohlene oder geleerte Wallets bearbeiten. Das ist Recovery Services."
+      }
+    },
+    "recoveryLink": "Fall zu gestohlenen Assets öffnen"
+  },
+  "Fees": {
+    "eyebrow": "Preise",
+    "title": "Sie zahlen einen Anteil an dem, was zurückkommt",
+    "description": "Die Aufnahme berechnet keine Recovery-Gebühr. Nach der Bewertung senden wir Bedingungen. Die Gebühr ist ein Prozentsatz des zurückgeholten Werts, nicht des geforderten Betrags. Holt der Fall nichts zurück, ist diese Gebühr null.",
+    "cta": "Erstattungsfall öffnen",
+    "points": {
+      "intake": "Keine Einrichtungsgebühr für das Öffnen einer Akte.",
+      "share": "Gebühr nur auf zurückgeholte Mittel, nie auf eine abgelehnte Forderung.",
+      "terms": "Nichts wird eingereicht und keine Auszahlung gesendet, bis Sie die Bedingungen schriftlich akzeptieren."
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Bevor Sie einreichen",
+    "subtitle": "Klare Antworten zu Überwachung, Auszahlungen und Gebühren.",
+    "discuss": "Ist das ein verlorener Wallet, nutzen Sie stattdessen Recovery Services.",
+    "submit": "Erstattungsfall öffnen",
+    "recovery": "Recovery-Fall starten",
+    "items": {
+      "types": {
+        "question": "Was kann ich hier einreichen?",
+        "answer": "Verlorene, beschädigte, verspätete, leere oder nicht vertragsgemäße Käufe. Käufer und Verkäufer nutzen dasselbe Formular. Gestohlene Krypto ist ein anderer Desk."
+      },
+      "monitor": {
+        "question": "Überwachen Sie alle meine Sendungen?",
+        "answer": "Nein. Manche Plattformen verbinden sich mit Carrier-Konten und markieren jedes stecken gebliebene Label. Lenix prüft die Fälle, die Sie einreichen. Trackingnummer und Zahlungsnachweis reichen zum Start."
+      },
+      "instant": {
+        "question": "Bekomme ich das Geld in Sekunden zurück?",
+        "answer": "Nicht beim Einreichen. Sofortauszahlung ist eine Prüfungsentscheidung nach Bewertung des Nicht-Rücksende-Risikos. Viele Fälle warten auf die Rücksendung oder auf die Zahlung des Carriers. Das stellen wir nicht anders dar."
+      },
+      "fees": {
+        "question": "Was berechnen Sie?",
+        "answer": "Einen Anteil am zurückgeholten Wert, schriftlich vereinbart, bevor wir einreichen oder zahlen. Die Aufnahme ist kostenlos. Wird nichts zurückgeholt, zahlen Sie diese Recovery-Gebühr nicht."
+      },
+      "chargebacks": {
+        "question": "Machen Sie meine Kartenzahlung rückgängig?",
+        "answer": "Nein. Wir vertreten keine Chargebacks bei Visa oder Mastercard. Der ursprüngliche Merchant of Record bleibt. Dieser Desk holt Wert über Carrier, Marktplatz oder Gegenpartei zurück und zahlt dann eine verifizierte Wallet, wenn der Fall durchgeht."
+      },
+      "timeline": {
+        "question": "Wie lange dauert ein Fall?",
+        "answer": "Die Bewertung ist innerhalb eines Werktags fällig. Carrier- und Marktplatzreklamationen folgen dann ihren eigenen Fenstern, oft zwei bis sechs Wochen. Nach der Prüfung erhalten Sie eine schriftliche Schätzung."
+      },
+      "evidence": {
+        "question": "Was soll ich anhängen?",
+        "answer": "Zahlungshash oder Rechnung, Tracking, Schadensfotos falls vorhanden, und Chat mit der anderen Seite. PDF, JPG, PNG oder WebP, max. 8 MB. Ein Fall kann ohne Datei starten. Schwache Belege verlangsamen nur die Reklamation."
+      },
+      "guarantee": {
+        "question": "Garantieren Sie eine Erstattung?",
+        "answer": "Nein. Geschlossene Reklamationsfenster, fehlende Nachweise und Gegenparteien, die nicht zahlen, scheitern. Wir schließen das schriftlich, statt die Akte zur Schau offen zu halten."
+      }
+    }
+  },
+  "Account": {
+    "title": "Kaufrückerstattungen",
+    "subtitle": "Für Sendungen, die verloren, beschädigt, verspätet oder nicht wie bezahlt waren. Gestohlene Wallets gehören zu Recovery Services.",
+    "stolenLink": "Krypto verloren oder gestohlen? Nutzen Sie Recovery Services."
+  },
+  "Form": {
+    "eyebrow": "Fallaufnahme",
+    "title": "Erstattungsantrag einreichen",
+    "description": "Beim Einreichen erfolgt keine Auszahlung. Der Desk prüft die Durchsetzbarkeit innerhalb eines Werktags und sendet dann Bedingungen, wenn der Fall weiterlaufen kann.",
+    "submittedTitle": "Antrag eingereicht",
+    "submittedBody": "Der Erstattungsdesk prüft diesen Fall und kontaktiert Sie innerhalb von 24 bis 48 Stunden. Eine Sofortauszahlung, falls überhaupt, kommt nach der Prüfung, nicht jetzt.",
+    "submitAnother": "Weiteren Antrag einreichen",
+    "steps": "Schritte",
+    "step": "Schritt {id}",
+    "step1Title": "Wer und was",
+    "step1Desc": "Käufer oder Verkäufer, Bestellung und Betrag.",
+    "step2Title": "Was schiefging",
+    "step2Desc": "Vorfallbericht und Belege.",
+    "role": "Ich bin",
+    "roleBuyer": "Käufer",
+    "roleSeller": "Verkäufer",
+    "fullName": "Vollständiger Name",
+    "namePlaceholder": "Jane Mensah",
+    "email": "E-Mail",
+    "emailPlaceholder": "jane@example.com",
+    "phone": "Telefon (optional)",
+    "counterparty": "Shop, Marktplatz oder Gegenpartei",
+    "counterpartyPlaceholder": "Shopname oder Verkäuferkennung",
+    "orderRef": "Bestell-ID (optional)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Zahlungshash, Rechnung oder Transfer-ID",
+    "paymentPlaceholder": "0x… oder Rechnungsnummer",
+    "amount": "Geforderter Betrag",
+    "amountPlaceholder": "z. B. 480",
+    "currency": "Asset",
+    "blockchain": "Chain (bei Krypto-Zahlung)",
+    "selectBlockchain": "Chain wählen",
+    "otherChain": "Andere",
+    "continue": "Weiter zu den Vorfalldetails",
+    "summary": "Was gefehlt hat",
+    "summaryPlaceholder": "Was gekauft wurde, Tracking oder Lieferdatum, was ankam (oder nicht), und jede Antwort von Carrier oder Verkäufer.",
+    "evidence": "Belege (optional)",
+    "evidenceHint": "Beleg, Fotos, Chat oder Tracking. PDF, JPG, PNG oder WebP. Max. 8 MB.",
+    "privacy": "Lenix Protocol nutzt Ihre Kontaktdaten, um zu diesem Erstattungsfall zu antworten. Siehe unsere <link>Datenschutzerklärung</link>.",
+    "back": "Zurück",
+    "submitting": "Wird gesendet…",
+    "submit": "Erstattungsantrag senden",
+    "points": {
+      "confidential": {
+        "title": "Vertraulich",
+        "desc": "Verschlüsselte Aufnahme und beschränkter Fallzugriff."
+      },
+      "review": {
+        "title": "Prüfung in 24h",
+        "desc": "Erste Bewertung innerhalb eines Werktags."
+      },
+      "fee": {
+        "title": "Gebühr bei Recovery",
+        "desc": "Sie zahlen einen Anteil an dem, was zurückkommt, nicht an dem, was Sie gefordert haben."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Füllen Sie die Pflichtfelder aus, bevor Sie fortfahren.",
+      "email": "Geben Sie eine gültige E-Mail-Adresse ein.",
+      "required": "Füllen Sie alle Pflichtfelder aus.",
+      "failed": "Erstattungsantrag konnte nicht gesendet werden",
+      "success": "Erstattungsantrag gesendet. Das Team wird Sie kontaktieren."
+    }
+  }
+}

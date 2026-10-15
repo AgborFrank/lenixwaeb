@@ -7,6 +7,7 @@
       "blockchain_forensics": "Forense",
       "asset_recovery": "Recuperación de Activos",
       "crypto_recovery": "Recuperación Cripto",
+      "purchase_refund": "Reembolsos de compra",
       "contact": "Contacto",
       "airdrop": "Airdrop",
       "banking_finance": "Banca y Finanzas"
@@ -23,6 +24,10 @@
       "recovery": {
         "title": "Recuperación Cripto",
         "desc": "Ayuda experta para activos perdidos."
+      },
+      "refund": {
+        "title": "Reembolsos de compra",
+        "desc": "Compras perdidas, dañadas, retrasadas o no según lo pagado."
       },
       "compliance": {
         "title": "Cumplimiento",

@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "Remboursements d'achat | Lenix Protocol",
+    "description": "Ouvrez un dossier de remboursement pour un achat perdu, endommagé, retardé ou non conforme. Nous examinons la trace d'abord. Vous payez une part de ce qui est récupéré, pas de ce que vous avez réclamé.",
+    "keywords": "remboursement d'achat, réclamation colis perdu, envoi endommagé, livraison retardée, remboursement acheteur, remboursement vendeur, Lenix Protocol"
+  },
+  "Hero": {
+    "eyebrow": "Remboursements d'achat",
+    "title": "Récupérer la valeur des achats perdus, endommagés ou manqués",
+    "description": "Transmettez la commande, la preuve de paiement et ce qui n'a pas fonctionné. Nous vérifions si une réclamation contre le transporteur, la place de marché ou la contrepartie est récupérable. Un paiement immédiat, s'il y en a un, vient après souscription. Les remboursements ne sont pas garantis.",
+    "submit": "Ouvrir un dossier de remboursement",
+    "process": "Comment un dossier avance",
+    "imageAlt": "Enquêteur examinant un dossier de litige d'achat"
+  },
+  "System": {
+    "eyebrow": "Le desk",
+    "title": "Un seul dossier pour ce qu'un transporteur ou une contrepartie doit encore",
+    "description": "Certaines plateformes de remboursement se connectent au compte transporteur d'un marchand et surveillent chaque étiquette. Lenix ne le fait pas. Vous ouvrez un dossier. Nous l'examinons, constituons le pack, et le suivons jusqu'au règlement ou jusqu'à une clôture écrite.",
+    "items": {
+      "review": {
+        "title": "Examen avant tout envoi",
+        "description": "Trace de paiement, suivi, photos, et le délai de réclamation réellement publié par le transporteur ou la place de marché. Si le délai est déjà clos, nous le disons."
+      },
+      "file": {
+        "title": "Préparer, puis envoyer",
+        "description": "Le desk rédige la réclamation à partir de vos preuves. Rien ne part vers un transporteur, une place de marché ou une contrepartie avant que vous acceptiez les conditions."
+      },
+      "track": {
+        "title": "Un dossier, pas un suivi en direct",
+        "description": "Le statut, les preuves et ce qui est revenu restent sur le dossier. Vous recevez des mises à jour écrites. Nous n'ingérons pas chaque envoi depuis votre compte transporteur."
+      },
+      "fee": {
+        "title": "Honoraires sur la valeur récupérée",
+        "description": "Les honoraires de récupération sont une part de l'argent qui revient réellement. L'ouverture du dossier est gratuite. Si rien ne revient, vous ne payez pas ces honoraires."
+      }
+    }
+  },
+  "Split": {
+    "eyebrow": "Vendeurs et ops",
+    "title": "Les colis bloqués que l'on passe souvent en pertes",
+    "description": "Quand le suivi s'arrête et que personne n'a le temps de rester dans le portail du transporteur, la perte reste dans les livres. Si le délai de réclamation est encore ouvert, c'est un dossier de récupération: suivi, valeur déclarée, photos, et le service que vous avez payé.",
+    "points": {
+      "lost": "Perdu, sans scan, ou retour à l'expéditeur, lorsque le contrat couvre encore la marchandise ou l'affranchissement.",
+      "damaged": "Endommagé à l'arrivée, avec des photos et une date encore dans le délai du transporteur.",
+      "late": "En retard par rapport à une garantie de livraison payée, lorsque le tarif prévoit réellement une indemnité.",
+      "manual": "Un acheteur signale une commande manquante. Vous l'ajoutez à la main. Nous n'avons pas besoin d'une API transporteur pour commencer."
+    },
+    "cta": "Ouvrir un dossier vendeur",
+    "imageAlt": "Relevés de suivi de colis utilisés comme preuves de réclamation"
+  },
+  "Cases": {
+    "eyebrow": "Quoi déposer",
+    "title": "Les manquements que nous prenons",
+    "description": "Acheteurs et vendeurs ouvrent le même formulaire. Le desk oriente la réclamation vers la partie qui doit encore la valeur.",
+    "items": {
+      "lost": {
+        "title": "Perdu en transit",
+        "description": "Pas de scan de livraison, bloqué en dépôt, ou marqué livré alors que l'acheteur n'a rien reçu. Le suivi et la preuve de paiement vont d'abord dans le dossier."
+      },
+      "damaged": {
+        "title": "Endommagé à l'arrivée",
+        "description": "Le carton est arrivé, la marchandise n'a pas survécu. Les photos, l'emballage et la valeur de commande comptent plus qu'une longue plainte."
+      },
+      "delayed": {
+        "title": "En retard par rapport à une garantie",
+        "description": "Vous avez payé un service à délai. Le colis l'a manqué. L'indemnité dépend de la fenêtre publiée par le transporteur, pas de la colère de l'acheteur."
+      },
+      "short": {
+        "title": "Pas conforme au paiement",
+        "description": "Mauvaise taille, carton vide, jamais expédié. C'est une réclamation contre la contrepartie, pas un dossier de wallet volé. La preuve de paiement doit encore correspondre à la commande."
+      }
+    }
+  },
+  "Process": {
+    "eyebrow": "Méthodologie",
+    "title": "Comment un dossier de remboursement avance",
+    "description": "Le même processus de récupération en quatre phases que nous utilisons pour les actifs perdus, appliqué à un achat manqué ou à un colis que le transporteur doit encore.",
+    "phase": "Phase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Évaluation initiale",
+        "description": "Nous vérifions la trace de paiement, le suivi, la contrepartie, et si le délai de réclamation est encore ouvert. Aucun argent ne bouge ici.",
+        "tag1": "Revue de la trace",
+        "tag2": "Délai de réclamation"
+      },
+      "strategy": {
+        "title": "Stratégie de remboursement",
+        "description": "Conditions écrites: immédiat ou après retour, qui porte l'écart si l'article ne revient jamais, et les honoraires sur la valeur récupérée.",
+        "tag1": "Dossier de preuves",
+        "tag2": "Conditions d'honoraires"
+      },
+      "coordination": {
+        "title": "Coordination active",
+        "description": "Si un paiement immédiat est approuvé, l'acheteur est payé d'abord. L'article a encore sept jours pour partir. Nous suivons en parallèle la réclamation transporteur ou place de marché.",
+        "tag1": "Immédiat ou attente",
+        "tag2": "Fenêtre de retour"
+      },
+      "return": {
+        "title": "Paiement vérifié",
+        "description": "Les fonds vont vers un wallet vérifié, ou le dossier se clôt avec un motif écrit. Nous n'annulons pas la vente carte d'origine.",
+        "tag1": "Paiement vérifié",
+        "tag2": "Clôture du dossier"
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "Limites",
+    "title": "Ce que ce desk fait, et ce qu'il ne fera pas",
+    "description": "Une page de réclamations complète dit les deux. Si votre dossier est du mauvais côté, nous vous orienterons ailleurs au lieu de prendre le fichier.",
+    "take": {
+      "title": "Nous prenons",
+      "items": {
+        "a": "Achats perdus, endommagés, retardés ou non conformes, avec une trace de paiement.",
+        "b": "Réclamations vendeur contre un transporteur ou une place de marché tant que le délai publié est encore ouvert.",
+        "c": "Dossiers acheteur où l'autre partie a cessé de répondre après que la marchandise a manqué."
+      }
+    },
+    "skip": {
+      "title": "Nous ne faisons pas",
+      "items": {
+        "a": "Connecter votre compte transporteur et scanner chaque étiquette. Vous ouvrez le dossier.",
+        "b": "Déposer des rétrofacturations Visa ou Mastercard. Nous ne sommes pas le commerçant d'enregistrement de la vente d'origine.",
+        "c": "Traiter les wallets volés ou vidés. C'est le desk de récupération d'actifs."
+      }
+    },
+    "recoveryLink": "Ouvrir un dossier d'actifs volés"
+  },
+  "Fees": {
+    "eyebrow": "Tarifs",
+    "title": "Vous payez une part de ce qui revient",
+    "description": "L'ouverture du dossier ne facture pas d'honoraires de récupération. Après évaluation, nous envoyons des conditions. Les honoraires sont un pourcentage de la valeur récupérée, pas du montant réclamé. Si le dossier ne récupère rien, ces honoraires sont nuls.",
+    "cta": "Ouvrir un dossier de remboursement",
+    "points": {
+      "intake": "Pas de frais de mise en place pour ouvrir un fichier.",
+      "share": "Honoraires uniquement sur les fonds récupérés, jamais sur une réclamation rejetée.",
+      "terms": "Rien n'est déposé, et aucun paiement n'est envoyé, tant que vous n'avez pas accepté les conditions par écrit."
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Avant de déposer",
+    "subtitle": "Réponses directes sur la surveillance, les paiements et les honoraires.",
+    "discuss": "S'il s'agit d'un wallet perdu, utilisez plutôt les services de récupération.",
+    "submit": "Ouvrir un dossier de remboursement",
+    "recovery": "Démarrer un dossier de récupération",
+    "items": {
+      "types": {
+        "question": "Que puis-je déposer ici?",
+        "answer": "Achats perdus, endommagés, retardés, vides ou non conformes. Acheteurs et vendeurs utilisent le même formulaire. La crypto volée est un autre desk."
+      },
+      "monitor": {
+        "question": "Surveillez-vous tous mes envois?",
+        "answer": "Non. Certaines plateformes se connectent aux comptes transporteurs et signalent chaque étiquette bloquée. Lenix examine les dossiers que vous déposez. Un numéro de suivi et une preuve de paiement suffisent pour commencer."
+      },
+      "instant": {
+        "question": "Est-ce que je récupère l'argent en quelques secondes?",
+        "answer": "Pas au dépôt. Le paiement immédiat est une décision de souscription après évaluation du risque de non-retour. Beaucoup de dossiers attendent le retour ou le paiement du transporteur. Nous ne ferons pas semblant."
+      },
+      "fees": {
+        "question": "Que facturez-vous?",
+        "answer": "Une part de la valeur récupérée, convenue par écrit avant tout dépôt ou paiement. L'ouverture est gratuite. Si rien n'est récupéré, vous ne payez pas ces honoraires de récupération."
+      },
+      "chargebacks": {
+        "question": "Allez-vous annuler mon paiement par carte?",
+        "answer": "Non. Nous ne représentons pas de rétrofacturations Visa ou Mastercard. Le commerçant d'enregistrement d'origine reste en place. Ce desk récupère de la valeur via le transporteur, la place de marché ou la contrepartie, puis paie un wallet vérifié si le dossier aboutit."
+      },
+      "timeline": {
+        "question": "Combien de temps prend un dossier?",
+        "answer": "L'évaluation est due sous un jour ouvré. Les réclamations transporteur et place de marché suivent ensuite leurs propres délais, souvent deux à six semaines. Vous recevez une estimation écrite après examen."
+      },
+      "evidence": {
+        "question": "Que dois-je joindre?",
+        "answer": "Hash de paiement ou facture, suivi, photos des dommages si vous en avez, et tout échange avec l'autre partie. PDF, JPG, PNG ou WebP, 8 Mo max. Un dossier peut commencer sans fichier. Des preuves faibles ralentissent seulement la réclamation."
+      },
+      "guarantee": {
+        "question": "Garantissez-vous un remboursement?",
+        "answer": "Non. Délais clos, preuves manquantes et contreparties qui ne paient pas échouent tous. Nous clôturons ces dossiers par écrit au lieu de les laisser ouverts pour la forme."
+      }
+    }
+  },
+  "Account": {
+    "title": "Remboursements d'achat",
+    "subtitle": "Pour les colis perdus, endommagés, en retard, ou non conformes au paiement. Les wallets volés vont aux services de récupération.",
+    "stolenLink": "Crypto perdue ou volée? Utilisez les services de récupération."
+  },
+  "Form": {
+    "eyebrow": "Ouverture de dossier",
+    "title": "Déposer une demande de remboursement",
+    "description": "Aucun paiement n'a lieu au dépôt. Le desk examine la récupérabilité sous un jour ouvré, puis envoie des conditions si le dossier peut avancer.",
+    "submittedTitle": "Demande déposée",
+    "submittedBody": "Le desk remboursement examinera ce dossier et vous contactera sous 24 à 48 heures. Un paiement immédiat, s'il y en a un, vient après souscription, pas maintenant.",
+    "submitAnother": "Déposer une autre demande",
+    "steps": "Étapes",
+    "step": "Étape {id}",
+    "step1Title": "Qui et quoi",
+    "step1Desc": "Acheteur ou vendeur, commande et montant.",
+    "step2Title": "Ce qui n'a pas fonctionné",
+    "step2Desc": "Résumé de l'incident et preuves.",
+    "role": "Je suis",
+    "roleBuyer": "Acheteur",
+    "roleSeller": "Vendeur",
+    "fullName": "Nom complet",
+    "namePlaceholder": "Jane Mensah",
+    "email": "E-mail",
+    "emailPlaceholder": "jane@example.com",
+    "phone": "Téléphone (facultatif)",
+    "counterparty": "Boutique, place de marché ou contrepartie",
+    "counterpartyPlaceholder": "Nom de boutique ou identifiant vendeur",
+    "orderRef": "N° de commande (facultatif)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Hash de paiement, facture ou identifiant de virement",
+    "paymentPlaceholder": "0x… ou numéro de facture",
+    "amount": "Montant réclamé",
+    "amountPlaceholder": "ex. 480",
+    "currency": "Actif",
+    "blockchain": "Chaîne (si payé en crypto)",
+    "selectBlockchain": "Sélectionner la chaîne",
+    "otherChain": "Autre",
+    "continue": "Continuer vers les détails de l'incident",
+    "summary": "Ce qui a manqué",
+    "summaryPlaceholder": "Ce qui a été acheté, suivi ou date de livraison, ce qui est arrivé (ou non), et toute réponse du transporteur ou du vendeur.",
+    "evidence": "Preuves jointes (facultatif)",
+    "evidenceHint": "Reçu, photos, conversation ou suivi. PDF, JPG, PNG ou WebP. 8 Mo max.",
+    "privacy": "Lenix Protocol utilise vos coordonnées pour répondre au sujet de ce dossier de remboursement. Consultez notre <link>politique de confidentialité</link>.",
+    "back": "Retour",
+    "submitting": "Envoi…",
+    "submit": "Envoyer la demande de remboursement",
+    "points": {
+      "confidential": {
+        "title": "Confidentiel",
+        "desc": "Dépôt chiffré et accès restreint au dossier."
+      },
+      "review": {
+        "title": "Revue sous 24h",
+        "desc": "Évaluation initiale sous un jour ouvré."
+      },
+      "fee": {
+        "title": "Honoraires sur récupération",
+        "desc": "Vous payez une part de ce qui revient, pas de ce que vous avez réclamé."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Complétez les champs obligatoires avant de continuer.",
+      "email": "Saisissez une adresse e-mail valide.",
+      "required": "Remplissez tous les champs obligatoires.",
+      "failed": "Échec de l'envoi de la demande de remboursement",
+      "success": "Demande de remboursement envoyée. L'équipe vous contactera."
+    }
+  }
+}

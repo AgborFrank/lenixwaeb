@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "Hoàn tiền mua hàng | Lenix Protocol",
+    "description": "Mở hồ sơ hoàn tiền cho đơn hàng bị mất, hỏng, trễ hoặc không đúng mô tả. Chúng tôi xem dấu vết trước. Bạn trả một phần trên số tiền thực sự thu hồi, không phải số bạn yêu cầu.",
+    "keywords": "hoàn tiền mua hàng, khiếu nại kiện hàng mất, hàng hỏng, giao trễ, hoàn tiền người mua, hoàn tiền người bán, Lenix Protocol"
+  },
+  "Hero": {
+    "eyebrow": "Hoàn tiền mua hàng",
+    "title": "Thu hồi giá trị từ đơn hàng mất, hỏng hoặc thất bại",
+    "description": "Gửi đơn hàng, chứng từ thanh toán và điều gì đã sai. Chúng tôi kiểm tra liệu khiếu nại với hãng vận chuyển, sàn hay đối tác có thể thu hồi được không. Thanh toán tức thì, nếu có, chỉ sau thẩm định. Hoàn tiền không được bảo đảm.",
+    "submit": "Mở hồ sơ hoàn tiền",
+    "process": "Hồ sơ chạy như thế nào",
+    "imageAlt": "Điều tra viên đang xem hồ sơ tranh chấp mua hàng"
+  },
+  "System": {
+    "eyebrow": "Bàn làm việc",
+    "title": "Một hồ sơ cho số tiền hãng vận chuyển hoặc đối tác còn nợ",
+    "description": "Một số nền tảng hoàn tiền kết nối tài khoản hãng vận chuyển của người bán và theo dõi mọi nhãn. Lenix không. Bạn mở hồ sơ. Chúng tôi xem, dựng gói chứng từ và theo đến khi thanh toán hoặc đóng bằng văn bản.",
+    "items": {
+      "review": {
+        "title": "Xem trước khi nộp",
+        "description": "Dấu vết thanh toán, mã vận đơn, ảnh, và cửa sổ khiếu nại mà hãng hoặc sàn thực sự công bố. Nếu cửa sổ đã đóng, chúng tôi nói thẳng."
+      },
+      "file": {
+        "title": "Chuẩn bị rồi mới gửi",
+        "description": "Bàn soạn khiếu nại từ chứng từ của bạn. Không gì gửi tới hãng, sàn hay đối tác cho đến khi bạn chấp nhận điều khoản."
+      },
+      "track": {
+        "title": "Hồ sơ vụ việc, không phải theo dõi trực tiếp",
+        "description": "Trạng thái, chứng từ và số tiền về nằm trên hồ sơ. Bạn nhận cập nhật bằng văn bản. Chúng tôi không kéo mọi kiện hàng từ tài khoản hãng của bạn."
+      },
+      "fee": {
+        "title": "Phí trên giá trị thu hồi",
+        "description": "Phí thu hồi là một phần tiền thực sự quay lại. Mở hồ sơ miễn phí. Nếu không có gì quay lại, bạn không trả phí đó."
+      }
+    }
+  },
+  "Split": {
+    "eyebrow": "Người bán và vận hành",
+    "title": "Kiện hàng tắc thường bị xóa sổ",
+    "description": "Khi mã vận đơn dừng và không ai có thời gian ngồi cổng hãng, tổn thất nằm trên sổ. Nếu cửa sổ khiếu nại còn mở, đó là hồ sơ thu hồi: vận đơn, giá khai, ảnh, và dịch vụ bạn đã trả.",
+    "points": {
+      "lost": "Mất, không quét, hoặc trả về người gửi, khi hợp đồng vẫn còn bảo hiểm hàng hoặc cước.",
+      "damaged": "Hỏng khi đến, có ảnh và ngày còn trong hạn của hãng.",
+      "late": "Trễ so với bảo đảm giao hàng đã trả, khi biểu phí thực sự bồi thường.",
+      "manual": "Người mua báo đơn thiếu. Bạn thêm tay. Chúng tôi không cần API hãng để bắt đầu."
+    },
+    "cta": "Mở hồ sơ người bán",
+    "imageAlt": "Hồ sơ vận đơn dùng làm chứng từ khiếu nại"
+  },
+  "Cases": {
+    "eyebrow": "Nộp gì",
+    "title": "Những thiếu sót chúng tôi nhận",
+    "description": "Người mua và người bán dùng cùng một form. Bàn chuyển khiếu nại tới bên còn nợ giá trị.",
+    "items": {
+      "lost": {
+        "title": "Mất trên đường",
+        "description": "Không có quét giao, kẹt kho, hoặc đánh dấu đã giao khi người mua chưa nhận. Vận đơn và chứng từ thanh toán vào hồ sơ trước."
+      },
+      "damaged": {
+        "title": "Hỏng khi đến",
+        "description": "Thùng tới, hàng không sống sót. Ảnh, đóng gói và giá trị đơn quan trọng hơn một khiếu nại dài."
+      },
+      "delayed": {
+        "title": "Trễ so với bảo đảm",
+        "description": "Bạn trả dịch vụ có thời hạn. Kiện hàng trượt. Bồi thường phụ thuộc cửa sổ hãng công bố, không phụ thuộc người mua giận đến đâu."
+      },
+      "short": {
+        "title": "Không đúng với đã trả",
+        "description": "Sai size, thùng rỗng, chưa bao giờ gửi. Đây là khiếu nại đối tác, không phải ví bị đánh cắp. Chứng từ thanh toán vẫn phải khớp đơn."
+      }
+    }
+  },
+  "Process": {
+    "eyebrow": "Phương pháp",
+    "title": "Hồ sơ hoàn tiền chạy như thế nào",
+    "description": "Cùng quy trình thu hồi bốn giai đoạn dùng cho tài sản mất, áp cho đơn hàng thất bại hoặc kiện hàng hãng còn nợ.",
+    "phase": "Giai đoạn {number}",
+    "steps": {
+      "assessment": {
+        "title": "Đánh giá ban đầu",
+        "description": "Chúng tôi kiểm tra dấu vết thanh toán, vận đơn, đối tác, và cửa sổ khiếu nại còn mở hay không. Ở đây không chuyển tiền.",
+        "tag1": "Xem dấu vết",
+        "tag2": "Cửa sổ khiếu nại"
+      },
+      "strategy": {
+        "title": "Chiến lược hoàn tiền",
+        "description": "Điều khoản viết: tức thì hoặc sau hoàn hàng, ai chịu phần hụt nếu hàng không về, và phí trên giá trị thu hồi.",
+        "tag1": "Gói chứng từ",
+        "tag2": "Điều khoản phí"
+      },
+      "coordination": {
+        "title": "Phối hợp chủ động",
+        "description": "Nếu thanh toán tức thì được duyệt, người mua được trả trước. Hàng vẫn còn bảy ngày để gửi. Chúng tôi theo khiếu nại hãng hoặc sàn song song.",
+        "tag1": "Tức thì hoặc chờ",
+        "tag2": "Cửa hoàn hàng"
+      },
+      "return": {
+        "title": "Chi trả đã xác minh",
+        "description": "Tiền về ví đã xác minh, hoặc hồ sơ đóng với lý do viết. Chúng tôi không đảo giao dịch thẻ gốc.",
+        "tag1": "Chi trả đã xác minh",
+        "tag2": "Đóng hồ sơ"
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "Giới hạn",
+    "title": "Bàn này làm gì, và không làm gì",
+    "description": "Trang khiếu nại đầy đủ nói cả hai. Nếu hồ sơ của bạn nằm phía sai, chúng tôi chỉ chỗ khác thay vì nhận file.",
+    "take": {
+      "title": "Chúng tôi nhận",
+      "items": {
+        "a": "Đơn mất, hỏng, trễ hoặc sai mô tả, có dấu vết thanh toán.",
+        "b": "Khiếu nại người bán với hãng hoặc sàn khi cửa sổ công bố còn mở.",
+        "c": "Hồ sơ người mua khi bên kia ngừng trả lời sau khi hàng thiếu."
+      }
+    },
+    "skip": {
+      "title": "Chúng tôi không",
+      "items": {
+        "a": "Kết nối tài khoản hãng và quét mọi nhãn. Bạn mở hồ sơ.",
+        "b": "Nộp chargeback Visa hoặc Mastercard. Chúng tôi không phải merchant of record của giao dịch gốc.",
+        "c": "Xử lý ví bị đánh cắp hoặc rút sạch. Đó là dịch vụ thu hồi tài sản."
+      }
+    },
+    "recoveryLink": "Mở hồ sơ tài sản bị đánh cắp"
+  },
+  "Fees": {
+    "eyebrow": "Giá",
+    "title": "Bạn trả một phần trên số tiền quay lại",
+    "description": "Mở hồ sơ không tính phí thu hồi. Sau đánh giá chúng tôi gửi điều khoản. Phí là phần trăm giá trị thu hồi, không phải số bạn yêu cầu. Nếu hồ sơ không thu được gì, phí đó bằng không.",
+    "cta": "Mở hồ sơ hoàn tiền",
+    "points": {
+      "intake": "Không phí mở cho việc tạo file.",
+      "share": "Phí chỉ trên tiền thực sự thu hồi, không bao giờ trên khiếu nại bị từ chối.",
+      "terms": "Không nộp gì, và không chi trả, cho đến khi bạn chấp nhận điều khoản bằng văn bản."
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Trước khi gửi",
+    "subtitle": "Trả lời thẳng về giám sát, chi trả và phí.",
+    "discuss": "Nếu đây là vụ ví mất, hãy dùng dịch vụ thu hồi.",
+    "submit": "Mở hồ sơ hoàn tiền",
+    "recovery": "Bắt đầu hồ sơ thu hồi",
+    "items": {
+      "types": {
+        "question": "Tôi có thể nộp gì ở đây?",
+        "answer": "Đơn mất, hỏng, trễ, rỗng hoặc sai mô tả. Người mua và người bán dùng cùng form. Crypto bị đánh cắp là bàn khác."
+      },
+      "monitor": {
+        "question": "Các bạn có theo dõi mọi kiện hàng của tôi không?",
+        "answer": "Không. Một số nền tảng kết nối tài khoản hãng và gắn cờ mọi nhãn tắc. Lenix xem hồ sơ bạn gửi. Có mã vận đơn và chứng từ thanh toán là đủ để bắt đầu."
+      },
+      "instant": {
+        "question": "Tôi có nhận tiền lại trong vài giây không?",
+        "answer": "Không lúc gửi. Thanh toán tức thì là quyết định thẩm định sau khi chấm rủi ro không hoàn hàng. Nhiều hồ sơ chờ hoàn hàng hoặc hãng trả. Chúng tôi không giả vờ khác."
+      },
+      "fees": {
+        "question": "Các bạn tính phí thế nào?",
+        "answer": "Một phần giá trị thu hồi, thỏa thuận bằng văn bản trước khi nộp hoặc chi trả. Mở hồ sơ miễn phí. Nếu không thu được gì, bạn không trả phí thu hồi đó."
+      },
+      "chargebacks": {
+        "question": "Các bạn có đảo giao dịch thẻ của tôi không?",
+        "answer": "Không. Chúng tôi không đại diện chargeback với Visa hay Mastercard. Merchant of record gốc vẫn giữ chỗ. Bàn này thu hồi giá trị qua hãng, sàn hoặc đối tác, rồi trả ví đã xác minh nếu hồ sơ thông."
+      },
+      "timeline": {
+        "question": "Hồ sơ mất bao lâu?",
+        "answer": "Đánh giá trong một ngày làm việc. Khiếu nại hãng và sàn theo cửa sổ riêng, thường hai đến sáu tuần. Bạn nhận ước lượng bằng văn bản sau khi xem."
+      },
+      "evidence": {
+        "question": "Tôi nên đính kèm gì?",
+        "answer": "Hash thanh toán hoặc hóa đơn, vận đơn, ảnh hỏng nếu có, và chat với bên kia. PDF, JPG, PNG hoặc WebP, tối đa 8 MB. Hồ sơ có thể bắt đầu không cần file. Chứng từ yếu chỉ làm chậm khiếu nại."
+      },
+      "guarantee": {
+        "question": "Các bạn có bảo đảm hoàn tiền không?",
+        "answer": "Không. Cửa sổ khiếu nại đóng, thiếu chứng từ, và đối tác không trả đều thất bại. Chúng tôi đóng bằng văn bản thay vì để hồ sơ mở cho có."
+      }
+    }
+  },
+  "Account": {
+    "title": "Hoàn tiền mua hàng",
+    "subtitle": "Cho kiện hàng mất, hỏng, trễ hoặc không đúng với đã trả. Hồ sơ ví bị đánh cắp thuộc dịch vụ thu hồi.",
+    "stolenLink": "Crypto mất hoặc bị đánh cắp? Dùng dịch vụ thu hồi."
+  },
+  "Form": {
+    "eyebrow": "Tiếp nhận hồ sơ",
+    "title": "Gửi yêu cầu hoàn tiền",
+    "description": "Không chi trả lúc gửi. Bàn xem khả năng thu hồi trong một ngày làm việc, rồi gửi điều khoản nếu hồ sơ có thể tiếp tục.",
+    "submittedTitle": "Đã gửi yêu cầu",
+    "submittedBody": "Bàn hoàn tiền sẽ xem hồ sơ này và liên hệ bạn trong 24 đến 48 giờ. Thanh toán tức thì, nếu có, đến sau thẩm định, không phải bây giờ.",
+    "submitAnother": "Gửi yêu cầu khác",
+    "steps": "Các bước",
+    "step": "Bước {id}",
+    "step1Title": "Ai và cái gì",
+    "step1Desc": "Người mua hay người bán, đơn và số tiền.",
+    "step2Title": "Điều gì sai",
+    "step2Desc": "Tóm tắt sự việc và chứng từ.",
+    "role": "Tôi là",
+    "roleBuyer": "Người mua",
+    "roleSeller": "Người bán",
+    "fullName": "Họ tên",
+    "namePlaceholder": "Jane Mensah",
+    "email": "Email",
+    "emailPlaceholder": "jane@example.com",
+    "phone": "Điện thoại (không bắt buộc)",
+    "counterparty": "Cửa hàng, sàn hoặc đối tác",
+    "counterpartyPlaceholder": "Tên shop hoặc handle người bán",
+    "orderRef": "Mã đơn (không bắt buộc)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Hash thanh toán, hóa đơn hoặc mã chuyển",
+    "paymentPlaceholder": "0x… hoặc số hóa đơn",
+    "amount": "Số tiền yêu cầu",
+    "amountPlaceholder": "vd. 480",
+    "currency": "Tài sản",
+    "blockchain": "Chain (nếu trả bằng crypto)",
+    "selectBlockchain": "Chọn chain",
+    "otherChain": "Khác",
+    "continue": "Tiếp tục chi tiết sự việc",
+    "summary": "Điều gì thiếu",
+    "summaryPlaceholder": "Mua gì, vận đơn hoặc ngày giao, cái gì tới (hoặc không), và phản hồi nào từ hãng hoặc người bán.",
+    "evidence": "Chứng từ hỗ trợ (không bắt buộc)",
+    "evidenceHint": "Biên lai, ảnh, chat hoặc vận đơn. PDF, JPG, PNG hoặc WebP. Tối đa 8 MB.",
+    "privacy": "Lenix Protocol dùng thông tin liên hệ của bạn để trả lời về hồ sơ hoàn tiền này. Xem <link>Chính sách quyền riêng tư</link> của chúng tôi.",
+    "back": "Quay lại",
+    "submitting": "Đang gửi…",
+    "submit": "Gửi yêu cầu hoàn tiền",
+    "points": {
+      "confidential": {
+        "title": "Bảo mật",
+        "desc": "Tiếp nhận mã hóa và truy cập hồ sơ hạn chế."
+      },
+      "review": {
+        "title": "Xem trong 24h",
+        "desc": "Đánh giá ban đầu trong một ngày làm việc."
+      },
+      "fee": {
+        "title": "Phí khi thu hồi",
+        "desc": "Bạn trả một phần trên số tiền quay lại, không phải số bạn yêu cầu."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Điền các trường bắt buộc trước khi tiếp tục.",
+      "email": "Nhập địa chỉ email hợp lệ.",
+      "required": "Điền tất cả trường bắt buộc.",
+      "failed": "Gửi yêu cầu hoàn tiền thất bại",
+      "success": "Đã gửi yêu cầu hoàn tiền. Đội ngũ sẽ liên hệ bạn."
+    }
+  }
+}

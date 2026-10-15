@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "Satın alma iadeleri | Lenix Protocol",
+    "description": "Kayıp, hasarlı, gecikmiş veya tanıma uymayan bir satın alma için iade dosyası açın. Önce izi inceleriz. Talep ettiğiniz tutarın değil, gerçekten geri gelen tutarın payını ödersiniz.",
+    "keywords": "satın alma iadesi, kayıp kargo talebi, hasarlı gönderi, gecikmiş teslimat, alıcı iadesi, satıcı iadesi, Lenix Protocol"
+  },
+  "Hero": {
+    "eyebrow": "Satın alma iadeleri",
+    "title": "Kayıp, hasarlı ve başarısız alışverişlerden değer kurtarın",
+    "description": "Siparişi, ödeme kanıtını ve neyin ters gittiğini gönderin. Taşıyıcı, pazaryeri veya karşı tarafa karşı bir talebin kurtarılabilir olup olmadığını kontrol ederiz. Anlık ödeme varsa, underwriting sonrasındadır. İade garanti edilmez.",
+    "submit": "İade dosyası aç",
+    "process": "Dosya nasıl ilerler",
+    "imageAlt": "Satın alma uyuşmazlığı dosyasını inceleyen araştırmacı"
+  },
+  "System": {
+    "eyebrow": "Masa",
+    "title": "Taşıyıcı veya karşı tarafın hâlâ borçlu olduğu şey için tek dosya",
+    "description": "Bazı iade platformları bir satıcının taşıyıcı hesabına bağlanır ve her etiketi izler. Lenix yapmaz. Siz bir dosya açarsınız. İnceleriz, paketi hazırlarız ve sonuçlanana veya yazılı kapatana kadar takip ederiz.",
+    "items": {
+      "review": {
+        "title": "Kimse göndermeden önce inceleme",
+        "description": "Ödeme izi, takip, fotoğraflar ve taşıyıcı veya pazaryerinin gerçekten yayımladığı talep penceresi. Pencere kapalıysa bunu söyleriz."
+      },
+      "file": {
+        "title": "Hazırla, sonra gönder",
+        "description": "Masa talebi kanıtlarınızdan taslaklar. Koşulları kabul edene kadar taşıyıcı, pazaryeri veya karşı tarafa hiçbir şey gitmez."
+      },
+      "track": {
+        "title": "Dosya, canlı takip değil",
+        "description": "Durum, kanıt ve geri gelen tutar dosyada durur. Yazılı güncelleme alırsınız. Taşıyıcı girişinizden her gönderiyi çekmeyiz."
+      },
+      "fee": {
+        "title": "Kurtarılan değer üzerinden ücret",
+        "description": "Kurtarma ücreti gerçekten geri gelen paranın payıdır. Açılış ücretsizdir. Hiçbir şey dönmezse bu ücreti ödemezsiniz."
+      }
+    }
+  },
+  "Split": {
+    "eyebrow": "Satıcılar ve operasyon",
+    "title": "Genelde zarar yazılan takılı kargolar",
+    "description": "Takip durduğunda ve kimsenin taşıyıcı portalında oturacak zamanı olmadığında zarar kayıtlarda kalır. Talep penceresi hâlâ açıksa bu bir kurtarma dosyasıdır: takip, beyan edilen değer, fotoğraflar ve ödediğiniz hizmet.",
+    "points": {
+      "lost": "Kayıp, tarama yok veya gönderene iade, sözleşme hâlâ malı veya postayı kapsıyorsa.",
+      "damaged": "Varışta hasarlı, fotoğraflar ve taşıyıcının süresine hâlâ uyan bir tarih ile.",
+      "late": "Ödenmiş teslimat güvencesine karşı geç, tarife gerçekten tazminat ödüyorsa.",
+      "manual": "Bir alıcı eksik sipariş bildirir. Elle eklersiniz. Başlamak için taşıyıcı API'si gerekmez."
+    },
+    "cta": "Satıcı dosyası aç",
+    "imageAlt": "Talep kanıtı olarak kullanılan kargo takip kayıtları"
+  },
+  "Cases": {
+    "eyebrow": "Ne dosyalanır",
+    "title": "Aldığımız eksikler",
+    "description": "Alıcı ve satıcı aynı formu açar. Masa talebi hâlâ değeri borçlu olan tarafa yönlendirir.",
+    "items": {
+      "lost": {
+        "title": "Transitte kayıp",
+        "description": "Teslim tarama yok, depoda takılı veya alıcı almamışken teslim edildi işaretli. Takip ve ödeme kanıtı dosyaya önce girer."
+      },
+      "damaged": {
+        "title": "Varışta hasarlı",
+        "description": "Kutu geldi, mal dayanmadı. Fotoğraflar, paketleme ve sipariş değeri uzun bir şikayetten daha önemlidir."
+      },
+      "delayed": {
+        "title": "Güvenceye karşı geç",
+        "description": "Süreli bir hizmet ödediniz. Kargo kaçırdı. Tazminat taşıyıcının yayımladığı pencereye bağlıdır, alıcının ne kadar kızgın olduğuna değil."
+      },
+      "short": {
+        "title": "Ödenen gibi değil",
+        "description": "Yanlış beden, boş kutu, hiç gönderilmemiş. Bu bir karşı taraf talebidir, çalınmış cüzdan dosyası değil. Ödeme kanıtı yine de siparişle eşleşmelidir."
+      }
+    }
+  },
+  "Process": {
+    "eyebrow": "Yöntem",
+    "title": "Bir iade dosyası nasıl ilerler",
+    "description": "Kayıp varlık dosyalarında kullandığımız aynı dört fazlı kurtarma süreci, kaçırılmış bir satın almaya veya taşıyıcının hâlâ borçlu olduğu bir kargoya uygulanır.",
+    "phase": "Faz {number}",
+    "steps": {
+      "assessment": {
+        "title": "İlk değerlendirme",
+        "description": "Ödeme izini, takibi, karşı tarafı ve talep penceresinin hâlâ açık olup olmadığını kontrol ederiz. Burada para hareket etmez.",
+        "tag1": "İz incelemesi",
+        "tag2": "Talep penceresi"
+      },
+      "strategy": {
+        "title": "İade stratejisi",
+        "description": "Yazılı koşullar: anlık veya iade sonrası, ürün hiç dönmezse açığı kimin taşıyacağı ve kurtarılan değer üzerinden ücret.",
+        "tag1": "Kanıt paketi",
+        "tag2": "Ücret koşulları"
+      },
+      "coordination": {
+        "title": "Aktif koordinasyon",
+        "description": "Anlık onaylanırsa alıcı önce ödenir. Ürünün gönderilmesi için hâlâ yedi gün vardır. Taşıyıcı veya pazaryeri talebini paralel takip ederiz.",
+        "tag1": "Anlık veya bekle",
+        "tag2": "İade penceresi"
+      },
+      "return": {
+        "title": "Doğrulanmış ödeme",
+        "description": "Fonlar doğrulanmış bir cüzdana gider veya dosya yazılı gerekçeyle kapanır. Orijinal kart satışını geri almayız.",
+        "tag1": "Doğrulanmış ödeme",
+        "tag2": "Dosya kapanışı"
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "Sınırlar",
+    "title": "Bu masa ne yapar, ne yapmaz",
+    "description": "Eksiksiz bir talepler sayfası ikisini de söyler. Dosyanız yanlış taraftaysa dosyayı almak yerine sizi başka yere yönlendiririz.",
+    "take": {
+      "title": "Alırız",
+      "items": {
+        "a": "Ödeme izi olan kayıp, hasarlı, gecikmiş veya tanıma uymayan alışverişler.",
+        "b": "Yayımlanmış pencere hâlâ açıkken satıcının taşıyıcı veya pazaryerine talepleri.",
+        "c": "Mal eksik kaldıktan sonra diğer tarafın yanıt vermeyi kestiği alıcı dosyaları."
+      }
+    },
+    "skip": {
+      "title": "Yapmayız",
+      "items": {
+        "a": "Taşıyıcı hesabınıza bağlanıp her etiketi taramak. Dosyayı siz açarsınız.",
+        "b": "Visa veya Mastercard chargeback dosyalamak. Orijinal satışın merchant of record'u biz değiliz.",
+        "c": "Çalınmış veya boşaltılmış cüzdanları ele almak. Bu varlık kurtarma hizmetidir."
+      }
+    },
+    "recoveryLink": "Çalınmış varlık dosyası aç"
+  },
+  "Fees": {
+    "eyebrow": "Fiyatlandırma",
+    "title": "Geri gelen tutarın payını ödersiniz",
+    "description": "Açılış bir kurtarma ücreti fatura etmez. Değerlendirmeden sonra koşulları göndeririz. Ücret, talep ettiğiniz tutarın değil kurtarılan değerin yüzdesidir. Dosya hiçbir şey kurtarmazsa bu ücret sıfırdır.",
+    "cta": "İade dosyası aç",
+    "points": {
+      "intake": "Dosya açmak için kurulum ücreti yok.",
+      "share": "Ücret yalnızca kurtarılan fonlarda, asla reddedilen bir talepte değil.",
+      "terms": "Koşulları yazılı kabul edene kadar hiçbir şey dosyalanmaz ve ödeme gönderilmez."
+    }
+  },
+  "Faq": {
+    "eyebrow": "SSS",
+    "title": "Göndermeden önce",
+    "subtitle": "İzleme, ödemeler ve ücretler hakkında doğrudan yanıtlar.",
+    "discuss": "Bu kayıp cüzdan dosyasıysa bunun yerine kurtarma hizmetlerini kullanın.",
+    "submit": "İade dosyası aç",
+    "recovery": "Kurtarma dosyası başlat",
+    "items": {
+      "types": {
+        "question": "Burada ne dosyalayabilirim?",
+        "answer": "Kayıp, hasarlı, gecikmiş, boş veya tanıma uymayan alışverişler. Alıcı ve satıcı aynı formu kullanır. Çalınmış kripto başka masadır."
+      },
+      "monitor": {
+        "question": "Tüm gönderilerimi izliyor musunuz?",
+        "answer": "Hayır. Bazı platformlar taşıyıcı hesaplarına bağlanır ve her takılı etiketi işaretler. Lenix sizin gönderdiğiniz dosyaları inceler. Bir takip numarası ve ödeme kanıtı başlamak için yeterlidir."
+      },
+      "instant": {
+        "question": "Paramı saniyeler içinde geri alır mıyım?",
+        "answer": "Gönderimde değil. Anlık ödeme, iade etmeme riskini puanladıktan sonra bir underwriting kararıdır. Birçok dosya iadeyi veya taşıyıcının ödemesini bekler. Aksini iddia etmeyiz."
+      },
+      "fees": {
+        "question": "Ne ücret alıyorsunuz?",
+        "answer": "Kurtarılan değerin payı, dosyalamadan veya ödemeden önce yazılı anlaşılır. Açılış ücretsizdir. Hiçbir şey kurtarılmazsa bu kurtarma ücretini ödemezsiniz."
+      },
+      "chargebacks": {
+        "question": "Kart ödememi geri alır mısınız?",
+        "answer": "Hayır. Visa veya Mastercard'a chargeback temsil etmeyiz. Orijinal merchant of record yerinde kalır. Bu masa değeri taşıyıcı, pazaryeri veya karşı taraf üzerinden kurtarır, dosya geçerse doğrulanmış bir cüzdana öder."
+      },
+      "timeline": {
+        "question": "Bir dosya ne kadar sürer?",
+        "answer": "Değerlendirme bir iş günü içindedir. Taşıyıcı ve pazaryeri talepleri sonra kendi pencerelerini izler, çoğu zaman iki ila altı hafta. İncelemeden sonra yazılı bir tahmin alırsınız."
+      },
+      "evidence": {
+        "question": "Ne eklemeliyim?",
+        "answer": "Ödeme hash'i veya fatura, takip, varsa hasar fotoğrafları ve diğer tarafla sohbet. PDF, JPG, PNG veya WebP, en fazla 8 MB. Dosya dosyasız başlayabilir. Zayıf kanıt yalnızca talebi yavaşlatır."
+      },
+      "guarantee": {
+        "question": "İadeyi garanti ediyor musunuz?",
+        "answer": "Hayır. Kapalı talep pencereleri, eksik kanıt ve ödemeyen karşı taraflar başarısız olur. Gösteriş için açık tutmak yerine bunları yazılı kapatırız."
+      }
+    }
+  },
+  "Account": {
+    "title": "Satın alma iadeleri",
+    "subtitle": "Kayıp, hasarlı, geç veya ödenen gibi olmayan kargolar için. Çalınmış cüzdan dosyaları kurtarma hizmetlerine gider.",
+    "stolenLink": "Kayıp veya çalınmış kripto? Kurtarma hizmetlerini kullanın."
+  },
+  "Form": {
+    "eyebrow": "Dosya alımı",
+    "title": "İade talebi gönder",
+    "description": "Gönderimde ödeme olmaz. Masa bir iş günü içinde kurtarılabilirliği inceler, dosya ilerleyebilirse koşulları gönderir.",
+    "submittedTitle": "Talep gönderildi",
+    "submittedBody": "İade masası bu dosyayı inceleyecek ve 24 ila 48 saat içinde sizinle iletişime geçecek. Anlık ödeme varsa underwriting sonrasındadır, şimdi değil.",
+    "submitAnother": "Başka bir talep gönder",
+    "steps": "Adımlar",
+    "step": "Adım {id}",
+    "step1Title": "Kim ve ne",
+    "step1Desc": "Alıcı veya satıcı, sipariş ve tutar.",
+    "step2Title": "Ne ters gitti",
+    "step2Desc": "Olay özeti ve kanıt.",
+    "role": "Ben",
+    "roleBuyer": "Alıcıyım",
+    "roleSeller": "Satıcıyım",
+    "fullName": "Ad soyad",
+    "namePlaceholder": "Jane Mensah",
+    "email": "E-posta",
+    "emailPlaceholder": "jane@example.com",
+    "phone": "Telefon (isteğe bağlı)",
+    "counterparty": "Mağaza, pazaryeri veya karşı taraf",
+    "counterpartyPlaceholder": "Mağaza adı veya satıcı kullanıcı adı",
+    "orderRef": "Sipariş kimliği (isteğe bağlı)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Ödeme hash'i, fatura veya transfer kimliği",
+    "paymentPlaceholder": "0x… veya fatura numarası",
+    "amount": "Talep edilen tutar",
+    "amountPlaceholder": "ör. 480",
+    "currency": "Varlık",
+    "blockchain": "Zincir (kripto ile ödendiyse)",
+    "selectBlockchain": "Zincir seç",
+    "otherChain": "Diğer",
+    "continue": "Olay ayrıntılarına devam et",
+    "summary": "Ne eksik kaldı",
+    "summaryPlaceholder": "Ne alındı, takip veya teslim tarihi, ne geldi (veya gelmedi) ve taşıyıcı veya satıcıdan yanıt.",
+    "evidence": "Destekleyici kanıt (isteğe bağlı)",
+    "evidenceHint": "Makbuz, fotoğraf, sohbet veya takip. PDF, JPG, PNG veya WebP. En fazla 8 MB.",
+    "privacy": "Lenix Protocol bu iade dosyası hakkında yanıt vermek için iletişim bilgilerinizi kullanır. <link>Gizlilik Politikası</link> sayfasına bakın.",
+    "back": "Geri",
+    "submitting": "Gönderiliyor…",
+    "submit": "İade talebini gönder",
+    "points": {
+      "confidential": {
+        "title": "Gizli",
+        "desc": "Şifreli alım ve kısıtlı dosya erişimi."
+      },
+      "review": {
+        "title": "24s inceleme",
+        "desc": "Bir iş günü içinde ilk değerlendirme."
+      },
+      "fee": {
+        "title": "Kurtarmada ücret",
+        "desc": "Talep ettiğiniz tutarın değil, geri gelen tutarın payını ödersiniz."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Devam etmeden önce zorunlu alanları doldurun.",
+      "email": "Geçerli bir e-posta adresi girin.",
+      "required": "Tüm zorunlu alanları doldurun.",
+      "failed": "İade talebi gönderilemedi",
+      "success": "İade talebi gönderildi. Ekip sizinle iletişime geçecek."
+    }
+  }
+}

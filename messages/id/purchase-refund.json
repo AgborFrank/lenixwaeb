@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "Refund pembelian | Lenix Protocol",
+    "description": "Buka berkas refund untuk pembelian yang hilang, rusak, terlambat, atau tidak sesuai deskripsi. Kami meninjau jejak dulu. Anda membayar bagian dari yang benar-benar dipulihkan, bukan dari yang Anda klaim.",
+    "keywords": "refund pembelian, klaim paket hilang, kiriman rusak, pengiriman terlambat, refund pembeli, refund penjual, Lenix Protocol"
+  },
+  "Hero": {
+    "eyebrow": "Refund pembelian",
+    "title": "Pulihkan nilai dari pembelian yang hilang, rusak, dan gagal",
+    "description": "Kirim pesanan, bukti pembayaran, dan apa yang salah. Kami memeriksa apakah klaim terhadap kurir, marketplace, atau pihak lawan masih bisa dipulihkan. Pembayaran instan, jika ada, datang setelah underwriting. Refund tidak dijamin.",
+    "submit": "Buka berkas refund",
+    "process": "Bagaimana berkas berjalan",
+    "imageAlt": "Penyidik meninjau berkas sengketa pembelian"
+  },
+  "System": {
+    "eyebrow": "Meja kerja",
+    "title": "Satu berkas untuk yang masih terutang kurir atau pihak lawan",
+    "description": "Beberapa platform refund terhubung ke akun kurir pedagang dan memantau setiap label. Lenix tidak. Anda membuka berkas. Kami meninjau, menyusun paket, dan menindaklanjuti sampai selesai atau kami menutupnya secara tertulis.",
+    "items": {
+      "review": {
+        "title": "Tinjau sebelum siapa pun mengajukan",
+        "description": "Jejak pembayaran, pelacakan, foto, dan jendela klaim yang benar-benar diterbitkan kurir atau marketplace. Jika jendela sudah tertutup, kami mengatakannya."
+      },
+      "file": {
+        "title": "Siapkan, lalu kirim",
+        "description": "Meja menyusun klaim dari bukti Anda. Tidak ada yang dikirim ke kurir, marketplace, atau pihak lawan sampai Anda menerima syarat."
+      },
+      "track": {
+        "title": "Berkas kasus, bukan pelacak langsung",
+        "description": "Status, bukti, dan apa yang kembali ada di berkas. Anda mendapat pembaruan tertulis. Kami tidak menarik setiap kiriman dari login kurir Anda."
+      },
+      "fee": {
+        "title": "Biaya atas nilai yang dipulihkan",
+        "description": "Biaya pemulihan adalah bagian dari uang yang benar-benar kembali. Intake gratis. Jika tidak ada yang kembali, Anda tidak membayar biaya itu."
+      }
+    }
+  },
+  "Split": {
+    "eyebrow": "Penjual dan operasi",
+    "title": "Paket macet yang biasanya dihapusbukukan",
+    "description": "Ketika pelacakan berhenti dan tidak ada waktu duduk di portal kurir, kerugian tetap di buku. Jika jendela klaim masih terbuka, itu berkas pemulihan: pelacakan, nilai deklarasi, foto, dan layanan yang Anda bayar.",
+    "points": {
+      "lost": "Hilang, tanpa pindai, atau kembali ke pengirim, jika kontrak masih menanggung barang atau ongkos kirim.",
+      "damaged": "Rusak saat tiba, dengan foto dan tanggal yang masih masuk tenggat kurir.",
+      "late": "Terlambat terhadap jaminan pengiriman yang dibayar, jika tarif benar-benar membayar kompensasi.",
+      "manual": "Pembeli melaporkan pesanan hilang. Anda menambahkannya secara manual. Kami tidak butuh API kurir untuk mulai."
+    },
+    "cta": "Buka berkas penjual",
+    "imageAlt": "Catatan pelacakan paket yang dipakai sebagai bukti klaim"
+  },
+  "Cases": {
+    "eyebrow": "Apa yang diajukan",
+    "title": "Kekurangan yang kami terima",
+    "description": "Pembeli dan penjual membuka intake yang sama. Meja mengarahkan klaim ke pihak yang masih berutang nilai.",
+    "items": {
+      "lost": {
+        "title": "Hilang dalam transit",
+        "description": "Tidak ada pindai pengiriman, tertahan di depo, atau ditandai terkirim ketika pembeli tidak menerimanya. Pelacakan dan bukti pembayaran masuk berkas lebih dulu."
+      },
+      "damaged": {
+        "title": "Rusak saat tiba",
+        "description": "Kotak datang, barang tidak selamat. Foto, kemasan, dan nilai pesanan lebih penting daripada keluhan panjang."
+      },
+      "delayed": {
+        "title": "Terlambat terhadap jaminan",
+        "description": "Anda membayar layanan berjangka. Paket terlewat. Kompensasi mengikuti jendela yang diterbitkan kurir, bukan seberapa marah pembeli."
+      },
+      "short": {
+        "title": "Tidak sesuai yang dibayar",
+        "description": "Ukuran salah, kotak kosong, tidak pernah dikirim. Ini klaim pihak lawan, bukan berkas dompet dicuri. Bukti pembayaran tetap harus cocok dengan pesanan."
+      }
+    }
+  },
+  "Process": {
+    "eyebrow": "Metode",
+    "title": "Bagaimana berkas refund berjalan",
+    "description": "Proses pemulihan empat tahap yang sama yang kami pakai untuk aset hilang, diterapkan pada pembelian gagal atau paket yang masih terutang kurir.",
+    "phase": "Tahap {number}",
+    "steps": {
+      "assessment": {
+        "title": "Penilaian awal",
+        "description": "Kami memeriksa jejak pembayaran, pelacakan, pihak lawan, dan apakah jendela klaim masih terbuka. Tidak ada uang yang bergerak di sini.",
+        "tag1": "Tinjau jejak",
+        "tag2": "Jendela klaim"
+      },
+      "strategy": {
+        "title": "Strategi refund",
+        "description": "Syarat tertulis: instan atau setelah pengembalian, siapa menanggung selisih jika barang tidak kembali, dan biaya atas nilai yang dipulihkan.",
+        "tag1": "Paket bukti",
+        "tag2": "Syarat biaya"
+      },
+      "coordination": {
+        "title": "Koordinasi aktif",
+        "description": "Jika instan disetujui, pembeli dibayar dulu. Barang masih punya tujuh hari untuk dikirim. Kami menindaklanjuti klaim kurir atau marketplace secara paralel.",
+        "tag1": "Instan atau tunggu",
+        "tag2": "Jendela pengembalian"
+      },
+      "return": {
+        "title": "Pembayaran terverifikasi",
+        "description": "Dana masuk ke dompet terverifikasi, atau berkas ditutup dengan alasan tertulis. Kami tidak membalik penjualan kartu asli.",
+        "tag1": "Pembayaran terverifikasi",
+        "tag2": "Penutupan berkas"
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "Batas",
+    "title": "Apa yang meja ini lakukan, dan apa yang tidak",
+    "description": "Halaman klaim yang lengkap mengatakan keduanya. Jika berkas Anda di sisi yang salah, kami mengarahkan Anda ke tempat lain, bukan mengambil file.",
+    "take": {
+      "title": "Kami menerima",
+      "items": {
+        "a": "Pembelian hilang, rusak, terlambat, atau tidak sesuai deskripsi, dengan jejak pembayaran.",
+        "b": "Klaim penjual terhadap kurir atau marketplace selagi jendela terbit masih terbuka.",
+        "c": "Berkas pembeli di mana pihak lain berhenti menjawab setelah barang kurang."
+      }
+    },
+    "skip": {
+      "title": "Kami tidak",
+      "items": {
+        "a": "Menghubungkan akun kurir Anda dan memindai setiap label. Anda yang membuka berkas.",
+        "b": "Mengajukan chargeback Visa atau Mastercard. Kami bukan merchant of record penjualan asli.",
+        "c": "Menangani dompet yang dicuri atau dikuras. Itu layanan pemulihan aset."
+      }
+    },
+    "recoveryLink": "Buka berkas aset dicuri"
+  },
+  "Fees": {
+    "eyebrow": "Harga",
+    "title": "Anda membayar bagian dari yang kembali",
+    "description": "Intake tidak menagih biaya pemulihan. Setelah penilaian kami mengirim syarat. Biaya adalah persentase dari nilai yang dipulihkan, bukan dari yang Anda klaim. Jika berkas tidak memulihkan apa pun, biaya itu nol.",
+    "cta": "Buka berkas refund",
+    "points": {
+      "intake": "Tidak ada biaya setup untuk membuka file.",
+      "share": "Biaya hanya pada dana yang dipulihkan, tidak pernah pada klaim yang ditolak.",
+      "terms": "Tidak ada yang diajukan, dan tidak ada pembayaran dikirim, sampai Anda menerima syarat secara tertulis."
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Sebelum mengirim",
+    "subtitle": "Jawaban langsung tentang pemantauan, pembayaran, dan biaya.",
+    "discuss": "Jika ini berkas dompet hilang, gunakan layanan pemulihan.",
+    "submit": "Buka berkas refund",
+    "recovery": "Mulai berkas pemulihan",
+    "items": {
+      "types": {
+        "question": "Apa yang bisa saya ajukan di sini?",
+        "answer": "Pembelian hilang, rusak, terlambat, kosong, atau tidak sesuai deskripsi. Pembeli dan penjual memakai form yang sama. Kripto yang dicuri adalah meja lain."
+      },
+      "monitor": {
+        "question": "Apakah Anda memantau setiap kiriman saya?",
+        "answer": "Tidak. Beberapa platform terhubung ke akun kurir dan menandai setiap label macet. Lenix meninjau berkas yang Anda kirim. Nomor pelacakan dan bukti pembayaran cukup untuk mulai."
+      },
+      "instant": {
+        "question": "Apakah saya mendapat uang kembali dalam hitungan detik?",
+        "answer": "Tidak saat kirim. Pembayaran instan adalah keputusan underwriting setelah kami menilai risiko barang tidak dikembalikan. Banyak berkas menunggu pengembalian atau pembayaran kurir. Kami tidak berpura-pura sebaliknya."
+      },
+      "fees": {
+        "question": "Apa yang Anda kenakan?",
+        "answer": "Bagian dari nilai yang dipulihkan, disepakati tertulis sebelum pengajuan atau pembayaran. Intake gratis. Jika tidak ada yang dipulihkan, Anda tidak membayar biaya pemulihan itu."
+      },
+      "chargebacks": {
+        "question": "Apakah Anda membalik pembayaran kartu saya?",
+        "answer": "Tidak. Kami tidak mewakili chargeback ke Visa atau Mastercard. Merchant of record asli tetap di tempatnya. Meja ini memulihkan nilai lewat kurir, marketplace, atau pihak lawan, lalu membayar ke dompet terverifikasi jika berkas lolos."
+      },
+      "timeline": {
+        "question": "Berapa lama sebuah berkas?",
+        "answer": "Penilaian jatuh tempo dalam satu hari kerja. Klaim kurir dan marketplace mengikuti jendela masing-masing, sering dua sampai enam minggu. Anda mendapat perkiraan tertulis setelah tinjauan."
+      },
+      "evidence": {
+        "question": "Apa yang harus saya lampirkan?",
+        "answer": "Hash pembayaran atau faktur, pelacakan, foto kerusakan jika ada, dan percakapan dengan pihak lain. PDF, JPG, PNG, atau WebP, maks 8 MB. Berkas bisa mulai tanpa file. Bukti lemah hanya memperlambat klaim."
+      },
+      "guarantee": {
+        "question": "Apakah Anda menjamin refund?",
+        "answer": "Tidak. Jendela klaim tertutup, bukti kurang, dan pihak lawan yang tidak membayar gagal. Kami menutupnya secara tertulis, bukan membiarkan file terbuka agar terlihat aktif."
+      }
+    }
+  },
+  "Account": {
+    "title": "Refund pembelian",
+    "subtitle": "Untuk paket yang hilang, rusak, terlambat, atau tidak sesuai yang dibayar. Berkas dompet dicuri masuk layanan pemulihan.",
+    "stolenLink": "Kripto hilang atau dicuri? Gunakan layanan pemulihan."
+  },
+  "Form": {
+    "eyebrow": "Penerimaan berkas",
+    "title": "Kirim permintaan refund",
+    "description": "Tidak ada pembayaran saat kirim. Meja meninjau kelayakan pemulihan dalam satu hari kerja, lalu mengirim syarat jika berkas bisa dilanjutkan.",
+    "submittedTitle": "Permintaan terkirim",
+    "submittedBody": "Meja refund akan meninjau berkas ini dan menghubungi Anda dalam 24 sampai 48 jam. Pembayaran instan, jika ada, datang setelah underwriting, bukan sekarang.",
+    "submitAnother": "Kirim permintaan lain",
+    "steps": "Langkah",
+    "step": "Langkah {id}",
+    "step1Title": "Siapa dan apa",
+    "step1Desc": "Pembeli atau penjual, pesanan, dan jumlah.",
+    "step2Title": "Apa yang salah",
+    "step2Desc": "Ringkasan kejadian dan bukti.",
+    "role": "Saya adalah",
+    "roleBuyer": "Pembeli",
+    "roleSeller": "Penjual",
+    "fullName": "Nama lengkap",
+    "namePlaceholder": "Jane Mensah",
+    "email": "Email",
+    "emailPlaceholder": "jane@example.com",
+    "phone": "Telepon (opsional)",
+    "counterparty": "Toko, marketplace, atau pihak lawan",
+    "counterpartyPlaceholder": "Nama toko atau handle penjual",
+    "orderRef": "ID pesanan (opsional)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Hash pembayaran, faktur, atau ID transfer",
+    "paymentPlaceholder": "0x… atau nomor faktur",
+    "amount": "Jumlah diklaim",
+    "amountPlaceholder": "mis. 480",
+    "currency": "Aset",
+    "blockchain": "Rantai (jika dibayar kripto)",
+    "selectBlockchain": "Pilih rantai",
+    "otherChain": "Lainnya",
+    "continue": "Lanjut ke rincian kejadian",
+    "summary": "Apa yang kurang",
+    "summaryPlaceholder": "Apa yang dibeli, pelacakan atau tanggal pengiriman, apa yang tiba (atau tidak), dan jawaban dari kurir atau penjual.",
+    "evidence": "Bukti pendukung (opsional)",
+    "evidenceHint": "Struk, foto, chat, atau pelacakan. PDF, JPG, PNG, atau WebP. Maks 8 MB.",
+    "privacy": "Lenix Protocol memakai detail kontak Anda untuk merespons berkas refund ini. Lihat <link>Kebijakan Privasi</link> kami.",
+    "back": "Kembali",
+    "submitting": "Mengirim…",
+    "submit": "Kirim permintaan refund",
+    "points": {
+      "confidential": {
+        "title": "Rahasia",
+        "desc": "Intake terenkripsi dan akses berkas terbatas."
+      },
+      "review": {
+        "title": "Tinjauan 24 jam",
+        "desc": "Penilaian awal dalam satu hari kerja."
+      },
+      "fee": {
+        "title": "Biaya saat pemulihan",
+        "desc": "Anda membayar bagian dari yang kembali, bukan dari yang Anda klaim."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Lengkapi kolom wajib sebelum lanjut.",
+      "email": "Masukkan alamat email yang valid.",
+      "required": "Isi semua kolom wajib.",
+      "failed": "Gagal mengirim permintaan refund",
+      "success": "Permintaan refund terkirim. Tim akan menghubungi Anda."
+    }
+  }
+}
