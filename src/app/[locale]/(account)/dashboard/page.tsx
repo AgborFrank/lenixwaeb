@@ -1,7 +1,8 @@
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "@/i18n/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
-import { ShieldCheck, LayoutDashboard } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 
 const TELEGRAM_URL = "https://t.me/Verified_protocol";
@@ -20,6 +21,7 @@ function formatDetailLabel(
 export default async function DashboardPage() {
   const supabase = await createClient();
   const t = await getTranslations("AccountDashboard");
+  const recoveryDesk = await getTranslations("AccountRecoveryServices.desk");
   const locale = await getLocale();
   const {
     data: { user },
@@ -39,8 +41,15 @@ export default async function DashboardPage() {
 
   const serviceType = onboarding.service_type as string;
   const isRecovery = serviceType === "recovery";
+  const isRefund = serviceType === "refund";
   const isBanking = serviceType === "banking";
-  const statusKey = isRecovery ? "recovery" : isBanking ? "banking" : "loan";
+  const statusKey = isRecovery
+    ? "recovery"
+    : isRefund
+      ? "refund"
+      : isBanking
+        ? "banking"
+        : "loan";
   const serviceTypeLabel = t.has(`service_types.${serviceType}`)
     ? t(`service_types.${serviceType}`)
     : serviceType;
@@ -128,6 +137,22 @@ export default async function DashboardPage() {
               </div>
             </div>
             
+            {isRefund && (
+              <Link
+                href="/refund-services/new"
+                className="mb-3 block w-full rounded-lg border border-white/15 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-white/10"
+              >
+                {t("support.refundDesk")}
+              </Link>
+            )}
+            {isRecovery && (
+              <Link
+                href="/recovery-services"
+                className="mb-3 block w-full rounded-lg border border-white/15 py-2 text-center text-sm font-medium text-white transition-colors hover:bg-white/10"
+              >
+                {recoveryDesk("title")}
+              </Link>
+            )}
             <a
               href={TELEGRAM_URL}
               target="_blank"

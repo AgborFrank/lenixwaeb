@@ -60,21 +60,17 @@ export default function AssetsPage() {
   const changePercent = totalBalance24hAgo !== 0 ? (changeValue / totalBalance24hAgo) * 100 : 0;
 
   return (
-    <div className="max-w-7xl mx-auto space-y-8 pb-20">
-      
-      {/* Header */}
+    <div className="mx-auto max-w-7xl space-y-4 pb-8">
       <div>
-         <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-            
+         <h1 className="flex items-center gap-2 text-xl font-semibold text-white">
             My Assets
          </h1>
-         <p className="text-zinc-400 text-sm mt-1">
+         <p className="mt-0.5 text-sm text-zinc-400">
             Manage your crypto balances across all supported networks.
          </p>
       </div>
 
-      {/* Overview Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
          <div className="lg:col-span-2">
             <Overview 
                 totalBalance={totalBalance}
@@ -89,9 +85,9 @@ export default function AssetsPage() {
       </div>
 
       {/* Asset List Section */}
-      <div className="space-y-4">
-         <div className="flex items-center justify-between px-2">
-            <h2 className="text-lg font-semibold text-white">Your Holdings</h2>
+      <div className="space-y-2">
+         <div className="flex items-center justify-between">
+            <h2 className="text-sm font-medium text-white">Your Holdings</h2>
             {/* Filter/Search could go here */}
          </div>
          <AssetTable tokens={displayTokens} isLoading={isGlobalLoading} />

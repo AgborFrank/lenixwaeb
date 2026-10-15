@@ -1,10 +1,11 @@
 "use client";
 
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { MoreVertical, ShieldAlert, Wallet, Landmark, Building2 } from "lucide-react";
+import { MoreHorizontal, Wallet, Landmark, Building2 } from "lucide-react";
+import { adminGlass } from "@/lib/admin-glass";
+import { Link } from "@/i18n/navigation";
 import { repayLoan, type Loan } from "../actions";
 import { toast } from "sonner";
 import { useTranslations } from "next-intl";
@@ -131,123 +132,125 @@ export function ActiveLoans({ loans, userPayout }: ActiveLoansProps) {
     return tStatus.has(status as "Active") ? tStatus(status as "Active") : status;
   };
 
+  const desk = useTranslations("AccountCryptoLoan.desk");
+
   if (loans.length === 0) {
     return (
-      <div className="mx-6 flex flex-col items-center justify-center rounded-2xl border border-dashed border-white/10 bg-white/5 py-16 text-center">
-        <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/5">
-          <ShieldAlert className="h-6 w-6 text-zinc-500" />
+      <section className={`${adminGlass.surface} overflow-hidden`} aria-label={desk("positions")}>
+        <div className="border-b border-white/[0.06] px-4 py-3 sm:px-5">
+          <h2 className="text-sm font-medium text-white">{desk("positions")}</h2>
         </div>
-        <h3 className="mb-1 text-lg font-medium text-white">{t("empty_title")}</h3>
-        <p className="max-w-xs text-sm text-zinc-500">{t("empty_description")}</p>
-      </div>
+        <div className="px-4 py-12 text-center sm:px-6">
+          <p className="text-sm font-medium text-zinc-200">{t("empty_title")}</p>
+          <p className="mx-auto mt-1 max-w-md text-sm text-zinc-500">{t("empty_description")}</p>
+          <Button type="button" size="sm" className="mt-5 bg-white text-black hover:bg-zinc-200" asChild>
+            <Link href="/crypto-loan?mode=apply">{desk("borrow")}</Link>
+          </Button>
+        </div>
+      </section>
     );
   }
 
   return (
-    <div className="space-y-4 px-6">
-      <div className="flex items-center justify-between">
-        <h2 className="text-xl font-bold text-white">{t("title")}</h2>
-        <span className="text-xs font-medium uppercase tracking-wider text-zinc-500">
-          {t("active_count", { count: loans.length })}
-        </span>
+    <section className={`${adminGlass.surface} overflow-hidden`} aria-label={desk("positions")}>
+      <div className="flex items-center justify-between border-b border-white/[0.06] px-4 py-3 sm:px-5">
+        <h2 className="text-sm font-medium text-white">{desk("positions")}</h2>
+        <p className="text-xs tabular-nums text-zinc-500">{desk("showing", { count: loans.length })}</p>
       </div>
 
-      <div className="grid grid-cols-1 gap-4">
+      <ul className="divide-y divide-white/[0.06] sm:hidden">
         {loans.map((loan) => {
-          const healthPercentage = (loan.health_factor / 3) * 100;
           const isRisky = loan.health_factor < 1.5;
-
           return (
-            <div
-              key={loan.id}
-              className="group relative overflow-hidden rounded-2xl border border-white/5 bg-zinc-900/50 p-5 transition-all hover:border-white/10"
-            >
-              <div className="absolute right-4 top-4 z-10 opacity-0 transition-opacity group-hover:opacity-100">
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" size="icon" className="h-8 w-8 bg-zinc-800/50 text-zinc-400 hover:text-white">
-                      <MoreVertical className="h-4 w-4" />
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="border-zinc-800 bg-zinc-900">
-                    <DropdownMenuItem
-                      onClick={() => handleRepay(loan.id)}
-                      className="cursor-pointer text-emerald-400 focus:bg-emerald-400/10 focus:text-emerald-400"
-                    >
-                      {repayingId === loan.id ? t("processing") : t("repay_loan")}
-                    </DropdownMenuItem>
-                    <DropdownMenuItem
-                      onClick={() => setDetailsLoan(loan)}
-                      className="cursor-pointer text-white focus:bg-white/10"
-                    >
-                      {t("view_details")}
-                    </DropdownMenuItem>
-                  </DropdownMenuContent>
-                </DropdownMenu>
+            <li key={loan.id} className="px-4 py-3">
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
+                  <p className="text-sm font-medium tabular-nums text-white">
+                    {loan.borrow_amount.toLocaleString()} {loan.borrow_asset}
+                  </p>
+                  <p className="mt-0.5 text-xs text-zinc-500">
+                    {loan.collateral_amount} {loan.collateral_asset} · {loan.apy}%
+                  </p>
+                </div>
+                <LoanMenu
+                  repaying={repayingId === loan.id}
+                  onRepay={() => handleRepay(loan.id)}
+                  onDetails={() => setDetailsLoan(loan)}
+                  repayLabel={t("repay_loan")}
+                  processingLabel={t("processing")}
+                  detailsLabel={t("view_details")}
+                />
               </div>
-
-              <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center">
-                <div className="flex min-w-[200px] items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full border border-white/5 bg-gradient-to-br from-yellow-400/20 to-orange-500/20">
-                    <span className="text-lg font-bold text-yellow-500">{loan.borrow_asset[0]}</span>
-                  </div>
-                  <div>
-                    <p className="text-sm text-zinc-400">{t("borrowed_amount")}</p>
-                    <p className="text-2xl font-bold text-white">
-                      {loan.borrow_amount.toLocaleString()}{" "}
-                      <span className="text-sm font-normal text-zinc-500">{loan.borrow_asset}</span>
-                    </p>
-                  </div>
-                </div>
-
-                <div className="grid flex-1 grid-cols-2 gap-6 lg:grid-cols-4">
-                  <div>
-                    <p className="mb-1 text-xs text-zinc-500">{t("collateral")}</p>
-                    <p className="text-sm font-medium text-white">
-                      {loan.collateral_amount} {loan.collateral_asset}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="mb-1 text-xs text-zinc-500">{t("apy")}</p>
-                    <p className="text-sm font-medium text-emerald-400">{loan.apy}%</p>
-                  </div>
-                  <div className="col-span-2 lg:col-span-2">
-                    <div className="mb-1 flex items-end justify-between">
-                      <p className="text-xs text-zinc-500">{t("health_factor")}</p>
-                      <span className={cn("text-xs font-bold", isRisky ? "text-red-400" : "text-emerald-400")}>
-                        {loan.health_factor}
-                      </span>
-                    </div>
-                    <Progress
-                      value={Math.min(healthPercentage, 100)}
-                      className="h-1.5 bg-zinc-800"
-                      indicatorColor={isRisky ? "bg-red-500" : "bg-emerald-500"}
-                    />
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-2 self-start sm:self-center">
-                  <Badge
-                    variant="outline"
-                    className={cn(
-                      "border-0 px-3 py-1 capitalize",
-                      loan.status === "Active" ? "bg-emerald-500/10 text-emerald-400" : "bg-zinc-500/10 text-zinc-400",
-                    )}
-                  >
-                    {loan.status === "Active" ? (
-                      <div className="mr-2 h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-400" />
-                    ) : null}
-                    {statusLabel(loan.status)}
-                  </Badge>
-                </div>
+              <div className="mt-2 flex items-center justify-between gap-3">
+                <StatusBadge status={loan.status} label={statusLabel(loan.status)} />
+                <span className={cn("text-xs tabular-nums", isRisky ? "text-red-300" : "text-emerald-300")}>
+                  {t("health_factor")} {loan.health_factor}
+                </span>
               </div>
-            </div>
+            </li>
           );
         })}
+      </ul>
+
+      <div className="hidden overflow-x-auto sm:block">
+        <table className="w-full border-collapse text-sm">
+          <thead>
+            <tr className="border-b border-white/[0.06] bg-white/[0.02]">
+              <th className={adminGlass.tableHead}>{t("borrowed_amount")}</th>
+              <th className={adminGlass.tableHead}>{t("collateral")}</th>
+              <th className={`${adminGlass.tableHead} text-right`}>{t("apy")}</th>
+              <th className={adminGlass.tableHead}>{t("health_factor")}</th>
+              <th className={adminGlass.tableHead}>{desk("status")}</th>
+              <th className={`${adminGlass.tableHead} text-right`} />
+            </tr>
+          </thead>
+          <tbody>
+            {loans.map((loan) => {
+              const healthPercentage = (loan.health_factor / 3) * 100;
+              const isRisky = loan.health_factor < 1.5;
+              return (
+                <tr key={loan.id} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
+                  <td className={`${adminGlass.tableCell} font-medium tabular-nums text-white`}>
+                    {loan.borrow_amount.toLocaleString()} {loan.borrow_asset}
+                  </td>
+                  <td className={`${adminGlass.tableCell} tabular-nums`}>
+                    {loan.collateral_amount} {loan.collateral_asset}
+                  </td>
+                  <td className={`${adminGlass.tableCell} text-right tabular-nums text-white`}>{loan.apy}%</td>
+                  <td className={adminGlass.tableCell}>
+                    <div className="flex min-w-[7rem] items-center gap-2">
+                      <span className={cn("text-xs tabular-nums", isRisky ? "text-red-300" : "text-emerald-300")}>
+                        {loan.health_factor}
+                      </span>
+                      <Progress
+                        value={Math.min(healthPercentage, 100)}
+                        className="h-1 bg-white/10"
+                        indicatorColor={isRisky ? "bg-red-400" : "bg-emerald-400"}
+                      />
+                    </div>
+                  </td>
+                  <td className={adminGlass.tableCell}>
+                    <StatusBadge status={loan.status} label={statusLabel(loan.status)} />
+                  </td>
+                  <td className={`${adminGlass.tableCell} text-right`}>
+                    <LoanMenu
+                      repaying={repayingId === loan.id}
+                      onRepay={() => handleRepay(loan.id)}
+                      onDetails={() => setDetailsLoan(loan)}
+                      repayLabel={t("repay_loan")}
+                      processingLabel={t("processing")}
+                      detailsLabel={t("view_details")}
+                    />
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
       </div>
 
       <Dialog open={!!detailsLoan} onOpenChange={(open) => !open && setDetailsLoan(null)}>
-        <DialogContent className="max-w-md border-white/10 bg-zinc-900 text-white">
+        <DialogContent className={`max-w-md ${adminGlass.dialog}`}>
           <DialogHeader>
             <DialogTitle className="text-xl">{t("details_title")}</DialogTitle>
           </DialogHeader>
@@ -307,13 +310,13 @@ export function ActiveLoans({ loans, userPayout }: ActiveLoansProps) {
                 {detailsLoan.request_details?.payout_method ? (
                   <div className="mb-3 flex items-center gap-2">
                     {detailsLoan.request_details.payout_method === "crypto" && (
-                      <Wallet className="h-4 w-4 text-yellow-400" />
+                      <Wallet className="h-4 w-4 text-zinc-400" />
                     )}
                     {detailsLoan.request_details.payout_method === "wire_transfer" && (
-                      <Landmark className="h-4 w-4 text-yellow-400" />
+                      <Landmark className="h-4 w-4 text-zinc-400" />
                     )}
                     {detailsLoan.request_details.payout_method === "bank" && (
-                      <Building2 className="h-4 w-4 text-yellow-400" />
+                      <Building2 className="h-4 w-4 text-zinc-400" />
                     )}
                     <span className="capitalize text-white">
                       {tPayout.has(detailsLoan.request_details.payout_method as "crypto")
@@ -338,6 +341,52 @@ export function ActiveLoans({ loans, userPayout }: ActiveLoansProps) {
           )}
         </DialogContent>
       </Dialog>
-    </div>
+    </section>
+  );
+}
+
+function StatusBadge({ status, label }: { status: string; label: string }) {
+  const tone =
+    status === "Active"
+      ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-300"
+      : status === "Pending"
+        ? "border-amber-500/30 bg-amber-500/10 text-amber-200"
+        : status === "Liquidated"
+          ? "border-red-500/30 bg-red-500/10 text-red-300"
+          : "border-white/10 bg-white/[0.04] text-zinc-400";
+  return <span className={`inline-flex rounded-md border px-2 py-0.5 text-xs font-medium ${tone}`}>{label}</span>;
+}
+
+function LoanMenu({
+  repaying,
+  onRepay,
+  onDetails,
+  repayLabel,
+  processingLabel,
+  detailsLabel,
+}: {
+  repaying: boolean;
+  onRepay: () => void;
+  onDetails: () => void;
+  repayLabel: string;
+  processingLabel: string;
+  detailsLabel: string;
+}) {
+  return (
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="ghost" size="icon" className="size-8 text-zinc-400 hover:bg-white/[0.06] hover:text-white">
+          <MoreHorizontal className="size-4" />
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent align="end" className={adminGlass.menu}>
+        <DropdownMenuItem onClick={onRepay} className="cursor-pointer">
+          {repaying ? processingLabel : repayLabel}
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={onDetails} className="cursor-pointer">
+          {detailsLabel}
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

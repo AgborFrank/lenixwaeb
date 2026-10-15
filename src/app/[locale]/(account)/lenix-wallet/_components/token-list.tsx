@@ -22,7 +22,7 @@ export function TokenList({ tokens, isLoading, isMarketData }: TokenListProps) {
           <div className="h-5 w-28 rounded bg-zinc-800" />
           {[1, 2, 3].map((i) => (
             <div key={i} className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-full bg-zinc-800" />
+              <div className="h-8 w-8 rounded-full bg-zinc-800" />
               <div className="flex-1 space-y-2">
                 <div className="h-4 w-20 rounded bg-zinc-800" />
                 <div className="h-3 w-16 rounded bg-zinc-800/50" />
@@ -56,7 +56,7 @@ export function TokenList({ tokens, isLoading, isMarketData }: TokenListProps) {
         )}
       </div>
 
-      <div className="mt-3">
+      <div className="mt-2">
         {tokens.map((token, idx) => {
           let changePercent = 0;
           if (token.change) {
@@ -74,7 +74,7 @@ export function TokenList({ tokens, isLoading, isMarketData }: TokenListProps) {
           return (
             <div key={`${token.contract_address}-${idx}`} className={wallet.listItem}>
               <div className="flex items-center gap-3">
-                <Avatar className="h-9 w-9 border border-white/5 bg-zinc-800 sm:h-10 sm:w-10">
+                <Avatar className="h-8 w-8 border border-white/5 bg-zinc-800">
                   <AvatarImage src={token.logo_url} alt={token.contract_name} />
                   <AvatarFallback className="bg-zinc-800 text-xs text-zinc-400">
                     {token.contract_ticker_symbol?.[0] || "?"}
@@ -82,7 +82,7 @@ export function TokenList({ tokens, isLoading, isMarketData }: TokenListProps) {
                 </Avatar>
                 <div className="min-w-0">
                   <div className="flex items-center gap-1.5">
-                    <p className="text-sm font-medium text-white sm:text-base">
+                    <p className="text-sm font-medium text-white">
                       {token.contract_ticker_symbol}
                     </p>
                     {token.isFrozen && (
@@ -103,7 +103,7 @@ export function TokenList({ tokens, isLoading, isMarketData }: TokenListProps) {
               </div>
 
               <div className="text-right">
-                <p className="text-sm font-medium tabular-nums text-white sm:text-base">
+                <p className="text-sm font-medium tabular-nums text-white">
                   {formatCurrency(token.quote || 0)}
                 </p>
                 <div className="mt-0.5 flex items-center justify-end gap-2">

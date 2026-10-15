@@ -3,6 +3,8 @@
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "@/i18n/navigation";
 import { revalidatePath } from "next/cache";
+import { firstZodMessage, refundIntakeSchema } from "@/lib/refund/schema";
+import { submitRefundIntake } from "@/lib/refund/submit-intake";
 
 const RECOVERY_FIELDS = [
   "name",
@@ -166,5 +168,89 @@ export async function submitLoanStep1(formData: FormData) {
         await redirect(`/onboarding/details?error=${encodeURIComponent("Could not save")}`);
     }
     await redirect("/onboarding/details/loan-payout");
+}
+
+export async function submitRefundOnboardingDetails(formData: FormData) {
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) await redirect("/login");
+
+    const { data: onboarding } = await supabase
+        .from("web_onboarding")
+        .select("service_type")
+        .eq("user_id", user.id)
+        .single();
+    if (!onboarding || onboarding.service_type !== "refund") {
+        await redirect("/onboarding");
+    }
+
+    const raw = {
+        role: String(formData.get("role") ?? "").trim(),
+        name: String(formData.get("name") ?? "").trim(),
+        email: String(formData.get("email") ?? user.email ?? "").trim(),
+        phone_number: String(formData.get("phone_number") ?? "").trim(),
+        country_phone_code: String(formData.get("country_phone_code") ?? "").trim(),
+        counterparty_name: String(formData.get("counterparty_name") ?? "").trim(),
+        order_ref: String(formData.get("order_ref") ?? "").trim(),
+        payment_tx_hash: String(formData.get("payment_tx_hash") ?? "").trim(),
+        amount: String(formData.get("amount") ?? "").trim(),
+        currency: String(formData.get("currency") ?? "").trim(),
+        blockchain: String(formData.get("blockchain") ?? "").trim() || undefined,
+        incident_summary: String(formData.get("incident_summary") ?? "").trim(),
+    };
+
+    const parsed = refundIntakeSchema.safeParse(raw);
+    if (!parsed.success) {
+        await redirect(
+            `/onboarding/details?error=${encodeURIComponent(firstZodMessage(parsed.error))}`,
+        );
+    }
+
+    const evidenceFile = formData.get("evidence");
+    const result = await submitRefundIntake({
+        intake: parsed.data,
+        userId: user.id,
+        evidenceFile: evidenceFile instanceof File ? evidenceFile : null,
+        actor: "user",
+    });
+
+    if (!result.ok) {
+        await redirect(`/onboarding/details?error=${encodeURIComponent(result.error)}`);
+    }
+
+    const details: Record<string, unknown> = {
+        role: parsed.data.role,
+        name: parsed.data.name,
+        email: parsed.data.email,
+        phone_number: parsed.data.phone_number,
+        country_phone_code: parsed.data.country_phone_code,
+        counterparty_name: parsed.data.counterparty_name,
+        order_ref: parsed.data.order_ref,
+        payment_tx_hash: parsed.data.payment_tx_hash,
+        amount: parsed.data.amount,
+        currency: parsed.data.currency,
+        blockchain: parsed.data.blockchain,
+        incident_summary: parsed.data.incident_summary,
+        refund_request_id: result.id,
+    };
+    if (result.evidenceFilename) details.evidence = result.evidenceFilename;
+    if (result.evidenceUrl) details.evidence_url = result.evidenceUrl;
+
+    const { error } = await supabase
+        .from("web_onboarding")
+        .update({
+            details,
+            step_completed: 2,
+            updated_at: new Date().toISOString(),
+        })
+        .eq("user_id", user.id);
+
+    if (error) {
+        console.error("Refund onboarding save error:", error);
+        await redirect(`/onboarding/details?error=${encodeURIComponent("Could not save details")}`);
+    }
+
+    revalidatePath("/", "layout");
+    await redirect("/dashboard");
 }
 

@@ -26,6 +26,10 @@
       "banking": {
         "1": "Service",
         "2": "Banking details"
+      },
+      "refund": {
+        "1": "Service",
+        "2": "Refund case"
       }
     }
   },
@@ -48,6 +52,10 @@
       "banking": {
         "title": "Banking services",
         "description": "Send and receive Funds across borders, convert crypto to cash, or store assets securely."
+      },
+      "refund": {
+        "title": "Purchase refund",
+        "description": "Open a case for lost, damaged, late, or misdescribed orders. We review proof before any payout."
       }
     }
   },
@@ -65,6 +73,10 @@
     "loan": {
       "title": "Loan application",
       "description": "Choose your loan type and tell us how much you need."
+    },
+    "refund": {
+      "title": "Open your refund case",
+      "description": "Share order details, payment proof, and what went wrong. No payout is issued at submit."
     },
     "payout": {
       "title": "Where should we send it?",
@@ -92,6 +104,13 @@
       "bullet1": "Get a quote with transparent fees",
       "bullet2": "Complete verification if needed",
       "bullet3": "Track everything in your dashboard"
+    },
+    "refund": {
+      "title": "Refund intake",
+      "body": "The desk reviews recoverability against carriers, marketplaces, or counterparties. Instant payout, if offered, comes after underwriting.",
+      "bullet1": "Initial review within one business day",
+      "bullet2": "Fee applies only on amounts recovered",
+      "bullet3": "Case status in your dashboard"
     },
     "encryption": "Your data is encrypted and secure. We never share your information without permission.",
     "support": "Questions? Reach out on Telegram after you submit."
@@ -139,6 +158,29 @@
     "evidenceHint": "Screenshot or PDF (optional)",
     "fileDropTitle": "Upload evidence",
     "fileDropHint": "PNG, JPG, or PDF up to 10 MB"
+  },
+  "RefundForm": {
+    "role": "I am the",
+    "roleBuyer": "Buyer",
+    "roleSeller": "Seller",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "counterparty": "Store, marketplace, or counterparty",
+    "counterpartyPlaceholder": "Shop name or seller handle",
+    "orderRef": "Order ID (optional)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Payment hash, invoice, or transfer ID",
+    "paymentPlaceholder": "0x… or invoice number",
+    "amount": "Amount claimed",
+    "amountPlaceholder": "e.g. 480",
+    "currency": "Asset",
+    "blockchain": "Chain (if paid in crypto)",
+    "selectBlockchain": "Select chain",
+    "noChain": "Not crypto / unknown",
+    "summary": "What fell short",
+    "summaryPlaceholder": "What was bought, delivery or tracking dates, what arrived (or did not), and any reply from the carrier or seller.",
+    "evidence": "Supporting evidence (optional)",
+    "evidenceHint": "Receipt, photos, chat, or tracking. PDF, JPG, PNG, or WebP. 8 MB max."
   },
   "BankingForm": {
     "contactSectionTitle": "About you",

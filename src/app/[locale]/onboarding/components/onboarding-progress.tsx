@@ -3,11 +3,12 @@
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 
-export type OnboardingFlow = "selection" | "recovery" | "loan" | "banking";
+export type OnboardingFlow = "selection" | "recovery" | "refund" | "loan" | "banking";
 
 const FLOW_STEPS: Record<OnboardingFlow, number[]> = {
   selection: [1, 2, 3],
   recovery: [1, 2],
+  refund: [1, 2],
   loan: [1, 2, 3],
   banking: [1, 2],
 };

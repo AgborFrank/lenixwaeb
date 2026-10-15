@@ -26,6 +26,10 @@
       "banking": {
         "1": "Dịch vụ",
         "2": "Chi tiết ngân hàng"
+      },
+      "refund": {
+        "1": "Service",
+        "2": "Refund case"
       }
     }
   },
@@ -48,6 +52,10 @@
       "banking": {
         "title": "Dịch vụ ngân hàng",
         "description": "Gửi và nhận tiền xuyên biên giới, đổi crypto sang tiền mặt, hoặc lưu trữ tài sản an toàn."
+      },
+      "refund": {
+        "title": "Purchase refund",
+        "description": "Open a case for lost, damaged, late, or misdescribed orders. We review proof before any payout."
       }
     }
   },
@@ -69,6 +77,10 @@
     "payout": {
       "title": "Chúng tôi nên gửi tiền đến đâu?",
       "description": "Chọn cách bạn muốn nhận tiền."
+    },
+    "refund": {
+      "title": "Open your refund case",
+      "description": "Share order details, payment proof, and what went wrong. No payout is issued at submit."
     }
   },
   "Aside": {
@@ -94,7 +106,14 @@
       "bullet3": "Theo dõi mọi thứ trên bảng điều khiển"
     },
     "encryption": "Dữ liệu của bạn được mã hóa và bảo mật. Chúng tôi không chia sẻ thông tin của bạn khi chưa được phép.",
-    "support": "Có câu hỏi? Liên hệ trên Telegram sau khi bạn gửi."
+    "support": "Có câu hỏi? Liên hệ trên Telegram sau khi bạn gửi.",
+    "refund": {
+      "title": "Refund intake",
+      "body": "The desk reviews recoverability against carriers, marketplaces, or counterparties. Instant payout, if offered, comes after underwriting.",
+      "bullet1": "Initial review within one business day",
+      "bullet2": "Fee applies only on amounts recovered",
+      "bullet3": "Case status in your dashboard"
+    }
   },
   "Common": {
     "required": "*",
@@ -250,5 +269,28 @@
     "bsc": "BSC",
     "solana": "Solana",
     "bitcoin": "Bitcoin"
+  },
+  "RefundForm": {
+    "role": "I am the",
+    "roleBuyer": "Buyer",
+    "roleSeller": "Seller",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "counterparty": "Store, marketplace, or counterparty",
+    "counterpartyPlaceholder": "Shop name or seller handle",
+    "orderRef": "Order ID (optional)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Payment hash, invoice, or transfer ID",
+    "paymentPlaceholder": "0x… or invoice number",
+    "amount": "Amount claimed",
+    "amountPlaceholder": "e.g. 480",
+    "currency": "Asset",
+    "blockchain": "Chain (if paid in crypto)",
+    "selectBlockchain": "Select chain",
+    "noChain": "Not crypto / unknown",
+    "summary": "What fell short",
+    "summaryPlaceholder": "What was bought, delivery or tracking dates, what arrived (or did not), and any reply from the carrier or seller.",
+    "evidence": "Supporting evidence (optional)",
+    "evidenceHint": "Receipt, photos, chat, or tracking. PDF, JPG, PNG, or WebP. 8 MB max."
   }
 }

@@ -28,11 +28,11 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
   const { formatCurrency } = useSettings();
   if (isLoading) {
     return (
-      <div className="rounded-3xl bg-zinc-900/30 border border-white/5 p-8 text-center space-y-4 animate-pulse">
-        <div className="h-8 bg-zinc-800 rounded w-full mb-4"></div>
-        <div className="space-y-2">
+      <div className="animate-pulse space-y-2 rounded-2xl border border-white/5 bg-zinc-900/30 p-4 text-center">
+        <div className="mb-2 h-6 w-full rounded bg-zinc-800"></div>
+        <div className="space-y-1.5">
           {[1, 2, 3].map((i) => (
-            <div key={i} className="h-16 bg-zinc-800/50 rounded w-full"></div>
+            <div key={i} className="h-10 w-full rounded bg-zinc-800/50"></div>
           ))}
         </div>
       </div>
@@ -41,12 +41,12 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
 
   if (tokens.length === 0) {
     return (
-      <div className="flex flex-col items-center gap-4 rounded-3xl bg-zinc-900/30 border border-white/5 p-12 text-center">
+      <div className="flex flex-col items-center gap-2 rounded-2xl border border-white/5 bg-zinc-900/30 p-8 text-center">
         <Image
           src="/assets/vectors/coin.svg"
           alt=""
-          width={100}
-          height={120}
+          width={64}
+          height={72}
           className="mx-auto opacity-80"
         />
         <p className="text-zinc-500">No assets found in your wallet.</p>
@@ -55,17 +55,17 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
   }
 
   return (
-    <div className="rounded-3xl bg-zinc-900/30 border border-white/5 overflow-hidden">
+    <div className="overflow-hidden rounded-2xl border border-white/5 bg-zinc-900/30">
       <div className="overflow-x-auto">
         <table className="w-full text-left">
           <thead className="bg-zinc-900/50 text-xs font-medium text-zinc-500 uppercase">
             <tr>
-              <th className="px-6 py-4">Asset</th>
-              <th className="px-6 py-4">Price</th>
-              <th className="px-6 py-4">Balance</th>
-              <th className="px-6 py-4">Value</th>
-              <th className="px-6 py-4">24h Change</th>
-              <th className="px-6 py-4 text-right">Actions</th>
+              <th className="px-4 py-2">Asset</th>
+              <th className="px-4 py-2">Price</th>
+              <th className="px-4 py-2">Balance</th>
+              <th className="px-4 py-2">Value</th>
+              <th className="px-4 py-2">24h Change</th>
+              <th className="px-4 py-2 text-right">Actions</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-white/5">
@@ -96,16 +96,16 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
                   key={`${token.contract_address}-${idx}`}
                   className="group hover:bg-white/5 transition-colors"
                 >
-                  <td className="px-6 py-4">
-                    <div className="flex items-center gap-3">
-                      <Avatar className="h-10 w-10 bg-zinc-900 border border-white/10">
+                  <td className="px-4 py-2">
+                    <div className="flex items-center gap-2.5">
+                      <Avatar className="h-8 w-8 border border-white/10 bg-zinc-900">
                         <AvatarImage src={token.logo_url} />
                         <AvatarFallback>
                           {token.contract_ticker_symbol?.[0]}
                         </AvatarFallback>
                       </Avatar>
                       <div>
-                        <p className="font-medium text-white">
+                        <p className="text-sm font-medium text-white">
                           {token.contract_name}
                         </p>
                         <p className="text-xs text-zinc-500">
@@ -114,27 +114,27 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
                       </div>
                     </div>
                   </td>
-                  <td className="px-6 py-4">
-                    <p className="text-sm text-zinc-300 font-medium tabular-nums">
+                  <td className="px-4 py-2">
+                    <p className="text-sm font-medium tabular-nums text-zinc-300">
                       {formatCurrency(token.quote_rate || 0)}
                     </p>
                   </td>
-                  <td className="px-6 py-4">
-                    <p className="text-sm text-white font-medium tabular-nums">
+                  <td className="px-4 py-2">
+                    <p className="text-sm font-medium tabular-nums text-white">
                       {(
                         Number(token.balance) /
                         Math.pow(10, token.contract_decimals ?? 18)
                       ).toFixed(4)}
                     </p>
                   </td>
-                  <td className="px-6 py-4">
-                    <p className="text-sm text-white font-bold tabular-nums">
+                  <td className="px-4 py-2">
+                    <p className="text-sm font-semibold tabular-nums text-white">
                       {formatCurrency(token.quote || 0)}
                     </p>
                   </td>
-                  <td className="px-6 py-4">
+                  <td className="px-4 py-2">
                     <span
-                      className={`text-xs font-medium px-2 py-1 rounded-md ${
+                      className={`rounded-md px-1.5 py-0.5 text-xs font-medium ${
                         isPositive
                           ? "bg-emerald-500/10 text-emerald-400"
                           : "bg-red-500/10 text-red-400"
@@ -144,12 +144,12 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
                       {changePercent.toFixed(2)}%
                     </span>
                   </td>
-                  <td className="px-6 py-4 text-right">
-                    <div className="flex items-center justify-end gap-2">
+                  <td className="px-4 py-2 text-right">
+                    <div className="flex items-center justify-end gap-0.5">
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="h-8 w-8 text-zinc-400 hover:text-white hover:bg-white/10"
+                        className="h-7 w-7 text-zinc-400 hover:bg-white/10 hover:text-white"
                       >
                         <ArrowDownLeft className="h-4 w-4" />
                         <span className="sr-only">Deposit</span>
@@ -157,7 +157,7 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="h-8 w-8 text-zinc-400 hover:text-white hover:bg-white/10"
+                        className="h-7 w-7 text-zinc-400 hover:bg-white/10 hover:text-white"
                       >
                         <ArrowUpRight className="h-4 w-4" />
                         <span className="sr-only">Withdraw</span>
@@ -167,7 +167,7 @@ export function AssetTable({ tokens, isLoading }: AssetTableProps) {
                           <Button
                             variant="ghost"
                             size="icon"
-                            className="h-8 w-8 text-zinc-400 hover:text-white hover:bg-white/10"
+                            className="h-7 w-7 text-zinc-400 hover:bg-white/10 hover:text-white"
                           >
                             <MoreHorizontal className="h-4 w-4" />
                             <span className="sr-only">More</span>

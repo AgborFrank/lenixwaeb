@@ -38,12 +38,12 @@ export function WalletCard({ walletData, lockWallet, balance }: WalletCardProps)
   const truncateAddress = (addr: string) => `${addr.slice(0, 6)}...${addr.slice(-4)}`;
 
   return (
-    <div className="relative overflow-hidden rounded-3xl bg-linear-to-br from-[#ffdc50] via-[#F0B90B] to-[#f9dd88] p-5 sm:p-6">
+    <div className="relative overflow-hidden rounded-2xl bg-linear-to-br from-[#ffdc50] via-[#F0B90B] to-[#f9dd88] p-4">
       <div className="flex items-start justify-between">
         <div>
-          <p className="text-sm font-medium text-black/60">{t("total_balance")}</p>
-          <div className="mt-2 flex items-center gap-3">
-            <span className="text-2xl font-bold tabular-nums tracking-tight text-black sm:text-3xl lg:text-4xl">
+          <p className="text-xs font-medium text-black/60">{t("total_balance")}</p>
+          <div className="mt-1 flex items-center gap-2">
+            <span className="text-2xl font-bold tabular-nums tracking-tight text-black sm:text-3xl">
               {showBalance
                 ? balance !== undefined
                   ? formatCurrency(balance)
@@ -82,7 +82,7 @@ export function WalletCard({ walletData, lockWallet, balance }: WalletCardProps)
         </DropdownMenu>
       </div>
 
-      <div className="mt-6 flex items-end justify-between border-t border-black/10 pt-4">
+      <div className="mt-4 flex items-end justify-between border-t border-black/10 pt-3">
         <div>
           <p className="text-[11px] font-medium uppercase tracking-wide text-black/50 sm:text-xs">
             {t("evm_networks")}

@@ -10,6 +10,36 @@ interface TransactionHistoryProps {
   isLoading?: boolean;
 }
 
+function transactionKey(tx: {
+  hash?: string;
+  type?: string;
+  symbol?: string;
+  from_address?: string;
+  to_address?: string;
+  value?: string;
+  block_timestamp?: string;
+}) {
+  return [
+    tx.hash,
+    tx.type,
+    tx.symbol,
+    tx.from_address,
+    tx.to_address,
+    tx.value,
+    tx.block_timestamp,
+  ].join(":");
+}
+
+function uniqueTransactions(transactions: any[]) {
+  const seen = new Set<string>();
+  return transactions.filter((tx) => {
+    const key = transactionKey(tx);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 export function TransactionHistory({ transactions, isLoading }: TransactionHistoryProps) {
   const t = useTranslations("AccountLenixWallet.activity");
 
@@ -29,13 +59,13 @@ export function TransactionHistory({ transactions, isLoading }: TransactionHisto
       <h3 className="text-sm font-medium text-white sm:text-base">{t("title")}</h3>
 
       {!transactions || transactions.length === 0 ? (
-        <div className="mt-4 flex flex-col items-center gap-2 py-8 text-center">
-          <Clock className="h-8 w-8 text-zinc-700" />
+        <div className="mt-3 flex flex-col items-center gap-1.5 py-4 text-center">
+          <Clock className="h-6 w-6 text-zinc-700" />
           <p className="text-sm text-zinc-500">{t("no_activity")}</p>
         </div>
       ) : (
-        <div className="mt-3 space-y-1">
-          {transactions.slice(0, 5).map((tx) => {
+        <div className="mt-2">
+          {uniqueTransactions(transactions).slice(0, 5).map((tx) => {
             const decimals = tx.decimals ?? 18;
             const amount =
               decimals > 0
@@ -55,7 +85,7 @@ export function TransactionHistory({ transactions, isLoading }: TransactionHisto
             const isComplete = tx.receipt_status === "1" || tx.status === "confirmed";
 
             return (
-              <div key={tx.hash} className={wallet.listItem}>
+              <div key={transactionKey(tx)} className={wallet.listItem}>
                 <div className="flex items-center gap-3">
                   <div className={wallet.listIcon}>
                     <ArrowUpRight className="h-4 w-4 text-zinc-400" />

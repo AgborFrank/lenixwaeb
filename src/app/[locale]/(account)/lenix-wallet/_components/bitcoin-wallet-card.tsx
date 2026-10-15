@@ -57,9 +57,9 @@ export function BitcoinWalletCard() {
       <div>
         <p className={wallet.cardTitle}>{t("btc_balance")}</p>
         {bitcoinAddress ? (
-          <div className="mt-2">
+          <div className="mt-1">
             <span className={wallet.balanceText}>
-              <Image src="/assets/vectors/btc.webp" alt={t("bitcoin_alt")} width={30} height={30} />
+              <Image src="/assets/vectors/btc.webp" alt={t("bitcoin_alt")} width={22} height={22} />
               {bitcoinAmount.toFixed(8)}
             </span>
             <p className="mt-1 text-xs text-black sm:text-sm">{formatCurrency(bitcoinUsdValue)}</p>
@@ -70,7 +70,7 @@ export function BitcoinWalletCard() {
       </div>
 
       {!bitcoinAddress && (
-        <div className="mt-5 rounded-xl border border-zinc-700/50 bg-zinc-800/30 p-4">
+        <div className="mt-3 rounded-xl border border-zinc-700/50 bg-zinc-800/30 p-3">
           <p className="text-sm text-zinc-300">{t("activate_prompt")}</p>
           <div className="mt-3 flex flex-col gap-2 sm:flex-row">
             <input
@@ -85,7 +85,7 @@ export function BitcoinWalletCard() {
               type="button"
               onClick={handleGenerate}
               disabled={isGenerating || password.length < 8}
-              className="h-10 shrink-0 rounded-lg bg-orange-500 px-4 text-sm font-medium text-white transition-colors hover:bg-orange-600 disabled:bg-zinc-700 disabled:text-zinc-500 sm:h-11"
+              className="h-9 shrink-0 rounded-lg bg-orange-500 px-3 text-sm font-medium text-white transition-colors hover:bg-orange-600 disabled:bg-zinc-700 disabled:text-zinc-500"
             >
               {isGenerating ? (
                 <span className="flex items-center gap-2">
@@ -100,7 +100,7 @@ export function BitcoinWalletCard() {
         </div>
       )}
 
-      <div className="mt-6 flex items-end justify-between pt-4">
+      <div className="mt-4 flex items-end justify-between border-t border-black/10 pt-3">
         <div>
           <p className="text-[11px] font-medium tracking-wide text-zinc-800 sm:text-xs">
             {t("bitcoin_network")}

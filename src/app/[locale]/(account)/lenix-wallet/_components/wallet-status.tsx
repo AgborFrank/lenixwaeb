@@ -17,7 +17,7 @@ export function WalletStatus() {
         <span className={`${wallet.badge} ${wallet.badgeSuccess}`}>{t("protected")}</span>
       </div>
 
-      <div className="mt-4 space-y-1">
+      <div className="mt-2">
         <StatusRow icon={CheckCircle2} label={t("recovery_phrase")} value={t("backed_up")} positive />
         <StatusRow icon={CheckCircle2} label={t("password")} value={t("active")} positive />
         <StatusRow

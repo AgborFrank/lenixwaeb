@@ -123,6 +123,37 @@ export async function POST(request: Request) {
       }
     }
 
+    let requestId: string | undefined;
+    if (user) {
+      const { data: saved, error: saveError } = await supabase
+        .from("recovery_requests")
+        .insert({
+          user_id: user.id,
+          full_name: body.name,
+          email: body.email || user.email || null,
+          phone: body.phone_number || null,
+          wallet_type: body.blockchain || null,
+          wallet_address: body.transaction_hash,
+          additional_details: body.incident_summary,
+          status: "pending",
+          country: body.country_phone_code?.split(":")[0] || null,
+          questionnaire_data: {
+            kind: "stolen_assets",
+            amount: body.amount_stolen,
+            currency: body.currency ?? null,
+            evidence_url: body.evidence_url ?? null,
+          },
+        })
+        .select("id")
+        .single();
+
+      if (saveError) {
+        console.error("Recovery request save failed", saveError.code);
+      } else {
+        requestId = saved?.id;
+      }
+    }
+
     const html = buildEmailHtml(body);
 
     const replyTo = body.email ?? body.user_email;
@@ -142,7 +173,7 @@ export async function POST(request: Request) {
       );
     }
 
-    return NextResponse.json({ success: true });
+    return NextResponse.json({ success: true, id: requestId ?? null });
   } catch (e) {
     console.error("Recovery request API error:", e);
     return NextResponse.json(

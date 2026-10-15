@@ -1243,6 +1243,76 @@
       "required_fields": "Harap isi semua field wajib",
       "submit_failed": "Gagal mengirim permintaan pemulihan",
       "submit_success": "Permintaan pemulihan terkirim. Tim kami akan segera menghubungi Anda."
+    },
+    "desk": {
+      "eyebrow": "Recovery",
+      "title": "Your recovery cases",
+      "subtitle": "Tell us what left the wallet. We read it and write back. Opening a case does not bring the funds back.",
+      "newCase": "Open a recovery",
+      "refundLink": "This was a purchase, not a theft",
+      "yourCases": "Your cases",
+      "showing": "{count} cases",
+      "emptyTitle": "You haven't opened a recovery yet",
+      "emptyBody": "Start with the chain, the amount, and a transaction or wallet we can look at.",
+      "case": "Trail",
+      "amount": "Amount",
+      "chain": "Chain",
+      "status": "Status",
+      "opened": "Opened",
+      "metrics": {
+        "open": "Waiting on us",
+        "active": "We're on it",
+        "closed": "Finished",
+        "files": "All cases"
+      },
+      "statuses": {
+        "pending": "Waiting",
+        "in_progress": "We're looking",
+        "completed": "Done",
+        "rejected": "Closed"
+      }
+    },
+    "open": {
+      "eyebrow": "New recovery",
+      "title": "Tell us what left",
+      "subtitle": "A few questions. We use this to look at the trail. We don't move money when you send it.",
+      "backToList": "Back to your cases",
+      "steps": {
+        "1": "What was taken",
+        "2": "What happened",
+        "3": "Does this look right?"
+      },
+      "name": "What should we call you?",
+      "namePlaceholder": "Your name",
+      "email": "Where should we write you?",
+      "emailPlaceholder": "you@email.com",
+      "phone": "A number we can call, if you want",
+      "chain": "Which chain was it on?",
+      "amount": "About how much was taken?",
+      "amountPlaceholder": "2000",
+      "currency": "Which currency is that in?",
+      "trail": "Paste a transaction or the wallet it left",
+      "trailPlaceholder": "A hash or an address",
+      "summary": "What happened, in your words?",
+      "summaryPlaceholder": "Where you were, what you clicked, and when you noticed the funds were gone.",
+      "evidence": "Anything we should see?",
+      "evidenceHint": "A screenshot or a PDF",
+      "upload": "Choose a file",
+      "reviewHint": "Read this once. If something is wrong, go back and fix it.",
+      "continue": "Next",
+      "back": "Go back",
+      "submit": "Send this recovery",
+      "submitting": "Sending…",
+      "submittedTitle": "We have it",
+      "submittedBody": "Your reference is {id}. We'll write to you after someone reads it. This does not mean the funds are coming back.",
+      "another": "Open another",
+      "done": "Back to your cases",
+      "required": "We need this",
+      "emailError": "That email doesn't look right",
+      "trailError": "Paste at least 8 characters so we can look it up",
+      "summaryError": "Give us a bit more. Twenty characters is enough to start.",
+      "chars": "{count} characters so far",
+      "privacy": "We keep this so we can reach you about the case. Read the <link>privacy policy</link>."
     }
   },
   "AccountCryptoLoan": {
@@ -1421,6 +1491,18 @@
         "SOL": "Solana",
         "XRP": "Ripple"
       }
+    },
+    "desk": {
+      "eyebrow": "Borrow",
+      "title": "Crypto loan",
+      "subtitle": "Borrow against collateral you already hold. The rate and the limit come from the plan you pick. Sending an application does not move funds.",
+      "borrow": "Borrow",
+      "positions": "Your positions",
+      "markets": "Markets",
+      "showing": "{count} open",
+      "health": "Health",
+      "from": "From",
+      "status": "Status"
     }
   }
 }

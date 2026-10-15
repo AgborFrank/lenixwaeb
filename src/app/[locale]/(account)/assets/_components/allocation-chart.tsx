@@ -32,9 +32,9 @@ export function AllocationChart({ tokens }: AllocationChartProps) {
   // If no data, show empty state
   if (chartData.length === 0) {
       return (
-        <div className="rounded-3xl bg-zinc-900/50 p-6 border border-white/5 h-full flex flex-col items-center justify-center text-center space-y-4">
-             <div className="p-4 rounded-full bg-zinc-800/50">
-                <PieChart className="h-8 w-8 text-zinc-500" />
+        <div className="flex h-full flex-col items-center justify-center space-y-2 rounded-2xl border border-white/5 bg-zinc-900/50 p-4 text-center">
+             <div className="rounded-full bg-zinc-800/50 p-2.5">
+                <PieChart className="h-5 w-5 text-zinc-500" />
              </div>
              <div>
                 <p className="text-white font-medium">No Assets</p>
@@ -55,15 +55,14 @@ export function AllocationChart({ tokens }: AllocationChartProps) {
   const topAsset = chartData[0];
 
   return (
-    <div className="rounded-3xl bg-zinc-900/50 p-6 border border-white/5 h-full">
-      <div className="flex items-center gap-2 mb-6">
-        <PieChart className="h-5 w-5 text-zinc-400" />
-        <h3 className="text-lg font-semibold text-white">Asset Allocation</h3>
+    <div className="h-full rounded-2xl border border-white/5 bg-zinc-900/50 p-4">
+      <div className="mb-3 flex items-center gap-2">
+        <PieChart className="h-4 w-4 text-zinc-400" />
+        <h3 className="text-sm font-medium text-white">Asset Allocation</h3>
       </div>
 
-      <div className="flex items-center gap-8">
-        {/* Simple CSS/SVG Donut Chart */}
-        <div className="relative h-48 w-48 flex-shrink-0">
+      <div className="flex items-center gap-4">
+        <div className="relative h-28 w-28 flex-shrink-0">
           <svg viewBox="0 0 100 100" className="transform -rotate-90 w-full h-full">
             {/* Background Circle */}
             <circle cx="50" cy="50" r="40" fill="transparent" stroke="#27272a" strokeWidth="12" />
@@ -84,16 +83,16 @@ export function AllocationChart({ tokens }: AllocationChartProps) {
           </svg>
            {/* Center Text */}
            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-xs text-zinc-500">Top Asset</span>
-              <span className="text-xl font-bold text-white">{topAsset.name}</span>
+              <span className="text-[10px] leading-none text-zinc-500">Top Asset</span>
+              <span className="mt-0.5 text-sm font-bold leading-none text-white">{topAsset.name}</span>
            </div>
         </div>
 
         {/* Legend */}
-        <div className="flex-1 grid grid-cols-2 gap-4">
+        <div className="grid flex-1 grid-cols-2 gap-2">
            {chartData.map((item) => (
-              <div key={item.name} className="flex items-center gap-3">
-                 <div className={`h-3 w-3 rounded-full ${item.bg}`} />
+              <div key={item.name} className="flex items-center gap-2">
+                 <div className={`h-2 w-2 rounded-full ${item.bg}`} />
                  <div>
                     <p className="text-sm font-medium text-white">{item.name}</p>
                     <p className="text-xs text-zinc-500">{item.value}%</p>

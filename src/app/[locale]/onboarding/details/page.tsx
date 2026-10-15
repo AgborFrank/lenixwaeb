@@ -4,6 +4,7 @@ import { getTranslations } from "next-intl/server";
 import { RecoveryDetailsForm } from "./recovery-details-form";
 import { LoanApplicationForm, type LoanType } from "./loan-application-form";
 import { BankingDetailsForm } from "./banking-details-form";
+import { RefundDetailsForm } from "./refund-details-form";
 import { OnboardingShell } from "../components/onboarding-shell";
 
 export default async function OnboardingDetailsPage() {
@@ -28,12 +29,13 @@ export default async function OnboardingDetailsPage() {
     await redirect("/dashboard");
   }
 
-  const serviceType = onboardingRow.service_type as "recovery" | "loan" | "banking";
+  const serviceType = onboardingRow.service_type as "recovery" | "refund" | "loan" | "banking";
   const isRecovery = serviceType === "recovery";
+  const isRefund = serviceType === "refund";
   const isBanking = serviceType === "banking";
 
   let loanTypes: LoanType[] = [];
-  if (!isRecovery && !isBanking) {
+  if (!isRecovery && !isRefund && !isBanking) {
     const { data } = await supabase
       .from("loan_types")
       .select("id, name, ltv, interest_rate, min_collateral, max_collateral")
@@ -41,9 +43,21 @@ export default async function OnboardingDetailsPage() {
     loanTypes = (data as LoanType[]) ?? [];
   }
 
-  const flow = isRecovery ? "recovery" : isBanking ? "banking" : "loan";
+  const flow = isRecovery
+    ? "recovery"
+    : isRefund
+      ? "refund"
+      : isBanking
+        ? "banking"
+        : "loan";
   const t = await getTranslations("Onboarding.Details");
-  const flowKey = isRecovery ? "recovery" : isBanking ? "banking" : "loan";
+  const flowKey = isRecovery
+    ? "recovery"
+    : isRefund
+      ? "refund"
+      : isBanking
+        ? "banking"
+        : "loan";
 
   return (
     <OnboardingShell
@@ -57,6 +71,8 @@ export default async function OnboardingDetailsPage() {
     >
       {isRecovery ? (
         <RecoveryDetailsForm />
+      ) : isRefund ? (
+        <RefundDetailsForm defaultEmail={user.email ?? undefined} />
       ) : isBanking ? (
         <BankingDetailsForm />
       ) : (

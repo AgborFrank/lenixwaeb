@@ -26,6 +26,10 @@
       "banking": {
         "1": "Serbisyo",
         "2": "Detalye ng bangko"
+      },
+      "refund": {
+        "1": "Service",
+        "2": "Refund case"
       }
     }
   },
@@ -48,6 +52,10 @@
       "banking": {
         "title": "Mga serbisyo sa bangko",
         "description": "Magpadala at tumanggap ng pondo sa ibang bansa, i-convert ang crypto sa cash, o mag-imbak ng asset nang ligtas."
+      },
+      "refund": {
+        "title": "Purchase refund",
+        "description": "Open a case for lost, damaged, late, or misdescribed orders. We review proof before any payout."
       }
     }
   },
@@ -69,6 +77,10 @@
     "payout": {
       "title": "Saan namin ito ipapadala?",
       "description": "Piliin kung paano mo gustong matanggap ang pondo."
+    },
+    "refund": {
+      "title": "Open your refund case",
+      "description": "Share order details, payment proof, and what went wrong. No payout is issued at submit."
     }
   },
   "Aside": {
@@ -94,7 +106,14 @@
       "bullet3": "Subaybayan ang lahat sa iyong dashboard"
     },
     "encryption": "Naka-encrypt at ligtas ang iyong data. Hindi namin ibinabahagi ang impormasyon mo nang walang pahintulot.",
-    "support": "May tanong? Makipag-ugnayan sa Telegram pagkatapos mong magsumite."
+    "support": "May tanong? Makipag-ugnayan sa Telegram pagkatapos mong magsumite.",
+    "refund": {
+      "title": "Refund intake",
+      "body": "The desk reviews recoverability against carriers, marketplaces, or counterparties. Instant payout, if offered, comes after underwriting.",
+      "bullet1": "Initial review within one business day",
+      "bullet2": "Fee applies only on amounts recovered",
+      "bullet3": "Case status in your dashboard"
+    }
   },
   "Common": {
     "required": "*",
@@ -187,7 +206,7 @@
     "methodTitle": "Paraan ng pagpapadala",
     "methodDesc": "Paano namin ipapadala ang iyong pautang?",
     "methods": {
-        "crypto": {
+      "crypto": {
         "label": "Pitaka ng crypto",
         "desc": "Ipadala sa iyong on-chain address"
       },
@@ -250,5 +269,28 @@
     "bsc": "BSC",
     "solana": "Solana",
     "bitcoin": "Bitcoin"
+  },
+  "RefundForm": {
+    "role": "I am the",
+    "roleBuyer": "Buyer",
+    "roleSeller": "Seller",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "counterparty": "Store, marketplace, or counterparty",
+    "counterpartyPlaceholder": "Shop name or seller handle",
+    "orderRef": "Order ID (optional)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Payment hash, invoice, or transfer ID",
+    "paymentPlaceholder": "0x… or invoice number",
+    "amount": "Amount claimed",
+    "amountPlaceholder": "e.g. 480",
+    "currency": "Asset",
+    "blockchain": "Chain (if paid in crypto)",
+    "selectBlockchain": "Select chain",
+    "noChain": "Not crypto / unknown",
+    "summary": "What fell short",
+    "summaryPlaceholder": "What was bought, delivery or tracking dates, what arrived (or did not), and any reply from the carrier or seller.",
+    "evidence": "Supporting evidence (optional)",
+    "evidenceHint": "Receipt, photos, chat, or tracking. PDF, JPG, PNG, or WebP. 8 MB max."
   }
 }

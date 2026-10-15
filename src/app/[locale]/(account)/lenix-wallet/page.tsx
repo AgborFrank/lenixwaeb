@@ -91,7 +91,7 @@ export default function LenixWalletPage() {
   if (walletState === "no_wallet") {
     return (
       <div className={wallet.container}>
-        <div className="mb-6">
+        <div className="mb-4">
           <h1 className={wallet.pageTitle}>{t("page.setup_title")}</h1>
           <p className={wallet.pageSubtitle}>{t("page.setup_subtitle")}</p>
         </div>
@@ -116,14 +116,14 @@ export default function LenixWalletPage() {
 
     return (
       <div className="flex min-h-[60vh] items-center justify-center px-4">
-        <div className="w-full max-w-sm bg-white/10 rounded-3xl p-6">
-          <div className="mb-8 text-center">
+        <div className="w-full max-w-sm rounded-2xl bg-white/10 p-4">
+          <div className="mb-4 text-center">
             <Image
               src="/assets/vectors/start-deposit-no.svg"
               alt={t("page.logo_alt")}
-              className="mx-auto mb-4"
-              width={56}
-              height={56}
+              className="mx-auto mb-2"
+              width={40}
+              height={40}
             />
             <h1 className={wallet.pageTitle}>{t("page.unlock_title")}</h1>
             <p className={wallet.pageSubtitle}>{t("page.unlock_subtitle")}</p>
@@ -166,7 +166,7 @@ export default function LenixWalletPage() {
 
   return (
     <div className={wallet.container}>
-      <div className="mb-5 flex flex-row items-center justify-between gap-4 sm:mb-6">
+      <div className="mb-3 flex flex-row items-center justify-between gap-3">
         <div className="min-w-0">
           <h1 className={wallet.pageTitle}>{t("page.title")}</h1>
           <p className={wallet.pageSubtitle}>{t("page.subtitle")}</p>
@@ -233,7 +233,7 @@ export default function LenixWalletPage() {
               <ChevronRight className="h-4 w-4" />
             </button>
 
-            <div className="mt-3 flex justify-center gap-1.5">
+            <div className="mt-2 flex justify-center gap-1.5">
               {[0, 1].map((i) => (
                 <button
                   key={i}

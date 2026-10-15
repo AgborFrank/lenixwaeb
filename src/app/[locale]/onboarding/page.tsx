@@ -1,7 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
-import { HandCoins, Landmark, SearchCheck } from "lucide-react";
+import { HandCoins, Landmark, Package, SearchCheck } from "lucide-react";
 import { submitServiceSelection } from "./actions";
 import { OnboardingShell } from "./components/onboarding-shell";
 import { OnboardingActionBar } from "./components/onboarding-action-bar";
@@ -9,6 +9,7 @@ import { onboarding } from "@/lib/onboarding-styles";
 
 const SERVICES = [
   { value: "recovery", icon: SearchCheck },
+  { value: "refund", icon: Package },
   { value: "loan", icon: HandCoins },
   { value: "banking", icon: Landmark },
 ] as const;
