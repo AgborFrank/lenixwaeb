@@ -488,7 +488,8 @@
       "send": "Gönder",
       "receive": "Al",
       "transactions": "İşlemler",
-      "settings": "Ayarlar"
+      "settings": "Ayarlar",
+      "refund_services": "Satın alma iadeleri"
     },
     "support": {
       "need_help": "Yardıma mı ihtiyacınız var?",
@@ -1167,6 +1168,7 @@
     "page": {
       "title": "Kurtarma hizmetleri",
       "subtitle": "Kayıp veya çalınmış kripto varlıklar için kurtarma talebi gönderin. Adli bilişim ekibimiz dosyanızı değerlendirir ve 24–48 saat içinde sizinle iletişime geçer.",
+      "refund_link": "Satın aldığınız ürün ödemenizle uyuşmadı mı? Bir iade dosyası açın.",
       "process_title": "Süreç",
       "form_title": "Varlık kurtarma ve adli bilişim detayları",
       "form_subtitle": "Kayıp kripto varlıkları izlemenize ve kurtarmanıza, ayrıca yasal fon geri kazanımı için doğrulanmış kanıt oluşturmanıza yardımcı oluyoruz."

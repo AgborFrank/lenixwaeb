@@ -488,7 +488,8 @@
       "send": "Enviar",
       "receive": "Recibir",
       "transactions": "Transacciones",
-      "settings": "Ajustes"
+      "settings": "Ajustes",
+      "refund_services": "Reembolsos de compra"
     },
     "support": {
       "need_help": "¿Necesitas ayuda?",
@@ -1167,6 +1168,7 @@
     "page": {
       "title": "Servicios de recuperación",
       "subtitle": "Envíe una solicitud de recuperación de activos cripto perdidos o robados. Nuestro equipo forense evaluará su caso y se pondrá en contacto en 24–48 horas.",
+      "refund_link": "¿La compra no coincidió con lo pagado? Abra un caso de reembolso.",
       "process_title": "Proceso",
       "form_title": "Detalles de recuperación de activos y forense",
       "form_subtitle": "Le ayudamos a rastrear y recuperar activos cripto perdidos y a reunir pruebas verificadas para la recuperación legal de fondos."

@@ -488,7 +488,8 @@
       "send": "Senden",
       "receive": "Empfangen",
       "transactions": "Transaktionen",
-      "settings": "Einstellungen"
+      "settings": "Einstellungen",
+      "refund_services": "Kaufrückerstattungen"
     },
     "support": {
       "need_help": "Brauchen Sie Hilfe?",
@@ -1167,6 +1168,7 @@
     "page": {
       "title": "Wiederherstellungsdienste",
       "subtitle": "Reichen Sie eine Wiederherstellungsanfrage für verlorene oder gestohlene Krypto-Assets ein. Unser Forensik-Team prüft Ihren Fall und meldet sich innerhalb von 24–48 Stunden.",
+      "refund_link": "Kauf nicht wie bezahlt? Öffnen Sie einen Erstattungsfall.",
       "process_title": "Ablauf",
       "form_title": "Details zur Asset-Wiederherstellung und Forensik",
       "form_subtitle": "Wir helfen Ihnen, verlorene Krypto-Assets nachzuverfolgen und wiederherzustellen sowie verifizierte Beweise für die rechtmäßige Rückführung von Geldern zu erstellen."

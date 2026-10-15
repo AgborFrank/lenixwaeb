@@ -488,7 +488,8 @@
       "send": "Ipadala",
       "receive": "Tanggapin",
       "transactions": "Mga Transaksyon",
-      "settings": "Mga setting"
+      "settings": "Mga setting",
+      "refund_services": "Mga refund sa pagbili"
     },
     "support": {
       "need_help": "Kailangan ng tulong?",
@@ -1167,6 +1168,7 @@
     "page": {
       "title": "Mga Serbisyo sa Recovery",
       "subtitle": "Mag-submit ng recovery request para sa nawala o ninakaw na crypto assets. Susuriin ng forensic team namin ang kaso at makikipag-ugnayan sa loob ng 24–48 oras.",
+      "refund_link": "Hindi tumugma ang binili sa binayaran? Magbukas ng purchase refund case.",
       "process_title": "Proseso",
       "form_title": "Detalye ng Asset Recovery at Forensics",
       "form_subtitle": "Tutulungan ka naming i-trace at i-recover ang nawalang crypto assets at bumuo ng verified evidence para sa legal na pagbawi ng pondo."

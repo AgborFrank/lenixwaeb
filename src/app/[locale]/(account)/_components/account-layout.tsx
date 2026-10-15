@@ -50,6 +50,7 @@ type NavLabelKey =
   | "lenix_wallet"
   | "banking"
   | "recovery_services"
+  | "refund_services"
   | "crypto_loan"
   | "assets"
   | "send"
@@ -73,6 +74,7 @@ const NAV_SECTIONS: NavSection[] = [
       { href: "/lenix-wallet", labelKey: "lenix_wallet", icon: Wallet },
       { href: "/banking", labelKey: "banking", icon: Building2 },
       { href: "/recovery-services", labelKey: "recovery_services", icon: ShieldCheck },
+      { href: "/refund-services", labelKey: "refund_services", icon: ShieldCheck },
       { href: "/crypto-loan", labelKey: "crypto_loan", icon: Landmark },
     ],
   },

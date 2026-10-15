@@ -488,7 +488,8 @@
       "send": "Gửi",
       "receive": "Nhận",
       "transactions": "Giao dịch",
-      "settings": "Cài đặt"
+      "settings": "Cài đặt",
+      "refund_services": "Hoàn tiền mua hàng"
     },
     "support": {
       "need_help": "Cần trợ giúp?",
@@ -1167,6 +1168,7 @@
     "page": {
       "title": "Dịch vụ khôi phục",
       "subtitle": "Gửi yêu cầu khôi phục tài sản crypto bị mất hoặc bị đánh cắp. Đội forensics sẽ đánh giá hồ sơ và liên hệ với bạn trong 24–48 giờ.",
+      "refund_link": "Mua hàng không đúng như đã trả? Mở hồ sơ hoàn tiền mua hàng.",
       "process_title": "Quy trình",
       "form_title": "Chi tiết khôi phục tài sản và forensics",
       "form_subtitle": "Chúng tôi giúp bạn truy vết và khôi phục tài sản crypto bị mất, đồng thời xây dựng bằng chứng đã xác minh cho việc thu hồi tiền theo pháp luật."

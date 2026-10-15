@@ -488,7 +488,8 @@
       "send": "发送",
       "receive": "接收",
       "transactions": "交易记录",
-      "settings": "设置"
+      "settings": "设置",
+      "refund_services": "购物退款"
     },
     "support": {
       "need_help": "需要帮助？",
@@ -1167,6 +1168,7 @@
     "page": {
       "title": "资产恢复服务",
       "subtitle": "提交丢失或被盗加密资产的恢复申请。我们的取证团队将评估您的案件，并在 24–48 小时内与您联系。",
+      "refund_link": "购买与付款不符？提交购物退款案件。",
       "process_title": "流程",
       "form_title": "资产恢复与取证详情",
       "form_subtitle": "我们协助您追踪并恢复丢失的加密资产，并构建经核实的证据以支持合法资金追回。"

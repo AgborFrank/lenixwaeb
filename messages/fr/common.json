@@ -488,7 +488,8 @@
       "send": "Envoyer",
       "receive": "Recevoir",
       "transactions": "Transactions",
-      "settings": "Paramètres"
+      "settings": "Paramètres",
+      "refund_services": "Remboursements d’achat"
     },
     "support": {
       "need_help": "Besoin d'aide ?",
@@ -1167,6 +1168,7 @@
     "page": {
       "title": "Services de récupération",
       "subtitle": "Soumettez une demande de récupération pour des actifs crypto perdus ou volés. Notre équipe forensique évaluera votre dossier et vous contactera sous 24 à 48 heures.",
+      "refund_link": "Un achat n’a pas tenu ses promesses ? Ouvrez un dossier de remboursement.",
       "process_title": "Processus",
       "form_title": "Détails de récupération d'actifs et forensique",
       "form_subtitle": "Nous vous aidons à tracer et récupérer des actifs crypto perdus et à constituer des preuves vérifiées pour une récupération légale des fonds."

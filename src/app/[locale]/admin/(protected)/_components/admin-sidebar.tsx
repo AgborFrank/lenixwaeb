@@ -38,6 +38,7 @@ const navItems = [
   { href: "/admin/banking", label: "Banking Services", icon: Building2 },
   { href: "/admin/account-controls", label: "Account Controls", icon: ShieldAlert },
   { href: "/admin/recovery", label: "Recovery Requests", icon: ShieldCheck },
+  { href: "/admin/refunds", label: "Purchase Refunds", icon: FileText },
   { href: "/admin/loans", label: "Loans", icon: Banknote },
   { href: "/admin/admins", label: "Admin Management", icon: UserCog },
   { href: "/admin/settings", label: "Settings", icon: Settings },

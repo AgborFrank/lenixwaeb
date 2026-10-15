@@ -1,5 +1,6 @@
 import { Search, Shield, Zap, CheckCircle } from "lucide-react";
 import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
 import { RecoveryRequestForm } from "./_components/recovery-request-form";
 
 export default async function RecoveryServicesPage() {
@@ -33,6 +34,11 @@ export default async function RecoveryServicesPage() {
       <div>
         <h1 className="mb-2 text-2xl font-bold text-white md:text-3xl">{t("page.title")}</h1>
         <p className="text-gray-400">{t("page.subtitle")}</p>
+        <p className="mt-3 text-sm text-gray-500">
+          <Link href="/refund-services" className="text-yellow-400 hover:text-yellow-300">
+            {t("page.refund_link")}
+          </Link>
+        </p>
       </div>
 
       <div className="rounded-2xl border border-white/10 bg-white/5 p-6">

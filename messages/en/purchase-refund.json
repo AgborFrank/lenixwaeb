@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "title": "Purchase refunds | Lenix Protocol",
+    "description": "Open a refund case for a lost, damaged, delayed, or misdescribed purchase. We review the trail first. You pay a share of what is recovered, not of what you claimed.",
+    "keywords": "purchase refund, lost parcel claim, damaged shipment, delayed delivery, buyer refund, seller refund, Lenix Protocol"
+  },
+  "Hero": {
+    "eyebrow": "Purchase refunds",
+    "title": "Recover value from lost, damaged, and failed purchases",
+    "description": "Submit the order, the payment proof, and what went wrong. We check whether a claim against the carrier, marketplace, or counterparty is recoverable. Instant payout, if any, comes after underwriting. Refunds are not guaranteed.",
+    "submit": "Open a refund case",
+    "process": "How a case runs",
+    "imageAlt": "Investigator reviewing a purchase dispute file"
+  },
+  "System": {
+    "eyebrow": "The desk",
+    "title": "One file for what a carrier or counterparty still owes",
+    "description": "Some refund platforms connect to a merchant carrier account and watch every label. Lenix does not. You open a case. We review it, build the pack, and follow it until it settles or we close it in writing.",
+    "items": {
+      "review": {
+        "title": "Review before anyone files",
+        "description": "Payment trail, tracking, photos, and the claim window the carrier or marketplace actually published. If the window is already closed, we say so."
+      },
+      "file": {
+        "title": "Prepare, then send",
+        "description": "The desk drafts the claim from your evidence. Nothing goes to a carrier, marketplace, or counterparty until you accept the terms."
+      },
+      "track": {
+        "title": "A case file, not a live tracker",
+        "description": "Status, evidence, and what came back sit on the case. You get written updates. We do not ingest every shipment from your carrier login."
+      },
+      "fee": {
+        "title": "Fee on recovered value",
+        "description": "The recovery fee is a share of money that actually returns. Intake is free. If nothing comes back, you do not pay that fee."
+      }
+    }
+  },
+  "Split": {
+    "eyebrow": "Sellers and ops",
+    "title": "Stalled parcels that usually get written off",
+    "description": "When tracking stops and nobody has time to sit in a carrier portal, the loss sits on the books. If the claim window is still open, that is a recovery file: tracking, declared value, photos, and the service you paid for.",
+    "points": {
+      "lost": "Lost, no-scan, and return-to-sender, where the contract still covers the goods or the postage.",
+      "damaged": "Damaged on arrival, with photos and a date that still fits the carrier's deadline.",
+      "late": "Late against a paid delivery guarantee, where the tariff actually pays compensation.",
+      "manual": "A buyer reports a missing order. You add it by hand. We do not need a carrier API to start."
+    },
+    "cta": "Open a seller case",
+    "imageAlt": "Parcel tracking records used as claim evidence"
+  },
+  "Cases": {
+    "eyebrow": "What to file",
+    "title": "The shortfalls we take",
+    "description": "Buyers and sellers can open the same intake. The desk routes the claim to the party that still owes the value.",
+    "items": {
+      "lost": {
+        "title": "Lost in transit",
+        "description": "No delivery scan, stuck in a depot, or marked delivered when the buyer never received it. Tracking and the payment proof go in the file first."
+      },
+      "damaged": {
+        "title": "Damaged on arrival",
+        "description": "The box landed, the goods did not survive. Photos, packing, and the order value matter more than a long complaint."
+      },
+      "delayed": {
+        "title": "Late against a guarantee",
+        "description": "You paid for a timed service. The parcel missed it. Compensation depends on the carrier's published window, not on how angry the buyer is."
+      },
+      "short": {
+        "title": "Not as paid for",
+        "description": "Wrong size, empty box, never shipped. This is a counterparty claim, not a stolen-wallet case. Payment proof still has to match the order."
+      }
+    }
+  },
+  "Process": {
+    "eyebrow": "Methodology",
+    "title": "How a refund case runs",
+    "description": "The same four-phase recovery process we use on lost-asset cases, applied to a purchase that missed or a parcel the carrier still owes.",
+    "phase": "Phase {number}",
+    "steps": {
+      "assessment": {
+        "title": "Initial assessment",
+        "description": "We check the payment trail, tracking, the counterparty, and whether the claim window is still open. No money moves here.",
+        "tag1": "Trail review",
+        "tag2": "Claim window"
+      },
+      "strategy": {
+        "title": "Refund strategy",
+        "description": "Written terms: instant or after-return, who carries the gap if the item never comes back, and the fee on recovered value.",
+        "tag1": "Evidence pack",
+        "tag2": "Fee terms"
+      },
+      "coordination": {
+        "title": "Active coordination",
+        "description": "If instant is approved, the buyer is paid first. The item still has seven days to ship. We follow the carrier or marketplace claim in parallel.",
+        "tag1": "Instant or wait",
+        "tag2": "Return window"
+      },
+      "return": {
+        "title": "Verified payout",
+        "description": "Funds go to a verified wallet, or the case closes with a written reason. We do not reverse the original card sale.",
+        "tag1": "Verified payout",
+        "tag2": "Case closure"
+      }
+    }
+  },
+  "Boundaries": {
+    "eyebrow": "Limits",
+    "title": "What this desk does, and what it will not",
+    "description": "A complete claims page says both. If your case sits on the wrong side, we will point you elsewhere instead of taking the file.",
+    "take": {
+      "title": "We take",
+      "items": {
+        "a": "Lost, damaged, delayed, or misdescribed purchases with a payment trail.",
+        "b": "Seller claims against a carrier or marketplace while the published window is still open.",
+        "c": "Buyer cases where the other party stopped answering after the goods fell short."
+      }
+    },
+    "skip": {
+      "title": "We do not",
+      "items": {
+        "a": "Connect to your carrier account and scan every label. You open the case.",
+        "b": "File Visa or Mastercard chargebacks. We are not the merchant of record on the original sale.",
+        "c": "Handle stolen or drained wallets. That is recovery services."
+      }
+    },
+    "recoveryLink": "Open a stolen-asset case"
+  },
+  "Fees": {
+    "eyebrow": "Pricing",
+    "title": "You pay a share of what comes back",
+    "description": "Intake does not bill a recovery fee. After assessment we send terms. The fee is a percentage of recovered value, not of the amount you claimed. If the case recovers nothing, that fee is zero.",
+    "cta": "Open a refund case",
+    "points": {
+      "intake": "No setup charge to open a file.",
+      "share": "Fee only on recovered funds, never on a rejected claim.",
+      "terms": "Nothing is filed, and no payout is sent, until you accept the terms in writing."
+    }
+  },
+  "Faq": {
+    "eyebrow": "FAQ",
+    "title": "Before you submit",
+    "subtitle": "Straight answers on monitoring, payouts, and fees.",
+    "discuss": "If this is a lost-wallet case, use recovery services instead.",
+    "submit": "Open a refund case",
+    "recovery": "Start a recovery case",
+    "items": {
+      "types": {
+        "question": "What can I file here?",
+        "answer": "Lost, damaged, delayed, empty, or misdescribed purchases. Buyers and sellers use the same form. Stolen crypto is a different desk."
+      },
+      "monitor": {
+        "question": "Do you watch all of my shipments?",
+        "answer": "No. Some refund platforms connect to carrier accounts and flag every stalled label. Lenix reviews the cases you submit. If you have a tracking number and a payment proof, that is enough to start."
+      },
+      "instant": {
+        "question": "Do I get the money back in seconds?",
+        "answer": "Not at submit. Instant payout is an underwriting decision after we score non-return risk. Many cases wait for the return or for the carrier to pay. We will not pretend otherwise."
+      },
+      "fees": {
+        "question": "What do you charge?",
+        "answer": "A share of recovered value, agreed in writing before we file or pay. Intake is free. If nothing is recovered, you do not pay that recovery fee."
+      },
+      "chargebacks": {
+        "question": "Will you reverse my card payment?",
+        "answer": "No. We do not represent chargebacks to Visa or Mastercard. The original merchant of record stays in place. This desk recovers value through the carrier, marketplace, or counterparty, then pays a verified wallet if the case clears."
+      },
+      "timeline": {
+        "question": "How long does a case take?",
+        "answer": "Assessment is due within one business day. Carrier and marketplace claims then follow their own windows, often two to six weeks. You get a written estimate after review."
+      },
+      "evidence": {
+        "question": "What should I attach?",
+        "answer": "Payment hash or invoice, tracking, photos of damage if you have them, and any chat with the other party. PDF, JPG, PNG, or WebP, 8 MB max. A case can start without a file. Weak evidence just slows the claim."
+      },
+      "guarantee": {
+        "question": "Do you guarantee a refund?",
+        "answer": "No. Closed claim windows, missing proof, and counterparties who will not pay all fail. We close those in writing instead of keeping the file open for show."
+      }
+    }
+  },
+  "Account": {
+    "title": "Purchase refunds",
+    "subtitle": "For parcels that were lost, damaged, late, or not as paid for. Stolen-wallet cases go to recovery services.",
+    "stolenLink": "Lost or stolen crypto? Use recovery services."
+  },
+  "Form": {
+    "eyebrow": "Case intake",
+    "title": "Submit a refund request",
+    "description": "No payout happens at submit. The desk reviews recoverability within one business day, then sends terms if the case can proceed.",
+    "submittedTitle": "Request submitted",
+    "submittedBody": "The refund desk will review this case and contact you within 24 to 48 hours. Instant payout, if any, comes after underwriting, not now.",
+    "submitAnother": "Submit another request",
+    "steps": "Steps",
+    "step": "Step {id}",
+    "step1Title": "Who and what",
+    "step1Desc": "Buyer or seller, order, and amount.",
+    "step2Title": "What went wrong",
+    "step2Desc": "Incident summary and evidence.",
+    "role": "I am the",
+    "roleBuyer": "Buyer",
+    "roleSeller": "Seller",
+    "fullName": "Full name",
+    "namePlaceholder": "Jane Mensah",
+    "email": "Email",
+    "emailPlaceholder": "jane@example.com",
+    "phone": "Phone (optional)",
+    "counterparty": "Store, marketplace, or counterparty",
+    "counterpartyPlaceholder": "Shop name or seller handle",
+    "orderRef": "Order ID (optional)",
+    "orderPlaceholder": "ORD-2044",
+    "paymentProof": "Payment hash, invoice, or transfer ID",
+    "paymentPlaceholder": "0x… or invoice number",
+    "amount": "Amount claimed",
+    "amountPlaceholder": "e.g. 480",
+    "currency": "Asset",
+    "blockchain": "Chain (if paid in crypto)",
+    "selectBlockchain": "Select chain",
+    "otherChain": "Other",
+    "continue": "Continue to incident details",
+    "summary": "What fell short",
+    "summaryPlaceholder": "What was bought, tracking or delivery date, what arrived (or did not), and any reply from the carrier or seller.",
+    "evidence": "Supporting evidence (optional)",
+    "evidenceHint": "Receipt, photos, chat, or tracking. PDF, JPG, PNG, or WebP. 8 MB max.",
+    "privacy": "Lenix Protocol uses your contact details to respond about this refund case. See our <link>Privacy Policy</link>.",
+    "back": "Back",
+    "submitting": "Submitting…",
+    "submit": "Submit refund request",
+    "points": {
+      "confidential": {
+        "title": "Confidential",
+        "desc": "Encrypted intake and restricted case access."
+      },
+      "review": {
+        "title": "24h review",
+        "desc": "Initial assessment within one business day."
+      },
+      "fee": {
+        "title": "Fee on recovery",
+        "desc": "You pay a share of what comes back, not of what you claimed."
+      }
+    },
+    "errors": {
+      "requiredContinue": "Complete the required fields before continuing.",
+      "email": "Enter a valid email address.",
+      "required": "Fill in all required fields.",
+      "failed": "Failed to submit refund request",
+      "success": "Refund request submitted. The team will contact you."
+    }
+  }
+}

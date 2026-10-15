@@ -1,4 +1,4 @@
-import { createClient } from "@/utils/supabase/server";
+import { createClient, createServiceRoleClient } from "@/utils/supabase/server";
 import { getAdminSession } from "@/lib/admin-auth";
 import {
   Users,
@@ -9,16 +9,19 @@ import {
   TrendingUp,
   Clock,
   AlertCircle,
+  FileText,
 } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 
 async function getStats() {
   const supabase = await createClient();
+  const adminDb = createServiceRoleClient();
 
   const [
     { count: totalUsers },
     { count: totalWallets },
     { count: pendingRecovery },
+    { count: pendingRefunds },
     { count: activeLoans },
     { count: pendingAdmins },
     { data: recentOperations },
@@ -26,6 +29,7 @@ async function getStats() {
     supabase.from("user_wallets").select("*", { count: "exact", head: true }),
     supabase.from("user_balances").select("*", { count: "exact", head: true }).gt("usd_value", 0),
     supabase.from("recovery_requests").select("*", { count: "exact", head: true }).neq("status", "completed"),
+    adminDb.from("refund_requests").select("*", { count: "exact", head: true }).neq("status", "completed"),
     supabase.from("active_loans").select("*", { count: "exact", head: true }),
     supabase.from("admin_users").select("*", { count: "exact", head: true }).eq("is_active", false),
     supabase
@@ -39,6 +43,7 @@ async function getStats() {
     totalUsers: totalUsers ?? 0,
     totalWallets: totalWallets ?? 0,
     pendingRecovery: pendingRecovery ?? 0,
+    pendingRefunds: pendingRefunds ?? 0,
     activeLoans: activeLoans ?? 0,
     pendingAdmins: pendingAdmins ?? 0,
     recentOperations: recentOperations ?? [],
@@ -75,6 +80,14 @@ export default async function AdminDashboardPage() {
       bgColor: "bg-yellow-400/10",
     },
     {
+      label: "Purchase Refunds",
+      value: stats.pendingRefunds,
+      icon: FileText,
+      href: "/admin/refunds",
+      color: "text-amber-300",
+      bgColor: "bg-amber-400/10",
+    },
+    {
       label: "Active Loans",
       value: stats.activeLoans,
       icon: Banknote,
@@ -103,7 +116,7 @@ export default async function AdminDashboardPage() {
         </p>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((card) => {
           const Icon = card.icon;
           return (
@@ -206,6 +219,15 @@ export default async function AdminDashboardPage() {
               <ShieldCheck className="h-5 w-5 text-yellow-400" />
               <span className="text-sm font-medium text-white">
                 Review Recovery Requests
+              </span>
+            </Link>
+            <Link
+              href="/admin/refunds"
+              className="flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 transition-colors hover:border-zinc-700"
+            >
+              <FileText className="h-5 w-5 text-amber-300" />
+              <span className="text-sm font-medium text-white">
+                Review purchase refunds
               </span>
             </Link>
             {stats.pendingAdmins > 0 && (

@@ -18,6 +18,7 @@ const ACCOUNT_ROUTE_PREFIXES = [
   "/vault",
   "/crypto-loan",
   "/recovery-services",
+  "/refund-services",
 ]
 
 export default function FloatingTelegramButton() {

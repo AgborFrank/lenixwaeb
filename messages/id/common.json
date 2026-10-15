@@ -488,7 +488,8 @@
       "send": "Kirim",
       "receive": "Terima",
       "transactions": "Transaksi",
-      "settings": "Pengaturan"
+      "settings": "Pengaturan",
+      "refund_services": "Pengembalian pembelian"
     },
     "support": {
       "need_help": "Butuh bantuan?",
@@ -1167,6 +1168,7 @@
     "page": {
       "title": "Layanan pemulihan",
       "subtitle": "Kirim permintaan pemulihan untuk aset kripto yang hilang atau dicuri. Tim forensik kami akan menilai kasus Anda dan menghubungi dalam 24–48 jam.",
+      "refund_link": "Pembelian tidak sesuai yang dibayar? Buka kasus pengembalian pembelian.",
       "process_title": "Proses",
       "form_title": "Detail pemulihan aset dan forensik",
       "form_subtitle": "Kami membantu Anda melacak dan memulihkan aset kripto yang hilang serta menyusun bukti terverifikasi untuk pemulihan dana secara legal."

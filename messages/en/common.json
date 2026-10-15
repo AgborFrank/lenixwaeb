@@ -474,6 +474,7 @@
       "lenix_wallet": "Lenix Wallet",
       "banking": "Enterprise Banking",
       "recovery_services": "Recovery Services",
+      "refund_services": "Purchase Refunds",
       "crypto_loan": "Crypto Loan",
       "assets": "Assets",
       "send": "Send",
@@ -1158,6 +1159,7 @@
     "page": {
       "title": "Recovery Services",
       "subtitle": "Submit a recovery request for lost or stolen crypto assets. Our forensic team will assess your case and contact you within 24–48 hours.",
+      "refund_link": "Bought something that fell short? Open a purchase refund case.",
       "process_title": "Process",
       "form_title": "Asset Recovery & Forensics Details",
       "form_subtitle": "We help you trace and recover lost crypto assets and build verified evidence for lawful fund recovery."
