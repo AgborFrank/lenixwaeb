@@ -1,0 +1,201 @@
+- generic:
+  - generic [aria-hidden]:
+    - generic:
+      - complementary:
+        - generic:
+          - generic:
+            - link:
+              - /url: /en/dashboard
+            - button: en
+          - generic:
+            - generic:
+              - navigation:
+                - generic:
+                  - paragraph: Account
+                  - generic:
+                    - link:
+                      - /url: /en/dashboard
+                      - generic: Home
+                    - link:
+                      - /url: /en/vault
+                      - generic: Blockchain Vault
+                    - link:
+                      - /url: /en/lenix-wallet
+                      - generic: Lenix Wallet
+                    - link:
+                      - /url: /en/banking
+                      - generic: Enterprise Banking
+                    - link:
+                      - /url: /en/recovery-services
+                      - generic: Recovery Services
+                    - link:
+                      - /url: /en/refund-services
+                      - generic: Purchase Refunds
+                    - link:
+                      - /url: /en/crypto-loan
+                      - generic: Crypto Loan
+                - generic:
+                  - paragraph: Wallet
+                  - generic:
+                    - link:
+                      - /url: /en/assets
+                      - generic: Assets
+                    - link:
+                      - /url: /en/send
+                      - generic: Send
+                    - link:
+                      - /url: /en/receive
+                      - generic: Receive
+                    - link:
+                      - /url: /en/transactions
+                      - generic: Transactions
+                - generic:
+                  - generic:
+                    - link:
+                      - /url: /en/settings
+                      - generic: Settings
+              - generic:
+                - link:
+                  - /url: https://t.me/Verified_protocol
+                  - text: Contact Support
+                - generic:
+                  - generic: TE
+                  - paragraph: test_dev_1792127588465@example.com
+                  - button
+      - generic:
+        - banner:
+          - button:
+            - generic: TE
+            - generic: test_dev_1792127588465@example.com
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph: Purchase refunds
+                - heading [level=1]: Refund Claim
+                - paragraph: Open a file when a purchase is lost, damaged, late, or not what you paid for. Stolen wallets belong on the recovery desk.
+              - generic:
+                - link:
+                  - /url: /en/recovery-services
+                  - text: Lost or stolen crypto
+                - link:
+                  - /url: /en/refund-services/new
+                  - text: Open a refund
+            - region:
+              - generic:
+                - generic:
+                  - paragraph: Waiting on us
+                  - paragraph: "1"
+                - generic:
+                  - paragraph: We're on it
+                  - paragraph: "1"
+                - generic:
+                  - paragraph: Finished
+                  - paragraph: "0"
+                - generic:
+                  - paragraph: All refunds
+                  - paragraph: "2"
+            - region:
+              - generic:
+                - heading [level=2]: Your refunds
+                - paragraph: 2 refunds
+              - generic:
+                - table:
+                  - rowgroup:
+                    - row:
+                      - columnheader: Refund
+                      - columnheader: Amount
+                      - columnheader: Status
+                      - columnheader: Where it is
+                      - columnheader: Opened
+                      - columnheader: Actions
+                  - rowgroup:
+                    - row:
+                      - cell:
+                        - paragraph: SUB-4410-X
+                        - paragraph: I bought it
+                      - cell: 8200 USDC
+                      - cell:
+                        - generic: Waiting
+                      - cell: Just arrived
+                      - cell: 10/16/2026
+                      - cell:
+                        - button: View Details
+                    - row:
+                      - cell:
+                        - paragraph: ORD-2026-9812A
+                        - paragraph: I bought it
+                      - cell: 45000 USDT
+                      - cell:
+                        - generic: We're looking
+                      - cell: We're reading it
+                      - cell: 10/14/2026
+                      - cell:
+                        - button: View Details
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f45e169] [cursor=pointer]
+  - alert
+  - iframe [aria-hidden] [ref=f45e174]
+  - dialog [ref=f45e176]:
+    - generic [ref=f45e177]:
+      - generic [ref=f45e178]:
+        - generic [ref=f45e179]:
+          - generic [ref=f45e180]:
+            - generic [ref=f45e181]: "#REF-E7F1B2C3"
+            - button "Copy to clipboard" [active] [ref=f45e182]
+          - generic [ref=f45e186]:
+            - generic [ref=f45e187]: We're looking
+            - generic [ref=f45e188]: We're reading it
+        - heading "Refund Claim" [level=2] [ref=f45e189]
+        - paragraph [ref=f45e190]: "Opened on 10/14/2026 · Reference: ORD-2026-9812A"
+      - generic [ref=f45e191]:
+        - generic [ref=f45e192]:
+          - generic [ref=f45e193]: Claimed Amount
+          - paragraph [ref=f45e194]: 45000 USDT
+          - generic [ref=f45e195]: "Filing Role: I bought it"
+        - generic [ref=f45e196]:
+          - generic [ref=f45e197]: Counterparty / Store
+          - paragraph [ref=f45e198]: Apex Hardware Supplies Ltd
+          - generic [ref=f45e199]: "Order Ref: ORD-2026-9812A"
+      - generic [ref=f45e200]:
+        - generic [ref=f45e201]:
+          - generic [ref=f45e202]: Payment Chain / Method
+          - generic [ref=f45e203]: Ethereum
+        - generic [ref=f45e204]:
+          - generic [ref=f45e205]: Payment Proof / Hash
+          - generic [ref=f45e206]:
+            - generic [ref=f45e207]: "0x3a9f19b284810294719283719481920381920391829381920391829301928374"
+            - button "Copy to clipboard" [ref=f45e208]
+            - link "Open in block explorer" [ref=f45e212] [cursor=pointer]:
+              - /url: https://etherscan.io/tx/0x3a9f19b284810294719283719481920381920391829381920391829301928374
+        - generic [ref=f45e217]:
+          - generic [ref=f45e218]: Payout Destination
+          - generic [ref=f45e219]: "USDT ERC-20: 0x71C...82F9"
+        - generic [ref=f45e220]:
+          - generic [ref=f45e221]: Shipping & Tracking
+          - generic [ref=f45e227]: UPS Express - 1Z9999999999999999
+        - generic [ref=f45e228]:
+          - generic [ref=f45e229]: Filer Information
+          - generic [ref=f45e230]: Enterprise Client Alpha (+1 (555) 019-2834)
+      - generic [ref=f45e231]:
+        - generic [ref=f45e232]: Incident Summary & Context
+        - blockquote [ref=f45e233]: "\"Vendor failed to deliver specialized ASIC hardware components after confirmed on-chain escrow release. No tracking updates received.\""
+      - generic [ref=f45e234]:
+        - generic [ref=f45e240]:
+          - generic [ref=f45e241]: Attached Evidence
+          - paragraph [ref=f45e242]: invoice-9812A-signed.pdf
+        - link "Download" [ref=f45e243] [cursor=pointer]:
+          - /url: https://ebwvhneiinvjxlitxxkh.supabase.co/storage/v1/object/public/onboarding-evidence/sample-invoice.pdf
+      - generic [ref=f45e244]:
+        - generic [ref=f45e245]: "Claim Review Note:"
+        - paragraph [ref=f45e248]: Merchant dispute officer contacted. Underwriting assessment scheduled for 48h SLA.
+      - generic [ref=f45e249]:
+        - paragraph [ref=f45e250]:
+          - text: Quote Claim
+          - generic [ref=f45e251]: "#REF-E7F1B2C3"
+          - text: for inquiries.
+        - generic [ref=f45e252]:
+          - button "Close" [ref=f45e253]
+          - link "Contact Claim Officer" [ref=f45e254] [cursor=pointer]:
+            - /url: https://t.me/Verified_protocol
+    - button "Close" [ref=f45e255]

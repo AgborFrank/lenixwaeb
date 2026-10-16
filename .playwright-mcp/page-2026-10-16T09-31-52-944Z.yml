@@ -1,0 +1,132 @@
+- generic:
+  - generic [aria-hidden]:
+    - generic:
+      - generic:
+        - banner:
+          - generic:
+            - button
+          - button:
+            - generic: TE
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - paragraph: Purchase refunds
+                - heading [level=1]: Cases
+                - paragraph: Open a file when a purchase is lost, damaged, late, or not what you paid for. Stolen wallets belong on the recovery desk.
+              - generic:
+                - link:
+                  - /url: /en/recovery-services
+                  - text: Lost or stolen crypto
+                - link:
+                  - /url: /en/refund-services/new
+                  - text: Open a refund
+            - region:
+              - generic:
+                - generic:
+                  - paragraph: Waiting on us
+                  - paragraph: "1"
+                - generic:
+                  - paragraph: We're on it
+                  - paragraph: "1"
+                - generic:
+                  - paragraph: Finished
+                  - paragraph: "0"
+                - generic:
+                  - paragraph: All refunds
+                  - paragraph: "2"
+            - region:
+              - generic:
+                - heading [level=2]: Your refunds
+                - paragraph: 2 refunds
+              - list:
+                - listitem:
+                  - generic:
+                    - generic:
+                      - paragraph: 8200 USDC
+                      - paragraph: SUB-4410-X · I bought it
+                    - generic: Waiting
+                  - generic:
+                    - paragraph: Just arrived · 10/16/2026
+                    - button: View Details
+                - listitem:
+                  - generic:
+                    - generic:
+                      - paragraph: 45000 USDT
+                      - paragraph: ORD-2026-9812A · I bought it
+                    - generic: We're looking
+                  - generic:
+                    - paragraph: We're reading it · 10/14/2026
+                    - button: View Details
+        - generic:
+          - navigation:
+            - link:
+              - /url: /en/dashboard
+              - generic: Home
+            - link:
+              - /url: /en/banking
+              - generic: Banking
+            - link:
+              - /url: /en/lenix-wallet
+              - generic: Wallet
+            - link:
+              - /url: /en/crypto-loan
+              - generic: Loan
+            - link:
+              - /url: /en/settings
+              - generic: Settings
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f42e169] [cursor=pointer]
+  - alert
+  - iframe [aria-hidden] [ref=f42e173]
+  - dialog [ref=f42e340]:
+    - generic [ref=f42e341]:
+      - generic [ref=f42e342]:
+        - generic [ref=f42e343]:
+          - generic [ref=f42e344]:
+            - generic [ref=f42e345]: "#REF-F8E2C3D4"
+            - button "Copy to clipboard" [active] [ref=f42e346]
+          - generic [ref=f42e350]:
+            - generic [ref=f42e351]: Waiting
+            - generic [ref=f42e352]: Just arrived
+        - heading "Purchase Refund Dossier" [level=2] [ref=f42e353]
+        - paragraph [ref=f42e354]: "Opened on 10/16/2026 · Reference: SUB-4410-X"
+      - generic [ref=f42e355]:
+        - generic [ref=f42e356]:
+          - generic [ref=f42e357]: Claimed Amount
+          - paragraph [ref=f42e358]: 8200 USDC
+          - generic [ref=f42e359]: "Filing Role: I bought it"
+        - generic [ref=f42e360]:
+          - generic [ref=f42e361]: Counterparty / Store
+          - paragraph [ref=f42e362]: Global SaaS Solutions
+          - generic [ref=f42e363]: "Order Ref: SUB-4410-X"
+      - generic [ref=f42e364]:
+        - generic [ref=f42e365]:
+          - generic [ref=f42e366]: Payment Chain / Method
+          - generic [ref=f42e367]: Polygon
+        - generic [ref=f42e368]:
+          - generic [ref=f42e369]: Payment Proof / Hash
+          - generic [ref=f42e370]:
+            - generic [ref=f42e371]: "0x9928192847192847192847192847192847192847192847192847192847192847"
+            - button "Copy to clipboard" [ref=f42e372]
+            - link "Open in block explorer" [ref=f42e376] [cursor=pointer]:
+              - /url: https://polygonscan.com/tx/0x9928192847192847192847192847192847192847192847192847192847192847
+        - generic [ref=f42e381]:
+          - generic [ref=f42e382]: Filer Information
+          - generic [ref=f42e383]: Enterprise Client Alpha (+1 (555) 019-2834)
+      - generic [ref=f42e384]:
+        - generic [ref=f42e385]: Incident Summary & Context
+        - blockquote [ref=f42e386]: "\"Duplicate annual enterprise license billed due to gateway webhook failure.\""
+      - generic [ref=f42e393]:
+        - generic [ref=f42e394]: Attached Evidence
+        - paragraph [ref=f42e395]: billing-duplicate-receipt.png
+      - generic [ref=f42e396]:
+        - paragraph [ref=f42e397]:
+          - text: Quote Case
+          - generic [ref=f42e398]: "#REF-F8E2C3D4"
+          - text: for inquiries.
+        - generic [ref=f42e399]:
+          - button "Close" [ref=f42e400]
+          - link "Contact Case Officer" [ref=f42e401] [cursor=pointer]:
+            - /url: https://t.me/Verified_protocol
+    - button "Close" [ref=f42e402]

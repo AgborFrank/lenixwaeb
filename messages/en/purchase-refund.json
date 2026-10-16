@@ -180,7 +180,7 @@
   },
   "Account": {
     "eyebrow": "Purchase refunds",
-    "title": "Cases",
+    "title": "Refund Claim",
     "subtitle": "Open a file when a purchase is lost, damaged, late, or not what you paid for. Stolen wallets belong on the recovery desk.",
     "stolenLink": "Lost or stolen crypto",
     "newCase": "Open a refund",

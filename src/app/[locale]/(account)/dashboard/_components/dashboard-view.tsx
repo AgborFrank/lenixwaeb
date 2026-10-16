@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import {
   ShieldCheck,
   Clock,
@@ -8,11 +8,12 @@ import {
   MessageCircle,
   FileText,
   Printer,
-  AlertCircle,
   CheckCircle2,
+  XCircle,
   Download,
   Info,
 } from "lucide-react";
+import { useRouter } from "@/i18n/navigation";
 import { adminGlass } from "@/lib/admin-glass";
 import { Button } from "@/components/ui/button";
 import { CopyBadge } from "./copy-badge";
@@ -48,6 +49,16 @@ interface DashboardViewProps {
   };
 }
 
+type NormalizedStatus = "pending" | "in_progress" | "completed" | "rejected";
+
+function normalizeStatus(status?: string | null): NormalizedStatus {
+  const s = (status || "").toLowerCase().trim();
+  if (["completed", "approved", "settled", "resolved", "verified"].includes(s)) return "completed";
+  if (["in_progress", "under_review", "reviewing", "investigating"].includes(s)) return "in_progress";
+  if (["rejected", "declined", "closed"].includes(s)) return "rejected";
+  return "pending";
+}
+
 function getExplorerTxUrl(blockchain?: string, txHash?: string): string | undefined {
   if (!txHash) return undefined;
   const chain = (blockchain || "").toLowerCase();
@@ -78,6 +89,27 @@ export function DashboardView({
   onboarding,
   labels,
 }: DashboardViewProps) {
+  const router = useRouter();
+
+  // Auto-refresh when admin updates status
+  useEffect(() => {
+    const interval = setInterval(() => {
+      router.refresh();
+    }, 10000);
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible") {
+        router.refresh();
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      clearInterval(interval);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [router]);
+
   const serviceType = onboarding.service_type || "recovery";
   const isRecovery = serviceType === "recovery";
   const isRefund = serviceType === "refund";
@@ -114,29 +146,45 @@ export function DashboardView({
 
   const explorerUrl = getExplorerTxUrl(blockchain, rawTxHash);
 
+  const normalized = normalizeStatus(onboarding.status);
+
+  // Overall status labels & classes
   const statusLabel =
-    onboarding.status === "completed"
-      ? "Resolved"
-      : onboarding.status === "in_progress"
+    normalized === "completed"
+      ? "Case Resolved & Approved"
+      : normalized === "in_progress"
         ? "Investigation In Progress"
-        : onboarding.status === "rejected"
-          ? "Closed"
-          : "Under Technical Review";
+        : normalized === "rejected"
+          ? "Case Closed / Declined"
+          : "Application Pending Review";
 
   const statusPillClass =
-    onboarding.status === "completed"
+    normalized === "completed"
       ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-300"
-      : onboarding.status === "in_progress"
-        ? "border-sky-500/30 bg-sky-500/10 text-sky-300"
-        : onboarding.status === "rejected"
-          ? "border-zinc-500/30 bg-zinc-500/10 text-zinc-400"
-          : "border-amber-500/30 bg-amber-500/10 text-amber-300";
+      : normalized === "in_progress"
+        ? "border-amber-500/30 bg-amber-500/10 text-amber-300"
+        : normalized === "rejected"
+          ? "border-red-500/30 bg-red-500/10 text-red-300"
+          : "border-zinc-500/30 bg-zinc-500/10 text-zinc-300";
 
   const handlePrint = () => {
     if (typeof window !== "undefined") {
       window.print();
     }
   };
+
+  // Stepper connection tracks
+  const line1to2Class =
+    normalized === "in_progress" || normalized === "completed" || normalized === "rejected"
+      ? "bg-emerald-500"
+      : "bg-white/[0.08]";
+
+  const line2to3Class =
+    normalized === "completed"
+      ? "bg-emerald-500"
+      : normalized === "rejected"
+        ? "bg-red-500/50"
+        : "bg-white/[0.08]";
 
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 text-zinc-100">
@@ -187,7 +235,7 @@ export function DashboardView({
         </div>
       </header>
 
-      {/* 2. CORE KEY PARAMETERS (SHOWN ONCE) */}
+      {/* 2. CORE KEY PARAMETERS */}
       <section className={`${adminGlass.surface} divide-y divide-white/[0.06] sm:divide-y-0 sm:grid sm:grid-cols-3 sm:divide-x`} aria-label="Key Case Parameters">
         <div className="p-4 sm:p-5 space-y-1">
           <p className="text-[11px] font-medium tracking-wide text-zinc-500 uppercase">
@@ -219,11 +267,14 @@ export function DashboardView({
 
         <div className="p-4 sm:p-5 space-y-1">
           <p className="text-[11px] font-medium tracking-wide text-zinc-500 uppercase">
-            Review SLA
+            Investigation Status
           </p>
           <p className="text-sm font-semibold text-white flex items-center gap-1.5">
-            <Clock className="size-3.5 text-zinc-400" />
-            24 – 48 Hours
+            {normalized === "completed" && <CheckCircle2 className="size-3.5 text-emerald-400" />}
+            {normalized === "in_progress" && <Clock className="size-3.5 text-amber-400" />}
+            {normalized === "pending" && <Clock className="size-3.5 text-zinc-400" />}
+            {normalized === "rejected" && <XCircle className="size-3.5 text-red-400" />}
+            {statusLabel}
           </p>
           <p className="text-xs text-zinc-400">Assigned: Forensics Intake Desk</p>
         </div>
@@ -233,19 +284,29 @@ export function DashboardView({
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8">
         {/* MAIN COLUMN (8 COLS) */}
         <div className="space-y-6 lg:col-span-8">
-          {/* A. AUTHENTIC CASE PROGRESS TIMELINE */}
+          {/* A. DYNAMIC INVESTIGATION MILESTONES */}
           <section className={`${adminGlass.surface} p-5 sm:p-6 space-y-6`} aria-label="Investigation Timeline">
-            <div className="border-b border-white/[0.06] pb-3">
-              <h2 className="text-sm font-semibold text-white sm:text-base">
-                Investigation Milestones
-              </h2>
-              <p className="text-xs text-zinc-400 mt-0.5">
-                Current stage and operational roadmap for this case.
-              </p>
+            <div className="border-b border-white/[0.06] pb-3 flex items-center justify-between">
+              <div>
+                <h2 className="text-sm font-semibold text-white sm:text-base">
+                  Investigation Milestones
+                </h2>
+                <p className="text-xs text-zinc-400 mt-0.5">
+                  Live operational stages updated directly by the case review desk.
+                </p>
+              </div>
+              <span className={`text-[11px] font-mono px-2 py-0.5 rounded border ${statusPillClass}`}>
+                {statusLabel}
+              </span>
             </div>
 
-            <div className="relative pl-6 space-y-6 before:absolute before:left-2.5 before:top-2 before:bottom-2 before:w-0.5 before:bg-white/[0.08]">
-              {/* Milestone 1: Intake Received */}
+            <div className="relative pl-6 space-y-6">
+              {/* Connector line between Step 1 and Step 2 */}
+              <div className={`absolute left-2.5 top-3 h-[42%] w-0.5 transition-colors duration-300 ${line1to2Class}`} />
+              {/* Connector line between Step 2 and Step 3 */}
+              <div className={`absolute left-2.5 top-[50%] bottom-3 w-0.5 transition-colors duration-300 ${line2to3Class}`} />
+
+              {/* Milestone 1: Intake Received (Always completed when user is on dashboard) */}
               <div className="relative">
                 <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-emerald-500/40 bg-emerald-950 text-emerald-400">
                   <CheckCircle2 className="size-3" />
@@ -253,7 +314,10 @@ export function DashboardView({
                 <div className="space-y-0.5">
                   <div className="flex items-center gap-2">
                     <h3 className="text-sm font-medium text-white">{labels.receivedTitle}</h3>
-                    <span className="text-[11px] font-mono text-zinc-500">{formattedDate}</span>
+                    <span className="rounded border border-emerald-500/30 bg-emerald-500/10 px-1.5 py-0.2 text-[10px] font-medium text-emerald-300">
+                      Logged
+                    </span>
+                    <span className="text-[11px] font-mono text-zinc-500 ml-auto">{formattedDate}</span>
                   </div>
                   <p className="text-xs text-zinc-400 leading-relaxed">
                     {labels.receivedDesc}
@@ -261,48 +325,194 @@ export function DashboardView({
                 </div>
               </div>
 
-              {/* Milestone 2: Technical Review (Active) */}
+              {/* Milestone 2: Technical Review & Investigation */}
               <div className="relative">
-                <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-amber-500/40 bg-amber-950 text-amber-300">
-                  <span className="size-1.5 rounded-full bg-amber-400" />
-                </div>
-                <div className="space-y-1.5 rounded-lg border border-amber-500/20 bg-amber-500/[0.03] p-3.5">
-                  <div className="flex items-center gap-2">
-                    <h3 className="text-sm font-semibold text-amber-200">{labels.reviewTitle}</h3>
-                    <span className="rounded border border-amber-500/30 bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-medium text-amber-300">
-                      Active Stage
-                    </span>
-                  </div>
-                  <p className="text-xs text-zinc-300 leading-relaxed">
-                    {labels.reviewDesc}
-                  </p>
-
-                  {/* Real admin notes if present in database */}
-                  {onboarding.admin_notes && (
-                    <div className="mt-2 rounded border border-white/10 bg-black/40 p-2.5 text-xs">
-                      <span className="text-[11px] font-medium text-zinc-400 block mb-0.5">Note from Case Analyst:</span>
-                      <p className="text-zinc-200">{onboarding.admin_notes}</p>
+                {normalized === "pending" && (
+                  <>
+                    <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-white/20 bg-zinc-900 text-zinc-400">
+                      <Clock className="size-3" />
                     </div>
-                  )}
-                </div>
+                    <div className="space-y-1.5 rounded-lg border border-white/[0.08] bg-black/20 p-3.5">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-medium text-zinc-300">Stage 02: Awaiting Technical Review</h3>
+                        <span className="rounded border border-white/10 bg-white/[0.04] px-1.5 py-0.5 text-[10px] font-medium text-zinc-400">
+                          In Queue
+                        </span>
+                      </div>
+                      <p className="text-xs text-zinc-400 leading-relaxed">
+                        Your submission is queued in the intake system. An assigned forensics analyst will begin review within the standard 24–48 hour turnaround window.
+                      </p>
+                    </div>
+                  </>
+                )}
+
+                {normalized === "in_progress" && (
+                  <>
+                    <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-amber-500/50 bg-amber-950 text-amber-300 shadow-[0_0_10px_rgba(245,158,11,0.3)]">
+                      <span className="size-1.5 rounded-full bg-amber-400 animate-pulse" />
+                    </div>
+                    <div className="space-y-2 rounded-lg border border-amber-500/30 bg-amber-500/[0.04] p-3.5 shadow-sm">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-semibold text-amber-200">Stage 02: Technical Review & Investigation</h3>
+                        <span className="rounded border border-amber-500/40 bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-semibold text-amber-300">
+                          Active Investigation
+                        </span>
+                      </div>
+                      <p className="text-xs text-zinc-300 leading-relaxed">
+                        {labels.reviewDesc || "Forensic specialists are analyzing transaction trails, smart contract interactions, and coordinating with exchange compliance desks."}
+                      </p>
+
+                      {onboarding.admin_notes && (
+                        <div className="mt-2.5 rounded border border-amber-500/30 bg-black/50 p-2.5 text-xs space-y-1">
+                          <span className="text-[11px] font-medium text-amber-400 flex items-center gap-1">
+                            <Info className="size-3" /> Case Analyst Update:
+                          </span>
+                          <p className="text-zinc-200 leading-relaxed">{onboarding.admin_notes}</p>
+                        </div>
+                      )}
+                    </div>
+                  </>
+                )}
+
+                {normalized === "completed" && (
+                  <>
+                    <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-emerald-500/40 bg-emerald-950 text-emerald-400">
+                      <CheckCircle2 className="size-3" />
+                    </div>
+                    <div className="space-y-1.5 rounded-lg border border-emerald-500/20 bg-emerald-500/[0.02] p-3.5">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-semibold text-emerald-200">Stage 02: Technical Review Concluded</h3>
+                        <span className="rounded border border-emerald-500/30 bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-medium text-emerald-300">
+                          Verified & Closed
+                        </span>
+                      </div>
+                      <p className="text-xs text-zinc-300 leading-relaxed">
+                        Forensic analysis and investigation concluded with positive evidentiary verification.
+                      </p>
+                      {onboarding.admin_notes && (
+                        <div className="mt-2 rounded border border-white/10 bg-black/40 p-2 text-xs text-zinc-300">
+                          <span className="text-[11px] font-medium text-zinc-400 block mb-0.5">Analyst Summary:</span>
+                          {onboarding.admin_notes}
+                        </div>
+                      )}
+                    </div>
+                  </>
+                )}
+
+                {normalized === "rejected" && (
+                  <>
+                    <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-zinc-500/40 bg-zinc-900 text-zinc-400">
+                      <CheckCircle2 className="size-3" />
+                    </div>
+                    <div className="space-y-1.5 rounded-lg border border-white/[0.08] bg-black/20 p-3.5">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-medium text-zinc-300">Stage 02: Technical Review Concluded</h3>
+                        <span className="rounded border border-zinc-500/30 bg-zinc-500/10 px-1.5 py-0.5 text-[10px] font-medium text-zinc-400">
+                          Concluded
+                        </span>
+                      </div>
+                      <p className="text-xs text-zinc-400 leading-relaxed">
+                        Case investigation completed.
+                      </p>
+                    </div>
+                  </>
+                )}
               </div>
 
               {/* Milestone 3: Resolution & Final Determination */}
               <div className="relative">
-                <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-white/10 bg-zinc-900 text-zinc-600">
-                  <span className="size-1.5 rounded-full bg-zinc-600" />
-                </div>
-                <div className="space-y-0.5">
-                  <h3 className="text-sm font-medium text-zinc-400">Resolution & Settlement</h3>
-                  <p className="text-xs text-zinc-500 leading-relaxed">
-                    Final evidentiary assessment, exchange subpoena response, or restitution disbursement.
-                  </p>
-                </div>
+                {normalized === "pending" && (
+                  <>
+                    <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-white/10 bg-zinc-900 text-zinc-600">
+                      <span className="size-1.5 rounded-full bg-zinc-700" />
+                    </div>
+                    <div className="space-y-0.5">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-medium text-zinc-400">Stage 03: Resolution & Settlement</h3>
+                        <span className="rounded border border-white/10 bg-white/[0.02] px-1.5 py-0.5 text-[10px] font-medium text-zinc-500">
+                          Upcoming
+                        </span>
+                      </div>
+                      <p className="text-xs text-zinc-500 leading-relaxed">
+                        Final evidentiary determination, dispute arbitration, or restitution payout.
+                      </p>
+                    </div>
+                  </>
+                )}
+
+                {normalized === "in_progress" && (
+                  <>
+                    <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-white/10 bg-zinc-900 text-zinc-600">
+                      <span className="size-1.5 rounded-full bg-zinc-700" />
+                    </div>
+                    <div className="space-y-0.5">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-medium text-zinc-400">Stage 03: Resolution & Settlement</h3>
+                        <span className="rounded border border-white/10 bg-white/[0.02] px-1.5 py-0.5 text-[10px] font-medium text-zinc-500">
+                          Pending Findings
+                        </span>
+                      </div>
+                      <p className="text-xs text-zinc-500 leading-relaxed">
+                        Final restitution scheduling or dispute determination will be issued upon conclusion of the active investigation.
+                      </p>
+                    </div>
+                  </>
+                )}
+
+                {normalized === "completed" && (
+                  <>
+                    <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-emerald-500/50 bg-emerald-950 text-emerald-300 shadow-[0_0_12px_rgba(16,185,129,0.3)]">
+                      <CheckCircle2 className="size-3" />
+                    </div>
+                    <div className="space-y-2 rounded-lg border border-emerald-500/30 bg-emerald-500/[0.05] p-4 shadow-sm">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-semibold text-emerald-200">Stage 03: Case Resolved & Approved</h3>
+                        <span className="rounded border border-emerald-500/40 bg-emerald-500/20 px-2 py-0.5 text-[10px] font-semibold text-emerald-300">
+                          Completed
+                        </span>
+                      </div>
+                      <p className="text-xs text-zinc-200 leading-relaxed">
+                        Your case has been successfully resolved and approved. Settlement documents, recovery allocations, or facility accounts have been provisioned.
+                      </p>
+                      {onboarding.admin_notes && (
+                        <div className="mt-2.5 rounded border border-emerald-500/30 bg-black/50 p-2.5 text-xs text-emerald-300">
+                          <span className="text-[11px] font-medium text-emerald-400 block mb-0.5">Settlement Notice:</span>
+                          <p className="text-zinc-200">{onboarding.admin_notes}</p>
+                        </div>
+                      )}
+                    </div>
+                  </>
+                )}
+
+                {normalized === "rejected" && (
+                  <>
+                    <div className="absolute -left-6 top-0.5 flex size-5 items-center justify-center rounded-full border border-red-500/50 bg-red-950 text-red-300 shadow-[0_0_12px_rgba(239,68,68,0.25)]">
+                      <XCircle className="size-3" />
+                    </div>
+                    <div className="space-y-2 rounded-lg border border-red-500/30 bg-red-500/[0.04] p-4">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-sm font-semibold text-red-200">Stage 03: Case Closed / Declined</h3>
+                        <span className="rounded border border-red-500/40 bg-red-500/20 px-2 py-0.5 text-[10px] font-semibold text-red-300">
+                          Declined
+                        </span>
+                      </div>
+                      <p className="text-xs text-zinc-300 leading-relaxed">
+                        This application or case could not be approved or resolved under current compliance and risk criteria.
+                      </p>
+                      {onboarding.admin_notes && (
+                        <div className="mt-2.5 rounded border border-red-500/30 bg-black/50 p-2.5 text-xs space-y-1">
+                          <span className="text-[11px] font-medium text-red-400 block">Decline Reason:</span>
+                          <p className="text-zinc-200 leading-relaxed">{onboarding.admin_notes}</p>
+                        </div>
+                      )}
+                    </div>
+                  </>
+                )}
               </div>
             </div>
           </section>
 
-          {/* B. SUBMITTED CASE RECORD (CLEAN TABLE - NO DUPLICATION) */}
+          {/* B. SUBMITTED CASE RECORD (CLEAN TABLE) */}
           <section className={`${adminGlass.surface} p-5 sm:p-6 space-y-4`} aria-label="Submitted Information">
             <div className="border-b border-white/[0.06] pb-3 flex items-center justify-between">
               <div>
@@ -317,7 +527,6 @@ export function DashboardView({
             </div>
 
             <div className="rounded-lg border border-white/[0.08] divide-y divide-white/[0.06] text-xs">
-              {/* Declarant */}
               {declarantName && (
                 <div className="grid grid-cols-3 p-3 sm:px-4">
                   <span className="font-medium text-zinc-400">Client / Declarant</span>
@@ -325,7 +534,6 @@ export function DashboardView({
                 </div>
               )}
 
-              {/* Transaction Hash */}
               {rawTxHash && (
                 <div className="grid grid-cols-3 p-3 sm:px-4 items-center">
                   <span className="font-medium text-zinc-400">Transaction Hash</span>
@@ -339,7 +547,6 @@ export function DashboardView({
                 </div>
               )}
 
-              {/* Incident Summary */}
               {incidentSummary && (
                 <div className="grid grid-cols-3 p-3 sm:px-4">
                   <span className="font-medium text-zinc-400">Incident Context</span>
@@ -349,7 +556,6 @@ export function DashboardView({
                 </div>
               )}
 
-              {/* Contact Phone */}
               {phoneVal && (
                 <div className="grid grid-cols-3 p-3 sm:px-4">
                   <span className="font-medium text-zinc-400">Contact Number</span>
@@ -357,7 +563,6 @@ export function DashboardView({
                 </div>
               )}
 
-              {/* Attached Evidence */}
               {evidenceFile && (
                 <div className="grid grid-cols-3 p-3 sm:px-4 items-center">
                   <span className="font-medium text-zinc-400">Attached Document</span>
@@ -377,7 +582,6 @@ export function DashboardView({
                 </div>
               )}
 
-              {/* Any other miscellaneous fields */}
               {Object.entries(details)
                 .filter(([k]) => ![
                   "transaction_hash",
@@ -404,7 +608,6 @@ export function DashboardView({
                 ))}
             </div>
 
-            {/* Supplementary info callout */}
             <div className="rounded-lg border border-white/[0.06] bg-white/[0.02] p-3 flex items-start gap-2.5 text-xs text-zinc-400">
               <Info className="size-4 shrink-0 text-zinc-400 mt-0.5" />
               <p className="leading-relaxed">
@@ -430,8 +633,10 @@ export function DashboardView({
               </div>
 
               <div className="flex items-center justify-between pt-2.5">
-                <span className="text-zinc-400">Status</span>
-                <span className="text-amber-300 font-medium">{statusLabel}</span>
+                <span className="text-zinc-400">Current Status</span>
+                <span className={`font-medium ${statusPillClass} px-1.5 py-0.5 rounded text-[10px]`}>
+                  {statusLabel}
+                </span>
               </div>
 
               <div className="flex items-center justify-between pt-2.5">
