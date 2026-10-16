@@ -120,19 +120,17 @@ export function BankingDetailsForm() {
     <form ref={formRef} onSubmit={handleSubmit}>
       <div className={`${onboarding.cardBody} ${onboarding.fieldStack}`}>
         {error && (
-          <div className="rounded-lg border border-red-600/20 bg-red-600/10 p-4">
-            <div className="flex items-start gap-3">
-              <AlertCircle className="mt-0.5 h-5 w-5 shrink-0 text-red-600" />
-              <div className="min-w-0 flex-1">
-                <p className="text-sm font-medium text-red-600">{error}</p>
-                <button
-                  type="button"
-                  onClick={handleRetry}
-                  className="mt-2 text-xs text-red-500 underline underline-offset-2 transition-colors hover:text-red-400"
-                >
-                  Try again
-                </button>
-              </div>
+          <div className={onboarding.error} role="alert">
+            <AlertCircle className="h-4 w-4 shrink-0" />
+            <div className="min-w-0 flex-1 flex items-center justify-between gap-2">
+              <p className="text-xs">{error}</p>
+              <button
+                type="button"
+                onClick={handleRetry}
+                className="text-xs text-amber-300 underline underline-offset-2 transition-colors hover:text-white shrink-0"
+              >
+                Try again
+              </button>
             </div>
           </div>
         )}
@@ -154,11 +152,11 @@ export function BankingDetailsForm() {
                 className={`${onboarding.input} ${fieldErrors.name && touched.name ? "border-red-500/50 focus-visible:border-red-500 focus-visible:ring-red-500/20" : ""}`}
               />
               {touched.name && !fieldErrors.name && (
-                <CheckCircle2 className="absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-green-500" />
+                <CheckCircle2 className="absolute right-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-emerald-400" />
               )}
             </div>
             {fieldErrors.name && touched.name && (
-              <p className="mt-1 flex items-center gap-1 text-xs text-red-500">
+              <p className="mt-1 flex items-center gap-1 text-[11px] text-red-400">
                 <AlertCircle className="h-3 w-3" />
                 {fieldErrors.name}
               </p>
@@ -178,7 +176,7 @@ export function BankingDetailsForm() {
               onPhoneCodeChange={setCountryPhoneCode}
             />
             {fieldErrors.phone_number && touched.phone_number && (
-              <p id="phone_number_error" className="mt-1 flex items-center gap-1 text-xs text-red-500">
+              <p id="phone_number_error" className="mt-1 flex items-center gap-1 text-[11px] text-red-400">
                 <AlertCircle className="h-3 w-3" />
                 {fieldErrors.phone_number}
               </p>
@@ -228,7 +226,7 @@ export function BankingDetailsForm() {
             <Textarea
               id="notes"
               name="notes"
-              rows={4}
+              rows={3}
               disabled={isSubmitting}
               placeholder={t("notesPlaceholder")}
               className={onboarding.textarea}
@@ -238,16 +236,24 @@ export function BankingDetailsForm() {
       </div>
 
       <OnboardingActionBar>
-        <button type="submit" disabled={isSubmitting} className={onboarding.btnPrimary}>
-          {isSubmitting ? (
-            <>
-              <Loader2 className="h-4 w-4 animate-spin" />
-              {tc("submitting")}
-            </>
-          ) : (
-            tc("submitFinish")
-          )}
-        </button>
+        <div className="flex w-full items-center justify-between gap-3">
+          <span className="text-[11px] text-zinc-400">
+            {tc("privacyPrefixBanking")}{" "}
+            <a href="/privacy" className={onboarding.link} target="_blank" rel="noreferrer">
+              {tc("privacyPolicy")}
+            </a>
+          </span>
+          <button type="submit" disabled={isSubmitting} className={onboarding.btnPrimary}>
+            {isSubmitting ? (
+              <>
+                <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                <span>{tc("submitting")}</span>
+              </>
+            ) : (
+              <span>{tc("submitFinish")}</span>
+            )}
+          </button>
+        </div>
       </OnboardingActionBar>
     </form>
   );

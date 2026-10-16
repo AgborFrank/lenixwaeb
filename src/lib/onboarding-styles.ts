@@ -1,110 +1,111 @@
-/** Onboarding layout and form tokens. */
+/** Onboarding layout and form tokens - Enterprise Compact Glassmorphism */
 export const onboarding = {
-  page: "relative min-h-screen overflow-hidden text-white antialiased",
-  bgImage: "pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat",
-  bgOverlay: "pointer-events-none absolute inset-0 z-[1] bg-black/50",
+  page: "relative min-h-screen overflow-x-hidden text-zinc-100 antialiased selection:bg-amber-400 selection:text-black",
+  bgImage: "pointer-events-none absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40",
+  bgOverlay: "pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-zinc-950/80 via-zinc-950/90 to-black",
+  
   header:
-    "relative z-20 border-b border-white/10 bg-black/30 backdrop-blur-md",
+    "relative z-20 border-b border-white/[0.08] bg-zinc-950/40 backdrop-blur-xl",
   headerInner:
-    "mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8",
-  logo: "h-7 w-auto sm:h-8",
+    "mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8",
+  logo: "h-6 w-auto sm:h-7 transition-opacity hover:opacity-90",
   skipLink:
-    "text-sm text-zinc-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/50 rounded-sm px-2 py-1",
-  main: "relative z-10 mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10 pb-24 lg:pb-10",
-  workspace: "mt-6 lg:mt-8 grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1fr)_280px] xl:gap-8",
-  workspaceCentered: "mx-auto w-full max-w-xl space-y-6 sm:max-w-2xl",
-  workspaceDetails: "mx-auto mt-6 w-full max-w-2xl space-y-6 sm:max-w-xl lg:max-w-2xl",
+    "text-xs text-zinc-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-400/50 rounded px-2 py-1",
+  main: "relative z-10 mx-auto max-w-5xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-6 pb-20 sm:pb-8",
+  workspace: "mt-4 grid grid-cols-1 gap-5 xl:grid-cols-[minmax(0,1fr)_260px] xl:gap-6",
+  workspaceCentered: "mx-auto w-full max-w-2xl space-y-4",
+  workspaceDetails: "mx-auto w-full max-w-2xl space-y-4",
   backLink:
-    "mb-6 inline-flex items-center gap-1 text-sm text-zinc-400 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/50 rounded-sm",
+    "mb-3 inline-flex items-center gap-1.5 text-xs font-medium text-zinc-400 transition-colors hover:text-amber-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-400/50 rounded px-1.5 py-1",
 
-  card: "overflow-hidden rounded-3xl border border-white/20 bg-white/10 shadow-2xl backdrop-blur-xl",
-  cardHeader: "border-b border-white/10 px-6 py-6 sm:px-8 sm:py-7",
-  cardBody: "px-6 py-7 sm:px-8 sm:py-9",
+  card: "relative overflow-hidden rounded-2xl border border-white/[0.12] bg-white/[0.035] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.8),inset_0_1px_0_0_rgba(255,255,255,0.14)] backdrop-blur-2xl ring-1 ring-black/40",
+  cardHeader: "border-b border-white/[0.07] bg-white/[0.015] px-5 py-4 sm:px-6 sm:py-4.5",
+  cardBody: "px-5 py-4 sm:px-6 sm:py-5",
   cardFooter:
-    "flex flex-col-reverse gap-3 border-t border-white/10 px-5 py-4 sm:flex-row sm:items-center sm:justify-end sm:gap-3 sm:px-6 sm:py-4",
+    "flex flex-col-reverse gap-2.5 border-t border-white/[0.07] bg-black/25 px-5 py-3.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3 sm:px-6 sm:py-3.5 backdrop-blur-xl",
   cardFooterSticky:
-    "fixed inset-x-0 bottom-0 z-30 flex flex-col-reverse gap-3 border-t border-white/20 bg-black/60 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur-xl sm:static sm:border-t sm:border-white/10 sm:bg-transparent sm:px-6 sm:py-4 sm:backdrop-blur-none",
+    "fixed inset-x-0 bottom-0 z-30 flex flex-col-reverse gap-2.5 border-t border-white/[0.12] bg-zinc-950/85 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] shadow-2xl backdrop-blur-2xl sm:static sm:border-t sm:border-white/[0.07] sm:bg-black/25 sm:px-6 sm:py-3.5 sm:backdrop-blur-none",
 
-  fieldStack: "space-y-5",
+  fieldStack: "space-y-3.5",
 
-  title: "text-xl font-semibold tracking-tight text-white sm:text-2xl lg:text-3xl",
-  subtitle: "mt-2 text-[15px] leading-relaxed text-zinc-400",
-  sectionTitle: "text-sm font-medium text-white",
-  sectionDesc: "mt-0.5 text-sm text-zinc-500",
-  label: "text-xs pb-2 sm:text-[13px] font-medium text-zinc-200 tracking-wide",
-  hint: "mt-1.5 text-xs sm:text-[13px] text-zinc-500",
-  required: "text-red-400 ml-0.5",
-  gridGap: "gap-5 sm:gap-6",
-  field: "space-y-2",
+  title: "text-lg sm:text-xl font-bold tracking-tight text-white",
+  subtitle: "mt-1 text-xs sm:text-[13px] leading-relaxed text-zinc-400",
+  sectionTitle: "text-xs sm:text-sm font-semibold tracking-wide text-zinc-200 uppercase",
+  sectionDesc: "mt-0.5 text-xs text-zinc-500",
+  label: "text-xs font-medium text-zinc-300 tracking-wide pb-1 block",
+  hint: "mt-1 text-[11px] text-zinc-500",
+  required: "text-amber-400 ml-0.5 font-normal",
+  gridGap: "gap-3 sm:gap-3.5",
+  field: "space-y-1.5",
   input:
-    "h-11 sm:h-12 rounded-xl border border-white/10 bg-white/5 px-3 sm:px-3.5 text-sm sm:text-[15px] text-white shadow-sm placeholder:text-zinc-500 transition-all focus-visible:border-yellow-400/50 focus-visible:ring-1 focus-visible:ring-yellow-400/50 disabled:opacity-50 disabled:cursor-not-allowed",
+    "h-9.5 sm:h-10 rounded-lg border border-white/[0.10] bg-white/[0.03] px-3 text-xs sm:text-sm text-white shadow-sm placeholder:text-zinc-500 transition-all hover:border-white/20 focus-visible:border-amber-400/60 focus-visible:ring-1 focus-visible:ring-amber-400/40 focus-visible:bg-white/[0.05] disabled:opacity-50 disabled:cursor-not-allowed",
   textarea:
-    "min-h-[120px] resize-y rounded-xl border border-white/10 bg-white/5 px-3 sm:px-3.5 py-3 text-sm sm:text-[15px] leading-relaxed text-white shadow-sm placeholder:text-zinc-500 transition-all focus-visible:border-yellow-400/50 focus-visible:ring-1 focus-visible:ring-yellow-400/50 disabled:opacity-50 disabled:cursor-not-allowed",
+    "min-h-[84px] resize-y rounded-lg border border-white/[0.10] bg-white/[0.03] px-3 py-2 text-xs sm:text-sm leading-relaxed text-white shadow-sm placeholder:text-zinc-500 transition-all hover:border-white/20 focus-visible:border-amber-400/60 focus-visible:ring-1 focus-visible:ring-amber-400/40 focus-visible:bg-white/[0.05] disabled:opacity-50 disabled:cursor-not-allowed",
   selectTrigger:
-    "h-11 sm:h-12 rounded-xl border border-white/10 bg-white/5 px-3 sm:px-3.5 text-sm sm:text-[15px] text-white shadow-sm transition-all focus:ring-1 focus:ring-yellow-400/50 focus:border-yellow-400/50 disabled:opacity-50 disabled:cursor-not-allowed [&>svg]:text-zinc-400",
-  selectContent: "rounded-xl border border-white/10 bg-[#141414]/95 text-white shadow-xl backdrop-blur-xl",
-  selectItem: "rounded-md text-sm sm:text-[15px] px-3 py-2.5 focus:bg-white/[0.08] focus:text-white cursor-pointer",
+    "h-9.5 sm:h-10 rounded-lg border border-white/[0.10] bg-white/[0.03] px-3 text-xs sm:text-sm text-white shadow-sm transition-all hover:border-white/20 focus:ring-1 focus:ring-amber-400/40 focus:border-amber-400/60 disabled:opacity-50 disabled:cursor-not-allowed [&>svg]:text-zinc-400",
+  selectContent: "rounded-xl border border-white/[0.12] bg-zinc-950/95 text-white shadow-2xl backdrop-blur-2xl ring-1 ring-black/60",
+  selectItem: "rounded-md text-xs sm:text-sm px-2.5 py-1.5 focus:bg-amber-400/15 focus:text-amber-300 cursor-pointer transition-colors",
 
-  section: "space-y-4",
+  section: "space-y-3",
   sectionHeader: "space-y-0.5",
 
-  choiceList: "mt-3 space-y-2",
+  choiceList: "mt-2 space-y-2",
   choiceRow:
-    "group relative flex w-full cursor-pointer items-center gap-3 rounded-xl border border-white/10 bg-white/5 p-4 text-left transition-colors hover:border-white/20 hover:bg-white/[0.08] has-[:checked]:border-yellow-400/40 has-[:checked]:bg-yellow-400/[0.08] has-[[data-state=checked]]:border-yellow-400/40 has-[[data-state=checked]]:bg-yellow-400/[0.08]",
+    "group relative flex w-full cursor-pointer items-center gap-3 rounded-xl border border-white/[0.08] bg-white/[0.025] p-3 text-left transition-all hover:border-white/20 hover:bg-white/[0.05] has-[:checked]:border-amber-400/50 has-[:checked]:bg-amber-400/[0.08] has-[[data-state=checked]]:border-amber-400/50 has-[[data-state=checked]]:bg-amber-400/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)]",
   choiceIcon:
-    "flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#222] text-zinc-300 [&_svg]:h-4 [&_svg]:w-4 group-has-[:checked]:text-yellow-400",
+    "flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-zinc-300 [&_svg]:h-4 [&_svg]:w-4 group-has-[:checked]:border-amber-400/40 group-has-[:checked]:bg-amber-400/10 group-has-[:checked]:text-amber-400 transition-colors",
   choiceContent: "min-w-0 flex-1",
-  choiceTitle: "text-sm font-medium text-white",
-  choiceDesc: "mt-0.5 text-sm text-zinc-500",
+  choiceTitle: "text-xs sm:text-sm font-semibold text-white",
+  choiceDesc: "mt-0.5 text-xs text-zinc-400 leading-normal",
   choiceIndicator:
-    "flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-zinc-600 group-has-[:checked]:border-yellow-400 group-has-[:checked]:bg-yellow-400 group-has-[[data-state=checked]]:border-yellow-400 group-has-[[data-state=checked]]:bg-yellow-400",
+    "flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-zinc-600 group-has-[:checked]:border-amber-400 group-has-[:checked]:bg-amber-400 group-has-[[data-state=checked]]:border-amber-400 group-has-[[data-state=checked]]:bg-amber-400 transition-all",
   choiceIndicatorDot:
-    "h-1.5 w-1.5 rounded-full bg-black opacity-0 group-has-[:checked]:opacity-100 group-has-[[data-state=checked]]:opacity-100",
+    "h-1.5 w-1.5 rounded-full bg-zinc-950 opacity-0 group-has-[:checked]:opacity-100 group-has-[[data-state=checked]]:opacity-100 transition-opacity",
 
-  serviceLegend: "text-sm sm:text-[15px] font-medium text-zinc-200",
-  serviceList: "mt-3 space-y-1",
+  serviceLegend: "text-xs font-semibold uppercase tracking-wider text-zinc-400",
+  serviceList: "mt-2.5 grid grid-cols-1 gap-2.5 sm:grid-cols-2",
   serviceOption:
-    "group relative flex w-full cursor-pointer items-start gap-3 rounded-xl border border-transparent px-3 py-4 text-left transition-colors hover:border-white/10 hover:bg-white/[0.06] focus-within:outline-none focus-within:ring-2 focus-within:ring-inset focus-within:ring-yellow-400/50 has-[:checked]:border-yellow-400/30 has-[:checked]:bg-yellow-400/[0.08]",
+    "group relative flex flex-col justify-between cursor-pointer rounded-xl border border-white/[0.09] bg-white/[0.025] p-3.5 text-left transition-all hover:border-white/25 hover:bg-white/[0.05] hover:-translate-y-0.5 focus-within:outline-none focus-within:ring-1 focus-within:ring-amber-400/50 has-[:checked]:border-amber-400/60 has-[:checked]:bg-amber-400/[0.08] has-[:checked]:shadow-[0_0_24px_rgba(245,158,11,0.12),inset_0_1px_0_0_rgba(255,255,255,0.18)] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)]",
   serviceIcon:
-    "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-zinc-300 transition-colors [&_svg]:h-5 [&_svg]:w-5 group-hover:text-white group-has-[:checked]:border-yellow-400/35 group-has-[:checked]:bg-yellow-400/[0.12] group-has-[:checked]:text-yellow-300",
-  serviceContent: "min-w-0 flex-1 pr-3",
-  serviceTitle: "block text-sm sm:text-[15px] font-semibold tracking-[-0.01em] text-white",
-  serviceDescription: "mt-1 block text-sm sm:text-[15px] leading-relaxed text-zinc-400",
+    "flex h-8 w-8 shrink-0 items-center justify-center rounded-lg border border-white/[0.12] bg-white/[0.04] text-zinc-300 transition-colors [&_svg]:h-4 [&_svg]:w-4 group-hover:text-amber-300 group-hover:border-amber-400/30 group-has-[:checked]:border-amber-400/50 group-has-[:checked]:bg-amber-400/15 group-has-[:checked]:text-amber-300",
+  serviceContent: "min-w-0 flex-1 mt-2.5",
+  serviceTitle: "block text-xs sm:text-sm font-semibold tracking-tight text-white group-has-[:checked]:text-amber-300 transition-colors",
+  serviceDescription: "mt-1 block text-xs leading-relaxed text-zinc-400 group-hover:text-zinc-300 line-clamp-2 transition-colors",
   serviceIndicator:
-    "mt-2 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 border-zinc-600 transition-colors group-hover:border-zinc-400 group-has-[:checked]:border-yellow-400 group-has-[:checked]:bg-yellow-400",
+    "flex h-4 w-4 shrink-0 items-center justify-center rounded-full border border-zinc-600 transition-all group-hover:border-zinc-400 group-has-[:checked]:border-amber-400 group-has-[:checked]:bg-amber-400",
   serviceIndicatorDot:
-    "h-2 w-2 rounded-full bg-black opacity-0 transition-opacity group-has-[:checked]:opacity-100",
+    "h-1.5 w-1.5 rounded-full bg-zinc-950 opacity-0 transition-opacity group-has-[:checked]:opacity-100",
 
   tileGrid: "grid grid-cols-1 gap-2 sm:grid-cols-2",
   tileGrid3: "grid grid-cols-3 gap-2",
   choiceTile:
-    "group relative flex cursor-pointer flex-col rounded-xl border border-white/10 bg-white/5 p-3 transition-colors hover:border-white/20 hover:bg-white/[0.08] has-[:checked]:border-yellow-400/40 has-[:checked]:bg-yellow-400/[0.08] has-[[data-state=checked]]:border-yellow-400/40 has-[[data-state=checked]]:bg-yellow-400/[0.08]",
-  choiceTileTitle: "text-sm font-medium text-white",
-  choiceTileDesc: "mt-0.5 text-xs text-zinc-500",
-  choiceTileMeta: "mt-1 text-xs text-zinc-600",
+    "group relative flex cursor-pointer flex-col justify-between rounded-xl border border-white/[0.09] bg-white/[0.025] p-3 transition-all hover:border-white/20 hover:bg-white/[0.05] has-[:checked]:border-amber-400/50 has-[:checked]:bg-amber-400/[0.08] has-[[data-state=checked]]:border-amber-400/50 has-[[data-state=checked]]:bg-amber-400/[0.08] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)]",
+  choiceTileTitle: "text-xs sm:text-sm font-semibold text-white",
+  choiceTileDesc: "mt-0.5 text-xs text-zinc-400",
+  choiceTileMeta: "mt-1 text-[11px] font-mono text-zinc-500",
 
   phoneWrap:
-    "flex h-11 sm:h-12 overflow-hidden rounded-xl border border-white/10 bg-white/5 shadow-sm transition-all has-[:focus]:border-yellow-400/50 has-[:focus]:ring-1 has-[:focus]:ring-yellow-400/50",
+    "flex h-9.5 sm:h-10 overflow-hidden rounded-lg border border-white/[0.10] bg-white/[0.03] shadow-sm transition-all hover:border-white/20 has-[:focus]:border-amber-400/60 has-[:focus]:ring-1 has-[:focus]:ring-amber-400/40 has-[:focus]:bg-white/[0.05]",
   phoneSelect:
-    "h-11 sm:h-12 min-w-[90px] w-[100px] sm:w-[110px] shrink-0 rounded-none border-0 border-r border-white/[0.12] bg-transparent px-2 sm:px-3 text-sm sm:text-[15px] text-white shadow-none [&>svg]:text-zinc-400",
+    "h-9.5 sm:h-10 min-w-[85px] w-[95px] sm:w-[100px] shrink-0 rounded-none border-0 border-r border-white/[0.10] bg-transparent px-2 text-xs sm:text-sm text-white shadow-none [&>svg]:text-zinc-400 focus:ring-0",
   phoneInput:
-    "min-w-0 flex-1 border-0 bg-transparent px-3 sm:px-3.5 text-sm sm:text-[15px] text-white placeholder:text-zinc-500 outline-none disabled:opacity-50 disabled:cursor-not-allowed",
+    "min-w-0 flex-1 border-0 bg-transparent px-3 text-xs sm:text-sm text-white placeholder:text-zinc-500 outline-none disabled:opacity-50 disabled:cursor-not-allowed focus:ring-0",
 
   btnPrimary:
-    "inline-flex h-11 sm:h-12 w-full items-center justify-center gap-2 rounded-lg bg-yellow-400 px-6 sm:px-8 text-sm sm:text-[15px] font-semibold tracking-wide text-black shadow-lg shadow-yellow-400/20 transition-all hover:bg-yellow-300 hover:shadow-xl hover:shadow-yellow-400/30 hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#111111] active:scale-[0.98] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none sm:w-auto sm:min-w-[160px]",
+    "inline-flex h-9.5 sm:h-10 w-full items-center justify-center gap-1.5 rounded-lg bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 px-5 text-xs sm:text-sm font-semibold tracking-wide text-zinc-950 shadow-[0_1px_2px_rgba(0,0,0,0.5),0_0_20px_rgba(245,158,11,0.25)] transition-all hover:from-amber-300 hover:to-yellow-300 hover:shadow-[0_0_25px_rgba(245,158,11,0.4)] hover:scale-[1.01] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-amber-400/50 active:scale-[0.99] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none sm:w-auto sm:min-w-[140px]",
   btnSecondary:
-    "inline-flex h-10 w-full items-center justify-center rounded-md border border-white/[0.12] bg-transparent px-5 text-sm font-medium text-zinc-300 transition-colors hover:bg-white/[0.04] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20 sm:w-auto",
+    "inline-flex h-9.5 sm:h-10 w-full items-center justify-center gap-1.5 rounded-lg border border-white/[0.10] bg-white/[0.03] px-4 text-xs sm:text-sm font-medium text-zinc-300 transition-colors hover:bg-white/[0.08] hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white/20 sm:w-auto",
 
-  error: "rounded-lg border border-red-500/30 bg-red-500/10 px-5 py-4 text-[15px] font-medium text-red-300 shadow-sm",
-  warning: "rounded-lg border border-amber-500/30 bg-amber-500/10 px-5 py-4 text-[15px] font-medium text-amber-200 shadow-sm",
-  link: "text-yellow-400 underline-offset-2 hover:underline transition-colors",
-  footnote: "text-xs sm:text-[13px] text-zinc-500 leading-relaxed",
+  error: "flex items-center gap-2 rounded-lg border border-red-500/30 bg-red-500/10 px-3.5 py-2.5 text-xs sm:text-sm font-medium text-red-300 shadow-sm",
+  warning: "flex items-center gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 px-3.5 py-2.5 text-xs sm:text-sm font-medium text-amber-200 shadow-sm",
+  link: "text-amber-400 underline-offset-2 hover:underline transition-colors",
+  footnote: "text-[11px] text-zinc-500 leading-normal",
 
   aside: "hidden xl:block",
   asideCard:
-    "sticky top-8 space-y-4 rounded-3xl border border-white/20 bg-white/10 p-5 shadow-2xl backdrop-blur-xl",
-  asideTitle: "text-sm font-medium text-white",
-  asideText: "text-sm text-zinc-500",
-  asideList: "space-y-2",
-  asideListItem: "text-sm text-zinc-500",
+    "sticky top-6 space-y-3 rounded-2xl border border-white/[0.10] bg-white/[0.025] p-4 shadow-xl backdrop-blur-xl ring-1 ring-black/40",
+  asideTitle: "text-xs font-semibold text-white tracking-wide uppercase",
+  asideText: "text-xs text-zinc-400 leading-relaxed",
+  asideList: "space-y-1.5",
+  asideListItem: "text-xs text-zinc-400 leading-relaxed flex items-start gap-1.5 before:content-['•'] before:text-amber-400",
 } as const;

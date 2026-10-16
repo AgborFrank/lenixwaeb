@@ -1,0 +1,114 @@
+- generic [active] [ref=f15e1]:
+  - generic [ref=f15e3]:
+    - complementary [ref=f15e4]:
+      - generic [ref=f15e5]:
+        - generic [ref=f15e6]:
+          - link [ref=f15e7] [cursor=pointer]:
+            - /url: /en/dashboard
+            - img "Lenix Protocol" [ref=f15e8]
+          - button "Change language" [ref=f15e9]: en
+        - generic [ref=f15e14]:
+          - navigation "Menu" [ref=f15e15]:
+            - generic [ref=f15e16]:
+              - paragraph [ref=f15e17]: Account
+              - generic [ref=f15e18]:
+                - link "Home" [ref=f15e19] [cursor=pointer]:
+                  - /url: /en/dashboard
+                - link "Blockchain Vault" [ref=f15e26] [cursor=pointer]:
+                  - /url: /en/vault
+                - link "Lenix Wallet" [ref=f15e31] [cursor=pointer]:
+                  - /url: /en/lenix-wallet
+                - link "Enterprise Banking" [ref=f15e36] [cursor=pointer]:
+                  - /url: /en/banking
+                - link "Recovery Services" [ref=f15e42] [cursor=pointer]:
+                  - /url: /en/recovery-services
+                - link "Purchase Refunds" [ref=f15e47] [cursor=pointer]:
+                  - /url: /en/refund-services
+                - link "Crypto Loan" [ref=f15e53] [cursor=pointer]:
+                  - /url: /en/crypto-loan
+            - generic [ref=f15e57]:
+              - paragraph [ref=f15e58]: Wallet
+              - generic [ref=f15e59]:
+                - link "Assets" [ref=f15e60] [cursor=pointer]:
+                  - /url: /en/assets
+                - link "Send" [ref=f15e65] [cursor=pointer]:
+                  - /url: /en/send
+                - link "Receive" [ref=f15e70] [cursor=pointer]:
+                  - /url: /en/receive
+                - link "Transactions" [ref=f15e74] [cursor=pointer]:
+                  - /url: /en/transactions
+            - link "Settings" [ref=f15e82] [cursor=pointer]:
+              - /url: /en/settings
+          - generic [ref=f15e87]:
+            - link "Contact Support" [ref=f15e88] [cursor=pointer]:
+              - /url: https://t.me/Verified_protocol
+            - generic [ref=f15e91]:
+              - generic [ref=f15e92]: TE
+              - paragraph [ref=f15e93]: test_dev_1792127588465@example.com
+              - button "Sign out" [ref=f15e94]
+    - generic [ref=f15e98]:
+      - banner [ref=f15e99]:
+        - button "TE test_dev_1792127588465@example.com" [ref=f15e100]:
+          - generic [ref=f15e101]: TE
+          - generic [ref=f15e102]: test_dev_1792127588465@example.com
+      - main [ref=f15e103]:
+        - generic [ref=f15e105]:
+          - generic [ref=f15e107]:
+            - img "Support" [ref=f15e109]
+            - heading "Recovery Case Status" [level=2] [ref=f15e110]
+            - generic [ref=f15e111]:
+              - generic [ref=f15e112]:
+                - generic [ref=f15e119]:
+                  - heading "Application Received" [level=3] [ref=f15e120]
+                  - paragraph [ref=f15e121]: We have received your details and are reviewing them.
+                  - paragraph [ref=f15e122]: 10/16/2026
+                - generic [ref=f15e126]:
+                  - heading "Under Review" [level=3] [ref=f15e127]
+                  - paragraph [ref=f15e128]: Our team is currently analyzing your request.
+              - generic [ref=f15e129]:
+                - heading "Submitted Details" [level=4] [ref=f15e130]
+                - generic [ref=f15e131]:
+                  - generic [ref=f15e132]:
+                    - generic [ref=f15e133]: Service Type
+                    - text: Recovery
+                  - generic [ref=f15e134]:
+                    - generic [ref=f15e135]: Name
+                    - text: Enterprise Client Alpha
+                  - generic [ref=f15e136]:
+                    - generic [ref=f15e137]: Asset
+                    - text: USDT
+                  - generic [ref=f15e138]:
+                    - generic [ref=f15e139]: Evidence
+                    - text: audit-forensic-report-v1.pdf
+                  - generic [ref=f15e140]:
+                    - generic [ref=f15e141]: Blockchain
+                    - text: Ethereum
+                  - generic [ref=f15e142]:
+                    - generic [ref=f15e143]: Phone Number
+                    - text: +1 (555) 019-2834
+                  - generic [ref=f15e144]:
+                    - generic [ref=f15e145]: Amount Stolen
+                    - text: "245000"
+                  - generic [ref=f15e146]:
+                    - generic [ref=f15e147]: Incident summary
+                    - text: Unauthorized smart contract drain triggered via compromised multisig signer credential.
+                  - generic [ref=f15e148]:
+                    - generic [ref=f15e149]: Transaction Hash
+                    - text: "0x7f83b1a82d499182a3928198f3994bb01824984210389a9f939e0811e921820b"
+                  - generic [ref=f15e150]:
+                    - generic [ref=f15e151]: Country Phone Code
+                    - text: US:+1
+          - generic [ref=f15e153]:
+            - generic [ref=f15e154]:
+              - img "Support" [ref=f15e155]
+              - generic [ref=f15e156]:
+                - heading "Need Help?" [level=3] [ref=f15e157]
+                - paragraph [ref=f15e158]: Our support team is available 24/7 to assist you with your case.
+            - link "Your recovery cases" [ref=f15e159] [cursor=pointer]:
+              - /url: /en/recovery-services
+            - link "Contact Support" [ref=f15e160] [cursor=pointer]:
+              - /url: https://t.me/Verified_protocol
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f15e166] [cursor=pointer]
+  - alert [ref=f15e170]
+  - iframe [aria-hidden] [ref=f15e171]

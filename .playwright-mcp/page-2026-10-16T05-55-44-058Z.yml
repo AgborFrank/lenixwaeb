@@ -1,0 +1,86 @@
+- generic [active] [ref=f12e1]:
+  - generic [ref=f12e3]:
+    - complementary [ref=f12e4]:
+      - generic [ref=f12e5]:
+        - generic [ref=f12e6]:
+          - link [ref=f12e7] [cursor=pointer]:
+            - /url: /en/dashboard
+            - img "Lenix Protocol" [ref=f12e8]
+          - button "Change language" [ref=f12e9]: en
+        - generic [ref=f12e14]:
+          - navigation "Menu" [ref=f12e15]:
+            - generic [ref=f12e16]:
+              - paragraph [ref=f12e17]: Account
+              - generic [ref=f12e18]:
+                - link "Home" [ref=f12e19] [cursor=pointer]:
+                  - /url: /en/dashboard
+                - link "Blockchain Vault" [ref=f12e26] [cursor=pointer]:
+                  - /url: /en/vault
+                - link "Lenix Wallet" [ref=f12e31] [cursor=pointer]:
+                  - /url: /en/lenix-wallet
+                - link "Enterprise Banking" [ref=f12e36] [cursor=pointer]:
+                  - /url: /en/banking
+                - link "Recovery Services" [ref=f12e42] [cursor=pointer]:
+                  - /url: /en/recovery-services
+                - link "Purchase Refunds" [ref=f12e47] [cursor=pointer]:
+                  - /url: /en/refund-services
+                - link "Crypto Loan" [ref=f12e53] [cursor=pointer]:
+                  - /url: /en/crypto-loan
+            - generic [ref=f12e57]:
+              - paragraph [ref=f12e58]: Wallet
+              - generic [ref=f12e59]:
+                - link "Assets" [ref=f12e60] [cursor=pointer]:
+                  - /url: /en/assets
+                - link "Send" [ref=f12e65] [cursor=pointer]:
+                  - /url: /en/send
+                - link "Receive" [ref=f12e70] [cursor=pointer]:
+                  - /url: /en/receive
+                - link "Transactions" [ref=f12e74] [cursor=pointer]:
+                  - /url: /en/transactions
+            - link "Settings" [ref=f12e82] [cursor=pointer]:
+              - /url: /en/settings
+          - generic [ref=f12e87]:
+            - link "Contact Support" [ref=f12e88] [cursor=pointer]:
+              - /url: https://t.me/Verified_protocol
+            - generic [ref=f12e91]:
+              - generic [ref=f12e92]: TE
+              - paragraph [ref=f12e93]: test_dev_1792127588465@example.com
+              - button "Sign out" [ref=f12e94]
+    - generic [ref=f12e98]:
+      - banner [ref=f12e99]:
+        - button "TE test_dev_1792127588465@example.com" [ref=f12e100]:
+          - generic [ref=f12e101]: TE
+          - generic [ref=f12e102]: test_dev_1792127588465@example.com
+      - main [ref=f12e103]:
+        - generic [ref=f12e105]:
+          - generic [ref=f12e107]:
+            - img "Support" [ref=f12e109]
+            - heading "Recovery Case Status" [level=2] [ref=f12e110]
+            - generic [ref=f12e111]:
+              - generic [ref=f12e112]:
+                - generic [ref=f12e119]:
+                  - heading "Application Received" [level=3] [ref=f12e120]
+                  - paragraph [ref=f12e121]: We have received your details and are reviewing them.
+                  - paragraph [ref=f12e122]: 10/16/2026
+                - generic [ref=f12e126]:
+                  - heading "Under Review" [level=3] [ref=f12e127]
+                  - paragraph [ref=f12e128]: Our team is currently analyzing your request.
+              - generic [ref=f12e129]:
+                - heading "Submitted Details" [level=4] [ref=f12e130]
+                - generic [ref=f12e132]:
+                  - generic [ref=f12e133]: Service Type
+                  - text: Recovery
+          - generic [ref=f12e135]:
+            - generic [ref=f12e136]:
+              - img "Support" [ref=f12e137]
+              - generic [ref=f12e138]:
+                - heading "Need Help?" [level=3] [ref=f12e139]
+                - paragraph [ref=f12e140]: Our support team is available 24/7 to assist you with your case.
+            - link "Your recovery cases" [ref=f12e141] [cursor=pointer]:
+              - /url: /en/recovery-services
+            - link "Contact Support" [ref=f12e142] [cursor=pointer]:
+              - /url: https://t.me/Verified_protocol
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f12e148] [cursor=pointer]
+  - alert [ref=f12e152]
+  - iframe [aria-hidden] [ref=f12e153]

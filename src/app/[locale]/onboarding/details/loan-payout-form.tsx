@@ -328,16 +328,21 @@ export function LoanPayoutForm({ error }: { error?: string }) {
       </div>
 
       <OnboardingActionBar>
-        <button type="submit" disabled={isSubmitting} className={onboarding.btnPrimary}>
-          {isSubmitting ? (
-            <>
-              <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
-              {tc("submitting")}
-            </>
-          ) : (
-            tc("submitFinish")
-          )}
-        </button>
+        <div className="flex w-full items-center justify-between gap-3">
+          <span className="text-[11px] text-zinc-400">
+            Encrypted settlement account · 100% segregated custody
+          </span>
+          <button type="submit" disabled={isSubmitting} className={onboarding.btnPrimary}>
+            {isSubmitting ? (
+              <>
+                <Loader2 className="h-3.5 w-3.5 animate-spin" aria-hidden />
+                <span>{tc("submitting")}</span>
+              </>
+            ) : (
+              <span>{tc("submitFinish")}</span>
+            )}
+          </button>
+        </div>
       </OnboardingActionBar>
     </form>
   );

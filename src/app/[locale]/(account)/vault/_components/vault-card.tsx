@@ -1,10 +1,9 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { ShieldCheck, TrendingUp, TrendingDown, MoreHorizontal, Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
+import { adminGlass } from "@/lib/admin-glass";
 import { useSettings } from "@/app/[locale]/(account)/_providers/settings-provider";
 
 interface VaultCardProps {
@@ -17,98 +16,43 @@ export function VaultCard({ totalBalance, change24h, isLoading }: VaultCardProps
   const t = useTranslations("AccountVault.card");
   const { formatCurrency } = useSettings();
   const [showBalance, setShowBalance] = useState(true);
-
-  if (isLoading) {
-    return (
-      <div className="group relative overflow-hidden rounded-3xl p-6 sm:p-8 transition-all animate-pulse">
-        <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 to-black z-0" />
-        <div className="relative z-10 h-48 bg-zinc-800/50 rounded-xl" />
-      </div>
-    );
-  }
-
   const isPositive = change24h >= 0;
 
+  if (isLoading) {
+    return <div className={`${adminGlass.surface} h-20 animate-pulse`} aria-busy="true" />;
+  }
+
   return (
-    <div className="group relative overflow-hidden rounded-3xl p-6 sm:p-8 transition-all hover:scale-[1.01]">
-      <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 to-black z-0" />
-      <div className="absolute inset-0 bg-[url('/assets/img/grid-pattern.svg')] opacity-20 z-0 mix-blend-overlay" />
-      <div className="absolute -top-24 -right-24 h-64 w-64 rounded-full bg-yellow-400/10 blur-3xl" />
-      <div className="absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-blue-500/10 blur-3xl" />
-
-      <div className="relative z-10 flex flex-col h-full justify-between gap-8">
-        <div className="flex items-start justify-between">
-          <div className="flex items-center gap-3">
-            <div className="p-2 rounded-xl bg-white/5 border border-white/10 backdrop-blur-md">
-              <ShieldCheck className="h-6 w-6 text-yellow-400" />
-            </div>
-            <div>
-              <h3 className="text-zinc-400 text-sm font-medium tracking-wide">{t("total_value")}</h3>
-              <div className="flex items-center gap-2 mt-1">
-                {showBalance ? (
-                  <span className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-                    {formatCurrency(totalBalance)}
-                  </span>
-                ) : (
-                  <span className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-                    ••••••••
-                  </span>
-                )}
-                <button
-                  type="button"
-                  onClick={() => setShowBalance(!showBalance)}
-                  className="p-1 rounded-lg hover:bg-white/10 text-zinc-500 hover:text-white transition-colors"
-                >
-                  {showBalance ? <Eye className="h-4 w-4" /> : <EyeOff className="h-4 w-4" />}
-                </button>
-              </div>
-            </div>
-          </div>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="text-zinc-400 hover:text-white hover:bg-white/10 rounded-full"
+    <section className={`${adminGlass.surface} flex flex-col gap-3 px-4 py-3.5 sm:flex-row sm:items-end sm:justify-between sm:px-5 sm:py-4`}>
+      <div>
+        <p className="text-[11px] font-medium tracking-wide text-zinc-500">{t("total_value")}</p>
+        <div className="mt-1 flex items-center gap-2">
+          <p className="text-2xl font-semibold tabular-nums tracking-tight text-white sm:text-3xl">
+            {showBalance ? formatCurrency(totalBalance) : "••••••"}
+          </p>
+          <button
+            type="button"
+            onClick={() => setShowBalance((current) => !current)}
+            className="rounded-md p-1 text-zinc-500 hover:bg-white/[0.06] hover:text-white"
+            aria-label={showBalance ? "Hide balance" : "Show balance"}
           >
-            <MoreHorizontal className="h-6 w-6" />
-          </Button>
-        </div>
-
-        <div className="flex items-end justify-between">
-          <div className="space-y-1">
-            <div
-              className={cn(
-                "flex items-center gap-2 text-sm font-medium px-3 py-1 rounded-full w-fit border",
-                isPositive
-                  ? "text-emerald-400 bg-emerald-400/10 border-emerald-400/20"
-                  : "text-red-400 bg-red-400/10 border-red-400/20"
-              )}
-            >
-              {isPositive ? <TrendingUp className="h-3 w-3" /> : <TrendingDown className="h-3 w-3" />}
-              <span>
-                {isPositive ? "+" : ""}
-                {t("change_24h", { percent: change24h.toFixed(2) })}
-              </span>
-            </div>
-            <p className="text-zinc-500 text-xs pl-1">{t("last_synced")}</p>
-          </div>
-
-          <div className="flex flex-col items-end gap-1">
-            <span className="text-xs text-zinc-500 uppercase tracking-widest font-bold">
-              {t("security_level")}
-            </span>
-            <div className="flex gap-1">
-              {[1, 2, 3, 4].map((i) => (
-                <div
-                  key={i}
-                  className="h-2 w-8 rounded-full bg-yellow-400 shadow-[0_0_10px_rgba(250,204,21,0.5)]"
-                />
-              ))}
-              <div className="h-2 w-8 rounded-full bg-zinc-800" />
-            </div>
-            <span className="text-xs text-yellow-400 font-medium">{t("security_very_high")}</span>
-          </div>
+            {showBalance ? <Eye className="size-4" /> : <EyeOff className="size-4" />}
+          </button>
         </div>
       </div>
-    </div>
+      <div className="flex items-center gap-3">
+        <span
+          className={`inline-flex rounded-md border px-2 py-0.5 text-xs font-medium tabular-nums ${
+            isPositive
+              ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-300"
+              : "border-red-500/30 bg-red-500/10 text-red-300"
+          }`}
+        >
+          {isPositive ? "+" : ""}
+          {t("change_24h", { percent: change24h.toFixed(2) })}
+        </span>
+        <p className="text-xs text-zinc-500">{t("last_synced")}</p>
+      </div>
+    </section>
   );
 }

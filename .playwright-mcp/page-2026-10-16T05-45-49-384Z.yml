@@ -1,0 +1,107 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e133]:
+    - banner [ref=f3e134]:
+      - generic [ref=f3e135]:
+        - link [ref=f3e137] [cursor=pointer]:
+          - /url: /en
+          - img "Lenix Protocol" [ref=f3e138]
+        - generic [ref=f3e139]:
+          - generic [ref=f3e140]: Encrypted
+          - link "Exit" [ref=f3e148] [cursor=pointer]:
+            - /url: /en
+    - main [ref=f3e149]:
+      - link "Back to service selection" [ref=f3e150] [cursor=pointer]:
+        - /url: /en/onboarding
+      - generic [ref=f3e154]:
+        - navigation "Step 2 of 2" [ref=f3e155]:
+          - list [ref=f3e156]:
+            - listitem [ref=f3e157]:
+              - generic [ref=f3e158]: Service
+            - listitem [ref=f3e164]:
+              - generic [ref=f3e165]:
+                - generic [ref=f3e166]: "02"
+                - generic [ref=f3e167]: Refund case
+        - article [ref=f3e168]:
+          - generic [ref=f3e169]:
+            - heading "Open your refund case" [level=1] [ref=f3e170]
+            - paragraph [ref=f3e171]: Share order details, payment proof, and what went wrong. No payout is issued at submit.
+          - generic [ref=f3e172]:
+            - generic [ref=f3e173]:
+              - generic [ref=f3e174]:
+                - generic [ref=f3e175]: I am the
+                - generic [ref=f3e176]:
+                  - button "Buyer" [ref=f3e177]
+                  - button "Seller" [ref=f3e178]
+              - generic [ref=f3e179]:
+                - generic [ref=f3e180]:
+                  - generic [ref=f3e181]: Your name *
+                  - textbox "Your name *" [ref=f3e182]:
+                    - /placeholder: e.g. Sarah Chen
+                - generic [ref=f3e183]:
+                  - generic [ref=f3e184]: Email *
+                  - textbox "Email *" [ref=f3e185]:
+                    - /placeholder: you@example.com
+                    - text: test_dev_1792127588465@example.com
+                - generic [ref=f3e186]:
+                  - generic [ref=f3e187]: Phone number (optional)
+                  - generic [ref=f3e188]:
+                    - combobox "Country code" [ref=f3e189]:
+                      - generic: US +1
+                    - combobox [aria-hidden] [ref=f3e192]
+                    - textbox "Phone number" [ref=f3e193]:
+                      - /placeholder: "+1"
+                - generic [ref=f3e194]:
+                  - generic [ref=f3e195]: Store, marketplace, or counterparty
+                  - textbox "Store, marketplace, or counterparty" [ref=f3e196]:
+                    - /placeholder: Shop name or seller handle
+                - generic [ref=f3e197]:
+                  - generic [ref=f3e198]: Order ID (optional)
+                  - textbox "Order ID (optional)" [ref=f3e199]:
+                    - /placeholder: ORD-2044
+                - generic [ref=f3e200]:
+                  - generic [ref=f3e201]: Payment hash, invoice, or transfer ID *
+                  - textbox "Payment hash, invoice, or transfer ID *" [ref=f3e202]:
+                    - /placeholder: 0x… or invoice number
+                - generic [ref=f3e204]:
+                  - generic [ref=f3e205]:
+                    - generic [ref=f3e206]: Amount claimed *
+                    - textbox "Amount claimed *" [ref=f3e207]:
+                      - /placeholder: e.g. 480
+                  - generic [ref=f3e208]:
+                    - generic [ref=f3e209]: Asset *
+                    - combobox "Asset *" [ref=f3e210]:
+                      - generic: USD
+                    - combobox [aria-hidden] [ref=f3e213]
+                  - generic [ref=f3e214]:
+                    - generic [ref=f3e215]: Chain (if paid in crypto)
+                    - combobox "Chain (if paid in crypto)" [ref=f3e216]:
+                      - generic: Select chain
+                    - combobox [aria-hidden] [ref=f3e219]
+                - generic [ref=f3e220]:
+                  - generic [ref=f3e221]: What fell short *
+                  - textbox "What fell short *" [ref=f3e222]:
+                    - /placeholder: What was bought, delivery or tracking dates, what arrived (or did not), and any reply from the carrier or seller.
+                - generic [ref=f3e223]:
+                  - generic [ref=f3e224]: Supporting evidence (optional)
+                  - generic [ref=f3e225] [cursor=pointer]:
+                    - button "📎 Attach proof of purchase or payment PDF, JPG, PNG up to 10 MB (optional) Browse" [ref=f3e226]
+                    - generic [ref=f3e227]:
+                      - generic [ref=f3e228]: 📎
+                      - generic [ref=f3e230]:
+                        - paragraph [ref=f3e231]: Attach proof of purchase or payment
+                        - paragraph [ref=f3e232]: PDF, JPG, PNG up to 10 MB (optional)
+                    - generic [ref=f3e233]: Browse
+            - generic [ref=f3e236]:
+              - generic [ref=f3e237]:
+                - text: We'll reach out if we need more info. See our
+                - link "privacy policy" [ref=f3e238] [cursor=pointer]:
+                  - /url: /privacy
+              - button "Submit request" [ref=f3e239]
+        - generic [ref=f3e240]: Zero-knowledge client encryption · ISO 27001 & SOC 2 aligned protocols
+  - region "Notifications alt+T"
+  - link "Connect on Telegram" [ref=f3e118] [cursor=pointer]:
+    - /url: https://t.me/Verified_protocol
+    - generic [ref=f3e119]: Telegram
+  - button "Open Next.js Dev Tools" [ref=f3e127] [cursor=pointer]
+  - alert [ref=f3e131]
+  - iframe [aria-hidden] [ref=f3e132]

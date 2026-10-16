@@ -157,13 +157,17 @@ export function LoanApplicationForm({ loanTypes }: LoanApplicationFormProps) {
       </div>
 
       <OnboardingActionBar>
-        <OnboardingPendingSubmitButton
-          label={tc("continuePayout")}
-          pendingLabel={tc("submitting")}
-          disabled={loanTypes.length === 0}
-        />
+        <div className="flex w-full items-center justify-between gap-3">
+          <span className="text-[11px] text-zinc-400">
+            Transparent rate calculation · No hidden origination fees
+          </span>
+          <OnboardingPendingSubmitButton
+            label={tc("continuePayout")}
+            pendingLabel={tc("submitting")}
+            disabled={loanTypes.length === 0}
+          />
+        </div>
       </OnboardingActionBar>
-      
     </form>
   );
 }

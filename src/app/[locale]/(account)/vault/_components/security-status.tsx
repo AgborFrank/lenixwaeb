@@ -1,10 +1,8 @@
 "use client";
 
-import { ShieldCheck, Activity, AlertTriangle, CheckCircle2 } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
 import { Link } from "@/i18n/navigation";
+import { adminGlass } from "@/lib/admin-glass";
 import type { WalletState } from "@/app/[locale]/(account)/lenix-wallet/_hooks/use-wallet";
 
 interface SecurityStatusProps {
@@ -13,212 +11,113 @@ interface SecurityStatusProps {
   transactions?: any[];
 }
 
-export function SecurityStatus({
-  walletState,
-  walletAddress,
-  transactions = [],
-}: SecurityStatusProps) {
+export function SecurityStatus({ walletState, walletAddress, transactions = [] }: SecurityStatusProps) {
   const t = useTranslations("AccountVault.security");
   const tTime = useTranslations("AccountVault.time");
   const hasWallet = walletState === "locked" || walletState === "unlocked";
-  const securityScore = hasWallet ? 92 : 0;
 
   const formatTimeAgo = (date: Date) => {
-    const now = new Date();
-    const diffMs = now.getTime() - date.getTime();
+    const diffMs = Date.now() - date.getTime();
     const diffMins = Math.floor(diffMs / 60000);
     const diffHours = Math.floor(diffMs / 3600000);
     const diffDays = Math.floor(diffMs / 86400000);
-
     if (diffMins < 60) return tTime("min_ago", { count: diffMins });
     if (diffHours < 24) return tTime("hours_ago", { count: diffHours });
     if (diffDays < 7) return tTime("days_ago", { count: diffDays });
     return date.toLocaleDateString();
   };
 
-  const recentActivity = transactions.slice(0, 5).map((tx) => {
+  const recentActivity = transactions.slice(0, 5).map((tx, index) => {
     const symbol = tx.symbol || tx.token_symbol || "Token";
-    const amount = tx.value
-      ? (Number(tx.value) / Math.pow(10, tx.decimals || 18)).toFixed(4)
-      : null;
-    const time = tx.block_timestamp
-      ? formatTimeAgo(new Date(tx.block_timestamp))
-      : tTime("recently");
-    const fromShort = tx.from_address ? `${tx.from_address.slice(0, 6)}...` : "";
-    const toShort = tx.to_address ? `${tx.to_address.slice(0, 6)}...` : "";
-    const desc = fromShort && toShort ? `${fromShort} → ${toShort}` : t("transaction");
+    const amount = tx.value ? (Number(tx.value) / Math.pow(10, tx.decimals || 18)).toFixed(4) : null;
     return {
+      key: `${tx.hash || tx.transaction_hash || "tx"}-${tx.type || ""}-${index}`,
       title: t("transfer", { symbol }),
-      time,
+      time: tx.block_timestamp ? formatTimeAgo(new Date(tx.block_timestamp)) : tTime("recently"),
       amount: amount ? `${amount} ${symbol}` : null,
-      desc,
-      status: t("status.completed"),
     };
   });
 
-  if (recentActivity.length === 0 && hasWallet) {
-    recentActivity.push({
-      title: t("wallet_connected"),
-      time: tTime("just_now"),
-      amount: null,
-      desc: walletAddress ? `${walletAddress.slice(0, 6)}...${walletAddress.slice(-4)}` : t("items.wallet"),
-      status: t("status.active"),
-    });
-  }
+  const rows = [
+    {
+      label: t("items.wallet"),
+      value: hasWallet ? t("status.connected") : t("status.not_connected"),
+      tone: hasWallet ? "text-emerald-300" : "text-zinc-500",
+    },
+    {
+      label: t("items.cold_storage"),
+      value: t("status.active"),
+      tone: "text-emerald-300",
+    },
+    {
+      label: t("items.encrypted_vault"),
+      value: t("status.active"),
+      tone: "text-emerald-300",
+    },
+    {
+      label: t("items.session"),
+      value:
+        walletState === "unlocked"
+          ? t("status.unlocked")
+          : walletState === "locked"
+            ? t("status.locked")
+            : t("status.no_wallet"),
+      tone: walletState === "unlocked" ? "text-emerald-300" : "text-yellow-300",
+      action: walletState === "locked" ? t("unlock") : undefined,
+    },
+  ];
 
   return (
-    <div className="space-y-6">
-      <div className="p-6 rounded-2xl bg-zinc-900/30 border border-white/5 backdrop-blur-sm">
-        <div className="flex items-center gap-3 mb-4">
-          <ShieldCheck className="h-5 w-5 text-emerald-400" />
-          <h3 className="text-lg font-semibold text-white">{t("title")}</h3>
+    <div className="space-y-4">
+      <section className={`${adminGlass.surface} overflow-hidden`}>
+        <div className="border-b border-white/[0.06] px-4 py-3">
+          <h2 className="text-sm font-medium text-white">{t("title")}</h2>
         </div>
+        <ul className="divide-y divide-white/[0.06]">
+          {rows.map((row) => (
+            <li key={row.label} className="flex items-center justify-between gap-3 px-4 py-2.5">
+              <span className="text-sm text-zinc-400">{row.label}</span>
+              <span className="flex items-center gap-2">
+                <span className={`text-xs font-medium ${row.tone}`}>{row.value}</span>
+                {row.action ? (
+                  <Link href="/lenix-wallet" className="text-xs font-medium text-white underline-offset-4 hover:underline">
+                    {row.action}
+                  </Link>
+                ) : null}
+              </span>
+            </li>
+          ))}
+        </ul>
+        {walletAddress ? (
+          <p className="border-t border-white/[0.06] px-4 py-2 font-mono text-[11px] text-zinc-500">
+            {walletAddress.slice(0, 6)}…{walletAddress.slice(-4)}
+          </p>
+        ) : null}
+      </section>
 
-        <div className="space-y-4">
-          <div className="space-y-2">
-            <div className="flex justify-between text-sm">
-              <span className="text-zinc-400">{t("score_label")}</span>
-              <span className="text-white font-bold">{securityScore}/100</span>
-            </div>
-            <Progress value={securityScore} className="h-2 bg-zinc-800" />
-          </div>
-
-          <div className="grid gap-3">
-            <SecurityItem
-              icon={CheckCircle2}
-              label={t("items.wallet")}
-              status={hasWallet ? t("status.connected") : t("status.not_connected")}
-              color={hasWallet ? "text-emerald-400" : "text-zinc-500"}
-            />
-            <SecurityItem
-              icon={CheckCircle2}
-              label={t("items.cold_storage")}
-              status={t("status.active")}
-              color="text-emerald-400"
-            />
-            <SecurityItem
-              icon={CheckCircle2}
-              label={t("items.encrypted_vault")}
-              status={t("status.active")}
-              color="text-emerald-400"
-            />
-            <SecurityItem
-              icon={walletState === "unlocked" ? CheckCircle2 : AlertTriangle}
-              label={t("items.session")}
-              status={
-                walletState === "unlocked"
-                  ? t("status.unlocked")
-                  : walletState === "locked"
-                    ? t("status.locked")
-                    : t("status.no_wallet")
-              }
-              color={walletState === "unlocked" ? "text-emerald-400" : "text-yellow-400"}
-              action={walletState === "locked" ? t("unlock") : undefined}
-              actionHref={walletState === "locked" ? "/lenix-wallet" : undefined}
-            />
-          </div>
-        </div>
-      </div>
-
-      <div className="p-6 rounded-2xl bg-zinc-900/30 border border-white/5 backdrop-blur-sm">
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-3">
-            <Activity className="h-5 w-5 text-blue-400" />
-            <h3 className="text-lg font-semibold text-white">{t("recent_activity")}</h3>
-          </div>
-          <Button variant="link" className="text-xs text-zinc-500 hover:text-white p-0" asChild>
-            <Link href="/lenix-wallet">{t("view_all")}</Link>
-          </Button>
-        </div>
-
-        <div className="space-y-4 relative">
-          <div className="absolute left-[7px] top-2 bottom-2 w-[1px] bg-zinc-800" />
-
-          {recentActivity.length === 0 ? (
-            <p className="text-sm text-zinc-500 pl-6">{t("no_activity")}</p>
-          ) : (
-            recentActivity.map((item, i) => (
-              <ActivityItem
-                key={i}
-                title={item.title}
-                time={item.time}
-                amount={item.amount}
-                desc={item.desc}
-                status={item.status}
-              />
-            ))
-          )}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function SecurityItem({
-  icon: Icon,
-  label,
-  status,
-  color,
-  action,
-  actionHref,
-}: {
-  icon: React.ComponentType<{ className?: string }>;
-  label: string;
-  status: string;
-  color: string;
-  action?: string;
-  actionHref?: string;
-}) {
-  return (
-    <div className="flex items-center justify-between text-sm p-3 rounded-lg bg-white/5 border border-white/5">
-      <div className="flex items-center gap-3">
-        <Icon className={`h-4 w-4 ${color}`} />
-        <span className="text-zinc-300">{label}</span>
-      </div>
-      <div className="flex items-center gap-3">
-        <span className={`text-xs font-medium ${color}`}>{status}</span>
-        {action && actionHref && (
-          <Link
-            href={actionHref}
-            className="text-xs bg-yellow-400/10 text-yellow-400 px-2 py-1 rounded hover:bg-yellow-400/20 transition-colors"
-          >
-            {action}
+      <section className={`${adminGlass.surface} overflow-hidden`}>
+        <div className="flex items-center justify-between border-b border-white/[0.06] px-4 py-3">
+          <h2 className="text-sm font-medium text-white">{t("recent_activity")}</h2>
+          <Link href="/lenix-wallet" className="text-xs text-zinc-400 hover:text-white">
+            {t("view_all")}
           </Link>
+        </div>
+        {recentActivity.length === 0 ? (
+          <p className="px-4 py-6 text-sm text-zinc-500">{t("no_activity")}</p>
+        ) : (
+          <ul className="divide-y divide-white/[0.06]">
+            {recentActivity.map((item) => (
+              <li key={item.key} className="flex items-center justify-between gap-3 px-4 py-2.5">
+                <div className="min-w-0">
+                  <p className="truncate text-sm text-white">{item.title}</p>
+                  <p className="text-xs text-zinc-500">{item.time}</p>
+                </div>
+                {item.amount ? <p className="shrink-0 text-xs tabular-nums text-zinc-300">{item.amount}</p> : null}
+              </li>
+            ))}
+          </ul>
         )}
-      </div>
-    </div>
-  );
-}
-
-function ActivityItem({
-  title,
-  time,
-  amount,
-  desc,
-  status,
-}: {
-  title: string;
-  time: string;
-  amount?: string | null;
-  desc?: string;
-  status: string;
-}) {
-  return (
-    <div className="relative pl-6">
-      <div className="absolute left-0 top-1.5 h-3.5 w-3.5 rounded-full bg-zinc-900 border-2 border-zinc-700 ring-4 ring-zinc-950 z-10" />
-      <div className="flex justify-between items-start">
-        <div>
-          <p className="text-sm font-medium text-white">{title}</p>
-          <p className="text-xs text-zinc-500">{time}</p>
-        </div>
-        <div className="text-right">
-          {amount && <p className="text-sm font-bold text-white">{amount}</p>}
-          {desc && <p className="text-xs text-zinc-400">{desc}</p>}
-          <span className="text-[10px] text-zinc-600 bg-zinc-900 px-1.5 py-0.5 rounded border border-zinc-800 mt-1 inline-block">
-            {status}
-          </span>
-        </div>
-      </div>
+      </section>
     </div>
   );
 }

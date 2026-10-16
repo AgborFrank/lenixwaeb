@@ -1,17 +1,18 @@
 "use client";
 
-import { Plus, ArrowUpRight, ArrowDownLeft, ShieldCheck, History } from "lucide-react";
+import { ArrowDownLeft, ArrowUpRight, History, Plus, ShieldCheck } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 import { Link } from "@/i18n/navigation";
+import { adminGlass } from "@/lib/admin-glass";
+import { Button } from "@/components/ui/button";
+import { useWallet } from "../lenix-wallet/_hooks/use-wallet";
+import { getVaultPortfolio } from "./actions";
 import { ConnectWalletDrawer } from "./_components/connect-wallet-drawer";
 import { VaultCard } from "./_components/vault-card";
 import { AssetList } from "./_components/asset-list";
 import { SecurityStatus } from "./_components/security-status";
-import { useWallet } from "../lenix-wallet/_hooks/use-wallet";
-import { getVaultPortfolio } from "./actions";
-import { useEffect, useState } from "react";
-import { toast } from "sonner";
 
 export default function VaultPage() {
   const t = useTranslations("AccountVault");
@@ -24,8 +25,7 @@ export default function VaultPage() {
   const [portfolioLoading, setPortfolioLoading] = useState(true);
 
   const isGlobalLoading =
-    walletState === "loading" ||
-    (walletState !== "no_wallet" && portfolioLoading);
+    walletState === "loading" || (walletState !== "no_wallet" && portfolioLoading);
 
   useEffect(() => {
     let cancelled = false;
@@ -33,9 +33,7 @@ export default function VaultPage() {
       setPortfolioLoading(true);
       try {
         const data = await getVaultPortfolio();
-        if (!cancelled) {
-          setPortfolio(data);
-        }
+        if (!cancelled) setPortfolio(data);
       } catch (e) {
         console.error("Failed to fetch vault portfolio", e);
         if (!cancelled) toast.error(t("page.load_error"));
@@ -61,131 +59,77 @@ export default function VaultPage() {
       : walletState === "locked"
         ? t("page.status_locked")
         : t("page.status_no_wallet");
-  const statusVariant =
-    walletState === "unlocked" ? "emerald" : walletState === "locked" ? "yellow" : "zinc";
+  const statusClass =
+    walletState === "unlocked"
+      ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-300"
+      : walletState === "locked"
+        ? "border-yellow-500/30 bg-yellow-500/10 text-yellow-300"
+        : "border-white/10 bg-white/[0.04] text-zinc-400";
+
+  const actions = [
+    { href: "/receive", icon: Plus, label: t("actions.deposit") },
+    { href: "/send", icon: ArrowUpRight, label: t("actions.withdraw") },
+    { href: "/lenix-wallet", icon: ArrowDownLeft, label: t("actions.swap") },
+    { href: "/lenix-wallet", icon: ShieldCheck, label: t("actions.audit") },
+  ] as const;
 
   return (
-    <div className="max-w-7xl mx-auto space-y-6 pb-20">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-2xl font-bold text-white flex items-center gap-2">
-            {t("page.title")}
-            <span
-              className={`px-2 py-0.5 rounded-full text-xs font-medium tracking-wide uppercase border ${
-                statusVariant === "emerald"
-                  ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-400"
-                  : statusVariant === "yellow"
-                    ? "bg-yellow-500/10 border-yellow-500/20 text-yellow-400"
-                    : "bg-zinc-500/10 border-zinc-500/20 text-zinc-400"
-              }`}
-            >
+    <div className="mx-auto flex w-full max-w-6xl flex-col gap-6">
+      <header className="flex flex-col gap-4 border-b border-white/[0.06] pb-5 sm:flex-row sm:items-end sm:justify-between">
+        <div className="space-y-2">
+          <div className="flex items-center gap-2">
+            <h1 className="text-xl font-semibold tracking-tight text-white sm:text-2xl">{t("page.title")}</h1>
+            <span className={`inline-flex rounded-md border px-2 py-0.5 text-xs font-medium ${statusClass}`}>
               {statusLabel}
             </span>
-          </h1>
-          <p className="text-zinc-400 text-sm">{t("page.subtitle")}</p>
+          </div>
+          <p className="text-sm text-zinc-400">{t("page.subtitle")}</p>
         </div>
-
-        <div className="flex items-center gap-2 w-full sm:w-auto">
-          <Button
-            variant="outline"
-            className="flex-1 sm:flex-none border-zinc-700 bg-zinc-900/50 text-zinc-300 hover:bg-zinc-800 hover:text-white"
-            asChild
-          >
+        <div className="flex items-center gap-2">
+          <Button type="button" variant="outline" size="sm" className={`h-9 ${adminGlass.field}`} asChild>
             <Link href="/lenix-wallet">
-              <History className="mr-2 h-4 w-4" />
+              <History className="size-4" />
               {t("page.history")}
             </Link>
           </Button>
-          <div className="flex-1 sm:flex-none">
-            <ConnectWalletDrawer />
-          </div>
+          <ConnectWalletDrawer />
         </div>
-      </div>
+      </header>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <div className="lg:col-span-2 space-y-6">
-          <VaultCard
-            totalBalance={totalBalance}
-            change24h={changePercent}
-            isLoading={isGlobalLoading}
-          />
+      <VaultCard totalBalance={totalBalance} change24h={changePercent} isLoading={isGlobalLoading} />
 
-          <div className="grid grid-cols-4 gap-2 sm:flex sm:items-center sm:gap-6">
-            <ActionButton icon={Plus} label={t("actions.deposit")} accent="text-emerald-400" href="/receive" />
-            <ActionButton icon={ArrowUpRight} label={t("actions.withdraw")} href="/send" />
-            <ActionButton icon={ArrowDownLeft} label={t("actions.swap")} href="/lenix-wallet" />
-            <ActionButton icon={ShieldCheck} label={t("actions.audit")} accent="text-yellow-400" href="/lenix-wallet" />
-          </div>
+      <nav className={`${adminGlass.surface} grid grid-cols-4 divide-x divide-white/[0.06]`} aria-label={t("actions.deposit")}>
+        {actions.map((action) => (
+          <Link
+            key={action.label}
+            href={action.href}
+            className="flex h-14 flex-col items-center justify-center gap-1 text-zinc-300 transition-colors hover:bg-white/[0.04] hover:text-white"
+          >
+            <action.icon className="size-4" />
+            <span className="text-[11px] font-medium">{action.label}</span>
+          </Link>
+        ))}
+      </nav>
 
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="lg:col-span-2">
           <AssetList tokens={displayTokens} isLoading={isGlobalLoading} />
         </div>
-
-        <div className="space-y-6">
+        <div className="space-y-4">
           <SecurityStatus
             walletState={walletState}
             walletAddress={walletData?.address}
             transactions={portfolio?.transactions ?? []}
           />
-
-          <div className="relative overflow-hidden rounded-2xl border border-yellow-400/20 bg-gradient-to-br from-yellow-400/10 to-transparent p-6">
-            <div className="absolute top-0 right-0 p-3 opacity-20">
-              <ShieldCheck className="h-24 w-24 text-yellow-400 rotate-12" />
-            </div>
-            <h3 className="text-lg font-bold text-yellow-400 mb-2 relative z-10">
-              {t("premium.title")}
-            </h3>
-            <p className="text-sm text-yellow-100/80 mb-4 relative z-10">
-              {t("premium.description")}
-            </p>
-            <Button
-              size="sm"
-              className="bg-yellow-400 text-black hover:bg-yellow-500 w-full relative z-10 font-medium"
-              asChild
-            >
+          <section className={`${adminGlass.surface} p-4`}>
+            <h2 className="text-sm font-medium text-white">{t("premium.title")}</h2>
+            <p className="mt-1 text-sm text-zinc-500">{t("premium.description")}</p>
+            <Button type="button" size="sm" className="mt-4 h-9 bg-white text-black hover:bg-zinc-200" asChild>
               <Link href="/lenix-wallet">{t("premium.cta")}</Link>
             </Button>
-          </div>
+          </section>
         </div>
       </div>
     </div>
-  );
-}
-
-function ActionButton({
-  icon: Icon,
-  label,
-  accent,
-  href,
-}: {
-  icon: React.ComponentType<{ className?: string }>;
-  label: string;
-  accent?: string;
-  href?: string;
-}) {
-  const content = (
-    <>
-      <div
-        className={`p-4 rounded-full bg-zinc-900 border border-white/10 group-hover:border-yellow-400/50 group-hover:bg-zinc-800 transition-all ${accent || "text-white"}`}
-      >
-        <Icon className="h-6 w-6" />
-      </div>
-      <span className="text-xs font-medium text-zinc-500 group-hover:text-white transition-colors">
-        {label}
-      </span>
-    </>
-  );
-
-  if (href) {
-    return (
-      <Link href={href} className="flex flex-col items-center justify-center gap-2 min-w-[70px] group">
-        {content}
-      </Link>
-    );
-  }
-
-  return (
-    <button type="button" className="flex flex-col items-center justify-center gap-2 min-w-[70px] group">
-      {content}
-    </button>
   );
 }

@@ -1,0 +1,160 @@
+- generic [active] [ref=f21e1]:
+  - generic [ref=f21e3]:
+    - complementary [ref=f21e4]:
+      - generic [ref=f21e5]:
+        - generic [ref=f21e6]:
+          - link [ref=f21e7] [cursor=pointer]:
+            - /url: /en/dashboard
+            - img "Lenix Protocol" [ref=f21e8]
+          - button "Change language" [ref=f21e9]: en
+        - generic [ref=f21e14]:
+          - navigation "Menu" [ref=f21e15]:
+            - generic [ref=f21e16]:
+              - paragraph [ref=f21e17]: Account
+              - generic [ref=f21e18]:
+                - link "Home" [ref=f21e19] [cursor=pointer]:
+                  - /url: /en/dashboard
+                - link "Blockchain Vault" [ref=f21e26] [cursor=pointer]:
+                  - /url: /en/vault
+                - link "Lenix Wallet" [ref=f21e31] [cursor=pointer]:
+                  - /url: /en/lenix-wallet
+                - link "Enterprise Banking" [ref=f21e36] [cursor=pointer]:
+                  - /url: /en/banking
+                - link "Recovery Services" [ref=f21e42] [cursor=pointer]:
+                  - /url: /en/recovery-services
+                - link "Purchase Refunds" [ref=f21e47] [cursor=pointer]:
+                  - /url: /en/refund-services
+                - link "Crypto Loan" [ref=f21e53] [cursor=pointer]:
+                  - /url: /en/crypto-loan
+            - generic [ref=f21e57]:
+              - paragraph [ref=f21e58]: Wallet
+              - generic [ref=f21e59]:
+                - link "Assets" [ref=f21e60] [cursor=pointer]:
+                  - /url: /en/assets
+                - link "Send" [ref=f21e65] [cursor=pointer]:
+                  - /url: /en/send
+                - link "Receive" [ref=f21e70] [cursor=pointer]:
+                  - /url: /en/receive
+                - link "Transactions" [ref=f21e74] [cursor=pointer]:
+                  - /url: /en/transactions
+            - link "Settings" [ref=f21e82] [cursor=pointer]:
+              - /url: /en/settings
+          - generic [ref=f21e87]:
+            - link "Contact Support" [ref=f21e88] [cursor=pointer]:
+              - /url: https://t.me/Verified_protocol
+            - generic [ref=f21e91]:
+              - generic [ref=f21e92]: TE
+              - paragraph [ref=f21e93]: test_dev_1792127588465@example.com
+              - button "Sign out" [ref=f21e94]
+    - generic [ref=f21e98]:
+      - banner [ref=f21e99]:
+        - button "TE test_dev_1792127588465@example.com" [ref=f21e100]:
+          - generic [ref=f21e101]: TE
+          - generic [ref=f21e102]: test_dev_1792127588465@example.com
+      - main [ref=f21e103]:
+        - generic [ref=f21e104]:
+          - generic [ref=f21e105]:
+            - generic [ref=f21e106]:
+              - generic [ref=f21e107]:
+                - generic [ref=f21e108]: "Case #LEN-REC-6B7A3FFA"
+                - generic [ref=f21e109]: Under Technical Review
+              - heading "Recovery Case Status" [level=1] [ref=f21e111]
+              - paragraph [ref=f21e112]: "Submitted on Oct 16, 2026 • Track: Recovery"
+            - generic [ref=f21e113]:
+              - button "Print Summary" [ref=f21e114]
+              - link "Contact Case Officer" [ref=f21e116] [cursor=pointer]:
+                - /url: https://t.me/Verified_protocol
+          - region "Key Case Parameters" [ref=f21e117]:
+            - generic [ref=f21e118]:
+              - paragraph [ref=f21e119]: Service Track
+              - paragraph [ref=f21e120]: Recovery
+              - paragraph [ref=f21e121]: Asset Recovery & Forensics
+            - generic [ref=f21e122]:
+              - paragraph [ref=f21e123]: Reported Loss / Claim
+              - paragraph [ref=f21e124]: $245,000 USDT
+              - paragraph [ref=f21e125]: "Network: Ethereum"
+            - generic [ref=f21e126]:
+              - paragraph [ref=f21e127]: Review SLA
+              - paragraph [ref=f21e128]: 24 – 48 Hours
+              - paragraph [ref=f21e132]: "Assigned: Forensics Intake Desk"
+          - generic [ref=f21e133]:
+            - generic [ref=f21e134]:
+              - region "Investigation Timeline" [ref=f21e135]:
+                - generic [ref=f21e136]:
+                  - heading "Investigation Milestones" [level=2] [ref=f21e137]
+                  - paragraph [ref=f21e138]: Current stage and operational roadmap for this case.
+                - generic [ref=f21e139]:
+                  - generic [ref=f21e145]:
+                    - generic [ref=f21e146]:
+                      - heading "Application Received" [level=3] [ref=f21e147]
+                      - generic [ref=f21e148]: Oct 16, 2026
+                    - paragraph [ref=f21e149]: We have received your details and are reviewing them.
+                  - generic [ref=f21e153]:
+                    - generic [ref=f21e154]:
+                      - heading "Under Review" [level=3] [ref=f21e155]
+                      - generic [ref=f21e156]: Active Stage
+                    - paragraph [ref=f21e157]: Our team is currently analyzing your request.
+                  - generic [ref=f21e161]:
+                    - heading "Resolution & Settlement" [level=3] [ref=f21e162]
+                    - paragraph [ref=f21e163]: Final evidentiary assessment, exchange subpoena response, or restitution disbursement.
+              - region "Submitted Information" [ref=f21e164]:
+                - generic [ref=f21e165]:
+                  - generic [ref=f21e166]:
+                    - heading "Submitted Case Record" [level=2] [ref=f21e167]
+                    - paragraph [ref=f21e168]: Intake details logged for this file.
+                  - generic [ref=f21e169]: "Record #6B7A3FFA"
+                - generic [ref=f21e170]:
+                  - generic [ref=f21e171]:
+                    - generic [ref=f21e172]: Client / Declarant
+                    - generic [ref=f21e173]: Enterprise Client Alpha
+                  - generic [ref=f21e174]:
+                    - generic [ref=f21e175]: Transaction Hash
+                    - generic [ref=f21e177]:
+                      - generic [ref=f21e178]: 0x7f83b1a8…e921820b
+                      - button "Copy to clipboard" [ref=f21e179]
+                      - link "Open in block explorer" [ref=f21e183] [cursor=pointer]:
+                        - /url: https://etherscan.io/tx/0x7f83b1a82d499182a3928198f3994bb01824984210389a9f939e0811e921820b
+                  - generic [ref=f21e188]:
+                    - generic [ref=f21e189]: Incident Context
+                    - generic [ref=f21e190]: Unauthorized smart contract drain triggered via compromised multisig signer credential.
+                  - generic [ref=f21e191]:
+                    - generic [ref=f21e192]: Contact Number
+                    - generic [ref=f21e193]: US:+1 +1 (555) 019-2834
+                  - generic [ref=f21e194]:
+                    - generic [ref=f21e195]: Attached Document
+                    - generic [ref=f21e196]: audit-forensic-report-v1.pdf
+                - paragraph [ref=f21e201]:
+                  - text: Need to submit additional transaction logs, explorer links, or exchange tickets? Quote
+                  - generic [ref=f21e202]: "#LEN-REC-6B7A3FFA"
+                  - text: when communicating with your assigned case officer.
+            - complementary [ref=f21e203]:
+              - generic "Case Information" [ref=f21e204]:
+                - heading "Case Information" [level=3] [ref=f21e205]
+                - generic [ref=f21e206]:
+                  - generic [ref=f21e207]:
+                    - generic [ref=f21e208]: Reference ID
+                    - generic [ref=f21e209]: "#LEN-REC-6B7A3FFA"
+                  - generic [ref=f21e210]:
+                    - generic [ref=f21e211]: Status
+                    - generic [ref=f21e212]: Under Technical Review
+                  - generic [ref=f21e213]:
+                    - generic [ref=f21e214]: Date Logged
+                    - generic [ref=f21e215]: Oct 16, 2026
+                  - generic [ref=f21e216]:
+                    - generic [ref=f21e217]: Investigation Desk
+                    - generic [ref=f21e218]: Lenix Forensics Unit
+                  - generic [ref=f21e219]:
+                    - generic [ref=f21e220]: Priority Queue
+                    - generic [ref=f21e221]: Tier-1 Intake
+              - generic "Support Desk" [ref=f21e222]:
+                - generic [ref=f21e223]:
+                  - heading "Direct Support Channel" [level=3] [ref=f21e224]
+                  - paragraph [ref=f21e225]: Connect directly with the case management team on Telegram for real-time status updates and evidence submission.
+                - link "Open Telegram Support" [ref=f21e226] [cursor=pointer]:
+                  - /url: https://t.me/Verified_protocol
+                - generic [ref=f21e227]: "Verified Protocol Desk: @Verified_protocol"
+              - generic [ref=f21e231]:
+                - paragraph [ref=f21e232]: Chain of Custody Notice
+                - paragraph [ref=f21e233]: Submitted hashes and evidence records are preserved in an immutable audit log for legal, regulatory, and asset recovery proceedings.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f21e239] [cursor=pointer]

@@ -127,7 +127,7 @@ export function ConnectWalletDrawer() {
         <DrawerTrigger asChild>
           <Button
             size="lg"
-            className="bg-yellow-400 text-black hover:bg-yellow-500 font-bold px-8 py-3 rounded-xl shadow-lg shadow-yellow-400/20 transition-all hover:scale-105 active:scale-95"
+            className="h-9 bg-white px-3 text-black hover:bg-zinc-200"
           >
             <Wallet className="mr-2 h-5 w-5" />
             {t("connect_wallet")}
@@ -158,7 +158,7 @@ export function ConnectWalletDrawer() {
         <DrawerTrigger asChild>
           <Button
             size="lg"
-            className="bg-yellow-400 text-black hover:bg-yellow-500 font-bold px-8 py-3 rounded-xl shadow-lg shadow-yellow-400/20 transition-all hover:scale-105 active:scale-95"
+            className="h-9 bg-white px-3 text-black hover:bg-zinc-200"
           >
             <Lock className="mr-2 h-5 w-5" />
             {t("unlock_vault")}
@@ -210,7 +210,7 @@ export function ConnectWalletDrawer() {
         <DrawerTrigger asChild>
           <Button
             size="lg"
-            className="bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 font-bold px-8 py-3 rounded-xl border border-emerald-500/30 transition-all"
+            className="h-9 border border-emerald-500/30 bg-emerald-500/10 px-3 font-medium text-emerald-300 hover:bg-emerald-500/20"
           >
             <CheckCircle2 className="mr-2 h-5 w-5" />
             {`${walletData.address.slice(0, 6)}...${walletData.address.slice(-4)}`}

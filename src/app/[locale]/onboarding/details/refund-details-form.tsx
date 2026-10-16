@@ -147,65 +147,72 @@ export function RefundDetailsForm({ defaultEmail }: RefundDetailsFormProps) {
               className={`${onboarding.input} font-mono text-[13px]`}
             />
           </div>
-          <div className={onboarding.field}>
-            <Label htmlFor="amount" className={onboarding.label}>
-              {t("amount")} <span className={onboarding.required}>*</span>
-            </Label>
-            <Input
-              id="amount"
-              name="amount"
-              type="text"
-              required
-              placeholder={t("amountPlaceholder")}
-              className={onboarding.input}
-            />
+          <div className={`${onboarding.field} md:col-span-2`}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className={onboarding.field}>
+                <Label htmlFor="amount" className={onboarding.label}>
+                  {t("amount")} <span className={onboarding.required}>*</span>
+                </Label>
+                <Input
+                  id="amount"
+                  name="amount"
+                  type="text"
+                  required
+                  placeholder={t("amountPlaceholder")}
+                  className={onboarding.input}
+                />
+              </div>
+
+              <div className={onboarding.field}>
+                <Label htmlFor="currency-select" className={onboarding.label}>
+                  {t("currency")} <span className={onboarding.required}>*</span>
+                </Label>
+                <Select
+                  defaultValue="USD"
+                  onValueChange={(value) => {
+                    const el = document.getElementById("currency") as HTMLInputElement | null;
+                    if (el) el.value = value;
+                  }}
+                >
+                  <SelectTrigger id="currency-select" className={onboarding.selectTrigger}>
+                    <SelectValue placeholder={tc("selectCurrency")} />
+                  </SelectTrigger>
+                  <SelectContent className={onboarding.selectContent}>
+                    {REFUND_ASSETS.map((asset) => (
+                      <SelectItem key={asset} value={asset} className={onboarding.selectItem}>
+                        {asset}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <div className={onboarding.field}>
+                <Label htmlFor="blockchain-select" className={onboarding.label}>
+                  {t("blockchain")}
+                </Label>
+                <Select
+                  onValueChange={(value) => {
+                    const el = document.getElementById("blockchain") as HTMLInputElement | null;
+                    if (el) el.value = value === "none" ? "" : value;
+                  }}
+                >
+                  <SelectTrigger id="blockchain-select" className={onboarding.selectTrigger}>
+                    <SelectValue placeholder={t("selectBlockchain")} />
+                  </SelectTrigger>
+                  <SelectContent className={onboarding.selectContent}>
+                    <SelectItem value="none" className={onboarding.selectItem}>{t("noChain")}</SelectItem>
+                    {REFUND_CHAINS.map((chain) => (
+                      <SelectItem key={chain} value={chain} className={onboarding.selectItem}>
+                        {chain}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
           </div>
-          <div className={onboarding.field}>
-            <Label htmlFor="currency-select" className={onboarding.label}>
-              {t("currency")} <span className={onboarding.required}>*</span>
-            </Label>
-            <Select
-              defaultValue="USD"
-              onValueChange={(value) => {
-                const el = document.getElementById("currency") as HTMLInputElement | null;
-                if (el) el.value = value;
-              }}
-            >
-              <SelectTrigger id="currency-select" className={onboarding.input}>
-                <SelectValue placeholder={tc("selectCurrency")} />
-              </SelectTrigger>
-              <SelectContent>
-                {REFUND_ASSETS.map((asset) => (
-                  <SelectItem key={asset} value={asset}>
-                    {asset}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
-          <div className={onboarding.field}>
-            <Label htmlFor="blockchain-select" className={onboarding.label}>
-              {t("blockchain")}
-            </Label>
-            <Select
-              onValueChange={(value) => {
-                const el = document.getElementById("blockchain") as HTMLInputElement | null;
-                if (el) el.value = value === "none" ? "" : value;
-              }}
-            >
-              <SelectTrigger id="blockchain-select" className={onboarding.input}>
-                <SelectValue placeholder={t("selectBlockchain")} />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="none">{t("noChain")}</SelectItem>
-                {REFUND_CHAINS.map((chain) => (
-                  <SelectItem key={chain} value={chain}>
-                    {chain}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-          </div>
+
           <div className={`${onboarding.field} md:col-span-2`}>
             <Label htmlFor="incident_summary" className={onboarding.label}>
               {t("summary")} <span className={onboarding.required}>*</span>
@@ -215,35 +222,67 @@ export function RefundDetailsForm({ defaultEmail }: RefundDetailsFormProps) {
               name="incident_summary"
               required
               minLength={20}
-              rows={5}
+              rows={3}
               placeholder={t("summaryPlaceholder")}
               className={onboarding.textarea}
             />
           </div>
+
+          {/* Compact Enterprise Evidence Dropzone */}
           <div className={`${onboarding.field} md:col-span-2`}>
-            <Label htmlFor="evidence" className={onboarding.label}>
-              {t("evidence")}
-            </Label>
-            <Input
-              id="evidence"
-              name="evidence"
-              type="file"
-              accept=".pdf,.jpg,.jpeg,.png,.webp,application/pdf,image/jpeg,image/png,image/webp"
-              className={onboarding.input}
-              onChange={(event) => {
-                const file = event.target.files?.[0];
-                setEvidenceName(file?.name ?? null);
-              }}
-            />
-            <p className="mt-1.5 text-xs text-zinc-500">
-              {evidenceName ? evidenceName : t("evidenceHint")}
-            </p>
+            <Label className={onboarding.label}>{t("evidence")}</Label>
+            <label
+              htmlFor="evidence"
+              className="group relative flex cursor-pointer items-center justify-between rounded-lg border border-dashed border-white/15 bg-white/[0.02] px-3.5 py-2.5 transition-all hover:border-amber-400/40 hover:bg-white/[0.04]"
+            >
+              <input
+                id="evidence"
+                name="evidence"
+                type="file"
+                accept=".pdf,.jpg,.jpeg,.png,.webp,application/pdf,image/jpeg,image/png,image/webp"
+                onChange={(event) => {
+                  const file = event.target.files?.[0];
+                  setEvidenceName(file?.name ?? null);
+                }}
+                className="sr-only"
+              />
+              <div className="flex items-center gap-2.5 min-w-0">
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded border border-white/10 bg-white/5 text-zinc-400 group-hover:text-amber-300 group-hover:border-amber-400/30 transition-colors">
+                  <span className="text-sm">📎</span>
+                </div>
+                <div className="min-w-0">
+                  <p className="truncate text-xs font-medium text-zinc-300 group-hover:text-white transition-colors">
+                    {evidenceName ? evidenceName : "Attach proof of purchase or payment"}
+                  </p>
+                  <p className="text-[11px] text-zinc-500">
+                    PDF, JPG, PNG up to 10 MB (optional)
+                  </p>
+                </div>
+              </div>
+              {evidenceName ? (
+                <span className="rounded bg-emerald-500/15 border border-emerald-500/30 px-2 py-0.5 text-[11px] font-medium text-emerald-300">
+                  Attached
+                </span>
+              ) : (
+                <span className="rounded border border-white/10 bg-white/[0.04] px-2 py-1 text-[11px] font-medium text-zinc-400 group-hover:text-white transition-colors">
+                  Browse
+                </span>
+              )}
+            </label>
           </div>
         </div>
       </div>
 
       <OnboardingActionBar>
-        <OnboardingPendingSubmitButton label={tc("submitFinish")} />
+        <div className="flex w-full items-center justify-between gap-3">
+          <span className="text-[11px] text-zinc-400">
+            {tc("privacyPrefix")}{" "}
+            <a href="/privacy" className={onboarding.link} target="_blank" rel="noreferrer">
+              {tc("privacyPolicy")}
+            </a>
+          </span>
+          <OnboardingPendingSubmitButton label={tc("submitFinish")} pendingLabel={tc("submitting")} />
+        </div>
       </OnboardingActionBar>
     </form>
   );

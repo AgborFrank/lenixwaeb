@@ -1,0 +1,69 @@
+- generic [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - banner [ref=f3e3]:
+      - generic [ref=f3e4]:
+        - link [ref=f3e6] [cursor=pointer]:
+          - /url: /en
+          - img "Lenix Protocol" [ref=f3e7]
+        - generic [ref=f3e8]:
+          - generic [ref=f3e9]: Encrypted
+          - link "Exit" [ref=f3e17] [cursor=pointer]:
+            - /url: /en
+    - main [ref=f3e18]:
+      - generic [ref=f3e19]:
+        - navigation "Step 1 of 3" [ref=f3e20]:
+          - list [ref=f3e21]:
+            - listitem [ref=f3e22]:
+              - generic [ref=f3e23]:
+                - generic [ref=f3e24]: "01"
+                - generic [ref=f3e25]: Service
+            - listitem [ref=f3e27]:
+              - generic [ref=f3e28]:
+                - generic [ref=f3e29]: "02"
+                - generic [ref=f3e30]: Details
+            - listitem [ref=f3e32]:
+              - generic [ref=f3e33]:
+                - generic [ref=f3e34]: "03"
+                - generic [ref=f3e35]: Complete
+        - article [ref=f3e36]:
+          - generic [ref=f3e37]:
+            - heading "What brings you here?" [level=1] [ref=f3e38]
+            - paragraph [ref=f3e39]: Choose the service you need to get started.
+          - generic [ref=f3e40]:
+            - group "Select a service" [ref=f3e42]:
+              - generic [ref=f3e44]:
+                - generic [ref=f3e45] [cursor=pointer]:
+                  - radio "Forensics Recover lost funds Track down stolen or lost crypto with our forensics team and build a case for recovery." [ref=f3e46]
+                  - generic [ref=f3e47]: Forensics
+                  - generic [ref=f3e57]:
+                    - generic [ref=f3e58]: Recover lost funds
+                    - generic [ref=f3e59]: Track down stolen or lost crypto with our forensics team and build a case for recovery.
+                - generic [ref=f3e60] [cursor=pointer]:
+                  - radio "Disputes Purchase refund Open a case for lost, damaged, late, or misdescribed orders. We review proof before any payout." [checked] [active] [ref=f3e61]
+                  - generic [ref=f3e62]: Disputes
+                  - generic [ref=f3e72]:
+                    - generic [ref=f3e73]: Purchase refund
+                    - generic [ref=f3e74]: Open a case for lost, damaged, late, or misdescribed orders. We review proof before any payout.
+                - generic [ref=f3e75] [cursor=pointer]:
+                  - radio "Collateral Get a crypto loan Borrow cash using your crypto as collateral. See rates and terms upfront." [ref=f3e76]
+                  - generic [ref=f3e77]: Collateral
+                  - generic [ref=f3e89]:
+                    - generic [ref=f3e90]: Get a crypto loan
+                    - generic [ref=f3e91]: Borrow cash using your crypto as collateral. See rates and terms upfront.
+                - generic [ref=f3e92] [cursor=pointer]:
+                  - radio "Treasury Banking services Send and receive Funds across borders, convert crypto to cash, or store assets securely." [ref=f3e93]
+                  - generic [ref=f3e94]: Treasury
+                  - generic [ref=f3e102]:
+                    - generic [ref=f3e103]: Banking services
+                    - generic [ref=f3e104]: Send and receive Funds across borders, convert crypto to cash, or store assets securely.
+            - generic [ref=f3e107]:
+              - generic [ref=f3e108]: "Estimated intake: ~2 min"
+              - button "Continue" [ref=f3e109]
+        - generic [ref=f3e113]: Zero-knowledge client encryption · ISO 27001 & SOC 2 aligned protocols
+  - region "Notifications alt+T"
+  - link "Connect on Telegram" [ref=f3e118] [cursor=pointer]:
+    - /url: https://t.me/Verified_protocol
+    - generic [ref=f3e119]: Telegram
+  - button "Open Next.js Dev Tools" [ref=f3e127] [cursor=pointer]
+  - alert [ref=f3e131]
+  - iframe [aria-hidden] [ref=f3e132]
