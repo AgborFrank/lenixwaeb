@@ -1,248 +1,192 @@
-import { createClient, createServiceRoleClient } from "@/utils/supabase/server";
-import { getAdminSession } from "@/lib/admin-auth";
-import {
-  Users,
-  Wallet,
-  ShieldCheck,
-  Banknote,
-  UserCog,
-  TrendingUp,
-  Clock,
-  AlertCircle,
-  FileText,
-} from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { getAdminSession } from "@/lib/admin-auth";
+import { adminGlass } from "@/lib/admin-glass";
+import { getAdminDashboardStats } from "@/lib/admin-dashboard-stats";
+import { Badge } from "@/components/ui/badge";
+import { DashboardMetrics } from "./_components/dashboard-metrics";
 
-async function getStats() {
-  const supabase = await createClient();
-  const adminDb = createServiceRoleClient();
-
-  const [
-    { count: totalUsers },
-    { count: totalWallets },
-    { count: pendingRecovery },
-    { count: pendingRefunds },
-    { count: activeLoans },
-    { count: pendingAdmins },
-    { data: recentOperations },
-  ] = await Promise.all([
-    supabase.from("user_wallets").select("*", { count: "exact", head: true }),
-    supabase.from("user_balances").select("*", { count: "exact", head: true }).gt("usd_value", 0),
-    supabase.from("recovery_requests").select("*", { count: "exact", head: true }).neq("status", "completed"),
-    adminDb.from("refund_requests").select("*", { count: "exact", head: true }).neq("status", "completed"),
-    supabase.from("active_loans").select("*", { count: "exact", head: true }),
-    supabase.from("admin_users").select("*", { count: "exact", head: true }).eq("is_active", false),
-    supabase
-      .from("admin_balance_operations")
-      .select("id, operation_type, token_symbol, amount, created_at")
-      .order("created_at", { ascending: false })
-      .limit(5),
-  ]);
-
-  return {
-    totalUsers: totalUsers ?? 0,
-    totalWallets: totalWallets ?? 0,
-    pendingRecovery: pendingRecovery ?? 0,
-    pendingRefunds: pendingRefunds ?? 0,
-    activeLoans: activeLoans ?? 0,
-    pendingAdmins: pendingAdmins ?? 0,
-    recentOperations: recentOperations ?? [],
-  };
+function displayName(username: string | undefined, email: string | undefined) {
+  if (username?.trim()) return username.trim();
+  if (email) {
+    const local = email.split("@")[0];
+    return local.replace(/[._-]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  }
+  return "Admin";
 }
+
+const queueLinks = [
+  {
+    href: "/admin/users",
+    title: "User directory",
+    description: "Signups, verification, and wallet status",
+    countKey: "accounts" as const,
+    countLabel: "accounts",
+  },
+  {
+    href: "/admin/recovery",
+    title: "Recovery requests",
+    description: "Pending and in-progress cases",
+    countKey: "openRecovery" as const,
+    countLabel: "open",
+  },
+  {
+    href: "/admin/refunds",
+    title: "Purchase refunds",
+    description: "Intake queue — payout not automated",
+    countKey: "openRefunds" as const,
+    countLabel: "open",
+  },
+  {
+    href: "/admin/loans",
+    title: "Crypto loans",
+    description: "Approved and active positions",
+    countKey: "activeLoans" as const,
+    countLabel: "active",
+  },
+  {
+    href: "/admin/balances",
+    title: "Balance operations",
+    description: "Credit and debit user balances",
+    countKey: null,
+    countLabel: null,
+  },
+  {
+    href: "/admin/admins",
+    title: "Admin access",
+    description: "Pending approvals and roles",
+    countKey: "pendingAdmins" as const,
+    countLabel: "pending",
+  },
+] as const;
 
 export default async function AdminDashboardPage() {
   const session = await getAdminSession();
-  const stats = await getStats();
-
-  const cards = [
-    {
-      label: "Total Users",
-      value: stats.totalUsers,
-      icon: Users,
-      href: "/admin/users",
-      color: "text-blue-400",
-      bgColor: "bg-blue-400/10",
-    },
-    {
-      label: "Active Balances",
-      value: stats.totalWallets,
-      icon: Wallet,
-      href: "/admin/balances",
-      color: "text-green-400",
-      bgColor: "bg-green-400/10",
-    },
-    {
-      label: "Pending Recovery",
-      value: stats.pendingRecovery,
-      icon: ShieldCheck,
-      href: "/admin/recovery",
-      color: "text-yellow-400",
-      bgColor: "bg-yellow-400/10",
-    },
-    {
-      label: "Purchase Refunds",
-      value: stats.pendingRefunds,
-      icon: FileText,
-      href: "/admin/refunds",
-      color: "text-amber-300",
-      bgColor: "bg-amber-400/10",
-    },
-    {
-      label: "Active Loans",
-      value: stats.activeLoans,
-      icon: Banknote,
-      href: "/admin/loans",
-      color: "text-purple-400",
-      bgColor: "bg-purple-400/10",
-    },
-    {
-      label: "Pending Approvals",
-      value: stats.pendingAdmins,
-      icon: UserCog,
-      href: "/admin/admins",
-      color: "text-orange-400",
-      bgColor: "bg-orange-400/10",
-    },
-  ];
+  const stats = await getAdminDashboardStats();
+  const name = displayName(session?.username, session?.email);
 
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-white">
-          Welcome back, {session?.username}
-        </h1>
-        <p className="mt-1 text-zinc-400">
-          Here's an overview of your platform.
-        </p>
-      </div>
+    <div className={adminGlass.page}>
+      <header className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+        <div className="space-y-2">
+          <p className={adminGlass.eyebrow}>Overview</p>
+          <h1 className={adminGlass.title}>Welcome back, {name}</h1>
+          <p className={adminGlass.description}>
+            Live counts from auth, balances, and open queues. Numbers match the user directory and
+            desk pages — not wallet-row proxies.
+          </p>
+        </div>
+        <Badge
+          variant="outline"
+          className="w-fit shrink-0 border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-normal text-zinc-300"
+        >
+          {stats.accounts.toLocaleString()} accounts
+        </Badge>
+      </header>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {cards.map((card) => {
-          const Icon = card.icon;
-          return (
-            <Link
-              key={card.label}
-              href={card.href}
-              className="group rounded-xl border border-zinc-800 bg-zinc-900/50 p-5 transition-colors hover:border-zinc-700 hover:bg-zinc-900"
-            >
-              <div className="flex items-center justify-between">
-                <span
-                  className={`flex h-10 w-10 items-center justify-center rounded-lg ${card.bgColor}`}
-                >
-                  <Icon className={`h-5 w-5 ${card.color}`} />
-                </span>
-                <TrendingUp className="h-4 w-4 text-zinc-600 transition-colors group-hover:text-zinc-400" />
-              </div>
-              <p className="mt-4 text-2xl font-bold text-white">{card.value}</p>
-              <p className="mt-1 text-sm text-zinc-500">{card.label}</p>
-            </Link>
-          );
-        })}
-      </div>
+      <DashboardMetrics
+        accounts={stats.accounts}
+        verified={stats.verified}
+        unverified={stats.unverified}
+        withWallet={stats.withWallet}
+        portfolioUsd={stats.portfolioUsd}
+        openRecovery={stats.openRecovery}
+        openRefunds={stats.openRefunds}
+        activeLoans={stats.activeLoans}
+        pendingAdmins={stats.pendingAdmins}
+      />
 
       <div className="grid gap-6 lg:grid-cols-2">
-        <div className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-          <div className="flex items-center justify-between border-b border-zinc-800 px-5 py-4">
-            <h2 className="font-semibold text-white">Recent Balance Operations</h2>
+        <section className={`${adminGlass.surface} overflow-hidden`} aria-label="Recent balance operations">
+          <div className="flex items-center justify-between border-b border-white/[0.06] px-4 py-3.5 sm:px-5">
+            <h2 className="text-sm font-medium text-white">Recent balance operations</h2>
             <Link
               href="/admin/balances"
-              className="text-sm text-yellow-400 hover:text-yellow-300"
+              className="text-xs font-medium text-zinc-400 transition-colors hover:text-white"
             >
               View all
             </Link>
           </div>
-          <div className="divide-y divide-zinc-800">
-            {stats.recentOperations.length === 0 ? (
-              <div className="flex flex-col items-center justify-center py-12 text-center">
-                <Clock className="h-8 w-8 text-zinc-600" />
-                <p className="mt-2 text-sm text-zinc-500">No recent operations</p>
-              </div>
-            ) : (
-              stats.recentOperations.map((op: any) => (
-                <div
-                  key={op.id}
-                  className="flex items-center justify-between px-5 py-3"
-                >
-                  <div className="flex items-center gap-3">
-                    <span
-                      className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold ${
-                        op.operation_type === "credit"
-                          ? "bg-green-400/10 text-green-400"
-                          : "bg-red-400/10 text-red-400"
-                      }`}
-                    >
-                      {op.operation_type === "credit" ? "+" : "-"}
-                    </span>
-                    <div>
-                      <p className="text-sm font-medium text-white">
-                        {op.operation_type === "credit" ? "Credit" : "Debit"}{" "}
-                        {op.amount} {op.token_symbol}
-                      </p>
-                      <p className="text-xs text-zinc-500">
-                        {new Date(op.created_at).toLocaleDateString()}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))
-            )}
-          </div>
-        </div>
+          {stats.recentOperations.length === 0 ? (
+            <p className="px-4 py-10 text-center text-sm text-zinc-500 sm:px-5">
+              No balance operations yet.
+            </p>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[320px] border-collapse text-sm">
+                <thead>
+                  <tr className={`border-b ${adminGlass.divider} bg-white/[0.02]`}>
+                    <th className={adminGlass.tableHead}>Type</th>
+                    <th className={adminGlass.tableHead}>Amount</th>
+                    <th className={`${adminGlass.tableHead} text-right`}>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {stats.recentOperations.map((op) => {
+                    const isCredit = op.operation_type === "credit";
+                    return (
+                      <tr key={op.id} className={`border-b ${adminGlass.divider} last:border-0`}>
+                        <td className={adminGlass.tableCell}>
+                          <span
+                            className={
+                              isCredit ? "text-emerald-400/90" : "text-red-400/90"
+                            }
+                          >
+                            {isCredit ? "Credit" : "Debit"}
+                          </span>
+                        </td>
+                        <td className={`${adminGlass.tableCell} tabular-nums text-white`}>
+                          {op.amount} {op.token_symbol}
+                        </td>
+                        <td className={`${adminGlass.tableCell} text-right text-zinc-500`}>
+                          {new Date(op.created_at).toLocaleString(undefined, {
+                            dateStyle: "medium",
+                            timeStyle: "short",
+                          })}
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          )}
+        </section>
 
-        <div className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-          <div className="flex items-center justify-between border-b border-zinc-800 px-5 py-4">
-            <h2 className="font-semibold text-white">Quick Actions</h2>
+        <section className={`${adminGlass.surface} overflow-hidden`} aria-label="Go to desk">
+          <div className="border-b border-white/[0.06] px-4 py-3.5 sm:px-5">
+            <h2 className="text-sm font-medium text-white">Desks</h2>
+            <p className="mt-1 text-xs text-zinc-500">Jump to a queue or tool</p>
           </div>
-          <div className="grid gap-3 p-5">
-            <Link
-              href="/admin/users"
-              className="flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 transition-colors hover:border-zinc-700"
-            >
-              <Users className="h-5 w-5 text-blue-400" />
-              <span className="text-sm font-medium text-white">
-                Manage Users
-              </span>
-            </Link>
-            <Link
-              href="/admin/balances"
-              className="flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 transition-colors hover:border-zinc-700"
-            >
-              <Wallet className="h-5 w-5 text-green-400" />
-              <span className="text-sm font-medium text-white">
-                Credit/Debit Balances
-              </span>
-            </Link>
-            <Link
-              href="/admin/recovery"
-              className="flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 transition-colors hover:border-zinc-700"
-            >
-              <ShieldCheck className="h-5 w-5 text-yellow-400" />
-              <span className="text-sm font-medium text-white">
-                Review Recovery Requests
-              </span>
-            </Link>
-            <Link
-              href="/admin/refunds"
-              className="flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900 px-4 py-3 transition-colors hover:border-zinc-700"
-            >
-              <FileText className="h-5 w-5 text-amber-300" />
-              <span className="text-sm font-medium text-white">
-                Review purchase refunds
-              </span>
-            </Link>
-            {stats.pendingAdmins > 0 && (
-              <Link
-                href="/admin/admins"
-                className="flex items-center gap-3 rounded-lg border border-orange-500/30 bg-orange-500/10 px-4 py-3 transition-colors hover:border-orange-500/50"
-              >
-                <AlertCircle className="h-5 w-5 text-orange-400" />
-                <span className="text-sm font-medium text-orange-400">
-                  {stats.pendingAdmins} admin approval{stats.pendingAdmins !== 1 ? "s" : ""} pending
-                </span>
-              </Link>
-            )}
-          </div>
-        </div>
+          <ul className="divide-y divide-white/[0.06]">
+            {queueLinks.map((item) => {
+              const count =
+                item.countKey != null ? stats[item.countKey] : null;
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="group flex items-center gap-3 px-4 py-3.5 transition-colors hover:bg-white/[0.03] sm:px-5"
+                  >
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-medium text-white">{item.title}</p>
+                      <p className="mt-0.5 text-xs text-zinc-500">{item.description}</p>
+                    </div>
+                    {count != null && item.countLabel && (
+                      <span className="shrink-0 tabular-nums text-xs text-zinc-400">
+                        {count.toLocaleString()} {item.countLabel}
+                      </span>
+                    )}
+                    <ChevronRight
+                      className="h-4 w-4 shrink-0 text-zinc-600 transition-colors group-hover:text-zinc-400"
+                      aria-hidden
+                    />
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
       </div>
     </div>
   );

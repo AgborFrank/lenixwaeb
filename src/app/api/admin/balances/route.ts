@@ -130,6 +130,17 @@ export async function POST(request: NextRequest) {
     // Start transaction-like operations
     const now = new Date().toISOString();
 
+    let creditedUsdValue = 0;
+    try {
+      const prices = await fetchCoinGeckoPrices([tokenSymbol]);
+      const priceData = prices[tokenSymbol.toUpperCase()];
+      if (priceData?.price) {
+        creditedUsdValue = newBalance * priceData.price;
+      }
+    } catch {
+      // usd_value stays 0
+    }
+
     if (!balance) {
       // Create new balance record
       const { error: insertError } = await supabase.from("user_balances").insert({
@@ -139,7 +150,7 @@ export async function POST(request: NextRequest) {
         network: network,
         balance: "0",
         admin_balance: newBalance.toString(),
-        usd_value: 0,
+        usd_value: creditedUsdValue,
         address: wallet.ethereum_address,
         last_updated: now,
       });
@@ -154,6 +165,7 @@ export async function POST(request: NextRequest) {
         .from("user_balances")
         .update({
           admin_balance: newBalance.toString(),
+          ...(creditedUsdValue > 0 ? { usd_value: creditedUsdValue } : {}),
           last_updated: now,
         })
         .eq("id", balance.id);
@@ -212,17 +224,12 @@ export async function POST(request: NextRequest) {
     const baseBlockNumber = getBaseBlockNumber(network);
     const blockNumber = baseBlockNumber + Math.floor(Math.random() * 1000);
 
-    // Fetch current price and calculate USD value
-    let usdValue = "0";
-    try {
-      const prices = await fetchCoinGeckoPrices([tokenSymbol]);
-      const priceData = prices[tokenSymbol.toUpperCase()];
-      if (priceData?.price) {
-        usdValue = (amountNum * priceData.price).toFixed(2);
-      }
-    } catch (e) {
-      console.error("Failed to fetch price for USD value:", e);
-    }
+    const usdValue =
+      creditedUsdValue > 0 && operationType === "credit"
+        ? (amountNum * (creditedUsdValue / newBalance)).toFixed(2)
+        : creditedUsdValue > 0
+          ? creditedUsdValue.toFixed(2)
+          : "0";
 
     // Store amount as raw value (e.g., "100" for 100 BTC, "1.5" for 1.5 ETH)
     await supabase.from("user_transactions").insert({

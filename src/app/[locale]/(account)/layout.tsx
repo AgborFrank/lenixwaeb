@@ -4,6 +4,7 @@ import { AccountLayout } from "./_components/account-layout";
 import { WalletProvider } from "./_providers/wallet-provider";
 import { SettingsProvider } from "./_providers/settings-provider";
 import { getSettings } from "./settings/actions";
+import { getServicesConfig } from "@/lib/platform-settings/server";
 
 export default async function AccountLayoutWrapper({
   children,
@@ -28,12 +29,13 @@ export default async function AccountLayoutWrapper({
   }
 
   const { data: settings } = await getSettings();
+  const servicesConfig = await getServicesConfig();
 
   return (
     <div className="min-h-screen bg-[#0B0E11] text-[#EAECEF]">
       <SettingsProvider initialSettings={settings ?? null}>
         <WalletProvider>
-          <AccountLayout userEmail={user.email ?? ""}>
+          <AccountLayout userEmail={user.email ?? ""} servicesConfig={servicesConfig}>
             {children}
           </AccountLayout>
         </WalletProvider>

@@ -1,4 +1,4 @@
-import { createServiceRoleClient } from "@/utils/supabase/server";
+import { listAllRecoveryRequests } from "@/lib/recovery/submit-intake";
 import {
   ShieldCheck,
   Clock,
@@ -30,19 +30,8 @@ interface RecoveryRequest {
 }
 
 async function getRecoveryRequests(): Promise<RecoveryRequest[]> {
-  const supabase = createServiceRoleClient();
-
-  const { data, error } = await supabase
-    .from("recovery_requests")
-    .select("id, user_id, full_name, email, phone, wallet_type, wallet_address, status, created_at, country, telegram")
-    .order("created_at", { ascending: false });
-
-  if (error) {
-    console.error("Failed to fetch recovery requests:", error);
-    return [];
-  }
-
-  return data || [];
+  const rows = await listAllRecoveryRequests();
+  return rows as RecoveryRequest[];
 }
 
 const statusConfig: Record<string, { label: string; icon: typeof Clock; className: string }> = {
@@ -64,7 +53,8 @@ export default async function AdminRecoveryPage() {
         <div>
           <h1 className="text-2xl font-bold text-white">Recovery Requests</h1>
           <p className="mt-1 text-zinc-400">
-            Manage wallet recovery assistance requests
+            {requests.length} case{requests.length !== 1 ? "s" : ""} in recovery_requests
+            (newest first)
           </p>
         </div>
         <div className="flex gap-3">

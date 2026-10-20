@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import {
-  Search,
   Plus,
   Minus,
   Wallet,
@@ -17,6 +16,7 @@ import {
   EyeOff,
 } from "lucide-react";
 import { toast } from "sonner";
+import { AdminUserPicker } from "../_components/admin-user-picker";
 
 interface BalanceOperation {
   id: string;
@@ -154,7 +154,7 @@ export default function AdminBalancesPage() {
     e.preventDefault();
 
     if (!userId.trim()) {
-      toast.error("Please enter a user ID");
+      toast.error("Select a user");
       return;
     }
 
@@ -218,18 +218,7 @@ export default function AdminBalancesPage() {
             New Operation
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label className="mb-1.5 block text-sm font-medium text-zinc-400">
-                User ID
-              </label>
-              <input
-                type="text"
-                value={userId}
-                onChange={(e) => setUserId(e.target.value)}
-                placeholder="Enter user ID (UUID)"
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none focus:ring-1 focus:ring-yellow-400/50"
-              />
-            </div>
+            <AdminUserPicker value={userId} onChange={setUserId} />
 
             <div>
               <label className="mb-1.5 block text-sm font-medium text-zinc-400">
@@ -356,8 +345,8 @@ export default function AdminBalancesPage() {
             </h2>
             <p className="mt-1 text-sm text-zinc-500">
               {userId
-                ? `Showing balances for ${userId.slice(0, 8)}...`
-                : "Enter a user ID to view their balances"}
+                ? "Token balances for the selected account"
+                : "Choose a user above to view balances"}
             </p>
           </div>
           <div className="divide-y divide-zinc-800">
@@ -365,7 +354,7 @@ export default function AdminBalancesPage() {
               <div className="flex flex-col items-center justify-center py-12 text-center">
                 <Wallet className="h-8 w-8 text-zinc-600" />
                 <p className="mt-2 text-sm text-zinc-500">
-                  Enter a user ID to view balances
+                  Select a user to view balances
                 </p>
               </div>
             ) : userBalances.length === 0 ? (
@@ -389,7 +378,10 @@ export default function AdminBalancesPage() {
                   </div>
                   <div className="text-right">
                     <p className="text-sm font-medium text-white">
-                      {parseFloat(balance.admin_balance || balance.balance || "0").toLocaleString()}
+                      {(
+                        parseFloat(balance.balance || "0") +
+                        parseFloat(balance.admin_balance || "0")
+                      ).toLocaleString()}
                     </p>
                     <p className="text-xs text-zinc-500">
                       ${balance.usd_value?.toLocaleString() || "0.00"}

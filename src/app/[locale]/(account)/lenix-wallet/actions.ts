@@ -223,6 +223,8 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
                 network: 'bitcoin',
                 native_token: true,
                 logo_url: "https://assets.coingecko.com/coins/images/1/small/bitcoin.png",
+                /** Ledger row already combined balance + admin_balance — skip merge pass */
+                _includesAdminBalance: true,
             });
         }
 
@@ -243,7 +245,7 @@ export async function getWalletPortfolio(address: string): Promise<WalletPortfol
                 }
 
                 const adminCredit = parseFloat(dbEntry.admin_balance || '0');
-                if (adminCredit > 0) {
+                if (adminCredit > 0 && !token._includesAdminBalance) {
                     console.log(`[Portfolio] Merging admin credit for ${tokenSymbol} (${chainName}): ${adminCredit}`);
                     // Convert admin credit (readable) to raw units
                     const decimals = token.contract_decimals || 18;

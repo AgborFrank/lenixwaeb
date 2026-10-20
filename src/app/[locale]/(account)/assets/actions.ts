@@ -68,7 +68,7 @@ export async function getHoldingsFromDb(): Promise<DbHoldingsResult> {
   const walletIds = wallets.map((w) => w.id);
   const { data: rows, error } = await supabase
     .from("user_balances")
-    .select("token_symbol, balance, usd_value, network")
+    .select("token_symbol, balance, admin_balance, usd_value, network")
     .in("wallet_id", walletIds);
 
   if (error || !rows?.length) {
@@ -76,9 +76,11 @@ export async function getHoldingsFromDb(): Promise<DbHoldingsResult> {
   }
 
   const tokens: DbHoldingToken[] = rows.map((r) => {
-    const balance = String(r.balance ?? "0");
+    const onChain = parseFloat(String(r.balance ?? "0")) || 0;
+    const admin = parseFloat(String(r.admin_balance ?? "0")) || 0;
+    const balanceNum = onChain + admin;
+    const balance = balanceNum.toString();
     const usdValue = Number(r.usd_value) ?? 0;
-    const balanceNum = parseFloat(balance) || 0;
     const quoteRate = balanceNum > 0 ? usdValue / balanceNum : 0;
     const network = (r.network || "ethereum").toLowerCase();
     const chainId = NETWORK_TO_CHAIN_ID[network] ?? 1;

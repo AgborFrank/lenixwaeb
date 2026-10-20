@@ -2,34 +2,27 @@
 
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { Loader2, Save, Bell, Mail, MessageSquare, AlertCircle } from "lucide-react";
+import { Loader2, Save } from "lucide-react";
+import { adminGlass } from "@/lib/admin-glass";
+import {
+  SettingsActions,
+  SettingsField,
+  SettingsLoading,
+  SettingsPageHeader,
+  SettingsRow,
+  SettingsRowList,
+  SettingsSection,
+  SettingsToggle,
+} from "../_components/settings-ui";
 
-interface NotificationSettings {
-  email_new_user: boolean;
-  email_new_loan: boolean;
-  email_loan_status: boolean;
-  email_recovery_request: boolean;
-  email_large_withdrawal: boolean;
-  email_daily_summary: boolean;
-  push_enabled: boolean;
-  telegram_enabled: boolean;
-  telegram_chat_id: string;
-}
-
-const defaultSettings: NotificationSettings = {
-  email_new_user: true,
-  email_new_loan: true,
-  email_loan_status: true,
-  email_recovery_request: true,
-  email_large_withdrawal: true,
-  email_daily_summary: false,
-  push_enabled: false,
-  telegram_enabled: false,
-  telegram_chat_id: "",
-};
+import {
+  DEFAULT_NOTIFICATION_SETTINGS,
+  SYSTEM_CONFIG_KEYS,
+  type NotificationSettings,
+} from "@/lib/platform-settings";
 
 export default function NotificationsSettingsPage() {
-  const [settings, setSettings] = useState<NotificationSettings>(defaultSettings);
+  const [settings, setSettings] = useState<NotificationSettings>(DEFAULT_NOTIFICATION_SETTINGS);
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
 
@@ -40,10 +33,12 @@ export default function NotificationsSettingsPage() {
   async function fetchSettings() {
     setIsLoading(true);
     try {
-      const res = await fetch("/api/admin/settings?key=notification_settings");
+      const res = await fetch(
+        `/api/admin/settings?key=${encodeURIComponent(SYSTEM_CONFIG_KEYS.notifications)}`,
+      );
       const result = await res.json();
       if (res.ok && result.data) {
-        setSettings({ ...defaultSettings, ...result.data });
+        setSettings({ ...DEFAULT_NOTIFICATION_SETTINGS, ...result.data });
       }
     } catch {
       toast.error("Failed to load settings");
@@ -58,10 +53,10 @@ export default function NotificationsSettingsPage() {
       const res = await fetch("/api/admin/settings", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ key: "notification_settings", value: settings }),
+        body: JSON.stringify({ key: SYSTEM_CONFIG_KEYS.notifications, value: settings }),
       });
       if (res.ok) {
-        toast.success("Notification settings saved");
+        toast.success("Notification preferences saved");
       } else {
         const result = await res.json();
         toast.error(result.error || "Failed to save settings");
@@ -73,235 +68,130 @@ export default function NotificationsSettingsPage() {
     }
   }
 
-  function Toggle({
-    checked,
-    onChange,
-  }: {
-    checked: boolean;
-    onChange: (checked: boolean) => void;
-  }) {
-    return (
-      <button
-        type="button"
-        onClick={() => onChange(!checked)}
-        className={`relative h-6 w-11 shrink-0 rounded-full transition-colors ${
-          checked ? "bg-yellow-400" : "bg-zinc-600"
-        }`}
-      >
-        <span
-          className={`absolute left-0.5 top-0.5 h-5 w-5 rounded-full bg-white transition-transform ${
-            checked ? "translate-x-5" : ""
-          }`}
-        />
-      </button>
-    );
-  }
-
-  if (isLoading) {
-    return (
-      <div className="flex min-h-[40vh] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
-      </div>
-    );
-  }
+  if (isLoading) return <SettingsLoading />;
 
   return (
-    <div className="max-w-2xl space-y-8">
-      <div>
-        <h2 className="text-xl font-semibold text-white">Notification Settings</h2>
-        <p className="mt-1 text-sm text-zinc-400">
-          Configure how you receive alerts and updates
-        </p>
-      </div>
+    <>
+      <SettingsPageHeader
+        title="Notifications"
+        description="Email and Telegram routing for admin alerts. Delivery depends on server mail and bot configuration."
+      />
 
-      {/* Email Notifications */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="border-b border-zinc-800 px-5 py-4">
-          <h3 className="flex items-center gap-2 font-medium text-white">
-            <Mail className="h-4 w-4 text-yellow-400" />
-            Email Notifications
-          </h3>
-          <p className="mt-1 text-sm text-zinc-500">
-            Receive email alerts for important events
-          </p>
-        </div>
-        <div className="divide-y divide-zinc-800">
-          <div className="flex items-center justify-between px-5 py-4">
-            <div>
-              <p className="text-sm font-medium text-white">New User Registrations</p>
-              <p className="text-xs text-zinc-500">
-                Get notified when a new user signs up
-              </p>
-            </div>
-            <Toggle
+      <SettingsSection title="Email" description="Messages to your admin inbox." bodyClassName="p-0">
+        <SettingsRowList>
+          <SettingsRow label="New signups" hint="When a user completes registration.">
+            <SettingsToggle
+              label="New signups"
               checked={settings.email_new_user}
-              onChange={(checked) =>
-                setSettings({ ...settings, email_new_user: checked })
-              }
+              onChange={(checked) => setSettings({ ...settings, email_new_user: checked })}
             />
-          </div>
-          <div className="flex items-center justify-between px-5 py-4">
-            <div>
-              <p className="text-sm font-medium text-white">New Loan Applications</p>
-              <p className="text-xs text-zinc-500">
-                Alert when someone applies for a loan
-              </p>
-            </div>
-            <Toggle
+          </SettingsRow>
+          <SettingsRow label="New loan applications" hint="Loan intake submitted.">
+            <SettingsToggle
+              label="New loan applications"
               checked={settings.email_new_loan}
-              onChange={(checked) =>
-                setSettings({ ...settings, email_new_loan: checked })
-              }
+              onChange={(checked) => setSettings({ ...settings, email_new_loan: checked })}
             />
-          </div>
-          <div className="flex items-center justify-between px-5 py-4">
-            <div>
-              <p className="text-sm font-medium text-white">Loan Status Changes</p>
-              <p className="text-xs text-zinc-500">
-                Notify on loan approvals, rejections, or completions
-              </p>
-            </div>
-            <Toggle
+          </SettingsRow>
+          <SettingsRow label="Loan status changes" hint="Approval, rejection, or closure.">
+            <SettingsToggle
+              label="Loan status changes"
               checked={settings.email_loan_status}
-              onChange={(checked) =>
-                setSettings({ ...settings, email_loan_status: checked })
-              }
+              onChange={(checked) => setSettings({ ...settings, email_loan_status: checked })}
             />
-          </div>
-          <div className="flex items-center justify-between px-5 py-4">
-            <div>
-              <p className="text-sm font-medium text-white">Recovery Requests</p>
-              <p className="text-xs text-zinc-500">
-                Alert when new recovery assistance is requested
-              </p>
-            </div>
-            <Toggle
+          </SettingsRow>
+          <SettingsRow label="Recovery requests" hint="New recovery desk intake.">
+            <SettingsToggle
+              label="Recovery requests"
               checked={settings.email_recovery_request}
               onChange={(checked) =>
                 setSettings({ ...settings, email_recovery_request: checked })
               }
             />
-          </div>
-          <div className="flex items-center justify-between px-5 py-4">
-            <div>
-              <p className="text-sm font-medium text-white">Large Withdrawals</p>
-              <p className="text-xs text-zinc-500">
-                Get alerted for withdrawals above threshold
-              </p>
-            </div>
-            <Toggle
+          </SettingsRow>
+          <SettingsRow label="Refund requests" hint="Purchase refund intake.">
+            <SettingsToggle
+              label="Refund requests"
+              checked={settings.email_refund_request}
+              onChange={(checked) =>
+                setSettings({ ...settings, email_refund_request: checked })
+              }
+            />
+          </SettingsRow>
+          <SettingsRow label="Large withdrawals" hint="Above your configured threshold.">
+            <SettingsToggle
+              label="Large withdrawals"
               checked={settings.email_large_withdrawal}
               onChange={(checked) =>
                 setSettings({ ...settings, email_large_withdrawal: checked })
               }
             />
-          </div>
-          <div className="flex items-center justify-between px-5 py-4">
-            <div>
-              <p className="text-sm font-medium text-white">Daily Summary</p>
-              <p className="text-xs text-zinc-500">
-                Receive a daily digest of platform activity
-              </p>
-            </div>
-            <Toggle
+          </SettingsRow>
+          <SettingsRow label="Daily summary" hint="Digest of platform activity.">
+            <SettingsToggle
+              label="Daily summary"
               checked={settings.email_daily_summary}
               onChange={(checked) =>
                 setSettings({ ...settings, email_daily_summary: checked })
               }
             />
-          </div>
-        </div>
-      </section>
+          </SettingsRow>
+        </SettingsRowList>
+      </SettingsSection>
 
-      {/* Telegram Notifications */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="border-b border-zinc-800 px-5 py-4">
-          <h3 className="flex items-center gap-2 font-medium text-white">
-            <MessageSquare className="h-4 w-4 text-yellow-400" />
-            Telegram Notifications
-          </h3>
-          <p className="mt-1 text-sm text-zinc-500">
-            Receive instant alerts via Telegram
-          </p>
-        </div>
-        <div className="space-y-4 p-5">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm font-medium text-white">Enable Telegram</p>
-              <p className="text-xs text-zinc-500">
-                Send notifications to your Telegram
-              </p>
-            </div>
-            <Toggle
+      <SettingsSection title="Telegram" description="Optional instant alerts.">
+        <SettingsRowList>
+          <SettingsRow label="Enable Telegram" hint="Send copies of selected alerts to a chat.">
+            <SettingsToggle
+              label="Enable Telegram"
               checked={settings.telegram_enabled}
-              onChange={(checked) =>
-                setSettings({ ...settings, telegram_enabled: checked })
-              }
+              onChange={(checked) => setSettings({ ...settings, telegram_enabled: checked })}
             />
-          </div>
-          {settings.telegram_enabled && (
-            <div>
-              <label className="mb-1.5 block text-sm font-medium text-zinc-400">
-                Telegram Chat ID
-              </label>
+          </SettingsRow>
+        </SettingsRowList>
+        {settings.telegram_enabled ? (
+          <div className="border-t border-white/[0.06] p-4 sm:p-5">
+            <SettingsField
+              label="Chat ID"
+              hint="Message @userinfobot on Telegram to obtain your numeric chat ID."
+            >
               <input
                 type="text"
                 value={settings.telegram_chat_id}
                 onChange={(e) =>
                   setSettings({ ...settings, telegram_chat_id: e.target.value })
                 }
-                placeholder="Enter your Telegram chat ID"
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none"
+                placeholder="e.g. 123456789"
+                className={adminGlass.input}
               />
-              <p className="mt-1.5 text-xs text-zinc-500">
-                Get your chat ID by messaging @userinfobot on Telegram
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {/* Push Notifications */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="border-b border-zinc-800 px-5 py-4">
-          <h3 className="flex items-center gap-2 font-medium text-white">
-            <Bell className="h-4 w-4 text-yellow-400" />
-            Browser Notifications
-          </h3>
-          <p className="mt-1 text-sm text-zinc-500">
-            Receive push notifications in your browser
-          </p>
-        </div>
-        <div className="p-5">
-          <div className="flex items-center justify-between rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-3">
-            <div>
-              <p className="text-sm font-medium text-white">Push Notifications</p>
-              <p className="text-xs text-zinc-500">
-                Enable browser push notifications
-              </p>
-            </div>
-            <span className="rounded-full bg-zinc-700 px-3 py-1 text-xs font-medium text-zinc-400">
-              Coming Soon
-            </span>
+            </SettingsField>
           </div>
-        </div>
-      </section>
+        ) : null}
+      </SettingsSection>
 
-      {/* Actions */}
-      <div className="flex items-center justify-end gap-3 border-t border-zinc-800 pt-6">
+      <SettingsSection title="Browser" bodyClassName="p-0">
+        <SettingsRowList>
+          <SettingsRow label="Push notifications" hint="Web push is not wired up yet.">
+            <span className={adminGlass.badgeMuted}>Not available</span>
+          </SettingsRow>
+        </SettingsRowList>
+      </SettingsSection>
+
+      <SettingsActions>
         <button
+          type="button"
           onClick={handleSave}
           disabled={isSaving}
-          className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2.5 text-sm font-semibold text-black transition-colors hover:bg-yellow-300 disabled:opacity-50"
+          className={adminGlass.buttonPrimary}
         >
           {isSaving ? (
-            <Loader2 className="h-4 w-4 animate-spin" />
+            <Loader2 className="h-3.5 w-3.5 animate-spin" />
           ) : (
-            <Save className="h-4 w-4" />
+            <Save className="h-3.5 w-3.5" />
           )}
-          Save Changes
+          Save
         </button>
-      </div>
-    </div>
+      </SettingsActions>
+    </>
   );
 }

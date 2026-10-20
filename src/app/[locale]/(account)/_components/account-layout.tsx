@@ -40,6 +40,7 @@ import { createClient } from "@/utils/supabase/client";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 import { adminGlass } from "@/lib/admin-glass";
+import { isAccountRouteEnabled, type ServicesConfig } from "@/lib/platform-settings";
 import { LanguagePicker } from "../../components/language-picker";
 import { MobileTabs } from "./mobile-tabs";
 
@@ -99,11 +100,13 @@ function SidebarNav({
   onNavigate,
   onSignOut,
   userEmail,
+  servicesConfig,
 }: {
   pathname: string;
   onNavigate?: () => void;
   onSignOut: () => void;
   userEmail: string;
+  servicesConfig: ServicesConfig;
 }) {
   const t = useTranslations("AccountSidebar");
 
@@ -118,7 +121,9 @@ function SidebarNav({
               </p>
             )}
             <div className="space-y-0.5">
-              {section.items.map((item) => {
+              {section.items
+                .filter((item) => isAccountRouteEnabled(item.href, servicesConfig))
+                .map((item) => {
                 const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
                 return (
                   <Link
@@ -176,9 +181,11 @@ function SidebarNav({
 export function AccountLayout({
   children,
   userEmail,
+  servicesConfig,
 }: {
   children: React.ReactNode;
   userEmail: string;
+  servicesConfig: ServicesConfig;
 }) {
   const t = useTranslations("AccountSidebar");
   const pathname = usePathname();
@@ -209,7 +216,12 @@ export function AccountLayout({
             <LanguagePicker isDark menuSide="bottom" />
           </div>
           <div className="min-h-0 flex-1 overflow-y-auto">
-            <SidebarNav pathname={pathname} onSignOut={handleSignOut} userEmail={userEmail} />
+            <SidebarNav
+              pathname={pathname}
+              onSignOut={handleSignOut}
+              userEmail={userEmail}
+              servicesConfig={servicesConfig}
+            />
           </div>
         </div>
       </aside>
@@ -239,6 +251,7 @@ export function AccountLayout({
                     userEmail={userEmail}
                     onNavigate={() => setMobileMenuOpen(false)}
                     onSignOut={handleSignOut}
+                    servicesConfig={servicesConfig}
                   />
                 </div>
               </DrawerContent>
@@ -295,7 +308,7 @@ export function AccountLayout({
           {children}
         </main>
 
-        <MobileTabs />
+        <MobileTabs servicesConfig={servicesConfig} />
       </div>
     </div>
   );

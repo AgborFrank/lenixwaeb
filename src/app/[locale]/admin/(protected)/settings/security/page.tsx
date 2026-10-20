@@ -2,7 +2,16 @@
 
 import { useState } from "react";
 import { toast } from "sonner";
-import { Loader2, Key, Shield, Eye, EyeOff, AlertTriangle } from "lucide-react";
+import { Eye, EyeOff, Key, Loader2 } from "lucide-react";
+import { adminGlass } from "@/lib/admin-glass";
+import {
+  SettingsField,
+  SettingsNotice,
+  SettingsPageHeader,
+  SettingsRow,
+  SettingsRowList,
+  SettingsSection,
+} from "../_components/settings-ui";
 
 export default function SecuritySettingsPage() {
   const [isChangingPassword, setIsChangingPassword] = useState(false);
@@ -37,7 +46,7 @@ export default function SecuritySettingsPage() {
       });
 
       if (res.ok) {
-        toast.success("Password changed successfully");
+        toast.success("Password updated");
         setCurrentPassword("");
         setNewPassword("");
         setConfirmPassword("");
@@ -52,7 +61,7 @@ export default function SecuritySettingsPage() {
     }
   }
 
-  const passwordStrength = (password: string) => {
+  function passwordStrength(password: string) {
     let strength = 0;
     if (password.length >= 8) strength++;
     if (password.length >= 12) strength++;
@@ -60,55 +69,40 @@ export default function SecuritySettingsPage() {
     if (/[0-9]/.test(password)) strength++;
     if (/[^A-Za-z0-9]/.test(password)) strength++;
     return strength;
-  };
+  }
 
   const strength = passwordStrength(newPassword);
-  const strengthLabels = ["Very Weak", "Weak", "Fair", "Good", "Strong"];
-  const strengthColors = [
-    "bg-red-500",
-    "bg-orange-500",
-    "bg-yellow-500",
-    "bg-lime-500",
-    "bg-green-500",
-  ];
+  const strengthLabels = ["Very weak", "Weak", "Fair", "Good", "Strong"];
+
+  const canSubmit =
+    currentPassword &&
+    newPassword &&
+    newPassword === confirmPassword &&
+    !isChangingPassword;
 
   return (
-    <div className="max-w-2xl space-y-8">
-      <div>
-        <h2 className="text-xl font-semibold text-white">Security Settings</h2>
-        <p className="mt-1 text-sm text-zinc-400">
-          Manage your password and authentication options
-        </p>
-      </div>
+    <>
+      <SettingsPageHeader
+        title="Security"
+        description="Password for this admin console. Two-factor authentication is not enabled yet."
+      />
 
-      {/* Password Change */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="border-b border-zinc-800 px-5 py-4">
-          <h3 className="flex items-center gap-2 font-medium text-white">
-            <Key className="h-4 w-4 text-yellow-400" />
-            Change Password
-          </h3>
-          <p className="mt-1 text-sm text-zinc-500">
-            Update your admin account password
-          </p>
-        </div>
-        <form onSubmit={handleChangePassword} className="space-y-4 p-5">
-          <div>
-            <label className="mb-1.5 block text-sm font-medium text-zinc-400">
-              Current Password
-            </label>
+      <SettingsSection title="Password" description="Requires your current password to change.">
+        <form onSubmit={handleChangePassword} className="space-y-4">
+          <SettingsField label="Current password">
             <div className="relative">
               <input
                 type={showCurrentPassword ? "text" : "password"}
                 value={currentPassword}
                 onChange={(e) => setCurrentPassword(e.target.value)}
                 required
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2.5 pr-10 text-sm text-white focus:border-yellow-400/50 focus:outline-none"
+                className={`${adminGlass.input} pr-9`}
               />
               <button
                 type="button"
                 onClick={() => setShowCurrentPassword(!showCurrentPassword)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-white"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300"
+                aria-label={showCurrentPassword ? "Hide password" : "Show password"}
               >
                 {showCurrentPassword ? (
                   <EyeOff className="h-4 w-4" />
@@ -117,12 +111,9 @@ export default function SecuritySettingsPage() {
                 )}
               </button>
             </div>
-          </div>
+          </SettingsField>
 
-          <div>
-            <label className="mb-1.5 block text-sm font-medium text-zinc-400">
-              New Password
-            </label>
+          <SettingsField label="New password">
             <div className="relative">
               <input
                 type={showNewPassword ? "text" : "password"}
@@ -130,12 +121,13 @@ export default function SecuritySettingsPage() {
                 onChange={(e) => setNewPassword(e.target.value)}
                 required
                 minLength={8}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2.5 pr-10 text-sm text-white focus:border-yellow-400/50 focus:outline-none"
+                className={`${adminGlass.input} pr-9`}
               />
               <button
                 type="button"
                 onClick={() => setShowNewPassword(!showNewPassword)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-white"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300"
+                aria-label={showNewPassword ? "Hide password" : "Show password"}
               >
                 {showNewPassword ? (
                   <EyeOff className="h-4 w-4" />
@@ -144,124 +136,68 @@ export default function SecuritySettingsPage() {
                 )}
               </button>
             </div>
-            {newPassword && (
-              <div className="mt-2">
-                <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => (
-                    <div
-                      key={i}
-                      className={`h-1 flex-1 rounded-full ${
-                        i < strength ? strengthColors[strength - 1] : "bg-zinc-700"
-                      }`}
-                    />
-                  ))}
-                </div>
-                <p className="mt-1 text-xs text-zinc-500">
-                  Strength: {strengthLabels[strength - 1] || "Very Weak"}
-                </p>
+            {newPassword ? (
+              <div className="mt-2 flex gap-1" aria-hidden>
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <div
+                    key={i}
+                    className={`h-0.5 flex-1 rounded-full ${
+                      i < strength ? "bg-white/70" : "bg-white/10"
+                    }`}
+                  />
+                ))}
               </div>
-            )}
-          </div>
+            ) : null}
+            {newPassword ? (
+              <p className={adminGlass.fieldHint}>
+                Strength: {strengthLabels[strength - 1] ?? strengthLabels[0]}
+              </p>
+            ) : null}
+          </SettingsField>
 
-          <div>
-            <label className="mb-1.5 block text-sm font-medium text-zinc-400">
-              Confirm New Password
-            </label>
+          <SettingsField label="Confirm new password">
             <input
               type="password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
               required
-              className={`w-full rounded-lg border bg-zinc-800 px-3 py-2.5 text-sm text-white focus:outline-none ${
+              className={`${adminGlass.input} ${
                 confirmPassword && confirmPassword !== newPassword
-                  ? "border-red-500 focus:border-red-500"
-                  : "border-zinc-700 focus:border-yellow-400/50"
+                  ? "border-red-500/50 focus-visible:ring-red-500/20"
+                  : ""
               }`}
             />
-            {confirmPassword && confirmPassword !== newPassword && (
-              <p className="mt-1 text-xs text-red-400">Passwords do not match</p>
-            )}
-          </div>
+            {confirmPassword && confirmPassword !== newPassword ? (
+              <p className="mt-1 text-xs text-red-400/90">Passwords do not match</p>
+            ) : null}
+          </SettingsField>
 
-          <button
-            type="submit"
-            disabled={isChangingPassword || !currentPassword || !newPassword || newPassword !== confirmPassword}
-            className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2.5 text-sm font-semibold text-black transition-colors hover:bg-yellow-300 disabled:opacity-50"
-          >
+          <button type="submit" disabled={!canSubmit} className={adminGlass.buttonPrimary}>
             {isChangingPassword ? (
-              <Loader2 className="h-4 w-4 animate-spin" />
+              <Loader2 className="h-3.5 w-3.5 animate-spin" />
             ) : (
-              <Key className="h-4 w-4" />
+              <Key className="h-3.5 w-3.5" />
             )}
-            Change Password
+            Update password
           </button>
         </form>
-      </section>
+      </SettingsSection>
 
-      {/* Two-Factor Authentication */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="border-b border-zinc-800 px-5 py-4">
-          <h3 className="flex items-center gap-2 font-medium text-white">
-            <Shield className="h-4 w-4 text-yellow-400" />
-            Two-Factor Authentication
-          </h3>
-          <p className="mt-1 text-sm text-zinc-500">
-            Add an extra layer of security to your account
-          </p>
-        </div>
-        <div className="p-5">
-          <div className="flex items-center justify-between rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-3">
-            <div>
-              <p className="text-sm font-medium text-white">2FA Status</p>
-              <p className="text-xs text-zinc-500">
-                Protect your account with TOTP authentication
-              </p>
-            </div>
-            <span className="rounded-full bg-zinc-700 px-3 py-1 text-xs font-medium text-zinc-400">
-              Coming Soon
-            </span>
-          </div>
-        </div>
-      </section>
+      <SettingsSection title="Authentication" bodyClassName="p-0">
+        <SettingsRowList>
+          <SettingsRow
+            label="Two-factor authentication"
+            hint="TOTP via an authenticator app."
+          >
+            <span className={adminGlass.badgeMuted}>Not available</span>
+          </SettingsRow>
+        </SettingsRowList>
+      </SettingsSection>
 
-      {/* Active Sessions */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="border-b border-zinc-800 px-5 py-4">
-          <h3 className="flex items-center gap-2 font-medium text-white">
-            <AlertTriangle className="h-4 w-4 text-yellow-400" />
-            Security Recommendations
-          </h3>
-        </div>
-        <div className="space-y-3 p-5">
-          <div className="flex items-start gap-3 rounded-lg bg-zinc-800/50 p-3">
-            <div className="mt-0.5 h-2 w-2 rounded-full bg-green-400" />
-            <div>
-              <p className="text-sm font-medium text-white">Use a strong password</p>
-              <p className="text-xs text-zinc-500">
-                Include uppercase, lowercase, numbers, and special characters
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3 rounded-lg bg-zinc-800/50 p-3">
-            <div className="mt-0.5 h-2 w-2 rounded-full bg-yellow-400" />
-            <div>
-              <p className="text-sm font-medium text-white">Enable two-factor authentication</p>
-              <p className="text-xs text-zinc-500">
-                Add an authenticator app for extra security
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3 rounded-lg bg-zinc-800/50 p-3">
-            <div className="mt-0.5 h-2 w-2 rounded-full bg-green-400" />
-            <div>
-              <p className="text-sm font-medium text-white">Review login activity</p>
-              <p className="text-xs text-zinc-500">
-                Regularly check the login history for suspicious activity
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+      <SettingsNotice title="Practice">
+        Use a unique password for this console. Rotate it if you share access or suspect a leak.
+        Session cookies expire after seven days of inactivity.
+      </SettingsNotice>
+    </>
   );
 }

@@ -3,18 +3,25 @@
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import {
-  Loader2,
-  Key,
-  Copy,
   Check,
-  RefreshCw,
-  Plus,
-  Trash2,
+  Copy,
   Eye,
   EyeOff,
-  Globe,
-  AlertTriangle,
+  Key,
+  Loader2,
+  Plus,
+  RefreshCw,
+  Trash2,
 } from "lucide-react";
+import { adminGlass } from "@/lib/admin-glass";
+import {
+  SettingsLoading,
+  SettingsNotice,
+  SettingsPageHeader,
+  SettingsRow,
+  SettingsRowList,
+  SettingsSection,
+} from "../_components/settings-ui";
 
 interface ApiKey {
   id: string;
@@ -50,7 +57,9 @@ export default function ApiSettingsPage() {
   async function fetchData() {
     setIsLoading(true);
     try {
-      const res = await fetch("/api/admin/settings?key=api_config");
+      const res = await fetch(
+        `/api/admin/settings?key=${encodeURIComponent("api_config")}`,
+      );
       const result = await res.json();
       if (res.ok && result.data) {
         setApiKeys(result.data.api_keys || []);
@@ -65,7 +74,7 @@ export default function ApiSettingsPage() {
 
   async function handleCreateKey() {
     if (!newKeyName.trim()) {
-      toast.error("Please enter a key name");
+      toast.error("Enter a key name");
       return;
     }
 
@@ -85,7 +94,7 @@ export default function ApiSettingsPage() {
       setApiKeys(updatedKeys);
       setNewKeyName("");
       setShowCreateKey(false);
-      toast.success("API key created successfully");
+      toast.success("API key created");
     } catch {
       toast.error("Failed to create API key");
     } finally {
@@ -94,7 +103,7 @@ export default function ApiSettingsPage() {
   }
 
   async function handleDeleteKey(id: string) {
-    if (!confirm("Are you sure you want to delete this API key?")) return;
+    if (!confirm("Delete this API key? Integrations using it will stop working.")) return;
 
     const updatedKeys = apiKeys.filter((k) => k.id !== id);
     await saveConfig(updatedKeys, webhooks);
@@ -103,10 +112,10 @@ export default function ApiSettingsPage() {
   }
 
   async function handleRegenerateKey(id: string) {
-    if (!confirm("Are you sure? The old key will stop working immediately.")) return;
+    if (!confirm("Regenerate this key? The previous value stops working immediately.")) return;
 
     const updatedKeys = apiKeys.map((k) =>
-      k.id === id ? { ...k, key: `lnx_${generateRandomKey(32)}` } : k
+      k.id === id ? { ...k, key: `lnx_${generateRandomKey(32)}` } : k,
     );
     await saveConfig(updatedKeys, webhooks);
     setApiKeys(updatedKeys);
@@ -137,190 +146,165 @@ export default function ApiSettingsPage() {
   function copyToClipboard(text: string, id: string) {
     navigator.clipboard.writeText(text);
     setCopied(id);
-    toast.success("Copied to clipboard");
+    toast.success("Copied");
     setTimeout(() => setCopied(null), 2000);
   }
 
   function maskKey(key: string): string {
     if (key.length <= 8) return key;
-    return `${key.slice(0, 8)}${"•".repeat(24)}${key.slice(-4)}`;
+    return `${key.slice(0, 8)}${"•".repeat(20)}${key.slice(-4)}`;
   }
 
-  if (isLoading) {
-    return (
-      <div className="flex min-h-[40vh] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
-      </div>
-    );
-  }
+  if (isLoading) return <SettingsLoading />;
 
   return (
-    <div className="max-w-2xl space-y-8">
-      <div>
-        <h2 className="text-xl font-semibold text-white">API Settings</h2>
-        <p className="mt-1 text-sm text-zinc-400">
-          Manage API keys and webhook integrations
-        </p>
-      </div>
+    <>
+      <SettingsPageHeader
+        title="API"
+        description="Keys stored in admin settings for programmatic access. Treat them like production secrets."
+      />
 
-      {/* API Keys */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="flex items-center justify-between border-b border-zinc-800 px-5 py-4">
-          <div>
-            <h3 className="flex items-center gap-2 font-medium text-white">
-              <Key className="h-4 w-4 text-yellow-400" />
-              API Keys
-            </h3>
-            <p className="mt-1 text-sm text-zinc-500">
-              Manage keys for programmatic access
-            </p>
-          </div>
+      <SettingsSection
+        title="API keys"
+        description="Create named keys for scripts or integrations."
+        action={
           <button
+            type="button"
             onClick={() => setShowCreateKey(true)}
-            className="flex items-center gap-2 rounded-lg bg-yellow-400 px-3 py-2 text-sm font-medium text-black hover:bg-yellow-300"
+            className={adminGlass.buttonPrimary}
           >
-            <Plus className="h-4 w-4" />
-            Create Key
+            <Plus className="h-3.5 w-3.5" />
+            Create
           </button>
-        </div>
-
-        {showCreateKey && (
-          <div className="border-b border-zinc-800 bg-zinc-800/30 p-5">
-            <label className="mb-1.5 block text-sm font-medium text-zinc-400">
-              Key Name
-            </label>
-            <div className="flex gap-2">
+        }
+        bodyClassName="p-0"
+      >
+        {showCreateKey ? (
+          <div className="border-b border-white/[0.06] bg-white/[0.02] p-4 sm:p-5">
+            <label className={adminGlass.fieldLabel}>Name</label>
+            <div className="mt-1.5 flex flex-col gap-2 sm:flex-row">
               <input
                 type="text"
                 value={newKeyName}
                 onChange={(e) => setNewKeyName(e.target.value)}
-                placeholder="e.g., Production API"
-                className="flex-1 rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none"
+                placeholder="Production read-only"
+                className={`${adminGlass.input} sm:flex-1`}
               />
-              <button
-                onClick={handleCreateKey}
-                disabled={isCreatingKey}
-                className="rounded-lg bg-yellow-400 px-4 py-2.5 text-sm font-medium text-black hover:bg-yellow-300 disabled:opacity-50"
-              >
-                {isCreatingKey ? <Loader2 className="h-4 w-4 animate-spin" /> : "Create"}
-              </button>
-              <button
-                onClick={() => setShowCreateKey(false)}
-                className="rounded-lg bg-zinc-700 px-4 py-2.5 text-sm font-medium text-zinc-300 hover:bg-zinc-600"
-              >
-                Cancel
-              </button>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  onClick={handleCreateKey}
+                  disabled={isCreatingKey}
+                  className={adminGlass.buttonPrimary}
+                >
+                  {isCreatingKey ? (
+                    <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                  ) : (
+                    "Create"
+                  )}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setShowCreateKey(false)}
+                  className={adminGlass.buttonSecondary}
+                >
+                  Cancel
+                </button>
+              </div>
             </div>
           </div>
-        )}
+        ) : null}
 
-        <div className="divide-y divide-zinc-800">
-          {apiKeys.length === 0 ? (
-            <div className="px-5 py-8 text-center">
-              <Key className="mx-auto h-8 w-8 text-zinc-600" />
-              <p className="mt-2 text-sm text-zinc-500">No API keys created yet</p>
-            </div>
-          ) : (
-            apiKeys.map((apiKey) => (
-              <div key={apiKey.id} className="p-5">
-                <div className="flex items-start justify-between">
-                  <div>
-                    <p className="font-medium text-white">{apiKey.name}</p>
-                    <p className="mt-1 text-xs text-zinc-500">
+        {apiKeys.length === 0 ? (
+          <p className="px-4 py-10 text-center text-sm text-zinc-500 sm:px-5">
+            No API keys yet.
+          </p>
+        ) : (
+          <ul className="divide-y divide-white/[0.06]">
+            {apiKeys.map((apiKey) => (
+              <li key={apiKey.id} className="space-y-3 p-4 sm:p-5">
+                <div className="flex items-start justify-between gap-3">
+                  <div className="min-w-0">
+                    <p className="text-[13px] font-medium text-white">{apiKey.name}</p>
+                    <p className="mt-0.5 text-xs text-zinc-500">
                       Created {new Date(apiKey.created_at).toLocaleDateString()}
-                      {apiKey.last_used &&
-                        ` · Last used ${new Date(apiKey.last_used).toLocaleDateString()}`}
+                      {apiKey.last_used
+                        ? ` · Last used ${new Date(apiKey.last_used).toLocaleDateString()}`
+                        : ""}
                     </p>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex shrink-0 items-center gap-0.5">
                     <button
+                      type="button"
                       onClick={() => handleRegenerateKey(apiKey.id)}
-                      className="rounded p-1.5 text-zinc-500 hover:bg-zinc-800 hover:text-white"
-                      title="Regenerate key"
+                      className={adminGlass.buttonGhost}
+                      title="Regenerate"
                     >
-                      <RefreshCw className="h-4 w-4" />
+                      <RefreshCw className="h-3.5 w-3.5" />
                     </button>
                     <button
+                      type="button"
                       onClick={() => handleDeleteKey(apiKey.id)}
-                      className="rounded p-1.5 text-zinc-500 hover:bg-red-500/10 hover:text-red-400"
-                      title="Delete key"
+                      className={`${adminGlass.buttonGhost} hover:text-red-400`}
+                      title="Delete"
                     >
-                      <Trash2 className="h-4 w-4" />
+                      <Trash2 className="h-3.5 w-3.5" />
                     </button>
                   </div>
                 </div>
-                <div className="mt-3 flex items-center gap-2 rounded-lg bg-zinc-800 px-3 py-2">
-                  <code className="flex-1 text-sm text-zinc-300">
+                <div
+                  className="flex items-center gap-2 rounded-md border border-white/[0.08] bg-black/40 px-3 py-2"
+                >
+                  <Key className="h-3.5 w-3.5 shrink-0 text-zinc-600" aria-hidden />
+                  <code className="min-w-0 flex-1 truncate font-mono text-xs text-zinc-300">
                     {showKey === apiKey.id ? apiKey.key : maskKey(apiKey.key)}
                   </code>
                   <button
+                    type="button"
                     onClick={() => setShowKey(showKey === apiKey.id ? null : apiKey.id)}
-                    className="text-zinc-500 hover:text-white"
+                    className={adminGlass.buttonGhost}
+                    aria-label={showKey === apiKey.id ? "Hide key" : "Show key"}
                   >
                     {showKey === apiKey.id ? (
-                      <EyeOff className="h-4 w-4" />
+                      <EyeOff className="h-3.5 w-3.5" />
                     ) : (
-                      <Eye className="h-4 w-4" />
+                      <Eye className="h-3.5 w-3.5" />
                     )}
                   </button>
                   <button
+                    type="button"
                     onClick={() => copyToClipboard(apiKey.key, apiKey.id)}
-                    className="text-zinc-500 hover:text-white"
+                    className={adminGlass.buttonGhost}
+                    aria-label="Copy key"
                   >
                     {copied === apiKey.id ? (
-                      <Check className="h-4 w-4 text-green-400" />
+                      <Check className="h-3.5 w-3.5 text-emerald-400/90" />
                     ) : (
-                      <Copy className="h-4 w-4" />
+                      <Copy className="h-3.5 w-3.5" />
                     )}
                   </button>
                 </div>
-              </div>
-            ))
-          )}
-        </div>
-      </section>
+              </li>
+            ))}
+          </ul>
+        )}
+      </SettingsSection>
 
-      {/* Webhooks */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="flex items-center justify-between border-b border-zinc-800 px-5 py-4">
-          <div>
-            <h3 className="flex items-center gap-2 font-medium text-white">
-              <Globe className="h-4 w-4 text-yellow-400" />
-              Webhooks
-            </h3>
-            <p className="mt-1 text-sm text-zinc-500">
-              Configure webhook endpoints for event notifications
-            </p>
-          </div>
-        </div>
-        <div className="p-5">
-          <div className="flex items-center justify-between rounded-lg border border-zinc-700 bg-zinc-800 px-4 py-3">
-            <div>
-              <p className="text-sm font-medium text-white">Webhook Configuration</p>
-              <p className="text-xs text-zinc-500">
-                Set up endpoints to receive real-time event data
-              </p>
-            </div>
-            <span className="rounded-full bg-zinc-700 px-3 py-1 text-xs font-medium text-zinc-400">
-              Coming Soon
-            </span>
-          </div>
-        </div>
-      </section>
+      <SettingsSection title="Webhooks" bodyClassName="p-0">
+        <SettingsRowList>
+          <SettingsRow
+            label="Outbound webhooks"
+            hint="Event delivery to your HTTPS endpoints."
+          >
+            <span className={adminGlass.badgeMuted}>Not available</span>
+          </SettingsRow>
+        </SettingsRowList>
+      </SettingsSection>
 
-      {/* Security Notice */}
-      <section className="rounded-xl border border-yellow-400/20 bg-yellow-400/5 p-5">
-        <div className="flex items-start gap-3">
-          <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-yellow-400" />
-          <div>
-            <p className="font-medium text-yellow-400">Security Notice</p>
-            <p className="mt-1 text-sm text-zinc-400">
-              Keep your API keys secure. Never share them publicly or commit them to
-              version control. If a key is compromised, regenerate it immediately.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
+      <SettingsNotice title="Secret handling">
+        Do not commit keys to git or paste them in tickets. Regenerate immediately if a key is
+        exposed.
+      </SettingsNotice>
+    </>
   );
 }

@@ -1,5 +1,6 @@
 import { redirect } from "@/i18n/navigation";
 import { getAdminSession, getAdminById } from "@/lib/admin-auth";
+import { adminGlass } from "@/lib/admin-glass";
 import { AdminSidebar } from "./_components/admin-sidebar";
 
 interface AdminLayoutProps {
@@ -20,7 +21,7 @@ export default async function AdminLayout({ children }: AdminLayoutProps) {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-950">
+    <div className={adminGlass.shell}>
       <AdminSidebar
         admin={{
           id: session.id,
@@ -29,8 +30,8 @@ export default async function AdminLayout({ children }: AdminLayoutProps) {
           role: session.role,
         }}
       />
-      <main className="pt-14 lg:ml-64 lg:pt-0">
-        <div className="min-h-screen p-4 sm:p-6 lg:p-8">{children}</div>
+      <main className={`${adminGlass.main} pt-14 lg:pt-0`}>
+        <div className={adminGlass.mainInner}>{children}</div>
       </main>
     </div>
   );

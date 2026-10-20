@@ -2,7 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { Loader2, Save, User, Mail, Wallet } from "lucide-react";
+import { Loader2, Save } from "lucide-react";
+import { adminGlass } from "@/lib/admin-glass";
+import {
+  SettingsActions,
+  SettingsDlRow,
+  SettingsField,
+  SettingsLoading,
+  SettingsPageHeader,
+  SettingsSection,
+} from "../_components/settings-ui";
 
 interface AdminProfile {
   id: string;
@@ -12,6 +21,17 @@ interface AdminProfile {
   wallet_address: string | null;
   created_at: string;
   last_login: string | null;
+}
+
+function displayInitials(username: string, email: string) {
+  const source = username?.trim() || email;
+  const parts = source.split(/\s+/).filter(Boolean);
+  if (parts.length >= 2) return `${parts[0][0]}${parts[1][0]}`.toUpperCase();
+  return source.slice(0, 2).toUpperCase();
+}
+
+function formatRole(role: string) {
+  return role.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 export default function AccountSettingsPage() {
@@ -33,7 +53,7 @@ export default function AccountSettingsPage() {
       const result = await res.json();
       if (res.ok && result.data) {
         setProfile(result.data);
-        setUsername(result.data.username);
+        setUsername(result.data.username ?? "");
         setEmail(result.data.email);
         setWalletAddress(result.data.wallet_address || "");
       }
@@ -57,7 +77,7 @@ export default function AccountSettingsPage() {
         }),
       });
       if (res.ok) {
-        toast.success("Profile updated successfully");
+        toast.success("Profile updated");
         fetchProfile();
       } else {
         const result = await res.json();
@@ -70,137 +90,100 @@ export default function AccountSettingsPage() {
     }
   }
 
-  if (isLoading) {
-    return (
-      <div className="flex min-h-[40vh] items-center justify-center">
-        <Loader2 className="h-8 w-8 animate-spin text-zinc-500" />
-      </div>
-    );
-  }
+  if (isLoading) return <SettingsLoading />;
+
+  const initials = displayInitials(username, email);
 
   return (
-    <div className="max-w-2xl space-y-8">
-      <div>
-        <h2 className="text-xl font-semibold text-white">Account Settings</h2>
-        <p className="mt-1 text-sm text-zinc-400">
-          Manage your admin profile and preferences
-        </p>
-      </div>
+    <>
+      <SettingsPageHeader
+        title="Account"
+        description="Display name, email, and optional wallet used for admin notifications."
+      />
 
-      {/* Profile Info */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="border-b border-zinc-800 px-5 py-4">
-          <h3 className="font-medium text-white">Profile Information</h3>
-          <p className="mt-1 text-sm text-zinc-500">
-            Your account details and display name
-          </p>
-        </div>
-        <div className="space-y-4 p-5">
-          <div className="flex items-center gap-4">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-yellow-400/10 text-2xl font-bold text-yellow-400">
-              {username.slice(0, 2).toUpperCase()}
-            </div>
-            <div>
-              <p className="font-medium text-white">{profile?.role}</p>
-              <p className="text-sm text-zinc-500">
-                Member since {profile?.created_at ? new Date(profile.created_at).toLocaleDateString() : "N/A"}
-              </p>
-            </div>
+      <SettingsSection title="Profile" description="How you appear in the admin console.">
+        <div className="flex items-center gap-3 border-b border-white/[0.06] pb-4">
+          <div
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-white/[0.08] bg-white/[0.04] text-xs font-semibold text-zinc-300"
+            aria-hidden
+          >
+            {initials}
           </div>
-
-          <div className="grid gap-4 pt-2 sm:grid-cols-2">
-            <div>
-              <label className="mb-1.5 flex items-center gap-2 text-sm font-medium text-zinc-400">
-                <User className="h-4 w-4" />
-                Username
-              </label>
-              <input
-                type="text"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2.5 text-sm text-white focus:border-yellow-400/50 focus:outline-none"
-              />
-            </div>
-            <div>
-              <label className="mb-1.5 flex items-center gap-2 text-sm font-medium text-zinc-400">
-                <Mail className="h-4 w-4" />
-                Email
-              </label>
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2.5 text-sm text-white focus:border-yellow-400/50 focus:outline-none"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label className="mb-1.5 flex items-center gap-2 text-sm font-medium text-zinc-400">
-              <Wallet className="h-4 w-4" />
-              Wallet Address (Optional)
-            </label>
-            <input
-              type="text"
-              value={walletAddress}
-              onChange={(e) => setWalletAddress(e.target.value)}
-              placeholder="0x..."
-              className="w-full rounded-lg border border-zinc-700 bg-zinc-800 px-3 py-2.5 text-sm text-white placeholder-zinc-500 focus:border-yellow-400/50 focus:outline-none"
-            />
-            <p className="mt-1.5 text-xs text-zinc-500">
-              Connect a wallet address for receiving payments or notifications
+          <div className="min-w-0">
+            <p className="text-sm font-medium text-white">{formatRole(profile?.role ?? "admin")}</p>
+            <p className="text-xs text-zinc-500">
+              Member since{" "}
+              {profile?.created_at
+                ? new Date(profile.created_at).toLocaleDateString()
+                : "—"}
             </p>
           </div>
         </div>
-      </section>
 
-      {/* Session Info */}
-      <section className="rounded-xl border border-zinc-800 bg-zinc-900/50">
-        <div className="border-b border-zinc-800 px-5 py-4">
-          <h3 className="font-medium text-white">Session Information</h3>
-          <p className="mt-1 text-sm text-zinc-500">
-            Current login session details
-          </p>
+        <div className="grid gap-4 pt-4 sm:grid-cols-2">
+          <SettingsField label="Username">
+            <input
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              className={adminGlass.input}
+            />
+          </SettingsField>
+          <SettingsField label="Email">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={adminGlass.input}
+            />
+          </SettingsField>
         </div>
-        <div className="divide-y divide-zinc-800">
-          <div className="flex items-center justify-between px-5 py-3">
-            <span className="text-sm text-zinc-400">Admin ID</span>
-            <code className="rounded bg-zinc-800 px-2 py-0.5 text-xs text-zinc-300">
-              {profile?.id}
-            </code>
-          </div>
-          <div className="flex items-center justify-between px-5 py-3">
-            <span className="text-sm text-zinc-400">Role</span>
-            <span className="rounded bg-yellow-400/10 px-2 py-0.5 text-xs font-medium text-yellow-400">
-              {profile?.role}
-            </span>
-          </div>
-          <div className="flex items-center justify-between px-5 py-3">
-            <span className="text-sm text-zinc-400">Last Login</span>
-            <span className="text-sm text-zinc-300">
-              {profile?.last_login
-                ? new Date(profile.last_login).toLocaleString()
-                : "N/A"}
-            </span>
-          </div>
-        </div>
-      </section>
 
-      {/* Actions */}
-      <div className="flex items-center justify-end gap-3 border-t border-zinc-800 pt-6">
+        <SettingsField
+          label="Wallet address"
+          hint="Optional. Used for on-chain admin payouts or alerts if configured."
+        >
+          <input
+            type="text"
+            value={walletAddress}
+            onChange={(e) => setWalletAddress(e.target.value)}
+            placeholder="0x…"
+            className={adminGlass.input}
+          />
+        </SettingsField>
+      </SettingsSection>
+
+      <SettingsSection title="Session" description="Current admin record." bodyClassName="p-0">
+        <SettingsDlRow label="Admin ID">
+          <code className="rounded border border-white/[0.08] bg-black/40 px-1.5 py-0.5 font-mono text-xs text-zinc-400">
+            {profile?.id}
+          </code>
+        </SettingsDlRow>
+        <SettingsDlRow label="Role">
+          <span className={adminGlass.badgeMuted}>{formatRole(profile?.role ?? "")}</span>
+        </SettingsDlRow>
+        <SettingsDlRow label="Last sign-in">
+          {profile?.last_login
+            ? new Date(profile.last_login).toLocaleString()
+            : "—"}
+        </SettingsDlRow>
+      </SettingsSection>
+
+      <SettingsActions>
         <button
+          type="button"
           onClick={handleSave}
           disabled={isSaving}
-          className="flex items-center gap-2 rounded-lg bg-yellow-400 px-4 py-2.5 text-sm font-semibold text-black transition-colors hover:bg-yellow-300 disabled:opacity-50"
+          className={adminGlass.buttonPrimary}
         >
           {isSaving ? (
-            <Loader2 className="h-4 w-4 animate-spin" />
+            <Loader2 className="h-3.5 w-3.5 animate-spin" />
           ) : (
-            <Save className="h-4 w-4" />
+            <Save className="h-3.5 w-3.5" />
           )}
-          Save Changes
+          Save
         </button>
-      </div>
-    </div>
+      </SettingsActions>
+    </>
   );
 }

@@ -5,6 +5,7 @@ import { redirect } from "@/i18n/navigation";
 import { revalidatePath } from "next/cache";
 import { firstZodMessage, refundIntakeSchema } from "@/lib/refund/schema";
 import { submitRefundIntake } from "@/lib/refund/submit-intake";
+import { submitRecoveryIntake } from "@/lib/recovery/submit-intake";
 
 const RECOVERY_FIELDS = [
   "name",
@@ -76,31 +77,58 @@ export async function submitOnboardingDetails(formData: FormData) {
     const details: Record<string, unknown> = {};
     const serviceType = onboarding.service_type as string;
 
+    let recoveryRequestId: string | undefined;
     if (serviceType === "recovery") {
-        // Explicitly save every recovery field to the database
         for (const key of RECOVERY_FIELDS) {
             const value = formData.get(key);
             if (value !== null && value !== undefined && value !== "")
                 details[key] = String(value);
         }
-        // Evidence file: upload to Storage and save both filename and URL
         const evidenceFile = formData.get("evidence") as File | null;
+
+        const name = String(details.name ?? "");
+        const transaction_hash = String(details.transaction_hash ?? "");
+        const amount_stolen = String(details.amount_stolen ?? "");
+        const incident_summary = String(details.incident_summary ?? "");
+
+        if (!name || !transaction_hash || !amount_stolen || !incident_summary) {
+            await redirect(
+                `/onboarding/details?error=${encodeURIComponent("Complete all required recovery fields")}`,
+            );
+        }
+
+        const recoveryResult = await submitRecoveryIntake({
+            intake: {
+                name,
+                email: user.email ?? "",
+                transaction_hash,
+                amount_stolen,
+                incident_summary,
+                phone_number: details.phone_number ? String(details.phone_number) : undefined,
+                country_phone_code: details.country_phone_code
+                    ? String(details.country_phone_code)
+                    : undefined,
+                blockchain: details.blockchain ? String(details.blockchain) : undefined,
+                currency: details.currency ? String(details.currency) : undefined,
+                source: "onboarding",
+            },
+            userId: user.id,
+            evidenceFile:
+                evidenceFile instanceof File && evidenceFile.size > 0 ? evidenceFile : null,
+            sendEmail: true,
+        });
+
+        if (!recoveryResult.ok) {
+            console.error("Recovery intake failed:", recoveryResult.error);
+            await redirect(
+                `/onboarding/details?error=${encodeURIComponent("Could not open recovery case")}`,
+            );
+        }
+
+        recoveryRequestId = recoveryResult.id;
+        details.recovery_request_id = recoveryRequestId;
         if (evidenceFile instanceof File && evidenceFile.size > 0) {
             details.evidence = evidenceFile.name;
-            try {
-                const path = `${user.id}/${Date.now()}-${evidenceFile.name.replace(/[^a-zA-Z0-9._-]/g, "_")}`;
-                const { data: uploadData, error: uploadError } = await supabase.storage
-                    .from("onboarding-evidence")
-                    .upload(path, evidenceFile, { upsert: false });
-                if (!uploadError && uploadData?.path) {
-                    const { data: urlData } = supabase.storage
-                        .from("onboarding-evidence")
-                        .getPublicUrl(uploadData.path);
-                    details.evidence_url = urlData?.publicUrl ?? null;
-                }
-            } catch {
-                // Keep only filename if upload fails
-            }
         }
     } else if (serviceType === "banking") {
         for (const key of BANKING_FIELDS) {

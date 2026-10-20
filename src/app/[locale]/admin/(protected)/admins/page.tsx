@@ -16,12 +16,23 @@ import { toast } from "sonner";
 
 interface AdminUser {
   id: string;
-  username: string;
-  email: string;
+  username: string | null;
+  email: string | null;
   role: string;
   is_active: boolean;
   created_at: string;
   last_login: string | null;
+}
+
+function adminLabel(admin: AdminUser) {
+  const name = admin.username?.trim() || admin.email?.trim() || "Admin";
+  return name;
+}
+
+function adminInitials(admin: AdminUser) {
+  const label = adminLabel(admin);
+  const letters = label.replace(/[^a-zA-Z0-9]/g, "");
+  return (letters.slice(0, 2) || "AD").toUpperCase();
 }
 
 export default function AdminManagementPage() {
@@ -173,11 +184,11 @@ export default function AdminManagementPage() {
               >
                 <div className="flex items-center gap-4">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-yellow-400/10 text-sm font-bold text-yellow-400">
-                    {admin.username.slice(0, 2).toUpperCase()}
+                    {adminInitials(admin)}
                   </div>
                   <div>
-                    <p className="font-medium text-white">{admin.username}</p>
-                    <p className="text-sm text-zinc-400">{admin.email}</p>
+                    <p className="font-medium text-white">{adminLabel(admin)}</p>
+                    <p className="text-sm text-zinc-400">{admin.email || "—"}</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
@@ -285,13 +296,13 @@ export default function AdminManagementPage() {
                     <td className="px-5 py-4">
                       <div className="flex items-center gap-3">
                         <div className="flex h-10 w-10 items-center justify-center rounded-full bg-zinc-800 text-sm font-bold text-zinc-300">
-                          {admin.username.slice(0, 2).toUpperCase()}
+                          {adminInitials(admin)}
                         </div>
                         <div>
                           <p className="font-medium text-white">
-                            {admin.username}
+                            {adminLabel(admin)}
                           </p>
-                          <p className="text-sm text-zinc-500">{admin.email}</p>
+                          <p className="text-sm text-zinc-500">{admin.email || "—"}</p>
                         </div>
                       </div>
                     </td>

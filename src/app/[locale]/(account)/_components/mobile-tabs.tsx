@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Building2, LayoutDashboard, Wallet, Landmark, Settings } from "lucide-react";
 import { Link, usePathname } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
+import { isAccountRouteEnabled, type ServicesConfig } from "@/lib/platform-settings";
 
 const items = [
   { href: "/dashboard", labelKey: "home" as const, icon: LayoutDashboard },
@@ -13,14 +14,15 @@ const items = [
   { href: "/settings", labelKey: "settings" as const, icon: Settings },
 ];
 
-export function MobileTabs() {
+export function MobileTabs({ servicesConfig }: { servicesConfig: ServicesConfig }) {
   const t = useTranslations("AccountMobileTabs");
   const pathname = usePathname();
+  const visible = items.filter((item) => isAccountRouteEnabled(item.href, servicesConfig));
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-50 border-t border-white/[0.08] bg-black/55 backdrop-blur-xl lg:hidden">
       <nav className="flex h-16 items-stretch justify-around px-1 pb-[env(safe-area-inset-bottom)]">
-        {items.map((item) => {
+        {visible.map((item) => {
           const isActive = pathname === item.href;
           return (
             <Link

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { requireAdmin } from "@/lib/admin-auth";
+import { listAllRecoveryRequests } from "@/lib/recovery/submit-intake";
 import { createServiceRoleClient } from "@/utils/supabase/server";
 
 const updateSchema = z.object({
@@ -12,18 +13,8 @@ const updateSchema = z.object({
 export async function GET() {
   try {
     await requireAdmin();
-    const supabase = createServiceRoleClient();
-
-    const { data, error } = await supabase
-      .from("recovery_requests")
-      .select("*")
-      .order("created_at", { ascending: false });
-
-    if (error) {
-      return NextResponse.json({ error: "Failed to fetch recovery requests" }, { status: 500 });
-    }
-
-    return NextResponse.json({ requests: data || [] });
+    const requests = await listAllRecoveryRequests();
+    return NextResponse.json({ requests });
   } catch (error) {
     if (error instanceof Error && error.message === "Unauthorized") {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 });

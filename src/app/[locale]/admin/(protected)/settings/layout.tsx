@@ -8,40 +8,34 @@ import {
   Bell,
   Key,
   ChevronLeft,
+  Globe,
+  Layers,
+  Coins,
+  Landmark,
 } from "lucide-react";
+import { adminGlass } from "@/lib/admin-glass";
 
-const settingsNav = [
+const settingsGroups = [
   {
-    label: "General",
-    href: "/admin/settings/general",
-    icon: Settings,
-    description: "Platform configuration and defaults",
+    label: "Platform",
+    items: [
+      { label: "Overview", href: "/admin/settings", icon: Settings },
+      { label: "Site", href: "/admin/settings/platform", icon: Globe },
+      { label: "Services", href: "/admin/settings/services", icon: Layers },
+      { label: "Web3", href: "/admin/settings/web3", icon: Coins },
+      { label: "Financial", href: "/admin/settings/financial", icon: Landmark },
+    ],
   },
   {
-    label: "Account",
-    href: "/admin/settings/account",
-    icon: User,
-    description: "Your profile and preferences",
+    label: "Admin",
+    items: [
+      { label: "Account", href: "/admin/settings/account", icon: User },
+      { label: "Security", href: "/admin/settings/security", icon: Shield },
+      { label: "Notifications", href: "/admin/settings/notifications", icon: Bell },
+      { label: "API", href: "/admin/settings/api", icon: Key },
+    ],
   },
-  {
-    label: "Security",
-    href: "/admin/settings/security",
-    icon: Shield,
-    description: "Password and authentication",
-  },
-  {
-    label: "Notifications",
-    href: "/admin/settings/notifications",
-    icon: Bell,
-    description: "Email and alert preferences",
-  },
-  {
-    label: "API",
-    href: "/admin/settings/api",
-    icon: Key,
-    description: "API keys and webhooks",
-  },
-];
+] as const;
 
 export default function SettingsLayout({
   children,
@@ -50,86 +44,66 @@ export default function SettingsLayout({
 }) {
   const pathname = usePathname();
 
-  const isActive = (href: string) =>
-    pathname === href || pathname.startsWith(`${href}/`);
+  const isActive = (href: string) => {
+    if (href === "/admin/settings") {
+      return pathname === href;
+    }
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
-    <div className="min-h-screen">
-      {/* Header */}
-      <div className="border-b border-zinc-800 bg-zinc-950/50 px-6 py-4">
-        <div className="flex items-center gap-4">
-          <Link
-            href="/admin/dashboard"
-            className="flex items-center gap-2 text-sm text-zinc-400 transition-colors hover:text-white"
-          >
-            <ChevronLeft className="h-4 w-4" />
-            Back to Dashboard
-          </Link>
+    <div className={`${adminGlass.page} !max-w-[1100px] !gap-8`}>
+      <header className="space-y-4">
+        <Link
+          href="/admin/dashboard"
+          className="inline-flex items-center gap-1.5 text-xs font-medium text-zinc-500 transition-colors hover:text-zinc-300"
+        >
+          <ChevronLeft className="h-3.5 w-3.5" aria-hidden />
+          Dashboard
+        </Link>
+        <div>
+          <p className={adminGlass.eyebrow}>Project</p>
+          <h1 className={adminGlass.title}>Settings</h1>
+          <p className={`mt-2 ${adminGlass.description}`}>
+            Platform behavior, product surfaces, Web3 parameters, and admin preferences.
+          </p>
         </div>
-        <h1 className="mt-4 text-2xl font-bold text-white">Settings</h1>
-        <p className="mt-1 text-zinc-400">
-          Manage your admin account and platform settings
-        </p>
-      </div>
+      </header>
 
-      <div className="flex">
-        {/* Settings Sidebar */}
-        <aside className="hidden w-64 shrink-0 border-r border-zinc-800 lg:block">
-          <nav className="sticky top-0 space-y-1 p-4">
-            {settingsNav.map((item) => {
-              const Icon = item.icon;
-              const active = isActive(item.href);
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`group flex items-start gap-3 rounded-lg px-3 py-3 transition-colors ${
-                    active
-                      ? "bg-zinc-800 text-white"
-                      : "text-zinc-400 hover:bg-zinc-800/50 hover:text-white"
-                  }`}
-                >
-                  <Icon
-                    className={`mt-0.5 h-5 w-5 shrink-0 ${
-                      active ? "text-yellow-400" : "text-zinc-500 group-hover:text-zinc-400"
-                    }`}
-                  />
-                  <div>
-                    <p className="text-sm font-medium">{item.label}</p>
-                    <p className="mt-0.5 text-xs text-zinc-500">{item.description}</p>
-                  </div>
-                </Link>
-              );
-            })}
+      <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
+        <aside className={`shrink-0 ${adminGlass.settingsNavWidth}`}>
+          <nav
+            className={`${adminGlass.surface} overflow-hidden lg:sticky lg:top-6`}
+            aria-label="Settings"
+          >
+            {settingsGroups.map((group) => (
+              <div key={group.label} className={adminGlass.sidebarSection}>
+                <p className={adminGlass.sidebarLabel}>{group.label}</p>
+                <ul className="space-y-0.5 px-1 pb-2">
+                  {group.items.map((item) => {
+                    const Icon = item.icon;
+                    const active = isActive(item.href);
+                    return (
+                      <li key={item.href}>
+                        <Link
+                          href={item.href}
+                          className={active ? adminGlass.navItemActive : adminGlass.navItem}
+                        >
+                          <Icon
+                            className={active ? adminGlass.navIconActive : adminGlass.navIcon}
+                          />
+                          {item.label}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            ))}
           </nav>
         </aside>
 
-        {/* Mobile Navigation */}
-        <div className="border-b border-zinc-800 lg:hidden">
-          <div className="flex gap-1 overflow-x-auto p-2">
-            {settingsNav.map((item) => {
-              const Icon = item.icon;
-              const active = isActive(item.href);
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`flex shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-                    active
-                      ? "bg-zinc-800 text-white"
-                      : "text-zinc-400 hover:bg-zinc-800/50 hover:text-white"
-                  }`}
-                >
-                  <Icon className={`h-4 w-4 ${active ? "text-yellow-400" : ""}`} />
-                  {item.label}
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Main Content */}
-        <main className="flex-1 p-6 lg:p-8">{children}</main>
+        <div className={adminGlass.settingsContent}>{children}</div>
       </div>
     </div>
   );
