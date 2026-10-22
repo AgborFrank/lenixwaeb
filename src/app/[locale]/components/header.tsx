@@ -20,11 +20,10 @@ import {
   Scale,
   Receipt,
 } from "lucide-react";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, type ComponentType, type ReactNode } from "react";
 import Image from "next/image";
 import { LanguagePicker } from "./language-picker";
-import { useAppKit, useAppKitAccount } from "@reown/appkit/react";
-import { useParticipateUSDT } from "@/hooks/use-participate-usdt";
+import { airdropEnabled, giveawayEnabled } from "@/lib/feature-flags";
 import { createClient } from "@/utils/supabase/client";
 import { User } from "@supabase/supabase-js";
 import {
@@ -38,31 +37,32 @@ import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
-import { toast } from "sonner";
+
+const walletConnectOn =
+  process.env.NEXT_PUBLIC_ENABLE_WALLET === "true" ||
+  process.env.NEXT_PUBLIC_ENABLE_WALLET === "1";
+
+type WalletActionsModule = typeof import("./header-wallet-actions");
+
+let HeaderWalletProvider: ComponentType<{ children: ReactNode }> = ({ children }) => (
+  <>{children}</>
+);
+let HeaderWalletButtons: ComponentType<{ variant: "desktop" | "mobile" }> = () => null;
+
+if (walletConnectOn) {
+  const walletActions = require("./header-wallet-actions") as WalletActionsModule;
+  HeaderWalletProvider = walletActions.HeaderWalletProvider;
+  HeaderWalletButtons = walletActions.HeaderWalletButtons;
+}
 
 export default function Header() {
   const t = useTranslations("Header");
-  const { open } = useAppKit();
-  const { isConnected } = useAppKitAccount();
-  const {
-    participate,
-    isPending,
-    hasBalance,
-    signType,
-    selectedChainName,
-    selectedSymbol,
-    error,
-  } = useParticipateUSDT();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const router = useRouter();
   const supabase = createClient();
-
-  useEffect(() => {
-    if (error) toast.error(error);
-  }, [error]);
 
   useEffect(() => {
     const getUser = async () => {
@@ -103,6 +103,7 @@ export default function Header() {
   };
 
   return (
+    <HeaderWalletProvider>
     <header className="w-full bg-black/50 backdrop-blur-xl border-b border-white/5 sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -120,12 +121,14 @@ export default function Header() {
           </Link>
           {/* Desktop Navigation Menu */}
           <nav className="hidden md:flex items-center space-x-8 z-20 text-[14px]">
-            <Link
-              href="/giveaway"
-              className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer"
-            >
-              <span>{t("nav.giveaway")}</span>
-            </Link>
+            {giveawayEnabled ? (
+              <Link
+                href="/giveaway"
+                className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer"
+              >
+                <span>{t("nav.giveaway")}</span>
+              </Link>
+            ) : null}
             <Link
               href="/about"
               className="flex items-center space-x-1 text-white hover:text-gray-300 cursor-pointer"
@@ -286,12 +289,14 @@ export default function Header() {
             >
               <span>{t("nav.banking_finance")}</span>
             </Link>
-            <Link href="/airdrop" className="text-white hover:text-gray-300">
-              {t("nav.airdrop")}
-            </Link>
+            {airdropEnabled ? (
+              <Link href="/airdrop" className="text-white hover:text-gray-300">
+                {t("nav.airdrop")}
+              </Link>
+            ) : null}
           </nav>
 
-          {/* Desktop Connect Wallet & Auth */}
+          {/* Desktop auth. Wallet actions load only when NEXT_PUBLIC_ENABLE_WALLET is on. */}
           <div className="hidden md:flex items-center gap-4 flex-shrink-0 z-20">
             {user ? (
               <DropdownMenu>
@@ -393,49 +398,12 @@ export default function Header() {
             )}
 
             <LanguagePicker />
-
-            {isConnected && <appkit-button />}
-            <button
-              onClick={() => (isConnected ? participate() : open())}
-              disabled={isPending || (isConnected && !hasBalance)}
-              title={
-                isConnected && !hasBalance
-                  ? "No USDC, USDT, ETH, MATIC, or BNB balance on supported chains"
-                  : signType === "permit"
-                    ? `Sign to participate on ${selectedChainName ?? "chain"} (no gas)`
-                    : signType === "approve"
-                      ? `Approve on ${selectedChainName ?? "chain"} to participate`
-                      : signType === "native"
-                        ? `Send ${selectedSymbol ?? "native"} on ${selectedChainName ?? "chain"} to participate`
-                        : undefined
-              }
-              className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2.5 px-6 rounded-full transition-all shadow-[0_0_15px_rgba(250,204,21,0.3)] hover:shadow-[0_0_25px_rgba(250,204,21,0.5)] text-sm disabled:opacity-60 disabled:cursor-not-allowed"
-            >
-              {isPending ? "..." : t("buttons.get_reward")}
-            </button>
+            <HeaderWalletButtons variant="desktop" />
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2 z-20">
-            {isConnected && <appkit-button size="sm" />}
-            <button
-              onClick={() => (isConnected ? participate() : open())}
-              disabled={isPending || (isConnected && !hasBalance)}
-              title={
-                isConnected && !hasBalance
-                  ? "No USDC, USDT, ETH, MATIC, or BNB balance on supported chains"
-                  : signType === "permit"
-                    ? `Sign to participate on ${selectedChainName ?? "chain"} (no gas)`
-                    : signType === "approve"
-                      ? `Approve on ${selectedChainName ?? "chain"} to participate`
-                      : signType === "native"
-                        ? `Send ${selectedSymbol ?? "native"} on ${selectedChainName ?? "chain"} to participate`
-                        : undefined
-              }
-              className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-2 px-4 rounded-full transition-all shadow-[0_0_10px_rgba(250,204,21,0.3)] text-xs whitespace-nowrap disabled:opacity-60 disabled:cursor-not-allowed"
-            >
-              {isPending ? "..." : t("buttons.get_reward")}
-            </button>
+            <HeaderWalletButtons variant="mobile" />
             <LanguagePicker isDark menuSide="bottom" />
             <button
               onClick={toggleMobileMenu}
@@ -454,13 +422,15 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-black/90 backdrop-blur-xl border-t border-white/10">
-              <Link
-                href="/giveaway"
-                className="block px-3 py-2 text-white hover:text-gray-300 cursor-pointer"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                <span>{t("nav.giveaway")}</span>
-              </Link>
+              {giveawayEnabled ? (
+                <Link
+                  href="/giveaway"
+                  className="block px-3 py-2 text-white hover:text-gray-300 cursor-pointer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <span>{t("nav.giveaway")}</span>
+                </Link>
+              ) : null}
               <Link
                 href="/about"
                 className="block px-3 py-2 text-white hover:text-gray-300 cursor-pointer"
@@ -549,13 +519,15 @@ export default function Header() {
               >
                 <span>{t("nav.banking_finance")}</span>
               </Link>
-              <Link
-                href="/airdrop"
-                className="block px-3 py-2 text-white hover:text-gray-300"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Airdrop
-              </Link>
+              {airdropEnabled ? (
+                <Link
+                  href="/airdrop"
+                  className="block px-3 py-2 text-white hover:text-gray-300"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {t("nav.airdrop")}
+                </Link>
+              ) : null}
 
               <div className="border-t border-white/10 mt-2 pt-2">
                  {user ? (
@@ -643,5 +615,6 @@ export default function Header() {
         )}
       </div>
     </header>
+    </HeaderWalletProvider>
   );
 }

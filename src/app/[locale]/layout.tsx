@@ -6,7 +6,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import "../globals.css";
 import { headers } from "next/headers";
-import AppKitProvider from "@/context";
 import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "./(account)/_providers/theme-provider";
@@ -128,6 +127,16 @@ export default async function RootLayout({
   const cookies = headersList.get("cookie");
   const messages = await getMessages();
 
+  const enableWallet =
+    process.env.NEXT_PUBLIC_ENABLE_WALLET === "true" ||
+    process.env.NEXT_PUBLIC_ENABLE_WALLET === "1";
+
+  let page = children;
+  if (enableWallet) {
+    const { default: AppKitProvider } = await import("@/context");
+    page = <AppKitProvider cookies={cookies}>{children}</AppKitProvider>;
+  }
+
   return (
     <html lang={locale} className="dark" suppressHydrationWarning>
       {/* Cookiebot Consent - afterInteractive for Next.js 16 compatibility */}
@@ -166,7 +175,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <TooltipProvider>
             <ThemeProvider>
-              <AppKitProvider cookies={cookies}>{children}</AppKitProvider>
+              {page}
             </ThemeProvider>
           </TooltipProvider>
           <Toaster />

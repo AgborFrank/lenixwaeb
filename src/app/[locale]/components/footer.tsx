@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa6";
 import { LanguagePicker } from "./language-picker";
 import { useTranslations } from "next-intl";
+import { airdropEnabled } from "@/lib/feature-flags";
 import { home } from "@/lib/home-styles";
 
 const SOCIAL_LINKS = [
@@ -172,9 +173,11 @@ export default function Footer() {
           </FooterColumn>
 
           <FooterColumn title={t("Footer.headings.resources")}>
-            <li>
-              <FooterLink href="/airdrop">{t("Header.nav.airdrop")}</FooterLink>
-            </li>
+            {airdropEnabled ? (
+              <li>
+                <FooterLink href="/airdrop">{t("Header.nav.airdrop")}</FooterLink>
+              </li>
+            ) : null}
             <li>
               <FooterLink href="#">{t("Footer.links.blog")}</FooterLink>
             </li>
