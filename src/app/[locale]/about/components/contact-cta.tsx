@@ -19,7 +19,7 @@ export default function ContactCTA() {
     },
     {
       title: t("methods.visit"),
-      lines: ["123 Blockchain Street", "San Francisco, CA 94105"],
+      lines: ["Theilerstrasse 1a, 6300 Zug, Switzerland"],
     },
   ];
 

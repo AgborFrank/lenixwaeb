@@ -20,7 +20,9 @@ export default function ContactMain() {
     },
     {
       title: info("address_title"),
-      lines: [info("address_line_1"), info("address_line_2"), info("address_line_3")],
+      lines: [info("address_line_1"), info("address_line_2"), info("address_line_3")].filter(
+        (line) => line.trim().length > 0
+      ),
     },
   ];
 
