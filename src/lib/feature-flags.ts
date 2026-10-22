@@ -11,7 +11,7 @@ type Locale = (typeof routing.locales)[number];
  * requires a new build.
  *
  * `sitemapExcludedPaths()` is what `src/lib/public-sitemap.ts` skips while
- * the matching flag is off. `src/app/robots.ts` Disallows the same paths.
+ * the matching flag is off. robots.txt does not Disallow those URLs.
  */
 
 function envEnabled(value: string | undefined): boolean {

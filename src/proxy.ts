@@ -74,8 +74,7 @@ export default async function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // robots.txt / sitemap.xml must not be locale-redirected. Promo paths are
-  // Disallowed in robots.ts and listed in sitemapExcludedPaths().
+  // robots.txt / sitemap.xml must not be locale-redirected.
   if (pathname === "/robots.txt" || pathname === "/sitemap.xml") {
     return NextResponse.next();
   }
