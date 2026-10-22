@@ -84,8 +84,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Visit Us</h4>
-                  <p className="text-gray-400">123 Blockchain Street</p>
-                  <p className="text-gray-400">San Francisco, CA 94105</p>
+                  <p className="text-gray-400">Theilerstrasse 1a, 6300 Zug, Switzerland</p>
                 </div>
               </div>
 

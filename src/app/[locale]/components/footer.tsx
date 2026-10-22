@@ -83,6 +83,9 @@ export default function Footer() {
             <p className="text-sm text-neutral-400 leading-relaxed mb-6 max-w-xs">
               {t("Footer.company_desc")}
             </p>
+            <p className="text-sm text-neutral-400 leading-relaxed mb-6 max-w-xs">
+              {t("Contact.Info.address_line_1")}
+            </p>
 
             <div className="flex flex-wrap gap-2 mb-8">
               {SOCIAL_LINKS.map(({ href, label, Icon }) => (
