@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://lenixprotocol.com/sitemap.xml

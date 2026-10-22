@@ -2,7 +2,7 @@
 
 import { ShieldCheck, Wallet, ChevronRight, RefreshCw, ArrowUpRight, ArrowDownLeft, Repeat, Landmark, Globe, ArrowRightLeft, Clock, Settings } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { home } from "@/lib/home-styles";
 
