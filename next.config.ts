@@ -1,7 +1,12 @@
+import path from "path";
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
+
+const walletConnectEnabled =
+  process.env.NEXT_PUBLIC_ENABLE_WALLET === "true" ||
+  process.env.NEXT_PUBLIC_ENABLE_WALLET === "1";
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -57,9 +62,22 @@ const nextConfig: NextConfig = {
   webpack: (config, { isServer }) => {
     // Exclude test directories from module resolution
     if (config.resolve) {
-      config.resolve.alias = {
-        ...config.resolve.alias,
-      };
+      const alias = { ...config.resolve.alias };
+      // Keep the Reown / WalletConnect SDK out of the build unless the flag is on.
+      // `@/context` would otherwise be traced from the locale layout and initialize AppKit.
+      if (!walletConnectEnabled) {
+        const disabledContext = path.resolve(process.cwd(), "src/context/disabled.tsx");
+        const reownStub = path.resolve(process.cwd(), "src/lib/stubs/reown-disabled.ts");
+        alias["@/context$"] = disabledContext;
+        alias["@/context/index$"] = disabledContext;
+        alias[path.resolve(process.cwd(), "src/context")] = disabledContext;
+        alias[path.resolve(process.cwd(), "src/context/index.tsx")] = disabledContext;
+        alias["@reown/appkit$"] = reownStub;
+        alias["@reown/appkit/react$"] = reownStub;
+        alias["@reown/appkit/networks$"] = reownStub;
+        alias["@reown/appkit-adapter-wagmi$"] = reownStub;
+      }
+      config.resolve.alias = alias;
     }
 
     // Ignore warnings for test files in node_modules

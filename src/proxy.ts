@@ -2,6 +2,7 @@ import { NextResponse, type NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
 import { jwtVerify } from "jose";
 import { routing } from "./i18n/routing";
+import { isDisabledPromoPath } from "@/lib/feature-flags";
 import { updateSession } from "@/utils/supabase/middleware";
 
 const intlMiddleware = createMiddleware(routing);
@@ -45,12 +46,42 @@ function getPathnameWithoutLocale(pathname: string): string {
   return pathname;
 }
 
+function disabledPromoResponse(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+  const first = pathname.split("/").filter(Boolean)[0];
+  const hasLocale =
+    !!first &&
+    routing.locales.includes(first as (typeof routing.locales)[number]);
+
+  // Unprefixed /airdrop and /giveaway would otherwise 307 to /en/... .
+  // Rewrite onto the locale route so the page can call notFound() (status 404).
+  if (!hasLocale) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${routing.defaultLocale}${pathname}`.replace(/\/{2,}/g, "/");
+    const headers = new Headers(request.headers);
+    headers.set("X-NEXT-INTL-LOCALE", routing.defaultLocale);
+    return NextResponse.rewrite(url, { request: { headers } });
+  }
+
+  return intlMiddleware(request);
+}
+
 export default async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Skip API routes - they don't need i18n or session handling
   if (pathname.startsWith("/api")) {
     return NextResponse.next();
+  }
+
+  // robots.txt / sitemap.xml must not be locale-redirected.
+  if (pathname === "/robots.txt" || pathname === "/sitemap.xml") {
+    return NextResponse.next();
+  }
+
+  // Hidden promo routes: real 404, no redirect to another page.
+  if (isDisabledPromoPath(pathname)) {
+    return disabledPromoResponse(request);
   }
 
   // Unprefixed /admin → /{locale}/admin (admin always uses locale in the URL)
@@ -111,6 +142,6 @@ export default async function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|mp4|ico)$).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:svg|png|jpg|jpeg|gif|webp|mp4|ico)$).*)",
   ],
 };
