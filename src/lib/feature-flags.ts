@@ -10,9 +10,8 @@ type Locale = (typeof routing.locales)[number];
  * NEXT_PUBLIC_* values are inlined at build time, so turning a flag on
  * requires a new build.
  *
- * This app does not generate sitemap.xml. `sitemapExcludedPaths()` is the
- * list a future sitemap must skip while the matching flag is off.
- * `src/app/robots.ts` Disallows the same paths and replaces public/robots.txt.
+ * `sitemapExcludedPaths()` is what `src/lib/public-sitemap.ts` skips while
+ * the matching flag is off. `src/app/robots.ts` Disallows the same paths.
  */
 
 function envEnabled(value: string | undefined): boolean {
