@@ -10,6 +10,7 @@ import { Toaster } from "sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "./(account)/_providers/theme-provider";
 import FloatingTelegramButton from "@/components/floating-telegram-button";
+import { basePathFromPathname, withPublicMetadata } from "@/lib/public-metadata";
 
 // Google Fonts - Primary font
 const onest = Onest({
@@ -74,44 +75,53 @@ const BitnovatusSans = localFont({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
-  description:
-    "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics. We trace assets, identify scammers, and provide court-ready evidence.",
-  keywords: [
-    "Crypto Recovery",
-    "Blockchain Forensics",
-    "Stolen Bitcoin Recovery",
-    "Asset Tracing",
-    "Security Protocol",
-    "Find Crypto Scammer",
-    "Wallet Password Recovery",
-  ],
-  openGraph: {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const headerList = await headers();
+  const pathname = headerList.get("x-lenix-pathname") ?? `/${locale}`;
+
+  return withPublicMetadata(locale, basePathFromPathname(pathname), {
     title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
     description:
-      "Professional cryptocurrency investigation and asset recovery services. Trace stolen funds and secure your digital future.",
-    url: "https://lenixprotocol.com",
-    siteName: "Lenix Protocol",
-    images: [
-      {
-        url: "/assets/img/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Lenix Protocol - Blockchain Forensics & Recovery",
-      },
+      "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics. We trace assets, identify scammers, and provide court-ready evidence.",
+    keywords: [
+      "Crypto Recovery",
+      "Blockchain Forensics",
+      "Stolen Bitcoin Recovery",
+      "Asset Tracing",
+      "Security Protocol",
+      "Find Crypto Scammer",
+      "Wallet Password Recovery",
     ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
-    description:
-      "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics.",
-    images: ["/assets/img/og-image.png"],
-  },
-};
+    openGraph: {
+      title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
+      description:
+        "Professional cryptocurrency investigation and asset recovery services. Trace stolen funds and secure your digital future.",
+      siteName: "Lenix Protocol",
+      images: [
+        {
+          url: "/assets/img/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Lenix Protocol - Blockchain Forensics & Recovery",
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
+      description:
+        "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics.",
+      images: ["/assets/img/og-image.png"],
+    },
+  });
+}
 
 export default async function RootLayout({
   children,

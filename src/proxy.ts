@@ -46,6 +46,75 @@ function getPathnameWithoutLocale(pathname: string): string {
   return pathname;
 }
 
+/**
+ * Unprefixed paths (`/` and `/wallet-decryption`) are permanent.
+ * next-intl emits 307 so the locale cookie can still change; upgrade only
+ * the "add a locale prefix, keep the rest of the path" redirects to 308.
+ * Auth and onboarding redirects stay temporary.
+ */
+function isLocalePrefixRedirect(pathname: string, location: string, baseUrl: string): boolean {
+  let dest: URL;
+  try {
+    dest = new URL(location, baseUrl);
+  } catch {
+    return false;
+  }
+
+  const currentSegments = pathname.split("/").filter(Boolean);
+  const first = currentSegments[0];
+  if (first && routing.locales.includes(first as (typeof routing.locales)[number])) {
+    return false;
+  }
+
+  const destSegments = dest.pathname.split("/").filter(Boolean);
+  const destLocale = destSegments[0];
+  if (!destLocale || !routing.locales.includes(destLocale as (typeof routing.locales)[number])) {
+    return false;
+  }
+
+  const rest = destSegments.slice(1).join("/");
+  const currentRest = currentSegments.join("/");
+  return rest.replace(/\/+$/, "") === currentRest.replace(/\/+$/, "");
+}
+
+function promoteLocaleRedirect(request: NextRequest, response: NextResponse): NextResponse {
+  if (response.status !== 307 && response.status !== 302) return response;
+  const location = response.headers.get("location");
+  if (!location || !isLocalePrefixRedirect(request.nextUrl.pathname, location, request.url)) {
+    return response;
+  }
+
+  const redirected = NextResponse.redirect(location, 308);
+  response.cookies.getAll().forEach((cookie) => {
+    redirected.cookies.set(cookie);
+  });
+  return redirected;
+}
+
+/** Continue the request and tell the locale layout which URL is being rendered. */
+function nextWithPathname(request: NextRequest): NextResponse {
+  const headers = new Headers(request.headers);
+  headers.set("x-lenix-pathname", request.nextUrl.pathname);
+  return NextResponse.next({ request: { headers } });
+}
+
+/** So the locale layout can build a self canonical for this request. */
+function attachPathname(response: NextResponse, pathname: string): NextResponse {
+  if (response.status >= 300 && response.status < 400) return response;
+  const key = "x-lenix-pathname";
+  response.headers.set(`x-middleware-request-${key}`, pathname);
+  const existing = response.headers.get("x-middleware-override-headers");
+  const names = new Set(
+    (existing ?? "")
+      .split(",")
+      .map((name) => name.trim())
+      .filter(Boolean),
+  );
+  names.add(key);
+  response.headers.set("x-middleware-override-headers", [...names].join(","));
+  return response;
+}
+
 function disabledPromoResponse(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const first = pathname.split("/").filter(Boolean)[0];
@@ -80,8 +149,9 @@ export default async function proxy(request: NextRequest) {
   }
 
   // Hidden promo routes: real 404, no redirect to another page.
+  // Unprefixed /airdrop and /giveaway are rewritten, not sent to /en/...
   if (isDisabledPromoPath(pathname)) {
-    return disabledPromoResponse(request);
+    return attachPathname(disabledPromoResponse(request), pathname);
   }
 
   // Unprefixed /admin → /{locale}/admin (admin always uses locale in the URL)
@@ -95,7 +165,7 @@ export default async function proxy(request: NextRequest) {
         : routing.defaultLocale;
     const url = request.nextUrl.clone();
     url.pathname = `/${locale}${pathname}`;
-    return NextResponse.redirect(url);
+    return NextResponse.redirect(url, 308);
   }
 
   const path = getPathnameWithoutLocale(pathname);
@@ -118,7 +188,7 @@ export default async function proxy(request: NextRequest) {
     }
 
     // Keep locale in the URL; skip Supabase user-session gate for admin
-    return NextResponse.next();
+    return nextWithPathname(request);
   }
 
   // For non-admin routes: update Supabase session first
@@ -137,7 +207,8 @@ export default async function proxy(request: NextRequest) {
     intlResponse.cookies.set(cookie.name, cookie.value, cookie);
   });
 
-  return intlResponse;
+  attachPathname(intlResponse, pathname);
+  return promoteLocaleRedirect(request, intlResponse);
 }
 
 export const config = {

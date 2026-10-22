@@ -33,6 +33,26 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // www is a second host that currently serves the same site. Send it to the apex
+  // before next-intl runs. Path and query are preserved.
+  // A Vercel Domains redirect would do this at the edge instead; left unset on purpose.
+  async redirects() {
+    const host = [{ type: "host" as const, value: "www.lenixprotocol.com" }];
+    return [
+      {
+        source: "/",
+        has: host,
+        destination: "https://lenixprotocol.com/",
+        permanent: true,
+      },
+      {
+        source: "/:path*",
+        has: host,
+        destination: "https://lenixprotocol.com/:path*",
+        permanent: true,
+      },
+    ];
+  },
   // Fix COOP check / WalletConnect popup: allow same-origin popups
   async headers() {
     return [

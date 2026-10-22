@@ -1,8 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { Link as I18nLink } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { home } from "@/lib/home-styles";
 
 const DOWNLOAD_URL = "https://shorturl.at/FVVpk";
@@ -19,9 +18,9 @@ export default function WalletCTA() {
           <Link href={DOWNLOAD_URL} target="_blank" className={home.btnPrimary}>
             {t("btn_download")}
           </Link>
-          <I18nLink href="/lenix-wallet" className={home.btnSecondary}>
+          <Link href="/lenix-wallet" className={home.btnSecondary}>
             {t("btn_web")}
-          </I18nLink>
+          </Link>
         </div>
       </div>
     </section>

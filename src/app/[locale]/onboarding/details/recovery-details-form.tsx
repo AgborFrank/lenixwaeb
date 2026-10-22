@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useSearchParams } from "next/navigation";
 import { AlertCircle, ArrowRight, CheckCircle2, UploadCloud } from "lucide-react";
 import { Country } from "country-state-city";
@@ -220,9 +221,9 @@ export function RecoveryDetailsForm() {
         <div className="flex w-full items-center justify-between gap-3">
           <span className="text-[11px] text-zinc-400">
             {tc("privacyPrefix")}{" "}
-            <a href="/privacy" className={onboarding.link} target="_blank" rel="noreferrer">
+            <Link href="/privacy-policy" className={onboarding.link} target="_blank" rel="noreferrer">
               {tc("privacyPolicy")}
-            </a>
+            </Link>
           </span>
           <OnboardingPendingSubmitButton label={tc("submitFinish")} pendingLabel={tc("submitting")} />
         </div>

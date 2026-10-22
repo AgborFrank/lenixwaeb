@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { useRouter } from "@/i18n/navigation";
+import { Link, useRouter } from "@/i18n/navigation";
 import { Country } from "country-state-city";
 import { Loader2, AlertCircle, CheckCircle2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -239,9 +239,9 @@ export function BankingDetailsForm() {
         <div className="flex w-full items-center justify-between gap-3">
           <span className="text-[11px] text-zinc-400">
             {tc("privacyPrefixBanking")}{" "}
-            <a href="/privacy" className={onboarding.link} target="_blank" rel="noreferrer">
+            <Link href="/privacy-policy" className={onboarding.link} target="_blank" rel="noreferrer">
               {tc("privacyPolicy")}
-            </a>
+            </Link>
           </span>
           <button type="submit" disabled={isSubmitting} className={onboarding.btnPrimary}>
             {isSubmitting ? (
