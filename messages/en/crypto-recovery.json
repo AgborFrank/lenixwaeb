@@ -128,7 +128,7 @@
         "question": "Is my information confidential?",
         "answer": "Yes. Case materials are encrypted, access-controlled, and shared only with parties required to pursue recovery — exchanges, counsel, or authorities — with your approval."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Will funds be returned?",
         "answer": "Not necessarily. Outcomes depend on where funds moved, how quickly the case is reported, and whether custodians or exchanges can act. We assess whether a case looks recoverable before you commit."
       },

@@ -128,7 +128,7 @@
         "question": "Apakah informasi saya rahasia?",
         "answer": "Ya. Materi kasus dienkripsi, aksesnya dikontrol, dan hanya dibagikan kepada pihak yang diperlukan untuk menempuh pemulihan — bursa, penasihat, atau otoritas — dengan persetujuan Anda."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Apakah dana dikembalikan?",
         "answer": "Tidak selalu. Hasil bergantung pada ke mana dana berpindah, seberapa cepat kasus dilaporkan, dan apakah kustodian atau bursa dapat bertindak. Kami menilai apakah kasus layak dilanjutkan sebelum Anda berkomitmen."
       },

@@ -75,8 +75,8 @@
         "title": "Neutral capacity उपलब्ध",
         "desc": "Lenix plaintiff counsel, defense या asset division और valuation disputes में independent expert के रूप में support कर सकता है।"
       },
-      "no_guarantee": {
-        "title": "Completeness की कोई guarantee नहीं",
+      "completeness": {
+        "title": "Completeness की कोई promise नहीं",
         "desc": "पहचान provided leads, chain visibility और lawful access से bounded है। हम बताते हैं available data से क्या recoverable है और क्या नहीं।"
       },
       "disclosure": {

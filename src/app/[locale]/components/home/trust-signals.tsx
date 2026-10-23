@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { home } from "@/lib/home-styles";
 
-const SIGNALS = ["no_fees", "no_seed", "no_custody", "honest", "audited", "chains"] as const;
+const SIGNALS = ["no_fees", "no_seed", "no_custody", "honest", "access", "chains"] as const;
 
 export default function TrustSignals() {
   const t = useTranslations("Home.TrustSignals");

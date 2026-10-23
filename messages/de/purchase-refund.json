@@ -172,7 +172,7 @@
         "question": "Was soll ich anhängen?",
         "answer": "Zahlungshash oder Rechnung, Tracking, Schadensfotos falls vorhanden, und Chat mit der anderen Seite. PDF, JPG, PNG oder WebP, max. 8 MB. Ein Fall kann ohne Datei starten. Schwache Belege verlangsamen nur die Reklamation."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Garantieren Sie eine Erstattung?",
         "answer": "Nein. Geschlossene Reklamationsfenster, fehlende Nachweise und Gegenparteien, die nicht zahlen, scheitern. Wir schließen das schriftlich, statt die Akte zur Schau offen zu halten."
       }

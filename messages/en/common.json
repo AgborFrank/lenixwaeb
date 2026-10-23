@@ -268,9 +268,9 @@
           "title": "Honest case assessment",
           "desc": "If a trail is exhausted or recovery is unlikely, we say so before paid engagement."
         },
-        "audited": {
+        "access": {
           "title": "Access controls",
-          "desc": "Role-based access and monitoring on production flows. No outside auditor is named here."
+          "desc": "Role-based access and monitoring on production flows."
         },
         "chains": {
           "title": "Multi-chain coverage",
@@ -369,8 +369,8 @@
       "subtitle1": "Access controls, monitoring, and written limits on who sees case files.",
       "subtitle2_1": "Read the ",
       "subtitle2_2": "whitepaper",
-      "subtitle2_3": " and audit documentation for architecture, token utility, and security controls.",
-      "col1_text": "Production payment and custody paths use role-based access and monitoring. This site does not name an auditor.",
+      "subtitle2_3": " for architecture, token utility, and security controls.",
+      "col1_text": "Production payment and custody paths use role-based access and monitoring.",
       "col1_btn": "Security practices",
       "col2_text": "The whitepaper explains how recovery, custody, and payment modules connect—and where LNX fits in the protocol design.",
       "col2_btn": "Read whitepaper"
@@ -422,8 +422,8 @@
       "eyebrow": "Smart contracts",
       "title": "Access and monitoring",
       "desc": "Payment and custody paths use role-based permissions. Production flows are monitored for unusual contract activity.",
-      "certik_text": "Admin actions use role-based permissions. Production flows are watched for unusual contract activity.",
-      "certik_link": "About Lenix",
+      "access_text": "Admin actions use role-based permissions. Production flows are watched for unusual contract activity.",
+      "access_link": "About Lenix",
       "items": {
         "contracts": {
           "title": "Contract review scope",

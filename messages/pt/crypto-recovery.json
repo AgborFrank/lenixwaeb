@@ -128,7 +128,7 @@
         "question": "Minhas informações são confidenciais?",
         "answer": "Sim. O material do caso é criptografado, o acesso é controlado e só é compartilhado com quem precisa atuar na recuperação — exchanges, advogados ou autoridades — com a sua autorização."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Os fundos são devolvidos?",
         "answer": "Nem sempre. O resultado depende de para onde os fundos foram, da rapidez com que o caso é comunicado e de os custodiantes ou as exchanges poderem agir. Avaliamos se o caso parece recuperável antes de você se comprometer."
       },

@@ -18,7 +18,7 @@ const FAQ_KEYS = [
   "chargebacks",
   "timeline",
   "evidence",
-  "guarantee",
+  "outcome",
 ] as const;
 
 export default function RefundFAQ() {

@@ -265,8 +265,8 @@
       "subtitle1": "Erişim kontrolleri, izleme ve dosyaları kimin göreceğine dair yazılı sınırlar.",
       "subtitle2_1": "Okuyun: ",
       "subtitle2_2": "tanıtım belgesi",
-      "subtitle2_3": " ve mimari, token faydası ve güvenlik kontrolleri için denetim belgeleri.",
-      "col1_text": "Üretimdeki ödeme ve saklama akışları rol tabanlı erişim ve izleme kullanır. Bu site bir denetçi adı vermez.",
+      "subtitle2_3": " — mimari, token faydası ve güvenlik kontrolleri için.",
+      "col1_text": "Üretimdeki ödeme ve saklama akışları rol tabanlı erişim ve izleme kullanır.",
       "col1_btn": "Güvenlik uygulamaları",
       "col2_text": "Whitepaper, kurtarma, saklama ve ödeme modüllerinin nasıl bağlandığını—ve LNX'in protokol tasarımındaki yerini açıklar.",
       "col2_btn": "Whitepaper"
@@ -365,9 +365,9 @@
           "title": "Dürüst vaka değerlendirmesi",
           "desc": "İz tükendiyse veya kurtarma olası değilse, ücretli taahhütten önce söyleriz."
         },
-        "audited": {
+        "access": {
           "title": "Erişim kontrolleri",
-          "desc": "Rol tabanlı erişim ve üretim akışlarının izlenmesi. Burada dış bir denetçi adı geçmez."
+          "desc": "Rol tabanlı erişim ve üretim akışlarının izlenmesi."
         },
         "chains": {
           "title": "Çoklu zincir kapsamı",
@@ -424,8 +424,8 @@
     "audit": {
       "title": "Erişim ve izleme",
       "desc": "Ödeme ve saklama akışları rol tabanlı izinler kullanır. Üretim akışları olağandışı etkinlik için izlenir.",
-      "certik_text": "Yönetici işlemleri rol tabanlı izinler kullanır. Üretim akışları olağandışı sözleşme etkinliği için izlenir.",
-      "certik_link": "Lenix hakkında",
+      "access_text": "Yönetici işlemleri rol tabanlı izinler kullanır. Üretim akışları olağandışı sözleşme etkinliği için izlenir.",
+      "access_link": "Lenix hakkında",
       "items": {
         "contracts": {
           "title": "Sözleşme inceleme kapsamı",

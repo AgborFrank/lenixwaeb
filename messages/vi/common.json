@@ -265,8 +265,8 @@
       "subtitle1": "Kiểm soát truy cập, giám sát, và giới hạn bằng văn bản về người được xem hồ sơ.",
       "subtitle2_1": "Đọc ",
       "subtitle2_2": "sách trắng",
-      "subtitle2_3": " và tài liệu kiểm toán về kiến trúc, tiện ích token và kiểm soát bảo mật.",
-      "col1_text": "Luồng thanh toán và lưu ký trên sản xuất dùng truy cập theo vai trò và giám sát. Trang này không nêu tên đơn vị kiểm toán.",
+      "subtitle2_3": " về kiến trúc, tiện ích token và kiểm soát bảo mật.",
+      "col1_text": "Luồng thanh toán và lưu ký trên sản xuất dùng truy cập theo vai trò và giám sát.",
       "col1_btn": "Cách làm bảo mật",
       "col2_text": "Whitepaper giải thích cách module thu hồi, lưu ký và thanh toán kết nối—và vị trí LNX trong thiết kế giao thức.",
       "col2_btn": "Whitepaper"
@@ -365,9 +365,9 @@
           "title": "Đánh giá vụ việc trung thực",
           "desc": "Nếu dấu vết cạn hoặc thu hồi khó khả thi, chúng tôi nói rõ trước khi cam kết trả phí."
         },
-        "audited": {
+        "access": {
           "title": "Kiểm soát truy cập",
-          "desc": "Truy cập theo vai trò và giám sát luồng sản xuất. Không nêu tên đơn vị kiểm toán bên ngoài ở đây."
+          "desc": "Truy cập theo vai trò và giám sát luồng sản xuất."
         },
         "chains": {
           "title": "Phủ sóng đa chuỗi",
@@ -424,8 +424,8 @@
     "audit": {
       "title": "Truy cập và giám sát",
       "desc": "Luồng thanh toán và lưu ký dùng quyền theo vai trò. Luồng sản xuất được theo dõi khi có hoạt động bất thường.",
-      "certik_text": "Thao tác quản trị dùng quyền theo vai trò. Luồng sản xuất được theo dõi khi hợp đồng có hoạt động bất thường.",
-      "certik_link": "Về Lenix",
+      "access_text": "Thao tác quản trị dùng quyền theo vai trò. Luồng sản xuất được theo dõi khi hợp đồng có hoạt động bất thường.",
+      "access_link": "Về Lenix",
       "items": {
         "contracts": {
           "title": "Phạm vi xem xét hợp đồng",

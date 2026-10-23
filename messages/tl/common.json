@@ -265,8 +265,8 @@
       "subtitle1": "Kontrol sa access, pagsubaybay, at nakasulat na hangganan kung sino ang makakakita ng file ng kaso.",
       "subtitle2_1": "Basahin ang ",
       "subtitle2_2": "dokumento",
-      "subtitle2_3": " at audit documentation para sa architecture, token utility, at security controls.",
-      "col1_text": "Ang production na bayad at custody ay gumagamit ng access ayon sa tungkulin at pagsubaybay. Hindi pinapangalanan ng site na ito ang isang auditor.",
+      "subtitle2_3": " para sa arkitektura, gamit ng token, at mga kontrol sa seguridad.",
+      "col1_text": "Ang production na bayad at custody ay gumagamit ng access ayon sa tungkulin at pagsubaybay.",
       "col1_btn": "Mga gawain sa seguridad",
       "col2_text": "Ipinapaliwanag ng whitepaper kung paano nagkakaugnay ang recovery, custody, at payment modules—at kung saan pumapasok ang LNX sa protocol design.",
       "col2_btn": "Whitepaper"
@@ -365,9 +365,9 @@
           "title": "Tapat na case assessment",
           "desc": "Kung ubos na ang trail o unlikely ang recovery, sasabihin namin bago ang paid engagement."
         },
-        "audited": {
+        "access": {
           "title": "Kontrol sa access",
-          "desc": "Access ayon sa tungkulin at pagsubaybay sa production flow. Walang panlabas na auditor na pinangalanan dito."
+          "desc": "Access ayon sa tungkulin at pagsubaybay sa production flow."
         },
         "chains": {
           "title": "Saklaw na multi-chain",
@@ -424,8 +424,8 @@
     "audit": {
       "title": "Access at pagsubaybay",
       "desc": "Ang daloy ng bayad at custody ay gumagamit ng pahintulot ayon sa tungkulin. Sinusubaybayan ang production flow para sa di-karaniwang aktibidad.",
-      "certik_text": "Ang mga admin na aksyon ay gumagamit ng pahintulot ayon sa tungkulin. Sinusubaybayan ang production flow para sa di-karaniwang aktibidad ng kontrata.",
-      "certik_link": "Tungkol sa Lenix",
+      "access_text": "Ang mga admin na aksyon ay gumagamit ng pahintulot ayon sa tungkulin. Sinusubaybayan ang production flow para sa di-karaniwang aktibidad ng kontrata.",
+      "access_link": "Tungkol sa Lenix",
       "items": {
         "contracts": {
           "title": "Saklaw ng pagsusuri ng kontrata",

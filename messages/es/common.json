@@ -265,8 +265,8 @@
       "subtitle1": "Controles de acceso, monitoreo y límites escritos sobre quién ve los expedientes.",
       "subtitle2_1": "Lea el ",
       "subtitle2_2": "libro blanco",
-      "subtitle2_3": " y la documentación de auditoría sobre arquitectura, utilidad del token y controles de seguridad.",
-      "col1_text": "Los flujos de pago y custodia en producción usan acceso por roles y monitoreo. Este sitio no nombra un auditor.",
+      "subtitle2_3": " sobre la arquitectura, la utilidad del token y los controles de seguridad.",
+      "col1_text": "Los flujos de pago y custodia en producción usan acceso por roles y monitoreo.",
       "col1_btn": "Prácticas de seguridad",
       "col2_text": "El whitepaper explica cómo se conectan recuperación, custodia y pagos—y dónde encaja LNX en el diseño del protocolo.",
       "col2_btn": "Whitepaper"
@@ -365,9 +365,9 @@
           "title": "Evaluación honesta del caso",
           "desc": "Si el rastro está agotado o la recuperación es improbable, lo decimos antes de un compromiso de pago."
         },
-        "audited": {
+        "access": {
           "title": "Controles de acceso",
-          "desc": "Acceso por roles y monitoreo de los flujos de producción. Aquí no se nombra un auditor externo."
+          "desc": "Acceso por roles y monitoreo de los flujos de producción."
         },
         "chains": {
           "title": "Cobertura multi-cadena",
@@ -424,8 +424,8 @@
     "audit": {
       "title": "Acceso y monitoreo",
       "desc": "Los flujos de pago y custodia usan permisos por roles. Los flujos de producción se vigilan ante actividad inusual.",
-      "certik_text": "Las acciones de administración usan permisos por roles. Los flujos de producción se vigilan ante actividad inusual de contratos.",
-      "certik_link": "Sobre Lenix",
+      "access_text": "Las acciones de administración usan permisos por roles. Los flujos de producción se vigilan ante actividad inusual de contratos.",
+      "access_link": "Sobre Lenix",
       "items": {
         "contracts": {
           "title": "Alcance de revisión",

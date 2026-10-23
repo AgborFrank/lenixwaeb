@@ -172,7 +172,7 @@
         "question": "Cosa devo allegare?",
         "answer": "Hash di pagamento o fattura, tracking, foto del danno se le hai, e qualsiasi chat con l'altra parte. PDF, JPG, PNG o WebP, 8 MB max. Un caso può partire senza file. Prove deboli rallentano solo il reclamo."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Garantite un rimborso?",
         "answer": "No. Finestre di reclamo chiuse, prove mancanti e controparti che non pagano falliscono. Chiudiamo quei casi per iscritto invece di lasciare il fascicolo aperto per apparenza."
       }

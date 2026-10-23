@@ -18,9 +18,9 @@ export default async function SecurityAssurance() {
 
         <div className="grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
           <article className={`${home.card} ${home.cardBody} flex flex-col items-start`}>
-            <p className="text-sm text-neutral-300 leading-relaxed mb-6 flex-1">{t("audit.certik_text")}</p>
+            <p className="text-sm text-neutral-300 leading-relaxed mb-6 flex-1">{t("audit.access_text")}</p>
             <Link href="/about" className={home.textLink}>
-              {t("audit.certik_link")} →
+              {t("audit.access_link")} →
             </Link>
           </article>
 

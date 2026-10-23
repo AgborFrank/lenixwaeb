@@ -128,7 +128,7 @@
         "question": "Sind meine Angaben vertraulich?",
         "answer": "Ja. Fallunterlagen sind verschlüsselt, der Zugriff ist kontrolliert, und sie werden nur mit den Stellen geteilt, die für die Rückgewinnung nötig sind — Börsen, Anwälte oder Behörden — mit Ihrer Zustimmung."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Werden Gelder zurückgegeben?",
         "answer": "Nicht unbedingt. Das Ergebnis hängt davon ab, wohin die Gelder geflossen sind, wie schnell der Fall gemeldet wird und ob Verwahrer oder Börsen handeln können. Wir prüfen vor einer Beauftragung, ob eine Weiterverfolgung realistisch ist."
       },

@@ -128,7 +128,7 @@
         "question": "Mes informations sont-elles confidentielles ?",
         "answer": "Oui. Les pièces du dossier sont chiffrées, l'accès est contrôlé, et elles ne sont partagées qu'avec les parties nécessaires à la récupération — exchanges, conseils ou autorités — avec votre accord."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Les fonds sont-ils rendus ?",
         "answer": "Pas nécessairement. Le résultat dépend de la destination des fonds, de la rapidité du signalement et de la capacité des dépositaires ou des exchanges à agir. Nous évaluons si le dossier semble récupérable avant que vous vous engagiez."
       },

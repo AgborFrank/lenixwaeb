@@ -265,8 +265,8 @@
       "subtitle1": "Kontrol akses, pemantauan, dan batas tertulis tentang siapa yang melihat berkas kasus.",
       "subtitle2_1": "Baca ",
       "subtitle2_2": "makalah",
-      "subtitle2_3": " dan dokumentasi audit tentang arsitektur, utilitas token, dan kontrol keamanan.",
-      "col1_text": "Alur pembayaran dan kustodi produksi memakai akses berbasis peran dan pemantauan. Situs ini tidak menyebut auditor.",
+      "subtitle2_3": " tentang arsitektur, utilitas token, dan kontrol keamanan.",
+      "col1_text": "Alur pembayaran dan kustodi produksi memakai akses berbasis peran dan pemantauan.",
       "col1_btn": "Praktik keamanan",
       "col2_text": "Whitepaper menjelaskan bagaimana modul pemulihan, kustodi, dan pembayaran terhubung—dan posisi LNX dalam desain protokol.",
       "col2_btn": "Whitepaper"
@@ -365,9 +365,9 @@
           "title": "Penilaian kasus yang jujur",
           "desc": "Jika jejak habis atau pemulihan tidak mungkin, kami sampaikan sebelum engagement berbayar."
         },
-        "audited": {
+        "access": {
           "title": "Kontrol akses",
-          "desc": "Akses berbasis peran dan pemantauan alur produksi. Tidak ada auditor luar yang disebut di sini."
+          "desc": "Akses berbasis peran dan pemantauan alur produksi."
         },
         "chains": {
           "title": "Cakupan multi-chain",
@@ -424,8 +424,8 @@
     "audit": {
       "title": "Akses dan pemantauan",
       "desc": "Alur pembayaran dan kustodi memakai izin berbasis peran. Alur produksi dipantau untuk aktivitas yang tidak biasa.",
-      "certik_text": "Tindakan admin memakai izin berbasis peran. Alur produksi dipantau untuk aktivitas kontrak yang tidak biasa.",
-      "certik_link": "Tentang Lenix",
+      "access_text": "Tindakan admin memakai izin berbasis peran. Alur produksi dipantau untuk aktivitas kontrak yang tidak biasa.",
+      "access_link": "Tentang Lenix",
       "items": {
         "contracts": {
           "title": "Cakupan tinjauan kontrak",

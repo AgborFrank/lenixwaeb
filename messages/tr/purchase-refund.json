@@ -172,7 +172,7 @@
         "question": "Ne eklemeliyim?",
         "answer": "Ödeme hash'i veya fatura, takip, varsa hasar fotoğrafları ve diğer tarafla sohbet. PDF, JPG, PNG veya WebP, en fazla 8 MB. Dosya dosyasız başlayabilir. Zayıf kanıt yalnızca talebi yavaşlatır."
       },
-      "guarantee": {
+      "outcome": {
         "question": "İadeyi garanti ediyor musunuz?",
         "answer": "Hayır. Kapalı talep pencereleri, eksik kanıt ve ödemeyen karşı taraflar başarısız olur. Gösteriş için açık tutmak yerine bunları yazılı kapatırız."
       }

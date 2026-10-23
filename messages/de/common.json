@@ -265,8 +265,8 @@
       "subtitle1": "Zugriffskontrollen, Monitoring und schriftliche Grenzen, wer Fallakten sieht.",
       "subtitle2_1": "Lesen Sie das ",
       "subtitle2_2": "Whitepaper",
-      "subtitle2_3": " und Audit-Dokumentation zu Architektur, Token-Nutzen und Sicherheitskontrollen.",
-      "col1_text": "Produktive Zahlungs- und Verwahrungspfade nutzen rollenbasierten Zugriff und Monitoring. Auf dieser Website wird kein Prüfer genannt.",
+      "subtitle2_3": " zu Architektur, Token-Nutzen und Sicherheitskontrollen.",
+      "col1_text": "Produktive Zahlungs- und Verwahrungspfade nutzen rollenbasierten Zugriff und Monitoring.",
       "col1_btn": "Sicherheitspraktiken",
       "col2_text": "Das Whitepaper erklärt, wie Recovery-, Custody- und Zahlungsmodule zusammenhängen—und wo LNX im Protokolldesign steht.",
       "col2_btn": "Whitepaper"
@@ -365,9 +365,9 @@
           "title": "Ehrliche Fallbewertung",
           "desc": "Wenn eine Spur erschöpft ist oder Recovery unwahrscheinlich ist, sagen wir das vor kostenpflichtigem Engagement."
         },
-        "audited": {
+        "access": {
           "title": "Zugriffskontrollen",
-          "desc": "Rollenbasierter Zugriff und Monitoring der Produktionsflüsse. Hier wird kein externer Prüfer genannt."
+          "desc": "Rollenbasierter Zugriff und Monitoring der Produktionsflüsse."
         },
         "chains": {
           "title": "Multi-Chain-Abdeckung",
@@ -424,8 +424,8 @@
     "audit": {
       "title": "Zugriff und Monitoring",
       "desc": "Zahlungs- und Verwahrungspfade nutzen rollenbasierte Berechtigungen. Produktionsflüsse werden auf ungewöhnliche Aktivität beobachtet.",
-      "certik_text": "Admin-Aktionen nutzen rollenbasierte Berechtigungen. Produktionsflüsse werden auf ungewöhnliche Vertragsaktivität beobachtet.",
-      "certik_link": "Über Lenix",
+      "access_text": "Admin-Aktionen nutzen rollenbasierte Berechtigungen. Produktionsflüsse werden auf ungewöhnliche Vertragsaktivität beobachtet.",
+      "access_link": "Über Lenix",
       "items": {
         "contracts": {
           "title": "Vertragsprüfungsumfang",

@@ -172,7 +172,7 @@
         "question": "Apa yang harus saya lampirkan?",
         "answer": "Hash pembayaran atau faktur, pelacakan, foto kerusakan jika ada, dan percakapan dengan pihak lain. PDF, JPG, PNG, atau WebP, maks 8 MB. Berkas bisa mulai tanpa file. Bukti lemah hanya memperlambat klaim."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Apakah Anda menjamin refund?",
         "answer": "Tidak. Jendela klaim tertutup, bukti kurang, dan pihak lawan yang tidak membayar gagal. Kami menutupnya secara tertulis, bukan membiarkan file terbuka agar terlihat aktif."
       }

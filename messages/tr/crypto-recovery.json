@@ -128,7 +128,7 @@
         "question": "Bilgilerim gizli mi?",
         "answer": "Evet. Dosya malzemesi şifrelidir, erişim kontrollüdür ve yalnızca kurtarmayı sürdürmek için gereken taraflarla — borsalar, avukatlar veya yetkililer — sizin onayınızla paylaşılır."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Fonlar iade edilir mi?",
         "answer": "Her zaman değil. Sonuç, fonların nereye gittiğine, dosyanın ne kadar çabuk bildirildiğine ve saklayıcıların veya borsaların harekete geçip geçemeyeceğine bağlıdır. Siz bağlanmadan önce dosyanın ilerleyip ilerleyemeyeceğini değerlendiririz."
       },

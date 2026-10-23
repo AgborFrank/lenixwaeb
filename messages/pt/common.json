@@ -265,8 +265,8 @@
       "subtitle1": "Controlos de acesso, monitorização e limites escritos sobre quem vê os processos.",
       "subtitle2_1": "Leia o ",
       "subtitle2_2": "livro branco",
-      "subtitle2_3": " e a documentação de auditoria sobre arquitetura, utilidade do token e controlos de segurança.",
-      "col1_text": "Os fluxos de pagamento e custódia em produção usam acesso por função e monitorização. Este site não nomeia um auditor.",
+      "subtitle2_3": " sobre a arquitetura, a utilidade do token e os controlos de segurança.",
+      "col1_text": "Os fluxos de pagamento e custódia em produção usam acesso por função e monitorização.",
       "col1_btn": "Práticas de segurança",
       "col2_text": "O whitepaper explica como recovery, custódia e pagamentos se ligam—e onde o LNX se encaixa no design do protocolo.",
       "col2_btn": "Whitepaper"
@@ -365,9 +365,9 @@
           "title": "Avaliação honesta do caso",
           "desc": "Se o rasto estiver esgotado ou a recuperação for improvável, dizemo-lo antes de um compromisso pago."
         },
-        "audited": {
+        "access": {
           "title": "Controlos de acesso",
-          "desc": "Acesso por função e monitorização dos fluxos de produção. Nenhum auditor externo é nomeado aqui."
+          "desc": "Acesso por função e monitorização dos fluxos de produção."
         },
         "chains": {
           "title": "Cobertura multi-chain",
@@ -424,8 +424,8 @@
     "audit": {
       "title": "Acesso e monitorização",
       "desc": "Os fluxos de pagamento e custódia usam permissões por função. Os fluxos de produção são vigiados quanto a atividade invulgar.",
-      "certik_text": "As ações de administração usam permissões por função. Os fluxos de produção são vigiados quanto a atividade invulgar dos contratos.",
-      "certik_link": "Sobre a Lenix",
+      "access_text": "As ações de administração usam permissões por função. Os fluxos de produção são vigiados quanto a atividade invulgar dos contratos.",
+      "access_link": "Sobre a Lenix",
       "items": {
         "contracts": {
           "title": "Âmbito de revisão",

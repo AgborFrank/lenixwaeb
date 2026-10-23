@@ -265,8 +265,8 @@
       "subtitle1": "Contrôles d'accès, suivi et limites écrites sur qui voit les dossiers.",
       "subtitle2_1": "Consultez le ",
       "subtitle2_2": "livre blanc",
-      "subtitle2_3": " et la documentation d'audit sur l'architecture, l'utilité du token et les contrôles de sécurité.",
-      "col1_text": "Les flux de paiement et de conservation en production utilisent un accès par rôle et un suivi. Ce site ne nomme pas d'auditeur.",
+      "subtitle2_3": " sur l'architecture, l'utilité du token et les contrôles de sécurité.",
+      "col1_text": "Les flux de paiement et de conservation en production utilisent un accès par rôle et un suivi.",
       "col1_btn": "Pratiques de sécurité",
       "col2_text": "Le whitepaper explique comment recovery, custody et paiements s'articulent—et la place de LNX dans le design du protocole.",
       "col2_btn": "Livre blanc"
@@ -372,9 +372,9 @@
           "title": "Évaluation honnête du dossier",
           "desc": "Si une piste est épuisée ou la récupération improbable, nous le disons avant un engagement payant."
         },
-        "audited": {
+        "access": {
           "title": "Contrôles d'accès",
-          "desc": "Accès par rôle et suivi des flux de production. Aucun auditeur externe n'est nommé ici."
+          "desc": "Accès par rôle et suivi des flux de production."
         },
         "chains": {
           "title": "Couverture multi-chaînes",
@@ -424,8 +424,8 @@
     "audit": {
       "title": "Accès et suivi",
       "desc": "Les flux de paiement et de conservation utilisent des permissions par rôle. Les flux de production sont surveillés en cas d'activité inhabituelle.",
-      "certik_text": "Les actions d'administration utilisent des permissions par rôle. Les flux de production sont surveillés en cas d'activité inhabituelle des contrats.",
-      "certik_link": "À propos de Lenix",
+      "access_text": "Les actions d'administration utilisent des permissions par rôle. Les flux de production sont surveillés en cas d'activité inhabituelle des contrats.",
+      "access_link": "À propos de Lenix",
       "items": {
         "contracts": {
           "title": "Périmètre de revue",

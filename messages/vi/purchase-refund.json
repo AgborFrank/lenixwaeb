@@ -172,7 +172,7 @@
         "question": "Tôi nên đính kèm gì?",
         "answer": "Hash thanh toán hoặc hóa đơn, vận đơn, ảnh hỏng nếu có, và chat với bên kia. PDF, JPG, PNG hoặc WebP, tối đa 8 MB. Hồ sơ có thể bắt đầu không cần file. Chứng từ yếu chỉ làm chậm khiếu nại."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Các bạn có bảo đảm hoàn tiền không?",
         "answer": "Không. Cửa sổ khiếu nại đóng, thiếu chứng từ, và đối tác không trả đều thất bại. Chúng tôi đóng bằng văn bản thay vì để hồ sơ mở cho có."
       }
