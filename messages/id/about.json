@@ -7,7 +7,7 @@
     "sub_description": "Mengamankan masa depan digital. Memberdayakan likuiditas global.",
     "stats": {
       "assets_traced": "Aset Terlacak",
-      "assets_count": "$850 Juta+",
+      "assets_count": "Di rantai",
       "credit_checks": "Pengecekan Kredit",
       "credit_count": "0",
       "jurisdictions": "Yurisdiksi",
@@ -30,7 +30,7 @@
     "finance": {
       "title": "Pemberdayaan Finansial",
       "subtitle": "Likuiditas instan dengan jaminan tapi tanpa menjual kriptomu.",
-      "description": "Dapatkan pinjaman dana kripto lebih cepat, aman, dan tanpa syarat kelancaran bayar melalui pengecekan skor kredit. Model penyimpanan terdesentralisasi kami menjamin aset Anda tetap terlindungi selama Anda membuka modal yang Anda perlukan untuk berinvestasi.",
+      "description": "Dapatkan pinjaman dana kripto lebih cepat, aman, dan tanpa syarat kelancaran bayar melalui pengecekan skor kredit. Agunan tetap di brankas terpisah saat Anda menggunakan modal yang diperlukan.",
       "points": {
         "approval": "Persetujuan dan Cair Modal Cepat",
         "credit": "Nol Persyaratan untuk Skor Kredit",
@@ -66,7 +66,7 @@
       },
       "uptime": {
         "title": "Waktu Operasional Platform (Uptime)",
-        "subtitle": "Jaminan Keandalan!",
+        "subtitle": "Ketersediaan",
         "desc": "Ketersediaan Konsisten"
       },
       "team": {
@@ -87,9 +87,9 @@
     "title2": " Kepemimpinan Industri",
     "subtitle": "Dari tim elit peneliti keamanan hingga platform global yang mengamankan aset digital dan membuka likuiditas. Inilah bagaimana kami berevolusi.",
     "step1": {
-      "title": "2021 - Langkah Awal",
-      "desc": "Didirikan oleh veteran keamanan siber dan ahli forensik elit, Lenix Protocol lahir dari misi sederhana: melindungi integritas blockchain dan melacak aset digital yang dicuri.",
-      "tag1": "Agensi Didirikan",
+      "title": "Lingkup kerja",
+      "desc": "Lenix Protocol melacak aset digital yang dicuri dan meninjau apakah investigasi pada buku besar publik dapat dilanjutkan.",
+      "tag1": "Pelacakan",
       "tag2": "Algoritma Pelacakan Pertama",
       "photo": "Foto Tim Pendiri"
     },
@@ -116,8 +116,8 @@
     },
     "step7": {
       "title": "2027 - Menjadi Pemimpin Industri",
-      "desc": "Hari ini, kami adalah otoritas global yang diakui dalam forensik blockchain dan penyedia likuiditas kripto instan terkemuka, melacak rekor hingga lebih dari $850 juta.",
-      "tag1": "Mencapai Angka $850 Juta",
+      "desc": "Hari ini, kami adalah otoritas global yang diakui dalam forensik blockchain dan penyedia likuiditas kripto instan terkemuka.",
+      "tag1": "Pelacakan di rantai",
       "tag2": "Pemberi Pinjaman Terkemuka",
       "photo": "Penghargaan Industri Dikenal Luas"
     },

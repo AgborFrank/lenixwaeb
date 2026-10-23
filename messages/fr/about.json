@@ -7,7 +7,7 @@
     "sub_description": "Sécuriser l'avenir numérique. Renforcer les liquidités mondiales.",
     "stats": {
       "assets_traced": "Actifs Retracés",
-      "assets_count": "850M$+",
+      "assets_count": "Sur chaîne",
       "credit_checks": "Vérifications de Crédit",
       "credit_count": "0",
       "jurisdictions": "Juridictions",
@@ -30,7 +30,7 @@
     "finance": {
       "title": "Autonomie Financière",
       "subtitle": "Des liquidités instantanées sans vendre vos cryptos.",
-      "description": "Accédez à des prêts cryptos rapides, sécurisés et surdimensionnés, sans aucune vérification de solvabilité. Nos modèles de garde décentralisée garantissent la protection de vos actifs pendant que vous débloquez le capital nécessaire pour investir ou gérer vos dépenses.",
+      "description": "Accédez à des prêts cryptos rapides, sécurisés et surdimensionnés, sans aucune vérification de solvabilité. Le collatéral reste dans des coffres séparés pendant que vous débloquez le capital nécessaire.",
       "points": {
         "approval": "Approbation & Versement Instantanés",
         "credit": "Aucun Pointage de Crédit Requis",
@@ -66,7 +66,7 @@
       },
       "uptime": {
         "title": "Disponibilité",
-        "subtitle": "Garantie de fiabilité",
+        "subtitle": "Disponibilité",
         "desc": "Disponibilité constante"
       },
       "team": {
@@ -87,9 +87,9 @@
     "title2": " le Sommet de l'Industrie",
     "subtitle": "D'une équipe d'élite en cybersécurité à une plateforme mondiale sécurisant les actifs numériques et débloquant des liquidités pour des millions. Voici notre évolution.",
     "step1": {
-      "title": "2021 - Les Débuts",
-      "desc": "Fondée par des vétérans de la cybersécurité et des enquêteurs légistes d'élite, Lenix Protocol est née d'une mission simple : protéger l'intégrité de la blockchain et retrouver les actifs numériques volés.",
-      "tag1": "Fondation de l'Agence",
+      "title": "Le mandat",
+      "desc": "Lenix Protocol retrace les actifs numériques volés et examine si une enquête sur le registre public peut avancer.",
+      "tag1": "Traçage",
       "tag2": "Premier Algo de Traçage",
       "photo": "Photo de l'Équipe Fondatrice"
     },
@@ -116,8 +116,8 @@
     },
     "step7": {
       "title": "2027 - Leader de l'Industrie",
-      "desc": "Aujourd'hui, nous sommes l'autorité mondiale reconnue en juricomptabilité blockchain et le leader de la liquidité crypto instantanée, avec plus de 850 M$ retracés et des milliards de prêts sécurisés.",
-      "tag1": "Plus de 850M$ Retracés",
+      "desc": "Aujourd'hui, nous sommes l'autorité mondiale reconnue en juricomptabilité blockchain et le leader de la liquidité crypto instantanée, avec des milliards de prêts sécurisés.",
+      "tag1": "Traçage sur chaîne",
       "tag2": "Prêteur de Premier Plan",
       "photo": "Reconnaissance de l'Industrie"
     },

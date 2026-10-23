@@ -4,7 +4,8 @@
     "back": "返回",
     "logoAlt": "Lenix Protocol",
     "progressAria": "进度",
-    "asideAria": "帮助与信息"
+    "asideAria": "帮助与信息",
+    "securityNote": "案件资料在发送前于浏览器内加密。"
   },
   "Progress": {
     "stepOf": "第 {current}/{total} 步",
@@ -87,7 +88,7 @@
     "recovery": {
       "title": "案件受理",
       "body": "提供准确的交易数据，帮助我们追踪资金并规划下一步。",
-      "bullet1": "认证分析师的链上分析",
+      "bullet1": "取证团队进行的链上分析",
       "bullet2": "证据留存供法律使用",
       "bullet3": "案件进展实时在面板展示"
     },

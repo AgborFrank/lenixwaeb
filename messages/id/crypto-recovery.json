@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Layanan pemulihan aset kripto tersertifikasi | Lenix Protocol",
-    "description": "Pemulihan profesional mata uang kripto yang hilang atau dicuri, dengan tingkat keberhasilan 94%. Khusus pemulihan kata sandi wallet dan investigasi penipuan yang dipimpin forensik.",
+    "title": "Pemulihan aset kripto | Lenix Protocol",
+    "description": "Pemulihan wallet dan seed phrase, plus forensik blockchain dan pelacakan mata uang kripto yang hilang atau dicuri. Cakupan dinilai sebelum pekerjaan berbayar.",
     "keywords": "Pemulihan kripto, Pemulihan Bitcoin curian, Pulihkan wallet hilang, Investigasi penipuan kripto, Forensik blockchain"
   },
   "Hero": {
-    "eyebrow": "Pemulihan aset tersertifikasi",
+    "eyebrow": "Pemulihan aset",
     "title": "Pemulihan berbasis forensik untuk kripto yang dicuri atau salah kirim",
     "description": "Penyidik Lenix menelusuri pergerakan on-chain, menyiapkan berkas untuk bursa dan penegak hukum, serta mengoordinasikan pembekuan aset saat pemulihan masih memungkinkan.",
     "submit": "Ajukan kasus",
@@ -48,7 +48,9 @@
     "traced": "Aset yang dilacak dan dipantau",
     "cases": "Kasus yang ditinjau",
     "jurisdictions": "Yurisdiksi yang dicakup",
-    "intake": "Penerimaan insiden"
+    "intake": "Penerimaan insiden",
+    "traced_value": "Di rantai",
+    "cases_value": "Tinjauan kasus"
   },
   "Features": {
     "eyebrow": "Kemampuan",
@@ -126,9 +128,9 @@
         "question": "Apakah informasi saya rahasia?",
         "answer": "Ya. Materi kasus dienkripsi, aksesnya dikontrol, dan hanya dibagikan kepada pihak yang diperlukan untuk menempuh pemulihan — bursa, penasihat, atau otoritas — dengan persetujuan Anda."
       },
-      "guarantee": {
-        "question": "Apakah pemulihan dijamin?",
-        "answer": "Tidak ada firma yang bertanggung jawab dapat menjamin pemulihan. Hasil bergantung pada ke mana dana berpindah, seberapa cepat kasus dilaporkan, dan apakah kustodian atau bursa dapat bertindak. Sebelum Anda berkomitmen, kami memberi penilaian jujur tentang kemungkinan pemulihan."
+      "outcome": {
+        "question": "Apakah dana dikembalikan?",
+        "answer": "Tidak selalu. Hasil bergantung pada ke mana dana berpindah, seberapa cepat kasus dilaporkan, dan apakah kustodian atau bursa dapat bertindak. Kami menilai apakah kasus layak dilanjutkan sebelum Anda berkomitmen."
       },
       "include": {
         "question": "Apa yang harus saya sertakan saat mengajukan kasus?",

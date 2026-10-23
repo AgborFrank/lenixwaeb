@@ -75,7 +75,7 @@
         "title": "Capacidade neutra disponível",
         "desc": "A Lenix pode apoiar advogados do autor, defesa ou atuar como perito independente em partilha de ativos e disputas de avaliação."
       },
-      "no_guarantee": {
+      "completeness": {
         "title": "Sem garantia de completude",
         "desc": "A identificação é limitada por pistas fornecidas, visibilidade on-chain e acesso legal. Indicamos o que é e não é recuperável dos dados disponíveis."
       },

@@ -7,7 +7,7 @@
     "sub_description": "Proteggere il futuro digitale. Potenziare la liquidità globale.",
     "stats": {
       "assets_traced": "Asset Tracciati",
-      "assets_count": "$850M+",
+      "assets_count": "Sulla catena",
       "credit_checks": "Controlli del Credito",
       "credit_count": "0",
       "jurisdictions": "Giurisdizioni",
@@ -30,7 +30,7 @@
     "finance": {
       "title": "Empowerment Finanziario",
       "subtitle": "Liquidità istantanea senza vendere le tue crypto.",
-      "description": "Accedi a prestiti crypto rapidi, sicuri e sovracollateralizzati senza alcun controllo del punteggio di credito. I nostri modelli di custodia decentralizzata garantiscono che i tuoi asset rimangano protetti mentre sblocchi il capitale di cui hai bisogno.",
+      "description": "Accedi a prestiti crypto rapidi, sicuri e sovracollateralizzati senza alcun controllo del punteggio di credito. Il collaterale resta in caveau separati mentre sblocchi il capitale di cui hai bisogno.",
       "points": {
         "approval": "Approvazione ed Erogazione del Prestito Istantanee",
         "credit": "Nessun Requisito di Punteggio di Credito",
@@ -66,7 +66,7 @@
       },
       "uptime": {
         "title": "Uptime della Piattaforma",
-        "subtitle": "Garanzia di affidabilità",
+        "subtitle": "Disponibilità",
         "desc": "Disponibilità costante"
       },
       "team": {
@@ -87,9 +87,9 @@
     "title2": " la Leadership di Settore",
     "subtitle": "Da un team d'élite di ricercatori sulla sicurezza a una piattaforma globale che protegge gli asset digitali e sblocca la liquidità per milioni di persone. Ecco come ci siamo evoluti.",
     "step1": {
-      "title": "2021 - L'Inizio",
-      "desc": "Fondata da veterani della sicurezza informatica e da investigatori forensi d'élite, Lenix Protocol è nata con una semplice missione: proteggere l'integrità della blockchain e tracciare gli asset digitali rubati.",
-      "tag1": "Agenzia Fondata",
+      "title": "Il mandato",
+      "desc": "Lenix Protocol traccia gli asset digitali rubati e valuta se un'indagine sul registro pubblico può procedere.",
+      "tag1": "Tracciamento",
       "tag2": "Primo Algoritmo di Tracciamento",
       "photo": "Foto del Team Fondatore"
     },
@@ -116,8 +116,8 @@
     },
     "step7": {
       "title": "2027 - Leader di Settore",
-      "desc": "Oggi siamo l'autorità globale riconosciuta nell'informatica forense blockchain e il principale fornitore di liquidità crypto istantanea, avendo tracciato oltre 850 milioni di dollari e processato miliardi in prestiti sicuri.",
-      "tag1": "$850M+ Tracciati",
+      "desc": "Oggi siamo l'autorità globale riconosciuta nell'informatica forense blockchain e il principale fornitore di liquidità crypto istantanea, avendo processato miliardi in prestiti sicuri.",
+      "tag1": "Tracciamento sulla catena",
       "tag2": "Prestatore Principale",
       "photo": "Riconoscimento del Settore"
     },

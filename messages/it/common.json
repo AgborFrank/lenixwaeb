@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Forensics blockchain, recupero asset e infrastruttura finanziaria crypto. Protocollo auditato per tracciamento, custodia e pagamenti transfrontalieri.",
+    "company_desc": "Forensics blockchain, recupero asset e infrastruttura finanziaria crypto per tracciamento, custodia e pagamenti transfrontalieri.",
     "headings": {
       "about": "CHI SIAMO",
       "solutions": "SOLUZIONI",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "Recupera"
     },
-    "certification_desc": "Certificato ISO27001. Gestiamo i dati in modo sicuro secondo gli standard internazionali.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, Tutti i diritti riservati."
+    "certification_desc": "Dati dei clienti, fascicoli e registri di pagamento sono conservati con controlli di accesso.",
+    "copyright": "© 2026 Lenix Protocol"
   },
   "languagePicker": {
     "title": "Seleziona lingua",
@@ -165,7 +165,7 @@
       "cards": {
         "security": {
           "title": "Sicurezza blockchain",
-          "desc": "Vault auditati, custody multi-sig e monitoraggio per team che devono custodire asset in sicurezza on-chain.",
+          "desc": "Custodia multi-sig e monitoraggio per i team che tengono asset on-chain.",
           "cta": "Vedi sicurezza"
         },
         "recovery": {
@@ -208,7 +208,7 @@
       "title2": "recupero integrato",
       "title3": ".",
       "point1": "Accetta crypto e liquida in fiat tramite checkout e API merchant.",
-      "point2": "Instrada i proventi tramite custody vault auditata con controlli multi-sig.",
+      "point2": "Instrada i proventi tramite custodia multi-sig.",
       "point3": "Se qualcosa va storto dopo il settlement, lo stesso protocollo supporta tracing e workflow di recupero.",
       "point4_1": "Vedi soluzioni",
       "point4_2": " o ",
@@ -220,7 +220,7 @@
     "Payment": {
       "badge": "Stack del protocollo",
       "title": "Sposta, conserva e recupera valore su un unico livello",
-      "subtitle": "Pagamenti, custodia, recupero e prestiti condividono la stessa infrastruttura verificata — non quattro prodotti scollegati.",
+      "subtitle": "Pagamenti, custodia, recupero e prestiti stanno sullo stesso protocollo — non quattro prodotti separati.",
       "cards": {
         "fiat": {
           "title": "Cripto-fiat",
@@ -260,14 +260,14 @@
     },
     "Credibility": {
       "eyebrow": "Verifica",
-      "title1": "Codice auditato. ",
+      "title1": "Pratiche di sicurezza. ",
       "title2": "Controlli documentati.",
-      "subtitle1": "Smart contract revisionati da CertiK e operazioni allineate ISO 27001 per team che richiedono più del marketing.",
+      "subtitle1": "Controlli di accesso, monitoraggio e limiti scritti su chi vede i fascicoli.",
       "subtitle2_1": "Leggi il ",
       "subtitle2_2": "libro bianco",
-      "subtitle2_3": " e la documentazione di audit su architettura, utilità del token e controlli di sicurezza.",
-      "col1_text": "Gli smart contract Lenix Protocol sono stati revisionati da CertiK. L'audit copre i componenti core usati nei flussi di produzione.",
-      "col1_btn": "Docs sicurezza",
+      "subtitle2_3": " su architettura, utilità del token e controlli di sicurezza.",
+      "col1_text": "I flussi di pagamento e custodia in produzione usano accesso per ruolo e monitoraggio.",
+      "col1_btn": "Pratiche di sicurezza",
       "col2_text": "Il whitepaper spiega come recovery, custody e pagamenti si collegano—e dove LNX si inserisce nel design del protocollo.",
       "col2_btn": "Whitepaper"
     },
@@ -365,9 +365,9 @@
           "title": "Valutazione onesta del caso",
           "desc": "Se una traccia è esaurita o il recupero è improbabile, lo diciamo prima di un impegno a pagamento."
         },
-        "audited": {
-          "title": "Stack protocollo auditato",
-          "desc": "Smart contract revisionati da CertiK. Operazioni allineate ai controlli ISO 27001."
+        "access": {
+          "title": "Controlli di accesso",
+          "desc": "Accesso per ruolo e monitoraggio dei flussi di produzione."
         },
         "chains": {
           "title": "Copertura multi-chain",
@@ -380,7 +380,7 @@
       "eyebrow": "Esempio di caso",
       "title1": "Quando fondi rubati raggiungono ",
       "title2": "un exchange custodial",
-      "subtitle": "Esempio anonimizzato. Identificatori modificati. Il processo è rappresentativo—nessuna garanzia di recupero.",
+      "subtitle": "Esempio anonimizzato. Identificatori modificati. Il processo è rappresentativo e non promette che i fondi tornino.",
       "situation": {
         "label": "Situazione",
         "text": "Un wallet aziendale ha inviato USDC a un contratto di phishing. In poche ore i fondi sono passati per due wallet intermedi e depositati su un grande exchange."
@@ -412,20 +412,20 @@
   },
   "Security": {
     "meta": {
-      "title": "Sicurezza e Audit | Lenix Protocol",
-      "description": "Audit CertiK, operazioni allineate ISO 27001 e controlli di sicurezza per l'infrastruttura forense e di recupero Lenix."
+      "title": "Pratiche di sicurezza | Lenix Protocol",
+      "description": "Controlli di accesso, gestione dei fascicoli e monitoraggio per il lavoro forense e di recupero di Lenix Protocol."
     },
     "hero": {
       "eyebrow": "Sicurezza",
-      "title1": "Protocollo auditato. ",
+      "title1": "Pratiche di sicurezza. ",
       "title2": "Controlli documentati.",
-      "subtitle": "Lenix combina revisione esterna degli smart contract con pratiche di sicurezza operativa per team che gestiscono workflow sensibili di recupero e custody."
+      "subtitle": "Come Lenix gestisce accesso, fascicoli e flussi di produzione per recupero e custodia."
     },
     "audit": {
-      "title": "Ambito audit CertiK",
-      "desc": "I contratti core usati nei flussi di produzione sono stati revisionati da CertiK. L'ambito copre componenti critici e superfici di attacco note.",
-      "certik_text": "CertiK ha esaminato gli smart contract Lenix per vulnerabilità comuni, controllo degli accessi e errori logici nei flussi token e vault.",
-      "certik_link": "Docs sicurezza",
+      "title": "Accesso e monitoraggio",
+      "desc": "I flussi di pagamento e custodia usano permessi per ruolo. I flussi di produzione sono osservati per attività insolita.",
+      "access_text": "Le azioni di amministrazione usano permessi per ruolo. I flussi di produzione sono osservati per attività insolita dei contratti.",
+      "access_link": "Informazioni su Lenix",
       "items": {
         "contracts": {
           "title": "Ambito di revisione",
@@ -443,8 +443,8 @@
       "eyebrow": "Smart contract"
     },
     "iso": {
-      "title": "Operazioni allineate ISO 27001",
-      "desc": "Lenix Protocol mantiene pratiche di gestione della sicurezza delle informazioni allineate a ISO 27001 per dati clienti, materiali di indagine e sistemi interni."
+      "title": "Gestione dei fascicoli",
+      "desc": "I dati dei clienti e il materiale di indagine sono conservati con controlli di accesso e condivisi solo con destinatari documentati."
     },
     "practices": {
       "data": {
@@ -466,14 +466,14 @@
     },
     "cta": {
       "title": "Serve documentazione?",
-      "subtitle": "Contatta il team per riepiloghi audit, ISO o revisioni enterprise.",
+      "subtitle": "Contatta il team per domande sui controlli di accesso o sulla gestione dei fascicoli.",
       "btn_primary": "Apri caso",
       "btn_secondary": "Contatta security"
     },
     "assurance": {
       "eyebrow": "Verifica",
       "title": "Cosa possiamo mostrare",
-      "description": "Revisione indipendente dei contratti e controlli operativi documentati — niente claim senza prove.",
+      "description": "Accesso per ruolo, monitoraggio della produzione e limiti scritti su chi vede i fascicoli.",
       "iso_link": "Chi siamo"
     }
   },

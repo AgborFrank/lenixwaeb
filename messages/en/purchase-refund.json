@@ -7,7 +7,7 @@
   "Hero": {
     "eyebrow": "Purchase refunds",
     "title": "Recover value from lost, damaged, and failed purchases",
-    "description": "Submit the order, the payment proof, and what went wrong. We check whether a claim against the carrier, marketplace, or counterparty is recoverable. Instant payout, if any, comes after underwriting. Refunds are not guaranteed.",
+    "description": "Submit the order, the payment proof, and what went wrong. We check whether a claim against the carrier, marketplace, or counterparty is recoverable. Instant payout, if any, comes after underwriting. Refunds are not assured.",
     "submit": "Open a refund case",
     "process": "How a case runs",
     "imageAlt": "Investigator reviewing a purchase dispute file"
@@ -42,7 +42,7 @@
     "points": {
       "lost": "Lost, no-scan, and return-to-sender, where the contract still covers the goods or the postage.",
       "damaged": "Damaged on arrival, with photos and a date that still fits the carrier's deadline.",
-      "late": "Late against a paid delivery guarantee, where the tariff actually pays compensation.",
+      "late": "Late against a paid delivery promise, where the tariff actually pays compensation.",
       "manual": "A buyer reports a missing order. You add it by hand. We do not need a carrier API to start."
     },
     "cta": "Open a seller case",
@@ -62,7 +62,7 @@
         "description": "The box landed, the goods did not survive. Photos, packing, and the order value matter more than a long complaint."
       },
       "delayed": {
-        "title": "Late against a guarantee",
+        "title": "Late against a promise",
         "description": "You paid for a timed service. The parcel missed it. Compensation depends on the carrier's published window, not on how angry the buyer is."
       },
       "short": {
@@ -172,8 +172,8 @@
         "question": "What should I attach?",
         "answer": "Payment hash or invoice, tracking, photos of damage if you have them, and any chat with the other party. PDF, JPG, PNG, or WebP, 8 MB max. A case can start without a file. Weak evidence just slows the claim."
       },
-      "guarantee": {
-        "question": "Do you guarantee a refund?",
+      "outcome": {
+        "question": "Do you promise a refund?",
         "answer": "No. Closed claim windows, missing proof, and counterparties who will not pay all fail. We close those in writing instead of keeping the file open for show."
       }
     }

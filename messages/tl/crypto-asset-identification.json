@@ -75,8 +75,8 @@
         "title": "Available ang neutral capacity",
         "desc": "Maaaring suportahan ng Lenix ang plaintiff counsel, depensa, o magsilbing independent expert sa asset division at valuation dispute."
       },
-      "no_guarantee": {
-        "title": "Walang completeness guarantee",
+      "completeness": {
+        "title": "Walang completeness promise",
         "desc": "Limitado ang identification sa ibinigay na leads, chain visibility, at lawful access. Sinasabi namin kung ano ang at hindi maaaring makuha mula sa available data."
       },
       "disclosure": {

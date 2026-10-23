@@ -7,7 +7,7 @@
     "sub_description": "Sicherung der digitalen Zukunft. Stärkung der globalen Liquidität.",
     "stats": {
       "assets_traced": "Verfolgte Vermögenswerte",
-      "assets_count": "850M$+",
+      "assets_count": "Kettenprüfung",
       "credit_checks": "Bonitätsprüfungen",
       "credit_count": "0",
       "jurisdictions": "Gerichtsbarkeiten",
@@ -30,7 +30,7 @@
     "finance": {
       "title": "Finanzielle Stärkung",
       "subtitle": "Sofortige Liquidität, ohne Ihre Kryptos zu verkaufen.",
-      "description": "Erhalten Sie Zugang zu schnellen, sicheren und überbesicherten Krypto-Krediten ohne Bonitätsprüfung. Unsere dezentralen Verwahrungsmodelle garantieren, dass Ihre Vermögenswerte geschützt bleiben, während Sie das Kapital freisetzen, das Sie zur Skalierung benötigen.",
+      "description": "Erhalten Sie Zugang zu schnellen, sicheren und überbesicherten Krypto-Krediten ohne Bonitätsprüfung. Sicherheiten bleiben in getrennten Verwahrstellen, während Sie Kapital für Investitionen oder Ausgaben freisetzen.",
       "points": {
         "approval": "Sofortige Kreditgenehmigung & Auszahlung",
         "credit": "Keine Bonitätsprüfung erforderlich",
@@ -66,7 +66,7 @@
       },
       "uptime": {
         "title": "Plattform-Verfügbarkeit",
-        "subtitle": "Zuverlässigkeitsgarantie",
+        "subtitle": "Verfügbarkeit",
         "desc": "Konsistente Verfügbarkeit"
       },
       "team": {
@@ -87,9 +87,9 @@
     "title2": " Branchenführerschaft",
     "subtitle": "Vom Elite-Team für Sicherheitsforschung zur globalen Plattform, die digitale Vermögenswerte sichert und Liquidität für Millionen freisetzt. So haben wir uns entwickelt.",
     "step1": {
-      "title": "2021 - Der Anfang",
-      "desc": "Lenix Protocol wurde von Cybersicherheitsveteranen und Elite-Forensikern gegründet und entstand aus einer einfachen Mission: die Integrität der Blockchain schützen und gestohlene digitale Vermögenswerte aufspüren.",
-      "tag1": "Agentur Gegründet",
+      "title": "Der Auftrag",
+      "desc": "Lenix Protocol verfolgt gestohlene digitale Vermögenswerte und prüft, ob eine Untersuchung auf dem öffentlichen Ledger möglich ist.",
+      "tag1": "Nachverfolgung",
       "tag2": "Erster Tracking-Algo",
       "photo": "Foto des Gründungsteams"
     },
@@ -116,8 +116,8 @@
     },
     "step7": {
       "title": "2027 - Branchenführer",
-      "desc": "Heute sind wir die anerkannte globale Autorität in der Blockchain-Forensik und der führende Anbieter von sofortiger Krypto-Liquidität, mit über 850 Millionen US-Dollar aufgespurten Geldern und abgewickelten Krediten in Milliardenhöhe.",
-      "tag1": "$850M+ Verfolgt",
+      "desc": "Heute sind wir die anerkannte globale Autorität in der Blockchain-Forensik und der führende Anbieter von sofortiger Krypto-Liquidität, mit abgewickelten Krediten in Milliardenhöhe.",
+      "tag1": "Nachverfolgung",
       "tag2": "Führender Kreditgeber",
       "photo": "Branchenanerkennung"
     },

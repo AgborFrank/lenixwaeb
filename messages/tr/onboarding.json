@@ -4,7 +4,8 @@
     "back": "Geri",
     "logoAlt": "Lenix Protocol",
     "progressAria": "İlerleme",
-    "asideAria": "Yardım ve bilgi"
+    "asideAria": "Yardım ve bilgi",
+    "securityNote": "Dosya ayrıntıları gönderilmeden önce tarayıcıda şifrelenir."
   },
   "Progress": {
     "stepOf": "Adım {current} / {total}",
@@ -87,7 +88,7 @@
     "recovery": {
       "title": "Kurtarma kaydı",
       "body": "Adli ekibimizin fonları izlemesi ve sonraki adımları kaydetmesi için doğru işlem ayrıntıları verin.",
-      "bullet1": "Sertifikalı analistler tarafından zincir analizi",
+      "bullet1": "Adli ekip tarafından zincir analizi",
       "bullet2": "Hukuki inceleme için saklanan kanıt",
       "bullet3": "Panonuzda vaka güncellemeleri"
     },

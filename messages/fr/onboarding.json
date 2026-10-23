@@ -4,7 +4,8 @@
     "back": "Retour",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Progression",
-    "asideAria": "Aide et informations"
+    "asideAria": "Aide et informations",
+    "securityNote": "Les détails du dossier sont chiffrés dans le navigateur avant l'envoi."
   },
   "Progress": {
     "stepOf": "Étape {current} sur {total}",
@@ -87,7 +88,7 @@
     "recovery": {
       "title": "Intake de récupération",
       "body": "Fournissez des données de transaction précises pour aider notre équipe forensic à tracer les fonds et documenter les prochaines étapes.",
-      "bullet1": "Analyse on-chain par des analystes certifiés",
+      "bullet1": "Analyse on-chain par l'équipe forensique",
       "bullet2": "Preuves conservées pour examen juridique",
       "bullet3": "Mises à jour du dossier dans votre tableau de bord"
     },

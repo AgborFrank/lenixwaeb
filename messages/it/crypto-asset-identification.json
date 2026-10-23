@@ -75,7 +75,7 @@
         "title": "Capacità neutrale disponibile",
         "desc": "Lenix può supportare consulenza attorea, difesa o agire come perito indipendente in divisione patrimoniale e controversie di valutazione."
       },
-      "no_guarantee": {
+      "completeness": {
         "title": "Nessuna garanzia di completezza",
         "desc": "L'identificazione è limitata da indizi forniti, visibilità on-chain e accesso legale. Indichiamo cosa è e non è recuperabile dai dati disponibili."
       },

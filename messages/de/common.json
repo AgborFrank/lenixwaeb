@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Blockchain-Forensik, Asset-Recovery und Krypto-Finanzinfrastruktur. Geprüftes Protokoll für Tracing, Verwahrung und grenzüberschreitende Zahlungen.",
+    "company_desc": "Blockchain-Forensik, Asset-Recovery und Krypto-Finanzinfrastruktur für Tracing, Verwahrung und grenzüberschreitende Zahlungen.",
     "headings": {
       "about": "ÜBER UNS",
       "solutions": "LÖSUNGEN",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "Recovery"
     },
-    "certification_desc": "ISO27001 zertifiziert. Wir schützen Ihre Daten nach internationalen Standards.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, Alle Rechte vorbehalten."
+    "certification_desc": "Kundendaten, Fallakten und Zahlungsunterlagen werden mit Zugriffskontrollen gespeichert.",
+    "copyright": "© 2026 Lenix Protocol"
   },
   "languagePicker": {
     "title": "Sprache auswählen",
@@ -165,7 +165,7 @@
       "cards": {
         "security": {
           "title": "Blockchain-Sicherheit",
-          "desc": "Geprüfte Vaults, Multi-Sig-Custody und Monitoring für Teams, die Vermögenswerte sicher on-chain halten müssen.",
+          "desc": "Multi-Sig-Verwahrung und Monitoring für Teams, die Vermögenswerte on-chain halten.",
           "cta": "Sicherheit"
         },
         "recovery": {
@@ -208,7 +208,7 @@
       "title2": "integrierter Recovery",
       "title3": ".",
       "point1": "Krypto akzeptieren und in Fiat abrechnen über Checkout-Flows und Merchant-APIs.",
-      "point2": "Erlöse über geprüfte Vault-Custody mit Multi-Sig-Kontrollen leiten.",
+      "point2": "Erlöse über Multi-Sig-Verwahrung leiten.",
       "point3": "Wenn nach der Abrechnung etwas schiefgeht, unterstützt dasselbe Protokoll Tracing- und Recovery-Workflows.",
       "point4_1": "Lösungen",
       "point4_2": " oder ",
@@ -220,7 +220,7 @@
     "Payment": {
       "badge": "Protokoll-Stack",
       "title": "Werte auf einer Ebene bewegen, halten und wiederherstellen",
-      "subtitle": "Zahlungen, Verwahrung, Wiederherstellung und Kredit teilen dieselbe geprüfte Infrastruktur — nicht vier getrennte Produkte.",
+      "subtitle": "Zahlungen, Verwahrung, Wiederherstellung und Kredit liegen auf demselben Protokoll — nicht in vier getrennten Produkten.",
       "cards": {
         "fiat": {
           "title": "Krypto-zu-Fiat",
@@ -260,14 +260,14 @@
     },
     "Credibility": {
       "eyebrow": "Verifizierung",
-      "title1": "Geprüfter Code. ",
+      "title1": "Sicherheitspraktiken. ",
       "title2": "Dokumentierte Kontrollen.",
-      "subtitle1": "Von CertiK geprüfte Smart Contracts und ISO-27001-konforme Abläufe für Teams, die mehr als Marketingversprechen brauchen.",
+      "subtitle1": "Zugriffskontrollen, Monitoring und schriftliche Grenzen, wer Fallakten sieht.",
       "subtitle2_1": "Lesen Sie das ",
       "subtitle2_2": "Whitepaper",
-      "subtitle2_3": " und Audit-Dokumentation zu Architektur, Token-Nutzen und Sicherheitskontrollen.",
-      "col1_text": "Lenix-Protokoll-Smart-Contracts wurden von CertiK geprüft. Das Audit deckt Kernprotokoll-Komponenten in Produktionsflüssen ab.",
-      "col1_btn": "Security-Docs",
+      "subtitle2_3": " zu Architektur, Token-Nutzen und Sicherheitskontrollen.",
+      "col1_text": "Produktive Zahlungs- und Verwahrungspfade nutzen rollenbasierten Zugriff und Monitoring.",
+      "col1_btn": "Sicherheitspraktiken",
       "col2_text": "Das Whitepaper erklärt, wie Recovery-, Custody- und Zahlungsmodule zusammenhängen—und wo LNX im Protokolldesign steht.",
       "col2_btn": "Whitepaper"
     },
@@ -365,9 +365,9 @@
           "title": "Ehrliche Fallbewertung",
           "desc": "Wenn eine Spur erschöpft ist oder Recovery unwahrscheinlich ist, sagen wir das vor kostenpflichtigem Engagement."
         },
-        "audited": {
-          "title": "Geprüfter Protokoll-Stack",
-          "desc": "Smart Contracts von CertiK geprüft. Betrieb im Einklang mit ISO-27001-Kontrollen."
+        "access": {
+          "title": "Zugriffskontrollen",
+          "desc": "Rollenbasierter Zugriff und Monitoring der Produktionsflüsse."
         },
         "chains": {
           "title": "Multi-Chain-Abdeckung",
@@ -380,7 +380,7 @@
       "eyebrow": "Fallbeispiel",
       "title1": "Wenn gestohlene Gelder ",
       "title2": "eine zentralisierte Börse erreichen",
-      "subtitle": "Anonymisiertes Beispiel. Kennungen geändert. Der Prozess ist repräsentativ—keine Garantie für Wiederherstellung.",
+      "subtitle": "Anonymisiertes Beispiel. Kennungen geändert. Der Prozess ist repräsentativ und kein Versprechen, dass Gelder zurückkommen.",
       "situation": {
         "label": "Ausgangslage",
         "text": "Eine Unternehmens-Wallet sendete USDC an einen Phishing-Vertrag. Innerhalb weniger Stunden flossen die Mittel über zwei Zwischen-Wallets zu einer großen Börse."
@@ -412,20 +412,20 @@
   },
   "Security": {
     "meta": {
-      "title": "Sicherheit & Audits | Lenix Protocol",
-      "description": "CertiK-Smart-Contract-Audits, ISO-27001-konforme Abläufe und Sicherheitskontrollen für Lenix Forensik- und Recovery-Infrastruktur."
+      "title": "Sicherheitspraktiken | Lenix Protocol",
+      "description": "Zugriffskontrollen, Umgang mit Fallakten und Monitoring für Forensik und Rückgewinnung bei Lenix Protocol."
     },
     "hero": {
       "eyebrow": "Sicherheit",
-      "title1": "Geprüftes Protokoll. ",
+      "title1": "Sicherheitspraktiken. ",
       "title2": "Dokumentierte Kontrollen.",
-      "subtitle": "Lenix verbindet unabhängige Smart-Contract-Prüfungen mit operativen Sicherheitspraktiken für Teams, die sensible Recovery- und Custody-Workflows betreiben."
+      "subtitle": "Wie Lenix Zugriff, Fallakten und Produktionsflüsse in Rückgewinnung und Verwahrung handhabt."
     },
     "audit": {
-      "title": "CertiK-Auditumfang",
-      "desc": "Kernverträge in Produktionsflüssen wurden von CertiK geprüft. Der Audit-Umfang deckt deployment-kritische Komponenten und bekannte Angriffsflächen ab.",
-      "certik_text": "CertiK prüfte Lenix-Smart-Contracts auf gängige Schwachstellen, Zugriffskontrollen und Logikfehler in Token- und Vault-Flows.",
-      "certik_link": "Security-Docs",
+      "title": "Zugriff und Monitoring",
+      "desc": "Zahlungs- und Verwahrungspfade nutzen rollenbasierte Berechtigungen. Produktionsflüsse werden auf ungewöhnliche Aktivität beobachtet.",
+      "access_text": "Admin-Aktionen nutzen rollenbasierte Berechtigungen. Produktionsflüsse werden auf ungewöhnliche Vertragsaktivität beobachtet.",
+      "access_link": "Über Lenix",
       "items": {
         "contracts": {
           "title": "Vertragsprüfungsumfang",
@@ -443,8 +443,8 @@
       "eyebrow": "Smart Contracts"
     },
     "iso": {
-      "title": "ISO-27001-konforme Abläufe",
-      "desc": "Lenix Protocol unterhält Informationssicherheitsmanagement-Praktiken nach ISO 27001 für Kundendaten, Ermittlungsmaterialien und interne Systeme."
+      "title": "Umgang mit Fallakten",
+      "desc": "Kundendaten und Ermittlungsmaterial werden mit Zugriffskontrollen gespeichert und nur an dokumentierte Empfänger weitergegeben."
     },
     "practices": {
       "data": {
@@ -466,14 +466,14 @@
     },
     "cta": {
       "title": "Dokumentation benötigt?",
-      "subtitle": "Kontakt für Audit-Zusammenfassungen, ISO-Details oder Enterprise-Reviews.",
+      "subtitle": "Kontakt zum Team bei Fragen zu Zugriffskontrollen oder zum Umgang mit Fallakten.",
       "btn_primary": "Fall melden",
       "btn_secondary": "Security-Team"
     },
     "assurance": {
       "eyebrow": "Verifizierung",
       "title": "Was wir vorlegen können",
-      "description": "Unabhängige Vertragsprüfung und dokumentierte Betriebskontrollen — keine Claims ohne Beleg.",
+      "description": "Rollenbasierter Zugriff, Monitoring der Produktion und schriftliche Grenzen, wer Fallakten sieht.",
       "iso_link": "Über Lenix"
     }
   },

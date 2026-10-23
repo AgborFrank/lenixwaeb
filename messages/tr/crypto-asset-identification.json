@@ -75,7 +75,7 @@
         "title": "Tarafsız rol mümkün",
         "desc": "Lenix davacı vekili, savunma veya mal paylaşımı ve değerleme uyuşmazlıklarında bağımsız uzman olarak destek verebilir."
       },
-      "no_guarantee": {
+      "completeness": {
         "title": "Tamlık garantisi yok",
         "desc": "Tanımlama sağlanan ipuçları, zincir görünürlüğü ve yasal erişimle sınırlıdır. Mevcut veriden neyin elde edilebileceğini ve edilemeyeceğini açıkça belirtiriz."
       },

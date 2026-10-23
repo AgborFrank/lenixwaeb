@@ -4,7 +4,8 @@
     "back": "Back",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Progress",
-    "asideAria": "Help and information"
+    "asideAria": "Help and information",
+    "securityNote": "Case details are encrypted in the browser before they are sent."
   },
   "Progress": {
     "stepOf": "Step {current} of {total}",
@@ -87,7 +88,7 @@
     "recovery": {
       "title": "Recovery intake",
       "body": "Provide accurate transaction details to help our forensics team trace funds and document next steps.",
-      "bullet1": "Chain analysis by certified analysts",
+      "bullet1": "Chain analysis by the forensics team",
       "bullet2": "Evidence preserved for legal review",
       "bullet3": "Case updates in your dashboard"
     },
