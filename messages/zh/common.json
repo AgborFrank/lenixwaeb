@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "区块链取证、资产恢复和加密金融基础设施。用于追踪、托管和跨境支付的审计协议。",
+    "company_desc": "用于追踪、托管和跨境支付的区块链取证、资产恢复和加密金融基础设施。",
     "headings": {
       "about": "关于",
       "solutions": "解决方案",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "追回资产"
     },
-    "certification_desc": "ISO27001 认证企业。按国际标准安全管理数据与资产。",
-    "copyright": "© 2017 - 2026 Lenix Protocol，保留所有权利。"
+    "certification_desc": "客户数据、案件材料和支付记录在访问控制下保存。",
+    "copyright": "© 2026 Lenix Protocol，保留所有权利。"
   },
   "languagePicker": {
     "title": "选择语言",

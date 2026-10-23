@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Blockchain forensics, asset recovery, at crypto finance infrastructure. Audited protocol para sa tracing, custody, at cross-border payments.",
+    "company_desc": "Blockchain forensics, pagbawi ng asset, at imprastraktura ng crypto finance para sa pagsubaybay, custody, at bayad sa ibang bansa.",
     "headings": {
       "about": "TUNGKOL",
       "solutions": "SOLUSYON",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "I-recover"
     },
-    "certification_desc": "Sertipikadong ISO27001. Ligtas naming pinamamahalaan ang data ayon sa internasyonal na pamantayan.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, Lahat ng Karapatan ay Nakalaan."
+    "certification_desc": "Ang data ng kliyente, mga file ng kaso, at tala ng bayad ay iniimbak na may kontrol sa access.",
+    "copyright": "© 2026 Lenix Protocol, Lahat ng Karapatan ay Nakalaan."
   },
   "languagePicker": {
     "title": "Pumili ng Rehiyon & Wika",

@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Forensik blockchain, pemulihan aset, dan infrastruktur keuangan kripto. Protokol diaudit untuk pelacakan, kustodi, dan pembayaran lintas batas.",
+    "company_desc": "Forensik blockchain, pemulihan aset, dan infrastruktur keuangan kripto untuk pelacakan, kustodi, dan pembayaran lintas batas.",
     "headings": {
       "about": "TENTANG",
       "solutions": "SOLUSI",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "Pulihkan"
     },
-    "certification_desc": "Tersertifikasi ISO27001. Kami mengelola data secara aman sesuai standar internasional.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, Semua Hak Dilindungi."
+    "certification_desc": "Data klien, berkas kasus, dan catatan pembayaran disimpan dengan kontrol akses.",
+    "copyright": "© 2026 Lenix Protocol, Semua Hak Dilindungi."
   },
   "languagePicker": {
     "title": "Pilih Wilayah & Bahasa",

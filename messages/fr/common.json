@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Forensique blockchain, récupération d'actifs et infrastructure financière crypto. Protocole audité pour le traçage, la garde et les paiements transfrontaliers.",
+    "company_desc": "Forensique blockchain, récupération d'actifs et infrastructure financière crypto pour le traçage, la garde et les paiements transfrontaliers.",
     "headings": {
       "about": "À PROPOS",
       "solutions": "SOLUTIONS",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "Récupérer"
     },
-    "certification_desc": "Certifié ISO27001. Nous gérons vos données selon les normes internationales.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, Tous droits réservés."
+    "certification_desc": "Les données clients, les dossiers et les enregistrements de paiement sont stockés avec des contrôles d'accès.",
+    "copyright": "© 2026 Lenix Protocol, Tous droits réservés."
   },
   "languagePicker": {
     "title": "Sélectionner la langue",

@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Pháp y blockchain, phục hồi tài sản và hạ tầng tài chính crypto. Giao thức được kiểm toán cho truy vết, lưu ký và thanh toán xuyên biên giới.",
+    "company_desc": "Pháp y blockchain, phục hồi tài sản và hạ tầng tài chính crypto cho truy vết, lưu ký và thanh toán xuyên biên giới.",
     "headings": {
       "about": "GIỚI THIỆU",
       "solutions": "GIẢI PHÁP",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "Thu hồi"
     },
-    "certification_desc": "Chứng nhận ISO27001. Chúng tôi quản lý dữ liệu theo tiêu chuẩn quốc tế.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, Bảo lưu mọi quyền."
+    "certification_desc": "Dữ liệu khách hàng, hồ sơ vụ và bản ghi thanh toán được lưu với kiểm soát truy cập.",
+    "copyright": "© 2026 Lenix Protocol, Bảo lưu mọi quyền."
   },
   "languagePicker": {
     "title": "Chọn Khu vực & Ngôn ngữ",

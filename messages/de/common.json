@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Blockchain-Forensik, Asset-Recovery und Krypto-Finanzinfrastruktur. Geprüftes Protokoll für Tracing, Verwahrung und grenzüberschreitende Zahlungen.",
+    "company_desc": "Blockchain-Forensik, Asset-Recovery und Krypto-Finanzinfrastruktur für Tracing, Verwahrung und grenzüberschreitende Zahlungen.",
     "headings": {
       "about": "ÜBER UNS",
       "solutions": "LÖSUNGEN",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "Recovery"
     },
-    "certification_desc": "ISO27001 zertifiziert. Wir schützen Ihre Daten nach internationalen Standards.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, Alle Rechte vorbehalten."
+    "certification_desc": "Kundendaten, Fallakten und Zahlungsunterlagen werden mit Zugriffskontrollen gespeichert.",
+    "copyright": "© 2026 Lenix Protocol, Alle Rechte vorbehalten."
   },
   "languagePicker": {
     "title": "Sprache auswählen",

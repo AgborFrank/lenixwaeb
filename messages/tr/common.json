@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Blockchain adli analiz, varlık kurtarma ve kripto finans altyapısı. İzleme, saklama ve sınır ötesi ödemeler için denetlenmiş protokol.",
+    "company_desc": "İzleme, saklama ve sınır ötesi ödemeler için blockchain adli analizi, varlık kurtarma ve kripto finans altyapısı.",
     "headings": {
       "about": "HAKKINDA",
       "solutions": "ÇÖZÜMLER",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "Kurtar"
     },
-    "certification_desc": "ISO27001 sertifikalı. Verileri uluslararası standartlara göre güvenli yönetiyoruz.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, Tüm Hakları Saklıdır."
+    "certification_desc": "Müşteri verileri, dosyalar ve ödeme kayıtları erişim kontrolleriyle saklanır.",
+    "copyright": "© 2026 Lenix Protocol, Tüm Hakları Saklıdır."
   },
   "languagePicker": {
     "title": "Bölge & Dil Seçin",

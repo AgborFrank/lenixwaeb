@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Blockchain forensics, asset recovery, and crypto finance infrastructure. Audited protocol for tracing, custody, and cross-border payments.",
+    "company_desc": "Blockchain forensics, asset recovery, and crypto finance infrastructure for tracing, custody, and cross-border payments.",
     "headings": {
       "about": "ABOUT",
       "solutions": "SOLUTIONS",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "Recover Assets"
     },
-    "certification_desc": "Lenix Protocol is ISO27001 certified. This demonstrates how, as a business, we securely manage information assets and data to an internationally recognised standard. Additionally, it shows our robust approach for managing assets such as client data and employee details, intellectual property, financial information and third-party data.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, All Rights Reserved."
+    "certification_desc": "Client data, case files, and payment records are stored with access controls.",
+    "copyright": "© 2026 Lenix Protocol, All Rights Reserved."
   },
   "languagePicker": {
     "title": "Select Region & Language",
