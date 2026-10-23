@@ -4,7 +4,8 @@
     "back": "Kembali",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Progres",
-    "asideAria": "Bantuan dan informasi"
+    "asideAria": "Bantuan dan informasi",
+    "securityNote": "Detail kasus dienkripsi di browser sebelum dikirim."
   },
   "Progress": {
     "stepOf": "Langkah {current} dari {total}",

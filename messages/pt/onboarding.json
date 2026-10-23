@@ -4,7 +4,8 @@
     "back": "Voltar",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Progresso",
-    "asideAria": "Ajuda e informações"
+    "asideAria": "Ajuda e informações",
+    "securityNote": "Os dados do caso são cifrados no navegador antes do envio."
   },
   "Progress": {
     "stepOf": "Etapa {current} de {total}",

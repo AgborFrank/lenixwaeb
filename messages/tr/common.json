@@ -165,7 +165,7 @@
       "cards": {
         "security": {
           "title": "Blockchain güvenliği",
-          "desc": "On-chain güvenli varlık tutması gereken ekipler için denetlenmiş vault'lar, multi-sig saklama ve izleme.",
+          "desc": "Varlıkları zincir üstünde tutan ekipler için multi-sig saklama ve izleme.",
           "cta": "Güvenlik"
         },
         "recovery": {
@@ -208,7 +208,7 @@
       "title2": "entegre kurtarma ile",
       "title3": ".",
       "point1": "Checkout akışları ve satıcı API'leriyle kripto kabul edin ve fiat'ta settle edin.",
-      "point2": "Geliri multi-sig kontrollü denetlenmiş vault saklaması üzerinden yönlendirin.",
+      "point2": "Geliri multi-sig saklama üzerinden yönlendirin.",
       "point3": "Settlement sonrası bir sorun olursa, aynı protokol izleme ve kurtarma iş akışlarını destekler.",
       "point4_1": "Çözümler",
       "point4_2": " veya ",
@@ -220,7 +220,7 @@
     "Payment": {
       "badge": "Protokol yığını",
       "title": "Değeri tek katmanda taşıyın, tutun ve kurtarın",
-      "subtitle": "Ödemeler, saklama, kurtarma ve borç verme aynı denetlenmiş altyapıyı paylaşır — dört kopuk ürün değil.",
+      "subtitle": "Ödemeler, saklama, kurtarma ve borç verme aynı protokoldedir — dört ayrı ürün değil.",
       "cards": {
         "fiat": {
           "title": "Kriptodan itibari paraya",
@@ -260,14 +260,14 @@
     },
     "Credibility": {
       "eyebrow": "Doğrulama",
-      "title1": "Denetlenmiş kod. ",
+      "title1": "Güvenlik uygulamaları. ",
       "title2": "Belgelendirilmiş kontroller.",
-      "subtitle1": "CertiK tarafından incelenen akıllı sözleşmeler ve ISO 27001 uyumlu operasyonlar—pazarlama iddialarından fazlasını isteyen ekipler için.",
+      "subtitle1": "Erişim kontrolleri, izleme ve dosyaları kimin göreceğine dair yazılı sınırlar.",
       "subtitle2_1": "Okuyun: ",
       "subtitle2_2": "tanıtım belgesi",
       "subtitle2_3": " ve mimari, token faydası ve güvenlik kontrolleri için denetim belgeleri.",
-      "col1_text": "Lenix Protocol akıllı sözleşmeleri CertiK tarafından incelendi. Denetim, üretim akışlarında kullanılan temel protokol bileşenlerini kapsar.",
-      "col1_btn": "Güvenlik docs",
+      "col1_text": "Üretimdeki ödeme ve saklama akışları rol tabanlı erişim ve izleme kullanır. Bu site bir denetçi adı vermez.",
+      "col1_btn": "Güvenlik uygulamaları",
       "col2_text": "Whitepaper, kurtarma, saklama ve ödeme modüllerinin nasıl bağlandığını—ve LNX'in protokol tasarımındaki yerini açıklar.",
       "col2_btn": "Whitepaper"
     },
@@ -366,8 +366,8 @@
           "desc": "İz tükendiyse veya kurtarma olası değilse, ücretli taahhütten önce söyleriz."
         },
         "audited": {
-          "title": "Denetlenmiş protokol yığını",
-          "desc": "CertiK tarafından incelenen akıllı sözleşmeler. ISO 27001 kontrolleriyle uyumlu operasyonlar."
+          "title": "Erişim kontrolleri",
+          "desc": "Rol tabanlı erişim ve üretim akışlarının izlenmesi. Burada dış bir denetçi adı geçmez."
         },
         "chains": {
           "title": "Çoklu zincir kapsamı",
@@ -380,7 +380,7 @@
       "eyebrow": "Vaka örneği",
       "title1": "Çalıntı fonlar ",
       "title2": "merkezi bir borsaya ulaştığında",
-      "subtitle": "Anonimleştirilmiş örnek. Tanımlayıcılar değiştirildi. Süreç temsilidir—kurtarma garantisi değildir.",
+      "subtitle": "Anonimleştirilmiş örnek. Tanımlayıcılar değiştirildi. Süreç temsilidir ve fonların döneceği sözü değildir.",
       "situation": {
         "label": "Durum",
         "text": "Bir iş cüzdanı USDC'yi bir oltalama sözleşmesine gönderdi. Saatler içinde fonlar iki ara cüzdan üzerinden büyük bir borsaya yatırıldı."
@@ -412,20 +412,20 @@
   },
   "Security": {
     "meta": {
-      "title": "Güvenlik ve Denetimler | Lenix Protocol",
-      "description": "CertiK akıllı sözleşme denetimleri, ISO 27001 uyumlu operasyonlar ve Lenix adli bilişim ve kurtarma altyapısı için güvenlik kontrolleri."
+      "title": "Güvenlik uygulamaları | Lenix Protocol",
+      "description": "Lenix Protocol adli inceleme ve kurtarma işi için erişim kontrolleri, dosya işleme ve izleme."
     },
     "hero": {
       "eyebrow": "Güvenlik",
-      "title1": "Denetlenmiş protokol. ",
+      "title1": "Güvenlik uygulamaları. ",
       "title2": "Belgelendirilmiş kontroller.",
-      "subtitle": "Lenix, hassas kurtarma ve saklama iş akışlarını yöneten ekipler için üçüncü taraf akıllı sözleşme incelemesini operasyonel güvenlik uygulamalarıyla birleştirir."
+      "subtitle": "Lenix'in kurtarma ve saklama işinde erişimi, dosyaları ve üretim akışlarını nasıl ele aldığı."
     },
     "audit": {
-      "title": "CertiK audit kapsamı",
-      "desc": "Üretim akışlarındaki temel sözleşmeler CertiK tarafından incelendi. Denetim kapsamı dağıtım açısından kritik bileşenleri ve bilinen saldırı yüzeylerini kapsar.",
-      "certik_text": "CertiK, Lenix akıllı sözleşmelerini yaygın güvenlik açıkları, erişim kontrolü ve token/vault akışlarındaki mantık hataları açısından inceledi.",
-      "certik_link": "Güvenlik docs",
+      "title": "Erişim ve izleme",
+      "desc": "Ödeme ve saklama akışları rol tabanlı izinler kullanır. Üretim akışları olağandışı etkinlik için izlenir.",
+      "certik_text": "Yönetici işlemleri rol tabanlı izinler kullanır. Üretim akışları olağandışı sözleşme etkinliği için izlenir.",
+      "certik_link": "Lenix hakkında",
       "items": {
         "contracts": {
           "title": "Sözleşme inceleme kapsamı",
@@ -443,8 +443,8 @@
       "eyebrow": "Smart contract"
     },
     "iso": {
-      "title": "ISO 27001 uyumlu operasyonlar",
-      "desc": "Lenix Protocol, müşteri verileri, soruşturma materyalleri ve dahili sistemler için ISO 27001 ile uyumlu bilgi güvenliği yönetimi uygulamalarını sürdürür."
+      "title": "Dosya işleme",
+      "desc": "Müşteri verileri ve soruşturma materyalleri erişim kontrolleriyle saklanır ve yalnızca kayıtlı alıcılarla paylaşılır."
     },
     "practices": {
       "data": {
@@ -466,14 +466,14 @@
     },
     "cta": {
       "title": "Dokümantasyon mu lazım?",
-      "subtitle": "Audit özetleri, ISO detayları veya kurumsal incelemeler için ekiple iletişime geçin.",
+      "subtitle": "Erişim kontrolleri veya dosyaların nasıl işlendiği için ekiple iletişime geçin.",
       "btn_primary": "Recovery başlat",
       "btn_secondary": "Güvenlik ekibi"
     },
     "assurance": {
       "eyebrow": "Doğrulama",
       "title": "Gösterebileceklerimiz",
-      "description": "Bağımsız sözleşme incelemesi ve belgelenmiş operasyon kontrolleri — kanıtsız iddia yok.",
+      "description": "Rol tabanlı erişim, üretim izlemesi ve dosyaları kimin göreceğine dair yazılı sınırlar.",
       "iso_link": "Lenix hakkında"
     }
   },

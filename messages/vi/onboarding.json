@@ -4,7 +4,8 @@
     "back": "Quay lại",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Tiến độ",
-    "asideAria": "Trợ giúp và thông tin"
+    "asideAria": "Trợ giúp và thông tin",
+    "securityNote": "Chi tiết vụ được mã hóa trên trình duyệt trước khi gửi."
   },
   "Progress": {
     "stepOf": "Bước {current} / {total}",

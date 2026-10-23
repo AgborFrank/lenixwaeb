@@ -165,7 +165,7 @@
       "cards": {
         "security": {
           "title": "Sécurité blockchain",
-          "desc": "Vaults audités, custody multi-sig et monitoring pour les équipes qui doivent conserver des actifs en sécurité on-chain.",
+          "desc": "Conservation multi-sig et suivi pour les équipes qui détiennent des actifs on-chain.",
           "cta": "Voir sécurité"
         },
         "recovery": {
@@ -208,7 +208,7 @@
       "title2": "récupération intégrée",
       "title3": ".",
       "point1": "Acceptez la crypto et réglez en fiat via checkout et APIs marchands.",
-      "point2": "Acheminez les recettes via une custody vault auditée avec contrôles multi-sig.",
+      "point2": "Acheminez les recettes via une conservation multi-sig.",
       "point3": "Si un problème survient après règlement, le même protocole prend en charge tracing et workflows de récupération.",
       "point4_1": "Voir solutions",
       "point4_2": " ou ",
@@ -220,7 +220,7 @@
     "Payment": {
       "badge": "Pile du protocole",
       "title": "Déplacer, conserver et récupérer de la valeur sur une seule couche",
-      "subtitle": "Paiements, conservation, récupération et prêt partagent la même infrastructure auditée — pas quatre produits séparés.",
+      "subtitle": "Paiements, conservation, récupération et prêt reposent sur le même protocole — pas quatre produits séparés.",
       "cards": {
         "fiat": {
           "title": "Crypto vers fiat",
@@ -260,14 +260,14 @@
     },
     "Credibility": {
       "eyebrow": "Vérification",
-      "title1": "Code audité. ",
+      "title1": "Pratiques de sécurité. ",
       "title2": "Contrôles documentés.",
-      "subtitle1": "Smart contracts revus par CertiK et opérations alignées ISO 27001 pour les équipes qui exigent plus que du marketing.",
+      "subtitle1": "Contrôles d'accès, suivi et limites écrites sur qui voit les dossiers.",
       "subtitle2_1": "Consultez le ",
       "subtitle2_2": "livre blanc",
       "subtitle2_3": " et la documentation d'audit sur l'architecture, l'utilité du token et les contrôles de sécurité.",
-      "col1_text": "Les smart contracts Lenix Protocol ont été revus par CertiK. L'audit couvre les composants core utilisés en production.",
-      "col1_btn": "Docs sécurité",
+      "col1_text": "Les flux de paiement et de conservation en production utilisent un accès par rôle et un suivi. Ce site ne nomme pas d'auditeur.",
+      "col1_btn": "Pratiques de sécurité",
       "col2_text": "Le whitepaper explique comment recovery, custody et paiements s'articulent—et la place de LNX dans le design du protocole.",
       "col2_btn": "Livre blanc"
     },
@@ -373,8 +373,8 @@
           "desc": "Si une piste est épuisée ou la récupération improbable, nous le disons avant un engagement payant."
         },
         "audited": {
-          "title": "Stack protocolaire audité",
-          "desc": "Smart contracts revus par CertiK. Opérations alignées sur les contrôles ISO 27001."
+          "title": "Contrôles d'accès",
+          "desc": "Accès par rôle et suivi des flux de production. Aucun auditeur externe n'est nommé ici."
         },
         "chains": {
           "title": "Couverture multi-chaînes",
@@ -387,7 +387,7 @@
       "eyebrow": "Exemple de cas",
       "title1": "Quand des fonds volés atteignent ",
       "title2": "un exchange custodial",
-      "subtitle": "Exemple anonymisé. Identifiants modifiés. Le processus est représentatif—sans garantie de récupération.",
+      "subtitle": "Exemple anonymisé. Identifiants modifiés. Le processus est représentatif et ne promet pas que les fonds seront rendus.",
       "situation": {
         "label": "Situation",
         "text": "Un portefeuille d'entreprise a envoyé des USDC à un contrat de phishing. En quelques heures, les fonds ont transité par deux portefeuilles intermédiaires vers un grand exchange."
@@ -412,20 +412,20 @@
   },
   "Security": {
     "meta": {
-      "title": "Sécurité & Audits | Lenix Protocol",
-      "description": "Audits CertiK, opérations alignées ISO 27001 et contrôles de sécurité pour l'infrastructure forensique et de récupération Lenix."
+      "title": "Pratiques de sécurité | Lenix Protocol",
+      "description": "Contrôles d'accès, traitement des dossiers et suivi pour le travail forensique et de récupération de Lenix Protocol."
     },
     "hero": {
       "eyebrow": "Sécurité",
-      "title1": "Protocole audité. ",
+      "title1": "Pratiques de sécurité. ",
       "title2": "Contrôles documentés.",
-      "subtitle": "Lenix combine une revue tierce des smart contracts avec des pratiques de sécurité opérationnelle pour les équipes gérant des workflows sensibles de récupération et de custody."
+      "subtitle": "Comment Lenix traite l'accès, les dossiers et les flux de production pour la récupération et la conservation."
     },
     "audit": {
-      "title": "Périmètre audit CertiK",
-      "desc": "Les contrats principaux utilisés en production ont été revus par CertiK. Le périmètre couvre les composants critiques et les surfaces d'attaque connues.",
-      "certik_text": "CertiK a examiné les smart contracts Lenix pour les vulnérabilités courantes, les contrôles d'accès et les failles logiques des flux token et vault.",
-      "certik_link": "Docs sécurité",
+      "title": "Accès et suivi",
+      "desc": "Les flux de paiement et de conservation utilisent des permissions par rôle. Les flux de production sont surveillés en cas d'activité inhabituelle.",
+      "certik_text": "Les actions d'administration utilisent des permissions par rôle. Les flux de production sont surveillés en cas d'activité inhabituelle des contrats.",
+      "certik_link": "À propos de Lenix",
       "items": {
         "contracts": {
           "title": "Périmètre de revue",
@@ -443,8 +443,8 @@
       "eyebrow": "Contrats intelligents"
     },
     "iso": {
-      "title": "Opérations alignées ISO 27001",
-      "desc": "Lenix Protocol maintient des pratiques de gestion de la sécurité de l'information alignées sur ISO 27001 pour les données clients, les matériaux d'enquête et les systèmes internes."
+      "title": "Traitement des dossiers",
+      "desc": "Les données clients et les matériaux d'enquête sont stockés avec des contrôles d'accès et partagés seulement avec des destinataires documentés."
     },
     "practices": {
       "data": {
@@ -466,14 +466,14 @@
     },
     "cta": {
       "title": "Besoin de documentation ?",
-      "subtitle": "Contactez-nous pour résumés d'audit, alignement ISO ou revues enterprise.",
+      "subtitle": "Contactez l'équipe pour des questions sur les contrôles d'accès ou le traitement des dossiers.",
       "btn_primary": "Ouvrir dossier",
       "btn_secondary": "Contact sécurité"
     },
     "assurance": {
       "eyebrow": "Vérification",
       "title": "Ce que nous pouvons montrer",
-      "description": "Revue indépendante des contrats et contrôles opérationnels documentés — pas de promesses sans preuve.",
+      "description": "Accès par rôle, suivi de la production et limites écrites sur qui voit les dossiers.",
       "iso_link": "À propos"
     }
   },

@@ -4,7 +4,8 @@
     "back": "رجوع",
     "logoAlt": "بروتوكول لينكس",
     "progressAria": "التقدم",
-    "asideAria": "مساعدة ومعلومات"
+    "asideAria": "مساعدة ومعلومات",
+    "securityNote": "تُشفَّر تفاصيل القضية في المتصفح قبل إرسالها."
   },
   "Progress": {
     "stepOf": "الخطوة {current} من {total}",

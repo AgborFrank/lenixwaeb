@@ -32,17 +32,16 @@ export default function OurStory() {
                       <Calendar className="w-6 h-6 text-black" />
                     </div>
                     <h3 className="text-2xl font-bold text-white">
-                      2019 - The Beginning
+                      The remit
                     </h3>
                   </div>
                   <p className="text-gray-300 leading-relaxed">
-                    Founded by a team of blockchain enthusiasts and financial
-                    experts, Lenix Protocol was born from a simple idea: make
-                    crypto accessible to everyone, not just tech-savvy users.
+                    Lenix Protocol traces digital asset movement and reviews
+                    whether a public-ledger investigation can proceed.
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2 lg:justify-end">
                     <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
-                      Company Founded
+                      Tracing
                     </span>
                     <span className="bg-yellow-400/10 text-yellow-400 px-3 py-1 rounded-full text-sm">
                       First Team

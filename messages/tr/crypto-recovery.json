@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Sertifikalı kripto varlık kurtarma hizmetleri | Lenix Protocol",
-    "description": "Kayıp veya çalınmış kripto paranın profesyonel kurtarılması, %94 başarı oranıyla. Cüzdan parolası kurtarma ve adli incelemeye dayalı dolandırıcılık soruşturmasında uzmanız.",
+    "title": "Kripto varlık kurtarma | Lenix Protocol",
+    "description": "Cüzdan ve kurtarma ifadesi kurtarma, ayrıca kayıp veya çalınmış kripto için blokzincir adli incelemesi ve izleme. Ücretli işten önce kapsam değerlendirilir.",
     "keywords": "Kripto kurtarma, Çalınan Bitcoin kurtarma, Kayıp cüzdanı kurtarma, Kripto dolandırıcılık soruşturması, Blokzincir adli inceleme"
   },
   "Hero": {
-    "eyebrow": "Sertifikalı varlık kurtarma",
+    "eyebrow": "Varlık kurtarma",
     "title": "Çalınan veya yanlış adrese giden kripto için adli incelemeye dayalı kurtarma",
     "description": "Lenix araştırmacıları zincir üstü hareketi izler, borsa ve kolluk paketleri hazırlar ve kurtarma hâlâ mümkünken varlık dondurmayı koordine eder.",
     "submit": "Dosya gönder",
@@ -48,7 +48,9 @@
     "traced": "İzlenen ve takip edilen varlıklar",
     "cases": "İncelenen dosyalar",
     "jurisdictions": "Kapsanan yargı bölgeleri",
-    "intake": "Olay kaydı"
+    "intake": "Olay kaydı",
+    "traced_value": "Zincir üstü",
+    "cases_value": "Dosya incelemesi"
   },
   "Features": {
     "eyebrow": "Yetenekler",
@@ -127,8 +129,8 @@
         "answer": "Evet. Dosya malzemesi şifrelidir, erişim kontrollüdür ve yalnızca kurtarmayı sürdürmek için gereken taraflarla — borsalar, avukatlar veya yetkililer — sizin onayınızla paylaşılır."
       },
       "guarantee": {
-        "question": "Kurtarmayı garanti ediyor musunuz?",
-        "answer": "Hiçbir sorumlu kurum kurtarmayı garanti edemez. Sonuç, fonların nereye gittiğine, dosyanın ne kadar çabuk bildirildiğine ve saklayıcıların veya borsaların harekete geçip geçemeyeceğine bağlıdır. Siz bağlanmadan önce dürüst bir kurtarılabilirlik değerlendirmesi sunarız."
+        "question": "Fonlar iade edilir mi?",
+        "answer": "Her zaman değil. Sonuç, fonların nereye gittiğine, dosyanın ne kadar çabuk bildirildiğine ve saklayıcıların veya borsaların harekete geçip geçemeyeceğine bağlıdır. Siz bağlanmadan önce dosyanın ilerleyip ilerleyemeyeceğini değerlendiririz."
       },
       "include": {
         "question": "Dosya gönderirken neleri eklemeliyim?",

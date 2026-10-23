@@ -202,7 +202,7 @@
       "cards": {
         "security": {
           "title": "Blockchain Security",
-          "desc": "Audited vaults, multi-sig custody, and monitoring for teams that need assets held safely on-chain.",
+          "desc": "Multi-sig custody and monitoring for teams that need assets held on-chain.",
           "cta": "Explore security"
         },
         "recovery": {
@@ -269,8 +269,8 @@
           "desc": "If a trail is exhausted or recovery is unlikely, we say so before paid engagement."
         },
         "audited": {
-          "title": "Audited protocol stack",
-          "desc": "Smart contracts reviewed by CertiK. Operations aligned with ISO 27001 controls."
+          "title": "Access controls",
+          "desc": "Role-based access and monitoring on production flows. No outside auditor is named here."
         },
         "chains": {
           "title": "Multi-chain coverage",
@@ -282,7 +282,7 @@
       "eyebrow": "Case example",
       "title1": "When stolen funds reach ",
       "title2": "a custodial exchange",
-      "subtitle": "Anonymized example. Identifiers changed. The process is representative—not a guarantee of recovery.",
+      "subtitle": "Anonymized example. Identifiers changed. The process is representative—not a promise that funds will be returned.",
       "image_alt": "Transaction monitoring dashboard showing fund flow across wallets and exchanges",
       "situation": {
         "label": "Situation",
@@ -314,7 +314,7 @@
       "title2": "recovery built in",
       "title3": ".",
       "point1": "Accept crypto and settle in fiat through checkout flows and merchant APIs.",
-      "point2": "Route proceeds through audited vault custody with multi-sig controls.",
+      "point2": "Route proceeds through multi-sig vault custody.",
       "point3": "If something goes wrong post-settlement, the same protocol supports tracing and recovery workflows.",
       "point4_1": "Explore solutions",
       "point4_2": " or ",
@@ -324,7 +324,7 @@
     "Payment": {
       "badge": "Protocol stack",
       "title": "Move, hold, and recover value on one layer",
-      "subtitle": "Payments, custody, recovery, and lending share the same audited infrastructure—not four disconnected products.",
+      "subtitle": "Payments, custody, recovery, and lending sit on the same protocol—not four disconnected products.",
       "cards": {
         "fiat": {
           "title": "Crypto-to-fiat",
@@ -364,14 +364,14 @@
     },
     "Credibility": {
       "eyebrow": "Verification",
-      "title1": "Audited code. ",
+      "title1": "Security practices. ",
       "title2": "Documented controls.",
-      "subtitle1": "CertiK-reviewed smart contracts and ISO 27001-aligned operations for teams that need more than marketing claims.",
+      "subtitle1": "Access controls, monitoring, and written limits on who sees case files.",
       "subtitle2_1": "Read the ",
       "subtitle2_2": "whitepaper",
       "subtitle2_3": " and audit documentation for architecture, token utility, and security controls.",
-      "col1_text": "Lenix Protocol smart contracts have been reviewed by CertiK. The audit covers core protocol components used in production flows.",
-      "col1_btn": "Review security docs",
+      "col1_text": "Production payment and custody paths use role-based access and monitoring. This site does not name an auditor.",
+      "col1_btn": "Security practices",
       "col2_text": "The whitepaper explains how recovery, custody, and payment modules connect—and where LNX fits in the protocol design.",
       "col2_btn": "Read whitepaper"
     },
@@ -403,27 +403,27 @@
   },
   "Security": {
     "meta": {
-      "title": "Security & Audits | Lenix Protocol",
-      "description": "CertiK smart contract audits, ISO 27001-aligned operations, and security controls for Lenix Protocol forensics and recovery infrastructure."
+      "title": "Security practices | Lenix Protocol",
+      "description": "Access controls, case-file handling, and monitoring for Lenix Protocol forensics and recovery work."
     },
     "hero": {
       "eyebrow": "Security",
-      "title1": "Audited protocol. ",
+      "title1": "Security practices. ",
       "title2": "Documented controls.",
-      "subtitle": "Lenix combines third-party smart contract review with operational security practices for teams that handle sensitive recovery and custody workflows."
+      "subtitle": "How Lenix handles access, case files, and production flows for recovery and custody work."
     },
     "assurance": {
       "eyebrow": "Verification",
       "title": "What we can show you",
-      "description": "Independent contract review and documented operational controls — not security claims without evidence.",
+      "description": "Role-based access, production monitoring, and written limits on who sees case files.",
       "iso_link": "About Lenix"
     },
     "audit": {
       "eyebrow": "Smart contracts",
-      "title": "CertiK audit scope",
-      "desc": "Core protocol contracts used in production flows have been reviewed by CertiK. The audit scope covers deployment-critical components and known attack surfaces.",
-      "certik_text": "CertiK reviewed Lenix Protocol smart contracts for common vulnerability classes, access control issues, and logic flaws relevant to token and vault flows.",
-      "certik_link": "Security docs",
+      "title": "Access and monitoring",
+      "desc": "Payment and custody paths use role-based permissions. Production flows are monitored for unusual contract activity.",
+      "certik_text": "Admin actions use role-based permissions. Production flows are watched for unusual contract activity.",
+      "certik_link": "About Lenix",
       "items": {
         "contracts": {
           "title": "Contract review scope",
@@ -440,8 +440,8 @@
       }
     },
     "iso": {
-      "title": "ISO 27001-aligned operations",
-      "desc": "Lenix Protocol maintains information security management practices aligned with ISO 27001 for client data, investigation materials, and internal systems."
+      "title": "Case-file handling",
+      "desc": "Client data and investigation materials are stored with access controls and shared only with documented recipients."
     },
     "practices": {
       "eyebrow": "Operations",
@@ -463,7 +463,7 @@
     },
     "cta": {
       "title": "Need security documentation?",
-      "subtitle": "Contact our team for audit summaries, ISO alignment details, or enterprise security reviews.",
+      "subtitle": "Contact the team with questions about access controls or how case files are handled.",
       "btn_primary": "Start recovery case",
       "btn_secondary": "Contact security"
     }

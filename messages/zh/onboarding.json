@@ -4,7 +4,8 @@
     "back": "返回",
     "logoAlt": "Lenix Protocol",
     "progressAria": "进度",
-    "asideAria": "帮助与信息"
+    "asideAria": "帮助与信息",
+    "securityNote": "案件资料在发送前于浏览器内加密。"
   },
   "Progress": {
     "stepOf": "第 {current}/{total} 步",

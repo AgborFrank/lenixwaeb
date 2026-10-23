@@ -165,7 +165,7 @@
       "cards": {
         "security": {
           "title": "Bảo mật blockchain",
-          "desc": "Vault được kiểm toán, lưu ký multi-sig và giám sát cho đội cần giữ tài sản an toàn on-chain.",
+          "desc": "Lưu ký multi-sig và giám sát cho đội giữ tài sản on-chain.",
           "cta": "Xem bảo mật"
         },
         "recovery": {
@@ -208,7 +208,7 @@
       "title2": "thu hồi tích hợp",
       "title3": ".",
       "point1": "Chấp nhận crypto và quyết toán fiat qua checkout và API thương nhân.",
-      "point2": "Định tuyến doanh thu qua lưu ký vault được kiểm toán với kiểm soát multi-sig.",
+      "point2": "Định tuyến doanh thu qua lưu ký multi-sig.",
       "point3": "Nếu có sự cố sau quyết toán, cùng giao thức hỗ trợ truy vết và quy trình thu hồi.",
       "point4_1": "Xem giải pháp",
       "point4_2": " hoặc ",
@@ -220,7 +220,7 @@
     "Payment": {
       "badge": "Tầng giao thức",
       "title": "Chuyển, giữ và khôi phục giá trị trên một lớp",
-      "subtitle": "Thanh toán, lưu ký, khôi phục và cho vay dùng chung hạ tầng đã kiểm toán — không phải bốn sản phẩm rời.",
+      "subtitle": "Thanh toán, lưu ký, khôi phục và cho vay nằm trên cùng một giao thức — không phải bốn sản phẩm rời.",
       "cards": {
         "fiat": {
           "title": "Crypto sang fiat",
@@ -260,14 +260,14 @@
     },
     "Credibility": {
       "eyebrow": "Xác minh",
-      "title1": "Mã được kiểm toán. ",
+      "title1": "Cách làm bảo mật. ",
       "title2": "Kiểm soát có tài liệu.",
-      "subtitle1": "Smart contract được CertiK rà soát và vận hành theo ISO 27001 cho đội cần hơn cả tuyên bố marketing.",
+      "subtitle1": "Kiểm soát truy cập, giám sát, và giới hạn bằng văn bản về người được xem hồ sơ.",
       "subtitle2_1": "Đọc ",
       "subtitle2_2": "sách trắng",
       "subtitle2_3": " và tài liệu kiểm toán về kiến trúc, tiện ích token và kiểm soát bảo mật.",
-      "col1_text": "Smart contract Lenix Protocol đã được CertiK rà soát. Kiểm toán bao gồm thành phần lõi dùng trong luồng sản xuất.",
-      "col1_btn": "Docs bảo mật",
+      "col1_text": "Luồng thanh toán và lưu ký trên sản xuất dùng truy cập theo vai trò và giám sát. Trang này không nêu tên đơn vị kiểm toán.",
+      "col1_btn": "Cách làm bảo mật",
       "col2_text": "Whitepaper giải thích cách module thu hồi, lưu ký và thanh toán kết nối—và vị trí LNX trong thiết kế giao thức.",
       "col2_btn": "Whitepaper"
     },
@@ -366,8 +366,8 @@
           "desc": "Nếu dấu vết cạn hoặc thu hồi khó khả thi, chúng tôi nói rõ trước khi cam kết trả phí."
         },
         "audited": {
-          "title": "Stack giao thức được kiểm toán",
-          "desc": "Smart contract được CertiK rà soát. Vận hành theo kiểm soát ISO 27001."
+          "title": "Kiểm soát truy cập",
+          "desc": "Truy cập theo vai trò và giám sát luồng sản xuất. Không nêu tên đơn vị kiểm toán bên ngoài ở đây."
         },
         "chains": {
           "title": "Phủ sóng đa chuỗi",
@@ -380,7 +380,7 @@
       "eyebrow": "Ví dụ vụ việc",
       "title1": "Khi tiền bị đánh cắp đến ",
       "title2": "sàn giao dịch custodial",
-      "subtitle": "Ví dụ ẩn danh. Định danh đã thay đổi. Quy trình mang tính minh họa—không đảm bảo thu hồi.",
+      "subtitle": "Ví dụ ẩn danh. Định danh đã đổi. Quy trình mang tính minh họa, không phải lời hứa rằng tiền sẽ được trả lại.",
       "situation": {
         "label": "Tình huống",
         "text": "Ví doanh nghiệp gửi USDC tới hợp đồng phishing. Trong vài giờ, tiền chuyển qua hai ví trung gian và nạp vào một sàn lớn."
@@ -412,20 +412,20 @@
   },
   "Security": {
     "meta": {
-      "title": "Bảo mật & Kiểm toán | Lenix Protocol",
-      "description": "Kiểm toán smart contract CertiK, vận hành theo ISO 27001 và kiểm soát bảo mật cho hạ tầng điều tra và thu hồi của Lenix."
+      "title": "Cách làm bảo mật | Lenix Protocol",
+      "description": "Kiểm soát truy cập, xử lý hồ sơ vụ và giám sát cho công việc giám định và thu hồi của Lenix Protocol."
     },
     "hero": {
       "eyebrow": "Bảo mật",
-      "title1": "Giao thức được kiểm toán. ",
+      "title1": "Cách làm bảo mật. ",
       "title2": "Kiểm soát có tài liệu.",
-      "subtitle": "Lenix kết hợp đánh giá smart contract bên thứ ba với thực hành bảo mật vận hành cho các đội xử lý quy trình thu hồi và lưu ký nhạy cảm."
+      "subtitle": "Lenix xử lý quyền truy cập, hồ sơ vụ và luồng sản xuất cho công việc thu hồi và lưu ký như thế nào."
     },
     "audit": {
-      "title": "Phạm vi audit CertiK",
-      "desc": "Hợp đồng lõi trong luồng sản xuất đã được CertiK xem xét. Phạm vi bao gồm thành phần triển khai quan trọng và bề mặt tấn công đã biết.",
-      "certik_text": "CertiK xem xét smart contract Lenix về lỗ hổng phổ biến, kiểm soát truy cập và lỗi logic trong luồng token và vault.",
-      "certik_link": "Docs bảo mật",
+      "title": "Truy cập và giám sát",
+      "desc": "Luồng thanh toán và lưu ký dùng quyền theo vai trò. Luồng sản xuất được theo dõi khi có hoạt động bất thường.",
+      "certik_text": "Thao tác quản trị dùng quyền theo vai trò. Luồng sản xuất được theo dõi khi hợp đồng có hoạt động bất thường.",
+      "certik_link": "Về Lenix",
       "items": {
         "contracts": {
           "title": "Phạm vi xem xét hợp đồng",
@@ -443,8 +443,8 @@
       "eyebrow": "Smart contract"
     },
     "iso": {
-      "title": "Vận hành theo ISO 27001",
-      "desc": "Lenix Protocol duy trì thực hành quản lý an ninh thông tin theo ISO 27001 cho dữ liệu khách hàng, tài liệu điều tra và hệ thống nội bộ."
+      "title": "Xử lý hồ sơ vụ",
+      "desc": "Dữ liệu khách hàng và tài liệu điều tra được lưu với kiểm soát truy cập và chỉ chia sẻ với người nhận đã ghi nhận."
     },
     "practices": {
       "data": {
@@ -466,14 +466,14 @@
     },
     "cta": {
       "title": "Cần tài liệu bảo mật?",
-      "subtitle": "Liên hệ để nhận tóm tắt audit, chi tiết ISO hoặc đánh giá doanh nghiệp.",
+      "subtitle": "Liên hệ đội ngũ nếu có câu hỏi về kiểm soát truy cập hoặc cách xử lý hồ sơ.",
       "btn_primary": "Thu hồi",
       "btn_secondary": "Liên hệ"
     },
     "assurance": {
       "eyebrow": "Xác minh",
       "title": "Những gì chúng tôi có thể cung cấp",
-      "description": "Đánh giá hợp đồng độc lập và kiểm soát vận hành có tài liệu — không hứa hẹn suông.",
+      "description": "Truy cập theo vai trò, giám sát sản xuất, và giới hạn bằng văn bản về người được xem hồ sơ.",
       "iso_link": "Về Lenix"
     }
   },

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Dịch vụ thu hồi tài sản crypto được chứng nhận | Lenix Protocol",
-    "description": "Thu hồi chuyên nghiệp tiền mã hóa bị mất hoặc bị đánh cắp, với tỷ lệ thành công 94%. Chuyên khôi phục mật khẩu ví và điều tra gian lận theo hướng giám định.",
+    "title": "Thu hồi tài sản crypto | Lenix Protocol",
+    "description": "Khôi phục ví và cụm từ hạt giống, cùng giám định blockchain và truy vết tiền mã hóa bị mất hoặc bị đánh cắp. Phạm vi được đánh giá trước khi có việc trả phí.",
     "keywords": "Thu hồi crypto, Thu hồi Bitcoin bị đánh cắp, Khôi phục ví bị mất, Điều tra gian lận crypto, Giám định blockchain"
   },
   "Hero": {
-    "eyebrow": "Thu hồi tài sản được chứng nhận",
+    "eyebrow": "Thu hồi tài sản",
     "title": "Thu hồi theo hướng giám định cho crypto bị đánh cắp hoặc chuyển nhầm",
     "description": "Điều tra viên Lenix truy vết dòng chảy on-chain, chuẩn bị hồ sơ cho sàn và cơ quan thực thi pháp luật, và phối hợp phong tỏa tài sản khi việc thu hồi vẫn còn khả thi.",
     "submit": "Gửi vụ việc",
@@ -48,7 +48,9 @@
     "traced": "Tài sản đã truy vết và theo dõi",
     "cases": "Vụ đã xem xét",
     "jurisdictions": "Vùng tài phán được phủ",
-    "intake": "Tiếp nhận sự cố"
+    "intake": "Tiếp nhận sự cố",
+    "traced_value": "Trên chuỗi",
+    "cases_value": "Rà soát vụ"
   },
   "Features": {
     "eyebrow": "Năng lực",
@@ -127,8 +129,8 @@
         "answer": "Có. Tài liệu vụ việc được mã hóa, kiểm soát truy cập, và chỉ chia sẻ với bên cần thiết để theo đuổi thu hồi — sàn, luật sư hoặc cơ quan chức năng — khi có sự chấp thuận của bạn."
       },
       "guarantee": {
-        "question": "Các bạn có bảo đảm thu hồi được không?",
-        "answer": "Không tổ chức có trách nhiệm nào có thể bảo đảm thu hồi. Kết quả phụ thuộc vào tiền đã đi đâu, vụ được báo sớm đến mức nào, và bên lưu ký hoặc sàn có thể hành động hay không. Trước khi bạn cam kết, chúng tôi đưa đánh giá thẳng thắn về khả năng thu hồi."
+        "question": "Tiền có được trả lại không?",
+        "answer": "Không phải lúc nào cũng vậy. Kết quả phụ thuộc vào tiền đã đi đâu, vụ được báo sớm đến mức nào, và bên lưu ký hoặc sàn có thể hành động hay không. Chúng tôi đánh giá vụ có thể tiếp tục hay không trước khi bạn cam kết."
       },
       "include": {
         "question": "Khi gửi vụ việc tôi nên kèm những gì?",

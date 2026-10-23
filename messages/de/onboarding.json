@@ -4,7 +4,8 @@
     "back": "Zurück",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Fortschritt",
-    "asideAria": "Hilfe und Informationen"
+    "asideAria": "Hilfe und Informationen",
+    "securityNote": "Fallangaben werden im Browser verschlüsselt, bevor sie gesendet werden."
   },
   "Progress": {
     "stepOf": "Schritt {current} von {total}",

@@ -4,7 +4,8 @@
     "back": "Geri",
     "logoAlt": "Lenix Protocol",
     "progressAria": "İlerleme",
-    "asideAria": "Yardım ve bilgi"
+    "asideAria": "Yardım ve bilgi",
+    "securityNote": "Dosya ayrıntıları gönderilmeden önce tarayıcıda şifrelenir."
   },
   "Progress": {
     "stepOf": "Adım {current} / {total}",

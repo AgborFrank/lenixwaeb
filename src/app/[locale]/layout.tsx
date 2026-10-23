@@ -87,7 +87,7 @@ export async function generateMetadata({
   return withPublicMetadata(locale, basePathFromPathname(pathname), {
     title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
     description:
-      "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics. We trace assets, identify scammers, and provide court-ready evidence.",
+      "Wallet and seed phrase recovery, blockchain forensics, and tracing for lost or stolen cryptocurrency.",
     keywords: [
       "Crypto Recovery",
       "Blockchain Forensics",
@@ -100,7 +100,7 @@ export async function generateMetadata({
     openGraph: {
       title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
       description:
-        "Professional cryptocurrency investigation and asset recovery services. Trace stolen funds and secure your digital future.",
+        "Wallet and seed phrase recovery, blockchain forensics, and tracing for lost or stolen cryptocurrency.",
       siteName: "Lenix Protocol",
       images: [
         {
@@ -117,7 +117,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
       description:
-        "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics.",
+        "Wallet and seed phrase recovery, blockchain forensics, and tracing for lost or stolen cryptocurrency.",
       images: ["/assets/img/og-image.png"],
     },
   });

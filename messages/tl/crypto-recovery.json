@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Sertipikadong serbisyo sa pagbawi ng crypto asset | Lenix Protocol",
-    "description": "Propesyonal na pagbawi ng nawala o nanakaw na cryptocurrency, na may 94% na tagumpay. Dalubhasa sa pagbawi ng password ng wallet at imbestigasyon ng panloloko na pinangungunahan ng forensics.",
+    "title": "Pagbawi ng crypto asset | Lenix Protocol",
+    "description": "Pagbawi ng wallet at seed phrase, kasama ang blockchain forensics at pagsubaybay sa nawala o nanakaw na cryptocurrency. Sinusuri ang saklaw bago ang bayad na trabaho.",
     "keywords": "Pagbawi ng crypto, Pagbawi ng ninakaw na Bitcoin, Ibalik ang nawalang wallet, Imbestigasyon ng crypto fraud, Blockchain forensics"
   },
   "Hero": {
-    "eyebrow": "Sertipikadong pagbawi ng asset",
+    "eyebrow": "Pagbawi ng asset",
     "title": "Pagbawing pinangungunahan ng forensics para sa ninakaw o maling napuntang crypto",
     "description": "Sinusubaybayan ng mga imbestigador ng Lenix ang galaw on-chain, inihahanda ang pakete para sa exchange at awtoridad, at kinokordina ang pag-freeze ng asset kapag posible pa ang pagbawi.",
     "submit": "Magsumite ng kaso",
@@ -48,7 +48,9 @@
     "traced": "Mga asset na nasubaybayan at mino-monitor",
     "cases": "Mga kasong nasuri",
     "jurisdictions": "Mga hurisdiksyong saklaw",
-    "intake": "Pagtanggap ng insidente"
+    "intake": "Pagtanggap ng insidente",
+    "traced_value": "Sa blockchain",
+    "cases_value": "Pagsusuri ng kaso"
   },
   "Features": {
     "eyebrow": "Kakayahan",
@@ -127,8 +129,8 @@
         "answer": "Oo. Naka-encrypt ang materyal ng kaso, kontrolado ang access, at ibinabahagi lamang sa mga partidong kailangan para ituloy ang pagbawi — exchange, abogado, o awtoridad — nang may pahintulot mo."
       },
       "guarantee": {
-        "question": "Ginagarantiya ba ninyo ang pagbawi?",
-        "answer": "Walang responsableng kumpanya ang makakagarantiya ng pagbawi. Ang resulta ay nakadepende sa kung saan napunta ang pondo, kung gaano kabilis naiulat ang kaso, at kung makakilos ang tagapag-ingat o exchange. Bago ka mangako, nagbibigay kami ng tapat na pagtatasa kung mababawi pa."
+        "question": "Ibinabalik ba ang pondo?",
+        "answer": "Hindi palagi. Ang resulta ay nakadepende sa kung saan napunta ang pondo, kung gaano kabilis naiulat ang kaso, at kung makakilos ang tagapag-ingat o exchange. Tinatasa namin kung maaaring ituloy ang kaso bago ka mangako."
       },
       "include": {
         "question": "Ano ang dapat kong isama kapag nagsusumite ng kaso?",

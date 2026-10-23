@@ -165,7 +165,7 @@
       "cards": {
         "security": {
           "title": "Segurança blockchain",
-          "desc": "Vaults auditados, custódia multi-sig e monitorização para equipas que precisam de ativos seguros on-chain.",
+          "desc": "Custódia multi-sig e monitorização para equipas que mantêm ativos on-chain.",
           "cta": "Ver segurança"
         },
         "recovery": {
@@ -208,7 +208,7 @@
       "title2": "recuperação integrada",
       "title3": ".",
       "point1": "Aceite cripto e liquide em fiat via checkout e APIs de comerciante.",
-      "point2": "Encaminhe receitas por custódia vault auditada com controlos multi-sig.",
+      "point2": "Encaminhe receitas por custódia multi-sig.",
       "point3": "Se algo correr mal após liquidação, o mesmo protocolo suporta rastreio e fluxos de recuperação.",
       "point4_1": "Ver soluções",
       "point4_2": " ou ",
@@ -220,7 +220,7 @@
     "Payment": {
       "badge": "Pilha do protocolo",
       "title": "Mova, guarde e recupere valor numa única camada",
-      "subtitle": "Pagamentos, custódia, recuperação e empréstimos compartilham a mesma infraestrutura auditada — não quatro produtos desconectados.",
+      "subtitle": "Pagamentos, custódia, recuperação e empréstimos estão no mesmo protocolo — não em quatro produtos separados.",
       "cards": {
         "fiat": {
           "title": "Cripto para fiat",
@@ -260,14 +260,14 @@
     },
     "Credibility": {
       "eyebrow": "Verificação",
-      "title1": "Código auditado. ",
+      "title1": "Práticas de segurança. ",
       "title2": "Controlos documentados.",
-      "subtitle1": "Smart contracts revistos pela CertiK e operações alinhadas com ISO 27001 para equipas que precisam de mais do que marketing.",
+      "subtitle1": "Controlos de acesso, monitorização e limites escritos sobre quem vê os processos.",
       "subtitle2_1": "Leia o ",
       "subtitle2_2": "livro branco",
       "subtitle2_3": " e a documentação de auditoria sobre arquitetura, utilidade do token e controlos de segurança.",
-      "col1_text": "Os smart contracts Lenix Protocol foram revistos pela CertiK. A auditoria cobre componentes core usados em fluxos de produção.",
-      "col1_btn": "Docs segurança",
+      "col1_text": "Os fluxos de pagamento e custódia em produção usam acesso por função e monitorização. Este site não nomeia um auditor.",
+      "col1_btn": "Práticas de segurança",
       "col2_text": "O whitepaper explica como recovery, custódia e pagamentos se ligam—e onde o LNX se encaixa no design do protocolo.",
       "col2_btn": "Whitepaper"
     },
@@ -366,8 +366,8 @@
           "desc": "Se o rasto estiver esgotado ou a recuperação for improvável, dizemo-lo antes de um compromisso pago."
         },
         "audited": {
-          "title": "Stack de protocolo auditado",
-          "desc": "Smart contracts revistos pela CertiK. Operações alinhadas com controlos ISO 27001."
+          "title": "Controlos de acesso",
+          "desc": "Acesso por função e monitorização dos fluxos de produção. Nenhum auditor externo é nomeado aqui."
         },
         "chains": {
           "title": "Cobertura multi-chain",
@@ -380,7 +380,7 @@
       "eyebrow": "Exemplo de caso",
       "title1": "Quando fundos roubados chegam ",
       "title2": "a uma exchange custodial",
-      "subtitle": "Exemplo anonimizado. Identificadores alterados. O processo é representativo—sem garantia de recuperação.",
+      "subtitle": "Exemplo anonimizado. Identificadores alterados. O processo é representativo e não é uma promessa de que os fundos voltem.",
       "situation": {
         "label": "Situação",
         "text": "Uma carteira empresarial enviou USDC a um contrato de phishing. Em horas, os fundos passaram por duas carteiras intermediárias e foram depositados numa grande exchange."
@@ -412,20 +412,20 @@
   },
   "Security": {
     "meta": {
-      "title": "Segurança e Auditorias | Lenix Protocol",
-      "description": "Auditorias CertiK, operações alinhadas com ISO 27001 e controlos de segurança para a infraestrutura forense e de recuperação da Lenix."
+      "title": "Práticas de segurança | Lenix Protocol",
+      "description": "Controlos de acesso, tratamento de processos e monitorização para o trabalho forense e de recuperação da Lenix Protocol."
     },
     "hero": {
       "eyebrow": "Segurança",
-      "title1": "Protocolo auditado. ",
+      "title1": "Práticas de segurança. ",
       "title2": "Controlos documentados.",
-      "subtitle": "A Lenix combina revisão externa de smart contracts com práticas de segurança operacional para equipas que gerem fluxos sensíveis de recuperação e custódia."
+      "subtitle": "Como a Lenix trata o acesso, os processos e os fluxos de produção na recuperação e na custódia."
     },
     "audit": {
-      "title": "Âmbito audit CertiK",
-      "desc": "Contratos centrais em fluxos de produção foram revistos pela CertiK. O âmbito cobre componentes críticos e superfícies de ataque conhecidas.",
-      "certik_text": "A CertiK reviu os smart contracts Lenix quanto a vulnerabilidades comuns, controlo de acesso e falhas lógicas em fluxos de token e vault.",
-      "certik_link": "Docs segurança",
+      "title": "Acesso e monitorização",
+      "desc": "Os fluxos de pagamento e custódia usam permissões por função. Os fluxos de produção são vigiados quanto a atividade invulgar.",
+      "certik_text": "As ações de administração usam permissões por função. Os fluxos de produção são vigiados quanto a atividade invulgar dos contratos.",
+      "certik_link": "Sobre a Lenix",
       "items": {
         "contracts": {
           "title": "Âmbito de revisão",
@@ -443,8 +443,8 @@
       "eyebrow": "Contratos inteligentes"
     },
     "iso": {
-      "title": "Operações alinhadas com ISO 27001",
-      "desc": "A Lenix Protocol mantém práticas de gestão de segurança da informação alinhadas com ISO 27001 para dados de clientes, materiais de investigação e sistemas internos."
+      "title": "Tratamento de processos",
+      "desc": "Dados de clientes e materiais de investigação são guardados com controlos de acesso e partilhados só com destinatários documentados."
     },
     "practices": {
       "data": {
@@ -466,14 +466,14 @@
     },
     "cta": {
       "title": "Precisa de documentação?",
-      "subtitle": "Contacte a equipa para resumos de auditoria, ISO ou revisões enterprise.",
+      "subtitle": "Contacte a equipa para perguntas sobre controlos de acesso ou o tratamento de processos.",
       "btn_primary": "Iniciar recovery",
       "btn_secondary": "Contactar segurança"
     },
     "assurance": {
       "eyebrow": "Verificação",
       "title": "O que podemos mostrar",
-      "description": "Revisão independente de contratos e controlos operacionais documentados — sem promessas vazias.",
+      "description": "Acesso por função, monitorização da produção e limites escritos sobre quem vê os processos.",
       "iso_link": "Sobre Lenix"
     }
   },

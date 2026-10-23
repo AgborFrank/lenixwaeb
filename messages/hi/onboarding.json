@@ -4,7 +4,8 @@
     "back": "वापस",
     "logoAlt": "Lenix Protocol",
     "progressAria": "प्रगति",
-    "asideAria": "सहायता और जानकारी"
+    "asideAria": "सहायता और जानकारी",
+    "securityNote": "केस विवरण भेजने से पहले ब्राउज़र में एन्क्रिप्ट होते हैं।"
   },
   "Progress": {
     "stepOf": "चरण {current} में से {total}",

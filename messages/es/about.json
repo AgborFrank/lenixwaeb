@@ -7,7 +7,7 @@
     "sub_description": "Asegurando el futuro digital. Potenciando la liquidez global.",
     "stats": {
       "assets_traced": "Activos Rastreados",
-      "assets_count": "$850M+",
+      "assets_count": "En cadena",
       "credit_checks": "Chequeos de Crédito",
       "credit_count": "0",
       "jurisdictions": "Jurisdicciones",
@@ -30,7 +30,7 @@
     "finance": {
       "title": "Empoderamiento Financiero",
       "subtitle": "Liquidez instantánea sin vender sus criptomonedas.",
-      "description": "Acceda a préstamos cripto rápidos, seguros y sobrecolateralizados sin verificación de historial crediticio. Nuestros modelos de custodia descentralizada garantizan que sus activos permanezcan protegidos mientras desbloquea el capital necesario.",
+      "description": "Acceda a préstamos cripto rápidos, seguros y sobrecolateralizados sin verificación de historial crediticio. El colateral permanece en bóvedas segregadas mientras desbloquea el capital que necesita.",
       "points": {
         "approval": "Aprobación y Desembolso Instantáneos",
         "credit": "Sin Requisitos de Puntuación de Crédito",
@@ -66,7 +66,7 @@
       },
       "uptime": {
         "title": "Disponibilidad",
-        "subtitle": "Garantía de fiabilidad",
+        "subtitle": "Disponibilidad",
         "desc": "Disponibilidad constante"
       },
       "team": {
@@ -87,9 +87,9 @@
     "title2": " el Liderazgo",
     "subtitle": "De un equipo de élite en ciberseguridad a una plataforma global que asegura activos digitales y desbloquea liquidez para millones. Así es como hemos evolucionado.",
     "step1": {
-      "title": "2021 - El Comienzo",
-      "desc": "Fundada por veteranos de la ciberseguridad y élite forense, Lenix Protocol nació con una misión simple: proteger la integridad de la blockchain y rastrear activos robados.",
-      "tag1": "Agencia Fundada",
+      "title": "El encargo",
+      "desc": "Lenix Protocol rastrea activos digitales robados y revisa si una investigación sobre el libro público puede seguir adelante.",
+      "tag1": "Rastreo",
       "tag2": "Primer Algo de Rastreo",
       "photo": "Foto del Equipo Fundador"
     },
@@ -116,8 +116,8 @@
     },
     "step7": {
       "title": "2027 - Líder de la Industria",
-      "desc": "Hoy, somos la autoridad global reconocida en análisis forense blockchain y el principal proveedor de liquidez cripto, habiendo rastreado más de $850M y procesado miles de millones.",
-      "tag1": "$850M+ Rastreados",
+      "desc": "Hoy, somos la autoridad global reconocida en análisis forense blockchain y el principal proveedor de liquidez cripto, habiendo procesado miles de millones.",
+      "tag1": "Rastreo en cadena",
       "tag2": "Prestamista Principal",
       "photo": "Reconocimiento de la Industria"
     },

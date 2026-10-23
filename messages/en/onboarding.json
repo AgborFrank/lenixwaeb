@@ -4,7 +4,8 @@
     "back": "Back",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Progress",
-    "asideAria": "Help and information"
+    "asideAria": "Help and information",
+    "securityNote": "Case details are encrypted in the browser before they are sent."
   },
   "Progress": {
     "stepOf": "Step {current} of {total}",

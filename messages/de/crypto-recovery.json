@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Zertifizierte Rückgewinnung von Krypto-Assets | Lenix Protocol",
-    "description": "Professionelle Rückgewinnung verlorener oder gestohlener Kryptowährung mit einer Erfolgsquote von 94 %. Spezialisiert auf die Wiederherstellung von Wallet-Passwörtern und forensisch geführte Betrugsermittlungen.",
+    "title": "Rückgewinnung von Krypto-Assets | Lenix Protocol",
+    "description": "Wiederherstellung von Wallet und Seed-Phrase sowie Blockchain-Forensik und Nachverfolgung verlorener oder gestohlener Kryptowährung. Der Umfang wird vor bezahlter Arbeit geprüft.",
     "keywords": "Krypto-Rückgewinnung, Gestohlene Bitcoin zurückholen, Verlorene Wallet wiederherstellen, Krypto-Betrugsermittlung, Blockchain-Forensik"
   },
   "Hero": {
-    "eyebrow": "Zertifizierte Asset-Rückgewinnung",
+    "eyebrow": "Asset-Rückgewinnung",
     "title": "Forensisch geführte Rückgewinnung bei gestohlener oder fehlgeleiteter Krypto",
     "description": "Ermittler von Lenix verfolgen Bewegungen on-chain, bereiten Unterlagen für Börsen und Strafverfolgung vor und koordinieren das Einfrieren von Assets, solange eine Rückgewinnung realistisch bleibt.",
     "submit": "Fall einreichen",
@@ -48,7 +48,9 @@
     "traced": "Verfolgte und beobachtete Assets",
     "cases": "Geprüfte Fälle",
     "jurisdictions": "Abgedeckte Rechtsräume",
-    "intake": "Vorfallaufnahme"
+    "intake": "Vorfallaufnahme",
+    "traced_value": "Kettenprüfung",
+    "cases_value": "Fallprüfung"
   },
   "Features": {
     "eyebrow": "Leistungen",
@@ -127,8 +129,8 @@
         "answer": "Ja. Fallunterlagen sind verschlüsselt, der Zugriff ist kontrolliert, und sie werden nur mit den Stellen geteilt, die für die Rückgewinnung nötig sind — Börsen, Anwälte oder Behörden — mit Ihrer Zustimmung."
       },
       "guarantee": {
-        "question": "Garantieren Sie die Rückgewinnung?",
-        "answer": "Kein seriöses Unternehmen kann eine Rückgewinnung garantieren. Das Ergebnis hängt davon ab, wohin die Gelder geflossen sind, wie schnell der Fall gemeldet wird und ob Verwahrer oder Börsen handeln können. Bevor Sie sich festlegen, erhalten Sie eine ehrliche Einschätzung der Aussichten."
+        "question": "Werden Gelder zurückgegeben?",
+        "answer": "Nicht unbedingt. Das Ergebnis hängt davon ab, wohin die Gelder geflossen sind, wie schnell der Fall gemeldet wird und ob Verwahrer oder Börsen handeln können. Wir prüfen vor einer Beauftragung, ob eine Weiterverfolgung realistisch ist."
       },
       "include": {
         "question": "Was soll ich beim Einreichen eines Falls beifügen?",
