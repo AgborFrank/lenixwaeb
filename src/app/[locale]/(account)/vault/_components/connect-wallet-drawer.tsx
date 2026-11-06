@@ -28,6 +28,8 @@ import {
 export function ConnectWalletDrawer() {
   const t = useTranslations("AccountVault.drawer");
   const tToast = useTranslations("AccountVault.toast");
+  // "Connect Wallet" is omitted from the catalog while NEXT_PUBLIC_ENABLE_WALLET is off.
+  const connectLabel = t.has("connect_wallet") ? t("connect_wallet") : t("setup_title");
   const { walletState, walletData, unlockWallet, lockWallet } = useWallet();
   const [unlockPassword, setUnlockPassword] = useState("");
   const [isUnlocking, setIsUnlocking] = useState(false);
@@ -130,7 +132,7 @@ export function ConnectWalletDrawer() {
             className="h-9 bg-white px-3 text-black hover:bg-zinc-200"
           >
             <Wallet className="mr-2 h-5 w-5" />
-            {t("connect_wallet")}
+            {connectLabel}
           </Button>
         </DrawerTrigger>
         <DrawerContent className="bg-zinc-950 border-zinc-800 text-white max-h-[90vh]">
@@ -413,7 +415,7 @@ export function ConnectWalletDrawer() {
     >
       <Link href="/lenix-wallet">
         <Wallet className="mr-2 h-5 w-5" />
-        {t("connect_wallet")}
+        {connectLabel}
       </Link>
     </Button>
   );

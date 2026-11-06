@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { HomeSectionHeader } from "./home-section-header";
 import { home } from "@/lib/home-styles";
 

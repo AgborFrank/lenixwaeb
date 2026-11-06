@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { usePathname, useRouter } from "next/navigation";
 import { ArrowLeft, ChevronRight, LogOut, Menu, X } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";

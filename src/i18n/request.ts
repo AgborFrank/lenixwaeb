@@ -1,6 +1,7 @@
 import { getRequestConfig } from "next-intl/server";
 import { hasLocale } from "next-intl";
 import { routing } from "./routing";
+import { stripHiddenPromoCopy } from "@/lib/feature-flags";
 
 export default getRequestConfig(async ({ requestLocale }) => {
     const requested = await requestLocale;
@@ -84,7 +85,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
     return {
         locale,
-        messages: {
+        messages: stripHiddenPromoCopy({
             ...common.default,
             ...(Object.keys(settingsMessages).length > 0 ? { Settings: settingsMessages } : {}),
             ...(Object.keys(aboutMessages).length > 0 ? { About: aboutMessages } : {}),
@@ -106,6 +107,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
             ...(Object.keys(cryptoRecoveryMessages).length > 0 ? { CryptoRecovery: cryptoRecoveryMessages } : {}),
             ...(Object.keys(giveawayMessages).length > 0 ? { Giveaway: giveawayMessages } : {}),
             ...(Object.keys(purchaseRefundMessages).length > 0 ? { PurchaseRefund: purchaseRefundMessages } : {}),
-        },
+        }),
     };
 });

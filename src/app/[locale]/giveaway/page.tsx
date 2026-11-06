@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
+import { giveawayEnabled } from "@/lib/feature-flags";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import {
@@ -10,15 +12,22 @@ import {
 } from "@/components/ui/accordion";
 import { Link } from "@/i18n/navigation";
 
+const robots: Metadata["robots"] = { index: false, follow: false };
+
 export async function generateMetadata(): Promise<Metadata> {
+  if (!giveawayEnabled) {
+    return { robots };
+  }
   const t = await getTranslations("Giveaway.meta");
   return {
     title: t("title"),
     description: t("description"),
+    robots,
   };
 }
 
 export default async function Giveaway() {
+  if (!giveawayEnabled) notFound();
   const t = await getTranslations("Giveaway");
   const winners = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as const;
   const enterSteps = ["1", "2", "3", "4"] as const;

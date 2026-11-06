@@ -1,9 +1,11 @@
 import { ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { giveawayEnabled } from "@/lib/feature-flags";
 
 export default function Competition() {
   const t = useTranslations("Home.Competition");
+  if (!giveawayEnabled) return null;
   return (
     <section className="py-20 px-4 bg-white relative overflow-hidden">
       <div

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { useMemo, useState } from "react";
 import { EllipsisVertical, LockKeyhole, Search } from "lucide-react";
 import { formatUnits } from "ethers";
@@ -182,7 +182,7 @@ export default function SendPage() {
                 <>
                   {t("unlock_locked_prefix")}{" "}
                   <Link
-                    href="../lenix-wallet"
+                    href="/lenix-wallet"
                     className="underline decoration-yellow-300 hover:text-yellow-200"
                   >
                     {t("wallet_page")}
@@ -193,7 +193,7 @@ export default function SendPage() {
                 <>
                   {t("unlock_no_wallet_prefix")}{" "}
                   <Link
-                    href="../lenix-wallet"
+                    href="/lenix-wallet"
                     className="underline decoration-yellow-300 hover:text-yellow-200"
                   >
                     {t("wallet_dashboard")}
