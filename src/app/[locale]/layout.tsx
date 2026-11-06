@@ -147,6 +147,21 @@ export default async function RootLayout({
     page = <AppKitProvider cookies={cookies}>{children}</AppKitProvider>;
   }
 
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Lenix Protocol",
+    url: "https://lenixprotocol.com",
+    logo: "https://lenixprotocol.com/assets/img/favicon.png",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Theilerstrasse 1a",
+      postalCode: "6300",
+      addressLocality: "Zug",
+      addressCountry: "CH",
+    },
+  };
+
   return (
     <html lang={locale} className="dark" suppressHydrationWarning>
       {/* Cookiebot Consent - afterInteractive for Next.js 16 compatibility */}
@@ -182,6 +197,12 @@ export default async function RootLayout({
           antialiased overflow-x-hidden
         `}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <NextIntlClientProvider messages={messages}>
           <TooltipProvider>
             <ThemeProvider>
