@@ -75,7 +75,7 @@
         "title": "Vai trò trung lập có sẵn",
         "desc": "Lenix có thể hỗ trợ luật sư nguyên đơn, bị đơn hoặc làm chuyên gia độc lập trong tranh chia tài sản và định giá."
       },
-      "no_guarantee": {
+      "completeness": {
         "title": "Không đảm bảo đầy đủ",
         "desc": "Nhận dạng bị giới hạn bởi manh mối cung cấp, khả năng nhìn thấy chain và quyền truy cập hợp pháp. Chúng tôi nêu rõ phần có và không thể thu hồi từ dữ liệu hiện có."
       },

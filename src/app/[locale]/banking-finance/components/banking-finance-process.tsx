@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
 const STEPS = [
-  { id: "account", image: "/assets/img/certy.webp", number: "01" },
+  { id: "account", image: "/assets/img/staff.jpg", number: "01" },
   { id: "fund", image: "/assets/img/cross-border.svg", number: "02" },
   { id: "request", image: "/assets/img/trade-routes.jpg", number: "03" },
   { id: "track", image: "/assets/img/DetectFinancialCrime.webp", number: "04" },

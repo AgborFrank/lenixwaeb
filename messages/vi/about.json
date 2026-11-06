@@ -7,7 +7,7 @@
     "sub_description": "Bảo vệ tương lai kỹ thuật số. Tăng cường thanh khoản toàn cầu.",
     "stats": {
       "assets_traced": "Tài sản Được Theo Dõi",
-      "assets_count": "$850 Triệu+",
+      "assets_count": "Trên chuỗi",
       "credit_checks": "Kiểm tra Tín dụng",
       "credit_count": "0",
       "jurisdictions": "Khu vực Pháp lý",
@@ -30,7 +30,7 @@
     "finance": {
       "title": "Trao quyền Tài chính",
       "subtitle": "Thanh khoản tức thì mà không cần bán tiền điện tử của bạn.",
-      "description": "Tiếp cận các khoản vay tiền điện tử nhanh chóng, an toàn, được thế chấp vượt mức mà không cần kiểm tra điểm tín dụng. Mô hình lưu ký phi tập trung của chúng tôi đảm bảo tài sản của bạn vẫn được bảo vệ trong khi bạn mở khóa vốn để mở rộng hoạt động đầu tư hay kiểm soát chi tiêu.",
+      "description": "Tiếp cận các khoản vay tiền điện tử nhanh chóng, an toàn, được thế chấp vượt mức mà không cần kiểm tra điểm tín dụng. Tài sản thế chấp nằm ở kho tách biệt khi bạn dùng vốn cho đầu tư hoặc chi tiêu.",
       "points": {
         "approval": "Phê duyệt và Giải ngân Khoản vay Tức thì",
         "credit": "Không Cần Điểm Tín dụng",
@@ -66,7 +66,7 @@
       },
       "uptime": {
         "title": "Thời gian Hoạt động của Nền tảng",
-        "subtitle": "Đảm bảo độ tin cậy",
+        "subtitle": "Mức sẵn sàng",
         "desc": "Tính khả dụng liên tục"
       },
       "team": {
@@ -87,9 +87,9 @@
     "title2": " Sự Dẫn đầu Ngành",
     "subtitle": "Từ một đội ngũ tinh hoa gồm các nhà nghiên cứu bảo mật đến một nền tảng toàn cầu bảo vệ tài sản kỹ thuật số và mở khóa thanh khoản cho hàng triệu người. Đây là cách chúng tôi đã phát triển.",
     "step1": {
-      "title": "2021 - Sự Khởi đầu",
-      "desc": "Được thành lập bởi các chuyên gia an ninh mạng kỳ cựu và các điều tra viên pháp y ưu tú, Lenix Protocol ra đời từ một sứ mệnh đơn giản: bảo vệ tính toàn vẹn của blockchain và theo dõi các tài sản kỹ thuật số bị hưu hại.",
-      "tag1": "Thành lập Cơ quan",
+      "title": "Phạm vi việc",
+      "desc": "Lenix Protocol truy vết tài sản số bị đánh cắp và xem một cuộc điều tra trên sổ cái công khai có thể tiếp tục hay không.",
+      "tag1": "Truy vết",
       "tag2": "Thuật toán Theo dõi Đầu tiên",
       "photo": "Bức ảnh Đội ngũ Sáng lập"
     },
@@ -116,8 +116,8 @@
     },
     "step7": {
       "title": "2027 - Khẳng Định Vị Thế",
-      "desc": "Ngày nay, chúng tôi là cơ quan có thẩm quyền toàn cầu được công nhận về điều tra pháp y blockchain và nhà cung cấp hàng đầu về thanh khoản tiền điện tử tức thì, đã theo dõi hơn 850 triệu đô la và xử lý hàng tỷ đô la trong các khoản vay an toàn.",
-      "tag1": "Đã theo dõi hơn $850 Triệu",
+      "desc": "Ngày nay, chúng tôi là cơ quan có thẩm quyền toàn cầu được công nhận về điều tra pháp y blockchain và nhà cung cấp hàng đầu về thanh khoản tiền điện tử tức thì, và đã xử lý hàng tỷ đô la trong các khoản vay an toàn.",
+      "tag1": "Truy vết trên chuỗi",
       "tag2": "Nhà cung cấp Khoản vay Hàng đầu",
       "photo": "Sự Công nhận của Ngành"
     },

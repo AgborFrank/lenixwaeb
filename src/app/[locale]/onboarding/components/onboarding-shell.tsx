@@ -116,7 +116,7 @@ export async function OnboardingShell({
             {/* Enterprise Security Micro-Banner */}
             <div className="flex items-center justify-center gap-2 pt-2 text-[11px] text-zinc-500">
               <Lock className="h-3 w-3 text-zinc-500" aria-hidden />
-              <span>Zero-knowledge client encryption · ISO 27001 & SOC 2 aligned protocols</span>
+              <span>{t("securityNote")}</span>
             </div>
           </div>
         ) : (
@@ -137,7 +137,7 @@ export async function OnboardingShell({
 
             <div className="flex items-center justify-center gap-2 pt-3 text-[11px] text-zinc-500">
               <Lock className="h-3 w-3 text-zinc-500" aria-hidden />
-              <span>Zero-knowledge client encryption · ISO 27001 & SOC 2 aligned protocols</span>
+              <span>{t("securityNote")}</span>
             </div>
           </>
         )}

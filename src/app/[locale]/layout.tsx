@@ -87,7 +87,7 @@ export async function generateMetadata({
   return withPublicMetadata(locale, basePathFromPathname(pathname), {
     title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
     description:
-      "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics. We trace assets, identify scammers, and provide court-ready evidence.",
+      "Wallet and seed phrase recovery, blockchain forensics, and tracing for lost or stolen cryptocurrency.",
     keywords: [
       "Crypto Recovery",
       "Blockchain Forensics",
@@ -100,7 +100,7 @@ export async function generateMetadata({
     openGraph: {
       title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
       description:
-        "Professional cryptocurrency investigation and asset recovery services. Trace stolen funds and secure your digital future.",
+        "Wallet and seed phrase recovery, blockchain forensics, and tracing for lost or stolen cryptocurrency.",
       siteName: "Lenix Protocol",
       images: [
         {
@@ -117,7 +117,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: "Crypto Asset Recovery & Blockchain Forensics | Lenix Protocol",
       description:
-        "Recover lost or stolen cryptocurrency with Lenix Protocol's certified blockchain forensics.",
+        "Wallet and seed phrase recovery, blockchain forensics, and tracing for lost or stolen cryptocurrency.",
       images: ["/assets/img/og-image.png"],
     },
   });
@@ -146,6 +146,21 @@ export default async function RootLayout({
     const { default: AppKitProvider } = await import("@/context");
     page = <AppKitProvider cookies={cookies}>{children}</AppKitProvider>;
   }
+
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Lenix Protocol",
+    url: "https://lenixprotocol.com",
+    logo: "https://lenixprotocol.com/assets/img/favicon.png",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Theilerstrasse 1a",
+      postalCode: "6300",
+      addressLocality: "Zug",
+      addressCountry: "CH",
+    },
+  };
 
   return (
     <html lang={locale} className="dark" suppressHydrationWarning>
@@ -182,6 +197,12 @@ export default async function RootLayout({
           antialiased overflow-x-hidden
         `}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <NextIntlClientProvider messages={messages}>
           <TooltipProvider>
             <ThemeProvider>

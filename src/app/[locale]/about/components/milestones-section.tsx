@@ -18,7 +18,7 @@ export default function MilestonesSection() {
       users: 50000,
       countries: 200,
       transactions: 1000000,
-      recovered: 850,
+      recovered: 0,
       awards: 15,
       uptime: 99.9,
     };
@@ -137,16 +137,16 @@ export default function MilestonesSection() {
               </div>
               <div>
                 <h3 className="text-white text-lg font-semibold">
-                  Assets Recovered
+                  Asset tracing
                 </h3>
-                <p className="text-gray-400 text-sm">Millions in value</p>
+                <p className="text-gray-400 text-sm">Ledger review</p>
               </div>
             </div>
             <div className="space-y-2">
               <div className="text-4xl lg:text-5xl font-bold text-yellow-400">
-                ${counts.recovered}M+
+                Tracing
               </div>
-              <p className="text-gray-300 text-sm">Recovered for users</p>
+              <p className="text-gray-300 text-sm">On-chain review</p>
             </div>
           </div>
 
@@ -181,7 +181,7 @@ export default function MilestonesSection() {
                 <h3 className="text-white text-lg font-semibold">
                   Platform Uptime
                 </h3>
-                <p className="text-gray-400 text-sm">Reliability guarantee</p>
+                <p className="text-gray-400 text-sm">Availability</p>
               </div>
             </div>
             <div className="space-y-2">
@@ -201,11 +201,11 @@ export default function MilestonesSection() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-black font-bold text-xl">2019</span>
+                <span className="text-black font-bold text-xl">01</span>
               </div>
-              <h4 className="text-white font-semibold mb-2">Company Founded</h4>
+              <h4 className="text-white font-semibold mb-2">Case work</h4>
               <p className="text-gray-400 text-sm">
-                Started with a vision to democratize finance
+                Review of stolen-asset trails
               </p>
             </div>
             <div className="text-center">

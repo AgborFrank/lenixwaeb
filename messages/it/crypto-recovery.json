@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Servizi certificati di recupero di cripto-asset | Lenix Protocol",
-    "description": "Recupero professionale di criptovalute perse o rubate, con un tasso di successo del 94%. Specializzati nel recupero di password dei wallet e nelle indagini sulle frodi guidate dalla forensica.",
+    "title": "Recupero di cripto-asset | Lenix Protocol",
+    "description": "Recupero di wallet e seed phrase, oltre a forense blockchain e tracciamento di criptovalute perse o rubate. L'ambito viene valutato prima di qualsiasi lavoro a pagamento.",
     "keywords": "Recupero cripto, Recupero di Bitcoin rubati, Recuperare un wallet perso, Indagine sulle frodi cripto, Forensica blockchain"
   },
   "Hero": {
-    "eyebrow": "Recupero certificato di asset",
+    "eyebrow": "Recupero di asset",
     "title": "Recupero forense per cripto rubate o inviate all'indirizzo sbagliato",
     "description": "Gli investigatori Lenix tracciano i movimenti on-chain, preparano fascicoli per exchange e forze dell'ordine e coordinano il congelamento degli asset quando il recupero resta praticabile.",
     "submit": "Invia un caso",
@@ -48,7 +48,9 @@
     "traced": "Asset tracciati e monitorati",
     "cases": "Casi esaminati",
     "jurisdictions": "Giurisdizioni coperte",
-    "intake": "Ricezione degli incidenti"
+    "intake": "Ricezione degli incidenti",
+    "traced_value": "Sulla catena",
+    "cases_value": "Revisione del caso"
   },
   "Features": {
     "eyebrow": "Capacità",
@@ -126,9 +128,9 @@
         "question": "Le mie informazioni sono riservate?",
         "answer": "Sì. Il materiale del caso è cifrato, l'accesso è controllato e viene condiviso solo con le parti necessarie al recupero — exchange, legali o autorità — con il Suo consenso."
       },
-      "guarantee": {
-        "question": "Garantite il recupero?",
-        "answer": "Nessuno studio serio può garantire il recupero. L'esito dipende da dove si sono mossi i fondi, da quanto presto viene segnalato il caso e dal fatto che custodi o exchange possano agire. Prima che Lei si impegni, forniamo una valutazione onesta della recuperabilità."
+      "outcome": {
+        "question": "I fondi vengono restituiti?",
+        "answer": "Non necessariamente. L'esito dipende da dove si sono mossi i fondi, da quanto presto viene segnalato il caso e dal fatto che custodi o exchange possano agire. Valutiamo se il caso sembra recuperabile prima che Lei si impegni."
       },
       "include": {
         "question": "Cosa devo includere quando invio un caso?",

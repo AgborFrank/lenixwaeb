@@ -4,7 +4,8 @@
     "back": "Bumalik",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Pag-usad",
-    "asideAria": "Tulong at impormasyon"
+    "asideAria": "Tulong at impormasyon",
+    "securityNote": "Naka-encrypt ang detalye ng kaso sa browser bago ipadala."
   },
   "Progress": {
     "stepOf": "Hakbang {current} ng {total}",
@@ -87,7 +88,7 @@
     "recovery": {
       "title": "Pagtanggap ng kaso sa pagbawi",
       "body": "Magbigay ng tumpak na detalye ng transaksyon para matulungan ang forensics team na subaybayan ang pondo at itala ang susunod na hakbang.",
-      "bullet1": "Pagsusuri ng chain ng mga certified analyst",
+      "bullet1": "Pagsusuri ng chain ng koponan sa imbestigasyon",
       "bullet2": "Napanatili ang ebidensya para sa legal na pagsusuri",
       "bullet3": "Mga update ng kaso sa iyong dashboard"
     },

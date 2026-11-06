@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Certified Crypto Asset Recovery Services | Lenix Protocol",
-    "description": "Professional recovery of lost or stolen cryptocurrency with 94% success rate. Specialized in wallet password recovery and forensic-led fraud investigation.",
+    "title": "Crypto Asset Recovery Services | Lenix Protocol",
+    "description": "Wallet and seed phrase recovery, plus blockchain forensics and tracing for lost or stolen cryptocurrency. Scope is assessed before any paid work.",
     "keywords": "Crypto Recovery, Stolen Bitcoin Recovery, Recover Lost Wallet, Crypto Fraud Investigation, Blockchain Forensics"
   },
   "Hero": {
-    "eyebrow": "Certified asset recovery",
+    "eyebrow": "Asset recovery",
     "title": "Forensic-led recovery for stolen and misdirected crypto",
     "description": "Lenix investigators trace on-chain movement, prepare exchange and law-enforcement packages, and coordinate asset freezes when recovery remains viable.",
     "submit": "Submit a case",
@@ -48,7 +48,9 @@
     "traced": "Assets traced and monitored",
     "cases": "Cases reviewed",
     "jurisdictions": "Jurisdictions covered",
-    "intake": "Incident intake"
+    "intake": "Incident intake",
+    "traced_value": "On-chain",
+    "cases_value": "Case review"
   },
   "Features": {
     "eyebrow": "Capabilities",
@@ -126,9 +128,9 @@
         "question": "Is my information confidential?",
         "answer": "Yes. Case materials are encrypted, access-controlled, and shared only with parties required to pursue recovery — exchanges, counsel, or authorities — with your approval."
       },
-      "guarantee": {
-        "question": "Do you guarantee recovery?",
-        "answer": "No responsible firm can guarantee recovery. Outcomes depend on where funds moved, how quickly the case is reported, and whether custodians or exchanges can act. We provide an honest recoverability assessment before you commit."
+      "outcome": {
+        "question": "Will funds be returned?",
+        "answer": "Not necessarily. Outcomes depend on where funds moved, how quickly the case is reported, and whether custodians or exchanges can act. We assess whether a case looks recoverable before you commit."
       },
       "include": {
         "question": "What should I include when submitting a case?",

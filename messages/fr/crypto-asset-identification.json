@@ -75,7 +75,7 @@
         "title": "Capacité neutre disponible",
         "desc": "Lenix peut soutenir le conseil du demandeur, la défense ou agir comme expert indépendant en partage d'actifs et litiges d'évaluation."
       },
-      "no_guarantee": {
+      "completeness": {
         "title": "Aucune garantie d'exhaustivité",
         "desc": "L'identification est limitée par les indices fournis, la visibilité on-chain et l'accès légal. Nous indiquons ce qui est et n'est pas récupérable des données disponibles."
       },

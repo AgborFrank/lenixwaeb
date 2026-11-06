@@ -4,7 +4,8 @@
     "back": "Voltar",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Progresso",
-    "asideAria": "Ajuda e informações"
+    "asideAria": "Ajuda e informações",
+    "securityNote": "Os dados do caso são cifrados no navegador antes do envio."
   },
   "Progress": {
     "stepOf": "Etapa {current} de {total}",
@@ -87,7 +88,7 @@
     "recovery": {
       "title": "Entrada de recuperação",
       "body": "Forneça dados precisos de transação para ajudar a rastrear os fundos e registrar os próximos passos.",
-      "bullet1": "Análise on-chain com analistas certificados",
+      "bullet1": "Análise on-chain pela equipa forense",
       "bullet2": "Evidências preservadas para revisão jurídica",
       "bullet3": "Atualizações do caso no painel"
     },

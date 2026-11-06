@@ -7,7 +7,7 @@
     "sub_description": "Dijital geleceği güvence altına alıyoruz. Küresel likiditeyi güçlendiriyoruz.",
     "stats": {
       "assets_traced": "İzlenen Varlıklar",
-      "assets_count": "$850M+",
+      "assets_count": "Zincir üstü",
       "credit_checks": "Kredi Kontrolleri",
       "credit_count": "0",
       "jurisdictions": "Hukuki Yetki Alanları",
@@ -30,7 +30,7 @@
     "finance": {
       "title": "Finansal Güçlendirme",
       "subtitle": "Kripto varlıklarınızı satmadan anında likidite.",
-      "description": "Kredi puanı kontrolleri olmadan hızlı, güvenli, aşırı teminatlandırılmış kripto kredilerine erişin. Merkezi olmayan saklama modellerimiz, yatırım yapmak veya genişlemek için ihtiyaç duyduğunuz sermayenin kilidini açarken varlıklarınızın korunmasını garanti eder.",
+      "description": "Kredi puanı kontrolleri olmadan hızlı, güvenli, aşırı teminatlandırılmış kripto kredilerine erişin. Teminat, ihtiyaç duyduğunuz sermayeyi kullanırken ayrı kasalarda kalır.",
       "points": {
         "approval": "Anında Kredi Onayı ve Ödemesi",
         "credit": "Sıfır Kredi Puanı Şartı",
@@ -66,7 +66,7 @@
       },
       "uptime": {
         "title": "Platform Kesintisiz Süresi",
-        "subtitle": "Güvenilirlik garantisi",
+        "subtitle": "Kullanılabilirlik",
         "desc": "Sürekli erişilebilirlik"
       },
       "team": {
@@ -87,9 +87,9 @@
     "title2": " Uzanan Yolculuğumuz",
     "subtitle": "Seçkin bir güvenlik araştırmacıları ekibinden dijital varlıkları güvence altına alan ve milyonlar için likidite kilidini açan küresel bir platforma. İşte böyle evrimleştik.",
     "step1": {
-      "title": "2021 - Başlangıç",
-      "desc": "Siber güvenlik gazileri ve seçkin adli araştırmacılar tarafından kurulan Lenix Protocol, basit bir misyondan doğdu: blockchain bütünlüğünü korumak ve çalınan dijital varlıkları izlemek.",
-      "tag1": "Ajans Kuruldu",
+      "title": "Kapsam",
+      "desc": "Lenix Protocol çalınan dijital varlıkları izler ve kamuya açık defter üzerinde bir incelemenin ilerleyip ilerleyemeyeceğini değerlendirir.",
+      "tag1": "İzleme",
       "tag2": "İlk İzleme Algoritması",
       "photo": "Kurucu Ekip Fotoğrafı"
     },
@@ -116,8 +116,8 @@
     },
     "step7": {
       "title": "2027 - Sektör Lideri",
-      "desc": "Bugün, blockchain adli bilişiminde tanınmış küresel otorite ve anında kripto likiditesinin lider sağlayıcısıyız, 850 milyon dolardan fazla işlem izledik ve milyarlarca güvenli kredi işledik.",
-      "tag1": "$850M+ İzlenen",
+      "desc": "Bugün, blockchain adli bilişiminde tanınmış küresel otorite ve anında kripto likiditesinin lider sağlayıcısıyız ve milyarlarca güvenli kredi işledik.",
+      "tag1": "Zincir üstü izleme",
       "tag2": "Lider Kredi Veren",
       "photo": "Sektörel Tanınırlık"
     },

@@ -62,7 +62,7 @@
     }
   },
   "Footer": {
-    "company_desc": "Blockchain forensics, asset recovery, at crypto finance infrastructure. Audited protocol para sa tracing, custody, at cross-border payments.",
+    "company_desc": "Blockchain forensics, pagbawi ng asset, at imprastraktura ng crypto finance para sa pagsubaybay, custody, at bayad sa ibang bansa.",
     "headings": {
       "about": "TUNGKOL",
       "solutions": "SOLUSYON",
@@ -94,8 +94,8 @@
     "buttons": {
       "recover_assets": "I-recover"
     },
-    "certification_desc": "Sertipikadong ISO27001. Ligtas naming pinamamahalaan ang data ayon sa internasyonal na pamantayan.",
-    "copyright": "© 2017 - 2026 Lenix Protocol, Lahat ng Karapatan ay Nakalaan."
+    "certification_desc": "Ang data ng kliyente, mga file ng kaso, at tala ng bayad ay iniimbak na may kontrol sa access.",
+    "copyright": "© 2026 Lenix Protocol"
   },
   "languagePicker": {
     "title": "Pumili ng Rehiyon & Wika",
@@ -165,7 +165,7 @@
       "cards": {
         "security": {
           "title": "Seguridad sa blockchain",
-          "desc": "Audited vaults, multi-sig custody, at monitoring para sa mga team na kailangang ligtas ang assets on-chain.",
+          "desc": "Multi-sig custody at pagsubaybay para sa mga team na may hawak na asset on-chain.",
           "cta": "Tingnan security"
         },
         "recovery": {
@@ -208,7 +208,7 @@
       "title2": "built-in recovery",
       "title3": ".",
       "point1": "Tanggapin ang crypto at mag-settle sa fiat sa checkout flows at merchant APIs.",
-      "point2": "I-route ang proceeds sa audited vault custody na may multi-sig controls.",
+      "point2": "I-route ang kita sa multi-sig na custody.",
       "point3": "Kung may mali pagkatapos ng settlement, sinusuportahan ng parehong protocol ang tracing at recovery workflows.",
       "point4_1": "Tingnan solutions",
       "point4_2": " o ",
@@ -220,7 +220,7 @@
     "Payment": {
       "badge": "Stack ng protocol",
       "title": "Ilipat, hawakan, at bawiin ang halaga sa isang layer",
-      "subtitle": "Ang pagbabayad, custody, pagbawi, at pagpapahiram ay iisang na-audit na imprastraktura — hindi apat na hiwalay na produkto.",
+      "subtitle": "Ang bayad, custody, pagbawi, at pagpapahiram ay nasa iisang protocol — hindi apat na hiwalay na produkto.",
       "cards": {
         "fiat": {
           "title": "Crypto patungong fiat",
@@ -260,14 +260,14 @@
     },
     "Credibility": {
       "eyebrow": "Beripikasyon",
-      "title1": "Na-audit na code. ",
+      "title1": "Mga gawain sa seguridad. ",
       "title2": "Dokumentadong mga kontrol.",
-      "subtitle1": "CertiK-reviewed smart contracts at ISO 27001-aligned operations para sa mga team na kailangan ng higit sa marketing claims.",
+      "subtitle1": "Kontrol sa access, pagsubaybay, at nakasulat na hangganan kung sino ang makakakita ng file ng kaso.",
       "subtitle2_1": "Basahin ang ",
       "subtitle2_2": "dokumento",
-      "subtitle2_3": " at audit documentation para sa architecture, token utility, at security controls.",
-      "col1_text": "Na-review ng CertiK ang Lenix Protocol smart contracts. Saklaw ng audit ang core protocol components sa production flows.",
-      "col1_btn": "Security docs",
+      "subtitle2_3": " para sa arkitektura, gamit ng token, at mga kontrol sa seguridad.",
+      "col1_text": "Ang production na bayad at custody ay gumagamit ng access ayon sa tungkulin at pagsubaybay.",
+      "col1_btn": "Mga gawain sa seguridad",
       "col2_text": "Ipinapaliwanag ng whitepaper kung paano nagkakaugnay ang recovery, custody, at payment modules—at kung saan pumapasok ang LNX sa protocol design.",
       "col2_btn": "Whitepaper"
     },
@@ -365,9 +365,9 @@
           "title": "Tapat na case assessment",
           "desc": "Kung ubos na ang trail o unlikely ang recovery, sasabihin namin bago ang paid engagement."
         },
-        "audited": {
-          "title": "Na-audit na stack ng protocol",
-          "desc": "Smart contracts na ni-review ng CertiK. Operations aligned sa ISO 27001 controls."
+        "access": {
+          "title": "Kontrol sa access",
+          "desc": "Access ayon sa tungkulin at pagsubaybay sa production flow."
         },
         "chains": {
           "title": "Saklaw na multi-chain",
@@ -380,7 +380,7 @@
       "eyebrow": "Halimbawang kaso",
       "title1": "Kapag ang ninakaw na pondo ay umabot ",
       "title2": "sa custodial exchange",
-      "subtitle": "Anonymized na halimbawa. Binago ang mga identifier. Representatibo ang proseso—hindi garantiya ng recovery.",
+      "subtitle": "Halimbawang hindi nakikilala. Binago ang mga identifier. Representatibo ang proseso at hindi pangako na ibabalik ang pondo.",
       "situation": {
         "label": "Sitwasyon",
         "text": "Isang business wallet ang nagpadala ng USDC sa phishing contract. Sa loob ng ilang oras, dumaan ang pondo sa dalawang intermediary wallet at na-deposit sa malaking exchange."
@@ -412,20 +412,20 @@
   },
   "Security": {
     "meta": {
-      "title": "Seguridad at Audit | Lenix Protocol",
-      "description": "CertiK smart contract audit, ISO 27001-aligned operations, at security controls para sa Lenix forensics at recovery infrastructure."
+      "title": "Mga gawain sa seguridad | Lenix Protocol",
+      "description": "Kontrol sa access, paghawak ng file ng kaso, at pagsubaybay para sa forensics at pagbawi ng Lenix Protocol."
     },
     "hero": {
       "eyebrow": "Seguridad",
-      "title1": "Na-audit na protocol. ",
+      "title1": "Mga gawain sa seguridad. ",
       "title2": "May dokumentasyon na kontrol.",
-      "subtitle": "Pinagsasama ng Lenix ang third-party smart contract review at operational security practices para sa mga team na humahawak ng sensitibong recovery at custody workflows."
+      "subtitle": "Paano hinahawakan ng Lenix ang access, mga file ng kaso, at production flow para sa pagbawi at custody."
     },
     "audit": {
-      "title": "Saklaw ng audit ng CertiK",
-      "desc": "Na-review ng CertiK ang core contracts sa production flows. Saklaw ng audit ang deployment-critical components at kilalang attack surfaces.",
-      "certik_text": "Tiningnan ng CertiK ang Lenix smart contracts para sa common vulnerabilities, access control, at logic flaws sa token at vault flows.",
-      "certik_link": "Mga doc ng seguridad",
+      "title": "Access at pagsubaybay",
+      "desc": "Ang daloy ng bayad at custody ay gumagamit ng pahintulot ayon sa tungkulin. Sinusubaybayan ang production flow para sa di-karaniwang aktibidad.",
+      "access_text": "Ang mga admin na aksyon ay gumagamit ng pahintulot ayon sa tungkulin. Sinusubaybayan ang production flow para sa di-karaniwang aktibidad ng kontrata.",
+      "access_link": "Tungkol sa Lenix",
       "items": {
         "contracts": {
           "title": "Saklaw ng pagsusuri ng kontrata",
@@ -443,8 +443,8 @@
       "eyebrow": "Smart contract"
     },
     "iso": {
-      "title": "Mga operasyong nakaayon sa ISO 27001",
-      "desc": "Pinapanatili ng Lenix Protocol ang information security management practices na aligned sa ISO 27001 para sa client data, investigation materials, at internal systems."
+      "title": "Paghawak ng file ng kaso",
+      "desc": "Ang data ng kliyente at materyal ng imbestigasyon ay iniimbak na may kontrol sa access at ibinabahagi lang sa nakatalang tatanggap."
     },
     "practices": {
       "data": {
@@ -466,14 +466,14 @@
     },
     "cta": {
       "title": "Kailangan ng documentation?",
-      "subtitle": "Makipag-ugnayan para sa audit summaries, ISO details, o enterprise reviews.",
+      "subtitle": "Makipag-ugnayan sa team para sa tanong tungkol sa kontrol sa access o paghawak ng file ng kaso.",
       "btn_primary": "Simulan recovery",
       "btn_secondary": "Security team"
     },
     "assurance": {
       "eyebrow": "Beripikasyon",
       "title": "Ano ang maipapakita namin",
-      "description": "Independent contract review at documented operational controls — walang claim na walang ebidensya.",
+      "description": "Access ayon sa tungkulin, pagsubaybay sa production, at nakasulat na hangganan kung sino ang makakakita ng file ng kaso.",
       "iso_link": "Tungkol sa Lenix"
     }
   },

@@ -75,8 +75,8 @@
         "title": "Neutral capacity available",
         "desc": "Lenix can support plaintiff counsel, defense, or serve as an independent expert in asset division and valuation disputes."
       },
-      "no_guarantee": {
-        "title": "No completeness guarantee",
+      "completeness": {
+        "title": "No completeness promise",
         "desc": "Identification is bounded by leads provided, chain visibility, and lawful access. We state what is and is not recoverable from available data."
       },
       "disclosure": {

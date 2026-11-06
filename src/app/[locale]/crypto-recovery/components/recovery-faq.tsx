@@ -15,7 +15,7 @@ const FAQ_KEYS = [
   "duration",
   "fees",
   "confidential",
-  "guarantee",
+  "outcome",
   "include",
   "mixers",
   "enforcement",
