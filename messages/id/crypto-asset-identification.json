@@ -75,7 +75,7 @@
         "title": "Peran netral tersedia",
         "desc": "Lenix dapat mendukung pengacara penggugat, pembela, atau bertindak sebagai ahli independen dalam pembagian aset dan sengketa valuasi."
       },
-      "no_guarantee": {
+      "completeness": {
         "title": "Tanpa jaminan kelengkapan",
         "desc": "Identifikasi dibatasi oleh petunjuk yang diberikan, visibilitas chain, dan akses legal. Kami menyatakan apa yang dapat dan tidak dapat diperoleh dari data tersedia."
       },

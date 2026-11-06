@@ -172,7 +172,7 @@
         "question": "¿Qué debo adjuntar?",
         "answer": "Hash de pago o factura, seguimiento, fotos del daño si las tiene, y cualquier chat con la otra parte. PDF, JPG, PNG o WebP, 8 MB máx. Un caso puede empezar sin archivo. La evidencia débil solo retrasa la reclamación."
       },
-      "guarantee": {
+      "outcome": {
         "question": "¿Garantizan un reembolso?",
         "answer": "No. Ventanas de reclamación cerradas, pruebas faltantes y contrapartes que no pagan fracasan. Cerramos esos casos por escrito en vez de dejar el expediente abierto para aparentar."
       }

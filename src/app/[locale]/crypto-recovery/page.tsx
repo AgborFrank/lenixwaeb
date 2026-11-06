@@ -12,10 +12,14 @@ import RecoveryFAQ from "./components/recovery-faq";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("CryptoRecovery.meta");
+  const title = t("title");
+  const description = t("description");
   return {
-    title: t("title"),
-    description: t("description"),
+    title,
+    description,
     keywords: t("keywords").split(", "),
+    openGraph: { title, description },
+    twitter: { title, description },
   };
 }
 

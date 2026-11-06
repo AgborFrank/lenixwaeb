@@ -172,7 +172,7 @@
         "question": "Que dois-je joindre?",
         "answer": "Hash de paiement ou facture, suivi, photos des dommages si vous en avez, et tout échange avec l'autre partie. PDF, JPG, PNG ou WebP, 8 Mo max. Un dossier peut commencer sans fichier. Des preuves faibles ralentissent seulement la réclamation."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Garantissez-vous un remboursement?",
         "answer": "Non. Délais clos, preuves manquantes et contreparties qui ne paient pas échouent tous. Nous clôturons ces dossiers par écrit au lieu de les laisser ouverts pour la forme."
       }

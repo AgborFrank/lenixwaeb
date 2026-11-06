@@ -172,7 +172,7 @@
         "question": "O que devo anexar?",
         "answer": "Hash de pagamento ou fatura, tracking, fotos de dano se tiver, e qualquer conversa com a outra parte. PDF, JPG, PNG ou WebP, 8 MB no máximo. Um caso pode começar sem ficheiro. Prova fraca só atrasa a reclamação."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Garantem um reembolso?",
         "answer": "Não. Janelas de reclamação fechadas, prova em falta e contrapartes que não pagam falham. Encerramos isso por escrito em vez de deixar o processo aberto para mostrar."
       }

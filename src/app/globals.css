@@ -517,46 +517,6 @@ color-mix(in srgb, var(--w3m-color-mix) var(--w3m-color-mix-strength), var(--wui
     background-size: 50px 50px;
   }
 
-  .partners-marquee-mask {
-    -webkit-mask-image: linear-gradient(
-      to right,
-      transparent,
-      black 6%,
-      black 94%,
-      transparent
-    );
-    mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
-  }
-
-  .partners-marquee-track {
-    display: flex;
-    width: max-content;
-    animation: partners-marquee 48s linear infinite;
-  }
-
-  @keyframes partners-marquee {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .partners-marquee-track {
-      animation: none;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    .partners-marquee-mask {
-      -webkit-mask-image: none;
-      mask-image: none;
-    }
-  }
 }
 
 /* Reown AppKit Theme Customization */

@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { home } from "@/lib/home-styles";
 
-const ITEM_KEYS = ["legal_basis", "chain_limits", "evidence", "neutral", "no_guarantee", "disclosure"] as const;
+const ITEM_KEYS = ["legal_basis", "chain_limits", "evidence", "neutral", "completeness", "disclosure"] as const;
 
 export default async function CryptoAssetIdentificationBoundaries() {
   const t = await getTranslations("CryptoAssetIdentification.Boundaries");

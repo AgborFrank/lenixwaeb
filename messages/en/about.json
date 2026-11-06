@@ -7,7 +7,7 @@
     "sub_description": "Securing the digital future. Empowering global liquidity.",
     "stats": {
       "assets_traced": "Assets Traced",
-      "assets_count": "$850M+",
+      "assets_count": "On-chain",
       "credit_checks": "Credit Checks",
       "credit_count": "0",
       "jurisdictions": "Jurisdictions",
@@ -30,7 +30,7 @@
     "finance": {
       "title": "Financial Empowerment",
       "subtitle": "Instant liquidity without selling your crypto.",
-      "description": "Access fast, secure, over-collateralized crypto loans with zero credit checks. Our decentralized custody models guarantee your assets remain protected while you unlock the capital you need to scale your investments or manage expenses.",
+      "description": "Access fast, secure, over-collateralized crypto loans with zero credit checks. Collateral stays in segregated vaults while you draw capital for investments or expenses.",
       "points": {
         "approval": "Instant Loan Approval & Disbursement",
         "credit": "Zero Credit Score Requirements",
@@ -66,7 +66,7 @@
       },
       "uptime": {
         "title": "Platform Uptime",
-        "subtitle": "Reliability guarantee",
+        "subtitle": "Availability",
         "desc": "Consistent availability"
       },
       "team": {
@@ -87,9 +87,9 @@
     "title2": " Industry Leadership",
     "subtitle": "From an elite team of security researchers to a global platform securing digital assets and unlocking liquidity for millions. Here's how we've evolved.",
     "step1": {
-      "title": "2021 - The Beginning",
-      "desc": "Founded by cybersecurity veterans and elite forensic investigators, Lenix Protocol was born from a simple mission: protect the integrity of the blockchain and trace stolen digital assets.",
-      "tag1": "Agency Founded",
+      "title": "The remit",
+      "desc": "Lenix Protocol traces stolen digital assets and reviews whether a public-ledger investigation can proceed.",
+      "tag1": "Tracing",
       "tag2": "First Tracing Algo",
       "photo": "Founding Team Photo"
     },
@@ -116,8 +116,8 @@
     },
     "step7": {
       "title": "2027 - Industry Leader",
-      "desc": "Today, we're the recognized global authority in blockchain forensics and the leading provider of instant crypto liquidity, having traced over $850M and processed billions in secure loans.",
-      "tag1": "$850M+ Traced",
+      "desc": "Today, we're the recognized global authority in blockchain forensics and the leading provider of instant crypto liquidity, having processed billions in secure loans.",
+      "tag1": "On-chain tracing",
       "tag2": "Leading Lender",
       "photo": "Industry Recognition"
     },

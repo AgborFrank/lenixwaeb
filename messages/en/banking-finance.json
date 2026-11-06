@@ -119,7 +119,7 @@
       },
       "timing": {
         "title": "Delivery timing varies",
-        "desc": "Banking cutoffs, beneficiary bank processing, and corridor load affect settlement time. We show status updates; we do not guarantee instant fiat credit."
+        "desc": "Banking cutoffs, beneficiary bank processing, and corridor load affect settlement time. We show status updates; we do not promise instant fiat credit."
       },
       "regulatory": {
         "title": "Not a bank charter",

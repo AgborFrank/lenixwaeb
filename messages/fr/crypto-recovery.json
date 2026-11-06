@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Services certifiés de récupération d'actifs crypto | Lenix Protocol",
-    "description": "Récupération professionnelle de cryptomonnaies perdues ou volées, avec un taux de réussite de 94 %. Spécialisés dans la récupération de mots de passe de wallets et les enquêtes de fraude menées par la forensique.",
+    "title": "Récupération d'actifs crypto | Lenix Protocol",
+    "description": "Récupération de wallets et de phrases de récupération, ainsi que forensique blockchain et traçage de cryptomonnaies perdues ou volées. Le périmètre est évalué avant tout travail payant.",
     "keywords": "Récupération crypto, Récupération de Bitcoin volé, Retrouver un wallet perdu, Enquête sur la fraude crypto, Forensique blockchain"
   },
   "Hero": {
-    "eyebrow": "Récupération d'actifs certifiée",
+    "eyebrow": "Récupération d'actifs",
     "title": "Récupération forensique pour la crypto volée ou mal adressée",
     "description": "Les enquêteurs Lenix retracent les mouvements on-chain, préparent les dossiers pour les exchanges et les forces de l'ordre, et coordonnent le gel des actifs lorsque la récupération reste viable.",
     "submit": "Déposer un dossier",
@@ -48,7 +48,9 @@
     "traced": "Actifs tracés et suivis",
     "cases": "Dossiers examinés",
     "jurisdictions": "Juridictions couvertes",
-    "intake": "Prise en charge des incidents"
+    "intake": "Prise en charge des incidents",
+    "traced_value": "Sur chaîne",
+    "cases_value": "Examen du dossier"
   },
   "Features": {
     "eyebrow": "Capacités",
@@ -126,9 +128,9 @@
         "question": "Mes informations sont-elles confidentielles ?",
         "answer": "Oui. Les pièces du dossier sont chiffrées, l'accès est contrôlé, et elles ne sont partagées qu'avec les parties nécessaires à la récupération — exchanges, conseils ou autorités — avec votre accord."
       },
-      "guarantee": {
-        "question": "Garantissez-vous la récupération ?",
-        "answer": "Aucun cabinet sérieux ne peut garantir une récupération. Le résultat dépend de la destination des fonds, de la rapidité du signalement et de la capacité des dépositaires ou des exchanges à agir. Nous fournissons une évaluation honnête de la récupérabilité avant que vous vous engagiez."
+      "outcome": {
+        "question": "Les fonds sont-ils rendus ?",
+        "answer": "Pas nécessairement. Le résultat dépend de la destination des fonds, de la rapidité du signalement et de la capacité des dépositaires ou des exchanges à agir. Nous évaluons si le dossier semble récupérable avant que vous vous engagiez."
       },
       "include": {
         "question": "Que dois-je joindre en déposant un dossier ?",

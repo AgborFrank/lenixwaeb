@@ -222,13 +222,6 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col sm:flex-row sm:items-center gap-4 max-w-2xl mx-start">
-            <Image
-              src="/assets/img/certy.webp"
-              alt="ISO 27001"
-              width={172}
-              height={172}
-              className="md:h-14 h-8 w-auto shrink-0 object-contain grayscale invert-100 mx-start"
-            />
             <p className="text-xs text-neutral-500 leading-relaxed">{t("Footer.certification_desc")}</p>
           </div>
 

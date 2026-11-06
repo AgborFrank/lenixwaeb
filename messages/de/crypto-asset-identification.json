@@ -75,7 +75,7 @@
         "title": "Neutrale Rolle möglich",
         "desc": "Lenix kann Klägervertretung, Verteidigung oder die Rolle eines unabhängigen Sachverständigen bei Vermögensaufteilung und Bewertungsstreitigkeiten übernehmen."
       },
-      "no_guarantee": {
+      "completeness": {
         "title": "Keine Vollständigkeitsgarantie",
         "desc": "Identifikation ist begrenzt durch vorliegende Anhaltspunkte, Chain-Sichtbarkeit und rechtmäßigen Zugang. Wir benennen, was aus verfügbaren Daten ermittelbar ist — und was nicht."
       },

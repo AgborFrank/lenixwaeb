@@ -7,7 +7,7 @@
     "sub_description": "Sinisiguro ang digital na kinabukasan. Pinapalakas ang pandaigdigang liquidity.",
     "stats": {
       "assets_traced": "Nasubaybayang Asset",
-      "assets_count": "$850M+",
+      "assets_count": "Sa blockchain",
       "credit_checks": "Mga credit check",
       "credit_count": "0",
       "jurisdictions": "Ahensya",
@@ -30,7 +30,7 @@
     "finance": {
       "title": "Pinansyal na Paglakas",
       "subtitle": "Agarang liquidity nang hindi ibinebenta ang iyong crypto.",
-      "description": "Mag-access ng mabilis, at secure na crypto loans na hindi nangangailangan ng credit score. Tinitiyak ng aming modelo na ang iyong mga asset ay mananatiling protektado habang ginagamit mo ang pondo na kailangan mo.",
+      "description": "Mag-access ng mabilis at secure na crypto loans na hindi nangangailangan ng credit score. Nanatili ang kolateral sa hiwalay na vault habang ginagamit mo ang pondong kailangan mo.",
       "points": {
         "approval": "Agarang Pag-apruba at Pagbibigay ng Loan",
         "credit": "Walang Pangangailangan as Credit Score",
@@ -66,7 +66,7 @@
       },
       "uptime": {
         "title": "Uptime ng platform",
-        "subtitle": "Garantiyang Reliability",
+        "subtitle": "Pagkakaroon",
         "desc": "100% availabilty"
       },
       "team": {
@@ -87,9 +87,9 @@
     "title2": " Pangingialam sa Industriya",
     "subtitle": "Mula sa isang piling pangkat ng mga security researcher hanggang sa pandaigdigang platform.",
     "step1": {
-      "title": "2021 - Ang Simula",
-      "desc": "Itinatag ng mga eksperto sa cybersecurity at mga nagungunang forensic investigator, ang Lenix Protocol ay nagsimula sa isang simpleng misyon: protektahan ang blockchain at subaybayan ang mga ninakaw na digital asset.",
-      "tag1": "Itinatag na Ahensya",
+      "title": "Ang saklaw",
+      "desc": "Sinusubaybayan ng Lenix Protocol ang ninakaw na digital asset at tinitingnan kung maaaring magpatuloy ang imbestigasyon sa pampublikong ledger.",
+      "tag1": "Pagsubaybay",
       "tag2": "Unang Tracking Algo",
       "photo": "Koponang Tagapagtatag"
     },
@@ -117,7 +117,7 @@
     "step7": {
       "title": "2027 - Pinuno ng industriya",
       "desc": "Ngayon, kami na ang kinikilang pangkalahatang awtoridad para sa blockchain forensics at isang platform nang lider upang mapadali agpaghiram.",
-      "tag1": "$850M+ Natracked",
+      "tag1": "Pagsubaybay sa blockchain",
       "tag2": "Nangungunang Lender",
       "photo": "Pamununo sa Industriya"
     },

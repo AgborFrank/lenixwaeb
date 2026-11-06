@@ -7,7 +7,7 @@
   "Hero": {
     "eyebrow": "Mga refund sa pagbili",
     "title": "I-recover ang halaga mula sa nawala, nasira, at palyadong pagbili",
-    "description": "Isumite ang order, ang patunay ng bayad, at kung ano ang nagkamali. Tinitingnan namin kung recoverable ang claim laban sa carrier, marketplace, o counterparty. Ang instant na payout, kung meron, ay pagkatapos ng underwriting. Hindi guaranteed ang refund.",
+    "description": "Isumite ang order, ang patunay ng bayad, at kung ano ang nagkamali. Tinitingnan namin kung recoverable ang claim laban sa carrier, marketplace, o counterparty. Ang instant na payout, kung meron, ay pagkatapos ng underwriting. Hindi assured ang refund.",
     "submit": "Magbukas ng refund case",
     "process": "Paano tumatakbo ang case",
     "imageAlt": "Imbestigador na nagsusuri ng dispute file sa pagbili"
@@ -42,7 +42,7 @@
     "points": {
       "lost": "Nawala, walang scan, o return-to-sender, kung sakop pa ng kontrata ang goods o postage.",
       "damaged": "Nasira sa pagdating, may larawan at petsa na kasya pa sa deadline ng carrier.",
-      "late": "Huli laban sa bayad na delivery guarantee, kung ang tariff ay talagang nagbabayad ng compensation.",
+      "late": "Huli laban sa bayad na delivery promise, kung ang tariff ay talagang nagbabayad ng compensation.",
       "manual": "Nag-report ang buyer ng missing order. Idinagdag mo nang manu-mano. Hindi kailangan ng carrier API para magsimula."
     },
     "cta": "Magbukas ng seller case",
@@ -62,7 +62,7 @@
         "description": "Dumating ang kahon, hindi nakaligtas ang goods. Mas mahalaga ang larawan, packing, at order value kaysa mahabang reklamo."
       },
       "delayed": {
-        "title": "Huli laban sa guarantee",
+        "title": "Huli laban sa promise",
         "description": "Nagbayad ka ng timed service. Hindi naabutan ng parcel. Ang compensation ay nasa published window ng carrier, hindi sa galit ng buyer."
       },
       "short": {
@@ -172,7 +172,7 @@
         "question": "Ano ang dapat kong i-attach?",
         "answer": "Payment hash o invoice, tracking, larawan ng sira kung meron, at anumang chat sa kabilang partido. PDF, JPG, PNG, o WebP, 8 MB max. Puwedeng magsimula ang case nang walang file. Ang mahinang ebidensya ay nagpapabagal lang ng claim."
       },
-      "guarantee": {
+      "outcome": {
         "question": "Ginagarantiya ba ninyo ang refund?",
         "answer": "Hindi. Ang saradong claim window, kulang na patunay, at counterparty na hindi magbabayad ay palyado. Isinasara namin iyon nang nakasulat sa halip na iwanang bukas ang file para lang magmukhang aktibo."
       }

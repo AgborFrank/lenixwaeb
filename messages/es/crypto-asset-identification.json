@@ -75,7 +75,7 @@
         "title": "Capacidad neutral disponible",
         "desc": "Lenix puede apoyar a abogados demandantes, defensa o actuar como perito independiente en división de activos y disputas de valoración."
       },
-      "no_guarantee": {
+      "completeness": {
         "title": "Sin garantía de exhaustividad",
         "desc": "La identificación está limitada por pistas aportadas, visibilidad on-chain y acceso legal. Indicamos qué es y no es recuperable de los datos disponibles."
       },

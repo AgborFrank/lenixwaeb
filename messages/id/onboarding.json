@@ -4,7 +4,8 @@
     "back": "Kembali",
     "logoAlt": "Lenix Protocol",
     "progressAria": "Progres",
-    "asideAria": "Bantuan dan informasi"
+    "asideAria": "Bantuan dan informasi",
+    "securityNote": "Detail kasus dienkripsi di browser sebelum dikirim."
   },
   "Progress": {
     "stepOf": "Langkah {current} dari {total}",
@@ -87,7 +88,7 @@
     "recovery": {
       "title": "Penerimaan kasus pemulihan",
       "body": "Berikan detail transaksi yang akurat agar tim forensik kami dapat melacak dana dan mencatat langkah berikutnya.",
-      "bullet1": "Analisis rantai oleh analis bersertifikat",
+      "bullet1": "Analisis rantai oleh tim forensik",
       "bullet2": "Bukti disimpan untuk tinjauan hukum",
       "bullet3": "Pembaruan kasus di dasbor Anda"
     },

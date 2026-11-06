@@ -1,11 +1,11 @@
 {
   "meta": {
-    "title": "Recuperación certificada de criptoactivos | Lenix Protocol",
-    "description": "Recuperación de criptomonedas perdidas o robadas, con una tasa de éxito del 94%. Especialistas en recuperación de contraseñas de monederos e investigación de fraude con análisis forense.",
+    "title": "Recuperación de criptoactivos | Lenix Protocol",
+    "description": "Recuperación de monederos y frases semilla, además de análisis forense y rastreo de criptomonedas perdidas o robadas. El alcance se evalúa antes de cualquier trabajo de pago.",
     "keywords": "Recuperación cripto, Recuperación de Bitcoin robado, Recuperar monedero perdido, Investigación de fraude cripto, Forense blockchain"
   },
   "Hero": {
-    "eyebrow": "Recuperación certificada de activos",
+    "eyebrow": "Recuperación de activos",
     "title": "Recuperación forense de cripto robado o enviado a la dirección equivocada",
     "description": "Los investigadores de Lenix siguen el movimiento on-chain, preparan expedientes para exchanges y fuerzas de seguridad, y coordinan bloqueos de activos cuando la recuperación sigue siendo viable.",
     "submit": "Abrir un caso",
@@ -48,7 +48,9 @@
     "traced": "Activos rastreados y monitorizados",
     "cases": "Casos revisados",
     "jurisdictions": "Jurisdicciones cubiertas",
-    "intake": "Recepción de incidentes"
+    "intake": "Recepción de incidentes",
+    "traced_value": "En cadena",
+    "cases_value": "Revisión del caso"
   },
   "Features": {
     "eyebrow": "Capacidades",
@@ -126,9 +128,9 @@
         "question": "¿Mi información es confidencial?",
         "answer": "Sí. El material del caso está cifrado, con acceso controlado, y solo se comparte con quienes hacen falta para la recuperación — exchanges, abogados o autoridades — con su aprobación."
       },
-      "guarantee": {
-        "question": "¿Garantizan la recuperación?",
-        "answer": "Ninguna firma responsable puede garantizar la recuperación. El resultado depende de adónde se movieron los fondos, de lo rápido que se reporte el caso y de si custodios o exchanges pueden actuar. Antes de que se comprometa, damos una evaluación honesta de si es recuperable."
+      "outcome": {
+        "question": "¿Se devuelven los fondos?",
+        "answer": "No siempre. El resultado depende de adónde se movieron los fondos, de lo rápido que se reporte el caso y de si custodios o exchanges pueden actuar. Evaluamos si el caso parece recuperable antes de que se comprometa."
       },
       "include": {
         "question": "¿Qué debo incluir al enviar un caso?",
