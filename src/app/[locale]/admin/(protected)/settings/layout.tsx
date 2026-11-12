@@ -12,6 +12,7 @@ import {
   Layers,
   Coins,
   Landmark,
+  Smartphone,
 } from "lucide-react";
 import { adminGlass } from "@/lib/admin-glass";
 
@@ -24,6 +25,7 @@ const settingsGroups = [
       { label: "Services", href: "/admin/settings/services", icon: Layers },
       { label: "Web3", href: "/admin/settings/web3", icon: Coins },
       { label: "Financial", href: "/admin/settings/financial", icon: Landmark },
+      { label: "Android app", href: "/admin/settings/app", icon: Smartphone },
     ],
   },
   {

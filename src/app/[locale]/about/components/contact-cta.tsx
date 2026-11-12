@@ -4,9 +4,11 @@ import { useTranslations } from "next-intl";
 import ContactForm from "../../contact/components/contact-form";
 import { HomeSectionHeader } from "@/app/[locale]/components/home/home-section-header";
 import { home } from "@/lib/home-styles";
+import { addressLines, useCompanyContact } from "../../components/company-contact";
 
 export default function ContactCTA() {
   const t = useTranslations("About.Contact");
+  const company = useCompanyContact();
 
   const methods = [
     {
@@ -15,11 +17,11 @@ export default function ContactCTA() {
     },
     {
       title: t("methods.call"),
-      lines: ["+447887052128", "Mon–Fri, 9AM–6PM EST"],
+      lines: [company.phone, "Mon–Fri, 9AM–6PM EST"].filter((line) => line.trim().length > 0),
     },
     {
       title: t("methods.visit"),
-      lines: ["Theilerstrasse 1a, 6300 Zug, Switzerland"],
+      lines: addressLines(company.address),
     },
   ];
 

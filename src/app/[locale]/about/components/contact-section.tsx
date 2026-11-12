@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send, MessageSquare } from "lucide-react";
+import { addressLines, useCompanyContact } from "../../components/company-contact";
 
 export default function ContactSection() {
+  const company = useCompanyContact();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -73,7 +75,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Call Us</h4>
-                  <p className="text-gray-400">+447887052128</p>
+                  <p className="text-gray-400">{company.phone}</p>
                   <p className="text-gray-400">Mon-Fri, 9AM-6PM EST</p>
                 </div>
               </div>
@@ -84,7 +86,9 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Visit Us</h4>
-                  <p className="text-gray-400">Theilerstrasse 1a, 6300 Zug, Switzerland</p>
+                  {addressLines(company.address).map((line) => (
+                    <p key={line} className="text-gray-400">{line}</p>
+                  ))}
                 </div>
               </div>
 

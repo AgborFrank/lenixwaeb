@@ -18,6 +18,8 @@ export const DEFAULT_PLATFORM_CONFIG: PlatformConfig = {
   privacy_email: "privacy@lenixprotocol.com",
   default_locale: "en",
   announcement_banner: null,
+  company_phone: "+447887052128",
+  company_address: "Theilerstrasse 1a, 6300 Zug, Switzerland",
 };
 
 export const DEFAULT_SERVICES_CONFIG: ServicesConfig = {

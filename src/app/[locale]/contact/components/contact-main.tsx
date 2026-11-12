@@ -4,10 +4,12 @@ import { useTranslations } from "next-intl";
 import ContactForm from "./contact-form";
 import { HomeSectionHeader } from "@/app/[locale]/components/home/home-section-header";
 import { home } from "@/lib/home-styles";
+import { addressLines, useCompanyContact } from "../../components/company-contact";
 
 export default function ContactMain() {
   const t = useTranslations("Contact.Main");
   const info = useTranslations("Contact.Info");
+  const company = useCompanyContact();
 
   const methods = [
     {
@@ -16,13 +18,11 @@ export default function ContactMain() {
     },
     {
       title: info("phone_title"),
-      lines: [info("phone_line"), info("hours_line_1")],
+      lines: [company.phone, info("hours_line_1")].filter((line) => line.trim().length > 0),
     },
     {
       title: info("address_title"),
-      lines: [info("address_line_1"), info("address_line_2"), info("address_line_3")].filter(
-        (line) => line.trim().length > 0
-      ),
+      lines: addressLines(company.address),
     },
   ];
 

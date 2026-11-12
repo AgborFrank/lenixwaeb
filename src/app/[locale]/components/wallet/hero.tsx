@@ -2,11 +2,9 @@
 
 import { ShieldCheck, Wallet, ChevronRight, RefreshCw, ArrowUpRight, ArrowDownLeft, Repeat, Landmark, Globe, ArrowRightLeft, Clock, Settings } from "lucide-react";
 import Image from "next/image";
-import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { home } from "@/lib/home-styles";
-
-const DOWNLOAD_URL = "https://shorturl.at/FVVpk";
+import { ANDROID_APK_DOWNLOAD_PATH } from "@/lib/android-apk";
 
 const MOCK_ASSETS = [
   { name: "Bitcoin", ticker: "BTC", amount: "0.45", value: "$19,250.00", icon: "bg-orange-500" },
@@ -56,9 +54,9 @@ export default function WalletHero() {
             </h1>
             <p className="text-neutral-400 text-lg leading-relaxed max-w-lg">{t("subtitle")}</p>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Link href={DOWNLOAD_URL} target="_blank" className={home.btnPrimary}>
+              <a href={ANDROID_APK_DOWNLOAD_PATH} className={home.btnPrimary}>
                 {t("btn_download")}
-              </Link>
+              </a>
               <a href="#features" className={home.btnSecondary}>
                 {t("btn_learn")}
               </a>

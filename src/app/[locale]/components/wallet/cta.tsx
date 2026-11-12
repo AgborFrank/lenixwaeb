@@ -3,8 +3,7 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { home } from "@/lib/home-styles";
-
-const DOWNLOAD_URL = "https://shorturl.at/FVVpk";
+import { ANDROID_APK_DOWNLOAD_PATH } from "@/lib/android-apk";
 
 export default function WalletCTA() {
   const t = useTranslations("WalletPage.Cta");
@@ -15,9 +14,9 @@ export default function WalletCTA() {
         <h2 className={`${home.titleCenter} mb-4`}>{t("title")}</h2>
         <p className={`${home.leadCenter} mb-8`}>{t("subtitle")}</p>
         <div className="flex flex-wrap justify-center gap-3">
-          <Link href={DOWNLOAD_URL} target="_blank" className={home.btnPrimary}>
+          <a href={ANDROID_APK_DOWNLOAD_PATH} className={home.btnPrimary}>
             {t("btn_download")}
-          </Link>
+          </a>
           <Link href="/lenix-wallet" className={home.btnSecondary}>
             {t("btn_web")}
           </Link>

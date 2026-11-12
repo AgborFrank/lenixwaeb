@@ -13,6 +13,7 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import { LanguagePicker } from "./language-picker";
+import { addressLines, useCompanyContact } from "./company-contact";
 import { useTranslations } from "next-intl";
 import { airdropEnabled } from "@/lib/feature-flags";
 import { home } from "@/lib/home-styles";
@@ -65,6 +66,7 @@ function FooterColumn({ title, children }: { title: string; children: React.Reac
 
 export default function Footer() {
   const t = useTranslations();
+  const company = useCompanyContact();
 
   return (
     <footer className="bg-neutral-950 text-white">
@@ -83,9 +85,16 @@ export default function Footer() {
             <p className="text-sm text-neutral-400 leading-relaxed mb-6 max-w-xs">
               {t("Footer.company_desc")}
             </p>
-            <p className="text-sm text-neutral-400 leading-relaxed mb-6 max-w-xs">
-              {t("Contact.Info.address_line_1")}
-            </p>
+            <div className="text-sm text-neutral-400 leading-relaxed mb-6 max-w-xs">
+              {addressLines(company.address).map((line) => (
+                <p key={line}>{line}</p>
+              ))}
+              {company.phone ? (
+                <a href={`tel:${company.phone.replace(/\s/g, "")}`} className="mt-2 inline-block hover:text-white">
+                  {company.phone}
+                </a>
+              ) : null}
+            </div>
 
             <div className="flex flex-wrap gap-2 mb-8">
               {SOCIAL_LINKS.map(({ href, label, Icon }) => (
@@ -226,15 +235,15 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-3">
-            <Link href="https://shorturl.at/FVVpk" target="_blank" rel="noopener noreferrer">
+            <a href="/download/android">
               <Image
                 src="/assets/img/google-2.webp"
-                alt="Google Play"
+                alt="Download Android app"
                 className="md:h-10 h-6 w-auto  bg-gray-300 md:rounded-xl rounded-md"
                 width={120}
                 height={40}
               />
-            </Link>
+            </a>
             <Link href="https://shorturl.at/FVVpk" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/assets/img/appstore.png"

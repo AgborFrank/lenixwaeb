@@ -19,6 +19,8 @@ export const platformConfigSchema = z.object({
   privacy_email: z.string().email(),
   default_locale: z.string().min(2).max(10),
   announcement_banner: z.string().max(500).nullable(),
+  company_phone: z.string().max(40),
+  company_address: z.string().max(500),
 });
 
 export const servicesConfigSchema = z.object({

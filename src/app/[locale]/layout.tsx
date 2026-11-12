@@ -11,6 +11,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "./(account)/_providers/theme-provider";
 import FloatingTelegramButton from "@/components/floating-telegram-button";
 import { basePathFromPathname, withPublicMetadata } from "@/lib/public-metadata";
+import { getPlatformConfig } from "@/lib/platform-settings/server";
+import { CompanyContactProvider } from "./components/company-contact";
 
 // Google Fonts - Primary font
 const onest = Onest({
@@ -137,6 +139,8 @@ export default async function RootLayout({
   const cookies = headersList.get("cookie");
   const messages = await getMessages();
 
+  const platform = await getPlatformConfig();
+
   const enableWallet =
     process.env.NEXT_PUBLIC_ENABLE_WALLET === "true" ||
     process.env.NEXT_PUBLIC_ENABLE_WALLET === "1";
@@ -150,15 +154,13 @@ export default async function RootLayout({
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Lenix Protocol",
+    name: platform.site_name || "Lenix Protocol",
     url: "https://lenixprotocol.com",
     logo: "https://lenixprotocol.com/assets/img/favicon.png",
+    telephone: platform.company_phone,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Theilerstrasse 1a",
-      postalCode: "6300",
-      addressLocality: "Zug",
-      addressCountry: "CH",
+      streetAddress: platform.company_address,
     },
   };
 
@@ -204,6 +206,9 @@ export default async function RootLayout({
           }}
         />
         <NextIntlClientProvider messages={messages}>
+          <CompanyContactProvider
+            value={{ phone: platform.company_phone, address: platform.company_address }}
+          >
           <TooltipProvider>
             <ThemeProvider>
               {page}
@@ -211,6 +216,7 @@ export default async function RootLayout({
           </TooltipProvider>
           <Toaster />
           <FloatingTelegramButton />
+          </CompanyContactProvider>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -71,6 +71,31 @@ export default function PlatformSettingsPage() {
         </SettingsField>
       </SettingsSection>
 
+      <SettingsSection
+        title="Public contact"
+        description="Shown on the site footer, contact page, and organization details."
+      >
+        <SettingsField label="Phone" hint="Include the country code. Shown as a call link.">
+          <input
+            type="tel"
+            value={data.company_phone}
+            onChange={(e) => setData({ ...data, company_phone: e.target.value })}
+            className={adminGlass.input}
+          />
+        </SettingsField>
+        <SettingsField
+          label="Address"
+          hint="One line, or several lines. Each line is shown separately."
+        >
+          <textarea
+            value={data.company_address}
+            onChange={(e) => setData({ ...data, company_address: e.target.value })}
+            rows={3}
+            className={`${adminGlass.input} min-h-[5rem] py-2`}
+          />
+        </SettingsField>
+      </SettingsSection>
+
       <SettingsSection title="Contact routing" description="Inbox targets for automated mail.">
         <div className="grid gap-4 sm:grid-cols-2">
           {(

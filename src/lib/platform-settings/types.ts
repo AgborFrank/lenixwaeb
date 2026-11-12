@@ -8,6 +8,8 @@ export interface PlatformConfig {
   privacy_email: string;
   default_locale: string;
   announcement_banner: string | null;
+  company_phone: string;
+  company_address: string;
 }
 
 export interface ServiceToggle {
