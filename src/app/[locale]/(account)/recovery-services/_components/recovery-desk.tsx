@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { Fragment, useMemo } from "react";
 import { Plus } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -173,24 +173,26 @@ export function RecoveryDesk({ cases }: RecoveryDeskProps) {
                 </thead>
                 <tbody>
                   {cases.map((row) => (
-                    <tr key={row.id} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
-                      <td className={`${adminGlass.tableCell} font-mono text-xs text-white`}>{shortTrail(row.trail)}</td>
-                      <td className={`${adminGlass.tableCell} text-right tabular-nums text-white`}>
-                        {row.amount ? `${row.amount} ${row.currency}` : "—"}
-                      </td>
-                      <td className={adminGlass.tableCell}>{row.chain || "—"}</td>
-                      <td className={adminGlass.tableCell}>
-                        <StatusBadge status={row.status} label={stepLabel(row.status)} />
-                      </td>
-                      <td className={`${adminGlass.tableCell} text-right text-xs text-zinc-500`}>
-                        {new Date(row.created_at).toLocaleDateString()}
-                      </td>
-                    </tr>
-                    <tr key={`${row.id}-timeline`} className="border-b border-white/[0.04]">
-                      <td className="px-5 py-4" colSpan={5}>
-                        <RecoveryTimeline status={row.status} />
-                      </td>
-                    </tr>
+                    <Fragment key={row.id}>
+                      <tr className="border-b border-white/[0.04] hover:bg-white/[0.02]">
+                        <td className={`${adminGlass.tableCell} font-mono text-xs text-white`}>{shortTrail(row.trail)}</td>
+                        <td className={`${adminGlass.tableCell} text-right tabular-nums text-white`}>
+                          {row.amount ? `${row.amount} ${row.currency}` : "—"}
+                        </td>
+                        <td className={adminGlass.tableCell}>{row.chain || "—"}</td>
+                        <td className={adminGlass.tableCell}>
+                          <StatusBadge status={row.status} label={stepLabel(row.status)} />
+                        </td>
+                        <td className={`${adminGlass.tableCell} text-right text-xs text-zinc-500`}>
+                          {new Date(row.created_at).toLocaleDateString()}
+                        </td>
+                      </tr>
+                      <tr className="border-b border-white/[0.04]">
+                        <td className="px-5 py-4" colSpan={5}>
+                          <RecoveryTimeline status={row.status} />
+                        </td>
+                      </tr>
+                    </Fragment>
                   ))}
                 </tbody>
               </table>
