@@ -107,7 +107,9 @@ export async function GET(request: NextRequest) {
     .from("user_wallets")
     .select("*")
     .eq("user_id", userId)
-    .single();
+    .order("created_at", { ascending: true })
+    .limit(1)
+    .maybeSingle();
 
   if (error || !wallet) {
     console.log("Wallet fetch error:", error);

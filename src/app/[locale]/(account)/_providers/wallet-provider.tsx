@@ -71,36 +71,33 @@ export function WalletProvider({ children }: { children: ReactNode }) {
         return body.data.address as string;
     }, []);
 
-    // Check DB on mount
+    const loadExistingWallet = useCallback(async (userId: string) => {
+        const { data, error } = await supabase
+            .from("user_wallets")
+            .select("*")
+            .eq("user_id", userId)
+            .order("created_at", { ascending: true })
+            .limit(1);
+
+        if (error) throw error;
+        return data?.[0] ?? null;
+    }, [supabase]);
+
+    // Check DB on mount. Keep the original wallet when an account has more than one.
     useEffect(() => {
-        console.log("WalletProvider mounted");
         const checkUserWallet = async () => {
             try {
                 const { data: { user } } = await supabase.auth.getUser();
                 if (!user) {
-                    console.log("No user found");
                     setWalletState("no_wallet");
                     return;
                 }
 
-                const { data, error } = await supabase
-                    .from("user_wallets")
-                    .select("*")
-                    .eq("user_id", user.id)
-                    .single();
-
-                if (error && error.code !== "PGRST116") { // PGRST116 is "not found"
-                    console.error("Error fetching wallet:", error);
-                    setWalletState("no_wallet");
-                    return;
-                }
-
-                if (data) {
-                    console.log("Wallet found in DB, setting to locked");
-                    setDbWallet(data);
+                const existing = await loadExistingWallet(user.id);
+                if (existing) {
+                    setDbWallet(existing);
                     setWalletState("locked");
                 } else {
-                    console.log("No wallet found in DB");
                     setWalletState("no_wallet");
                 }
             } catch (e) {
@@ -109,7 +106,7 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             }
         };
         checkUserWallet();
-    }, []);
+    }, [loadExistingWallet, supabase]);
 
     // Ref to track known balance snapshot (independent of React state)
     const knownBalancesRef = useRef<Map<string, string> | null>(null);
@@ -213,6 +210,13 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
             const { data: { user } } = await supabase.auth.getUser();
             if (!user) throw new Error("User not found");
+
+            const existing = await loadExistingWallet(user.id);
+            if (existing) {
+                setDbWallet(existing);
+                setWalletState("locked");
+                throw new Error("This account already has a wallet. Unlock it to continue.");
+            }
 
             // Generate random wallet
             const wallet = ethers.Wallet.createRandom();
@@ -322,10 +326,12 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             return wallet;
         } catch (e: any) {
             setError(e.message || "Failed to create wallet");
-            setWalletState("no_wallet");
+            if (!String(e?.message || "").includes("already has a wallet")) {
+                setWalletState("no_wallet");
+            }
             throw e;
         }
-    }, [supabase]);
+    }, [loadExistingWallet, supabase]);
 
     // Import wallet
     const importWallet = useCallback(async (phrase: string, password: string) => {
@@ -335,6 +341,13 @@ export function WalletProvider({ children }: { children: ReactNode }) {
 
             const { data: { user } } = await supabase.auth.getUser();
             if (!user) throw new Error("User not found");
+
+            const existing = await loadExistingWallet(user.id);
+            if (existing) {
+                setDbWallet(existing);
+                setWalletState("locked");
+                throw new Error("This account already has a wallet. Unlock it to continue.");
+            }
 
             const wallet = ethers.Wallet.fromPhrase(phrase);
 
@@ -435,10 +448,12 @@ export function WalletProvider({ children }: { children: ReactNode }) {
             return wallet;
         } catch (e: any) {
             setError(e.message || "Failed to import wallet");
-            setWalletState("no_wallet");
+            if (!String(e?.message || "").includes("already has a wallet")) {
+                setWalletState("no_wallet");
+            }
             throw e;
         }
-    }, [supabase]);
+    }, [loadExistingWallet, supabase]);
 
     // Unlock wallet
     const unlockWallet = useCallback(async (password: string) => {

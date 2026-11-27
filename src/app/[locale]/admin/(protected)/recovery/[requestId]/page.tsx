@@ -15,13 +15,14 @@ import {
   Clock,
   CheckCircle2,
   XCircle,
-  AlertCircle,
+  Search,
+  Shield,
+  Cog,
   Copy,
   Check,
   Loader2,
   Save,
   MessageSquare,
-  Shield,
   Calendar,
   Hash,
   Eye,
@@ -50,10 +51,13 @@ interface RecoveryRequest {
 }
 
 const statuses = [
-  { value: "pending", label: "Pending Review", icon: Clock, className: "bg-yellow-400/10 text-yellow-400 border-yellow-400/30" },
-  { value: "in_progress", label: "In Progress", icon: AlertCircle, className: "bg-blue-400/10 text-blue-400 border-blue-400/30" },
-  { value: "completed", label: "Completed", icon: CheckCircle2, className: "bg-green-400/10 text-green-400 border-green-400/30" },
-  { value: "rejected", label: "Rejected", icon: XCircle, className: "bg-red-400/10 text-red-400 border-red-400/30" },
+  { value: "pending", label: "Request submitted", icon: Clock, className: "bg-yellow-400/10 text-yellow-400 border-yellow-400/30" },
+  { value: "reviewing", label: "Under review", icon: Search, className: "bg-blue-400/10 text-blue-400 border-blue-400/30" },
+  { value: "in_progress", label: "Under review", icon: Search, className: "bg-blue-400/10 text-blue-400 border-blue-400/30" },
+  { value: "verifying", label: "Verification", icon: Shield, className: "bg-violet-400/10 text-violet-300 border-violet-400/30" },
+  { value: "processing", label: "Recovery in progress", icon: Cog, className: "bg-orange-400/10 text-orange-400 border-orange-400/30" },
+  { value: "completed", label: "Asset recovered", icon: CheckCircle2, className: "bg-green-400/10 text-green-400 border-green-400/30" },
+  { value: "rejected", label: "Closed", icon: XCircle, className: "bg-red-400/10 text-red-400 border-red-400/30" },
 ];
 
 export default function RecoveryDetailPage() {
@@ -151,6 +155,8 @@ export default function RecoveryDetailPage() {
   }
 
   const currentStatusConfig = statuses.find((s) => s.value === data.status) || statuses[0];
+  const selectedStatus = status === "in_progress" ? "reviewing" : status;
+  const statusChoices = statuses.filter((item) => item.value !== "in_progress");
   const StatusIcon = currentStatusConfig.icon;
 
   return (
@@ -407,13 +413,13 @@ export default function RecoveryDetailPage() {
                   Status
                 </label>
                 <div className="space-y-2">
-                  {statuses.map((s) => {
+                  {statusChoices.map((s) => {
                     const Icon = s.icon;
                     return (
                       <label
                         key={s.value}
                         className={`flex cursor-pointer items-center gap-3 rounded-lg border p-3 transition-colors ${
-                          status === s.value
+                          selectedStatus === s.value
                             ? s.className + " border-current"
                             : "border-zinc-700 hover:border-zinc-600"
                         }`}
@@ -422,12 +428,12 @@ export default function RecoveryDetailPage() {
                           type="radio"
                           name="status"
                           value={s.value}
-                          checked={status === s.value}
+                          checked={selectedStatus === s.value}
                           onChange={(e) => setStatus(e.target.value)}
                           className="sr-only"
                         />
-                        <Icon className={`h-4 w-4 ${status === s.value ? "" : "text-zinc-500"}`} />
-                        <span className={`text-sm font-medium ${status === s.value ? "" : "text-zinc-400"}`}>
+                        <Icon className={`h-4 w-4 ${selectedStatus === s.value ? "" : "text-zinc-500"}`} />
+                        <span className={`text-sm font-medium ${selectedStatus === s.value ? "" : "text-zinc-400"}`}>
                           {s.label}
                         </span>
                       </label>

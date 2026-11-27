@@ -6,7 +6,15 @@ import { createServiceRoleClient } from "@/utils/supabase/server";
 
 const updateSchema = z.object({
   id: z.string().uuid("Invalid request ID"),
-  status: z.enum(["pending", "in_progress", "completed", "rejected"]),
+  status: z.enum([
+    "pending",
+    "reviewing",
+    "in_progress",
+    "verifying",
+    "processing",
+    "completed",
+    "rejected",
+  ]),
   admin_notes: z.string().optional(),
 });
 

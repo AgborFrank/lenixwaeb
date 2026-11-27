@@ -10,10 +10,12 @@ interface RecoveryStatusSelectProps {
 }
 
 const statuses = [
-  { value: "pending", label: "Pending", className: "bg-yellow-400/10 text-yellow-400 border-yellow-400/30" },
-  { value: "in_progress", label: "In Progress", className: "bg-blue-400/10 text-blue-400 border-blue-400/30" },
-  { value: "completed", label: "Completed", className: "bg-green-400/10 text-green-400 border-green-400/30" },
-  { value: "rejected", label: "Rejected", className: "bg-red-400/10 text-red-400 border-red-400/30" },
+  { value: "pending", label: "Request submitted", className: "bg-yellow-400/10 text-yellow-400 border-yellow-400/30" },
+  { value: "reviewing", label: "Under review", className: "bg-blue-400/10 text-blue-400 border-blue-400/30" },
+  { value: "verifying", label: "Verification", className: "bg-violet-400/10 text-violet-300 border-violet-400/30" },
+  { value: "processing", label: "Recovery in progress", className: "bg-orange-400/10 text-orange-400 border-orange-400/30" },
+  { value: "completed", label: "Asset recovered", className: "bg-green-400/10 text-green-400 border-green-400/30" },
+  { value: "rejected", label: "Closed", className: "bg-red-400/10 text-red-400 border-red-400/30" },
 ];
 
 export function RecoveryStatusSelect({
@@ -51,12 +53,13 @@ export function RecoveryStatusSelect({
     }
   };
 
-  const currentStatusConfig = statuses.find((s) => s.value === status) || statuses[0];
+  const selectValue = status === "in_progress" ? "reviewing" : status;
+  const currentStatusConfig = statuses.find((s) => s.value === selectValue) || statuses[0];
 
   return (
     <div className="relative">
       <select
-        value={status}
+        value={selectValue}
         onChange={(e) => handleChange(e.target.value)}
         disabled={isUpdating}
         className={`appearance-none rounded-lg border px-3 py-1.5 pr-8 text-xs font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-400/50 disabled:opacity-50 ${currentStatusConfig.className}`}

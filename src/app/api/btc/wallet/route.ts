@@ -23,6 +23,7 @@ export async function GET() {
     const { data: wallet, error } = await walletTable
       .select("id, bitcoin_address, bitcoin_network, bitcoin_xpub, bitcoin_next_index")
       .eq("user_id", user.id)
+      .order("created_at", { ascending: true })
       .limit(1)
       .maybeSingle();
 
@@ -69,6 +70,7 @@ export async function POST(request: Request) {
     const { data: wallet, error: walletError } = await walletTable
       .select("id, encrypted_data, bitcoin_address, bitcoin_network, bitcoin_xpub, bitcoin_next_index")
       .eq("user_id", user.id)
+      .order("created_at", { ascending: true })
       .limit(1)
       .maybeSingle();
 

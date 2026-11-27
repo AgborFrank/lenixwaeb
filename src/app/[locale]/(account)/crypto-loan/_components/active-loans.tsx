@@ -24,9 +24,31 @@ interface UserPayout {
   details: Record<string, string> | null;
 }
 
+export interface WalletLoan {
+  id: string;
+  amount: number;
+  currency: string;
+  status: string;
+  duration_days: number | null;
+}
+
 interface ActiveLoansProps {
   loans: Loan[];
+  walletLoans?: WalletLoan[];
   userPayout?: UserPayout | null;
+}
+
+type AccountStatus = "Active" | "Pending" | "Repaid" | "Liquidated" | "Approved" | "Rejected";
+
+function accountStatus(status: string): AccountStatus | null {
+  const value = status.toLowerCase();
+  if (value === "active") return "Active";
+  if (value === "pending") return "Pending";
+  if (value === "completed" || value === "repaid") return "Repaid";
+  if (value === "defaulted" || value === "liquidated") return "Liquidated";
+  if (value === "approved") return "Approved";
+  if (value === "rejected") return "Rejected";
+  return null;
 }
 
 function PayoutDetails({
@@ -99,7 +121,7 @@ function PayoutDetails({
   return null;
 }
 
-export function ActiveLoans({ loans, userPayout }: ActiveLoansProps) {
+export function ActiveLoans({ loans, walletLoans = [], userPayout }: ActiveLoansProps) {
   const t = useTranslations("AccountCryptoLoan.active_loans");
   const tDuration = useTranslations("AccountCryptoLoan.duration");
   const tStatus = useTranslations("AccountCryptoLoan.status");
@@ -129,12 +151,17 @@ export function ActiveLoans({ loans, userPayout }: ActiveLoansProps) {
   };
 
   const statusLabel = (status: string) => {
-    return tStatus.has(status as "Active") ? tStatus(status as "Active") : status;
+    const key = accountStatus(status);
+    if (key === "Active" || key === "Pending" || key === "Repaid" || key === "Liquidated") {
+      return tStatus.has(key) ? tStatus(key) : key;
+    }
+    if (key === "Approved" || key === "Rejected") return key;
+    return status;
   };
 
   const desk = useTranslations("AccountCryptoLoan.desk");
 
-  if (loans.length === 0) {
+  if (loans.length === 0 && walletLoans.length === 0) {
     return (
       <section className={`${adminGlass.surface} overflow-hidden`} aria-label={desk("positions")}>
         <div className="border-b border-white/[0.06] px-4 py-3 sm:px-5">
@@ -190,6 +217,19 @@ export function ActiveLoans({ loans, userPayout }: ActiveLoansProps) {
             </li>
           );
         })}
+        {walletLoans.map((loan) => (
+          <li key={loan.id} className="px-4 py-3">
+            <div className="flex items-start justify-between gap-3">
+              <p className="text-sm font-medium tabular-nums text-white">
+                {Number(loan.amount).toLocaleString()} {loan.currency}
+              </p>
+              <StatusBadge status={loan.status} label={statusLabel(loan.status)} />
+            </div>
+            <p className="mt-1 text-xs text-zinc-500">
+              {loan.duration_days ? `${loan.duration_days} days` : "—"}
+            </p>
+          </li>
+        ))}
       </ul>
 
       <div className="hidden overflow-x-auto sm:block">
@@ -245,6 +285,20 @@ export function ActiveLoans({ loans, userPayout }: ActiveLoansProps) {
                 </tr>
               );
             })}
+            {walletLoans.map((loan) => (
+              <tr key={loan.id} className="border-b border-white/[0.04] hover:bg-white/[0.02]">
+                <td className={`${adminGlass.tableCell} font-medium tabular-nums text-white`}>
+                  {Number(loan.amount).toLocaleString()} {loan.currency}
+                </td>
+                <td className={adminGlass.tableCell}>—</td>
+                <td className={`${adminGlass.tableCell} text-right`}>—</td>
+                <td className={adminGlass.tableCell}>—</td>
+                <td className={adminGlass.tableCell}>
+                  <StatusBadge status={loan.status} label={statusLabel(loan.status)} />
+                </td>
+                <td className={adminGlass.tableCell} />
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -346,12 +400,13 @@ export function ActiveLoans({ loans, userPayout }: ActiveLoansProps) {
 }
 
 function StatusBadge({ status, label }: { status: string; label: string }) {
+  const key = accountStatus(status);
   const tone =
-    status === "Active"
+    key === "Active"
       ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-300"
-      : status === "Pending"
+      : key === "Pending" || key === "Approved"
         ? "border-amber-500/30 bg-amber-500/10 text-amber-200"
-        : status === "Liquidated"
+        : key === "Liquidated" || key === "Rejected"
           ? "border-red-500/30 bg-red-500/10 text-red-300"
           : "border-white/10 bg-white/[0.04] text-zinc-400";
   return <span className={`inline-flex rounded-md border px-2 py-0.5 text-xs font-medium ${tone}`}>{label}</span>;

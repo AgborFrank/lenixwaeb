@@ -7,7 +7,44 @@ import { Link } from "@/i18n/navigation";
 import { adminGlass } from "@/lib/admin-glass";
 import { Button } from "@/components/ui/button";
 
-const STATUSES = ["pending", "in_progress", "completed", "rejected"] as const;
+const TIMELINE = [
+  {
+    title: "Request submitted",
+    description: "Your request has been securely received.",
+  },
+  {
+    title: "Under review",
+    description: "Our security team is analyzing your case.",
+  },
+  {
+    title: "Verification",
+    description: "Verifying wallet ownership and blockchain data.",
+  },
+  {
+    title: "Recovery in progress",
+    description: "Technical recovery operations are underway.",
+  },
+  {
+    title: "Asset recovered",
+    description: "Assets have been transferred to your wallet.",
+  },
+] as const;
+
+function stepIndex(status: string) {
+  const value = status.toLowerCase();
+  if (value === "rejected") return -1;
+  if (value === "completed") return 4;
+  if (value === "processing") return 3;
+  if (value === "verifying") return 2;
+  if (value === "reviewing" || value === "in_progress") return 1;
+  return 0;
+}
+
+function stepLabel(status: string) {
+  const index = stepIndex(status);
+  if (index < 0) return "Closed";
+  return TIMELINE[index].title;
+}
 
 export interface RecoveryCaseRow {
   id: string;
@@ -24,9 +61,12 @@ interface RecoveryDeskProps {
 }
 
 function statusClass(status: string) {
-  if (status === "completed") return "border-emerald-500/30 bg-emerald-500/10 text-emerald-300";
-  if (status === "in_progress") return "border-sky-500/30 bg-sky-500/10 text-sky-300";
-  if (status === "rejected") return "border-white/10 bg-white/[0.04] text-zinc-400";
+  const index = stepIndex(status);
+  if (index === 4) return "border-emerald-500/30 bg-emerald-500/10 text-emerald-300";
+  if (index === 3) return "border-orange-400/30 bg-orange-400/10 text-orange-300";
+  if (index === 2) return "border-violet-400/30 bg-violet-400/10 text-violet-300";
+  if (index === 1) return "border-sky-500/30 bg-sky-500/10 text-sky-300";
+  if (index < 0) return "border-white/10 bg-white/[0.04] text-zinc-400";
   return "border-amber-500/30 bg-amber-500/10 text-amber-200";
 }
 
@@ -40,7 +80,9 @@ export function RecoveryDesk({ cases }: RecoveryDeskProps) {
 
   const metrics = useMemo(() => {
     const openCount = cases.filter((row) => row.status === "pending").length;
-    const active = cases.filter((row) => row.status === "in_progress").length;
+    const active = cases.filter((row) =>
+      ["in_progress", "reviewing", "verifying", "processing"].includes(row.status)
+    ).length;
     const closed = cases.filter((row) => row.status === "completed" || row.status === "rejected").length;
     return { openCount, active, closed, files: cases.length };
   }, [cases]);
@@ -111,9 +153,10 @@ export function RecoveryDesk({ cases }: RecoveryDeskProps) {
                         {shortTrail(row.trail)} · {row.chain || "—"}
                       </p>
                     </div>
-                    <StatusBadge status={row.status} label={statusLabel(t, row.status)} />
+                    <StatusBadge status={row.status} label={stepLabel(row.status)} />
                   </div>
                   <p className="mt-2 text-xs text-zinc-500">{new Date(row.created_at).toLocaleDateString()}</p>
+                  <RecoveryTimeline status={row.status} />
                 </li>
               ))}
             </ul>
@@ -137,10 +180,15 @@ export function RecoveryDesk({ cases }: RecoveryDeskProps) {
                       </td>
                       <td className={adminGlass.tableCell}>{row.chain || "—"}</td>
                       <td className={adminGlass.tableCell}>
-                        <StatusBadge status={row.status} label={statusLabel(t, row.status)} />
+                        <StatusBadge status={row.status} label={stepLabel(row.status)} />
                       </td>
                       <td className={`${adminGlass.tableCell} text-right text-xs text-zinc-500`}>
                         {new Date(row.created_at).toLocaleDateString()}
+                      </td>
+                    </tr>
+                    <tr key={`${row.id}-timeline`} className="border-b border-white/[0.04]">
+                      <td className="px-5 py-4" colSpan={5}>
+                        <RecoveryTimeline status={row.status} />
                       </td>
                     </tr>
                   ))}
@@ -162,12 +210,34 @@ function StatusBadge({ status, label }: { status: string; label: string }) {
   );
 }
 
-function statusLabel(
-  t: ReturnType<typeof useTranslations<"AccountRecoveryServices.desk">>,
-  status: string,
-) {
-  if ((STATUSES as readonly string[]).includes(status)) {
-    return t(`statuses.${status as (typeof STATUSES)[number]}`);
+function RecoveryTimeline({ status }: { status: string }) {
+  const current = stepIndex(status);
+  if (current < 0) {
+    return <p className="text-sm text-zinc-400">Closed. This case will not continue.</p>;
   }
-  return status;
+
+  return (
+    <ol className="grid gap-3 sm:grid-cols-5">
+      {TIMELINE.map((step, index) => {
+        const state = index < current ? "done" : index === current ? "current" : "upcoming";
+        return (
+          <li key={step.title} className="flex gap-2 sm:block">
+            <span
+              className={`mt-1 size-2.5 shrink-0 rounded-full sm:mb-2 sm:mt-0 ${
+                state === "upcoming" ? "bg-white/15" : "bg-[#F4E409]"
+              }`}
+            />
+            <div>
+              <p className={`text-sm font-medium ${state === "upcoming" ? "text-zinc-500" : "text-white"}`}>
+                {step.title}
+              </p>
+              <p className={`mt-0.5 text-xs leading-5 ${state === "upcoming" ? "text-zinc-600" : "text-zinc-400"}`}>
+                {step.description}
+              </p>
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  );
 }

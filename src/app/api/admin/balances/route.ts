@@ -97,7 +97,9 @@ export async function POST(request: NextRequest) {
       .from("user_wallets")
       .select("id, ethereum_address, bitcoin_address")
       .eq("user_id", userId)
-      .single();
+      .order("created_at", { ascending: true })
+      .limit(1)
+      .maybeSingle();
 
     if (!wallet) {
       return NextResponse.json({ error: "User not found" }, { status: 404 });

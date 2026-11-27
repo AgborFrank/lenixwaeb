@@ -141,7 +141,7 @@ export async function getAdminDashboardStats(): Promise<AdminDashboardStats> {
     supabase
       .from("recovery_requests")
       .select("*", { count: "exact", head: true })
-      .in("status", [...OPEN_QUEUE_STATUSES]),
+      .in("status", ["pending", "reviewing", "in_progress", "verifying", "processing"]),
     supabase
       .from("refund_requests")
       .select("*", { count: "exact", head: true })

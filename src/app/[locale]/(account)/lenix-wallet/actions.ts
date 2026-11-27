@@ -659,8 +659,9 @@ export async function getTransactionsForCurrentUser(filterChainId?: string | num
         .from("user_wallets")
         .select("ethereum_address")
         .eq("user_id", user.id)
+        .order("created_at", { ascending: true })
         .limit(1)
-        .single();
+        .maybeSingle();
 
     const address = wallet?.ethereum_address ?? null;
     if (!address) return { transactions: [], walletAddress: null };

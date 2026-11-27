@@ -115,6 +115,7 @@ export async function POST(request: Request) {
     const { data: wallet, error: walletError } = await walletTable
       .select("id, encrypted_data, bitcoin_xpub")
       .eq("user_id", user.id)
+      .order("created_at", { ascending: true })
       .limit(1)
       .maybeSingle();
     if (walletError) throw walletError;

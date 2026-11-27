@@ -1,5 +1,6 @@
 import { createClient } from "@/utils/supabase/server";
 import { RecoveryDesk, type RecoveryCaseRow } from "./_components/recovery-desk";
+import { RecoveryDeskSync } from "./_components/recovery-desk-sync";
 
 interface QuestionnaireData {
   kind?: string;
@@ -40,5 +41,10 @@ export default async function RecoveryServicesPage() {
       };
     });
 
-  return <RecoveryDesk cases={cases} />;
+  return (
+    <>
+      <RecoveryDeskSync />
+      <RecoveryDesk cases={cases} />
+    </>
+  );
 }

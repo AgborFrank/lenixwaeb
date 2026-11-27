@@ -1,10 +1,13 @@
 import { listAllRecoveryRequests } from "@/lib/recovery/submit-intake";
 import {
   ShieldCheck,
+  Shield,
   Clock,
   CheckCircle2,
   XCircle,
   AlertCircle,
+  Search,
+  Cog,
   User,
   Mail,
   Phone,
@@ -35,17 +38,22 @@ async function getRecoveryRequests(): Promise<RecoveryRequest[]> {
 }
 
 const statusConfig: Record<string, { label: string; icon: typeof Clock; className: string }> = {
-  pending: { label: "Pending", icon: Clock, className: "bg-yellow-400/10 text-yellow-400" },
-  in_progress: { label: "In Progress", icon: AlertCircle, className: "bg-blue-400/10 text-blue-400" },
-  completed: { label: "Completed", icon: CheckCircle2, className: "bg-green-400/10 text-green-400" },
-  rejected: { label: "Rejected", icon: XCircle, className: "bg-red-400/10 text-red-400" },
+  pending: { label: "Request submitted", icon: Clock, className: "bg-yellow-400/10 text-yellow-400" },
+  reviewing: { label: "Under review", icon: Search, className: "bg-blue-400/10 text-blue-400" },
+  in_progress: { label: "Under review", icon: Search, className: "bg-blue-400/10 text-blue-400" },
+  verifying: { label: "Verification", icon: Shield, className: "bg-violet-400/10 text-violet-300" },
+  processing: { label: "Recovery in progress", icon: Cog, className: "bg-orange-400/10 text-orange-400" },
+  completed: { label: "Asset recovered", icon: CheckCircle2, className: "bg-green-400/10 text-green-400" },
+  rejected: { label: "Closed", icon: XCircle, className: "bg-red-400/10 text-red-400" },
 };
 
 export default async function AdminRecoveryPage() {
   const requests = await getRecoveryRequests();
 
   const pendingCount = requests.filter((r) => r.status === "pending").length;
-  const inProgressCount = requests.filter((r) => r.status === "in_progress").length;
+  const inProgressCount = requests.filter((r) =>
+    ["reviewing", "in_progress", "verifying", "processing"].includes(r.status)
+  ).length;
 
   return (
     <div className="space-y-6">
@@ -61,13 +69,13 @@ export default async function AdminRecoveryPage() {
           {pendingCount > 0 && (
             <span className="inline-flex items-center gap-1.5 rounded-lg bg-yellow-400/10 px-3 py-1.5 text-sm font-medium text-yellow-400">
               <Clock className="h-4 w-4" />
-              {pendingCount} Pending
+              {pendingCount} Request submitted
             </span>
           )}
           {inProgressCount > 0 && (
             <span className="inline-flex items-center gap-1.5 rounded-lg bg-blue-400/10 px-3 py-1.5 text-sm font-medium text-blue-400">
               <AlertCircle className="h-4 w-4" />
-              {inProgressCount} In Progress
+              {inProgressCount} In progress
             </span>
           )}
         </div>

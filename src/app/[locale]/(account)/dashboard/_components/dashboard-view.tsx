@@ -54,7 +54,7 @@ type NormalizedStatus = "pending" | "in_progress" | "completed" | "rejected";
 function normalizeStatus(status?: string | null): NormalizedStatus {
   const s = (status || "").toLowerCase().trim();
   if (["completed", "approved", "settled", "resolved", "verified"].includes(s)) return "completed";
-  if (["in_progress", "under_review", "reviewing", "investigating"].includes(s)) return "in_progress";
+  if (["in_progress", "under_review", "reviewing", "verifying", "processing", "investigating"].includes(s)) return "in_progress";
   if (["rejected", "declined", "closed"].includes(s)) return "rejected";
   return "pending";
 }

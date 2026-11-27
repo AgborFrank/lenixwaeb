@@ -4,7 +4,8 @@ import { Link } from "@/i18n/navigation";
 import { adminGlass } from "@/lib/admin-glass";
 import { Button } from "@/components/ui/button";
 import { getUserLoans } from "./actions";
-import { ActiveLoans } from "./_components/active-loans";
+import { ActiveLoans, type WalletLoan } from "./_components/active-loans";
+import { LoanDeskSync } from "./_components/loan-desk-sync";
 import { MarketRates } from "./_components/market-rates";
 import { LoanApplication } from "./_components/loan-application";
 
@@ -19,6 +20,14 @@ export default async function CryptoLoanPage({
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  const { data: walletLoanRows } = user
+    ? await supabase
+        .from("loans")
+        .select("id, amount, currency, status, duration_days")
+        .eq("user_id", user.id)
+        .order("created_at", { ascending: false })
+    : { data: null };
+  const walletLoans = (walletLoanRows ?? []) as WalletLoan[];
   const { data: payoutRow } = user
     ? await supabase
         .from("web_loan_payouts")
@@ -66,6 +75,7 @@ export default async function CryptoLoanPage({
 
   return (
     <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 sm:gap-8">
+      <LoanDeskSync />
       <header className="flex flex-col gap-4 border-b border-white/[0.06] pb-6 sm:flex-row sm:items-end sm:justify-between">
         <div className="space-y-2">
           <p className={adminGlass.eyebrow}>{t("desk.eyebrow")}</p>
@@ -103,7 +113,7 @@ export default async function CryptoLoanPage({
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          <ActiveLoans loans={loans} userPayout={userPayout} />
+          <ActiveLoans loans={loans} walletLoans={walletLoans} userPayout={userPayout} />
         </div>
         <div className="space-y-6">
           <MarketRates loanTypes={loanTypes} />

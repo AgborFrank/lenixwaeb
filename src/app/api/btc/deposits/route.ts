@@ -251,6 +251,7 @@ export async function POST() {
     const { data: wallet, error: walletError } = await (db.from("user_wallets") as any)
       .select("id, bitcoin_xpub, bitcoin_address")
       .eq("user_id", user.id)
+      .order("created_at", { ascending: true })
       .limit(1)
       .maybeSingle();
 

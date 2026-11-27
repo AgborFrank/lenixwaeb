@@ -50,13 +50,23 @@ export async function signup(formData: FormData) {
 
     const host = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
-    const { error } = await supabase.auth.signUp({
+    const { data: signUpData, error } = await supabase.auth.signUp({
         ...data,
         options: {
             // Locale is applied in /[locale]/auth/callback from NEXT_LOCALE / default
             emailRedirectTo: `${host}/auth/callback?next=/dashboard`,
         },
     });
+
+    const identities = signUpData?.user?.identities;
+    const alreadyRegistered =
+        Boolean(error && /already registered|already exists|user_already_exists|email_exists/i.test(`${error.message} ${error.code ?? ""}`)) ||
+        (Array.isArray(identities) && identities.length === 0);
+
+    if (alreadyRegistered) {
+        await supabase.auth.signOut();
+        await redirect("/login?error=emailAlreadyRegistered");
+    }
 
     if (error) {
         await redirect("/signup?error=createUserFailed");

@@ -173,6 +173,7 @@ export async function getVaultPortfolio(): Promise<WalletPortfolio> {
     .from("user_wallets")
     .select("ethereum_address")
     .eq("user_id", user.id)
+    .order("created_at", { ascending: true })
     .limit(1)
     .maybeSingle();
   if (primaryWallet?.ethereum_address) {
